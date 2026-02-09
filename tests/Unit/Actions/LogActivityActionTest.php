@@ -9,7 +9,8 @@ use Modules\Activity\Actions\LogActivityAction;
 use Modules\User\Models\User;
 
 test('LogActivityAction can be instantiated', function () {
-    $model = new class extends Model {
+    $model = new class() extends Model
+    {
         protected $table = 'test_models';
 
         protected $fillable = ['name'];
@@ -28,7 +29,8 @@ test('LogActivityAction can be instantiated', function () {
 });
 
 test('LogActivityAction can execute', function () {
-    $modelClass = get_class(new class extends Model {
+    $modelClass = get_class(new class() extends Model
+    {
         protected $table = 'test_models';
 
         protected $fillable = ['name'];
