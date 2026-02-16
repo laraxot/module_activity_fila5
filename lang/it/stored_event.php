@@ -305,19 +305,19 @@ return [
     'pagination' => [
         'per_page' => 50,
         'options' => [
-            25,
-            50,
-            100,
-            200,
+            0 => 25,
+            1 => 50,
+            2 => 100,
+            3 => 200,
         ],
         'simple' => false,
     ],
     'cache' => [
         'ttl' => 600,
         'tags' => [
-            'stored_events',
-            'event_sourcing',
-            'monitoring',
+            0 => 'stored_events',
+            1 => 'event_sourcing',
+            2 => 'monitoring',
         ],
     ],
     'event_sourcing' => [
@@ -336,4 +336,6 @@ return [
         'performance_tracking' => true,
         'audit_trail' => true,
     ],
+    'label' => 'Stored Event',
+    'plural_label' => 'Stored Event (Plurale)',
 ];

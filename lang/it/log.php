@@ -75,4 +75,6 @@ return [
             'debug' => 'Debug',
         ],
     ],
+    'label' => 'Log',
+    'plural_label' => 'Log (Plurale)',
 ];

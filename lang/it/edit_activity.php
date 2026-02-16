@@ -47,4 +47,17 @@ return [
         'description.max' => 'La descrizione non può superare :max caratteri',
         'properties.json' => 'Le proprietà devono essere un JSON valido',
     ],
+    'label' => 'Edit Activity',
+    'plural_label' => 'Edit Activity (Plurale)',
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Edit Activity',
+        ],
+        'edit' => [
+            'label' => 'Modifica Edit Activity',
+        ],
+        'delete' => [
+            'label' => 'Elimina Edit Activity',
+        ],
+    ],
 ];

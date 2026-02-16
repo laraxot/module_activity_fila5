@@ -10,4 +10,29 @@ return [
             'tooltip' => 'list_log_activities',
         ],
     ],
+    'label' => 'Log Activities Action Test',
+    'plural_label' => 'Log Activities Action Test (Plurale)',
+    'navigation' => [
+        'name' => 'Log Activities Action Test',
+        'plural' => 'Log Activities Action Test',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Log Activities Action Test',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+        ],
+    ],
 ];

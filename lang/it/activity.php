@@ -98,4 +98,6 @@ return [
         'no_activities' => 'Nessuna attività trovata',
         'activity_restored' => 'Attività ripristinata con successo',
     ],
+    'label' => 'Activity',
+    'plural_label' => 'Activity (Plurale)',
 ];

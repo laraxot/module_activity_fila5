@@ -46,4 +46,17 @@ return [
             'tooltip' => 'Filtra per stato',
         ],
     ],
+    'label' => 'Snapshot Resource',
+    'plural_label' => 'Snapshot Resource (Plurale)',
+    'navigation' => [
+        'name' => 'Snapshot Resource',
+        'plural' => 'Snapshot Resource',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Snapshot Resource',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
 ];

@@ -46,4 +46,6 @@ return [
         'no_resources' => 'Nessuna risorsa trovata',
         'resource_exported' => 'Risorsa esportata con successo',
     ],
+    'label' => 'Activity Resource',
+    'plural_label' => 'Activity Resource (Plurale)',
 ];
