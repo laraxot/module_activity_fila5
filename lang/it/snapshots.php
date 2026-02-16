@@ -77,4 +77,17 @@ return [
             ],
         ],
     ],
+    'label' => 'Snapshots',
+    'plural_label' => 'Snapshots (Plurale)',
+    'navigation' => [
+        'name' => 'Snapshots',
+        'plural' => 'Snapshots',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Snapshots',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
 ];
