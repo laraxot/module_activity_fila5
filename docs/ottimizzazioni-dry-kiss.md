@@ -368,4 +368,7 @@ protected function registerConfig(): void
 
 ---
 
+<<<<<<< Updated upstream
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS Activity Module*
+=======
+>>>>>>> Stashed changes
