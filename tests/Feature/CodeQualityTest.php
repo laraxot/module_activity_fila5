@@ -73,11 +73,7 @@ test('translations exist and are structured', function (): void {
 });
 
 test('views exist and are valid', function (): void {
-<<<<<<< Updated upstream
     $viewPath = base_path('Modules/Activity/resources/views/filament/pages/list-log-activities.blade.php');
-=======
-    $viewPath = base_path('Modules/Activity/resources/views/filament/list-log-activities.blade.php');
->>>>>>> Stashed changes
     expect(file_exists($viewPath))->toBeTrue();
 
     $viewContent = file_get_contents($viewPath);
