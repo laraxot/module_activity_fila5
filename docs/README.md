@@ -44,6 +44,12 @@ class Project extends Model {
 }
 ```
 
+## 🎛️ **Filament Integration**
+
+- **ListLogActivitiesAction** - Action per visualizzare lo storico attività da tabella Resource
+- **ListLogActivities** - Pagina dettaglio log con paginazione custom
+- **ActivityServiceProvider** - Registrazione moduli, route, view, traduzioni
+
 ## 📚 **Documentazione Completa**
 
 - 📖 **[Indice Documentazione](./00-index.md)** - Mappa di tutti i contenuti.
