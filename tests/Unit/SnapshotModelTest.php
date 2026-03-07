@@ -8,13 +8,13 @@ use Modules\Activity\Tests\TestCase;
 uses(TestCase::class);
 
 test('snapshot uses default db connection while testing', function (): void {
-    $model = new Snapshot();
+    $model = new Snapshot;
 
     expect($model->getConnectionName())->toBe((string) config('database.default'));
 });
 
 test('snapshot returns activity connection outside testing env', function (): void {
-    $model = new Snapshot();
+    $model = new Snapshot;
 
     $app = app();
     $originalEnv = $app['env'];
