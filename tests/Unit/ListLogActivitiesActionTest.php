@@ -10,7 +10,6 @@ use PHPUnit\Framework\Attributes\Test;
 
 class ListLogActivitiesActionTest extends TestCase
 {
-    use \Illuminate\Foundation\Testing\DatabaseTransactions;
 
     #[Test]
     public function it_extends_xot_base_action(): void

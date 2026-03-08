@@ -10,7 +10,6 @@ use PHPUnit\Framework\Attributes\Test;
 
 class BaseModelTest extends TestCase
 {
-    use \Illuminate\Foundation\Testing\DatabaseTransactions;
 
     #[Test]
     public function base_model_is_abstract(): void
