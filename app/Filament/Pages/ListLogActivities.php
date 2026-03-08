@@ -54,8 +54,8 @@ abstract class ListLogActivities extends XotBasePage
 
     public function mount(int|string $record): void
     {
-        // @var mixed record = $this->resolveRecord($record;
-        // @var mixed recordsPerPage = $this->getDefaultRecordsPerPageSelectOption(;
+        $this->record = $this->resolveRecord($record);
+        $this->recordsPerPage = $this->getDefaultRecordsPerPageSelectOption();
     }
 
     public function getBreadcrumb(): string
@@ -73,7 +73,7 @@ abstract class ListLogActivities extends XotBasePage
     public function getTitle(): string
     {
         // PHPStan Level 10: getRecordTitle returns string|Htmlable
-        $recordTitle = // @var mixed getRecordTitle(;
+        $recordTitle = $this->getRecordTitle();
 
         // Convert to string (handle Htmlable)
         $titleString = $recordTitle instanceof Htmlable
@@ -93,7 +93,7 @@ abstract class ListLogActivities extends XotBasePage
     public function getActivities(): LengthAwarePaginator
     {
         // PHPStan Level 10: Type safety for Eloquent relations
-        $record = // @var mixed record;
+        $record = $this->record;
         if (! $record instanceof Model) {
             throw new InvalidArgumentException('Record must be an Eloquent Model');
         }
@@ -117,7 +117,7 @@ abstract class ListLogActivities extends XotBasePage
         }
 
         /** @var Builder<Activity> $builderQuery */
-        $paginated = // @var mixed paginateQuery($builderQuery;
+        $paginated = $this->paginateQuery($builderQuery);
 
         if (! $paginated instanceof LengthAwarePaginator) {
             throw new InvalidArgumentException('paginateQuery() with PaginationMode::Default must return LengthAwarePaginator');
@@ -133,7 +133,7 @@ abstract class ListLogActivities extends XotBasePage
 
     public function getFieldLabel(string $name): string
     {
-        static::$fieldLabelMap ??= // @var mixed createFieldLabelMap(;
+        static::$fieldLabelMap ??= $this->createFieldLabelMap();
 
         $fieldLabel = static::$fieldLabelMap[$name] ?? $name;
 
@@ -152,27 +152,29 @@ abstract class ListLogActivities extends XotBasePage
             return false;
         }
 
-        $canRestore = $resource::canRestore(// @var mixed record;
+        $record = $this->record;
+        $canRestore = $resource::canRestore($record);
 
         return \is_bool($canRestore) ? $canRestore : false;
     }
 
     public function restoreActivity(int|string $key): void
     {
-        if (! // @var mixed canRestoreActivity(
+        if (! $this->canRestoreActivity()) {
             abort(403);
         }
 
         try {
-            $activity = // @var mixed resolveActivity($key;
-            $oldProperties = // @var mixed getOldProperties($activity;
+            $activity = $this->resolveActivity($key);
+            $oldProperties = $this->getOldProperties($activity);
+            $record = $this->record;
 
-            Assert::isInstanceOf(// @var mixed record, Model::class;
-            app(RestoreActivityAction::class)->execute(// @var mixed record, $oldProperties;
+            Assert::isInstanceOf($record, Model::class);
+            app(RestoreActivityAction::class)->execute($record, $oldProperties);
 
-            // @var mixed sendRestoreSuccessNotification(;
+            $this->sendRestoreSuccessNotification();
         } catch (Exception $e) {
-            // @var mixed sendRestoreFailureNotification($e->getMessage(;
+            $this->sendRestoreFailureNotification($e->getMessage());
         }
     }
 
@@ -279,7 +281,7 @@ abstract class ListLogActivities extends XotBasePage
 
     private function resolveActivity(int|string $key): Activity
     {
-        $record = // @var mixed record;
+        $record = $this->record;
         if (! $record instanceof Model) {
             throw new Exception('Invalid record');
         }
