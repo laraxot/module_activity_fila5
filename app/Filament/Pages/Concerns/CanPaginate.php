@@ -22,36 +22,36 @@ trait CanPaginate
     public function updatedRecordsPerPage(): void
     {
         session()->put([
-            // @var mixed getPerPageSessionKey(
+            $this->getPerPageSessionKey() => $this->recordsPerPage,
         ]);
 
-        // @var mixed resetLivewirePage(;
+        $this->resetLivewirePage();
     }
 
     public function getRecordsPerPage(): int|string|null
     {
-        return // @var mixed recordsPerPage;
+        return $this->recordsPerPage;
     }
 
     public function getTablePage(): int
     {
-        return (int) // @var mixed getPage($this->getPaginationPageName(;
+        return (int) $this->getPage($this->getPaginationPageName());
     }
 
     public function getDefaultRecordsPerPageSelectOption(): int|string
     {
         $option = session()->get(
-            // @var mixed getPerPageSessionKey(
-            // @var mixed defaultRecordsPerPageSelectOption,
+            $this->getPerPageSessionKey(),
+            $this->defaultRecordsPerPageSelectOption,
         );
 
-        $pageOptions = // @var mixed getRecordsPerPageSelectOptions(;
+        $pageOptions = $this->getRecordsPerPageSelectOptions();
 
-        if (is_array($pageOptions) && in_array($option, $pageOptions)) {
+        if (is_array($pageOptions) && in_array($option, $pageOptions, true)) {
             return (int) $option;
         }
 
-        session()->remove(// @var mixed getPerPageSessionKey(;
+        session()->remove($this->getPerPageSessionKey());
 
         return (int) ($pageOptions[0] ?? 10);
     }
@@ -73,21 +73,20 @@ trait CanPaginate
      */
     protected function paginateQuery(Builder $query): Paginator|CursorPaginator|LengthAwarePaginator
     {
-        $perPage = // @var mixed getRecordsPerPage(;
-
-        $mode = // @var mixed getPaginationMode(;
+        $perPage = $this->getRecordsPerPage();
+        $mode = $this->getPaginationMode();
 
         if ($mode === PaginationMode::Simple) {
             return $query->simplePaginate(
                 perPage: $perPage === 'all' ? $query->toBase()->getCountForPagination() : (int) $perPage,
-                pageName: // @var mixed getPaginationPageName(
+                pageName: $this->getPaginationPageName(),
             );
         }
 
         if ($mode === PaginationMode::Cursor) {
             return $query->cursorPaginate(
                 perPage: $perPage === 'all' ? $query->toBase()->getCountForPagination() : (int) $perPage,
-                cursorName: // @var mixed getPaginationPageName(
+                cursorName: $this->getPaginationPageName(),
             );
         }
 
@@ -96,7 +95,7 @@ trait CanPaginate
         /** @var LengthAwarePaginator $records */
         $records = $query->paginate(
             perPage: $perPage === 'all' ? $total : (int) $perPage,
-            pageName: // @var mixed getPaginationPageName(
+            pageName: $this->getPaginationPageName(),
             total: $total,
         );
 
