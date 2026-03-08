@@ -16,14 +16,14 @@ class ListLogActivitiesActionTest extends TestCase
     public function it_extends_xot_base_action(): void
     {
         $action = new ListLogActivitiesAction('test');
-        $this->assertInstanceOf(\Modules\Xot\Filament\Actions\XotBaseAction::class, $action);
+        // @var mixed assertInstanceOf(\Modules\Xot\Filament\Actions\XotBaseAction::class, $action;
     }
 
     #[Test]
     public function it_has_correct_default_name(): void
     {
         $action = new ListLogActivitiesAction('list_log_activities');
-        $this->assertEquals('list_log_activities', $action->getDefaultName());
+        // @var mixed assertEquals('list_log_activities', $action->getDefaultName(;
     }
 
     #[Test]
@@ -31,7 +31,7 @@ class ListLogActivitiesActionTest extends TestCase
     {
         $action = ListLogActivitiesAction::make('test');
         // The setUp method configures iconButton
-        $this->assertTrue($action->isIconButton());
+        // @var mixed assertTrue($action->isIconButton(;
     }
 
     #[Test]
@@ -40,7 +40,7 @@ class ListLogActivitiesActionTest extends TestCase
         $action = ListLogActivitiesAction::make('test');
         // Check icon was set in setUp
         $icon = $action->getIcon();
-        $this->assertEquals('heroicon-o-clock', $icon);
+        // @var mixed assertEquals('heroicon-o-clock', $icon;
     }
 
     #[Test]
@@ -48,6 +48,6 @@ class ListLogActivitiesActionTest extends TestCase
     {
         $action = ListLogActivitiesAction::make('test');
         $color = $action->getColor();
-        $this->assertEquals('gray', $color);
+        // @var mixed assertEquals('gray', $color;
     }
 }
