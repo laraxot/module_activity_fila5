@@ -13,7 +13,7 @@ class EditActivityTest extends TestCase
     #[Test]
     public function edit_activity_extends_xot_base_edit_record(): void
     {
-        // @var mixed assertTrue(
+        $this->assertTrue(
             is_subclass_of(
                 EditActivity::class,
                 \Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord::class
@@ -25,7 +25,7 @@ class EditActivityTest extends TestCase
     public function edit_activity_has_correct_resource(): void
     {
         $page = new EditActivity();
-        // @var mixed assertEquals(
+        $this->assertEquals(
             \Modules\Activity\Filament\Resources\ActivityResource::class,
             $page::getResource()
         );
