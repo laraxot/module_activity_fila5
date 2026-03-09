@@ -1,5 +1,7 @@
 <?php
 
+namespace Modules\Activity\Tests\Unit\Traits;
+
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Traits;
