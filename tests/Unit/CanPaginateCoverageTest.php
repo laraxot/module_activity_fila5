@@ -1,5 +1,7 @@
 <?php
 
+namespace Modules\Activity\Tests\Unit;
+
 declare(strict_types=1);
 
 use Filament\Tables\Enums\PaginationMode;
