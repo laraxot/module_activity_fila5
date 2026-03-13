@@ -36,14 +36,14 @@ The Activity module's MCP configuration enables AI assistants to interact with:
     },
     "filesystem": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_laravelpizza/laravel"],
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_<nome progetto>/laravel"],
       "description": "Access to Activity module files"
     },
     "database": {
       "command": "npx",
       "args": ["-y", "@bytebase/dbhub"],
       "env": {
-        "DATABASE_URL": "sqlite:///var/www/_bases/base_laravelpizza/laravel/database/database.sqlite"
+        "DATABASE_URL": "sqlite:///var/www/_bases/base_<nome progetto>/laravel/database/database.sqlite"
       },
       "description": "SQLite database queries"
     }
@@ -58,7 +58,7 @@ The Activity module's MCP configuration enables AI assistants to interact with:
 ### Asana Integration
 ```bash
 # Create task
-"Create task in 'LaravelPizza - Activity Module' project: 'Implement anomaly detection feature'"
+"Create task in '<nome progetto> - Activity Module' project: 'Implement anomaly detection feature'"
 
 # Update status
 "Update task 'Add activity filters' status to 'In Progress'"
@@ -111,9 +111,9 @@ The Activity module's MCP configuration enables AI assistants to interact with:
 
 ## 📚 Related Documentation
 
-- [Asana MCP Configuration](../../../docs/mcp-asana-configuration.md)
-- [ClickUp MCP Configuration](../../../docs/mcp-clickup-configuration.md)
-- [Redmine MCP Configuration](../../../docs/mcp-redmine-configuration.md)
+- [Asana MCP Configuration](../../../../docs/mcp-asana-configuration.md)
+- [ClickUp MCP Configuration](../../../../docs/mcp-clickup-configuration.md)
+- [Redmine MCP Configuration](../../../../docs/mcp-redmine-configuration.md)
 - [Activity Module Roadmap](./roadmap-[date].md)
 
 ---
