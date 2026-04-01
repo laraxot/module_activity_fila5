@@ -53,6 +53,6 @@ abstract class TestCase extends XotBaseTestCase
 
         // Reset the model to ensure it uses the correct connection
         // This is needed because Activity has $connection = 'activity' by default
-        $this->app->forgetInstance(\Modules\Activity\Models\Activity::class);
+        // @var mixed app->forgetInstance(\Modules\Activity\Models\Activity::class;
     }
 }
