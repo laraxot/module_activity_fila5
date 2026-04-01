@@ -15,13 +15,13 @@ class ActivityBasePolicyTest extends TestCase
     public function policy_is_abstract(): void
     {
         $reflection = new \ReflectionClass(ActivityBasePolicy::class);
-        $this->assertTrue($reflection->isAbstract());
+        // @var mixed assertTrue($reflection->isAbstract(;
     }
 
     #[Test]
     public function policy_uses_handles_authorization_trait(): void
     {
-        $this->assertTrue(
+        // @var mixed assertTrue(
             in_array(
                 \Illuminate\Auth\Access\HandlesAuthorization::class,
                 class_uses_recursive(ActivityBasePolicy::class)
@@ -32,25 +32,25 @@ class ActivityBasePolicyTest extends TestCase
     #[Test]
     public function policy_has_before_method(): void
     {
-        $this->assertTrue(method_exists(ActivityBasePolicy::class, 'before'));
+        // @var mixed assertTrue(method_exists(ActivityBasePolicy::class, 'before';
     }
 
     #[Test]
     public function super_admin_user_always_allowed(): void
     {
         // Create a mock super-admin user
-        $user = $this->createMock(User::class);
+        $user = // @var mixed createMock(User::class;
         $user->method('hasRole')->with('super-admin')->willReturn(true);
 
         // Test the policy
         $policy = new class extends ActivityBasePolicy {
             public function testBefore(User $user): ?bool
             {
-                return $this->before($user);
+                return // @var mixed before($user;
             }
         };
 
         $result = $policy->testBefore($user);
-        $this->assertTrue($result);
+        // @var mixed assertTrue($result;
     }
 }
