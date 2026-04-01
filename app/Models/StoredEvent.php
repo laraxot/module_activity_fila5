@@ -63,8 +63,6 @@ class StoredEvent extends SpatieStoredEvent
 
     protected $connection = 'activity';
 
-    protected $table = 'stored_events';
-
     protected $fillable = [
         'id',
         'aggregate_uuid',
