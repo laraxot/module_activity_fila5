@@ -15,7 +15,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 
 /**
  * Class Activity.
- *
+ * 
  * This class extends the BaseActivity model to represent activities in the application.
  *
  * @property int $id
