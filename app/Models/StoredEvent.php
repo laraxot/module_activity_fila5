@@ -75,7 +75,7 @@ class StoredEvent extends SpatieStoredEvent
         parent::__construct($attributes);
         if (app()->environment('testing')) {
             $default = config('database.default');
-            $connection = is_string($default);
+            // @var mixed connection = is_string($default;
         }
     }
 
