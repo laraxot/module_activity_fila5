@@ -107,21 +107,7 @@ class Activity extends SpatieActivity
 {
     use HasXotFactory;
 
-    protected $connection = 'activity';
-
-    protected $table = 'activity_log';
-
-    /**
-     * @param  array<string, mixed>  $attributes
-     */
-    public function __construct(array $attributes = [])
-    {
-        parent::__construct($attributes);
-        if (app()->environment('testing')) {
-            $default = config('database.default');
-            $this->connection = is_string($default) ? $default : 'mysql';
-        }
-    }
+    protected $connection;
 
     /** @var list<string> */
     protected $fillable = [
@@ -134,6 +120,10 @@ class Activity extends SpatieActivity
         'causer_type',
         'causer_id',
         'properties',
+        'created_at',
+        'updated_at',
+        'updated_by',
+        'created_by',
     ];
 
     // NOTE
