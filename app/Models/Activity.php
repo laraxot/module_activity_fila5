@@ -15,7 +15,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 
 /**
  * Class Activity.
- * 
+ *
  * This class extends the BaseActivity model to represent activities in the application.
  *
  * @property int $id
@@ -37,6 +37,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property-read Model|null $causer
  * @property-read Collection $changes
  * @property-read Model|null $subject
+ *
  * @method static ActivityFactory factory($count = null, $state = [])
  * @method static Builder<static>|Activity forBatch(string $batchUuid)
  * @method static Builder<static>|Activity forEvent(string $event)
@@ -100,6 +101,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static Builder<static>|Activity rightJoin(string $table, string $first, string $operator = null, string $second = null)
  * @method static Builder<static>|Activity crossJoin(string $table)
  * @method static Builder<static>|Activity causedBy(Model $causer)
+ *
  * @mixin \Eloquent
  */
 class Activity extends SpatieActivity
@@ -112,7 +114,7 @@ class Activity extends SpatieActivity
     protected $table = 'activity_log';
 
     /**
-     * @param array<string, mixed> $attributes
+     * @param  array<string, mixed>  $attributes
      */
     public function __construct(array $attributes = [])
     {
