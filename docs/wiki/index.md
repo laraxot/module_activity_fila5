@@ -1,41 +1,23 @@
-# Wiki Locale - Module Activity
+# Wiki Locale Index
 
-## Schema di Riferimento
+## Karpathy LLM Wiki Standard
 
-Vedi [[../../../../docs/.schema/WIKI_SCHEMA.md|Schema Wiki Globale]]
+- [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Strict structural constraints.
+- [llm-wiki-standard](../../../../docs/wiki/concepts/karpathy-wiki.md): Repository mapping and knowledge lifecycle.
 
-## Struttura Locale
+## Sacred Hierarchy
 
-```
-wiki/
-├── concepts/       # Pattern e metodologie (tracking, audit trail)
-├── entities/       # Classi e componenti Activity
-├── summaries/      # Sommari documenti raw
-├── comparisons/    # Confronti implementazioni
-└── overviews/      # Panoramiche area tematica
-```
+- [concepts/](./concepts/): Architectural patterns and methodologies.
+- [entities/](./entities/): Key models and components.
+- [sources/](./sources/): Research data and external links.
+- [comparisons/](./comparisons/): Alternative implementations.
+- [decisions/](./decisions/): ADL (Architectural Decision Log).
+- [troubleshooting/](./troubleshooting/): Known issues and solutions.
+- [_archive/](./_archive/): Legacy documentation.
+- [_templates/](./_templates/): Standard templates.
 
-## Raw Sources (docs/ del modulo)
+## Compiled Pages
 
-Documenti chiave da ingerire:
-- `../README.md` — panoramica modulo
-- `../BUSINESS_LOGIC_ANALYSIS.md` — logica di business
-- `../CODE_QUALITY_ANALYSIS.md` — qualità codice
-- `../USER_RESEARCH.md` — ricerca utenti
-- `../PRODUCT_ROADMAP.md` — roadmap
-
-## Index Globale
-
-Vedi [[../../../../docs/wiki/index|Index Globale Wiki]]
-
-## Pagine Compilate
-
-*Nessuna ancora — da ingerire.*
-
-| Pagina | Tipo | Raw source | Data |
-|--------|------|------------|------|
-| — | — | — | — |
-
----
-
-*Ultimo aggiornamento: 2026-04-15*
+| Page | Type | Source | Updated |
+|------|------|--------|---------|
+| [.gitkeep](./concepts/.gitkeep) | Concept | - | 2026-04-21 |
