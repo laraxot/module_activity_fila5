@@ -24,6 +24,27 @@
 - 🧹 **[PHPMD Fixes](./phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
 - 🧪 **PSR-4 Test Helpers** - Preferire Pest e classi anonime nei test; evitare classi helper top-level non allineate al filepath.
 
+## 📋 **Documenti Prodotto & Sviluppo**
+
+### Product
+| File | Scopo |
+|------|-------|
+| PRODUCT_ROADMAP.md | Roadmap |
+| PRODUCT_STRATEGY.md | Strategy |
+| PRODUCT_LAUNCH_PLAN.md | Launch Plan |
+
+### Development
+| File | Scopo |
+|------|-------|
+| BUSINESS_LOGIC_ANALYSIS.md | Business logic |
+| CODE_QUALITY_ANALYSIS.md | Code quality |
+| QUERY_OPTIMIZATION_ANALYSIS.md | Query optimization |
+
+### Filament
+| File | Scopo |
+|------|-------|
+| FILAMENT_RESOURCE_GUIDELINES.md | Resource guidelines |
+
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
 - `spatie/laravel-activitylog` - Audit trail
