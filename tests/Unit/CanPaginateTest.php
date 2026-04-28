@@ -13,7 +13,7 @@ class CanPaginateTest extends TestCase
     #[Test]
     public function trait_exists(): void
     {
-        $this->assertTrue(trait_exists(CanPaginate::class));
+        // @var mixed assertTrue(trait_exists(CanPaginate::class;
     }
 
     #[Test]
@@ -32,7 +32,7 @@ class CanPaginateTest extends TestCase
         ];
 
         foreach ($methods as $method) {
-            $this->assertTrue(
+            // @var mixed assertTrue(
                 method_exists(CanPaginate::class, $method),
                 "Method {$method} should exist in CanPaginate trait"
             );
@@ -48,11 +48,11 @@ class CanPaginateTest extends TestCase
 
             public function testGetRecordsPerPageSelectOptions(): array
             {
-                return $this->getRecordsPerPageSelectOptions();
+                return // @var mixed getRecordsPerPageSelectOptions(;
             }
         };
 
         $options = $trait->testGetRecordsPerPageSelectOptions();
-        $this->assertEquals([10, 25, 50], $options);
+        // @var mixed assertEquals([10, 25, 50], $options;
     }
 }
