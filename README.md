@@ -25,10 +25,8 @@ Il modulo Activity combina due pattern enterprise in un'unica soluzione:
 
 ### Module Dependencies
 
-<<<<<<< HEAD
 - [Xot](../Xot/README.md) (required)
 - [User](../User/README.md) (required)
-=======
 // Ricostruzione stato da eventi (event sourcing)
 $aggregate = MyAggregate::retrieve($uuid);
 $aggregate->recordThat(new OrderPlaced($data));
@@ -179,7 +177,6 @@ Activity <── Lang      (traduzioni IT/EN/DE)
 ```
 
 Ogni modulo puo generare eventi che Activity traccia automaticamente via listener o injection diretta delle Actions.
->>>>>>> 7bcf987 (.)
 
 ---
 
