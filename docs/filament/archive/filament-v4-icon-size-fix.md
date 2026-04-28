@@ -35,6 +35,7 @@ In Filament v4, the `size` attribute for icons changed from accepting string val
    - Size controlled via CSS classes `h-36`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_FMwoLO
 3. **Modules/healthcare_app/resources/views/filament/widgets/overlook-stats.blade.php**
 =======
@@ -43,6 +44,9 @@ In Filament v4, the `size` attribute for icons changed from accepting string val
 =======
 3. **Modules/Quaeris/resources/views/filament/widgets/overlook-stats.blade.php**
 >>>>>>> 1ce8a08 (.)
+=======
+3. **Modules/healthcare_app/resources/views/filament/widgets/overlook-stats.blade.php**
+>>>>>>> 4467550 (.)
    - Removed `:size="24"` from two icon instances
    - Size controlled via CSS classes `size-4` and `h-36`
 
