@@ -472,6 +472,6 @@ class JpGraphChartGenerator
 
 ---
 
-**Ultimo Aggiornamento:** [DATE]  
+**
 **Versione JpGraph:** 4.4.2  
 **Stato:** 📚 Completamente Analizzato e Documentato

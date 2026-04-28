@@ -134,7 +134,11 @@ Event Store ← Snapshot ← Aggregate ← Event Sourcing
 - **User**: Activity的主体 (user actions)
 - **Limesurvey**: Survey lifecycle tracking
 - **Tenant**: Multi-tenancy isolation
+<<<<<<< HEAD
 - **<nome progetto>**: Dashboard activity tracking
+=======
+- **Quaeris**: Dashboard activity tracking
+>>>>>>> 5fc3f4b (.)
 
 ## Lacune e Funzionalità Mancanti
 
@@ -142,7 +146,11 @@ Event Store ← Snapshot ← Aggregate ← Event Sourcing
 1. **Advanced Analytics Engine**
    - Missing: Activity pattern detection
    - Missing: Anomaly detection
+<<<<<<< HEAD
    - No <nome progetto>ive analytics
+=======
+   - No predictive analytics
+>>>>>>> 5fc3f4b (.)
    - Missing behavior analysis
 
 2. **Real-time Monitoring**
@@ -271,7 +279,11 @@ activity()->withProperties([
 
 ### Fase 3: Advanced Features (3-4 settimane)
 - [ ] Machine learning categorization
+<<<<<<< HEAD
 - [ ] <nome progetto>ive analytics
+=======
+- [ ] Predictive analytics
+>>>>>>> 5fc3f4b (.)
 - [ ] Advanced filtering system
 - [ ] Custom report builder
 
@@ -316,5 +328,9 @@ activity()->withProperties([
 
 ---
 
+<<<<<<< HEAD
+=======
+**
+>>>>>>> 5fc3f4b (.)
 **Versione**: v2.5.0-beta  
 **Stato**: Production Ready with Compliance Enhancement
