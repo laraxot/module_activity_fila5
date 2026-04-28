@@ -1,4 +1,9 @@
 
+> Conflict cleanup note — 2026-04-28
+>
+> - Error found: unresolved Git conflict markers around the coverage section between `Notify/*` and `Tenant/*`.
+> - Resolution applied: kept the additional `Quaeris/*` and `healthcare_app/*` coverage rows because they extend the report, then removed the raw merge markers (`<<<<<<<`, `=======`, `>>>>>>>`).
+
    PASS  Modules\Activity\tests\Feature\Actions\ListLogActivitiesActionTest
   ✓ action can be instantiated                                           0.79s  
   ✓ action has correct configuration                                     0.67s  
@@ -1395,7 +1400,6 @@
   Notify/app/Traits/HasNotificationRateLimiting [90m.........................[39m [31m0.0%[39m  
   Notify/app/Traits/HasNotificationTracking [90m.............................[39m [31m0.0%[39m  
   Notify/app/Traits/HasTenantNotifications [90m..............................[39m [31m0.0%[39m  
-<<<<<<< HEAD
 Quaeris/app/Actions/Contact/CreateContactFromArrayAction [90m..............[39m [31m0.0%[39m  
   Quaeris/app/Actions/Dashboard/StatsAction [90m.............................[39m [31m0.0%[39m  
   Quaeris/app/Actions/Dashboard/StatsAction2 [90m............................[39m [31m0.0%[39m  
@@ -1623,7 +1627,6 @@ Quaeris/app/Actions/Contact/CreateContactFromArrayAction [90m..............[39
   Quaeris/app/Services/TrendX [90m...........................................[39m [31m0.0%[39m  
   Quaeris/app/Tables/Columns/ChartsColumn [90m...............................[39m [31m0.0%[39m  
   Quaeris/app/View/Composers/ThemeComposer [90m............................[39m [32m100.0%[39m
-=======
   healthcare_app/app/Actions/Contact/CreateContactFromArrayAction [90m..............[39m [31m0.0%[39m  
   healthcare_app/app/Actions/Dashboard/StatsAction [90m.............................[39m [31m0.0%[39m  
   healthcare_app/app/Actions/Dashboard/StatsAction2 [90m............................[39m [31m0.0%[39m  
@@ -1851,7 +1854,6 @@ Quaeris/app/Actions/Contact/CreateContactFromArrayAction [90m..............[39
   healthcare_app/app/Services/TrendX [90m...........................................[39m [31m0.0%[39m  
   healthcare_app/app/Tables/Columns/ChartsColumn [90m...............................[39m [31m0.0%[39m  
   healthcare_app/app/View/Composers/ThemeComposer [90m............................[39m [32m100.0%[39m  
->>>>>>> 4467550 (.)
   Tenant/app/Actions/Config/GetTenantConfigArrayAction [90m..................[39m [31m0.0%[39m  
   Tenant/app/Actions/Config/GetTenantConfigNamesAction [90m..................[39m [31m0.0%[39m  
   Tenant/app/Actions/Config/GetTenantConfigPathAction [90m...................[39m [31m0.0%[39m  
@@ -2927,4 +2929,3 @@ Quaeris/app/Actions/Contact/CreateContactFromArrayAction [90m..............[39
   Xot/app/View/Composers/XotComposer [90m....................................[39m [31m0.0%[39m  
   [90m────────────────────────────────────────────────────────────────────────────[39m  
                                                                   [1mTotal: 0.0 %[22m  
-
