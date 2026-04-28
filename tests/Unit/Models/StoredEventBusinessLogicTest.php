@@ -14,7 +14,7 @@ describe('StoredEvent Business Logic', function (): void {
         try {
             \DB::connection()->getPdo();
         } catch (\Exception $e) {
-            $this->markTestSkipped('Database not available: ' . $e->getMessage());
+            $this->markTestSkipped('Database not available: '.$e->getMessage());
         }
     });
 
