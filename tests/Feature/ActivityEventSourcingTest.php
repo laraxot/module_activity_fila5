@@ -4,14 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
 
-use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Str;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
+use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
+use Spatie\SchemalessAttributes\SchemalessAttributes;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function () {
     // Skip if database not available
@@ -51,7 +53,7 @@ test('activity event sourcing lifecycle works correctly', function () {
     $this->assertSame('created', $activity->event);
 
     $properties = $activity->properties;
-    $this->assertInstanceOf(\Spatie\SchemalessAttributes\SchemalessAttributes::class, $properties);
+    $this->assertInstanceOf(SchemalessAttributes::class, $properties);
     $this->assertSame('test', $properties->action);
     $this->assertSame('success', $properties->result);
 });
@@ -200,7 +202,7 @@ test('stored event creation and event reconstruction works', function () {
     $this->assertSame('test_action', $eventProps['action']);
 
     $metaData = $storedEvent->meta_data;
-    $this->assertInstanceOf(\Spatie\SchemalessAttributes\SchemalessAttributes::class, $metaData);
+    $this->assertInstanceOf(SchemalessAttributes::class, $metaData);
 
     $metaDataArray = $metaData->toArray();
     $this->assertIsArray($metaDataArray);
@@ -217,7 +219,7 @@ test('activity batch operations work correctly', function () {
         'batch_uuid' => $batchUuid,
         'log_name' => 'batch_operation',
     ]);
-    \assert($activities instanceof \Illuminate\Database\Eloquent\Collection);
+    \assert($activities instanceof Collection);
     $this->assertCount(3, $activities);
 
     $batchActivities = Activity::forBatch($batchUuid)->get();
@@ -290,7 +292,7 @@ test('activity properties support complex nested structures', function () {
     $this->assertNotNull($freshActivity);
 
     $properties = $freshActivity->properties;
-    $this->assertInstanceOf(\Spatie\SchemalessAttributes\SchemalessAttributes::class, $properties);
+    $this->assertInstanceOf(SchemalessAttributes::class, $properties);
     $this->assertTrue(isset($properties->user));
     $this->assertTrue(isset($properties->action));
     $this->assertTrue(isset($properties->context));
@@ -405,7 +407,7 @@ test('stored event handles complex event properties with nested arrays', functio
     ];
 
     $storedEvent = StoredEvent::query()->create([
-        'aggregate_uuid' => \Illuminate\Support\Str::uuid()->toString(),
+        'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'event_version' => 1,
         'event_class' => 'App\\Events\\ComplexEvent',

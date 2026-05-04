@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
 
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Tests\TestCase;
@@ -290,7 +291,7 @@ it('can handle snapshot with timestamps', function (): void {
     expect($snapshot->aggregate_uuid)->toBeString();
     expect($snapshot->aggregate_version)->toBe(1);
     expect($snapshot->state)->toBeArray();
-    expect($snapshot->created_at)->toBeInstanceOf(\Illuminate\Support\Carbon::class);
+    expect($snapshot->created_at)->toBeInstanceOf(Carbon::class);
 });
 
 it('can query snapshots by date range', function (): void {

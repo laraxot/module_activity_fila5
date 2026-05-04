@@ -8,8 +8,10 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Modules\Activity\Models\StoredEvent;
+use Modules\Activity\Tests\TestCase;
+use Spatie\SchemalessAttributes\SchemalessAttributes;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function () {
     // Skip if database not available
@@ -361,7 +363,7 @@ it('can handle event with null properties', function (): void {
 
     $this->assertIsArray($storedEvent->event_properties);
     $this->assertEmpty($storedEvent->event_properties);
-    $this->assertInstanceOf(\Spatie\SchemalessAttributes\SchemalessAttributes::class, $storedEvent->meta_data);
+    $this->assertInstanceOf(SchemalessAttributes::class, $storedEvent->meta_data);
     $this->assertSame([], $storedEvent->meta_data->toArray());
 });
 

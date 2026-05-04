@@ -9,9 +9,10 @@ use Illuminate\Support\Str;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
+use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function () {
     // Skip if database not available

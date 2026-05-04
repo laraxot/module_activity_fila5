@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Models;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 use Modules\Activity\Models\StoredEvent;
+use Modules\Activity\Tests\TestCase;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent;
 
 describe('StoredEvent Business Logic', function (): void {

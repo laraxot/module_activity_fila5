@@ -5,9 +5,10 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Feature;
 
 use Modules\Activity\Models\Activity;
+use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function () {
     // Skip if database not available

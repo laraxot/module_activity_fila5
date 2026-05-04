@@ -7,8 +7,9 @@ namespace Modules\Activity\Tests\Feature;
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Providers\ActivityServiceProvider;
+use Modules\Activity\Tests\TestCase;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function () {
     // Skip if database not available
