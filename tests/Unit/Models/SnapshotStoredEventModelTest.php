@@ -11,14 +11,14 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 
 uses(TestCase::class);
 
-test('snapshot getConnectionName resolves default connection in testing', function (): void {
+test('snapshot getConnectionName resolves default connection in testing', function(): void {
     $snapshot = new Snapshot;
     $default = config('database.default');
 
     expect($snapshot->getConnectionName())->toBe(is_string($default) ? $default : 'mysql');
 });
 
-test('snapshot has expected table and fillable fields', function (): void {
+test('snapshot has expected table and fillable fields', function(): void {
     $snapshot = new Snapshot;
 
     expect($snapshot->getTable())->toBe('snapshots')
@@ -26,14 +26,14 @@ test('snapshot has expected table and fillable fields', function (): void {
         ->and($snapshot->getFillable())->toContain('state');
 });
 
-test('stored event constructor aligns connection in testing', function (): void {
+test('stored event constructor aligns connection in testing', function(): void {
     $storedEvent = new StoredEvent;
     $default = config('database.default');
 
     expect($storedEvent->getConnectionName())->toBe(is_string($default) ? $default : 'mysql');
 });
 
-test('stored event has expected casts and metadata behavior', function (): void {
+test('stored event has expected casts and metadata behavior', function(): void {
     $storedEvent = new StoredEvent;
     $casts = $storedEvent->getCasts();
 

@@ -11,7 +11,7 @@ use Modules\Activity\Tests\TestCase;
 
 uses(TestCase::class);
 
-test('action has correct default name', function (): void {
+test('action has correct default name', function(): void {
     expect(ListLogActivitiesAction::getDefaultName())->toBe('list_log_activities');
 });
 
@@ -22,7 +22,7 @@ test('action tooltip is translated correctly', function () {
         ->toBe('list_log_activities');
 });
 
-test('action is configured correctly', function (): void {
+test('action is configured correctly', function(): void {
     $action = ListLogActivitiesAction::make();
 
     expect($action->getName())->toBe('list_log_activities');
@@ -30,7 +30,7 @@ test('action is configured correctly', function (): void {
     expect($action->getColor())->toBe('gray');
 });
 
-test('action generates correct URL for activity log page', function (): void {
+test('action generates correct URL for activity log page', function(): void {
     $action = ListLogActivitiesAction::make();
 
     $resource = new class

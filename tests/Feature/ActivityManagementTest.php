@@ -20,7 +20,6 @@ beforeEach(function () {
 });
 
 test('user can create activity', function () {
-    $user = User::factory()->create(); // @phpstan-ignore-line method.nonObject
     \assert($user instanceof User);
     expect($user)->not->toBeNull();
 
@@ -72,7 +71,6 @@ test('activity can be deleted', function () {
 });
 
 test('activity belongs to user', function () {
-    $user = User::factory()->create(); // @phpstan-ignore-line method.nonObject
     \assert($user instanceof User);
     expect($user)->not->toBeNull();
 

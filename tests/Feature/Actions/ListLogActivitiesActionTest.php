@@ -11,21 +11,21 @@ use Modules\Activity\Tests\TestCase;
 
 uses(TestCase::class);
 
-test('action can be instantiated', function (): void {
+test('action can be instantiated', function(): void {
     $action = ListLogActivitiesAction::make();
 
     expect($action)->toBeInstanceOf(ListLogActivitiesAction::class);
     expect($action::getDefaultName())->toBe('list_log_activities');
 });
 
-test('action has correct configuration', function (): void {
+test('action has correct configuration', function(): void {
     $action = ListLogActivitiesAction::make();
 
     expect($action->getIcon())->toBe('heroicon-o-clock');
     expect($action->getColor())->toBe('gray');
 });
 
-test('action generates a log-activity URL containing record key', function (): void {
+test('action generates a log-activity URL containing record key', function(): void {
     $action = ListLogActivitiesAction::make();
 
     $resource = new class

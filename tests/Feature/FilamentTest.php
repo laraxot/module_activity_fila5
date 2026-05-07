@@ -24,13 +24,13 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 
 uses(TestCase::class);
 
-describe('ActivityEvent', function (): void {
-    it('can be instantiated', function (): void {
+describe('ActivityEvent', function(): void {
+    it('can be instantiated', function(): void {
         $event = new ActivityEvent;
         expect($event)->toBeInstanceOf(ActivityEvent::class);
     });
 
-    it('uses correct traits', function (): void {
+    it('uses correct traits', function(): void {
         $event = new ActivityEvent;
 
         // Verify the event has the traits
@@ -41,8 +41,8 @@ describe('ActivityEvent', function (): void {
     });
 });
 
-describe('ListLogActivitiesAction', function (): void {
-    it('extends XotBaseAction', function (): void {
+describe('ListLogActivitiesAction', function(): void {
+    it('extends XotBaseAction', function(): void {
         $action = new class('list_log_activities') extends XotBaseAction
         {
             protected function setUp(): void
@@ -53,7 +53,7 @@ describe('ListLogActivitiesAction', function (): void {
         expect($action)->toBeInstanceOf(XotBaseAction::class);
     });
 
-    it('has getDefaultName method that returns list_log_activities', function (): void {
+    it('has getDefaultName method that returns list_log_activities', function(): void {
         // Use reflection to check the static method
         $reflection = new \ReflectionClass(ListLogActivitiesAction::class);
         $method = $reflection->getMethod('getDefaultName');
@@ -62,7 +62,7 @@ describe('ListLogActivitiesAction', function (): void {
         expect($result)->toBe('list_log_activities');
     });
 
-    it('is a Filament action', function (): void {
+    it('is a Filament action', function(): void {
         $action = new class('list_log_activities') extends XotBaseAction
         {
             protected function setUp(): void
@@ -76,8 +76,8 @@ describe('ListLogActivitiesAction', function (): void {
     });
 });
 
-describe('CanPaginate trait', function (): void {
-    it('has required methods from trait', function (): void {
+describe('CanPaginate trait', function(): void {
+    it('has required methods from trait', function(): void {
         // Check the trait exists and has the expected methods
         $trait = new \ReflectionClass(CanPaginate::class);
 
@@ -91,36 +91,36 @@ describe('CanPaginate trait', function (): void {
         expect($trait->hasMethod('getRecordsPerPageSelectOptions'))->toBeTrue();
     });
 
-    it('trait has recordsPerPage property', function (): void {
+    it('trait has recordsPerPage property', function(): void {
         $trait = new \ReflectionClass(CanPaginate::class);
 
         expect($trait->hasProperty('recordsPerPage'))->toBeTrue();
     });
 
-    it('trait has defaultRecordsPerPageSelectOption property', function (): void {
+    it('trait has defaultRecordsPerPageSelectOption property', function(): void {
         $trait = new \ReflectionClass(CanPaginate::class);
 
         expect($trait->hasProperty('defaultRecordsPerPageSelectOption'))->toBeTrue();
     });
 
-    it('trait has getRecordsPerPageSelectOptions method', function (): void {
+    it('trait has getRecordsPerPageSelectOptions method', function(): void {
         $trait = new \ReflectionClass(CanPaginate::class);
 
         expect($trait->hasMethod('getRecordsPerPageSelectOptions'))->toBeTrue();
     });
 });
 
-describe('ActivityResource', function (): void {
-    it('can be instantiated', function (): void {
+describe('ActivityResource', function(): void {
+    it('can be instantiated', function(): void {
         $resource = new ActivityResource;
         expect($resource)->toBeInstanceOf(ActivityResource::class);
     });
 
-    it('has correct model', function (): void {
+    it('has correct model', function(): void {
         expect(ActivityResource::getModel())->toBe(Activity::class);
     });
 
-    it('has required form schema fields', function (): void {
+    it('has required form schema fields', function(): void {
         $schema = ActivityResource::getFormSchema();
 
         expect($schema)->toHaveKey('log_name');
@@ -133,22 +133,22 @@ describe('ActivityResource', function (): void {
         expect($schema)->toHaveKey('batch_uuid');
     });
 
-    it('has relations method', function (): void {
+    it('has relations method', function(): void {
         expect(method_exists(ActivityResource::class, 'getRelations'))->toBeTrue();
     });
 
-    it('has pages method', function (): void {
+    it('has pages method', function(): void {
         expect(method_exists(ActivityResource::class, 'getPages'))->toBeTrue();
     });
 });
 
-describe('EditActivity page', function (): void {
-    it('can be instantiated', function (): void {
+describe('EditActivity page', function(): void {
+    it('can be instantiated', function(): void {
         $page = new EditActivity;
         expect($page)->toBeInstanceOf(EditActivity::class);
     });
 
-    it('uses correct resource via getResource', function (): void {
+    it('uses correct resource via getResource', function(): void {
         // Use reflection to access protected static $resource
         $reflection = new \ReflectionClass(EditActivity::class);
         $property = $reflection->getProperty('resource');
@@ -158,19 +158,19 @@ describe('EditActivity page', function (): void {
         expect($resource)->toBe(ActivityResource::class);
     });
 
-    it('extends XotBaseEditRecord', function (): void {
+    it('extends XotBaseEditRecord', function(): void {
         $page = new EditActivity;
         expect($page)->toBeInstanceOf(XotBaseEditRecord::class);
     });
 });
 
-describe('ListActivities page', function (): void {
-    it('can be instantiated', function (): void {
+describe('ListActivities page', function(): void {
+    it('can be instantiated', function(): void {
         $page = new ListActivities;
         expect($page)->toBeInstanceOf(ListActivities::class);
     });
 
-    it('uses correct resource via getResource', function (): void {
+    it('uses correct resource via getResource', function(): void {
         $reflection = new \ReflectionClass(ListActivities::class);
         $property = $reflection->getProperty('resource');
         $property->setAccessible(true);
@@ -179,7 +179,7 @@ describe('ListActivities page', function (): void {
         expect($resource)->toBe(ActivityResource::class);
     });
 
-    it('has table columns', function (): void {
+    it('has table columns', function(): void {
         $page = new ListActivities;
         $columns = $page->getTableColumns();
 
@@ -193,17 +193,17 @@ describe('ListActivities page', function (): void {
     });
 });
 
-describe('SnapshotResource', function (): void {
-    it('can be instantiated', function (): void {
+describe('SnapshotResource', function(): void {
+    it('can be instantiated', function(): void {
         $resource = new SnapshotResource;
         expect($resource)->toBeInstanceOf(SnapshotResource::class);
     });
 
-    it('has correct model', function (): void {
+    it('has correct model', function(): void {
         expect(SnapshotResource::getModel())->toBe(Snapshot::class);
     });
 
-    it('has required form schema fields', function (): void {
+    it('has required form schema fields', function(): void {
         $schema = SnapshotResource::getFormSchema();
 
         expect($schema)->toHaveKey('model_type');
@@ -214,13 +214,13 @@ describe('SnapshotResource', function (): void {
     });
 });
 
-describe('ListSnapshots page', function (): void {
-    it('can be instantiated', function (): void {
+describe('ListSnapshots page', function(): void {
+    it('can be instantiated', function(): void {
         $page = new ListSnapshots;
         expect($page)->toBeInstanceOf(ListSnapshots::class);
     });
 
-    it('uses correct resource via getResource', function (): void {
+    it('uses correct resource via getResource', function(): void {
         $reflection = new \ReflectionClass(ListSnapshots::class);
         $property = $reflection->getProperty('resource');
         $property->setAccessible(true);
@@ -229,7 +229,7 @@ describe('ListSnapshots page', function (): void {
         expect($resource)->toBe(SnapshotResource::class);
     });
 
-    it('has table columns', function (): void {
+    it('has table columns', function(): void {
         $page = new ListSnapshots;
         $columns = $page->getTableColumns();
 
@@ -241,14 +241,14 @@ describe('ListSnapshots page', function (): void {
         expect($columns)->toHaveKey('updated_at');
     });
 
-    it('has table filters', function (): void {
+    it('has table filters', function(): void {
         $page = new ListSnapshots;
         $filters = $page->getTableFilters();
 
         expect($filters)->not->toBeEmpty();
     });
 
-    it('has table actions', function (): void {
+    it('has table actions', function(): void {
         $page = new ListSnapshots;
         $actions = $page->getTableActions();
 
@@ -257,7 +257,7 @@ describe('ListSnapshots page', function (): void {
         expect($actions)->toHaveKey('delete');
     });
 
-    it('has bulk actions', function (): void {
+    it('has bulk actions', function(): void {
         $page = new ListSnapshots;
         $bulkActions = $page->getTableBulkActions();
 
@@ -265,17 +265,17 @@ describe('ListSnapshots page', function (): void {
     });
 });
 
-describe('StoredEventResource', function (): void {
-    it('can be instantiated', function (): void {
+describe('StoredEventResource', function(): void {
+    it('can be instantiated', function(): void {
         $resource = new StoredEventResource;
         expect($resource)->toBeInstanceOf(StoredEventResource::class);
     });
 
-    it('has correct model', function (): void {
+    it('has correct model', function(): void {
         expect(StoredEventResource::getModel())->toBe(StoredEvent::class);
     });
 
-    it('has required form schema fields', function (): void {
+    it('has required form schema fields', function(): void {
         $schema = StoredEventResource::getFormSchema();
 
         expect($schema)->toHaveKey('event_class');
@@ -287,13 +287,13 @@ describe('StoredEventResource', function (): void {
     });
 });
 
-describe('ListStoredEvents page', function (): void {
-    it('can be instantiated', function (): void {
+describe('ListStoredEvents page', function(): void {
+    it('can be instantiated', function(): void {
         $page = new ListStoredEvents;
         expect($page)->toBeInstanceOf(ListStoredEvents::class);
     });
 
-    it('uses correct resource via getResource', function (): void {
+    it('uses correct resource via getResource', function(): void {
         $reflection = new \ReflectionClass(ListStoredEvents::class);
         $property = $reflection->getProperty('resource');
         $property->setAccessible(true);
@@ -302,7 +302,7 @@ describe('ListStoredEvents page', function (): void {
         expect($resource)->toBe(StoredEventResource::class);
     });
 
-    it('has table columns', function (): void {
+    it('has table columns', function(): void {
         $page = new ListStoredEvents;
         $columns = $page->getTableColumns();
 

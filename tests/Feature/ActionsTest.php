@@ -13,12 +13,12 @@ use Tests\TestCase;
 
 uses(TestCase::class);
 
-beforeEach(function (): void {
+beforeEach(function(): void {
     $this->user = User::factory()->create();
 });
 
-describe('ActivityLogger', function (): void {
-    it('logs simple activity', function (): void {
+describe('ActivityLogger', function(): void {
+    it('logs simple activity', function(): void {
         $logger = new ActivityLogger;
         $activity = $logger->log('test_event', $this->user);
 
@@ -27,7 +27,7 @@ describe('ActivityLogger', function (): void {
         expect($activity->causer_id)->toBe($this->user->id);
     });
 
-    it('logs created event', function (): void {
+    it('logs created event', function(): void {
         $logger = new ActivityLogger;
         $model = User::factory()->create();
 
@@ -38,7 +38,7 @@ describe('ActivityLogger', function (): void {
         expect($activity->subject_id)->toBe($model->id);
     });
 
-    it('logs updated event', function (): void {
+    it('logs updated event', function(): void {
         $logger = new ActivityLogger;
         $model = User::factory()->create();
 
@@ -49,7 +49,7 @@ describe('ActivityLogger', function (): void {
         expect($activity->subject_id)->toBe($model->id);
     });
 
-    it('logs deleted event', function (): void {
+    it('logs deleted event', function(): void {
         $logger = new ActivityLogger;
         $model = User::factory()->create();
 
@@ -60,7 +60,7 @@ describe('ActivityLogger', function (): void {
         expect($activity->subject_id)->toBe($model->id);
     });
 
-    it('logs login event', function (): void {
+    it('logs login event', function(): void {
         $logger = new ActivityLogger;
         $activity = $logger->login($this->user);
 
@@ -69,7 +69,7 @@ describe('ActivityLogger', function (): void {
         expect($activity->description)->toContain('User Test User logged in');
     });
 
-    it('logs logout event', function (): void {
+    it('logs logout event', function(): void {
         $logger = new ActivityLogger;
         $activity = $logger->logout($this->user);
 
@@ -79,8 +79,8 @@ describe('ActivityLogger', function (): void {
     });
 });
 
-describe('LogActivityAction', function (): void {
-    it('creates activity with user', function (): void {
+describe('LogActivityAction', function(): void {
+    it('creates activity with user', function(): void {
         $action = app(LogActivityAction::class);
         $activity = $action->execute(
             type: 'test_type',
@@ -93,8 +93,8 @@ describe('LogActivityAction', function (): void {
     });
 });
 
-describe('LogModelCreatedAction', function (): void {
-    it('logs model creation', function (): void {
+describe('LogModelCreatedAction', function(): void {
+    it('logs model creation', function(): void {
         $model = User::factory()->create();
         $action = app(LogModelCreatedAction::class);
 

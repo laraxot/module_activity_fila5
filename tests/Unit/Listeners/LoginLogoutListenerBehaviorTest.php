@@ -14,7 +14,7 @@ use Modules\User\Models\User;
 
 uses(TestCase::class);
 
-test('login listener handle executes without side effects', function (): void {
+test('login listener handle executes without side effects', function(): void {
     $listener = new LoginListener;
 
     $before = Activity::query()->count();
@@ -24,7 +24,7 @@ test('login listener handle executes without side effects', function (): void {
     expect($after)->toBe($before);
 });
 
-test('logout listener returns early when event has no user', function (): void {
+test('logout listener returns early when event has no user', function(): void {
     $listener = new LogoutListener;
     $event = new Logout('web', null);
 
@@ -35,7 +35,7 @@ test('logout listener returns early when event has no user', function (): void {
     expect($after)->toBe($before);
 });
 
-test('logout listener creates auth activity with expected properties', function (): void {
+test('logout listener creates auth activity with expected properties', function(): void {
     $user = new User([
         'id' => (string) Str::uuid(),
         'name' => 'Listener User',

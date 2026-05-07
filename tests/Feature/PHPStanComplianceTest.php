@@ -23,11 +23,11 @@ beforeEach(function () {
     }
 });
 
-test('phpstan placeholder', function (): void {
+test('phpstan placeholder', function(): void {
     expect(true)->toBeTrue();
 });
 
-test('classes extend correct base classes', function (): void {
+test('classes extend correct base classes', function(): void {
     $actionReflection = new ReflectionClass(ListLogActivitiesAction::class);
     expect($actionReflection->isSubclassOf(XotBaseAction::class))
         ->toBeTrue('ListLogActivitiesAction deve estendere XotBaseAction');
@@ -37,7 +37,7 @@ test('classes extend correct base classes', function (): void {
         ->toBeTrue('ListLogActivities deve estendere XotBasePage');
 });
 
-test('translations are properly structured', function (): void {
+test('translations are properly structured', function(): void {
     $actionsPath = base_path('Modules/Activity/lang/it/actions.php');
     $activitiesPath = base_path('Modules/Activity/lang/it/activities.php');
 
@@ -51,7 +51,7 @@ test('translations are properly structured', function (): void {
     expect($activitiesTranslations)->toBeArray()->and($activitiesTranslations)->toHaveKey('events');
 });
 
-test('service provider configuration', function (): void {
+test('service provider configuration', function(): void {
     $providerReflection = new ReflectionClass(ActivityServiceProvider::class);
     expect($providerReflection->isSubclassOf(XotBaseServiceProvider::class))
         ->toBeTrue('ActivityServiceProvider deve estendere XotBaseServiceProvider');
@@ -60,7 +60,7 @@ test('service provider configuration', function (): void {
     expect($provider->name)->toBe('Activity');
 });
 
-test('views exist and are structured', function (): void {
+test('views exist and are structured', function(): void {
     $viewPath = base_path('Modules/Activity/resources/views/filament/pages/list-log-activities.blade.php');
     expect(file_exists($viewPath))->toBeTrue();
 

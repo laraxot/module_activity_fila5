@@ -47,7 +47,7 @@ function activityAssertPhpFileHasValidSyntax(string $filePath): void
     expect($resultCode)->toBe(0, "File {$filePath} ha errori di sintassi: ".implode("\n", $output));
 }
 
-test('all php files have valid syntax', function (): void {
+test('all php files have valid syntax', function(): void {
     $modulePath = base_path('Modules/Activity');
     $phpFiles = activityFindPhpFiles($modulePath);
 
@@ -56,13 +56,13 @@ test('all php files have valid syntax', function (): void {
     }
 });
 
-test('main classes exist and are instantiable', function (): void {
+test('main classes exist and are instantiable', function(): void {
     expect(class_exists(ActivityServiceProvider::class))->toBeTrue();
     expect(class_exists(ListLogActivitiesAction::class))->toBeTrue();
     expect(class_exists(ListLogActivities::class))->toBeTrue();
 });
 
-test('configuration files exist', function (): void {
+test('configuration files exist', function(): void {
     $configPath = base_path('Modules/Activity/config/config.php');
     expect(file_exists($configPath))->toBeTrue();
 
@@ -70,7 +70,7 @@ test('configuration files exist', function (): void {
     expect($config)->toBeArray();
 });
 
-test('translations exist and are structured', function (): void {
+test('translations exist and are structured', function(): void {
     $actionsTranslationsPath = base_path('Modules/Activity/lang/it/actions.php');
     $activitiesTranslationsPath = base_path('Modules/Activity/lang/it/activities.php');
 
@@ -84,7 +84,7 @@ test('translations exist and are structured', function (): void {
     expect($activitiesTranslations)->toBeArray()->and($activitiesTranslations)->toHaveKey('events');
 });
 
-test('views exist and are valid', function (): void {
+test('views exist and are valid', function(): void {
     $viewPath = base_path('Modules/Activity/resources/views/filament/pages/list-log-activities.blade.php');
     expect(file_exists($viewPath))->toBeTrue();
 
@@ -92,13 +92,13 @@ test('views exist and are valid', function (): void {
     expect($viewContent)->toBeString()->and($viewContent)->toContain('getActivities()')->toContain('getFieldLabel');
 });
 
-test('service provider configuration', function (): void {
+test('service provider configuration', function(): void {
     $provider = new ActivityServiceProvider(app());
 
     expect($provider->name)->toBe('Activity')->and($provider->name)->not->toBeEmpty();
 });
 
-test('documentation is up to date', function (): void {
+test('documentation is up to date', function(): void {
     $readmePath = base_path('Modules/Activity/docs/README.md');
     expect(file_exists($readmePath))->toBeTrue();
 
