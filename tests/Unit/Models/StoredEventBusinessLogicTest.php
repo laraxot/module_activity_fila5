@@ -51,7 +51,6 @@ describe('StoredEvent Business Logic', function (): void {
     });
 
     test('stored event extends eloquent stored event for event sourcing', function (): void {
-        // @phpstan-ignore-next-line - is_subclass_of with class strings is always true for existing inheritance
         expect(is_subclass_of(
             StoredEvent::class,
             EloquentStoredEvent::class,

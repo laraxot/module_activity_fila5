@@ -21,7 +21,6 @@ beforeEach(function () {
 });
 
 it('can create activity with basic information', function () {
-    $user = User::factory()->create(); // @phpstan-ignore-line method.nonObject
     \assert($user instanceof User);
 
     $activity = Activity::create([
