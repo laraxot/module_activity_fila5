@@ -22,7 +22,7 @@ beforeEach(function () {
     }
 });
 
-it('can create stored event with basic information', function (): void {
+it('can create stored event with basic information', function(): void {
     $eventData = [
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
@@ -58,7 +58,7 @@ it('can create stored event with basic information', function (): void {
     $this->assertSame('App\\Events\\UserCreated', $storedEvent->event_class);
 });
 
-it('can create stored event with complex properties', function (): void {
+it('can create stored event with complex properties', function(): void {
     $complexProperties = [
         'order_data' => [
             'order_id' => 'ORD-12345',
@@ -162,7 +162,7 @@ it('can create stored event with complex properties', function (): void {
     $this->assertSame('iOS', $deviceInfo['platform']);
 });
 
-it('can manage event versioning', function (): void {
+it('can manage event versioning', function(): void {
     $aggregateUuid = Str::uuid()->toString();
 
     // Crea eventi con versioni progressive
@@ -213,7 +213,7 @@ it('can manage event versioning', function (): void {
     $this->assertSame(3, $event3->event_version);
 });
 
-it('can query events by aggregate uuid', function (): void {
+it('can query events by aggregate uuid', function(): void {
     $uuid1 = Str::uuid()->toString();
     $uuid2 = Str::uuid()->toString();
 
@@ -266,7 +266,7 @@ it('can query events by aggregate uuid', function (): void {
     $this->assertSame($uuid2, $first2->aggregate_uuid);
 });
 
-it('can query events by event class', function (): void {
+it('can query events by event class', function(): void {
     $uuid = Str::uuid()->toString();
 
     StoredEvent::create([
@@ -322,7 +322,7 @@ it('can query events by event class', function (): void {
     $this->assertSame('App\\Events\\UserDeleted', $firstDeleted->event_class);
 });
 
-it('can handle event with empty properties', function (): void {
+it('can handle event with empty properties', function(): void {
     $storedEvent = StoredEvent::create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
@@ -343,7 +343,7 @@ it('can handle event with empty properties', function (): void {
     $this->assertEmpty($storedEvent->event_properties);
 });
 
-it('can handle event with null properties', function (): void {
+it('can handle event with null properties', function(): void {
     $storedEvent = StoredEvent::create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
@@ -367,7 +367,7 @@ it('can handle event with null properties', function (): void {
     $this->assertSame([], $storedEvent->meta_data->toArray());
 });
 
-it('can restore event from stored event', function (): void {
+it('can restore event from stored event', function(): void {
     $originalProperties = [
         'user_id' => 789,
         'action' => 'profile_update',
@@ -398,7 +398,7 @@ it('can restore event from stored event', function (): void {
     $this->assertSame($originalProperties, $restoredProperties);
 });
 
-it('can compare event versions', function (): void {
+it('can compare event versions', function(): void {
     $uuid = Str::uuid()->toString();
 
     $event1 = StoredEvent::create([
@@ -447,7 +447,7 @@ it('can compare event versions', function (): void {
     $this->assertSame('Final data', $event3->event_properties['data']);
 });
 
-it('can handle event with timestamps', function (): void {
+it('can handle event with timestamps', function(): void {
     $now = now();
 
     $storedEvent = StoredEvent::create([
@@ -471,7 +471,7 @@ it('can handle event with timestamps', function (): void {
     $this->assertSame($now->timestamp, $createdAt->timestamp);
 });
 
-it('can query events by date range', function (): void {
+it('can query events by date range', function(): void {
     $yesterday = now()->subDay();
     $today = now();
     $tomorrow = now()->addDay();
@@ -519,7 +519,7 @@ it('can query events by date range', function (): void {
     $this->assertCount(2, $recentEvents);
 });
 
-it('can handle event with metadata', function (): void {
+it('can handle event with metadata', function(): void {
     $metadata = [
         'source' => 'web_interface',
         'user_id' => 1010,

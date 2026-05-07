@@ -9,7 +9,7 @@ use Modules\Activity\Tests\TestCase;
 
 uses(TestCase::class);
 
-test('activity service provider exposes expected metadata', function (): void {
+test('activity service provider exposes expected metadata', function(): void {
     $provider = new ActivityServiceProvider(app());
 
     $reflection = new \ReflectionClass($provider);
@@ -28,7 +28,7 @@ test('activity service provider exposes expected metadata', function (): void {
         ->and($moduleNs->getValue($provider))->toBe('Modules\\Activity\\Providers');
 });
 
-test('activity service provider registerConfig publishes and merges config', function (): void {
+test('activity service provider registerConfig publishes and merges config', function(): void {
     $provider = new ActivityServiceProvider(app());
 
     $method = new \ReflectionMethod($provider, 'registerConfig');
