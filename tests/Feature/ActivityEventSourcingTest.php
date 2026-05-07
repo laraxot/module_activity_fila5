@@ -25,8 +25,7 @@ beforeEach(function () {
 });
 
 test('activity event sourcing lifecycle works correctly', function () {
-    $user = User::factory()->create(); // @phpstan-ignore-line method.nonObject // @phpstan-ignore-line method.nonObject
-    \assert($user instanceof User);
+    $user = User::factory()->create();
     $this->assertNotNull($user);
 
     $activityData = [
@@ -59,34 +58,32 @@ test('activity event sourcing lifecycle works correctly', function () {
 });
 
 test('activity can be queried with complex scopes', function () {
-    $user1 = User::factory()->create(); // @phpstan-ignore-line method.nonObject
-    \assert($user1 instanceof User);
+    $user1 = User::factory()->create();
+    $user2 = User::factory()->create();
     $this->assertNotNull($user1);
-
-    $user2 = User::factory()->create(); // @phpstan-ignore-line method.nonObject
-    \assert($user2 instanceof User);
     $this->assertNotNull($user2);
 
-    $activity1 = Activity::factory()->create([ // @phpstan-ignore-line method.nonObject
+    $activity1 = Activity::query()->create([
         'log_name' => 'security',
+        'description' => 'Login event',
         'event' => 'login',
         'causer_type' => User::class,
         'causer_id' => $user1->id,
     ]);
-    \assert($activity1 instanceof Activity);
     $this->assertNotNull($activity1);
 
-    $activity2 = Activity::factory()->create([ // @phpstan-ignore-line method.nonObject
+    $activity2 = Activity::query()->create([
         'log_name' => 'security',
+        'description' => 'Logout event',
         'event' => 'logout',
         'causer_type' => User::class,
         'causer_id' => $user2->id,
     ]);
-    \assert($activity2 instanceof Activity);
     $this->assertNotNull($activity2);
 
-    $activity3 = Activity::factory()->create([ // @phpstan-ignore-line method.nonObject
+    $activity3 = Activity::query()->create([
         'log_name' => 'audit',
+        'description' => 'Update event',
         'event' => 'update',
         'causer_type' => User::class,
         'causer_id' => $user1->id,
@@ -215,9 +212,25 @@ test('stored event creation and event reconstruction works', function () {
 test('activity batch operations work correctly', function () {
     $batchUuid = Str::uuid()->toString();
 
-    $activities = Activity::factory()->count(3)->create([ // @phpstan-ignore-line method.nonObject
-        'batch_uuid' => $batchUuid,
-        'log_name' => 'batch_operation',
+    $activities = collect([
+        Activity::query()->create([
+            'batch_uuid' => $batchUuid,
+            'log_name' => 'batch_operation',
+            'description' => 'Batch operation step 1',
+            'event' => 'created',
+        ]),
+        Activity::query()->create([
+            'batch_uuid' => $batchUuid,
+            'log_name' => 'batch_operation',
+            'description' => 'Batch operation step 2',
+            'event' => 'created',
+        ]),
+        Activity::query()->create([
+            'batch_uuid' => $batchUuid,
+            'log_name' => 'batch_operation',
+            'description' => 'Batch operation step 3',
+            'event' => 'created',
+        ]),
     ]);
     \assert($activities instanceof Collection);
     $this->assertCount(3, $activities);
@@ -235,11 +248,13 @@ test('activity batch operations work correctly', function () {
 
 test('activity with batch scope returns correct results', function () {
     $batchUuid = Str::uuid()->toString();
-    $withBatch = Activity::factory()->create(['batch_uuid' => $batchUuid]); // @phpstan-ignore-line method.nonObject
-    \assert($withBatch instanceof Activity);
+    $withBatch = Activity::query()->create([
+        'log_name' => 'default',
+        'description' => 'Activity with batch uuid',
+        'event' => 'created',
+        'batch_uuid' => $batchUuid,
+    ]);
     $this->assertNotNull($withBatch);
-
-    Activity::factory()->create(['batch_uuid' => null]); // @phpstan-ignore-line method.nonObject
 
     // Scope to our test data: hasBatch filters non-null batch_uuid
     $activitiesWithBatch = Activity::hasBatch()->whereKey($withBatch->id)->get();
