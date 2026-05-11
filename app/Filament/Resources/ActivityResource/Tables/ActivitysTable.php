@@ -2,19 +2,22 @@
 
 declare(strict_types=1);
 
-namespace Modules\Activity\Filament\Resources\StoredEventResource\Tables;
+namespace Modules\Activity\Filament\Resources\ActivityResource\Tables;
 
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
-class StoredEventsTable extends XotBaseResourceTable
+class ActivitysTable extends XotBaseResourceTable
 {
+    /**
+     * @return array<string, \Filament\Tables\Columns\Column>
+     */
     public static function getTableColumns(): array
     {
         return [
             'id' => TextColumn::make('id')->searchable()->sortable(),
-            'event_class' => TextColumn::make('event_class')->searchable(),
-            'properties' => TextColumn::make('properties')->limit(50),
+            'log_name' => TextColumn::make('log_name')->searchable(),
+            'description' => TextColumn::make('description')->searchable(),
             'created_at' => TextColumn::make('created_at')->dateTime(),
         ];
     }

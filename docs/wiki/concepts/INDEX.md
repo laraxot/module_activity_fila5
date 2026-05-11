@@ -1,12 +1,12 @@
-# Activity Module - memories Index
+# Activity Module - concepts Index
 
 ## Purpose
-Index for Activity module memories.
+Index for Activity module concepts.
 
 ## On-Demand Loading
 
 ```bash
-qmd search "Activity memories" --limit 5
+qmd search "Activity concepts" --limit 5
 ```
 
 ## See Also
