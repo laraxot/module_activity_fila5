@@ -11,11 +11,12 @@ module: "Activity"
 
 ### Format
 
-```
+```text
 [YYYY-MM-DD HH:MM:SS UTC] [OPERATION] Description
 ```
 
 **Operations:**
+
 - `INGEST` — Added raw document to wiki
 - `QUERY` — Answered question from wiki
 - `LINT` — Maintained wiki quality
