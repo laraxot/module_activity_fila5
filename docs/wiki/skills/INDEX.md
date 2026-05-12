@@ -1,17 +1,25 @@
-# Activity Module - skills Index
+---
+title: "Skills Index"
+type: "index"
+tags: [skills, activity, filament, xotbase]
+module: "Activity"
+updated: 2026-05-12
+---
 
-## Purpose
-Index for Activity module skills.
+# Skills — Activity Module Wiki
 
-## On-Demand Loading
+> Skill on-demand rilevanti per il modulo Activity.
+
+## Available Skills
+
+- [filament-page-creation](../../../../Xot/docs/wiki/skills/filament-page-creation.md) — skill condivisa Xot per creare page Filament coerenti con XotBase
+
+## Usage
 
 ```bash
-qmd search "Activity skills" --limit 5
+qmd search "Activity module skill filament xotbase" --limit 5
 ```
 
-## See Also
-- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
-- [Root Wiki](../../../docs/wiki/)
-
 ---
-*Updated: 2026-05-11*
+
+**Upstream:** [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
