@@ -26,6 +26,17 @@ class ActivityResource extends XotBaseResource
 {
     protected static ?string $model = Activity::class;
 
+    /**
+     * Required by XotBaseResource abstract contract.
+     * Actual form configuration is auto-discovered from ActivityResource/Schemas/ActivityForm::configure().
+     *
+     * @return array<string, \Filament\Support\Components\Component>
+     */
+    public static function getFormSchema(): array
+    {
+        return [];
+    }
+
     #[Override]
     public static function getPages(): array
     {
