@@ -4,16 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\ActivityResource\Tables;
 
+use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
-/**
- * ActivitiesTable Schema.
- */
 class ActivitiesTable extends XotBaseResourceTable
 {
     /**
-     * @return array<string, TextColumn>
+     * @return array<string, Column>
      */
     public static function getTableColumns(): array
     {
