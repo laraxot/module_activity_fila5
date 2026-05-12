@@ -7,6 +7,7 @@ namespace Modules\Activity\Filament\Resources;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages\CreateActivity;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages\EditActivity;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages\ListActivities;
+use Modules\Activity\Filament\Resources\ActivityResource\Schemas\ActivityForm;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
@@ -25,6 +26,14 @@ use Override;
 class ActivityResource extends XotBaseResource
 {
     protected static ?string $model = Activity::class;
+
+    /**
+     * @return array<int|string, \Filament\Forms\Components\Component>
+     */
+    public static function getFormSchema(): array
+    {
+        return ActivityForm::getFormSchema();
+    }
 
     #[Override]
     public static function getPages(): array
