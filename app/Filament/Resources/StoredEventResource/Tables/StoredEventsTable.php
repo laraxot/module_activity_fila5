@@ -9,6 +9,9 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class StoredEventsTable extends XotBaseResourceTable
 {
+    /**
+     * @return array<int|string, \Filament\Tables\Columns\Column>
+     */
     public static function getTableColumns(): array
     {
         return [
@@ -16,6 +19,7 @@ class StoredEventsTable extends XotBaseResourceTable
             'event_class' => TextColumn::make('event_class')->searchable(),
             'properties' => TextColumn::make('properties')->limit(50),
             'created_at' => TextColumn::make('created_at')->dateTime(),
+            'updated_at' => TextColumn::make('updated_at')->dateTime(),
         ];
     }
 }
