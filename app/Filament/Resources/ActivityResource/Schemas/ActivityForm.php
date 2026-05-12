@@ -6,13 +6,12 @@ namespace Modules\Activity\Filament\Resources\ActivityResource\Schemas;
 
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class ActivityForm extends XotBaseResourceForm
 {
     /**
-     * @return array<string, Component>
+     * @return array<int|string, \Filament\Forms\Components\Component>
      */
     public static function getFormSchema(): array
     {
