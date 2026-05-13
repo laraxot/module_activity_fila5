@@ -14,9 +14,6 @@ class ActivitysTable extends XotBaseResourceTable
      */
     public static function getTableColumns(): array
     {
-    /**
-     * @return array<int\|string, \Filament\Tables\Columns\Column>
-     */
         return [
             'id' => TextColumn::make('id')->searchable()->sortable(),
             'log_name' => TextColumn::make('log_name')->searchable(),
