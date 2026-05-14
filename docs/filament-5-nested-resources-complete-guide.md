@@ -160,6 +160,7 @@ class LessonResource extends Resource
 ```php
 <?php
 
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 =======
@@ -175,6 +176,7 @@ use Filament\Tables;
 use Filament\Forms;
 use Filament\Tables\Table;
 use Filament\Forms\Form;
+<<<<<<< HEAD
 use Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 =======
@@ -288,6 +290,7 @@ class LessonResource extends Resource
 ```php
 <?php
 
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 =======
@@ -323,6 +326,7 @@ class LessonsRelationManager extends RelationManager
 ```php
 <?php
 
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 =======
@@ -569,6 +573,7 @@ dd($this->getRouteKey(), $this->getRecord());
 public function test_nested_resource_routing()
 {
     $course = Course::factory()->create();
+<<<<<<< HEAD
 $response = $this->get(route('filament.Quaeris.resources.courses.resources.lessons.list', [
     $response = $this->get(route('filament.healthcare_app.resources.courses.resources.lessons.list', [
 =======
@@ -591,6 +596,7 @@ $response = $this->get(route('filament.Quaeris.resources.courses.resources.lesso
 - **API Reference**: https://filamentphp.com/docs/5.x/api/resources/nested-resources
 - **Plugin Guava**: https://filamentphp.com/plugins/guava-nested-resources
 
+<<<<<<< HEAD
 ## 🔄 **Integrazione con Quaeris**
 ## 🔄 **Integrazione con healthcare_app**
 =======
