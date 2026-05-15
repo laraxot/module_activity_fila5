@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources;
 
+use Filament\Support\Components\Component;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages\CreateActivity;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages\EditActivity;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages\ListActivities;
@@ -29,7 +30,7 @@ class ActivityResource extends XotBaseResource
      * Required by XotBaseResource abstract contract.
      * Actual form configuration is auto-discovered from ActivityResource/Schemas/ActivityForm::configure().
      *
-     * @return array<string, \Filament\Support\Components\Component>
+     * @return array<string, Component>
      */
     public static function getFormSchema(): array
     {
