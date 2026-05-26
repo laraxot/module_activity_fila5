@@ -64,10 +64,7 @@ abstract class ListLogActivities extends XotBasePage
 
         // Convert to string (__() returns string|array|null)
         if (is_array($breadcrumb)) {
-            return implode(' ', array_map(
-                static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
-                $breadcrumb
-            ));
+            return implode(' ', $breadcrumb);
         }
 
         return (string) $breadcrumb;
@@ -87,10 +84,7 @@ abstract class ListLogActivities extends XotBasePage
 
         // __() returns string|array|null
         if (is_array($title)) {
-            return implode(' ', array_map(
-                static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
-                $title
-            ));
+            return implode(' ', $title);
         }
 
         return (string) $title;
@@ -259,12 +253,7 @@ abstract class ListLogActivities extends XotBasePage
     protected function sendRestoreSuccessNotification(): Notification
     {
         $title = __('activity::activities.events.restore_successful');
-        $titleString = is_array($title)
-            ? implode(' ', array_map(
-                static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
-                $title
-            ))
-            : (string) $title;
+        $titleString = is_array($title) ? implode(' ', $title) : (string) $title;
 
         return Notification::make()
             ->title($titleString)
@@ -275,12 +264,7 @@ abstract class ListLogActivities extends XotBasePage
     protected function sendRestoreFailureNotification(?string $message = null): Notification
     {
         $title = __('activity::activities.events.restore_failed');
-        $titleString = is_array($title)
-            ? implode(' ', array_map(
-                static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
-                $title
-            ))
-            : (string) $title;
+        $titleString = is_array($title) ? implode(' ', $title) : (string) $title;
 
         $notification = Notification::make()
             ->title($titleString)

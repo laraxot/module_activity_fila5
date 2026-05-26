@@ -24,13 +24,11 @@ beforeEach(function () {
 });
 
 test('activity module models work together in integrated scenarios', function () {
-    $user = User::factory()->create();
+    $user = User::factory()->create(['email' => Str::uuid()->toString().'@example.com']); // @phpstan-ignore-line method.nonObject
+    \assert($user instanceof User);
     expect($user)->not->toBeNull();
 
-    $activity = Activity::query()->create([
-        'log_name' => 'user_registration',
-        'description' => 'User registered',
-        'event' => 'created',
+    $activity = Activity::factory()->create([ // @phpstan-ignore-line method.nonObject
         'causer_type' => User::class,
         'causer_id' => $user->id,
         'subject_type' => User::class,
@@ -45,9 +43,8 @@ test('activity module models work together in integrated scenarios', function ()
 
     $aggregateUuid = Str::uuid()->toString();
 
-    $snapshot = Snapshot::create([
+    $snapshot = Snapshot::factory()->create([ // @phpstan-ignore-line method.nonObject
         'aggregate_uuid' => $aggregateUuid,
-        'aggregate_version' => 1,
         'state' => [
             'user' => $user->toArray(),
             'activities' => [$activity->toArray()],
@@ -106,26 +103,20 @@ test('activity batch processing with multiple models', function () {
     $batchUuid = Str::uuid()->toString();
     $aggregateUuid = Str::uuid()->toString();
 
-    $user = User::factory()->create();
+    $user = User::factory()->create(); // @phpstan-ignore-line method.nonObject
+    \assert($user instanceof User);
     expect($user)->not->toBeNull();
 
-    $activities = new Collection;
-    for ($i = 0; $i < 5; $i++) {
-        $activities->push(Activity::query()->create([
-            'log_name' => 'batch_processing',
-            'description' => "Batch activity {$i}",
-            'event' => 'created',
-            'batch_uuid' => $batchUuid,
-            'causer_type' => User::class,
-            'causer_id' => $user->id,
-        ]));
-    }
+    $activities = Activity::factory()->count(5)->create([ // @phpstan-ignore-line method.nonObject
+        'batch_uuid' => $batchUuid,
+        'causer_type' => User::class,
+        'causer_id' => $user->id,
+    ]);
     \assert($activities instanceof Collection);
     expect($activities)->toHaveCount(5);
 
-    $snapshot = Snapshot::create([
+    $snapshot = Snapshot::factory()->create([ // @phpstan-ignore-line method.nonObject
         'aggregate_uuid' => $aggregateUuid,
-        'aggregate_version' => 1,
         'state' => [
             'batch_id' => $batchUuid,
             'activities_count' => $activities->count(),
@@ -180,7 +171,8 @@ test('activity batch processing with multiple models', function () {
 });
 
 test('activity module handles concurrent operations correctly', function () {
-    $user = User::factory()->create();
+    $user = User::factory()->create(); // @phpstan-ignore-line method.nonObject
+    \assert($user instanceof User);
     expect($user)->not->toBeNull();
 
     $concurrentActivities = [];
@@ -190,10 +182,7 @@ test('activity module handles concurrent operations correctly', function () {
 
     for ($i = 0; $i < 10; $i++) {
         $promises[] = function () use ($user, &$concurrentActivities, &$concurrentSnapshots, $i) {
-            $activity = Activity::query()->create([
-                'log_name' => 'concurrent',
-                'description' => "Concurrent activity {$i}",
-                'event' => 'created',
+            $activity = Activity::factory()->create([ // @phpstan-ignore-line method.nonObject
                 'causer_type' => User::class,
                 'causer_id' => $user->id,
                 'properties' => ['iteration' => $i, 'timestamp' => now()->toISOString()],
@@ -204,9 +193,7 @@ test('activity module handles concurrent operations correctly', function () {
             $concurrentActivities[] = $activity->id;
 
             if ($i % 2 === 0) {
-                $snapshot = Snapshot::create([
-                    'aggregate_uuid' => Str::uuid()->toString(),
-                    'aggregate_version' => 1,
+                $snapshot = Snapshot::factory()->create([ // @phpstan-ignore-line method.nonObject
                     'state' => [
                         'activity_id' => $activity->id,
                         'iteration' => $i,
@@ -239,56 +226,28 @@ test('activity module handles concurrent operations correctly', function () {
 });
 
 test('activity module supports complex query patterns', function () {
-    $user1 = User::factory()->create();
-    $user2 = User::factory()->create();
+    $user1 = User::factory()->create(); // @phpstan-ignore-line method.nonObject
+    \assert($user1 instanceof User);
     expect($user1)->not->toBeNull();
+
+    $user2 = User::factory()->create(); // @phpstan-ignore-line method.nonObject
+    \assert($user2 instanceof User);
     expect($user2)->not->toBeNull();
 
-    $securityActivities = new Collection([
-        Activity::query()->create([
-            'log_name' => 'security',
-            'description' => 'Security event 1',
-            'event' => 'view',
-            'causer_type' => User::class,
-            'causer_id' => $user1->id,
-        ]),
-        Activity::query()->create([
-            'log_name' => 'security',
-            'description' => 'Security event 2',
-            'event' => 'view',
-            'causer_type' => User::class,
-            'causer_id' => $user1->id,
-        ]),
-        Activity::query()->create([
-            'log_name' => 'security',
-            'description' => 'Security event 3',
-            'event' => 'view',
-            'causer_type' => User::class,
-            'causer_id' => $user1->id,
-        ]),
+    $securityActivities = Activity::factory()->count(3)->create([ // @phpstan-ignore-line method.nonObject
+        'log_name' => 'security',
+        'causer_type' => User::class,
+        'causer_id' => $user1->id,
     ]);
 
-    $auditActivities = new Collection([
-        Activity::query()->create([
-            'log_name' => 'audit',
-            'description' => 'Audit event 1',
-            'event' => 'updated',
-            'causer_type' => User::class,
-            'causer_id' => $user2->id,
-        ]),
-        Activity::query()->create([
-            'log_name' => 'audit',
-            'description' => 'Audit event 2',
-            'event' => 'updated',
-            'causer_type' => User::class,
-            'causer_id' => $user2->id,
-        ]),
+    $auditActivities = Activity::factory()->count(2)->create([ // @phpstan-ignore-line method.nonObject
+        'log_name' => 'audit',
+        'causer_type' => User::class,
+        'causer_id' => $user2->id,
     ]);
 
-    Activity::query()->create([
+    $applicationActivities = Activity::factory()->count(4)->create([ // @phpstan-ignore-line method.nonObject
         'log_name' => 'application',
-        'description' => 'Application log (excluded from security/audit filter)',
-        'event' => 'info',
         'causer_type' => User::class,
         'causer_id' => $user1->id,
     ]);
@@ -317,15 +276,13 @@ test('activity module supports complex query patterns', function () {
 });
 
 test('activity module handles data consistency across models', function () {
-    $user = User::factory()->create();
+    $user = User::factory()->create(); // @phpstan-ignore-line method.nonObject
+    \assert($user instanceof User);
     expect($user)->not->toBeNull();
 
     $aggregateUuid = Str::uuid()->toString();
 
-    $activity = Activity::query()->create([
-        'log_name' => 'data_consistency',
-        'description' => 'Data consistency test',
-        'event' => 'created',
+    $activity = Activity::factory()->create([ // @phpstan-ignore-line method.nonObject
         'causer_type' => User::class,
         'causer_id' => $user->id,
         'properties' => ['action' => 'data_consistency_test'],
@@ -333,9 +290,8 @@ test('activity module handles data consistency across models', function () {
     \assert($activity instanceof Activity);
     expect($activity)->not->toBeNull();
 
-    $snapshot = Snapshot::create([
+    $snapshot = Snapshot::factory()->create([ // @phpstan-ignore-line method.nonObject
         'aggregate_uuid' => $aggregateUuid,
-        'aggregate_version' => 1,
         'state' => [
             'activity_id' => $activity->id,
             'user_id' => $user->id,
@@ -405,7 +361,8 @@ test('activity module handles data consistency across models', function () {
 });
 
 test('activity module supports bulk operations efficiently', function () {
-    $user = User::factory()->create();
+    $user = User::factory()->create(); // @phpstan-ignore-line method.nonObject
+    \assert($user instanceof User);
     expect($user)->not->toBeNull();
 
     $activitiesData = [];
