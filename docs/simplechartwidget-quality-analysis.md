@@ -765,14 +765,9 @@ protected function getData(): array
 # ✅ Zero errori dopo refactoring
 <<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
-./vendor/bin/phpstan analyse Modules/healthcare_app/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
-=======
-<<<<<<< HEAD
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
 =======
 ./vendor/bin/phpstan analyse Modules/healthcare_app/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
 ```
 
 ### Testing Coverage
@@ -780,14 +775,9 @@ protected function getData(): array
 # ✅ 100% coverage per metodi principali
 <<<<<<< HEAD
 ./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
-./vendor/bin/phpunit --coverage-html=coverage Modules/healthcare_app/tests/Unit/SimpleChartWidgetTest.php
-=======
-<<<<<<< HEAD
-./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
 =======
 ./vendor/bin/phpunit --coverage-html=coverage Modules/healthcare_app/tests/Unit/SimpleChartWidgetTest.php
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
 ```
 
 ### Performance Metrics

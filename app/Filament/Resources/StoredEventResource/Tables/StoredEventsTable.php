@@ -10,24 +10,16 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 class StoredEventsTable extends XotBaseResourceTable
 {
     /**
-     * @return array<string, TextColumn>
+     * @return array<int|string, \Filament\Tables\Columns\Column>
      */
-    public static function getTableColumns(): array
+    public function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id')
-                ->sortable(),
-            'event_class' => TextColumn::make('event_class')
-                ->searchable()
-                ->sortable(),
-            'aggregate_uuid' => TextColumn::make('aggregate_uuid')
-                ->searchable()
-                ->sortable(),
-            'aggregate_version' => TextColumn::make('aggregate_version')
-                ->sortable(),
-            'created_at' => TextColumn::make('created_at')
-                ->dateTime()
-                ->sortable(),
+            'id' => TextColumn::make('id')->searchable()->sortable(),
+            'event_class' => TextColumn::make('event_class')->searchable(),
+            'properties' => TextColumn::make('properties')->limit(50),
+            'created_at' => TextColumn::make('created_at')->dateTime(),
+            'updated_at' => TextColumn::make('updated_at')->dateTime(),
         ];
     }
 }

@@ -113,20 +113,6 @@ class Activity extends SpatieActivity
 
     protected $table = 'activity_log';
 
-    /** @var list<string> */
-    protected $fillable = [
-        'id',
-        'log_name',
-        'description',
-        'subject_type',
-        'event',
-        'subject_id',
-        'causer_type',
-        'causer_id',
-        'properties',
-        'batch_uuid',
-    ];
-
     /**
      * @param  array<string, mixed>  $attributes
      */
@@ -138,6 +124,19 @@ class Activity extends SpatieActivity
             $this->connection = is_string($default) ? $default : 'mysql';
         }
     }
+
+    /** @var list<string> */
+    protected $fillable = [
+        'id',
+        'log_name',
+        'description',
+        'subject_type',
+        'event',
+        'subject_id',
+        'causer_type',
+        'causer_id',
+        'properties',
+    ];
 
     /**
      * Get the attributes that should be cast.

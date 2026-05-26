@@ -136,14 +136,9 @@ Event Store ← Snapshot ← Aggregate ← Event Sourcing
 - **Tenant**: Multi-tenancy isolation
 <<<<<<< HEAD
 - **Quaeris**: Dashboard activity tracking
-- **healthcare_app**: Dashboard activity tracking
-=======
-<<<<<<< HEAD
-- **Quaeris**: Dashboard activity tracking
 =======
 - **healthcare_app**: Dashboard activity tracking
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
 
 ## Lacune e Funzionalità Mancanti
 
