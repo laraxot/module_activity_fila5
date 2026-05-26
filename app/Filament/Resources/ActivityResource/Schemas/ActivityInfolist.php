@@ -10,7 +10,7 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 class ActivityInfolist extends XotBaseResourceInfolist
 {
     /**
-     * @return array<int|string, \Filament\Infolists\Components\Component>
+     * @return array<string, \Filament\Schemas\Components\Component>
      */
     public static function getInfolistSchema(): array
     {
