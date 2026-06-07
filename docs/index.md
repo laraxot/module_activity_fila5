@@ -2,6 +2,8 @@
 
 ## Overview
 The Activity module provides comprehensive activity logging and tracking functionality for the Laraxot system. It records user actions, system events, and business operations to enable audit trails, analytics, and monitoring.
+**
+**Status**: Active Development
 
 ## Key Features
 - **Activity Logging**: Automatic logging of user and system activities
@@ -59,6 +61,9 @@ The module can be configured through the `config/activity.php` file:
 4. **Privacy Compliance**: Ensure activity logging complies with data protection regulations
 
 ## Related Modules
+- [User Module](../User/docs/README.md) - User authentication and management
+- [Notify Module](../Notify/docs/index.md) - Notification system
+- [Xot Module](../Xot/docs/index.md) - Core base classes
 - [User Module](../user/docs/readme.md) - User authentication and management
 - [Notify Module](../notify/docs/index.md) - Notification system
 - [Xot Module](../xot/docs/index.md) - Core base classes
@@ -68,3 +73,5 @@ Common issues and solutions:
 - Database performance with large activity logs
 - Missing activity entries
 - Configuration issues
+
+- [Conflict Resolution](conflict-resolution.md)

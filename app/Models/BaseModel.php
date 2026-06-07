@@ -15,7 +15,7 @@ use Modules\Xot\Models\XotBaseModel;
  * - Updater trait
  * - Standard casts (published_at, timestamps, audit fields)
  *
- * @see \Modules\Xot\Models\XotBaseModel
+ * @see XotBaseModel
  */
 abstract class BaseModel extends XotBaseModel
 {

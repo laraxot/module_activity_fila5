@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Modules\Activity\Tests\Feature;
-
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Str;
 use Modules\Activity\Models\Activity;
@@ -14,7 +12,7 @@ use Modules\User\Models\User;
 uses(\Modules\Activity\Tests\TestCase::class);
 
 test('activity module models work together in integrated scenarios', function () {
-    $user = User::factory()->create(['email' => Str::uuid()->toString().'@example.com']); // @phpstan-ignore-line method.nonObject
+    $user = User::factory()->create(); // @phpstan-ignore-line method.nonObject
     \assert($user instanceof User);
     expect($user)->not->toBeNull();
 
@@ -206,8 +204,7 @@ test('activity module handles concurrent operations correctly', function () {
 
     $userActivities = Activity::query()
         ->where('causer_type', User::class)
-        ->whereIn('causer_id', [$user->getKey(), (string) $user->getKey(), (int) $user->getKey()])
-        ->whereIn('id', $concurrentActivities)
+        ->where('causer_id', (string) $user->id)
         ->get();
     expect($userActivities)->toHaveCount(10);
 
@@ -245,6 +242,10 @@ test('activity module supports complex query patterns', function () {
     $complexQuery = Activity::query()
         ->where('causer_type', User::class)
         ->whereIn('log_name', ['security', 'audit'])
+        ->where(function ($query) use ($user1, $user2) {
+            $query->where('causer_id', $user1->id)
+                ->orWhere('causer_id', $user2->id);
+        })
         ->orderBy('created_at', 'desc');
 
     $results = $complexQuery->get();
@@ -257,12 +258,11 @@ test('activity module supports complex query patterns', function () {
     expect($securityResults)->toHaveCount(3);
     expect($auditResults)->toHaveCount(2);
 
-    // Verifica che i risultati contengano gli ID creati (causer_id può variare per schema DB)
-    $user1Ids = $securityActivities->pluck('id')->all();
-    $user2Ids = $auditActivities->pluck('id')->all();
-    $resultIds = $results->pluck('id')->all();
-    expect($resultIds)->toContain(...$user1Ids)
-        ->and($resultIds)->toContain(...$user2Ids);
+    $user1Results = $results->where('causer_id', $user1->id);
+    $user2Results = $results->where('causer_id', $user2->id);
+
+    expect($user1Results)->toHaveCount(3);
+    expect($user2Results)->toHaveCount(2);
 });
 
 test('activity module handles data consistency across models', function () {
@@ -386,10 +386,13 @@ test('activity module supports bulk operations efficiently', function () {
     $lastActivityProperties = $lastActivity->properties;
 
     expect($firstActivityProperties)->toHaveKey('index', 0)
-        ->and($lastActivityProperties)->toHaveKey('index', 99);
+        ->and($lastActivityProperties)->toHaveKey('index', 99)
+        ->and($firstActivity->causer_id)->toBe($user->id)
+        ->and($lastActivity->causer_id)->toBe($user->id);
 
-    // Verifica che le attività bulk siano recuperabili (causer_id con raw insert dipende dallo schema DB)
     $userActivities = Activity::query()
+        ->where('causer_type', User::class)
+        ->where('causer_id', (string) $user->id)
         ->where('log_name', 'bulk_operation')
         ->get();
     expect($userActivities)->toHaveCount(100);
