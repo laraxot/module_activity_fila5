@@ -22,7 +22,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property string|null $log_name
  * @property string $description
  * @property string|null $subject_type
- * @property int|null $subject_id
+ * @property string|null $subject_id
  * @property string|null $causer_type
  * @property string|null $causer_id
  * @property array<string, mixed>|Collection<array-key, mixed>|null $properties
@@ -37,6 +37,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property-read Model|null $causer
  * @property-read Collection $changes
  * @property-read Model|null $subject
+ *
  * @method static ActivityFactory factory($count = null, $state = [])
  * @method static Builder<static>|Activity forBatch(string $batchUuid)
  * @method static Builder<static>|Activity forEvent(string $event)
@@ -100,6 +101,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static Builder<static>|Activity rightJoin(string $table, string $first, string $operator = null, string $second = null)
  * @method static Builder<static>|Activity crossJoin(string $table)
  * @method static Builder<static>|Activity causedBy(Model $causer)
+ *
  * @mixin \Eloquent
  */
 class Activity extends SpatieActivity
@@ -109,6 +111,20 @@ class Activity extends SpatieActivity
     /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
     protected $connection = 'activity';
 
+    protected $table = 'activity_log';
+
+    /**
+     * @param  array<string, mixed>  $attributes
+     */
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+        if (app()->environment('testing')) {
+            $default = config('database.default');
+            $this->connection = is_string($default) ? $default : 'mysql';
+        }
+    }
+
     /** @var list<string> */
     protected $fillable = [
         'id',
@@ -117,9 +133,9 @@ class Activity extends SpatieActivity
         'subject_type',
         'event',
         'subject_id',
-        'causer_type', // Added
-        'causer_id',   // Added
-        'properties', // Added
+        'causer_type',
+        'causer_id',
+        'properties',
     ];
 
     /**

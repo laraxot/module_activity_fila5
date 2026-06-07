@@ -51,17 +51,4 @@ return [
             'tooltip' => '',
         ],
     ],
-    'label' => 'Snapshot',
-    'plural_label' => 'Snapshot (Plurale)',
-    'actions' => [
-        'create' => [
-            'label' => 'Crea Snapshot',
-        ],
-        'edit' => [
-            'label' => 'Modifica Snapshot',
-        ],
-        'delete' => [
-            'label' => 'Elimina Snapshot',
-        ],
-    ],
 ];
