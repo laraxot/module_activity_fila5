@@ -2,15 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\Activity\Tests\Unit\Models\Policies;
-
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 use Modules\Activity\Models\Policies\ActivityBasePolicy;
 use Modules\Activity\Models\Policies\ActivityPolicy;
 use Modules\Activity\Models\Policies\SnapshotPolicy;
 use Modules\Activity\Models\Policies\StoredEventPolicy;
-use Modules\Activity\Tests\TestCase;
 
 test('ActivityPolicy can be instantiated', function () {
     $policy = new ActivityPolicy;

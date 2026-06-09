@@ -2,23 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Modules\Activity\Tests\Feature;
-
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Providers\ActivityServiceProvider;
-use Modules\Activity\Tests\TestCase;
 
-uses(TestCase::class);
-
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        \DB::connection()->getPdo();
-    } catch (\Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
+uses(\Modules\Activity\Tests\TestCase::class);
 
 function activityFindPhpFiles(string $directory): array
 {
@@ -85,7 +73,7 @@ test('translations exist and are structured', function (): void {
 });
 
 test('views exist and are valid', function (): void {
-    $viewPath = base_path('Modules/Activity/resources/views/filament/pages/list-log-activities.blade.php');
+    $viewPath = base_path('Modules/Activity/resources/views/filament/list-log-activities.blade.php');
     expect(file_exists($viewPath))->toBeTrue();
 
     $viewContent = file_get_contents($viewPath);
