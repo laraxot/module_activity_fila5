@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Providers;
 
-uses(TestCase::class);
-
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Providers\RouteServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 use Modules\Xot\Providers\XotBaseServiceProvider;
+
+uses(TestCase::class);
 
 test('ActivityServiceProvider extends XotBaseServiceProvider', function (): void {
     $reflection = new ReflectionClass(ActivityServiceProvider::class);

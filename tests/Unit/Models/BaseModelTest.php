@@ -2,13 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Modules\Activity\Tests\Unit\Models;
-
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 use Modules\Activity\Models\BaseModel;
-use Modules\Activity\Tests\TestCase;
-use Modules\Xot\Models\XotBaseModel;
 
 test('BaseModel has correct connection', function () {
     $model = new class extends BaseModel
@@ -32,5 +28,5 @@ test('BaseModel extends XotBaseModel', function () {
         protected $fillable = ['name'];
     };
 
-    expect($model)->toBeInstanceOf(XotBaseModel::class);
+    expect($model)->toBeInstanceOf(\Modules\Xot\Models\XotBaseModel::class);
 });
