@@ -1,3 +1,4 @@
+[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 ---
 module: theme
 topic: dry-kiss-analysis

@@ -2,14 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Modules\Activity\Tests\Feature\Actions;
-
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
-use Modules\Activity\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('action can be instantiated', function (): void {
     $action = ListLogActivitiesAction::make();
