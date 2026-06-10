@@ -8,6 +8,7 @@ use Filament\Tables\Enums\PaginationMode;
 use Illuminate\Contracts\Pagination\CursorPaginator;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 trait CanPaginate
@@ -69,7 +70,10 @@ trait CanPaginate
     }
 
     /**
-     * PHPStan Level 10: Include LengthAwarePaginator in return type.
+     * @template TModel of Model
+     *
+     * @param  Builder<TModel>  $query
+     * @return Paginator<int, TModel>|CursorPaginator<int, TModel>|LengthAwarePaginator<int, TModel>
      */
     protected function paginateQuery(Builder $query): Paginator|CursorPaginator|LengthAwarePaginator
     {
@@ -93,7 +97,7 @@ trait CanPaginate
 
         $total = $query->toBase()->getCountForPagination();
 
-        /** @var LengthAwarePaginator $records */
+        /** @var LengthAwarePaginator<int, TModel> $records */
         $records = $query->paginate(
             perPage: $perPage === 'all' ? $total : (int) $perPage,
             pageName: $this->getPaginationPageName(),
