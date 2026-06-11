@@ -1,3 +1,12 @@
+---
+title: Best Practices – Activity
+type: rule
+tags: [activity, best-practices, dry, kiss]
+created: 2026-06-10
+updated: 2026-06-10
+qmd: self
+---
+
 # Best Practices – Activity
 
 ## Principi DRY/KISS

@@ -1,9 +1,15 @@
 ---
 title: "Rules Index"
 type: "index"
-tags: [rules, filament, activity]
+tags: [rules, filament, activity, phpstan, pest]
 module: "Activity"
-updated: 2026-05-12
+created: 2026-06-10
+updated: 2026-06-10
+qmd: "Activity rules index phpstan pest discipline"
+issues:
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/328"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/329"
 ---
 
 # Rules — Activity Module Wiki
@@ -11,6 +17,8 @@ updated: 2026-05-12
 > Regole specifiche modulo Activity. Load on-demand.
 
 ## Available Rules
+- [best-practices](./best-practices.md) — DRY/KISS, centralized orchestration, clean code principles
+- [phpstan-pest-discipline](../concepts/phpstan-pest-discipline.md) — PHPStan dal root Laravel; `phpstan.neon` intoccabile; test Activity sempre Pest
 - [context-overflow-prevention](../../../../../docs/wiki/rules/context-overflow-prevention.md) — prevenzione 262K token overflow; file vietati; tool output compression
 
 - [xotbase-resource-zen-pattern](../concepts/xotbase-resource-zen-pattern.md) — NON override form()/table(), auto-discovery Schemas/Tables

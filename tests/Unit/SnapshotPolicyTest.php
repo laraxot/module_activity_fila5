@@ -8,80 +8,52 @@ use Modules\Activity\Models\Policies\SnapshotPolicy;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\Policies\UserBasePolicy;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\Attributes\Test;
+use ReflectionClass;
 
 class SnapshotPolicyTest extends TestCase
 {
     #[Test]
     public function policy_extends_user_base_policy(): void
     {
-        $this->assertTrue(
-            is_subclass_of(
-                SnapshotPolicy::class,
-                UserBasePolicy::class
-            )
-        );
+        $policy = new SnapshotPolicy;
+
+        Assert::assertInstanceOf(UserBasePolicy::class, $policy);
     }
 
     #[Test]
-    public function policy_has_view_method(): void
+    public function policy_has_expected_public_methods(): void
     {
-        $this->assertTrue(method_exists(SnapshotPolicy::class, 'view'));
-    }
+        $reflection = new ReflectionClass(SnapshotPolicy::class);
+        $expectedMethods = ['view', 'create', 'update', 'delete', 'restore', 'forceDelete'];
 
-    #[Test]
-    public function policy_has_create_method(): void
-    {
-        $this->assertTrue(method_exists(SnapshotPolicy::class, 'create'));
-    }
-
-    #[Test]
-    public function policy_has_update_method(): void
-    {
-        $this->assertTrue(method_exists(SnapshotPolicy::class, 'update'));
-    }
-
-    #[Test]
-    public function policy_has_delete_method(): void
-    {
-        $this->assertTrue(method_exists(SnapshotPolicy::class, 'delete'));
-    }
-
-    #[Test]
-    public function policy_has_restore_method(): void
-    {
-        $this->assertTrue(method_exists(SnapshotPolicy::class, 'restore'));
-    }
-
-    #[Test]
-    public function policy_has_force_delete_method(): void
-    {
-        $this->assertTrue(method_exists(SnapshotPolicy::class, 'forceDelete'));
+        foreach ($expectedMethods as $method) {
+            Assert::assertTrue($reflection->hasMethod($method), "Missing method: {$method}");
+        }
     }
 
     #[Test]
     public function user_with_permission_can_view(): void
     {
-        // Create a mock user with permission
         $user = $this->createMock(User::class);
         $user->method('hasPermissionTo')->with('snapshot.view')->willReturn(true);
 
         $policy = new SnapshotPolicy;
         $result = $policy->view($user);
 
-        $this->assertTrue($result);
+        Assert::assertTrue($result);
     }
 
     #[Test]
     public function user_without_permission_cannot_view(): void
     {
-        // Create a mock user without permission
         $user = $this->createMock(User::class);
         $user->method('hasPermissionTo')->with('snapshot.view')->willReturn(false);
 
         $policy = new SnapshotPolicy;
         $result = $policy->view($user);
 
-        $this->assertFalse($result);
+        Assert::assertFalse($result);
     }
 }

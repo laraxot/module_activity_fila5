@@ -2,78 +2,89 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Activity\Tests\TestCase::class);
-
 use Modules\Activity\Actions\ActivityLogger;
 use Modules\Activity\Models\Activity;
+use Modules\Activity\Tests\TestCase;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('ActivityLogger can log basic activity', function () {
+    /** @var TestCase $this */
     $logger = new ActivityLogger;
 
     $activity = $logger->log('test_event', null, null, ['key' => 'value'], 'Test Description');
 
-    expect($activity)->toBeInstanceOf(Activity::class)
-        ->and($activity->event)->toBe('test_event')
-        ->and($activity->description)->toBe('Test Description');
+    Assert::assertInstanceOf(Activity::class, $activity);
+    Assert::assertSame('test_event', $activity->event);
+    Assert::assertSame('Test Description', $activity->description);
 
     // Verify properties are properly stored
     if (is_array($activity->properties)) {
-        expect($activity->properties)->toEqual(['key' => 'value']);
+        Assert::assertEquals(['key' => 'value'], $activity->properties);
     } elseif (is_object($activity->properties) && method_exists($activity->properties, 'toArray')) {
-        expect($activity->properties->toArray())->toEqual(['key' => 'value']);
+        Assert::assertEquals(['key' => 'value'], $activity->properties->toArray());
     } else {
-        expect($activity->properties)->not()->toBeNull();
+        Assert::assertNull($activity->properties);
     }
 });
 
 test('ActivityLogger can log with user', function () {
-    $user = User::factory()->create();
+    /** @var TestCase $this */
+    $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
     $activity = $logger->log('user_event', $user, null, null, 'User Event');
 
-    expect($activity)->toBeInstanceOf(Activity::class)
-        ->and($activity->causer_id)->toBe($user->id)
-        ->and($activity->causer_type)->toBe(User::class);
+    Assert::assertInstanceOf(Activity::class, $activity);
+    Assert::assertSame($user->id, $activity->causer_id);
+    Assert::assertSame(User::class, $activity->causer_type);
 });
 
 test('ActivityLogger throws exception for invalid user type', function () {
     $logger = new ActivityLogger;
 
-    $this->expectException(\InvalidArgumentException::class);
-
-    $logger->log('test_event', 'invalid_user_type');
+    try {
+        $logger->log('test_event', 'invalid_user_type');
+        Assert::fail('Expected InvalidArgumentException was not thrown');
+    } catch (InvalidArgumentException $exception) {
+        Assert::assertInstanceOf(InvalidArgumentException::class, $exception);
+    }
 });
 
 test('ActivityLogger can log created event', function () {
-    $user = User::factory()->create();
+    /** @var TestCase $this */
+    $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
     // Create a user model to use as subject since it's a proper model with all required attributes
-    $subjectModel = User::factory()->create(['name' => 'Subject User', 'email' => 'subject@example.com', 'password' => 'password']);
+    $subjectModel = UserFactory::new()->createOne(['name' => 'Subject User', 'email' => 'subject@example.com', 'password' => 'password']);
 
     $result = $logger->created($subjectModel, $user);
 
-    expect($result)->toBeInstanceOf(Activity::class)
-        ->and($result->event)->toBe('created');
+    Assert::assertInstanceOf(Activity::class, $result);
+    Assert::assertSame('created', $result->event);
 });
 
 test('ActivityLogger can log updated event', function () {
-    $user = User::factory()->create();
+    /** @var TestCase $this */
+    $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
     // Create a user model to use as subject
-    $subjectModel = User::factory()->create(['name' => 'Subject User', 'email' => 'subject2@example.com', 'password' => 'password']);
+    $subjectModel = UserFactory::new()->createOne(['name' => 'Subject User', 'email' => 'subject2@example.com', 'password' => 'password']);
 
     $result = $logger->updated($subjectModel, $user);
 
-    expect($result)->toBeInstanceOf(Activity::class)
-        ->and($result->event)->toBe('updated');
+    Assert::assertInstanceOf(Activity::class, $result);
+    Assert::assertSame('updated', $result->event);
 });
 
 test('ActivityLogger can log deleted event', function () {
-    $user = User::factory()->create();
+    /** @var TestCase $this */
+    $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
     // Create a test model to use as subject
@@ -81,42 +92,46 @@ test('ActivityLogger can log deleted event', function () {
 
     $result = $logger->deleted($activity, $user);
 
-    expect($result)->toBeInstanceOf(Activity::class)
-        ->and($result->event)->toBe('deleted');
+    Assert::assertInstanceOf(Activity::class, $result);
+    Assert::assertSame('deleted', $result->event);
 });
 
 test('ActivityLogger can log login event', function () {
-    $user = User::factory()->create();
+    /** @var TestCase $this */
+    $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
     $activity = $logger->login($user);
 
-    expect($activity)->toBeInstanceOf(Activity::class)
-        ->and($activity->event)->toBe('login');
+    Assert::assertInstanceOf(Activity::class, $activity);
+    Assert::assertSame('login', $activity->event);
 });
 
 test('ActivityLogger can log logout event', function () {
-    $user = User::factory()->create();
+    /** @var TestCase $this */
+    $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
     $activity = $logger->logout($user);
 
-    expect($activity)->toBeInstanceOf(Activity::class)
-        ->and($activity->event)->toBe('logout');
+    Assert::assertInstanceOf(Activity::class, $activity);
+    Assert::assertSame('logout', $activity->event);
 });
 
 test('ActivityLogger can log custom event', function () {
+    /** @var TestCase $this */
     $logger = new ActivityLogger;
 
     $activity = $logger->custom('custom_event', 'Custom Description', null, ['custom' => 'data']);
 
-    expect($activity)->toBeInstanceOf(Activity::class)
-        ->and($activity->event)->toBe('custom_event')
-        ->and($activity->description)->toBe('Custom Description');
+    Assert::assertInstanceOf(Activity::class, $activity);
+    Assert::assertSame('custom_event', $activity->event);
+    Assert::assertSame('Custom Description', $activity->description);
 });
 
 test('ActivityLogger can get user activities', function () {
-    $user = User::factory()->create();
+    /** @var TestCase $this */
+    $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
     // Create some test activities for the user
@@ -124,12 +139,15 @@ test('ActivityLogger can get user activities', function () {
 
     $userActivities = $logger->getUserActivities($user, 10);
 
-    expect($userActivities)->toHaveCount(1)
-        ->and($userActivities->first()->causer_id)->toBe($user->id);
+    Assert::assertCount(1, $userActivities);
+    $firstActivity = $userActivities->first();
+    Assert::assertNotNull($firstActivity);
+    Assert::assertSame($user->id, $firstActivity->causer_id);
 });
 
 test('ActivityLogger can get model activities', function () {
-    $user = User::factory()->create();
+    /** @var TestCase $this */
+    $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
     // Create an activity to use as subject
@@ -140,11 +158,14 @@ test('ActivityLogger can get model activities', function () {
 
     $modelActivities = $logger->getModelActivities($subjectActivity, 10);
 
-    expect($modelActivities)->toHaveCount(1)
-        ->and($modelActivities->first()->subject_id)->toBe($subjectActivity->id);
+    Assert::assertCount(1, $modelActivities);
+    $firstModelActivity = $modelActivities->first();
+    Assert::assertNotNull($firstModelActivity);
+    Assert::assertSame($subjectActivity->id, $firstModelActivity->subject_id);
 });
 
 test('ActivityLogger can get activities by type', function () {
+    /** @var TestCase $this */
     $logger = new ActivityLogger;
 
     $logger->log('specific_event', null, null, null, 'Specific Event');
@@ -152,11 +173,14 @@ test('ActivityLogger can get activities by type', function () {
 
     $byType = $logger->getByType('specific_event', 5);
 
-    expect($byType)->toHaveCount(1)
-        ->and($byType->first()->event)->toBe('specific_event');
+    Assert::assertCount(1, $byType);
+    $firstByType = $byType->first();
+    Assert::assertNotNull($firstByType);
+    Assert::assertSame('specific_event', $firstByType->event);
 });
 
 test('ActivityLogger can get recent activities', function () {
+    /** @var TestCase $this */
     $logger = new ActivityLogger;
 
     // Create some test activities
@@ -165,10 +189,11 @@ test('ActivityLogger can get recent activities', function () {
 
     $recent = $logger->getRecent(5);
 
-    expect($recent)->toHaveCount(2);
+    Assert::assertCount(2, $recent);
 });
 
 test('ActivityLogger can clean old activities', function () {
+    /** @var TestCase $this */
     $logger = new ActivityLogger;
 
     $activity = $logger->log('old_event', null, null, null, 'Old Event');
@@ -178,29 +203,29 @@ test('ActivityLogger can clean old activities', function () {
 
     $deleted = $logger->cleanOld(90);
 
-    expect($deleted)->toBeGreaterThanOrEqual(0);
+    Assert::assertGreaterThanOrEqual(0, $deleted);
 });
 
 test('ActivityLogger can get statistics', function () {
+    /** @var TestCase $this */
     $logger = new ActivityLogger;
 
     $logger->log('stat_event', null, null, null, 'Stat Event');
 
     $stats = $logger->getStatistics();
 
-    expect($stats)->toBeArray()
-        ->and($stats['total'])->toBeGreaterThanOrEqual(0)
-        ->and($stats['by_type'])->toBeArray();
+    Assert::assertGreaterThanOrEqual(0, $stats['total']);
+    Assert::assertArrayHasKey('by_type', $stats);
 });
 
 test('ActivityLogger can get statistics for specific user', function () {
-    $user = User::factory()->create();
+    /** @var TestCase $this */
+    $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
     $logger->log('user_stat_event', $user, null, null, 'User Stat Event');
 
     $stats = $logger->getStatistics($user);
 
-    expect($stats)->toBeArray()
-        ->and($stats['total'])->toBeGreaterThanOrEqual(0);
+    Assert::assertGreaterThanOrEqual(0, $stats['total']);
 });

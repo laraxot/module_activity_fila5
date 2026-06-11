@@ -10,6 +10,7 @@ use Modules\Activity\Listeners\LoginListener;
 use Modules\Activity\Listeners\LogoutListener;
 use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
@@ -23,10 +24,10 @@ test('event service provider registers login and logout listeners', function () 
     /** @var array<class-string, array<int, class-string>> $listen */
     $listen = $property->getValue($provider);
 
-    expect($listen)->toHaveKey(Login::class)
-        ->and($listen)->toHaveKey(Logout::class)
-        ->and($listen[Login::class])->toContain(LoginListener::class)
-        ->and($listen[Logout::class])->toContain(LogoutListener::class);
+    Assert::assertArrayHasKey(Login::class, $listen);
+    Assert::assertArrayHasKey(Logout::class, $listen);
+    Assert::assertContains(LoginListener::class, $listen[Login::class]);
+    Assert::assertContains(LogoutListener::class, $listen[Logout::class]);
 });
 
 test('event discovery is enabled on provider', function () {
@@ -34,5 +35,5 @@ test('event discovery is enabled on provider', function () {
     $property = $reflection->getProperty('shouldDiscoverEvents');
     $property->setAccessible(true);
 
-    expect($property->getValue())->toBeTrue();
+    Assert::assertTrue($property->getValue());
 });

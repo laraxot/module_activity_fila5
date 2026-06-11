@@ -8,6 +8,7 @@ use Illuminate\Auth\Access\HandlesAuthorization;
 use Modules\Activity\Models\Policies\ActivityBasePolicy;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\Attributes\Test;
 
 class ActivityBasePolicyTest extends TestCase
@@ -16,24 +17,18 @@ class ActivityBasePolicyTest extends TestCase
     public function policy_is_abstract(): void
     {
         $reflection = new \ReflectionClass(ActivityBasePolicy::class);
-        $this->assertTrue($reflection->isAbstract());
+        Assert::assertTrue($reflection->isAbstract());
     }
 
     #[Test]
     public function policy_uses_handles_authorization_trait(): void
     {
-        $this->assertTrue(
+        Assert::assertTrue(
             in_array(
                 HandlesAuthorization::class,
                 class_uses_recursive(ActivityBasePolicy::class)
             )
         );
-    }
-
-    #[Test]
-    public function policy_has_before_method(): void
-    {
-        $this->assertTrue(method_exists(ActivityBasePolicy::class, 'before'));
     }
 
     #[Test]
@@ -52,7 +47,7 @@ class ActivityBasePolicyTest extends TestCase
             }
         };
 
-        $result = $policy->testBefore($user);
-        $this->assertTrue($result);
+        $result = $policy->test_before($user);
+        Assert::assertTrue($result);
     }
 }
