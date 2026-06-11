@@ -56,7 +56,7 @@ abstract class TestCase extends XotBaseTestCase
      * @var array<int, string>
      */
     protected $connectionsToTransact = [
-        'mysql',
+        'sqlite',
         'activity',
         'user',
     ];
