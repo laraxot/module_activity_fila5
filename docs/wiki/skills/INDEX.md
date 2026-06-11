@@ -1,9 +1,9 @@
 ---
 title: "Skills Index"
 type: "index"
-tags: [skills, activity, filament, xotbase]
+tags: [skills, activity, filament, xotbase, phpstan, pest]
 module: "Activity"
-updated: 2026-05-12
+updated: 2026-06-10
 ---
 
 # Skills — Activity Module Wiki
@@ -13,6 +13,7 @@ updated: 2026-05-12
 ## Available Skills
 
 - [filament-page-creation](../../../../Xot/docs/wiki/skills/filament-page-creation.md) — skill condivisa Xot per creare page Filament coerenti con XotBase
+- [phpstan-pest-remediation](../../../../../docs/wiki/skills/phpstan-pest-remediation.md) — remediation PHPStan su test Pest senza conversione a PHPUnit
 
 ## Usage
 

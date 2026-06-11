@@ -4,12 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests;
 
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Illuminate\Support\ServiceProvider;
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\User\Providers\UserServiceProvider;
-use Modules\Xot\Providers\XotServiceProvider;
-use Modules\Xot\Tests\CreatesApplication;
+use Modules\Xot\Tests\XotBaseTestCase;
 
 /**
  * Base test case for Activity module.
@@ -19,10 +20,32 @@ use Modules\Xot\Tests\CreatesApplication;
  * Migrations must be run ONCE externally: php artisan migrate --env=testing
  * DatabaseTransactions handles rollback between tests.
  */
-abstract class TestCase extends BaseTestCase
+abstract class TestCase extends XotBaseTestCase
 {
-    use CreatesApplication;
     use DatabaseTransactions;
+
+    /**
+     * Shared test data for Activity entity.
+     *
+     * @var array<string, mixed>
+     */
+    public array $activityData = [];
+
+    /**
+     * Shared test data for stored event entity.
+     *
+     * @var array<string, mixed>
+     */
+    public array $storedEventData = [];
+
+    /**
+     * Shared test data for snapshot entity.
+     *
+     * @var array<string, mixed>
+     */
+    public array $snapshotData = [];
+
+    public ?Model $model = null;
 
     /**
      * Connections to wrap in transactions for automatic rollback.
@@ -39,12 +62,12 @@ abstract class TestCase extends BaseTestCase
     ];
 
     /**
-     * @return array<int, class-string>
+     * @return array<int, class-string<ServiceProvider>>
      */
-    protected function getPackageProviders($app): array
+    protected function getPackageProviders(Application $app): array
     {
         return [
-            XotServiceProvider::class,
+            ...parent::getPackageProviders($app),
             UserServiceProvider::class,
             ActivityServiceProvider::class,
         ];
