@@ -2,21 +2,25 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Activity\Tests\TestCase::class);
-
+use Illuminate\Contracts\Broadcasting\ShouldBroadcastNow;
+use Illuminate\Foundation\Events\Dispatchable;
+use Illuminate\Queue\SerializesModels;
 use Modules\Activity\Events\ActivityEvent;
+use Modules\Activity\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('ActivityEvent can be instantiated', function () {
     $event = new ActivityEvent;
 
-    expect($event)->toBeObject();
+    Assert::assertInstanceOf(ActivityEvent::class, $event);
 });
 
 test('ActivityEvent has expected properties', function () {
     $event = new ActivityEvent;
 
-    // Siccome ActivityEvent è una classe vuota, testiamo solo che possa essere istanziata
-    expect($event)->toBeInstanceOf(\Illuminate\Foundation\Events\Dispatchable::class)
-        ->and($event)->toBeInstanceOf(\Illuminate\Queue\SerializesModels::class)
-        ->and($event)->toBeInstanceOf(\Illuminate\Contracts\Broadcasting\ShouldBroadcastNow::class);
-})->skip('Skipping because we need to check actual class definition');
+    Assert::assertInstanceOf(Dispatchable::class, $event);
+    Assert::assertInstanceOf(SerializesModels::class, $event);
+    Assert::assertInstanceOf(ShouldBroadcastNow::class, $event);
+});

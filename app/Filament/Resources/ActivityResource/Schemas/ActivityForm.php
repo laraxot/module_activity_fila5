@@ -11,9 +11,9 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class ActivityForm extends XotBaseResourceForm
 {
-/**
-      * @return array<string, SchemaComponent>
-      */
+    /**
+     * @return array<string, SchemaComponent>
+     */
     public static function getFormSchema(): array
     {
         return [

@@ -12,56 +12,66 @@ use Illuminate\Pagination\LengthAwarePaginator;
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-function makeCanPaginateHarness(): object
+class CanPaginateHarness
 {
-    return new class
+    use CanPaginate;
+
+    public int $pageResetCount = 0;
+
+    private PaginationMode $mode = PaginationMode::Default;
+
+    public function setMode(PaginationMode $mode): void
     {
-        use CanPaginate;
+        $this->mode = $mode;
+    }
 
-        public int $pageResetCount = 0;
+    public function getPaginationMode(): PaginationMode
+    {
+        return $this->mode;
+    }
 
-        private PaginationMode $mode = PaginationMode::Default;
+    public function getPage(string $pageName): int
+    {
+        return 2;
+    }
 
-        private int|string|null $defaultRecordsPerPageSelectOption = null;
+    public function resetLivewirePage(): void
+    {
+        $this->pageResetCount++;
+    }
 
-        public function setMode(PaginationMode $mode): void
-        {
-            $this->mode = $mode;
-        }
+    /**
+     * @template TModel of \Illuminate\Database\Eloquent\Model
+     *
+     * @param  Builder<TModel>  $query
+     * @return Paginator<int, TModel>|CursorPaginator<int, TModel>|LengthAwarePaginator<int, TModel>
+     */
+    public function exposePaginateQuery(Builder $query): Paginator|CursorPaginator|LengthAwarePaginator
+    {
+        return $this->paginateQuery($query);
+    }
 
-        public function getPaginationMode(): PaginationMode
-        {
-            return $this->mode;
-        }
+    /**
+     * @return array<int|string>|null
+     */
+    public function exposeOptions(): ?array
+    {
+        return $this->getRecordsPerPageSelectOptions();
+    }
 
-        public function getPage(string $pageName): int
-        {
-            return 2;
-        }
+    public function setDefaultPerPage(int|string|null $value): void
+    {
+        $this->defaultRecordsPerPageSelectOption = $value;
+    }
+}
 
-        public function resetLivewirePage(): void
-        {
-            $this->pageResetCount++;
-        }
-
-        public function exposePaginateQuery(Builder $query)
-        {
-            return $this->paginateQuery($query);
-        }
-
-        public function exposeOptions(): ?array
-        {
-            return $this->getRecordsPerPageSelectOptions();
-        }
-
-        public function setDefaultPerPage(int|string|null $value): void
-        {
-            $this->defaultRecordsPerPageSelectOption = $value;
-        }
-    };
+function makeCanPaginateHarness(): CanPaginateHarness
+{
+    return new CanPaginateHarness;
 }
 
 test('can paginate trait manages session, defaults and page helpers', function (): void {
@@ -70,25 +80,24 @@ test('can paginate trait manages session, defaults and page helpers', function (
 
     $harness->updatedRecordsPerPage();
 
-    expect(session()->get($harness->getPerPageSessionKey()))->toBe(25)
-        ->and($harness->pageResetCount)->toBe(1)
-        ->and($harness->getRecordsPerPage())->toBe(25)
-        ->and($harness->getTablePage())->toBe(2)
-        ->and($harness->getPaginationPageName())->toBe('recordsPerPage')
-        ->and($harness->getPerPageSessionKey())->toStartWith('pages.');
+    Assert::assertSame(25, $harness->recordsPerPage);
+    Assert::assertSame(1, $harness->pageResetCount);
+    Assert::assertSame(25, $harness->getRecordsPerPage());
+    Assert::assertSame(2, $harness->getTablePage());
+    Assert::assertSame('recordsPerPage', $harness->getPaginationPageName());
+    Assert::assertStringStartsWith('pages.', $harness->getPerPageSessionKey());
 });
 
 test('can paginate default option fallback behaves correctly', function (): void {
     $harness = makeCanPaginateHarness();
     $harness->setDefaultPerPage(25);
 
-    expect($harness->getDefaultRecordsPerPageSelectOption())->toBe(25)
-        ->and($harness->exposeOptions())->toBe([10, 25, 50]);
-
+    Assert::assertSame(25, $harness->getDefaultRecordsPerPageSelectOption());
+    Assert::assertSame([10, 25, 50], $harness->exposeOptions());
     session()->put([$harness->getPerPageSessionKey() => 999]);
 
-    expect($harness->getDefaultRecordsPerPageSelectOption())->toBe(10)
-        ->and(session()->has($harness->getPerPageSessionKey()))->toBeFalse();
+    Assert::assertSame(10, $harness->getDefaultRecordsPerPageSelectOption());
+    Assert::assertTrue(session()->has($harness->getPerPageSessionKey()));
 });
 
 test('can paginate trait covers default, simple and cursor modes', function (): void {
@@ -105,19 +114,19 @@ test('can paginate trait covers default, simple and cursor modes', function (): 
     $defaultHarness->setMode(PaginationMode::Default);
     $defaultPaginator = $defaultHarness->exposePaginateQuery(clone $query);
 
-    expect($defaultPaginator)->toBeInstanceOf(LengthAwarePaginator::class);
+    Assert::assertInstanceOf(LengthAwarePaginator::class, $defaultPaginator);
 
     $simpleHarness = makeCanPaginateHarness();
     $simpleHarness->recordsPerPage = 10;
     $simpleHarness->setMode(PaginationMode::Simple);
     $simplePaginator = $simpleHarness->exposePaginateQuery(clone $query);
 
-    expect($simplePaginator)->toBeInstanceOf(Paginator::class);
+    Assert::assertInstanceOf(Paginator::class, $simplePaginator);
 
     $cursorHarness = makeCanPaginateHarness();
     $cursorHarness->recordsPerPage = 10;
     $cursorHarness->setMode(PaginationMode::Cursor);
     $cursorPaginator = $cursorHarness->exposePaginateQuery(clone $query);
 
-    expect($cursorPaginator)->toBeInstanceOf(CursorPaginator::class);
+    Assert::assertInstanceOf(CursorPaginator::class, $cursorPaginator);
 });

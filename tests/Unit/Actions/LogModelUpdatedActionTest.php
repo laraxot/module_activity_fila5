@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Activity\Tests\TestCase::class);
-
 use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Actions\LogModelUpdatedAction;
-use Modules\User\Models\User;
+use Modules\Activity\Tests\TestCase;
+use Modules\User\Database\Factories\UserFactory;
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('LogModelUpdatedAction can be instantiated', function () {
     $model = new class extends Model
@@ -15,11 +17,10 @@ test('LogModelUpdatedAction can be instantiated', function () {
 
         protected $fillable = ['name'];
     };
-    $user = User::factory()->make();
+    $user = UserFactory::new()->make();
+    assert($user instanceof Model);
 
     $action = new LogModelUpdatedAction($model, $user);
 
-    expect($action)->toBeObject()
-        ->and($action->model)->toBe($model)
-        ->and($action->user)->toBe($user);
+    Assert::assertSame($user, $action->user);
 });

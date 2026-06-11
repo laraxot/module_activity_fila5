@@ -50,6 +50,7 @@ abstract class ListLogActivities extends XotBasePage
 
     protected string $view = 'activity::filament.pages.list-log-activities';
 
+    /** @var Collection<string, string> */
     protected static Collection $fieldLabelMap;
 
     public function mount(int|string $record): void
@@ -90,6 +91,9 @@ abstract class ListLogActivities extends XotBasePage
         return (string) $title;
     }
 
+    /**
+     * @return LengthAwarePaginator<int, Activity>
+     */
     public function getActivities(): LengthAwarePaginator
     {
         // PHPStan Level 10: Type safety for Eloquent relations
