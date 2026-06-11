@@ -19,6 +19,7 @@ return new class extends XotBaseMigration
             $table->nullableUuidMorphs('subject', 'subject');
             $table->nullableUuidMorphs('causer', 'causer');
             $table->json('properties')->nullable();
+            $table->json('attribute_changes')->nullable();
             $table->index('log_name');
             $table->uuid('batch_uuid')->nullable();
             $table->string('event')->nullable();

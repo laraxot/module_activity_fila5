@@ -7,6 +7,7 @@ namespace Modules\Activity\Tests\Unit;
 use Modules\Activity\Models\Policies\StoredEventPolicy;
 use Modules\User\Models\Policies\UserBasePolicy;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
@@ -15,12 +16,9 @@ class StoredEventPolicyTest extends TestCase
     #[Test]
     public function policy_extends_user_base_policy(): void
     {
-        $this->assertTrue(
-            is_subclass_of(
-                StoredEventPolicy::class,
-                UserBasePolicy::class
-            )
-        );
+        $policy = new StoredEventPolicy;
+
+        Assert::assertInstanceOf(UserBasePolicy::class, $policy);
     }
 
     #[Test]
@@ -30,7 +28,7 @@ class StoredEventPolicyTest extends TestCase
         $user->method('hasPermissionTo')->with('stored_event.view')->willReturn(true);
 
         $policy = new StoredEventPolicy;
-        $this->assertTrue($policy->view($user));
+        Assert::assertTrue($policy->view($user));
     }
 
     #[Test]
@@ -40,7 +38,7 @@ class StoredEventPolicyTest extends TestCase
         $user->method('hasPermissionTo')->with('stored_event.view')->willReturn(false);
 
         $policy = new StoredEventPolicy;
-        $this->assertFalse($policy->view($user));
+        Assert::assertFalse($policy->view($user));
     }
 
     #[Test]
@@ -61,10 +59,10 @@ class StoredEventPolicyTest extends TestCase
 
         $policy = new StoredEventPolicy;
 
-        $this->assertTrue($policy->create($user));
-        $this->assertTrue($policy->update($user));
-        $this->assertTrue($policy->delete($user));
-        $this->assertTrue($policy->restore($user));
-        $this->assertTrue($policy->forceDelete($user));
+        Assert::assertTrue($policy->create($user));
+        Assert::assertTrue($policy->update($user));
+        Assert::assertTrue($policy->delete($user));
+        Assert::assertTrue($policy->restore($user));
+        Assert::assertTrue($policy->forceDelete($user));
     }
 }

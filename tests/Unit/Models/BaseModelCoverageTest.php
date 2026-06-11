@@ -6,6 +6,7 @@ namespace Modules\Activity\Tests\Unit\Models;
 
 use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\Attributes\Test;
 
 /**
@@ -29,11 +30,11 @@ class BaseModelCoverageTest extends TestCase
         /** @var array<string, string> $casts */
         $casts = $method->invoke($concrete);
 
-        $this->assertIsArray($casts);
+        Assert::assertIsArray($casts);
         // Inherits from XotBaseModel::casts()
-        $this->assertArrayHasKey('id', $casts);
-        $this->assertArrayHasKey('created_at', $casts);
-        $this->assertArrayHasKey('updated_at', $casts);
+        Assert::assertArrayHasKey('id', $casts);
+        Assert::assertArrayHasKey('created_at', $casts);
+        Assert::assertArrayHasKey('updated_at', $casts);
     }
 
     #[Test]
@@ -52,6 +53,6 @@ class BaseModelCoverageTest extends TestCase
         $casts = $method->invoke($concrete);
 
         // BaseModel adds no extra casts but inherits parent's
-        $this->assertNotEmpty($casts);
+        Assert::assertNotEmpty($casts);
     }
 }

@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
 
+use Filament\Tables\Enums\PaginationMode;
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\Attributes\Test;
 
 class CanPaginateTest extends TestCase
@@ -13,7 +15,7 @@ class CanPaginateTest extends TestCase
     #[Test]
     public function trait_exists(): void
     {
-        $this->assertTrue(trait_exists(CanPaginate::class));
+        Assert::assertTrue(trait_exists(CanPaginate::class));
     }
 
     #[Test]
@@ -32,7 +34,7 @@ class CanPaginateTest extends TestCase
         ];
 
         foreach ($methods as $method) {
-            $this->assertTrue(
+            Assert::assertTrue(
                 method_exists(CanPaginate::class, $method),
                 "Method {$method} should exist in CanPaginate trait"
             );
@@ -47,13 +49,28 @@ class CanPaginateTest extends TestCase
         {
             use CanPaginate;
 
+            public function resetLivewirePage(): void {}
+
+            public function getPage(string $pageName): int
+            {
+                return 1;
+            }
+
+            public function getPaginationMode(): PaginationMode
+            {
+                return PaginationMode::Default;
+            }
+
+            /**
+             * @return array<int|string>
+             */
             public function test_get_records_per_page_select_options(): array
             {
                 return $this->getRecordsPerPageSelectOptions();
             }
         };
 
-        $options = $trait->testGetRecordsPerPageSelectOptions();
-        $this->assertEquals([10, 25, 50], $options);
+        $options = $trait->test_get_records_per_page_select_options();
+        Assert::assertEquals([10, 25, 50], $options);
     }
 }

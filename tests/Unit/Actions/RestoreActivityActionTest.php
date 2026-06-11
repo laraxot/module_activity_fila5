@@ -2,19 +2,22 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Activity\Tests\TestCase::class);
+namespace Modules\Activity\Tests\Unit\Actions;
 
 use Modules\Activity\Actions\RestoreActivityAction;
+use Modules\Activity\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('RestoreActivityAction can be instantiated', function () {
     $action = new RestoreActivityAction;
 
-    expect($action)->toBeObject();
+    Assert::assertInstanceOf(RestoreActivityAction::class, $action);
 });
 
 test('RestoreActivityAction can execute', function () {
     $action = new RestoreActivityAction;
 
-    // Siccome non abbiamo un metodo specifico per testare l'execute senza un'attività specifica
-    expect($action)->toBeObject();
+    Assert::assertInstanceOf(RestoreActivityAction::class, $action);
 });

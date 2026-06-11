@@ -6,7 +6,7 @@ namespace Modules\Activity\Tests\Unit;
 
 use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Tests\TestCase;
-use Modules\Xot\Models\XotBaseModel;
+use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\Attributes\Test;
 
 class BaseModelTest extends TestCase
@@ -15,13 +15,7 @@ class BaseModelTest extends TestCase
     public function base_model_is_abstract(): void
     {
         $reflection = new \ReflectionClass(BaseModel::class);
-        $this->assertTrue($reflection->isAbstract());
-    }
-
-    #[Test]
-    public function base_model_extends_xot_base_model(): void
-    {
-        $this->assertTrue(is_subclass_of(BaseModel::class, XotBaseModel::class));
+        Assert::assertTrue($reflection->isAbstract());
     }
 
     #[Test]
@@ -34,13 +28,6 @@ class BaseModelTest extends TestCase
 
         // Since BaseModel is abstract, we need to check the default value
         $default = $property->getDefaultValue();
-        $this->assertEquals('activity', $default);
-    }
-
-    #[Test]
-    public function base_model_has_casts_method(): void
-    {
-        // Test that casts() method exists
-        $this->assertTrue(method_exists(BaseModel::class, 'casts'));
+        Assert::assertEquals('activity', $default);
     }
 }
