@@ -16,7 +16,6 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('LogActivityAction can execute', function () {
-    /** @var TestCase $this */
     $user = UserFactory::new()->createOne(['name' => 'Test User', 'email' => 'test@example.com', 'password' => 'password']);
 
     $action = new LogActivityAction(
@@ -33,7 +32,6 @@ test('LogActivityAction can execute', function () {
 });
 
 test('LogActivityAction handles null user', function () {
-    /** @var TestCase $this */
     $action = new LogActivityAction(
         type: 'test_event',
         user: null,
@@ -47,7 +45,6 @@ test('LogActivityAction handles null user', function () {
 });
 
 test('LogUserLoginAction can execute', function () {
-    /** @var TestCase $this */
     $user = UserFactory::new()->createOne(['name' => 'Test User', 'email' => 'test@example.com', 'password' => 'password']);
 
     $action = new LogUserLoginAction($user);
@@ -59,7 +56,6 @@ test('LogUserLoginAction can execute', function () {
 });
 
 test('LogUserLogoutAction can execute', function () {
-    /** @var TestCase $this */
     $user = UserFactory::new()->createOne(['name' => 'Test User', 'email' => 'test@example.com', 'password' => 'password']);
 
     $action = new LogUserLogoutAction($user);
@@ -71,7 +67,6 @@ test('LogUserLogoutAction can execute', function () {
 });
 
 test('LogModelCreatedAction can execute', function () {
-    /** @var TestCase $this */
     $user = UserFactory::new()->createOne(['name' => 'Test User', 'email' => 'test@example.com', 'password' => 'password']);
 
     $action = new LogModelCreatedAction($user);
@@ -83,7 +78,6 @@ test('LogModelCreatedAction can execute', function () {
 });
 
 test('LogModelUpdatedAction can execute', function () {
-    /** @var TestCase $this */
     $user = UserFactory::new()->createOne(['name' => 'Test User', 'email' => 'test@example.com', 'password' => 'password']);
 
     $action = new LogModelUpdatedAction($user);
@@ -95,7 +89,6 @@ test('LogModelUpdatedAction can execute', function () {
 });
 
 test('LogModelDeletedAction can execute', function () {
-    /** @var TestCase $this */
     $user = UserFactory::new()->createOne(['name' => 'Test User', 'email' => 'test@example.com', 'password' => 'password']);
 
     $action = new LogModelDeletedAction($user);
