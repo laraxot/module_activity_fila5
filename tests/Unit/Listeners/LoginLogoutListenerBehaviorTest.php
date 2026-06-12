@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Listeners;
+use ReflectionClass;
 
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Support\Str;
@@ -12,7 +13,6 @@ use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 
 uses(TestCase::class);
 

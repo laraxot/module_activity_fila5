@@ -3,12 +3,12 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
+use ReflectionClass;
 
 use Modules\Activity\Listeners\LogoutListener;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\Attributes\Test;
-use ReflectionClass;
 
 class LogoutListenerTest extends TestCase
 {
