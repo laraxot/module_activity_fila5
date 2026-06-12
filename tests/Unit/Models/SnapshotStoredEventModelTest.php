@@ -12,11 +12,10 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 
 uses(TestCase::class);
 
-test('snapshot getConnectionName resolves default connection in testing', function (): void {
+test('snapshot getConnectionName resolves activity connection', function (): void {
     $snapshot = new Snapshot;
-    $default = config('database.default');
 
-    Assert::assertSame(is_string($default) ? $default : 'mysql', $snapshot->getConnectionName());
+    Assert::assertSame('activity', $snapshot->getConnectionName());
 });
 
 test('snapshot has expected table and fillable fields', function (): void {
@@ -28,11 +27,10 @@ test('snapshot has expected table and fillable fields', function (): void {
     Assert::assertContains('state', $fillable);
 });
 
-test('stored event constructor aligns connection in testing', function (): void {
+test('stored event constructor aligns activity connection', function (): void {
     $storedEvent = new StoredEvent;
-    $default = config('database.default');
 
-    Assert::assertSame(is_string($default) ? $default : 'mysql', $storedEvent->getConnectionName());
+    Assert::assertSame('activity', $storedEvent->getConnectionName());
 });
 
 test('stored event has expected casts and metadata behavior', function (): void {
