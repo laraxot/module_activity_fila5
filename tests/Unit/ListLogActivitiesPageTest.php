@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
+use ReflectionClass;
 
 use Filament\Tables\Enums\PaginationMode;
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
@@ -10,7 +11,6 @@ use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\Xot\Filament\Resources\Pages\XotBasePage;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 
 function makeListLogActivitiesPage(): ListLogActivities
 {

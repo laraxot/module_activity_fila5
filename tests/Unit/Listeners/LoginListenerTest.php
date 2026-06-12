@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Event;
 use Modules\Activity\Listeners\LoginListener;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 
 uses(TestCase::class);
 

@@ -8,7 +8,6 @@ use Modules\Activity\Listeners\LogoutListener;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 use ReflectionNamedType;
 
 uses(TestCase::class);
