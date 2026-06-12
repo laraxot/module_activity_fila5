@@ -12,7 +12,6 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('ActivityLogger can log basic activity', function () {
-    /** @var TestCase $this */
     $logger = new ActivityLogger;
 
     $activity = $logger->log('test_event', null, null, ['key' => 'value'], 'Test Description');
@@ -32,7 +31,7 @@ test('ActivityLogger can log basic activity', function () {
 });
 
 test('ActivityLogger can log with user', function () {
-    /** @var TestCase $this */
+
     $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
@@ -55,7 +54,7 @@ test('ActivityLogger throws exception for invalid user type', function () {
 });
 
 test('ActivityLogger can log created event', function () {
-    /** @var TestCase $this */
+
     $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
@@ -69,7 +68,7 @@ test('ActivityLogger can log created event', function () {
 });
 
 test('ActivityLogger can log updated event', function () {
-    /** @var TestCase $this */
+
     $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
@@ -83,7 +82,7 @@ test('ActivityLogger can log updated event', function () {
 });
 
 test('ActivityLogger can log deleted event', function () {
-    /** @var TestCase $this */
+
     $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
@@ -97,7 +96,7 @@ test('ActivityLogger can log deleted event', function () {
 });
 
 test('ActivityLogger can log login event', function () {
-    /** @var TestCase $this */
+
     $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
@@ -108,7 +107,7 @@ test('ActivityLogger can log login event', function () {
 });
 
 test('ActivityLogger can log logout event', function () {
-    /** @var TestCase $this */
+
     $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
@@ -119,7 +118,6 @@ test('ActivityLogger can log logout event', function () {
 });
 
 test('ActivityLogger can log custom event', function () {
-    /** @var TestCase $this */
     $logger = new ActivityLogger;
 
     $activity = $logger->custom('custom_event', 'Custom Description', null, ['custom' => 'data']);
@@ -130,7 +128,7 @@ test('ActivityLogger can log custom event', function () {
 });
 
 test('ActivityLogger can get user activities', function () {
-    /** @var TestCase $this */
+
     $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
@@ -146,7 +144,7 @@ test('ActivityLogger can get user activities', function () {
 });
 
 test('ActivityLogger can get model activities', function () {
-    /** @var TestCase $this */
+
     $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
@@ -165,7 +163,6 @@ test('ActivityLogger can get model activities', function () {
 });
 
 test('ActivityLogger can get activities by type', function () {
-    /** @var TestCase $this */
     $logger = new ActivityLogger;
 
     $logger->log('specific_event', null, null, null, 'Specific Event');
@@ -180,7 +177,6 @@ test('ActivityLogger can get activities by type', function () {
 });
 
 test('ActivityLogger can get recent activities', function () {
-    /** @var TestCase $this */
     $logger = new ActivityLogger;
 
     // Create some test activities
@@ -193,7 +189,6 @@ test('ActivityLogger can get recent activities', function () {
 });
 
 test('ActivityLogger can clean old activities', function () {
-    /** @var TestCase $this */
     $logger = new ActivityLogger;
 
     $activity = $logger->log('old_event', null, null, null, 'Old Event');
@@ -207,7 +202,6 @@ test('ActivityLogger can clean old activities', function () {
 });
 
 test('ActivityLogger can get statistics', function () {
-    /** @var TestCase $this */
     $logger = new ActivityLogger;
 
     $logger->log('stat_event', null, null, null, 'Stat Event');
@@ -219,7 +213,7 @@ test('ActivityLogger can get statistics', function () {
 });
 
 test('ActivityLogger can get statistics for specific user', function () {
-    /** @var TestCase $this */
+
     $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
