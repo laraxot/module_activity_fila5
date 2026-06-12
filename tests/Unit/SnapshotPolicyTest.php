@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
+use ReflectionClass;
 
 use Modules\Activity\Models\Policies\SnapshotPolicy;
 use Modules\Activity\Tests\TestCase;
@@ -10,7 +11,6 @@ use Modules\User\Models\Policies\UserBasePolicy;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\Attributes\Test;
-use ReflectionClass;
 
 class SnapshotPolicyTest extends TestCase
 {
