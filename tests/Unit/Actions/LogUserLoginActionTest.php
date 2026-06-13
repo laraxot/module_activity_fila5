@@ -11,8 +11,8 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('LogUserLoginAction can be instantiated', function () {
-    $user = UserFactory::new()->make();
-    assert($user instanceof User);
+    $user = UserFactory::new()->createOne();
+    Assert::assertInstanceOf(User::class, $user);
 
     $action = new LogUserLoginAction($user);
 

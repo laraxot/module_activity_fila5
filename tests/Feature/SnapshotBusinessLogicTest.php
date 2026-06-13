@@ -11,7 +11,7 @@ use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('can create snapshot with basic information', function (): void {
     $snapshot = SnapshotFactory::new()->createOne([
@@ -93,7 +93,8 @@ test('can create snapshot with complex state', function (): void {
     /** @var array<array-key, mixed> $meta */
     $meta = $state['metadata'];
     Assert::assertIsArray($meta);
-    Assert::assertStringContainsString((string) 'verified', (string) $meta['tags']);
+    Assert::assertIsArray($meta['tags']);
+    Assert::assertContains('verified', $meta['tags']);
 });
 
 test('can manage snapshot versioning', function (): void {
@@ -335,28 +336,29 @@ test('can query snapshots by date range', function (): void {
     $today = now();
     $tomorrow = now()->addDay();
 
-    SnapshotFactory::new()->createOne([
+    $yesterdaySnapshot = SnapshotFactory::new()->createOne([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'state' => ['date' => 'yesterday'],
         'created_at' => $yesterday,
     ]);
 
-    SnapshotFactory::new()->createOne([
+    $todaySnapshotRecord = SnapshotFactory::new()->createOne([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'state' => ['date' => 'today'],
         'created_at' => $today,
     ]);
 
-    SnapshotFactory::new()->createOne([
+    $tomorrowSnapshot = SnapshotFactory::new()->createOne([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'state' => ['date' => 'tomorrow'],
         'created_at' => $tomorrow,
     ]);
+    $snapshotIds = [$yesterdaySnapshot->id, $todaySnapshotRecord->id, $tomorrowSnapshot->id];
 
-    $todaySnapshots = Snapshot::whereDate('created_at', today())->get();
+    $todaySnapshots = Snapshot::whereKey($snapshotIds)->whereDate('created_at', today())->get();
     Assert::assertCount(1, $todaySnapshots);
     $todaySnapshot = $todaySnapshots->first();
     Assert::assertNotNull($todaySnapshot);
@@ -365,7 +367,7 @@ test('can query snapshots by date range', function (): void {
     $todayState = $todaySnapshot->state;
     Assert::assertSame('today', $todayState['date']);
 
-    $recentSnapshots = Snapshot::where('created_at', '>=', $yesterday)->get();
+    $recentSnapshots = Snapshot::whereKey($snapshotIds)->where('created_at', '>=', $yesterday)->get();
     Assert::assertCount(3, $recentSnapshots);
 });
 

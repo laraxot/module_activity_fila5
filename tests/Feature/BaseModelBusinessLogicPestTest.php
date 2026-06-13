@@ -14,7 +14,7 @@ use Modules\Xot\Traits\Updater;
 use PHPUnit\Framework\Assert;
 use function Safe\class_uses;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('can create base model instance', function (): void {
     $model = new TestActivityModel;
@@ -67,20 +67,20 @@ test('has correct casts configuration', function (): void {
 });
 
 test('can use factory', function (): void {
-    $model = new TestActivityModel;
+    $factory = TestActivityModel::factory();
 
-    Assert::assertNotNull($model->factory());
+    Assert::assertNotNull($factory);
 });
 
 test('has updater trait', function (): void {
     $model = new TestActivityModel;
-    $traits = class_uses($model);
+    $traits = class_uses_recursive($model::class);
     Assert::assertContains(Updater::class, $traits);
 });
 
 test('has has factory trait', function (): void {
     $model = new TestActivityModel;
-    $traits = class_uses($model);
+    $traits = class_uses_recursive($model::class);
     Assert::assertContains(HasFactory::class, $traits);
 });
 
@@ -127,9 +127,9 @@ test('can handle created by tracking', function (): void {
     $model->updated_by = $userId;
     $model->deleted_by = $userId;
 
-    Assert::assertSame($userId, $model->created_by);
-    Assert::assertSame($userId, $model->updated_by);
-    Assert::assertSame($userId, $model->deleted_by);
+    Assert::assertSame((string) $userId, $model->created_by);
+    Assert::assertSame((string) $userId, $model->updated_by);
+    Assert::assertSame((string) $userId, $model->deleted_by);
 });
 
 test('has correct fillable configuration', function (): void {

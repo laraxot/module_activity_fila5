@@ -13,7 +13,7 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
 use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('classes extend correct base classes', function (): void {
     $actionReflection = new \ReflectionClass(ListLogActivitiesAction::class);
@@ -57,7 +57,7 @@ test('service provider configuration', function (): void {
 });
 
 test('views exist and are structured', function (): void {
-    $viewPath = base_path('Modules/Activity/resources/views/filament/list-log-activities.blade.php');
+    $viewPath = base_path('Modules/Activity/resources/views/filament/pages/list-log-activities.blade.php');
     Assert::assertTrue(file_exists($viewPath));
 
     $viewContent = file_get_contents($viewPath);

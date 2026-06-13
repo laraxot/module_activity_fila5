@@ -3,22 +3,22 @@
 declare(strict_types=1);
 
 use Illuminate\Auth\Events\Logout;
-use Illuminate\Support\Facades\Event;
+use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Listeners\LogoutListener;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
-use ReflectionNamedType;
 
 uses(TestCase::class);
 
 test('logout listener is registered for logout event', function () {
-    Event::fake();
+    $reflection = new ReflectionClass(EventServiceProvider::class);
+    /** @var array<class-string, list<class-string>> $listen */
+    $listen = $reflection->getDefaultProperties()['listen'] ?? [];
+    /** @var list<class-string> $handlers */
+    $handlers = $listen[Logout::class] ?? [];
 
-    Event::assertListening(
-        Logout::class,
-        LogoutListener::class
-    );
+    Assert::assertContains(LogoutListener::class, $handlers);
 });
 
 test('logout listener can be instantiated', function () {
@@ -42,7 +42,7 @@ test('logout listener handle method accepts logout event', function () {
 
     Assert::assertCount(1, $parameters);
     $parameterType = $parameters[0]->getType();
-    Assert::assertInstanceOf(ReflectionNamedType::class, $parameterType);
+    Assert::assertInstanceOf(\ReflectionNamedType::class, $parameterType);
     Assert::assertSame(Logout::class, $parameterType->getName());
 });
 

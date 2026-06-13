@@ -10,7 +10,7 @@ use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('snapshot getConnectionName resolves activity connection', function (): void {
     $snapshot = new Snapshot;
