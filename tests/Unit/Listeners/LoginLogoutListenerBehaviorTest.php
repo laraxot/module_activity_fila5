@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Listeners;
-use ReflectionClass;
-
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Support\Str;
 use Modules\Activity\Listeners\LoginListener;
@@ -30,7 +28,7 @@ test('logout listener returns early when event has no user', function (): void {
     $listener = new LogoutListener;
     $user = new User;
     $event = new Logout('web', $user);
-    $userProperty = new ReflectionClass(Logout::class)->getProperty('user');
+    $userProperty = new \ReflectionClass(Logout::class)->getProperty('user');
     $userProperty->setValue($event, null);
 
     $before = Activity::query()->count();

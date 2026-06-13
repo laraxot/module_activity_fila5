@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
-use ReflectionClass;
-
 use Filament\Tables\Enums\PaginationMode;
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Filament\Pages\ListLogActivities;
@@ -24,7 +22,7 @@ function makeListLogActivitiesPage(): ListLogActivities
 }
 
 test('list log activities page is abstract', function (): void {
-    $reflection = new ReflectionClass(ListLogActivities::class);
+    $reflection = new \ReflectionClass(ListLogActivities::class);
 
     Assert::assertTrue($reflection->isAbstract());
 });
@@ -42,7 +40,7 @@ test('list log activities uses can paginate trait', function (): void {
 });
 
 test('list log activities exposes expected methods', function (): void {
-    $reflection = new ReflectionClass(ListLogActivities::class);
+    $reflection = new \ReflectionClass(ListLogActivities::class);
     $expectedMethods = [
         'getActivities',
         'restoreActivity',
@@ -64,7 +62,7 @@ test('list log activities pagination mode returns default', function (): void {
 });
 
 test('list log activities view is correct', function (): void {
-    $reflection = new ReflectionClass(ListLogActivities::class);
+    $reflection = new \ReflectionClass(ListLogActivities::class);
     $property = $reflection->getProperty('view');
     $property->setAccessible(true);
 
