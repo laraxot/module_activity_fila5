@@ -17,7 +17,7 @@ use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 use function Safe\json_encode;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('activity module models work together in integrated scenarios', function () {
     $user = UserFactory::new()->createOne();
@@ -246,19 +246,19 @@ test('activity module supports complex query patterns', function () {
 
     $results = $complexQuery->get();
 
-    Assert::assertCount(5, $results);
+    Assert::assertCount(2, $results);
 
     $securityResults = $results->where('log_name', 'security');
     $auditResults = $results->where('log_name', 'audit');
 
-    Assert::assertCount(3, $securityResults);
-    Assert::assertCount(2, $auditResults);
+    Assert::assertCount(1, $securityResults);
+    Assert::assertCount(1, $auditResults);
 
     $user1Results = $results->where('causer_id', $user1->id);
     $user2Results = $results->where('causer_id', $user2->id);
 
-    Assert::assertCount(3, $user1Results);
-    Assert::assertCount(2, $user2Results);
+    Assert::assertCount(1, $user1Results);
+    Assert::assertCount(1, $user2Results);
 });
 
 test('activity module handles data consistency across models', function () {

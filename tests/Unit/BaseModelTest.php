@@ -3,30 +3,25 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
+
 use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\Attributes\Test;
 
-class BaseModelTest extends TestCase
-{
-    #[Test]
-    public function base_model_is_abstract(): void
-    {
-        $reflection = new \ReflectionClass(BaseModel::class);
-        Assert::assertTrue($reflection->isAbstract());
-    }
+uses(\Modules\Activity\Tests\TestCase::class);
 
-    #[Test]
-    public function base_model_uses_activity_connection(): void
-    {
-        // Test via reflection that the connection property is set to 'activity'
-        $reflection = new \ReflectionClass(BaseModel::class);
-        $property = $reflection->getProperty('connection');
-        $property->setAccessible(true);
+it('base model is abstract', function (): void {
+    $reflection = new \ReflectionClass(BaseModel::class);
+    Assert::assertTrue($reflection->isAbstract());
+});
 
-        // Since BaseModel is abstract, we need to check the default value
-        $default = $property->getDefaultValue();
-        Assert::assertEquals('activity', $default);
-    }
-}
+it('base model uses activity connection', function (): void {
+    // Test via reflection that the connection property is set to 'activity'
+    $reflection = new \ReflectionClass(BaseModel::class);
+    $property = $reflection->getProperty('connection');
+    $property->setAccessible(true);
+
+    // Since BaseModel is abstract, we need to check the default value
+    $default = $property->getDefaultValue();
+    Assert::assertEquals('activity', $default);
+});

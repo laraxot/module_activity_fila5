@@ -8,7 +8,7 @@ use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('RestoreActivityAction can be instantiated', function () {
     $action = new RestoreActivityAction;

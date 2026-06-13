@@ -7,7 +7,7 @@ use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('activity service provider exposes expected metadata', function (): void {
     $provider = new ActivityServiceProvider(app());

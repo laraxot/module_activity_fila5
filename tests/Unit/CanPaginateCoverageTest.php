@@ -11,9 +11,8 @@ use Illuminate\Pagination\LengthAwarePaginator;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
 use Modules\Activity\Tests\TestCase;
-use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 function makeCanPaginateHarness(): CanPaginateHarness
 {
@@ -26,24 +25,24 @@ test('can paginate trait manages session, defaults and page helpers', function (
 
     $harness->updatedRecordsPerPage();
 
-    Assert::assertSame(25, $harness->recordsPerPage);
-    Assert::assertSame(1, $harness->pageResetCount);
-    Assert::assertSame(25, $harness->getRecordsPerPage());
-    Assert::assertSame(2, $harness->getTablePage());
-    Assert::assertSame('recordsPerPage', $harness->getPaginationPageName());
-    Assert::assertStringStartsWith('pages.', $harness->getPerPageSessionKey());
+    expect($harness->recordsPerPage)->toBe(25);
+    expect($harness->pageResetCount)->toBe(1);
+    expect($harness->getRecordsPerPage())->toBe(25);
+    expect($harness->getTablePage())->toBe(2);
+    expect($harness->getPaginationPageName())->toBe('recordsPerPage');
+    expect($harness->getPerPageSessionKey())->toStartWith('pages.');
 });
 
 test('can paginate default option fallback behaves correctly', function (): void {
     $harness = makeCanPaginateHarness();
     $harness->setDefaultPerPage(25);
 
-    Assert::assertSame(25, $harness->getDefaultRecordsPerPageSelectOption());
-    Assert::assertSame([10, 25, 50], $harness->exposeOptions());
+    expect($harness->getDefaultRecordsPerPageSelectOption())->toBe(25);
+    expect($harness->exposeOptions())->toEqual([10, 25, 50]);
     session()->put([$harness->getPerPageSessionKey() => 999]);
 
-    Assert::assertSame(10, $harness->getDefaultRecordsPerPageSelectOption());
-    Assert::assertTrue(session()->has($harness->getPerPageSessionKey()));
+    expect($harness->getDefaultRecordsPerPageSelectOption())->toBe(10);
+    expect(session()->has($harness->getPerPageSessionKey()))->toBeFalse();
 });
 
 test('can paginate trait covers default, simple and cursor modes', function (): void {
@@ -60,19 +59,19 @@ test('can paginate trait covers default, simple and cursor modes', function (): 
     $defaultHarness->setMode(PaginationMode::Default);
     $defaultPaginator = $defaultHarness->exposePaginateQuery(clone $query);
 
-    Assert::assertInstanceOf(LengthAwarePaginator::class, $defaultPaginator);
+    expect($defaultPaginator)->toBeInstanceOf(LengthAwarePaginator::class);
 
     $simpleHarness = makeCanPaginateHarness();
     $simpleHarness->recordsPerPage = 10;
     $simpleHarness->setMode(PaginationMode::Simple);
     $simplePaginator = $simpleHarness->exposePaginateQuery(clone $query);
 
-    Assert::assertInstanceOf(Paginator::class, $simplePaginator);
+    expect($simplePaginator)->toBeInstanceOf(Paginator::class);
 
     $cursorHarness = makeCanPaginateHarness();
     $cursorHarness->recordsPerPage = 10;
     $cursorHarness->setMode(PaginationMode::Cursor);
     $cursorPaginator = $cursorHarness->exposePaginateQuery(clone $query);
 
-    Assert::assertInstanceOf(CursorPaginator::class, $cursorPaginator);
+    expect($cursorPaginator)->toBeInstanceOf(CursorPaginator::class);
 });

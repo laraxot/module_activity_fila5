@@ -5,64 +5,57 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Unit;
 
 use Modules\Activity\Models\Policies\StoredEventPolicy;
+use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\Policies\UserBasePolicy;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\Attributes\Test;
-use PHPUnit\Framework\TestCase;
 
-class StoredEventPolicyTest extends TestCase
-{
-    #[Test]
-    public function policy_extends_user_base_policy(): void
-    {
-        $policy = new StoredEventPolicy;
+uses(\Modules\Activity\Tests\TestCase::class);
 
-        Assert::assertInstanceOf(UserBasePolicy::class, $policy);
-    }
+test('policy extends user base policy', function (): void {
+    $policy = new StoredEventPolicy();
 
-    #[Test]
-    public function user_with_permission_can_view(): void
-    {
-        $user = $this->createMock(User::class);
-        $user->method('hasPermissionTo')->with('stored_event.view')->willReturn(true);
+    Assert::assertInstanceOf(UserBasePolicy::class, $policy);
+});
 
-        $policy = new StoredEventPolicy;
-        Assert::assertTrue($policy->view($user));
-    }
+test('user with permission can view', function (): void {
+    /** @var TestCase $this */
+    $user = $this->createUnitMock(User::class);
+    $user->method('hasPermissionTo')->with('stored_event.view')->willReturn(true);
 
-    #[Test]
-    public function user_without_permission_cannot_view(): void
-    {
-        $user = $this->createMock(User::class);
-        $user->method('hasPermissionTo')->with('stored_event.view')->willReturn(false);
+    $policy = new StoredEventPolicy();
+    Assert::assertTrue($policy->view($user));
+});
 
-        $policy = new StoredEventPolicy;
-        Assert::assertFalse($policy->view($user));
-    }
+test('user without permission cannot view', function (): void {
+    /** @var TestCase $this */
+    $user = $this->createUnitMock(User::class);
+    $user->method('hasPermissionTo')->with('stored_event.view')->willReturn(false);
 
-    #[Test]
-    public function policy_create_update_delete_restore_force_delete_methods_check_permissions(): void
-    {
-        $permissions = [
-            'stored_event.create',
-            'stored_event.update',
-            'stored_event.delete',
-            'stored_event.restore',
-            'stored_event.forceDelete',
-        ];
+    $policy = new StoredEventPolicy();
+    Assert::assertFalse($policy->view($user));
+});
 
-        $user = $this->createMock(User::class);
-        $user->method('hasPermissionTo')->willReturnCallback(
-            static fn (string $permission): bool => in_array($permission, $permissions, true)
-        );
+test('policy create update delete restore force delete methods check permissions', function (): void {
+    /** @var TestCase $this */
+    $permissions = [
+        'stored_event.create',
+        'stored_event.update',
+        'stored_event.delete',
+        'stored_event.restore',
+        'stored_event.forceDelete',
+    ];
 
-        $policy = new StoredEventPolicy;
+    $user = $this->createUnitMock(User::class);
+    $user->method('hasPermissionTo')->willReturnCallback(
+        static fn (string $permission): bool => in_array($permission, $permissions, true)
+    );
 
-        Assert::assertTrue($policy->create($user));
-        Assert::assertTrue($policy->update($user));
-        Assert::assertTrue($policy->delete($user));
-        Assert::assertTrue($policy->restore($user));
-        Assert::assertTrue($policy->forceDelete($user));
-    }
-}
+    $policy = new StoredEventPolicy();
+
+    Assert::assertTrue($policy->create($user));
+    Assert::assertTrue($policy->update($user));
+    Assert::assertTrue($policy->delete($user));
+    Assert::assertTrue($policy->restore($user));
+    Assert::assertTrue($policy->forceDelete($user));
+});
