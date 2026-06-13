@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Auth\Events\Login;
-use Illuminate\Support\Facades\Event;
+use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Listeners\LoginListener;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -11,12 +11,13 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('login listener is registered for login event', function () {
-    Event::fake();
+    $reflection = new ReflectionClass(EventServiceProvider::class);
+    /** @var array<class-string, list<class-string>> $listen */
+    $listen = $reflection->getDefaultProperties()['listen'] ?? [];
+    /** @var list<class-string> $handlers */
+    $handlers = $listen[Login::class] ?? [];
 
-    Event::assertListening(
-        Login::class,
-        LoginListener::class
-    );
+    Assert::assertContains(LoginListener::class, $handlers);
 });
 
 test('login listener can be instantiated', function () {

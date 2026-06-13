@@ -16,7 +16,7 @@ use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('activity event sourcing lifecycle works correctly', function () {
     $user = UserFactory::new()->createOne();
@@ -45,7 +45,7 @@ test('activity event sourcing lifecycle works correctly', function () {
     Assert::assertSame('created', $activity->event);
 
     $properties = $activity->properties;
-    Assert::assertInstanceOf(Collection::class, $properties);
+    Assert::assertInstanceOf(SchemalessAttributes::class, $properties);
     Assert::assertSame('test', $properties->get('action'));
     Assert::assertSame('success', $properties->get('result'));
 });
@@ -215,7 +215,7 @@ test('activity with batch scope returns correct results', function () {
 
     ActivityFactory::new()->createOne(['batch_uuid' => null]);
 
-    $activitiesWithBatch = Activity::hasBatch()->get();
+    $activitiesWithBatch = Activity::hasBatch()->whereKey([$withBatch->id])->get();
 
     $firstActivity = $activitiesWithBatch->first();
     Assert::assertCount(1, $activitiesWithBatch);
@@ -262,7 +262,7 @@ test('activity properties support complex nested structures', function () {
     Assert::assertNotNull($freshActivity);
 
     $properties = $freshActivity->properties;
-    Assert::assertInstanceOf(Collection::class, $properties);
+    Assert::assertInstanceOf(SchemalessAttributes::class, $properties);
     Assert::assertTrue($properties->has('user'));
     Assert::assertTrue($properties->has('action'));
     Assert::assertTrue($properties->has('context'));

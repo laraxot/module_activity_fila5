@@ -23,7 +23,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 use PHPUnit\Framework\Assert;
 use function Safe\class_uses;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 describe('ActivityEvent', function (): void {
     test('can be instantiated', function (): void {

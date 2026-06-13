@@ -156,6 +156,10 @@ abstract class ListLogActivities extends XotBasePage
             return false;
         }
 
+        if (! isset($this->record) || ! $this->record instanceof Model) {
+            return false;
+        }
+
         $canRestore = $resource::canRestore($this->record);
 
         return \is_bool($canRestore) ? $canRestore : false;

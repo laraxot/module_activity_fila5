@@ -7,10 +7,11 @@ namespace Modules\Activity\Tests\Feature;
 use Illuminate\Support\Collection;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
+use Spatie\SchemalessAttributes\SchemalessAttributes;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('can create activity with basic information', function () {
     $user = UserFactory::new()->createOne();
@@ -26,7 +27,7 @@ test('can create activity with basic information', function () {
     ]);
     $properties = $activity->properties;
     Assert::assertNotNull($properties);
-    Assert::assertInstanceOf(Collection::class, $properties);
+    Assert::assertInstanceOf(SchemalessAttributes::class, $properties);
     $propertiesArray = $properties->toArray();
 
     Assert::assertSame('default', $activity->log_name);

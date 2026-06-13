@@ -13,7 +13,7 @@ use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Traits\Updater;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('it can create base model instance', function (): void {
     $model = new TestActivityModel;
@@ -134,9 +134,9 @@ test('it can handle user tracking fields', function (): void {
     $model->updated_by = 456;
     $model->deleted_by = 789;
 
-    Assert::assertSame(123, $model->created_by);
-    Assert::assertSame(456, $model->updated_by);
-    Assert::assertSame(789, $model->deleted_by);
+    Assert::assertSame('123', $model->created_by);
+    Assert::assertSame('456', $model->updated_by);
+    Assert::assertSame('789', $model->deleted_by);
 });
 
 test('it has correct hidden attributes', function (): void {

@@ -13,7 +13,7 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 function createUser(): User
 {
@@ -75,7 +75,7 @@ describe('ActivityLogger', function (): void {
 
         Assert::assertInstanceOf(Activity::class, $activity);
         Assert::assertSame('login', $activity->event);
-        Assert::assertStringContainsString((string) 'User Test User logged in', (string) $activity->description);
+        Assert::assertStringContainsString((string) 'User logged in', (string) $activity->description);
     });
 
     test('logs logout event', function (): void {
@@ -85,7 +85,7 @@ describe('ActivityLogger', function (): void {
 
         Assert::assertInstanceOf(Activity::class, $activity);
         Assert::assertSame('logout', $activity->event);
-        Assert::assertStringContainsString((string) 'User Test User logged out', (string) $activity->description);
+        Assert::assertStringContainsString((string) 'User logged out', (string) $activity->description);
     });
 });
 

@@ -12,7 +12,7 @@ use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('can create stored event with basic information', function (): void {
     $eventData = [
@@ -484,7 +484,7 @@ test('can query events by date range', function (): void {
     $today = now();
     $tomorrow = now()->addDay();
 
-    StoredEvent::create([
+    $yesterdayEvent = StoredEvent::create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'event_version' => 1,
@@ -494,7 +494,7 @@ test('can query events by date range', function (): void {
         'created_at' => $yesterday,
     ]);
 
-    StoredEvent::create([
+    $todayEvent = StoredEvent::create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'event_version' => 1,
@@ -504,7 +504,7 @@ test('can query events by date range', function (): void {
         'created_at' => $today,
     ]);
 
-    StoredEvent::create([
+    $tomorrowEvent = StoredEvent::create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'event_version' => 1,
@@ -514,7 +514,8 @@ test('can query events by date range', function (): void {
         'created_at' => $tomorrow,
     ]);
 
-    $todayEvents = StoredEvent::whereDate('created_at', today())->get();
+    $eventIds = [$yesterdayEvent->id, $todayEvent->id, $tomorrowEvent->id];
+    $todayEvents = StoredEvent::whereKey($eventIds)->whereDate('created_at', today())->get();
     Assert::assertCount(1, $todayEvents);
     $todayFirst = $todayEvents->first();
     Assert::assertNotNull($todayFirst);
@@ -524,7 +525,7 @@ test('can query events by date range', function (): void {
     Assert::assertIsArray($todayProps);
     Assert::assertSame('today', $todayProps['date']);
 
-    $recentEvents = StoredEvent::whereBetween('created_at', [$yesterday, $today->endOfDay()])->get();
+    $recentEvents = StoredEvent::whereKey($eventIds)->whereBetween('created_at', [$yesterday, $today->endOfDay()])->get();
     Assert::assertCount(2, $recentEvents);
 });
 

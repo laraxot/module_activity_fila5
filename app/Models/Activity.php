@@ -144,6 +144,28 @@ class Activity extends SpatieActivity
         ];
     }
 
+    /**
+     * Scope activities by batch UUID.
+     *
+     * @param Builder<static> $query
+     * @return Builder<static>
+     */
+    public function scopeForBatch(Builder $query, string $batchUuid): Builder
+    {
+        return $query->where('batch_uuid', $batchUuid);
+    }
+
+    /**
+     * Scope activities that belong to any batch.
+     *
+     * @param Builder<static> $query
+     * @return Builder<static>
+     */
+    public function scopeHasBatch(Builder $query): Builder
+    {
+        return $query->whereNotNull('batch_uuid');
+    }
+
     // NOTE
     // ----
     // We intentionally do not override static query helper methods here

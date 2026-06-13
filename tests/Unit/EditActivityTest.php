@@ -8,17 +8,15 @@ use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages\EditActivity;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\Attributes\Test;
 
-class EditActivityTest extends TestCase
-{
-    #[Test]
-    public function edit_activity_has_correct_resource(): void
-    {
-        $page = new EditActivity;
+uses(\Modules\Activity\Tests\TestCase::class);
+
+describe('Edit Activity', function (): void {
+    test('edit activity has correct resource', function (): void {
+$page = new EditActivity;
         Assert::assertEquals(
             ActivityResource::class,
             $page::getResource()
         );
-    }
-}
+    });
+});

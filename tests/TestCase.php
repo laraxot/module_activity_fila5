@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\ServiceProvider;
+use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Fixcity\Models\User;
@@ -19,10 +19,14 @@ use Modules\Xot\Tests\XotBaseTestCase;
  *
  * Uses shared fixcity_data.sqlite (no RefreshDatabase / migrate:fresh).
  * prepareSharedFixcitySqliteForTesting() runs before transactions begin.
+ *
+ * @property ListLogActivities|null $page
  */
 abstract class TestCase extends XotBaseTestCase
 {
     use DatabaseTransactions;
+
+    public ?ListLogActivities $page = null;
 
     /**
      * Shared test data for Activity entity.
@@ -45,10 +49,8 @@ abstract class TestCase extends XotBaseTestCase
      */
     public array $snapshotData = [];
 
-    public ?Model $model = null;
-
     /** @var list<string> */
-    protected $connectionsToTransact = ['sqlite'];
+    protected $connectionsToTransact = ['sqlite', 'activity', 'user'];
 
     protected function setUp(): void
     {
@@ -70,5 +72,14 @@ abstract class TestCase extends XotBaseTestCase
             ActivityServiceProvider::class,
             EventServiceProvider::class,
         ];
+    }
+
+    public function requirePage(): ListLogActivities
+    {
+        if (null === $this->page) {
+            $this->fail('ListLogActivities page is not initialized.');
+        }
+
+        return $this->page;
     }
 }
