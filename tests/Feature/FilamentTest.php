@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
-use ReflectionClass;
-
 use Filament\Actions\Action;
 use Modules\Activity\Events\ActivityEvent;
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;

@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
-use ReflectionClass;
-
 use Modules\Activity\Models\Policies\SnapshotPolicy;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\Policies\UserBasePolicy;
@@ -25,7 +23,7 @@ class SnapshotPolicyTest extends TestCase
     #[Test]
     public function policy_has_expected_public_methods(): void
     {
-        $reflection = new ReflectionClass(SnapshotPolicy::class);
+        $reflection = new \ReflectionClass(SnapshotPolicy::class);
         $expectedMethods = ['view', 'create', 'update', 'delete', 'restore', 'forceDelete'];
 
         foreach ($expectedMethods as $method) {
