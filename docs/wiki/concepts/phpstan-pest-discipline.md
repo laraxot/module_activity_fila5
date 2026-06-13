@@ -4,8 +4,8 @@ type: concept
 module: Activity
 tags: [activity, phpstan, pest, testing, second-brain]
 created: 2026-06-10
-updated: 2026-06-10
-qmd: "Activity phpstan pest discipline method.internalClass public assertions bridge tests stay pest"
+updated: 2026-06-13
+qmd: "Activity phpstan pest discipline requirePage createUnitMock skipTest namespace uses fqcn"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/328"
   - "https://github.com/laraxot/module_activity_fila5/issues/15"
@@ -26,6 +26,9 @@ Activity partecipa alla campagna `cd laravel && ./vendor/bin/phpstan analyse Mod
 - non modificare, creare o rigenerare `phpstan*.neon`: `laravel/phpstan.neon` e' gestito solo dall'utente;
 - non convertire test Pest in classi PHPUnit;
 - correggere gli errori PHPStan nei test usando file Pest, helper tipizzati, bridge o assertion pubbliche dentro closure Pest;
+- per proprietà nullable su `TestCase` (es. `$page`) usare accessor `requirePage(): ListLogActivities` invece di `$this->page->…` nelle closure;
+- policy test: `namespace Modules\Activity\Tests\Unit` + `uses(\Modules\Activity\Tests\TestCase::class)` + `@var TestCase $this` + `createUnitMock()` (non `createMock()`);
+- skip condizionale: `$this->skipTest('…')` via wrapper public su `XotBaseTestCase` (non `markTestSkipped()` diretto);
 - documentare ogni pattern riusabile nel wiki locale e, quando lo scope lo consente, nella chat agenti.
 
 ## Pattern operativo
@@ -54,6 +57,14 @@ Il runner, la discovery e la semantica restano Pest. `Assert::assert*()` e' solo
 - Nei file Pest usare `describe()` per contenitori logici e `test()` per casi eseguibili. Evitare `test()` annidati dentro altri `test()`.
 - Per fixture in-memory condivise preferire helper locali tipizzati con array-shape invece di stato su `$this` quando PHPStan non riesce a risolvere il binding Pest.
 - Se un test deve usare il TestCase del modulo, importare solo `Modules\Activity\Tests\TestCase`; non duplicare con `Tests\TestCase`.
+
+## Verifica 2026-06-13 (gate chef)
+
+- `cd laravel && ./vendor/bin/phpstan analyse Modules` → **[OK] No errors** (6275 file, include Activity).
+- Fix batch su 7 file `tests/Unit/Actions/`: rimosso `expect()->toBe*()` / `toHaveCount` / `->throws()`; sostituito con `PHPUnit\Framework\Assert` e try/catch per eccezioni.
+- `UserFactory::new()->createOne()` al posto di `make()` dove il costruttore Action richiede `User` o `Model` non-null.
+- Eccezione attesa: **non** usare `test(...)->throws()` — PHPStan vede `test()` come `void` (`function.void`, `method.nonObject`).
+- Overview modulo: [overviews/completion-status.md](../overviews/completion-status.md).
 
 ## Verifica 2026-06-10
 

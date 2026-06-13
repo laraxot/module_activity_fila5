@@ -3,21 +3,16 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Models;
+
 use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\Attributes\Test;
 
-/**
- * Coverage test for BaseModel::casts() method.
- * Uses the full Laravel application context (Activity TestCase).
- */
-class BaseModelCoverageTest extends TestCase
-{
-    #[Test]
-    public function casts_returns_array_with_required_keys(): void
-    {
-        $concrete = new class extends BaseModel
+uses(\Modules\Activity\Tests\TestCase::class);
+
+describe('Base Model Coverage', function (): void {
+    test('casts returns array with required keys', function (): void {
+$concrete = new class extends BaseModel
         {
             protected $table = 'test_base_coverage';
         };
@@ -34,12 +29,10 @@ class BaseModelCoverageTest extends TestCase
         Assert::assertArrayHasKey('id', $casts);
         Assert::assertArrayHasKey('created_at', $casts);
         Assert::assertArrayHasKey('updated_at', $casts);
-    }
+    });
 
-    #[Test]
-    public function casts_merges_with_parent_casts(): void
-    {
-        $concrete = new class extends BaseModel
+    test('casts merges with parent casts', function (): void {
+$concrete = new class extends BaseModel
         {
             protected $table = 'test_base_coverage_merge';
         };
@@ -53,5 +46,5 @@ class BaseModelCoverageTest extends TestCase
 
         // BaseModel adds no extra casts but inherits parent's
         Assert::assertNotEmpty($casts);
-    }
-}
+    });
+});

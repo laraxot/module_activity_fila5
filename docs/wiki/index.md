@@ -4,7 +4,7 @@ type: index
 module: Activity
 tags: [activity, wiki, index, audit]
 created: 2026-04-15
-updated: 2026-06-10
+updated: 2026-06-13
 qmd: "activity module wiki index audit log second brain"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
@@ -29,6 +29,12 @@ related:
 
 > **Purpose:** Content-oriented catalog of all wiki pages in this module.  
 > **Replaces embedding-based RAG at moderate scale (~100 sources).**
+
+## Completamento
+
+- [overviews/completion-status.md](./overviews/completion-status.md) — stato modulo post gate chef
+- [PROJECT-ROADMAP.md](./PROJECT-ROADMAP.md) — milestone Activity
+- [platform-completion-roadmap (Xot)](../../Xot/docs/wiki/overviews/platform-completion-roadmap.md)
 
 ## Concepts
 

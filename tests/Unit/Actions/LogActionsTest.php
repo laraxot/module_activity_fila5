@@ -16,7 +16,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('LogActivityAction can execute', function () {
-    $user = UserFactory::new()->createOne(['name' => 'Test User', 'email' => 'test@example.com', 'password' => 'password']);
+    $user = UserFactory::new()->createOne(['name' => 'Test User', 'password' => 'password']);
 
     $action = new LogActivityAction(
         type: 'test_event',
@@ -27,8 +27,8 @@ test('LogActivityAction can execute', function () {
     $activity = $action->execute();
 
     Assert::assertInstanceOf(Activity::class, $activity);
-    Assert::assertEquals('test_event', $activity->event);
-    Assert::assertEquals('Test Description', $activity->description);
+    Assert::assertSame('test_event', $activity->event);
+    Assert::assertSame('Test Description', $activity->description);
 });
 
 test('LogActivityAction handles null user', function () {
@@ -45,56 +45,56 @@ test('LogActivityAction handles null user', function () {
 });
 
 test('LogUserLoginAction can execute', function () {
-    $user = UserFactory::new()->createOne(['name' => 'Test User', 'email' => 'test@example.com', 'password' => 'password']);
+    $user = UserFactory::new()->createOne(['name' => 'Test User', 'password' => 'password']);
 
     $action = new LogUserLoginAction($user);
 
     $activity = $action->execute();
 
     Assert::assertInstanceOf(Activity::class, $activity);
-    Assert::assertEquals('login', $activity->event);
+    Assert::assertSame('login', $activity->event);
 });
 
 test('LogUserLogoutAction can execute', function () {
-    $user = UserFactory::new()->createOne(['name' => 'Test User', 'email' => 'test@example.com', 'password' => 'password']);
+    $user = UserFactory::new()->createOne(['name' => 'Test User', 'password' => 'password']);
 
     $action = new LogUserLogoutAction($user);
 
     $activity = $action->execute();
 
     Assert::assertInstanceOf(Activity::class, $activity);
-    Assert::assertEquals('logout', $activity->event);
+    Assert::assertSame('logout', $activity->event);
 });
 
 test('LogModelCreatedAction can execute', function () {
-    $user = UserFactory::new()->createOne(['name' => 'Test User', 'email' => 'test@example.com', 'password' => 'password']);
+    $user = UserFactory::new()->createOne(['name' => 'Test User', 'password' => 'password']);
 
     $action = new LogModelCreatedAction($user);
 
     $activity = $action->execute();
 
     Assert::assertInstanceOf(Activity::class, $activity);
-    Assert::assertEquals('created', $activity->event);
+    Assert::assertSame('created', $activity->event);
 });
 
 test('LogModelUpdatedAction can execute', function () {
-    $user = UserFactory::new()->createOne(['name' => 'Test User', 'email' => 'test@example.com', 'password' => 'password']);
+    $user = UserFactory::new()->createOne(['name' => 'Test User', 'password' => 'password']);
 
     $action = new LogModelUpdatedAction($user);
 
     $activity = $action->execute();
 
     Assert::assertInstanceOf(Activity::class, $activity);
-    Assert::assertEquals('updated', $activity->event);
+    Assert::assertSame('updated', $activity->event);
 });
 
 test('LogModelDeletedAction can execute', function () {
-    $user = UserFactory::new()->createOne(['name' => 'Test User', 'email' => 'test@example.com', 'password' => 'password']);
+    $user = UserFactory::new()->createOne(['name' => 'Test User', 'password' => 'password']);
 
     $action = new LogModelDeletedAction($user);
 
     $activity = $action->execute();
 
     Assert::assertInstanceOf(Activity::class, $activity);
-    Assert::assertEquals('deleted', $activity->event);
+    Assert::assertSame('deleted', $activity->event);
 });

@@ -17,8 +17,8 @@ test('LogModelCreatedAction can be instantiated', function () {
 
         protected $fillable = ['name'];
     };
-    $user = UserFactory::new()->make();
-    assert($user instanceof Model);
+    $user = UserFactory::new()->createOne();
+    Assert::assertInstanceOf(Model::class, $user);
 
     $action = new LogModelCreatedAction($model, $user);
 
@@ -34,7 +34,7 @@ test('LogModelCreatedAction can execute', function () {
     });
     $model = new $modelClass(['name' => 'Test']);
     $user = UserFactory::new()->createOne();
-    assert($user instanceof Model);
+    Assert::assertInstanceOf(Model::class, $user);
 
     $action = new LogModelCreatedAction($model, $user);
 

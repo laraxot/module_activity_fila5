@@ -17,8 +17,8 @@ test('LogModelDeletedAction can be instantiated', function () {
 
         protected $fillable = ['name'];
     };
-    $user = UserFactory::new()->make();
-    assert($user instanceof Model);
+    $user = UserFactory::new()->createOne();
+    Assert::assertInstanceOf(Model::class, $user);
 
     $action = new LogModelDeletedAction($model, $user);
 
