@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
-use ReflectionClass;
-
 use Modules\Activity\Listeners\LoginListener;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -22,7 +20,7 @@ class LoginListenerTest extends TestCase
     public function listener_has_handle_method(): void
     {
         $listener = new LoginListener;
-        $reflection = new ReflectionClass($listener);
+        $reflection = new \ReflectionClass($listener);
 
         Assert::assertTrue($reflection->hasMethod('handle'));
     }

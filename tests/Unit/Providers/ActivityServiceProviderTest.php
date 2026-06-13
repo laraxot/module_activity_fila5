@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Providers;
-use ReflectionClass;
-
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
