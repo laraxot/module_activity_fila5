@@ -1,12 +1,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d4098eb (.)
+=======
+>>>>>>> 26b6dbd (.)
 ---
 module: theme
 topic: boost_skill_fix_summary
 canonical: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 See canonical documentation: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
@@ -49,3 +53,7 @@ See `/docs/BOOST_SKILL_SOLUTION_PLAN.md` for complete solution details.
 
 See canonical documentation: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
 >>>>>>> d4098eb (.)
+=======
+
+See canonical documentation: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
+>>>>>>> 26b6dbd (.)

@@ -1,12 +1,16 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d4098eb (.)
+=======
+>>>>>>> 26b6dbd (.)
 module: theme
 topic: best-practices
 canonical: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 See canonical documentation: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
@@ -42,3 +46,7 @@ qmd: self
 
 See canonical documentation: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
 >>>>>>> d4098eb (.)
+=======
+
+See canonical documentation: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
+>>>>>>> 26b6dbd (.)
