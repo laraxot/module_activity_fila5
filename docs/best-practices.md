@@ -1,9 +1,13 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d4098eb (.)
 module: theme
 topic: best-practices
 canonical: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
 ---
+<<<<<<< HEAD
 
 See canonical documentation: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
 =======
@@ -34,3 +38,7 @@ qmd: self
 - Aggiorna `docs/INDEX.md` con nuovi modelli e relazioni.
 - Collega a `Projects` e `Tasks` per contesto operativo.
 >>>>>>> 2b6968d (.)
+=======
+
+See canonical documentation: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
+>>>>>>> d4098eb (.)

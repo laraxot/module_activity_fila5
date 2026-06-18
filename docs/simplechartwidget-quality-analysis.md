@@ -5,6 +5,7 @@ canonical: ../../../Themes/docs/shared-components/dual-label-chart-widget-implem
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/dual-label-chart-widget-implementation.md
 =======
 ## Panoramica
@@ -805,3 +806,6 @@ Il refactoring ha migliorato la qualità del codice da:
 
 Questo approccio DRY+KISS permette di mantenere un codice di alta qualità, facile da testare e manutenere nel tempo.
 >>>>>>> 8fad5a4 (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/dual-label-chart-widget-implementation.md
+>>>>>>> d4098eb (.)

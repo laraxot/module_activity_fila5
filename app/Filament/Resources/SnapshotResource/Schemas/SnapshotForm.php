@@ -13,6 +13,7 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 class SnapshotForm extends XotBaseResourceForm
 {
     /**
+<<<<<<< HEAD
      * @return array<string, Component>
 =======
 /**
@@ -23,6 +24,9 @@ class SnapshotForm extends XotBaseResourceForm
     /**
      * @return array<int|string, Component>
 >>>>>>> 2b6968d (.)
+=======
+     * @return array<string, \Filament\Schemas\Components\Component>
+>>>>>>> d4098eb (.)
      */
     public static function getFormSchema(): array
     {

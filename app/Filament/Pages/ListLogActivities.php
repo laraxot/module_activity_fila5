@@ -269,9 +269,13 @@ abstract class ListLogActivities extends XotBasePage
     protected function sendRestoreSuccessNotification(): Notification
     {
         $title = __('activity::activities.events.restore_successful');
+<<<<<<< HEAD
         $titleString = is_array($title)
             ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
             : (is_string($title) ? $title : '');
+=======
+        $titleString = is_array($title) ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title)) : (string) $title;
+>>>>>>> d4098eb (.)
 
         return Notification::make()
             ->title($titleString)
@@ -282,9 +286,13 @@ abstract class ListLogActivities extends XotBasePage
     protected function sendRestoreFailureNotification(?string $message = null): Notification
     {
         $title = __('activity::activities.events.restore_failed');
+<<<<<<< HEAD
         $titleString = is_array($title)
             ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
             : (is_string($title) ? $title : '');
+=======
+        $titleString = is_array($title) ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title)) : (string) $title;
+>>>>>>> d4098eb (.)
 
         $notification = Notification::make()
             ->title($titleString)
