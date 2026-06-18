@@ -5,7 +5,11 @@ canonical: ../../../../../Themes/docs/shared-components/05-analisi-larabank.md
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 See canonical documentation: ../../../../../Themes/docs/shared-components/05-analisi-larabank.md
 =======
 See canonical documentation: ../../../../../Themes/docs/shared-components/05-analisi-larabank.md
 >>>>>>> d4098eb (.)
+=======
+See canonical documentation: ../../../../../Themes/docs/shared-components/05-analisi-larabank.md
+>>>>>>> 26b6dbd (.)

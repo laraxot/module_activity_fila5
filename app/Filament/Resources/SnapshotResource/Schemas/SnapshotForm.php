@@ -14,6 +14,7 @@ class SnapshotForm extends XotBaseResourceForm
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, Component>
 =======
 /**
@@ -27,6 +28,9 @@ class SnapshotForm extends XotBaseResourceForm
 =======
      * @return array<string, \Filament\Schemas\Components\Component>
 >>>>>>> d4098eb (.)
+=======
+     * @return array<string, \Filament\Schemas\Components\Component>
+>>>>>>> 26b6dbd (.)
      */
     public static function getFormSchema(): array
     {

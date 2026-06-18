@@ -5,6 +5,7 @@ canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplic
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Table of Contents
 - [Patient Management](#patient-management)
 - [Appointment Scheduling](#appointment-scheduling)
@@ -292,3 +293,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/event-sourci
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
 >>>>>>> d4098eb (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+>>>>>>> 26b6dbd (.)

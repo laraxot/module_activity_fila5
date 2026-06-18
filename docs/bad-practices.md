@@ -1,12 +1,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d4098eb (.)
+=======
+>>>>>>> 26b6dbd (.)
 ---
 module: theme
 topic: bad-practices
 canonical: ../../../Themes/docs/shared-components/BAD_PRACTICES.md
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 See canonical documentation: ../../../Themes/docs/shared-components/BAD_PRACTICES.md
@@ -26,3 +30,7 @@ Normalizza campi ricorrenti in tabelle distinte per query efficienti.
 
 See canonical documentation: ../../../Themes/docs/shared-components/BAD_PRACTICES.md
 >>>>>>> d4098eb (.)
+=======
+
+See canonical documentation: ../../../Themes/docs/shared-components/BAD_PRACTICES.md
+>>>>>>> 26b6dbd (.)

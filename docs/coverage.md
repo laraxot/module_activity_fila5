@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Activity Module Test Coverage
 
 ## Coverage Results
@@ -101,3 +102,12 @@ canonical: ../../../Themes/docs/shared-components/coverage.txt
 
 See canonical documentation: ../../../Themes/docs/shared-components/coverage.txt
 >>>>>>> d4098eb (.)
+=======
+---
+module: theme
+topic: coverage
+canonical: ../../../Themes/docs/shared-components/coverage.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/coverage.txt
+>>>>>>> 26b6dbd (.)

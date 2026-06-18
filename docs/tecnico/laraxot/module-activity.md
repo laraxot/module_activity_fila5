@@ -5,6 +5,7 @@ canonical: ../../../../../Themes/docs/shared-components/module-activity.md
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Overview
 Il modulo Activity fornisce un sistema completo di logging e monitoraggio delle attività nel sistema.
 
@@ -307,3 +308,6 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/module
 =======
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
 >>>>>>> d4098eb (.)
+=======
+See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
+>>>>>>> 26b6dbd (.)
