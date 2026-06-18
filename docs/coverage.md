@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2d6a374 (.)
 # Activity Module Test Coverage
 
 ## Coverage Results
@@ -92,6 +95,7 @@ topic: coverage
 canonical: ../../../Themes/docs/shared-components/coverage.txt
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/coverage.txt
 =======
 ---
@@ -111,3 +115,6 @@ canonical: ../../../Themes/docs/shared-components/coverage.txt
 
 See canonical documentation: ../../../Themes/docs/shared-components/coverage.txt
 >>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/coverage.txt
+>>>>>>> 2d6a374 (.)

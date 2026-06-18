@@ -7,7 +7,13 @@ namespace Modules\Activity\Tests\Unit;
 use Filament\Tables\Enums\PaginationMode;
 use Illuminate\Contracts\Pagination\CursorPaginator;
 use Illuminate\Contracts\Pagination\Paginator;
+<<<<<<< HEAD
 use Illuminate\Pagination\LengthAwarePaginator;
+=======
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
+>>>>>>> 2d6a374 (.)
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
 use Modules\Activity\Tests\TestCase;

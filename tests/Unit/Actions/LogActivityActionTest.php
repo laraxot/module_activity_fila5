@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+
+>>>>>>> 2d6a374 (.)
 use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Actions\LogActivityAction;
 use Modules\Activity\Tests\TestCase;

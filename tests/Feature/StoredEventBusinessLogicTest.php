@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Modules\Activity\Tests\Feature;
-
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
@@ -12,7 +10,7 @@ use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(Modules\Activity\Tests\TestCase::class);
 
 <<<<<<< HEAD
 test('can create stored event with basic information', function (): void {

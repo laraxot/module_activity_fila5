@@ -2,10 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Activity\Events\ActivityEvent;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+=======
+>>>>>>> 2d6a374 (.)
 uses(\Modules\Activity\Tests\TestCase::class);
 
 test('ActivityEvent uses expected Laravel event traits', function () {

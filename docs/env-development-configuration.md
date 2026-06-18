@@ -266,7 +266,11 @@ SESSION_DOMAIN=null
 
 Il file `.env.development` rappresenta la configurazione ottimale per lo sviluppo rapido e efficiente di Quaeris Fila5 Mono. La sua struttura differenzia significativamente dalla produzione per favorire setup zero-setup, performance ottimizzate e debugging più semplice. Questa configurazione è essenziale per mantenere un ambiente di sviluppo fluido e produttivo.
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il file `.env.development` rappresenta la configurazione ottimale per lo sviluppo rapido e efficiente di healthcare_app Fila5 Mono. La sua struttura differenzia significativamente dalla produzione per favorire setup zero-setup, performance ottimizzate e debugging più semplice. Questa configurazione è essenziale per mantenere un ambiente di sviluppo fluido e produttivo.
 =======
 Il file `.env.development` rappresenta la configurazione ottimale per lo sviluppo rapido e efficiente di healthcare_app Fila5 Mono. La sua struttura differenzia significativamente dalla produzione per favorire setup zero-setup, performance ottimizzate e debugging più semplice. Questa configurazione è essenziale per mantenere un ambiente di sviluppo fluido e produttivo.
 >>>>>>> 8fad5a4 (.)
+=======
+Il file `.env.development` rappresenta la configurazione ottimale per lo sviluppo rapido e efficiente di healthcare_app Fila5 Mono. La sua struttura differenzia significativamente dalla produzione per favorire setup zero-setup, performance ottimizzate e debugging più semplice. Questa configurazione è essenziale per mantenere un ambiente di sviluppo fluido e produttivo.
+>>>>>>> 2d6a374 (.)

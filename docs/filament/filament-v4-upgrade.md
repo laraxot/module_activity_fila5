@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2d6a374 (.)
 - [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
 # Filament v4 Upgrade Documentation
 
@@ -60,6 +63,7 @@ topic: filament-v4-upgrade
 canonical: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
 =======
 ---
@@ -79,3 +83,6 @@ canonical: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
 
 See canonical documentation: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
 >>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
+>>>>>>> 2d6a374 (.)

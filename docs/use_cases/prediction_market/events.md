@@ -50,7 +50,11 @@ class BetPlaced extends ShouldBeStored
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questi eventi devono essere registrati da una radice aggregate come `<nome progetto>ionMarketAggregateRoot` per garantire la coerenza dello stato.
 =======
 Questi eventi devono essere registrati da una radice aggregate come `<nome progetto>ionMarketAggregateRoot` per garantire la coerenza dello stato.
 >>>>>>> a1e3a4e (.)
+=======
+Questi eventi devono essere registrati da una radice aggregate come `<nome progetto>ionMarketAggregateRoot` per garantire la coerenza dello stato.
+>>>>>>> 2d6a374 (.)

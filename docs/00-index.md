@@ -55,6 +55,7 @@
 - `spatie/laravel-activitylog` - Audit trail
 - `spatie/laravel-event-sourcing` - Event sourcing, CQRS
 
+<<<<<<< HEAD
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
 - `spatie/laravel-activitylog` - Audit trail
@@ -65,6 +66,8 @@
 - `spatie/laravel-activitylog` - Audit trail
 - `spatie/laravel-event-sourcing` - Event sourcing, CQRS
 
+=======
+>>>>>>> 2d6a374 (.)
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
 - `spatie/laravel-activitylog` - Audit trail

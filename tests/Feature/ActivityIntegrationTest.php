@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Modules\Activity\Tests\Feature;
-
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Str;
 use Modules\Activity\Database\Factories\ActivityFactory;
@@ -30,12 +28,17 @@ beforeEach(function () {
 
 test('activity module models work together in integrated scenarios', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $user = UserFactory::new()->createOne();
     Assert::assertInstanceOf(User::class, $user);
 
     $activity = ActivityFactory::new()->createOne([
 =======
     $user = User::factory()->create();
+=======
+    $user = User::factory()->create(); // @phpstan-ignore-line method.nonObject
+    \assert($user instanceof User);
+>>>>>>> 2d6a374 (.)
     expect($user)->not->toBeNull();
 
     $activity = Activity::query()->create([
@@ -373,8 +376,13 @@ test('activity module supports complex query patterns', function () {
     $user1Results = $results->where('causer_id', $user1->id);
     $user2Results = $results->where('causer_id', $user2->id);
 
+<<<<<<< HEAD
     Assert::assertCount(1, $user1Results);
     Assert::assertCount(1, $user2Results);
+=======
+    expect($user1Results)->toHaveCount(3);
+    expect($user2Results)->toHaveCount(2);
+>>>>>>> 2d6a374 (.)
 });
 
 test('activity module handles data consistency across models', function () {
@@ -520,12 +528,20 @@ test('activity module supports bulk operations efficiently', function () {
         ? $lastActivityPropertiesValue
         : $lastActivityPropertiesValue->all();
 
+<<<<<<< HEAD
     Assert::assertSame($user->id, $firstActivity->causer_id);
     Assert::assertSame($user->id, $lastActivity->causer_id);
     Assert::assertArrayHasKey('index', $firstActivityProperties);
     Assert::assertSame(0, $firstActivityProperties['index']);
     Assert::assertArrayHasKey('index', $lastActivityProperties);
     Assert::assertSame(99, $lastActivityProperties['index']);
+=======
+    expect($firstActivityProperties)->toHaveKey('index', 0)
+        ->and($lastActivityProperties)->toHaveKey('index', 99)
+        ->and($firstActivity->causer_id)->toBe($user->id)
+        ->and($lastActivity->causer_id)->toBe($user->id);
+
+>>>>>>> 2d6a374 (.)
     $userActivities = Activity::query()
         ->where('causer_type', User::class)
         ->where('causer_id', (string) $user->id)
