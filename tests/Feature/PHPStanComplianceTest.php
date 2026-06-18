@@ -13,7 +13,7 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
 use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('classes extend correct base classes', function (): void {
     $actionReflection = new \ReflectionClass(ListLogActivitiesAction::class);
