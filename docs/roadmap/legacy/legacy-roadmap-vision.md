@@ -499,14 +499,9 @@ class User extends BaseUser
 
 <<<<<<< HEAD
 // Integration with Quaeris module
-// Integration with healthcare_app module
-=======
-<<<<<<< HEAD
-// Integration with Quaeris module
 =======
 // Integration with healthcare_app module
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
 class Survey extends BaseModel
 {
     public function publish()
