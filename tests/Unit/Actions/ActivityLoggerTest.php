@@ -140,9 +140,14 @@ test('ActivityLogger can get model activities', function () {
 
     $modelActivities = $logger->getModelActivities($subjectActivity, 10);
 
+<<<<<<< HEAD
     Assert::assertCount(1, $modelActivities);
     Assert::assertNotNull($modelActivities->first());
     Assert::assertSame((string) $subjectActivity->id, (string) $modelActivities->first()->subject_id);
+=======
+    expect($modelActivities)->toHaveCount(1);
+    expect((string) $modelActivities->first()->subject_id)->toBe((string) $subjectActivity->id);
+>>>>>>> 4e42175 (.)
 });
 
 test('ActivityLogger can get activities by type', function () {
