@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
-
->>>>>>> 2d6a374 (.)
 use Modules\Activity\Actions\LogUserLoginAction;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;

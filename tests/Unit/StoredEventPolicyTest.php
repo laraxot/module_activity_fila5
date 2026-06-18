@@ -5,30 +5,12 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Unit;
 
 use Modules\Activity\Models\Policies\StoredEventPolicy;
-<<<<<<< HEAD
 use Modules\Activity\Tests\TestCase;
-=======
->>>>>>> 2d6a374 (.)
 use Modules\User\Models\Policies\UserBasePolicy;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
-=======
-class StoredEventPolicyTest extends TestCase
-{
-    #[Test]
-    public function policy_extends_user_base_policy(): void
-    {
-        $this->assertTrue(
-            is_subclass_of(
-                StoredEventPolicy::class,
-                UserBasePolicy::class
-            )
-        );
-    }
->>>>>>> 2d6a374 (.)
 
 test('policy extends user base policy', function (): void {
     $policy = new StoredEventPolicy();

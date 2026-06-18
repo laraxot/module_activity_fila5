@@ -11,15 +11,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
-=======
-uses(TestCase::class); // Use the custom TestCase
-
-it('can create activity with basic information', function () {
-    $user = User::factory()->create(); // @phpstan-ignore-line method.nonObject
-    \assert($user instanceof User);
->>>>>>> 2b6968d (.)
 
 test('can create activity with basic information', function () {
     $user = UserFactory::new()->createOne();

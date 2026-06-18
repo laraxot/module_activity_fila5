@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
+
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Modules\Activity\Models\Policies\ActivityBasePolicy;
 use Modules\Activity\Tests\TestCase;
@@ -35,11 +36,7 @@ describe('Activity Base Policy', function (): void {
         // Test the policy
         $policy = new class extends ActivityBasePolicy
         {
-<<<<<<< HEAD
             public function policyBefore(User $user): ?bool
-=======
-            public function test_before(User $user): ?bool
->>>>>>> 2d6a374 (.)
             {
                 return $this->before($user);
             }

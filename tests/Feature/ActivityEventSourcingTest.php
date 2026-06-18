@@ -19,13 +19,8 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 uses(\Modules\Activity\Tests\TestCase::class);
 
 test('activity event sourcing lifecycle works correctly', function () {
-<<<<<<< HEAD
     $user = UserFactory::new()->createOne();
     Assert::assertInstanceOf(User::class, $user);
-=======
-    $user = User::factory()->create();
-    $this->assertNotNull($user);
->>>>>>> 2b6968d (.)
 
     $activityData = [
         'log_name' => 'user_actions',
@@ -50,19 +45,12 @@ test('activity event sourcing lifecycle works correctly', function () {
     Assert::assertSame('created', $activity->event);
 
     $properties = $activity->properties;
-<<<<<<< HEAD
     Assert::assertInstanceOf(SchemalessAttributes::class, $properties);
     Assert::assertSame('test', $properties->get('action'));
     Assert::assertSame('success', $properties->get('result'));
-=======
-    $this->assertInstanceOf(Collection::class, $properties);
-    $this->assertSame('test', $properties->get('action'));
-    $this->assertSame('success', $properties->get('result'));
->>>>>>> 2d6a374 (.)
 });
 
 test('activity can be queried with complex scopes', function () {
-<<<<<<< HEAD
     $user1 = UserFactory::new()->createOne();
     Assert::assertInstanceOf(User::class, $user1);
 
@@ -70,46 +58,23 @@ test('activity can be queried with complex scopes', function () {
     Assert::assertInstanceOf(User::class, $user2);
 
     $activity1 = ActivityFactory::new()->createOne([
-=======
-    $user1 = User::factory()->create();
-    $user2 = User::factory()->create();
-    $this->assertNotNull($user1);
-    $this->assertNotNull($user2);
-
-    $activity1 = Activity::query()->create([
->>>>>>> 2b6968d (.)
         'log_name' => 'security',
-        'description' => 'Login event',
         'event' => 'login',
         'causer_type' => User::class,
         'causer_id' => $user1->id,
     ]);
-<<<<<<< HEAD
     Assert::assertInstanceOf(Activity::class, $activity1);
 
     $activity2 = ActivityFactory::new()->createOne([
-=======
-    $this->assertNotNull($activity1);
-
-    $activity2 = Activity::query()->create([
->>>>>>> 2b6968d (.)
         'log_name' => 'security',
-        'description' => 'Logout event',
         'event' => 'logout',
         'causer_type' => User::class,
         'causer_id' => $user2->id,
     ]);
-<<<<<<< HEAD
     Assert::assertInstanceOf(Activity::class, $activity2);
 
     $activity3 = ActivityFactory::new()->createOne([
-=======
-    $this->assertNotNull($activity2);
-
-    $activity3 = Activity::query()->create([
->>>>>>> 2b6968d (.)
         'log_name' => 'audit',
-        'description' => 'Update event',
         'event' => 'update',
         'causer_type' => User::class,
         'causer_id' => $user1->id,
@@ -228,31 +193,9 @@ test('stored event creation and event reconstruction works', function () {
 test('activity batch operations work correctly', function () {
     $batchUuid = Str::uuid()->toString();
 
-<<<<<<< HEAD
     $activities = ActivityFactory::new()->count(3)->create([
         'batch_uuid' => $batchUuid,
         'log_name' => 'batch_operation',
-=======
-    $activities = collect([
-        Activity::query()->create([
-            'batch_uuid' => $batchUuid,
-            'log_name' => 'batch_operation',
-            'description' => 'Batch operation step 1',
-            'event' => 'created',
-        ]),
-        Activity::query()->create([
-            'batch_uuid' => $batchUuid,
-            'log_name' => 'batch_operation',
-            'description' => 'Batch operation step 2',
-            'event' => 'created',
-        ]),
-        Activity::query()->create([
-            'batch_uuid' => $batchUuid,
-            'log_name' => 'batch_operation',
-            'description' => 'Batch operation step 3',
-            'event' => 'created',
-        ]),
->>>>>>> 2b6968d (.)
     ]);
     Assert::assertInstanceOf(Collection::class, $activities);
     Assert::assertCount(3, $activities);
@@ -268,26 +211,12 @@ test('activity batch operations work correctly', function () {
 });
 
 test('activity with batch scope returns correct results', function () {
-<<<<<<< HEAD
     $withBatch = ActivityFactory::new()->createOne(['batch_uuid' => Str::uuid()->toString()]);
     Assert::assertInstanceOf(Activity::class, $withBatch);
 
     ActivityFactory::new()->createOne(['batch_uuid' => null]);
 
     $activitiesWithBatch = Activity::hasBatch()->whereKey([$withBatch->id])->get();
-=======
-    $batchUuid = Str::uuid()->toString();
-    $withBatch = Activity::query()->create([
-        'log_name' => 'default',
-        'description' => 'Activity with batch uuid',
-        'event' => 'created',
-        'batch_uuid' => $batchUuid,
-    ]);
-    $this->assertNotNull($withBatch);
-
-    // Scope to our test data: hasBatch filters non-null batch_uuid
-    $activitiesWithBatch = Activity::hasBatch()->whereKey($withBatch->id)->get();
->>>>>>> 2b6968d (.)
 
     $firstActivity = $activitiesWithBatch->first();
     Assert::assertCount(1, $activitiesWithBatch);
@@ -334,19 +263,11 @@ test('activity properties support complex nested structures', function () {
     Assert::assertNotNull($freshActivity);
 
     $properties = $freshActivity->properties;
-<<<<<<< HEAD
     Assert::assertInstanceOf(SchemalessAttributes::class, $properties);
     Assert::assertTrue($properties->has('user'));
     Assert::assertTrue($properties->has('action'));
     Assert::assertTrue($properties->has('context'));
     Assert::assertTrue($properties->has('timestamps'));
-=======
-    $this->assertInstanceOf(Collection::class, $properties);
-    $this->assertTrue($properties->has('user'));
-    $this->assertTrue($properties->has('action'));
-    $this->assertTrue($properties->has('context'));
-    $this->assertTrue($properties->has('timestamps'));
->>>>>>> 2d6a374 (.)
 
     $userData = $properties->get('user');
     $contextData = $properties->get('context');
