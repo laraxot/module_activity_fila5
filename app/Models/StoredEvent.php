@@ -28,6 +28,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property string $created_at
  * @property string|null $updated_by
  * @property string|null $created_by
+ *
  * @property-read ShouldBeStored|null $event
  *
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent afterVersion(int $version)
