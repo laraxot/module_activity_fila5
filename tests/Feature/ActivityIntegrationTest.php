@@ -19,6 +19,15 @@ use function Safe\json_encode;
 
 uses(\Modules\Activity\Tests\TestCase::class);
 
+beforeEach(function () {
+    // Skip if database not available
+    try {
+        \DB::connection()->getPdo();
+    } catch (\Exception $e) {
+        $this->markTestSkipped('Database not available: ' . $e->getMessage());
+    }
+});
+
 test('activity module models work together in integrated scenarios', function () {
     $user = UserFactory::new()->createOne();
     Assert::assertInstanceOf(User::class, $user);
