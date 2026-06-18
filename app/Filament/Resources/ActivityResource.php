@@ -10,7 +10,6 @@ use Modules\Activity\Filament\Resources\ActivityResource\Pages\ListActivities;
 use Modules\Activity\Filament\Resources\ActivityResource\Schemas\ActivityForm;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-use Override;
 
 /**
  * Activity Resource Class.
@@ -35,7 +34,6 @@ class ActivityResource extends XotBaseResource
         return ActivityForm::getFormSchema();
     }
 
-    #[Override]
     public static function getPages(): array
     {
         return [
