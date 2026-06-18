@@ -12,8 +12,6 @@
         "cqrs",
         "spatie-activitylog"
     ],
-    "description": "",
-    "homepage": "https://github.com/laraxot/module_activity_fila3",
     "homepage": "https://github.com/laraxot/module_activity_fila5",
     "license": "MIT",
     "authors": [
@@ -44,24 +42,10 @@
             "Workbench\\App\\": "workbench/app/",
             "Workbench\\Database\\Factories\\": "workbench/database/factories/",
             "Workbench\\Database\\Seeders\\": "workbench/database/seeders/"
-<<<<<<< HEAD
-=======
         }
-
     },
     "require": {
         "spatie/laravel-activitylog": "*",
-<<<<<<< HEAD
-        "spatie/laravel-event-sourcing": "*"
-            "Modules\\Activity\\Tests\\": "tests/"
->>>>>>> 2d6a374 (.)
-        }
-
-    },
-    "require": {
-        "spatie/laravel-activitylog": "*",
-=======
->>>>>>> 491d674 (.)
         "spatie/laravel-event-sourcing": "*",
         "php": "^8.3"
     },
@@ -113,12 +97,4 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    
-}
->>>>>>> 2d6a374 (.)
-=======
->>>>>>> 491d674 (.)
 }

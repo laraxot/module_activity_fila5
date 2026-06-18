@@ -9,44 +9,22 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
-<<<<<<< HEAD
 class SnapshotForm extends XotBaseResourceForm
 {
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @return array<string, Component>
-=======
-/**
- * SnapshotForm Schema.
- */
-class SnapshotForm extends XotBaseResourceForm
-{
-    /**
-     * @return array<int|string, Component>
->>>>>>> 2b6968d (.)
-=======
-     * @return array<string, \Filament\Schemas\Components\Component>
->>>>>>> d4098eb (.)
-=======
-     * @return array<string, \Filament\Schemas\Components\Component>
->>>>>>> 26b6dbd (.)
      */
     public static function getFormSchema(): array
     {
         return [
-            'model_type' => TextInput::make('model_type')
+            'aggregate_uuid' => TextInput::make('aggregate_uuid')
                 ->required()
-                ->maxLength(255),
-            'model_id' => TextInput::make('model_id')
+                ->maxLength(36),
+            'aggregate_version' => TextInput::make('aggregate_version')
                 ->numeric()
                 ->required(),
             'state' => KeyValue::make('state')
                 ->columnSpanFull(),
-            'created_by_type' => TextInput::make('created_by_type')
-                ->maxLength(255),
-            'created_by_id' => TextInput::make('created_by_id')
-                ->numeric(),
         ];
     }
 }

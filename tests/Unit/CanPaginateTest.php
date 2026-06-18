@@ -44,7 +44,6 @@ describe('Can Paginate', function (): void {
         {
             use CanPaginate;
 
-<<<<<<< HEAD
             public function resetLivewirePage(): void {}
 
             public function getPage(string $pageName): int
@@ -60,8 +59,6 @@ describe('Can Paginate', function (): void {
             /**
              * @return array<int|string>
              */
-=======
->>>>>>> 2d6a374 (.)
             public function test_get_records_per_page_select_options(): array
             {
                 return $this->getRecordsPerPageSelectOptions();

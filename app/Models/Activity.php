@@ -16,7 +16,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 
 /**
  * Class Activity.
- * 
+ *
  * This class extends the BaseActivity model to represent activities in the application.
  *
  * @property int $id
@@ -108,11 +108,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  */
 class Activity extends SpatieActivity
 {
-<<<<<<< HEAD
     /** @phpstan-use HasXotFactory<Factory<static>> */
-=======
-    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
->>>>>>> 491d674 (.)
     use HasXotFactory;
 
     /** @var string */
@@ -120,21 +116,6 @@ class Activity extends SpatieActivity
 
     protected $table = 'activity_log';
 
-<<<<<<< HEAD
-=======
-    /**
-     * @param  array<string, mixed>  $attributes
-     */
-    public function __construct(array $attributes = [])
-    {
-        parent::__construct($attributes);
-        if (app()->environment('testing')) {
-            $default = config('database.default');
-            $this->connection = is_string($default) ? $default : 'mysql';
-        }
-    }
-
->>>>>>> 2d6a374 (.)
     /** @var list<string> */
     protected $fillable = [
         'id',
@@ -146,27 +127,9 @@ class Activity extends SpatieActivity
         'causer_type',
         'causer_id',
         'properties',
-<<<<<<< HEAD
-<<<<<<< HEAD
         'attribute_changes',
-=======
->>>>>>> 2b6968d (.)
         'batch_uuid',
-=======
->>>>>>> 2d6a374 (.)
     ];
-
-    /**
-     * @param  array<string, mixed>  $attributes
-     */
-    public function __construct(array $attributes = [])
-    {
-        parent::__construct($attributes);
-        if (app()->environment('testing')) {
-            $default = config('database.default');
-            $this->connection = is_string($default) ? $default : 'mysql';
-        }
-    }
 
     /**
      * Get the attributes that should be cast.

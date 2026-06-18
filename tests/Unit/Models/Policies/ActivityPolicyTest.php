@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
-
->>>>>>> 2d6a374 (.)
 use Modules\Activity\Models\Policies\ActivityBasePolicy;
 use Modules\Activity\Models\Policies\ActivityPolicy;
 use Modules\Activity\Models\Policies\SnapshotPolicy;
