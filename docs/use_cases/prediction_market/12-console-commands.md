@@ -52,4 +52,8 @@ class CloseExpiredMarkets extends Command
 - [Best practice <nome progetto>ion_market](./04_best_practice.md)
 - [Testing <nome progetto>ion_market](./07_test.md)
 - [API <nome progetto>ion_market](./06_api.md)
+<<<<<<< HEAD
 - [Glossario <nome progetto>ion_market](./08_glossario.md)
+=======
+- [Glossario <nome progetto>ion_market](./08_glossario.md)
+>>>>>>> a1e3a4e (.)

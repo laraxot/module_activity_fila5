@@ -13,6 +13,7 @@
 - Integration with Laravel's activity log system
 - PHPStan Level 10 compliance
 
+<<<<<<< HEAD
 ### 🔄 In Progress Components
 - [ ] Advanced activity filtering and search
 - [ ] Activity analytics features
@@ -203,3 +204,30 @@ canonical: ../../../Themes/docs/shared-components/roadmap--Modules.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Modules.md
+=======
+- [phpstan-override-fix-roadmap.md](phpstan-override-fix-roadmap.md)
+- [phpstan-roadmap.md](phpstan-roadmap.md) (✅ Completed)
+- [roadmap/00-index.md](roadmap/00-index.md)
+- [roadmap/00-overview.md](roadmap/00-overview.md)
+- [roadmap/01-current-state.md](roadmap/01-current-state.md)
+- [roadmap/01-now.md](roadmap/01-now.md)
+- [roadmap/02-goals.md](roadmap/02-goals.md)
+- [roadmap/02-next.md](roadmap/02-next.md)
+- [roadmap/03-later.md](roadmap/03-later.md)
+- [roadmap/03-workstreams.md](roadmap/03-workstreams.md)
+- [roadmap/04-milestones.md](roadmap/04-milestones.md)
+- [roadmap/04-risks.md](roadmap/04-risks.md)
+- [roadmap/05-risks.md](roadmap/05-risks.md)
+- [roadmap/README.md](roadmap/README.md)
+- [roadmap/legacy-roadmap.md](roadmap/legacy-roadmap.md)
+- [roadmap/legacy/legacy-roadmap-and-issues.md](roadmap/legacy/legacy-roadmap-and-issues.md)
+- [roadmap/legacy/legacy-roadmap-vision.md](roadmap/legacy/legacy-roadmap-vision.md)
+- [roadmap/legacy/legacy-roadmap-x.md](roadmap/legacy/legacy-roadmap-x.md)
+- [roadmap/phases.md](roadmap/phases.md)
+- [roadmap/quality.md](roadmap/quality.md)
+- [roadmap/tasks/enhanced-activity-filtering.md](roadmap/tasks/enhanced-activity-filtering.md)
+- [roadmap/tasks/gdpr-compliance-enhancement.md](roadmap/tasks/gdpr-compliance-enhancement.md)
+- [roadmap/tasks/realtime-monitoring-dashboard.md](roadmap/tasks/realtime-monitoring-dashboard.md)
+- [roadmap/vision.md](roadmap/vision.md)
+- [stabilization-roadmap.md](stabilization-roadmap.md)
+>>>>>>> a1e3a4e (.)
