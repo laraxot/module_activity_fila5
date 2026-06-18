@@ -1,5 +1,10 @@
-# Event Sourcing in `<nome progetto>`
+---
+module: theme
+topic: event-sourcing-introduction
+canonical: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
+---
 
+<<<<<<< HEAD
 ## Introduction to Event Sourcing
 Event Sourcing is an architectural pattern where application state is derived from a sequence of events. Instead of storing the current state in a database, the application stores all events that led to the current state. This approach is particularly beneficial in a healthcare context like `<nome progetto>` for tracking patient activities, medical records, and system interactions with full auditability.
 
@@ -154,3 +159,6 @@ canonical: ../../../Themes/docs/shared-components/event-sourcing-introduction-du
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
+>>>>>>> d4098eb (.)

@@ -12,6 +12,7 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 class ActivityInfolist extends XotBaseResourceInfolist
 {
     /**
+<<<<<<< HEAD
      * @return array<string, Component>
 =======
 /**
@@ -22,6 +23,9 @@ class ActivityInfolist extends XotBaseResourceInfolist
     /**
      * @return array<int|string, Component>
 >>>>>>> 2b6968d (.)
+=======
+     * @return array<string, \Filament\Schemas\Components\Component>
+>>>>>>> d4098eb (.)
      */
     public static function getInfolistSchema(): array
     {
