@@ -11,23 +11,7 @@ use Modules\Activity\Tests\Fixtures\HasEventsDummyModel;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
-=======
-uses(TestCase::class);
-
-function makeHasEventsDummyModel(): Model
-{
-    return new class extends Model
-    {
-        use HasEvents;
-
-        protected $table = 'activity_dummy_models';
-
-        public $timestamps = false;
-    };
-}
->>>>>>> 2d6a374 (.)
 
 test('stored events relation is configured as morphMany', function () {
     $model = new HasEventsDummyModel;

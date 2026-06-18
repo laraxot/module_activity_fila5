@@ -24,28 +24,9 @@ return [
         'updated_at' => ['label' => 'updated_at'],
         'aggregate_type' => ['label' => 'aggregate_type'],
     ],
-<<<<<<< HEAD
     'actions' => [
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
     ],
-<<<<<<< HEAD
-    'label' => 'Snapshot',
-    'plural_label' => 'Snapshot (Plurale)',
-    'actions' => [
-        'create' => [
-            'label' => 'Crea Snapshot',
-        ],
-        'edit' => [
-            'label' => 'Modifica Snapshot',
-        ],
-        'delete' => [
-            'label' => 'Elimina Snapshot',
-        ],
-    ],
-=======
->>>>>>> 26b6dbd (.)
-=======
->>>>>>> 2d6a374 (.)
 ];
