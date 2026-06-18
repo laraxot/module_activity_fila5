@@ -4,4 +4,8 @@ topic: readme.md
 canonical: ../../../Themes/docs/shared-components/README.md.update
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/README.md.update
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/README.md.update
+>>>>>>> d4098eb (.)
