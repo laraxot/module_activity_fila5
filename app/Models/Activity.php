@@ -36,6 +36,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
+ *
  * @property-read Model|null $causer
  * @property-read Collection<int, mixed> $changes
  * @property-read Model|null $subject
@@ -128,6 +129,18 @@ class Activity extends SpatieActivity
         'attribute_changes',
         'batch_uuid',
     ];
+
+    /**
+     * @param  array<string, mixed>  $attributes
+     */
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+        if (app()->environment('testing')) {
+            $default = config('database.default');
+            $this->connection = is_string($default) ? $default : 'mysql';
+        }
+    }
 
     /**
      * Get the attributes that should be cast.

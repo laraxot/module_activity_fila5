@@ -19,7 +19,8 @@ class LogUserLogoutAction
 
     public function __construct(
         public User $user
-    ) {}
+    ) {
+    }
 
     public function execute(): Activity
     {
