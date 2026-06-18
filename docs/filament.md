@@ -1,6 +1,9 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2d6a374 (.)
 
 [Link risorsa originale _docs]
 https://laraveldaily.com/post/filament-activity-logs-three-packages-comparison-review
@@ -49,6 +52,7 @@ topic: filament
 canonical: ../../../Themes/docs/shared-components/filament-Modules.txt
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/filament-Modules.txt
 =======
 module: theme
@@ -66,3 +70,6 @@ canonical: ../../../Themes/docs/shared-components/filament-Modules.txt
 
 See canonical documentation: ../../../Themes/docs/shared-components/filament-Modules.txt
 >>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/filament-Modules.txt
+>>>>>>> 2d6a374 (.)

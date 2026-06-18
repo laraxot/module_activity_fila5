@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2d6a374 (.)
 # Activity Module - Complete Roadmap
 
 ## Module Overview
@@ -16,6 +19,9 @@
 - PHPStan Level 10 compliance
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2d6a374 (.)
 ### 🔄 In Progress Components
 - [ ] Advanced activity filtering and search
 - [ ] Activity analytics features
@@ -205,6 +211,7 @@ topic: roadmap
 canonical: ../../../Themes/docs/shared-components/roadmap--Modules.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Modules.md
 =======
 - [phpstan-override-fix-roadmap.md](phpstan-override-fix-roadmap.md)
@@ -251,3 +258,6 @@ canonical: ../../../Themes/docs/shared-components/roadmap--Modules.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Modules.md
 >>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Modules.md
+>>>>>>> 2d6a374 (.)

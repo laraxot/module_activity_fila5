@@ -304,6 +304,7 @@ topic: module-activity
 canonical: ../../../../../Themes/docs/shared-components/module-activity.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
 =======
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
@@ -311,3 +312,6 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/module
 =======
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
 >>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
+>>>>>>> 2d6a374 (.)

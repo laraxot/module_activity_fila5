@@ -289,6 +289,7 @@ topic: event-sourcing-examples
 canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
@@ -296,3 +297,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/event-sourci
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
 >>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+>>>>>>> 2d6a374 (.)

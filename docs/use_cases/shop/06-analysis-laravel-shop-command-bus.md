@@ -6,6 +6,7 @@ canonical: ../../../../../Themes/docs/shared-components/06-analisi-laravel-shop-
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 See canonical documentation: ../../../../../Themes/docs/shared-components/06-analisi-laravel-shop-command-bus.md
 =======
 See canonical documentation: ../../../../../Themes/docs/shared-components/06-analisi-laravel-shop-command-bus.md
@@ -13,3 +14,6 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/06-ana
 =======
 See canonical documentation: ../../../../../Themes/docs/shared-components/06-analisi-laravel-shop-command-bus.md
 >>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../../../Themes/docs/shared-components/06-analisi-laravel-shop-command-bus.md
+>>>>>>> 2d6a374 (.)
