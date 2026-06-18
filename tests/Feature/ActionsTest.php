@@ -15,12 +15,23 @@ use PHPUnit\Framework\Assert;
 
 uses(\Modules\Activity\Tests\TestCase::class);
 
+<<<<<<< HEAD
 function createUser(): User
 {
     return (new UserFactory)->createOne();
 }
 
 describe('ActivityLogger', function (): void {
+=======
+beforeEach(function(): void {
+    $this->user = User::factory()->create();
+});
+
+describe('ActivityLogger', function(): void {
+    it('logs simple activity', function(): void {
+        $logger = new ActivityLogger;
+        $activity = $logger->log('test_event', $this->user);
+>>>>>>> 2b6968d (.)
 
     test('logs simple activity', function (): void {
         $user = createUser();
@@ -32,8 +43,12 @@ describe('ActivityLogger', function (): void {
         Assert::assertSame($user->id, $activity->causer_id);
     });
 
+<<<<<<< HEAD
     test('logs created event', function (): void {
         $user = createUser();
+=======
+    it('logs created event', function(): void {
+>>>>>>> 2b6968d (.)
         $logger = new ActivityLogger;
         $model = (new UserFactory)->createOne();
 
@@ -44,8 +59,12 @@ describe('ActivityLogger', function (): void {
         Assert::assertSame($model->id, $activity->subject_id);
     });
 
+<<<<<<< HEAD
     test('logs updated event', function (): void {
         $user = createUser();
+=======
+    it('logs updated event', function(): void {
+>>>>>>> 2b6968d (.)
         $logger = new ActivityLogger;
         $model = (new UserFactory)->createOne();
 
@@ -56,8 +75,12 @@ describe('ActivityLogger', function (): void {
         Assert::assertSame($model->id, $activity->subject_id);
     });
 
+<<<<<<< HEAD
     test('logs deleted event', function (): void {
         $user = createUser();
+=======
+    it('logs deleted event', function(): void {
+>>>>>>> 2b6968d (.)
         $logger = new ActivityLogger;
         $model = (new UserFactory)->createOne();
 
@@ -68,8 +91,12 @@ describe('ActivityLogger', function (): void {
         Assert::assertSame($model->id, $activity->subject_id);
     });
 
+<<<<<<< HEAD
     test('logs login event', function (): void {
         $user = createUser();
+=======
+    it('logs login event', function(): void {
+>>>>>>> 2b6968d (.)
         $logger = new ActivityLogger;
         $activity = $logger->login($user);
 
@@ -78,8 +105,12 @@ describe('ActivityLogger', function (): void {
         Assert::assertStringContainsString((string) 'User logged in', (string) $activity->description);
     });
 
+<<<<<<< HEAD
     test('logs logout event', function (): void {
         $user = createUser();
+=======
+    it('logs logout event', function(): void {
+>>>>>>> 2b6968d (.)
         $logger = new ActivityLogger;
         $activity = $logger->logout($user);
 
@@ -89,11 +120,18 @@ describe('ActivityLogger', function (): void {
     });
 });
 
+<<<<<<< HEAD
 describe('LogActivityAction', function (): void {
 
     test('creates activity with user', function (): void {
         $user = createUser();
         $action = new LogActivityAction(
+=======
+describe('LogActivityAction', function(): void {
+    it('creates activity with user', function(): void {
+        $action = app(LogActivityAction::class);
+        $activity = $action->execute(
+>>>>>>> 2b6968d (.)
             type: 'test_type',
             user: $user,
             description: 'Test description'
@@ -105,11 +143,18 @@ describe('LogActivityAction', function (): void {
     });
 });
 
+<<<<<<< HEAD
 describe('LogModelCreatedAction', function (): void {
     test('logs model creation', function (): void {
         $model = (new UserFactory)->createOne();
         $action = new LogModelCreatedAction(model: $model);
         $activity = $action->execute();
+=======
+describe('LogModelCreatedAction', function(): void {
+    it('logs model creation', function(): void {
+        $model = User::factory()->create();
+        $action = app(LogModelCreatedAction::class);
+>>>>>>> 2b6968d (.)
 
         Assert::assertSame('created', $activity->event);
         Assert::assertSame($model->id, $activity->subject_id);

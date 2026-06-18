@@ -10,7 +10,7 @@ use PHPUnit\Framework\Assert;
 
 uses(\Modules\Activity\Tests\TestCase::class);
 
-test('activity event can be constructed and dispatched', function (): void {
+test('activity event can be constructed and dispatched', function(): void {
     $event = new ActivityEvent;
 
     Assert::assertInstanceOf(ActivityEvent::class, $event);
