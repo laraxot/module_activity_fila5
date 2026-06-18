@@ -497,7 +497,10 @@ class User extends BaseUser
     }
 }
 
+<<<<<<< HEAD
 // Integration with Quaeris module
+=======
+>>>>>>> 2d6a374 (.)
 // Integration with healthcare_app module
 class Survey extends BaseModel
 {

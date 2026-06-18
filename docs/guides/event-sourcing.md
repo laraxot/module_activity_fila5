@@ -322,6 +322,7 @@ topic: event-sourcing
 canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.md
 =======
 See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.md
@@ -329,3 +330,6 @@ See canonical documentation: ../../../../Themes/docs/shared-components/event-sou
 =======
 See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.md
 >>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.md
+>>>>>>> 2d6a374 (.)

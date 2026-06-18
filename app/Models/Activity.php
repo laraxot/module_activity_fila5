@@ -39,6 +39,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property-read Model|null $causer
  * @property-read Collection<int, mixed> $changes
  * @property-read Model|null $subject
+ *
  * @method static ActivityFactory factory($count = null, $state = [])
  * @method static Builder<static>|Activity forBatch(string $batchUuid)
  * @method static Builder<static>|Activity forEvent(string $event)
@@ -102,6 +103,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static Builder<static>|Activity rightJoin(string $table, string $first, string $operator = null, string $second = null)
  * @method static Builder<static>|Activity crossJoin(string $table)
  * @method static Builder<static>|Activity causedBy(Model $causer)
+ *
  * @mixin \Eloquent
  */
 class Activity extends SpatieActivity
@@ -114,6 +116,21 @@ class Activity extends SpatieActivity
 
     protected $table = 'activity_log';
 
+<<<<<<< HEAD
+=======
+    /**
+     * @param  array<string, mixed>  $attributes
+     */
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+        if (app()->environment('testing')) {
+            $default = config('database.default');
+            $this->connection = is_string($default) ? $default : 'mysql';
+        }
+    }
+
+>>>>>>> 2d6a374 (.)
     /** @var list<string> */
     protected $fillable = [
         'id',
@@ -126,10 +143,13 @@ class Activity extends SpatieActivity
         'causer_id',
         'properties',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'attribute_changes',
 =======
 >>>>>>> 2b6968d (.)
         'batch_uuid',
+=======
+>>>>>>> 2d6a374 (.)
     ];
 
     /**
