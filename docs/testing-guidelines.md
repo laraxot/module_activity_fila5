@@ -8,12 +8,16 @@ All tests MUST use `.env.testing` configuration:
 APP_ENV=testing
 DB_CONNECTION=mysql
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2d6a374 (.)
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE_USER=<nome progetto>_user_test
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE_USER=<nome progetto>_user_test
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -38,6 +42,8 @@ DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE_USER=<nome progetto>_user_test
 >>>>>>> 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)
 >>>>>>> 7bcf987 (.)
+=======
+>>>>>>> 2d6a374 (.)
 ```
 
 ### Pest Framework Usage

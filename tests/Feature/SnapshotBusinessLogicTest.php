@@ -2,9 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Activity\Tests\Feature;
 
 use Illuminate\Support\Carbon;
+=======
+>>>>>>> 2d6a374 (.)
 use Illuminate\Support\Str;
 use Modules\Activity\Database\Factories\SnapshotFactory;
 use Modules\Activity\Models\Snapshot;

@@ -182,9 +182,13 @@ activity_coverage.xml
 *~REMOTE
 *.orig
 *.rej
+<<<<<<< HEAD
 *~head
 =======
 tests/coverage/
 tests/coverage.xml/
 activity_coverage.xml
 >>>>>>> 9cddd9b (.)
+=======
+*~head
+>>>>>>> 2d6a374 (.)

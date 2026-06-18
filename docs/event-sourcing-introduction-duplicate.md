@@ -6,6 +6,7 @@ canonical: ../../../Themes/docs/shared-components/event-sourcing-introduction-du
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
@@ -13,3 +14,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/event-sourci
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
 >>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
+>>>>>>> 2d6a374 (.)

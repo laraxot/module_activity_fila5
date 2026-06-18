@@ -206,10 +206,15 @@ class <nome progetto>ionContract extends Model
 
 ## Collegamenti correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README Shop](../shop/README.md)
 - [README Bank](../bank/README.md)
 =======
 >>>>>>> a1e3a4e (.)
+=======
+- [README Shop](../shop/README.md)
+- [README Bank](../bank/README.md)
+>>>>>>> 2d6a374 (.)
 - [Console Commands <nome progetto>ion Market](./console_commands.md)
 - [Best Practice <nome progetto>ion Market](./best_practices.md)
 - [Architettura <nome progetto>ion Market](./architecture.md)

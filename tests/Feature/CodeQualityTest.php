@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Modules\Activity\Tests\Feature;
-
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Providers\ActivityServiceProvider;
@@ -100,9 +98,15 @@ test('translations exist and are structured', function(): void {
     Assert::assertArrayHasKey('events', $activitiesTranslations);
 });
 
+<<<<<<< HEAD
 test('views exist and are valid', function(): void {
     $viewPath = base_path('Modules/Activity/resources/views/filament/pages/list-log-activities.blade.php');
     Assert::assertTrue(file_exists($viewPath));
+=======
+test('views exist and are valid', function (): void {
+    $viewPath = base_path('Modules/Activity/resources/views/filament/list-log-activities.blade.php');
+    expect(file_exists($viewPath))->toBeTrue();
+>>>>>>> 2d6a374 (.)
 
     $viewContent = file_get_contents($viewPath);
     Assert::assertStringContainsString('getActivities()', $viewContent);

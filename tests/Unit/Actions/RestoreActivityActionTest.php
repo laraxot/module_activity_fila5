@@ -2,7 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Activity\Tests\Unit\Actions;
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> 2d6a374 (.)
 
 use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Tests\TestCase;

@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Modules\Activity\Tests\Feature;
-
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use Modules\Activity\Database\Factories\ActivityFactory;
@@ -50,9 +48,15 @@ test('activity event sourcing lifecycle works correctly', function () {
     Assert::assertSame('created', $activity->event);
 
     $properties = $activity->properties;
+<<<<<<< HEAD
     Assert::assertInstanceOf(SchemalessAttributes::class, $properties);
     Assert::assertSame('test', $properties->get('action'));
     Assert::assertSame('success', $properties->get('result'));
+=======
+    $this->assertInstanceOf(Collection::class, $properties);
+    $this->assertSame('test', $properties->get('action'));
+    $this->assertSame('success', $properties->get('result'));
+>>>>>>> 2d6a374 (.)
 });
 
 test('activity can be queried with complex scopes', function () {
@@ -116,6 +120,7 @@ test('activity can be queried with complex scopes', function () {
 
     $user1Activities = Activity::query()
         ->where('causer_type', User::class)
+        ->where('causer_id', $user1->id)
         ->whereKey([$activity1->id, $activity3->id])
         ->get();
 
@@ -125,15 +130,6 @@ test('activity can be queried with complex scopes', function () {
 
     Assert::assertCount(2, $securityActivities);
     Assert::assertCount(2, $user1Activities);
-
-    // causer_id può essere uuid/string o int a seconda dello schema (vedi migration fix_causer_id_to_uuid)
-    // quindi validiamo solo quando comparabile.
-    foreach ($user1Activities as $activity) {
-        \assert($activity instanceof Activity);
-        if ($activity->causer_id === (string) $user1->id || $activity->causer_id === $user1->id) {
-            $this->assertContains($activity->causer_id, [(string) $user1->id, $user1->id]);
-        }
-    }
 
     /** @var Activity|null $firstLoginActivity */
     $firstLoginActivity = $loginActivities->first();
@@ -336,11 +332,19 @@ test('activity properties support complex nested structures', function () {
     Assert::assertNotNull($freshActivity);
 
     $properties = $freshActivity->properties;
+<<<<<<< HEAD
     Assert::assertInstanceOf(SchemalessAttributes::class, $properties);
     Assert::assertTrue($properties->has('user'));
     Assert::assertTrue($properties->has('action'));
     Assert::assertTrue($properties->has('context'));
     Assert::assertTrue($properties->has('timestamps'));
+=======
+    $this->assertInstanceOf(Collection::class, $properties);
+    $this->assertTrue($properties->has('user'));
+    $this->assertTrue($properties->has('action'));
+    $this->assertTrue($properties->has('context'));
+    $this->assertTrue($properties->has('timestamps'));
+>>>>>>> 2d6a374 (.)
 
     $userData = $properties->get('user');
     $contextData = $properties->get('context');
