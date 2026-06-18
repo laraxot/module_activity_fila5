@@ -54,7 +54,7 @@ function activityAssertPhpFileHasValidSyntax(string $filePath): void
     Assert::assertSame(0, $resultCode, "File {$filePath} ha errori di sintassi: ".implode("\n", $lines));
 }
 
-test('all php files have valid syntax', function(): void {
+test('all php files have valid syntax', function (): void {
     $modulePath = base_path('Modules/Activity');
     $phpFiles = activityFindPhpFiles($modulePath);
 
@@ -63,20 +63,13 @@ test('all php files have valid syntax', function(): void {
     }
 });
 
-<<<<<<< HEAD
 test('main classes exist and are instantiable', function (): void {
     Assert::assertTrue(class_exists(ActivityServiceProvider::class));
     Assert::assertTrue(class_exists(ListLogActivitiesAction::class));
     Assert::assertTrue(class_exists(ListLogActivities::class));
-=======
-test('main classes exist and are instantiable', function(): void {
-    expect(class_exists(ActivityServiceProvider::class))->toBeTrue();
-    expect(class_exists(ListLogActivitiesAction::class))->toBeTrue();
-    expect(class_exists(ListLogActivities::class))->toBeTrue();
->>>>>>> 2b6968d (.)
 });
 
-test('configuration files exist', function(): void {
+test('configuration files exist', function (): void {
     $configPath = base_path('Modules/Activity/config/config.php');
     Assert::assertTrue(file_exists($configPath));
 
@@ -84,7 +77,7 @@ test('configuration files exist', function(): void {
     Assert::assertIsArray($config);
 });
 
-test('translations exist and are structured', function(): void {
+test('translations exist and are structured', function (): void {
     $actionsTranslationsPath = base_path('Modules/Activity/lang/it/actions.php');
     $activitiesTranslationsPath = base_path('Modules/Activity/lang/it/activities.php');
 
@@ -100,29 +93,23 @@ test('translations exist and are structured', function(): void {
     Assert::assertArrayHasKey('events', $activitiesTranslations);
 });
 
-<<<<<<< HEAD
-test('views exist and are valid', function(): void {
+test('views exist and are valid', function (): void {
     $viewPath = base_path('Modules/Activity/resources/views/filament/pages/list-log-activities.blade.php');
     Assert::assertTrue(file_exists($viewPath));
-=======
-test('views exist and are valid', function (): void {
-    $viewPath = base_path('Modules/Activity/resources/views/filament/list-log-activities.blade.php');
-    expect(file_exists($viewPath))->toBeTrue();
->>>>>>> 2d6a374 (.)
 
     $viewContent = file_get_contents($viewPath);
     Assert::assertStringContainsString('getActivities()', $viewContent);
     Assert::assertStringContainsString('getFieldLabel', $viewContent);
 });
 
-test('service provider configuration', function(): void {
+test('service provider configuration', function (): void {
     $provider = new ActivityServiceProvider(app());
 
     Assert::assertSame('Activity', $provider->name);
     Assert::assertNotEmpty($provider->name);
 });
 
-test('documentation is up to date', function(): void {
+test('documentation is up to date', function (): void {
     $readmePath = base_path('Modules/Activity/docs/README.md');
     Assert::assertTrue(file_exists($readmePath));
 

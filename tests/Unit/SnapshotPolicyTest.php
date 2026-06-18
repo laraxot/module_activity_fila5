@@ -10,22 +10,7 @@ use Modules\User\Models\Policies\UserBasePolicy;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
-=======
-class SnapshotPolicyTest extends TestCase
-{
-    #[Test]
-    public function policy_extends_user_base_policy(): void
-    {
-        $this->assertTrue(
-            is_subclass_of(
-                SnapshotPolicy::class,
-                UserBasePolicy::class
-            )
-        );
-    }
->>>>>>> 2d6a374 (.)
 
 describe('Snapshot Policy', function (): void {
     test('policy extends user base policy', function (): void {
