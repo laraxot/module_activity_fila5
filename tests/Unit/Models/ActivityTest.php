@@ -25,7 +25,11 @@ test('activity model can be created', function () {
 });
 
 test('activity model can be saved and retrieved', function () {
+<<<<<<< HEAD
     $activity = ActivityFactory::new()->createOne([
+=======
+    $activity = Activity::factory()->create([
+>>>>>>> 4e42175 (.)
         'description' => 'Test action',
         'event' => 'test_event',
     ]);
