@@ -497,7 +497,6 @@ class User extends BaseUser
     }
 }
 
-<<<<<<< HEAD
 // Integration with Quaeris module
 // Integration with healthcare_app module
 =======
