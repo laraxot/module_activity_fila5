@@ -6,6 +6,7 @@ canonical: ../../../Themes/docs/shared-components/dual-label-chart-widget-implem
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/dual-label-chart-widget-implementation.md
 =======
 ## Panoramica
@@ -809,3 +810,6 @@ Questo approccio DRY+KISS permette di mantenere un codice di alta qualità, faci
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/dual-label-chart-widget-implementation.md
 >>>>>>> d4098eb (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/dual-label-chart-widget-implementation.md
+>>>>>>> 26b6dbd (.)
