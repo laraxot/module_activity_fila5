@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Models;
+use ReflectionClass;
 
 use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Tests\TestCase;
