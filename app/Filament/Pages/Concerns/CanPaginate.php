@@ -13,7 +13,10 @@ use Illuminate\Pagination\LengthAwarePaginator;
 
 trait CanPaginate
 {
-    public int|string|null $recordsPerPage = null;
+    /**
+     * @var int|string|null
+     */
+    public $recordsPerPage;
 
     protected int|string|null $defaultRecordsPerPageSelectOption = null;
 
