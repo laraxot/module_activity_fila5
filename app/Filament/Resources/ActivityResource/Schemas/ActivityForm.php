@@ -8,13 +8,17 @@ use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d4098eb (.)
+=======
+>>>>>>> 26b6dbd (.)
 use Filament\Schemas\Components\Component as SchemaComponent;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class ActivityForm extends XotBaseResourceForm
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * @return array<string, SchemaComponent>
@@ -38,6 +42,11 @@ class ActivityForm extends XotBaseResourceForm
       * @return array<string, SchemaComponent>
       */
 >>>>>>> d4098eb (.)
+=======
+/**
+      * @return array<string, SchemaComponent>
+      */
+>>>>>>> 26b6dbd (.)
     public static function getFormSchema(): array
     {
         return [

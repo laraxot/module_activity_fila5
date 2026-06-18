@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Activity Module - Complete Roadmap
 
 ## Module Overview
@@ -241,3 +242,12 @@ canonical: ../../../Themes/docs/shared-components/roadmap--Modules.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Modules.md
 >>>>>>> d4098eb (.)
+=======
+---
+module: theme
+topic: roadmap
+canonical: ../../../Themes/docs/shared-components/roadmap--Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Modules.md
+>>>>>>> 26b6dbd (.)

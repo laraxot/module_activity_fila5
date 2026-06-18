@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 [Link risorsa originale _docs]
 https://laraveldaily.com/post/filament-activity-logs-three-packages-comparison-review
@@ -57,3 +58,11 @@ canonical: ../../../Themes/docs/shared-components/filament-Modules.txt
 
 See canonical documentation: ../../../Themes/docs/shared-components/filament-Modules.txt
 >>>>>>> d4098eb (.)
+=======
+module: theme
+topic: filament
+canonical: ../../../Themes/docs/shared-components/filament-Modules.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-Modules.txt
+>>>>>>> 26b6dbd (.)

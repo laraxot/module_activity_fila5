@@ -1,12 +1,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d4098eb (.)
+=======
+>>>>>>> 26b6dbd (.)
 ---
 module: theme
 topic: logging_optimization
 canonical: ../../../Themes/docs/shared-components/logging-optimization.md
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md
@@ -309,3 +313,7 @@ By removing logging from ActivityLogger:
 
 See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md
 >>>>>>> d4098eb (.)
+=======
+
+See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md
+>>>>>>> 26b6dbd (.)

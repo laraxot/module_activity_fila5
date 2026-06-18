@@ -270,12 +270,16 @@ abstract class ListLogActivities extends XotBasePage
     {
         $title = __('activity::activities.events.restore_successful');
 <<<<<<< HEAD
+<<<<<<< HEAD
         $titleString = is_array($title)
             ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
             : (is_string($title) ? $title : '');
 =======
         $titleString = is_array($title) ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title)) : (string) $title;
 >>>>>>> d4098eb (.)
+=======
+        $titleString = is_array($title) ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title)) : (string) $title;
+>>>>>>> 26b6dbd (.)
 
         return Notification::make()
             ->title($titleString)
@@ -287,12 +291,16 @@ abstract class ListLogActivities extends XotBasePage
     {
         $title = __('activity::activities.events.restore_failed');
 <<<<<<< HEAD
+<<<<<<< HEAD
         $titleString = is_array($title)
             ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
             : (is_string($title) ? $title : '');
 =======
         $titleString = is_array($title) ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title)) : (string) $title;
 >>>>>>> d4098eb (.)
+=======
+        $titleString = is_array($title) ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title)) : (string) $title;
+>>>>>>> 26b6dbd (.)
 
         $notification = Notification::make()
             ->title($titleString)

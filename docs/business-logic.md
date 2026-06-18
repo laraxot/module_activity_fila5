@@ -6,6 +6,7 @@ canonical: ../../../Themes/docs/shared-components/business-logic-analysis.md
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/business-logic-analysis.md
 =======
 ## Overview
@@ -206,3 +207,6 @@ The Activity module provides comprehensive audit logging and event sourcing capa
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/business-logic-analysis.md
 >>>>>>> d4098eb (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/business-logic-analysis.md
+>>>>>>> 26b6dbd (.)

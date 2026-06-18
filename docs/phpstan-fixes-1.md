@@ -5,7 +5,11 @@ canonical: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
 >>>>>>> d4098eb (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
+>>>>>>> 26b6dbd (.)
