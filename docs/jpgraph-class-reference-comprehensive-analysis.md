@@ -416,14 +416,9 @@ $graph->Stroke();
 
 <<<<<<< HEAD
 ## 🔄 **Integrazione con Quaeris**
-## 🔄 **Integrazione con healthcare_app**
-=======
-<<<<<<< HEAD
-## 🔄 **Integrazione con Quaeris**
 =======
 ## 🔄 **Integrazione con healthcare_app**
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
 
 ### **Pattern di Integrazione**
 ```php

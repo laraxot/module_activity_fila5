@@ -43,27 +43,18 @@ php artisan make:filament-page ManageCourseLessons --resource=CourseResource --t
 <?php
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 01dce8d29 (initial commit)
 namespace Modules\Quaeris\Filament\Resources\Courses;
 
 use Filament\Resources\Resource;
 use Filament\Resources\Pages\Page;
 use Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\LessonResource;
-<<<<<<< HEAD
 =======
-=======
->>>>>>> 01dce8d29 (initial commit)
 namespace Modules\healthcare_app\Filament\Resources\Courses;
 
 use Filament\Resources\Resource;
 use Filament\Resources\Pages\Page;
 use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
-<<<<<<< HEAD
-=======
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
 
 class CourseResource extends Resource
 {
@@ -101,27 +92,18 @@ class CourseResource extends Resource
 <?php
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 01dce8d29 (initial commit)
 namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
 
 use Filament\Resources\Resource;
 use Filament\Resources\Pages\Page;
 use Modules\Quaeris\Filament\Resources\Courses\CourseResource;
-<<<<<<< HEAD
 =======
-=======
->>>>>>> 01dce8d29 (initial commit)
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 
 use Filament\Resources\Resource;
 use Filament\Resources\Pages\Page;
 use Modules\healthcare_app\Filament\Resources\Courses\CourseResource;
-<<<<<<< HEAD
-=======
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
 
 class LessonResource extends Resource
 {
@@ -162,14 +144,9 @@ class LessonResource extends Resource
 
 <<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
-namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
-=======
-<<<<<<< HEAD
-namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
 =======
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
 
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Tables;
@@ -178,14 +155,9 @@ use Filament\Tables\Table;
 use Filament\Forms\Form;
 <<<<<<< HEAD
 use Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\LessonResource;
-use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
-=======
-<<<<<<< HEAD
-use Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 =======
 use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
 
 class LessonsRelationManager extends RelationManager
 {
@@ -249,27 +221,18 @@ class LessonsRelationManager extends RelationManager
 <?php
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 01dce8d29 (initial commit)
 namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
 
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\ParentResourceRegistration;
 use Modules\Quaeris\Filament\Resources\Courses\CourseResource;
-<<<<<<< HEAD
 =======
-=======
->>>>>>> 01dce8d29 (initial commit)
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\ParentResourceRegistration;
 use Modules\healthcare_app\Filament\Resources\Courses\CourseResource;
-<<<<<<< HEAD
-=======
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
 
 class LessonResource extends Resource
 {
@@ -292,14 +255,9 @@ class LessonResource extends Resource
 
 <<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
-namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
-=======
-<<<<<<< HEAD
-namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
 =======
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
 
 use Filament\Resources\RelationManagers\RelationManager;
 use Illuminate\Database\Eloquent\Model;
@@ -328,14 +286,9 @@ class LessonsRelationManager extends RelationManager
 
 <<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
-namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
-=======
-<<<<<<< HEAD
-namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
 =======
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
 
 use Filament\Resources\RelationManagers\RelationManager;
 use Illuminate\Database\Eloquent\Model;
@@ -408,27 +361,18 @@ public function create(): array
 <?php
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 01dce8d29 (initial commit)
 namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
 use Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 use Modules\Quaeris\Models\Course;
-<<<<<<< HEAD
 =======
-=======
->>>>>>> 01dce8d29 (initial commit)
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
 use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 use Modules\healthcare_app\Models\Course;
-<<<<<<< HEAD
-=======
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
 
 class CreateLesson extends CreateRecord
 {
@@ -454,25 +398,16 @@ class CreateLesson extends CreateRecord
 <?php
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 01dce8d29 (initial commit)
 namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
 use Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\LessonResource;
-<<<<<<< HEAD
 =======
-=======
->>>>>>> 01dce8d29 (initial commit)
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
 use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
-<<<<<<< HEAD
-=======
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
 use Illuminate\Validation\Rule;
 
 class CreateLesson extends CreateRecord
@@ -575,14 +510,9 @@ public function test_nested_resource_routing()
     $course = Course::factory()->create();
 <<<<<<< HEAD
 $response = $this->get(route('filament.Quaeris.resources.courses.resources.lessons.list', [
-    $response = $this->get(route('filament.healthcare_app.resources.courses.resources.lessons.list', [
-=======
-<<<<<<< HEAD
-$response = $this->get(route('filament.Quaeris.resources.courses.resources.lessons.list', [
 =======
     $response = $this->get(route('filament.healthcare_app.resources.courses.resources.lessons.list', [
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
         'course' => $course,
     ]));
     
@@ -598,14 +528,9 @@ $response = $this->get(route('filament.Quaeris.resources.courses.resources.lesso
 
 <<<<<<< HEAD
 ## 🔄 **Integrazione con Quaeris**
-## 🔄 **Integrazione con healthcare_app**
-=======
-<<<<<<< HEAD
-## 🔄 **Integrazione con Quaeris**
 =======
 ## 🔄 **Integrazione con healthcare_app**
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
 
 ### **Pattern di Integrazione**
 
