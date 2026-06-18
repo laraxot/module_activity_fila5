@@ -33,6 +33,7 @@ pest()->extend(TestCase::class)->in('Feature', 'Unit');
 */
 
 expect()->extend('toBeActivity', function () {
+    /** @phpstan-ignore-next-line */
     return $this->toBeInstanceOf(Activity::class);
 });
 

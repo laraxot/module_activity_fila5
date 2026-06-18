@@ -179,14 +179,9 @@ protected function createApplication()
     $app['config']->set([
 <<<<<<< HEAD
 'database.connections.activity.database' => 'Quaeris_data_test',
-        'database.connections.activity.database' => 'healthcare_app_data_test',
-=======
-<<<<<<< HEAD
-'database.connections.activity.database' => 'Quaeris_data_test',
 =======
         'database.connections.activity.database' => 'healthcare_app_data_test',
 >>>>>>> 4467550 (.)
->>>>>>> 01dce8d29 (initial commit)
     ]);
     
     return $app;
