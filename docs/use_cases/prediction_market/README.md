@@ -205,8 +205,11 @@ class <nome progetto>ionContract extends Model
 - Come estendere le proiezioni?
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [README Shop](../shop/README.md)
 - [README Bank](../bank/README.md)
+=======
+>>>>>>> a1e3a4e (.)
 - [Console Commands <nome progetto>ion Market](./console_commands.md)
 - [Best Practice <nome progetto>ion Market](./best_practices.md)
 - [Architettura <nome progetto>ion Market](./architecture.md)
