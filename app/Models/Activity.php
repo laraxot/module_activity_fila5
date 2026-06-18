@@ -126,7 +126,10 @@ class Activity extends SpatieActivity
         'causer_type',
         'causer_id',
         'properties',
+<<<<<<< HEAD
         'attribute_changes',
+=======
+>>>>>>> 2b6968d (.)
         'batch_uuid',
     ];
 

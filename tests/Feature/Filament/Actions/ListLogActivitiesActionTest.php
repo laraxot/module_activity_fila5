@@ -11,8 +11,13 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 test('action has correct default name', function (): void {
     Assert::assertSame('list_log_activities', ListLogActivitiesAction::getDefaultName());
+=======
+test('action has correct default name', function(): void {
+    expect(ListLogActivitiesAction::getDefaultName())->toBe('list_log_activities');
+>>>>>>> 2b6968d (.)
 });
 
 test('action tooltip is translated correctly', function () {
@@ -21,7 +26,7 @@ test('action tooltip is translated correctly', function () {
     Assert::assertSame('list_log_activities', $action->getTooltip());
 });
 
-test('action is configured correctly', function (): void {
+test('action is configured correctly', function(): void {
     $action = ListLogActivitiesAction::make();
 
     Assert::assertSame('list_log_activities', $action->getName());
@@ -29,7 +34,7 @@ test('action is configured correctly', function (): void {
     Assert::assertSame('gray', $action->getColor());
 });
 
-test('action generates correct URL for activity log page', function (): void {
+test('action generates correct URL for activity log page', function(): void {
     $action = ListLogActivitiesAction::make();
 
     $livewire = ListLogActivitiesActionTestPage::usingResource(ListLogActivitiesActionTestResource::class);
