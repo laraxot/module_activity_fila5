@@ -181,6 +181,12 @@ php artisan test --testsuite=Activity
 php artisan activity:test-events
 ```
 
+## 🎛️ **Filament Integration**
+
+- **ListLogActivitiesAction** - Action per visualizzare lo storico attività da tabella Resource
+- **ListLogActivities** - Pagina dettaglio log con paginazione custom
+- **ActivityServiceProvider** - Registrazione moduli, route, view, traduzioni
+
 ## 📚 **Documentazione Completa**
 
 ### 🏗️ **Architettura**
