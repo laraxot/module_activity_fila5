@@ -19,7 +19,7 @@ test('snapshot uses activity module connection', function (): void {
 test('snapshot uses default db connection while testing', function(): void {
     $model = new Snapshot;
 
-    expect($model->getConnectionName())->toBe((string) config('database.default'));
+    Assert::assertSame((string) config('database.default'), $model->getConnectionName());
 });
 
 test('snapshot returns activity connection outside testing env', function(): void {
@@ -31,7 +31,7 @@ test('snapshot returns activity connection outside testing env', function(): voi
     try {
         $app->instance('env', 'local');
 
-        expect($model->getConnectionName())->toBe('activity');
+        Assert::assertSame('activity', $model->getConnectionName());
     } finally {
         $app->instance('env', $originalEnv);
     }
