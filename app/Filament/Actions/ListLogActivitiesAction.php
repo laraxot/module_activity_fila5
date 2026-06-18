@@ -48,8 +48,8 @@ class ListLogActivitiesAction extends XotBaseAction
     protected function setUp(): void
     {
         parent::setUp();
-        // @var mixed iconButton(;
-        // @var mixed icon('heroicon-o-clock'
+        $this->iconButton()
+            ->icon('heroicon-o-clock')
             ->color('gray')
             ->url(function (ListRecords $livewire, Model $record): string {
                 /** @var class-string<resource> $resource */
