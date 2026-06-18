@@ -14,7 +14,7 @@ use PHPUnit\Framework\Assert;
 
 uses(\Modules\Activity\Tests\TestCase::class);
 
-test('login listener handle executes without side effects', function (): void {
+test('login listener handle executes without side effects', function(): void {
     $listener = new LoginListener;
 
     $before = Activity::query()->count();
@@ -24,7 +24,7 @@ test('login listener handle executes without side effects', function (): void {
     Assert::assertSame($before, $after);
 });
 
-test('logout listener returns early when event has no user', function (): void {
+test('logout listener returns early when event has no user', function(): void {
     $listener = new LogoutListener;
     $user = new User;
     $event = new Logout('web', $user);
@@ -38,7 +38,7 @@ test('logout listener returns early when event has no user', function (): void {
     Assert::assertSame($before, $after);
 });
 
-test('logout listener creates auth activity with expected properties', function (): void {
+test('logout listener creates auth activity with expected properties', function(): void {
     $user = new User([
         'id' => (string) Str::uuid(),
         'name' => 'Listener User',

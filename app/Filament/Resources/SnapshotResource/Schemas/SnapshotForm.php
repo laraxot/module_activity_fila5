@@ -9,10 +9,20 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
+<<<<<<< HEAD
 class SnapshotForm extends XotBaseResourceForm
 {
     /**
      * @return array<string, Component>
+=======
+/**
+ * SnapshotForm Schema.
+ */
+class SnapshotForm extends XotBaseResourceForm
+{
+    /**
+     * @return array<int|string, Component>
+>>>>>>> 2b6968d (.)
      */
     public static function getFormSchema(): array
     {
