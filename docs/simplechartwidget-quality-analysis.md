@@ -7,6 +7,7 @@ canonical: ../../../Themes/docs/shared-components/dual-label-chart-widget-implem
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/dual-label-chart-widget-implementation.md
 =======
 ## Panoramica
@@ -813,3 +814,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/dual-label-c
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/dual-label-chart-widget-implementation.md
 >>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/dual-label-chart-widget-implementation.md
+>>>>>>> 2d6a374 (.)

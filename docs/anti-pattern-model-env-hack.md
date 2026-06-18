@@ -71,10 +71,14 @@ class TestCase extends XotBaseTestCase
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2d6a374 (.)
         <env name="DB_DATABASE" value="<nome progetto>_test"/>
         <env name="DB_DATABASE" value="laravelpizza_test"/>
         <env name="DB_DATABASE" value="<nome progetto>_test"/>
         <env name="DB_DATABASE" value="laravelpizza_test"/>
+<<<<<<< HEAD
 =======
         <env name="DB_DATABASE" value="<nome progetto>_test"/> (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)        <env name="DB_DATABASE" value="<nome progetto>_test"/>
 >>>>>>> 8fad5a4 (.)
@@ -89,6 +93,8 @@ class TestCase extends XotBaseTestCase
 >>>>>>> 7bcf987 (.)
 =======
         <env name="DB_DATABASE" value="<nome progetto>_test"/> (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)        <env name="DB_DATABASE" value="<nome progetto>_test"/>
+=======
+>>>>>>> 2d6a374 (.)
         <env name="DB_DATABASE" value="<nome progetto>_test"/>
 >>>>>>> a1e3a4e (.)
 =======

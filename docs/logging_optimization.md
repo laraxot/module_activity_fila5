@@ -1,15 +1,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d4098eb (.)
 =======
 >>>>>>> 26b6dbd (.)
+=======
+>>>>>>> 2d6a374 (.)
 ---
 module: theme
 topic: logging_optimization
 canonical: ../../../Themes/docs/shared-components/logging-optimization.md
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -317,3 +321,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/logging-opti
 
 See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md
 >>>>>>> 26b6dbd (.)
+=======
+
+See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md
+>>>>>>> 2d6a374 (.)

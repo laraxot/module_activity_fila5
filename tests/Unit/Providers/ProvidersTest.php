@@ -3,6 +3,10 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Providers;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2d6a374 (.)
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Providers\RouteServiceProvider;
@@ -11,9 +15,14 @@ use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
 
 <<<<<<< HEAD
+=======
+uses(TestCase::class);
+
+>>>>>>> 2d6a374 (.)
 test('ActivityServiceProvider extends XotBaseServiceProvider', function (): void {
     $reflection = new \ReflectionClass(ActivityServiceProvider::class);
     Assert::assertTrue($reflection->isSubclassOf(XotBaseServiceProvider::class));
@@ -33,7 +42,11 @@ test('ActivityServiceProvider registers migrations', function(): void {
     $provider = new ActivityServiceProvider(app());
     $provider->boot();
 
+<<<<<<< HEAD
     Assert::assertInstanceOf(ActivityServiceProvider::class, $provider);
+=======
+    expect(true)->toBeTrue();
+>>>>>>> 2d6a374 (.)
 });
 
 test('EventServiceProvider can be instantiated', function(): void {
@@ -59,7 +72,10 @@ test('RouteServiceProvider extends XotBaseRouteServiceProvider', function (): vo
 test('RouteServiceProvider extends XotBaseRouteServiceProvider', function(): void {
     $reflection = new ReflectionClass(RouteServiceProvider::class);
     expect($reflection->isSubclassOf(XotBaseRouteServiceProvider::class))->toBeTrue();
+<<<<<<< HEAD
 >>>>>>> 2b6968d (.)
+=======
+>>>>>>> 2d6a374 (.)
 });
 
 test('ActivityServiceProvider has boot method', function(): void {

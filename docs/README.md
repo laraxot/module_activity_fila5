@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2d6a374 (.)
 # Modulo Activity - Documentazione Completa
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -182,12 +185,15 @@ php artisan test --testsuite=Activity
 php artisan activity:test-events
 ```
 
+<<<<<<< HEAD
 ## 🎛️ **Filament Integration**
 
 - **ListLogActivitiesAction** - Action per visualizzare lo storico attività da tabella Resource
 - **ListLogActivities** - Pagina dettaglio log con paginazione custom
 - **ActivityServiceProvider** - Registrazione moduli, route, view, traduzioni
 
+=======
+>>>>>>> 2d6a374 (.)
 ## 📚 **Documentazione Completa**
 
 ### 🏗️ **Architettura**
@@ -638,8 +644,14 @@ Activity/
 - [ ] Documentare risorse Filament
 - [ ] Aggiungere esempi codice
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## AI Workflows
 - [AI Methodologies](./ai-methodologies.md)
 =======
 >>>>>>> a1e3a4e (.)
+=======
+
+## AI Workflows
+- [AI Methodologies](./ai-methodologies.md)
+>>>>>>> 2d6a374 (.)

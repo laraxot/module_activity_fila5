@@ -4,7 +4,11 @@ type: index
 module: Activity
 tags: [activity, wiki, index, audit]
 created: 2026-04-15
+<<<<<<< HEAD
 updated: 2026-06-13
+=======
+updated: 2026-06-05
+>>>>>>> 2d6a374 (.)
 qmd: "activity module wiki index audit log second brain"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/272"

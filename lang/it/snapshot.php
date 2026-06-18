@@ -30,6 +30,7 @@ return [
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
     ],
+<<<<<<< HEAD
     'label' => 'Snapshot',
     'plural_label' => 'Snapshot (Plurale)',
     'actions' => [
@@ -45,4 +46,6 @@ return [
     ],
 =======
 >>>>>>> 26b6dbd (.)
+=======
+>>>>>>> 2d6a374 (.)
 ];

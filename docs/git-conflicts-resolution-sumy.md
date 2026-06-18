@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Risoluzione Conflitti Git - Modulo Activity
 
@@ -58,12 +59,15 @@ Tutti i file risolti rispettano:
 >>>>>>> d4098eb (.)
 =======
 >>>>>>> 26b6dbd (.)
+=======
+>>>>>>> 2d6a374 (.)
 ---
 module: theme
 topic: git-conflicts-resolution-sumy
 canonical: ../../../Themes/docs/shared-components/git-conflicts-resolution-summary-Modules.md
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-resolution-summary-Modules.md
@@ -73,3 +77,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/git-conflict
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-resolution-summary-Modules.md
 >>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-resolution-summary-Modules.md
+>>>>>>> 2d6a374 (.)

@@ -3,6 +3,10 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2d6a374 (.)
 use Filament\Actions\Action;
 use Modules\Activity\Events\ActivityEvent;
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
@@ -20,13 +24,17 @@ use Modules\Activity\Models\StoredEvent;
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
+<<<<<<< HEAD
 use PHPUnit\Framework\Assert;
 use function Safe\class_uses;
+=======
+>>>>>>> 2d6a374 (.)
 
 uses(\Modules\Activity\Tests\TestCase::class);
 
 <<<<<<< HEAD
 describe('ActivityEvent', function (): void {
+<<<<<<< HEAD
     test('can be instantiated', function (): void {
 =======
 describe('ActivityEvent', function(): void {
@@ -41,6 +49,14 @@ describe('ActivityEvent', function(): void {
 =======
     it('uses correct traits', function(): void {
 >>>>>>> 2b6968d (.)
+=======
+    it('can be instantiated', function (): void {
+        $event = new ActivityEvent;
+        expect($event)->toBeInstanceOf(ActivityEvent::class);
+    });
+
+    it('uses correct traits', function (): void {
+>>>>>>> 2d6a374 (.)
         $event = new ActivityEvent;
 
         // Verify the event has the traits
@@ -53,11 +69,15 @@ describe('ActivityEvent', function(): void {
 
 <<<<<<< HEAD
 describe('ListLogActivitiesAction', function (): void {
+<<<<<<< HEAD
     test('extends XotBaseAction', function (): void {
 =======
 describe('ListLogActivitiesAction', function(): void {
     it('extends XotBaseAction', function(): void {
 >>>>>>> 2b6968d (.)
+=======
+    it('extends XotBaseAction', function (): void {
+>>>>>>> 2d6a374 (.)
         $action = new class('list_log_activities') extends XotBaseAction
         {
             protected function setUp(): void
@@ -82,10 +102,14 @@ describe('ListLogActivitiesAction', function(): void {
     });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     test('is a Filament action', function (): void {
 =======
     it('is a Filament action', function(): void {
 >>>>>>> 2b6968d (.)
+=======
+    it('is a Filament action', function (): void {
+>>>>>>> 2d6a374 (.)
         $action = new class('list_log_activities') extends XotBaseAction
         {
             protected function setUp(): void
@@ -94,7 +118,11 @@ describe('ListLogActivitiesAction', function(): void {
             }
         };
 
+<<<<<<< HEAD
         Assert::assertInstanceOf(Action::class, $action);
+=======
+        expect($action)->toBeInstanceOf(Action::class);
+>>>>>>> 2d6a374 (.)
     });
 });
 
@@ -108,6 +136,7 @@ describe('CanPaginate trait', function(): void {
         // Check the trait exists and has the expected methods
         $trait = new \ReflectionClass(CanPaginate::class);
 
+<<<<<<< HEAD
         Assert::assertTrue($trait->hasMethod('getRecordsPerPage'));
         Assert::assertTrue($trait->hasMethod('getPaginationPageName'));
         Assert::assertTrue($trait->hasMethod('getPerPageSessionKey'));
@@ -146,11 +175,40 @@ describe('CanPaginate trait', function(): void {
         $trait = new \ReflectionClass(CanPaginate::class);
 
         Assert::assertTrue($trait->hasMethod('getRecordsPerPageSelectOptions'));
+=======
+        expect($trait->hasMethod('getRecordsPerPage'))->toBeTrue();
+        expect($trait->hasMethod('getPaginationPageName'))->toBeTrue();
+        expect($trait->hasMethod('getPerPageSessionKey'))->toBeTrue();
+        expect($trait->hasMethod('getDefaultRecordsPerPageSelectOption'))->toBeTrue();
+        expect($trait->hasMethod('updatedRecordsPerPage'))->toBeTrue();
+        expect($trait->hasMethod('getTablePage'))->toBeTrue();
+        expect($trait->hasMethod('paginateQuery'))->toBeTrue();
+        expect($trait->hasMethod('getRecordsPerPageSelectOptions'))->toBeTrue();
+    });
+
+    it('trait has recordsPerPage property', function (): void {
+        $trait = new \ReflectionClass(CanPaginate::class);
+
+        expect($trait->hasProperty('recordsPerPage'))->toBeTrue();
+    });
+
+    it('trait has defaultRecordsPerPageSelectOption property', function (): void {
+        $trait = new \ReflectionClass(CanPaginate::class);
+
+        expect($trait->hasProperty('defaultRecordsPerPageSelectOption'))->toBeTrue();
+    });
+
+    it('trait has getRecordsPerPageSelectOptions method', function (): void {
+        $trait = new \ReflectionClass(CanPaginate::class);
+
+        expect($trait->hasMethod('getRecordsPerPageSelectOptions'))->toBeTrue();
+>>>>>>> 2d6a374 (.)
     });
 });
 
 <<<<<<< HEAD
 describe('ActivityResource', function (): void {
+<<<<<<< HEAD
     test('can be instantiated', function (): void {
 =======
 describe('ActivityResource', function(): void {
@@ -158,6 +216,11 @@ describe('ActivityResource', function(): void {
 >>>>>>> 2b6968d (.)
         $resource = new ActivityResource;
         Assert::assertInstanceOf(ActivityResource::class, $resource);
+=======
+    it('can be instantiated', function (): void {
+        $resource = new ActivityResource;
+        expect($resource)->toBeInstanceOf(ActivityResource::class);
+>>>>>>> 2d6a374 (.)
     });
 
 <<<<<<< HEAD
@@ -208,11 +271,18 @@ describe('EditActivity page', function (): void {
     });
 });
 
+<<<<<<< HEAD
 describe('EditActivity page', function(): void {
     it('can be instantiated', function(): void {
 >>>>>>> 2b6968d (.)
         $page = new EditActivity;
         Assert::assertInstanceOf(EditActivity::class, $page);
+=======
+describe('EditActivity page', function (): void {
+    it('can be instantiated', function (): void {
+        $page = new EditActivity;
+        expect($page)->toBeInstanceOf(EditActivity::class);
+>>>>>>> 2d6a374 (.)
     });
 
 <<<<<<< HEAD
@@ -230,17 +300,24 @@ describe('EditActivity page', function(): void {
     });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     test('extends XotBaseEditRecord', function (): void {
 =======
     it('extends XotBaseEditRecord', function(): void {
 >>>>>>> 2b6968d (.)
         $page = new EditActivity;
         Assert::assertInstanceOf(XotBaseEditRecord::class, $page);
+=======
+    it('extends XotBaseEditRecord', function (): void {
+        $page = new EditActivity;
+        expect($page)->toBeInstanceOf(XotBaseEditRecord::class);
+>>>>>>> 2d6a374 (.)
     });
 });
 
 <<<<<<< HEAD
 describe('ListActivities page', function (): void {
+<<<<<<< HEAD
     test('can be instantiated', function (): void {
 =======
 describe('ListActivities page', function(): void {
@@ -248,6 +325,11 @@ describe('ListActivities page', function(): void {
 >>>>>>> 2b6968d (.)
         $page = new ListActivities;
         Assert::assertInstanceOf(ListActivities::class, $page);
+=======
+    it('can be instantiated', function (): void {
+        $page = new ListActivities;
+        expect($page)->toBeInstanceOf(ListActivities::class);
+>>>>>>> 2d6a374 (.)
     });
 
 <<<<<<< HEAD
@@ -264,10 +346,14 @@ describe('ListActivities page', function(): void {
     });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     test('has table columns', function (): void {
 =======
     it('has table columns', function(): void {
 >>>>>>> 2b6968d (.)
+=======
+    it('has table columns', function (): void {
+>>>>>>> 2d6a374 (.)
         $page = new ListActivities;
         $columns = $page->getTableColumns();
 
@@ -283,6 +369,7 @@ describe('ListActivities page', function(): void {
 
 <<<<<<< HEAD
 describe('SnapshotResource', function (): void {
+<<<<<<< HEAD
     test('can be instantiated', function (): void {
 =======
 describe('SnapshotResource', function(): void {
@@ -290,6 +377,11 @@ describe('SnapshotResource', function(): void {
 >>>>>>> 2b6968d (.)
         $resource = new SnapshotResource;
         Assert::assertInstanceOf(SnapshotResource::class, $resource);
+=======
+    it('can be instantiated', function (): void {
+        $resource = new SnapshotResource;
+        expect($resource)->toBeInstanceOf(SnapshotResource::class);
+>>>>>>> 2d6a374 (.)
     });
 
 <<<<<<< HEAD
@@ -317,6 +409,7 @@ describe('SnapshotResource', function(): void {
 
 <<<<<<< HEAD
 describe('ListSnapshots page', function (): void {
+<<<<<<< HEAD
     test('can be instantiated', function (): void {
 =======
 describe('ListSnapshots page', function(): void {
@@ -324,6 +417,11 @@ describe('ListSnapshots page', function(): void {
 >>>>>>> 2b6968d (.)
         $page = new ListSnapshots;
         Assert::assertInstanceOf(ListSnapshots::class, $page);
+=======
+    it('can be instantiated', function (): void {
+        $page = new ListSnapshots;
+        expect($page)->toBeInstanceOf(ListSnapshots::class);
+>>>>>>> 2d6a374 (.)
     });
 
 <<<<<<< HEAD
@@ -340,10 +438,14 @@ describe('ListSnapshots page', function(): void {
     });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     test('has table columns', function (): void {
 =======
     it('has table columns', function(): void {
 >>>>>>> 2b6968d (.)
+=======
+    it('has table columns', function (): void {
+>>>>>>> 2d6a374 (.)
         $page = new ListSnapshots;
         $columns = $page->getTableColumns();
 
@@ -356,10 +458,14 @@ describe('ListSnapshots page', function(): void {
     });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     test('has table filters', function (): void {
 =======
     it('has table filters', function(): void {
 >>>>>>> 2b6968d (.)
+=======
+    it('has table filters', function (): void {
+>>>>>>> 2d6a374 (.)
         $page = new ListSnapshots;
         $filters = $page->getTableFilters();
 
@@ -367,10 +473,14 @@ describe('ListSnapshots page', function(): void {
     });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     test('has table actions', function (): void {
 =======
     it('has table actions', function(): void {
 >>>>>>> 2b6968d (.)
+=======
+    it('has table actions', function (): void {
+>>>>>>> 2d6a374 (.)
         $page = new ListSnapshots;
         $actions = $page->getTableActions();
 
@@ -380,10 +490,14 @@ describe('ListSnapshots page', function(): void {
     });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     test('has bulk actions', function (): void {
 =======
     it('has bulk actions', function(): void {
 >>>>>>> 2b6968d (.)
+=======
+    it('has bulk actions', function (): void {
+>>>>>>> 2d6a374 (.)
         $page = new ListSnapshots;
         $bulkActions = $page->getTableBulkActions();
 
@@ -393,6 +507,7 @@ describe('ListSnapshots page', function(): void {
 
 <<<<<<< HEAD
 describe('StoredEventResource', function (): void {
+<<<<<<< HEAD
     test('can be instantiated', function (): void {
 =======
 describe('StoredEventResource', function(): void {
@@ -400,6 +515,11 @@ describe('StoredEventResource', function(): void {
 >>>>>>> 2b6968d (.)
         $resource = new StoredEventResource;
         Assert::assertInstanceOf(StoredEventResource::class, $resource);
+=======
+    it('can be instantiated', function (): void {
+        $resource = new StoredEventResource;
+        expect($resource)->toBeInstanceOf(StoredEventResource::class);
+>>>>>>> 2d6a374 (.)
     });
 
 <<<<<<< HEAD
@@ -428,6 +548,7 @@ describe('StoredEventResource', function(): void {
 
 <<<<<<< HEAD
 describe('ListStoredEvents page', function (): void {
+<<<<<<< HEAD
     test('can be instantiated', function (): void {
 =======
 describe('ListStoredEvents page', function(): void {
@@ -442,6 +563,14 @@ describe('ListStoredEvents page', function(): void {
 =======
     it('uses correct resource via getResource', function(): void {
 >>>>>>> 2b6968d (.)
+=======
+    it('can be instantiated', function (): void {
+        $page = new ListStoredEvents;
+        expect($page)->toBeInstanceOf(ListStoredEvents::class);
+    });
+
+    it('uses correct resource via getResource', function (): void {
+>>>>>>> 2d6a374 (.)
         $reflection = new \ReflectionClass(ListStoredEvents::class);
         $property = $reflection->getProperty('resource');
         $property->setAccessible(true);
@@ -451,10 +580,14 @@ describe('ListStoredEvents page', function(): void {
     });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     test('has table columns', function (): void {
 =======
     it('has table columns', function(): void {
 >>>>>>> 2b6968d (.)
+=======
+    it('has table columns', function (): void {
+>>>>>>> 2d6a374 (.)
         $page = new ListStoredEvents;
         $columns = $page->getTableColumns();
 

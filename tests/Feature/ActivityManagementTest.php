@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Modules\Activity\Tests\Feature;
-
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
