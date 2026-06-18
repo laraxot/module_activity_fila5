@@ -9,6 +9,7 @@ namespace Modules\Activity\Tests\Feature;
 >>>>>>> 2d6a374 (.)
 =======
 namespace Modules\Activity\Tests\Feature;
+use ReflectionClass;
 
 >>>>>>> 491d674 (.)
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
