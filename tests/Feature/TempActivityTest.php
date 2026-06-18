@@ -11,7 +11,23 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
+=======
+uses(TestCase::class); // Use the custom TestCase
+
+beforeEach(function () {
+    // Skip if database not available
+    try {
+        \DB::connection()->getPdo();
+    } catch (\Exception $e) {
+        $this->markTestSkipped('Database not available: '.$e->getMessage());
+    }
+});
+
+it('can create activity with basic information', function () {
+    \assert($user instanceof User);
+>>>>>>> 2b6968d (.)
 
 test('can create activity with basic information', function () {
     $user = UserFactory::new()->createOne();
