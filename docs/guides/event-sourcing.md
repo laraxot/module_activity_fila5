@@ -1,5 +1,10 @@
-# event sourcing comprehensive guide
+---
+module: theme
+topic: event-sourcing
+canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
+---
 
+<<<<<<< HEAD
 ## introduction to event sourcing
 
 event sourcing is an architectural approach where every change to application state is captured in an event object. these events are stored in sequence, representing the complete history of changes, unlike the traditional crud approach where only the final state is saved.
@@ -317,3 +322,6 @@ canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.md
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.md
+>>>>>>> d4098eb (.)

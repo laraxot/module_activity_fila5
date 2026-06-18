@@ -1,5 +1,10 @@
-# Practical Event Sourcing Examples for Healthcare
+---
+module: theme
+topic: event-sourcing-examples
+canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+---
 
+<<<<<<< HEAD
 ## Table of Contents
 - [Patient Management](#patient-management)
 - [Appointment Scheduling](#appointment-scheduling)
@@ -284,3 +289,6 @@ canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplic
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+>>>>>>> d4098eb (.)
