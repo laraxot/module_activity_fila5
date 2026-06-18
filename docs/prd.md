@@ -1,4 +1,20 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+# PRD: Activity Module
+
+## 📋 Overview
+- **Author:** Gemini CLI
+- **Status:** Draft
+- **Target Release:** 1.0.0
+
+## ❓ Problem Statement
+Specialized logic for Activity needs a dedicated, type-safe Module to ensure maintainability.
+
+## 🎯 Goals & Success Metrics
+- **Goal 1:** 100% PHPStan L10 compliance.
+- **Goal 2:** Seamless integration with XotBase.
+>>>>>>> 8fad5a4 (.)
 # PRD - Activity Module
 
 ## 1. Executive Summary
@@ -44,6 +60,7 @@ System observability and audit trails are fragmented and lack a unified, type-sa
 - API documentation completed.
 =======
 - API documentation completed.
+<<<<<<< HEAD
 >>>>>>> 9cddd9b (.)
 =======
 ## 4. Technical Specifications
@@ -62,3 +79,5 @@ System observability and audit trails are fragmented and lack a unified, type-sa
 - Full quality pipeline (PHPStan, PHPMD, PHPInsights, Pest) passes without errors.
 - Documentation in `docs/wiki/` is updated and ingested.
 >>>>>>> 2b6968d (.)
+=======
+>>>>>>> 8fad5a4 (.)
