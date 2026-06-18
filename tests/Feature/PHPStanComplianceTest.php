@@ -3,9 +3,14 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Activity\Tests\Feature;
 =======
 >>>>>>> 2d6a374 (.)
+=======
+namespace Modules\Activity\Tests\Feature;
+
+>>>>>>> 491d674 (.)
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Providers\ActivityServiceProvider;
