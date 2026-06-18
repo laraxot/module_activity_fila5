@@ -11,21 +11,21 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-test('action can be instantiated', function (): void {
+test('action can be instantiated', function(): void {
     $action = ListLogActivitiesAction::make();
 
     Assert::assertInstanceOf(ListLogActivitiesAction::class, $action);
     Assert::assertSame('list_log_activities', $action::getDefaultName());
 });
 
-test('action has correct configuration', function (): void {
+test('action has correct configuration', function(): void {
     $action = ListLogActivitiesAction::make();
 
     Assert::assertSame('heroicon-o-clock', $action->getIcon());
     Assert::assertSame('gray', $action->getColor());
 });
 
-test('action generates a log-activity URL containing record key', function (): void {
+test('action generates a log-activity URL containing record key', function(): void {
     $action = ListLogActivitiesAction::make();
 
     $livewire = ListLogActivitiesActionTestPage::usingResource(ListLogActivitiesActionTestResourceSimple::class);
