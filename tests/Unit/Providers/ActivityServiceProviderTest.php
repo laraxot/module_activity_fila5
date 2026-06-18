@@ -9,7 +9,7 @@ use PHPUnit\Framework\Assert;
 
 uses(\Modules\Activity\Tests\TestCase::class);
 
-test('activity service provider exposes expected metadata', function (): void {
+test('activity service provider exposes expected metadata', function(): void {
     $provider = new ActivityServiceProvider(app());
 
     $reflection = new \ReflectionClass($provider);
@@ -30,7 +30,7 @@ test('activity service provider exposes expected metadata', function (): void {
     Assert::assertSame('Modules\\Activity\\Providers', $moduleNs->getValue($provider));
 });
 
-test('activity service provider registerConfig publishes and merges config', function (): void {
+test('activity service provider registerConfig publishes and merges config', function(): void {
     $provider = new ActivityServiceProvider(app());
 
     $method = new \ReflectionMethod($provider, 'registerConfig');
