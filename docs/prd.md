@@ -33,4 +33,8 @@ The Activity module is responsible for tracking and logging all system actions, 
 ## 7. Release Criteria
 - 100% PHPStan Level 10 compliance.
 - Test coverage > 80% for logging logic.
+<<<<<<< HEAD
 - API documentation completed.
+=======
+- API documentation completed.
+>>>>>>> 9cddd9b (.)

@@ -162,6 +162,7 @@ test_activity_logs.sql
 *.fila2
 laravel
 public_html
+<<<<<<< HEAD
 tests/coverage
 lang/lang/
 _docs/
@@ -180,3 +181,8 @@ activity_coverage.xml
 *.orig
 *.rej
 *~head
+=======
+tests/coverage/
+tests/coverage.xml/
+activity_coverage.xml
+>>>>>>> 9cddd9b (.)
