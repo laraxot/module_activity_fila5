@@ -414,6 +414,7 @@ $graph->Stroke();
 - **API Reference**: https://jpgraph.net/doc/
 - **FAQ**: https://jpgraph.net/doc/faq.html
 
+<<<<<<< HEAD
 ## 🔄 **Integrazione con Quaeris**
 ## 🔄 **Integrazione con healthcare_app**
 =======
