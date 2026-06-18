@@ -2,17 +2,9 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 namespace Modules\Activity\Tests\Feature;
 
 use Illuminate\Support\Carbon;
-=======
->>>>>>> 2d6a374 (.)
-=======
-namespace Modules\Activity\Tests\Feature;
-
->>>>>>> 491d674 (.)
 use Illuminate\Support\Str;
 use Modules\Activity\Database\Factories\SnapshotFactory;
 use Modules\Activity\Models\Snapshot;
@@ -21,22 +13,8 @@ use PHPUnit\Framework\Assert;
 
 uses(\Modules\Activity\Tests\TestCase::class);
 
-<<<<<<< HEAD
 test('can create snapshot with basic information', function (): void {
     $snapshot = SnapshotFactory::new()->createOne([
-=======
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        \DB::connection()->getPdo();
-    } catch (\Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
-
-it('can create snapshot with basic information', function(): void {
-    $snapshot = Snapshot::factory()->create([
->>>>>>> 2b6968d (.)
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'state' => ['name' => 'Test Aggregate', 'status' => 'active'],
@@ -52,11 +30,7 @@ it('can create snapshot with basic information', function(): void {
     Assert::assertSame('active', $state['status']);
 });
 
-<<<<<<< HEAD
 test('can create snapshot with complex state', function (): void {
-=======
-it('can create snapshot with complex state', function(): void {
->>>>>>> 2b6968d (.)
     $complexState = [
         'user_info' => [
             'id' => 123,
@@ -123,11 +97,7 @@ it('can create snapshot with complex state', function(): void {
     Assert::assertContains('verified', $meta['tags']);
 });
 
-<<<<<<< HEAD
 test('can manage snapshot versioning', function (): void {
-=======
-it('can manage snapshot versioning', function(): void {
->>>>>>> 2b6968d (.)
     $aggregateUuid = Str::uuid()->toString();
 
     $snapshot1 = SnapshotFactory::new()->createOne([
@@ -160,11 +130,7 @@ it('can manage snapshot versioning', function(): void {
     Assert::assertSame($snapshot3->aggregate_version, 3);
 });
 
-<<<<<<< HEAD
 test('can query snapshots by aggregate uuid', function (): void {
-=======
-it('can query snapshots by aggregate uuid', function(): void {
->>>>>>> 2b6968d (.)
     $uuid1 = Str::uuid()->toString();
     $uuid2 = Str::uuid()->toString();
 
@@ -200,11 +166,7 @@ it('can query snapshots by aggregate uuid', function(): void {
     Assert::assertSame($uuid2, $first2->aggregate_uuid);
 });
 
-<<<<<<< HEAD
 test('can query snapshots by version', function (): void {
-=======
-it('can query snapshots by version', function(): void {
->>>>>>> 2b6968d (.)
     $uuid = Str::uuid()->toString();
 
     SnapshotFactory::new()->createOne([
@@ -246,13 +208,8 @@ it('can query snapshots by version', function(): void {
     Assert::assertSame($version10Snapshot->aggregate_version, 10);
 });
 
-<<<<<<< HEAD
 test('can handle snapshot with empty state', function (): void {
     $snapshot = SnapshotFactory::new()->createOne([
-=======
-it('can handle snapshot with empty state', function(): void {
-    $snapshot = Snapshot::factory()->create([
->>>>>>> 2b6968d (.)
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'state' => [],
@@ -264,13 +221,8 @@ it('can handle snapshot with empty state', function(): void {
     Assert::assertEmpty($state);
 });
 
-<<<<<<< HEAD
 test('can handle snapshot with empty array state', function (): void {
     $snapshot = SnapshotFactory::new()->createOne([
-=======
-it('can handle snapshot with empty array state', function(): void {
-    $snapshot = Snapshot::factory()->create([
->>>>>>> 2b6968d (.)
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'state' => [],
@@ -282,11 +234,7 @@ it('can handle snapshot with empty array state', function(): void {
     Assert::assertEmpty($state);
 });
 
-<<<<<<< HEAD
 test('can restore state from snapshot', function (): void {
-=======
-it('can restore state from snapshot', function(): void {
->>>>>>> 2b6968d (.)
     $originalState = [
         'user_id' => 456,
         'settings' => [
@@ -325,11 +273,7 @@ it('can restore state from snapshot', function(): void {
     Assert::assertSame('EUR', $preferences['currency']);
 });
 
-<<<<<<< HEAD
 test('can compare snapshot versions', function (): void {
-=======
-it('can compare snapshot versions', function(): void {
->>>>>>> 2b6968d (.)
     $uuid = Str::uuid()->toString();
 
     $snapshot1 = SnapshotFactory::new()->createOne([
@@ -372,11 +316,7 @@ it('can compare snapshot versions', function(): void {
     Assert::assertSame('final', $state3['status']);
 });
 
-<<<<<<< HEAD
 test('can handle snapshot with timestamps', function (): void {
-=======
-it('can handle snapshot with timestamps', function(): void {
->>>>>>> 2b6968d (.)
     $now = now();
 
     $snapshot = SnapshotFactory::new()->createOne([
@@ -391,11 +331,7 @@ it('can handle snapshot with timestamps', function(): void {
     Assert::assertInstanceOf(Carbon::class, $snapshot->created_at);
 });
 
-<<<<<<< HEAD
 test('can query snapshots by date range', function (): void {
-=======
-it('can query snapshots by date range', function(): void {
->>>>>>> 2b6968d (.)
     $yesterday = now()->subDay();
     $today = now();
     $tomorrow = now()->addDay();
@@ -435,11 +371,7 @@ it('can query snapshots by date range', function(): void {
     Assert::assertCount(3, $recentSnapshots);
 });
 
-<<<<<<< HEAD
 test('can handle snapshot with metadata', function (): void {
-=======
-it('can handle snapshot with metadata', function(): void {
->>>>>>> 2b6968d (.)
     $metadata = [
         'source' => 'user_action',
         'user_id' => 789,
