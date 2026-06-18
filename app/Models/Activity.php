@@ -108,7 +108,11 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  */
 class Activity extends SpatieActivity
 {
+<<<<<<< HEAD
     /** @phpstan-use HasXotFactory<Factory<static>> */
+=======
+    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+>>>>>>> 491d674 (.)
     use HasXotFactory;
 
     /** @var string */

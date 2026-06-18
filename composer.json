@@ -51,6 +51,7 @@
     },
     "require": {
         "spatie/laravel-activitylog": "*",
+<<<<<<< HEAD
         "spatie/laravel-event-sourcing": "*"
             "Modules\\Activity\\Tests\\": "tests/"
 >>>>>>> 2d6a374 (.)
@@ -59,6 +60,8 @@
     },
     "require": {
         "spatie/laravel-activitylog": "*",
+=======
+>>>>>>> 491d674 (.)
         "spatie/laravel-event-sourcing": "*",
         "php": "^8.3"
     },
@@ -111,8 +114,11 @@
     "minimum-stability": "dev",
     "prefer-stable": true
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     
 }
 >>>>>>> 2d6a374 (.)
+=======
+>>>>>>> 491d674 (.)
 }
