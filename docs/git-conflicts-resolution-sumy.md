@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Risoluzione Conflitti Git - Modulo Activity
 
@@ -52,10 +53,16 @@ Tutti i file risolti rispettano:
 - [<nome progetto>ion Market Use Cases](./use_cases/<nome progetto>ion_market/index.md)
 
 >>>>>>> a1e3a4e (.)
+=======
+>>>>>>> d4098eb (.)
 ---
 module: theme
 topic: git-conflicts-resolution-sumy
 canonical: ../../../Themes/docs/shared-components/git-conflicts-resolution-summary-Modules.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-resolution-summary-Modules.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-resolution-summary-Modules.md
+>>>>>>> d4098eb (.)
