@@ -122,7 +122,26 @@ class ActivityEvent
 
 ## Perché esiste
 
+<<<<<<< HEAD
 Tracciabilità azioni su entità sensibili del sistema.
+=======
+```
+Activity <── User      (login/logout events, user actions)
+<<<<<<< .merge_file_lHi0B5
+Activity <── healthcare_app   (survey CRUD, dashboard actions)
+=======
+<<<<<<< HEAD
+Activity <── Survey    (survey CRUD, dashboard actions)
+=======
+Activity <── ModuloEsempio   (survey CRUD, dashboard actions)
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
+>>>>>>> .merge_file_bD7FZH
+Activity <── Cms       (page/content modifications)
+Activity <── Media     (file upload/delete tracking)
+Activity <── Tenant    (multi-tenant audit isolation)
+Activity <── Lang      (traduzioni IT/EN/DE)
+```
+>>>>>>> 7bcf987 (.)
 
 ## Superpoteri
 
