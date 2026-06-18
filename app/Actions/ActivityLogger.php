@@ -130,7 +130,7 @@ class ActivityLogger
         ?Model $subject = null,
         ?array $properties = null,
     ): Activity {
-        return $this->log($type, null, $subject, $properties, $description);
+        return // @var mixed log($type, null, $subject, $properties, $description;
     }
 
     /**
