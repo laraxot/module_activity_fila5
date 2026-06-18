@@ -15,7 +15,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 
 /**
  * Class StoredEvent.
- *
+ * 
  * Represents a stored event in the activity module.
  *
  * @property int $id
@@ -29,7 +29,6 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property-read ShouldBeStored|null $event
- *
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent afterVersion(int $version)
  * @method static EloquentStoredEventCollection<static> all($columns = ['*'])
  * @method static EloquentStoredEventCollection<static> get($columns = ['*'])
@@ -54,11 +53,8 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereUpdatedBy($value)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent withMetaDataAttributes()
  * @method static StoredEventFactory factory($count = null, $state = [])
- *
  * @property string|null $updated_at
- *
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereUpdatedAt($value)
- *
  * @mixin \Eloquent
  */
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
@@ -71,15 +67,6 @@ class StoredEvent extends SpatieStoredEvent
     protected $connection = 'activity';
 
     protected $table = 'stored_events';
-
-    public function __construct(array $attributes = [])
-    {
-        parent::__construct($attributes);
-        if (app()->environment('testing')) {
-            $default = config('database.default');
-            $this->connection = is_string($default) ? $default : 'mysql';
-        }
-    }
 
     protected $fillable = [
         'id',
