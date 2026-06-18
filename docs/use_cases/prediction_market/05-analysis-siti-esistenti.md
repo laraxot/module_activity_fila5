@@ -1,15 +1,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d4098eb (.)
 =======
 >>>>>>> 26b6dbd (.)
+=======
+>>>>>>> 2d6a374 (.)
 ---
 module: theme
 topic: 05-analysis-siti-esistenti
 canonical: ../../../../../Themes/docs/shared-components/05-analisi-siti-esistenti.md
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -53,3 +57,7 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/05-ana
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/05-analisi-siti-esistenti.md
 >>>>>>> 26b6dbd (.)
+=======
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/05-analisi-siti-esistenti.md
+>>>>>>> 2d6a374 (.)

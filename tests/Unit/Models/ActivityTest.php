@@ -2,7 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Activity\Database\Factories\ActivityFactory;
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+
+>>>>>>> 2d6a374 (.)
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;

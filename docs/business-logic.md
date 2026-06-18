@@ -7,6 +7,7 @@ canonical: ../../../Themes/docs/shared-components/business-logic-analysis.md
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/business-logic-analysis.md
 =======
 ## Overview
@@ -210,3 +211,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/business-log
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/business-logic-analysis.md
 >>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/business-logic-analysis.md
+>>>>>>> 2d6a374 (.)

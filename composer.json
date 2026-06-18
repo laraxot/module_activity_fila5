@@ -44,6 +44,16 @@
             "Workbench\\App\\": "workbench/app/",
             "Workbench\\Database\\Factories\\": "workbench/database/factories/",
             "Workbench\\Database\\Seeders\\": "workbench/database/seeders/"
+<<<<<<< HEAD
+=======
+        }
+
+    },
+    "require": {
+        "spatie/laravel-activitylog": "*",
+        "spatie/laravel-event-sourcing": "*"
+            "Modules\\Activity\\Tests\\": "tests/"
+>>>>>>> 2d6a374 (.)
         }
 
     },
@@ -100,4 +110,9 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true
+<<<<<<< HEAD
+=======
+    
+}
+>>>>>>> 2d6a374 (.)
 }

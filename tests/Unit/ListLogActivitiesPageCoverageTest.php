@@ -22,6 +22,10 @@ $this->page = new class extends ListLogActivities
                 return ActivityResource::class;
             }
 
+<<<<<<< HEAD
+=======
+            // Expose protected methods for testing
+>>>>>>> 2d6a374 (.)
             public function exposeRestoreSuccess(): Notification
             {
                 return $this->sendRestoreSuccessNotification();
@@ -76,8 +80,13 @@ $page = new class extends ListLogActivities
     test('get pagination mode returns default', function (): void {
 $mode = $this->requirePage()->getPaginationMode();
 
+<<<<<<< HEAD
         Assert::assertSame(PaginationMode::Default, $mode);
     });
+=======
+        $this->assertSame(PaginationMode::Default, $mode);
+    }
+>>>>>>> 2d6a374 (.)
 
     test('get field label returns name when not in map', function (): void {
 try {

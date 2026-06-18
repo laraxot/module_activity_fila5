@@ -8,6 +8,7 @@ canonical: ../../../Themes/docs/shared-components/PHPMD-ANALYSIS.md
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/PHPMD-ANALYSIS.md
 =======
 =======
@@ -21,3 +22,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/PHPMD-ANALYS
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/PHPMD-ANALYSIS.md
 >>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/PHPMD-ANALYSIS.md
+>>>>>>> 2d6a374 (.)

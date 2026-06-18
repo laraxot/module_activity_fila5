@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+
+>>>>>>> 2d6a374 (.)
 use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
@@ -31,6 +36,12 @@ test('BaseModel model can be instantiated', function () {
     Assert::assertInstanceOf(BaseModel::class, $baseModel);
 });
 
+test('BaseModel model can be instantiated', function () {
+    $baseModel = new BaseModel;
+
+    expect($baseModel)->toBeInstanceOf(BaseModel::class);
+});
+
 test('Snapshot model has correct connection', function () {
     $snapshot = new Snapshot;
 
@@ -44,10 +55,16 @@ test('StoredEvent model has correct connection', function () {
 });
 
 test('BaseModel model has correct connection', function () {
+<<<<<<< HEAD
     $baseModel = new class extends BaseModel
     {
         protected $table = 'activity_base_models';
     };
 
     Assert::assertIsString($baseModel->getConnectionName());
+=======
+    $baseModel = new BaseModel;
+
+    expect($baseModel->getConnectionName())->toBeString();
+>>>>>>> 2d6a374 (.)
 });
