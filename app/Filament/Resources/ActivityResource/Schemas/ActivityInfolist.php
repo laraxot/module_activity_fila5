@@ -13,6 +13,7 @@ class ActivityInfolist extends XotBaseResourceInfolist
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, Component>
 =======
 /**
@@ -26,6 +27,9 @@ class ActivityInfolist extends XotBaseResourceInfolist
 =======
      * @return array<string, \Filament\Schemas\Components\Component>
 >>>>>>> d4098eb (.)
+=======
+     * @return array<string, \Filament\Schemas\Components\Component>
+>>>>>>> 26b6dbd (.)
      */
     public static function getInfolistSchema(): array
     {

@@ -5,7 +5,11 @@ canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplic
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
 >>>>>>> d4098eb (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+>>>>>>> 26b6dbd (.)

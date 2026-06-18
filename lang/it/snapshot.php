@@ -24,6 +24,7 @@ return [
         'updated_at' => ['label' => 'updated_at'],
         'aggregate_type' => ['label' => 'aggregate_type'],
     ],
+<<<<<<< HEAD
     'actions' => [
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
@@ -42,4 +43,6 @@ return [
             'label' => 'Elimina Snapshot',
         ],
     ],
+=======
+>>>>>>> 26b6dbd (.)
 ];
