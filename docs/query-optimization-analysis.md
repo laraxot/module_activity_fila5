@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This optimization plan will significantly improve the Activity module's performance while maintaining all existing functionality.
 # Activity Module - Query Optimization Analysis
 
@@ -323,3 +324,12 @@ canonical: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
+=======
+---
+module: theme
+topic: query-optimization-analysis
+canonical: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
+>>>>>>> d4098eb (.)

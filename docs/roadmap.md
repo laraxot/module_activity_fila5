@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Activity Module - Complete Roadmap
 
 ## Module Overview
@@ -231,3 +232,12 @@ See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Mod
 - [roadmap/vision.md](roadmap/vision.md)
 - [stabilization-roadmap.md](stabilization-roadmap.md)
 >>>>>>> a1e3a4e (.)
+=======
+---
+module: theme
+topic: roadmap
+canonical: ../../../Themes/docs/shared-components/roadmap--Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Modules.md
+>>>>>>> d4098eb (.)

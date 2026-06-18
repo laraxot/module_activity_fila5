@@ -1,9 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d4098eb (.)
 ---
 module: theme
 topic: 05-analysis-siti-esistenti
 canonical: ../../../../../Themes/docs/shared-components/05-analisi-siti-esistenti.md
 ---
+<<<<<<< HEAD
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/05-analisi-siti-esistenti.md
 =======
@@ -37,3 +41,7 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/05-ana
 - Trasparenza: tutte le transazioni sono pubbliche su blockchain
 - Inclusività: accesso globale, pochi limiti geografici
 >>>>>>> a1e3a4e (.)
+=======
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/05-analisi-siti-esistenti.md
+>>>>>>> d4098eb (.)

@@ -1,9 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d4098eb (.)
 ---
 module: theme
 topic: boost_skill_fix_summary
 canonical: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
 ---
+<<<<<<< HEAD
 
 See canonical documentation: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
 =======
@@ -41,3 +45,7 @@ See `/docs/BOOST_SKILL_SOLUTION_PLAN.md` for complete solution details.
 - Module integration
 
 >>>>>>> 9cddd9b (.)
+=======
+
+See canonical documentation: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
+>>>>>>> d4098eb (.)

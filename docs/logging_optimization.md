@@ -1,9 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d4098eb (.)
 ---
 module: theme
 topic: logging_optimization
 canonical: ../../../Themes/docs/shared-components/logging-optimization.md
 ---
+<<<<<<< HEAD
 
 See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md
 =======
@@ -301,3 +305,7 @@ By removing logging from ActivityLogger:
 
 **Key Takeaway**: The Activity table IS the audit trail. Logging successful database writes is redundant and wastes performance.
 >>>>>>> 9cddd9b (.)
+=======
+
+See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md
+>>>>>>> d4098eb (.)
