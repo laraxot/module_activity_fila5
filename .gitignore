@@ -187,3 +187,4 @@ tests/coverage.xml/
 activity_coverage.xml
 *~head
 agentdb.rvf
+build/
