@@ -13,7 +13,11 @@ class ActivityDatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        $this->command?->info('ActivityDatabaseSeeder: entity seeders…');
+        if ($this->command !== null) {
+
+            $this->command->info('ActivityDatabaseSeeder: entity seeders…');
+
+        }
 
         $this->call([
             ActivitySeeder::class,
@@ -21,6 +25,10 @@ class ActivityDatabaseSeeder extends Seeder
             StoredEventSeeder::class,
         ]);
 
-        $this->command?->info('ActivityDatabaseSeeder: completato.');
+        if ($this->command !== null) {
+
+            $this->command->info('ActivityDatabaseSeeder: completato.');
+
+        }
     }
 }
