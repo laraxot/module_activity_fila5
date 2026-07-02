@@ -10,8 +10,8 @@ use Illuminate\Support\ServiceProvider;
 use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Providers\EventServiceProvider;
-use Modules\Fixcity\Models\User;
 use Modules\User\Providers\UserServiceProvider;
+use Modules\Xot\Datas\XotData;
 use Modules\Xot\Tests\XotBaseTestCase;
 
 /**
@@ -58,7 +58,7 @@ abstract class TestCase extends XotBaseTestCase
 
         parent::setUp();
 
-        config(['auth.providers.users.model' => User::class]);
+        config(['auth.providers.users.model' => XotData::make()->getUserClass()]);
     }
 
     /**
