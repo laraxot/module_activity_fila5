@@ -74,12 +74,14 @@ $page = new class extends ListLogActivities
     });
 
     test('get pagination mode returns default', function (): void {
+        /** @var \Modules\Activity\Tests\TestCase $this */
 $mode = $this->requirePage()->getPaginationMode();
 
         Assert::assertSame(PaginationMode::Default, $mode);
     });
 
     test('get field label returns name when not in map', function (): void {
+        /** @var \Modules\Activity\Tests\TestCase $this */
 try {
             $label = $this->requirePage()->getFieldLabel('nonexistent_field');
             Assert::assertSame('nonexistent_field', $label);
@@ -149,6 +151,7 @@ $page = new class extends ListLogActivities
     });
 
     test('can restore activity with record executes resource check', function (): void {
+        /** @var \Modules\Activity\Tests\TestCase $this */
 $result = $this->requirePage()->canRestoreActivity();
         Assert::assertFalse($result);
     });
