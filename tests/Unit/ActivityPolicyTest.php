@@ -25,6 +25,7 @@ describe('Activity Policy', function (): void {
     });
 
     test('user without permission cannot view', function (): void {
+        /** @var \Modules\Activity\Tests\TestCase $this */
 // Create a mock user without permission
         $user = $this->createUnitMock(User::class);
         $user->method('hasPermissionTo')->with('activity.view')->willReturn(false);
