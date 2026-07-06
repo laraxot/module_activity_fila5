@@ -245,12 +245,4 @@ class MarketSummaryProjector
 
 ## Conclusione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Implementare un <nome progetto>ion market nel modulo `Activity` utilizzando l'Event Sourcing permette di gestire in modo efficace la complessità di mercati e scommesse, garantendo tracciabilità e flessibilità per future espansioni. Seguendo i pattern descritti, è possibile creare un sistema robusto e scalabile per mercati di previsione.
-=======
-Implementare un <nome progetto>ion market nel modulo `Activity` utilizzando l'Event Sourcing permette di gestire in modo efficace la complessità di mercati e scommesse, garantendo tracciabilità e flessibilità per future espansioni. Seguendo i pattern descritti, è possibile creare un sistema robusto e scalabile per mercati di previsione.
->>>>>>> a1e3a4e (.)
-=======
-Implementare un <nome progetto>ion market nel modulo `Activity` utilizzando l'Event Sourcing permette di gestire in modo efficace la complessità di mercati e scommesse, garantendo tracciabilità e flessibilità per future espansioni. Seguendo i pattern descritti, è possibile creare un sistema robusto e scalabile per mercati di previsione.
->>>>>>> 2d6a374 (.)
