@@ -122,22 +122,7 @@ class ActivityEvent
 
 ## Perché esiste
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Tracciabilità azioni su entità sensibili del sistema.
-=======
-```
-Activity <── User      (login/logout events, user actions)
-Activity <── Quaeris   (survey CRUD, dashboard actions)
-Activity <── Cms       (page/content modifications)
-Activity <── Media     (file upload/delete tracking)
-Activity <── Tenant    (multi-tenant audit isolation)
-Activity <── Lang      (traduzioni IT/EN/DE)
-```
->>>>>>> 7bcf987 (.)
-=======
-Tracciabilità azioni su entità sensibili del sistema.
->>>>>>> 2d6a374 (.)
 
 ## Superpoteri
 
