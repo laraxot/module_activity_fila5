@@ -1,10 +1,6 @@
 # PHPStan Level 10 Compliance Status
 
-<<<<<<< HEAD
 **Last Updated**: 2026-06-10
-=======
-**Last Updated**: 2025-12-10
->>>>>>> 2d6a374 (.)
 
 **Status**: ✅ FULLY COMPLIANT (0 errors)
 
