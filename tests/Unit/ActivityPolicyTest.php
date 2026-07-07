@@ -6,26 +6,10 @@ namespace Modules\Activity\Tests\Unit;
 
 use Modules\Activity\Models\Policies\ActivityPolicy;
 use Modules\Activity\Tests\TestCase;
-use Modules\User\Models\Policies\UserBasePolicy;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
-=======
-class ActivityPolicyTest extends TestCase
-{
-    #[Test]
-    public function policy_extends_user_base_policy(): void
-    {
-        $this->assertTrue(
-            is_subclass_of(
-                ActivityPolicy::class,
-                UserBasePolicy::class
-            )
-        );
-    }
->>>>>>> 2d6a374 (.)
 
 describe('Activity Policy', function (): void {
     test('user with permission can view', function (): void {
