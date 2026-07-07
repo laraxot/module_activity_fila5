@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Str;
 use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Database\Factories\SnapshotFactory;
+use Modules\Activity\Database\Factories\StoredEventFactory;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
@@ -15,39 +16,16 @@ use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
+
 use function Safe\json_encode;
 
-uses(\Modules\Activity\Tests\TestCase::class);
-
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        \DB::connection()->getPdo();
-    } catch (\Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
+uses(TestCase::class);
 
 test('activity module models work together in integrated scenarios', function () {
-<<<<<<< HEAD
-<<<<<<< HEAD
     $user = UserFactory::new()->createOne();
     Assert::assertInstanceOf(User::class, $user);
 
     $activity = ActivityFactory::new()->createOne([
-=======
-    $user = User::factory()->create();
-=======
-    $user = User::factory()->create(); // @phpstan-ignore-line method.nonObject
-    \assert($user instanceof User);
->>>>>>> 2d6a374 (.)
-    expect($user)->not->toBeNull();
-
-    $activity = Activity::query()->create([
-        'log_name' => 'user_registration',
-        'description' => 'User registered',
-        'event' => 'created',
->>>>>>> 2b6968d (.)
         'causer_type' => User::class,
         'causer_id' => $user->id,
         'subject_type' => User::class,
@@ -61,13 +39,8 @@ test('activity module models work together in integrated scenarios', function ()
 
     $aggregateUuid = Str::uuid()->toString();
 
-<<<<<<< HEAD
     $snapshot = SnapshotFactory::new()->createOne([
-=======
-    $snapshot = Snapshot::create([
->>>>>>> 2b6968d (.)
         'aggregate_uuid' => $aggregateUuid,
-        'aggregate_version' => 1,
         'state' => [
             'user' => $user->toArray(),
             'activities' => [$activity->toArray()],
@@ -125,7 +98,6 @@ test('activity batch processing with multiple models', function () {
     $batchUuid = Str::uuid()->toString();
     $aggregateUuid = Str::uuid()->toString();
 
-<<<<<<< HEAD
     $user = UserFactory::new()->createOne();
     Assert::assertNotNull($user);
 
@@ -138,28 +110,7 @@ test('activity batch processing with multiple models', function () {
     Assert::assertCount(5, $activities);
 
     $snapshot = SnapshotFactory::new()->createOne([
-=======
-    $user = User::factory()->create();
-    expect($user)->not->toBeNull();
-
-    $activities = new Collection;
-    for ($i = 0; $i < 5; $i++) {
-        $activities->push(Activity::query()->create([
-            'log_name' => 'batch_processing',
-            'description' => "Batch activity {$i}",
-            'event' => 'created',
-            'batch_uuid' => $batchUuid,
-            'causer_type' => User::class,
-            'causer_id' => $user->id,
-        ]));
-    }
-    \assert($activities instanceof Collection);
-    expect($activities)->toHaveCount(5);
-
-    $snapshot = Snapshot::create([
->>>>>>> 2b6968d (.)
         'aggregate_uuid' => $aggregateUuid,
-        'aggregate_version' => 1,
         'state' => [
             'batch_id' => $batchUuid,
             'activities_count' => $activities->count(),
@@ -209,13 +160,8 @@ test('activity batch processing with multiple models', function () {
 });
 
 test('activity module handles concurrent operations correctly', function () {
-<<<<<<< HEAD
     $user = UserFactory::new()->createOne();
     Assert::assertNotNull($user);
-=======
-    $user = User::factory()->create();
-    expect($user)->not->toBeNull();
->>>>>>> 2b6968d (.)
 
     $concurrentActivities = [];
     $concurrentSnapshots = [];
@@ -224,14 +170,7 @@ test('activity module handles concurrent operations correctly', function () {
 
     for ($i = 0; $i < 10; $i++) {
         $promises[] = function () use ($user, &$concurrentActivities, &$concurrentSnapshots, $i) {
-<<<<<<< HEAD
             $activity = ActivityFactory::new()->createOne([
-=======
-            $activity = Activity::query()->create([
-                'log_name' => 'concurrent',
-                'description' => "Concurrent activity {$i}",
-                'event' => 'created',
->>>>>>> 2b6968d (.)
                 'causer_type' => User::class,
                 'causer_id' => $user->id,
                 'properties' => ['iteration' => $i, 'timestamp' => now()->toISOString()],
@@ -241,13 +180,7 @@ test('activity module handles concurrent operations correctly', function () {
             $concurrentActivities[] = $activity->id;
 
             if ($i % 2 === 0) {
-<<<<<<< HEAD
                 $snapshot = SnapshotFactory::new()->createOne([
-=======
-                $snapshot = Snapshot::create([
-                    'aggregate_uuid' => Str::uuid()->toString(),
-                    'aggregate_version' => 1,
->>>>>>> 2b6968d (.)
                     'state' => [
                         'activity_id' => $activity->id,
                         'iteration' => $i,
@@ -280,7 +213,6 @@ test('activity module handles concurrent operations correctly', function () {
 });
 
 test('activity module supports complex query patterns', function () {
-<<<<<<< HEAD
     $user1 = UserFactory::new()->createOne();
     Assert::assertNotNull($user1);
 
@@ -300,58 +232,7 @@ test('activity module supports complex query patterns', function () {
     ]);
     Assert::assertInstanceOf(Activity::class, $auditActivities);
     $applicationActivities = ActivityFactory::new()->createOne([
-=======
-    $user1 = User::factory()->create();
-    $user2 = User::factory()->create();
-    expect($user1)->not->toBeNull();
-    expect($user2)->not->toBeNull();
-
-    $securityActivities = new Collection([
-        Activity::query()->create([
-            'log_name' => 'security',
-            'description' => 'Security event 1',
-            'event' => 'view',
-            'causer_type' => User::class,
-            'causer_id' => $user1->id,
-        ]),
-        Activity::query()->create([
-            'log_name' => 'security',
-            'description' => 'Security event 2',
-            'event' => 'view',
-            'causer_type' => User::class,
-            'causer_id' => $user1->id,
-        ]),
-        Activity::query()->create([
-            'log_name' => 'security',
-            'description' => 'Security event 3',
-            'event' => 'view',
-            'causer_type' => User::class,
-            'causer_id' => $user1->id,
-        ]),
-    ]);
-
-    $auditActivities = new Collection([
-        Activity::query()->create([
-            'log_name' => 'audit',
-            'description' => 'Audit event 1',
-            'event' => 'updated',
-            'causer_type' => User::class,
-            'causer_id' => $user2->id,
-        ]),
-        Activity::query()->create([
-            'log_name' => 'audit',
-            'description' => 'Audit event 2',
-            'event' => 'updated',
-            'causer_type' => User::class,
-            'causer_id' => $user2->id,
-        ]),
-    ]);
-
-    Activity::query()->create([
->>>>>>> 2b6968d (.)
         'log_name' => 'application',
-        'description' => 'Application log (excluded from security/audit filter)',
-        'event' => 'info',
         'causer_type' => User::class,
         'causer_id' => $user1->id,
     ]);
@@ -378,47 +259,25 @@ test('activity module supports complex query patterns', function () {
     $user1Results = $results->where('causer_id', $user1->id);
     $user2Results = $results->where('causer_id', $user2->id);
 
-<<<<<<< HEAD
     Assert::assertCount(1, $user1Results);
     Assert::assertCount(1, $user2Results);
-=======
-    expect($user1Results)->toHaveCount(3);
-    expect($user2Results)->toHaveCount(2);
->>>>>>> 2d6a374 (.)
 });
 
 test('activity module handles data consistency across models', function () {
-<<<<<<< HEAD
     $user = UserFactory::new()->createOne();
     Assert::assertNotNull($user);
 
     $aggregateUuid = Str::uuid()->toString();
 
     $activity = ActivityFactory::new()->createOne([
-=======
-    $user = User::factory()->create();
-    expect($user)->not->toBeNull();
-
-    $aggregateUuid = Str::uuid()->toString();
-
-    $activity = Activity::query()->create([
-        'log_name' => 'data_consistency',
-        'description' => 'Data consistency test',
-        'event' => 'created',
->>>>>>> 2b6968d (.)
         'causer_type' => User::class,
         'causer_id' => $user->id,
         'properties' => ['action' => 'data_consistency_test'],
     ]);
     Assert::assertNotNull($activity);
 
-<<<<<<< HEAD
     $snapshot = SnapshotFactory::new()->createOne([
-=======
-    $snapshot = Snapshot::create([
->>>>>>> 2b6968d (.)
         'aggregate_uuid' => $aggregateUuid,
-        'aggregate_version' => 1,
         'state' => [
             'activity_id' => $activity->id,
             'user_id' => $user->id,
@@ -427,7 +286,7 @@ test('activity module handles data consistency across models', function () {
     ]);
     Assert::assertNotNull($snapshot);
 
-    $storedEvent = StoredEvent::query()->create([
+    $storedEvent = StoredEventFactory::new()->createOne([
         'aggregate_uuid' => $aggregateUuid,
         'aggregate_version' => 1,
         'event_version' => 1,
@@ -441,15 +300,21 @@ test('activity module handles data consistency across models', function () {
         'meta_data' => [],
         'created_at' => now(),
     ]);
-    Assert::assertNotNull($storedEvent);
+    Assert::assertInstanceOf(StoredEvent::class, $storedEvent);
 
     $activityPropertiesValue = $activity->properties;
     Assert::assertNotNull($activityPropertiesValue);
     $activityProperties = is_array($activityPropertiesValue)
         ? $activityPropertiesValue
         : $activityPropertiesValue->all();
-    $snapshotState = $snapshot->state;
-    $storedEventProperties = $storedEvent->event_properties;
+    $snapshotStateValue = $snapshot->state;
+    Assert::assertNotNull($snapshotStateValue);
+    $snapshotState = is_array($snapshotStateValue)
+        ? $snapshotStateValue
+        : $snapshotStateValue->all();
+    $storedEventPropertiesValue = $storedEvent->event_properties;
+    Assert::assertIsArray($storedEventPropertiesValue);
+    $storedEventProperties = $storedEventPropertiesValue;
 
     $activity->update(['properties' => array_merge($activityProperties, ['verified' => true])]);
     $snapshot->update(['state' => array_merge($snapshotState, ['verified' => true])]);
@@ -486,13 +351,8 @@ test('activity module handles data consistency across models', function () {
 });
 
 test('activity module supports bulk operations efficiently', function () {
-<<<<<<< HEAD
     $user = UserFactory::new()->createOne();
     Assert::assertNotNull($user);
-=======
-    $user = User::factory()->create();
-    expect($user)->not->toBeNull();
->>>>>>> 2b6968d (.)
 
     $activitiesData = [];
     for ($i = 0; $i < 100; $i++) {
@@ -530,20 +390,12 @@ test('activity module supports bulk operations efficiently', function () {
         ? $lastActivityPropertiesValue
         : $lastActivityPropertiesValue->all();
 
-<<<<<<< HEAD
     Assert::assertSame($user->id, $firstActivity->causer_id);
     Assert::assertSame($user->id, $lastActivity->causer_id);
     Assert::assertArrayHasKey('index', $firstActivityProperties);
     Assert::assertSame(0, $firstActivityProperties['index']);
     Assert::assertArrayHasKey('index', $lastActivityProperties);
     Assert::assertSame(99, $lastActivityProperties['index']);
-=======
-    expect($firstActivityProperties)->toHaveKey('index', 0)
-        ->and($lastActivityProperties)->toHaveKey('index', 99)
-        ->and($firstActivity->causer_id)->toBe($user->id)
-        ->and($lastActivity->causer_id)->toBe($user->id);
-
->>>>>>> 2d6a374 (.)
     $userActivities = Activity::query()
         ->where('causer_type', User::class)
         ->where('causer_id', (string) $user->id)
