@@ -2,44 +2,12 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 use Modules\Activity\Database\Factories\ActivityFactory;
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
-
->>>>>>> 2d6a374 (.)
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        \DB::connection()->getPdo();
-    } catch (\Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
-
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        \DB::connection()->getPdo();
-    } catch (\Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
-
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        \DB::connection()->getPdo();
-    } catch (\Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
 
 test('activity model can be created', function () {
     $activity = ActivityFactory::new()->make();
@@ -48,11 +16,7 @@ test('activity model can be created', function () {
 });
 
 test('activity model can be saved and retrieved', function () {
-<<<<<<< HEAD
     $activity = ActivityFactory::new()->createOne([
-=======
-    $activity = Activity::factory()->create([
->>>>>>> 4e42175 (.)
         'description' => 'Test action',
         'event' => 'test_event',
     ]);

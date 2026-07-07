@@ -4,11 +4,7 @@ type: index
 module: Activity
 tags: [activity, wiki, index, audit]
 created: 2026-04-15
-<<<<<<< HEAD
 updated: 2026-06-13
-=======
-updated: 2026-06-05
->>>>>>> 2d6a374 (.)
 qmd: "activity module wiki index audit log second brain"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
@@ -76,3 +72,7 @@ _No comparisons synthesized yet._
 ## Shared Second Brain Discipline
 
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) — local docs/wiki operating contract aligned with root LLM Wiki discipline.
+
+## Composer / nwidart
+
+- [composer-root-minimal-nwidart](concepts/composer-root-minimal-nwidart.md) — root skeleton nwidart (modello fixcity)

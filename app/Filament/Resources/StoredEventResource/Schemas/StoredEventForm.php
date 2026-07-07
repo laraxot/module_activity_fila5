@@ -11,28 +11,10 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
-<<<<<<< HEAD
 class StoredEventForm extends XotBaseResourceForm
 {
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @return array<string, Component>
-=======
-/**
- * StoredEventForm Schema.
- */
-class StoredEventForm extends XotBaseResourceForm
-{
-    /**
-     * @return array<int|string, Component>
->>>>>>> 2b6968d (.)
-=======
-     * @return array<string, \Filament\Schemas\Components\Component>
->>>>>>> d4098eb (.)
-=======
-     * @return array<string, \Filament\Schemas\Components\Component>
->>>>>>> 26b6dbd (.)
      */
     public static function getFormSchema(): array
     {
