@@ -7,25 +7,20 @@ namespace Modules\Activity\Tests\Unit;
 use Filament\Tables\Enums\PaginationMode;
 use Illuminate\Contracts\Pagination\CursorPaginator;
 use Illuminate\Contracts\Pagination\Paginator;
-<<<<<<< HEAD
 use Illuminate\Pagination\LengthAwarePaginator;
-=======
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Pagination\LengthAwarePaginator;
-use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
->>>>>>> 2d6a374 (.)
+use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
 use Modules\Activity\Tests\TestCase;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 function makeCanPaginateHarness(): CanPaginateHarness
 {
     return new CanPaginateHarness;
 }
 
-test('can paginate trait manages session, defaults and page helpers', function(): void {
+test('can paginate trait manages session, defaults and page helpers', function (): void {
     $harness = makeCanPaginateHarness();
     $harness->recordsPerPage = 25;
 
@@ -39,7 +34,7 @@ test('can paginate trait manages session, defaults and page helpers', function()
     expect($harness->getPerPageSessionKey())->toStartWith('pages.');
 });
 
-test('can paginate default option fallback behaves correctly', function(): void {
+test('can paginate default option fallback behaves correctly', function (): void {
     $harness = makeCanPaginateHarness();
     $harness->setDefaultPerPage(25);
 
@@ -51,8 +46,8 @@ test('can paginate default option fallback behaves correctly', function(): void 
     expect(session()->has($harness->getPerPageSessionKey()))->toBeFalse();
 });
 
-test('can paginate trait covers default, simple and cursor modes', function(): void {
-    Activity::query()->create([
+test('can paginate trait covers default, simple and cursor modes', function (): void {
+    ActivityFactory::new()->createOne([
         'log_name' => 'default',
         'description' => 'paginate default',
         'event' => 'paginate-default',

@@ -12,22 +12,9 @@ use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
-uses(Modules\Activity\Tests\TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
-<<<<<<< HEAD
 test('can create stored event with basic information', function (): void {
-=======
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        \DB::connection()->getPdo();
-    } catch (\Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
-
-it('can create stored event with basic information', function(): void {
->>>>>>> 2b6968d (.)
     $eventData = [
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
@@ -63,11 +50,7 @@ it('can create stored event with basic information', function(): void {
     Assert::assertSame('App\\Events\\UserCreated', $storedEvent->event_class);
 });
 
-<<<<<<< HEAD
 test('can create stored event with complex properties', function (): void {
-=======
-it('can create stored event with complex properties', function(): void {
->>>>>>> 2b6968d (.)
     $complexProperties = [
         'order_data' => [
             'order_id' => 'ORD-12345',
@@ -172,11 +155,7 @@ it('can create stored event with complex properties', function(): void {
     Assert::assertSame('iOS', $deviceInfo['platform']);
 });
 
-<<<<<<< HEAD
 test('can manage event versioning', function (): void {
-=======
-it('can manage event versioning', function(): void {
->>>>>>> 2b6968d (.)
     $aggregateUuid = Str::uuid()->toString();
 
     $event1 = StoredEvent::create([
@@ -229,11 +208,7 @@ it('can manage event versioning', function(): void {
     Assert::assertSame(3, $event3->event_version);
 });
 
-<<<<<<< HEAD
 test('can query events by aggregate uuid', function (): void {
-=======
-it('can query events by aggregate uuid', function(): void {
->>>>>>> 2b6968d (.)
     $uuid1 = Str::uuid()->toString();
     $uuid2 = Str::uuid()->toString();
 
@@ -283,11 +258,7 @@ it('can query events by aggregate uuid', function(): void {
     Assert::assertSame($uuid2, $first2->aggregate_uuid);
 });
 
-<<<<<<< HEAD
 test('can query events by event class', function (): void {
-=======
-it('can query events by event class', function(): void {
->>>>>>> 2b6968d (.)
     $uuid = Str::uuid()->toString();
 
     StoredEvent::create([
@@ -342,11 +313,7 @@ it('can query events by event class', function(): void {
     Assert::assertSame('App\\Events\\UserDeleted', $firstDeleted->event_class);
 });
 
-<<<<<<< HEAD
 test('can handle event with empty properties', function (): void {
-=======
-it('can handle event with empty properties', function(): void {
->>>>>>> 2b6968d (.)
     $storedEvent = StoredEvent::create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
@@ -371,11 +338,7 @@ it('can handle event with empty properties', function(): void {
     Assert::assertEmpty($props);
 });
 
-<<<<<<< HEAD
 test('can handle event with null properties', function (): void {
-=======
-it('can handle event with null properties', function(): void {
->>>>>>> 2b6968d (.)
     $storedEvent = StoredEvent::create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
@@ -402,11 +365,7 @@ it('can handle event with null properties', function(): void {
     Assert::assertSame([], $storedEvent->meta_data->toArray());
 });
 
-<<<<<<< HEAD
 test('can restore event from stored event', function (): void {
-=======
-it('can restore event from stored event', function(): void {
->>>>>>> 2b6968d (.)
     $originalProperties = [
         'user_id' => 789,
         'action' => 'profile_update',
@@ -437,11 +396,7 @@ it('can restore event from stored event', function(): void {
     Assert::assertSame($originalProperties, $restoredProperties);
 });
 
-<<<<<<< HEAD
 test('can compare event versions', function (): void {
-=======
-it('can compare event versions', function(): void {
->>>>>>> 2b6968d (.)
     $uuid = Str::uuid()->toString();
 
     $event1 = StoredEvent::create([
@@ -499,11 +454,7 @@ it('can compare event versions', function(): void {
     Assert::assertSame('Final data', $e3Props['data']);
 });
 
-<<<<<<< HEAD
 test('can handle event with timestamps', function (): void {
-=======
-it('can handle event with timestamps', function(): void {
->>>>>>> 2b6968d (.)
     $now = now();
 
     $storedEvent = StoredEvent::create([
@@ -528,11 +479,7 @@ it('can handle event with timestamps', function(): void {
     Assert::assertSame($now->timestamp, $createdAt->timestamp);
 });
 
-<<<<<<< HEAD
 test('can query events by date range', function (): void {
-=======
-it('can query events by date range', function(): void {
->>>>>>> 2b6968d (.)
     $yesterday = now()->subDay();
     $today = now();
     $tomorrow = now()->addDay();
@@ -582,11 +529,7 @@ it('can query events by date range', function(): void {
     Assert::assertCount(2, $recentEvents);
 });
 
-<<<<<<< HEAD
 test('can handle event with metadata', function (): void {
-=======
-it('can handle event with metadata', function(): void {
->>>>>>> 2b6968d (.)
     $metadata = [
         'source' => 'web_interface',
         'user_id' => 1010,

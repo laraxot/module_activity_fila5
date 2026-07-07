@@ -26,12 +26,4 @@ Adottare un approccio ispirato a piattaforme come Kalshi, che opera in un quadro
 
 ## Event Sourcing nel <nome progetto>ion Market
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 L'Event Sourcing è ideale per un <nome progetto>ion market poiché ogni scommessa, aggiornamento di probabilità e risultato finale può essere registrato come evento, garantendo tracciabilità e la possibilità di analizzare pattern storici.
-=======
-L'Event Sourcing è ideale per un <nome progetto>ion market poiché ogni scommessa, aggiornamento di probabilità e risultato finale può essere registrato come evento, garantendo tracciabilità e la possibilità di analizzare pattern storici.
->>>>>>> a1e3a4e (.)
-=======
-L'Event Sourcing è ideale per un <nome progetto>ion market poiché ogni scommessa, aggiornamento di probabilità e risultato finale può essere registrato come evento, garantendo tracciabilità e la possibilità di analizzare pattern storici.
->>>>>>> 2d6a374 (.)
