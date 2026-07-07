@@ -12,23 +12,9 @@ use PHPUnit\Framework\Assert;
 
 uses(\Modules\Activity\Tests\TestCase::class);
 
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        \DB::connection()->getPdo();
-    } catch (\Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
-
 test('user can create activity', function () {
-<<<<<<< HEAD
     $user = UserFactory::new()->createOne();
     Assert::assertInstanceOf(User::class, $user);
-=======
-    \assert($user instanceof User);
-    expect($user)->not->toBeNull();
->>>>>>> 2b6968d (.)
 
     $activity = Activity::create([
         'log_name' => 'test',
@@ -71,13 +57,8 @@ test('activity can be deleted', function () {
 });
 
 test('activity belongs to user', function () {
-<<<<<<< HEAD
     $user = UserFactory::new()->createOne();
     Assert::assertInstanceOf(User::class, $user);
-=======
-    \assert($user instanceof User);
-    expect($user)->not->toBeNull();
->>>>>>> 2b6968d (.)
 
     $activity = Activity::create([
         'log_name' => 'test',

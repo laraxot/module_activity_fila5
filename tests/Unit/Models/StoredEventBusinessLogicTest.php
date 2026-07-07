@@ -2,44 +2,26 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> 2d6a374 (.)
 use Modules\Activity\Models\StoredEvent;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
 describe('StoredEvent Business Logic', function (): void {
     test('stored event has correct connection configured', function (): void {
-=======
-describe('StoredEvent Business Logic', function(): void {
-    beforeEach(function(): void {
-        // Skip if database not available
-        try {
-            \DB::connection()->getPdo();
-        } catch (\Exception $e) {
-            $this->markTestSkipped('Database not available: '.$e->getMessage());
-        }
-    });
-
-    test('stored event has correct connection configured', function(): void {
->>>>>>> 2b6968d (.)
         $storedEvent = new StoredEvent;
 
         Assert::assertSame('activity', $storedEvent->getConnectionName());
     });
 
-    test('stored event has correct table configured', function(): void {
+    test('stored event has correct table configured', function (): void {
         $storedEvent = new StoredEvent;
 
         Assert::assertSame('stored_events', $storedEvent->getTable());
     });
 
-    test('stored event has expected fillable fields for event sourcing', function(): void {
+    test('stored event has expected fillable fields for event sourcing', function (): void {
         $storedEvent = new StoredEvent;
         $expectedFillable = [
             'id',
@@ -54,32 +36,11 @@ describe('StoredEvent Business Logic', function(): void {
             'created_by',
         ];
 
-<<<<<<< HEAD
         Assert::assertEquals($expectedFillable, $storedEvent->getFillable());
     });
 
     test('stored event has query builder methods documented', function (): void {
         $reflection = new ReflectionClass(StoredEvent::class);
-=======
-        expect($storedEvent->getFillable())->toEqual($expectedFillable);
-    });
-
-    test('stored event extends eloquent stored event for event sourcing', function(): void {
-        expect(is_subclass_of(
-            StoredEvent::class,
-            EloquentStoredEvent::class,
-        ))->toBeTrue();
-    });
-
-    test('stored event has query builder methods documented', function(): void {
-        // Verify query builder methods are available through @method annotations in PHPDoc
-        // These are provided by Spatie's EloquentStoredEventQueryBuilder:
-        // - afterVersion(int $version)
-        // - whereAggregateRoot(string $uuid)
-        // - whereEvent(string ...$eventClasses)
-
-        $reflection = new \ReflectionClass(StoredEvent::class);
->>>>>>> 2b6968d (.)
         $docComment = $reflection->getDocComment();
 
         Assert::assertStringContainsString('@method', (string) $docComment);
