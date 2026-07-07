@@ -366,12 +366,4 @@ CREATE TABLE user_bets (
 
 ## Conclusione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Questa architettura separa chiaramente le responsabilità tra logica di business (radice aggregate), registrazione storica (eventi) e query ottimizzate (proiettori e modelli di lettura). L'Event Sourcing garantisce tracciabilità e flessibilità, rendendo il sistema di <nome progetto>ion Market scalabile e manutenibile.
-=======
-Questa architettura separa chiaramente le responsabilità tra logica di business (radice aggregate), registrazione storica (eventi) e query ottimizzate (proiettori e modelli di lettura). L'Event Sourcing garantisce tracciabilità e flessibilità, rendendo il sistema di <nome progetto>ion Market scalabile e manutenibile.
->>>>>>> a1e3a4e (.)
-=======
-Questa architettura separa chiaramente le responsabilità tra logica di business (radice aggregate), registrazione storica (eventi) e query ottimizzate (proiettori e modelli di lettura). L'Event Sourcing garantisce tracciabilità e flessibilità, rendendo il sistema di <nome progetto>ion Market scalabile e manutenibile.
->>>>>>> 2d6a374 (.)

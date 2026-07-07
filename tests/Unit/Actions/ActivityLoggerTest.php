@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
-
->>>>>>> 2d6a374 (.)
 use Modules\Activity\Actions\ActivityLogger;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
@@ -60,12 +55,7 @@ test('ActivityLogger can log created event', function () {
     $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
-<<<<<<< HEAD
     $subjectModel = UserFactory::new()->createOne(['name' => 'Subject User', 'password' => 'password']);
-=======
-    // Create a user model to use as subject since it's a proper model with all required attributes
-    $subjectModel = User::factory()->create(['name' => 'Subject User', 'email' => 'subject@example.com', 'password' => 'password']);
->>>>>>> 2d6a374 (.)
 
     $result = $logger->created($subjectModel, $user);
 
@@ -77,12 +67,7 @@ test('ActivityLogger can log updated event', function () {
     $user = UserFactory::new()->createOne();
     $logger = new ActivityLogger;
 
-<<<<<<< HEAD
     $subjectModel = UserFactory::new()->createOne(['name' => 'Subject User', 'password' => 'password']);
-=======
-    // Create a user model to use as subject
-    $subjectModel = User::factory()->create(['name' => 'Subject User', 'email' => 'subject2@example.com', 'password' => 'password']);
->>>>>>> 2d6a374 (.)
 
     $result = $logger->updated($subjectModel, $user);
 
@@ -140,14 +125,9 @@ test('ActivityLogger can get user activities', function () {
 
     $userActivities = $logger->getUserActivities($user, 10);
 
-<<<<<<< HEAD
     Assert::assertCount(1, $userActivities);
     Assert::assertNotNull($userActivities->first());
     Assert::assertSame($user->id, $userActivities->first()->causer_id);
-=======
-    expect($userActivities)->toHaveCount(1)
-        ->and($userActivities->first()->causer_id)->toBe($user->id);
->>>>>>> 2d6a374 (.)
 });
 
 test('ActivityLogger can get model activities', function () {
@@ -160,19 +140,9 @@ test('ActivityLogger can get model activities', function () {
 
     $modelActivities = $logger->getModelActivities($subjectActivity, 10);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     Assert::assertCount(1, $modelActivities);
     Assert::assertNotNull($modelActivities->first());
     Assert::assertSame((string) $subjectActivity->id, (string) $modelActivities->first()->subject_id);
-=======
-    expect($modelActivities)->toHaveCount(1);
-    expect((string) $modelActivities->first()->subject_id)->toBe((string) $subjectActivity->id);
->>>>>>> 4e42175 (.)
-=======
-    expect($modelActivities)->toHaveCount(1)
-        ->and($modelActivities->first()->subject_id)->toBe($subjectActivity->id);
->>>>>>> 2d6a374 (.)
 });
 
 test('ActivityLogger can get activities by type', function () {
