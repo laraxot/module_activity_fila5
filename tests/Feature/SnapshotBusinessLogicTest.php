@@ -13,6 +13,7 @@ namespace Modules\Activity\Tests\Feature;
 // Activity Pest/PHPUnit — claude-audit documentation ratio.
 // Activity Pest/PHPUnit — claude-audit documentation ratio.
 // Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;

@@ -96,23 +96,23 @@
 
   <div class="header">
     <div class="logo"><span>Claude</span> Audit</div>
-    <div class="subtitle">AI-Powered Codebase Audit Report · 7/9/2026, 7:17:31 PM</div>
+    <div class="subtitle">AI-Powered Codebase Audit Report · 7/9/2026, 9:00:02 PM</div>
   </div>
 
   <div class="overview">
     <div class="card big-score">
       <h2>Overall Score</h2>
-      <div class="score-ring" style="--score:80">
+      <div class="score-ring" style="--score:50">
         <svg viewBox="0 0 120 120">
           <circle class="bg" cx="60" cy="60" r="54"/>
-          <circle class="fg" cx="60" cy="60" r="54" style="stroke:#4ade80;stroke-dasharray:339;stroke-dashoffset:67.80000000000001"/>
+          <circle class="fg" cx="60" cy="60" r="54" style="stroke:#f87171;stroke-dasharray:339;stroke-dashoffset:169.5"/>
         </svg>
         <div class="score-number">
-          <span class="num" style="color:#4ade80">80</span>
+          <span class="num" style="color:#f87171">50</span>
           <span class="label">/ 100</span>
         </div>
       </div>
-      <div class="grade-badge" style="background:#4ade8022;color:#4ade80">B</div>
+      <div class="grade-badge" style="background:#f8717122;color:#f87171">D</div>
     </div>
 
     <div class="card">
@@ -127,7 +127,7 @@
           <div class="slabel">🟠 High</div>
         </div>
         <div class="stat-item">
-          <div class="count" style="color:#eab308">1</div>
+          <div class="count" style="color:#eab308">0</div>
           <div class="slabel">🟡 Medium</div>
         </div>
         <div class="stat-item">
@@ -142,17 +142,28 @@
     <h2>Project Info</h2>
     <table class="info-table">
       <tr><td>Project</td><td><strong>Activity</strong></td></tr>
-      <tr><td>Languages</td><td>Markdown (427), JSON (7), YAML (2), PHP (53), XML (4), JavaScript (4), Shell (1), Python (1)</td></tr>
+      <tr><td>Languages</td><td>Markdown (377), JSON (7), YAML (2), PHP (103), XML (4), JavaScript (4), Shell (1), Python (1)</td></tr>
       <tr><td>Frameworks</td><td>TailwindCSS</td></tr>
       <tr><td>Files Scanned</td><td>499</td></tr>
-      <tr><td>Lines of Code</td><td>52,588</td></tr>
+      <tr><td>Lines of Code</td><td>48,453</td></tr>
       <tr><td>Tests</td><td>✅ Yes</td></tr>
       
-      <tr><td>Analysis</td><td>⚡ Static Only</td></tr>
+      <tr><td>Analysis</td><td>✦ Agentic (Claude + tools)</td></tr>
     </table>
   </div>
 
   
+  <div class="card" style="margin-bottom:2rem">
+    <h2>🧭 Agent Trace</h2>
+    <table class="info-table">
+      <tr><td>Model</td><td><code>claude-sonnet-4-6</code></td></tr>
+      <tr><td>Turns</td><td>1 / 25</td></tr>
+      <tr><td>Tool calls</td><td>0</td></tr>
+      <tr><td>Tokens</td><td>0 in · 0 out · 0 cache reads</td></tr>
+      <tr><td>Stop reason</td><td><span style="color:#facc15;font-weight:600">error</span> <span style="color:var(--muted)">— 401 {&quot;error&quot;:{&quot;message&quot;:&quot;Missing Authentication header&quot;,&quot;code&quot;:401}}</span></td></tr>
+    </table>
+    
+  </div>
 
   <div class="section-title">📈 Category Results</div>
   <div class="categories">
@@ -164,16 +175,16 @@
           <h3>Security</h3>
         </div>
         <div class="cat-score">
-          <div class="score-circle" style="--score:80;--color:#4ade80">
-            <span>80</span>
+          <div class="score-circle" style="--score:50;--color:#f87171">
+            <span>50</span>
           </div>
-          <span class="grade" style="color:#4ade80">B</span>
+          <span class="grade" style="color:#f87171">C</span>
         </div>
       </div>
       <div class="score-bar-wrap">
-        <div class="score-bar-fill" style="width:80%;background:#4ade80"></div>
+        <div class="score-bar-fill" style="width:50%;background:#f87171"></div>
       </div>
-      
+      <p class="cat-summary">Agentic audit ended without a finalized submission.</p>
       <p class="clean">✅ No issues found</p>
     </div>
     <div class="cat-card">
@@ -183,16 +194,16 @@
           <h3>Quality</h3>
         </div>
         <div class="cat-score">
-          <div class="score-circle" style="--score:80;--color:#4ade80">
-            <span>80</span>
+          <div class="score-circle" style="--score:50;--color:#f87171">
+            <span>50</span>
           </div>
-          <span class="grade" style="color:#4ade80">B</span>
+          <span class="grade" style="color:#f87171">C</span>
         </div>
       </div>
       <div class="score-bar-wrap">
-        <div class="score-bar-fill" style="width:80%;background:#4ade80"></div>
+        <div class="score-bar-fill" style="width:50%;background:#f87171"></div>
       </div>
-      
+      <p class="cat-summary">Agentic audit ended without a finalized submission.</p>
       <p class="clean">✅ No issues found</p>
     </div>
     <div class="cat-card">
@@ -202,16 +213,16 @@
           <h3>Performance</h3>
         </div>
         <div class="cat-score">
-          <div class="score-circle" style="--score:80;--color:#4ade80">
-            <span>80</span>
+          <div class="score-circle" style="--score:50;--color:#f87171">
+            <span>50</span>
           </div>
-          <span class="grade" style="color:#4ade80">B</span>
+          <span class="grade" style="color:#f87171">C</span>
         </div>
       </div>
       <div class="score-bar-wrap">
-        <div class="score-bar-fill" style="width:80%;background:#4ade80"></div>
+        <div class="score-bar-fill" style="width:50%;background:#f87171"></div>
       </div>
-      
+      <p class="cat-summary">Agentic audit ended without a finalized submission.</p>
       <p class="clean">✅ No issues found</p>
     </div>
     <div class="cat-card">
@@ -221,35 +232,16 @@
           <h3>Architecture</h3>
         </div>
         <div class="cat-score">
-          <div class="score-circle" style="--score:80;--color:#4ade80">
-            <span>80</span>
+          <div class="score-circle" style="--score:50;--color:#f87171">
+            <span>50</span>
           </div>
-          <span class="grade" style="color:#4ade80">B</span>
+          <span class="grade" style="color:#f87171">C</span>
         </div>
       </div>
       <div class="score-bar-wrap">
-        <div class="score-bar-fill" style="width:80%;background:#4ade80"></div>
+        <div class="score-bar-fill" style="width:50%;background:#f87171"></div>
       </div>
-      
-      <p class="clean">✅ No issues found</p>
-    </div>
-    <div class="cat-card">
-      <div class="cat-header">
-        <div class="cat-title">
-          <span class="cat-icon">📦</span>
-          <h3>Dependencies</h3>
-        </div>
-        <div class="cat-score">
-          <div class="score-circle" style="--score:80;--color:#4ade80">
-            <span>80</span>
-          </div>
-          <span class="grade" style="color:#4ade80">B</span>
-        </div>
-      </div>
-      <div class="score-bar-wrap">
-        <div class="score-bar-fill" style="width:80%;background:#4ade80"></div>
-      </div>
-      
+      <p class="cat-summary">Agentic audit ended without a finalized submission.</p>
       <p class="clean">✅ No issues found</p>
     </div>
     <div class="cat-card">
@@ -259,27 +251,17 @@
           <h3>Testing</h3>
         </div>
         <div class="cat-score">
-          <div class="score-circle" style="--score:75;--color:#facc15">
-            <span>75</span>
+          <div class="score-circle" style="--score:50;--color:#f87171">
+            <span>50</span>
           </div>
-          <span class="grade" style="color:#facc15">B</span>
+          <span class="grade" style="color:#f87171">C</span>
         </div>
       </div>
       <div class="score-bar-wrap">
-        <div class="score-bar-fill" style="width:75%;background:#facc15"></div>
+        <div class="score-bar-fill" style="width:50%;background:#f87171"></div>
       </div>
-      
-      <div class="findings-list">
-      <div class="finding">
-        <div class="finding-header">
-          <span class="sev-badge" style="background:#eab308">MEDIUM</span>
-          <strong>Low Test Coverage</strong>
-        </div>
-        <p class="finding-desc">Only 2% of source files have corresponding tests (1 test files for 58 source files).</p>
-        
-        
-        <div class="finding-fix">✅ <strong>Fix:</strong> Add unit tests for critical business logic. Aim for at least 70% code coverage.</div>
-      </div></div>
+      <p class="cat-summary">Agentic audit ended without a finalized submission.</p>
+      <p class="clean">✅ No issues found</p>
     </div>
     <div class="cat-card">
       <div class="cat-header">
@@ -288,16 +270,35 @@
           <h3>Documentation</h3>
         </div>
         <div class="cat-score">
-          <div class="score-circle" style="--score:80;--color:#4ade80">
-            <span>80</span>
+          <div class="score-circle" style="--score:50;--color:#f87171">
+            <span>50</span>
           </div>
-          <span class="grade" style="color:#4ade80">B</span>
+          <span class="grade" style="color:#f87171">C</span>
         </div>
       </div>
       <div class="score-bar-wrap">
-        <div class="score-bar-fill" style="width:80%;background:#4ade80"></div>
+        <div class="score-bar-fill" style="width:50%;background:#f87171"></div>
       </div>
-      
+      <p class="cat-summary">Agentic audit ended without a finalized submission.</p>
+      <p class="clean">✅ No issues found</p>
+    </div>
+    <div class="cat-card">
+      <div class="cat-header">
+        <div class="cat-title">
+          <span class="cat-icon">📦</span>
+          <h3>Dependencies</h3>
+        </div>
+        <div class="cat-score">
+          <div class="score-circle" style="--score:50;--color:#f87171">
+            <span>50</span>
+          </div>
+          <span class="grade" style="color:#f87171">C</span>
+        </div>
+      </div>
+      <div class="score-bar-wrap">
+        <div class="score-bar-fill" style="width:50%;background:#f87171"></div>
+      </div>
+      <p class="cat-summary">Agentic audit ended without a finalized submission.</p>
       <p class="clean">✅ No issues found</p>
     </div>
   </div>
