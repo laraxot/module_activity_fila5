@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * Security Test Case for Activity Module Access Control
  *
@@ -7,50 +9,48 @@
  * and audit trail functionality.
  */
 
+use Illuminate\Http\Request;
+use Modules\Activity\Models\Activity;
+use Modules\User\Models\User;
+
 uses(Tests\TestCase::class);
 
-it('prevents unauthorized access to activity listing', function () {
+it('prevents unauthorized access to activity listing', function (): void {
     // Security: Unauthenticated users should be redirected
-    actingAs(null)
-        ->get('/activity/logs')
-        ->assertStatus(302);
+    $response = $this->get('/activity/logs');
+    expect($response->status())->toBe(302);
 });
 
-it('allows authorized users to view activity logs', function () {
+it('allows authorized users to view activity logs', function (): void {
     // Security: Authenticated users with permission should access
-    $user = \Modules\User\Models\User::factory()->create();
-    actingAs($user)
-        ->get('/activity/logs')
-        ->assertStatus(200);
+    $user = User::factory()->create();
+    $response = $this->actingAs($user)->get('/activity/logs');
+    expect($response->status())->toBe(200);
 });
 
-it('restricts activity export to authorized users only', function () {
+it('restricts activity export to authorized users only', function (): void {
     // Security: Export requires specific permission
-    $user = \Modules\User\Models\User::factory()->create();
+    $user = User::factory()->create();
     $user->givePermissionTo('activities.export');
 
-    actingAs($user)
-        ->post('/activity/export', ['format' => 'csv'])
-        ->assertStatus(200);
+    $response = $this->actingAs($user)->post('/activity/export', ['format' => 'csv']);
+    expect($response->status())->toBe(200);
 });
 
-it('enforces IP-based access restrictions', function () {
+it('enforces IP-based access restrictions', function (): void {
     // Security: IP blacklist checking
     $request = Request::create('/activity/logs', 'GET');
-    $request->server->set('REMOTE_ADDR', '192.168.1.100'); // Internal IP for testing
+    $request->server->set('REMOTE_ADDR', '192.168.1.100');
 
-    // Should allow internal IPs
     expect($request->ip())->toBe('192.168.1.100');
 });
 
-it('validates activity log data integrity', function () {
+it('validates activity log data integrity', function (): void {
     // Security: Prevent tampering with log data
-    $activity = \Modules\Activity\Models\ActivityLog::factory()->create([
+    $activity = Activity::factory()->create([
         'description' => 'Valid description',
     ]);
 
-    // Data should not be modified after creation (audit trail)
     $activity->description = 'Tampered description';
-    // Log should be immutable
-    expect($activity->fresh()->description)->toBe('Valid description');
+    expect($activity->fresh()?->description)->toBe('Valid description');
 });
