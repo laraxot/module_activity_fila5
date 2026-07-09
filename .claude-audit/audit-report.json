@@ -1,15 +1,15 @@
 {
   "version": "0.2.2",
-  "timestamp": "2026-07-09T17:06:37.191Z",
+  "timestamp": "2026-07-09T18:59:37.471Z",
   "project": {
     "name": "Activity",
     "path": "/var/www/_bases/base_fixcity_fila5/laravel/Modules/Activity",
     "languages": {
-      "Markdown": 619,
+      "Markdown": 637,
       "JSON": 10,
       "YAML": 2,
-      "PHP": 225,
-      "XML": 3,
+      "PHP": 317,
+      "XML": 4,
       "JavaScript": 6,
       "Shell": 1,
       "Python": 1,
@@ -18,8 +18,8 @@
     "frameworks": [
       "TailwindCSS"
     ],
-    "totalFiles": 868,
-    "totalLines": 82003,
+    "totalFiles": 979,
+    "totalLines": 83989,
     "hasTests": true,
     "hasDependencyFile": true,
     "dependencyFile": "package.json",
@@ -81,18 +81,9 @@
     },
     {
       "category": "testing",
-      "score": 75,
+      "score": 80,
       "grade": "B",
-      "findings": [
-        {
-          "id": "QUA-001",
-          "category": "testing",
-          "severity": "medium",
-          "title": "Low Test Coverage",
-          "description": "Only 0% of source files have corresponding tests (1 test files for 231 source files).",
-          "fix": "Add unit tests for critical business logic. Aim for at least 70% code coverage."
-        }
-      ],
+      "findings": [],
       "summary": ""
     },
     {
@@ -103,20 +94,11 @@
       "summary": ""
     }
   ],
-  "allFindings": [
-    {
-      "id": "QUA-001",
-      "category": "testing",
-      "severity": "medium",
-      "title": "Low Test Coverage",
-      "description": "Only 0% of source files have corresponding tests (1 test files for 231 source files).",
-      "fix": "Add unit tests for critical business logic. Aim for at least 70% code coverage."
-    }
-  ],
+  "allFindings": [],
   "criticalCount": 0,
   "highCount": 0,
-  "mediumCount": 1,
+  "mediumCount": 0,
   "lowCount": 0,
   "aiPowered": false,
-  "durationMs": 394
+  "durationMs": 489
 }
