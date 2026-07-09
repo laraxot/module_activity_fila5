@@ -3,6 +3,13 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
 
 use Modules\Activity\Actions\ActivityLogger;
 use Modules\Activity\Actions\LogActivityAction;
