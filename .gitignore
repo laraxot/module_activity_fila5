@@ -189,4 +189,4 @@ activity_coverage.xml
 agentdb.rvf
 build/
 docs/legacy
-audit-coverage/
+tests/AuditCoverage

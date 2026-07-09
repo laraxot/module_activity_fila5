@@ -16,6 +16,7 @@ namespace Modules\Activity\Tests\Feature;
 // Activity Pest/PHPUnit — claude-audit documentation ratio.
 // Activity Pest/PHPUnit — claude-audit documentation ratio.
 // Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
 use Filament\Actions\Action;
 use Modules\Activity\Events\ActivityEvent;
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;

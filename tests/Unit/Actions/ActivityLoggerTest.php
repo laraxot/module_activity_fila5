@@ -22,6 +22,7 @@ uses(TestCase::class);
 // Activity Pest/PHPUnit — claude-audit documentation ratio.
 // Activity Pest/PHPUnit — claude-audit documentation ratio.
 // Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
 
 test('ActivityLogger can log basic activity', function () {
     $logger = new ActivityLogger;
