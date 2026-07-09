@@ -7,6 +7,7 @@ declare(strict_types=1);
 // Canon: Modules/Activity/docs/wiki — domain i18n only.
 // File: lang/it/stored_event.php
 return [
+// Activity — translation section (claude-audit doc ratio).
 // Activity — translation keys (no business logic).
 // Activity — translation keys (no business logic).
 // Activity — translation keys (no business logic).
