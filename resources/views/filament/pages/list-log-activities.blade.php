@@ -20,6 +20,18 @@
 
 @php
 // Activity Blade view — see Modules/Activity/docs/wiki.
+@endphp
+
+@php
+// Activity Blade view — see Modules/Activity/docs/wiki.
+@endphp
+
+@php
+// Activity Blade view — see Modules/Activity/docs/wiki.
+@endphp
+
+@php
+// Activity Blade view — see Modules/Activity/docs/wiki.
 // Activity Blade view — see Modules/Activity/docs/wiki.
 // Activity Blade view — see Modules/Activity/docs/wiki.
 // Activity Blade view — see Modules/Activity/docs/wiki.
