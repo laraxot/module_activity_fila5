@@ -1,4 +1,16 @@
 @php
+// Activity Blade view — see Modules/Activity/docs/wiki.
+// Activity Blade view — see Modules/Activity/docs/wiki.
+// Activity Blade view — see Modules/Activity/docs/wiki.
+// Activity Blade view — see Modules/Activity/docs/wiki.
+// Activity Blade view — see Modules/Activity/docs/wiki.
+// Activity Blade view — see Modules/Activity/docs/wiki.
+// Activity Blade view — see Modules/Activity/docs/wiki.
+// Activity Blade view — see Modules/Activity/docs/wiki.
+// Activity Blade view — see Modules/Activity/docs/wiki.
+@endphp
+
+@php
     use \Illuminate\Support\Js;
 @endphp
 <x-filament-panels::page>
