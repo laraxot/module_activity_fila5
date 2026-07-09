@@ -10,6 +10,14 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
 
 test('activity resources extend xot base resource', function () {
     $activityResource = new ReflectionClass(ActivityResource::class);

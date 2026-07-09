@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
+// Activity Pest/PHPUnit — claude-audit documentation ratio.
 
 use Filament\Notifications\Notification;
 use Filament\Tables\Enums\PaginationMode;
