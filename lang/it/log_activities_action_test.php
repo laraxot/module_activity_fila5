@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+// Activity translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/Activity/docs/wiki — domain i18n only.
+// File: lang/it/log_activities_action_test.php
 return [
     'actions' => [
         'list_log_activities' => ['label' => 'list_log_activities', 'icon' => 'list_log_activities', 'tooltip' => 'list_log_activities'],
