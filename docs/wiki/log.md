@@ -14,6 +14,14 @@ discussions:
 
 ---
 
+## [2026-07-12] quality-guardian | Verifica post Support→Actions
+
+- PHPStan L10 (`Modules/Activity/app`, root `phpstan.neon`): **0 errori codice** — 1 rumore config (`larastan.noEnvCallsOutsideOfConfig` ignore non matchato).
+- `app/Support/`: **assente** — unica `ActivityLogger` in `app/Adapters/`; Actions con `QueueableAction` OK.
+- Pest: **bloccato** — `fixcity_data.sqlite` 0 byte (lane C swarm); nessun fallimento legato alla migrazione.
+- Doc fix: [activity-log-attribute-changes-column.md](concepts/activity-log-attribute-changes-column.md) aggiornato (`IsActivityLogSchemaWritableAction`).
+- GitHub: [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372).
+
 ## [2026-07-12] architecture | QueueableAction — solo `execute`
 
 - Documentato [concepts/queueable-action-execute-entrypoint.md](concepts/queueable-action-execute-entrypoint.md): religione Spatie, `RecordSubjectActivityAction` al posto di `ActivityLogger::recordSubject`.
