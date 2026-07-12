@@ -24,7 +24,7 @@ cd laravel && php artisan migrate
 
 ## Runtime
 
-`Modules\Activity\Support\ActivityLogSchema::isWritable()` — connection da `config('activitylog.database_connection')`.
+`IsActivityLogSchemaWritableAction::execute()` — connection da `config('activitylog.database_connection')`. Vedi [no-app-support-queueable-actions.md](no-app-support-queueable-actions.md).
 
 ## Collegamenti
 
