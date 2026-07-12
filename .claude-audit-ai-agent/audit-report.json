@@ -1,0 +1,124 @@
+{
+  "version": "0.2.2",
+  "timestamp": "2026-07-09T19:28:12.861Z",
+  "project": {
+    "name": "Activity",
+    "path": "/var/www/_bases/base_fixcity_fila5/laravel/Modules/Activity",
+    "languages": {
+      "Markdown": 392,
+      "JSON": 7,
+      "YAML": 2,
+      "PHP": 88,
+      "XML": 4,
+      "JavaScript": 4,
+      "Shell": 1,
+      "Python": 1
+    },
+    "frameworks": [
+      "TailwindCSS"
+    ],
+    "totalFiles": 499,
+    "totalLines": 48998,
+    "hasTests": true,
+    "hasDependencyFile": true,
+    "dependencyFile": "package.json",
+    "dependencies": {
+      "@tailwindcss/forms": "^0.5.7",
+      "@tailwindcss/typography": "^0.5.13",
+      "autoprefixer": "^10.4.19",
+      "axios": "^1.17.0",
+      "dotenv": "^16.0.3",
+      "dotenv-expand": "^10.0.0",
+      "laravel-vite-plugin": "^1.2.0",
+      "lodash": "^4.17.21",
+      "postcss": "^8.4.38",
+      "postcss-nesting": "^12.1.4",
+      "sass": "^1.69.5",
+      "tailwindcss": "^3.4.3",
+      "tippy.js": "^6.3.7",
+      "vite": "^6.4.3"
+    },
+    "testFrameworks": []
+  },
+  "overallScore": 50,
+  "overallGrade": "D",
+  "categories": [
+    {
+      "category": "security",
+      "score": 50,
+      "grade": "C",
+      "findings": [],
+      "summary": "Agentic audit ended without a finalized submission."
+    },
+    {
+      "category": "quality",
+      "score": 50,
+      "grade": "C",
+      "findings": [],
+      "summary": "Agentic audit ended without a finalized submission."
+    },
+    {
+      "category": "performance",
+      "score": 50,
+      "grade": "C",
+      "findings": [],
+      "summary": "Agentic audit ended without a finalized submission."
+    },
+    {
+      "category": "architecture",
+      "score": 50,
+      "grade": "C",
+      "findings": [],
+      "summary": "Agentic audit ended without a finalized submission."
+    },
+    {
+      "category": "testing",
+      "score": 50,
+      "grade": "C",
+      "findings": [],
+      "summary": "Agentic audit ended without a finalized submission."
+    },
+    {
+      "category": "documentation",
+      "score": 50,
+      "grade": "C",
+      "findings": [],
+      "summary": "Agentic audit ended without a finalized submission."
+    },
+    {
+      "category": "dependencies",
+      "score": 50,
+      "grade": "C",
+      "findings": [],
+      "summary": "Agentic audit ended without a finalized submission."
+    }
+  ],
+  "allFindings": [],
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 0,
+  "lowCount": 0,
+  "aiPowered": true,
+  "agentic": true,
+  "agentTrace": {
+    "enabled": true,
+    "model": "claude-sonnet-4-6",
+    "maxTurns": 10,
+    "maxBudgetTokens": 500000,
+    "summary": {
+      "turns": 1,
+      "toolCalls": 0,
+      "errors": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "cacheReadTokens": 0,
+      "cacheCreationTokens": 0,
+      "stopReason": "error",
+      "stopDetail": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ccs324bD9AnqNT4p74RGr\"}",
+      "durationMs": 334,
+      "toolUsage": {}
+    },
+    "calls": []
+  },
+  "durationMs": 641
+}
