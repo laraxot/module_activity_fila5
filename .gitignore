@@ -189,3 +189,9 @@ activity_coverage.xml
 agentdb.rvf
 build/
 docs/legacy
+tests/AuditCoverage/*
+workbench
+
+# claude-audit bridge (non committare)
+audit-coverage/
+tests/AuditCoverage/*

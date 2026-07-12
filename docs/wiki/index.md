@@ -4,7 +4,7 @@ type: index
 module: Activity
 tags: [activity, wiki, index, audit]
 created: 2026-04-15
-updated: 2026-06-13
+updated: 2026-07-12
 qmd: "activity module wiki index audit log second brain"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
@@ -43,6 +43,7 @@ related:
 - [xotbase-resource-zen-pattern](./concepts/xotbase-resource-zen-pattern.md) — pattern corretto per resource XotBase senza override `form()`/`table()`
 - [schemas-tables-pattern](./concepts/schemas-tables-pattern.md) — separazione Schemas/Tables e auto-discovery di XotBase
 - [phpstan-pest-discipline](./concepts/phpstan-pest-discipline.md) — PHPStan su Activity mantenendo test Pest e `phpstan.neon` immutabile
+- [queueable-action-trait-mandatory](./concepts/queueable-action-trait-mandatory.md) — trait obbligatorio in ogni file `app/Actions/` (modulo + tema)
 
 ## Entities
 

@@ -21,24 +21,21 @@ class LogModelUpdatedAction
         public Model $model,
         public ?Model $user = null,
     ) {
-        if ($user !== null) {
-            // Type already narrowed to Model|null, assertion not needed
-        }
     }
 
     public function execute(): Activity
     {
-        // PHPStan Level 10: Explicit type guard for nullable Model
         $user = $this->user instanceof Model ? $this->user : null;
+        $redact = app(RedactModelAttributesAction::class);
 
         $action = new LogActivityAction(
             type: 'updated',
             user: $user,
             subject: $this->model,
             properties: [
-                'old' => $this->model->getOriginal(),
-                'new' => $this->model->getAttributes(),
-                'changes' => $this->model->getChanges(),
+                'old' => $redact->execute($this->model->getOriginal()),
+                'new' => $redact->execute($this->model->getAttributes()),
+                'changes' => $redact->execute($this->model->getChanges()),
             ],
             description: sprintf('%s updated', class_basename($this->model))
         );

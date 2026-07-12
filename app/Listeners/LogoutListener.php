@@ -25,7 +25,7 @@ class LogoutListener
         $properties = [
             'guard' => $event->guard,
             'ip_address' => Request::ip(),
-            'user_agent' => Request::userAgent(),
+            'user_agent' => mb_substr((string) (Request::userAgent() ?? ''), 0, 512),
             'timestamp' => now()->timestamp,
         ];
 
@@ -45,7 +45,10 @@ class LogoutListener
 
         // Handle logout reason from request
         if (Request::has('logout_reason')) {
-            $properties['logout_reason'] = Request::input('logout_reason');
+            $allowedReasons = ['manual', 'timeout', 'forced'];
+            /** @var mixed $reason */
+            $reason = Request::input('logout_reason');
+            $properties['logout_reason'] = in_array($reason, $allowedReasons, true) ? $reason : 'unknown';
         }
 
         // Creating the activity
