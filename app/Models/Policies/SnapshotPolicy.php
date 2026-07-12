@@ -12,10 +12,10 @@ class SnapshotPolicy extends UserBasePolicy
     /**
      * Determine whether the user can view any models.
      */
-    // public function viewAny(UserContract $user): bool
-    // {
-    //     return $user->hasPermissionTo('snapshot.viewAny');
-    // }
+    public function viewAny(UserContract $user): bool
+    {
+        return $user->hasPermissionTo('snapshot.viewAny');
+    }
 
     /**
      * Determine whether the user can view the model.

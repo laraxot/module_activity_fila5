@@ -18,6 +18,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Log;
 use InvalidArgumentException;
 use Livewire\WithPagination;
 use LogicException;
@@ -50,8 +51,8 @@ abstract class ListLogActivities extends XotBasePage
 
     protected string $view = 'activity::filament.pages.list-log-activities';
 
-    /** @var Collection<string, string> */
-    protected static Collection $fieldLabelMap;
+    /** @var Collection<string, string>|null */
+    protected ?Collection $fieldLabelMap = null;
 
     public function mount(int|string $record): void
     {
@@ -145,9 +146,9 @@ abstract class ListLogActivities extends XotBasePage
 
     public function getFieldLabel(string $name): string
     {
-        static::$fieldLabelMap ??= $this->createFieldLabelMap();
+        $this->fieldLabelMap ??= $this->createFieldLabelMap();
 
-        $fieldLabel = static::$fieldLabelMap[$name] ?? $name;
+        $fieldLabel = $this->fieldLabelMap[$name] ?? $name;
 
         // PHPStan Level 10: Ensure string return type
         if (! \is_string($fieldLabel)) {
@@ -188,7 +189,8 @@ abstract class ListLogActivities extends XotBasePage
 
             $this->sendRestoreSuccessNotification();
         } catch (Exception $e) {
-            $this->sendRestoreFailureNotification($e->getMessage());
+            Log::error('Activity restore failed', ['exception' => $e]);
+            $this->sendRestoreFailureNotification();
         }
     }
 

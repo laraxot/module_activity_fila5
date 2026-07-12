@@ -8,7 +8,7 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-test('Activity Business Logic', function () {
+describe('Activity Business Logic', function () {
     test('activity has correct connection configured', function () {
         $reflection = new ReflectionClass(Activity::class);
         $property = $reflection->getProperty('connection');
