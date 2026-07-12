@@ -23,7 +23,7 @@ function createUser(array $attributes = []): User
     return (new UserFactory)->createOne($attributes);
 }
 
-test('Activity Lifecycle Actions', function () {
+describe('Activity Lifecycle Actions', function () {
 
     test('can log model creation via LogModelCreatedAction', function () {
         $user = createUser(['name' => 'New User']);
