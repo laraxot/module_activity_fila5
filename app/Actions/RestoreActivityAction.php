@@ -22,8 +22,13 @@ class RestoreActivityAction
     {
         Assert::notEmpty($oldProperties, 'Old properties cannot be empty');
 
+        $fillableKeys = array_flip($record->getFillable());
+        $safeProperties = array_intersect_key($oldProperties, $fillableKeys);
+
         try {
-            $record->update($oldProperties);
+            $fillable = $record->getFillable();
+            $safeProperties = ! empty($fillable) ? array_intersect_key($oldProperties, array_flip($fillable)) : $oldProperties;
+            $record->update($safeProperties);
         } catch (Exception $e) {
             throw new Exception('Restore failed: '.$e->getMessage(), (int) $e->getCode(), $e);
         }

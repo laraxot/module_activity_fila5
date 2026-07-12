@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
 
-/** @phpstan-ignore trait.unused */
 trait HasEvents
 {
     /**

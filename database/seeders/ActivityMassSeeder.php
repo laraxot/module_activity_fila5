@@ -62,19 +62,23 @@ class ActivityMassSeeder extends Seeder
     {
         $this->command->info('📝 Creazione attività di sistema...');
 
-        // Crea 2000 attività di sistema
+        // Crea 2000 attività di sistema (bulk insert, non una per una)
         $activities = ActivityFactory::new()
             ->count(2000)
-            ->create([
-                'created_at' => Carbon::now()->subDays(rand(1, 90)),
+            ->make([
+                'created_at' => Carbon::now()->subDays(random_int(1, 90)),
             ]);
 
-        // PHPStan Level 10: Type safety for Eloquent collection
-        $activitiesCount = $activities instanceof Collection
-            ? $activities->count()
-            : 0;
+        Assert::isInstanceOf($activities, Collection::class);
 
-        $this->command->info('✅ Create '.$activitiesCount.' attività di sistema');
+        /** @var Collection<int, Activity> $activities */
+        $rows = $activities
+            ->map(fn (Activity $activity): array => $activity->getAttributes())
+            ->all();
+
+        Activity::query()->insert($rows);
+
+        $this->command->info('✅ Create '.count($rows).' attività di sistema');
     }
 
     /**
