@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Providers;
 
+use Modules\Activity\Adapters\ActivityRecorder;
+use Modules\Activity\Contracts\ActivityRecorderContract;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Override;
 
@@ -51,6 +53,13 @@ class ActivityServiceProvider extends XotBaseServiceProvider
     /**
      * Registra i servizi del provider.
      */
+    #[Override]
+    public function register(): void
+    {
+        parent::register();
+
+        $this->app->bind(ActivityRecorderContract::class, ActivityRecorder::class);
+    }
 
     /**
      * Registra le configurazioni del modulo.

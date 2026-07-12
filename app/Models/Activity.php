@@ -76,7 +76,6 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static Builder<static>|Activity latest(string $column = 'created_at')
  * @method static Builder<static>|Activity limit(int $value)
  * @method static Builder<static>|Activity with(array<int, string>|string $relations)
- * @method static int sum(string $column)
  * @method static Collection<int, static>|Builder<static>|Activity get(array<int, string>|string $columns = ['*'])
  * @method static static|null first(array<int, string>|string $columns = ['*'])
  * @method static static find(mixed $id, array<int, string>|string $columns = ['*'])
@@ -118,7 +117,6 @@ class Activity extends SpatieActivity
 
     /** @var list<string> */
     protected $fillable = [
-        'id',
         'log_name',
         'description',
         'subject_type',

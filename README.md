@@ -1,57 +1,26 @@
-# 📊 Activity - Il SISTEMA di TRACKING più AVANZATO! 🔍
+# 📊 Activity
 
-<!-- Dynamic validation badges -->
+Modulo di audit trail e event sourcing per l'ecosistema Laraxot: tracciamento
+azioni utente, snapshot e stored event via `spatie/laravel-activitylog` e
+`spatie/laravel-event-sourcing`.
+
+<!-- Badge verificati contro il codice reale del modulo -->
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
-[![Filament 4.x](https://img.shields.io/badge/Filament-4.x-blue.svg)](https://filamentphp.com/)
-[![PHPStan level 10](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg)](https://phpstan.org/)
-[![Translation Ready](https://img.shields.io/badge/Translation-IT%20%7C%20EN%20%7C%20DE-green.svg)](https://laravel.com/docs/localization)
-[![Event Sourcing](https://img.shields.io/badge/Event-Sourcing%20Ready-orange.svg)](https://martinfowler.com/eaaDev/EventSourcing.html)
-[![Audit Trail](https://img.shields.io/badge/Audit-Trail%20Ready-yellow.svg)](https://en.wikipedia.org/wiki/Audit_trail)
-[![Pest Tests](https://img.shields.io/badge/Pest%20Tests-✅%20Passing-brightgreen.svg)](tests/)
 [![PHP Version](https://img.shields.io/badge/PHP-8.3+-blue.svg)](https://php.net)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Code Quality](https://img.shields.io/badge/code%20quality-A+-brightgreen.svg)](.codeclimate.yml)
-[![Test Coverage](https://img.shields.io/badge/coverage-91%25-success.svg)](phpunit.xml.dist)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/laraxot/activity)
-[![Downloads](https://img.shields.io/badge/downloads-1.5k+-blue.svg)](https://packagist.org/packages/laraxot/activity)
-[![Stars](https://img.shields.io/badge/stars-150+-yellow.svg)](https://github.com/laraxot/activity)
-[![Issues](https://img.shields.io/github/issues/laraxot/activity)](https://github.com/laraxot/activity/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/laraxot/activity)](https://github.com/laraxot/activity/pulls)
-[![Security](https://img.shields.io/badge/security-A+-brightgreen.svg)](https://github.com/laraxot/activity/security)
-[![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](docs/README.md)
-[![Events](https://img.shields.io/badge/events-100+-blue.svg)](docs/events.md)
-[![Real-time](https://img.shields.io/badge/real--time-live-orange.svg)](docs/real-time.md)
-[![Analytics](https://img.shields.io/badge/analytics-advanced-purple.svg)](docs/analytics.md)
+[![Event Sourcing](https://img.shields.io/badge/Event-Sourcing-orange.svg)](https://martinfowler.com/eaaDev/EventSourcing.html)
+[![Audit Trail](https://img.shields.io/badge/Audit-Trail-yellow.svg)](https://en.wikipedia.org/wiki/Audit_trail)
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/laraxot/activity/main/docs/assets/activity-banner.png" alt="Activity Banner" width="800">
-  <br>
-  <em>🎯 Il sistema di tracking attività più potente e dettagliato per Laravel!</em>
-</div>
+## Cosa fa davvero
 
-## 🌟 Perché Activity è REVOLUZIONARIO?
+- **Audit trail**: modello `Activity` (log create/update/delete/login/logout) via `ActivityLogger`
+- **Event sourcing**: `Snapshot` e `StoredEvent` (spatie/laravel-event-sourcing)
+- **Integrazione Filament**: `ActivityResource`, `SnapshotResource`, `StoredEventResource`, `Dashboard`
+- **Policy-based authorization**: `ActivityPolicy`, `SnapshotPolicy`, `StoredEventPolicy`
 
-### 🚀 **Sistema di Tracking Avanzato**
-- **📊 100+ Eventi Predefiniti**: Login, logout, CRUD, file upload, e molto altro
-- **🔍 Audit Trail Completo**: Tracciamento dettagliato di ogni azione
-- **📱 Real-Time Monitoring**: Monitoraggio in tempo reale delle attività
-- **🎯 User Behavior Analytics**: Analisi del comportamento degli utenti
-- **🔒 Security Monitoring**: Monitoraggio sicurezza e accessi
-- **📈 Performance Tracking**: Tracciamento performance e ottimizzazioni
-
-### 🎯 **Integrazione Filament Perfetta**
-- **ActivityResource**: CRUD completo per gestione attività
-- **ActivityWidget**: Widget per visualizzazione attività
-- **AnalyticsDashboard**: Dashboard analitica avanzata
-- **EventManager**: Gestore eventi con interfaccia visuale
-- **ActivityScheduler**: Scheduler per pulizia automatica
-
-### 🏗️ **Architettura Scalabile**
-- **Event-Driven**: Sistema eventi per tracking automatico
-- **Multi-Module**: Tracking distribuito tra moduli
-- **Caching Strategy**: Cache intelligente per performance
-- **API Ready**: RESTful API per integrazioni esterne
-- **Export System**: Esportazione dati in multipli formati
+Non presenti nel codice attuale (rimossi dalla documentazione precedente perché
+non esistevano): scheduler dedicato, dashboard analitica separata, gestore
+eventi con UI dedicata, API REST, sistema di export.
 
 ## 🎯 Funzionalità PRINCIPALI
 
