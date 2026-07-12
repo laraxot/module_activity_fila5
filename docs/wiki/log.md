@@ -2,9 +2,9 @@
 title: "Activity Log"
 type: log
 module: Activity
-tags: [activity, phpstan, pest, qmd]
+tags: [activity, phpstan, pest, qmd, queueable-action]
 created: 2026-05-12
-updated: 2026-06-13
+updated: 2026-07-12
 qmd: "Activity log phpstan pest discipline"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/328"
@@ -13,6 +13,12 @@ discussions:
 ---
 
 ---
+
+## [2026-07-12] architecture | QueueableAction — solo `execute`
+
+- Documentato [concepts/queueable-action-execute-entrypoint.md](concepts/queueable-action-execute-entrypoint.md): religione Spatie, `RecordSubjectActivityAction` al posto di `ActivityLogger::recordSubject`.
+- `ActivityMaintenanceAction::cleanOld` rinominato in `execute`; `ActivityLogger::log` delega a `LogActivityAction`.
+- GitHub: [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372).
 
 ## [2026-06-13] phpstan | Gate chef — 7 file Actions → Assert
 
@@ -55,9 +61,9 @@ discussions:
 title: "Activity Log"
 type: log
 module: Activity
-tags: [activity, phpstan, pest, qmd]
+tags: [activity, phpstan, pest, qmd, queueable-action]
 created: 2026-05-12
-updated: 2026-06-13
+updated: 2026-07-12
 qmd: "Activity log phpstan pest discipline"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/328"

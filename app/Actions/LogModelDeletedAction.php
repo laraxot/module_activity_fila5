@@ -21,21 +21,17 @@ class LogModelDeletedAction
         public Model $model,
         public ?Model $user = null,
     ) {
-        if ($user !== null) {
-            // Type already narrowed to Model|null, assertion not needed
-        }
     }
 
     public function execute(): Activity
     {
-        // PHPStan Level 10: Explicit type guard for nullable Model
         $user = $this->user instanceof Model ? $this->user : null;
 
         $action = new LogActivityAction(
             type: 'deleted',
             user: $user,
             subject: $this->model,
-            properties: ['attributes' => $this->model->getAttributes()],
+            properties: ['attributes' => app(RedactModelAttributesAction::class)->execute($this->model->getAttributes())],
             description: sprintf('%s deleted', class_basename($this->model))
         );
 

@@ -48,6 +48,6 @@ class Snapshot extends SpatieSnapshot
     protected $connection = 'activity';
 
     /** @var list<string> */
-    protected $fillable = ['id', 'aggregate_uuid', 'aggregate_version', 'state', 'created_at', 'updated_at'];
+    protected $fillable = ['aggregate_uuid', 'aggregate_version', 'state', 'created_at', 'updated_at'];
 
 }

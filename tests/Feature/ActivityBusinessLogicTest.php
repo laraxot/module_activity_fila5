@@ -13,7 +13,7 @@ use function Safe\json_encode;
 
 uses(\Modules\Activity\Tests\TestCase::class);
 
-test('Activity Business Logic', function () {
+describe('Activity Business Logic', function () {
     test('can create activity with basic information', function () {
         $activityData = [
             'log_name' => 'default',

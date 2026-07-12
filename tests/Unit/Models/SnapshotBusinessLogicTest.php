@@ -8,7 +8,7 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-test('Snapshot Business Logic', function () {
+describe('Snapshot Business Logic', function () {
     test('snapshot has correct connection configured', function () {
         $reflection = new ReflectionClass(Snapshot::class);
         $property = $reflection->getProperty('connection');

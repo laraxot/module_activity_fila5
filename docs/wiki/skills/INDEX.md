@@ -14,6 +14,7 @@ updated: 2026-06-10
 
 - [filament-page-creation](../../../../Xot/docs/wiki/skills/filament-page-creation.md) — skill condivisa Xot per creare page Filament coerenti con XotBase
 - [phpstan-pest-remediation](../../../../../docs/wiki/skills/phpstan-pest-remediation.md) — remediation PHPStan su test Pest senza conversione a PHPUnit
+- [queueable-action-execute-audit](../../../../../docs/wiki/skills/queueable-action-execute-audit.md) — audit Action Spatie: `QueueableAction` + `execute(...)`
 
 ## Usage
 
