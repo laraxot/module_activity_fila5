@@ -44,6 +44,7 @@ related:
 - [schemas-tables-pattern](./concepts/schemas-tables-pattern.md) — separazione Schemas/Tables e auto-discovery di XotBase
 - [phpstan-pest-discipline](./concepts/phpstan-pest-discipline.md) — PHPStan su Activity mantenendo test Pest e `phpstan.neon` immutabile
 - [queueable-action-trait-mandatory](./concepts/queueable-action-trait-mandatory.md) — trait obbligatorio in ogni file `app/Actions/` (modulo + tema)
+- [no-app-support-queueable-actions](./concepts/no-app-support-queueable-actions.md) — migrazione Support→Actions + coordinator in `Adapters/`
 
 ## Entities
 
