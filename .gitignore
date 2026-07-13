@@ -191,3 +191,4 @@ build/
 docs/legacy
 audit-coverage/
 .claude-audit
+.claude-audit-ai
