@@ -40,7 +40,7 @@ discussions:
 - Confermato: Activity `TestCase` già estende `XotBaseTestCase`.
 - `Nwidart\Modules\Tests\BaseTestCase` esiste su GitHub (Orchestra Testbench) ma non è autoloadato in app — non usare come parent.
 - Gap: solo Geo ancora su Laravel `TestCase` diretto.
-- Chat: [docs/chat/2026-06-10-testcase-brainstorm-activity-nwidart.md](../../../../docs/chat/2026-06-10-testcase-brainstorm-activity-nwidart.md)
+- Chat: [docs/chat/testcase-brainstorm-activity-nwidart.md](../../../../docs/chat/testcase-brainstorm-activity-nwidart.md)
 
 ## [2026-06-10] phpstan | Activity clean with Pest tests preserved
 
@@ -93,7 +93,7 @@ discussions:
 - Confermato: Activity `TestCase` già estende `XotBaseTestCase`.
 - `Nwidart\Modules\Tests\BaseTestCase` esiste su GitHub (Orchestra Testbench) ma non è autoloadato in app — non usare come parent.
 - Gap: solo Geo ancora su Laravel `TestCase` diretto.
-- Chat: [docs/chat/2026-06-10-testcase-brainstorm-activity-nwidart.md](../../../../docs/chat/2026-06-10-testcase-brainstorm-activity-nwidart.md)
+- Chat: [docs/chat/testcase-brainstorm-activity-nwidart.md](../../../../docs/chat/testcase-brainstorm-activity-nwidart.md)
 
 ## [2026-06-10] phpstan | Activity clean with Pest tests preserved
 
