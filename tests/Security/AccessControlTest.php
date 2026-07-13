@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Modules\Activity\Tests\Security;
+
 /**
  * Security Test Case for Activity Module Access Control
  *
@@ -11,15 +13,17 @@ declare(strict_types=1);
 
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Policies\ActivityPolicy;
+use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
 
-uses(Tests\TestCase::class);
+uses(TestCase::class);
 
 it('denies activity viewAny to users without permission', function (): void {
     $user = User::factory()->create();
     $policy = new ActivityPolicy;
 
-    expect($policy->viewAny($user))->toBeFalse();
+    Assert::assertFalse($policy->viewAny($user));
 });
 
 it('allows activity viewAny to users with the correct permission', function (): void {
@@ -27,14 +31,14 @@ it('allows activity viewAny to users with the correct permission', function (): 
     $user->givePermissionTo('activity.viewAny');
     $policy = new ActivityPolicy;
 
-    expect($policy->viewAny($user))->toBeTrue();
+    Assert::assertTrue($policy->viewAny($user));
 });
 
 it('denies activity view to users without permission', function (): void {
     $user = User::factory()->create();
     $policy = new ActivityPolicy;
 
-    expect($policy->view($user))->toBeFalse();
+    Assert::assertFalse($policy->view($user));
 });
 
 it('super-admin bypasses activity policy checks via before()', function (): void {
@@ -42,16 +46,15 @@ it('super-admin bypasses activity policy checks via before()', function (): void
     $superAdmin->assignRole('super-admin');
     $policy = new ActivityPolicy;
 
-    expect($policy->viewAny($superAdmin))->toBeTrue()
-        ->and($policy->view($superAdmin))->toBeTrue();
+    Assert::assertTrue($policy->viewAny($superAdmin));
+    Assert::assertTrue($policy->view($superAdmin));
 });
 
 it('validates activity log data integrity', function (): void {
-    // Security: Prevent tampering with log data
     $activity = Activity::factory()->create([
         'description' => 'Valid description',
     ]);
 
     $activity->description = 'Tampered description';
-    expect($activity->fresh()?->description)->toBe('Valid description');
+    Assert::assertSame('Valid description', $activity->fresh()?->description);
 });
