@@ -1,0 +1,104 @@
+{
+  "version": "0.2.2",
+  "timestamp": "2026-07-09T19:27:40.979Z",
+  "project": {
+    "name": "Activity",
+    "path": "/var/www/_bases/base_fixcity_fila5/laravel/Modules/Activity",
+    "languages": {
+      "Markdown": 637,
+      "JSON": 10,
+      "YAML": 2,
+      "PHP": 273,
+      "XML": 4,
+      "JavaScript": 6,
+      "Shell": 1,
+      "Python": 1,
+      "SCSS": 1
+    },
+    "frameworks": [
+      "TailwindCSS"
+    ],
+    "totalFiles": 935,
+    "totalLines": 83300,
+    "hasTests": true,
+    "hasDependencyFile": true,
+    "dependencyFile": "package.json",
+    "dependencies": {
+      "@tailwindcss/forms": "^0.5.7",
+      "@tailwindcss/typography": "^0.5.13",
+      "autoprefixer": "^10.4.19",
+      "axios": "^1.17.0",
+      "dotenv": "^16.0.3",
+      "dotenv-expand": "^10.0.0",
+      "laravel-vite-plugin": "^1.2.0",
+      "lodash": "^4.17.21",
+      "postcss": "^8.4.38",
+      "postcss-nesting": "^12.1.4",
+      "sass": "^1.69.5",
+      "tailwindcss": "^3.4.3",
+      "tippy.js": "^6.3.7",
+      "vite": "^6.4.3"
+    },
+    "testFrameworks": []
+  },
+  "overallScore": 80,
+  "overallGrade": "B",
+  "categories": [
+    {
+      "category": "security",
+      "score": 80,
+      "grade": "B",
+      "findings": [],
+      "summary": ""
+    },
+    {
+      "category": "quality",
+      "score": 80,
+      "grade": "B",
+      "findings": [],
+      "summary": ""
+    },
+    {
+      "category": "performance",
+      "score": 80,
+      "grade": "B",
+      "findings": [],
+      "summary": ""
+    },
+    {
+      "category": "architecture",
+      "score": 80,
+      "grade": "B",
+      "findings": [],
+      "summary": ""
+    },
+    {
+      "category": "dependencies",
+      "score": 80,
+      "grade": "B",
+      "findings": [],
+      "summary": ""
+    },
+    {
+      "category": "testing",
+      "score": 80,
+      "grade": "B",
+      "findings": [],
+      "summary": ""
+    },
+    {
+      "category": "documentation",
+      "score": 80,
+      "grade": "B",
+      "findings": [],
+      "summary": ""
+    }
+  ],
+  "allFindings": [],
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 0,
+  "lowCount": 0,
+  "aiPowered": false,
+  "durationMs": 739
+}
