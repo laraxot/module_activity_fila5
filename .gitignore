@@ -192,3 +192,4 @@ docs/legacy
 audit-coverage/
 .claude-audit
 .claude-audit-ai
+.claude-audit-ai-agent
