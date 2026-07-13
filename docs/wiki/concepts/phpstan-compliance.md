@@ -3,8 +3,10 @@ title: "Activity Module - PHPStan Type Compliance"
 type: concept
 tags: [activity, phpstan, types, compliance, quality, static-analysis]
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-07-13
+qmd: "Activity module PHPStan level max compliance ListLogActivities LogoutListener"
 related:
+  - phpstan-module-config-zero.md
   - ../../../../Themes/Sixteen/docs/wiki/concepts/phpstan-compliance.md
   - ../../../../../docs/wiki/concepts/phpstan-level-max-compliance.md
 ---
@@ -13,7 +15,9 @@ related:
 
 ## Status
 
-✅ **COMPLIANT** — 0 errors in PHPStan level: max
+✅ **COMPLIANT** — 0 errori root `phpstan analyse Modules` e config modulo `phpstan.neon` (include tests)
+
+Dettaglio config modulo + fix 2026-07-13: [phpstan-module-config-zero.md](phpstan-module-config-zero.md)
 
 ```
 Module:   Activity

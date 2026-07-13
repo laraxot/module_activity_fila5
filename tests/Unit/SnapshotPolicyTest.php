@@ -30,7 +30,8 @@ $reflection = new \ReflectionClass(SnapshotPolicy::class);
     });
 
     test('user with permission can view', function (): void {
-$user = $this->createUnitMock(User::class);
+        /** @var \Modules\Activity\Tests\TestCase $this */
+        $user = $this->createUnitMock(User::class);
         $user->method('hasPermissionTo')->with('snapshot.view')->willReturn(true);
 
         $policy = new SnapshotPolicy;
@@ -40,7 +41,8 @@ $user = $this->createUnitMock(User::class);
     });
 
     test('user without permission cannot view', function (): void {
-$user = $this->createUnitMock(User::class);
+        /** @var \Modules\Activity\Tests\TestCase $this */
+        $user = $this->createUnitMock(User::class);
         $user->method('hasPermissionTo')->with('snapshot.view')->willReturn(false);
 
         $policy = new SnapshotPolicy;
