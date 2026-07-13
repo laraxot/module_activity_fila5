@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Modules\Activity\Actions\IsActivityLogSchemaWritableAction;
+use Modules\Activity\Actions\Schema\IsActivityLogSchemaWritableAction;
 use PHPUnit\Framework\Assert;
 
 uses(Modules\Activity\Tests\TestCase::class);
