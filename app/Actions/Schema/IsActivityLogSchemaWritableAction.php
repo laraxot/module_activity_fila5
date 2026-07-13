@@ -2,16 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Modules\Activity\Support;
+namespace Modules\Activity\Actions\Schema;
 
 use Illuminate\Support\Facades\Schema;
+use Spatie\QueueableAction\QueueableAction;
 
 /**
- * Verifica che activity_log sia scrivibile sulla connection configurata (Spatie v4+ richiede attribute_changes).
+ * Verifica che activity_log sia scrivibile (Spatie v4+ richiede attribute_changes).
  */
-final class ActivityLogSchema
+final class IsActivityLogSchemaWritableAction
 {
-    public static function isWritable(): bool
+    use QueueableAction;
+
+    public function execute(): bool
     {
         if (! config('activitylog.enabled', true)) {
             return false;
