@@ -1,12 +1,5 @@
----
-module: theme
-topic: filament_v4_upgrade
-canonical: ../../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
----
+# Filament v4 Upgrade Documentation
 
-<<<<<<< HEAD
-See canonical documentation: ../../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
-=======
 ## Overview
 This document outlines the key changes and upgrades implemented for Filament v4 in the Activity module.
 
@@ -53,4 +46,3 @@ public static function getFormSchema(): array
 
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
->>>>>>> 7e8ce434 (.)
