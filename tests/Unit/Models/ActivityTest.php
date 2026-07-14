@@ -9,6 +9,24 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+beforeEach(function () {
+    // Skip if database not available
+    try {
+        \DB::connection()->getPdo();
+    } catch (\Exception $e) {
+        $this->markTestSkipped('Database not available: '.$e->getMessage());
+    }
+});
+
+beforeEach(function () {
+    // Skip if database not available
+    try {
+        \DB::connection()->getPdo();
+    } catch (\Exception $e) {
+        $this->markTestSkipped('Database not available: '.$e->getMessage());
+    }
+});
+
 test('activity model can be created', function () {
     $activity = ActivityFactory::new()->make();
 
@@ -16,7 +34,11 @@ test('activity model can be created', function () {
 });
 
 test('activity model can be saved and retrieved', function () {
+<<<<<<< HEAD
     $activity = ActivityFactory::new()->createOne([
+=======
+    $activity = Activity::factory()->create([
+>>>>>>> 4e421754 (.)
         'description' => 'Test action',
         'event' => 'test_event',
     ]);
