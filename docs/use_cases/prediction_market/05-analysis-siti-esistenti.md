@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d4098eb (.)
 =======
@@ -19,6 +20,8 @@ canonical: ../../../../../Themes/docs/shared-components/05-analisi-siti-esistent
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/05-analisi-siti-esistenti.md
 =======
+=======
+>>>>>>> a1e3a4e0 (.)
 # Analisi dei Principali <nome progetto>ion Market (2024-2025)
 
 ## Polymarket

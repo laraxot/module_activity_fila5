@@ -54,6 +54,7 @@ class CloseExpiredMarkets extends Command
 - [API <nome progetto>ion_market](./06_api.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Glossario <nome progetto>ion_market](./08_glossario.md)
 =======
 - [Glossario <nome progetto>ion_market](./08_glossario.md)
@@ -61,3 +62,6 @@ class CloseExpiredMarkets extends Command
 =======
 - [Glossario <nome progetto>ion_market](./08_glossario.md)
 >>>>>>> 2d6a374 (.)
+=======
+- [Glossario <nome progetto>ion_market](./08_glossario.md)
+>>>>>>> a1e3a4e0 (.)
