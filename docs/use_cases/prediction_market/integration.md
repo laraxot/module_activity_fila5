@@ -401,6 +401,7 @@ public function rules()
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa documentazione fornisce una solida base per implementare un <nome progetto>ion market utilizzando Laravel e l'event sourcing. Con questa architettura, il sistema è scalabile, mantenibile e in grado di gestire un elevato volume di transazioni in modo affidabile.
 =======
 Questa documentazione fornisce una solida base per implementare un <nome progetto>ion market utilizzando Laravel e l'event sourcing. Con questa architettura, il sistema è scalabile, mantenibile e in grado di gestire un elevato volume di transazioni in modo affidabile.
@@ -408,3 +409,6 @@ Questa documentazione fornisce una solida base per implementare un <nome progett
 =======
 Questa documentazione fornisce una solida base per implementare un <nome progetto>ion market utilizzando Laravel e l'event sourcing. Con questa architettura, il sistema è scalabile, mantenibile e in grado di gestire un elevato volume di transazioni in modo affidabile.
 >>>>>>> 2d6a374 (.)
+=======
+Questa documentazione fornisce una solida base per implementare un <nome progetto>ion market utilizzando Laravel e l'event sourcing. Con questa architettura, il sistema è scalabile, mantenibile e in grado di gestire un elevato volume di transazioni in modo affidabile.
+>>>>>>> a1e3a4e0 (.)

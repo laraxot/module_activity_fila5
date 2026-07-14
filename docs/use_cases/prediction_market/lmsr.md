@@ -51,6 +51,7 @@ $prices = $lmsr->getPrices($quantities);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **Nota:** L’integrazione di LMSR rende il modulo <nome progetto>ion Market più robusto, liquido e trasparente, allineandolo alle migliori piattaforme internazionali. Per dettagli matematici e implementativi, consultare la sezione "Best Practice" e gli esempi pratici.
 =======
 > **Nota:** L’integrazione di LMSR rende il modulo <nome progetto>ion Market più robusto, liquido e trasparente, allineandolo alle migliori piattaforme internazionali. Per dettagli matematici e implementativi, consultare la sezione "Best Practice" e gli esempi pratici.
@@ -58,3 +59,6 @@ $prices = $lmsr->getPrices($quantities);
 =======
 > **Nota:** L’integrazione di LMSR rende il modulo <nome progetto>ion Market più robusto, liquido e trasparente, allineandolo alle migliori piattaforme internazionali. Per dettagli matematici e implementativi, consultare la sezione "Best Practice" e gli esempi pratici.
 >>>>>>> 2d6a374 (.)
+=======
+> **Nota:** L’integrazione di LMSR rende il modulo <nome progetto>ion Market più robusto, liquido e trasparente, allineandolo alle migliori piattaforme internazionali. Per dettagli matematici e implementativi, consultare la sezione "Best Practice" e gli esempi pratici.
+>>>>>>> a1e3a4e0 (.)
