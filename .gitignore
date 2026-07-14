@@ -193,3 +193,6 @@ audit-coverage/
 .claude-audit
 .claude-audit-ai
 .claude-audit-ai-agent
+.devcontainer/
+.vscode/
+workbench/
