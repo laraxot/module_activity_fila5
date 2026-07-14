@@ -246,6 +246,6 @@ php artisan test
 
 ---
 
-**ultimo aggiornamento**: 20 agosto 2025
+**
 **analista**: claude code
 **stato**: pronto per implementazione
