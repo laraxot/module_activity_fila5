@@ -193,9 +193,6 @@ audit-coverage/
 .claude-audit
 .claude-audit-ai
 .claude-audit-ai-agent
-<<<<<<< HEAD
-=======
 .devcontainer/
 .vscode/
 workbench/
->>>>>>> 4ae4f362 (delete workbench/)
