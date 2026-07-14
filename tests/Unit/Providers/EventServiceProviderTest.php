@@ -36,17 +36,3 @@ test('event discovery is enabled on provider', function () {
 
     Assert::assertTrue($property->getValue());
 });
-<<<<<<< HEAD
-=======
-
-test('configure email verification is callable and returns void', function () {
-    $provider = new EventServiceProvider(app());
-    $reflection = new \ReflectionClass($provider);
-    $method = $reflection->getMethod('configureEmailVerification');
-    $method->setAccessible(true);
-
-    $result = $method->invoke($provider);
-
-    expect($result)->toBeNull();
-});
->>>>>>> a21dc33d (.)
