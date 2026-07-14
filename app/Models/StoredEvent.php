@@ -70,8 +70,6 @@ class StoredEvent extends SpatieStoredEvent
     /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
     protected $connection = 'activity';
 
-    protected $table = 'stored_events';
-
     protected $fillable = [
         'id',
         'aggregate_uuid',
