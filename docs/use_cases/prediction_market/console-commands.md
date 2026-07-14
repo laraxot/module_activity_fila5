@@ -373,6 +373,7 @@ I comandi da console sono strumenti essenziali per gestire operazioni nel caso d
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Integrando l'approccio minimalista e didattico del repository di cnastasi, abbiamo esteso i comandi da console per il caso d'uso `<nome progetto>ion Market` con strumenti pratici come `activity:market:mass-bet`, `activity:market:list-active` e `activity:market:quick-create`. Questi comandi, ispirati a quelli di cnastasi per la gestione del magazzino, migliorano la capacità di testare, dimostrare e amministrare i mercati di previsioni, mantenendo un focus sugli eventi come fonte di verità. Questo approccio ci permette di bilanciare semplicità e potenza, rendendo il sistema accessibile a sviluppatori di diversi livelli di esperienza.
 =======
 Integrando l'approccio minimalista e didattico del repository di cnastasi, abbiamo esteso i comandi da console per il caso d'uso `<nome progetto>ion Market` con strumenti pratici come `activity:market:mass-bet`, `activity:market:list-active` e `activity:market:quick-create`. Questi comandi, ispirati a quelli di cnastasi per la gestione del magazzino, migliorano la capacità di testare, dimostrare e amministrare i mercati di previsioni, mantenendo un focus sugli eventi come fonte di verità. Questo approccio ci permette di bilanciare semplicità e potenza, rendendo il sistema accessibile a sviluppatori di diversi livelli di esperienza.
@@ -380,3 +381,6 @@ Integrando l'approccio minimalista e didattico del repository di cnastasi, abbia
 =======
 Integrando l'approccio minimalista e didattico del repository di cnastasi, abbiamo esteso i comandi da console per il caso d'uso `<nome progetto>ion Market` con strumenti pratici come `activity:market:mass-bet`, `activity:market:list-active` e `activity:market:quick-create`. Questi comandi, ispirati a quelli di cnastasi per la gestione del magazzino, migliorano la capacità di testare, dimostrare e amministrare i mercati di previsioni, mantenendo un focus sugli eventi come fonte di verità. Questo approccio ci permette di bilanciare semplicità e potenza, rendendo il sistema accessibile a sviluppatori di diversi livelli di esperienza.
 >>>>>>> 2d6a374 (.)
+=======
+Integrando l'approccio minimalista e didattico del repository di cnastasi, abbiamo esteso i comandi da console per il caso d'uso `<nome progetto>ion Market` con strumenti pratici come `activity:market:mass-bet`, `activity:market:list-active` e `activity:market:quick-create`. Questi comandi, ispirati a quelli di cnastasi per la gestione del magazzino, migliorano la capacità di testare, dimostrare e amministrare i mercati di previsioni, mantenendo un focus sugli eventi come fonte di verità. Questo approccio ci permette di bilanciare semplicità e potenza, rendendo il sistema accessibile a sviluppatori di diversi livelli di esperienza.
+>>>>>>> a1e3a4e0 (.)
