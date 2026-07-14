@@ -70,6 +70,7 @@ php artisan activity:shop:checkout cart_12345_xxx
 - [Build from Scratch](./build_from_scratch.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README Prediction Market](../prediction_market/README.md)
 - [README Bank](../bank/README.md)
 =======
@@ -78,6 +79,8 @@ php artisan activity:shop:checkout cart_12345_xxx
 - [README Prediction Market](../prediction_market/README.md)
 - [README Bank](../bank/README.md)
 >>>>>>> 2d6a374 (.)
+=======
+>>>>>>> a1e3a4e0 (.)
 - [README <nome progetto>ion Market](../<nome progetto>ion_market/readme.md)
 - [README Bank](../bank/readme.md)
 

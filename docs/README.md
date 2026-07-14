@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2d6a374 (.)
 # Modulo Activity - Documentazione Completa
@@ -633,6 +634,42 @@ Activity/
 - [Regole Architecture](../Xot/docs/architecture/)
 
 >>>>>>> a1e3a4e (.)
+=======
+# Modulo Activity
+
+## Overview
+
+Il modulo **Activity** fa parte dell'ecosistema Laraxot PTVX.
+
+## Scopo
+
+Questo modulo gestisce [DESCRIZIONE SPECIFICA DA COMPLETARE].
+
+## Struttura
+
+```
+Activity/
+├── app/
+│   ├── Models/
+│   ├── Filament/
+│   └── ...
+├── docs/
+├── lang/
+└── resources/
+```
+
+## Dipendenze
+
+- [Xot Base](../Xot/docs/)
+- [User Module](../User/docs/) (se usa autenticazione)
+- [Tenant Module](../Tenant/docs/) (se multi-tenant)
+
+## Collegamenti
+
+- [Documentazione Root](../../../docs/ACTIVITY_MODULE.md)
+- [Regole Architecture](../Xot/docs/architecture/)
+
+>>>>>>> a1e3a4e0 (.)
 ## Backlinks
 
 - [Indice Moduli](../README.md)
@@ -645,6 +682,7 @@ Activity/
 - [ ] Aggiungere esempi codice
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## AI Workflows
 - [AI Methodologies](./ai-methodologies.md)
@@ -655,3 +693,5 @@ Activity/
 ## AI Workflows
 - [AI Methodologies](./ai-methodologies.md)
 >>>>>>> 2d6a374 (.)
+=======
+>>>>>>> a1e3a4e0 (.)

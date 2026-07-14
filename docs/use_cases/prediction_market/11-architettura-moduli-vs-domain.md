@@ -76,6 +76,7 @@ app/Domain/<nome progetto>ionMarket/
 - [Esempi di modularizzazione](https://github.com/nWidart/laravel-modules)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Indice prediction_market](./readme.md)
 =======
 - [Indice prediction_market](./README.md)
@@ -89,10 +90,13 @@ app/Domain/<nome progetto>ionMarket/
 >>>>>>> a1e3a4e (.)
 =======
 >>>>>>> 2d6a374 (.)
+=======
+>>>>>>> a1e3a4e0 (.)
 - [Indice <nome progetto>ion_market](./readme.md)
 - [Architettura <nome progetto>ion_market](./02_architettura.md)
 - [Best practice <nome progetto>ion_market](./04_best_practice.md)
 - [API <nome progetto>ion_market](./06_api.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Testing <nome progetto>ion_market](./07_test.md)
@@ -102,3 +106,6 @@ app/Domain/<nome progetto>ionMarket/
 =======
 - [Testing <nome progetto>ion_market](./07_test.md)
 >>>>>>> 2d6a374 (.)
+=======
+- [Testing <nome progetto>ion_market](./07_test.md)
+>>>>>>> a1e3a4e0 (.)
