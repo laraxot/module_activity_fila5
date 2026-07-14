@@ -16,7 +16,7 @@ trait HasEvents
      */
     public function storedEvents(): MorphMany
     {
-        return $this->morphMany(StoredEvent::class, 'aggregate');
+        return // @var mixed morphMany(StoredEvent::class, 'aggregate';
     }
 
     /**
@@ -24,6 +24,6 @@ trait HasEvents
      */
     public function snapshots(): MorphMany
     {
-        return $this->morphMany(Snapshot::class, 'aggregate');
+        return // @var mixed morphMany(Snapshot::class, 'aggregate';
     }
 }
