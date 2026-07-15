@@ -1,3 +1,4 @@
+<<<<<<< HEAD:docs/archive/code-quality-analysis.md
 # Code Quality Analysis - Activity Module
 
 ## 🚨 Critical Issues Identified
@@ -368,3 +369,12 @@ public function getActivities(array $filters = []): Collection
 This analysis provides a comprehensive roadmap for improving code quality in the Activity module while maintaining data integrity and performance.
 
 
+=======
+---
+module: theme
+topic: code_quality_analysis
+canonical: ../../../Themes/docs/shared-components/CODE_QUALITY_ANALYSIS.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/CODE_QUALITY_ANALYSIS.md
+>>>>>>> 77d3d692 (.):docs/code_quality_analysis.md
