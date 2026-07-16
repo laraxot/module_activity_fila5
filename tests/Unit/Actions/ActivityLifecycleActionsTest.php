@@ -13,14 +13,14 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 /**
- * @param  array  $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function createActivityLifecycleUser(array $attributes = []): User
 {
-    return (new UserFactory)->createOne($attributes);
+    return (new UserFactory())->createOne($attributes);
 }
 
 test('Activity Lifecycle Actions', function () {
