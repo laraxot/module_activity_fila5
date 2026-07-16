@@ -122,7 +122,6 @@ Thumbs.db
 # DOCUMENTATION CACHE
 # ==============================================
 docs/phpstan/
-docs/cache/
 docs/legacy/
 docs/legacy/**
 
@@ -165,8 +164,6 @@ test_activity_logs.sql
 laravel
 public_html
 tests/coverage
-lang/lang/
-_docs/
 _docs/
 tests/coverage/
 tests/coverage.xml/
@@ -182,15 +179,22 @@ activity_coverage.xml
 *.orig
 *.rej
 *~head
-tests/coverage/
-tests/coverage.xml/
-activity_coverage.xml
-*~head
 agentdb.rvf
-build/
 docs/legacy
-*~head
 .devcontainer/
 docs/archive/
 docs/archived/
-docs/legacy/
+tests/AuditCoverage
+
+# AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
+scripts/
+bashscripts/
+docs/workbench/
+.circleci/
+.claude-audit/
+tests/.claude-audit/
+_bmad-output/
+test-results/
+.kilocode/
+.kiro/
+.ralph/
