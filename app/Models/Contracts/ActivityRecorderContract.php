@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Activity\Contracts;
+namespace Modules\Activity\Models\Contracts;
 
 /**
  * Contract for activity recording across modules.
