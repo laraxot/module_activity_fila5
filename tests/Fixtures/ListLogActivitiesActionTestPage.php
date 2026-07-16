@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Fixtures;
 
-use Filament\Resources\Pages\ListRecords;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
-final class ListLogActivitiesActionTestPage extends ListRecords
+final class ListLogActivitiesActionTestPage extends XotBaseListRecords
 {
     /** @var class-string */
     private static string $resourceClass = ListLogActivitiesActionTestResource::class;
