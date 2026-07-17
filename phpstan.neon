@@ -21,6 +21,8 @@ parameters:
         - '#Static call to instance method Nwidart\\Modules\\Facades\\Module#'
         - '#PHPDoc tag @mixin contains unknown class #'
 
+    reportUnmatchedIgnoredErrors: false
+
     tmpDir: build/phpstan
 
     bootstrapFiles:
