@@ -70,3 +70,7 @@ Il runner, la discovery e la semantica restano Pest. `Assert::assert*()` e' solo
 
 - `cd laravel && ./vendor/bin/phpstan analyse Modules/Activity` passa con `[OK] No errors`.
 - Pest sui file Activity toccati e' stato eseguito, ma l'ambiente locale blocca il bootstrap Laravel con `PDOException SQLSTATE[HY000] [1045] Access denied for user 'forge_mysql_25_1'@'localhost'` prima delle assertion.
+
+## Trait contestuali e firme reali
+
+PHPStan analizza un trait nel contesto di ogni consumer. `CanPaginate::getTablePage()` segue il contratto reale Livewire `HandlesPagination::getPage()`, che espone un valore non tipizzato nei consumer reali: va normalizzato con `FILTER_VALIDATE_INT` e fallback a pagina 1, senza cast o assunzioni contestuali. Nei test il metodo può essere più preciso (`int`), ma il trait deve restare valido in entrambi i contesti. I test anonimi devono riprodurre le firme reali del consumer e i paginator devono mantenere il template del modello Eloquent.
