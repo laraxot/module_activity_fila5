@@ -7,13 +7,13 @@ metadata:
 
 # Regola: 1 Modello = 1 Migration + 1 Seeder — Modulo Activity
 
-## Stato Attuale (2026-06-30)
+## Stato Attuale (2026-07-20)
 
 | Elemento | Count | Note |
 |----------|-------|------|
-| Modelli Concrete | 3 (Activity, Snapshot, StoredEvent) | BaseModel è astratto |
+| Modelli concreti | 4 (Activity, Snapshot, StoredEvent, TestModel) | BaseModel è astratto |
 | Migrations | 15 | Include 3 duplicate + _bak |
-| Seeders | 3 | Corretto |
+| Seeders | 4 | Uno per modello concreto |
 
 ## Aree da Risolvere
 
@@ -32,6 +32,7 @@ metadata:
 - ActivitySeeder ✓
 - SnapshotSeeder ✓
 - StoredEventSeeder ✓
+- TestModelSeeder ✓
 
 ## Piano di Risoluzione
 
@@ -46,6 +47,7 @@ metadata:
 | Activity | activities | ✓ | ✓ | ✅ Completo |
 | Snapshot | snapshots | ✓ | ✓ | ✅ Completo |
 | StoredEvent | stored_events | ✓ | ✓ | ✅ Completo |
+| TestModel | test_models | ✓ | ✓ | ✅ Completo |
 | BaseModel | N/A | ❌ | ❌ | ✅ Base astratto |
 
 ## Policy
@@ -58,3 +60,4 @@ metadata:
 ## Note Architetturali
 - Le policies seguono il modello 1:1 con i modelli
 - BaseModel è astratto (no table)
+- Modelli astratti, contract e policy non richiedono migration, factory o seeder.
