@@ -4,7 +4,7 @@ type: concept
 sources: []
 confidence: high
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-07-20
 tags: [filament, xotbase, zen-pattern, resource]
 related:
   - ../../Xot/docs/wiki/concepts/xotbase-resourceform-zen-pattern.md
@@ -83,9 +83,14 @@ XotBaseResource::table()
 - [ ] No `->label()` calls (LangServiceProvider owns labels)
 - [ ] Safe functions preserved (`use function Safe\...`)
 
+## Known Violation in This Module (verified 2026-07-20)
+
+`Modules/Activity/app/Filament/Resources/ActivityResource.php` currently violates this rule at the form-schema level: it defines `getFormSchema()` directly (duplicating `Schemas/ActivityForm.php` field-for-field) even though `form()` itself is not overridden. See [schemas-tables-pattern § Known Drift](schemas-tables-pattern.md#6-known-drift-in-this-module-verified-2026-07-20) for details. `SnapshotResource` and `StoredEventResource` were not checked in this pass — verify before assuming they are clean.
+
 ## References
 
 - Base class: `Modules/Xot/app/Filament/Resources/XotBaseResource.php`
 - Example: `Modules/Activity/app/Filament/Resources/ActivityResource.php`
 - Related: [[concepts/xotbase-resourceform-zen-pattern]]
 - Related: [[concepts/xotbase-resource-table-zen-pattern]]
+- Related: [schemas-tables-pattern](schemas-tables-pattern.md)
