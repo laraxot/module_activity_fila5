@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
+use Modules\Activity\Database\Factories\TestModelFactory;
 
 /**
  * Test model for Activity module tests.
@@ -29,6 +31,9 @@ use Illuminate\Support\Carbon;
  */
 final class TestModel extends Model
 {
+    /** @use HasFactory<TestModelFactory> */
+    use HasFactory;
+
     protected $table = 'test_models';
 
     protected $fillable = ['name'];
