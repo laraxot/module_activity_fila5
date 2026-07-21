@@ -27,7 +27,7 @@ use Illuminate\Support\Carbon;
  *
  * @mixin \Eloquent
  */
-final class TestModel extends Model
+class TestModel extends Model
 {
     protected $table = 'test_models';
 
