@@ -15,7 +15,7 @@ class ListStoredEvents extends XotBaseListRecords
     protected static string $resource = StoredEventResource::class;
 
     /**
-     * @return array<string, Tables\Columns\Column>
+     * @return array<Tables\Columns\Column>
      */
     public function getTableColumns(): array
     {
