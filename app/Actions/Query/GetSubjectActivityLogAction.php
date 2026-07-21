@@ -19,8 +19,8 @@ class GetSubjectActivityLogAction
      */
     public function execute(string $modelClass, int|string $modelId, int $limit = 500): array
     {
-        /** @var array<int, array<string, mixed>> */
-        return Activity::query()
+        /** @var array<int, array<string, mixed>> $log */
+        $log = Activity::query()
             ->where('subject_type', $modelClass)
             ->where('subject_id', $modelId)
             ->latest()
@@ -29,5 +29,7 @@ class GetSubjectActivityLogAction
             ->map(fn (Activity $activity): array => $activity->toArray())
             ->values()
             ->all();
+
+        return $log;
     }
 }
