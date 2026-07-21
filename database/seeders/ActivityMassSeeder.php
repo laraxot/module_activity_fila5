@@ -156,10 +156,10 @@ class ActivityMassSeeder extends Seeder
             $activityQuery = Activity::query();
             $totalActivities = $activityQuery->count();
 
-            /** @var Builder<Activity> $recentActivitiesQuery */
-            $recentActivitiesQuery = Activity::query()
+            /** @var Builder<Activity> $recentQuery */
+            $recentQuery = Activity::query()
                 ->where('created_at', '>=', Carbon::now()->subDays(7));
-            $recentActivities = $recentActivitiesQuery->count();
+            $recentActivities = $recentQuery->count();
 
             $this->command->info('│ 📝 Attività totali:          '.
             str_pad((string) $totalActivities, 6, ' ', STR_PAD_LEFT).
