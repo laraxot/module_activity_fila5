@@ -10,7 +10,7 @@ use Spatie\QueueableAction\QueueableAction;
 /**
  * Rimuove attributi sensibili prima della persistenza nel log attività.
  */
-final class RedactModelAttributesAction
+class RedactModelAttributesAction
 {
     use QueueableAction;
 
@@ -28,7 +28,9 @@ final class RedactModelAttributesAction
      */
     public function execute(array $attributes): array
     {
-        /** @var array<string, mixed> */
-        return Arr::except($attributes, self::SENSITIVE_KEYS);
+        /** @var array<string, mixed> $redacted */
+        $redacted = Arr::except($attributes, self::SENSITIVE_KEYS);
+
+        return $redacted;
     }
 }
