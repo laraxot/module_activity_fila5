@@ -52,7 +52,7 @@ class ListLogActivitiesAction extends XotBaseAction
         $this->icon('heroicon-o-clock')
             ->color('gray')
             ->url(function (ListRecords $livewire, Model $record): string {
-                /** @var class-string<resource> $resource */
+                /** @var class-string<Resource> $resource */
                 $resource = $livewire->getResource();
 
                 return $resource::getUrl('log-activity', ['record' => $record]);
