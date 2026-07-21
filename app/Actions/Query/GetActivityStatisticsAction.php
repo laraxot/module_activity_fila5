@@ -64,6 +64,7 @@ class GetActivityStatisticsAction
 
     /**
      * @param  Builder<Activity>  $query
+     *
      * @return array<string, int>
      */
     private function countByType(Builder $query): array
