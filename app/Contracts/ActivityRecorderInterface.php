@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Contracts;
 
-use Illuminate\Database\Eloquent\Model;
-
 /**
  * Interface for activity recording across modules.
  * Modules should dispatch ActivityRecorded events instead of calling this directly.
