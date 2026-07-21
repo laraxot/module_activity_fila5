@@ -25,8 +25,8 @@ class RecordSubjectActivityAction
         ?array $properties = null,
         ?string $description = null,
     ): Activity {
-        /** @var Activity */
-        return Activity::create([
+        /** @var Activity $activity */
+        $activity = Activity::create([
             'log_name' => 'default',
             'description' => $description ?? sprintf('%s %s', class_basename($subjectType), $event),
             'subject_type' => $subjectType,
@@ -34,5 +34,7 @@ class RecordSubjectActivityAction
             'event' => $event,
             'properties' => $properties,
         ]);
+
+        return $activity;
     }
 }
