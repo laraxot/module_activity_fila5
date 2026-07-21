@@ -48,7 +48,7 @@ class BaseActivityFactory extends Factory
      */
     public function auth(): static
     {
-        return $this->state(fn (array $attributes) => [
+        return $this->state(fn (): array => [
             'log_name' => 'auth',
             'description' => $this->faker->randomElement([
                 'User logged in',
@@ -64,7 +64,7 @@ class BaseActivityFactory extends Factory
      */
     public function user(): static
     {
-        return $this->state(fn (array $attributes) => [
+        return $this->state(fn (): array => [
             'log_name' => 'user',
             'description' => $this->faker->randomElement([
                 'User created',
