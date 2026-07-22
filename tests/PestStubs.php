@@ -27,7 +27,7 @@ if (! function_exists('livewire')) { // Changed from Pest\Laravel\livewire
     /**
      * Create a new Livewire test helper instance.
      *
-     * @param  array  $params
+     * @param  array<string, mixed>  $params
      * @return Testable<Component>
      */
     function livewire(string $component, array $params = []): Testable
