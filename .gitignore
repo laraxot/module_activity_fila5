@@ -194,3 +194,6 @@ docs/legacy
 docs/archive/
 docs/archived/
 docs/legacy/
+
+# Local vector DB (agent tooling)
+ruvector.db
