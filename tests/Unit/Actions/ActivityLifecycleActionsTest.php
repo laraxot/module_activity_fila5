@@ -16,10 +16,11 @@ use PHPUnit\Framework\Assert;
 uses(\Modules\Activity\Tests\TestCase::class);
 
 /**
- * @param  array  $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function createActivityLifecycleUser(array $attributes = []): User
 {
+    /** @var User */
     return (new UserFactory)->createOne($attributes);
 }
 
