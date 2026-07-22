@@ -2,7 +2,7 @@
 title: second brain — puntatore modulo
 type: reference
 qmd: second brain modulo wiki locale laravel
-updated: 2026-05-21
+updated: 2026-07-22
 ---
 
 # Second brain (modulo)
@@ -21,5 +21,6 @@ Stub **puntatore**: disciplina e link esterni curati stanno nella wiki di proget
 - Guida wiki modulo: [../../../../docs/wiki/how-to/module-wiki-documentation.md](../../../../docs/wiki/how-to/module-wiki-documentation.md)
 - Benchmark lettura esterna (Karpathy, Obsidian, PARA, …): [../../../../docs/wiki/sources/second-brain-external-benchmarks.md](../../../../docs/wiki/sources/second-brain-external-benchmarks.md)
 - **Filament (stack attuale): v5** — non v4. [filament-version.md](./filament-version.md) · policy: [../../../../docs/wiki/memories/filament-version-policy.md](../../../../docs/wiki/memories/filament-version-policy.md) · Xot: [../../Xot/docs/filament-5-laraxot-rules.md](../../Xot/docs/filament-5-laraxot-rules.md)
-- **Stato Sync & QA (2026-07-22)**: PHPStan Livello 9 superato con 0 errori (`[OK] No errors`). Git LFS sincronizzato e push su remote `provtv` e `laraxot` completato (branch `dev`).
+- Push dual-remote: [./wiki/troubleshooting/git-push-dual-remote.md](./wiki/troubleshooting/git-push-dual-remote.md)
+- **Stato Sync & QA (2026-07-22)**: tip `25ac1e70` su `laraxot`+`provtv` (`0 0`). Fix = deepen + merge forward-only (non LFS).
 

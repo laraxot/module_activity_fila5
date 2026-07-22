@@ -3,7 +3,7 @@ title: "Handoff multi-org sync (STORY-003)"
 type: handoff
 tags: [git, multi-org, bmad, story-003]
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-22
 module: "Activity"
 issues:
   - "https://github.com/provtv/module_activity_fila5/issues/15"
@@ -41,3 +41,8 @@ Un tree dirty o un remote dietro/avanti **non** è sincronizzato, anche se l’a
 ## Note owner
 
 Seguire sync multi-org e mantenere docs allineate alla story.
+
+### Sessione push 2026-07-22
+
+Tip `25ac1e70` su `laraxot` + `provtv` (`0 0`). Blocco = **non-fast-forward** / shallow fuorviante, non LFS.  
+Playbook: [wiki/troubleshooting/git-push-dual-remote.md](./wiki/troubleshooting/git-push-dual-remote.md).
