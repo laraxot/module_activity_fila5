@@ -4,8 +4,8 @@ type: index
 module: Activity
 tags: [activity, wiki, index, audit]
 created: 2026-04-15
-updated: 2026-06-13
-qmd: "activity module wiki index audit log second brain"
+updated: 2026-07-22
+qmd: "activity module wiki index audit log second brain git push dual remote"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
 discussions:
@@ -15,6 +15,7 @@ related:
   - ../../../../docs/wiki/bmad/architecture.md
   - ../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
   - ../../docs/wiki/concepts/ai-harness-module-discipline.md
+  - ./troubleshooting/git-push-dual-remote.md
 ---
 
 # Wiki Index — Activity
@@ -44,6 +45,10 @@ related:
 - [schemas-tables-pattern](./concepts/schemas-tables-pattern.md) — separazione Schemas/Tables e auto-discovery di XotBase
 - [phpstan-pest-discipline](./concepts/phpstan-pest-discipline.md) — PHPStan su Activity mantenendo test Pest e `phpstan.neon` immutabile
 
+## Troubleshooting
+
+- [git-push-dual-remote](./troubleshooting/git-push-dual-remote.md) — push `dev` laraxot+provtv: deepen + merge forward-only (tip `25ac1e70`)
+
 ## Entities
 
 _No entities tracked yet._
@@ -63,9 +68,7 @@ _No comparisons synthesized yet._
 
 ---
 
-**Last Updated:** 2026-06-10T22:20:00Z  
-**Total Pages:** 5 (concepts: 4, brainstorm: 1)  
-**Total Raw Sources:** 1  
+**Last Updated:** 2026-07-22  
 **Shared References:** 2
 **Brainstorm Artifacts:** 1 (TestCase Architecture)
 
