@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 final class ListLogActivitiesActionTestResourceSimple
 {
     /**
-     * @param  array  $parameters
+     * @param  array<string, mixed>  $parameters
      */
     public static function getUrl(string $name, array $parameters = []): string
     {
