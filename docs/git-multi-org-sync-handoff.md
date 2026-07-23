@@ -3,7 +3,7 @@ title: "Handoff multi-org sync (STORY-003)"
 type: handoff
 tags: [git, multi-org, bmad, story-003]
 created: 2026-07-21
-updated: 2026-07-22
+updated: 2026-07-23
 module: "Activity"
 issues:
   - "https://github.com/provtv/module_activity_fila5/issues/15"
@@ -46,3 +46,8 @@ Seguire sync multi-org e mantenere docs allineate alla story.
 
 Tip `25ac1e70` su `laraxot` + `provtv` (`0 0`). Blocco = **non-fast-forward** / shallow fuorviante, non LFS.  
 Playbook: [wiki/troubleshooting/git-push-dual-remote.md](./wiki/troubleshooting/git-push-dual-remote.md).
+
+### Caso User 2026-07-23 (unrelated)
+
+`merge-base` vuoto vs un org → STOP. User: laraxot `3ea7273a` OK; provtv unrelated.
+[../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
