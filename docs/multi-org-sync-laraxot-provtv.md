@@ -53,3 +53,12 @@ Canon: [wiki/troubleshooting/git-push-dual-remote.md](./wiki/troubleshooting/git
 `module_user_fila5`: `laraxot` tip `3ea7273a` (`0 0`); `provtv` **merge-base vuoto** → STOP (no merge/force).
 Canon: [../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
 
+### Caso Activity 2026-07-23 (allineato)
+
+Working tree dirty: 2 file docs (`git-multi-org-sync-handoff.md`,
+`multi-org-sync-laraxot-provtv.md`, entrambi aggiornamenti sezione "Caso User" di
+un'altra sessione) → committati (`94e99d77`). Storie correlate, nessuna divergenza:
+solo 1 commit locale non ancora pushato su entrambi i remote. Push riuscito senza
+conflitti: `laraxot dev` e `provtv dev` (`29d5363a..94e99d77`). Stato finale: `0 0`
+su entrambi i remote, working tree pulito.
+
