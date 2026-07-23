@@ -3,7 +3,7 @@ title: "Sincronizzazione multi-organizzazione (laraxot + provtv)"
 type: concept
 tags: [git, sync, multi-org, laraxot, provtv, quality-gates]
 created: "2026-07-21"
-updated: "2026-07-22"
+updated: "2026-07-23"
 related:
   - "../../../bashscripts/tools/prompts/02-gitmodules-sync.md"
 ---
@@ -47,3 +47,9 @@ Niente reset/squash/force per aggirare LFS.
 `laraxot` e `provtv` divergevano (commit paralleli omonimi, SHA diversi).  
 Fix: deepen/unshallow se serve → merge forward-only → tip `25ac1e70` su **entrambi** (`0 0`).  
 Canon: [wiki/troubleshooting/git-push-dual-remote.md](./wiki/troubleshooting/git-push-dual-remote.md).
+
+### Caso User 2026-07-23 (unrelated)
+
+`module_user_fila5`: `laraxot` tip `3ea7273a` (`0 0`); `provtv` **merge-base vuoto** → STOP (no merge/force).
+Canon: [../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
+
