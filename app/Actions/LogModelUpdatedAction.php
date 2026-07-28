@@ -21,7 +21,7 @@ class LogModelUpdatedAction
      */
     public function execute(Model $model): Activity
     {
-        return app(LogActivityAction::class)->execute(
+        return (new LogActivityAction(
             type: 'updated',
             subject: $model,
             description: sprintf('%s was updated', class_basename($model)),
@@ -29,6 +29,6 @@ class LogModelUpdatedAction
                 'old' => $model->getOriginal(),
                 'attributes' => $model->getChanges(),
             ]
-        );
+        ))->execute();
     }
 }
