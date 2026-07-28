@@ -60,7 +60,15 @@ class Snapshot extends SpatieSnapshot
             return is_string($default) ? $default : 'mysql';
         }
 
-        return $this->connection;
+        $connection = $this->connection;
+        if ($connection instanceof \BackedEnum) {
+            return (string) $connection->value;
+        }
+        if ($connection instanceof \UnitEnum) {
+            return $connection->name;
+        }
+
+        return $connection;
     }
 
     /** @var list<string> */
