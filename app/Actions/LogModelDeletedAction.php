@@ -24,11 +24,11 @@ class LogModelDeletedAction
         /** @var array<string, mixed> $properties */
         $properties = $model->toArray();
 
-        return app(LogActivityAction::class)->execute(
+        return (new LogActivityAction(
             type: 'deleted',
             subject: $model,
             description: sprintf('%s was deleted', class_basename($model)),
             properties: $properties
-        );
+        ))->execute();
     }
 }

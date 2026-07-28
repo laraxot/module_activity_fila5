@@ -17,22 +17,18 @@ class LogUserLogoutAction
 {
     use QueueableAction;
 
-<<<<<<< .merge_file_HQCuOV
     public function __construct(
-        public User $user
+        public ?User $user = null
     ) {}
 
-    public function execute(): Activity
-=======
     /**
      * Execute the action.
      */
     public function execute(?User $user = null): Activity
->>>>>>> .merge_file_QF11IM
     {
-        $user = $user ?? Auth::user();
-        
-        return app(LogActivityAction::class)->execute(
+        $user = $user ?? $this->user ?? Auth::user();
+
+        return (new LogActivityAction(
             type: 'logout',
             user: $user,
             description: sprintf('User %s logged out', $user->name ?? 'unknown'),
@@ -40,6 +36,6 @@ class LogUserLogoutAction
                 'ip' => request()->ip(),
                 'user_agent' => request()->userAgent(),
             ]
-        );
+        ))->execute();
     }
 }

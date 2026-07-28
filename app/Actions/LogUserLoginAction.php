@@ -17,22 +17,18 @@ class LogUserLoginAction
 {
     use QueueableAction;
 
-<<<<<<< .merge_file_EEwZtR
     public function __construct(
-        public User $user
+        public ?User $user = null
     ) {}
 
-    public function execute(): Activity
-=======
     /**
      * Execute the action.
      */
     public function execute(?User $user = null): Activity
->>>>>>> .merge_file_9DUINB
     {
-        $user = $user ?? Auth::user();
-        
-        return app(LogActivityAction::class)->execute(
+        $user = $user ?? $this->user ?? Auth::user();
+
+        return (new LogActivityAction(
             type: 'login',
             user: $user,
             description: sprintf('User %s logged in', $user->name ?? 'unknown'),
@@ -40,6 +36,6 @@ class LogUserLoginAction
                 'ip' => request()->ip(),
                 'user_agent' => request()->userAgent(),
             ]
-        );
+        ))->execute();
     }
 }
