@@ -160,11 +160,7 @@ tests/AuditCoverage/
 phpinsights.php
 rector.php
 phpstan*
-<<<<<<< .merge_file_0QHeo7
-=======
-=======
-tests/coverage/
-tests/coverage.xml/
-activity_coverage.xml
->>>>>>> 9cddd9bb (.)
->>>>>>> .merge_file_eLrAcM
+
+# MODULE ROOT FORBIDDEN DIRS
+workbench
+docs/**/*-[0-9].md
