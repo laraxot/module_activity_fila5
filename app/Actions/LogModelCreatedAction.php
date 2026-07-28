@@ -24,11 +24,11 @@ class LogModelCreatedAction
         /** @var array<string, mixed> $properties */
         $properties = $model->toArray();
 
-        return app(LogActivityAction::class)->execute(
+        return (new LogActivityAction(
             type: 'created',
             subject: $model,
             description: sprintf('%s was created', class_basename($model)),
             properties: $properties
-        );
+        ))->execute();
     }
 }
