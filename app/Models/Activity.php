@@ -39,6 +39,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property-read Model|null $causer
  * @property-read Collection<int, mixed> $changes
  * @property-read Model|null $subject
+ *
  * @method static ActivityFactory factory($count = null, $state = [])
  * @method static Builder<static>|Activity forBatch(string $batchUuid)
  * @method static Builder<static>|Activity forEvent(string $event)
@@ -102,6 +103,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static Builder<static>|Activity rightJoin(string $table, string $first, string $operator = null, string $second = null)
  * @method static Builder<static>|Activity crossJoin(string $table)
  * @method static Builder<static>|Activity causedBy(Model $causer)
+ *
  * @mixin \Eloquent
  */
 class Activity extends SpatieActivity
@@ -145,7 +147,7 @@ class Activity extends SpatieActivity
     /**
      * Scope activities by batch UUID.
      *
-     * @param Builder<static> $query
+     * @param  Builder<static>  $query
      * @return Builder<static>
      */
     public function scopeForBatch(Builder $query, string $batchUuid): Builder
@@ -156,7 +158,7 @@ class Activity extends SpatieActivity
     /**
      * Scope activities that belong to any batch.
      *
-     * @param Builder<static> $query
+     * @param  Builder<static>  $query
      * @return Builder<static>
      */
     public function scopeHasBatch(Builder $query): Builder

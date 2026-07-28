@@ -1,6 +1,6 @@
 ---
 module: theme
-topic: event-sourcing
+topic: event_sourcing
 canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
 ---
 
