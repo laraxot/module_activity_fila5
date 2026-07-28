@@ -12,8 +12,6 @@ use Illuminate\Support\Facades\Log;
 use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
 use Modules\User\Models\User;
-use Modules\Xot\Actions\Cast\SafeIntCastAction;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -269,7 +267,7 @@ class ActivityLogger
                         return [];
                     }
 
-                    return [SafeStringCastAction::cast($item->event) => SafeIntCastAction::cast($item->count)];
+                    return [(string) $item->event => (int) $item->count];
                 })->toArray();
 
                 return $byType;
