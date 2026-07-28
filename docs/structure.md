@@ -1,7 +1,11 @@
 # Modulo Activity
 
+<<<<<<< HEAD
 Data: 2025-04-23 19:09:55
 Data: [DATE] 19:09:55
+=======
+
+>>>>>>> 66808152 (.)
 
 ## Informazioni generali
 
