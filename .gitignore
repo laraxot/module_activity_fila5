@@ -131,6 +131,7 @@ test_activity_logs.sql
 *.fila2
 laravel
 public_html
+<<<<<<< HEAD
 tests/coverage
 tests/coverage/
 tests/coverage.xml/
@@ -159,3 +160,8 @@ tests/AuditCoverage/
 phpinsights.php
 rector.php
 phpstan*
+=======
+tests/coverage/
+tests/coverage.xml/
+activity_coverage.xml
+>>>>>>> 9cddd9bb (.)
