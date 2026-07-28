@@ -36,10 +36,10 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
- *
  * @property-read Model|null $causer
  * @property-read Collection<int, mixed> $changes
  * @property-read Model|null $subject
+ *
  * @method static ActivityFactory factory($count = null, $state = [])
  * @method static Builder<static>|Activity forBatch(string $batchUuid)
  * @method static Builder<static>|Activity forEvent(string $event)
@@ -103,6 +103,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static Builder<static>|Activity rightJoin(string $table, string $first, string $operator = null, string $second = null)
  * @method static Builder<static>|Activity crossJoin(string $table)
  * @method static Builder<static>|Activity causedBy(Model $causer)
+ *
  * @mixin \Eloquent
  */
 class Activity extends SpatieActivity
@@ -131,30 +132,6 @@ class Activity extends SpatieActivity
     ];
 
     /**
-     * Scope activities by batch UUID.
-     *
-     * @param Builder<static> $query
-     *
-     * @return Builder<static>
-     */
-    public function scopeForBatch(Builder $query, string $batchUuid): Builder
-    {
-        return $query->where('batch_uuid', $batchUuid);
-    }
-
-    /**
-     * Scope activities that belong to any batch.
-     *
-     * @param Builder<static> $query
-     *
-     * @return Builder<static>
-     */
-    public function scopeHasBatch(Builder $query): Builder
-    {
-        return $query->whereNotNull('batch_uuid');
-    }
-
-    /**
      * Get the attributes that should be cast.
      *
      * @return array<string, string>
@@ -165,6 +142,28 @@ class Activity extends SpatieActivity
             'properties' => SchemalessAttributes::class,
             'attribute_changes' => 'collection',
         ];
+    }
+
+    /**
+     * Scope activities by batch UUID.
+     *
+     * @param  Builder<static>  $query
+     * @return Builder<static>
+     */
+    public function scopeForBatch(Builder $query, string $batchUuid): Builder
+    {
+        return $query->where('batch_uuid', $batchUuid);
+    }
+
+    /**
+     * Scope activities that belong to any batch.
+     *
+     * @param  Builder<static>  $query
+     * @return Builder<static>
+     */
+    public function scopeHasBatch(Builder $query): Builder
+    {
+        return $query->whereNotNull('batch_uuid');
     }
 
     // NOTE

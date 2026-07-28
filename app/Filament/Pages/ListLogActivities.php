@@ -128,6 +128,7 @@ abstract class ListLogActivities extends XotBasePage
             throw new InvalidArgumentException('Query must be an Eloquent Builder');
         }
 
+        /** @var Builder<Activity> $builderQuery */
         $paginated = $this->paginateQuery($builderQuery);
 
         if (! $paginated instanceof LengthAwarePaginator) {
@@ -251,7 +252,6 @@ abstract class ListLogActivities extends XotBasePage
             ->filter(static fn ($field): bool => $field instanceof Field)
             ->mapWithKeys(
                 /** @param Field $field
-                 *
                  * @return array<string, string>
                  */
                 static function (Component $field): array {
@@ -328,15 +328,13 @@ abstract class ListLogActivities extends XotBasePage
      */
     private function getOldProperties(Activity $activity): array
     {
-        $rawOld = data_get($activity, 'properties.old');
+        $old = data_get($activity, 'properties.old');
 
-        if (! \is_array($rawOld)) {
+        if (! \is_array($old)) {
             throw new Exception('Invalid properties format in activity log');
         }
 
         /** @var array<string, mixed> $old */
-        $old = $rawOld;
-
         return $old;
     }
 }

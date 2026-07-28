@@ -10,10 +10,11 @@ use Spatie\QueueableAction\QueueableAction;
 /**
  * Rimuove attributi sensibili prima della persistenza nel log attività.
  */
-class RedactModelAttributesAction
+final class RedactModelAttributesAction
 {
     use QueueableAction;
 
+    /** @var list<string> */
     private const SENSITIVE_KEYS = [
         'password',
         'remember_token',
@@ -23,14 +24,11 @@ class RedactModelAttributesAction
 
     /**
      * @param  array<string, mixed>  $attributes
-     *
      * @return array<string, mixed>
      */
     public function execute(array $attributes): array
     {
-        /** @var array<string, mixed> $redacted */
-        $redacted = Arr::except($attributes, self::SENSITIVE_KEYS);
-
-        return $redacted;
+        /** @var array<string, mixed> */
+        return Arr::except($attributes, self::SENSITIVE_KEYS);
     }
 }
