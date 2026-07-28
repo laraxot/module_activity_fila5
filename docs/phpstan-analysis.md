@@ -1,5 +1,6 @@
 # PHPStan Analysis - Activity Module
 
+**Data**: 2025-10-10T12:40:18+02:00
 **Livello**: MAX (9)
 **Files Analizzati**: 68 (app + tests)
 
@@ -10,7 +11,7 @@
 ### Files Ripristinati
 Risolti merge conflict in seguito a operazioni Git incomplete:
 
-1. **ActivityForm.php** - Rimossi marker `<<<<<<< HEAD`, `=======`, `>>>>>>> d4098eb`
+1. **ActivityForm.php** - Rimossi marker  `=======`, `>>>>>>> d4098eb`
 2. **ListLogActivities.php** - Risolti 2 conflitti in `sendRestoreSuccessNotification()` e `sendRestoreFailureNotification()`
 3. **Activity.php** - Rimosso duplicato `__construct()` e risolto conflitto in `$fillable`
 4. **SnapshotForm.php** - Ricreato file con struttura corretta

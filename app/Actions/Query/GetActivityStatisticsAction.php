@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Activity\Actions\Query;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Modules\Activity\Models\Activity;
 use Modules\User\Models\User;
@@ -64,7 +65,6 @@ class GetActivityStatisticsAction
 
     /**
      * @param  Builder<Activity>  $query
-     *
      * @return array<string, int>
      */
     private function countByType(Builder $query): array
@@ -72,7 +72,7 @@ class GetActivityStatisticsAction
         /** @var Builder<Activity> $clonedQuery */
         $clonedQuery = $query->clone();
 
-        /** @var \Illuminate\Support\Collection<int, object{event: string, count: int}> $results */
+        /** @var Collection<int, object{event: string, count: int}> $results */
         $results = $clonedQuery
             ->selectRaw('event, COUNT(*) as count')
             ->groupBy('event')
