@@ -195,8 +195,4 @@ Applicare pattern NO RefreshDatabase a tutti i test Activity:
 **Status**: ⚠️  COMPLETATO ma esecuzione test bloccata da conflitti Git
 **Pattern**: ✅ Manual Cleanup con UUID Isolation
 **Documentazione**: ✅ COMPLETA
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 27 Ottobre 2025
-=======
-**
->>>>>>> 66808152 (.)
