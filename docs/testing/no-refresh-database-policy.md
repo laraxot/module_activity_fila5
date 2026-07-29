@@ -478,4 +478,12 @@ fi
 
 **Policy Status**: 🔴 OBBLIGATORIA
 **Eccezioni**: Nessuna per modulo Activity (Event Sourcing)
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 27 Ottobre 2025
+=======
+<<<<<<< HEAD
+**Ultimo aggiornamento**: 27 Ottobre 2025
+=======
+**
+>>>>>>> 66808152 (.)
+>>>>>>> provtv/dev
