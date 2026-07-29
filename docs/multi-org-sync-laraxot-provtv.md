@@ -3,7 +3,11 @@ title: "Sincronizzazione multi-organizzazione (laraxot + provtv)"
 type: concept
 tags: [git, sync, multi-org, laraxot, provtv, quality-gates]
 created: "2026-07-21"
+<<<<<<< HEAD
 updated: "2026-07-23"
+=======
+updated: "2026-07-29"
+>>>>>>> c1aeaea (.)
 related:
   - "../../../bashscripts/tools/prompts/02-gitmodules-sync.md"
 ---
@@ -34,6 +38,7 @@ sincronizzare **tutti** i remote elencati, non solo `origin`/`provtv`. Mai forza
 push distruttivi su storie scollegate: preferire `--allow-unrelated-histories` e
 revisione manuale dei conflitti reali.
 
+<<<<<<< HEAD
 ### Playbook push dual-remote (2026-07-22, canon UI)
 
 Se `unpack failed` / `did not receive expected object` → `git push --no-thin`.
@@ -43,6 +48,14 @@ Dettaglio (SSoT): [../UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.
 Niente reset/squash/force per aggirare LFS.
 
 ### Push Activity 2026-07-22 — divergenza (non LFS)
+=======
+### Playbook push dual-remote (forward-only)
+
+Se `unpack failed` / `did not receive expected object` → `git push --no-thin`.
+Niente reset/squash/force: sempre forward-only.
+
+
+>>>>>>> c1aeaea (.)
 
 `laraxot` e `provtv` divergevano (commit paralleli omonimi, SHA diversi).  
 Fix: deepen/unshallow se serve → merge forward-only → tip `25ac1e70` su **entrambi** (`0 0`).  
