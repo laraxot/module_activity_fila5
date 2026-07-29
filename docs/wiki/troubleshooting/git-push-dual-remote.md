@@ -14,7 +14,10 @@ related:
   - "../../multi-org-sync-laraxot-provtv.md"
   - "../../git-multi-org-sync-handoff.md"
   - "../../second-brain.md"
+<<<<<<< HEAD
   - "../../../../UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md"
+=======
+>>>>>>> c1aeaea (.)
 ---
 
 # Git push dual-remote — modulo Activity
@@ -74,7 +77,10 @@ git rev-list --left-right --count provtv/dev...HEAD    # 0 0
 | `laraxot/dev` | `25ac1e70` |
 | `provtv/dev` | `25ac1e70` |
 
+<<<<<<< HEAD
 Verifica sessione: entrambi **Everything up-to-date**. Niente LFS in questo modulo (`git lfs ls-files` = 0). Per LFS vedi playbook UI.
+=======
+>>>>>>> c1aeaea (.)
 
 ### Cosa non fare
 
@@ -87,4 +93,7 @@ Verifica sessione: entrambi **Everything up-to-date**. Niente LFS in questo modu
 
 - Multi-org: [../../multi-org-sync-laraxot-provtv.md](../../multi-org-sync-laraxot-provtv.md)
 - Handoff: [../../git-multi-org-sync-handoff.md](../../git-multi-org-sync-handoff.md)
+<<<<<<< HEAD
 - LFS / `--no-thin` (UI SSoT): [../../../../UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md](../../../../UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md)
+=======
+>>>>>>> c1aeaea (.)

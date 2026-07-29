@@ -44,7 +44,10 @@ Seguire sync multi-org e mantenere docs allineate alla story.
 
 ### Sessione push 2026-07-22
 
+<<<<<<< HEAD
 Tip `25ac1e70` su `laraxot` + `provtv` (`0 0`). Blocco = **non-fast-forward** / shallow fuorviante, non LFS.  
+=======
+>>>>>>> c1aeaea (.)
 Playbook: [wiki/troubleshooting/git-push-dual-remote.md](./wiki/troubleshooting/git-push-dual-remote.md).
 
 ### Caso User 2026-07-23 (unrelated)
