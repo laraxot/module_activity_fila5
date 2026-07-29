@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Best Practices – Activity
 
 ## Principi DRY/KISS
@@ -17,12 +16,3 @@
 ## Documentazione
 - Aggiorna `docs/INDEX.md` con nuovi modelli e relazioni.
 - Collega a `Projects` e `Tasks` per contesto operativo.
-=======
----
-module: theme
-topic: best-practices
-canonical: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
->>>>>>> provtv/dev

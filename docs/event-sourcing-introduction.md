@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Event Sourcing in `saluteora`
 
 ## Introduction to Event Sourcing
@@ -148,12 +147,3 @@ public function store(Request $request)
 - [Larabank Examples](https://github.com/spatie/larabank-traditional)
 
 This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `saluteora`, ensuring full traceability and compliance with healthcare standards.
-=======
----
-module: theme
-topic: event-sourcing-introduction
-canonical: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
->>>>>>> provtv/dev

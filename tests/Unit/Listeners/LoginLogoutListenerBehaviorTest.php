@@ -28,7 +28,7 @@ test('logout listener returns early when event has no user', function (): void {
     $listener = new LogoutListener;
     $user = new User;
     $event = new Logout('web', $user);
-    $userProperty = new \ReflectionClass(Logout::class)->getProperty('user');
+    $userProperty = (new \ReflectionClass(Logout::class))->getProperty('user');
     $userProperty->setValue($event, null);
 
     $before = Activity::query()->count();
