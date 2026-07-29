@@ -131,6 +131,10 @@ test_activity_logs.sql
 *.fila2
 laravel
 public_html
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> provtv/dev
 tests/coverage
 tests/coverage/
 tests/coverage.xml/

@@ -183,5 +183,16 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 5. **Gdpr** - Compliance privacy ✅ Completo
 6. **Xot** - Framework base ✅ Completo
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa sistema SaluteOra: 150+ modelli, 14 moduli*
+=======
+<<<<<<< HEAD:docs/modelli_factory_seeder_analisi.md
+*Ultimo aggiornamento: Gennaio 2025*
+*Analisi completa sistema SaluteOra: 150+ modelli, 14 moduli*
+=======
+*
+*Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
+*Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
+>>>>>>> 66808152 (.):docs/modelli-factory-seeder-analisi-1.md
+>>>>>>> provtv/dev

@@ -15,8 +15,18 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 ### 2. .env.testing
 
 - `.env.testing` è uguale a `.env` tranne per i nomi database
+<<<<<<< HEAD
 - I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)
 - Le variabili `DB_CONNECTION`, `DB_DATABASE` **NON** devono essere sovrascritte in phpunit.xml
+=======
+<<<<<<< HEAD
+- I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)
+- Le variabili `DB_CONNECTION`, `DB_DATABASE` **NON** devono essere sovrascritte in phpunit.xml
+=======
+- I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
+- Evitare override distruttivi in phpunit.xml che puntano a database non-test
+>>>>>>> a21dc33d (.)
+>>>>>>> provtv/dev
 - Laravel carica `.env.testing` quando `APP_ENV=testing`
 
 ### 3. DatabaseTransactions
@@ -100,4 +110,8 @@ tests/
 - [testing-errors-fixes](testing-errors-fixes.md) - Errori risolti e correzioni
 - [testing-rules](testing-rules.md)
 - [testing-strategy-implementation](testing-strategy-implementation.md)
+<<<<<<< HEAD
 - [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
+=======
+- [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
+>>>>>>> provtv/dev

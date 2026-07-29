@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> provtv/dev
 ---
 module: theme
 topic: boost_skill_fix_summary
@@ -5,9 +9,16 @@ canonical: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Module
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
+<<<<<<< HEAD
 # Boost Skill Fix Summary - Activity Module
 
 **Date**: 2026-03-02
+=======
+=======
+# Boost Skill Fix Summary - Activity Module
+
+**Date**: 2026-03-02  
+>>>>>>> provtv/dev
 **Module**: Activity (Activity Tracking & Logging)
 
 ## Issue Overview
@@ -38,3 +49,7 @@ See `/docs/BOOST_SKILL_SOLUTION_PLAN.md` for complete solution details.
 - Activity reports
 - Module integration
 
+<<<<<<< HEAD
+=======
+>>>>>>> 9cddd9bb (.)
+>>>>>>> provtv/dev
