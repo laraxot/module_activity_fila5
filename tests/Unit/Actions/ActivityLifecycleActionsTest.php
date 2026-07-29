@@ -22,12 +22,12 @@ function createActivityLifecycleUser(array $attributes = []): User
     return activityCreateUser($attributes);
 }
 
-test('Activity Lifecycle Actions', function () {
+describe('Activity Lifecycle Actions', function () {
 
     test('can log model creation via LogModelCreatedAction', function () {
         $user = createActivityLifecycleUser(['name' => 'New User']);
-        $action = new LogModelCreatedAction(model: $user);
-        $activity = $action->execute();
+        $action = new LogModelCreatedAction;
+        $activity = $action->execute($user);
 
         Assert::assertSame('created', $activity->log_name);
         Assert::assertSame($user->id, $activity->subject_id);
@@ -41,8 +41,8 @@ test('Activity Lifecycle Actions', function () {
         // Note: in memory changes only for this test, as LogModelUpdatedAction uses getChanges()
         $user->syncChanges();
 
-        $action = new LogModelUpdatedAction(model: $user);
-        $activity = $action->execute();
+        $action = new LogModelUpdatedAction;
+        $activity = $action->execute($user);
 
         Assert::assertSame('updated', $activity->log_name);
         Assert::assertSame($user->id, $activity->subject_id);
@@ -51,8 +51,8 @@ test('Activity Lifecycle Actions', function () {
 
     test('can log model deletion via LogModelDeletedAction', function () {
         $user = createActivityLifecycleUser();
-        $action = new LogModelDeletedAction(model: $user);
-        $activity = $action->execute();
+        $action = new LogModelDeletedAction;
+        $activity = $action->execute($user);
 
         Assert::assertSame('deleted', $activity->log_name);
         Assert::assertSame($user->id, $activity->subject_id);
