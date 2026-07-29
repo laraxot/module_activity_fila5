@@ -131,6 +131,7 @@ test_activity_logs.sql
 *.fila2
 laravel
 public_html
+<<<<<<< HEAD
 tests/coverage
 tests/coverage/
 tests/coverage.xml/
@@ -158,3 +159,8 @@ tests/AuditCoverage/
 # Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
 phpinsights.php
 rector.php
+phpstan*
+
+# MODULE ROOT FORBIDDEN DIRS
+workbench
+docs/**/*-[0-9].md
