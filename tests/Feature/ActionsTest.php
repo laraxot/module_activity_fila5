@@ -107,8 +107,8 @@ describe('LogActivityAction', function (): void {
 describe('LogModelCreatedAction', function (): void {
     test('logs model creation', function (): void {
         $model = activityCreateUser();
-        $action = new LogModelCreatedAction(model: $model);
-        $activity = $action->execute();
+        $action = new LogModelCreatedAction;
+        $activity = $action->execute($model);
 
         Assert::assertSame('created', $activity->event);
         Assert::assertSame($model->id, $activity->subject_id);
