@@ -118,5 +118,15 @@ activity()
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Prossimo check**: Sprint Planning
+=======
+<<<<<<< HEAD
+**Ultimo aggiornamento**: 27 Ottobre 2025
+**Prossimo check**: Sprint Planning
+=======
+**
+**Prossimo check**: Sprint Planning
+>>>>>>> 66808152 (.)
+>>>>>>> provtv/dev

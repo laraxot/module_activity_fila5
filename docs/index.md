@@ -1,7 +1,17 @@
 # Activity Module Documentation
 
+<<<<<<< HEAD
 ## Overview
 The Activity module provides comprehensive activity logging and tracking functionality for the Laraxot system. It records user actions, system events, and business operations to enable audit trails, analytics, and monitoring.
+=======
+<<<<<<< HEAD
+## Overview
+The Activity module provides comprehensive activity logging and tracking functionality for the Laraxot system. It records user actions, system events, and business operations to enable audit trails, analytics, and monitoring.
+=======
+**
+**Status**: Active Development
+>>>>>>> 66808152 (.)
+>>>>>>> provtv/dev
 
 ## Key Features
 - **Activity Logging**: Automatic logging of user and system activities
@@ -67,4 +77,8 @@ The module can be configured through the `config/activity.php` file:
 Common issues and solutions:
 - Database performance with large activity logs
 - Missing activity entries
+<<<<<<< HEAD
 - Configuration issues
+=======
+- Configuration issues
+>>>>>>> provtv/dev
