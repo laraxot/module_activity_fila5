@@ -24,8 +24,6 @@ class ActivityLogger
     use QueueableAction;
 
     /**
-     * Log activity.
-     *
      * @param  array<string, mixed>|null  $properties
      */
     public function log(
@@ -74,9 +72,9 @@ class ActivityLogger
      */
     public function created(Model $model, ?User $user = null): Activity
     {
-        $action = new LogModelCreatedAction($model, $user);
+        $action = new LogModelCreatedAction;
 
-        return $action->execute();
+        return $action->execute($model);
     }
 
     /**
@@ -84,9 +82,9 @@ class ActivityLogger
      */
     public function updated(Model $model, ?User $user = null): Activity
     {
-        $action = new LogModelUpdatedAction($model, $user);
+        $action = new LogModelUpdatedAction;
 
-        return $action->execute();
+        return $action->execute($model);
     }
 
     /**
@@ -94,9 +92,9 @@ class ActivityLogger
      */
     public function deleted(Model $model, ?User $user = null): Activity
     {
-        $action = new LogModelDeletedAction($model, $user);
+        $action = new LogModelDeletedAction;
 
-        return $action->execute();
+        return $action->execute($model);
     }
 
     /**
@@ -104,9 +102,9 @@ class ActivityLogger
      */
     public function login(User $user): Activity
     {
-        $action = new LogUserLoginAction($user);
+        $action = new LogUserLoginAction;
 
-        return $action->execute();
+        return $action->execute($user);
     }
 
     /**
@@ -114,14 +112,12 @@ class ActivityLogger
      */
     public function logout(User $user): Activity
     {
-        $action = new LogUserLogoutAction($user);
+        $action = new LogUserLogoutAction;
 
-        return $action->execute();
+        return $action->execute($user);
     }
 
     /**
-     * Log custom event.
-     *
      * @param  array<string, mixed>|null  $properties
      */
     public function custom(
