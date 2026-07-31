@@ -4,32 +4,38 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Actions;
 
+use Illuminate\Support\Facades\Auth;
 use Modules\Activity\Models\Activity;
 use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
- * Log User Login Action
- *
- * Logs when a user logs in using Queueable Actions
+ * Log User Login Action.
+ * Optimized for Laraxot architecture.
  */
 class LogUserLoginAction
 {
     use QueueableAction;
 
     public function __construct(
-        public User $user
+        public ?User $user = null
     ) {}
 
-    public function execute(): Activity
+    /**
+     * Execute the action.
+     */
+    public function execute(?User $user = null): Activity
     {
-        $action = new LogActivityAction(
-            type: 'login',
-            user: $this->user,
-            subject: $this->user,
-            description: 'User logged in'
-        );
+        $user = $user ?? $this->user ?? Auth::user();
 
-        return $action->execute();
+        return (new LogActivityAction(
+            type: 'login',
+            user: $user,
+            description: sprintf('User %s logged in', $user->name ?? 'unknown'),
+            properties: [
+                'ip' => request()->ip(),
+                'user_agent' => request()->userAgent(),
+            ]
+        ))->execute();
     }
 }

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Listeners;
+
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Support\Str;
 use Modules\Activity\Listeners\LoginListener;
@@ -12,7 +13,7 @@ use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('login listener handle executes without side effects', function (): void {
     $listener = new LoginListener;
@@ -28,7 +29,7 @@ test('logout listener returns early when event has no user', function (): void {
     $listener = new LogoutListener;
     $user = new User;
     $event = new Logout('web', $user);
-    $userProperty = new \ReflectionClass(Logout::class)->getProperty('user');
+    $userProperty = (new \ReflectionClass(Logout::class))->getProperty('user');
     $userProperty->setValue($event, null);
 
     $before = Activity::query()->count();
