@@ -219,16 +219,16 @@ class PatientAggregateTest extends TestCase
     public function it_can_register_a_patient()
     {
         $patientId = 'patient-123';
-
+        
         $aggregate = PatientAggregate::retrieve($patientId);
-
+        
         $aggregate->registerPatient(
             patientId: $patientId,
             firstName: 'John',
             lastName: 'Doe',
             email: 'john@example.com'
         )->persist();
-
+        
         $this->assertDatabaseHas('stored_events', [
             'event_class' => PatientRegistered::class,
             'aggregate_uuid' => $patientId
@@ -243,7 +243,7 @@ class PatientAggregateTest extends TestCase
 class PatientProjectorTest extends TestCase
 {
     use RefreshProjection;
-
+    
     /** @test */
     public function it_projects_patient_registration()
     {
@@ -255,9 +255,9 @@ class PatientProjectorTest extends TestCase
             email: 'jane@example.com',
             registeredAt: now()
         );
-
+        
         event($event);
-
+        
         $this->assertDatabaseHas('patients', [
             'id' => $patientId,
             'email' => 'jane@example.com',
@@ -277,10 +277,3 @@ These examples demonstrate how event sourcing can be applied to various aspects 
 4. **Understandable**: The business logic is expressed in terms of domain events
 
 Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.
----
-module: theme
-topic: event-sourcing-examples
-canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
