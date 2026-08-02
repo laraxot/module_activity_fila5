@@ -27,7 +27,7 @@ files = [
     'Modules/User/tests/Unit/Rules/RulesTest.php',
 ]
 
-base = '/var/www/_bases/base_fixcity_fila5/laravel/'
+base = '/var/www/_bases/base_ptvx_fila5/laravel/'
 fixed = 0
 for rel in files:
     path = base + rel
