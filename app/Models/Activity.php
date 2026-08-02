@@ -12,8 +12,10 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 
 class Activity extends SpatieActivity
-{
-    use HasXotFactory;
+{/**
+ * @phpstan-use HasXotFactory<\Modules\Activity\Database\Factories\ActivityFactory, Activity>
+ */
+use HasXotFactory;
 
     /** @var string */
     protected $connection = 'activity';
