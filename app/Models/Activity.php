@@ -6,16 +6,22 @@ namespace Modules\Activity\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Collection;
 use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Spatie\Activitylog\Models\Activity as SpatieActivity;
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 
-class Activity extends SpatieActivity
-{/**
- * @phpstan-use HasXotFactory<\Modules\Activity\Database\Factories\ActivityFactory, Activity>
+/**
+ * @property Collection<string, mixed>|null $properties
+ * @property Collection<int, mixed> $attribute_changes
  */
-use HasXotFactory;
+class Activity extends SpatieActivity
+{
+    /**
+     * @phpstan-use HasXotFactory<ActivityFactory, Activity>
+     */
+    use HasXotFactory;
 
     /** @var string */
     protected $connection = 'activity';
@@ -45,11 +51,19 @@ use HasXotFactory;
         ];
     }
 
+    /**
+     * @param  Builder<self>  $query
+     * @return Builder<self>
+     */
     public function scopeForBatch(Builder $query, string $batchUuid): Builder
     {
         return $query->where('batch_uuid', $batchUuid);
     }
 
+    /**
+     * @param  Builder<self>  $query
+     * @return Builder<self>
+     */
     public function scopeHasBatch(Builder $query): Builder
     {
         return $query->whereNotNull('batch_uuid');
