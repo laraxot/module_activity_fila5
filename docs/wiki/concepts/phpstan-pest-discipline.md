@@ -7,10 +7,10 @@ created: 2026-06-10
 updated: 2026-06-13
 qmd: "Activity phpstan pest discipline requirePage createUnitMock skipTest namespace uses fqcn"
 issues:
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/328"
+  - "https://github.com/laraxot/platform/issues/328"
   - "https://github.com/laraxot/module_activity_fila5/issues/15"
 discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/329"
+  - "https://github.com/laraxot/platform/discussions/329"
   - "https://github.com/laraxot/module_activity_fila5/discussions/16"
 related:
   - ../../../../../../docs/wiki/rules/phpstan-pest-tests-stay-pest.md

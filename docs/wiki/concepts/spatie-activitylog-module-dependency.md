@@ -6,9 +6,9 @@ created: 2026-06-06
 updated: 2026-06-06
 qmd: "activity spatie laravel activitylog module composer dependency audit trail root never"
 issues:
-  - "https://github.com/laraxot/base_techplanner_fila5/issues/11"
+  - ""
 discussions:
-  - "https://github.com/laraxot/base_techplanner_fila5/discussions/12"
+  - ""
 related:
   - ../../../../../../docs/wiki/rules/composer-module-dependency-go.md
   - ./activity-domain-focus.md
@@ -58,8 +58,8 @@ ls laravel/vendor/spatie/laravel-activitylog
 
 | Tipo | URL |
 |------|-----|
-| Issue | https://github.com/laraxot/base_techplanner_fila5/issues/11 |
-| Discussion | https://github.com/laraxot/base_techplanner_fila5/discussions/12 |
+| Issue |  |
+| Discussion |  |
 
 ## Collegamenti
 

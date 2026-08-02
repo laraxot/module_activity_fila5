@@ -32,7 +32,7 @@ related:
 
 1. **Pest green** — suite `tests/Unit/Actions` + feature con DB test
 2. **Coverage Actions** — `ActivityLogger`, `Log*Action` ≥80% linee critiche
-3. **Hook dominio Fixcity** — log automatico su ticket workflow
+3. **Hook dominio Ptvx** — log automatico su ticket workflow
 4. **Filament** — resource Activity read-only per admin
 
 ## Regole
