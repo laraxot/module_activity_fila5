@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\Activity\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Collection;
 use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Spatie\Activitylog\Models\Activity as SpatieActivity;
@@ -16,7 +13,6 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 
 class Activity extends SpatieActivity
 {
-    /** @phpstan-use HasXotFactory<\Modules\Activity\Database\Factories\ActivityFactory, Activity> */
     use HasXotFactory;
 
     /** @var string */
