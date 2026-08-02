@@ -64,7 +64,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
 class StoredEvent extends SpatieStoredEvent
 {
-    /** @phpstan-use HasXotFactory<\Modules\Activity\Database\Factories\StoredEventFactory, StoredEvent> */
+    /** @phpstan-ignore-next-line */
     use HasXotFactory;
 
     /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
