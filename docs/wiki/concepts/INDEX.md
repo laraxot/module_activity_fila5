@@ -7,9 +7,9 @@ created: 2026-05-11
 updated: 2026-06-10
 qmd: "Activity concepts index phpstan pest discipline"
 issues:
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/328"
+  - "https://github.com/laraxot/platform/issues/328"
 discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/329"
+  - "https://github.com/laraxot/platform/discussions/329"
 ---
 
 # Activity Module - concepts Index

@@ -6,12 +6,12 @@ created: 2026-07-13
 updated: 2026-07-13
 qmd: "Activity module phpstan neon tests PestFunctionBridge ListLogActivities normalizeTranslatable"
 issues:
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/372"
+  - "https://github.com/laraxot/platform/issues/372"
 discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
+  - "https://github.com/laraxot/platform/discussions/273"
 related:
   - phpstan-pest-discipline.md
-  - ../../../../Xot/docs/wiki/concepts/fixcity-data-sqlite-pest-bootstrap.md
+  - ../../../../Xot/docs/wiki/concepts/laraxot-data-sqlite-pest-bootstrap.md
 ---
 
 # PHPStan Activity — config modulo e test
@@ -52,4 +52,4 @@ cd laravel/Modules/Activity && php -d memory_limit=2048M ../../vendor/bin/phpsta
 
 ## Pest
 
-Test policy/DB possono fallire se `activity_log` o permessi Spatie non presenti su `fixcity_data.sqlite` — vedi bootstrap Xot `assertFixcitySqliteReadyForTesting()`.
+Test policy/DB possono fallire se `activity_log` o permessi Spatie non presenti su `laraxot_data.sqlite` — vedi bootstrap Xot `assertLaraxotSqliteReadyForTesting()`.
