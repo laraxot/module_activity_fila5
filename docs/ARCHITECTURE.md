@@ -1,15 +1,17 @@
 ---
-title: "Activity Module Architecture"
-type: architecture
-tags: [module, architecture, audit]
-created: 2026-07-28
-updated: 2026-07-28
----
 
+---
+reated: 2026-08-04
+type: architecture
+tags: [module, architecture, audit, activity]
+created: 2026-08-04
+updated: 2026-08-04
+---
 # Activity Module — Architecture
 
 ## Purpose
-Provides audit trail and activity logging via Spatie Laravel Activity Log. Tracks user actions, subject changes, and event sourcing.
+Provides audit trail and activity logging via Spatie Laravel Activity Log. 
+Tracks user actions, subject changes, and event sourcing.
 
 ## Core Components
 
