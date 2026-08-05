@@ -121,7 +121,7 @@ describe('ActivityResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
-        $schema = ActivityResource::getFormSchema();
+        $schema = ActivityResource::getFormSchemaOld();
 
         Assert::assertArrayHasKey('log_name', $schema);
         Assert::assertArrayHasKey('description', $schema);
@@ -196,7 +196,7 @@ describe('SnapshotResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
-        $schema = SnapshotResource::getFormSchema();
+        $schema = SnapshotResource::getFormSchemaOld();
 
         Assert::assertArrayHasKey('model_type', $schema);
         Assert::assertArrayHasKey('model_id', $schema);
@@ -268,7 +268,7 @@ describe('StoredEventResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
-        $schema = StoredEventResource::getFormSchema();
+        $schema = StoredEventResource::getFormSchemaOld();
 
         Assert::assertArrayHasKey('event_class', $schema);
         Assert::assertArrayHasKey('event_properties', $schema);
