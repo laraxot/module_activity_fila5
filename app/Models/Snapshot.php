@@ -38,7 +38,7 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  */
 class Snapshot extends SpatieSnapshot
 {/**
- * @phpstan-use HasXotFactory<\Modules\Activity\Database\Factories\SnapshotFactory, Snapshot>
+ * @phpstan-use HasXotFactory<\Modules\Activity\Database\Factories\SnapshotFactory, self>
  */
 use HasXotFactory;
 

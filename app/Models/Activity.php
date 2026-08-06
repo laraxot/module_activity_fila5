@@ -19,7 +19,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 class Activity extends SpatieActivity
 {
     /**
-     * @phpstan-use HasXotFactory<ActivityFactory, Activity>
+     * @phpstan-use HasXotFactory<ActivityFactory, self>
      */
     use HasXotFactory;
 
