@@ -414,7 +414,7 @@ $graph->Stroke();
 - **API Reference**: https://jpgraph.net/doc/
 - **FAQ**: https://jpgraph.net/doc/faq.html
 
-## 🔄 **Integrazione con Quaeris**
+## 🔄 **Integrazione con <nome progetto>**
 ## 🔄 **Integrazione con healthcare_app**
 
 ### **Pattern di Integrazione**
@@ -434,38 +434,38 @@ class JpGraphChartGenerator
             ->orderBy('count', 'desc')
             ->limit(20)
             ->get();
-        
+
         $graph = new \Graph($chart->width ?? 800, $chart->height ?? 400);
         $graph->SetScale('textlin');
         $graph->title->Set($title);
-        
+
         $fontFamily = $this->mapFontFamily($chart->font_family);
         $fontStyle = $this->mapFontStyle($chart->font_style);
         $graph->title->SetFont($fontFamily, $fontStyle, $chart->font_size);
-        
+
         $values = $data->pluck('count')->toArray();
         $labels = $data->pluck('answer')->toArray();
         $plot = $this->createPlot($chart->type, $values);
         $plot->SetFillColor($chart->list_color ?? '#3b82f6');
-        
+
         if (!empty($labels)) {
             $graph->xaxis->SetTickLabels($labels);
             if (count($labels) > 5) {
                 $graph->xaxis->SetLabelAngle(45);
             }
         }
-        
+
         $graph->Add($plot);
-        
+
         $filename = 'charts/' . $chart->id . '_' . time() . '.png';
         $fullPath = public_path($filename);
-        
+
         if (!file_exists(dirname($fullPath))) {
             mkdir(dirname($fullPath), 0755, true);
         }
-        
+
         $graph->Stroke($fullPath);
-        
+
         return $filename;
     }
 }
@@ -474,5 +474,5 @@ class JpGraphChartGenerator
 ---
 
 **
-**Versione JpGraph:** 4.4.2  
+**Versione JpGraph:** 4.4.2
 **Stato:** 📚 Completamente Analizzato e Documentato
