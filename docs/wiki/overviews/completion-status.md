@@ -19,7 +19,7 @@ related:
 
 ## Scopo modulo
 
-Tracciamento eventi utente/modello (audit log) per Fixcity e piattaforma. Business: **sapere chi ha fatto cosa e quando** senza duplicare logica in ogni modulo.
+Tracciamento eventi utente/modello (audit log) per Ptvx e piattaforma. Business: **sapere chi ha fatto cosa e quando** senza duplicare logica in ogni modulo.
 
 ## Qualità (2026-06-13)
 
@@ -61,7 +61,7 @@ Dettaglio: [phpstan-pest-discipline](../concepts/phpstan-pest-discipline.md).
 - [ ] Audit test duplicati `BaseModelBusinessLogic*` in `tests/` (se ancora presenti)
 - [ ] Rimuovere file obsoleti in `docs/archive/` solo dopo ingest wiki
 
-### P3 — Integrazione Fixcity
+### P3 — Integrazione Ptvx
 - [ ] Verificare `LogUserLoginAction` / logout su flusso auth User
 - [ ] Activity su CRUD ticket (created/updated/deleted) via listener o Action
 
