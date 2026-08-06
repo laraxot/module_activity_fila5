@@ -8,9 +8,9 @@ updated: 2026-06-10
 qmd: "activity testcase xotbasetestcase laravel modules pest phpstan hierarchy"
 status: "active"
 issues:
-  - https://github.com/laraxot/base_fixcity_fila5/issues/316
+  - https://github.com/laraxot/platform/issues/316
 discussions:
-  - https://github.com/laraxot/base_fixcity_fila5/discussions/316
+  - https://github.com/laraxot/platform/discussions/316
 related:
   - ../../../../Xot/docs/wiki/rules/module-testcase-xotbase-hierarchy.md
   - ../../../tests/TestCase.php

@@ -37,7 +37,11 @@ Per modificare una tabella esistente:
 ## 🎯 **LEZIONE CRITICA: Polimorfismo con ID Misti**
 
 ### **Problema Identificato**
+<<<<<<< HEAD
 Nel sistema  abbiamo modelli con tipi di ID diversi:
+=======
+Nel sistema <nome progetto> abbiamo modelli con tipi di ID diversi:
+>>>>>>> 4fd30195 (chore: update project dependencies and improve configuration)
 - **User**: UUID (string 36 caratteri)
 - **Admin**: Integer auto-increment
 - **Activity**: Deve supportare relazioni polimorfiche con ENTRAMBI
@@ -59,7 +63,11 @@ causer_type = "Modules\User\Models\User"
 
 // Caso 2: Admin con integer
 causer_id = "123" (integer convertito in string)
+<<<<<<< HEAD
 causer_type = "Modules\<nome modulo>\Models\Admin"
+=======
+causer_type = "Modules\<nome progetto>\Models\Admin"
+>>>>>>> 4fd30195 (chore: update project dependencies and improve configuration)
 ```
 
 ### **Errore Concettuale Precedente**
@@ -171,6 +179,7 @@ Questa lezione è ora memorizzata permanentemente per:
 
 ### Moduli Correlati
 - [User Module UUID](../../User/docs/uuid_implementation.md)
+<<<<<<< HEAD
 - [ Models](../../<nome modulo>/docs/model_architecture.md)
 - [Activity Logging](./activity_logging_system.md)
 
@@ -349,6 +358,8 @@ Questa lezione è ora memorizzata permanentemente per:
 
 ### Moduli Correlati
 - [User Module UUID](../../User/docs/uuid_implementation.md)
+=======
+>>>>>>> 4fd30195 (chore: update project dependencies and improve configuration)
 - [<nome progetto> Models](../../<nome progetto>/docs/model_architecture.md)
 - [Activity Logging](./activity_logging_system.md)
 
