@@ -1,52 +1,35 @@
-# Headroom Integration - Activity Module
-
-## Overview
-
-Activity logging and audit trails with efficient context tracking.
-
-## Token Budget: 50,000
-
-### Allocation
-- Event logging: 20,000
-- Audit trail analysis: 15,000
-- Report generation: 15,000
-
-## Configuration
-
-```yaml
+---
+title: "Headroom - Modulo Activity"
+type: how-to
+tags: [headroom, module, activity, codex, mcp]
 module: Activity
-priority: medium
-auto_compress: true
-deduplicate_events: true
-archive_old_logs: true
-```
+created: 2026-08-02
+updated: 2026-08-02
+qmd: "headroom modulo Activity proxy codex mcp context compression"
+issues:
+  - "https://github.com/provtv/base_ptv_fila5/issues/218"
+discussions:
+  - "https://github.com/provtv/base_ptv_fila5/discussions/219"
+related:
+  - "../../../../../docs/HEADROOM-INTEGRATION.md"
+---
 
-## Event Tracking
+# Headroom - Modulo Activity
 
-Activity logs generate high token overhead; use smart filtering:
+Usare la configurazione Headroom comune del progetto quando si lavora su Activity.
 
-```bash
-# Track activity-related development
-headroom track --module Activity --tag events --tag audit
-
-# Compress old activity logs
-headroom prune --module Activity --age 30d --archive
-```
-
-## Efficient Logging
+## Comandi
 
 ```bash
-# Only track critical activities
-headroom filter-events --module Activity --min-severity info
+headroom mcp status
+headroom doctor
+headroom savings
+headroom perf --hours 24
 ```
 
-## Performance Monitoring
+## Regole
 
-```bash
-# Monitor activity logging performance
-headroom profile --module Activity
-```
-
-## See Also
-- [Activity Logging Guide](../../docs/activity-logging.md)
-- [Audit Trail Documentation](../../docs/audit-trails.md)
+- Config canonica: `../../../../../.headroom.yaml`.
+- Guida root: `../../../../../docs/HEADROOM-INTEGRATION.md`.
+- Non documentare comandi per-modulo non presenti nel CLI Headroom.
+- Coordinare modifiche su issue #218 e discussion #219.
