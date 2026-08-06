@@ -193,6 +193,7 @@ The Activity module provides comprehensive audit logging and event sourcing capa
 - **Debugging**: Helps diagnose application issues
 - **Analytics**: Enables user behavior analysis
 - **Accountability**: Tracks user actions for accountability
+<<<<<<< HEAD
 # Activity Module - Business Logic Analysis
 
 ## Overview
@@ -391,3 +392,5 @@ The Activity module provides comprehensive audit logging and event sourcing capa
 - **Analytics**: Enables user behavior analysis
 - **Accountability**: Tracks user actions for accountability
 - **Accountability**: Tracks user actions for accountability
+=======
+>>>>>>> 4fd30195 (chore: update project dependencies and improve configuration)
