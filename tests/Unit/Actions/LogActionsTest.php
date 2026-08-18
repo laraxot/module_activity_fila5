@@ -69,9 +69,15 @@ test('LogUserLogoutAction can execute', function () {
 test('LogModelCreatedAction can execute', function () {
     $user = UserFactory::new()->createOne(['name' => 'Test User', 'password' => 'password']);
 
+<<<<<<< HEAD
     $action = new LogModelCreatedAction;
 
     $activity = $action->execute($user);
+=======
+    $action = new LogModelCreatedAction($user);
+
+    $activity = $action->execute();
+>>>>>>> 0a02158a (.)
 
     Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame('created', $activity->event);
@@ -80,9 +86,15 @@ test('LogModelCreatedAction can execute', function () {
 test('LogModelUpdatedAction can execute', function () {
     $user = UserFactory::new()->createOne(['name' => 'Test User', 'password' => 'password']);
 
+<<<<<<< HEAD
     $action = new LogModelUpdatedAction;
 
     $activity = $action->execute($user);
+=======
+    $action = new LogModelUpdatedAction($user);
+
+    $activity = $action->execute();
+>>>>>>> 0a02158a (.)
 
     Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame('updated', $activity->event);
@@ -91,9 +103,15 @@ test('LogModelUpdatedAction can execute', function () {
 test('LogModelDeletedAction can execute', function () {
     $user = UserFactory::new()->createOne(['name' => 'Test User', 'password' => 'password']);
 
+<<<<<<< HEAD
     $action = new LogModelDeletedAction;
 
     $activity = $action->execute($user);
+=======
+    $action = new LogModelDeletedAction($user);
+
+    $activity = $action->execute();
+>>>>>>> 0a02158a (.)
 
     Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame('deleted', $activity->event);

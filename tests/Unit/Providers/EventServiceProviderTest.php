@@ -3,7 +3,10 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Providers;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0a02158a (.)
 use Illuminate\Auth\Events\Login;
 use Illuminate\Auth\Events\Logout;
 use Modules\Activity\Listeners\LoginListener;
@@ -12,7 +15,11 @@ use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> 0a02158a (.)
 
 test('event service provider registers login and logout listeners', function () {
     $provider = new EventServiceProvider(app());
@@ -37,6 +44,7 @@ test('event discovery is enabled on provider', function () {
 
     Assert::assertTrue($property->getValue());
 });
+<<<<<<< HEAD
 
 test('configure email verification is callable and returns void', function () {
     $provider = new EventServiceProvider(app());
@@ -48,3 +56,5 @@ test('configure email verification is callable and returns void', function () {
 
     expect($result)->toBeNull();
 });
+=======
+>>>>>>> 0a02158a (.)

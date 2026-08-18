@@ -38,8 +38,15 @@ trait CanPaginate
     public function getTablePage(): int
     {
         $page = $this->getPage($this->getPaginationPageName());
+<<<<<<< HEAD
 
         return is_numeric($page) ? (int) $page : 1;
+=======
+        if (is_numeric($page)) {
+            return (int) $page;
+        }
+        return 1;
+>>>>>>> 0a02158a (.)
     }
 
     public function getDefaultRecordsPerPageSelectOption(): int|string

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Activity Module Documentation Index
 
 **Stats**: 698 files | 20 categories | Last update: 2026-07-28
@@ -69,3 +70,12 @@ Architectural patterns and system design documentation
 ---
 
 **Complete inventory**: See [INDEX_GENERATED.md](INDEX_GENERATED.md) for full detailed categorization across all 698 files in 20 categories.
+=======
+# Documentation Index
+
+Modulo: Activity
+
+## File disponibili
+
+<!-- auto-generato: elencare i file .md presenti -->
+>>>>>>> 0a02158a (.)

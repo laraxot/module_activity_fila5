@@ -21,6 +21,7 @@ use function Safe\json_encode;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 beforeEach(function () {
     // Skip if database not available
     try {
@@ -30,6 +31,8 @@ beforeEach(function () {
     }
 });
 
+=======
+>>>>>>> 0a02158a (.)
 test('activity module models work together in integrated scenarios', function () {
     $user = UserFactory::new()->createOne();
     Assert::assertInstanceOf(User::class, $user);

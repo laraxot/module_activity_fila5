@@ -10,7 +10,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('BaseModel has correct connection', function () {
+<<<<<<< HEAD
     $model = new class() extends BaseModel
+=======
+    $model = new class extends BaseModel
+>>>>>>> 0a02158a (.)
     {
         protected $table = 'test_models';
 
@@ -24,7 +28,11 @@ test('BaseModel has correct connection', function () {
 });
 
 test('BaseModel extends XotBaseModel', function () {
+<<<<<<< HEAD
     $model = new class() extends BaseModel
+=======
+    $model = new class extends BaseModel
+>>>>>>> 0a02158a (.)
     {
         protected $table = 'test_models';
 

@@ -8,8 +8,12 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
+<<<<<<< HEAD
     protected ?string $model_class = Activity::class;
 
+=======
+    // protected ?string $model_class = Activity::class;
+>>>>>>> 0a02158a (.)
     public function up(): void
     {
         // -- CREATE --
@@ -28,7 +32,11 @@ return new class extends XotBaseMigration
         $this->tableUpdate(function (Blueprint $table): void {
             // Ensure causer columns are nullable to allow console operations without an authenticated user
             if ($this->hasColumn('causer_id')) {
+<<<<<<< HEAD
                 $table->string('causer_id', 36)->change()->nullable()->change();
+=======
+                $table->unsignedBigInteger('causer_id')->nullable()->change();
+>>>>>>> 0a02158a (.)
             }
             if ($this->hasColumn('causer_type')) {
                 $table->string('causer_type')->nullable()->change();

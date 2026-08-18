@@ -10,6 +10,7 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
 beforeEach(function () {
@@ -20,6 +21,9 @@ beforeEach(function () {
         $this->markTestSkipped('Database not available: '.$e->getMessage());
     }
 });
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> 0a02158a (.)
 
 test('user can create activity', function () {
     $user = UserFactory::new()->createOne();

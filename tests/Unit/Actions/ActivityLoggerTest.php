@@ -12,7 +12,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('ActivityLogger can log basic activity', function () {
+<<<<<<< HEAD
     $logger = new ActivityLogger();
+=======
+    $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
 
     $activity = $logger->log('test_event', null, null, ['key' => 'value'], 'Test Description');
 
@@ -31,7 +35,11 @@ test('ActivityLogger can log basic activity', function () {
 
 test('ActivityLogger can log with user', function () {
     $user = UserFactory::new()->createOne();
+<<<<<<< HEAD
     $logger = new ActivityLogger();
+=======
+    $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
 
     $activity = $logger->log('user_event', $user, null, null, 'User Event');
 
@@ -41,7 +49,11 @@ test('ActivityLogger can log with user', function () {
 });
 
 test('ActivityLogger throws exception for invalid user type', function () {
+<<<<<<< HEAD
     $logger = new ActivityLogger();
+=======
+    $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
 
     try {
         $logger->log('test_event', 'invalid_user_type');
@@ -53,7 +65,11 @@ test('ActivityLogger throws exception for invalid user type', function () {
 
 test('ActivityLogger can log created event', function () {
     $user = UserFactory::new()->createOne();
+<<<<<<< HEAD
     $logger = new ActivityLogger();
+=======
+    $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
 
     $subjectModel = UserFactory::new()->createOne(['name' => 'Subject User', 'password' => 'password']);
 
@@ -65,7 +81,11 @@ test('ActivityLogger can log created event', function () {
 
 test('ActivityLogger can log updated event', function () {
     $user = UserFactory::new()->createOne();
+<<<<<<< HEAD
     $logger = new ActivityLogger();
+=======
+    $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
 
     $subjectModel = UserFactory::new()->createOne(['name' => 'Subject User', 'password' => 'password']);
 
@@ -77,7 +97,11 @@ test('ActivityLogger can log updated event', function () {
 
 test('ActivityLogger can log deleted event', function () {
     $user = UserFactory::new()->createOne();
+<<<<<<< HEAD
     $logger = new ActivityLogger();
+=======
+    $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
 
     $activity = $logger->log('test_subject', $user, null, null, 'Test Subject');
 
@@ -89,7 +113,11 @@ test('ActivityLogger can log deleted event', function () {
 
 test('ActivityLogger can log login event', function () {
     $user = UserFactory::new()->createOne();
+<<<<<<< HEAD
     $logger = new ActivityLogger();
+=======
+    $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
 
     $activity = $logger->login($user);
 
@@ -99,7 +127,11 @@ test('ActivityLogger can log login event', function () {
 
 test('ActivityLogger can log logout event', function () {
     $user = UserFactory::new()->createOne();
+<<<<<<< HEAD
     $logger = new ActivityLogger();
+=======
+    $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
 
     $activity = $logger->logout($user);
 
@@ -108,7 +140,11 @@ test('ActivityLogger can log logout event', function () {
 });
 
 test('ActivityLogger can log custom event', function () {
+<<<<<<< HEAD
     $logger = new ActivityLogger();
+=======
+    $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
 
     $activity = $logger->custom('custom_event', 'Custom Description', null, ['custom' => 'data']);
 
@@ -119,7 +155,11 @@ test('ActivityLogger can log custom event', function () {
 
 test('ActivityLogger can get user activities', function () {
     $user = UserFactory::new()->createOne();
+<<<<<<< HEAD
     $logger = new ActivityLogger();
+=======
+    $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
 
     $logger->log('user_event', $user, null, null, 'User Event');
 
@@ -132,7 +172,11 @@ test('ActivityLogger can get user activities', function () {
 
 test('ActivityLogger can get model activities', function () {
     $user = UserFactory::new()->createOne();
+<<<<<<< HEAD
     $logger = new ActivityLogger();
+=======
+    $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
 
     $subjectActivity = $logger->log('test_subject', $user, null, null, 'Test Subject');
 
@@ -146,7 +190,11 @@ test('ActivityLogger can get model activities', function () {
 });
 
 test('ActivityLogger can get activities by type', function () {
+<<<<<<< HEAD
     $logger = new ActivityLogger();
+=======
+    $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
     $eventType = uniqid('specific_event_', true);
 
     $logger->log($eventType, null, null, null, 'Specific Event');
@@ -160,7 +208,11 @@ test('ActivityLogger can get activities by type', function () {
 });
 
 test('ActivityLogger can get recent activities', function () {
+<<<<<<< HEAD
     $logger = new ActivityLogger();
+=======
+    $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
 
     $first = $logger->log(uniqid('recent_event_', true), null, null, null, 'Event 1');
     $first->forceFill(['created_at' => now()->addMinutes(1), 'updated_at' => now()->addMinutes(1)])->save();
@@ -176,7 +228,11 @@ test('ActivityLogger can get recent activities', function () {
 });
 
 test('ActivityLogger can clean old activities', function () {
+<<<<<<< HEAD
     $logger = new ActivityLogger();
+=======
+    $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
 
     $activity = $logger->log('old_event', null, null, null, 'Old Event');
     $activity->created_at = now()->subDays(100);
@@ -188,7 +244,11 @@ test('ActivityLogger can clean old activities', function () {
 });
 
 test('ActivityLogger can get statistics', function () {
+<<<<<<< HEAD
     $logger = new ActivityLogger();
+=======
+    $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
 
     $logger->log('stat_event', null, null, null, 'Stat Event');
 
@@ -200,7 +260,11 @@ test('ActivityLogger can get statistics', function () {
 
 test('ActivityLogger can get statistics for specific user', function () {
     $user = UserFactory::new()->createOne();
+<<<<<<< HEAD
     $logger = new ActivityLogger();
+=======
+    $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
 
     $logger->log('user_stat_event', $user, null, null, 'User Stat Event');
 

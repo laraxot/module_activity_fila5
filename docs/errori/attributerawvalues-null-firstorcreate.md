@@ -226,7 +226,11 @@ IndennitaResponsabilita::withoutEvents(function (): void {
 
 ---
 
+<<<<<<< HEAD
 **
+=======
+**Ultimo aggiornamento**: 19 Novembre 2025  
+>>>>>>> 0a02158a (.)
 **Severità**: Alta (blocca operazioni batch)  
 **Soluzione**: Usare `withoutEvents()` durante `firstOrCreate()`
 

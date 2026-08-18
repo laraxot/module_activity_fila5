@@ -10,13 +10,21 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('LoginListener can be instantiated', function () {
+<<<<<<< HEAD
     $listener = new LoginListener();
+=======
+    $listener = new LoginListener;
+>>>>>>> 0a02158a (.)
 
     Assert::assertInstanceOf(LoginListener::class, $listener);
 });
 
 test('LogoutListener can be instantiated', function () {
+<<<<<<< HEAD
     $listener = new LogoutListener();
+=======
+    $listener = new LogoutListener;
+>>>>>>> 0a02158a (.)
 
     Assert::assertInstanceOf(LogoutListener::class, $listener);
 });
