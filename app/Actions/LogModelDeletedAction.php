@@ -6,31 +6,39 @@ namespace Modules\Activity\Actions;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Models\Activity;
-use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Log Model Deleted Action.
- * Optimized for Laraxot architecture.
+ *
+ * Logs when a model is deleted using Queueable Actions
  */
 class LogModelDeletedAction
 {
     use QueueableAction;
 
-    /**
-     * Execute the action.
-     */
-    public function execute(Model $model, ?User $user = null): Activity
-    {
-        /** @var array<string, mixed> $properties */
-        $properties = $model->toArray();
+    public function __construct(
+        public Model $model,
+        public ?Model $user = null,
+    ) {
+        if ($user !== null) {
+            // Type already narrowed to Model|null, assertion not needed
+        }
+    }
 
-        return (new LogActivityAction(
+    public function execute(): Activity
+    {
+        // PHPStan Level 10: Explicit type guard for nullable Model
+        $user = $this->user instanceof Model ? $this->user : null;
+
+        $action = new LogActivityAction(
             type: 'deleted',
             user: $user,
-            subject: $model,
-            description: sprintf('%s was deleted', class_basename($model)),
-            properties: $properties
-        ))->execute();
+            subject: $this->model,
+            properties: ['attributes' => $this->model->getAttributes()],
+            description: sprintf('%s deleted', class_basename($this->model))
+        );
+
+        return $action->execute();
     }
 }

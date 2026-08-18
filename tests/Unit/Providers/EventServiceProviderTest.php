@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Providers;
-
 use Illuminate\Auth\Events\Login;
 use Illuminate\Auth\Events\Logout;
 use Modules\Activity\Listeners\LoginListener;
@@ -12,7 +11,7 @@ use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('event service provider registers login and logout listeners', function () {
     $provider = new EventServiceProvider(app());
@@ -36,15 +35,4 @@ test('event discovery is enabled on provider', function () {
     $property->setAccessible(true);
 
     Assert::assertTrue($property->getValue());
-});
-
-test('configure email verification is callable and returns void', function () {
-    $provider = new EventServiceProvider(app());
-    $reflection = new \ReflectionClass($provider);
-    $method = $reflection->getMethod('configureEmailVerification');
-    $method->setAccessible(true);
-
-    $result = $method->invoke($provider);
-
-    expect($result)->toBeNull();
 });

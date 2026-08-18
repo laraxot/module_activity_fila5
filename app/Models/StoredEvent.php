@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Models;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Activity\Database\Factories\StoredEventFactory;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent as SpatieStoredEvent;
@@ -64,22 +63,13 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
 class StoredEvent extends SpatieStoredEvent
 {
-    /** @phpstan-use HasXotFactory<Factory<static>> */
+    /** @phpstan-use HasXotFactory<StoredEventFactory> */
     use HasXotFactory;
 
     /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
     protected $connection = 'activity';
 
     protected $table = 'stored_events';
-
-    public function __construct(array $attributes = [])
-    {
-        parent::__construct($attributes);
-        if (app()->environment('testing')) {
-            $default = config('database.default');
-            $this->connection = is_string($default) ? $default : 'mysql';
-        }
-    }
 
     protected $fillable = [
         'id',

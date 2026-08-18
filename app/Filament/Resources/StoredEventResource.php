@@ -14,13 +14,22 @@ use Modules\Activity\Filament\Resources\StoredEventResource\Pages\ListStoredEven
 use Modules\Activity\Models\StoredEvent;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
-
+use Filament\Forms\Components\Field;
 class StoredEventResource extends XotBaseResource
 {
     protected static ?string $model = StoredEvent::class;
 
-    #[Override]
-    public static function getFormSchema(): array
+    /**
+
+
+     * @return array<string, mixed>
+
+
+     */
+
+
+    //#[Override]
+    public static function getFormSchemaOld(): array
     {
         return [
             'event_class' => TextInput::make('event_class')->required()->maxLength(255),

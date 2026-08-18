@@ -17,8 +17,8 @@ use Modules\Xot\Tests\XotBaseTestCase;
 /**
  * Base test case for Activity module.
  *
- * Uses shared fixcity_data.sqlite (no RefreshDatabase / migrate:fresh).
- * prepareSharedFixcitySqliteForTesting() runs before transactions begin.
+ * Uses shared <nome progetto>_data.sqlite (no RefreshDatabase / migrate:fresh).
+ * prepareShared<nome progetto>SqliteForTesting() runs before transactions begin.
  *
  * @property ListLogActivities|null $page
  */
@@ -54,7 +54,7 @@ abstract class TestCase extends XotBaseTestCase
 
     protected function setUp(): void
     {
-        $this->prepareSharedFixcitySqliteForTesting();
+        $this->prepareShared<nome progetto>SqliteForTesting();
 
         parent::setUp();
 
