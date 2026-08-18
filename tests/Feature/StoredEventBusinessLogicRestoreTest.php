@@ -12,8 +12,14 @@ use Illuminate\Support\Str;
 use Modules\Activity\Models\StoredEvent;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 
 uses(TestCase::class);
+=======
+use Spatie\SchemalessAttributes\SchemalessAttributes;
+
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> 0a02158a (.)
 
 test('can restore event from stored event', function (): void {
     $originalProperties = [

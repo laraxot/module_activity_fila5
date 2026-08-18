@@ -11,19 +11,31 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('Snapshot model can be instantiated', function () {
+<<<<<<< HEAD
     $snapshot = new Snapshot();
+=======
+    $snapshot = new Snapshot;
+>>>>>>> 0a02158a (.)
 
     Assert::assertInstanceOf(Snapshot::class, $snapshot);
 });
 
 test('StoredEvent model can be instantiated', function () {
+<<<<<<< HEAD
     $storedEvent = new StoredEvent();
+=======
+    $storedEvent = new StoredEvent;
+>>>>>>> 0a02158a (.)
 
     Assert::assertInstanceOf(StoredEvent::class, $storedEvent);
 });
 
 test('BaseModel model can be instantiated', function () {
+<<<<<<< HEAD
     $baseModel = new class() extends BaseModel
+=======
+    $baseModel = new class extends BaseModel
+>>>>>>> 0a02158a (.)
     {
         protected $table = 'activity_base_models';
     };
@@ -32,19 +44,31 @@ test('BaseModel model can be instantiated', function () {
 });
 
 test('Snapshot model has correct connection', function () {
+<<<<<<< HEAD
     $snapshot = new Snapshot();
+=======
+    $snapshot = new Snapshot;
+>>>>>>> 0a02158a (.)
 
     Assert::assertIsString($snapshot->getConnectionName());
 });
 
 test('StoredEvent model has correct connection', function () {
+<<<<<<< HEAD
     $storedEvent = new StoredEvent();
+=======
+    $storedEvent = new StoredEvent;
+>>>>>>> 0a02158a (.)
 
     Assert::assertIsString($storedEvent->getConnectionName());
 });
 
 test('BaseModel model has correct connection', function () {
+<<<<<<< HEAD
     $baseModel = new class() extends BaseModel
+=======
+    $baseModel = new class extends BaseModel
+>>>>>>> 0a02158a (.)
     {
         protected $table = 'activity_base_models';
     };

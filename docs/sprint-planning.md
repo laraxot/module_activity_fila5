@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Activity Module - Sprint Planning
 
 **Module:** Activity  
@@ -79,3 +80,9 @@ Complete core activity tracking infrastructure with admin dashboard for viewing 
 ---
 
 *Last Updated: March 12, 2026*
+=======
+# Sprint Planning: Activity Module
+
+## 🏁 Sprint Goal
+Finalize documentation and validation for Activity.
+>>>>>>> 0a02158a (.)

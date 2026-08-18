@@ -17,7 +17,11 @@ uses(TestCase::class);
 
 function makeCanPaginateHarness(): CanPaginateHarness
 {
+<<<<<<< HEAD
     return new CanPaginateHarness();
+=======
+    return new CanPaginateHarness;
+>>>>>>> 0a02158a (.)
 }
 
 test('can paginate trait manages session, defaults and page helpers', function (): void {

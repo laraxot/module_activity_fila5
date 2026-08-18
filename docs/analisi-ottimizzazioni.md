@@ -246,6 +246,10 @@ php artisan test
 
 ---
 
+<<<<<<< HEAD
 **
+=======
+**ultimo aggiornamento**: 20 agosto 2025
+>>>>>>> 0a02158a (.)
 **analista**: claude code
 **stato**: pronto per implementazione

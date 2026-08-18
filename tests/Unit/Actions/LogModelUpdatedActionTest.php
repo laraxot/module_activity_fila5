@@ -11,6 +11,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('LogModelUpdatedAction can be instantiated', function () {
+<<<<<<< HEAD
     $action = new LogModelUpdatedAction;
 
     Assert::assertInstanceOf(LogModelUpdatedAction::class, $action);
@@ -18,10 +19,14 @@ test('LogModelUpdatedAction can be instantiated', function () {
 
 test('LogModelUpdatedAction logs activity with the given user as causer', function () {
     $modelClass = get_class(new class() extends Model
+=======
+    $model = new class extends Model
+>>>>>>> 0a02158a (.)
     {
         protected $table = 'test_models';
 
         protected $fillable = ['name'];
+<<<<<<< HEAD
     });
     $model = new $modelClass(['name' => 'Test']);
     $user = UserFactory::new()->createOne();
@@ -31,4 +36,13 @@ test('LogModelUpdatedAction logs activity with the given user as causer', functi
 
     Assert::assertSame('updated', $activity->event);
     Assert::assertSame($user->getKey(), $activity->causer_id);
+=======
+    };
+    $user = UserFactory::new()->createOne();
+    Assert::assertInstanceOf(Model::class, $user);
+
+    $action = new LogModelUpdatedAction($model, $user);
+
+    Assert::assertSame($user, $action->user);
+>>>>>>> 0a02158a (.)
 });

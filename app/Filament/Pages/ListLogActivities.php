@@ -65,7 +65,11 @@ abstract class ListLogActivities extends XotBasePage
 
         // Convert to string (__() returns string|array|null)
         if (is_array($breadcrumb)) {
+<<<<<<< HEAD
             return implode(' ', array_map(self::stringifyTranslationValue(...), $breadcrumb));
+=======
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $breadcrumb));
+>>>>>>> 0a02158a (.)
         }
 
         if (is_string($breadcrumb)) {
@@ -89,7 +93,11 @@ abstract class ListLogActivities extends XotBasePage
 
         // __() returns string|array|null
         if (is_array($title)) {
+<<<<<<< HEAD
             return implode(' ', array_map(self::stringifyTranslationValue(...), $title));
+=======
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $title));
+>>>>>>> 0a02158a (.)
         }
 
         if (is_string($title)) {
@@ -270,7 +278,11 @@ abstract class ListLogActivities extends XotBasePage
     {
         $title = __('activity::activities.events.restore_successful');
         $titleString = is_array($title)
+<<<<<<< HEAD
             ? implode(' ', array_map(self::stringifyTranslationValue(...), $title))
+=======
+            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
+>>>>>>> 0a02158a (.)
             : (is_string($title) ? $title : '');
 
         return Notification::make()
@@ -283,7 +295,11 @@ abstract class ListLogActivities extends XotBasePage
     {
         $title = __('activity::activities.events.restore_failed');
         $titleString = is_array($title)
+<<<<<<< HEAD
             ? implode(' ', array_map(self::stringifyTranslationValue(...), $title))
+=======
+            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
+>>>>>>> 0a02158a (.)
             : (is_string($title) ? $title : '');
 
         $notification = Notification::make()
@@ -337,6 +353,7 @@ abstract class ListLogActivities extends XotBasePage
         /** @var array<string, mixed> $old */
         return $old;
     }
+<<<<<<< HEAD
 
     private static function stringifyTranslationValue(mixed $value): string
     {
@@ -344,4 +361,6 @@ abstract class ListLogActivities extends XotBasePage
 
         return (string) $value;
     }
+=======
+>>>>>>> 0a02158a (.)
 }

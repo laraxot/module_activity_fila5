@@ -323,7 +323,11 @@ foreach (glob('Modules/*/app/Filament/Resources/*/Pages/*.php') as $file) {
 
 ---
 
+<<<<<<< HEAD
 **
+=======
+**Ultimo aggiornamento**: 27 Ottobre 2025
+>>>>>>> 0a02158a (.)
 **Versione Filament**: 4.x
 **Severità**: Alta (blocca registrazione Resource Pages)
 **Causa**: Confusione tra Standalone Page e Resource Page

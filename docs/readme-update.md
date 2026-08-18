@@ -35,7 +35,11 @@ test('snapshot test', function () {
 **Documentazione**:
 - [No RefreshDatabase Policy](./testing/no-refresh-database-policy.md)
 - [Snapshot Testing Patterns](./testing/snapshot-testing-patterns.md)
+<<<<<<< HEAD
 - [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)
+=======
+- [Xot Testing Strategy](../../xot/docs/testing-strategy.md)
+>>>>>>> 0a02158a (.)
 
 #### Test Coverage
 
@@ -62,4 +66,9 @@ php artisan test --filter=Snapshot
 
 # Con coverage
 php artisan test Modules/Activity --coverage
+<<<<<<< HEAD
 ```
+=======
+```
+
+>>>>>>> 0a02158a (.)

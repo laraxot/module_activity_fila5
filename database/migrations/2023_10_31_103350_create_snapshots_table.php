@@ -6,7 +6,11 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Activity\Models\Snapshot;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< HEAD
 return new class() extends XotBaseMigration
+=======
+return new class extends XotBaseMigration
+>>>>>>> 0a02158a (.)
 {
     protected ?string $model_class = Snapshot::class;
 

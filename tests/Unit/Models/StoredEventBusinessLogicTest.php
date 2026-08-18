@@ -10,19 +10,31 @@ uses(TestCase::class);
 
 describe('StoredEvent Business Logic', function (): void {
     test('stored event has correct connection configured', function (): void {
+<<<<<<< HEAD
         $storedEvent = new StoredEvent();
+=======
+        $storedEvent = new StoredEvent;
+>>>>>>> 0a02158a (.)
 
         Assert::assertSame('activity', $storedEvent->getConnectionName());
     });
 
     test('stored event has correct table configured', function (): void {
+<<<<<<< HEAD
         $storedEvent = new StoredEvent();
+=======
+        $storedEvent = new StoredEvent;
+>>>>>>> 0a02158a (.)
 
         Assert::assertSame('stored_events', $storedEvent->getTable());
     });
 
     test('stored event has expected fillable fields for event sourcing', function (): void {
+<<<<<<< HEAD
         $storedEvent = new StoredEvent();
+=======
+        $storedEvent = new StoredEvent;
+>>>>>>> 0a02158a (.)
         $expectedFillable = [
             'id',
             'aggregate_uuid',
