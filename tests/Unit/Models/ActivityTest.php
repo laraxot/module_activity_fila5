@@ -10,6 +10,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 beforeEach(function () {
     // Skip if database not available
     try {
@@ -21,6 +22,8 @@ beforeEach(function () {
 
 =======
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 test('activity model can be created', function () {
     $activity = ActivityFactory::new()->make();
 

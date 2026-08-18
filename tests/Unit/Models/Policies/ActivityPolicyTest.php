@@ -13,10 +13,14 @@ uses(TestCase::class);
 
 test('ActivityPolicy can be instantiated', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $policy = new ActivityPolicy();
 =======
     $policy = new ActivityPolicy;
 >>>>>>> 0a02158a (.)
+=======
+    $policy = new ActivityPolicy;
+>>>>>>> 35d8cf69 (Initial commit)
 
     Assert::assertInstanceOf(ActivityPolicy::class, $policy);
 });
@@ -29,30 +33,42 @@ test('ActivityBasePolicy is an abstract class', function () {
 
 test('SnapshotPolicy can be instantiated', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $policy = new SnapshotPolicy();
 =======
     $policy = new SnapshotPolicy;
 >>>>>>> 0a02158a (.)
+=======
+    $policy = new SnapshotPolicy;
+>>>>>>> 35d8cf69 (Initial commit)
 
     Assert::assertInstanceOf(SnapshotPolicy::class, $policy);
 });
 
 test('StoredEventPolicy can be instantiated', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $policy = new StoredEventPolicy();
 =======
     $policy = new StoredEventPolicy;
 >>>>>>> 0a02158a (.)
+=======
+    $policy = new StoredEventPolicy;
+>>>>>>> 35d8cf69 (Initial commit)
 
     Assert::assertInstanceOf(StoredEventPolicy::class, $policy);
 });
 
 test('ActivityPolicy method signatures', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $policy = new ActivityPolicy();
 =======
     $policy = new ActivityPolicy;
 >>>>>>> 0a02158a (.)
+=======
+    $policy = new ActivityPolicy;
+>>>>>>> 35d8cf69 (Initial commit)
     $reflection = new ReflectionClass($policy);
     $expectedMethods = ['view', 'create', 'update', 'delete', 'restore', 'forceDelete'];
 

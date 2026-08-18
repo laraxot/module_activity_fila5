@@ -11,20 +11,28 @@ uses(TestCase::class);
 
 test('LoginListener can be instantiated', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $listener = new LoginListener();
 =======
     $listener = new LoginListener;
 >>>>>>> 0a02158a (.)
+=======
+    $listener = new LoginListener;
+>>>>>>> 35d8cf69 (Initial commit)
 
     Assert::assertInstanceOf(LoginListener::class, $listener);
 });
 
 test('LogoutListener can be instantiated', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $listener = new LogoutListener();
 =======
     $listener = new LogoutListener;
 >>>>>>> 0a02158a (.)
+=======
+    $listener = new LogoutListener;
+>>>>>>> 35d8cf69 (Initial commit)
 
     Assert::assertInstanceOf(LogoutListener::class, $listener);
 });

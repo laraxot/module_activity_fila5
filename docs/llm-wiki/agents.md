@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 ---
 title: "Agent instructions"
 type: reference
@@ -13,7 +16,10 @@ related:
   - ./coding-agent-manifests.md
 ---
 
+<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 # Activity Module LLM Wiki Agent Instructions
 
 > **Module/Theme:** Activity
@@ -71,7 +77,11 @@ related:
 ### Rule 3: Link Heavily
 - Every page MUST have 3+ incoming links
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Every page MUST have 3+ outgoing links
 =======
 - Every page MUST have 3+ outgoing links
 >>>>>>> 0a02158a (.)
+=======
+- Every page MUST have 3+ outgoing links
+>>>>>>> 35d8cf69 (Initial commit)

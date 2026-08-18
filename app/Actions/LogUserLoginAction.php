@@ -5,14 +5,18 @@ declare(strict_types=1);
 namespace Modules\Activity\Actions;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Auth;
 =======
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 use Modules\Activity\Models\Activity;
 use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
  * Log User Login Action.
  * Optimized for Laraxot architecture.
@@ -21,12 +25,18 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * Logs when a user logs in using Queueable Actions
 >>>>>>> 0a02158a (.)
+=======
+ * Log User Login Action
+ *
+ * Logs when a user logs in using Queueable Actions
+>>>>>>> 35d8cf69 (Initial commit)
  */
 class LogUserLoginAction
 {
     use QueueableAction;
 
     public function __construct(
+<<<<<<< HEAD
 <<<<<<< HEAD
         public ?User $user = null
     ) {}
@@ -48,6 +58,8 @@ class LogUserLoginAction
             ]
         ))->execute();
 =======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
         public User $user
     ) {}
 
@@ -61,6 +73,9 @@ class LogUserLoginAction
         );
 
         return $action->execute();
+<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
     }
 }

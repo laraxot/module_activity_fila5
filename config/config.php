@@ -6,9 +6,13 @@ return [
     'name' => 'Activity',
     'description' => 'Modulo per il tracciamento delle attività degli utenti',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // 'icon' => 'heroicon-o-clock',
 >>>>>>> 0a02158a (.)
+=======
+    // 'icon' => 'heroicon-o-clock',
+>>>>>>> 35d8cf69 (Initial commit)
     'icon' => 'activity-icon',
     'navigation' => [
         'enabled' => true,

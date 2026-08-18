@@ -8,10 +8,14 @@ use Modules\Activity\Models\BaseModel;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Test model for BaseModelTest.
 =======
  * Test model per BaseModelTest.
 >>>>>>> 0a02158a (.)
+=======
+ * Test model per BaseModelTest.
+>>>>>>> 35d8cf69 (Initial commit)
  *
  * Classe concreta per testing senza usare classi anonime,
  * garantendo piena conformità PSR-4.
@@ -24,11 +28,14 @@ final class TestBaseModel extends BaseModel
     protected $table = 'test_models';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var string */
     protected $connection = 'mysql';
 
 =======
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
     /** @var list<string> */
     protected $fillable = ['name'];
 }

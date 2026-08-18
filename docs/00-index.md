@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: Activity Module - Documentation Index
 type: index
@@ -36,6 +37,8 @@ updated: 2026-07-23
 use Modules\Activity\Actions\LogActivityAction;
 
 =======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 # 📚 **Indice Documentazione Modulo Activity**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -129,7 +132,10 @@ Il modulo Activity fornisce funzionalità di logging delle attività utente nel 
 use Modules\Activity\Actions\LogActivityAction;
 
 // Pattern di utilizzo
+<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 app(LogActivityAction::class)->execute(
     type: 'user.login',
     user: $user,
@@ -139,6 +145,7 @@ app(LogActivityAction::class)->execute(
 );
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## 📦 Pacchetti Composer
 - [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
@@ -162,6 +169,8 @@ app(LogActivityAction::class)->execute(
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 </content>
 =======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 ### 📊 Best Practices
 
 1. **Type Safety Nativa**: Il modulo è già type-safe
@@ -263,5 +272,9 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 - Prima di modificare codice: ragionare, studiare i docs del modulo/tema, aggiornare docs/rules/memory/skills.
 - Riferimento globale: [Pre-Edit Docs-First Rule](../../../../docs/rules/pre-edit-docs-first-rule.md)
 - Memory: [Pre-Edit Docs-First Memory](../../../../docs/memory/pre-edit-docs-first-memory.md)
+<<<<<<< HEAD
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
 >>>>>>> 0a02158a (.)
+=======
+- Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
+>>>>>>> 35d8cf69 (Initial commit)

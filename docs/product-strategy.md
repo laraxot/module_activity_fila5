@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Activity Module - Product Strategy
 
 **Module:** Activity  
@@ -103,6 +104,8 @@ Transform raw activity data into actionable intelligence.
 
 *Last Updated: March 12, 2026*
 =======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 # Activity - Product Strategy
 
 > Strategia prodotto. Modulo.
@@ -156,4 +159,7 @@ Portare **Activity** a uno stato in cui il progetto ottiene un vantaggio netto e
 - Action-first: niente generic `Services` per la business logic
 - Standard operativo: `spatie/laravel-queueable-action`
 - Convenzione: Action con metodo `execute()` e dispatch tramite container
+<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)

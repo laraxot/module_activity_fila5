@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: Activity
 topic: METODI_DUPLICATI_ANALISI
@@ -195,6 +196,8 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 ---
 _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
 =======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨
@@ -1293,5 +1296,9 @@ public function getTableFilters(): array
 3. Kick-off Fase 1
 4. Implementazione ColumnBuilder
 
+<<<<<<< HEAD
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
 >>>>>>> 0a02158a (.)
+=======
+**Domande?** Chiedi alla Super Mucca! 🐄⚡
+>>>>>>> 35d8cf69 (Initial commit)

@@ -52,7 +52,11 @@ jobs:
             -H 'Content-Type: application/json' \
             -d @kit/hero.md
       - name: Open GitHub Discussion highlight
+<<<<<<< HEAD
         uses: actions/github-script@v9
+=======
+        uses: actions/github-script@v8
+>>>>>>> 35d8cf69 (Initial commit)
         env:
           MODULE_NAME: "Activity"
         with:

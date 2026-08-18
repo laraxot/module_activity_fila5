@@ -39,14 +39,20 @@ trait CanPaginate
     {
         $page = $this->getPage($this->getPaginationPageName());
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         return is_numeric($page) ? (int) $page : 1;
 =======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
         if (is_numeric($page)) {
             return (int) $page;
         }
         return 1;
+<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
     }
 
     public function getDefaultRecordsPerPageSelectOption(): int|string

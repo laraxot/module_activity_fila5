@@ -30,9 +30,12 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property string|null $created_by
  * @property-read ShouldBeStored|null $event
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent afterVersion(int $version)
  * @method static EloquentStoredEventCollection<static> all($columns = ['*'])
  * @method static EloquentStoredEventCollection<static> get($columns = ['*'])
@@ -58,6 +61,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent withMetaDataAttributes()
  * @method static StoredEventFactory factory($count = null, $state = [])
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
  * @property string|null $updated_at
  *
@@ -67,6 +71,10 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property string|null $updated_at
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereUpdatedAt($value)
 >>>>>>> 0a02158a (.)
+=======
+ * @property string|null $updated_at
+ * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereUpdatedAt($value)
+>>>>>>> 35d8cf69 (Initial commit)
  * @mixin \Eloquent
  */
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
@@ -81,6 +89,7 @@ class StoredEvent extends SpatieStoredEvent
     protected $table = 'stored_events';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);
@@ -92,6 +101,8 @@ class StoredEvent extends SpatieStoredEvent
 
 =======
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
     protected $fillable = [
         'id',
         'aggregate_uuid',

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Activity - Logging e Event Sourcing
 
 ## Scopo Principale
@@ -320,6 +321,8 @@ activity()->withProperties([
 **Versione**: v2.5.0-beta  
 **Stato**: Production Ready with Compliance Enhancement
 =======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 # Activity Module - Comprehensive Analysis
 
 ## Module Overview
@@ -407,5 +410,9 @@ The Activity module provides comprehensive activity logging and audit trail func
 - Performance optimization
 - Advanced search features
 - Integration with external systems
+<<<<<<< HEAD
 - Machine learning capabilities
 >>>>>>> 0a02158a (.)
+=======
+- Machine learning capabilities
+>>>>>>> 35d8cf69 (Initial commit)

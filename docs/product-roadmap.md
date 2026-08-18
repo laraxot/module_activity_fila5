@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Activity Module - Product Roadmap
 
 **Module:** Activity  
@@ -134,6 +135,8 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 
 *Last Updated: March 12, 2026*
 =======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 # Activity - Product Roadmap
 
 > Documento vivente. Modulo.
@@ -180,4 +183,7 @@ Questo roadmap traduce il PRD in sequenza di rilascio per **Activity**, che nel 
 - [Product Strategy](product-strategy.md)
 - [Sprint Planning Meeting](sprint-planning-meeting.md)
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
+<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)

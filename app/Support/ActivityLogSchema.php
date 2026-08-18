@@ -10,10 +10,14 @@ use Illuminate\Support\Facades\Schema;
  * Verifica che activity_log sia scrivibile sulla connection configurata (Spatie v4+ richiede attribute_changes).
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 class ActivityLogSchema
 =======
 final class ActivityLogSchema
 >>>>>>> 0a02158a (.)
+=======
+final class ActivityLogSchema
+>>>>>>> 35d8cf69 (Initial commit)
 {
     public static function isWritable(): bool
     {
