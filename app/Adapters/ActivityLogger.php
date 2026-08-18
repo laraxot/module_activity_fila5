@@ -60,17 +60,17 @@ class ActivityLogger
 
     public function created(Model $model, ?User $user = null): Activity
     {
-        return (new LogModelCreatedAction)->execute($model, $user);
+        return (new LogModelCreatedAction($model, $user))->execute();
     }
 
     public function updated(Model $model, ?User $user = null): Activity
     {
-        return (new LogModelUpdatedAction)->execute($model, $user);
+        return (new LogModelUpdatedAction($model, $user))->execute();
     }
 
     public function deleted(Model $model, ?User $user = null): Activity
     {
-        return (new LogModelDeletedAction)->execute($model, $user);
+        return (new LogModelDeletedAction($model, $user))->execute();
     }
 
     public function login(User $user): Activity

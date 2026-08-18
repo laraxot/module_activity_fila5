@@ -8,7 +8,7 @@ module: "Activity"
 issues:
   - "https://github.com/provtv/module_activity_fila5/issues/15"
 discussions:
-  - "https://github.com/provtv/base_ptv_fila5/discussions/204"
+  - "https://github.com/provtv/<nome repository>/discussions/204"
 ---
 
 # Handoff — multi-org sync (STORY-003)
@@ -26,9 +26,9 @@ Un tree dirty o un remote dietro/avanti **non** è sincronizzato, anche se l’a
 | Tipo | URL |
 |------|-----|
 | Issue owner | https://github.com/provtv/module_activity_fila5/issues/15 |
-| Discussion | https://github.com/provtv/base_ptv_fila5/discussions/204 |
-| Hub base issue | https://github.com/provtv/base_ptv_fila5/issues/203 |
-| Hub base discussion | https://github.com/provtv/base_ptv_fila5/discussions/204 |
+| Discussion | https://github.com/provtv/<nome repository>/discussions/204 |
+| Hub base issue | https://github.com/provtv/<nome repository>/issues/203 |
+| Hub base discussion | https://github.com/provtv/<nome repository>/discussions/204 |
 | Story monorepo | `docs/stories/STORY-003-multi-org-sync-geo-boundary-bashscripts.md` |
 
 ## Regole rapide
@@ -44,10 +44,7 @@ Seguire sync multi-org e mantenere docs allineate alla story.
 
 ### Sessione push 2026-07-22
 
-<<<<<<< HEAD
 Tip `25ac1e70` su `laraxot` + `provtv` (`0 0`). Blocco = **non-fast-forward** / shallow fuorviante, non LFS.  
-=======
->>>>>>> c1aeaea (.)
 Playbook: [wiki/troubleshooting/git-push-dual-remote.md](./wiki/troubleshooting/git-push-dual-remote.md).
 
 ### Caso User 2026-07-23 (unrelated)

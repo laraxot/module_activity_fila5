@@ -72,9 +72,9 @@ class ActivityLogger
      */
     public function created(Model $model, ?User $user = null): Activity
     {
-        $action = new LogModelCreatedAction;
+        $action = new LogModelCreatedAction($model, $user);
 
-        return $action->execute($model);
+        return $action->execute();
     }
 
     /**
@@ -82,9 +82,9 @@ class ActivityLogger
      */
     public function updated(Model $model, ?User $user = null): Activity
     {
-        $action = new LogModelUpdatedAction;
+        $action = new LogModelUpdatedAction($model, $user);
 
-        return $action->execute($model);
+        return $action->execute();
     }
 
     /**
@@ -92,9 +92,9 @@ class ActivityLogger
      */
     public function deleted(Model $model, ?User $user = null): Activity
     {
-        $action = new LogModelDeletedAction;
+        $action = new LogModelDeletedAction($model, $user);
 
-        return $action->execute($model);
+        return $action->execute();
     }
 
     /**
@@ -102,9 +102,9 @@ class ActivityLogger
      */
     public function login(User $user): Activity
     {
-        $action = new LogUserLoginAction;
+        $action = new LogUserLoginAction($user);
 
-        return $action->execute($user);
+        return $action->execute();
     }
 
     /**
@@ -112,9 +112,9 @@ class ActivityLogger
      */
     public function logout(User $user): Activity
     {
-        $action = new LogUserLogoutAction;
+        $action = new LogUserLogoutAction($user);
 
-        return $action->execute($user);
+        return $action->execute();
     }
 
     /**

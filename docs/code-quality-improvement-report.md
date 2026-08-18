@@ -4,13 +4,13 @@ type: report
 tags: [code-quality, phpstan, pest, maintainability]
 module: "Activity"
 created: 2026-07-17
-updated: 2026-07-27
+updated: 2026-07-17
 qmd: "code quality baseline PHPStan Pest strict types Laraxot Activity"
 story: STORY-001
 issues:
-  - "https://github.com/laraxot/base_techplanner_fila5/issues/46"
+  - "https://github.com/laraxot/<nome repository>/issues/46"
 discussions:
-  - "https://github.com/laraxot/base_techplanner_fila5/discussions/47"
+  - "https://github.com/laraxot/<nome repository>/discussions/47"
 related:
   - "../../../../docs/stories/STORY-001-code-quality-moduli-temi.md"
 ---
@@ -72,7 +72,7 @@ Rilevazione del 17 luglio 2026 sul working tree locale; esclusi vendor e dipende
 
 
 
-- [x] PHPStan L10 scoped senza errori non giustificati. (Modules 2026-07-27)
+- [ ] PHPStan L10 scoped senza errori non giustificati.
 - [ ] Pest scoped verde sui flussi critici.
 - [ ] Nessuna nuova estensione Filament diretta o controller FO.
 - [ ] Nessuna nuova business logic in Services/Support.
@@ -80,11 +80,6 @@ Rilevazione del 17 luglio 2026 sul working tree locale; esclusi vendor e dipende
 - [ ] Debito residuo con owner e criterio di rimozione.
 
 ## Criteri di uscita
-
-## Gate PHPStan (2026-07-27)
-
-- `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1` → **0 errori**.
-- Themes: solo insieme a Modules — [phpstan-stale-ignore-pattern](../../../../docs/wiki/troubleshooting/phpstan-stale-ignore-pattern.md).
 
 ## Verifica
 

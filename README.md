@@ -29,6 +29,21 @@
   <em>🎯 Il sistema di tracking attività più potente e dettagliato per Laravel!</em>
 </div>
 
+---
+
+## ⚠️ CRITICAL: Migration Constraints
+
+**Activity module holds user behavioral audit data. NEVER run:**
+- `php artisan migrate:refresh`
+- `php artisan migrate:fresh`
+- `php artisan migrate --force`
+
+**Why:** Data loss is irreversible. Activity tables contain complete audit trail for compliance.
+
+**Details:** See [docs/CRITICAL_MIGRATION_CONSTRAINTS.md](docs/CRITICAL_MIGRATION_CONSTRAINTS.md)
+
+---
+
 ## 🌟 Perché Activity è REVOLUZIONARIO?
 
 ### 🚀 **Sistema di Tracking Avanzato**
@@ -114,7 +129,6 @@ class ActivityEvent
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
 [![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
 [![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
 
 > **Chi ha fatto cosa, quando.** Audit trail trasparente per operatori e compliance.
 
@@ -625,12 +639,8 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
   <br>
   <em>Costruito con ❤️ per la comunità Laravel</em>
 </div>
-| Lingua | Link |
-|--------|------|
-| 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
 
 ---
 
-**Modulo** `activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+**Modulo** `activity` · **Laraxot** · PHPStan 10 · Filament 5  
+**Documentazione** — [docs/](docs/) · [docs/CRITICAL_MIGRATION_CONSTRAINTS.md](docs/CRITICAL_MIGRATION_CONSTRAINTS.md)
