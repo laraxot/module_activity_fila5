@@ -8,6 +8,7 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
+<<<<<<< HEAD
       interval: "daily"
     labels:
       - "dependencies"
@@ -19,3 +20,8 @@ updates:
     labels:
       - "npm"
       - "dependencies"
+=======
+      interval: "weekly"
+    labels:
+      - "dependencies"
+>>>>>>> 35d8cf69 (Initial commit)

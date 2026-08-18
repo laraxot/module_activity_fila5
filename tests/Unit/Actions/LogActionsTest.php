@@ -70,6 +70,7 @@ test('LogModelCreatedAction can execute', function () {
     $user = UserFactory::new()->createOne(['name' => 'Test User', 'password' => 'password']);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $action = new LogModelCreatedAction;
 
     $activity = $action->execute($user);
@@ -78,6 +79,11 @@ test('LogModelCreatedAction can execute', function () {
 
     $activity = $action->execute();
 >>>>>>> 0a02158a (.)
+=======
+    $action = new LogModelCreatedAction($user);
+
+    $activity = $action->execute();
+>>>>>>> 35d8cf69 (Initial commit)
 
     Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame('created', $activity->event);
@@ -87,6 +93,7 @@ test('LogModelUpdatedAction can execute', function () {
     $user = UserFactory::new()->createOne(['name' => 'Test User', 'password' => 'password']);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $action = new LogModelUpdatedAction;
 
     $activity = $action->execute($user);
@@ -95,6 +102,11 @@ test('LogModelUpdatedAction can execute', function () {
 
     $activity = $action->execute();
 >>>>>>> 0a02158a (.)
+=======
+    $action = new LogModelUpdatedAction($user);
+
+    $activity = $action->execute();
+>>>>>>> 35d8cf69 (Initial commit)
 
     Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame('updated', $activity->event);
@@ -104,6 +116,7 @@ test('LogModelDeletedAction can execute', function () {
     $user = UserFactory::new()->createOne(['name' => 'Test User', 'password' => 'password']);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $action = new LogModelDeletedAction;
 
     $activity = $action->execute($user);
@@ -112,6 +125,11 @@ test('LogModelDeletedAction can execute', function () {
 
     $activity = $action->execute();
 >>>>>>> 0a02158a (.)
+=======
+    $action = new LogModelDeletedAction($user);
+
+    $activity = $action->execute();
+>>>>>>> 35d8cf69 (Initial commit)
 
     Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame('deleted', $activity->event);

@@ -61,28 +61,40 @@ class ActivityLogger
     public function created(Model $model, ?User $user = null): Activity
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return (new LogModelCreatedAction)->execute($model, $user);
 =======
         return (new LogModelCreatedAction($model, $user))->execute();
 >>>>>>> 0a02158a (.)
+=======
+        return (new LogModelCreatedAction($model, $user))->execute();
+>>>>>>> 35d8cf69 (Initial commit)
     }
 
     public function updated(Model $model, ?User $user = null): Activity
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return (new LogModelUpdatedAction)->execute($model, $user);
 =======
         return (new LogModelUpdatedAction($model, $user))->execute();
 >>>>>>> 0a02158a (.)
+=======
+        return (new LogModelUpdatedAction($model, $user))->execute();
+>>>>>>> 35d8cf69 (Initial commit)
     }
 
     public function deleted(Model $model, ?User $user = null): Activity
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return (new LogModelDeletedAction)->execute($model, $user);
 =======
         return (new LogModelDeletedAction($model, $user))->execute();
 >>>>>>> 0a02158a (.)
+=======
+        return (new LogModelDeletedAction($model, $user))->execute();
+>>>>>>> 35d8cf69 (Initial commit)
     }
 
     public function login(User $user): Activity

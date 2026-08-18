@@ -10,10 +10,14 @@ final class ListLogActivitiesActionTestResource
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, mixed>  $parameters
 =======
      * @param  array  $parameters
 >>>>>>> 0a02158a (.)
+=======
+     * @param  array  $parameters
+>>>>>>> 35d8cf69 (Initial commit)
      */
     public static function getUrl(string $name, array $parameters = []): string
     {

@@ -23,9 +23,12 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  * @property string|null $updated_by
  * @property string|null $created_by
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
  * @method static Builder<static>|Snapshot newModelQuery()
  * @method static Builder<static>|Snapshot newQuery()
  * @method static Builder<static>|Snapshot query()
@@ -40,9 +43,12 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  * @method static Builder<static>|Snapshot whereUpdatedBy($value)
  * @method static SnapshotFactory factory($count = null, $state = [])
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
  * @mixin \Eloquent
  */
 class Snapshot extends SpatieSnapshot
@@ -53,6 +59,7 @@ class Snapshot extends SpatieSnapshot
     /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
     protected $connection = 'activity';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected $table = 'snapshots';
 
@@ -85,4 +92,9 @@ class Snapshot extends SpatieSnapshot
     protected $fillable = ['id', 'aggregate_uuid', 'aggregate_version', 'state', 'created_at', 'updated_at'];
 
 >>>>>>> 0a02158a (.)
+=======
+    /** @var list<string> */
+    protected $fillable = ['id', 'aggregate_uuid', 'aggregate_version', 'state', 'created_at', 'updated_at'];
+
+>>>>>>> 35d8cf69 (Initial commit)
 }

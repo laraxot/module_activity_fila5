@@ -10,6 +10,7 @@ CHANGELOG.md export-ignore
 *.png !text !filter !merge !diff
 *.svg !text !filter !merge !diff
 >>>>>>> 0a02158a (.)
+>>>>>>> 35d8cf69 (Initial commit)
 *.jpg !text !filter !merge !diff
 *.jpeg !text !filter !merge !diff
 *.gif !text !filter !merge !diff

@@ -19,6 +19,7 @@ legacy/**
 *~head
 agentdb.rvf
 <<<<<<< HEAD
+<<<<<<< HEAD
 quality-status-2025-11.md
 documentation-2024-03-27.md
 copilot-redundancy-audit-2026-05-25.md
@@ -34,3 +35,5 @@ redundancy-audit-2026-05-21.md
 *-[0-9][0-9].md
 =======
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)

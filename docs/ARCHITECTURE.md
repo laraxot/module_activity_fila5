@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Activity Module Architecture"
 type: architecture
@@ -29,6 +30,8 @@ Provides audit trail and activity logging via Spatie Laravel Activity Log. Track
 ## Quality Gates
 ✅ PHPStan L10: Executed (2026-07-28)
 =======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 # Architecture Documentation
 
 ## Activity Module Architecture
@@ -188,5 +191,9 @@ class ActivityPolicy
 - [Security](SECURITY.md)
 - [Quality](QUALITY.md)
 - [Performance](PERFORMANCE.md)
+<<<<<<< HEAD
 - [Testing](TESTING.md)
 >>>>>>> 0a02158a (.)
+=======
+- [Testing](TESTING.md)
+>>>>>>> 35d8cf69 (Initial commit)

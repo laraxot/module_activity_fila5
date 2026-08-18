@@ -11,6 +11,7 @@ use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(TestCase::class);
 
 beforeEach(function () {
@@ -24,6 +25,9 @@ beforeEach(function () {
 =======
 uses(\Modules\Activity\Tests\TestCase::class);
 >>>>>>> 0a02158a (.)
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> 35d8cf69 (Initial commit)
 
 test('user can create activity', function () {
     $user = UserFactory::new()->createOne();

@@ -6,9 +6,12 @@ namespace Modules\Activity\Actions\Query;
 
 use Illuminate\Database\Eloquent\Builder;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
 =======
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 use Illuminate\Support\Facades\Cache;
 use Modules\Activity\Models\Activity;
 use Modules\User\Models\User;
@@ -76,10 +79,14 @@ class GetActivityStatisticsAction
         $clonedQuery = $query->clone();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var Collection<int, object{event: string, count: int}> $results */
 =======
         /** @var \Illuminate\Support\Collection<int, object{event: string, count: int}> $results */
 >>>>>>> 0a02158a (.)
+=======
+        /** @var \Illuminate\Support\Collection<int, object{event: string, count: int}> $results */
+>>>>>>> 35d8cf69 (Initial commit)
         $results = $clonedQuery
             ->selectRaw('event, COUNT(*) as count')
             ->groupBy('event')

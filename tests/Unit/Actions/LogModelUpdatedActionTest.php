@@ -12,6 +12,7 @@ uses(TestCase::class);
 
 test('LogModelUpdatedAction can be instantiated', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $action = new LogModelUpdatedAction;
 
     Assert::assertInstanceOf(LogModelUpdatedAction::class, $action);
@@ -22,10 +23,14 @@ test('LogModelUpdatedAction logs activity with the given user as causer', functi
 =======
     $model = new class extends Model
 >>>>>>> 0a02158a (.)
+=======
+    $model = new class extends Model
+>>>>>>> 35d8cf69 (Initial commit)
     {
         protected $table = 'test_models';
 
         protected $fillable = ['name'];
+<<<<<<< HEAD
 <<<<<<< HEAD
     });
     $model = new $modelClass(['name' => 'Test']);
@@ -37,6 +42,8 @@ test('LogModelUpdatedAction logs activity with the given user as causer', functi
     Assert::assertSame('updated', $activity->event);
     Assert::assertSame($user->getKey(), $activity->causer_id);
 =======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
     };
     $user = UserFactory::new()->createOne();
     Assert::assertInstanceOf(Model::class, $user);
@@ -44,5 +51,8 @@ test('LogModelUpdatedAction logs activity with the given user as causer', functi
     $action = new LogModelUpdatedAction($model, $user);
 
     Assert::assertSame($user, $action->user);
+<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 });

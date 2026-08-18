@@ -66,10 +66,14 @@ abstract class ListLogActivities extends XotBasePage
         // Convert to string (__() returns string|array|null)
         if (is_array($breadcrumb)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return implode(' ', array_map(self::stringifyTranslationValue(...), $breadcrumb));
 =======
             return implode(' ', array_map(fn (mixed $v): string => (string) $v, $breadcrumb));
 >>>>>>> 0a02158a (.)
+=======
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $breadcrumb));
+>>>>>>> 35d8cf69 (Initial commit)
         }
 
         if (is_string($breadcrumb)) {
@@ -94,10 +98,14 @@ abstract class ListLogActivities extends XotBasePage
         // __() returns string|array|null
         if (is_array($title)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return implode(' ', array_map(self::stringifyTranslationValue(...), $title));
 =======
             return implode(' ', array_map(fn (mixed $v): string => (string) $v, $title));
 >>>>>>> 0a02158a (.)
+=======
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $title));
+>>>>>>> 35d8cf69 (Initial commit)
         }
 
         if (is_string($title)) {
@@ -279,10 +287,14 @@ abstract class ListLogActivities extends XotBasePage
         $title = __('activity::activities.events.restore_successful');
         $titleString = is_array($title)
 <<<<<<< HEAD
+<<<<<<< HEAD
             ? implode(' ', array_map(self::stringifyTranslationValue(...), $title))
 =======
             ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
 >>>>>>> 0a02158a (.)
+=======
+            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
+>>>>>>> 35d8cf69 (Initial commit)
             : (is_string($title) ? $title : '');
 
         return Notification::make()
@@ -296,10 +308,14 @@ abstract class ListLogActivities extends XotBasePage
         $title = __('activity::activities.events.restore_failed');
         $titleString = is_array($title)
 <<<<<<< HEAD
+<<<<<<< HEAD
             ? implode(' ', array_map(self::stringifyTranslationValue(...), $title))
 =======
             ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
 >>>>>>> 0a02158a (.)
+=======
+            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
+>>>>>>> 35d8cf69 (Initial commit)
             : (is_string($title) ? $title : '');
 
         $notification = Notification::make()
@@ -354,6 +370,7 @@ abstract class ListLogActivities extends XotBasePage
         return $old;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     private static function stringifyTranslationValue(mixed $value): string
     {
@@ -363,4 +380,6 @@ abstract class ListLogActivities extends XotBasePage
     }
 =======
 >>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 }
