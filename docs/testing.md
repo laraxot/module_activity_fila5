@@ -13,6 +13,8 @@ Modules/Activity/tests/
 ├── Feature/
 │   ├── (feature tests)
 ├── Unit/
+│   ├── Bootstrap/
+│   │   └── PestExtendBootstrapTest.php  # pilota pest()->extend
 │   └── (unit tests)
 ├── TestCase.php
 └── Pest.php
@@ -21,9 +23,25 @@ Modules/Activity/tests/
 ### Test Files
 
 - **TestCase.php** - Base test case with database configuration
-- **Pest.php** - Pest configuration and extensions
+- **Pest.php** - `pest()->extend(TestCase::class)` per pilota `Unit/Bootstrap` (story 3.10)
 - **Feature/** - Feature tests for Activity functionality
 - **Unit/** - Unit tests for Activity components
+
+### Pest bootstrap (modulo)
+
+Pest carica `Modules/Activity/tests/Pest.php` solo con `--test-directory` esplicito:
+
+```bash
+cd laravel
+./vendor/bin/pest -c Modules/Activity/phpunit.xml \
+  --test-directory=Modules/Activity/tests \
+  --filter=PestExtendBootstrap --no-coverage
+```
+
+Dettaglio: [wiki/concepts/pest-bootstrap-extend-ignore.md](wiki/concepts/pest-bootstrap-extend-ignore.md)
+
+I test legacy in `Unit/` e `Feature/` continuano a usare `uses(TestCase::class)` per file fino
+alla migrazione completa.
 
 ## Testing Configuration
 

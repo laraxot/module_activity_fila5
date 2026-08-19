@@ -40,11 +40,11 @@ test('ActivityLogger can log with user', function () {
     Assert::assertSame(User::class, $activity->causer_type);
 });
 
-test('ActivityLogger throws exception for invalid user type', function () {
+test('ActivityLogger throws exception for empty event type', function () {
     $logger = new ActivityLogger;
 
     try {
-        $logger->log('test_event', 'invalid_user_type');
+        $logger->getByType('', 5);
         Assert::fail('Expected InvalidArgumentException was not thrown');
     } catch (InvalidArgumentException $exception) {
         Assert::assertInstanceOf(InvalidArgumentException::class, $exception);

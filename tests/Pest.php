@@ -3,9 +3,13 @@
 declare(strict_types=1);
 
 /*
- * Bootstrap Pest — modulo Activity.
- * Ogni file test dichiara uses(\Modules\Activity\Tests\TestCase::class).
- * Vietato pest()->extend() qui (PHPStan method.internalClass).
+ * Bootstrap Pest — modulo Activity (pilota pest()->extend, story 3.10).
+ *
+ * Preferibile a require_once PestStubs.php — plugin ufficiali Pest 5
+ * forniscono actingAs/livewire a runtime.
+ *
+ * @see laravel/Modules/Activity/docs/stories/3.10.activity-pest-extend-bootstrap.story.md
+ * @see laravel/Modules/Xot/docs/wiki/concepts/pest5-configuring-tests.md
  */
 
-require_once __DIR__.'/PestStubs.php';
+pest()->extend(\Modules\Activity\Tests\TestCase::class)->in('Unit/Bootstrap');

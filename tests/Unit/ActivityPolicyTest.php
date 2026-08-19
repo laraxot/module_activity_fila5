@@ -16,7 +16,9 @@ describe('Activity Policy', function (): void {
         /** @var TestCase $this */
         // Create a mock user with permission
         $user = $this->createUnitMock(User::class);
-        $user->method('hasPermissionTo')->with('activity.view')->willReturn(true);
+        $user->method('hasPermissionTo')->willReturnCallback(
+            static fn (string $permission): bool => $permission === 'activity.view'
+        );
 
         $policy = new ActivityPolicy();
         $result = $policy->view($user);
@@ -28,7 +30,9 @@ describe('Activity Policy', function (): void {
         // Create a mock user without permission
         /** @var TestCase $this */
         $user = $this->createUnitMock(User::class);
-        $user->method('hasPermissionTo')->with('activity.view')->willReturn(false);
+        $user->method('hasPermissionTo')->willReturnCallback(
+            static fn (string $permission): bool => false
+        );
 
         $policy = new ActivityPolicy();
         $result = $policy->view($user);
