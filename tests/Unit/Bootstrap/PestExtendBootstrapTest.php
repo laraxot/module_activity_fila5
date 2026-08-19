@@ -11,6 +11,8 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 
+uses(TestCase::class)->group('no-activity-db');
+
 /*
  * Pilota pest()->extend(TestCase) — cartella Unit/Bootstrap (story 3.10).
  * Eseguire con:

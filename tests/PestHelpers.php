@@ -6,6 +6,7 @@ use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Models\Activity;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
 
 /**
  * Helper Pest/PHPStan — modulo Activity.
@@ -18,6 +19,10 @@ use Modules\User\Models\User;
  */
 function activityCreateUser(array $attributes = []): User
 {
+    if (\Modules\Activity\Tests\TestCase::activityDbUnavailable()) {
+        Assert::markTestSkipped('DB `activity_log` non raggiungibile: blocco di ambiente.');
+    }
+
     $user = UserFactory::new()->createOne($attributes);
     assert($user instanceof User);
 
@@ -29,6 +34,10 @@ function activityCreateUser(array $attributes = []): User
  */
 function activityCreateActivity(array $attributes = []): Activity
 {
+    if (\Modules\Activity\Tests\TestCase::activityDbUnavailable()) {
+        Assert::markTestSkipped('DB `activity_log` non raggiungibile: blocco di ambiente.');
+    }
+
     $activity = ActivityFactory::new()->createOne($attributes);
     assert($activity instanceof Activity);
 
