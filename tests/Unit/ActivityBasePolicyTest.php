@@ -31,7 +31,9 @@ describe('Activity Base Policy', function (): void {
         /** @var \Modules\Activity\Tests\TestCase $this */
         // Create a mock super-admin user
         $user = $this->createUnitMock(User::class);
-        $user->method('hasRole')->with('super-admin')->willReturn(true);
+        $user->method('hasRole')->willReturnCallback(
+            static fn (string $role): bool => $role === 'super-admin'
+        );
 
         // Test the policy
         $policy = new class extends ActivityBasePolicy

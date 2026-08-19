@@ -26,6 +26,8 @@ updated: 2026-07-23
 ## 🧪 Qualità e Testing
 - [PHPStan Compliance](./phpstan-analysis.md) - Report sulla compliance (livello configurato: 9, cfr. phpstan.neon).
 - [Testing Strategy](./testing-strategy-implementation.md) - Approccio Pest/PHPUnit.
+- [Testing](./testing.md) - Struttura test e comando Pest modulo.
+- [Pest bootstrap extend](./wiki/concepts/pest-bootstrap-extend-ignore.md) - Pilota `pest()->extend` (story 3.10).
 - [PHPMD Fixes](./phpmd-fixes.md) - Risoluzione dei problemi di complessità ciclomatica.
 - PSR-4 Test Helpers: preferire Pest e classi anonime nei test; evitare classi helper top-level non allineate al filepath.
 

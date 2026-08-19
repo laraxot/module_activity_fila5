@@ -32,7 +32,9 @@ describe('Snapshot Policy', function (): void {
     test('user with permission can view', function (): void {
         /** @var TestCase $this */
         $user = $this->createUnitMock(User::class);
-        $user->method('hasPermissionTo')->with('snapshot.view')->willReturn(true);
+        $user->method('hasPermissionTo')->willReturnCallback(
+            static fn (string $permission): bool => $permission === 'snapshot.view'
+        );
 
         $policy = new SnapshotPolicy();
         $result = $policy->view($user);
@@ -43,7 +45,9 @@ describe('Snapshot Policy', function (): void {
     test('user without permission cannot view', function (): void {
         /** @var TestCase $this */
         $user = $this->createUnitMock(User::class);
-        $user->method('hasPermissionTo')->with('snapshot.view')->willReturn(false);
+        $user->method('hasPermissionTo')->willReturnCallback(
+            static fn (string $permission): bool => false
+        );
 
         $policy = new SnapshotPolicy();
         $result = $policy->view($user);
