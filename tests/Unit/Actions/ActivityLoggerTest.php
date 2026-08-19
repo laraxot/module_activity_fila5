@@ -49,7 +49,7 @@ test('ActivityLogger throws exception for empty event type', function () {
     } catch (InvalidArgumentException $exception) {
         Assert::assertInstanceOf(InvalidArgumentException::class, $exception);
     }
-});
+})->group('no-activity-db');
 
 test('ActivityLogger can log created event', function () {
     $user = UserFactory::new()->createOne();
