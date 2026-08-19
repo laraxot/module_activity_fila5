@@ -169,3 +169,15 @@ return $alternative;
 
 *Last Updated: 2025-11-12*
 *Status: In Progress - Complexity Fixes*
+
+---
+
+<!-- Merged from PHPMD_ANALYSIS.md, which collided with this file on case-insensitive filesystems. -->
+
+---
+module: theme
+topic: PHPMD_ANALYSIS
+canonical: ../../../Themes/docs/shared-components/PHPMD-ANALYSIS.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/PHPMD-ANALYSIS.md

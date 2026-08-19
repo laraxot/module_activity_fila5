@@ -68,3 +68,15 @@ Common issues and solutions:
 - Database performance with large activity logs
 - Missing activity entries
 - Configuration issues
+
+---
+
+<!-- Merged from INDEX.md, which collided with this file on case-insensitive filesystems. -->
+
+# Documentation Index
+
+Modulo: Activity
+
+## File disponibili
+
+<!-- auto-generato: elencare i file .md presenti -->

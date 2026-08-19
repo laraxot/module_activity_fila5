@@ -110,7 +110,6 @@ class Activity extends SpatieActivity
     /** @phpstan-use HasXotFactory<ActivityFactory> */
     use HasXotFactory;
 
-    /** @var string */
     protected $connection = 'activity';
 
     protected $table = 'activity_log';
