@@ -153,3 +153,4 @@ tests/AuditCoverage
 .vscode/
 .windsurf/
 tests/AuditCoverage/
+workbench/
