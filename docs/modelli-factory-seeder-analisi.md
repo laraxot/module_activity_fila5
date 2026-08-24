@@ -139,11 +139,7 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 ## Riepilogo Generale
 
 ### Totale Modelli Analizzati
-<<<<<<< HEAD
 - ****: 20 modelli attivi, 7 obsoleti
-=======
-- **<nome progetto>**: 20 modelli attivi, 7 obsoleti
->>>>>>> 4fd30195 (chore: update project dependencies and improve configuration)
 - **User**: 35+ modelli attivi
 - **Geo**: 12 modelli attivi, 1 obsoleto
 - **Media**: 4 modelli attivi
@@ -173,11 +169,7 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 4. **Documentazione**: Aggiornare documentazione moduli
 
 ### Moduli Critici per Business Logic
-<<<<<<< HEAD
 1. **** - Core sanitario ✅ Completo
-=======
-1. **<nome progetto>** - Core sanitario ✅ Completo
->>>>>>> 4fd30195 (chore: update project dependencies and improve configuration)
 2. **User** - Autenticazione ✅ Completo
 3. **Notify** - Comunicazioni ✅ Completo
 4. **Media** - File management ✅ Completo
@@ -192,7 +184,6 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 6. **Xot** - Framework base ✅ Completo
 
 *Ultimo aggiornamento: Gennaio 2025*
-<<<<<<< HEAD
 *Analisi completa sistema : 150+ modelli, 14 moduli*
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
 
@@ -381,6 +372,3 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
-=======
-*Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
->>>>>>> 4fd30195 (chore: update project dependencies and improve configuration)
