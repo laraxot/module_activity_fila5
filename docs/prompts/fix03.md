@@ -1,3 +1,15 @@
+---
+title: 'Fix: .env.testing - NON usare variabili DB_*_ACTIVITY'
+module: Activity
+type: reference
+slug: fix03
+description: 'NON aggiungere (o rimuovere se presenti) in `.env.testing`: - DB_DATABASE_ACTIVITY - DB_USERNAME_ACTIVITY - DB_PASSWORD_ACTIVITY'
+tags: [migrato-da-txt, activity]
+converted_from: fix03.txt
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Fix: .env.testing - NON usare variabili DB_*_ACTIVITY
 
 ## Azione
@@ -40,5 +52,3 @@ protected $connection = 'activity';
 ```
 
 Regola: fix01. TenantServiceProvider crea la connessione; i modelli la dichiarano.
-
-

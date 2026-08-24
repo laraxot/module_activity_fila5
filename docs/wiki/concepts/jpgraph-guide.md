@@ -1,3 +1,12 @@
+---
+title: "JpGraph Guide"
+type: concept
+tags: [docs, migrated-from-txt]
+created: 2026-08-24
+updated: 2026-08-24
+source: laravel/Themes/Zero/docs/jpgraph-guide.txt
+---
+
 # JpGraph 4.4.2 Guide
 
 ## Overview

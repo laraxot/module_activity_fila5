@@ -1,4 +1,16 @@
-   FAILED  Modules\Activity\tests\Feature\ActivityEventSourcingTest > activity with batch scope returns…
+---
+title: 'Test01'
+module: Activity
+type: reference
+slug: test01
+description: 'FAILED Modules\\Activity\\tests\\Feature\\ActivityEventSourcingTest > activity with batch scope returns… Failed asserting that actual size 40 matches expected size 1.'
+tags: [migrato-da-txt, activity]
+converted_from: test01.txt
+created: 2026-08-24
+updated: 2026-08-24
+---
+
+FAILED  Modules\Activity\tests\Feature\ActivityEventSourcingTest > activity with batch scope returns…
   Failed asserting that actual size 40 matches expected size 1.
 
   at Modules/Activity/tests/Feature/ActivityEventSourcingTest.php:225

@@ -1,3 +1,15 @@
+---
+title: "Fix: Rimuovere 'activity' da database.php"
+module: Activity
+type: reference
+slug: fix02
+description: "Rimuovere la connessione `'activity'` da `laravel/config/database.php` (se presente)."
+tags: [migrato-da-txt, activity]
+converted_from: fix02.txt
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Fix: Rimuovere 'activity' da database.php
 
 ## Azione

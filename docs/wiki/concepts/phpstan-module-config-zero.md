@@ -32,7 +32,9 @@ cd laravel/Modules/Activity && php -d memory_limit=2048M ../../vendor/bin/phpsta
 
 ## Config `phpstan.neon` modulo
 
-- `pestphp/pest/extension.neon` + `scanFiles: ../Xot/tests/Support/PestFunctionBridge.php`
+- `pestphp/pest-plugin-phpstan` è caricato in automatico da `phpstan/extension-installer`:
+  niente `includes` a mano, e **niente** `scanFiles` sul vecchio
+  `../Xot/tests/Support/PestFunctionBridge.php`, rimosso il 24 ago 2026 (vietato da ADR-002)
 - `treatPhpDocTypesAsCertain: false` — allineato al root
 - Rimossi `ignoreErrors` stale (pattern non più matchati)
 
@@ -48,7 +50,7 @@ cd laravel/Modules/Activity && php -d memory_limit=2048M ../../vendor/bin/phpsta
 - `LoginListenerTest` / `LoginLogoutListenerBehaviorTest`: `handle(new Login(...))` — import `Illuminate\Auth\Events\Login` nel namespace test
 - `AccessControlTest`: namespace `Tests\Security`, `Assert` al posto di `expect()` (no bridge Pest interno)
 - `SnapshotPolicyTest` / `ListLogActivitiesPageCoverageTest`: `@var TestCase $this` per `createUnitMock` / `requirePage` / `skipTest`
-- Bridge Pest rigenerato: `php bashscripts/tools/generate-pest-phpstan-bridge.php`
+- Bridge PHPStan per Pest: **rimosso il 24 ago 2026**, il generatore non esiste. Ci pensa `pestphp/pest-plugin-phpstan`, caricato da `phpstan/extension-installer` — vedi `rules/pest-phpstan-bridge.md`
 
 ## Pest
 
