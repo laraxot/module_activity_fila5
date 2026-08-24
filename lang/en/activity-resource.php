@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'fields' => [
         'id' => [
@@ -46,6 +44,34 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+        'resource_type' => [
+            'label' => 'Tipo Risorsa',
+            'help' => 'Tipo di risorsa attività',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'resource_id' => [
+            'label' => 'ID Risorsa',
+            'help' => 'Identificativo della risorsa',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'activity_count' => [
+            'label' => 'Numero Attività',
+            'help' => 'Numero di attività associate',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'last_activity' => [
+            'label' => 'Ultima Attività',
+            'help' => 'Data e ora dell\'ultima attività',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
     ],
     'actions' => [
         'view' => [
@@ -56,6 +82,14 @@ return [
             'label' => 'Delete',
             'tooltip' => 'Delete this activity',
             'confirmation' => 'Are you sure you want to delete this activity?',
+        ],
+        'view_activities' => [
+            'label' => 'Visualizza Attività',
+            'tooltip' => 'Visualizza tutte le attività della risorsa',
+        ],
+        'export' => [
+            'label' => 'Esporta',
+            'tooltip' => 'Esporta dati della risorsa',
         ],
     ],
     'filters' => [
@@ -99,10 +133,19 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'group' => [
+            'name' => 'Monitoraggio',
+            'description' => 'Gestione delle risorse di attività',
+        ],
         'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
+        'sort' => '100',
+        'name' => 'Risorse Attività',
+        'plural' => 'Risorse Attività',
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+    'messages' => [
+        'no_resources' => 'Nessuna risorsa trovata',
+        'resource_exported' => 'Risorsa esportata con successo',
+    ],
 ];

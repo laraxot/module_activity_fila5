@@ -54,4 +54,29 @@ describe('Snapshot Policy', function (): void {
 
         Assert::assertFalse($result);
     });
+
+    test('create update delete restore forceDelete rispettano i permessi snapshot', function (): void {
+        /** @var TestCase $this */
+        /** @var list<array{0: string, 1: callable(SnapshotPolicy, User): bool}> $casi */
+        $casi = [
+            ['snapshot.create', static fn (SnapshotPolicy $p, User $u): bool => $p->create($u)],
+            ['snapshot.update', static fn (SnapshotPolicy $p, User $u): bool => $p->update($u)],
+            ['snapshot.delete', static fn (SnapshotPolicy $p, User $u): bool => $p->delete($u)],
+            ['snapshot.restore', static fn (SnapshotPolicy $p, User $u): bool => $p->restore($u)],
+            ['snapshot.forceDelete', static fn (SnapshotPolicy $p, User $u): bool => $p->forceDelete($u)],
+        ];
+
+        foreach ($casi as [$permesso, $callback]) {
+            $policy = new SnapshotPolicy;
+            $autorizzato = $this->createUnitMock(User::class);
+            $autorizzato->method('hasPermissionTo')->willReturnCallback(
+                static fn (string $permission): bool => $permission === $permesso
+            );
+            $negato = $this->createUnitMock(User::class);
+            $negato->method('hasPermissionTo')->willReturn(false);
+
+            Assert::assertTrue($callback($policy, $autorizzato));
+            Assert::assertFalse($callback($policy, $negato));
+        }
+    });
 });

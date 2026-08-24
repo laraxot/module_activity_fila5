@@ -11,32 +11,53 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+final class ActivityPolicyUser extends User
+{
+    /** @param list<string> $permissions */
+    public function __construct(private readonly array $permissions)
+    {
+        parent::__construct();
+    }
+
+    public function hasPermissionTo($permission, ?string $guardName = null): bool
+    {
+        return is_string($permission) && in_array($permission, $this->permissions, true);
+    }
+}
+
+/**
+ * @param  list<string>  $permessi
+ */
+function activityFakeUser(array $permessi): User
+{
+    return new ActivityPolicyUser($permessi);
+}
+
 describe('Activity Policy', function (): void {
     test('user with permission can view', function (): void {
-        /** @var TestCase $this */
-        // Create a mock user with permission
-        $user = $this->createUnitMock(User::class);
-        $user->method('hasPermissionTo')->willReturnCallback(
-            static fn (string $permission): bool => $permission === 'activity.view'
-        );
-
-        $policy = new ActivityPolicy();
-        $result = $policy->view($user);
-
-        Assert::assertTrue($result);
+        $policy = new ActivityPolicy;
+        Assert::assertTrue($policy->view(activityFakeUser(['activity.view'])));
     });
 
     test('user without permission cannot view', function (): void {
-        // Create a mock user without permission
-        /** @var TestCase $this */
-        $user = $this->createUnitMock(User::class);
-        $user->method('hasPermissionTo')->willReturnCallback(
-            static fn (string $permission): bool => false
-        );
+        $policy = new ActivityPolicy;
+        Assert::assertFalse($policy->view(activityFakeUser([])));
+    });
 
-        $policy = new ActivityPolicy();
-        $result = $policy->view($user);
+    test('create update delete restore forceDelete rispettano i permessi', function (): void {
+        /** @var list<array{0: string, 1: callable(ActivityPolicy, User): bool}> $casi */
+        $casi = [
+            ['activity.create', static fn (ActivityPolicy $p, User $u): bool => $p->create($u)],
+            ['activity.update', static fn (ActivityPolicy $p, User $u): bool => $p->update($u)],
+            ['activity.delete', static fn (ActivityPolicy $p, User $u): bool => $p->delete($u)],
+            ['activity.restore', static fn (ActivityPolicy $p, User $u): bool => $p->restore($u)],
+            ['activity.forceDelete', static fn (ActivityPolicy $p, User $u): bool => $p->forceDelete($u)],
+        ];
 
-        Assert::assertFalse($result);
+        foreach ($casi as [$permesso, $callback]) {
+            $policy = new ActivityPolicy;
+            Assert::assertTrue($callback($policy, activityFakeUser([$permesso])));
+            Assert::assertFalse($callback($policy, activityFakeUser([])));
+        }
     });
 });

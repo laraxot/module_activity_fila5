@@ -31,7 +31,7 @@ test('activity model can be saved and retrieved', function () {
     Assert::assertInstanceOf(Activity::class, $retrieved);
     Assert::assertSame('Test action', $retrieved->description);
     Assert::assertSame('test_event', $retrieved->event);
-});
+})->group('activity-db');
 
 test('activity model has expected attributes', function () {
     $activity = ActivityFactory::new()->makeOne();

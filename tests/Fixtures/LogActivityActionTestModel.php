@@ -19,6 +19,12 @@ final class LogActivityActionTestModel extends Model
     /** @var string */
     protected $table = 'test_models';
 
+    protected $connection = 'activity';
+
+    public $incrementing = false;
+
+    protected $keyType = 'string';
+
     /** @var list<string> */
-    protected $fillable = ['name'];
+    protected $fillable = ['id', 'name'];
 }

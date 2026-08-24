@@ -43,6 +43,24 @@ Dettaglio: [wiki/concepts/pest-bootstrap-extend-ignore.md](wiki/concepts/pest-bo
 I test legacy in `Unit/` e `Feature/` continuano a usare `uses(TestCase::class)` per file fino
 alla migrazione completa.
 
+## Coverage baseline (story 5.24)
+
+| Story | Baseline | Gate | DB `activity_log` | Note |
+|-------|----------|------|-------------------|------|
+| 5.24 | 20.3% | **54.2%** PASS | 220 pass, 205 skip | Unit: skip condizionato Feature/`activity-db`; policy mock; Filament reflection |
+| 5.26 | 54.2% | **100.0%** PASS | 281 pass, 168 skip, 5 risky | Feature opt-in `activity-db`; Unit schema sqlite dedicato; Actions/Adapter/ListLogActivities mock+persistenza |
+
+Comando gate:
+
+```bash
+cd laravel
+XDEBUG_MODE=coverage ./vendor/bin/pest -c Modules/Activity/phpunit.xml --coverage --min=100
+```
+
+Suite attuale: test Unit senza DB + Feature/`activity-db` skipped quando manca `activity_log` (Feature solo opt-in gruppo `activity-db`).
+
+Pattern canonico (replicabile su Media/User): [module-test-skip-offline-pattern.md](../../Xot/docs/wiki/concepts/module-test-skip-offline-pattern.md).
+
 ## Testing Configuration
 
 ### TestCase Configuration
