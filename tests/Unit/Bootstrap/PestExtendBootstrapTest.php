@@ -14,8 +14,8 @@ use function Safe\file_get_contents;
 uses(TestCase::class)->group('no-activity-db');
 
 /*
- * Pilota pest()->extend(TestCase) — cartella Unit/Bootstrap (story 3.10).
- * Eseguire con:
+ * Il bootstrap Pest del modulo non lega cartelle a TestCase: ogni file
+ * dichiara `uses()` nudo. Eseguire con:
  *   ./vendor/bin/pest -c Modules/Activity/phpunit.xml \
  *     --test-directory=Modules/Activity/tests Unit/Bootstrap
  */
@@ -26,14 +26,16 @@ test('activity models declare activity connection without database', function ()
     Assert::assertSame('activity', (new StoredEvent())->getConnectionName());
 });
 
-test('pest bootstrap declares extend and drops require_once', function (): void {
+test('pest bootstrap binds no folder and requires no stub file', function (): void {
     $pestBootstrap = file_get_contents(__DIR__.'/../../Pest.php');
 
-    Assert::assertStringContainsString('pest()->extend', $pestBootstrap);
+    // Solo chiamate eseguibili: il commento può citare pest()->extend
+    Assert::assertStringNotContainsString('pest()->extend(', $pestBootstrap);
+    Assert::assertDoesNotMatchRegularExpression('/^\s*uses\s*\(/m', $pestBootstrap);
     Assert::assertStringNotContainsString('require_once __DIR__', $pestBootstrap);
 });
 
-test('pest extend binds the activity module test case', function (): void {
+test('the nude uses declaration binds the activity module test case', function (): void {
     Assert::assertInstanceOf(TestCase::class, $this);
 });
 

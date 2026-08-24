@@ -8,7 +8,7 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('activity-db');
 
 test('LogUserLogoutAction can be instantiated', function () {
     $user = UserFactory::new()->createOne();

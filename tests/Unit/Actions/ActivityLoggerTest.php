@@ -11,35 +11,6 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-test('ActivityLogger can log basic activity', function () {
-    $logger = new ActivityLogger;
-
-    $activity = $logger->log('test_event', null, null, ['key' => 'value'], 'Test Description');
-
-    Assert::assertInstanceOf(Activity::class, $activity);
-    Assert::assertSame('test_event', $activity->event);
-    Assert::assertSame('Test Description', $activity->description);
-
-    if (is_array($activity->properties)) {
-        Assert::assertEquals(['key' => 'value'], $activity->properties);
-    } elseif (is_object($activity->properties) && method_exists($activity->properties, 'toArray')) {
-        Assert::assertEquals(['key' => 'value'], $activity->properties->toArray());
-    } else {
-        Assert::assertNull($activity->properties);
-    }
-});
-
-test('ActivityLogger can log with user', function () {
-    $user = UserFactory::new()->createOne();
-    $logger = new ActivityLogger;
-
-    $activity = $logger->log('user_event', $user, null, null, 'User Event');
-
-    Assert::assertInstanceOf(Activity::class, $activity);
-    Assert::assertSame($user->id, $activity->causer_id);
-    Assert::assertSame(User::class, $activity->causer_type);
-});
-
 test('ActivityLogger throws exception for empty event type', function () {
     $logger = new ActivityLogger;
 
@@ -51,160 +22,191 @@ test('ActivityLogger throws exception for empty event type', function () {
     }
 })->group('no-activity-db');
 
-test('ActivityLogger can log created event', function () {
-    $user = UserFactory::new()->createOne();
-    $logger = new ActivityLogger;
+describe('ActivityLogger con database activity_log', function (): void {
+    test('ActivityLogger can log basic activity', function () {
+        $logger = new ActivityLogger;
 
-    $subjectModel = UserFactory::new()->createOne(['name' => 'Subject User', 'password' => 'password']);
+        $activity = $logger->log('test_event', null, null, ['key' => 'value'], 'Test Description');
 
-    $result = $logger->created($subjectModel, $user);
+        Assert::assertInstanceOf(Activity::class, $activity);
+        Assert::assertSame('test_event', $activity->event);
+        Assert::assertSame('Test Description', $activity->description);
 
-    Assert::assertInstanceOf(Activity::class, $result);
-    Assert::assertSame('created', $result->event);
-});
+        if (is_array($activity->properties)) {
+            Assert::assertEquals(['key' => 'value'], $activity->properties);
+        } elseif (is_object($activity->properties) && method_exists($activity->properties, 'toArray')) {
+            Assert::assertEquals(['key' => 'value'], $activity->properties->toArray());
+        } else {
+            Assert::assertNull($activity->properties);
+        }
+    });
 
-test('ActivityLogger can log updated event', function () {
-    $user = UserFactory::new()->createOne();
-    $logger = new ActivityLogger;
+    test('ActivityLogger can log with user', function () {
+        $user = UserFactory::new()->createOne();
+        $logger = new ActivityLogger;
 
-    $subjectModel = UserFactory::new()->createOne(['name' => 'Subject User', 'password' => 'password']);
+        $activity = $logger->log('user_event', $user, null, null, 'User Event');
 
-    $result = $logger->updated($subjectModel, $user);
+        Assert::assertInstanceOf(Activity::class, $activity);
+        Assert::assertSame($user->id, $activity->causer_id);
+        Assert::assertSame(User::class, $activity->causer_type);
+    });
 
-    Assert::assertInstanceOf(Activity::class, $result);
-    Assert::assertSame('updated', $result->event);
-});
+    test('ActivityLogger can log created event', function () {
+        $user = UserFactory::new()->createOne();
+        $logger = new ActivityLogger;
 
-test('ActivityLogger can log deleted event', function () {
-    $user = UserFactory::new()->createOne();
-    $logger = new ActivityLogger;
+        $subjectModel = UserFactory::new()->createOne(['name' => 'Subject User', 'password' => 'password']);
 
-    $activity = $logger->log('test_subject', $user, null, null, 'Test Subject');
+        $result = $logger->created($subjectModel, $user);
 
-    $result = $logger->deleted($activity, $user);
+        Assert::assertInstanceOf(Activity::class, $result);
+        Assert::assertSame('created', $result->event);
+    });
 
-    Assert::assertInstanceOf(Activity::class, $result);
-    Assert::assertSame('deleted', $result->event);
-});
+    test('ActivityLogger can log updated event', function () {
+        $user = UserFactory::new()->createOne();
+        $logger = new ActivityLogger;
 
-test('ActivityLogger can log login event', function () {
-    $user = UserFactory::new()->createOne();
-    $logger = new ActivityLogger;
+        $subjectModel = UserFactory::new()->createOne(['name' => 'Subject User', 'password' => 'password']);
 
-    $activity = $logger->login($user);
+        $result = $logger->updated($subjectModel, $user);
 
-    Assert::assertInstanceOf(Activity::class, $activity);
-    Assert::assertSame('login', $activity->event);
-});
+        Assert::assertInstanceOf(Activity::class, $result);
+        Assert::assertSame('updated', $result->event);
+    });
 
-test('ActivityLogger can log logout event', function () {
-    $user = UserFactory::new()->createOne();
-    $logger = new ActivityLogger;
+    test('ActivityLogger can log deleted event', function () {
+        $user = UserFactory::new()->createOne();
+        $logger = new ActivityLogger;
 
-    $activity = $logger->logout($user);
+        $activity = $logger->log('test_subject', $user, null, null, 'Test Subject');
 
-    Assert::assertInstanceOf(Activity::class, $activity);
-    Assert::assertSame('logout', $activity->event);
-});
+        $result = $logger->deleted($activity, $user);
 
-test('ActivityLogger can log custom event', function () {
-    $logger = new ActivityLogger;
+        Assert::assertInstanceOf(Activity::class, $result);
+        Assert::assertSame('deleted', $result->event);
+    });
 
-    $activity = $logger->custom('custom_event', 'Custom Description', null, ['custom' => 'data']);
+    test('ActivityLogger can log login event', function () {
+        $user = UserFactory::new()->createOne();
+        $logger = new ActivityLogger;
 
-    Assert::assertInstanceOf(Activity::class, $activity);
-    Assert::assertSame('custom_event', $activity->event);
-    Assert::assertSame('Custom Description', $activity->description);
-});
+        $activity = $logger->login($user);
 
-test('ActivityLogger can get user activities', function () {
-    $user = UserFactory::new()->createOne();
-    $logger = new ActivityLogger;
+        Assert::assertInstanceOf(Activity::class, $activity);
+        Assert::assertSame('login', $activity->event);
+    });
 
-    $logger->log('user_event', $user, null, null, 'User Event');
+    test('ActivityLogger can log logout event', function () {
+        $user = UserFactory::new()->createOne();
+        $logger = new ActivityLogger;
 
-    $userActivities = $logger->getUserActivities($user, 10);
+        $activity = $logger->logout($user);
 
-    Assert::assertCount(1, $userActivities);
-    Assert::assertNotNull($userActivities->first());
-    Assert::assertSame($user->id, $userActivities->first()->causer_id);
-});
+        Assert::assertInstanceOf(Activity::class, $activity);
+        Assert::assertSame('logout', $activity->event);
+    });
 
-test('ActivityLogger can get model activities', function () {
-    $user = UserFactory::new()->createOne();
-    $logger = new ActivityLogger;
+    test('ActivityLogger can log custom event', function () {
+        $logger = new ActivityLogger;
 
-    $subjectActivity = $logger->log('test_subject', $user, null, null, 'Test Subject');
+        $activity = $logger->custom('custom_event', 'Custom Description', null, ['custom' => 'data']);
 
-    $logger->log('model_event', $user, $subjectActivity, null, 'Model Event');
+        Assert::assertInstanceOf(Activity::class, $activity);
+        Assert::assertSame('custom_event', $activity->event);
+        Assert::assertSame('Custom Description', $activity->description);
+    });
 
-    $modelActivities = $logger->getModelActivities($subjectActivity, 10);
+    test('ActivityLogger can get user activities', function () {
+        $user = UserFactory::new()->createOne();
+        $logger = new ActivityLogger;
 
-    Assert::assertCount(1, $modelActivities);
-    Assert::assertNotNull($modelActivities->first());
-    Assert::assertSame((string) $subjectActivity->id, (string) $modelActivities->first()->subject_id);
-});
+        $logger->log('user_event', $user, null, null, 'User Event');
 
-test('ActivityLogger can get activities by type', function () {
-    $logger = new ActivityLogger;
-    $eventType = uniqid('specific_event_', true);
+        $userActivities = $logger->getUserActivities($user, 10);
 
-    $logger->log($eventType, null, null, null, 'Specific Event');
-    $logger->log(uniqid('other_event_', true), null, null, null, 'Other Event');
+        Assert::assertCount(1, $userActivities);
+        Assert::assertNotNull($userActivities->first());
+        Assert::assertSame($user->id, $userActivities->first()->causer_id);
+    });
 
-    $byType = $logger->getByType($eventType, 5);
+    test('ActivityLogger can get model activities', function () {
+        $user = UserFactory::new()->createOne();
+        $logger = new ActivityLogger;
 
-    Assert::assertCount(1, $byType);
-    Assert::assertNotNull($byType->first());
-    Assert::assertSame($eventType, $byType->first()->event);
-});
+        $subjectActivity = $logger->log('test_subject', $user, null, null, 'Test Subject');
 
-test('ActivityLogger can get recent activities', function () {
-    $logger = new ActivityLogger;
+        $logger->log('model_event', $user, $subjectActivity, null, 'Model Event');
 
-    $first = $logger->log(uniqid('recent_event_', true), null, null, null, 'Event 1');
-    $first->forceFill(['created_at' => now()->addMinutes(1), 'updated_at' => now()->addMinutes(1)])->save();
+        $modelActivities = $logger->getModelActivities($subjectActivity, 10);
 
-    $second = $logger->log(uniqid('recent_event_', true), null, null, null, 'Event 2');
-    $second->forceFill(['created_at' => now()->addMinutes(2), 'updated_at' => now()->addMinutes(2)])->save();
+        Assert::assertCount(1, $modelActivities);
+        Assert::assertNotNull($modelActivities->first());
+        Assert::assertSame((string) $subjectActivity->id, (string) $modelActivities->first()->subject_id);
+    });
 
-    $recent = $logger->getRecent(5);
-    $recentIds = $recent->pluck('id')->all();
+    test('ActivityLogger can get activities by type', function () {
+        $logger = new ActivityLogger;
+        $eventType = uniqid('specific_event_', true);
 
-    Assert::assertContains($first->id, $recentIds);
-    Assert::assertContains($second->id, $recentIds);
-});
+        $logger->log($eventType, null, null, null, 'Specific Event');
+        $logger->log(uniqid('other_event_', true), null, null, null, 'Other Event');
 
-test('ActivityLogger can clean old activities', function () {
-    $logger = new ActivityLogger;
+        $byType = $logger->getByType($eventType, 5);
 
-    $activity = $logger->log('old_event', null, null, null, 'Old Event');
-    $activity->created_at = now()->subDays(100);
-    $activity->save();
+        Assert::assertCount(1, $byType);
+        Assert::assertNotNull($byType->first());
+        Assert::assertSame($eventType, $byType->first()->event);
+    });
 
-    $deleted = $logger->cleanOld(90);
+    test('ActivityLogger can get recent activities', function () {
+        $logger = new ActivityLogger;
 
-    Assert::assertGreaterThanOrEqual(0, $deleted);
-});
+        $first = $logger->log(uniqid('recent_event_', true), null, null, null, 'Event 1');
+        $first->forceFill(['created_at' => now()->addMinutes(1), 'updated_at' => now()->addMinutes(1)])->save();
 
-test('ActivityLogger can get statistics', function () {
-    $logger = new ActivityLogger;
+        $second = $logger->log(uniqid('recent_event_', true), null, null, null, 'Event 2');
+        $second->forceFill(['created_at' => now()->addMinutes(2), 'updated_at' => now()->addMinutes(2)])->save();
 
-    $logger->log('stat_event', null, null, null, 'Stat Event');
+        $recent = $logger->getRecent(5);
+        $recentIds = $recent->pluck('id')->all();
 
-    $stats = $logger->getStatistics();
+        Assert::assertContains($first->id, $recentIds);
+        Assert::assertContains($second->id, $recentIds);
+    });
 
-    Assert::assertGreaterThanOrEqual(0, $stats['total']);
-    Assert::assertArrayHasKey('by_type', $stats);
-});
+    test('ActivityLogger can clean old activities', function () {
+        $logger = new ActivityLogger;
 
-test('ActivityLogger can get statistics for specific user', function () {
-    $user = UserFactory::new()->createOne();
-    $logger = new ActivityLogger;
+        $activity = $logger->log('old_event', null, null, null, 'Old Event');
+        $activity->created_at = now()->subDays(100);
+        $activity->save();
 
-    $logger->log('user_stat_event', $user, null, null, 'User Stat Event');
+        $deleted = $logger->cleanOld(90);
 
-    $stats = $logger->getStatistics($user);
+        Assert::assertGreaterThanOrEqual(0, $deleted);
+    });
 
-    Assert::assertGreaterThanOrEqual(0, $stats['total']);
-});
+    test('ActivityLogger can get statistics', function () {
+        $logger = new ActivityLogger;
+
+        $logger->log('stat_event', null, null, null, 'Stat Event');
+
+        $stats = $logger->getStatistics();
+
+        Assert::assertGreaterThanOrEqual(0, $stats['total']);
+        Assert::assertArrayHasKey('by_type', $stats);
+    });
+
+    test('ActivityLogger can get statistics for specific user', function () {
+        $user = UserFactory::new()->createOne();
+        $logger = new ActivityLogger;
+
+        $logger->log('user_stat_event', $user, null, null, 'User Stat Event');
+
+        $stats = $logger->getStatistics($user);
+
+        Assert::assertGreaterThanOrEqual(0, $stats['total']);
+    });
+})->group('activity-db');
