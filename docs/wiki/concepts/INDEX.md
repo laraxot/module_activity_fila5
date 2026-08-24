@@ -39,3 +39,7 @@ qmd search "Activity concepts" --limit 5
 - [activity-log-single-migration-contract](activity-log-single-migration-contract.md) — una create per modello, uuid morphs
 - [activity-log-attribute-changes-column](activity-log-attribute-changes-column.md) — colonna attribute_changes
 
+
+## Aggiunti 2026-08-24 (da .txt)
+
+- [jpgraph-guide.md](jpgraph-guide.md) — guida JpGraph 4.4.2 (charts server-side)

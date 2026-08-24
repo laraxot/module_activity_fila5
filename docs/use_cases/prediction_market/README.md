@@ -88,6 +88,8 @@ Il modulo <nome progetto>ion Market implementa un sistema completo di mercati pr
 4. Configura le code e i worker
 
 ### Comandi Console
+```
+
 ```bash
 
 # Gestione Mercati

@@ -1,3 +1,15 @@
+---
+title: "Fix: Connessione database 'activity' - Regola corretta"
+module: Activity
+type: reference
+slug: fix01
+description: "1. **database.php**: NON aggiungere 'activity' in config/database.php 2. **Modelli**: DEVONO avere `protected $connection = 'activity'`"
+tags: [migrato-da-txt, activity]
+converted_from: fix01.txt
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Fix: Connessione database 'activity' - Regola corretta
 
 ## Regola
