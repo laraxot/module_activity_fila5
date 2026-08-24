@@ -10,9 +10,21 @@ use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent as SpatieStored
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+/**
+ * @property int                             $id
+ * @property string|null                     $aggregate_uuid
+ * @property int|null                        $aggregate_version
+ * @property int                             $event_version
+ * @property string                          $event_class
+ * @property array<array-key, mixed>         $event_properties
+ * @property \Spatie\SchemalessAttributes\SchemalessAttributes $meta_data
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property string|null                     $updated_by
+ * @property string|null                     $created_by
+ */
 class StoredEvent extends SpatieStoredEvent
 {/**
- * @phpstan-use HasXotFactory<\Modules\Activity\Database\Factories\StoredEventFactory, self>
+ * @phpstan-use HasXotFactory<\Modules\Activity\Database\Factories\StoredEventFactory>
  */
 use HasXotFactory;
 

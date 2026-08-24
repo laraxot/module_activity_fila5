@@ -15,11 +15,12 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 /**
  * @property Collection<string, mixed>|null $properties
  * @property Collection<int, mixed> $attribute_changes
+ * @property string|null             $batch_uuid
  */
 class Activity extends SpatieActivity
 {
     /**
-     * @phpstan-use HasXotFactory<ActivityFactory, self>
+     * @phpstan-use HasXotFactory<ActivityFactory>
      */
     use HasXotFactory;
 
