@@ -1,3 +1,11 @@
+---
+title: "Product Strategy: Activity Module"
+type: product
+tags: [product]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Product Strategy: Activity Module
 
 ## 🌍 Market Context
