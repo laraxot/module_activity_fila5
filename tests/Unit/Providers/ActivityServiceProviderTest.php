@@ -6,6 +6,8 @@ namespace Modules\Activity\Tests\Unit\Providers;
 
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Tests\TestCase;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
@@ -23,9 +25,11 @@ test('activity service provider exposes expected metadata', function (): void {
     $moduleNs = $reflection->getProperty('moduleNs');
     $moduleNs->setAccessible(true);
 
-    expect($name->getValue($provider))->toBe('Activity')
-        ->and((string) $moduleDir->getValue($provider))->toContain('Modules/Activity')
-        ->and($moduleNs->getValue($provider))->toBe('Modules\\Activity\\Providers');
+    Assert::assertSame('Activity', $name->getValue($provider));
+    $moduleDirValue = $moduleDir->getValue($provider);
+    $moduleDirString = is_string($moduleDirValue) ? $moduleDirValue : SafeStringCastAction::cast($moduleDirValue);
+    Assert::assertStringContainsString('Modules/Activity', $moduleDirString);
+    Assert::assertSame('Modules\\Activity\\Providers', $moduleNs->getValue($provider));
 });
 
 test('activity service provider registerConfig publishes and merges config', function (): void {
@@ -35,6 +39,7 @@ test('activity service provider registerConfig publishes and merges config', fun
     $method->setAccessible(true);
     $method->invoke($provider);
 
-    expect(config('activity'))->toBeArray()
-        ->and(config('activity.name'))->toBe('Activity');
+    $config = config('activity');
+    Assert::assertIsArray($config);
+    Assert::assertSame('Activity', $config['name'] ?? null);
 });

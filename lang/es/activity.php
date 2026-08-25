@@ -12,7 +12,7 @@ return [
         ],
         'label' => 'Actividad',
         'sort' => '60',
-        'icon' => 'heroicon-o-activity',
+        'icon' => 'heroicon-o-signal',
     ],
     'fields' => [
         'user' => [
