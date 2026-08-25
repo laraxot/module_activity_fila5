@@ -15,7 +15,7 @@ uses(TestCase::class);
 describe('Snapshot Policy', function (): void {
     test('policy extends user base policy', function (): void {
         /** @var TestCase $this */
-        $policy = new SnapshotPolicy();
+        $policy = new SnapshotPolicy;
 
         Assert::assertInstanceOf(UserBasePolicy::class, $policy);
     });
@@ -32,9 +32,9 @@ describe('Snapshot Policy', function (): void {
     test('user with permission can view', function (): void {
         /** @var TestCase $this */
         $user = $this->createUnitMock(User::class);
-        $user->method('hasPermissionTo')->with('snapshot.view')->willReturn(true);
+        $user->expects($this->once())->method('hasPermissionTo')->with('snapshot.view')->willReturn(true);
 
-        $policy = new SnapshotPolicy();
+        $policy = new SnapshotPolicy;
         $result = $policy->view($user);
 
         Assert::assertTrue($result);
@@ -43,9 +43,9 @@ describe('Snapshot Policy', function (): void {
     test('user without permission cannot view', function (): void {
         /** @var TestCase $this */
         $user = $this->createUnitMock(User::class);
-        $user->method('hasPermissionTo')->with('snapshot.view')->willReturn(false);
+        $user->expects($this->once())->method('hasPermissionTo')->with('snapshot.view')->willReturn(false);
 
-        $policy = new SnapshotPolicy();
+        $policy = new SnapshotPolicy;
         $result = $policy->view($user);
 
         Assert::assertFalse($result);
