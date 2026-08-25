@@ -88,6 +88,8 @@ Il modulo <nome progetto>ion Market implementa un sistema completo di mercati pr
 4. Configura le code e i worker
 
 ### Comandi Console
+```
+
 ```bash
 
 # Gestione Mercati
@@ -113,6 +115,7 @@ php artisan user:balance {userId}
 
 ## 🤝 Contributi
 
+I contributi sono ben accetti! Si prega di leggere le nostre [linee guida per i contributi](./CONTRIBUTING.md) prima di inviare pull request.
 I contributi sono ben accetti! Si prega di leggere le nostre [linee guida per i contributi](./contributing.md) prima di inviare pull request.
 
 ## 📄 Licenza
@@ -204,7 +207,9 @@ class <nome progetto>ionContract extends Model
 - Come estendere le proiezioni?
 
 ## Collegamenti correlati
-- [Console Commands <nome progetto>ion Market](./console_commands.md)
+- [README Shop](../shop/README.md)
+- [README Bank](../bank/README.md)
+- [Console Commands <nome progetto>ion Market](./console-commands.md)
 - [Best Practice <nome progetto>ion Market](./best_practices.md)
 - [Architettura <nome progetto>ion Market](./architecture.md)
 - [Eventi <nome progetto>ion Market](./events.md)

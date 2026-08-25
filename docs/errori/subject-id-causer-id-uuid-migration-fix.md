@@ -38,11 +38,11 @@ $this->tableUpdate(function (Blueprint $table): void {
 Prima di eseguire i test, migrare il DB di test:
 
 ```bash
-APP_ENV=testing DB_DATABASE=<nome progetto>_data_test DB_DATABASE_USER=<nome progetto>_user_test php artisan migrate:fresh --force (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)APP_ENV=testing DB_DATABASE=<nome progetto>_data_test DB_DATABASE_USER=<nome progetto>_user_test php artisan migrate:fresh --force
-APP_ENV=testing DB_DATABASE=<nome progetto>_data_test DB_DATABASE_USER=<nome progetto>_user_test php artisan migrate:fresh --force
+# Dati sacri: mai migrate:fresh né --force
+APP_ENV=testing DB_DATABASE=<nome progetto>_data_test DB_DATABASE_USER=<nome progetto>_user_test php artisan migrate
 ```
 
 ## Riferimenti
 
 - [migration-spatie-integration.md](./migration-spatie-integration.md)
-- [errori-migrazione-activity-table-lezioni-1.md](./archive/errori-migrazione-activity-table-lezioni-1.md)
+- [errori-migrazione-activity-table-lezioni-1.md](./legacy/errori-migrazione-activity-table-lezioni-1.md)

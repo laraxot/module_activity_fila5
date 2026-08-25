@@ -414,6 +414,7 @@ $graph->Stroke();
 - **API Reference**: https://jpgraph.net/doc/
 - **FAQ**: https://jpgraph.net/doc/faq.html
 
+## 🔄 **Integrazione con Quaeris**
 ## 🔄 **Integrazione con healthcare_app**
 
 ### **Pattern di Integrazione**
@@ -472,6 +473,6 @@ class JpGraphChartGenerator
 
 ---
 
-**Ultimo Aggiornamento:** [DATE]  
+**
 **Versione JpGraph:** 4.4.2  
 **Stato:** 📚 Completamente Analizzato e Documentato
