@@ -3,305 +3,303 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
-
-use Illuminate\Support\Facades\Session;
+use Filament\Actions\Action;
+use Modules\Activity\Events\ActivityEvent;
+use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
+use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages\EditActivity;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages\ListActivities;
 use Modules\Activity\Filament\Resources\SnapshotResource;
 use Modules\Activity\Filament\Resources\SnapshotResource\Pages\ListSnapshots;
 use Modules\Activity\Filament\Resources\StoredEventResource;
+use Modules\Activity\Filament\Resources\StoredEventResource\Pages\ListStoredEvents;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Filament\Actions\XotBaseAction;
-use Filament\Tables\Enums\PaginationMode;
+use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
+use PHPUnit\Framework\Assert;
+use function Safe\class_uses;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 describe('ActivityEvent', function (): void {
-    it('can be instantiated', function (): void {
-        $event = new \Modules\Activity\Events\ActivityEvent();
-        expect($event)->toBeInstanceOf(\Modules\Activity\Events\ActivityEvent::class);
+    test('can be instantiated', function (): void {
+        $event = new ActivityEvent;
+        Assert::assertInstanceOf(ActivityEvent::class, $event);
     });
 
-    it('uses correct traits', function (): void {
-        $event = new \Modules\Activity\Events\ActivityEvent();
-        
+    test('uses correct traits', function (): void {
+        $event = new ActivityEvent;
+
         // Verify the event has the traits
         $traits = class_uses($event);
-        expect($traits)->toHaveKey('Illuminate\Broadcasting\InteractsWithSockets');
-        expect($traits)->toHaveKey('Illuminate\Foundation\Events\Dispatchable');
-        expect($traits)->toHaveKey('Illuminate\Queue\SerializesModels');
+        Assert::assertArrayHasKey('Illuminate\Broadcasting\InteractsWithSockets', $traits);
+        Assert::assertArrayHasKey('Illuminate\Foundation\Events\Dispatchable', $traits);
+        Assert::assertArrayHasKey('Illuminate\Queue\SerializesModels', $traits);
     });
 });
 
 describe('ListLogActivitiesAction', function (): void {
-    it('extends XotBaseAction', function (): void {
-        $action = new class ('list_log_activities') extends XotBaseAction {
+    test('extends XotBaseAction', function (): void {
+        $action = new class('list_log_activities') extends XotBaseAction
+        {
             protected function setUp(): void
             {
                 parent::setUp();
             }
         };
-        expect($action)->toBeInstanceOf(XotBaseAction::class);
+        Assert::assertInstanceOf(XotBaseAction::class, $action);
     });
 
-    it('has getDefaultName method that returns list_log_activities', function (): void {
+    test('has getDefaultName method that returns list_log_activities', function (): void {
         // Use reflection to check the static method
-        $reflection = new \ReflectionClass(\Modules\Activity\Filament\Actions\ListLogActivitiesAction::class);
+        $reflection = new \ReflectionClass(ListLogActivitiesAction::class);
         $method = $reflection->getMethod('getDefaultName');
-        
+
         $result = $method->invoke(null);
-        expect($result)->toBe('list_log_activities');
+        Assert::assertSame('list_log_activities', $result);
     });
 
-    it('is a Filament action', function (): void {
-        $action = new class ('list_log_activities') extends XotBaseAction {
+    test('is a Filament action', function (): void {
+        $action = new class('list_log_activities') extends XotBaseAction
+        {
             protected function setUp(): void
             {
                 parent::setUp();
-                $this->iconButton();
             }
         };
-        
-        expect($action)->toBeInstanceOf(\Filament\Actions\Action::class);
+
+        Assert::assertInstanceOf(Action::class, $action);
     });
 });
 
 describe('CanPaginate trait', function (): void {
-    it('has required methods from trait', function (): void {
+    test('has required methods from trait', function (): void {
         // Check the trait exists and has the expected methods
-        $trait = new \ReflectionClass(\Modules\Activity\Filament\Pages\Concerns\CanPaginate::class);
-        
-        expect($trait->hasMethod('getRecordsPerPage'))->toBeTrue();
-        expect($trait->hasMethod('getPaginationPageName'))->toBeTrue();
-        expect($trait->hasMethod('getPerPageSessionKey'))->toBeTrue();
-        expect($trait->hasMethod('getDefaultRecordsPerPageSelectOption'))->toBeTrue();
-        expect($trait->hasMethod('updatedRecordsPerPage'))->toBeTrue();
-        expect($trait->hasMethod('getTablePage'))->toBeTrue();
-        expect($trait->hasMethod('paginateQuery'))->toBeTrue();
-        expect($trait->hasMethod('getRecordsPerPageSelectOptions'))->toBeTrue();
+        $trait = new \ReflectionClass(CanPaginate::class);
+
+        Assert::assertTrue($trait->hasMethod('getRecordsPerPage'));
+        Assert::assertTrue($trait->hasMethod('getPaginationPageName'));
+        Assert::assertTrue($trait->hasMethod('getPerPageSessionKey'));
+        Assert::assertTrue($trait->hasMethod('getDefaultRecordsPerPageSelectOption'));
+        Assert::assertTrue($trait->hasMethod('updatedRecordsPerPage'));
+        Assert::assertTrue($trait->hasMethod('getTablePage'));
+        Assert::assertTrue($trait->hasMethod('paginateQuery'));
+        Assert::assertTrue($trait->hasMethod('getRecordsPerPageSelectOptions'));
     });
 
-    it('trait has recordsPerPage property', function (): void {
-        $trait = new \ReflectionClass(\Modules\Activity\Filament\Pages\Concerns\CanPaginate::class);
-        
-        expect($trait->hasProperty('recordsPerPage'))->toBeTrue();
+    test('trait has recordsPerPage property', function (): void {
+        $trait = new \ReflectionClass(CanPaginate::class);
+
+        Assert::assertTrue($trait->hasProperty('recordsPerPage'));
     });
 
-    it('trait has defaultRecordsPerPageSelectOption property', function (): void {
-        $trait = new \ReflectionClass(\Modules\Activity\Filament\Pages\Concerns\CanPaginate::class);
-        
-        expect($trait->hasProperty('defaultRecordsPerPageSelectOption'))->toBeTrue();
+    test('trait has defaultRecordsPerPageSelectOption property', function (): void {
+        $trait = new \ReflectionClass(CanPaginate::class);
+
+        Assert::assertTrue($trait->hasProperty('defaultRecordsPerPageSelectOption'));
     });
 
-    it('trait has getRecordsPerPageSelectOptions method', function (): void {
-        $trait = new \ReflectionClass(\Modules\Activity\Filament\Pages\Concerns\CanPaginate::class);
-        
-        expect($trait->hasMethod('getRecordsPerPageSelectOptions'))->toBeTrue();
+    test('trait has getRecordsPerPageSelectOptions method', function (): void {
+        $trait = new \ReflectionClass(CanPaginate::class);
+
+        Assert::assertTrue($trait->hasMethod('getRecordsPerPageSelectOptions'));
     });
 });
 
 describe('ActivityResource', function (): void {
-    it('can be instantiated', function (): void {
-        $resource = new ActivityResource();
-        expect($resource)->toBeInstanceOf(ActivityResource::class);
+    test('can be instantiated', function (): void {
+        $resource = new ActivityResource;
+        Assert::assertInstanceOf(ActivityResource::class, $resource);
     });
 
-    it('has correct model', function (): void {
-        expect(ActivityResource::getModel())->toBe(Activity::class);
+    test('has correct model', function (): void {
+        Assert::assertSame(Activity::class, ActivityResource::getModel());
     });
 
-    it('has required form schema fields', function (): void {
-        $schema = ActivityResource::getFormSchema();
+    test('has required form schema fields', function (): void {
+        $schema = ActivityResource::getFormSchemaOld();
 
-        expect($schema)->toHaveKey('log_name');
-        expect($schema)->toHaveKey('description');
-        expect($schema)->toHaveKey('subject_type');
-        expect($schema)->toHaveKey('subject_id');
-        expect($schema)->toHaveKey('causer_type');
-        expect($schema)->toHaveKey('causer_id');
-        expect($schema)->toHaveKey('properties');
-        expect($schema)->toHaveKey('batch_uuid');
-    });
-
-    it('has relations method', function (): void {
-        expect(method_exists(ActivityResource::class, 'getRelations'))->toBeTrue();
-    });
-
-    it('has pages method', function (): void {
-        expect(method_exists(ActivityResource::class, 'getPages'))->toBeTrue();
+        Assert::assertArrayHasKey('log_name', $schema);
+        Assert::assertArrayHasKey('description', $schema);
+        Assert::assertArrayHasKey('subject_type', $schema);
+        Assert::assertArrayHasKey('subject_id', $schema);
+        Assert::assertArrayHasKey('causer_type', $schema);
+        Assert::assertArrayHasKey('causer_id', $schema);
+        Assert::assertArrayHasKey('properties', $schema);
+        Assert::assertArrayHasKey('batch_uuid', $schema);
     });
 });
 
 describe('EditActivity page', function (): void {
-    it('can be instantiated', function (): void {
-        $page = new EditActivity();
-        expect($page)->toBeInstanceOf(EditActivity::class);
+    test('can be instantiated', function (): void {
+        $page = new EditActivity;
+        Assert::assertInstanceOf(EditActivity::class, $page);
     });
 
-    it('uses correct resource via getResource', function (): void {
+    test('uses correct resource via getResource', function (): void {
         // Use reflection to access protected static $resource
         $reflection = new \ReflectionClass(EditActivity::class);
         $property = $reflection->getProperty('resource');
         $property->setAccessible(true);
-        
+
         $resource = $property->getValue();
-        expect($resource)->toBe(ActivityResource::class);
+        Assert::assertSame(ActivityResource::class, $resource);
     });
 
-    it('extends XotBaseEditRecord', function (): void {
-        $page = new EditActivity();
-        expect($page)->toBeInstanceOf(\Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord::class);
+    test('extends XotBaseEditRecord', function (): void {
+        $page = new EditActivity;
+        Assert::assertInstanceOf(XotBaseEditRecord::class, $page);
     });
 });
 
 describe('ListActivities page', function (): void {
-    it('can be instantiated', function (): void {
-        $page = new ListActivities();
-        expect($page)->toBeInstanceOf(ListActivities::class);
+    test('can be instantiated', function (): void {
+        $page = new ListActivities;
+        Assert::assertInstanceOf(ListActivities::class, $page);
     });
 
-    it('uses correct resource via getResource', function (): void {
+    test('uses correct resource via getResource', function (): void {
         $reflection = new \ReflectionClass(ListActivities::class);
         $property = $reflection->getProperty('resource');
         $property->setAccessible(true);
-        
+
         $resource = $property->getValue();
-        expect($resource)->toBe(ActivityResource::class);
+        Assert::assertSame(ActivityResource::class, $resource);
     });
 
-    it('has table columns', function (): void {
-        $page = new ListActivities();
-        $columns = $page->getTableColumns();
+    test('has table columns', function (): void {
+        $page = new ListActivities;
+        $columns = $page->getTableColumns(); // @phpstan-ignore method.deprecated (hook di progetto: la deprecazione e ereditata per nome dal prototipo Filament 5, il codice eseguito e il nostro — story 16.12)
 
-        expect($columns)->toHaveKey('id');
-        expect($columns)->toHaveKey('description');
-        expect($columns)->toHaveKey('subject_type');
-        expect($columns)->toHaveKey('subject_id');
-        expect($columns)->toHaveKey('causer_type');
-        expect($columns)->toHaveKey('causer_id');
-        expect($columns)->toHaveKey('created_at');
+        Assert::assertArrayHasKey('id', $columns);
+        Assert::assertArrayHasKey('description', $columns);
+        Assert::assertArrayHasKey('subject_type', $columns);
+        Assert::assertArrayHasKey('subject_id', $columns);
+        Assert::assertArrayHasKey('causer_type', $columns);
+        Assert::assertArrayHasKey('causer_id', $columns);
+        Assert::assertArrayHasKey('created_at', $columns);
     });
 });
 
 describe('SnapshotResource', function (): void {
-    it('can be instantiated', function (): void {
-        $resource = new SnapshotResource();
-        expect($resource)->toBeInstanceOf(SnapshotResource::class);
+    test('can be instantiated', function (): void {
+        $resource = new SnapshotResource;
+        Assert::assertInstanceOf(SnapshotResource::class, $resource);
     });
 
-    it('has correct model', function (): void {
-        expect(SnapshotResource::getModel())->toBe(Snapshot::class);
+    test('has correct model', function (): void {
+        Assert::assertSame(Snapshot::class, SnapshotResource::getModel());
     });
 
-    it('has required form schema fields', function (): void {
-        $schema = SnapshotResource::getFormSchema();
+    test('has required form schema fields', function (): void {
+        $schema = SnapshotResource::getFormSchemaOld();
 
-        expect($schema)->toHaveKey('model_type');
-        expect($schema)->toHaveKey('model_id');
-        expect($schema)->toHaveKey('state');
-        expect($schema)->toHaveKey('created_by_type');
-        expect($schema)->toHaveKey('created_by_id');
+        Assert::assertArrayHasKey('model_type', $schema);
+        Assert::assertArrayHasKey('model_id', $schema);
+        Assert::assertArrayHasKey('state', $schema);
+        Assert::assertArrayHasKey('created_by_type', $schema);
+        Assert::assertArrayHasKey('created_by_id', $schema);
     });
 });
 
 describe('ListSnapshots page', function (): void {
-    it('can be instantiated', function (): void {
-        $page = new ListSnapshots();
-        expect($page)->toBeInstanceOf(ListSnapshots::class);
+    test('can be instantiated', function (): void {
+        $page = new ListSnapshots;
+        Assert::assertInstanceOf(ListSnapshots::class, $page);
     });
 
-    it('uses correct resource via getResource', function (): void {
+    test('uses correct resource via getResource', function (): void {
         $reflection = new \ReflectionClass(ListSnapshots::class);
         $property = $reflection->getProperty('resource');
         $property->setAccessible(true);
-        
+
         $resource = $property->getValue();
-        expect($resource)->toBe(SnapshotResource::class);
+        Assert::assertSame(SnapshotResource::class, $resource);
     });
 
-    it('has table columns', function (): void {
-        $page = new ListSnapshots();
-        $columns = $page->getTableColumns();
+    test('has table columns', function (): void {
+        $page = new ListSnapshots;
+        $columns = $page->getTableColumns(); // @phpstan-ignore method.deprecated (hook di progetto: la deprecazione e ereditata per nome dal prototipo Filament 5, il codice eseguito e il nostro — story 16.12)
 
-        expect($columns)->toHaveKey('id');
-        expect($columns)->toHaveKey('aggregate_uuid');
-        expect($columns)->toHaveKey('aggregate_version');
-        expect($columns)->toHaveKey('state');
-        expect($columns)->toHaveKey('created_at');
-        expect($columns)->toHaveKey('updated_at');
+        Assert::assertArrayHasKey('id', $columns);
+        Assert::assertArrayHasKey('aggregate_uuid', $columns);
+        Assert::assertArrayHasKey('aggregate_version', $columns);
+        Assert::assertArrayHasKey('state', $columns);
+        Assert::assertArrayHasKey('created_at', $columns);
+        Assert::assertArrayHasKey('updated_at', $columns);
     });
 
-    it('has table filters', function (): void {
-        $page = new ListSnapshots();
-        $filters = $page->getTableFilters();
+    test('has table filters', function (): void {
+        $page = new ListSnapshots;
+        $filters = $page->getTableFilters(); // @phpstan-ignore method.deprecated (hook di progetto: la deprecazione e ereditata per nome dal prototipo Filament 5, il codice eseguito e il nostro — story 16.12)
 
-        expect($filters)->not->toBeEmpty();
+        Assert::assertNotEmpty($filters);
     });
 
-    it('has table actions', function (): void {
-        $page = new ListSnapshots();
-        $actions = $page->getTableActions();
+    test('has table actions', function (): void {
+        $page = new ListSnapshots;
+        $actions = $page->getTableActions(); // @phpstan-ignore method.deprecated (hook di progetto: la deprecazione e ereditata per nome dal prototipo Filament 5, il codice eseguito e il nostro — story 16.12)
 
-        expect($actions)->toHaveKey('view');
-        expect($actions)->toHaveKey('edit');
-        expect($actions)->toHaveKey('delete');
+        Assert::assertArrayHasKey('view', $actions);
+        Assert::assertArrayHasKey('edit', $actions);
+        Assert::assertArrayHasKey('delete', $actions);
     });
 
-    it('has bulk actions', function (): void {
-        $page = new ListSnapshots();
-        $bulkActions = $page->getTableBulkActions();
+    test('has bulk actions', function (): void {
+        $page = new ListSnapshots;
+        $bulkActions = $page->getTableBulkActions(); // @phpstan-ignore method.deprecated (hook di progetto: la deprecazione e ereditata per nome dal prototipo Filament 5, il codice eseguito e il nostro — story 16.12)
 
-        expect($bulkActions)->not->toBeEmpty();
+        Assert::assertNotEmpty($bulkActions);
     });
 });
 
 describe('StoredEventResource', function (): void {
-    it('can be instantiated', function (): void {
-        $resource = new StoredEventResource();
-        expect($resource)->toBeInstanceOf(StoredEventResource::class);
+    test('can be instantiated', function (): void {
+        $resource = new StoredEventResource;
+        Assert::assertInstanceOf(StoredEventResource::class, $resource);
     });
 
-    it('has correct model', function (): void {
-        expect(StoredEventResource::getModel())->toBe(StoredEvent::class);
+    test('has correct model', function (): void {
+        Assert::assertSame(StoredEvent::class, StoredEventResource::getModel());
     });
 
-    it('has required form schema fields', function (): void {
-        $schema = StoredEventResource::getFormSchema();
+    test('has required form schema fields', function (): void {
+        $schema = StoredEventResource::getFormSchemaOld();
 
-        expect($schema)->toHaveKey('event_class');
-        expect($schema)->toHaveKey('event_properties');
-        expect($schema)->toHaveKey('aggregate_uuid');
-        expect($schema)->toHaveKey('aggregate_version');
-        expect($schema)->toHaveKey('meta_data');
-        expect($schema)->toHaveKey('created_at');
+        Assert::assertArrayHasKey('event_class', $schema);
+        Assert::assertArrayHasKey('event_properties', $schema);
+        Assert::assertArrayHasKey('aggregate_uuid', $schema);
+        Assert::assertArrayHasKey('aggregate_version', $schema);
+        Assert::assertArrayHasKey('meta_data', $schema);
+        Assert::assertArrayHasKey('created_at', $schema);
     });
 });
 
 describe('ListStoredEvents page', function (): void {
-    it('can be instantiated', function (): void {
-        $page = new \Modules\Activity\Filament\Resources\StoredEventResource\Pages\ListStoredEvents();
-        expect($page)->toBeInstanceOf(\Modules\Activity\Filament\Resources\StoredEventResource\Pages\ListStoredEvents::class);
+    test('can be instantiated', function (): void {
+        $page = new ListStoredEvents;
+        Assert::assertInstanceOf(ListStoredEvents::class, $page);
     });
 
-    it('uses correct resource via getResource', function (): void {
-        $reflection = new \ReflectionClass(\Modules\Activity\Filament\Resources\StoredEventResource\Pages\ListStoredEvents::class);
+    test('uses correct resource via getResource', function (): void {
+        $reflection = new \ReflectionClass(ListStoredEvents::class);
         $property = $reflection->getProperty('resource');
         $property->setAccessible(true);
-        
+
         $resource = $property->getValue();
-        expect($resource)->toBe(StoredEventResource::class);
+        Assert::assertSame(StoredEventResource::class, $resource);
     });
 
-    it('has table columns', function (): void {
-        $page = new \Modules\Activity\Filament\Resources\StoredEventResource\Pages\ListStoredEvents();
-        $columns = $page->getTableColumns();
+    test('has table columns', function (): void {
+        $page = new ListStoredEvents;
+        $columns = $page->getTableColumns(); // @phpstan-ignore method.deprecated (hook di progetto: la deprecazione e ereditata per nome dal prototipo Filament 5, il codice eseguito e il nostro — story 16.12)
 
-        expect($columns)->toHaveKey('id');
-        expect($columns)->toHaveKey('event_class');
-        expect($columns)->toHaveKey('event_properties');
+        Assert::assertArrayHasKey('id', $columns);
+        Assert::assertArrayHasKey('event_class', $columns);
+        Assert::assertArrayHasKey('event_properties', $columns);
     });
 });

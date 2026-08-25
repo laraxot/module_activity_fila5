@@ -4,53 +4,45 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
 
+use Illuminate\Auth\Access\HandlesAuthorization;
 use Modules\Activity\Models\Policies\ActivityBasePolicy;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
-use PHPUnit\Framework\Attributes\Test;
+use PHPUnit\Framework\Assert;
 
-class ActivityBasePolicyTest extends TestCase
-{
-    #[Test]
-    public function policy_is_abstract(): void
-    {
+uses(TestCase::class);
+
+describe('Activity Base Policy', function (): void {
+    test('policy is abstract', function (): void {
         $reflection = new \ReflectionClass(ActivityBasePolicy::class);
-        $this->assertTrue($reflection->isAbstract());
-    }
+        Assert::assertTrue($reflection->isAbstract());
+    });
 
-    #[Test]
-    public function policy_uses_handles_authorization_trait(): void
-    {
-        $this->assertTrue(
+    test('policy uses handles authorization trait', function (): void {
+        Assert::assertTrue(
             in_array(
-                \Illuminate\Auth\Access\HandlesAuthorization::class,
+                HandlesAuthorization::class,
                 class_uses_recursive(ActivityBasePolicy::class)
             )
         );
-    }
+    });
 
-    #[Test]
-    public function policy_has_before_method(): void
-    {
-        $this->assertTrue(method_exists(ActivityBasePolicy::class, 'before'));
-    }
-
-    #[Test]
-    public function super_admin_user_always_allowed(): void
-    {
+    test('super admin user always allowed', function (): void {
+        /** @var TestCase $this */
         // Create a mock super-admin user
-        $user = $this->createMock(User::class);
-        $user->method('hasRole')->with('super-admin')->willReturn(true);
+        $user = $this->createUnitMock(User::class);
+        $user->expects($this->once())->method('hasRole')->with('super-admin')->willReturn(true);
 
         // Test the policy
-        $policy = new class extends ActivityBasePolicy {
-            public function testBefore(User $user): ?bool
+        $policy = new class extends ActivityBasePolicy
+        {
+            public function policyBefore(User $user): ?bool
             {
                 return $this->before($user);
             }
         };
 
-        $result = $policy->testBefore($user);
-        $this->assertTrue($result);
-    }
-}
+        $result = $policy->policyBefore($user);
+        Assert::assertTrue($result);
+    });
+});

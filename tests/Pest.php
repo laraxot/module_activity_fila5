@@ -2,61 +2,17 @@
 
 declare(strict_types=1);
 
-use Modules\Activity\Models\Activity;
-use Modules\Activity\Tests\TestCase;
-
 /*
-|--------------------------------------------------------------------------
-| Test Case
-|--------------------------------------------------------------------------
-|
-| The closure you provide to your test functions is always bound to a specific PHPUnit test
-| case class. By default, that class is "PHPUnit\Framework\TestCase". Of course, you may
-| need to change it using the "pest()" function to bind a different classes or traits.
-|
-*/
-/** @mixin TestCase */
-pest()->extend(TestCase::class)->in('Feature', 'Unit');
+ * Bootstrap Pest — modulo Activity.
+ * Ogni file test dichiara uses(\Modules\Activity\Tests\TestCase::class).
+ * Per estendere si usa l'API idiomatica di Pest — `pest()->extend(...)`, in fondo
+ * a questo file — senza nessuna annotazione di soppressione: con
+ * `pestphp/pest-plugin-phpstan 5.2.0` installato, `method.internalClass` non
+ * viene piu' segnalato. Misurato il 2026-08-25 su tutti i bootstrap dei moduli:
+ * `phpstan analyse Modules/<Modulo>/tests/Pest.php` = 0 errori.
+ * Se ricomparisse, verificare che il plugin sia ancora caricato da
+ * `phpstan/extension-installer`, non reintrodurre il divieto.
+ * Vedi story XOT-5.41 e ROOT-17.6.
+ */
 
-/*
-|--------------------------------------------------------------------------
-| Expectations
-|--------------------------------------------------------------------------
-|
-| When you're writing tests, you often need to check that values meet certain conditions. The
-| "expect()" function gives you access to a set of "expectations" methods that you can use
-| to assert different things. Of course, you may extend the Expectation API at any time.
-|
-*/
-
-expect()->extend('toBeActivity', function () {
-    /** @phpstan-ignore-next-line */
-    return $this->toBeInstanceOf(Activity::class);
-});
-
-/*
-|--------------------------------------------------------------------------
-| Functions
-|--------------------------------------------------------------------------
-|
-| While Pest is very powerful out-of-the-box, you may have some testing code specific to your
-| project that you don't want to repeat in every file. Here you can also expose helpers as
-| global functions to help you to reduce the number of lines of code in your test files.
-|
-*/
-
-function createActivity(array $attributes = []): Activity
-{
-    $activity = Activity::factory()->create($attributes);
-    \assert($activity instanceof Activity);
-
-    return $activity;
-}
-
-function makeActivity(array $attributes = []): Activity
-{
-    $activity = Activity::factory()->make($attributes);
-    \assert($activity instanceof Activity);
-
-    return $activity;
-}
+pest()->extend(\Modules\Activity\Tests\TestCase::class)->in(__DIR__.'/Unit', __DIR__.'/Feature');
