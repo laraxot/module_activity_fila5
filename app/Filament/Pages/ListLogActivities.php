@@ -250,7 +250,7 @@ abstract class ListLogActivities extends XotBasePage
 
         /** @var Collection<string, string> $labelMap */
         $labelMap = $extracted
-            ->filter(static fn ($field): bool => $field instanceof Field)
+            ->filter(static fn (mixed $field): bool => $field instanceof Field)
             ->mapWithKeys(
                 /** @param Field $field
                  * @return array<string, string>
