@@ -173,7 +173,7 @@ describe('ListActivities page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListActivities;
-        $columns = $page->getTableColumns();
+        $columns = $page->getTableColumns(); // @phpstan-ignore method.deprecated (hook di progetto: la deprecazione e ereditata per nome dal prototipo Filament 5, il codice eseguito e il nostro — story 16.12)
 
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('description', $columns);
@@ -223,7 +223,7 @@ describe('ListSnapshots page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListSnapshots;
-        $columns = $page->getTableColumns();
+        $columns = $page->getTableColumns(); // @phpstan-ignore method.deprecated (hook di progetto: la deprecazione e ereditata per nome dal prototipo Filament 5, il codice eseguito e il nostro — story 16.12)
 
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('aggregate_uuid', $columns);
@@ -235,14 +235,14 @@ describe('ListSnapshots page', function (): void {
 
     test('has table filters', function (): void {
         $page = new ListSnapshots;
-        $filters = $page->getTableFilters();
+        $filters = $page->getTableFilters(); // @phpstan-ignore method.deprecated (hook di progetto: la deprecazione e ereditata per nome dal prototipo Filament 5, il codice eseguito e il nostro — story 16.12)
 
         Assert::assertNotEmpty($filters);
     });
 
     test('has table actions', function (): void {
         $page = new ListSnapshots;
-        $actions = $page->getTableActions();
+        $actions = $page->getTableActions(); // @phpstan-ignore method.deprecated (hook di progetto: la deprecazione e ereditata per nome dal prototipo Filament 5, il codice eseguito e il nostro — story 16.12)
 
         Assert::assertArrayHasKey('view', $actions);
         Assert::assertArrayHasKey('edit', $actions);
@@ -251,7 +251,7 @@ describe('ListSnapshots page', function (): void {
 
     test('has bulk actions', function (): void {
         $page = new ListSnapshots;
-        $bulkActions = $page->getTableBulkActions();
+        $bulkActions = $page->getTableBulkActions(); // @phpstan-ignore method.deprecated (hook di progetto: la deprecazione e ereditata per nome dal prototipo Filament 5, il codice eseguito e il nostro — story 16.12)
 
         Assert::assertNotEmpty($bulkActions);
     });
@@ -296,7 +296,7 @@ describe('ListStoredEvents page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListStoredEvents;
-        $columns = $page->getTableColumns();
+        $columns = $page->getTableColumns(); // @phpstan-ignore method.deprecated (hook di progetto: la deprecazione e ereditata per nome dal prototipo Filament 5, il codice eseguito e il nostro — story 16.12)
 
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('event_class', $columns);
