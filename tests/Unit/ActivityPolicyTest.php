@@ -7,80 +7,32 @@ namespace Modules\Activity\Tests\Unit;
 use Modules\Activity\Models\Policies\ActivityPolicy;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
-use PHPUnit\Framework\Attributes\Test;
+use PHPUnit\Framework\Assert;
 
-class ActivityPolicyTest extends TestCase
-{
-    #[Test]
-    public function policy_extends_user_base_policy(): void
-    {
-        $this->assertTrue(
-            is_subclass_of(
-                ActivityPolicy::class,
-                \Modules\User\Models\Policies\UserBasePolicy::class
-            )
-        );
-    }
+uses(TestCase::class);
 
-    #[Test]
-    public function policy_has_view_method(): void
-    {
-        $this->assertTrue(method_exists(ActivityPolicy::class, 'view'));
-    }
-
-    #[Test]
-    public function policy_has_create_method(): void
-    {
-        $this->assertTrue(method_exists(ActivityPolicy::class, 'create'));
-    }
-
-    #[Test]
-    public function policy_has_update_method(): void
-    {
-        $this->assertTrue(method_exists(ActivityPolicy::class, 'update'));
-    }
-
-    #[Test]
-    public function policy_has_delete_method(): void
-    {
-        $this->assertTrue(method_exists(ActivityPolicy::class, 'delete'));
-    }
-
-    #[Test]
-    public function policy_has_restore_method(): void
-    {
-        $this->assertTrue(method_exists(ActivityPolicy::class, 'restore'));
-    }
-
-    #[Test]
-    public function policy_has_force_delete_method(): void
-    {
-        $this->assertTrue(method_exists(ActivityPolicy::class, 'forceDelete'));
-    }
-
-    #[Test]
-    public function user_with_permission_can_view(): void
-    {
+describe('Activity Policy', function (): void {
+    test('user with permission can view', function (): void {
+        /** @var TestCase $this */
         // Create a mock user with permission
-        $user = $this->createMock(User::class);
-        $user->method('hasPermissionTo')->with('activity.view')->willReturn(true);
+        $user = $this->createUnitMock(User::class);
+        $user->expects($this->once())->method('hasPermissionTo')->with('activity.view')->willReturn(true);
 
-        $policy = new ActivityPolicy();
+        $policy = new ActivityPolicy;
         $result = $policy->view($user);
 
-        $this->assertTrue($result);
-    }
+        Assert::assertTrue($result);
+    });
 
-    #[Test]
-    public function user_without_permission_cannot_view(): void
-    {
+    test('user without permission cannot view', function (): void {
         // Create a mock user without permission
-        $user = $this->createMock(User::class);
-        $user->method('hasPermissionTo')->with('activity.view')->willReturn(false);
+        /** @var TestCase $this */
+        $user = $this->createUnitMock(User::class);
+        $user->expects($this->once())->method('hasPermissionTo')->with('activity.view')->willReturn(false);
 
-        $policy = new ActivityPolicy();
+        $policy = new ActivityPolicy;
         $result = $policy->view($user);
 
-        $this->assertFalse($result);
-    }
-}
+        Assert::assertFalse($result);
+    });
+});

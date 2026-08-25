@@ -140,7 +140,7 @@ return $alternative;
 
 1. `docs/CODE_QUALITY_ANALYSIS.md` - Add PHPMD fixes section
 2. `docs/README.md` - Update quality metrics
-3. `docs/ARCHITECTURE.md` - Document coupling reduction strategies
+3. `docs/architecture.md` - Document coupling reduction strategies
 
 ### Quality Gates:
 
@@ -169,3 +169,15 @@ return $alternative;
 
 *Last Updated: 2025-11-12*
 *Status: In Progress - Complexity Fixes*
+
+---
+
+<!-- Merged from PHPMD_ANALYSIS.md, which collided with this file on case-insensitive filesystems. -->
+
+---
+module: theme
+topic: PHPMD_ANALYSIS
+canonical: ../../../Themes/docs/shared-components/PHPMD-ANALYSIS.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/PHPMD-ANALYSIS.md

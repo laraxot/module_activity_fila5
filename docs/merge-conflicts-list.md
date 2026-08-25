@@ -19,7 +19,7 @@ Elenco dei file trovati contenenti marker di merge (<<<<<<<, >>>>>>>, .merge_fil
 - laravel/Modules/Geo/resources/js/components/coordinate-picker-styles.js
 - laravel/Modules/Geo/docs/wiki/index.md
 - laravel/Modules/Geo/docs/wiki/log.md
-- laravel/Modules/Geo/docs/wiki/AGENTS.md
+- laravel/Modules/Geo/docs/wiki/agents.md
 - laravel/Modules/Fixcity/docs/wiki/index.md
 - laravel/Modules/Fixcity/docs/wiki/log.md
 - laravel/Modules/Fixcity/docs/wiki/README.md
@@ -52,4 +52,3 @@ Elenco dei file trovati contenenti marker di merge (<<<<<<<, >>>>>>>, .merge_fil
 
 - Regola: ogni modulo e tema deve avere un file `docs/merge-conflicts-list.md` con la lista locale e lo stato di avanzamento.
 - Quando si risolve un file, aggiornare lo stato nella lista e sincronizzare l'LLM Wiki (qmd embed) per ingestione.
-

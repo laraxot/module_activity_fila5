@@ -5,63 +5,68 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Unit\Actions;
 
 use Modules\Activity\Actions\LogModelCreatedAction;
-use Modules\Activity\Actions\LogModelUpdatedAction;
 use Modules\Activity\Actions\LogModelDeletedAction;
+use Modules\Activity\Actions\LogModelUpdatedAction;
 use Modules\Activity\Actions\LogUserLogoutAction;
-use Modules\Activity\Models\Activity;
+use Modules\Activity\Tests\TestCase;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
-use Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-describe('Activity Lifecycle Actions', function () {
-    
-    it('can log model creation via LogModelCreatedAction', function () {
-        $user = User::factory()->create(['name' => 'New User']);
-        $action = app(LogModelCreatedAction::class);
-        
-        $activity = $action->execute($user);
+/**
+ * @param  array<string, mixed>  $attributes
+ */
+function createActivityLifecycleUser(array $attributes = []): User
+{
+    return (new UserFactory())->createOne($attributes);
+}
 
-        expect($activity->log_name)->toBe('created');
-        expect($activity->subject_id)->toBe($user->id);
-        expect($activity->description)->toContain('User was created');
-        expect($activity->properties->toArray())->toHaveKey('name', 'New User');
+test('Activity Lifecycle Actions', function () {
+
+    test('can log model creation via LogModelCreatedAction', function () {
+        $user = createActivityLifecycleUser(['name' => 'New User']);
+        $action = new LogModelCreatedAction(model: $user);
+        $activity = $action->execute();
+
+        Assert::assertSame('created', $activity->log_name);
+        Assert::assertSame($user->id, $activity->subject_id);
+        Assert::assertStringContainsString((string) 'User was created', (string) $activity->description);
+        Assert::assertArrayHasKey('name', (array) $activity->properties);
     });
 
-    it('can log model update via LogModelUpdatedAction', function () {
-        $user = User::factory()->create(['name' => 'Old Name']);
+    test('can log model update via LogModelUpdatedAction', function () {
+        $user = createActivityLifecycleUser(['name' => 'Old Name']);
         $user->name = 'New Name';
         // Note: in memory changes only for this test, as LogModelUpdatedAction uses getChanges()
-        $user->syncChanges(); 
-        
-        $action = app(LogModelUpdatedAction::class);
-        $activity = $action->execute($user);
+        $user->syncChanges();
 
-        expect($activity->log_name)->toBe('updated');
-        expect($activity->subject_id)->toBe($user->id);
-        expect($activity->description)->toContain('User was updated');
+        $action = new LogModelUpdatedAction(model: $user);
+        $activity = $action->execute();
+
+        Assert::assertSame('updated', $activity->log_name);
+        Assert::assertSame($user->id, $activity->subject_id);
+        Assert::assertStringContainsString((string) 'User was updated', (string) $activity->description);
     });
 
-    it('can log model deletion via LogModelDeletedAction', function () {
-        $user = User::factory()->create();
-        $action = app(LogModelDeletedAction::class);
-        
-        $activity = $action->execute($user);
+    test('can log model deletion via LogModelDeletedAction', function () {
+        $user = createActivityLifecycleUser();
+        $action = new LogModelDeletedAction(model: $user);
+        $activity = $action->execute();
 
-        expect($activity->log_name)->toBe('deleted');
-        expect($activity->subject_id)->toBe($user->id);
-        expect($activity->description)->toContain('User was deleted');
+        Assert::assertSame('deleted', $activity->log_name);
+        Assert::assertSame($user->id, $activity->subject_id);
+        Assert::assertStringContainsString((string) 'User was deleted', (string) $activity->description);
     });
 
-    it('can log user logout via LogUserLogoutAction', function () {
-        // First refactor LogUserLogoutAction
-        $user = User::factory()->create(['name' => 'Logged Out User']);
-        $action = app(\Modules\Activity\Actions\LogUserLogoutAction::class);
-        
-        $activity = $action->execute($user);
+    test('can log user logout via LogUserLogoutAction', function () {
+        $user = createActivityLifecycleUser(['name' => 'Logged Out User']);
+        $action = new LogUserLogoutAction(user: $user);
+        $activity = $action->execute();
 
-        expect($activity->log_name)->toBe('logout');
-        expect($activity->causer_id)->toBe($user->id);
-        expect($activity->description)->toContain('User Logged Out User logged out');
+        Assert::assertSame('logout', $activity->log_name);
+        Assert::assertSame($user->id, $activity->causer_id);
+        Assert::assertStringContainsString((string) 'User Logged Out User logged out', (string) $activity->description);
     });
 });

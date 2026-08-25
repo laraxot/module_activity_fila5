@@ -21,13 +21,13 @@ Il modulo Activity gestisce il sistema di event sourcing e tracciamento delle at
 ### Struttura Attuale Problematica
 ```
 docs/
-├── event_sourcing.md                    # ❌ Duplicato
+├── event-sourcing.md                    # ❌ Duplicato
 ├── event-sourcing.md                    # ❌ Duplicato
 ├── event_sourcing_introduction.md       # ❌ Duplicato
 ├── event-sourcing-introduction.md       # ❌ Duplicato
 ├── filament_errors.md                   # ❌ Duplicato
 ├── filament-errors.md                   # ❌ Duplicato
-├── mcp_server_recommended.md            # ❌ Duplicato
+├── mcp-server-recommended.md            # ❌ Duplicato
 ├── mcp-server-recommended.md            # ❌ Duplicato
 └── ... (30+ file frammentati)
 
@@ -36,6 +36,7 @@ Root modulo:
 ├── test02.txt                           # ❌ File temporaneo
 ├── test03.txt                           # ❌ File temporaneo
 ├── test04.txt                           # ❌ File temporaneo
+├── test2024-12-04.txt                   # ❌ File temporaneo
 ├── test[DATE].txt                   # ❌ File temporaneo
 ├── test2222.txt                         # ❌ File temporaneo
 ├── test444.txt                          # ❌ File temporaneo
@@ -362,6 +363,11 @@ protected function registerConfig(): void
 - **Maintainability**: +60% codice più semplice
 
 ## Collegamenti
+- [Modulo UI](../UI/docs/ottimizzazioni-dry-kiss.md)
+
+---
+
+*Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS Activity Module*
 - [Template Standardizzato](../../../docs/template-modulo-standardizzato.md)
 - [Ottimizzazioni Master](../../../docs/ottimizzazioni-modulari-master.md)
 - [Modulo UI](../ui/docs/ottimizzazioni-dry-kiss.md)
