@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\ActivityResource\Pages;
 
+use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -16,7 +17,7 @@ class ListActivities extends XotBaseListRecords
     protected static string $resource = ActivityResource::class;
 
     /**
-     * @return array<string, mixed>
+     * @return array<string, Column>
      */
     public function getTableColumns(): array
     {
