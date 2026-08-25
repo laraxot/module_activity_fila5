@@ -1,4 +1,8 @@
-# Modulo Activity
+---
+module: theme
+topic: module-activity
+canonical: ../../../../../Themes/docs/shared-components/module-activity.md
+---
 
 ## Overview
 Il modulo Activity fornisce un sistema completo di logging e monitoraggio delle attività nel sistema.
@@ -99,11 +103,11 @@ class ActivityTest extends TestCase
     public function test_can_log_activity(): void
     {
         $user = User::factory()->create();
-        
+
         Activity::log('Test activity', [
             'user_id' => $user->id
         ]);
-        
+
         $this->assertDatabaseHas('activities', [
             'description' => 'Test activity',
             'user_id' => $user->id
@@ -144,4 +148,5 @@ class ActivityTest extends TestCase
 3. **Manutenzione**:
    - Pulizia periodica dei log
    - Backup dei dati di attività
-   - Monitoraggio delle performance 
+   - Monitoraggio delle performance
+
