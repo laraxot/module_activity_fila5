@@ -177,6 +177,7 @@ protected function createApplication()
     $app = parent::createApplication();
     
     $app['config']->set([
+'database.connections.activity.database' => 'Quaeris_data_test',
         'database.connections.activity.database' => 'healthcare_app_data_test',
     ]);
     
@@ -382,4 +383,5 @@ Remember: Good tests are the foundation of reliable software development.
 
 ---
 
+*Last updated: January 2025*
 *

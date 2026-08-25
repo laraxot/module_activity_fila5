@@ -146,7 +146,7 @@ class ListSnapshots extends ListRecords
    - Commentare il codice complesso
    - Mantenere i metodi piccoli e focalizzati
    - Seguire il principio DRY (Don't Repeat Yourself)
-   - Documentare le modifiche nei file CHANGELOG.md
+   - Documentare le modifiche nei file changelog.md
 
 4. **Verifica del Codice**
    - Eseguire i test automatici dopo le modifiche
