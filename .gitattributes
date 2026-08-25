@@ -4,8 +4,11 @@
 #
 # Git LFS VIETATO. Binari = blob git normali.
 # Mai: filter=lfs / diff=lfs / merge=lfs
+<<<<<<< .merge_file_7D3jfB
+=======
 
 * text=auto
+>>>>>>> .merge_file_y6EiN6
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
