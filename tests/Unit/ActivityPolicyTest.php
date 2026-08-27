@@ -5,25 +5,12 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Unit;
 
 use Modules\Activity\Models\Policies\ActivityPolicy;
+use Modules\Activity\Tests\Fixtures\ActivityPolicyUser;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-
-final class ActivityPolicyUser extends User
-{
-    /** @param list<string> $permissions */
-    public function __construct(private readonly array $permissions)
-    {
-        parent::__construct();
-    }
-
-    public function hasPermissionTo($permission, ?string $guardName = null): bool
-    {
-        return is_string($permission) && in_array($permission, $this->permissions, true);
-    }
-}
 
 /**
  * @param  list<string>  $permessi

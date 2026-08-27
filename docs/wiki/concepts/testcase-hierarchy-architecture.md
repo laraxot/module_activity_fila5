@@ -9,10 +9,10 @@ qmd: "activity testcase xotbasetestcase laravel modules pest phpstan hierarchy s
 status: "active"
 issues:
   - https://github.com/laraxot/module_activity_fila5/issues/15
-  - https://github.com/laraxot/base_fixcity_fila5/issues/316
+  - https://github.com/laraxot/base_ptv_fila5/issues/316
 discussions:
   - https://github.com/laraxot/module_activity_fila5/discussions/16
-  - https://github.com/laraxot/base_fixcity_fila5/discussions/316
+  - https://github.com/laraxot/base_ptv_fila5/discussions/316
 related:
   - ../../../../../../docs/bmad/stories/3.10.activity-slim-testcase.story.md
   - ./pest-bootstrap-extend-ignore.md

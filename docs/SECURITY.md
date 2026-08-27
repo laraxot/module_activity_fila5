@@ -57,7 +57,7 @@ public function store(Request $request)
 ### Testing Commands
 ```bash
 # Run security tests
-cd /var/www/_bases/base_fixcity_fila5/laravel/Modules/Activity
+cd /var/www/_bases/base_ptv_fila5/laravel/Modules/Activity
 ./vendor/bin/pest tests/security/
 
 # Run security linting
