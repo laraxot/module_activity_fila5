@@ -19,7 +19,7 @@ afterEach(function (): void {
 });
 
 test('ActivityRecorder record delega a RecordSubjectActivityAction', function (): void {
-    $activity = new Activity;
+    $activity = new Activity();
 
     $mock = Mockery::mock(RecordSubjectActivityAction::class);
     $mock->shouldReceive('execute')
@@ -28,7 +28,7 @@ test('ActivityRecorder record delega a RecordSubjectActivityAction', function ()
         ->andReturn($activity);
     $this->app->instance(RecordSubjectActivityAction::class, $mock);
 
-    (new ActivityRecorder)->record(
+    (new ActivityRecorder())->record(
         'Modules\\User\\Models\\User',
         42,
         'updated',
@@ -46,7 +46,7 @@ test('ActivityRecorder getLog delega a GetSubjectActivityLogAction', function ()
         ->andReturn($logEntries);
     $this->app->instance(GetSubjectActivityLogAction::class, $mock);
 
-    $result = (new ActivityRecorder)->getLog('Modules\\User\\Models\\User', 7);
+    $result = (new ActivityRecorder())->getLog('Modules\\User\\Models\\User', 7);
 
     Assert::assertSame($logEntries, $result);
 });

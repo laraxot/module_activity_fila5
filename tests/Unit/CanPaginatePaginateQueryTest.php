@@ -8,6 +8,7 @@ use Filament\Tables\Enums\PaginationMode;
 use Illuminate\Contracts\Pagination\CursorPaginator;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 use Illuminate\Pagination\CursorPaginator as LaravelCursorPaginator;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -25,14 +26,14 @@ afterEach(function (): void {
 });
 
 /**
- * @return Builder<\Illuminate\Database\Eloquent\Model>&MockInterface
+ * @return Builder<Model>&MockInterface
  */
 function makePaginateQueryMock(int $total = 0): Builder
 {
     $baseQuery = Mockery::mock(QueryBuilder::class);
     $baseQuery->shouldReceive('getCountForPagination')->andReturn($total);
 
-    /** @var Builder<\Illuminate\Database\Eloquent\Model>&MockInterface $query */
+    /** @var Builder<Model>&MockInterface $query */
     $query = Mockery::mock(Builder::class);
     $query->shouldReceive('toBase')->andReturn($baseQuery);
 
@@ -40,7 +41,7 @@ function makePaginateQueryMock(int $total = 0): Builder
 }
 
 test('CanPaginate paginateQuery usa LengthAwarePaginator in modalità default', function (): void {
-    $harness = new CanPaginateHarness;
+    $harness = new CanPaginateHarness();
     $harness->recordsPerPage = 10;
 
     $query = makePaginateQueryMock(0);
@@ -54,7 +55,7 @@ test('CanPaginate paginateQuery usa LengthAwarePaginator in modalità default', 
 });
 
 test('CanPaginate paginateQuery usa simplePaginate in modalità simple', function (): void {
-    $harness = new CanPaginateHarness;
+    $harness = new CanPaginateHarness();
     $harness->recordsPerPage = 10;
     $harness->setMode(PaginationMode::Simple);
 
@@ -69,7 +70,7 @@ test('CanPaginate paginateQuery usa simplePaginate in modalità simple', functio
 });
 
 test('CanPaginate paginateQuery usa cursorPaginate in modalità cursor', function (): void {
-    $harness = new CanPaginateHarness;
+    $harness = new CanPaginateHarness();
     $harness->recordsPerPage = 10;
     $harness->setMode(PaginationMode::Cursor);
 
@@ -84,7 +85,7 @@ test('CanPaginate paginateQuery usa cursorPaginate in modalità cursor', functio
 });
 
 test('CanPaginate paginateQuery gestisce recordsPerPage all', function (): void {
-    $harness = new CanPaginateHarness;
+    $harness = new CanPaginateHarness();
     $harness->recordsPerPage = 'all';
 
     $query = makePaginateQueryMock(3);

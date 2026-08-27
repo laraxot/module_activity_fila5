@@ -10,7 +10,7 @@ use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Activity Base Policy', function (): void {
     test('policy is abstract', function (): void {
@@ -28,7 +28,7 @@ describe('Activity Base Policy', function (): void {
     });
 
     test('super admin user always allowed', function (): void {
-        /** @var \Modules\Activity\Tests\TestCase $this */
+        /** @var TestCase $this */
         // Create a mock super-admin user
         $user = $this->createUnitMock(User::class);
         $user->method('hasRole')->willReturnCallback(
@@ -36,7 +36,7 @@ describe('Activity Base Policy', function (): void {
         );
 
         // Test the policy
-        $policy = new class extends ActivityBasePolicy
+        $policy = new class() extends ActivityBasePolicy
         {
             public function policyBefore(User $user): ?bool
             {
@@ -49,11 +49,11 @@ describe('Activity Base Policy', function (): void {
     });
 
     test('before ritorna null per utente non super-admin', function (): void {
-        /** @var \Modules\Activity\Tests\TestCase $this */
+        /** @var TestCase $this */
         $user = $this->createUnitMock(User::class);
         $user->method('hasRole')->willReturn(false);
 
-        $policy = new class extends ActivityBasePolicy
+        $policy = new class() extends ActivityBasePolicy
         {
             public function policyBefore(User $user): ?bool
             {

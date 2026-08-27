@@ -17,7 +17,6 @@ use Modules\Activity\Models\Activity;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
 
-use Filament\Forms\Components\Field;
 /**
  * Activity Resource Class.
  *
@@ -33,8 +32,8 @@ class ActivityResource extends XotBaseResource
      *
      * @return array<string, mixed>
      */
-    //#[Override]
-    public static function getFormSchemaOld(): array
+    // #[Override]
+    public static function getFormSchema(): array
     {
         return [
             'log_name' => TextInput::make('log_name')->required()->maxLength(255),

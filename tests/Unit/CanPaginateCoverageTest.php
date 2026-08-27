@@ -17,7 +17,7 @@ uses(TestCase::class)->group('activity-db');
 
 function makeCanPaginateHarness(): CanPaginateHarness
 {
-    return new CanPaginateHarness;
+    return new CanPaginateHarness();
 }
 
 test('can paginate trait manages session, defaults and page helpers', function (): void {
