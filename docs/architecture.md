@@ -191,4 +191,4 @@ class ActivityPolicy
 - [Security](SECURITY.md)
 - [Quality](QUALITY.md)
 - [Performance](PERFORMANCE.md)
-- [Testing](TESTING.md)
+- [Testing](testing.md)
