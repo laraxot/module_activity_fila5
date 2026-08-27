@@ -8,14 +8,17 @@ use Modules\Xot\Tests\XotBasePest;
 uses(TestCase::class);
 
 it('uses the correct TestCase class', function () {
+    /** @var TestCase $this */
     $this->assertInstanceOf(TestCase::class, $this);
 });
 
 it('XotBaseTestCase inherits XotBaseTestCase trait', function () {
+    /** @var TestCase $this */
     $this->assertInstanceOf(TestCase::class, $this);
 });
 
 it('XotBasePest helper methods exist', function () {
+    /** @var TestCase $this */
     $this->assertTrue(class_exists(XotBasePest::class));
     $reflection = new ReflectionClass(XotBasePest::class);
     $this->assertTrue($reflection->hasMethod('assertFreshModel'));
@@ -24,6 +27,7 @@ it('XotBasePest helper methods exist', function () {
 });
 
 it('XotBasePest::assertFreshModel signature is correct', function () {
+    /** @var TestCase $this */
     $reflection = new ReflectionMethod(XotBasePest::class, 'assertFreshModel');
     $this->assertTrue($reflection->isPublic());
     $parameters = $reflection->getParameters();

@@ -63,7 +63,6 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
 class StoredEvent extends SpatieStoredEvent
 {
-    /** @phpstan-use HasXotFactory<StoredEventFactory> */
     use HasXotFactory;
 
     protected $connection = 'activity';

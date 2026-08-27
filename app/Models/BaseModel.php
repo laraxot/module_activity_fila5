@@ -29,7 +29,7 @@ abstract class BaseModel extends XotBaseModel
      * Common casts (id, uuid, published_at, created_at, updated_at, deleted_at, etc.)
      * are inherited from XotBaseModel.
      *
-     * @return array<string, string>
+     * @return array<string, string|\Stringable>
      */
     protected function casts(): array
     {

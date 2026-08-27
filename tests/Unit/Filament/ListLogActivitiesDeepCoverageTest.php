@@ -80,6 +80,7 @@ test('ListLogActivities getActivities paginate e errori record', function (): vo
 });
 
 test('ListLogActivities canRestore e restoreActivity percorsi', function (): void {
+    /** @var TestCase $this */
     $subject = activitySubjectForPage('restore-subj');
     $activity = Activity::create([
         'log_name' => 'default',
@@ -95,7 +96,7 @@ test('ListLogActivities canRestore e restoreActivity percorsi', function (): voi
     ListLogActivitiesRestorableResource::$restoreAllowed = true;
     Assert::assertTrue($page->canRestoreActivity());
 
-    $this->app->instance(RestoreActivityAction::class, new RestoreActivityActionNoOp());
+    app()->instance(RestoreActivityAction::class, new RestoreActivityActionNoOp());
     $page->restoreActivity((int) $activity->id);
 
     ListLogActivitiesRestorableResource::$restoreAllowed = false;
@@ -109,7 +110,7 @@ test('ListLogActivities canRestore e restoreActivity percorsi', function (): voi
     }
 
     ListLogActivitiesRestorableResource::$restoreAllowed = true;
-    $this->app->instance(RestoreActivityAction::class, new RestoreActivityActionFails());
+    app()->instance(RestoreActivityAction::class, new RestoreActivityActionFails());
     $page->restoreActivity((int) $activity->id);
 });
 

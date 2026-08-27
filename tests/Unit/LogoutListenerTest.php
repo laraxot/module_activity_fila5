@@ -21,6 +21,7 @@ describe('Logout Listener', function (): void {
 
         $listener->handle($event);
 
+        /** @var TestCase $this */
         $this->assertDatabaseHasRow('activity_log', [
             'log_name' => 'auth',
             'event' => 'logout',
