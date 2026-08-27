@@ -8,7 +8,7 @@ use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('activity-db');
 
 test('LogModelDeletedAction can be instantiated', function () {
     $model = new class extends Model

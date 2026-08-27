@@ -7,10 +7,10 @@ created: 2026-06-10
 updated: 2026-06-10
 qmd: "Activity memories testcase xotbasetestcase nwidart missing base"
 issues:
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/316"
+  - "https://github.com/laraxot/base_ptv_fila5/issues/316"
   - "https://github.com/laraxot/module_xot_fila5/issues/33"
 discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/316"
+  - "https://github.com/laraxot/base_ptv_fila5/discussions/316"
   - "https://github.com/laraxot/module_xot_fila5/discussions/34"
 ---
 

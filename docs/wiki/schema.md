@@ -19,7 +19,7 @@ docs/
 ├── wiki/
 │   ├── index.md           # Catalogo
 │   ├── log.md             # Registro
-│   ├── SCHEMA.md          # Questo file
+│   ├── schema.md          # Questo file
 │   ├── concepts/          # Pattern, architettura
 │   ├── entities/          # Modelli, azioni
 │   ├── sources/           # Doc esterna
@@ -33,3 +33,18 @@ docs/
 - Frontmatter: title, description, tags, created
 - Cross-ref: `[Link](../concepts/name.md)`
 - NON modificare mai `docs/raw/`
+
+---
+
+<!-- Merged from SCHEMA.md, which collided with this file on case-insensitive filesystems. -->
+
+---
+title: "Rimando a schema.md"
+description: "Documento unificato: il contenuto canonico vive in schema.md."
+status: merged
+tags: [merge, duplicato, case-only]
+---
+
+# Documento unificato
+
+Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, in violazione della regola no-case-only-variations. Il contenuto canonico si trova in [schema.md](./schema.md).

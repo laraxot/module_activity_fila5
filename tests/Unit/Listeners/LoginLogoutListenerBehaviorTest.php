@@ -12,7 +12,7 @@ use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class)->group('activity-db');
 
 test('login listener handle executes without side effects', function (): void {
     $listener = new LoginListener;

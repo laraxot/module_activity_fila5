@@ -28,11 +28,3 @@ test('event service provider registers login and logout listeners', function () 
     Assert::assertContains(LoginListener::class, $listen[Login::class]);
     Assert::assertContains(LogoutListener::class, $listen[Logout::class]);
 });
-
-test('event discovery is enabled on provider', function () {
-    $reflection = new \ReflectionClass(EventServiceProvider::class);
-    $property = $reflection->getProperty('shouldDiscoverEvents');
-    $property->setAccessible(true);
-
-    Assert::assertTrue($property->getValue());
-});

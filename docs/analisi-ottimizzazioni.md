@@ -29,7 +29,7 @@ il modulo **activity** è un sistema avanzato di audit trail e event sourcing ch
 ### ❌ duplicazione documentazione
 **problema critico**: duplicazione massiva file documentazione
 ```
-event-sourcing.md / event_sourcing.md
+event-sourcing.md / event-sourcing.md
 advanced-event-sourcing-patterns.md / advanced_event_sourcing_patterns.md
 filament-errors.md / filament_errors.md
 phpstan-fixes.md / phpstan_fixes.md
@@ -76,7 +76,7 @@ find docs/ -name "*_*" -type f | grep -E "\.(md|txt)$"
 
 # mantenere solo versioni kebab-case
 - event-sourcing.md ✅
-- event_sourcing.md ❌ (eliminare)
+- event-sourcing.md ❌ (eliminare)
 ```
 
 **benefici**:

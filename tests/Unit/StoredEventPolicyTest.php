@@ -21,7 +21,9 @@ test('policy extends user base policy', function (): void {
 test('user with permission can view', function (): void {
     /** @var TestCase $this */
     $user = $this->createUnitMock(User::class);
-    $user->method('hasPermissionTo')->with('stored_event.view')->willReturn(true);
+    $user->method('hasPermissionTo')->willReturnCallback(
+        static fn (string $permission): bool => $permission === 'stored_event.view'
+    );
 
     $policy = new StoredEventPolicy();
     Assert::assertTrue($policy->view($user));
@@ -30,7 +32,9 @@ test('user with permission can view', function (): void {
 test('user without permission cannot view', function (): void {
     /** @var TestCase $this */
     $user = $this->createUnitMock(User::class);
-    $user->method('hasPermissionTo')->with('stored_event.view')->willReturn(false);
+    $user->method('hasPermissionTo')->willReturnCallback(
+        static fn (string $permission): bool => false
+    );
 
     $policy = new StoredEventPolicy();
     Assert::assertFalse($policy->view($user));

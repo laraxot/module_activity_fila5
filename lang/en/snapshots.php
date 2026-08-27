@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'name' => 'Snapshots',
     'fields' => [
@@ -92,9 +90,14 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
         'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
+        'sort' => '100',
+        'name' => 'Snapshots',
+        'plural' => 'Snapshots',
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',

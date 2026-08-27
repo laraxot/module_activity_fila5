@@ -88,6 +88,8 @@ Il modulo <nome progetto>ion Market implementa un sistema completo di mercati pr
 4. Configura le code e i worker
 
 ### Comandi Console
+```
+
 ```bash
 
 # Gestione Mercati
@@ -207,7 +209,7 @@ class <nome progetto>ionContract extends Model
 ## Collegamenti correlati
 - [README Shop](../shop/README.md)
 - [README Bank](../bank/README.md)
-- [Console Commands <nome progetto>ion Market](./console_commands.md)
+- [Console Commands <nome progetto>ion Market](./console-commands.md)
 - [Best Practice <nome progetto>ion Market](./best_practices.md)
 - [Architettura <nome progetto>ion Market](./architecture.md)
 - [Eventi <nome progetto>ion Market](./events.md)
