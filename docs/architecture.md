@@ -191,4 +191,12 @@ class ActivityPolicy
 - [Security](SECURITY.md)
 - [Quality](QUALITY.md)
 - [Performance](PERFORMANCE.md)
+<<<<<<< .merge_file_QU8lPj
 - [Testing](testing.md)
+=======
+<<<<<<< .merge_file_QEFqdt
+- [Testing](testing.md)
+=======
+- [Testing](TESTING.md)
+>>>>>>> .merge_file_rPEA1b
+>>>>>>> .merge_file_cBj2iw
