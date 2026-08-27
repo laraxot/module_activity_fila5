@@ -8,16 +8,15 @@ use Illuminate\Auth\Events\Logout;
 use Modules\Activity\Listeners\LogoutListener;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
-use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('activity-db');
 
 describe('Logout Listener', function (): void {
     test('handle registra un evento logout per utente autenticato', function (): void {
-        $user = new User;
+        $user = new User();
         $user->forceFill(['id' => 'logout-user', 'name' => 'Logout User']);
         $user->exists = true;
-        $listener = new LogoutListener;
+        $listener = new LogoutListener();
         $event = new Logout('web', $user);
 
         $listener->handle($event);

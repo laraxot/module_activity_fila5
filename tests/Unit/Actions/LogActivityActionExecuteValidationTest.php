@@ -12,7 +12,7 @@ use Modules\Activity\Tests\TestCase;
 uses(TestCase::class);
 
 test('LogActivityAction execute rifiuta user non User', function (): void {
-    $nonUser = new class extends Model
+    $nonUser = new class() extends Model
     {
         protected $table = 'stub_users';
     };

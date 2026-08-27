@@ -14,6 +14,7 @@ use Illuminate\Support\Carbon;
  * @property string|null $name
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
+ *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestModel newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestModel newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestModel query()
@@ -21,6 +22,7 @@ use Illuminate\Support\Carbon;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestModel whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestModel whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestModel whereUpdatedAt($value)
+ *
  * @mixin \Eloquent
  */
 final class TestModel extends Model

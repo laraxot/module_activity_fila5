@@ -22,12 +22,12 @@ function activityFakeUser(array $permessi): User
 
 describe('Activity Policy', function (): void {
     test('user with permission can view', function (): void {
-        $policy = new ActivityPolicy;
+        $policy = new ActivityPolicy();
         Assert::assertTrue($policy->view(activityFakeUser(['activity.view'])));
     });
 
     test('user without permission cannot view', function (): void {
-        $policy = new ActivityPolicy;
+        $policy = new ActivityPolicy();
         Assert::assertFalse($policy->view(activityFakeUser([])));
     });
 
@@ -42,7 +42,7 @@ describe('Activity Policy', function (): void {
         ];
 
         foreach ($casi as [$permesso, $callback]) {
-            $policy = new ActivityPolicy;
+            $policy = new ActivityPolicy();
             Assert::assertTrue($callback($policy, activityFakeUser([$permesso])));
             Assert::assertFalse($callback($policy, activityFakeUser([])));
         }

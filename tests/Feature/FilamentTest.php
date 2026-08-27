@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
+
 use Filament\Actions\Action;
 use Modules\Activity\Events\ActivityEvent;
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
@@ -21,6 +22,7 @@ use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 use PHPUnit\Framework\Assert;
+
 use function Safe\class_uses;
 
 /**
@@ -35,16 +37,16 @@ function invokeProtectedTableMethod(object $page, string $method): array
     return $result;
 }
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('ActivityEvent', function (): void {
     test('can be instantiated', function (): void {
-        $event = new ActivityEvent;
+        $event = new ActivityEvent();
         Assert::assertInstanceOf(ActivityEvent::class, $event);
     });
 
     test('uses correct traits', function (): void {
-        $event = new ActivityEvent;
+        $event = new ActivityEvent();
 
         // Verify the event has the traits
         $traits = class_uses($event);
@@ -124,7 +126,7 @@ describe('CanPaginate trait', function (): void {
 
 describe('ActivityResource', function (): void {
     test('can be instantiated', function (): void {
-        $resource = new ActivityResource;
+        $resource = new ActivityResource();
         Assert::assertInstanceOf(ActivityResource::class, $resource);
     });
 
@@ -148,7 +150,7 @@ describe('ActivityResource', function (): void {
 
 describe('EditActivity page', function (): void {
     test('can be instantiated', function (): void {
-        $page = new EditActivity;
+        $page = new EditActivity();
         Assert::assertInstanceOf(EditActivity::class, $page);
     });
 
@@ -163,14 +165,14 @@ describe('EditActivity page', function (): void {
     });
 
     test('extends XotBaseEditRecord', function (): void {
-        $page = new EditActivity;
+        $page = new EditActivity();
         Assert::assertInstanceOf(XotBaseEditRecord::class, $page);
     });
 });
 
 describe('ListActivities page', function (): void {
     test('can be instantiated', function (): void {
-        $page = new ListActivities;
+        $page = new ListActivities();
         Assert::assertInstanceOf(ListActivities::class, $page);
     });
 
@@ -184,7 +186,7 @@ describe('ListActivities page', function (): void {
     });
 
     test('has table columns', function (): void {
-        $page = new ListActivities;
+        $page = new ListActivities();
         $columns = invokeProtectedTableMethod($page, 'getTableColumns');
 
         Assert::assertArrayHasKey('id', $columns);
@@ -199,7 +201,7 @@ describe('ListActivities page', function (): void {
 
 describe('SnapshotResource', function (): void {
     test('can be instantiated', function (): void {
-        $resource = new SnapshotResource;
+        $resource = new SnapshotResource();
         Assert::assertInstanceOf(SnapshotResource::class, $resource);
     });
 
@@ -220,7 +222,7 @@ describe('SnapshotResource', function (): void {
 
 describe('ListSnapshots page', function (): void {
     test('can be instantiated', function (): void {
-        $page = new ListSnapshots;
+        $page = new ListSnapshots();
         Assert::assertInstanceOf(ListSnapshots::class, $page);
     });
 
@@ -234,7 +236,7 @@ describe('ListSnapshots page', function (): void {
     });
 
     test('has table columns', function (): void {
-        $page = new ListSnapshots;
+        $page = new ListSnapshots();
         $columns = invokeProtectedTableMethod($page, 'getTableColumns');
 
         Assert::assertArrayHasKey('id', $columns);
@@ -246,14 +248,14 @@ describe('ListSnapshots page', function (): void {
     });
 
     test('has table filters', function (): void {
-        $page = new ListSnapshots;
+        $page = new ListSnapshots();
         $filters = invokeProtectedTableMethod($page, 'getTableFilters');
 
         Assert::assertNotEmpty($filters);
     });
 
     test('has table actions', function (): void {
-        $page = new ListSnapshots;
+        $page = new ListSnapshots();
         $actions = invokeProtectedTableMethod($page, 'getTableActions');
 
         Assert::assertArrayHasKey('view', $actions);
@@ -262,7 +264,7 @@ describe('ListSnapshots page', function (): void {
     });
 
     test('has bulk actions', function (): void {
-        $page = new ListSnapshots;
+        $page = new ListSnapshots();
         $bulkActions = invokeProtectedTableMethod($page, 'getTableBulkActions');
 
         Assert::assertNotEmpty($bulkActions);
@@ -271,7 +273,7 @@ describe('ListSnapshots page', function (): void {
 
 describe('StoredEventResource', function (): void {
     test('can be instantiated', function (): void {
-        $resource = new StoredEventResource;
+        $resource = new StoredEventResource();
         Assert::assertInstanceOf(StoredEventResource::class, $resource);
     });
 
@@ -293,7 +295,7 @@ describe('StoredEventResource', function (): void {
 
 describe('ListStoredEvents page', function (): void {
     test('can be instantiated', function (): void {
-        $page = new ListStoredEvents;
+        $page = new ListStoredEvents();
         Assert::assertInstanceOf(ListStoredEvents::class, $page);
     });
 
@@ -307,7 +309,7 @@ describe('ListStoredEvents page', function (): void {
     });
 
     test('has table columns', function (): void {
-        $page = new ListStoredEvents;
+        $page = new ListStoredEvents();
         $columns = invokeProtectedTableMethod($page, 'getTableColumns');
 
         Assert::assertArrayHasKey('id', $columns);

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests;
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\DatabaseManager;
+use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;

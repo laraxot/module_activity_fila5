@@ -67,7 +67,7 @@ describe('Snapshot Policy', function (): void {
         ];
 
         foreach ($casi as [$permesso, $callback]) {
-            $policy = new SnapshotPolicy;
+            $policy = new SnapshotPolicy();
             $autorizzato = $this->createUnitMock(User::class);
             $autorizzato->method('hasPermissionTo')->willReturnCallback(
                 static fn (string $permission): bool => $permission === $permesso
