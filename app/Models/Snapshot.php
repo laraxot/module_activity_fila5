@@ -40,7 +40,6 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  */
 class Snapshot extends SpatieSnapshot
 {
-    /** @phpstan-use HasXotFactory<SnapshotFactory> */
     use HasXotFactory;
 
     protected $connection = 'activity';

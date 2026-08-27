@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Support\Carbon;
 use Modules\Activity\Models\BaseModel;
 
@@ -26,6 +27,9 @@ use Modules\Activity\Models\BaseModel;
  */
 class TestActivityModel extends BaseModel
 {
+    /** @use HasFactory<\Illuminate\Database\Eloquent\Factories\Factory<self>> */
+    use HasFactory;
+
     /** @var string */
     protected $table = 'test_models';
 
@@ -35,7 +39,7 @@ class TestActivityModel extends BaseModel
     /**
      * Get the attributes that should be cast.
      *
-     * @return array<string, string>
+     * @return array<string, string|\Stringable>
      */
     protected function casts(): array
     {
