@@ -17,16 +17,16 @@ test('activity service provider exposes expected metadata', function (): void {
     $name = $reflection->getProperty('name');
     $name->setAccessible(true);
 
-    $moduleDir = $reflection->getProperty('moduleDir');
+    $moduleDir = $reflection->getProperty('module_dir');
     $moduleDir->setAccessible(true);
 
-    $moduleNs = $reflection->getProperty('moduleNs');
+    $moduleNs = $reflection->getProperty('module_ns');
     $moduleNs->setAccessible(true);
 
     Assert::assertSame('Activity', $name->getValue($provider));
     $moduleDirValue = $moduleDir->getValue($provider);
-    $moduleDirString = is_string($moduleDirValue) ? $moduleDirValue : (string) $moduleDirValue;
-    Assert::assertStringContainsString('Modules/Activity', $moduleDirString);
+    Assert::assertIsString($moduleDirValue);
+    Assert::assertStringContainsString('Modules/Activity', $moduleDirValue);
     Assert::assertSame('Modules\\Activity\\Providers', $moduleNs->getValue($provider));
 });
 

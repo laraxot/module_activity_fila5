@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'navigation' => [
         'name' => 'Stored Events',
@@ -332,19 +330,12 @@ return [
     'pagination' => [
         'per_page' => '50',
         'options' => [
-            0 => '25',
-            1 => '50',
-            2 => '100',
-            3 => '200',
         ],
         'simple' => '',
     ],
     'cache' => [
         'ttl' => '600',
         'tags' => [
-            0 => 'stored_events',
-            1 => 'event_sourcing',
-            2 => 'monitoring',
         ],
     ],
     'event_sourcing' => [

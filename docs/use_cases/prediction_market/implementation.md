@@ -93,3 +93,4 @@ class <nome progetto>ionMarketController
 
 - Implementare snapshot per la radice aggregate se i mercati hanno molti eventi.
 - Utilizzare code per elaborare eventi in background, specialmente per l'aggiornamento delle probabilità.
+```

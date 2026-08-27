@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Str;
 use Modules\Activity\Database\Factories\ActivityFactory;
@@ -196,7 +197,7 @@ test('activity module handles concurrent operations correctly', function () {
         };
     }
 
-    $results = array_map(fn ($promise) => $promise(), $promises);
+    $results = array_map(static fn (callable $promise): mixed => $promise(), $promises);
     Assert::assertCount(10, $results);
     foreach ($results as $result) {
         Assert::assertTrue($result);
@@ -240,7 +241,7 @@ test('activity module supports complex query patterns', function () {
     $complexQuery = Activity::query()
         ->where('causer_type', User::class)
         ->whereIn('log_name', ['security', 'audit'])
-        ->where(function ($query) use ($user1, $user2) {
+        ->where(static function (Builder $query) use ($user1, $user2): void {
             $query->where('causer_id', $user1->id)
                 ->orWhere('causer_id', $user2->id);
         })
