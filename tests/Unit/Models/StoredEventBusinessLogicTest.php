@@ -3,26 +3,23 @@
 declare(strict_types=1);
 
 use Modules\Activity\Models\StoredEvent;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 describe('StoredEvent Business Logic', function (): void {
     test('stored event has correct connection configured', function (): void {
-        $storedEvent = new StoredEvent;
+        $storedEvent = new StoredEvent();
 
         Assert::assertSame('activity', $storedEvent->getConnectionName());
     });
 
     test('stored event has correct table configured', function (): void {
-        $storedEvent = new StoredEvent;
+        $storedEvent = new StoredEvent();
 
         Assert::assertSame('stored_events', $storedEvent->getTable());
     });
 
     test('stored event has expected fillable fields for event sourcing', function (): void {
-        $storedEvent = new StoredEvent;
+        $storedEvent = new StoredEvent();
         $expectedFillable = [
             'id',
             'aggregate_uuid',

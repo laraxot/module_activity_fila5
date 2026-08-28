@@ -20,8 +20,6 @@ use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-
 afterEach(function (): void {
     Mockery::close();
 });

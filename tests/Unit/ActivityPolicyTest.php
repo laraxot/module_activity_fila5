@@ -6,11 +6,8 @@ namespace Modules\Activity\Tests\Unit;
 
 use Modules\Activity\Models\Policies\ActivityPolicy;
 use Modules\Activity\Tests\Fixtures\ActivityPolicyUser;
-use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 /**
  * @param  list<string>  $permessi

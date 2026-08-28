@@ -7,8 +7,6 @@ use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-
 test('activity model can be created', function () {
     $activity = ActivityFactory::new()->makeOne();
 
