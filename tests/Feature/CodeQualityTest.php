@@ -7,15 +7,13 @@ namespace Modules\Activity\Tests\Feature;
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Providers\ActivityServiceProvider;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use SplFileInfo;
+
 use function Safe\exec;
 use function Safe\file_get_contents;
-
-uses(\Modules\Activity\Tests\TestCase::class);
 
 /**
  * @return list<string>

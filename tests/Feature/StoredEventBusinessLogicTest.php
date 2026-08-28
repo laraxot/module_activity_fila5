@@ -8,11 +8,8 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Modules\Activity\Models\StoredEvent;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
-
-uses(\Modules\Activity\Tests\TestCase::class);
 
 test('can create stored event with basic information', function (): void {
     $eventData = [

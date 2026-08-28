@@ -23,11 +23,9 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Modules\Activity\Models\StoredEvent;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
-uses(TestCase::class);
 // Activity module regression coverage (claude-audit doc ratio).
 // Activity module regression coverage (claude-audit doc ratio).
 // Activity module regression coverage (claude-audit doc ratio).
