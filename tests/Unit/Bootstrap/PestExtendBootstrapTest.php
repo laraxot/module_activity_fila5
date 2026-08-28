@@ -11,8 +11,6 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 
-uses(TestCase::class)->group('no-activity-db');
-
 /*
  * Il bootstrap Pest del modulo non lega cartelle a TestCase: ogni file
  * dichiara `uses()` nudo. Eseguire con:

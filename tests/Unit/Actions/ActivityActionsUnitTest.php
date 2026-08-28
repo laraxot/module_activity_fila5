@@ -12,11 +12,8 @@ use Modules\Activity\Actions\LogModelDeletedAction;
 use Modules\Activity\Actions\LogModelUpdatedAction;
 use Modules\Activity\Actions\LogUserLoginAction;
 use Modules\Activity\Actions\LogUserLogoutAction;
-use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 test('ActivityMaintenanceAction rifiuta giorni non positivi', function (): void {
     expect(fn (): int => (new ActivityMaintenanceAction())->execute(0))

@@ -9,11 +9,8 @@ use Illuminate\Support\Str;
 use Modules\Activity\Listeners\LoginListener;
 use Modules\Activity\Listeners\LogoutListener;
 use Modules\Activity\Models\Activity;
-use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class)->group('activity-db');
 
 test('login listener handle executes without side effects', function (): void {
     $listener = new LoginListener();

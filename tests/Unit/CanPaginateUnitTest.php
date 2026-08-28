@@ -6,10 +6,7 @@ namespace Modules\Activity\Tests\Unit;
 
 use Filament\Tables\Enums\PaginationMode;
 use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 test('CanPaginate gestisce session e default senza database', function (): void {
     $harness = new CanPaginateHarness();
