@@ -38,8 +38,6 @@ class TestActivityModel extends BaseModel
 
     /**
      * Get the attributes that should be cast.
-     *
-     * @return array<string, string|\Stringable>
      */
     protected function casts(): array
     {
