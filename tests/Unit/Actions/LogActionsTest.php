@@ -9,11 +9,8 @@ use Modules\Activity\Actions\LogModelUpdatedAction;
 use Modules\Activity\Actions\LogUserLoginAction;
 use Modules\Activity\Actions\LogUserLogoutAction;
 use Modules\Activity\Models\Activity;
-use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class)->group('activity-db');
 
 test('LogActivityAction can execute', function () {
     $user = UserFactory::new()->createOne(['name' => 'Test User', 'password' => 'password']);

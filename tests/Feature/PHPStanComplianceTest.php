@@ -3,17 +3,16 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
+
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Providers\ActivityServiceProvider;
-use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Modules\Xot\Filament\Resources\Pages\XotBasePage;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use PHPUnit\Framework\Assert;
-use function Safe\file_get_contents;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+use function Safe\file_get_contents;
 
 test('classes extend correct base classes', function (): void {
     $actionReflection = new \ReflectionClass(ListLogActivitiesAction::class);

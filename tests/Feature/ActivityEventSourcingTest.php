@@ -11,13 +11,10 @@ use Modules\Activity\Database\Factories\StoredEventFactory;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
-use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
-
-uses(TestCase::class);
 
 test('activity event sourcing lifecycle works correctly', function () {
     $user = UserFactory::new()->createOne();

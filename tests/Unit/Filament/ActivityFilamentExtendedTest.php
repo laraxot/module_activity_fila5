@@ -17,11 +17,8 @@ use Modules\Activity\Filament\Resources\SnapshotResource\Tables\SnapshotsTable;
 use Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventForm;
 use Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventInfolist;
 use Modules\Activity\Filament\Resources\StoredEventResource\Tables\StoredEventsTable;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
-
-uses(TestCase::class);
 
 afterEach(function (): void {
     Mockery::close();

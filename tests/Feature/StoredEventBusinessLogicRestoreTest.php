@@ -10,10 +10,7 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Modules\Activity\Models\StoredEvent;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 test('can restore event from stored event', function (): void {
     $originalProperties = [

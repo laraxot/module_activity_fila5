@@ -18,11 +18,8 @@ use Modules\Activity\Tests\Fixtures\ListLogActivitiesMountablePage;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesNestedFormPage;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesNonSchemaFormPage;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesPageHarness;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionProperty;
-
-uses(TestCase::class)->group('activity-db');
 
 test('ListLogActivitiesAction url closure genera log-activity', function (): void {
     $action = ListLogActivitiesAction::make();

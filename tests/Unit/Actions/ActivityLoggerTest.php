@@ -4,12 +4,9 @@ declare(strict_types=1);
 
 use Modules\Activity\Actions\ActivityLogger;
 use Modules\Activity\Models\Activity;
-use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 test('ActivityLogger throws exception for empty event type', function () {
     $logger = new ActivityLogger();

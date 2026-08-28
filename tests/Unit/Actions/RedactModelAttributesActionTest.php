@@ -6,10 +6,7 @@ use Modules\Activity\Actions\RedactModelAttributesAction;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 describe('coverage senza database activity_log', function (): void {
     test('RedactModelAttributesAction rimuove chiavi sensibili', function (): void {

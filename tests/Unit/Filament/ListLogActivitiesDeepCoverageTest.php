@@ -23,8 +23,6 @@ use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
-uses(TestCase::class)->group('activity-db');
-
 function activitySubjectForPage(string $id = 'page-subj'): ActivitySubjectHarness
 {
     $subject = new ActivitySubjectHarness();
