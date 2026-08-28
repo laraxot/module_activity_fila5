@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Unit;
 
 use Modules\Activity\Listeners\LoginListener;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 describe('Login Listener', function (): void {
     test('listener class exists', function (): void {

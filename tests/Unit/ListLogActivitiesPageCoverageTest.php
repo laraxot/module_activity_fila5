@@ -11,8 +11,6 @@ use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-
 beforeEach(function (): void {
     /** @var TestCase $this */
     $this->page = new class() extends ListLogActivities

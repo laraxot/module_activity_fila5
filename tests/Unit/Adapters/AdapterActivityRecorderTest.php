@@ -12,8 +12,6 @@ use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-
 afterEach(function (): void {
     Mockery::close();
 });

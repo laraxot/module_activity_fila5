@@ -6,11 +6,8 @@ namespace Modules\Activity\Tests\Unit\Filament;
 
 use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Filament\Resources\ActivityResource;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
-
-uses(TestCase::class);
 
 test('ListLogActivities toTranslationString normalizza stringhe e array', function (): void {
     $page = new class() extends ListLogActivities

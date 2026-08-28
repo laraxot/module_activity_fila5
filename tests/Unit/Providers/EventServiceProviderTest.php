@@ -9,10 +9,7 @@ use Illuminate\Auth\Events\Logout;
 use Modules\Activity\Listeners\LoginListener;
 use Modules\Activity\Listeners\LogoutListener;
 use Modules\Activity\Providers\EventServiceProvider;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 test('event service provider registers login and logout listeners', function () {
     $provider = new EventServiceProvider(app());

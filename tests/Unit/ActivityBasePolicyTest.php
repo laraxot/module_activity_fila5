@@ -10,8 +10,6 @@ use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-
 describe('Activity Base Policy', function (): void {
     test('policy is abstract', function (): void {
         $reflection = new \ReflectionClass(ActivityBasePolicy::class);

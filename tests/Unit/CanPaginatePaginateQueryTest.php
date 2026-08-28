@@ -16,10 +16,7 @@ use Illuminate\Pagination\Paginator as LaravelPaginator;
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 afterEach(function (): void {
     Mockery::close();
