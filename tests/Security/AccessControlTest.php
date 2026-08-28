@@ -13,11 +13,8 @@ namespace Modules\Activity\Tests\Security;
 
 use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Models\Policies\ActivityPolicy;
-use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 it('denies activity viewAny to users without permission', function (): void {
     $user = (new UserFactory())->createOne();

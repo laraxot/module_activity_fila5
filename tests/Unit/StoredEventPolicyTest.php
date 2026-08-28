@@ -10,8 +10,6 @@ use Modules\User\Models\Policies\UserBasePolicy;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-
 test('policy extends user base policy', function (): void {
     $policy = new StoredEventPolicy();
 

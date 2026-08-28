@@ -10,8 +10,6 @@ use Modules\Activity\Support\ActivityLogSchema;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-
 test('ActivityLogSchema ritorna false quando activitylog è disabilitato', function (): void {
     config(['activitylog.enabled' => false]);
 
