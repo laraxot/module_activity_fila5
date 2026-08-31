@@ -4,6 +4,7 @@ type: memory
 module: Activity
 tags: [testcase, architecture, decision, memory, pest, phpstan]
 created: 2026-06-10
+created_at: '2026-06-10'
 updated: 2026-06-10
 qmd: "activity testcase xotbasetestcase decision nwidart missing base testcase"
 status: "active"
