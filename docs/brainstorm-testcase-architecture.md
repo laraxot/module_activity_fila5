@@ -1,6 +1,7 @@
 ---
 title: "Brainstorm: TestCase Architecture for Laravel Modules"
 date: 2026-06-10
+created_at: '2026-06-10'
 objective: "Valutare se Modules/<Module>/tests/TestCase.php debba estendere XotBaseTestCase e se XotBaseTestCase debba estendere un BaseTestCase Nwidart"
 status: "completed"
 issues:
