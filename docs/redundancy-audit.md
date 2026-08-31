@@ -4,6 +4,7 @@ type: audit
 module: Activity
 tags: [redundancy, duplicate-code, docs]
 created: 2026-05-21
+created_at: '2026-05-21'
 related:
   - https://github.com/laraxot/base_ptv_fila5/issues/89
 ---
