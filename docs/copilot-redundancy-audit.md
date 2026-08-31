@@ -1,3 +1,7 @@
+---
+created_at: '2026-05-25'
+---
+
 Copilot Redundancy Audit — 2026-05-25
 
 Sintesi
