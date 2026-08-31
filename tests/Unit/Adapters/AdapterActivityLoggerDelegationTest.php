@@ -16,7 +16,6 @@ use Modules\Activity\Actions\Query\GetRecentActivitiesAction;
 use Modules\Activity\Actions\Query\GetUserActivitiesAction;
 use Modules\Activity\Adapters\ActivityLogger as ActivityLoggerAdapter;
 use Modules\Activity\Models\Activity;
-use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
@@ -40,7 +39,6 @@ test('Adapter ActivityLogger custom delega a log', function (): void {
 });
 
 test('Adapter ActivityLogger getUserActivities delega al container', function (): void {
-    /** @var TestCase $this */
     /** @var Collection<int, Activity> $expected */
     $expected = new Collection();
     $user = new User();
@@ -55,7 +53,6 @@ test('Adapter ActivityLogger getUserActivities delega al container', function ()
 });
 
 test('Adapter ActivityLogger getModelActivities delega al container', function (): void {
-    /** @var TestCase $this */
     /** @var Collection<int, Activity> $expected */
     $expected = new Collection();
     $model = new class() extends Model
@@ -73,7 +70,6 @@ test('Adapter ActivityLogger getModelActivities delega al container', function (
 });
 
 test('Adapter ActivityLogger getByType delega al container', function (): void {
-    /** @var TestCase $this */
     /** @var Collection<int, Activity> $expected */
     $expected = new Collection();
 
@@ -87,7 +83,6 @@ test('Adapter ActivityLogger getByType delega al container', function (): void {
 });
 
 test('Adapter ActivityLogger getRecent delega al container', function (): void {
-    /** @var TestCase $this */
     /** @var Collection<int, Activity> $expected */
     $expected = new Collection();
 
@@ -101,7 +96,6 @@ test('Adapter ActivityLogger getRecent delega al container', function (): void {
 });
 
 test('Adapter ActivityLogger cleanOld delega al container', function (): void {
-    /** @var TestCase $this */
     $mock = Mockery::mock(ActivityMaintenanceAction::class);
     mockeryExpect($mock->shouldReceive('execute'))->once()->with(30)->andReturn(3);
     app()->instance(ActivityMaintenanceAction::class, $mock);
@@ -112,7 +106,6 @@ test('Adapter ActivityLogger cleanOld delega al container', function (): void {
 });
 
 test('Adapter ActivityLogger getStatistics delega al container', function (): void {
-    /** @var TestCase $this */
     $user = new User();
     $stats = [
         'total' => 1,
@@ -132,7 +125,6 @@ test('Adapter ActivityLogger getStatistics delega al container', function (): vo
 });
 
 test('Adapter ActivityLogger getRecent propaga InvalidArgumentException', function (): void {
-    /** @var TestCase $this */
     $mock = Mockery::mock(GetRecentActivitiesAction::class);
     mockeryExpect($mock->shouldReceive('execute'))->once()->with(0)->andThrow(new InvalidArgumentException('Limit must be positive'));
     app()->instance(GetRecentActivitiesAction::class, $mock);
