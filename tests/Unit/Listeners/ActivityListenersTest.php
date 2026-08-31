@@ -1,0 +1,19 @@
+<?php
+
+declare(strict_types=1);
+
+use Modules\Activity\Listeners\LoginListener;
+use Modules\Activity\Listeners\LogoutListener;
+use PHPUnit\Framework\Assert;
+
+test('LoginListener can be instantiated', function () {
+    $listener = new LoginListener();
+
+    Assert::assertInstanceOf(LoginListener::class, $listener);
+});
+
+test('LogoutListener can be instantiated', function () {
+    $listener = new LogoutListener();
+
+    Assert::assertInstanceOf(LogoutListener::class, $listener);
+});
