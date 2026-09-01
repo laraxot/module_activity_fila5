@@ -16,21 +16,21 @@ rifare e contestare.
 
 | Metrica | Valore |
 |---|---:|
-| File PHP | 317 |
-| Righe di codice | 22559 |
+| File PHP | 304 |
+| Righe di codice | 22215 |
 | File di test `*Test.php` | 88 |
 | Casi di test | 464 |
-| Casi di test per file PHP | 1.46 |
-| `@phpstan-ignore` nel codice | 2 |
+| Casi di test per file PHP | 1.53 |
+| `@phpstan-ignore` nel codice | 1 |
 | Rilievi PHPMD su `app/` | 2 |
 | PHPInsights — Code | 94.1 % |
 | PHPInsights — Complexity | 100.0 % |
 | PHPInsights — Architecture | 92.9 % |
 | PHPInsights — Style | 86.4 % |
-| File `.md` sotto `docs/` | 706 |
+| File `.md` sotto `docs/` | 708 |
 | `TODO`/`FIXME`/`HACK` | 0 |
 | Test con casi che non girano (senza suffisso `Test.php`) | 0 |
-| Collisioni di case nel codice | 8 |
+| Collisioni di case nel codice | 2 |
 | Collisioni di case nei docs | 25 |
 | Marker di conflitto | 0 |
 | File `.lock` committati | 0 |
@@ -48,19 +48,19 @@ da `ignoreErrors` e non vengono contate da nessun gate.
 I 2 rilievi non sono un segno di pulizia: con un parse error aperto l'analisi si ferma
 prima. Il numero va riletto dopo aver corretto il file che non si lascia leggere.
 
-### 13 file di test senza suffisso Test.php
+### 25 collisioni di case nei docs
 
-Non vengono raccolti da PHPUnit e non girano. Su 88 file di test, sono il 13 % della
-suite che esiste solo come testo.
+Quelle nel codice (fixture) sono state chiuse il 1 settembre; restano quelle
+documentali, piu' due cartelle `.github/` gemelle.
 
-### 2 soppressioni `@phpstan-ignore`
+### 1 soppressioni `@phpstan-ignore`
 
 Ogni soppressione e un errore vero che qualcuno ha deciso di non affrontare.
 Il `phpstan.neon` di questo progetto lo dice esplicitamente in testa al proprio
 output: «Do not add `@phpstan-ignore` comments». Vanno lette una per una e
 chiuse alla sorgente o cancellate se non corrispondono piu a niente.
 
-### 8 collisioni di case nel codice
+### 2 collisioni di case nel codice
 
 Due percorsi che differiscono solo per maiuscole convivono su Linux e si
 fondono su macOS e Windows. Quando sono file di test, uno dei due non viene
@@ -70,12 +70,6 @@ Percorsi coinvolti:
 
 - `.github/SECURITY.md`
 - `.github/contributing.md`
-- `.github/issue_template`
-- `tests/fixtures`
-- `tests/tests/Feature`
-- `tests/tests/unit`
-- `workbench/app/Providers`
-- `workbench/app/models`
 
 ### 25 collisioni di case nei docs
 
