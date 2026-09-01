@@ -29,6 +29,7 @@ rifare e contestare.
 | PHPInsights — Style | 86.4 % |
 | File `.md` sotto `docs/` | 706 |
 | `TODO`/`FIXME`/`HACK` | 0 |
+| Test con casi che non girano (senza suffisso `Test.php`) | 0 |
 | Collisioni di case nel codice | 8 |
 | Collisioni di case nei docs | 25 |
 | Marker di conflitto | 0 |
@@ -81,26 +82,6 @@ Percorsi coinvolti:
 Coppie tipo `INDEX.md` e `index.md`. Sono documenti che divergono in silenzio:
 nessun linter le segnala e chi legge non sa quale delle due e la buona.
 
-### 13 file di test senza suffisso `Test.php`
-
-PHPUnit raccoglie per suffisso: senza `Test.php` questi file non girano mai.
-Non sono duplicati da cancellare finche non si e verificato che esista un
-gemello: se il gemello non c'e, si rinominano e il coverage sale da solo.
-
-- `tests/Feature/TestActivityModel.php`
-- `tests/PestHelpers.php`
-- `tests/fixtures/CanPaginateHarness.php`
-- `tests/fixtures/HasEventsDummyModel.php`
-- `tests/fixtures/ListLogActivitiesActionTestPage.php`
-- `tests/fixtures/ListLogActivitiesActionTestRecord.php`
-- `tests/fixtures/ListLogActivitiesActionTestResource.php`
-- `tests/fixtures/ListLogActivitiesActionTestResourceSimple.php`
-- `tests/fixtures/LogActivityActionTestModel.php`
-- `tests/fixtures/LogModelCreatedActionTestModel.php`
-- `tests/fixtures/LogModelDeletedActionTestModel.php`
-- `tests/fixtures/LogModelUpdatedActionTestModel.php`
-- … e altri 1
-
 ## Coverage
 
 La misura sta in [`coverage.md`](./coverage.md), che va aggiornato a ogni run e non
@@ -117,6 +98,10 @@ sostituito.
 - **PHPMD misurato su `app/`, non sulla root del modulo.** Puntandolo alla root,
   una singola classe anonima nei test fa abortire tutta l'analisi e stampare zero
   rilievi. Uno zero PHPMD sulla root non e una prova di pulizia.
+- **I file sotto `tests/` senza suffisso `Test.php` non sono tutti test.** Una
+  prima passata ne aveva contati 62 come "test che non girano": verificati uno a uno,
+  47 sono stub, fake, helper e classi base che correttamente non hanno il suffisso.
+  Il conteggio qui sopra riporta solo i file che contengono davvero casi di test.
 - **PHPInsights `Complexity 100 %` su tutte e 22 le unita.** Un valore identico
   ovunque non sta discriminando niente: va trattato come non informativo finche
   non se ne capisce la configurazione.
