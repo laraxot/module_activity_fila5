@@ -51,7 +51,7 @@ Mai `--force`. Mai `RefreshDatabase`.
 
 ## Storico
 
-File errati in `database/migrations/_bak/README.md`.
+Duplicati rimossi con `git rm` (niente `_bak/` sul disco).
 
 ## Runtime
 
