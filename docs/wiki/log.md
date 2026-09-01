@@ -42,8 +42,8 @@ discussions:
 
 ## [2026-06-10] schema | activity_log — una migrazione, XotBaseMigration
 
-- Consolidati add/fix/update in `2026_06_10_140000_create_activity_table.php`
-- Duplicate in `_bak/`; vietato `extends Migration`
+- Consolidati add/fix/update in `2026_06_10_141000_create_activity_table.php`
+- Duplicati: `git rm` (niente `_bak/` sul disco); vietato `extends Migration`
 - Doc: [concepts/activity-log-single-migration-contract.md](concepts/activity-log-single-migration-contract.md)
 
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
