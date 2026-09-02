@@ -13,16 +13,12 @@ use Modules\Activity\Models\Snapshot;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
 
-use Filament\Forms\Components\Field;
 class SnapshotResource extends XotBaseResource
 {
     protected static ?string $model = Snapshot::class;
 
-    //#[Override]
-    /**
-     * @return array<string, mixed>
-     */
-    public static function getFormSchemaOld(): array
+    #[Override]
+    public static function getFormSchema(): array
     {
         return [
             'model_type' => TextInput::make('model_type')->required()->maxLength(255),

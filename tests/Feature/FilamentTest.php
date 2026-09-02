@@ -23,18 +23,6 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 use PHPUnit\Framework\Assert;
 use function Safe\class_uses;
 
-/**
- * @return array<string, mixed>
- */
-function invokeProtectedTableMethod(object $page, string $method): array
-{
-    $reflection = new \ReflectionMethod($page, $method);
-    /** @var array<string, mixed> $result */
-    $result = $reflection->invoke($page);
-
-    return $result;
-}
-
 uses(\Modules\Activity\Tests\TestCase::class);
 
 describe('ActivityEvent', function (): void {
@@ -133,7 +121,7 @@ describe('ActivityResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
-        $schema = ActivityResource::getFormSchemaOld();
+        $schema = ActivityResource::getFormSchema();
 
         Assert::assertArrayHasKey('log_name', $schema);
         Assert::assertArrayHasKey('description', $schema);
@@ -185,7 +173,7 @@ describe('ListActivities page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListActivities;
-        $columns = invokeProtectedTableMethod($page, 'getTableColumns');
+        $columns = $page->getTableColumns();
 
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('description', $columns);
@@ -208,7 +196,7 @@ describe('SnapshotResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
-        $schema = SnapshotResource::getFormSchemaOld();
+        $schema = SnapshotResource::getFormSchema();
 
         Assert::assertArrayHasKey('model_type', $schema);
         Assert::assertArrayHasKey('model_id', $schema);
@@ -235,7 +223,7 @@ describe('ListSnapshots page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListSnapshots;
-        $columns = invokeProtectedTableMethod($page, 'getTableColumns');
+        $columns = $page->getTableColumns();
 
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('aggregate_uuid', $columns);
@@ -247,14 +235,14 @@ describe('ListSnapshots page', function (): void {
 
     test('has table filters', function (): void {
         $page = new ListSnapshots;
-        $filters = invokeProtectedTableMethod($page, 'getTableFilters');
+        $filters = $page->getTableFilters();
 
         Assert::assertNotEmpty($filters);
     });
 
     test('has table actions', function (): void {
         $page = new ListSnapshots;
-        $actions = invokeProtectedTableMethod($page, 'getTableActions');
+        $actions = $page->getTableActions();
 
         Assert::assertArrayHasKey('view', $actions);
         Assert::assertArrayHasKey('edit', $actions);
@@ -263,7 +251,7 @@ describe('ListSnapshots page', function (): void {
 
     test('has bulk actions', function (): void {
         $page = new ListSnapshots;
-        $bulkActions = invokeProtectedTableMethod($page, 'getTableBulkActions');
+        $bulkActions = $page->getTableBulkActions();
 
         Assert::assertNotEmpty($bulkActions);
     });
@@ -280,7 +268,7 @@ describe('StoredEventResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
-        $schema = StoredEventResource::getFormSchemaOld();
+        $schema = StoredEventResource::getFormSchema();
 
         Assert::assertArrayHasKey('event_class', $schema);
         Assert::assertArrayHasKey('event_properties', $schema);
@@ -308,7 +296,7 @@ describe('ListStoredEvents page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListStoredEvents;
-        $columns = invokeProtectedTableMethod($page, 'getTableColumns');
+        $columns = $page->getTableColumns();
 
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('event_class', $columns);

@@ -7,9 +7,9 @@ created: 2026-05-12
 updated: 2026-06-13
 qmd: "Activity log phpstan pest discipline"
 issues:
-  - "https://github.com/laraxot/base_ptv_fila5/issues/328"
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/328"
 discussions:
-  - "https://github.com/laraxot/base_ptv_fila5/discussions/329"
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/329"
 ---
 
 ---
@@ -17,9 +17,9 @@ discussions:
 ## [2026-06-13] phpstan | Gate chef — 7 file Actions → Assert
 
 - Convertiti tutti i test `tests/Unit/Actions/*` da `expect()` a `Assert::assert*()` per eliminare `method.internalClass` (82 errori piattaforma → 0).
-- Aggiunti [overviews/completion-status.md](overviews/completion-status.md) e aggiornato [project-roadmap.md](project-roadmap.md) scope Activity.
+- Aggiunti [overviews/completion-status.md](overviews/completion-status.md) e aggiornato [PROJECT-ROADMAP.md](PROJECT-ROADMAP.md) scope Activity.
 - Hub: [Xot platform-completion-roadmap](../../Xot/docs/wiki/overviews/platform-completion-roadmap.md).
-- GitHub: [Activity#18](https://github.com/laraxot/module_activity_fila5/issues/18) / base [#372](https://github.com/laraxot/base_ptv_fila5/issues/372).
+- GitHub: [Activity#18](https://github.com/laraxot/module_activity_fila5/issues/18) / base [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372).
 
 ## [2026-06-10] testcase | Brainstorm Activity + nWidart BaseTestCase
 
@@ -42,11 +42,11 @@ discussions:
 
 ## [2026-06-10] schema | activity_log — una migrazione, XotBaseMigration
 
-- Consolidati add/fix/update in `2026_06_10_141000_create_activity_table.php`
-- Duplicati: `git rm` (niente `_bak/` sul disco); vietato `extends Migration`
+- Consolidati add/fix/update in `2026_06_10_140000_create_activity_table.php`
+- Duplicate in `_bak/`; vietato `extends Migration`
 - Doc: [concepts/activity-log-single-migration-contract.md](concepts/activity-log-single-migration-contract.md)
 
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
-- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-ptv-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
-- GitHub: [#272](https://github.com/laraxot/base_ptv_fila5/issues/272) / [D#273](https://github.com/laraxot/base_ptv_fila5/discussions/273)
+- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
+- GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
