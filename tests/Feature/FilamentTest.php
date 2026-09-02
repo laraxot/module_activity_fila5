@@ -3,7 +3,9 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
+
 use Filament\Actions\Action;
+use Filament\Tables\Table;
 use Modules\Activity\Events\ActivityEvent;
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
@@ -21,9 +23,10 @@ use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 use PHPUnit\Framework\Assert;
+
 use function Safe\class_uses;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('ActivityEvent', function (): void {
     test('can be instantiated', function (): void {
@@ -173,7 +176,7 @@ describe('ListActivities page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListActivities;
-        $columns = $page->getTableColumns();
+        $columns = $page->table(Table::make($page))->getColumns();
 
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('description', $columns);
@@ -223,7 +226,7 @@ describe('ListSnapshots page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListSnapshots;
-        $columns = $page->getTableColumns();
+        $columns = $page->table(Table::make($page))->getColumns();
 
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('aggregate_uuid', $columns);
@@ -235,14 +238,18 @@ describe('ListSnapshots page', function (): void {
 
     test('has table filters', function (): void {
         $page = new ListSnapshots;
-        $filters = $page->getTableFilters();
+        $filters = $page->table(Table::make($page))->getFilters();
 
         Assert::assertNotEmpty($filters);
     });
 
     test('has table actions', function (): void {
         $page = new ListSnapshots;
-        $actions = $page->getTableActions();
+        $recordActions = $page->table(Table::make($page))->getRecordActions();
+        $actions = collect($recordActions)
+            ->filter(static fn (mixed $action): bool => $action instanceof Action)
+            ->keyBy(static fn (Action $action): string => (string) $action->getName())
+            ->all();
 
         Assert::assertArrayHasKey('view', $actions);
         Assert::assertArrayHasKey('edit', $actions);
@@ -251,7 +258,7 @@ describe('ListSnapshots page', function (): void {
 
     test('has bulk actions', function (): void {
         $page = new ListSnapshots;
-        $bulkActions = $page->getTableBulkActions();
+        $bulkActions = $page->table(Table::make($page))->getToolbarActions();
 
         Assert::assertNotEmpty($bulkActions);
     });
@@ -296,7 +303,7 @@ describe('ListStoredEvents page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListStoredEvents;
-        $columns = $page->getTableColumns();
+        $columns = $page->table(Table::make($page))->getColumns();
 
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('event_class', $columns);
