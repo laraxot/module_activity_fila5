@@ -10,6 +10,6 @@ final class ListLogActivitiesHtmlTitleHarness extends ListLogActivitiesPageHarne
 {
     public function getRecordTitle(): Htmlable
     {
-        return new HtmlableRecordTitle();
+        return new HtmlableRecordTitle;
     }
 }

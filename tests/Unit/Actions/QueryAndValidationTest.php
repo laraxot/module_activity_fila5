@@ -23,17 +23,17 @@ use Webmozart\Assert\InvalidArgumentException as AssertInvalidArgumentException;
 
 describe('Query Actions validation', function (): void {
     test('GetRecentActivitiesAction rifiuta limit non positivo', function (): void {
-        expect(fn (): mixed => (new GetRecentActivitiesAction())->execute(0))
+        expect(fn (): mixed => (new GetRecentActivitiesAction)->execute(0))
             ->toThrow(InvalidArgumentException::class, 'Limit must be positive');
     });
 
     test('GetUserActivitiesAction rifiuta limit non positivo', function (): void {
-        expect(fn (): mixed => (new GetUserActivitiesAction())->execute(new User(), -1))
+        expect(fn (): mixed => (new GetUserActivitiesAction)->execute(new User, -1))
             ->toThrow(InvalidArgumentException::class);
     });
 
     test('GetActivitiesByTypeAction rifiuta type vuoto e limit invalido', function (): void {
-        $action = new GetActivitiesByTypeAction();
+        $action = new GetActivitiesByTypeAction;
 
         expect(fn (): mixed => $action->execute(''))
             ->toThrow(InvalidArgumentException::class, 'Type cannot be empty');
@@ -45,8 +45,8 @@ describe('Query Actions validation', function (): void {
 
 describe('ActivityLogger Action validation', function (): void {
     test('getRecent getUserActivities getByType cleanOld validano input', function (): void {
-        $logger = new ActivityLoggerAction();
-        $user = new User();
+        $logger = new ActivityLoggerAction;
+        $user = new User;
 
         expect(fn (): mixed => $logger->getRecent(0))
             ->toThrow(InvalidArgumentException::class);
@@ -66,11 +66,11 @@ describe('ActivityLogger Action validation', function (): void {
 });
 
 test('LogActivityAction execute rifiuta user non User', function (): void {
-    $subject = new class() extends Model
+    $subject = new class extends Model
     {
         protected $table = 'stub_models';
     };
-    $invalidUser = new class() extends Model
+    $invalidUser = new class extends Model
     {
         protected $table = 'users';
     };
@@ -83,14 +83,14 @@ test('LogActivityAction execute rifiuta user non User', function (): void {
 
 describe('ActivityLogger Adapter validation', function (): void {
     test('log rifiuta user non User', function (): void {
-        $logger = new ActivityLoggerAdapter();
+        $logger = new ActivityLoggerAdapter;
 
-        expect(fn (): mixed => $logger->log('event', new \stdClass()))
+        expect(fn (): mixed => $logger->log('event', new \stdClass))
             ->toThrow(InvalidArgumentException::class, 'User must be an instance of User');
     });
 
     test('getRecent delega validazione limit', function (): void {
-        expect(fn (): mixed => (new ActivityLoggerAdapter())->getRecent(0))
+        expect(fn (): mixed => (new ActivityLoggerAdapter)->getRecent(0))
             ->toThrow(InvalidArgumentException::class);
     });
 });
@@ -103,8 +103,7 @@ describe('ActivityRecorder Adapter', function (): void {
             ->with(User::class, 42, 'updated', ['name' => 'x'], null);
         app()->instance(RecordSubjectActivityAction::class, $mock);
 
-        (new ActivityRecorder())->record(User::class, 42, 'updated', ['name' => 'x']);
-
+        (new ActivityRecorder)->record(User::class, 42, 'updated', ['name' => 'x']);
     });
 
     test('getLog delega a GetSubjectActivityLogAction', function (): void {
@@ -115,7 +114,7 @@ describe('ActivityRecorder Adapter', function (): void {
             ->andReturn([['id' => 1]]);
         app()->instance(GetSubjectActivityLogAction::class, $mock);
 
-        $log = (new ActivityRecorder())->getLog(User::class, 7);
+        $log = (new ActivityRecorder)->getLog(User::class, 7);
 
         Assert::assertSame([['id' => 1]], $log);
     });
@@ -123,12 +122,12 @@ describe('ActivityRecorder Adapter', function (): void {
 
 describe('RestoreActivityAction validation', function (): void {
     test('execute rifiuta oldProperties vuote', function (): void {
-        $model = new class() extends Model
+        $model = new class extends Model
         {
             protected $table = 'stub_models';
         };
 
-        expect(fn () => (new RestoreActivityAction())->execute($model, []))
+        expect(fn () => (new RestoreActivityAction)->execute($model, []))
             ->toThrow(AssertInvalidArgumentException::class);
     });
 });
