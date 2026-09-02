@@ -9,18 +9,17 @@ use Modules\Activity\Actions\LogModelDeletedAction;
 use Modules\Activity\Actions\LogModelUpdatedAction;
 use Modules\Activity\Actions\LogUserLogoutAction;
 use Modules\Activity\Tests\TestCase;
-use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 /**
  * @param  array<string, mixed>  $attributes
  */
 function createActivityLifecycleUser(array $attributes = []): User
 {
-    return (new UserFactory())->createOne($attributes);
+    return activityCreateUser($attributes);
 }
 
 test('Activity Lifecycle Actions', function () {

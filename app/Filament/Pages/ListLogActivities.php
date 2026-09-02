@@ -63,7 +63,16 @@ abstract class ListLogActivities extends XotBasePage
     {
         $breadcrumb = static::$breadcrumb ?? __('activity::activities.breadcrumb');
 
-        return $this->toTranslationString($breadcrumb);
+        // Convert to string (__() returns string|array|null)
+        if (is_array($breadcrumb)) {
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $breadcrumb));
+        }
+
+        if (is_string($breadcrumb)) {
+            return $breadcrumb;
+        }
+
+        return '';
     }
 
     public function getTitle(): string
@@ -78,7 +87,16 @@ abstract class ListLogActivities extends XotBasePage
 
         $title = __('activity::activities.title', ['record' => $titleString]);
 
-        return $this->toTranslationString($title);
+        // __() returns string|array|null
+        if (is_array($title)) {
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $title));
+        }
+
+        if (is_string($title)) {
+            return $title;
+        }
+
+        return '';
     }
 
     /**
@@ -231,7 +249,7 @@ abstract class ListLogActivities extends XotBasePage
 
         /** @var Collection<string, string> $labelMap */
         $labelMap = $extracted
-            ->filter(static fn (mixed $field): bool => $field instanceof Field)
+            ->filter(static fn ($field): bool => $field instanceof Field)
             ->mapWithKeys(
                 /** @param Field $field
                  * @return array<string, string>
@@ -250,7 +268,10 @@ abstract class ListLogActivities extends XotBasePage
 
     protected function sendRestoreSuccessNotification(): Notification
     {
-        $titleString = $this->toTranslationString(__('activity::activities.events.restore_successful'));
+        $title = __('activity::activities.events.restore_successful');
+        $titleString = is_array($title)
+            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
+            : (is_string($title) ? $title : '');
 
         return Notification::make()
             ->title($titleString)
@@ -260,7 +281,10 @@ abstract class ListLogActivities extends XotBasePage
 
     protected function sendRestoreFailureNotification(?string $message = null): Notification
     {
-        $titleString = $this->toTranslationString(__('activity::activities.events.restore_failed'));
+        $title = __('activity::activities.events.restore_failed');
+        $titleString = is_array($title)
+            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
+            : (is_string($title) ? $title : '');
 
         $notification = Notification::make()
             ->title($titleString)
@@ -271,19 +295,6 @@ abstract class ListLogActivities extends XotBasePage
         }
 
         return $notification->send();
-    }
-
-    private function toTranslationString(mixed $value): string
-    {
-        if (is_string($value)) {
-            return $value;
-        }
-
-        if (is_array($value)) {
-            return implode(' ', array_map(static fn (mixed $item): string => is_scalar($item) || $item instanceof \Stringable ? (string) $item : '', $value));
-        }
-
-        return '';
     }
 
     private function resolveActivity(int|string $key): Activity
