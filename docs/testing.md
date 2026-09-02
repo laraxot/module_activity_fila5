@@ -13,8 +13,6 @@ Modules/Activity/tests/
 ├── Feature/
 │   ├── (feature tests)
 ├── Unit/
-│   ├── Bootstrap/
-│   │   └── PestExtendBootstrapTest.php  # pilota pest()->extend
 │   └── (unit tests)
 ├── TestCase.php
 └── Pest.php
@@ -23,43 +21,9 @@ Modules/Activity/tests/
 ### Test Files
 
 - **TestCase.php** - Base test case with database configuration
-- **Pest.php** - `pest()->extend(TestCase::class)` per pilota `Unit/Bootstrap` (story 3.10)
+- **Pest.php** - Pest configuration and extensions
 - **Feature/** - Feature tests for Activity functionality
 - **Unit/** - Unit tests for Activity components
-
-### Pest bootstrap (modulo)
-
-Pest carica `Modules/Activity/tests/Pest.php` solo con `--test-directory` esplicito:
-
-```bash
-cd laravel
-./vendor/bin/pest -c Modules/Activity/phpunit.xml \
-  --test-directory=Modules/Activity/tests \
-  --filter=PestExtendBootstrap --no-coverage
-```
-
-Dettaglio: [wiki/concepts/pest-bootstrap-extend-ignore.md](wiki/concepts/pest-bootstrap-extend-ignore.md)
-
-I test legacy in `Unit/` e `Feature/` continuano a usare `uses(TestCase::class)` per file fino
-alla migrazione completa.
-
-## Coverage baseline (story 5.24)
-
-| Story | Baseline | Gate | DB `activity_log` | Note |
-|-------|----------|------|-------------------|------|
-| 5.24 | 20.3% | **54.2%** PASS | 220 pass, 205 skip | Unit: skip condizionato Feature/`activity-db`; policy mock; Filament reflection |
-| 5.26 | 54.2% | **100.0%** PASS | 281 pass, 168 skip, 5 risky | Feature opt-in `activity-db`; Unit schema sqlite dedicato; Actions/Adapter/ListLogActivities mock+persistenza |
-
-Comando gate:
-
-```bash
-cd laravel
-XDEBUG_MODE=coverage ./vendor/bin/pest -c Modules/Activity/phpunit.xml --coverage --min=100
-```
-
-Suite attuale: test Unit senza DB + Feature/`activity-db` skipped quando manca `activity_log` (Feature solo opt-in gruppo `activity-db`).
-
-Pattern canonico (replicabile su Media/User): [module-test-skip-offline-pattern.md](../../Xot/docs/wiki/concepts/module-test-skip-offline-pattern.md).
 
 ## Testing Configuration
 
@@ -421,44 +385,3 @@ Remember: Good tests are the foundation of reliable software development.
 
 *Last updated: January 2025*
 *
-
----
-
-<!-- Merged from TESTING.md, which collided with this file on case-insensitive filesystems. -->
-
----
-title: "Activity Module Testing"
-type: guide
-tags: [activity, testing, pest]
-created: 2026-07-28
-updated: 2026-07-28
----
-
-# Activity Module — Testing
-
-## Test Activity Logging
-
-```php
-test('logs activity on user creation', function () {
-    $user = User::factory()->create();
-
-    expect(Activity::where('subject_type', User::class)
-        ->where('subject_id', $user->id)
-        ->count())->toBeGreaterThan(0);
-});
-
-test('logs causer on user action', function () {
-    $admin = User::factory()->create();
-    $this->actingAs($admin);
-
-    (new LogActivityAction)->execute([
-        'description' => 'User updated',
-        'subject' => $user,
-        'causer' => $admin,
-        'type' => 'user.updated',
-    ]);
-
-    $activity = Activity::latest()->first();
-    expect($activity->causer_id)->toBe($admin->id);
-});
-```
