@@ -7,20 +7,15 @@ use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('activity model can be created', function () {
-    $activity = ActivityFactory::new()->makeOne();
+    $activity = ActivityFactory::new()->make();
 
     Assert::assertInstanceOf(Activity::class, $activity);
-})->group('no-activity-db');
+});
 
 test('activity model can be saved and retrieved', function () {
-    /** @var TestCase $this */
-    if (TestCase::activityDbUnavailable()) {
-        $this->skipTest('DB `activity_log` non raggiungibile: blocco di ambiente.');
-    }
-
     $activity = ActivityFactory::new()->createOne([
         'description' => 'Test action',
         'event' => 'test_event',
@@ -31,13 +26,13 @@ test('activity model can be saved and retrieved', function () {
     Assert::assertInstanceOf(Activity::class, $retrieved);
     Assert::assertSame('Test action', $retrieved->description);
     Assert::assertSame('test_event', $retrieved->event);
-})->group('activity-db');
+});
 
 test('activity model has expected attributes', function () {
-    $activity = ActivityFactory::new()->makeOne();
+    $activity = ActivityFactory::new()->make();
 
-    $attrs = $activity->getAttributes();
-
-    Assert::assertArrayHasKey('description', $attrs);
-    Assert::assertArrayHasKey('event', $attrs);
-})->group('no-activity-db');
+    // Testiamo solo alcuni attributi per verificare che il modello funzioni
+    // Siccome non possiamo usare toHaveProperty direttamente su Eloquent models, usiamo isset
+    Assert::assertTrue(isset($activity->description));
+    Assert::assertTrue(isset($activity->event));
+});

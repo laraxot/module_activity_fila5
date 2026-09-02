@@ -21,13 +21,13 @@ Il modulo Activity gestisce il sistema di event sourcing e tracciamento delle at
 ### Struttura Attuale Problematica
 ```
 docs/
-├── event-sourcing.md                    # ❌ Duplicato
+├── event_sourcing.md                    # ❌ Duplicato
 ├── event-sourcing.md                    # ❌ Duplicato
 ├── event_sourcing_introduction.md       # ❌ Duplicato
 ├── event-sourcing-introduction.md       # ❌ Duplicato
 ├── filament_errors.md                   # ❌ Duplicato
 ├── filament-errors.md                   # ❌ Duplicato
-├── mcp-server-recommended.md            # ❌ Duplicato
+├── mcp_server_recommended.md            # ❌ Duplicato
 ├── mcp-server-recommended.md            # ❌ Duplicato
 └── ... (30+ file frammentati)
 
