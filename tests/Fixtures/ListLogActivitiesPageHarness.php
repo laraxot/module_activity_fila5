@@ -7,8 +7,8 @@ namespace Modules\Activity\Tests\Fixtures;
 use Filament\Notifications\Notification;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Collection;
 use Modules\Activity\Filament\Pages\ListLogActivities;
-use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\Activity\Models\Activity;
 use ReflectionMethod;
 
@@ -75,13 +75,13 @@ class ListLogActivitiesPageHarness extends ListLogActivities
         return $old;
     }
 
-    /** @return \Illuminate\Support\Collection<string, string> */
-    public function exposeCreateFieldLabelMap(): \Illuminate\Support\Collection
+    /** @return Collection<string, string> */
+    public function exposeCreateFieldLabelMap(): Collection
     {
         $method = new ReflectionMethod(ListLogActivities::class, 'createFieldLabelMap');
         $method->setAccessible(true);
 
-        /** @var \Illuminate\Support\Collection<string, string> $map */
+        /** @var Collection<string, string> $map */
         $map = $method->invoke($this);
 
         return $map;

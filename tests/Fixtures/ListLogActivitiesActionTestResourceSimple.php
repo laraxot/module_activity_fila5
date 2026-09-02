@@ -5,14 +5,11 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Fixtures;
 
 use Illuminate\Database\Eloquent\Model;
-use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestRecord;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 final class ListLogActivitiesActionTestResourceSimple extends XotBaseResource
 {
-    protected static ?string $model = ListLogActivitiesActionTestRecord::class;
-
-    public static function getFormSchemaOld(): array
+    public static function getFormSchema(): array
     {
         return [];
     }

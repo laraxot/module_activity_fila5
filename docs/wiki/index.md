@@ -7,11 +7,11 @@ created: 2026-04-15
 updated: 2026-06-13
 qmd: "activity module wiki index audit log second brain"
 issues:
-  - "https://github.com/laraxot/base_ptv_fila5/issues/272"
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
 discussions:
-  - "https://github.com/laraxot/base_ptv_fila5/discussions/273"
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
-  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-ptv-map.md
+  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
   - ../../../../docs/wiki/bmad/architecture.md
   - ../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
   - ../../docs/wiki/concepts/ai-harness-module-discipline.md
@@ -20,7 +20,7 @@ related:
 # Wiki Index — Activity
 ## AI / second brain
 
-- [hackernoon-ai-coding-tips-ptv-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-ptv-map.md)
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
 - [bmad/architecture](../../../../docs/wiki/bmad/architecture.md)
 - [frontmatter + GitHub](../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
 - [ai-harness-module-discipline](../../docs/wiki/concepts/ai-harness-module-discipline.md)
@@ -33,7 +33,7 @@ related:
 ## Completamento
 
 - [overviews/completion-status.md](./overviews/completion-status.md) — stato modulo post gate chef
-- [project-roadmap.md](./project-roadmap.md) — milestone Activity
+- [PROJECT-ROADMAP.md](./PROJECT-ROADMAP.md) — milestone Activity
 - [platform-completion-roadmap (Xot)](../../Xot/docs/wiki/overviews/platform-completion-roadmap.md)
 
 ## Concepts
@@ -54,8 +54,8 @@ _No entities tracked yet._
 
 ## On-Demand References
 
-- [rules-index](./rules/index.md) — entrypoint locale per regole ricorrenti del modulo
-- [skills-index](./skills/index.md) — skill on-demand, incluse skill condivise Xot
+- [rules-index](./rules/INDEX.md) — entrypoint locale per regole ricorrenti del modulo
+- [skills-index](./skills/INDEX.md) — skill on-demand, incluse skill condivise Xot
 
 ## Comparisons
 
@@ -75,4 +75,4 @@ _No comparisons synthesized yet._
 
 ## Composer / nwidart
 
-- [composer-root-minimal-nwidart](concepts/composer-root-minimal-nwidart.md) — root skeleton nwidart (modello ptv)
+- [composer-root-minimal-nwidart](concepts/composer-root-minimal-nwidart.md) — root skeleton nwidart (modello fixcity)
