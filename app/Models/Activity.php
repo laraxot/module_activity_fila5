@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Activity\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
@@ -107,9 +108,10 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  */
 class Activity extends SpatieActivity
 {
-    /** @phpstan-use HasXotFactory<ActivityFactory> */
+    /** @phpstan-use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
+    /** @var string */
     protected $connection = 'activity';
 
     protected $table = 'activity_log';

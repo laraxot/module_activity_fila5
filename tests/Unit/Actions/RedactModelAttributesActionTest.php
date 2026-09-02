@@ -6,14 +6,13 @@ use Modules\Activity\Actions\RedactModelAttributesAction;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses()->group('no-activity-db');
 
 describe('coverage senza database activity_log', function (): void {
     test('RedactModelAttributesAction rimuove chiavi sensibili', function (): void {
-        $action = new RedactModelAttributesAction;
+        $action = new RedactModelAttributesAction();
 
         $redacted = $action->execute([
             'name' => 'Marco',
@@ -38,8 +37,8 @@ describe('coverage senza database activity_log', function (): void {
     });
 
     test('modelli event-sourcing usano connection activity', function (): void {
-        Assert::assertSame('activity', (new Activity)->getConnectionName());
-        Assert::assertSame('activity', (new Snapshot)->getConnectionName());
-        Assert::assertSame('activity', (new StoredEvent)->getConnectionName());
+        Assert::assertSame('activity', (new Activity())->getConnectionName());
+        Assert::assertSame('activity', (new Snapshot())->getConnectionName());
+        Assert::assertSame('activity', (new StoredEvent())->getConnectionName());
     });
-})->group('no-activity-db');
+});

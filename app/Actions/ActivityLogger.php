@@ -28,17 +28,23 @@ class ActivityLogger
      */
     public function log(
         string $type,
-        ?User $user = null,
+        mixed $user = null,
         ?Model $subject = null,
         ?array $properties = null,
         ?string $description = null,
     ): Activity {
-        $userId = $user?->getKey();
+        $userId = null;
+        if ($user !== null) {
+            // Type checking for User model
+            if (! $user instanceof User) {
+                throw new InvalidArgumentException('User must be an instance of User');
+            }
+
+            // Type narrowing for user ID - use getAttribute for Eloquent models
+            $userId = $user->getAttribute('id');
+        }
         if ($userId === null) {
             $userId = Auth::id();
-            if ($userId !== null && ! is_int($userId) && ! is_string($userId)) {
-                $userId = null;
-            }
         }
 
         /** @var Activity $activity */
