@@ -20,6 +20,24 @@ a livello `max` (config di progetto, `laravel/phpstan.neon`), l'1 settembre
 
 ---
 
+## Scopo e confini
+
+Activity possiede l'audit trail, non lo reimplementa: `Activity`, `StoredEvent` e
+`Snapshot` estendono le classi di `spatie/laravel-activitylog` e
+`spatie/laravel-event-sourcing` (`app/Models/Activity.php:108`, `StoredEvent.php:64`,
+`Snapshot.php:41`), su connessione `activity` e su tre tabelle proprie. Sei moduli lo
+consumano; lui ne conosce due — 36 file toccano Xot, 10 toccano User, zero toccano un
+modulo di dominio.
+
+Il confine oggi rotto è lo schema: `activity_log`, `stored_events` e `snapshots` hanno
+**una migrazione nel modulo e una duplicata in `laravel/database/migrations/`**, con
+`subject_id` di due tipi incompatibili (`string(36)` contro `unsignedBigInteger`) — e la
+copia fuori dal modulo non passa da `XotBaseMigration`, quindi non è idempotente.
+
+Scopo esteso, misure e mosse: [docs/scopo.md](docs/scopo.md).
+
+---
+
 ## Perché
 
 Un sistema che gestisce dati sensibili (schede, indennità, valutazioni del
@@ -132,3 +150,10 @@ editoriale che non prendo in questo giro (fuori dallo scope di un README).
 ---
 
 **Modulo** `activity` · **Laraxot / FixCity Platform** · licenza MIT
+
+---
+
+## Scopo del modulo
+
+Perche' esiste, come raggiungere meglio il suo scopo e cosa **non** gli appartiene:
+[`docs/purpose.md`](./docs/purpose.md).
