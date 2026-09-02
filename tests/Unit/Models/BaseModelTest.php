@@ -7,10 +7,10 @@ use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Models\XotBaseModel;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('BaseModel has correct connection', function () {
-    $model = new class extends BaseModel
+    $model = new class() extends BaseModel
     {
         protected $table = 'test_models';
 
@@ -24,7 +24,7 @@ test('BaseModel has correct connection', function () {
 });
 
 test('BaseModel extends XotBaseModel', function () {
-    $model = new class extends BaseModel
+    $model = new class() extends BaseModel
     {
         protected $table = 'test_models';
 

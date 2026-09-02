@@ -1,7 +1,3 @@
----
-created_at: '2026-04-28'
----
-
 # Git Conflict Inventory
 
 - Date: 2026-04-28
