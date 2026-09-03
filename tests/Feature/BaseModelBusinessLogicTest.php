@@ -13,23 +13,23 @@ use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Traits\Updater;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('it can create base model instance', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
 
     Assert::assertInstanceOf(BaseModel::class, $model);
     Assert::assertInstanceOf(Model::class, $model);
 });
 
 test('it has correct connection setting', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
 
     Assert::assertSame('activity', $model->getConnectionName());
 });
 
 test('it has correct primary key setting', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
 
     Assert::assertSame('id', $model->getKeyName());
     Assert::assertSame('int', $model->getKeyType());
@@ -37,14 +37,14 @@ test('it has correct primary key setting', function (): void {
 });
 
 test('it has correct timestamps setting', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
 
     Assert::assertTrue($model->usesTimestamps());
     Assert::assertTrue($model->timestamps);
 });
 
 test('it has correct per page setting', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
 
     Assert::assertSame(30, $model->getPerPage());
 });
@@ -54,7 +54,7 @@ test('it has correct snake attributes setting', function (): void {
 });
 
 test('it has correct casts configuration', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $casts = $model->getCasts();
 
     Assert::assertIsArray($casts);
@@ -71,7 +71,7 @@ test('it has correct casts configuration', function (): void {
 });
 
 test('it has updater trait when configured', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     /** @var array<class-string, class-string> $traits */
     $traits = class_uses_recursive($model::class);
 
@@ -85,7 +85,7 @@ test('it has updater trait when configured', function (): void {
 });
 
 test('it has has factory trait', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     /** @var array<class-string, class-string> $traits */
     $traits = class_uses_recursive($model::class);
 
@@ -93,7 +93,7 @@ test('it has has factory trait', function (): void {
 });
 
 test('it can handle uuid generation', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $uuid = Str::uuid()->toString();
     $model->uuid = $uuid;
     $model->name = 'Test Model';
@@ -103,7 +103,7 @@ test('it can handle uuid generation', function (): void {
 });
 
 test('it can handle timestamps', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $now = now();
     $model->created_at = $now;
     $model->updated_at = $now;
@@ -113,7 +113,7 @@ test('it can handle timestamps', function (): void {
 });
 
 test('it can handle soft deletes', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $now = now();
     $model->deleted_at = $now;
 
@@ -121,7 +121,7 @@ test('it can handle soft deletes', function (): void {
 });
 
 test('it can handle published at timestamp', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $now = now();
     $model->published_at = $now;
 
@@ -129,7 +129,7 @@ test('it can handle published at timestamp', function (): void {
 });
 
 test('it can handle user tracking fields', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $model->created_by = 123;
     $model->updated_by = 456;
     $model->deleted_by = 789;
@@ -140,7 +140,7 @@ test('it can handle user tracking fields', function (): void {
 });
 
 test('it has correct hidden attributes', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $hidden = $model->getHidden();
 
     Assert::assertIsArray($hidden);
@@ -148,20 +148,20 @@ test('it has correct hidden attributes', function (): void {
 });
 
 test('it can use connection methods', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
 
     Assert::assertSame('activity', $model->getConnectionName());
     Assert::assertInstanceOf(ConnectionInterface::class, $model->getConnection());
 });
 
 test('it can use table methods', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
 
     Assert::assertSame('test_models', $model->getTable());
 });
 
 test('it can use per page methods', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
 
     Assert::assertSame(30, $model->getPerPage());
     $model->setPerPage(50);
@@ -169,7 +169,7 @@ test('it can use per page methods', function (): void {
 });
 
 test('it can use snake attributes methods', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
 
     Assert::assertTrue($model::$snakeAttributes);
     $model::$snakeAttributes = false;
@@ -179,7 +179,7 @@ test('it can use snake attributes methods', function (): void {
 });
 
 test('it can use fillable methods', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $fillable = $model->getFillable();
 
     Assert::assertIsArray($fillable);
@@ -192,7 +192,7 @@ test('it can use fillable methods', function (): void {
 });
 
 test('it can use hidden methods', function (): void {
-    $model = new class() extends TestActivityModel
+    $model = new class extends TestActivityModel
     {
         /** @var list<string> */
         protected $hidden = ['secret_field'];

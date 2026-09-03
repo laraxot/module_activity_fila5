@@ -8,10 +8,10 @@ use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('snapshot uses activity module connection', function (): void {
-    $model = new Snapshot();
+    $model = new Snapshot;
 
     Assert::assertSame('activity', $model->getConnectionName());
 });

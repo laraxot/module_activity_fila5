@@ -3,7 +3,9 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
+
 use Filament\Actions\Action;
+use Filament\Tables\Table;
 use Modules\Activity\Events\ActivityEvent;
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
@@ -20,30 +22,20 @@ use Modules\Activity\Models\StoredEvent;
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
-use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
+
 use function Safe\class_uses;
 
-<<<<<<< .merge_file_TKWy6O
 uses(TestCase::class);
-/** @return array<string, mixed> */
-function activityTableMember(object $page, string $method): array
-{
-    return XotBasePest::assertArray((new \ReflectionMethod($page, $method))->invoke($page));
-}
-
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> .merge_file_pcCdkS
 
 describe('ActivityEvent', function (): void {
     test('can be instantiated', function (): void {
-        $event = new ActivityEvent();
+        $event = new ActivityEvent;
         Assert::assertInstanceOf(ActivityEvent::class, $event);
     });
 
     test('uses correct traits', function (): void {
-        $event = new ActivityEvent();
+        $event = new ActivityEvent;
 
         // Verify the event has the traits
         $traits = class_uses($event);
@@ -123,7 +115,7 @@ describe('CanPaginate trait', function (): void {
 
 describe('ActivityResource', function (): void {
     test('can be instantiated', function (): void {
-        $resource = new ActivityResource();
+        $resource = new ActivityResource;
         Assert::assertInstanceOf(ActivityResource::class, $resource);
     });
 
@@ -147,7 +139,7 @@ describe('ActivityResource', function (): void {
 
 describe('EditActivity page', function (): void {
     test('can be instantiated', function (): void {
-        $page = new EditActivity();
+        $page = new EditActivity;
         Assert::assertInstanceOf(EditActivity::class, $page);
     });
 
@@ -162,14 +154,14 @@ describe('EditActivity page', function (): void {
     });
 
     test('extends XotBaseEditRecord', function (): void {
-        $page = new EditActivity();
+        $page = new EditActivity;
         Assert::assertInstanceOf(XotBaseEditRecord::class, $page);
     });
 });
 
 describe('ListActivities page', function (): void {
     test('can be instantiated', function (): void {
-        $page = new ListActivities();
+        $page = new ListActivities;
         Assert::assertInstanceOf(ListActivities::class, $page);
     });
 
@@ -183,13 +175,8 @@ describe('ListActivities page', function (): void {
     });
 
     test('has table columns', function (): void {
-<<<<<<< .merge_file_TKWy6O
-        $page = new ListActivities();
-        $columns = activityTableMember($page, 'getTableColumns');
-=======
         $page = new ListActivities;
-        $columns = $page->getTableColumns();
->>>>>>> .merge_file_pcCdkS
+        $columns = $page->table(Table::make($page))->getColumns();
 
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('description', $columns);
@@ -203,7 +190,7 @@ describe('ListActivities page', function (): void {
 
 describe('SnapshotResource', function (): void {
     test('can be instantiated', function (): void {
-        $resource = new SnapshotResource();
+        $resource = new SnapshotResource;
         Assert::assertInstanceOf(SnapshotResource::class, $resource);
     });
 
@@ -224,7 +211,7 @@ describe('SnapshotResource', function (): void {
 
 describe('ListSnapshots page', function (): void {
     test('can be instantiated', function (): void {
-        $page = new ListSnapshots();
+        $page = new ListSnapshots;
         Assert::assertInstanceOf(ListSnapshots::class, $page);
     });
 
@@ -238,13 +225,8 @@ describe('ListSnapshots page', function (): void {
     });
 
     test('has table columns', function (): void {
-<<<<<<< .merge_file_TKWy6O
-        $page = new ListSnapshots();
-        $columns = activityTableMember($page, 'getTableColumns');
-=======
         $page = new ListSnapshots;
-        $columns = $page->getTableColumns();
->>>>>>> .merge_file_pcCdkS
+        $columns = $page->table(Table::make($page))->getColumns();
 
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('aggregate_uuid', $columns);
@@ -255,25 +237,19 @@ describe('ListSnapshots page', function (): void {
     });
 
     test('has table filters', function (): void {
-<<<<<<< .merge_file_TKWy6O
-        $page = new ListSnapshots();
-        $filters = activityTableMember($page, 'getTableFilters');
-=======
         $page = new ListSnapshots;
-        $filters = $page->getTableFilters();
->>>>>>> .merge_file_pcCdkS
+        $filters = $page->table(Table::make($page))->getFilters();
 
         Assert::assertNotEmpty($filters);
     });
 
     test('has table actions', function (): void {
-<<<<<<< .merge_file_TKWy6O
-        $page = new ListSnapshots();
-        $actions = activityTableMember($page, 'getTableActions');
-=======
         $page = new ListSnapshots;
-        $actions = $page->getTableActions();
->>>>>>> .merge_file_pcCdkS
+        $recordActions = $page->table(Table::make($page))->getRecordActions();
+        $actions = collect($recordActions)
+            ->filter(static fn (mixed $action): bool => $action instanceof Action)
+            ->keyBy(static fn (Action $action): string => (string) $action->getName())
+            ->all();
 
         Assert::assertArrayHasKey('view', $actions);
         Assert::assertArrayHasKey('edit', $actions);
@@ -281,13 +257,8 @@ describe('ListSnapshots page', function (): void {
     });
 
     test('has bulk actions', function (): void {
-<<<<<<< .merge_file_TKWy6O
-        $page = new ListSnapshots();
-        $bulkActions = activityTableMember($page, 'getTableBulkActions');
-=======
         $page = new ListSnapshots;
-        $bulkActions = $page->getTableBulkActions();
->>>>>>> .merge_file_pcCdkS
+        $bulkActions = $page->table(Table::make($page))->getToolbarActions();
 
         Assert::assertNotEmpty($bulkActions);
     });
@@ -295,7 +266,7 @@ describe('ListSnapshots page', function (): void {
 
 describe('StoredEventResource', function (): void {
     test('can be instantiated', function (): void {
-        $resource = new StoredEventResource();
+        $resource = new StoredEventResource;
         Assert::assertInstanceOf(StoredEventResource::class, $resource);
     });
 
@@ -317,7 +288,7 @@ describe('StoredEventResource', function (): void {
 
 describe('ListStoredEvents page', function (): void {
     test('can be instantiated', function (): void {
-        $page = new ListStoredEvents();
+        $page = new ListStoredEvents;
         Assert::assertInstanceOf(ListStoredEvents::class, $page);
     });
 
@@ -331,13 +302,8 @@ describe('ListStoredEvents page', function (): void {
     });
 
     test('has table columns', function (): void {
-<<<<<<< .merge_file_TKWy6O
-        $page = new ListStoredEvents();
-        $columns = activityTableMember($page, 'getTableColumns');
-=======
         $page = new ListStoredEvents;
-        $columns = $page->getTableColumns();
->>>>>>> .merge_file_pcCdkS
+        $columns = $page->table(Table::make($page))->getColumns();
 
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('event_class', $columns);

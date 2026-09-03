@@ -12,24 +12,25 @@ use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Traits\Updater;
 use PHPUnit\Framework\Assert;
+use function Safe\class_uses;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('can create base model instance', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
 
     Assert::assertInstanceOf(BaseModel::class, $model);
     Assert::assertInstanceOf(Model::class, $model);
 });
 
 test('has correct connection setting', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
 
     Assert::assertSame('activity', $model->getConnectionName());
 });
 
 test('has correct primary key setting', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
 
     Assert::assertSame('id', $model->getKeyName());
     Assert::assertSame('int', $model->getKeyType());
@@ -37,14 +38,14 @@ test('has correct primary key setting', function (): void {
 });
 
 test('has correct timestamps setting', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
 
     Assert::assertTrue($model->usesTimestamps());
     Assert::assertTrue($model->timestamps);
 });
 
 test('has correct per page setting', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
 
     Assert::assertSame(30, $model->getPerPage());
 });
@@ -54,7 +55,7 @@ test('has correct snake attributes setting', function (): void {
 });
 
 test('has correct casts configuration', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $casts = $model->getCasts();
 
     Assert::assertIsArray($casts);
@@ -72,19 +73,19 @@ test('can use factory', function (): void {
 });
 
 test('has updater trait', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $traits = class_uses_recursive($model::class);
     Assert::assertContains(Updater::class, $traits);
 });
 
 test('has has factory trait', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $traits = class_uses_recursive($model::class);
     Assert::assertContains(HasFactory::class, $traits);
 });
 
 test('can handle uuid generation', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $uuid = Str::uuid()->toString();
     $model->uuid = $uuid;
     $model->name = 'Test Model';
@@ -94,7 +95,7 @@ test('can handle uuid generation', function (): void {
 });
 
 test('can handle timestamps', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $now = now();
     $model->created_at = $now;
     $model->updated_at = $now;
@@ -104,7 +105,7 @@ test('can handle timestamps', function (): void {
 });
 
 test('can handle soft deletes', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $now = now();
     $model->deleted_at = $now;
 
@@ -112,7 +113,7 @@ test('can handle soft deletes', function (): void {
 });
 
 test('can handle published at timestamp', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $now = now();
     $model->published_at = $now;
 
@@ -120,7 +121,7 @@ test('can handle published at timestamp', function (): void {
 });
 
 test('can handle created by tracking', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $userId = 42;
     $model->created_by = $userId;
     $model->updated_by = $userId;
@@ -132,18 +133,18 @@ test('can handle created by tracking', function (): void {
 });
 
 test('has correct fillable configuration', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $fillable = $model->getFillable();
     Assert::assertIsArray($fillable);
 });
 
 test('has correct table name', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     Assert::assertSame('test_models', $model->getTable());
 });
 
 test('has timestamps enabled', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     Assert::assertTrue($model->usesTimestamps());
     Assert::assertTrue($model->timestamps);
     Assert::assertSame('created_at', $model->getCreatedAtColumn());
@@ -151,7 +152,7 @@ test('has timestamps enabled', function (): void {
 });
 
 test('can get connection', function (): void {
-    $model = new TestActivityModel();
+    $model = new TestActivityModel;
     $connection = $model->getConnection();
     Assert::assertInstanceOf(ConnectionInterface::class, $connection);
     Assert::assertSame('activity', $model->getConnectionName());

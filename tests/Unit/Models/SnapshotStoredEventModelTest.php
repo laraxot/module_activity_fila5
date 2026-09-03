@@ -10,16 +10,16 @@ use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('snapshot getConnectionName resolves activity connection', function (): void {
-    $snapshot = new Snapshot();
+    $snapshot = new Snapshot;
 
     Assert::assertSame('activity', $snapshot->getConnectionName());
 });
 
 test('snapshot has expected table and fillable fields', function (): void {
-    $snapshot = new Snapshot();
+    $snapshot = new Snapshot;
 
     Assert::assertSame('snapshots', $snapshot->getTable());
     $fillable = $snapshot->getFillable();
@@ -28,13 +28,13 @@ test('snapshot has expected table and fillable fields', function (): void {
 });
 
 test('stored event constructor aligns activity connection', function (): void {
-    $storedEvent = new StoredEvent();
+    $storedEvent = new StoredEvent;
 
     Assert::assertSame('activity', $storedEvent->getConnectionName());
 });
 
 test('stored event has expected casts and metadata behavior', function (): void {
-    $storedEvent = new StoredEvent();
+    $storedEvent = new StoredEvent;
     $casts = $storedEvent->getCasts();
 
     Assert::assertArrayHasKey('event_properties', $casts);
