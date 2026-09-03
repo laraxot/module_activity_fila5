@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Activity\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
@@ -102,12 +103,9 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static Builder<static>|Activity rightJoin(string $table, string $first, string $operator = null, string $second = null)
  * @method static Builder<static>|Activity crossJoin(string $table)
  * @method static Builder<static>|Activity causedBy(Model $causer)
- *
- * @mixin \Eloquent
  */
 class Activity extends SpatieActivity
 {
-    /** @phpstan-use HasXotFactory<static> */
     use HasXotFactory;
 
     /** @var string */

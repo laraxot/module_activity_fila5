@@ -3,12 +3,8 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
-<<<<<<< .merge_file_fyd8mv
-use Closure;
-use Illuminate\Database\Eloquent\Builder;
-=======
->>>>>>> .merge_file_WbtSFC
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Str;
 use Modules\Activity\Database\Factories\ActivityFactory;
@@ -24,7 +20,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('activity module models work together in integrated scenarios', function () {
     $user = UserFactory::new()->createOne();
@@ -201,11 +197,7 @@ test('activity module handles concurrent operations correctly', function () {
         };
     }
 
-<<<<<<< .merge_file_fyd8mv
-    $results = array_map(fn (Closure $promise): mixed => $promise(), $promises);
-=======
-    $results = array_map(fn ($promise) => $promise(), $promises);
->>>>>>> .merge_file_WbtSFC
+    $results = array_map(fn (\Closure $promise) => $promise(), $promises);
     Assert::assertCount(10, $results);
     foreach ($results as $result) {
         Assert::assertTrue($result);
@@ -249,7 +241,7 @@ test('activity module supports complex query patterns', function () {
     $complexQuery = Activity::query()
         ->where('causer_type', User::class)
         ->whereIn('log_name', ['security', 'audit'])
-        ->where(function ($query) use ($user1, $user2) {
+        ->where(function (Builder $query) use ($user1, $user2) {
             $query->where('causer_id', $user1->id)
                 ->orWhere('causer_id', $user2->id);
         })

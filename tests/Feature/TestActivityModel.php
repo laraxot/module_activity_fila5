@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Support\Carbon;
 use Modules\Activity\Models\BaseModel;
+use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
  * Classe concreta di test per BaseModel.
@@ -24,13 +25,14 @@ use Modules\Activity\Models\BaseModel;
  * @property int|null $updated_by
  * @property int|null $deleted_by
  *
+ * @method static Factory<static> factory()
+ *
  * @coversNothing
  */
 class TestActivityModel extends BaseModel
 {
-    /** @use HasFactory<Factory<static>> */
-    use HasFactory;
-
+    /** @use HasFactory<Factory<self>> */
+    use HasFactory, HasXotFactory;
     /** @var string */
     protected $table = 'test_models';
 
@@ -39,6 +41,8 @@ class TestActivityModel extends BaseModel
 
     /**
      * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
      */
     protected function casts(): array
     {

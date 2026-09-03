@@ -33,8 +33,8 @@ abstract class BaseModel extends XotBaseModel
      */
     protected function casts(): array
     {
-        return array_map(static fn (string|\Stringable $cast): string => (string) $cast, array_merge(parent::casts(), [
+        return array_merge(parent::casts(), [
             // Module-specific casts only
-        ]));
+        ]);
     }
 }

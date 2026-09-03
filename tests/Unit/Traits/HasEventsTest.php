@@ -11,10 +11,10 @@ use Modules\Activity\Tests\Fixtures\HasEventsDummyModel;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('stored events relation is configured as morphMany', function () {
-    $model = new HasEventsDummyModel();
+    $model = new HasEventsDummyModel;
     $relation = $model->storedEvents();
 
     Assert::assertInstanceOf(MorphMany::class, $relation);
@@ -22,7 +22,7 @@ test('stored events relation is configured as morphMany', function () {
 });
 
 test('snapshots relation is configured as morphMany', function () {
-    $model = new HasEventsDummyModel();
+    $model = new HasEventsDummyModel;
     $relation = $model->snapshots();
 
     Assert::assertInstanceOf(MorphMany::class, $relation);
