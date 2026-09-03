@@ -3,12 +3,11 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Providers;
-
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('activity service provider exposes expected metadata', function (): void {
     $provider = new ActivityServiceProvider(app());
@@ -26,8 +25,12 @@ test('activity service provider exposes expected metadata', function (): void {
 
     Assert::assertSame('Activity', $name->getValue($provider));
     $moduleDirValue = $moduleDir->getValue($provider);
+<<<<<<< .merge_file_31njEi
     Assert::assertIsString($moduleDirValue);
     $moduleDirString = $moduleDirValue;
+=======
+    $moduleDirString = is_string($moduleDirValue) ? $moduleDirValue : (string) $moduleDirValue;
+>>>>>>> .merge_file_AGSOPT
     Assert::assertStringContainsString('Modules/Activity', $moduleDirString);
     Assert::assertSame('Modules\\Activity\\Providers', $moduleNs->getValue($provider));
 });
