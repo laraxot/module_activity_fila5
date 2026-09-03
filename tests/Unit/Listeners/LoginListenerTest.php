@@ -8,7 +8,7 @@ use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('login listener is registered for login event', function () {
     $reflection = new ReflectionClass(EventServiceProvider::class);
