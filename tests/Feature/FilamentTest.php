@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
-
 use Filament\Actions\Action;
 use Modules\Activity\Events\ActivityEvent;
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
@@ -23,9 +22,9 @@ use Modules\Xot\Filament\Actions\XotBaseAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
-
 use function Safe\class_uses;
 
+<<<<<<< .merge_file_TKWy6O
 uses(TestCase::class);
 /** @return array<string, mixed> */
 function activityTableMember(object $page, string $method): array
@@ -33,6 +32,9 @@ function activityTableMember(object $page, string $method): array
     return XotBasePest::assertArray((new \ReflectionMethod($page, $method))->invoke($page));
 }
 
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> .merge_file_pcCdkS
 
 describe('ActivityEvent', function (): void {
     test('can be instantiated', function (): void {
@@ -181,8 +183,13 @@ describe('ListActivities page', function (): void {
     });
 
     test('has table columns', function (): void {
+<<<<<<< .merge_file_TKWy6O
         $page = new ListActivities();
         $columns = activityTableMember($page, 'getTableColumns');
+=======
+        $page = new ListActivities;
+        $columns = $page->getTableColumns();
+>>>>>>> .merge_file_pcCdkS
 
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('description', $columns);
@@ -231,8 +238,13 @@ describe('ListSnapshots page', function (): void {
     });
 
     test('has table columns', function (): void {
+<<<<<<< .merge_file_TKWy6O
         $page = new ListSnapshots();
         $columns = activityTableMember($page, 'getTableColumns');
+=======
+        $page = new ListSnapshots;
+        $columns = $page->getTableColumns();
+>>>>>>> .merge_file_pcCdkS
 
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('aggregate_uuid', $columns);
@@ -243,15 +255,25 @@ describe('ListSnapshots page', function (): void {
     });
 
     test('has table filters', function (): void {
+<<<<<<< .merge_file_TKWy6O
         $page = new ListSnapshots();
         $filters = activityTableMember($page, 'getTableFilters');
+=======
+        $page = new ListSnapshots;
+        $filters = $page->getTableFilters();
+>>>>>>> .merge_file_pcCdkS
 
         Assert::assertNotEmpty($filters);
     });
 
     test('has table actions', function (): void {
+<<<<<<< .merge_file_TKWy6O
         $page = new ListSnapshots();
         $actions = activityTableMember($page, 'getTableActions');
+=======
+        $page = new ListSnapshots;
+        $actions = $page->getTableActions();
+>>>>>>> .merge_file_pcCdkS
 
         Assert::assertArrayHasKey('view', $actions);
         Assert::assertArrayHasKey('edit', $actions);
@@ -259,8 +281,13 @@ describe('ListSnapshots page', function (): void {
     });
 
     test('has bulk actions', function (): void {
+<<<<<<< .merge_file_TKWy6O
         $page = new ListSnapshots();
         $bulkActions = activityTableMember($page, 'getTableBulkActions');
+=======
+        $page = new ListSnapshots;
+        $bulkActions = $page->getTableBulkActions();
+>>>>>>> .merge_file_pcCdkS
 
         Assert::assertNotEmpty($bulkActions);
     });
@@ -304,8 +331,13 @@ describe('ListStoredEvents page', function (): void {
     });
 
     test('has table columns', function (): void {
+<<<<<<< .merge_file_TKWy6O
         $page = new ListStoredEvents();
         $columns = activityTableMember($page, 'getTableColumns');
+=======
+        $page = new ListStoredEvents;
+        $columns = $page->getTableColumns();
+>>>>>>> .merge_file_pcCdkS
 
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('event_class', $columns);
