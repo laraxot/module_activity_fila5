@@ -8,15 +8,19 @@ use Modules\Activity\Listeners\LoginListener;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 describe('Login Listener', function (): void {
     test('listener class exists', function (): void {
-        Assert::assertTrue(class_exists(LoginListener::class));
+Assert::assertTrue(class_exists(LoginListener::class));
     });
 
     test('listener has handle method', function (): void {
+<<<<<<< .merge_file_bcZACr
         $listener = new LoginListener();
+=======
+$listener = new LoginListener;
+>>>>>>> .merge_file_IpQAwO
         $reflection = new \ReflectionClass($listener);
 
         Assert::assertTrue($reflection->hasMethod('handle'));
