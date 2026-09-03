@@ -15,7 +15,7 @@ use Modules\Activity\Models\Policies\ActivityPolicy;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 it('denies activity viewAny to users without permission', function (): void {
     $user = activityCreateUser();

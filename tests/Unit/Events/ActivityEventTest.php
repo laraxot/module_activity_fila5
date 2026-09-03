@@ -6,10 +6,10 @@ use Modules\Activity\Events\ActivityEvent;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('ActivityEvent uses expected Laravel event traits', function () {
-    $event = new ActivityEvent;
+    $event = new ActivityEvent();
 
     $traitNames = (new ReflectionClass($event))->getTraitNames();
     Assert::assertContains('Illuminate\Broadcasting\InteractsWithSockets', $traitNames);
