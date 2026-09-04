@@ -9,6 +9,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_decode;
 use function Safe\json_encode;
+use Modules\User\Models\User;
 
 /**
  * @return array{
