@@ -1,15 +1,3 @@
----
-module: theme
-topic: filament_v4_upgrade
-canonical: ../../../../Themes/docs/shared-components/filament-v4-upgrade.md
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/filament-v4-upgrade.md
-
----
-
-<!-- Merged from FILAMENT_V4_UPGRADE.md, which collided with this file on case-insensitive filesystems. -->
-
 # Filament v4 Upgrade Documentation
 
 ## Overview

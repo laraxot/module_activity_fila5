@@ -25,11 +25,8 @@ use Modules\Activity\Adapters\ActivityLogger as ActivityLoggerAdapter;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\Fixtures\ActivitySubjectHarness;
 use Modules\Activity\Tests\Fixtures\LogActivityActionTestModel;
-use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class)->group('activity-db');
 
 beforeEach(function (): void {
     config(['cache.default' => 'array']);

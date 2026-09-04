@@ -67,6 +67,6 @@ return [
         ],
         'label' => 'Snapshot Resource',
         'sort' => 1,
-        'icon' => 'heroicon-o-rectangle-stack',
+        'icon' => 'heroicon-o-collection',
     ],
 ];

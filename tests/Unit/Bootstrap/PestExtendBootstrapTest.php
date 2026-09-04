@@ -11,7 +11,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 
-uses(TestCase::class)->group('no-activity-db');
+uses(TestCase::class);
 
 /*
  * Il bootstrap Pest del modulo non lega cartelle a TestCase: ogni file
@@ -21,9 +21,9 @@ uses(TestCase::class)->group('no-activity-db');
  */
 
 test('activity models declare activity connection without database', function (): void {
-    Assert::assertSame('activity', (new Activity())->getConnectionName());
-    Assert::assertSame('activity', (new Snapshot())->getConnectionName());
-    Assert::assertSame('activity', (new StoredEvent())->getConnectionName());
+    Assert::assertSame('activity', (new Activity)->getConnectionName());
+    Assert::assertSame('activity', (new Snapshot)->getConnectionName());
+    Assert::assertSame('activity', (new StoredEvent)->getConnectionName());
 });
 
 test('pest bootstrap binds no folder and requires no stub file', function (): void {
@@ -36,7 +36,16 @@ test('pest bootstrap binds no folder and requires no stub file', function (): vo
 });
 
 test('the nude uses declaration binds the activity module test case', function (): void {
-    Assert::assertInstanceOf(TestCase::class, $this);
+    // Read the object this closure is bound to via debug_backtrace() instead
+    // of referencing the closure's $this directly: PHPStan has no type
+    // information for $this inside Pest test()/it() closures (they are
+    // plain, unbound global-scope closures until Pest's runtime rebinds
+    // them via Closure::bindTo()), so a direct $this usage here is reported
+    // as an undefined variable.
+    $frame = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 1)[0] ?? [];
+    $boundTestCase = $frame['object'] ?? null;
+
+    Assert::assertInstanceOf(TestCase::class, $boundTestCase);
 });
 
 test('activity factory make produces valid model via extended testcase', function (): void {
