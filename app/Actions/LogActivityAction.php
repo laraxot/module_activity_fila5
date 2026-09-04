@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Contracts\UserContract;
+use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Log Activity Action.
@@ -24,8 +25,8 @@ class LogActivityAction
      */
     public function __construct(
         public string $type,
-        public Model|null $user = null,
-        public Model|null $subject = null,
+        public Model|UserContract|null $user = null,
+        public Model|string|null $subject = null,
         public ?array $properties = null,
         public ?string $description = null,
     ) {
@@ -37,11 +38,10 @@ class LogActivityAction
     public function execute(): Activity
     {
         $user = $this->user;
-        Assert::isInstanceOfAny($user, [UserContract::class, Model::class]);
 
         $causerId = null;
         $causer_type = null;
-        if ($user instanceof UserContract) {
+        if ($user instanceof UserContract || $user instanceof Model) {
             $userId = $user->getKey();
             $causerId = is_int($userId) || is_string($userId) ? $userId : null;
             $causer_type = $user::class;

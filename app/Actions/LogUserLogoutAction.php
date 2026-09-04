@@ -26,7 +26,7 @@ class LogUserLogoutAction
         $action = new LogActivityAction(
             type: 'logout',
             user: $this->user,
-            subject: $this->user,
+            subject: null,
             description: 'User logged out'
         );
 
