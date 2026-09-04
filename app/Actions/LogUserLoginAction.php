@@ -26,7 +26,7 @@ class LogUserLoginAction
         $action = new LogActivityAction(
             type: 'login',
             user: $this->user,
-            subject: $this->user,
+            subject: null,
             description: 'User logged in'
         );
 
