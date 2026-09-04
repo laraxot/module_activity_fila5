@@ -23,5 +23,5 @@ qmd: self
 - Copri casi limite come transizioni di stato non valide.
 
 ## Documentazione
-- Aggiorna `docs/index.md` con nuovi modelli e relazioni.
+- Aggiorna `docs/INDEX.md` con nuovi modelli e relazioni.
 - Collega a `Projects` e `Tasks` per contesto operativo.

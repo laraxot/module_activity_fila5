@@ -7,10 +7,7 @@ namespace Modules\Activity\Tests\Unit\Actions;
 use Illuminate\Database\Eloquent\Model;
 use InvalidArgumentException;
 use Modules\Activity\Actions\LogActivityAction;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 test('LogActivityAction rifiuta type vuoto nel costruttore', function (): void {
     expect(fn (): LogActivityAction => new LogActivityAction(type: ''))

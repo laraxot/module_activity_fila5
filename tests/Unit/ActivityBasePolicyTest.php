@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Unit;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
+use Mockery;
+use Mockery\MockInterface;
 use Modules\Activity\Models\Policies\ActivityBasePolicy;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
@@ -28,10 +30,10 @@ describe('Activity Base Policy', function (): void {
     });
 
     test('super admin user always allowed', function (): void {
-        /** @var TestCase $this */
         // Create a mock super-admin user
-        $user = $this->createUnitMock(User::class);
-        $user->expects($this->once())->method('hasRole')->with('super-admin')->willReturn(true);
+        /** @var MockInterface&User $user */
+        $user = Mockery::mock(User::class);
+        $user->shouldReceive('hasRole')->with('super-admin')->andReturn(true);
 
         // Test the policy
         $policy = new class extends ActivityBasePolicy
