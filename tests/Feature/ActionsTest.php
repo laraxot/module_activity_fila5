@@ -9,8 +9,9 @@ use Modules\Activity\Actions\LogActivityAction;
 use Modules\Activity\Actions\LogModelCreatedAction;
 use Modules\Activity\Models\Activity;
 use Modules\User\Database\Factories\UserFactory;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 function createActionsTestUser(): User
 {

@@ -7,8 +7,9 @@ namespace Modules\Activity\Tests\Unit;
 use Modules\Activity\Models\Policies\StoredEventPolicy;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\Policies\UserBasePolicy;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 test('policy extends user base policy', function (): void {
     $policy = new StoredEventPolicy();

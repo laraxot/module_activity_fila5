@@ -14,10 +14,11 @@ use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
 use Modules\User\Database\Factories\UserFactory;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
+use Modules\User\Models\User;
 
 test('activity module models work together in integrated scenarios', function () {
     $user = UserFactory::new()->createOne();

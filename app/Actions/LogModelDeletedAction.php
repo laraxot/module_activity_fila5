@@ -6,6 +6,7 @@ namespace Modules\Activity\Actions;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Models\Activity;
+use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -19,17 +20,14 @@ class LogModelDeletedAction
 
     public function __construct(
         public Model $model,
-        public ?Model $user = null,
+        public Model|UserContract|null $user = null,
     ) {
-        if ($user !== null) {
-            // Type already narrowed to Model|null, assertion not needed
-        }
     }
 
     public function execute(): Activity
     {
-        // PHPStan Level 10: Explicit type guard for nullable Model
-        $user = $this->user instanceof Model ? $this->user : null;
+        // PHPStan Level 10: Pass user as-is, LogActivityAction accepts both types
+        $user = $this->user;
 
         $action = new LogActivityAction(
             type: 'deleted',

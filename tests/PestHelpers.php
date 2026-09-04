@@ -8,6 +8,7 @@ use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
 /**
@@ -19,14 +20,14 @@ use PHPUnit\Framework\Assert;
 /**
  * @param  array<string, mixed>  $attributes
  */
-function activityCreateUser(array $attributes = []): User
+function activityCreateUser(array $attributes = []): \Modules\User\Models\User
 {
     if (TestCase::activityDbUnavailable()) {
         Assert::markTestSkipped('DB `activity_log` non raggiungibile: blocco di ambiente.');
     }
 
     $user = UserFactory::new()->createOne($attributes);
-    assert($user instanceof User);
+    \assert($user instanceof \Modules\User\Models\User);
 
     return $user;
 }

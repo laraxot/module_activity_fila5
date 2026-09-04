@@ -14,12 +14,13 @@ use Illuminate\Support\ServiceProvider;
 use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Providers\EventServiceProvider;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
 
 use function Safe\file_get_contents;
 use function Safe\touch;
+use Modules\User\Models\User;
 
 /**
  * Base test case for Activity module.

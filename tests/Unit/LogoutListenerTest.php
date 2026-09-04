@@ -3,11 +3,12 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
+use Modules\User\Models\User;
 
 use Illuminate\Auth\Events\Logout;
 use Modules\Activity\Listeners\LogoutListener;
 use Modules\Activity\Tests\TestCase;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 describe('Logout Listener', function (): void {
     test('handle registra un evento logout per utente autenticato', function (): void {
