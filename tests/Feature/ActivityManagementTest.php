@@ -6,8 +6,9 @@ namespace Modules\Activity\Tests\Feature;
 
 use Modules\Activity\Models\Activity;
 use Modules\User\Database\Factories\UserFactory;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 test('user can create activity', function () {
     $user = UserFactory::new()->createOne();

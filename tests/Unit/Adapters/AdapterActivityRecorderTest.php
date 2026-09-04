@@ -11,6 +11,7 @@ use Modules\Activity\Adapters\ActivityRecorder;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 afterEach(function (): void {
     Mockery::close();

@@ -15,6 +15,7 @@ use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Models\Policies\ActivityPolicy;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 it('denies activity viewAny to users without permission', function (): void {
     $user = (new UserFactory())->createOne();

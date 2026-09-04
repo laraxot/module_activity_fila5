@@ -7,8 +7,9 @@ namespace Modules\Activity\Tests\Unit;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Modules\Activity\Models\Policies\ActivityBasePolicy;
 use Modules\Activity\Tests\TestCase;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 describe('Activity Base Policy', function (): void {
     test('policy is abstract', function (): void {

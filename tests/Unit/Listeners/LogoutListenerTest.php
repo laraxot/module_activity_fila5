@@ -6,6 +6,7 @@ use Illuminate\Auth\Events\Logout;
 use Modules\Activity\Listeners\LogoutListener;
 use Modules\Activity\Providers\EventServiceProvider;
 use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
 test('logout listener is registered for logout event', function () {
@@ -44,7 +45,7 @@ test('logout listener handle method accepts logout event', function () {
 });
 
 test('logout listener handles event without user gracefully', function () {
-    $user = new User();
+    $user = new \Modules\User\Models\User();
     $user->exists = true;
     $event = new Logout('web', $user);
     (new ReflectionClass(Logout::class))->getProperty('user')->setValue($event, null);

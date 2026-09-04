@@ -11,8 +11,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
 
 /**
  * Activity Logger Action.
@@ -28,7 +29,7 @@ class ActivityLogger
      */
     public function log(
         string $type,
-        ?User $user = null,
+        ?UserContract $user = null,
         ?Model $subject = null,
         ?array $properties = null,
         ?string $description = null,
@@ -64,7 +65,7 @@ class ActivityLogger
     /**
      * Log created event.
      */
-    public function created(Model $model, ?User $user = null): Activity
+    public function created(Model $model, ?UserContract $user = null): Activity
     {
         $action = new LogModelCreatedAction($model, $user);
 
@@ -74,7 +75,7 @@ class ActivityLogger
     /**
      * Log updated event.
      */
-    public function updated(Model $model, ?User $user = null): Activity
+    public function updated(Model $model, ?UserContract $user = null): Activity
     {
         $action = new LogModelUpdatedAction($model, $user);
 
@@ -84,7 +85,7 @@ class ActivityLogger
     /**
      * Log deleted event.
      */
-    public function deleted(Model $model, ?User $user = null): Activity
+    public function deleted(Model $model, ?UserContract $user = null): Activity
     {
         $action = new LogModelDeletedAction($model, $user);
 
@@ -94,7 +95,7 @@ class ActivityLogger
     /**
      * Log login event.
      */
-    public function login(User $user): Activity
+    public function login(UserContract $user): Activity
     {
         $action = new LogUserLoginAction($user);
 
@@ -104,7 +105,7 @@ class ActivityLogger
     /**
      * Log logout event.
      */
-    public function logout(User $user): Activity
+    public function logout(UserContract $user): Activity
     {
         $action = new LogUserLogoutAction($user);
 
@@ -128,13 +129,14 @@ class ActivityLogger
      *
      * @return Collection<int, Activity>
      */
-    public function getUserActivities(User $user, int $limit = 50): Collection
+    public function getUserActivities(UserContract $user, int $limit = 50): Collection
     {
         if ($limit <= 0) {
             throw new InvalidArgumentException('Limit must be positive');
         }
 
         $userKey = $user->getKey();
+        Assert::scalar($userKey, 'User key must be scalar');
         $userKeyValues = [$userKey];
         if (is_string($userKey)) {
             $userKeyValues[] = $userKey;
@@ -232,7 +234,7 @@ class ActivityLogger
      *
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
-    public function getStatistics(?User $user = null): array
+    public function getStatistics(?UserContract $user = null): array
     {
         $query = Activity::query();
 
