@@ -6,8 +6,9 @@ namespace Modules\Activity\Tests\Unit;
 
 use Modules\Activity\Models\Policies\ActivityPolicy;
 use Modules\Activity\Tests\Fixtures\ActivityPolicyUser;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 /**
  * @param  list<string>  $permessi

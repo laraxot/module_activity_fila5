@@ -12,9 +12,10 @@ use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
 use Modules\User\Database\Factories\UserFactory;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
+use Modules\User\Models\User;
 
 test('activity event sourcing lifecycle works correctly', function () {
     $user = UserFactory::new()->createOne();
