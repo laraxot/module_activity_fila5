@@ -18,7 +18,7 @@ class LogUserLogoutAction
     use QueueableAction;
 
     public function __construct(
-        public UserContract $user
+        public \Modules\Xot\Contracts\UserContract $user
     ) {}
 
     public function execute(): Activity
