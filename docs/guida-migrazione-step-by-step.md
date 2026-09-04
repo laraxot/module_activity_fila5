@@ -500,7 +500,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Livewire\Livewire;
 use Modules\Activity\Filament\Resources\ActivityResource;
 use Spatie\Activitylog\Models\Activity;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 class ActivityResourceTest extends TestCase
 {

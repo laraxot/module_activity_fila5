@@ -8,6 +8,7 @@ use Modules\Activity\Models\Activity;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
+use Modules\User\Models\User;
 
 test('can create activity with basic information', function () {
     $user = UserFactory::new()->createOne();
