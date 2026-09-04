@@ -6,14 +6,11 @@ namespace Modules\Activity\Tests\Unit\Filament;
 
 use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Filament\Resources\ActivityResource;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
 
-uses(TestCase::class);
-
 test('ListLogActivities toTranslationString normalizza stringhe e array', function (): void {
-    $page = new class() extends ListLogActivities
+    $page = new class extends ListLogActivities
     {
         public static function getResource(): string
         {
@@ -38,7 +35,7 @@ test('ListLogActivities toTranslationString normalizza stringhe e array', functi
 });
 
 test('ListLogActivities getFieldLabel usa fallback per chiavi sconosciute', function (): void {
-    $page = new class() extends ListLogActivities
+    $page = new class extends ListLogActivities
     {
         public static function getResource(): string
         {

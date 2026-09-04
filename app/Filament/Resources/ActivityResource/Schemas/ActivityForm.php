@@ -14,7 +14,7 @@ class ActivityForm extends XotBaseResourceForm
     /**
      * @return array<string, SchemaComponent>
      */
-    public static function getFormSchemaOld(): array
+    public static function getFormSchema(): array
     {
         return [
             'log_name' => TextInput::make('log_name')

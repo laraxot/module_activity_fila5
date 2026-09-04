@@ -92,4 +92,4 @@ app(ActivityLogger::class)->recordSubject(...);
 ## Backlink
 
 - [wiki index Activity](../index.md)
-- [architecture.md](../../architecture.md) — overview (in aggiornamento verso Actions-only)
+- [ARCHITECTURE.md](../../ARCHITECTURE.md) — overview (in aggiornamento verso Actions-only)

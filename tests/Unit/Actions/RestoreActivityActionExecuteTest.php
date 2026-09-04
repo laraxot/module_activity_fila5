@@ -7,10 +7,7 @@ namespace Modules\Activity\Tests\Unit\Actions;
 use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Actions\RestoreActivityAction;
-use Modules\Activity\Tests\TestCase;
 use Webmozart\Assert\InvalidArgumentException as AssertInvalidArgumentException;
-
-uses(TestCase::class);
 
 test('RestoreActivityAction aggiorna il record con le vecchie proprietà', function (): void {
     $model = new class extends Model
@@ -50,9 +47,9 @@ test('RestoreActivityAction incapsula eccezioni di update', function (): void {
         }
     };
 
-    $this->expectException(Exception::class);
-
-    (new RestoreActivityAction)->execute($model, ['name' => 'x']);
+    expect(function () use ($model): void {
+        (new RestoreActivityAction)->execute($model, ['name' => 'x']);
+    })->toThrow(Exception::class);
 });
 
 test('RestoreActivityAction rifiuta oldProperties vuote', function (): void {
@@ -61,7 +58,7 @@ test('RestoreActivityAction rifiuta oldProperties vuote', function (): void {
         protected $table = 'stub_models';
     };
 
-    $this->expectException(AssertInvalidArgumentException::class);
-
-    (new RestoreActivityAction)->execute($model, []);
+    expect(function () use ($model): void {
+        (new RestoreActivityAction)->execute($model, []);
+    })->toThrow(AssertInvalidArgumentException::class);
 });
