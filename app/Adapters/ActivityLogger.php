@@ -22,7 +22,6 @@ use Modules\Activity\Actions\Query\GetRecentActivitiesAction;
 use Modules\Activity\Actions\Query\GetUserActivitiesAction;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Contracts\UserContract as XotUserContract;
 
 /**
  * Coordinator — delegates to single-purpose QueueableActions (not an Action: multi-method API).
