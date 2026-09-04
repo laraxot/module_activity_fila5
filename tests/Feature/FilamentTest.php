@@ -101,10 +101,10 @@ describe('CanPaginate trait', function (): void {
         Assert::assertTrue($trait->hasProperty('recordsPerPage'));
     });
 
-    test('trait has defaultRecordsPerPageSelectOption property', function (): void {
+    test('trait has defaultPerPageOption property', function (): void {
         $trait = new \ReflectionClass(CanPaginate::class);
 
-        Assert::assertTrue($trait->hasProperty('defaultRecordsPerPageSelectOption'));
+        Assert::assertTrue($trait->hasProperty('defaultPerPageOption'));
     });
 
     test('trait has getRecordsPerPageSelectOptions method', function (): void {
