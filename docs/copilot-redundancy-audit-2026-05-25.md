@@ -10,7 +10,7 @@ Problemi rilevati
 Raccomandazioni immediate
 - Centralizzare linee guida comuni in laravel/Modules/docs/ (MASTER_DOCS.md) e usare link canonical nei moduli.
 - Consolidare traduzioni condivise in resources/lang/shared/ o pacchetto comune.
-- Standardizzare nomi dei file docs (index.md) e usare metadati YAML per mapping.
+- Standardizzare nomi dei file docs (INDEX.md) e usare metadati YAML per mapping.
 
 Migliorare il "second brain"
 - Aggiungere metadati (module, topic, canonical) a ogni documento per poter indicizzare automaticamente e ridurre duplicazioni.

@@ -25,9 +25,9 @@ Current module documentation:
 
 ```
 Modules/Activity/docs/
-├── PANDOC_GUIDE.md (this file)
+├── pandoc-guide.md (this file)
 ├── README.md
-├── ARCHITECTURE.md
+├── architecture.md
 └── ... other markdown files
 ```
 
