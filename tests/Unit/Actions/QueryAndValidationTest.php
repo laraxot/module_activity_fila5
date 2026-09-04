@@ -6,23 +6,20 @@ namespace Modules\Activity\Tests\Unit\Actions;
 
 use Illuminate\Database\Eloquent\Model;
 use InvalidArgumentException;
-use Mockery\MockInterface;
+use Mockery;
 use Modules\Activity\Actions\ActivityLogger as ActivityLoggerAction;
 use Modules\Activity\Actions\LogActivityAction;
 use Modules\Activity\Actions\Query\GetActivitiesByTypeAction;
 use Modules\Activity\Actions\Query\GetRecentActivitiesAction;
+use Modules\Activity\Actions\Query\GetSubjectActivityLogAction;
 use Modules\Activity\Actions\Query\GetUserActivitiesAction;
+use Modules\Activity\Actions\RecordSubjectActivityAction;
 use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Adapters\ActivityLogger as ActivityLoggerAdapter;
 use Modules\Activity\Adapters\ActivityRecorder;
-use Modules\Activity\Actions\RecordSubjectActivityAction;
-use Modules\Activity\Actions\Query\GetSubjectActivityLogAction;
-use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 use Webmozart\Assert\InvalidArgumentException as AssertInvalidArgumentException;
-
-uses(TestCase::class);
 
 describe('Query Actions validation', function (): void {
     test('GetRecentActivitiesAction rifiuta limit non positivo', function (): void {
@@ -100,23 +97,22 @@ describe('ActivityLogger Adapter validation', function (): void {
 
 describe('ActivityRecorder Adapter', function (): void {
     test('record delega a RecordSubjectActivityAction', function (): void {
-        $this->mock(RecordSubjectActivityAction::class, function (MockInterface $mock): void {
-            $mock->shouldReceive('execute')
-                ->once()
-                ->with(User::class, 42, 'updated', ['name' => 'x'], null);
-        });
+        $mock = Mockery::mock(RecordSubjectActivityAction::class);
+        mockeryExpect($mock->shouldReceive('execute'))
+            ->once()
+            ->with(User::class, 42, 'updated', ['name' => 'x'], null);
+        app()->instance(RecordSubjectActivityAction::class, $mock);
 
         (new ActivityRecorder)->record(User::class, 42, 'updated', ['name' => 'x']);
-
     });
 
     test('getLog delega a GetSubjectActivityLogAction', function (): void {
-        $this->mock(GetSubjectActivityLogAction::class, function (MockInterface $mock): void {
-            $mock->shouldReceive('execute')
-                ->once()
-                ->with(User::class, 7)
-                ->andReturn([['id' => 1]]);
-        });
+        $mock = Mockery::mock(GetSubjectActivityLogAction::class);
+        mockeryExpect($mock->shouldReceive('execute'))
+            ->once()
+            ->with(User::class, 7)
+            ->andReturn([['id' => 1]]);
+        app()->instance(GetSubjectActivityLogAction::class, $mock);
 
         $log = (new ActivityRecorder)->getLog(User::class, 7);
 

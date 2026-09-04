@@ -62,7 +62,7 @@ class LogoutListener
             $activity->causer()->associate($event->user);
         }
 
-        $activity->properties = collect($properties);
+        $activity->properties = $properties;
         $activity->save();
     }
 }

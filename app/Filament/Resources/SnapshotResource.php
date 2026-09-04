@@ -17,12 +17,8 @@ class SnapshotResource extends XotBaseResource
 {
     protected static ?string $model = Snapshot::class;
 
-    /**
-     * Schema legacy del form: la sorgente di verità è SnapshotForm::getFormSchema().
-     *
-     * @return array<string, \Filament\Schemas\Components\Component>
-     */
-    public static function getFormSchemaOld(): array
+    #[Override]
+    public static function getFormSchema(): array
     {
         return [
             'model_type' => TextInput::make('model_type')->required()->maxLength(255),

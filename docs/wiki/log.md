@@ -17,7 +17,7 @@ discussions:
 ## [2026-06-13] phpstan | Gate chef — 7 file Actions → Assert
 
 - Convertiti tutti i test `tests/Unit/Actions/*` da `expect()` a `Assert::assert*()` per eliminare `method.internalClass` (82 errori piattaforma → 0).
-- Aggiunti [overviews/completion-status.md](overviews/completion-status.md) e aggiornato [project-roadmap.md](project-roadmap.md) scope Activity.
+- Aggiunti [overviews/completion-status.md](overviews/completion-status.md) e aggiornato [PROJECT-ROADMAP.md](PROJECT-ROADMAP.md) scope Activity.
 - Hub: [Xot platform-completion-roadmap](../../Xot/docs/wiki/overviews/platform-completion-roadmap.md).
 - GitHub: [Activity#18](https://github.com/laraxot/module_activity_fila5/issues/18) / base [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372).
 

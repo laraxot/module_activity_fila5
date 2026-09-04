@@ -6,6 +6,7 @@ namespace Modules\Activity\Tests\Unit\Filament;
 
 use Exception;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Collection;
 use LogicException;
 use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Models\Activity;
@@ -18,10 +19,8 @@ use Modules\Activity\Tests\Fixtures\ListLogActivitiesRestorableResource;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesStdClassResourceHarness;
 use Modules\Activity\Tests\Fixtures\RestoreActivityActionFails;
 use Modules\Activity\Tests\Fixtures\RestoreActivityActionNoOp;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class)->group('activity-db');
+use Symfony\Component\HttpKernel\Exception\HttpException;
 
 function activitySubjectForPage(string $id = 'page-subj'): ActivitySubjectHarness
 {
@@ -93,7 +92,7 @@ test('ListLogActivities canRestore e restoreActivity percorsi', function (): voi
     ListLogActivitiesRestorableResource::$restoreAllowed = true;
     Assert::assertTrue($page->canRestoreActivity());
 
-    $this->app->instance(RestoreActivityAction::class, new RestoreActivityActionNoOp);
+    app()->instance(RestoreActivityAction::class, new RestoreActivityActionNoOp);
     $page->restoreActivity((int) $activity->id);
 
     ListLogActivitiesRestorableResource::$restoreAllowed = false;
@@ -102,12 +101,12 @@ test('ListLogActivities canRestore e restoreActivity percorsi', function (): voi
     try {
         $page->restoreActivity((int) $activity->id);
         Assert::fail('Expected 403 abort');
-    } catch (\Symfony\Component\HttpKernel\Exception\HttpException $e) {
+    } catch (HttpException $e) {
         Assert::assertSame(403, $e->getStatusCode());
     }
 
     ListLogActivitiesRestorableResource::$restoreAllowed = true;
-    $this->app->instance(RestoreActivityAction::class, new RestoreActivityActionFails);
+    app()->instance(RestoreActivityAction::class, new RestoreActivityActionFails);
     $page->restoreActivity((int) $activity->id);
 });
 
@@ -153,7 +152,7 @@ test('ListLogActivities resolveActivity getOldProperties e field label map', fun
 
     Assert::assertSame('campo', $page->getFieldLabel('campo'));
     $map = $page->exposeCreateFieldLabelMap();
-    Assert::assertInstanceOf(\Illuminate\Support\Collection::class, $map);
+    Assert::assertInstanceOf(Collection::class, $map);
 });
 
 test('ListLogActivities canRestore senza record o resource invalida', function (): void {
