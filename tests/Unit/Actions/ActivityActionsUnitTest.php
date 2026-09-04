@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Actions;
+use Modules\User\Models\User;
 
 use Illuminate\Database\Eloquent\Model;
 use InvalidArgumentException;
@@ -12,7 +13,7 @@ use Modules\Activity\Actions\LogModelDeletedAction;
 use Modules\Activity\Actions\LogModelUpdatedAction;
 use Modules\Activity\Actions\LogUserLoginAction;
 use Modules\Activity\Actions\LogUserLogoutAction;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
 test('ActivityMaintenanceAction rifiuta giorni non positivi', function (): void {

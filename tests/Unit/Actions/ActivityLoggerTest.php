@@ -6,6 +6,7 @@ use Modules\Activity\Actions\ActivityLogger;
 use Modules\Activity\Models\Activity;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
 test('ActivityLogger throws exception for empty event type', function () {
@@ -46,7 +47,7 @@ describe('ActivityLogger con database activity_log', function (): void {
 
         Assert::assertInstanceOf(Activity::class, $activity);
         Assert::assertSame($user->id, $activity->causer_id);
-        Assert::assertSame(User::class, $activity->causer_type);
+        Assert::assertSame(\Modules\User\Models\User::class, $activity->causer_type);
     });
 
     test('ActivityLogger can log created event', function () {
