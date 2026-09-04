@@ -22,6 +22,7 @@ use Modules\Activity\Actions\Query\GetRecentActivitiesAction;
 use Modules\Activity\Actions\Query\GetUserActivitiesAction;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Contracts\UserContract as XotUserContract;
 
 /**
  * Coordinator — delegates to single-purpose QueueableActions (not an Action: multi-method API).
@@ -58,27 +59,27 @@ class ActivityLogger
         return $activity;
     }
 
-    public function created(Model $model, ?UserContract $user = null): Activity
+    public function created(Model $model, ?XotUserContract $user = null): Activity
     {
         return (new LogModelCreatedAction($model, $user))->execute();
     }
 
-    public function updated(Model $model, ?UserContract $user = null): Activity
+    public function updated(Model $model, ?XotUserContract $user = null): Activity
     {
         return (new LogModelUpdatedAction($model, $user))->execute();
     }
 
-    public function deleted(Model $model, ?UserContract $user = null): Activity
+    public function deleted(Model $model, ?XotUserContract $user = null): Activity
     {
         return (new LogModelDeletedAction($model, $user))->execute();
     }
 
-    public function login(UserContract $user): Activity
+    public function login(XotUserContract $user): Activity
     {
         return (new LogUserLoginAction($user))->execute();
     }
 
-    public function logout(UserContract $user): Activity
+    public function logout(XotUserContract $user): Activity
     {
         return (new LogUserLogoutAction($user))->execute();
     }
@@ -96,7 +97,7 @@ class ActivityLogger
     }
 
     /** @return Collection<int, Activity> */
-    public function getUserActivities(UserContract $user, int $limit = 50): Collection
+    public function getUserActivities(XotUserContract $user, int $limit = 50): Collection
     {
         return app(GetUserActivitiesAction::class)->execute($user, $limit);
     }
@@ -127,7 +128,7 @@ class ActivityLogger
     /**
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
-    public function getStatistics(?UserContract $user = null): array
+    public function getStatistics(?XotUserContract $user = null): array
     {
         return app(GetActivityStatisticsAction::class)->execute($user);
     }
