@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Auth;
 use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Contracts\UserContract;
-use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Log Activity Action.
@@ -25,8 +24,8 @@ class LogActivityAction
      */
     public function __construct(
         public string $type,
-        public Model|UserContract|null $user = null,
-        public Model|UserContract|null $subject = null,
+        public Model|null $user = null,
+        public Model|null $subject = null,
         public ?array $properties = null,
         public ?string $description = null,
     ) {
@@ -37,24 +36,27 @@ class LogActivityAction
 
     public function execute(): Activity
     {
+        $user = $this->user;
+        Assert::isInstanceOfAny($user, [UserContract::class, Model::class]);
+
         $causerId = null;
         $causer_type = null;
-        if ($this->user !== null) {
-            $userId = $this->user->getKey();
+        if ($user instanceof UserContract) {
+            $userId = $user->getKey();
             $causerId = is_int($userId) || is_string($userId) ? $userId : null;
-            $causer_type = $this->user::class;
+            $causer_type = $user::class;
         }
         if ($causerId === null) {
             $causerId = Auth::id();
         }
 
-        $activityClass = Activity::class;
+        $subject = $this->subject;
 
-        return $activityClass::create([
+        return Activity::create([
             'log_name' => $this->type,
             'description' => $this->description ?? sprintf('Activity: %s', $this->type),
-            'subject_type' => $this->subject ? $this->subject::class : null,
-            'subject_id' => $this->subject?->getKey(),
+            'subject_type' => $subject?->getMorphClass(),
+            'subject_id' => $subject?->getKey(),
             'causer_type' => $causer_type,
             'causer_id' => $causerId,
             'properties' => $this->properties,
