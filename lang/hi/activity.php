@@ -12,7 +12,7 @@ return [
         ],
         'label' => 'गतिविधि',
         'sort' => '60',
-        'icon' => 'heroicon-o-signal',
+        'icon' => 'heroicon-o-activity',
     ],
     'fields' => [
         'user' => [

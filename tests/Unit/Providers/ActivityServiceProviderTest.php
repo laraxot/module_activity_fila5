@@ -6,7 +6,6 @@ namespace Modules\Activity\Tests\Unit\Providers;
 
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Tests\TestCase;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -27,7 +26,7 @@ test('activity service provider exposes expected metadata', function (): void {
 
     Assert::assertSame('Activity', $name->getValue($provider));
     $moduleDirValue = $moduleDir->getValue($provider);
-    $moduleDirString = is_string($moduleDirValue) ? $moduleDirValue : SafeStringCastAction::cast($moduleDirValue);
+    $moduleDirString = is_scalar($moduleDirValue) ? (string) $moduleDirValue : '';
     Assert::assertStringContainsString('Modules/Activity', $moduleDirString);
     Assert::assertSame('Modules\\Activity\\Providers', $moduleNs->getValue($provider));
 });
