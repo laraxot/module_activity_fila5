@@ -25,8 +25,8 @@ class LogActivityAction
      */
     public function __construct(
         public string $type,
-        public Model|UserContract|null $user = null,
-        public Model|string|null $subject = null,
+        public Model|\Modules\Xot\Contracts\UserContract|null $user = null,
+        public Model|\Modules\Xot\Contracts\UserContract|null $subject = null,
         public ?array $properties = null,
         public ?string $description = null,
     ) {
@@ -41,7 +41,7 @@ class LogActivityAction
 
         $causerId = null;
         $causer_type = null;
-        if ($user instanceof UserContract || $user instanceof Model) {
+        if ($user instanceof \Modules\Xot\Contracts\UserContract || $user instanceof Model) {
             $userId = $user->getKey();
             $causerId = is_int($userId) || is_string($userId) ? $userId : null;
             $causer_type = $user::class;
