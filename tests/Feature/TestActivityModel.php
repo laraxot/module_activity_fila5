@@ -41,6 +41,7 @@ class TestActivityModel extends BaseModel
      */
     use HasFactory, HasXotFactory {
         HasXotFactory::newFactory insteadof HasFactory;
+        HasXotFactory::factory insteadof HasFactory;
     }
     /** @var string */
     protected $table = 'test_models';
