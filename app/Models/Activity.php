@@ -106,6 +106,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  */
 class Activity extends SpatieActivity
 {
+    /** @use HasXotFactory<ActivityFactory> */
     use HasXotFactory;
 
     /** @var string */
