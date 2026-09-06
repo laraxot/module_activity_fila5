@@ -32,7 +32,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 class TestActivityModel extends BaseModel
 {
     /** @use HasFactory<Factory<self>> */
-    use HasFactory, HasXotFactory;
+    use HasFactory;
     /** @var string */
     protected $table = 'test_models';
 
