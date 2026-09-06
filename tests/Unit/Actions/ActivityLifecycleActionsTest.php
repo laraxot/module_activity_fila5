@@ -12,7 +12,7 @@ use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 /**
  * @param  array<string, mixed>  $attributes
@@ -23,6 +23,7 @@ function createActivityLifecycleUser(array $attributes = []): User
 }
 
 test('Activity Lifecycle Actions', function () {
+
     test('can log model creation via LogModelCreatedAction', function () {
         $user = createActivityLifecycleUser(['name' => 'New User']);
         $action = new LogModelCreatedAction(model: $user);
