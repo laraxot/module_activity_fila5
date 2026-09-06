@@ -15,7 +15,7 @@ test('LogActivityAction rifiuta type vuoto nel costruttore', function (): void {
 });
 
 test('LogActivityAction accetta parametri opzionali nel costruttore', function (): void {
-    $model = new class extends Model
+    $model = new class() extends Model
     {
         protected $table = 'stub_models';
     };
