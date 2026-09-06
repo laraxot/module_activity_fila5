@@ -17,7 +17,7 @@ use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('activity event sourcing lifecycle works correctly', function () {
     $user = UserFactory::new()->createOne();
@@ -292,7 +292,7 @@ test('activity properties support complex nested structures', function () {
 
 test('snapshot state maintains data integrity with large datasets', function () {
     $largeState = [
-        'users' => array_map(fn (int $i) => [
+        'users' => array_map(fn ($i) => [
             'id' => $i,
             'name' => "User {$i}",
             'email' => "user{$i}@example.com",
@@ -341,7 +341,7 @@ test('stored event handles complex event properties with nested arrays', functio
     $complexEvent = [
         'order' => [
             'id' => 12345,
-            'items' => array_map(fn (int $i) => [
+            'items' => array_map(fn ($i) => [
                 'product_id' => $i,
                 'name' => "Product {$i}",
                 'quantity' => rand(1, 5),
