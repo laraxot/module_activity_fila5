@@ -3,7 +3,10 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Listeners;
+<<<<<<< .merge_file_LMpzrx
 
+=======
+>>>>>>> .merge_file_1Tj9pI
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Support\Str;
 use Modules\Activity\Listeners\LoginListener;
@@ -13,7 +16,11 @@ use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< .merge_file_LMpzrx
 uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> .merge_file_1Tj9pI
 
 test('login listener handle executes without side effects', function (): void {
     $listener = new LoginListener;
