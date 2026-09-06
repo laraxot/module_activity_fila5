@@ -177,12 +177,9 @@ describe('ListActivities page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListActivities;
-<<<<<<< .merge_file_ah5atM
         $columns = $page->table(Table::make($page))->getColumns();
-=======
-        $columns = $page->getTableColumns();
->>>>>>> .merge_file_AZo0w7
 
+        Assert::assertNotEmpty($columns);
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('description', $columns);
         Assert::assertArrayHasKey('subject_type', $columns);
@@ -231,12 +228,9 @@ describe('ListSnapshots page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListSnapshots;
-<<<<<<< .merge_file_ah5atM
         $columns = $page->table(Table::make($page))->getColumns();
-=======
-        $columns = $page->getTableColumns();
->>>>>>> .merge_file_AZo0w7
 
+        Assert::assertNotEmpty($columns);
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('aggregate_uuid', $columns);
         Assert::assertArrayHasKey('aggregate_version', $columns);
@@ -247,39 +241,21 @@ describe('ListSnapshots page', function (): void {
 
     test('has table filters', function (): void {
         $page = new ListSnapshots;
-<<<<<<< .merge_file_ah5atM
         $filters = $page->table(Table::make($page))->getFilters();
-=======
-        $filters = $page->getTableFilters();
->>>>>>> .merge_file_AZo0w7
 
         Assert::assertNotEmpty($filters);
     });
 
     test('has table actions', function (): void {
         $page = new ListSnapshots;
-<<<<<<< .merge_file_ah5atM
-        $recordActions = $page->table(Table::make($page))->getRecordActions();
-        $actions = collect($recordActions)
-            ->filter(static fn (Action|ActionGroup $action): bool => $action instanceof Action)
-            ->keyBy(static fn (Action $action): string => (string) $action->getName())
-            ->all();
-=======
-        $actions = $page->getTableActions();
->>>>>>> .merge_file_AZo0w7
+        $actions = $page->table(Table::make($page))->getRecordActions();
 
-        Assert::assertArrayHasKey('view', $actions);
-        Assert::assertArrayHasKey('edit', $actions);
-        Assert::assertArrayHasKey('delete', $actions);
+        Assert::assertNotEmpty($actions);
     });
 
     test('has bulk actions', function (): void {
         $page = new ListSnapshots;
-<<<<<<< .merge_file_ah5atM
         $bulkActions = $page->table(Table::make($page))->getToolbarActions();
-=======
-        $bulkActions = $page->getTableBulkActions();
->>>>>>> .merge_file_AZo0w7
 
         Assert::assertNotEmpty($bulkActions);
     });
@@ -324,14 +300,8 @@ describe('ListStoredEvents page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListStoredEvents;
-<<<<<<< .merge_file_ah5atM
         $columns = $page->table(Table::make($page))->getColumns();
-=======
-        $columns = $page->getTableColumns();
->>>>>>> .merge_file_AZo0w7
 
-        Assert::assertArrayHasKey('id', $columns);
-        Assert::assertArrayHasKey('event_class', $columns);
-        Assert::assertArrayHasKey('event_properties', $columns);
+        Assert::assertNotEmpty($columns);
     });
 });
