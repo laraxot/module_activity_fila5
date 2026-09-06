@@ -10,7 +10,7 @@ use PHPUnit\Framework\Assert;
 use ReflectionMethod;
 
 test('ListLogActivities toTranslationString normalizza stringhe e array', function (): void {
-    $page = new class extends ListLogActivities
+    $page = new class() extends ListLogActivities
     {
         public static function getResource(): string
         {
@@ -35,7 +35,7 @@ test('ListLogActivities toTranslationString normalizza stringhe e array', functi
 });
 
 test('ListLogActivities getFieldLabel usa fallback per chiavi sconosciute', function (): void {
-    $page = new class extends ListLogActivities
+    $page = new class() extends ListLogActivities
     {
         public static function getResource(): string
         {
