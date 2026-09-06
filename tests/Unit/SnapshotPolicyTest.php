@@ -12,11 +12,11 @@ use Modules\User\Models\Policies\UserBasePolicy;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 describe('Snapshot Policy', function (): void {
     test('policy extends user base policy', function (): void {
-        $policy = new SnapshotPolicy;
+        $policy = new SnapshotPolicy();
 
         Assert::assertInstanceOf(UserBasePolicy::class, $policy);
     });
@@ -35,7 +35,7 @@ describe('Snapshot Policy', function (): void {
         $user = Mockery::mock(User::class);
         $user->shouldReceive('hasPermissionTo')->with('snapshot.view')->andReturn(true);
 
-        $policy = new SnapshotPolicy;
+        $policy = new SnapshotPolicy();
         $result = $policy->view($user);
 
         Assert::assertTrue($result);
@@ -46,7 +46,7 @@ describe('Snapshot Policy', function (): void {
         $user = Mockery::mock(User::class);
         $user->shouldReceive('hasPermissionTo')->with('snapshot.view')->andReturn(false);
 
-        $policy = new SnapshotPolicy;
+        $policy = new SnapshotPolicy();
         $result = $policy->view($user);
 
         Assert::assertFalse($result);
