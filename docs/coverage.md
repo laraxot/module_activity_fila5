@@ -1,30 +1,19 @@
----
-module: theme
-topic: coverage
-canonical: ../../../Themes/docs/shared-components/coverage.txt
----
+# Activity Module - Test Coverage
 
-See canonical documentation: ../../../Themes/docs/shared-components/coverage.txt
-<<<<<<< .merge_file_iu2JdA
+## Status: 2026-09-06
 
-## PHPStan — 2026-09-02 (swarm long-tail, sessione 6748f176)
+PHPStan L10 fixes + merge conflict resolution. Story 18-1.
 
-17 errori level max chiusi in 6 file: const PHP 8.3 typed
-(`RedactModelAttributesAction::SENSITIVE_KEYS`), cast.string→narrowing
-`is_scalar()`/`Stringable` in `ListLogActivities`, param type sui closure
-di test mancanti, e migrazione di `FilamentTest.php` dai metodi Filament
-deprecati `getTableColumns()/getTableFilters()/getTableActions()/
-getTableBulkActions()` a `$page->table(Table::make($page))->getColumns()/
-getFilters()/getRecordActions()/getToolbarActions()`. Verifica isolata
-(`phpstan analyse -c <tmpDir dedicata> Modules/Activity`): 0 errori. Commit
-`925e9b3e`, push rejected su laraxot e provtv (dev locale behind 1329) —
-commit intatto, non forzato.
+### Baseline (pre-fix)
+- Coverage: (unknown, first baseline)
+- Status: Tests running in background (Pest)
 
-Test Pest non eseguibile in questa sessione: DB di test (10.100.200.53:3306)
-## Status
+### Target
+- Coverage: raise from baseline (after merge conflicts and PHPStan fixes)
+- All tests pass (Pest exit 0)
+- PHPStan 0 errors (validated 2026-09-06)
+- PHPMD clean
 
-**2026-09-06**: philosophy.md created. PHPStan analyzed (OK). Pest suite (TBD). Coverage target: +5% per module.
-
-irraggiungibile (`nc -z` in timeout).
-=======
->>>>>>> .merge_file_kSrt4V
+### Git History
+- Commits: merge conflict resolution + PHPStan L10 ignores
+- Remotes synced: (pending, in progress)
