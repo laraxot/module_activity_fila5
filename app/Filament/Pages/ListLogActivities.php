@@ -24,7 +24,6 @@ use LogicException;
 use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Models\Activity;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\Pages\XotBasePage;
 use Webmozart\Assert\Assert;
 
@@ -66,7 +65,7 @@ abstract class ListLogActivities extends XotBasePage
 
         // Convert to string (__() returns string|array|null)
         if (is_array($breadcrumb)) {
-            return implode(' ', array_map(static fn (mixed $v): string => SafeStringCastAction::cast($v), $breadcrumb));
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $breadcrumb));
         }
 
         if (is_string($breadcrumb)) {
@@ -90,7 +89,7 @@ abstract class ListLogActivities extends XotBasePage
 
         // __() returns string|array|null
         if (is_array($title)) {
-            return implode(' ', array_map(static fn (mixed $v): string => SafeStringCastAction::cast($v), $title));
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $title));
         }
 
         if (is_string($title)) {
@@ -271,7 +270,7 @@ abstract class ListLogActivities extends XotBasePage
     {
         $title = __('activity::activities.events.restore_successful');
         $titleString = is_array($title)
-            ? implode(' ', array_map(static fn (mixed $v): string => SafeStringCastAction::cast($v), $title))
+            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
             : (is_string($title) ? $title : '');
 
         return Notification::make()
@@ -284,7 +283,7 @@ abstract class ListLogActivities extends XotBasePage
     {
         $title = __('activity::activities.events.restore_failed');
         $titleString = is_array($title)
-            ? implode(' ', array_map(static fn (mixed $v): string => SafeStringCastAction::cast($v), $title))
+            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
             : (is_string($title) ? $title : '');
 
         $notification = Notification::make()
