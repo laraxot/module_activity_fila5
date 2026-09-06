@@ -20,4 +20,8 @@ getFilters()/getRecordActions()/getToolbarActions()`. Verifica isolata
 commit intatto, non forzato.
 
 Test Pest non eseguibile in questa sessione: DB di test (10.100.200.53:3306)
+## Status
+
+**2026-09-06**: philosophy.md created. PHPStan analyzed (OK). Pest suite (TBD). Coverage target: +5% per module.
+
 irraggiungibile (`nc -z` in timeout).
