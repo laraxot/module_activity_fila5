@@ -5,6 +5,7 @@ canonical: ../../../Themes/docs/shared-components/coverage.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/coverage.txt
+<<<<<<< .merge_file_iu2JdA
 
 ## PHPStan — 2026-09-02 (swarm long-tail, sessione 6748f176)
 
@@ -25,3 +26,5 @@ Test Pest non eseguibile in questa sessione: DB di test (10.100.200.53:3306)
 **2026-09-06**: philosophy.md created. PHPStan analyzed (OK). Pest suite (TBD). Coverage target: +5% per module.
 
 irraggiungibile (`nc -z` in timeout).
+=======
+>>>>>>> .merge_file_kSrt4V

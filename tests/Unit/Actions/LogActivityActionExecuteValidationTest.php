@@ -9,7 +9,7 @@ use InvalidArgumentException;
 use Modules\Activity\Actions\LogActivityAction;
 
 test('LogActivityAction execute rifiuta user non User', function (): void {
-    $nonUser = new class extends Model
+    $nonUser = new class() extends Model
     {
         protected $table = 'stub_users';
     };

@@ -103,10 +103,12 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static Builder<static>|Activity rightJoin(string $table, string $first, string $operator = null, string $second = null)
  * @method static Builder<static>|Activity crossJoin(string $table)
  * @method static Builder<static>|Activity causedBy(Model $causer)
+ *
+ * @mixin \Eloquent
  */
 class Activity extends SpatieActivity
 {
-    /** @use HasXotFactory<ActivityFactory> */
+    /** @phpstan-use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     /** @var string */
