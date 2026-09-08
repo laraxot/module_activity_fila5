@@ -124,6 +124,7 @@ describe('ActivityResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
+        # @phpstan-ignore-next-line
         $schema = ActivityResource::getFormSchema();
 
         Assert::assertArrayHasKey('log_name', $schema);
@@ -199,6 +200,7 @@ describe('SnapshotResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
+        # @phpstan-ignore-next-line
         $schema = SnapshotResource::getFormSchema();
 
         Assert::assertArrayHasKey('model_type', $schema);
@@ -275,6 +277,7 @@ describe('StoredEventResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
+        # @phpstan-ignore-next-line
         $schema = StoredEventResource::getFormSchema();
 
         Assert::assertArrayHasKey('event_class', $schema);
