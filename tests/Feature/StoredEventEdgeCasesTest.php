@@ -11,7 +11,7 @@ declare(strict_types=1);
 
 /**
  * Activity — StoredEvent edge cases (empty props, versioning, metadata).
- * Pest · sqlite fixcity_data · split from StoredEventBusinessLogicTest.
+ * Pest · sqlite condiviso · split from StoredEventBusinessLogicTest.
  */
 
 namespace Modules\Activity\Tests\Feature;
