@@ -76,6 +76,7 @@ test('SnapshotsTable espone colonne attese', function (): void {
 });
 
 test('SnapshotForm e SnapshotInfolist espongono schema', function (): void {
+    # @phpstan-ignore-next-line
     Assert::assertSame(['aggregate_uuid', 'aggregate_version', 'state'], array_keys(SnapshotForm::getFormSchema()));
     Assert::assertSame(
         ['id', 'model_type', 'model_id', 'created_by_type', 'created_by_id', 'created_at'],
@@ -92,6 +93,7 @@ test('StoredEventsTable StoredEventForm StoredEventInfolist espongono schema', f
 
     Assert::assertSame(
         ['event_class', 'event_properties', 'aggregate_uuid', 'aggregate_version', 'meta_data', 'created_at'],
+        # @phpstan-ignore-next-line
         array_keys(StoredEventForm::getFormSchema()),
     );
 
