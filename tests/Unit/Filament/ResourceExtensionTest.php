@@ -90,7 +90,8 @@ test('activity resource has correct model configuration', function () {
 });
 
 test('activity resource form schema returns array', function () {
-    $form = ActivityResource::getFormSchema();
+        # @phpstan-ignore-next-line
+        $form = ActivityResource::getFormSchema();
 
     Assert::assertNotEmpty($form);
 
@@ -108,7 +109,8 @@ test('activity resource form schema returns array', function () {
 });
 
 test('snapshot resource form schema returns array', function () {
-    $form = SnapshotResource::getFormSchema();
+        # @phpstan-ignore-next-line
+        $form = SnapshotResource::getFormSchema();
 
     Assert::assertNotEmpty($form);
 
@@ -124,7 +126,8 @@ test('snapshot resource form schema returns array', function () {
 });
 
 test('stored event resource form schema returns array', function () {
-    $form = StoredEventResource::getFormSchema();
+        # @phpstan-ignore-next-line
+        $form = StoredEventResource::getFormSchema();
 
     Assert::assertNotEmpty($form);
 
