@@ -1,7 +1,7 @@
 ---
 id: phpstan-activity-fix
 slug: phpstan-activity
-scope: [module:Activity, project:base_workorder_fila5]
+scope: [module:Activity, project:<repo progetto>]
 status: Pending
 priority: High
 created: 2026-09-06

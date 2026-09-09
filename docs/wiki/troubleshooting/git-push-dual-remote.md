@@ -9,7 +9,7 @@ qmd: "Activity module_activity_fila5 push deepen no-thin merge provtv laraxot"
 issues:
   - https://github.com/provtv/module_activity_fila5/issues/15
 discussions:
-  - https://github.com/provtv/base_ptv_fila5/discussions/204
+  - https://github.com/provtv/<repo progetto>/discussions/204
 related:
   - "../../multi-org-sync-laraxot-provtv.md"
   - "../../git-multi-org-sync-handoff.md"
