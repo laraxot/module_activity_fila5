@@ -4,7 +4,7 @@
 **Module Name**: Activity  
 **Type**: Activity Logging & Audit Trail Module  
 **Status**: ✅ Active  
-**Framework**: Laravel 12.x + Filament 4.x  
+**Framework**: Laravel 13.x + Filament 5.x  
 **Based on**: Laravel-activitylog package  
 **Language**: Multi-language (IT/EN/DE)  
 
@@ -63,7 +63,7 @@ The Activity module provides comprehensive activity logging and audit trail func
 ## Critical Dependencies
 - Xot module (for base classes)
 - Spatie/laravel-activitylog package
-- Filament 4.x (dashboard interface)
+- Filament 5.x (dashboard interface)
 - Database storage for logs
 
 ## Key Metrics
