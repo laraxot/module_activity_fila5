@@ -6,9 +6,9 @@ created: 2026-07-23
 updated: 2026-07-23
 qmd: "Platform AuditLog Activity gestionale_commesse"
 issues:
-  - "https://github.com/laraxot/base_workorder_fila5/issues/7"
+  - "https://github.com/laraxot/<repo progetto>/issues/7"
 discussions:
-  - "https://github.com/laraxot/base_workorder_fila5/discussions/8"
+  - "https://github.com/laraxot/<repo progetto>/discussions/8"
 related:
   - "./00-index.md"
   - "../../../../docs/gestionale-commesse-comparison/module-mapping.md"

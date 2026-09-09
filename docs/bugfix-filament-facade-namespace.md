@@ -33,13 +33,13 @@ L'errore si verificava quando si accedeva alla lista delle progressioni in Filam
 // ❌ ERRATO (namespace Filament 2.x)
 use Filament\Support\Facades\Filament;
 
-// ✅ CORRETTO (namespace Filament 3.x+ e Filament 4.x)
+// ✅ CORRETTO (namespace Filament 3.x+ e Filament 5.x)
 use Filament\Facades\Filament;
 ```
 
 ### Analisi
 
-In **Filament 3.x+** (incluso Filament 4.x attualmente in uso), il namespace delle facade è stato semplificato:
+In **Filament 3.x+** (incluso Filament 5.x attualmente in uso), il namespace delle facade è stato semplificato:
 - Filament 2.x: `Filament\Support\Facades\*`
 - Filament 3.x+: `Filament\Facades\*` ✅
 
@@ -131,7 +131,7 @@ vendor/bin/pint Modules/Activity/app/Filament/Actions/ListLogActivitiesAction.ph
 
 ---
 
-## 📚 Pattern Corretto per Filament 4.x
+## 📚 Pattern Corretto per Filament 5.x
 
 ### Versione Progetto
 
@@ -151,15 +151,15 @@ Filament::getTenant();              // Ottiene tenant corrente
 Filament::auth();                   // Ottiene guard autenticazione
 ```
 
-### Breaking Change Filament 4.x
+### Breaking Change Filament 5.x
 
-**IMPORTANTE:** In Filament 4.x il parametro `panel:` è stato rimosso da `getUrl()`:
+**IMPORTANTE:** In Filament 5.x il parametro `panel:` è stato rimosso da `getUrl()`:
 
 ```php
 // ❌ ERRATO (Filament 3.x, obsoleto in v4)
 $resource::getUrl('edit', ['record' => $record], panel: $panelId);
 
-// ✅ CORRETTO (Filament 4.x - panel automatico dal contesto)
+// ✅ CORRETTO (Filament 5.x - panel automatico dal contesto)
 $resource::getUrl('edit', ['record' => $record]);
 ```
 
@@ -211,8 +211,8 @@ Usare sempre file esistenti del progetto come riferimento per i namespace.
 
 ### Documentazione Filament
 
-- [Filament 4.x Documentation](https://filamentphp.com/docs/4.x)
-- [Filament 4.x Upgrade Guide](https://filamentphp.com/docs/4.x/panels/upgrade-guide)
+- [Filament 5.x Documentation](https://filamentphp.com/docs/4.x)
+- [Filament 5.x Upgrade Guide](https://filamentphp.com/docs/4.x/panels/upgrade-guide)
 - [Filament Facades Documentation](https://filamentphp.com/docs/4.x/support/facades)
 
 ### File Correlati
