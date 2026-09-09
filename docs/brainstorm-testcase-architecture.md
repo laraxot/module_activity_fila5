@@ -5,9 +5,9 @@ created_at: '2026-06-10'
 objective: "Valutare se Modules/<Module>/tests/TestCase.php debba estendere XotBaseTestCase e se XotBaseTestCase debba estendere un BaseTestCase Nwidart"
 status: "completed"
 issues:
-  - https://github.com/laraxot/base_ptv_fila5/issues/316
+  - https://github.com/laraxot/<repo progetto>/issues/316
 discussions:
-  - https://github.com/laraxot/base_ptv_fila5/discussions/316
+  - https://github.com/laraxot/<repo progetto>/discussions/316
 sources:
   - https://laravelmodules.com/docs/13/advanced/tests
   - https://github.com/nWidart/laravel-modules
@@ -98,6 +98,6 @@ cd laravel
 ## Full migration completed (2026-06-10)
 
 All 16 `Modules/*/tests/TestCase.php` files now extend `XotBaseTestCase`.
-Modules migrated: User, Geo, Media, UI, Lang, Notify, Gdpr, Job, Fixcity, Tenant, Seo, Rating.
+Modules migrated: User, Geo, Media, UI, Lang, Notify, Gdpr, Job, <nome progetto>, Tenant, Seo, Rating.
 See canonical rule: `Modules/Xot/docs/wiki/rules/module-testcase-xotbase-hierarchy.md`
 PHPStan after migration: 0 parse errors, 0 pure prod errors.

@@ -10,7 +10,7 @@ updated: 2026-06-05
 
 ## Overview
 
-Il modulo **Activity** fa parte dell'ecosistema Laraxot PTVX.
+Il modulo **Activity** fa parte dell'ecosistema Laraxot.
 
 ## Scopo
 
