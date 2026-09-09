@@ -16,7 +16,7 @@ Il modulo Activity è completamente conforme all'analisi PHPStan livello 10, dim
 - ✅ Type hints rigorosi implementati
 - ✅ Gestione corretta dei valori null
 - ✅ Definizioni corrette delle strutture array
-- ✅ Compatibilità Filament 4.x
+- ✅ Compatibilità Filament 5.x
 - ✅ Utilizzo funzioni Safe
 - ✅ Dichiarazione strict types
 - ✅ Type safety completo
@@ -82,9 +82,9 @@ Il modulo segue questi standard:
 - **Webmozart Assert**: Validazioni runtime
 - **Safe Functions**: Funzioni sicure TheCodingMachine
 
-## Compatibilità Filament 4.x
+## Compatibilità Filament 5.x
 
-Tutti i componenti Filament nel modulo sono compatibili con Filament 4.x:
+Tutti i componenti Filament nel modulo sono compatibili con Filament 5.x:
 
 - ✅ Form components strutturati correttamente
 - ✅ Table actions seguono nuove convenzioni

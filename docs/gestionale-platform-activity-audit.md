@@ -4,7 +4,7 @@
 
 ## Panoramica
 
-| Aspetto | Gestionale Commesse | Base Workorder Fila5 |
+| Aspetto | Gestionale Commesse | Base <nome progetto> Fila5 |
 |---------|-------------------|---------------------|
 | **Modulo SRC** | `Modules/Platform` (parziale: `AuditLog`) | `Modules/Activity` |
 | **Ruolo** | Audit logging delle azioni utente | Tracciamento attività event-sourced con snapshot |
@@ -47,7 +47,7 @@
 
 - **Activity è già superiore** a AuditLog — non serve creare nulla
 - Il gap vero è che Platform ha anche `PlatformSetting` (settings key-value) — quello va mappato su Tenant/Xot
-- Activity è già usato in produzione su base_workorder_fila5
+- Activity è già usato in produzione su <repo progetto>
 - Nessuna azione necessaria su Activity
 
 ---
@@ -55,5 +55,5 @@
 ## Riferimenti
 
 - SRC Platform: `/var/www/_bases/gestionale_commesse/Modules/Platform/`
-- Nostro: `/var/www/_bases/base_workorder_fila5/laravel/Modules/Activity/`
+- Nostro: `/var/www/_bases/<repo progetto>/laravel/Modules/Activity/`
 - Story: `docs/wiki/skills/bmad-create-story/stories/gestionale-commesse-module-parity.story.md`
