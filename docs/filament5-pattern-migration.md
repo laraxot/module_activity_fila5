@@ -8,7 +8,7 @@
 
 ## Philosophy
 
-The FixCity project follows the official Filament 5 demo pattern from `filamentphp/demo` (branch 5.x).
+The <nome progetto> project follows the official Filament 5 demo pattern from `filamentphp/demo` (branch 5.x).
 
 ### Key Principles
 
@@ -65,7 +65,7 @@ The FixCity project follows the official Filament 5 demo pattern from `filamentp
 ## Next Steps
 
 Apply this same pattern to ALL Filament Resources in ALL modules:
-- Fixcity module
+- <nome progetto> module
 - UI module
 - Blog module
 - Media module
