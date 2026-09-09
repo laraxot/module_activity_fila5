@@ -1,6 +1,6 @@
 ---
 module: theme
-topic: migration-filament-4
+topic: migration-Filament-5
 canonical: ../../../Themes/docs/shared-components/.gitkeep
 ---
 

@@ -14,7 +14,7 @@ The Activity module is fully compliant with PHPStan level 9 analysis, demonstrat
 - ✅ Rigorous type hints implementation
 - ✅ Proper null handling
 - ✅ Correct array structure definitions
-- ✅ Filament 4.x compatibility
+- ✅ Filament 5.x compatibility
 - ✅ Safe function usage
 - ✅ Strict types declaration
 
@@ -22,9 +22,9 @@ The Activity module is fully compliant with PHPStan level 9 analysis, demonstrat
 
 This module handles activity tracking and logging within the application.
 
-## Filament 4.x Compatibility
+## Filament 5.x Compatibility
 
-All Filament components in this module have been verified to be compatible with Filament 4.x:
+All Filament components in this module have been verified to be compatible with Filament 5.x:
 - Form components properly structured
 - Table actions follow new conventions
 - Resource methods implement correct signatures

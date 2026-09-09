@@ -34,7 +34,7 @@ public static function getFormSchema(): array
 
 ## Verification Steps Completed
 
-1. ✅ Composer dependencies updated to Filament 4.0.18
+1. ✅ Composer dependencies updated to Filament 5.0.18
 2. ✅ Resource classes using new schema patterns
 3. ✅ Table methods updated to v4 API
 4. ✅ Base classes properly configured

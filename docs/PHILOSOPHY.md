@@ -36,7 +36,7 @@ tags: [activity, philosophy, audit, event-sourcing, architecture]
 - Questo mantiene il flusso asincrono e disaccoppiato.
 
 **Compliance first.**
-- FixCity è piattaforma di gestione medico-sanitario: GDPR, HIPAA, normative PA.
+- <nome progetto> è piattaforma di gestione medico-sanitario: GDPR, HIPAA, normative PA.
 - L'audit trail è arma di conformità legale.
 - Chi ha accesso a cosa, quando, perché. Registrato.
 - Sensitive data non finisce nei properties JSON senza redazione.
@@ -138,9 +138,9 @@ tags: [activity, philosophy, audit, event-sourcing, architecture]
 
 ## SCOPO
 
-### Compliance & Tracking in FixCity
+### Compliance & Tracking in <nome progetto>
 
-**FixCity è piattaforma medico-sanitaria.**
+**<nome progetto> è piattaforma medico-sanitaria.**
 - Paciente data è sensibile (GDPR, HIPAA, Privacy Code ITA).
 - Ogni accesso, modifica, esportazione va tracciato.
 - Investigazioni (data breach, malasana): "Chi ha visto questa cartella il 7 agosto a 14:23?"
@@ -832,7 +832,7 @@ Edit `config/database.php`:
 'activity' => [
     'driver' => 'mysql',
     'host' => env('DB_HOST'),
-    'database' => env('DB_ACTIVITY_DATABASE', 'fixcity_activity'),  // Separate DB
+    'database' => env('DB_ACTIVITY_DATABASE', '<nome progetto>_activity'),  // Separate DB
     'username' => env('DB_USERNAME'),
     'password' => env('DB_PASSWORD'),
 ],
@@ -963,4 +963,4 @@ Quella è la ragione per cui esiste.
 
 ---
 
-*Documentazione filosofica — Modulo Activity · FixCity Platform · Laravel 13 · Filament 5*
+*Documentazione filosofica — Modulo Activity · <nome progetto> Platform · Laravel 13 · Filament 5*
