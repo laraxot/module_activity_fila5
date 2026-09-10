@@ -25,29 +25,16 @@ use Modules\Activity\Adapters\ActivityLogger as ActivityLoggerAdapter;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\Fixtures\ActivitySubjectHarness;
 use Modules\Activity\Tests\Fixtures\LogActivityActionTestModel;
-<<<<<<< HEAD
-use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-
-=======
-use Modules\User\Models\User;
-use PHPUnit\Framework\Assert;
-
->>>>>>> laraxot/dev
 beforeEach(function (): void {
     config(['cache.default' => 'array']);
 });
 
 function activityUnitUser(string $id = 'user-coverage-1'): User
 {
-<<<<<<< HEAD
-    $user = new User;
-=======
     $user = new User();
->>>>>>> laraxot/dev
     $user->forceFill([
         'id' => $id,
         'name' => 'Coverage User',
@@ -60,11 +47,7 @@ function activityUnitUser(string $id = 'user-coverage-1'): User
 
 function activityUnitSubject(string $id = 'subj-1'): ActivitySubjectHarness
 {
-<<<<<<< HEAD
-    $subject = new ActivitySubjectHarness;
-=======
     $subject = new ActivitySubjectHarness();
->>>>>>> laraxot/dev
     $subject->forceFill(['id' => $id, 'name' => 'Subject']);
     $subject->exists = true;
 
@@ -117,11 +100,7 @@ test('RecordSubjectActivityAction e query actions coprono execute', function ():
     $subject = activityUnitSubject('subj-q');
     $user = activityUnitUser('causer-q');
 
-<<<<<<< HEAD
-    $recorded = (new RecordSubjectActivityAction)->execute(
-=======
     $recorded = (new RecordSubjectActivityAction())->execute(
->>>>>>> laraxot/dev
         ActivitySubjectHarness::class,
         $subject->id,
         'recorded',
@@ -137,19 +116,11 @@ test('RecordSubjectActivityAction e query actions coprono execute', function ():
         description: 'u',
     ))->execute();
 
-<<<<<<< HEAD
-    Assert::assertGreaterThanOrEqual(1, (new GetRecentActivitiesAction)->execute(10)->count());
-    Assert::assertGreaterThanOrEqual(1, (new GetActivitiesByTypeAction)->execute('login', 10)->count());
-    Assert::assertGreaterThanOrEqual(1, (new GetModelActivitiesAction)->execute($subject, 10)->count());
-    Assert::assertGreaterThanOrEqual(1, (new GetUserActivitiesAction)->execute($user, 10)->count());
-    Assert::assertNotEmpty((new GetSubjectActivityLogAction)->execute(ActivitySubjectHarness::class, $subject->id, 50));
-=======
     Assert::assertGreaterThanOrEqual(1, (new GetRecentActivitiesAction())->execute(10)->count());
     Assert::assertGreaterThanOrEqual(1, (new GetActivitiesByTypeAction())->execute('login', 10)->count());
     Assert::assertGreaterThanOrEqual(1, (new GetModelActivitiesAction())->execute($subject, 10)->count());
     Assert::assertGreaterThanOrEqual(1, (new GetUserActivitiesAction())->execute($user, 10)->count());
     Assert::assertNotEmpty((new GetSubjectActivityLogAction())->execute(ActivitySubjectHarness::class, $subject->id, 50));
->>>>>>> laraxot/dev
 });
 
 test('GetActivityStatisticsAction con e senza user e event null', function (): void {
@@ -163,20 +134,12 @@ test('GetActivityStatisticsAction con e senza user e event null', function (): v
     $user = activityUnitUser('stats-user');
     (new LogActivityAction(type: 'stat_type', user: $user, description: 's'))->execute();
 
-<<<<<<< HEAD
-    $global = (new GetActivityStatisticsAction)->execute();
-=======
     $global = (new GetActivityStatisticsAction())->execute();
->>>>>>> laraxot/dev
     Assert::assertArrayHasKey('total', $global);
     Assert::assertArrayHasKey('by_type', $global);
     Assert::assertArrayHasKey('today', $global);
 
-<<<<<<< HEAD
-    $forUser = (new GetActivityStatisticsAction)->execute($user);
-=======
     $forUser = (new GetActivityStatisticsAction())->execute($user);
->>>>>>> laraxot/dev
     Assert::assertGreaterThanOrEqual(1, $forUser['total']);
 });
 
@@ -188,11 +151,7 @@ test('ActivityMaintenanceAction cleanOld e ActivityLogger Action percorsi comple
     $model->exists = true;
     $model->syncOriginal();
 
-<<<<<<< HEAD
-    $logger = new ActivityLoggerAction;
-=======
     $logger = new ActivityLoggerAction();
->>>>>>> laraxot/dev
 
     $logged = $logger->log('evt_log', activityUnitUser('evt-user'), $model, ['p' => 1], 'D');
     Assert::assertInstanceOf(Activity::class, $logged);
@@ -227,11 +186,7 @@ test('ActivityMaintenanceAction cleanOld e ActivityLogger Action percorsi comple
         'updated_at' => now()->subDays(120)->toDateTimeString(),
     ]);
 
-<<<<<<< HEAD
-    $deleted = (new ActivityMaintenanceAction)->execute(90);
-=======
     $deleted = (new ActivityMaintenanceAction())->execute(90);
->>>>>>> laraxot/dev
     Assert::assertGreaterThanOrEqual(1, $deleted);
 
     $cleaned = $logger->cleanOld(90);
@@ -240,15 +195,9 @@ test('ActivityMaintenanceAction cleanOld e ActivityLogger Action percorsi comple
 
 test('ActivityLogger Action log ignora Auth::id non scalare', function (): void {
     \Mockery::close();
-<<<<<<< HEAD
-    Auth::shouldReceive('id')->once()->andReturn(new \stdClass);
-
-    $activity = (new ActivityLoggerAction)->log('weird_auth', null, null, null, 'W');
-=======
     Auth::shouldReceive('id')->once()->andReturn(new \stdClass());
 
     $activity = (new ActivityLoggerAction())->log('weird_auth', null, null, null, 'W');
->>>>>>> laraxot/dev
 
     Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertNull($activity->causer_id);
@@ -260,11 +209,7 @@ test('ActivityLogger Adapter delega log created updated deleted login logout que
     $model->exists = true;
     $model->syncOriginal();
 
-<<<<<<< HEAD
-    $adapter = new ActivityLoggerAdapter;
-=======
     $adapter = new ActivityLoggerAdapter();
->>>>>>> laraxot/dev
 
     Assert::assertInstanceOf(Activity::class, $adapter->log('ad_log', $user, $model, ['z' => 1], 'AD'));
     Assert::assertSame('created', $adapter->created($model, $user)->event);
@@ -285,10 +230,6 @@ test('ActivityLogger Adapter delega log created updated deleted login logout que
 test('ActivityLogger Adapter rifiuta user non User', function (): void {
     $invalid = new LogActivityActionTestModel(['name' => 'bad']);
 
-<<<<<<< HEAD
-    expect(fn (): mixed => (new ActivityLoggerAdapter)->log('x', $invalid))
-=======
     expect(fn (): mixed => (new ActivityLoggerAdapter())->log('x', $invalid))
->>>>>>> laraxot/dev
         ->toThrow(\InvalidArgumentException::class, 'User must be an instance of User');
 });
