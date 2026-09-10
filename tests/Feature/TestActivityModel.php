@@ -1,0 +1,63 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Activity\Tests\Feature;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Carbon;
+use Modules\Activity\Models\BaseModel;
+use Modules\Xot\Models\Traits\HasXotFactory;
+
+/**
+ * Classe concreta di test per BaseModel.
+ * Usata per testare BaseModel senza classi anonime.
+ *
+ * @property string|null $uuid
+ * @property string|null $name
+ * @property string|null $value
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Carbon|null $deleted_at
+ * @property Carbon|null $published_at
+ * @property int|null $created_by
+ * @property int|null $updated_by
+ * @property int|null $deleted_by
+ *
+ * @method static Factory<static> factory()
+ *
+ * @coversNothing
+ */
+class TestActivityModel extends BaseModel
+{
+    /**
+     * @use HasFactory<Factory<self>>
+     *
+     * HasXotFactory fornisce solo factory() (via GetFactoryAction), non più
+     * newFactory(): usa quello di HasFactory. Un insteadof su newFactory qui
+     * fatalizza all'autoload con "A precedence rule was defined for
+     * HasXotFactory::newFactory but this method does not exist".
+     */
+    use HasFactory, HasXotFactory {
+        HasXotFactory::factory insteadof HasFactory;
+    }
+
+    /** @var string */
+    protected $table = 'test_models';
+
+    /** @var list<string> */
+    protected $fillable = ['name', 'value', 'uuid', 'published_at', 'created_by', 'updated_by', 'deleted_by'];
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return array_merge(parent::casts(), [
+            // Module-specific casts only
+        ]);
+    }
+}
