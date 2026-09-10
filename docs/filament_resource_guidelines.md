@@ -14,7 +14,7 @@ class ActivityResource extends XotBaseResource
 {
     protected static ?string $model = Activity::class;
 
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             // Form schema components only
