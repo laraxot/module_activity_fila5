@@ -34,12 +34,13 @@ class TestActivityModel extends BaseModel
     /**
      * @use HasFactory<Factory<self>>
      *
-     * HasXotFactory fornisce solo factory() (via GetFactoryAction), non più
-     * newFactory(): usa quello di HasFactory. Un insteadof su newFactory qui
-     * fatalizza all'autoload con "A precedence rule was defined for
-     * HasXotFactory::newFactory but this method does not exist".
+     * newFactory() è fornito da HasXotFactory (già tipizzato `: Factory`, ereditato da
+     * XotBaseModel tramite BaseModel): senza insteadof la versione non tipizzata di
+     * HasFactory::newFactory() viola la firma dell'antenato e PHP va in fatal error
+     * "Declaration ... must be compatible" al primo autoload della classe.
      */
     use HasFactory, HasXotFactory {
+        HasXotFactory::newFactory insteadof HasFactory;
         HasXotFactory::factory insteadof HasFactory;
     }
 
