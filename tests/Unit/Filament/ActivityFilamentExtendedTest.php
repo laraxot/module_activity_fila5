@@ -17,8 +17,11 @@ use Modules\Activity\Filament\Resources\SnapshotResource\Tables\SnapshotsTable;
 use Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventForm;
 use Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventInfolist;
 use Modules\Activity\Filament\Resources\StoredEventResource\Tables\StoredEventsTable;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
+
+uses(TestCase::class);
 
 afterEach(function (): void {
     Mockery::close();
@@ -29,14 +32,14 @@ test('EditActivity espone DeleteAction in header', function (): void {
     $method->setAccessible(true);
 
     /** @var array<string, DeleteAction> $actions */
-    $actions = $method->invoke(new EditActivity());
+    $actions = $method->invoke(new EditActivity);
 
     Assert::assertArrayHasKey('delete', $actions);
     Assert::assertInstanceOf(DeleteAction::class, $actions['delete']);
 });
 
 test('ActivitiesTable espone colonne complete', function (): void {
-    $tabella = new ActivitiesTable();
+    $tabella = new ActivitiesTable;
 
     Assert::assertSame(
         [
@@ -49,13 +52,14 @@ test('ActivitiesTable espone colonne complete', function (): void {
 });
 
 test('ActivitysTable espone colonne compatte', function (): void {
-    $tabella = new ActivitysTable();
+    $tabella = new ActivitysTable;
 
     Assert::assertSame(['id', 'log_name', 'description', 'created_at'], array_keys($tabella->getTableColumns()));
 });
 
 test('ActivityInfolist espone schema infolist', function (): void {
-    $schema = ActivityInfolist::getInfolistSchema();
+    $instance = app(ActivityInfolist::class);
+    $schema = $instance->getInfolistSchema();
 
     Assert::assertSame(
         [
@@ -67,7 +71,7 @@ test('ActivityInfolist espone schema infolist', function (): void {
 });
 
 test('SnapshotsTable espone colonne attese', function (): void {
-    $tabella = new SnapshotsTable();
+    $tabella = new SnapshotsTable;
 
     Assert::assertSame(
         ['id', 'aggregate_uuid', 'aggregate_version', 'state', 'created_at', 'updated_at'],
@@ -76,15 +80,15 @@ test('SnapshotsTable espone colonne attese', function (): void {
 });
 
 test('SnapshotForm e SnapshotInfolist espongono schema', function (): void {
-    Assert::assertSame(['aggregate_uuid', 'aggregate_version', 'state'], array_keys(SnapshotForm::getFormSchema()));
+    Assert::assertSame(['aggregate_uuid', 'aggregate_version', 'state'], array_keys(app(SnapshotForm::class)->getFormSchema()));
     Assert::assertSame(
         ['id', 'model_type', 'model_id', 'created_by_type', 'created_by_id', 'created_at'],
-        array_keys(SnapshotInfolist::getInfolistSchema()),
+        array_keys(app(SnapshotInfolist::class)->getInfolistSchema()),
     );
 });
 
 test('StoredEventsTable StoredEventForm StoredEventInfolist espongono schema', function (): void {
-    $tabella = new StoredEventsTable();
+    $tabella = new StoredEventsTable;
     Assert::assertSame(
         ['id', 'event_class', 'properties', 'created_at', 'updated_at'],
         array_keys($tabella->getTableColumns()),
@@ -92,11 +96,11 @@ test('StoredEventsTable StoredEventForm StoredEventInfolist espongono schema', f
 
     Assert::assertSame(
         ['event_class', 'event_properties', 'aggregate_uuid', 'aggregate_version', 'meta_data', 'created_at'],
-        array_keys(StoredEventForm::getFormSchema()),
+        array_keys(app(StoredEventForm::class)->getFormSchema()),
     );
 
     Assert::assertSame(
         ['id', 'event_class', 'aggregate_uuid', 'aggregate_version', 'created_at'],
-        array_keys(StoredEventInfolist::getInfolistSchema()),
+        array_keys(app(StoredEventInfolist::class)->getInfolistSchema()),
     );
 });

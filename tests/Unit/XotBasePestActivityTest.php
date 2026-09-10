@@ -5,6 +5,8 @@ declare(strict_types=1);
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 
+uses(TestCase::class);
+
 it('tests that TestCase class structure is correct', function () {
     /** @var TestCase $this */
     $this->assertInstanceOf(TestCase::class, $this);
