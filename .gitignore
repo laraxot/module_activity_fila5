@@ -163,3 +163,4 @@ graphify-out/
 tools
 workbench
 .claude*
+.codex*
