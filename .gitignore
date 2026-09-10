@@ -165,3 +165,4 @@ workbench
 .claude*
 .codex*
 .gitmodules
+.opencode
