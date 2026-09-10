@@ -166,3 +166,4 @@ workbench
 .codex*
 .gitmodules
 .opencode
+.agents~HEAD
