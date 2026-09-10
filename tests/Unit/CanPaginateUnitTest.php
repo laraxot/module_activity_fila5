@@ -6,20 +6,10 @@ namespace Modules\Activity\Tests\Unit;
 
 use Filament\Tables\Enums\PaginationMode;
 use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
-<<<<<<< HEAD
-use Modules\Activity\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
-
-test('CanPaginate gestisce session e default senza database', function (): void {
-    $harness = new CanPaginateHarness;
-=======
 use PHPUnit\Framework\Assert;
 
 test('CanPaginate gestisce session e default senza database', function (): void {
     $harness = new CanPaginateHarness();
->>>>>>> laraxot/dev
     $harness->recordsPerPage = 25;
 
     $harness->updatedRecordsPerPage();
@@ -33,11 +23,7 @@ test('CanPaginate gestisce session e default senza database', function (): void 
 });
 
 test('CanPaginate default option fallback senza database', function (): void {
-<<<<<<< HEAD
-    $harness = new CanPaginateHarness;
-=======
     $harness = new CanPaginateHarness();
->>>>>>> laraxot/dev
     $harness->setDefaultPerPage(25);
 
     Assert::assertSame(25, $harness->getDefaultRecordsPerPageSelectOption());
@@ -49,22 +35,14 @@ test('CanPaginate default option fallback senza database', function (): void {
 });
 
 test('CanPaginate recordsPerPage null usa default option', function (): void {
-<<<<<<< HEAD
-    $harness = new CanPaginateHarness;
-=======
     $harness = new CanPaginateHarness();
->>>>>>> laraxot/dev
     $harness->setDefaultPerPage(50);
 
     Assert::assertSame(50, $harness->getRecordsPerPage());
 });
 
 test('CanPaginate espone pagination mode default', function (): void {
-<<<<<<< HEAD
-    $harness = new CanPaginateHarness;
-=======
     $harness = new CanPaginateHarness();
->>>>>>> laraxot/dev
 
     Assert::assertSame(PaginationMode::Default, $harness->getPaginationMode());
 });
