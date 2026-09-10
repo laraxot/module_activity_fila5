@@ -5,8 +5,11 @@ declare(strict_types=1);
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
+=======
+>>>>>>> laraxot/dev
 it('uses the correct TestCase class', function () {
     /** @var TestCase $this */
     $this->assertInstanceOf(TestCase::class, $this);
