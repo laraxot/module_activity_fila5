@@ -158,4 +158,7 @@ tests/AuditCoverage/
 phpinsights.php
 rector.php
 graphify-out
+<<<<<<< HEAD
 graphify-out/
+=======
+>>>>>>> laraxot/dev

@@ -18,6 +18,7 @@ use Modules\Activity\Tests\Fixtures\ListLogActivitiesMountablePage;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesNestedFormPage;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesNonSchemaFormPage;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesPageHarness;
+<<<<<<< HEAD
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionProperty;
@@ -28,6 +29,15 @@ test('ListLogActivitiesAction url closure genera log-activity', function (): voi
     $action = ListLogActivitiesAction::make();
     $livewire = ListLogActivitiesActionTestPage::usingResource(ListLogActivitiesActionTestResourceSimple::class);
     $record = new ListLogActivitiesActionTestRecord;
+=======
+use PHPUnit\Framework\Assert;
+use ReflectionProperty;
+
+test('ListLogActivitiesAction url closure genera log-activity', function (): void {
+    $action = ListLogActivitiesAction::make();
+    $livewire = ListLogActivitiesActionTestPage::usingResource(ListLogActivitiesActionTestResourceSimple::class);
+    $record = new ListLogActivitiesActionTestRecord();
+>>>>>>> laraxot/dev
 
     $action->livewire($livewire);
     $action->record($record);
@@ -45,18 +55,30 @@ test('ActivityLogger getStatistics copre branch event null in by_type', function
         'event' => null,
     ]);
 
+<<<<<<< HEAD
     $stats = (new ActivityLoggerAction)->getStatistics();
+=======
+    $stats = (new ActivityLoggerAction())->getStatistics();
+>>>>>>> laraxot/dev
 
     Assert::assertArrayHasKey('by_type', $stats);
     Assert::assertIsArray($stats['by_type']);
 });
 
 test('ListLogActivities mount e branch record non Model', function (): void {
+<<<<<<< HEAD
     $page = new ListLogActivitiesMountablePage;
     $page->mount('mount-id-1');
     Assert::assertInstanceOf(ActivitySubjectHarness::class, $page->getRecord());
 
     $bad = new ListLogActivitiesPageHarness;
+=======
+    $page = new ListLogActivitiesMountablePage();
+    $page->mount('mount-id-1');
+    Assert::assertInstanceOf(ActivitySubjectHarness::class, $page->getRecord());
+
+    $bad = new ListLogActivitiesPageHarness();
+>>>>>>> laraxot/dev
     $prop = new ReflectionProperty($bad, 'record');
     $prop->setAccessible(true);
     $prop->setValue($bad, 'not-a-model');
@@ -66,7 +88,11 @@ test('ListLogActivities mount e branch record non Model', function (): void {
 });
 
 test('ListLogActivities getFieldLabel con valore non stringa in map', function (): void {
+<<<<<<< HEAD
     $page = new ListLogActivitiesPageHarness;
+=======
+    $page = new ListLogActivitiesPageHarness();
+>>>>>>> laraxot/dev
     $mapProp = new ReflectionProperty(ListLogActivities::class, 'fieldLabelMap');
     $mapProp->setAccessible(true);
     $mapProp->setValue(null, Collection::make(['x' => 123]));
@@ -75,17 +101,29 @@ test('ListLogActivities getFieldLabel con valore non stringa in map', function (
 });
 
 test('ListLogActivities createFieldLabelMap nested e schema invalido', function (): void {
+<<<<<<< HEAD
     $nested = new ListLogActivitiesNestedFormPage;
     $map = $nested->exposeCreateFieldLabelMap();
     Assert::assertInstanceOf(Collection::class, $map);
 
     $bad = new ListLogActivitiesNonSchemaFormPage;
+=======
+    $nested = new ListLogActivitiesNestedFormPage();
+    $map = $nested->exposeCreateFieldLabelMap();
+    Assert::assertInstanceOf(Collection::class, $map);
+
+    $bad = new ListLogActivitiesNonSchemaFormPage();
+>>>>>>> laraxot/dev
     expect(fn (): mixed => $bad->exposeCreateFieldLabelMap())
         ->toThrow(\InvalidArgumentException::class);
 });
 
 test('ListLogActivities rifiuta paginator non LengthAware', function (): void {
+<<<<<<< HEAD
     $okSubject = new ActivitySubjectHarness;
+=======
+    $okSubject = new ActivitySubjectHarness();
+>>>>>>> laraxot/dev
     $okSubject->forceFill(['id' => 'pag-subj', 'name' => 'p']);
     $okSubject->exists = true;
     Activity::create([
@@ -96,14 +134,22 @@ test('ListLogActivities rifiuta paginator non LengthAware', function (): void {
         'event' => 'e',
     ]);
 
+<<<<<<< HEAD
     $badPag = new ListLogActivitiesBadPaginatorPage;
+=======
+    $badPag = new ListLogActivitiesBadPaginatorPage();
+>>>>>>> laraxot/dev
     $badPag->setRecordForTest($okSubject);
     expect(fn (): mixed => $badPag->getActivities())
         ->toThrow(\InvalidArgumentException::class, 'paginateQuery()');
 });
 
 test('ListLogActivities resolveActivity Invalid record non-Model', function (): void {
+<<<<<<< HEAD
     $page = new ListLogActivitiesPageHarness;
+=======
+    $page = new ListLogActivitiesPageHarness();
+>>>>>>> laraxot/dev
     $prop = new ReflectionProperty($page, 'record');
     $prop->setAccessible(true);
     $prop->setValue($page, 'string-record');
