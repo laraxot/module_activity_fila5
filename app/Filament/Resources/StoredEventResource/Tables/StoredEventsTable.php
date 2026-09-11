@@ -14,6 +14,11 @@ use function Safe\json_encode;
 class StoredEventsTable extends XotBaseResourceTable
 {
     /**
+     * @var class-string<StoredEvent>
+     */
+    protected static string $model = StoredEvent::class;
+
+    /**
      * @return array<string, Column>
      */
     public function getTableColumns(): array
@@ -29,7 +34,7 @@ class StoredEventsTable extends XotBaseResourceTable
                 ->wrap()
                 ->toggleable(isToggledHiddenByDefault: true),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
-            'id' => TextColumn::make('id')->sortable()->toggleable(isToggledHiddenByDefault: true),
+            'id' => TextColumn::make('id')->searchable()->sortable()->toggleable(isToggledHiddenByDefault: true),
         ];
     }
 }
