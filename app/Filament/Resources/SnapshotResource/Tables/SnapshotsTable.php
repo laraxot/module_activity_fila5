@@ -14,6 +14,11 @@ use function Safe\json_encode;
 class SnapshotsTable extends XotBaseResourceTable
 {
     /**
+     * @var class-string<Snapshot>
+     */
+    protected static string $model = Snapshot::class;
+
+    /**
      * @return array<string, Column>
      */
     public function getTableColumns(): array
@@ -28,7 +33,7 @@ class SnapshotsTable extends XotBaseResourceTable
                 ->toggleable(isToggledHiddenByDefault: true),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->toggleable(isToggledHiddenByDefault: true),
-            'id' => TextColumn::make('id')->sortable()->toggleable(isToggledHiddenByDefault: true),
+            'id' => TextColumn::make('id')->searchable()->sortable()->toggleable(isToggledHiddenByDefault: true),
         ];
     }
 }
