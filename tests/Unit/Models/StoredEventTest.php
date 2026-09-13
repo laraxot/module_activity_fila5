@@ -3,8 +3,11 @@
 declare(strict_types=1);
 
 use Modules\Activity\Models\StoredEvent;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent;
+
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('StoredEvent model can be instantiated', function () {
     $reflection = new ReflectionClass(StoredEvent::class);

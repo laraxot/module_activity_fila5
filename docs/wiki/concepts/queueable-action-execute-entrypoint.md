@@ -7,9 +7,9 @@ created: 2026-07-12
 updated: 2026-07-12
 qmd: "Activity QueueableAction execute entrypoint religion spatie laravel-queueable-action"
 issues:
-  - "https://github.com/laraxot/base_ptv_fila5/issues/372"
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/372"
 discussions:
-  - "https://github.com/laraxot/base_ptv_fila5/discussions/273"
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
   - ../../../../docs/QUEUEABLE-ACTION-RULE.md
   - ../../../Xot/docs/queueable-actions.md
@@ -92,4 +92,4 @@ app(ActivityLogger::class)->recordSubject(...);
 ## Backlink
 
 - [wiki index Activity](../index.md)
-- [architecture.md](../../architecture.md) — overview (in aggiornamento verso Actions-only)
+- [ARCHITECTURE.md](../../ARCHITECTURE.md) — overview (in aggiornamento verso Actions-only)

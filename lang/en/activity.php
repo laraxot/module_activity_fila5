@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'navigation' => [
         'name' => 'Activity',
@@ -197,68 +199,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-        'id' => [
-            'label' => 'ID',
-            'help' => 'Identificativo unico dell\'attività',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'log_name' => [
-            'label' => 'Nome Log',
-            'help' => 'Nome del log di attività',
-            'placeholder' => 'log_name',
-            'helper_text' => 'log_name',
-            'description' => 'log_name',
-            'tooltip' => '',
-        ],
-        'subject_type' => [
-            'label' => 'Tipo Soggetto',
-            'help' => 'Tipo di entità coinvolta',
-            'placeholder' => 'subject_type',
-            'helper_text' => 'subject_type',
-            'description' => 'subject_type',
-            'tooltip' => '',
-        ],
-        'subject_id' => [
-            'label' => 'ID Soggetto',
-            'help' => 'Identificativo dell\'entità coinvolta',
-            'placeholder' => 'subject_id',
-            'helper_text' => 'subject_id',
-            'description' => 'subject_id',
-            'tooltip' => '',
-        ],
-        'causer_type' => [
-            'label' => 'Tipo Causatore',
-            'help' => 'Tipo di entità che ha causato l\'attività',
-            'placeholder' => 'causer_type',
-            'helper_text' => 'causer_type',
-            'description' => 'causer_type',
-            'tooltip' => '',
-        ],
-        'causer_id' => [
-            'label' => 'ID Causatore',
-            'help' => 'Identificativo dell\'entità che ha causato l\'attività',
-            'placeholder' => 'causer_id',
-            'helper_text' => 'causer_id',
-            'description' => 'causer_id',
-            'tooltip' => '',
-        ],
-        'batch_uuid' => [
-            'label' => 'Batch UUID',
-            'help' => 'Identificativo del batch di attività',
-            'placeholder' => 'batch_uuid',
-            'helper_text' => 'batch_uuid',
-            'description' => 'batch_uuid',
-            'tooltip' => '',
-        ],
-        'updated_at' => [
-            'label' => 'Data Aggiornamento',
-            'help' => 'Data e ora di aggiornamento dell\'attività',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
     ],
     'filters' => [
         'user' => [
@@ -337,19 +277,6 @@ return [
             'error' => 'Error deleting activities',
             'confirmation' => 'Are you sure you want to delete the selected activities?',
         ],
-        'view' => [
-            'label' => 'Visualizza',
-            'tooltip' => 'Visualizza dettagli attività',
-        ],
-        'restore' => [
-            'label' => 'Ripristina',
-            'tooltip' => 'Ripristina stato precedente',
-        ],
-        'delete' => [
-            'label' => 'delete',
-            'icon' => 'delete',
-            'tooltip' => 'delete',
-        ],
     ],
     'messages' => [
         'no_activities' => 'No activities found for the selected filters',
@@ -361,7 +288,6 @@ return [
             'title' => 'No activities recorded',
             'description' => 'There are no activities to display yet. Activities will appear here when users start interacting with the system.',
         ],
-        'activity_restored' => 'Attività ripristinata con successo',
     ],
     'export' => [
         'formats' => [
@@ -425,11 +351,17 @@ return [
     'pagination' => [
         'per_page' => '25',
         'options' => [
+            0 => '10',
+            1 => '25',
+            2 => '50',
+            3 => '100',
         ],
     ],
     'cache' => [
         'ttl' => '300',
         'tags' => [
+            0 => 'activities',
+            1 => 'monitoring',
         ],
     ],
     'label' => 'Missing Label',

@@ -4,18 +4,15 @@ type: concept
 module: Activity
 tags: [testcase, architecture, hierarchy, inheritance, testing, pest, phpstan]
 created: 2026-06-10
-updated: 2026-08-19
-qmd: "activity testcase xotbasetestcase laravel modules pest phpstan hierarchy slim"
+updated: 2026-06-10
+qmd: "activity testcase xotbasetestcase laravel modules pest phpstan hierarchy"
 status: "active"
 issues:
-  - https://github.com/laraxot/module_activity_fila5/issues/15
-  - https://github.com/laraxot/base_ptv_fila5/issues/316
+  - https://github.com/laraxot/base_fixcity_fila5/issues/316
 discussions:
-  - https://github.com/laraxot/module_activity_fila5/discussions/16
-  - https://github.com/laraxot/base_ptv_fila5/discussions/316
+  - https://github.com/laraxot/base_fixcity_fila5/discussions/316
 related:
-  - ../../../../../../docs/bmad/stories/3.10.activity-slim-testcase.story.md
-  - ./pest-bootstrap-extend-ignore.md
+  - ../../../../Xot/docs/wiki/rules/module-testcase-xotbase-hierarchy.md
   - ../../../tests/TestCase.php
   - ../../../tests/Pest.php
 sources:
@@ -61,16 +58,7 @@ This keeps DRY/KISS without hiding module database boundaries.
 - Moving Activity providers or Activity connections into `XotBaseTestCase` pollutes the platform layer.
 - Replacing Pest files with PHPUnit classes violates the current test rule.
 
-## Refactor pianificato (story 3.10)
-
-`TestCase.php` oggi contiene dead code (`$activityData`, …) e helper Filament (`$page`, `requirePage()`) fuori posto.
-
-Target: file ≤ 45 righe — provider + connections + setUp minimo; trait
-`tests/Concerns/InteractsWithListLogActivitiesPage` per ListLogActivities; helper auth opzionale in Xot.
-
-Story: [3.10.activity-slim-testcase.md](../../../../../../docs/bmad/stories/3.10.activity-slim-testcase.story.md)
-
-## Activity Pattern (target post-3.10)
+## Activity Pattern
 
 ```php
 abstract class TestCase extends XotBaseTestCase

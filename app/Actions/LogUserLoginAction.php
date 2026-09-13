@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\Activity\Actions;
 
 use Modules\Activity\Models\Activity;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -18,7 +18,7 @@ class LogUserLoginAction
     use QueueableAction;
 
     public function __construct(
-        public UserContract $user
+        public User $user
     ) {}
 
     public function execute(): Activity
@@ -26,7 +26,7 @@ class LogUserLoginAction
         $action = new LogActivityAction(
             type: 'login',
             user: $this->user,
-            subject: null,
+            subject: $this->user,
             description: 'User logged in'
         );
 

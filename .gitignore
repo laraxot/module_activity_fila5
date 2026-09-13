@@ -153,4 +153,18 @@ tests/AuditCoverage
 .vscode/
 .windsurf/
 tests/AuditCoverage/
-workbench/
+
+# Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
+phpinsights.php
+rector.php
+graphify-out
+graphify-out/
+.agents
+tools
+workbench
+.claude*
+.codex*
+.gitmodules
+.opencode
+.agents~HEAD
+.opencode~HEAD
