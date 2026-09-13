@@ -9,16 +9,13 @@ use Modules\Activity\Actions\Query\GetSubjectActivityLogAction;
 use Modules\Activity\Actions\RecordSubjectActivityAction;
 use Modules\Activity\Adapters\ActivityRecorder;
 use Modules\Activity\Models\Activity;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use Modules\User\Models\User;
 
 afterEach(function (): void {
     Mockery::close();
 });
 
 test('ActivityRecorder record delega a RecordSubjectActivityAction', function (): void {
-    /** @var TestCase $this */
     $activity = new Activity();
 
     $mock = Mockery::mock(RecordSubjectActivityAction::class);
@@ -37,7 +34,6 @@ test('ActivityRecorder record delega a RecordSubjectActivityAction', function ()
 });
 
 test('ActivityRecorder getLog delega a GetSubjectActivityLogAction', function (): void {
-    /** @var TestCase $this */
     $logEntries = [['id' => 1, 'event' => 'updated']];
 
     $mock = Mockery::mock(GetSubjectActivityLogAction::class);

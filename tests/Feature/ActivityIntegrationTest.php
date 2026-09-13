@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
 
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Str;
 use Modules\Activity\Database\Factories\ActivityFactory;
@@ -13,12 +12,14 @@ use Modules\Activity\Database\Factories\StoredEventFactory;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
+use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
-use Modules\User\Models\User;
+
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('activity module models work together in integrated scenarios', function () {
     $user = UserFactory::new()->createOne();
@@ -195,7 +196,7 @@ test('activity module handles concurrent operations correctly', function () {
         };
     }
 
-    $results = array_map(static fn (callable $promise): mixed => $promise(), $promises);
+    $results = array_map(fn ($promise) => $promise(), $promises);
     Assert::assertCount(10, $results);
     foreach ($results as $result) {
         Assert::assertTrue($result);
@@ -239,7 +240,7 @@ test('activity module supports complex query patterns', function () {
     $complexQuery = Activity::query()
         ->where('causer_type', User::class)
         ->whereIn('log_name', ['security', 'audit'])
-        ->where(static function (Builder $query) use ($user1, $user2): void {
+        ->where(function ($query) use ($user1, $user2) {
             $query->where('causer_id', $user1->id)
                 ->orWhere('causer_id', $user2->id);
         })

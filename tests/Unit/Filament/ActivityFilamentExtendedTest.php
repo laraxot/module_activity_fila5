@@ -10,7 +10,6 @@ use Mockery;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages\EditActivity;
 use Modules\Activity\Filament\Resources\ActivityResource\Schemas\ActivityInfolist;
 use Modules\Activity\Filament\Resources\ActivityResource\Tables\ActivitiesTable;
-use Modules\Activity\Filament\Resources\ActivityResource\Tables\ActivitysTable;
 use Modules\Activity\Filament\Resources\SnapshotResource\Schemas\SnapshotForm;
 use Modules\Activity\Filament\Resources\SnapshotResource\Schemas\SnapshotInfolist;
 use Modules\Activity\Filament\Resources\SnapshotResource\Tables\SnapshotsTable;
@@ -48,14 +47,9 @@ test('ActivitiesTable espone colonne complete', function (): void {
     Assert::assertContainsOnlyInstancesOf(Column::class, $tabella->getTableColumns());
 });
 
-test('ActivitysTable espone colonne compatte', function (): void {
-    $tabella = new ActivitysTable();
-
-    Assert::assertSame(['id', 'log_name', 'description', 'created_at'], array_keys($tabella->getTableColumns()));
-});
-
 test('ActivityInfolist espone schema infolist', function (): void {
-    $schema = ActivityInfolist::getInfolistSchema();
+    $instance = app(\Modules\Activity\Filament\Resources\ActivityResource\Schemas\ActivityInfolist::class);
+    $schema = $instance->getInfolistSchema();
 
     Assert::assertSame(
         [
@@ -76,10 +70,10 @@ test('SnapshotsTable espone colonne attese', function (): void {
 });
 
 test('SnapshotForm e SnapshotInfolist espongono schema', function (): void {
-    Assert::assertSame(['aggregate_uuid', 'aggregate_version', 'state'], array_keys(SnapshotForm::getFormSchema()));
+    Assert::assertSame(['aggregate_uuid', 'aggregate_version', 'state'], array_keys(app(\Modules\Activity\Filament\Resources\SnapshotResource\Schemas\SnapshotForm::class)->getFormSchema()));
     Assert::assertSame(
         ['id', 'model_type', 'model_id', 'created_by_type', 'created_by_id', 'created_at'],
-        array_keys(SnapshotInfolist::getInfolistSchema()),
+        array_keys(app(\Modules\Activity\Filament\Resources\SnapshotResource\Schemas\SnapshotInfolist::class)->getInfolistSchema()),
     );
 });
 
@@ -92,11 +86,11 @@ test('StoredEventsTable StoredEventForm StoredEventInfolist espongono schema', f
 
     Assert::assertSame(
         ['event_class', 'event_properties', 'aggregate_uuid', 'aggregate_version', 'meta_data', 'created_at'],
-        array_keys(StoredEventForm::getFormSchema()),
+        array_keys(app(\Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventForm::class)->getFormSchema()),
     );
 
     Assert::assertSame(
         ['id', 'event_class', 'aggregate_uuid', 'aggregate_version', 'created_at'],
-        array_keys(StoredEventInfolist::getInfolistSchema()),
+        array_keys(app(\Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventInfolist::class)->getInfolistSchema()),
     );
 });

@@ -5,18 +5,14 @@ declare(strict_types=1);
 namespace Modules\Activity\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Carbon;
+use Modules\Activity\Database\Factories\SnapshotFactory;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
 
 /**
  * Modules\Activity\Models\Snapshot.
- *
- * @method static \Modules\Activity\Database\Factories\SnapshotFactory factory($count = null, $state = [])
- * @method static Builder<static>|Snapshot newModelQuery()
- * @method static Builder<static>|Snapshot newQuery()
- * @method static Builder<static>|Snapshot query()
- * @method static Builder<static>|Snapshot uuid(string $uuid)
  *
  * @property int $id
  * @property string $aggregate_uuid
@@ -27,6 +23,10 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  * @property string|null $updated_by
  * @property string|null $created_by
  *
+ * @method static Builder<static>|Snapshot newModelQuery()
+ * @method static Builder<static>|Snapshot newQuery()
+ * @method static Builder<static>|Snapshot query()
+ * @method static Builder<static>|Snapshot uuid(string $uuid)
  * @method static Builder<static>|Snapshot whereAggregateUuid($value)
  * @method static Builder<static>|Snapshot whereAggregateVersion($value)
  * @method static Builder<static>|Snapshot whereCreatedAt($value)
@@ -35,6 +35,7 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  * @method static Builder<static>|Snapshot whereState($value)
  * @method static Builder<static>|Snapshot whereUpdatedAt($value)
  * @method static Builder<static>|Snapshot whereUpdatedBy($value)
+ * @method static SnapshotFactory factory($count = null, $state = [])
  *
  * @mixin \Eloquent
  */
@@ -42,6 +43,7 @@ class Snapshot extends SpatieSnapshot
 {
     use HasXotFactory;
 
+    /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
     protected $connection = 'activity';
 
     /** @var list<string> */

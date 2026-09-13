@@ -3,13 +3,12 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Actions;
-use Modules\User\Models\User;
 
 use Mockery;
 use Modules\Activity\Actions\ActivityLogger as ActivityLoggerAction;
 use Modules\Activity\Adapters\ActivityLogger as ActivityLoggerAdapter;
 use Modules\Activity\Models\Activity;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
 afterEach(function (): void {

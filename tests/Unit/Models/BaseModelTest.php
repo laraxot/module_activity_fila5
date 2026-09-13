@@ -3,8 +3,11 @@
 declare(strict_types=1);
 
 use Modules\Activity\Models\BaseModel;
+use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Models\XotBaseModel;
 use PHPUnit\Framework\Assert;
+
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('BaseModel has correct connection', function () {
     $model = new class() extends BaseModel

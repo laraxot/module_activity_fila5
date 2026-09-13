@@ -15,7 +15,8 @@ final class RedactModelAttributesAction
     use QueueableAction;
 
     /** @var list<string> */
-    private const array SENSITIVE_KEYS = ['password',
+    private const array SENSITIVE_KEYS = [
+        'password',
         'remember_token',
         'two_factor_secret',
         'two_factor_recovery_codes',
