@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Actions;
-use Modules\User\Models\User;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
@@ -26,7 +25,7 @@ use Modules\Activity\Adapters\ActivityLogger as ActivityLoggerAdapter;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\Fixtures\ActivitySubjectHarness;
 use Modules\Activity\Tests\Fixtures\LogActivityActionTestModel;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
 beforeEach(function (): void {

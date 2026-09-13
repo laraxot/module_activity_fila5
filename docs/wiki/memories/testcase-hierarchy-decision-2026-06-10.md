@@ -9,9 +9,9 @@ qmd: "activity testcase xotbasetestcase decision nwidart missing base testcase"
 status: "active"
 priority: "high"
 issues:
-  - https://github.com/laraxot/base_ptv_fila5/issues/316
+  - https://github.com/laraxot/base_fixcity_fila5/issues/316
 discussions:
-  - https://github.com/laraxot/base_ptv_fila5/discussions/316
+  - https://github.com/laraxot/base_fixcity_fila5/discussions/316
 related:
   - ../concepts/testcase-hierarchy-architecture.md
   - ../../../../Xot/docs/wiki/rules/module-testcase-xotbase-hierarchy.md

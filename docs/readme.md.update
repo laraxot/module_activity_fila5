@@ -1,15 +1,3 @@
----
-module: theme
-topic: readme.md
-canonical: ../../../Themes/docs/shared-components/README.md.update
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/README.md.update
-
----
-
-<!-- Merged from README.md.update, which collided with this file on case-insensitive filesystems. -->
-
 # Aggiornamento README Activity - Sezione Testing
 
 ## Sezione da Aggiungere
