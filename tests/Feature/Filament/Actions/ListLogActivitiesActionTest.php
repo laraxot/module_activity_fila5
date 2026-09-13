@@ -6,7 +6,10 @@ use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestPage;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestRecord;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestResource;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('action has correct default name', function (): void {
     Assert::assertSame('list_log_activities', ListLogActivitiesAction::getDefaultName());
