@@ -5,7 +5,10 @@ declare(strict_types=1);
 use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('Snapshot model can be instantiated', function () {
     $snapshot = new Snapshot();

@@ -1,15 +1,3 @@
----
-module: theme
-topic: filament_resource_guidelines
-canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules
-
----
-
-<!-- Merged from FILAMENT_RESOURCE_GUIDELINES.md, which collided with this file on case-insensitive filesystems. -->
-
 # Activity Module Filament Resource Guidelines
 
 ## Extension Patterns

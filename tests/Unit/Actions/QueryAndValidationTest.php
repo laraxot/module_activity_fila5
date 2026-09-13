@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Actions;
-use Modules\User\Models\User;
 
 use Illuminate\Database\Eloquent\Model;
 use InvalidArgumentException;
@@ -18,7 +17,7 @@ use Modules\Activity\Actions\RecordSubjectActivityAction;
 use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Adapters\ActivityLogger as ActivityLoggerAdapter;
 use Modules\Activity\Adapters\ActivityRecorder;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 use Webmozart\Assert\InvalidArgumentException as AssertInvalidArgumentException;
 

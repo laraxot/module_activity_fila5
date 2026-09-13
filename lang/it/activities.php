@@ -36,8 +36,8 @@ return [
         'subject_id' => ['label' => 'subject_id'],
         'causer_type' => ['label' => 'causer_type'],
         'causer_id' => ['label' => 'causer_id'],
-        'properties' => ['label' => 'properties'],
         'batch_uuid' => ['label' => 'batch_uuid'],
+        'properties' => ['label' => 'properties'],
     ],
     'actions' => [
         'create' => ['label' => 'Crea Activities'],

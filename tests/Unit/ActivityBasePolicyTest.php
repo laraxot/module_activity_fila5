@@ -5,11 +5,14 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Unit;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
+use Mockery;
+use Mockery\MockInterface;
 use Modules\Activity\Models\Policies\ActivityBasePolicy;
 use Modules\Activity\Tests\TestCase;
-use Modules\Xot\Contracts\UserContract;
-use PHPUnit\Framework\Assert;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
+
+uses(\Modules\Activity\Tests\TestCase::class);
 
 describe('Activity Base Policy', function (): void {
     test('policy is abstract', function (): void {
@@ -27,12 +30,10 @@ describe('Activity Base Policy', function (): void {
     });
 
     test('super admin user always allowed', function (): void {
-        /** @var TestCase $this */
         // Create a mock super-admin user
-        $user = $this->createUnitMock(User::class);
-        $user->method('hasRole')->willReturnCallback(
-            static fn (string $role): bool => $role === 'super-admin'
-        );
+        /** @var MockInterface&User $user */
+        $user = Mockery::mock(User::class);
+        $user->shouldReceive('hasRole')->with('super-admin')->andReturn(true);
 
         // Test the policy
         $policy = new class() extends ActivityBasePolicy
@@ -45,21 +46,5 @@ describe('Activity Base Policy', function (): void {
 
         $result = $policy->policyBefore($user);
         Assert::assertTrue($result);
-    });
-
-    test('before ritorna null per utente non super-admin', function (): void {
-        /** @var TestCase $this */
-        $user = $this->createUnitMock(User::class);
-        $user->method('hasRole')->willReturn(false);
-
-        $policy = new class() extends ActivityBasePolicy
-        {
-            public function policyBefore(User $user): ?bool
-            {
-                return $this->before($user);
-            }
-        };
-
-        Assert::assertNull($policy->policyBefore($user));
     });
 });

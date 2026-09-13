@@ -19,8 +19,11 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Modules\Activity\Models\StoredEvent;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
+
+uses(\Modules\Activity\Tests\TestCase::class);
 
 // Pest test — Activity module regression case
 test('can handle event with empty properties', function (): void {

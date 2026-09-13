@@ -4,17 +4,15 @@ type: concept
 module: Activity
 tags: [activity, phpstan, pest, testing, second-brain]
 created: 2026-06-10
-updated: 2026-08-19
-qmd: "Activity phpstan pest discipline requirePage createUnitMock skipTest namespace uses fqcn pest extend"
+updated: 2026-06-13
+qmd: "Activity phpstan pest discipline requirePage createUnitMock skipTest namespace uses fqcn"
 issues:
-  - "https://github.com/laraxot/module_activity_fila5/issues/15"
   - "https://github.com/laraxot/base_fixcity_fila5/issues/328"
+  - "https://github.com/laraxot/module_activity_fila5/issues/15"
 discussions:
-  - "https://github.com/laraxot/module_activity_fila5/discussions/16"
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/329"
+  - "https://github.com/laraxot/module_activity_fila5/discussions/16"
 related:
-  - ./pest-bootstrap-extend-ignore.md
-  - ../../../../../../docs/bmad/stories/3.9.activity-pest-extend-bootstrap.story.md
   - ../../../../../../docs/wiki/rules/phpstan-pest-tests-stay-pest.md
   - ../../../../../../docs/wiki/troubleshooting/phpstan-test-assertion-chaining.md
 ---
@@ -47,19 +45,11 @@ test('activity row is produced', function (): void {
 
 Il runner, la discovery e la semantica restano Pest. `Assert::assert*()` e' solo API pubblica di assertion quando PHPStan non riesce a tipizzare la DSL `expect()`.
 
-## Bootstrap Pest (2026-08-19)
-
-`tests/Pest.php` usa `pest()->extend(TestCase::class)->in('.')` con ignore inline PHPStan — **no**
-`require_once PestStubs.php`. Dettaglio: [pest-bootstrap-extend-ignore.md](./pest-bootstrap-extend-ignore.md).
-
-I file test possono omettere `uses(TestCase::class)` se coperti da `extend`; i file legacy possono
-mantenerlo senza conflitto.
-
 ## Anti-pattern
 
 - `final class ... extends TestCase` per sostituire un file Pest.
-- `require_once` verso stub o helper cross-modulo (usare PSR-4 `XotBasePest` o plugin Pest 5).
-- ignore globali in `phpstan.neon` (solo utente); eccezione inline **solo** su `tests/Pest.php` documentata in story 3.9.
+- `pest()->extend(...)` o catene su oggetti interni Pest quando PHPStan le segnala come `method.internalClass`.
+- nuove ignore o baseline PHPStan.
 
 ## Pattern PHPStan L10 osservati
 

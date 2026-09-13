@@ -19,7 +19,6 @@ use Modules\Activity\Tests\Fixtures\ListLogActivitiesRestorableResource;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesStdClassResourceHarness;
 use Modules\Activity\Tests\Fixtures\RestoreActivityActionFails;
 use Modules\Activity\Tests\Fixtures\RestoreActivityActionNoOp;
-use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
@@ -78,7 +77,6 @@ test('ListLogActivities getActivities paginate e errori record', function (): vo
 });
 
 test('ListLogActivities canRestore e restoreActivity percorsi', function (): void {
-    /** @var TestCase $this */
     $subject = activitySubjectForPage('restore-subj');
     $activity = Activity::create([
         'log_name' => 'default',

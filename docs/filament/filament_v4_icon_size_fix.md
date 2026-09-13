@@ -1,15 +1,3 @@
----
-module: theme
-topic: filament_v4_icon_size_fix
-canonical: ../../../../Themes/docs/shared-components/filament_v4_icon_size_fix.md
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/filament_v4_icon_size_fix.md
-
----
-
-<!-- Merged from FILAMENT_V4_ICON_SIZE_FIX.md, which collided with this file on case-insensitive filesystems. -->
-
 # Filament v4 Icon Size Attribute Fix
 
 ## Issue Description
