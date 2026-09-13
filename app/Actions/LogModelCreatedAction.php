@@ -6,7 +6,6 @@ namespace Modules\Activity\Actions;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Models\Activity;
-use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -20,7 +19,7 @@ class LogModelCreatedAction
 
     public function __construct(
         public Model $model,
-        public Model|UserContract|null $user = null,
+        public ?Model $user = null,
     ) {
         if ($user !== null) {
             // Type already narrowed to Model|null, assertion not needed

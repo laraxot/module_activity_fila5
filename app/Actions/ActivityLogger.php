@@ -11,9 +11,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
 
 /**
  * Activity Logger Action.
@@ -29,17 +28,23 @@ class ActivityLogger
      */
     public function log(
         string $type,
-        ?UserContract $user = null,
+        mixed $user = null,
         ?Model $subject = null,
         ?array $properties = null,
         ?string $description = null,
     ): Activity {
-        $userId = $user?->getKey();
+        $userId = null;
+        if ($user !== null) {
+            // Type checking for User model
+            if (! $user instanceof User) {
+                throw new InvalidArgumentException('User must be an instance of User');
+            }
+
+            // Type narrowing for user ID - use getAttribute for Eloquent models
+            $userId = $user->getAttribute('id');
+        }
         if ($userId === null) {
             $userId = Auth::id();
-            if ($userId !== null && ! is_int($userId) && ! is_string($userId)) {
-                $userId = null;
-            }
         }
 
         /** @var Activity $activity */
@@ -65,7 +70,7 @@ class ActivityLogger
     /**
      * Log created event.
      */
-    public function created(Model $model, ?UserContract $user = null): Activity
+    public function created(Model $model, ?User $user = null): Activity
     {
         $action = new LogModelCreatedAction($model, $user);
 
@@ -75,7 +80,7 @@ class ActivityLogger
     /**
      * Log updated event.
      */
-    public function updated(Model $model, ?UserContract $user = null): Activity
+    public function updated(Model $model, ?User $user = null): Activity
     {
         $action = new LogModelUpdatedAction($model, $user);
 
@@ -85,7 +90,7 @@ class ActivityLogger
     /**
      * Log deleted event.
      */
-    public function deleted(Model $model, ?UserContract $user = null): Activity
+    public function deleted(Model $model, ?User $user = null): Activity
     {
         $action = new LogModelDeletedAction($model, $user);
 
@@ -95,7 +100,7 @@ class ActivityLogger
     /**
      * Log login event.
      */
-    public function login(UserContract $user): Activity
+    public function login(User $user): Activity
     {
         $action = new LogUserLoginAction($user);
 
@@ -105,7 +110,7 @@ class ActivityLogger
     /**
      * Log logout event.
      */
-    public function logout(UserContract $user): Activity
+    public function logout(User $user): Activity
     {
         $action = new LogUserLogoutAction($user);
 
@@ -129,14 +134,13 @@ class ActivityLogger
      *
      * @return Collection<int, Activity>
      */
-    public function getUserActivities(UserContract $user, int $limit = 50): Collection
+    public function getUserActivities(User $user, int $limit = 50): Collection
     {
         if ($limit <= 0) {
             throw new InvalidArgumentException('Limit must be positive');
         }
 
         $userKey = $user->getKey();
-        Assert::scalar($userKey, 'User key must be scalar');
         $userKeyValues = [$userKey];
         if (is_string($userKey)) {
             $userKeyValues[] = $userKey;
@@ -234,7 +238,7 @@ class ActivityLogger
      *
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
-    public function getStatistics(?UserContract $user = null): array
+    public function getStatistics(?User $user = null): array
     {
         $query = Activity::query();
 
@@ -257,7 +261,7 @@ class ActivityLogger
 
                 // Explicitly map and cast to ensure types
                 /** @var array<string, int> $byType */
-                $byType = $results->mapWithKeys(function (object $item, int $_key): array {
+                $byType = $results->mapWithKeys(function (object $item): array {
                     // PHPStan L10: isset() per magic attributes invece di property_exists()
                     if (! isset($item->event, $item->count)) {
                         return [];

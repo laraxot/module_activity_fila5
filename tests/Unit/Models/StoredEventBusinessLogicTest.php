@@ -3,7 +3,10 @@
 declare(strict_types=1);
 
 use Modules\Activity\Models\StoredEvent;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(\Modules\Activity\Tests\TestCase::class);
 
 describe('StoredEvent Business Logic', function (): void {
     test('stored event has correct connection configured', function (): void {

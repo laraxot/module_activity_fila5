@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Modules\Activity\Models\Activity;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -21,7 +21,7 @@ class GetActivityStatisticsAction
     /**
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
-    public function execute(?UserContract $user = null): array
+    public function execute(?User $user = null): array
     {
         $userKey = $user?->getKey();
         $cacheKeySuffix = is_scalar($userKey) ? (string) $userKey : 'global';
@@ -38,9 +38,10 @@ class GetActivityStatisticsAction
     /**
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
-    private function computeStatistics(?UserContract $user): array
+    private function computeStatistics(?User $user): array
     {
-        $query = Activity::query();
+        /** @var Builder<Activity> $query */
+        $query = Activity::newQuery();
 
         if ($user) {
             $query->where('causer_id', $user->getKey())
