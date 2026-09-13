@@ -28,6 +28,8 @@ abstract class BaseModel extends XotBaseModel
      * Extends parent casts with Activity-specific fields.
      * Common casts (id, uuid, published_at, created_at, updated_at, deleted_at, etc.)
      * are inherited from XotBaseModel.
+     *
+     * @return array<string, string>
      */
     protected function casts(): array
     {

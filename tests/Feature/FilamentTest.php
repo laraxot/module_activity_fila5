@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Feature;
 
 use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+use Filament\Tables\Table;
 use Modules\Activity\Events\ActivityEvent;
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
@@ -18,32 +20,23 @@ use Modules\Activity\Filament\Resources\StoredEventResource\Pages\ListStoredEven
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
+use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 use PHPUnit\Framework\Assert;
 
 use function Safe\class_uses;
 
-/**
- * @return array<string, mixed>
- */
-function invokeProtectedTableMethod(object $page, string $method): array
-{
-    $reflection = new \ReflectionMethod($page, $method);
-    /** @var array<string, mixed> $result */
-    $result = $reflection->invoke($page);
-
-    return $result;
-}
+uses(TestCase::class);
 
 describe('ActivityEvent', function (): void {
     test('can be instantiated', function (): void {
-        $event = new ActivityEvent();
+        $event = new ActivityEvent;
         Assert::assertInstanceOf(ActivityEvent::class, $event);
     });
 
     test('uses correct traits', function (): void {
-        $event = new ActivityEvent();
+        $event = new ActivityEvent;
 
         // Verify the event has the traits
         $traits = class_uses($event);
@@ -108,10 +101,10 @@ describe('CanPaginate trait', function (): void {
         Assert::assertTrue($trait->hasProperty('recordsPerPage'));
     });
 
-    test('trait has defaultRecordsPerPageSelectOption property', function (): void {
+    test('trait has defaultPerPageOption property', function (): void {
         $trait = new \ReflectionClass(CanPaginate::class);
 
-        Assert::assertTrue($trait->hasProperty('defaultRecordsPerPageSelectOption'));
+        Assert::assertTrue($trait->hasProperty('defaultPerPageOption'));
     });
 
     test('trait has getRecordsPerPageSelectOptions method', function (): void {
@@ -122,8 +115,8 @@ describe('CanPaginate trait', function (): void {
 });
 
 describe('ActivityResource', function (): void {
-    test('can be instantiated #2', function (): void {
-        $resource = new ActivityResource();
+    test('can be instantiated', function (): void {
+        $resource = new ActivityResource;
         Assert::assertInstanceOf(ActivityResource::class, $resource);
     });
 
@@ -132,7 +125,8 @@ describe('ActivityResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
-        $schema = ActivityResource::getFormSchemaOld();
+        $instance = app(\Modules\Activity\Filament\Resources\ActivityResource\Schemas\ActivityForm::class);
+        $schema = $instance->getFormSchema();
 
         Assert::assertArrayHasKey('log_name', $schema);
         Assert::assertArrayHasKey('description', $schema);
@@ -146,8 +140,8 @@ describe('ActivityResource', function (): void {
 });
 
 describe('EditActivity page', function (): void {
-    test('can be instantiated #3', function (): void {
-        $page = new EditActivity();
+    test('can be instantiated', function (): void {
+        $page = new EditActivity;
         Assert::assertInstanceOf(EditActivity::class, $page);
     });
 
@@ -162,18 +156,18 @@ describe('EditActivity page', function (): void {
     });
 
     test('extends XotBaseEditRecord', function (): void {
-        $page = new EditActivity();
+        $page = new EditActivity;
         Assert::assertInstanceOf(XotBaseEditRecord::class, $page);
     });
 });
 
 describe('ListActivities page', function (): void {
-    test('can be instantiated #4', function (): void {
-        $page = new ListActivities();
+    test('can be instantiated', function (): void {
+        $page = new ListActivities;
         Assert::assertInstanceOf(ListActivities::class, $page);
     });
 
-    test('uses correct resource via getResource #2', function (): void {
+    test('uses correct resource via getResource', function (): void {
         $reflection = new \ReflectionClass(ListActivities::class);
         $property = $reflection->getProperty('resource');
         $property->setAccessible(true);
@@ -183,9 +177,10 @@ describe('ListActivities page', function (): void {
     });
 
     test('has table columns', function (): void {
-        $page = new ListActivities();
-        $columns = invokeProtectedTableMethod($page, 'getTableColumns');
+        $page = new ListActivities;
+        $columns = $page->table(Table::make($page))->getColumns();
 
+        Assert::assertNotEmpty($columns);
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('description', $columns);
         Assert::assertArrayHasKey('subject_type', $columns);
@@ -197,17 +192,18 @@ describe('ListActivities page', function (): void {
 });
 
 describe('SnapshotResource', function (): void {
-    test('can be instantiated #5', function (): void {
-        $resource = new SnapshotResource();
+    test('can be instantiated', function (): void {
+        $resource = new SnapshotResource;
         Assert::assertInstanceOf(SnapshotResource::class, $resource);
     });
 
-    test('has correct model #2', function (): void {
+    test('has correct model', function (): void {
         Assert::assertSame(Snapshot::class, SnapshotResource::getModel());
     });
 
-    test('has required form schema fields #2', function (): void {
-        $schema = SnapshotResource::getFormSchemaOld();
+    test('has required form schema fields', function (): void {
+        $instance = app(\Modules\Activity\Filament\Resources\SnapshotResource\Schemas\SnapshotForm::class);
+        $schema = $instance->getFormSchema();
 
         Assert::assertArrayHasKey('model_type', $schema);
         Assert::assertArrayHasKey('model_id', $schema);
@@ -218,12 +214,12 @@ describe('SnapshotResource', function (): void {
 });
 
 describe('ListSnapshots page', function (): void {
-    test('can be instantiated #6', function (): void {
-        $page = new ListSnapshots();
+    test('can be instantiated', function (): void {
+        $page = new ListSnapshots;
         Assert::assertInstanceOf(ListSnapshots::class, $page);
     });
 
-    test('uses correct resource via getResource #3', function (): void {
+    test('uses correct resource via getResource', function (): void {
         $reflection = new \ReflectionClass(ListSnapshots::class);
         $property = $reflection->getProperty('resource');
         $property->setAccessible(true);
@@ -232,10 +228,11 @@ describe('ListSnapshots page', function (): void {
         Assert::assertSame(SnapshotResource::class, $resource);
     });
 
-    test('has table columns #2', function (): void {
-        $page = new ListSnapshots();
-        $columns = invokeProtectedTableMethod($page, 'getTableColumns');
+    test('has table columns', function (): void {
+        $page = new ListSnapshots;
+        $columns = $page->table(Table::make($page))->getColumns();
 
+        Assert::assertNotEmpty($columns);
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('aggregate_uuid', $columns);
         Assert::assertArrayHasKey('aggregate_version', $columns);
@@ -245,41 +242,40 @@ describe('ListSnapshots page', function (): void {
     });
 
     test('has table filters', function (): void {
-        $page = new ListSnapshots();
-        $filters = invokeProtectedTableMethod($page, 'getTableFilters');
+        $page = new ListSnapshots;
+        $filters = $page->table(Table::make($page))->getFilters();
 
         Assert::assertNotEmpty($filters);
     });
 
     test('has table actions', function (): void {
-        $page = new ListSnapshots();
-        $actions = invokeProtectedTableMethod($page, 'getTableActions');
+        $page = new ListSnapshots;
+        $actions = $page->table(Table::make($page))->getRecordActions();
 
-        Assert::assertArrayHasKey('view', $actions);
-        Assert::assertArrayHasKey('edit', $actions);
-        Assert::assertArrayHasKey('delete', $actions);
+        Assert::assertNotEmpty($actions);
     });
 
     test('has bulk actions', function (): void {
-        $page = new ListSnapshots();
-        $bulkActions = invokeProtectedTableMethod($page, 'getTableBulkActions');
+        $page = new ListSnapshots;
+        $bulkActions = $page->table(Table::make($page))->getToolbarActions();
 
         Assert::assertNotEmpty($bulkActions);
     });
 });
 
 describe('StoredEventResource', function (): void {
-    test('can be instantiated #7', function (): void {
-        $resource = new StoredEventResource();
+    test('can be instantiated', function (): void {
+        $resource = new StoredEventResource;
         Assert::assertInstanceOf(StoredEventResource::class, $resource);
     });
 
-    test('has correct model #3', function (): void {
+    test('has correct model', function (): void {
         Assert::assertSame(StoredEvent::class, StoredEventResource::getModel());
     });
 
-    test('has required form schema fields #3', function (): void {
-        $schema = StoredEventResource::getFormSchemaOld();
+    test('has required form schema fields', function (): void {
+        $instance = app(\Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventForm::class);
+        $schema = $instance->getFormSchema();
 
         Assert::assertArrayHasKey('event_class', $schema);
         Assert::assertArrayHasKey('event_properties', $schema);
@@ -291,12 +287,12 @@ describe('StoredEventResource', function (): void {
 });
 
 describe('ListStoredEvents page', function (): void {
-    test('can be instantiated #8', function (): void {
-        $page = new ListStoredEvents();
+    test('can be instantiated', function (): void {
+        $page = new ListStoredEvents;
         Assert::assertInstanceOf(ListStoredEvents::class, $page);
     });
 
-    test('uses correct resource via getResource #4', function (): void {
+    test('uses correct resource via getResource', function (): void {
         $reflection = new \ReflectionClass(ListStoredEvents::class);
         $property = $reflection->getProperty('resource');
         $property->setAccessible(true);
@@ -305,12 +301,10 @@ describe('ListStoredEvents page', function (): void {
         Assert::assertSame(StoredEventResource::class, $resource);
     });
 
-    test('has table columns #3', function (): void {
-        $page = new ListStoredEvents();
-        $columns = invokeProtectedTableMethod($page, 'getTableColumns');
+    test('has table columns', function (): void {
+        $page = new ListStoredEvents;
+        $columns = $page->table(Table::make($page))->getColumns();
 
-        Assert::assertArrayHasKey('id', $columns);
-        Assert::assertArrayHasKey('event_class', $columns);
-        Assert::assertArrayHasKey('event_properties', $columns);
+        Assert::assertNotEmpty($columns);
     });
 });

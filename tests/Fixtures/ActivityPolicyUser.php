@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Fixtures;
 
-use Modules\Xot\Contracts\UserContract;
 use Modules\User\Models\User;
 
 /**

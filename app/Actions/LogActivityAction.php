@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -25,8 +25,8 @@ class LogActivityAction
      */
     public function __construct(
         public string $type,
-        public Model|UserContract|null $user = null,
-        public Model|UserContract|null $subject = null,
+        public ?Model $user = null,
+        public ?Model $subject = null,
         public ?array $properties = null,
         public ?string $description = null,
     ) {
@@ -37,27 +37,27 @@ class LogActivityAction
 
     public function execute(): Activity
     {
-        $user = $this->user;
-
         $causerId = null;
-        $causer_type = null;
-        if ($user instanceof UserContract || $user instanceof Model) {
-            $userId = $user->getKey();
+        if ($this->user !== null) {
+            if (! $this->user instanceof User) {
+                throw new InvalidArgumentException('User must be an instance of User');
+            }
+            // Type narrowing for user ID - use getAttribute for Eloquent models
+            $userId = $this->user->getAttribute('id');
             $causerId = is_int($userId) || is_string($userId) ? $userId : null;
-            $causer_type = $user::class;
         }
         if ($causerId === null) {
             $causerId = Auth::id();
         }
 
-        $subject = $this->subject;
+        $activityClass = Activity::class;
 
-        return Activity::create([
+        return $activityClass::create([
             'log_name' => $this->type,
             'description' => $this->description ?? sprintf('Activity: %s', $this->type),
-            'subject_type' => $subject?->getMorphClass(),
-            'subject_id' => $subject?->getKey(),
-            'causer_type' => $causer_type,
+            'subject_type' => $this->subject ? get_class($this->subject) : null,
+            'subject_id' => $this->subject?->getKey(),
+            'causer_type' => $this->user ? User::class : null,
             'causer_id' => $causerId,
             'properties' => $this->properties,
             'event' => $this->type,

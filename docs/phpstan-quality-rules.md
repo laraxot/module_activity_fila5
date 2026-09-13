@@ -135,7 +135,7 @@ Se escludi i test da PHPStan:
 declare(strict_types=1);
 
 use Modules\Activity\Models\Activity;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 
 test('activity is logged correctly', function (): void {
     // Type-safe factory usage

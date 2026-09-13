@@ -24,19 +24,18 @@ class ActivityServiceProvider extends XotBaseServiceProvider
     /**
      * Directory del modulo.
      */
-    protected string $module_dir = __DIR__;
+    protected string $moduleDir = __DIR__;
 
     /**
      * Namespace del modulo.
      */
-    protected string $module_ns = __NAMESPACE__;
+    protected string $moduleNs = __NAMESPACE__;
 
     /**
      * Boot del service provider.
      *
      * Configura il modulo Activity e registra le configurazioni specifiche.
      */
-    #[Override]
     public function boot(): void
     {
         parent::boot();
@@ -55,7 +54,6 @@ class ActivityServiceProvider extends XotBaseServiceProvider
     /**
      * Registra le configurazioni del modulo.
      */
-    #[Override]
     protected function registerConfig(): void
     {
         $this->publishes([

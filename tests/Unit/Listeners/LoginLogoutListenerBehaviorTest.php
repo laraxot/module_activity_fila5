@@ -3,15 +3,17 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Listeners;
-use Modules\User\Models\User;
 
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Support\Str;
 use Modules\Activity\Listeners\LoginListener;
 use Modules\Activity\Listeners\LogoutListener;
 use Modules\Activity\Models\Activity;
-use Modules\Xot\Contracts\UserContract;
+use Modules\Activity\Tests\TestCase;
+use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('login listener handle executes without side effects', function (): void {
     $listener = new LoginListener();
