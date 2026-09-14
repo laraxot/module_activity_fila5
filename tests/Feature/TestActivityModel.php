@@ -25,25 +25,16 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property int|null $updated_by
  * @property int|null $deleted_by
  *
- * @method static Factory<static> factory()
- *
+
  * @coversNothing
  */
 class TestActivityModel extends BaseModel
 {
-    /**
-     * @use HasFactory<Factory<self>>
-     *
-     * newFactory() è fornito da HasXotFactory (già tipizzato `: Factory`, ereditato da
-     * XotBaseModel tramite BaseModel): senza insteadof la versione non tipizzata di
-     * HasFactory::newFactory() viola la firma dell'antenato e PHP va in fatal error
-     * "Declaration ... must be compatible" al primo autoload della classe.
-     */
-    use HasFactory, HasXotFactory {
-        HasXotFactory::newFactory insteadof HasFactory;
-        HasXotFactory::factory insteadof HasFactory;
-    }
+    /** @use HasFactory<Factory<self>> */
+    use HasFactory;
 
+    /** @use HasXotFactory<Factory<static>> */
+    use HasXotFactory;
     /** @var string */
     protected $table = 'test_models';
 
