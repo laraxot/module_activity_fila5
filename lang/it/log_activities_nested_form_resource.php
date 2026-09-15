@@ -8,7 +8,12 @@ return [
         'vuoto' => ['label' => 'vuoto', 'heading' => 'vuoto'],
     ],
     'fields' => [
+<<<<<<< HEAD
         'nested_field' => ['label' => 'nested_field', 'placeholder' => 'nested_field', 'helper_text' => '', 'description' => 'nested_field'],
         'flat_field' => ['label' => 'flat_field', 'placeholder' => 'flat_field', 'helper_text' => '', 'description' => 'flat_field'],
+=======
+        'nested_field' => ['label' => 'nested_field', 'placeholder' => 'nested_field', 'helper_text' => 'nested_field', 'description' => 'nested_field'],
+        'flat_field' => ['label' => 'flat_field', 'placeholder' => 'flat_field', 'helper_text' => 'flat_field', 'description' => 'flat_field'],
+>>>>>>> laraxot/dev
     ],
 ];
