@@ -8,8 +8,6 @@ use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
 use PHPUnit\Framework\Assert;
 
-uses()->group('no-activity-db');
-
 describe('coverage senza database activity_log', function (): void {
     test('RedactModelAttributesAction rimuove chiavi sensibili', function (): void {
         $action = new RedactModelAttributesAction();

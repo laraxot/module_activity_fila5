@@ -41,7 +41,6 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  */
 class Snapshot extends SpatieSnapshot
 {
-    /** @use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     /** @var string */
