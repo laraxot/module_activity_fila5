@@ -72,21 +72,9 @@ class ActivityLogger
      */
     public function created(Model $model, ?User $user = null): Activity
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $action = new LogModelCreatedAction;
-
-        return $action->execute($model);
-=======
         $action = new LogModelCreatedAction($model, $user);
 
         return $action->execute();
->>>>>>> 0a02158a (.)
-=======
-        $action = new LogModelCreatedAction($model, $user);
-
-        return $action->execute();
->>>>>>> 35d8cf69 (Initial commit)
     }
 
     /**
@@ -94,21 +82,9 @@ class ActivityLogger
      */
     public function updated(Model $model, ?User $user = null): Activity
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $action = new LogModelUpdatedAction;
-
-        return $action->execute($model);
-=======
         $action = new LogModelUpdatedAction($model, $user);
 
         return $action->execute();
->>>>>>> 0a02158a (.)
-=======
-        $action = new LogModelUpdatedAction($model, $user);
-
-        return $action->execute();
->>>>>>> 35d8cf69 (Initial commit)
     }
 
     /**
@@ -116,21 +92,9 @@ class ActivityLogger
      */
     public function deleted(Model $model, ?User $user = null): Activity
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $action = new LogModelDeletedAction;
-
-        return $action->execute($model);
-=======
         $action = new LogModelDeletedAction($model, $user);
 
         return $action->execute();
->>>>>>> 0a02158a (.)
-=======
-        $action = new LogModelDeletedAction($model, $user);
-
-        return $action->execute();
->>>>>>> 35d8cf69 (Initial commit)
     }
 
     /**
@@ -138,21 +102,9 @@ class ActivityLogger
      */
     public function login(User $user): Activity
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $action = new LogUserLoginAction;
-
-        return $action->execute($user);
-=======
         $action = new LogUserLoginAction($user);
 
         return $action->execute();
->>>>>>> 0a02158a (.)
-=======
-        $action = new LogUserLoginAction($user);
-
-        return $action->execute();
->>>>>>> 35d8cf69 (Initial commit)
     }
 
     /**
@@ -160,21 +112,9 @@ class ActivityLogger
      */
     public function logout(User $user): Activity
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $action = new LogUserLogoutAction;
-
-        return $action->execute($user);
-=======
         $action = new LogUserLogoutAction($user);
 
         return $action->execute();
->>>>>>> 0a02158a (.)
-=======
-        $action = new LogUserLogoutAction($user);
-
-        return $action->execute();
->>>>>>> 35d8cf69 (Initial commit)
     }
 
     /**

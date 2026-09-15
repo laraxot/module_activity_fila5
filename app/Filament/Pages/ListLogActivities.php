@@ -66,19 +66,8 @@ abstract class ListLogActivities extends XotBasePage
 
         // Convert to string (__() returns string|array|null)
         if (is_array($breadcrumb)) {
-<<<<<<< HEAD
             /** @phpstan-ignore-next-line cast.string */
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            return implode(' ', array_map(self::stringifyTranslationValue(...), $breadcrumb));
-=======
->>>>>>> laraxot/dev
             return implode(' ', array_map(fn (mixed $v): string => (string) $v, $breadcrumb));
->>>>>>> 0a02158a (.)
-=======
-            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $breadcrumb));
->>>>>>> 35d8cf69 (Initial commit)
         }
 
         if (is_string($breadcrumb)) {
@@ -102,19 +91,8 @@ abstract class ListLogActivities extends XotBasePage
 
         // __() returns string|array|null
         if (is_array($title)) {
-<<<<<<< HEAD
             /** @phpstan-ignore-next-line argument.type */
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            return implode(' ', array_map(self::stringifyTranslationValue(...), $title));
-=======
->>>>>>> laraxot/dev
             return implode(' ', array_map(fn (mixed $v): string => (string) $v, $title));
->>>>>>> 0a02158a (.)
-=======
-            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $title));
->>>>>>> 35d8cf69 (Initial commit)
         }
 
         if (is_string($title)) {
@@ -295,19 +273,7 @@ abstract class ListLogActivities extends XotBasePage
     {
         $title = __('activity::activities.events.restore_successful');
         $titleString = is_array($title)
-<<<<<<< HEAD
             ? implode(' ', array_map(fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v), $title))
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            ? implode(' ', array_map(self::stringifyTranslationValue(...), $title))
-=======
-            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
->>>>>>> 0a02158a (.)
-=======
-            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
             : (is_string($title) ? $title : '');
 
         return Notification::make()
@@ -320,19 +286,8 @@ abstract class ListLogActivities extends XotBasePage
     {
         $title = __('activity::activities.events.restore_failed');
         $titleString = is_array($title)
-<<<<<<< HEAD
             /** @phpstan-ignore-next-line cast.string */
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            ? implode(' ', array_map(self::stringifyTranslationValue(...), $title))
-=======
->>>>>>> laraxot/dev
             ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
->>>>>>> 0a02158a (.)
-=======
-            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
->>>>>>> 35d8cf69 (Initial commit)
             : (is_string($title) ? $title : '');
 
         $notification = Notification::make()
@@ -386,17 +341,4 @@ abstract class ListLogActivities extends XotBasePage
         /** @var array<string, mixed> $old */
         return $old;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-    private static function stringifyTranslationValue(mixed $value): string
-    {
-        Assert::scalar($value);
-
-        return (string) $value;
-    }
-=======
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
 }
