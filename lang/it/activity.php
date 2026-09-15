@@ -27,10 +27,14 @@ return [
             'help' => 'Nome del log di attività',
             'placeholder' => 'log_name',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'log_name',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> 82abadce (.)
             'description' => 'log_name',
             'tooltip' => '',
         ],
@@ -39,10 +43,14 @@ return [
             'help' => 'Descrizione dell\'attività',
             'placeholder' => 'description',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'description',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> 82abadce (.)
             'description' => 'description',
             'tooltip' => '',
         ],
@@ -51,10 +59,14 @@ return [
             'help' => 'Tipo di entità coinvolta',
             'placeholder' => 'subject_type',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'subject_type',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> 82abadce (.)
             'description' => 'subject_type',
             'tooltip' => '',
         ],
@@ -63,10 +75,14 @@ return [
             'help' => 'Identificativo dell\'entità coinvolta',
             'placeholder' => 'subject_id',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'subject_id',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> 82abadce (.)
             'description' => 'subject_id',
             'tooltip' => '',
         ],
@@ -75,10 +91,14 @@ return [
             'help' => 'Tipo di entità che ha causato l\'attività',
             'placeholder' => 'causer_type',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'causer_type',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> 82abadce (.)
             'description' => 'causer_type',
             'tooltip' => '',
         ],
@@ -87,10 +107,14 @@ return [
             'help' => 'Identificativo dell\'entità che ha causato l\'attività',
             'placeholder' => 'causer_id',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'causer_id',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> 82abadce (.)
             'description' => 'causer_id',
             'tooltip' => '',
         ],
@@ -99,10 +123,14 @@ return [
             'help' => 'Proprietà aggiuntive dell\'attività',
             'placeholder' => 'properties',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'properties',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> 82abadce (.)
             'description' => 'properties',
             'tooltip' => '',
         ],
@@ -111,10 +139,14 @@ return [
             'help' => 'Identificativo del batch di attività',
             'placeholder' => 'batch_uuid',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'batch_uuid',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> 82abadce (.)
             'description' => 'batch_uuid',
             'tooltip' => '',
         ],
