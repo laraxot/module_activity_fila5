@@ -64,7 +64,6 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
 class StoredEvent extends SpatieStoredEvent
 {
-    /** @use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     /** @var string */
