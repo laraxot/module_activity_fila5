@@ -26,21 +26,7 @@ return [
             'label' => 'Nome Log',
             'help' => 'Nome del log di attività',
             'placeholder' => 'log_name',
-<<<<<<< HEAD
-<<<<<<< .merge_file_tv6Dhq
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_B1YwnX
             'helper_text' => '',
-=======
-            'helper_text' => 'log_name',
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_tv6Dhq
-=======
-            'helper_text' => '',
->>>>>>> 82abadce (.)
-=======
->>>>>>> .merge_file_B1YwnX
             'description' => 'log_name',
             'tooltip' => '',
         ],
@@ -48,22 +34,7 @@ return [
             'label' => 'Descrizione',
             'help' => 'Descrizione dell\'attività',
             'placeholder' => 'description',
-<<<<<<< HEAD
-<<<<<<< .merge_file_tv6Dhq
-<<<<<<< HEAD
             'helper_text' => '',
-=======
-            'helper_text' => 'description',
->>>>>>> laraxot/dev
-=======
-            'helper_text' => '',
->>>>>>> 82abadce (.)
-=======
-            'helper_text' => '',
-=======
-            'helper_text' => 'description',
->>>>>>> laraxot/dev
->>>>>>> .merge_file_B1YwnX
             'description' => 'description',
             'tooltip' => '',
         ],
@@ -71,21 +42,7 @@ return [
             'label' => 'Tipo Soggetto',
             'help' => 'Tipo di entità coinvolta',
             'placeholder' => 'subject_type',
-<<<<<<< HEAD
-<<<<<<< .merge_file_tv6Dhq
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_B1YwnX
             'helper_text' => '',
-=======
-            'helper_text' => 'subject_type',
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_tv6Dhq
-=======
-            'helper_text' => '',
->>>>>>> 82abadce (.)
-=======
->>>>>>> .merge_file_B1YwnX
             'description' => 'subject_type',
             'tooltip' => '',
         ],
@@ -93,22 +50,7 @@ return [
             'label' => 'ID Soggetto',
             'help' => 'Identificativo dell\'entità coinvolta',
             'placeholder' => 'subject_id',
-<<<<<<< HEAD
-<<<<<<< .merge_file_tv6Dhq
-<<<<<<< HEAD
             'helper_text' => '',
-=======
-            'helper_text' => 'subject_id',
->>>>>>> laraxot/dev
-=======
-            'helper_text' => '',
->>>>>>> 82abadce (.)
-=======
-            'helper_text' => '',
-=======
-            'helper_text' => 'subject_id',
->>>>>>> laraxot/dev
->>>>>>> .merge_file_B1YwnX
             'description' => 'subject_id',
             'tooltip' => '',
         ],
@@ -116,21 +58,7 @@ return [
             'label' => 'Tipo Causatore',
             'help' => 'Tipo di entità che ha causato l\'attività',
             'placeholder' => 'causer_type',
-<<<<<<< HEAD
-<<<<<<< .merge_file_tv6Dhq
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_B1YwnX
             'helper_text' => '',
-=======
-            'helper_text' => 'causer_type',
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_tv6Dhq
-=======
-            'helper_text' => '',
->>>>>>> 82abadce (.)
-=======
->>>>>>> .merge_file_B1YwnX
             'description' => 'causer_type',
             'tooltip' => '',
         ],
@@ -138,22 +66,7 @@ return [
             'label' => 'ID Causatore',
             'help' => 'Identificativo dell\'entità che ha causato l\'attività',
             'placeholder' => 'causer_id',
-<<<<<<< HEAD
-<<<<<<< .merge_file_tv6Dhq
-<<<<<<< HEAD
             'helper_text' => '',
-=======
-            'helper_text' => 'causer_id',
->>>>>>> laraxot/dev
-=======
-            'helper_text' => '',
->>>>>>> 82abadce (.)
-=======
-            'helper_text' => '',
-=======
-            'helper_text' => 'causer_id',
->>>>>>> laraxot/dev
->>>>>>> .merge_file_B1YwnX
             'description' => 'causer_id',
             'tooltip' => '',
         ],
@@ -161,21 +74,7 @@ return [
             'label' => 'Proprietà',
             'help' => 'Proprietà aggiuntive dell\'attività',
             'placeholder' => 'properties',
-<<<<<<< HEAD
-<<<<<<< .merge_file_tv6Dhq
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_B1YwnX
             'helper_text' => '',
-=======
-            'helper_text' => 'properties',
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_tv6Dhq
-=======
-            'helper_text' => '',
->>>>>>> 82abadce (.)
-=======
->>>>>>> .merge_file_B1YwnX
             'description' => 'properties',
             'tooltip' => '',
         ],
@@ -183,22 +82,7 @@ return [
             'label' => 'Batch UUID',
             'help' => 'Identificativo del batch di attività',
             'placeholder' => 'batch_uuid',
-<<<<<<< HEAD
-<<<<<<< .merge_file_tv6Dhq
-<<<<<<< HEAD
             'helper_text' => '',
-=======
-            'helper_text' => 'batch_uuid',
->>>>>>> laraxot/dev
-=======
-            'helper_text' => '',
->>>>>>> 82abadce (.)
-=======
-            'helper_text' => '',
-=======
-            'helper_text' => 'batch_uuid',
->>>>>>> laraxot/dev
->>>>>>> .merge_file_B1YwnX
             'description' => 'batch_uuid',
             'tooltip' => '',
         ],

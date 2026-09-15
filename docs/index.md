@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< .merge_file_5CQqSC
-<<<<<<< HEAD
-=======
->>>>>>> 82abadce (.)
-=======
->>>>>>> .merge_file_k9BxbW
-# Documentation Index
-
-Modulo: Activity
-
-## File disponibili
-
-<!-- auto-generato: elencare i file .md presenti -->
-<<<<<<< .merge_file_5CQqSC
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_k9BxbW
-=======
 # Indice documentazione — Modulo Activity
 
 Indice organizzato per argomento. Copre tutti i file `.md` sotto `Modules/Activity/docs/`
@@ -537,9 +518,3 @@ cartelle di import grezzo sopra citate (49 file a 0 righe in tutto il modulo).
 - File completamente vuoti (0 righe): 49.
 - File stub con puntatore `canonical:` verso `Themes/docs/shared-components/`: 73 (di cui 6 template `_templates/`, 4 ibridi con contenuto reale aggiuntivo, 63 stub puri).
 - File indicizzati esplicitamente per argomento in questo documento: la quasi totalita' dei restanti file con contenuto reale; le eccezioni (import grezzo/placeholder vuoti) sono referenziate per gruppo con comando `find` riproducibile, non singolarmente.
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_5CQqSC
-=======
->>>>>>> 82abadce (.)
-=======
->>>>>>> .merge_file_k9BxbW

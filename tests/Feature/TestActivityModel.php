@@ -25,34 +25,12 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property int|null $updated_by
  * @property int|null $deleted_by
  *
-<<<<<<< HEAD
-<<<<<<< .merge_file_hfIlFN
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_mJvb5l
  * @method static Factory<static> factory()
  *
-=======
-
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_hfIlFN
-=======
- * @method static Factory<static> factory()
- *
->>>>>>> 82abadce (.)
-=======
->>>>>>> .merge_file_mJvb5l
  * @coversNothing
  */
 class TestActivityModel extends BaseModel
 {
-<<<<<<< HEAD
-<<<<<<< .merge_file_hfIlFN
-<<<<<<< HEAD
-=======
->>>>>>> 82abadce (.)
-=======
->>>>>>> .merge_file_mJvb5l
     /**
      * @use HasFactory<Factory<self>>
      *
@@ -66,22 +44,6 @@ class TestActivityModel extends BaseModel
         HasXotFactory::factory insteadof HasFactory;
     }
 
-<<<<<<< .merge_file_hfIlFN
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_mJvb5l
-=======
-    /** @use HasFactory<Factory<self>> */
-    use HasFactory;
-
-    /** @use HasXotFactory<Factory<static>> */
-    use HasXotFactory;
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_hfIlFN
-=======
->>>>>>> 82abadce (.)
-=======
->>>>>>> .merge_file_mJvb5l
     /** @var string */
     protected $table = 'test_models';
 

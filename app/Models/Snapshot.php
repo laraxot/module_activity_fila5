@@ -41,22 +41,10 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  */
 class Snapshot extends SpatieSnapshot
 {
-<<<<<<< HEAD
-<<<<<<< .merge_file_6u1nBQ
-<<<<<<< HEAD
-=======
     /** @use HasXotFactory<Factory<static>> */
->>>>>>> laraxot/dev
-=======
->>>>>>> 82abadce (.)
-=======
-=======
-    /** @use HasXotFactory<Factory<static>> */
->>>>>>> laraxot/dev
->>>>>>> .merge_file_RyiXqp
     use HasXotFactory;
 
-    /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
+    /** @var string */
     protected $connection = 'activity';
 
     /** @var list<string> */
