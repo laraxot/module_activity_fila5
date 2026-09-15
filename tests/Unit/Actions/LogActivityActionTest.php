@@ -11,7 +11,15 @@ use PHPUnit\Framework\Assert;
 uses(\Modules\Activity\Tests\TestCase::class);
 
 test('LogActivityAction can be instantiated', function () {
+<<<<<<< HEAD
+<<<<<<< HEAD
     $model = new class() extends Model
+=======
+    $model = new class extends Model
+>>>>>>> 0a02158a (.)
+=======
+    $model = new class extends Model
+>>>>>>> 35d8cf69 (Initial commit)
     {
         protected $table = 'test_models';
 
@@ -32,7 +40,15 @@ test('LogActivityAction can be instantiated', function () {
 });
 
 test('LogActivityAction can execute', function () {
+<<<<<<< HEAD
+<<<<<<< HEAD
     $modelClass = get_class(new class() extends Model
+=======
+    $modelClass = get_class(new class extends Model
+>>>>>>> 0a02158a (.)
+=======
+    $modelClass = get_class(new class extends Model
+>>>>>>> 35d8cf69 (Initial commit)
     {
         protected $table = 'test_models';
 

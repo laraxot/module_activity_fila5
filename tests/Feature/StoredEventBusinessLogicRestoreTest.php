@@ -12,8 +12,24 @@ use Illuminate\Support\Str;
 use Modules\Activity\Models\StoredEvent;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+uses(\Modules\Activity\Tests\TestCase::class);
+=======
+uses(TestCase::class);
+=======
+use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> 0a02158a (.)
+=======
+use Spatie\SchemalessAttributes\SchemalessAttributes;
+
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
 
 test('can restore event from stored event', function (): void {
     $originalProperties = [

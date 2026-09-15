@@ -6,17 +6,53 @@ namespace Modules\Activity\Actions;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Models\Activity;
+<<<<<<< HEAD
+<<<<<<< HEAD
+use Modules\User\Models\User;
+=======
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Log Model Created Action.
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * Optimized for Laraxot architecture.
+=======
  *
  * Logs when a model is created using Queueable Actions
+>>>>>>> 0a02158a (.)
+=======
+ *
+ * Logs when a model is created using Queueable Actions
+>>>>>>> 35d8cf69 (Initial commit)
  */
 class LogModelCreatedAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+    /**
+     * Execute the action.
+     */
+    public function execute(Model $model, ?User $user = null): Activity
+    {
+        /** @var array<string, mixed> $properties */
+        $properties = $model->toArray();
+
+        return (new LogActivityAction(
+            type: 'created',
+            user: $user,
+            subject: $model,
+            description: sprintf('%s was created', class_basename($model)),
+            properties: $properties
+        ))->execute();
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
     public function __construct(
         public Model $model,
         public ?Model $user = null,
@@ -40,5 +76,9 @@ class LogModelCreatedAction
         );
 
         return $action->execute();
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
     }
 }
