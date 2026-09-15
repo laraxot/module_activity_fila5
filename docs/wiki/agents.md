@@ -11,7 +11,7 @@ related:
   - ./coding-agent-manifests.md
 ---
 
-# Activity {{TYPE^}} LLM Wiki Agent Instructions
+# Activity Module LLM Wiki Agent Instructions
 
 > **Module/Theme:** Activity
 > **Scope:** Activity-specific knowledge only
