@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 82abadce (.)
         'log_name' => ['label' => 'log_name', 'placeholder' => 'log_name', 'helper_text' => '', 'description' => 'log_name'],
         'description' => ['label' => 'description', 'placeholder' => 'description', 'helper_text' => '', 'description' => 'description'],
         'subject_type' => ['label' => 'subject_type', 'placeholder' => 'subject_type', 'helper_text' => '', 'description' => 'subject_type'],
@@ -13,6 +16,7 @@ return [
         'causer_id' => ['label' => 'causer_id', 'placeholder' => 'causer_id', 'helper_text' => '', 'description' => 'causer_id'],
         'properties' => ['label' => 'properties', 'placeholder' => 'properties', 'helper_text' => '', 'description' => 'properties'],
         'batch_uuid' => ['label' => 'batch_uuid', 'placeholder' => 'batch_uuid', 'helper_text' => '', 'description' => 'batch_uuid'],
+<<<<<<< HEAD
 =======
         'log_name' => ['label' => 'log_name', 'placeholder' => 'log_name', 'helper_text' => 'log_name', 'description' => 'log_name'],
         'description' => ['label' => 'description', 'placeholder' => 'description', 'helper_text' => 'description', 'description' => 'description'],
@@ -23,5 +27,7 @@ return [
         'properties' => ['label' => 'properties', 'placeholder' => 'properties', 'helper_text' => 'properties', 'description' => 'properties'],
         'batch_uuid' => ['label' => 'batch_uuid', 'placeholder' => 'batch_uuid', 'helper_text' => 'batch_uuid', 'description' => 'batch_uuid'],
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 82abadce (.)
     ],
 ];

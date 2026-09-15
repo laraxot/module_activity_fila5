@@ -30,10 +30,14 @@ return [
             'validation' => 'required|string|max:255',
             'searchable' => true,
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'event_class',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> 82abadce (.)
             'description' => 'event_class',
             'tooltip' => '',
         ],
@@ -45,10 +49,14 @@ return [
             'type' => 'json',
             'format' => 'json',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'event_properties',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> 82abadce (.)
             'description' => 'event_properties',
             'tooltip' => '',
         ],
@@ -59,10 +67,14 @@ return [
             'validation' => 'required|uuid',
             'searchable' => true,
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'aggregate_uuid',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> 82abadce (.)
             'description' => 'aggregate_uuid',
             'tooltip' => '',
         ],
@@ -73,10 +85,14 @@ return [
             'validation' => 'required|integer|min:1',
             'sortable' => true,
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'aggregate_version',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> 82abadce (.)
             'description' => 'aggregate_version',
             'tooltip' => '',
         ],
@@ -97,10 +113,14 @@ return [
             'type' => 'json',
             'format' => 'json',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'meta_data',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> 82abadce (.)
             'description' => 'meta_data',
             'tooltip' => '',
         ],
@@ -112,10 +132,14 @@ return [
             'format' => 'd/m/Y H:i:s',
             'sortable' => true,
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'created_at',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> 82abadce (.)
             'description' => 'created_at',
             'tooltip' => '',
         ],
