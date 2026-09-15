@@ -109,12 +109,18 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 class Activity extends SpatieActivity
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_nr2bnx
 <<<<<<< HEAD
 =======
     /** @use HasXotFactory<Factory<static>> */
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 82abadce (.)
+=======
+=======
+    /** @use HasXotFactory<Factory<static>> */
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wxYjSz
     use HasXotFactory;
 
     /** @var string */

@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_5CQqSC
 <<<<<<< HEAD
 =======
 >>>>>>> 82abadce (.)
+=======
+>>>>>>> .merge_file_k9BxbW
 # Documentation Index
 
 Modulo: Activity
@@ -9,7 +12,10 @@ Modulo: Activity
 ## File disponibili
 
 <!-- auto-generato: elencare i file .md presenti -->
+<<<<<<< .merge_file_5CQqSC
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_k9BxbW
 =======
 # Indice documentazione — Modulo Activity
 
@@ -532,5 +538,8 @@ cartelle di import grezzo sopra citate (49 file a 0 righe in tutto il modulo).
 - File stub con puntatore `canonical:` verso `Themes/docs/shared-components/`: 73 (di cui 6 template `_templates/`, 4 ibridi con contenuto reale aggiuntivo, 63 stub puri).
 - File indicizzati esplicitamente per argomento in questo documento: la quasi totalita' dei restanti file con contenuto reale; le eccezioni (import grezzo/placeholder vuoti) sono referenziate per gruppo con comando `find` riproducibile, non singolarmente.
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_5CQqSC
 =======
 >>>>>>> 82abadce (.)
+=======
+>>>>>>> .merge_file_k9BxbW
