@@ -29,7 +29,11 @@ return [
             'help' => 'Nome completo della classe che rappresenta l\'evento',
             'validation' => 'required|string|max:255',
             'searchable' => true,
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'event_class',
+>>>>>>> laraxot/dev
             'description' => 'event_class',
             'tooltip' => '',
         ],
@@ -40,7 +44,11 @@ return [
             'validation' => 'required|json',
             'type' => 'json',
             'format' => 'json',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'event_properties',
+>>>>>>> laraxot/dev
             'description' => 'event_properties',
             'tooltip' => '',
         ],
@@ -50,7 +58,11 @@ return [
             'help' => 'Identificativo unico dell\'aggregato di appartenenza',
             'validation' => 'required|uuid',
             'searchable' => true,
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'aggregate_uuid',
+>>>>>>> laraxot/dev
             'description' => 'aggregate_uuid',
             'tooltip' => '',
         ],
@@ -60,7 +72,11 @@ return [
             'help' => 'Numero di versione dell\'aggregato',
             'validation' => 'required|integer|min:1',
             'sortable' => true,
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'aggregate_version',
+>>>>>>> laraxot/dev
             'description' => 'aggregate_version',
             'tooltip' => '',
         ],
@@ -80,7 +96,11 @@ return [
             'validation' => 'nullable|json',
             'type' => 'json',
             'format' => 'json',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'meta_data',
+>>>>>>> laraxot/dev
             'description' => 'meta_data',
             'tooltip' => '',
         ],
@@ -91,7 +111,11 @@ return [
             'validation' => 'required|date',
             'format' => 'd/m/Y H:i:s',
             'sortable' => true,
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'created_at',
+>>>>>>> laraxot/dev
             'description' => 'created_at',
             'tooltip' => '',
         ],

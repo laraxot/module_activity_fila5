@@ -25,12 +25,17 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property int|null $updated_by
  * @property int|null $deleted_by
  *
+<<<<<<< HEAD
  * @method static Factory<static> factory()
  *
+=======
+
+>>>>>>> laraxot/dev
  * @coversNothing
  */
 class TestActivityModel extends BaseModel
 {
+<<<<<<< HEAD
     /**
      * @use HasFactory<Factory<self>>
      *
@@ -44,6 +49,13 @@ class TestActivityModel extends BaseModel
         HasXotFactory::factory insteadof HasFactory;
     }
 
+=======
+    /** @use HasFactory<Factory<self>> */
+    use HasFactory;
+
+    /** @use HasXotFactory<Factory<static>> */
+    use HasXotFactory;
+>>>>>>> laraxot/dev
     /** @var string */
     protected $table = 'test_models';
 

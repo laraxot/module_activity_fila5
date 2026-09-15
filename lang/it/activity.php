@@ -26,7 +26,11 @@ return [
             'label' => 'Nome Log',
             'help' => 'Nome del log di attività',
             'placeholder' => 'log_name',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'log_name',
+>>>>>>> laraxot/dev
             'description' => 'log_name',
             'tooltip' => '',
         ],
@@ -34,7 +38,11 @@ return [
             'label' => 'Descrizione',
             'help' => 'Descrizione dell\'attività',
             'placeholder' => 'description',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'description',
+>>>>>>> laraxot/dev
             'description' => 'description',
             'tooltip' => '',
         ],
@@ -42,7 +50,11 @@ return [
             'label' => 'Tipo Soggetto',
             'help' => 'Tipo di entità coinvolta',
             'placeholder' => 'subject_type',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'subject_type',
+>>>>>>> laraxot/dev
             'description' => 'subject_type',
             'tooltip' => '',
         ],
@@ -50,7 +62,11 @@ return [
             'label' => 'ID Soggetto',
             'help' => 'Identificativo dell\'entità coinvolta',
             'placeholder' => 'subject_id',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'subject_id',
+>>>>>>> laraxot/dev
             'description' => 'subject_id',
             'tooltip' => '',
         ],
@@ -58,7 +74,11 @@ return [
             'label' => 'Tipo Causatore',
             'help' => 'Tipo di entità che ha causato l\'attività',
             'placeholder' => 'causer_type',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'causer_type',
+>>>>>>> laraxot/dev
             'description' => 'causer_type',
             'tooltip' => '',
         ],
@@ -66,7 +86,11 @@ return [
             'label' => 'ID Causatore',
             'help' => 'Identificativo dell\'entità che ha causato l\'attività',
             'placeholder' => 'causer_id',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'causer_id',
+>>>>>>> laraxot/dev
             'description' => 'causer_id',
             'tooltip' => '',
         ],
@@ -74,7 +98,11 @@ return [
             'label' => 'Proprietà',
             'help' => 'Proprietà aggiuntive dell\'attività',
             'placeholder' => 'properties',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'properties',
+>>>>>>> laraxot/dev
             'description' => 'properties',
             'tooltip' => '',
         ],
@@ -82,7 +110,11 @@ return [
             'label' => 'Batch UUID',
             'help' => 'Identificativo del batch di attività',
             'placeholder' => 'batch_uuid',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'batch_uuid',
+>>>>>>> laraxot/dev
             'description' => 'batch_uuid',
             'tooltip' => '',
         ],
