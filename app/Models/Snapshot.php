@@ -41,6 +41,10 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  */
 class Snapshot extends SpatieSnapshot
 {
+<<<<<<< HEAD
+=======
+    /** @use HasXotFactory<Factory<static>> */
+>>>>>>> laraxot/dev
     use HasXotFactory;
 
     /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
