@@ -6,43 +6,43 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-            'tooltip' => 'Identificativo univoco dell'attivit��',
+            'tooltip' => "Identificativo univoco dell'attività",
             'helper_text' => '',
             'description' => '',
         ],
         'description' => [
             'label' => 'Descrizione',
-            'tooltip' => 'Descrizione dell'attivit��',
+            'tooltip' => "Descrizione dell'attività",
             'helper_text' => '',
             'description' => '',
         ],
         'subject_type' => [
             'label' => 'Tipo Soggetto',
-            'tooltip' => 'Tipo di entit�� soggetta all'attivit��',
+            'tooltip' => "Tipo di entità soggetta all'attività",
             'helper_text' => '',
             'description' => '',
         ],
         'subject_id' => [
             'label' => 'ID Soggetto',
-            'tooltip' => 'Identificativo dell'entit�� soggetta all'attivit��',
+            'tooltip' => "Identificativo dell'entità soggetta all'attività",
             'helper_text' => '',
             'description' => '',
         ],
         'causer_type' => [
             'label' => 'Tipo Autore',
-            'tooltip' => 'Tipo di entit�� che ha causato l'attivit��',
+            'tooltip' => "Tipo di entità che ha causato l'attività",
             'helper_text' => '',
             'description' => '',
         ],
         'causer_id' => [
             'label' => 'ID Autore',
-            'tooltip' => 'Identificativo dell'entit�� che ha causato l'attivit��',
+            'tooltip' => "Identificativo dell'entità che ha causato l'attività",
             'helper_text' => '',
             'description' => '',
         ],
         'created_at' => [
             'label' => 'Data Creazione',
-            'tooltip' => 'Data e ora di creazione dell'attivit��',
+            'tooltip' => "Data e ora di creazione dell'attività",
             'helper_text' => '',
             'description' => '',
         ],
@@ -50,12 +50,12 @@ return [
     'actions' => [
         'view' => [
             'label' => 'Visualizza',
-            'tooltip' => 'Visualizza i dettagli dell'attivit��',
+            'tooltip' => "Visualizza i dettagli dell'attività",
         ],
         'delete' => [
             'label' => 'Elimina',
-            'tooltip' => 'Elimina questa attivit��',
-            'confirmation' => 'Sei sicuro di voler eliminare questa attivit��?',
+            'tooltip' => "Elimina questa attività",
+            'confirmation' => "Sei sicuro di voler eliminare questa attività?",
         ],
     ],
     'filters' => [
@@ -65,7 +65,7 @@ return [
         ],
         'type' => [
             'label' => 'Tipo',
-            'tooltip' => 'Filtra per tipo di attivit��',
+            'tooltip' => "Filtra per tipo di attività",
         ],
     ],
     'snapshots' => [
@@ -76,11 +76,11 @@ return [
             ],
             'aggregate_uuid' => [
                 'label' => 'UUID Aggregato',
-                'help' => 'UUID dell'aggregato',
+                'help' => "UUID dell'aggregato",
             ],
             'aggregate_version' => [
                 'label' => 'Versione Aggregato',
-                'help' => 'Versione dell'aggregato',
+                'help' => "Versione dell'aggregato",
             ],
             'state' => [
                 'label' => 'Stato',

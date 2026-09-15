@@ -12,13 +12,13 @@ return [
         ],
         'aggregate_uuid' => [
             'label' => 'UUID Aggregato',
-            'tooltip' => 'Identificativo univoco dell'aggregato',
+            'tooltip' => "Identificativo univoco dell'aggregato",
             'helper_text' => '',
             'description' => '',
         ],
         'aggregate_version' => [
             'label' => 'Versione Aggregato',
-            'tooltip' => 'Numero di versione dell'aggregato',
+            'tooltip' => "Numero di versione dell'aggregato",
             'helper_text' => '',
             'description' => '',
         ],
