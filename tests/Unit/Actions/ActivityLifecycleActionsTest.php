@@ -9,8 +9,6 @@ use Modules\Activity\Actions\LogModelDeletedAction;
 use Modules\Activity\Actions\LogModelUpdatedAction;
 use Modules\Activity\Actions\LogUserLogoutAction;
 use Modules\Activity\Tests\TestCase;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
@@ -24,39 +22,12 @@ function createActivityLifecycleUser(array $attributes = []): User
     return activityCreateUser($attributes);
 }
 
-describe('Activity Lifecycle Actions', function () {
-
-    test('can log model creation via LogModelCreatedAction', function () {
-        $user = createActivityLifecycleUser(['name' => 'New User']);
-        $action = new LogModelCreatedAction;
-        $activity = $action->execute($user);
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-use Modules\User\Database\Factories\UserFactory;
-use Modules\User\Models\User;
-use PHPUnit\Framework\Assert;
-
-uses(\Modules\Activity\Tests\TestCase::class);
-
-/**
- * @param  array  $attributes
- */
-function createActivityLifecycleUser(array $attributes = []): User
-{
-    return (new UserFactory)->createOne($attributes);
-}
-
 test('Activity Lifecycle Actions', function () {
 
     test('can log model creation via LogModelCreatedAction', function () {
         $user = createActivityLifecycleUser(['name' => 'New User']);
         $action = new LogModelCreatedAction(model: $user);
         $activity = $action->execute();
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
 
         Assert::assertSame('created', $activity->log_name);
         Assert::assertSame($user->id, $activity->subject_id);
@@ -70,18 +41,8 @@ test('Activity Lifecycle Actions', function () {
         // Note: in memory changes only for this test, as LogModelUpdatedAction uses getChanges()
         $user->syncChanges();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $action = new LogModelUpdatedAction;
-        $activity = $action->execute($user);
-=======
         $action = new LogModelUpdatedAction(model: $user);
         $activity = $action->execute();
->>>>>>> 0a02158a (.)
-=======
-        $action = new LogModelUpdatedAction(model: $user);
-        $activity = $action->execute();
->>>>>>> 35d8cf69 (Initial commit)
 
         Assert::assertSame('updated', $activity->log_name);
         Assert::assertSame($user->id, $activity->subject_id);
@@ -90,18 +51,8 @@ test('Activity Lifecycle Actions', function () {
 
     test('can log model deletion via LogModelDeletedAction', function () {
         $user = createActivityLifecycleUser();
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $action = new LogModelDeletedAction;
-        $activity = $action->execute($user);
-=======
         $action = new LogModelDeletedAction(model: $user);
         $activity = $action->execute();
->>>>>>> 0a02158a (.)
-=======
-        $action = new LogModelDeletedAction(model: $user);
-        $activity = $action->execute();
->>>>>>> 35d8cf69 (Initial commit)
 
         Assert::assertSame('deleted', $activity->log_name);
         Assert::assertSame($user->id, $activity->subject_id);

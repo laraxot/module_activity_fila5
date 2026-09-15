@@ -11,19 +11,7 @@ use PHPUnit\Framework\Assert;
 uses(\Modules\Activity\Tests\TestCase::class);
 
 test('LogModelCreatedAction can be instantiated', function () {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $action = new LogModelCreatedAction;
-
-    Assert::assertInstanceOf(LogModelCreatedAction::class, $action);
-});
-
-test('LogModelCreatedAction can execute', function () {
-    $modelClass = get_class(new class() extends Model
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-    $model = new class extends Model
+    $model = new class() extends Model
     {
         protected $table = 'test_models';
 
@@ -38,11 +26,7 @@ test('LogModelCreatedAction can execute', function () {
 });
 
 test('LogModelCreatedAction can execute', function () {
-    $modelClass = get_class(new class extends Model
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
+    $modelClass = get_class(new class() extends Model
     {
         protected $table = 'test_models';
 
@@ -52,21 +36,7 @@ test('LogModelCreatedAction can execute', function () {
     $user = UserFactory::new()->createOne();
     Assert::assertInstanceOf(Model::class, $user);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $action = new LogModelCreatedAction;
-    $activity = $action->execute($model, $user);
-
-    Assert::assertSame('created', $activity->event);
-    Assert::assertSame($user->getKey(), $activity->causer_id);
-=======
     $action = new LogModelCreatedAction($model, $user);
 
     Assert::assertInstanceOf(LogModelCreatedAction::class, $action);
->>>>>>> 0a02158a (.)
-=======
-    $action = new LogModelCreatedAction($model, $user);
-
-    Assert::assertInstanceOf(LogModelCreatedAction::class, $action);
->>>>>>> 35d8cf69 (Initial commit)
 });

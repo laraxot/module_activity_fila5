@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Fixtures;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Webmozart\Assert\Assert;
@@ -33,32 +31,6 @@ final class ListLogActivitiesActionTestPage extends XotBaseListRecords
     {
         Assert::subclassOf(self::$resourceClass, XotBaseResource::class);
 
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-use Filament\Resources\Pages\ListRecords;
-
-final class ListLogActivitiesActionTestPage extends ListRecords
-{
-    /** @var class-string */
-    private static string $resourceClass = ListLogActivitiesActionTestResource::class;
-
-    /**
-     * @param  class-string  $resourceClass
-     */
-    public static function usingResource(string $resourceClass): self
-    {
-        self::$resourceClass = $resourceClass;
-
-        return new self;
-    }
-
-    public static function getResource(): string
-    {
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
         return self::$resourceClass;
     }
 }

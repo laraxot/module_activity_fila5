@@ -27,19 +27,7 @@ use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
-<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-uses(TestCase::class);
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> 0a02158a (.)
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 // Activity module regression coverage (claude-audit doc ratio).
 // Activity module regression coverage (claude-audit doc ratio).
 // Activity module regression coverage (claude-audit doc ratio).
