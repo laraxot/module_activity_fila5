@@ -108,6 +108,10 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  */
 class Activity extends SpatieActivity
 {
+<<<<<<< HEAD
+=======
+    /** @use HasXotFactory<Factory<static>> */
+>>>>>>> laraxot/dev
     use HasXotFactory;
 
     /** @var string */
