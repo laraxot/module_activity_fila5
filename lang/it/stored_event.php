@@ -29,21 +29,7 @@ return [
             'help' => 'Nome completo della classe che rappresenta l\'evento',
             'validation' => 'required|string|max:255',
             'searchable' => true,
-<<<<<<< HEAD
-<<<<<<< .merge_file_GB01CM
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_zoHJiv
             'helper_text' => '',
-=======
-            'helper_text' => 'event_class',
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_GB01CM
-=======
-            'helper_text' => '',
->>>>>>> 82abadce (.)
-=======
->>>>>>> .merge_file_zoHJiv
             'description' => 'event_class',
             'tooltip' => '',
         ],
@@ -54,22 +40,7 @@ return [
             'validation' => 'required|json',
             'type' => 'json',
             'format' => 'json',
-<<<<<<< HEAD
-<<<<<<< .merge_file_GB01CM
-<<<<<<< HEAD
             'helper_text' => '',
-=======
-            'helper_text' => 'event_properties',
->>>>>>> laraxot/dev
-=======
-            'helper_text' => '',
->>>>>>> 82abadce (.)
-=======
-            'helper_text' => '',
-=======
-            'helper_text' => 'event_properties',
->>>>>>> laraxot/dev
->>>>>>> .merge_file_zoHJiv
             'description' => 'event_properties',
             'tooltip' => '',
         ],
@@ -79,22 +50,7 @@ return [
             'help' => 'Identificativo unico dell\'aggregato di appartenenza',
             'validation' => 'required|uuid',
             'searchable' => true,
-<<<<<<< HEAD
-<<<<<<< .merge_file_GB01CM
-<<<<<<< HEAD
             'helper_text' => '',
-=======
-            'helper_text' => 'aggregate_uuid',
->>>>>>> laraxot/dev
-=======
-            'helper_text' => '',
->>>>>>> 82abadce (.)
-=======
-            'helper_text' => '',
-=======
-            'helper_text' => 'aggregate_uuid',
->>>>>>> laraxot/dev
->>>>>>> .merge_file_zoHJiv
             'description' => 'aggregate_uuid',
             'tooltip' => '',
         ],
@@ -104,21 +60,7 @@ return [
             'help' => 'Numero di versione dell\'aggregato',
             'validation' => 'required|integer|min:1',
             'sortable' => true,
-<<<<<<< HEAD
-<<<<<<< .merge_file_GB01CM
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_zoHJiv
             'helper_text' => '',
-=======
-            'helper_text' => 'aggregate_version',
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_GB01CM
-=======
-            'helper_text' => '',
->>>>>>> 82abadce (.)
-=======
->>>>>>> .merge_file_zoHJiv
             'description' => 'aggregate_version',
             'tooltip' => '',
         ],
@@ -138,22 +80,7 @@ return [
             'validation' => 'nullable|json',
             'type' => 'json',
             'format' => 'json',
-<<<<<<< HEAD
-<<<<<<< .merge_file_GB01CM
-<<<<<<< HEAD
             'helper_text' => '',
-=======
-            'helper_text' => 'meta_data',
->>>>>>> laraxot/dev
-=======
-            'helper_text' => '',
->>>>>>> 82abadce (.)
-=======
-            'helper_text' => '',
-=======
-            'helper_text' => 'meta_data',
->>>>>>> laraxot/dev
->>>>>>> .merge_file_zoHJiv
             'description' => 'meta_data',
             'tooltip' => '',
         ],
@@ -164,22 +91,7 @@ return [
             'validation' => 'required|date',
             'format' => 'd/m/Y H:i:s',
             'sortable' => true,
-<<<<<<< HEAD
-<<<<<<< .merge_file_GB01CM
-<<<<<<< HEAD
             'helper_text' => '',
-=======
-            'helper_text' => 'created_at',
->>>>>>> laraxot/dev
-=======
-            'helper_text' => '',
->>>>>>> 82abadce (.)
-=======
-            'helper_text' => '',
-=======
-            'helper_text' => 'created_at',
->>>>>>> laraxot/dev
->>>>>>> .merge_file_zoHJiv
             'description' => 'created_at',
             'tooltip' => '',
         ],
