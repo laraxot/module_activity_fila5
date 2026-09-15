@@ -9,6 +9,8 @@ use Modules\Activity\Actions\LogActivityAction;
 use Modules\Activity\Actions\LogModelCreatedAction;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
+<<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
@@ -17,13 +19,37 @@ uses(\Modules\Activity\Tests\TestCase::class);
 function createActionsTestUser(): User
 {
     return activityCreateUser();
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+use Modules\User\Database\Factories\UserFactory;
+use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
+
+uses(\Modules\Activity\Tests\TestCase::class);
+
+function createActionsTestUser(): User
+{
+    return (new UserFactory)->createOne();
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 }
 
 describe('ActivityLogger', function (): void {
 
     test('logs simple activity', function (): void {
         $user = createActionsTestUser();
+<<<<<<< HEAD
+<<<<<<< HEAD
         $logger = new ActivityLogger();
+=======
+        $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
+=======
+        $logger = new ActivityLogger;
+>>>>>>> 35d8cf69 (Initial commit)
         $activity = $logger->log('test_event', $user);
 
         Assert::assertInstanceOf(Activity::class, $activity);
@@ -33,8 +59,18 @@ describe('ActivityLogger', function (): void {
 
     test('logs created event', function (): void {
         $user = createActionsTestUser();
+<<<<<<< HEAD
+<<<<<<< HEAD
         $logger = new ActivityLogger();
         $model = activityCreateUser();
+=======
+        $logger = new ActivityLogger;
+        $model = (new UserFactory)->createOne();
+>>>>>>> 0a02158a (.)
+=======
+        $logger = new ActivityLogger;
+        $model = (new UserFactory)->createOne();
+>>>>>>> 35d8cf69 (Initial commit)
 
         $activity = $logger->created($model, $user);
 
@@ -45,8 +81,18 @@ describe('ActivityLogger', function (): void {
 
     test('logs updated event', function (): void {
         $user = createActionsTestUser();
+<<<<<<< HEAD
+<<<<<<< HEAD
         $logger = new ActivityLogger();
         $model = activityCreateUser();
+=======
+        $logger = new ActivityLogger;
+        $model = (new UserFactory)->createOne();
+>>>>>>> 0a02158a (.)
+=======
+        $logger = new ActivityLogger;
+        $model = (new UserFactory)->createOne();
+>>>>>>> 35d8cf69 (Initial commit)
 
         $activity = $logger->updated($model, $user);
 
@@ -57,8 +103,18 @@ describe('ActivityLogger', function (): void {
 
     test('logs deleted event', function (): void {
         $user = createActionsTestUser();
+<<<<<<< HEAD
+<<<<<<< HEAD
         $logger = new ActivityLogger();
         $model = activityCreateUser();
+=======
+        $logger = new ActivityLogger;
+        $model = (new UserFactory)->createOne();
+>>>>>>> 0a02158a (.)
+=======
+        $logger = new ActivityLogger;
+        $model = (new UserFactory)->createOne();
+>>>>>>> 35d8cf69 (Initial commit)
 
         $activity = $logger->deleted($model, $user);
 
@@ -69,7 +125,15 @@ describe('ActivityLogger', function (): void {
 
     test('logs login event', function (): void {
         $user = createActionsTestUser();
+<<<<<<< HEAD
+<<<<<<< HEAD
         $logger = new ActivityLogger();
+=======
+        $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
+=======
+        $logger = new ActivityLogger;
+>>>>>>> 35d8cf69 (Initial commit)
         $activity = $logger->login($user);
 
         Assert::assertInstanceOf(Activity::class, $activity);
@@ -79,7 +143,15 @@ describe('ActivityLogger', function (): void {
 
     test('logs logout event', function (): void {
         $user = createActionsTestUser();
+<<<<<<< HEAD
+<<<<<<< HEAD
         $logger = new ActivityLogger();
+=======
+        $logger = new ActivityLogger;
+>>>>>>> 0a02158a (.)
+=======
+        $logger = new ActivityLogger;
+>>>>>>> 35d8cf69 (Initial commit)
         $activity = $logger->logout($user);
 
         Assert::assertInstanceOf(Activity::class, $activity);
@@ -106,9 +178,21 @@ describe('LogActivityAction', function (): void {
 
 describe('LogModelCreatedAction', function (): void {
     test('logs model creation', function (): void {
+<<<<<<< HEAD
+<<<<<<< HEAD
         $model = activityCreateUser();
+        $action = new LogModelCreatedAction;
+        $activity = $action->execute($model);
+=======
+        $model = (new UserFactory)->createOne();
         $action = new LogModelCreatedAction(model: $model);
         $activity = $action->execute();
+>>>>>>> 0a02158a (.)
+=======
+        $model = (new UserFactory)->createOne();
+        $action = new LogModelCreatedAction(model: $model);
+        $activity = $action->execute();
+>>>>>>> 35d8cf69 (Initial commit)
 
         Assert::assertSame('created', $activity->event);
         Assert::assertSame($model->id, $activity->subject_id);
