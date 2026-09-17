@@ -181,3 +181,4 @@ workbench/
 /.vscode/
 .cursor~*
 .windsurf~*
+tests/activity_coverage.xml
