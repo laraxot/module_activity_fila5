@@ -43,3 +43,8 @@ qmd search "Activity concepts" --limit 5
 ## Aggiunti 2026-08-24 (da .txt)
 
 - [jpgraph-guide.md](jpgraph-guide.md) — guida JpGraph 4.4.2 (charts server-side)
+
+
+## Aggiunti 2026-09-20
+
+- [log-viewer-page-no-ssh](log-viewer-page-no-ssh.md) — pagina Log del pannello Activity: legge i file di storage/logs (anche sottocartelle per survey) dalla coda, con ricerca, filtro per livello e download, senza SSH/FTP
