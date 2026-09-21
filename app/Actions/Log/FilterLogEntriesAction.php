@@ -18,11 +18,7 @@ class FilterLogEntriesAction
 
     // ponytail: massimo 200 voci mostrate per volta, nessuna paginazione;
     // se serve scorrere oltre, aggiungere paginazione per offset sulle voci filtrate.
-<<<<<<< HEAD
     public const int DEFAULT_LIMIT = 200;
-=======
-    public const DEFAULT_LIMIT = 200;
->>>>>>> laraxot/dev
 
     /**
      * @param  list<LogEntryData>  $entries  voci in ordine di file (dalla piu' vecchia alla piu' recente)
