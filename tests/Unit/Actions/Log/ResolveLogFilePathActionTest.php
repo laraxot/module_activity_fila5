@@ -6,7 +6,11 @@ use Illuminate\Support\Facades\File;
 use Modules\Activity\Actions\Log\ResolveLogDirectoryAction;
 use Modules\Activity\Actions\Log\ResolveLogFilePathAction;
 use Modules\Activity\Exceptions\InvalidLogFileException;
+use Safe\Exceptions\FilesystemException;
 use Tests\TestCase;
+
+use function Safe\realpath;
+use function Safe\symlink;
 
 uses(TestCase::class);
 
@@ -70,7 +74,9 @@ it('rejects files that are not .log, missing files, empty paths and null bytes',
 });
 
 it('rejects a symlink inside the log directory that points outside of it', function (): void {
-    if (! @symlink($this->root.'/secret.log', $this->base.'/link.log')) {
+    try {
+        symlink($this->root.'/secret.log', $this->base.'/link.log');
+    } catch (FilesystemException) {
         $this->markTestSkipped('Impossibile creare link simbolici in questo ambiente.');
     }
 
@@ -80,7 +86,9 @@ it('rejects a symlink inside the log directory that points outside of it', funct
 });
 
 it('rejects a symlink named .log whose target is not a .log file', function (): void {
-    if (! @symlink($this->base.'/note.txt', $this->base.'/finto.log')) {
+    try {
+        symlink($this->base.'/note.txt', $this->base.'/finto.log');
+    } catch (FilesystemException) {
         $this->markTestSkipped('Impossibile creare link simbolici in questo ambiente.');
     }
 

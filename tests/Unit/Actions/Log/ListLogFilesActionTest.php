@@ -5,9 +5,22 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\File;
 use Modules\Activity\Actions\Log\ListLogFilesAction;
 use Modules\Activity\Datas\LogFileData;
+use Safe\Exceptions\FilesystemException;
 use Tests\TestCase;
 
+use function Safe\symlink;
+use function Safe\touch;
+
 uses(TestCase::class);
+
+/**
+ * @param  list<LogFileData>  $files
+ * @return list<string>
+ */
+function listedLogFilePaths(array $files): array
+{
+    return array_map(fn (LogFileData $file): string => $file->path, $files);
+}
 
 beforeEach(function (): void {
     $this->root = storage_path('framework/testing/log-viewer-'.uniqid('', true));
@@ -15,8 +28,6 @@ beforeEach(function (): void {
     File::makeDirectory($this->base.'/reports/252', 0777, true);
     File::makeDirectory($this->base.'/reports/rejected', 0777, true);
     File::put($this->root.'/secret.log', 'segreto');
-
-    $this->paths = fn (array $files): array => array_map(fn (LogFileData $file): string => $file->path, $files);
 });
 
 afterEach(function (): void {
@@ -28,7 +39,7 @@ it('lists log files recursively including the subfolders', function (): void {
     File::put($this->base.'/reports/252/daily_2026-09-17.log', 'bb');
     File::put($this->base.'/reports/rejected/daily_2026-09-20.log', 'ccc');
 
-    $paths = ($this->paths)((new ListLogFilesAction)->execute($this->base));
+    $paths = listedLogFilePaths((new ListLogFilesAction)->execute($this->base));
 
     expect($paths)->toContain('laravel.log');
     expect($paths)->toContain('reports/252/daily_2026-09-17.log');
@@ -42,7 +53,7 @@ it('ignores files that are not .log and dot files', function (): void {
     File::put($this->base.'/.gitignore', '*');
     File::put($this->base.'/dump.log.gz', 'x');
 
-    expect(($this->paths)((new ListLogFilesAction)->execute($this->base)))->toBe(['laravel.log']);
+    expect(listedLogFilePaths((new ListLogFilesAction)->execute($this->base)))->toBe(['laravel.log']);
 });
 
 it('returns size, name, directory and modification time for each file', function (): void {
@@ -51,11 +62,10 @@ it('returns size, name, directory and modification time for each file', function
     $files = (new ListLogFilesAction)->execute($this->base);
 
     expect($files)->toHaveCount(1);
-    expect($files[0])->toBeInstanceOf(LogFileData::class);
     expect($files[0]->name)->toBe('daily_2026-09-17.log');
     expect($files[0]->directory)->toBe('reports/252');
     expect($files[0]->size)->toBe(5);
-    expect($files[0]->modifiedAt)->toBeInt()->toBeGreaterThan(0);
+    expect($files[0]->modifiedAt)->toBeGreaterThan(0);
 });
 
 it('sorts files from the most recently modified to the oldest', function (): void {
@@ -66,7 +76,7 @@ it('sorts files from the most recently modified to the oldest', function (): voi
     touch($this->base.'/medio.log', 2_000_000);
     touch($this->base.'/recente.log', 3_000_000);
 
-    expect(($this->paths)((new ListLogFilesAction)->execute($this->base)))->toBe(['recente.log', 'medio.log', 'vecchio.log']);
+    expect(listedLogFilePaths((new ListLogFilesAction)->execute($this->base)))->toBe(['recente.log', 'medio.log', 'vecchio.log']);
 });
 
 it('limits the number of returned files', function (): void {
@@ -79,11 +89,13 @@ it('limits the number of returned files', function (): void {
 
 it('does not list a symlink that points outside the log directory', function (): void {
     File::put($this->base.'/laravel.log', 'a');
-    if (! @symlink($this->root.'/secret.log', $this->base.'/link.log')) {
+    try {
+        symlink($this->root.'/secret.log', $this->base.'/link.log');
+    } catch (FilesystemException) {
         $this->markTestSkipped('Impossibile creare link simbolici in questo ambiente.');
     }
 
-    expect(($this->paths)((new ListLogFilesAction)->execute($this->base)))->toBe(['laravel.log']);
+    expect(listedLogFilePaths((new ListLogFilesAction)->execute($this->base)))->toBe(['laravel.log']);
 });
 
 it('returns an empty list when the log directory does not exist', function (): void {

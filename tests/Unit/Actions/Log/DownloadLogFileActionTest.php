@@ -5,7 +5,6 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\File;
 use Modules\Activity\Actions\Log\DownloadLogFileAction;
 use Modules\Activity\Exceptions\InvalidLogFileException;
-use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Tests\TestCase;
 
 uses(TestCase::class);
@@ -34,7 +33,6 @@ afterEach(function (): void {
 it('returns a streamed download of the requested log file', function (): void {
     $response = (new DownloadLogFileAction)->execute('reports/252/daily.log');
 
-    expect($response)->toBeInstanceOf(BinaryFileResponse::class);
     expect($response->headers->get('Content-Disposition'))->toContain('reports_252_daily.log');
     expect($response->headers->get('Content-Type'))->toContain('text/plain');
     expect(File::get($response->getFile()->getPathname()))->toBe("contenuto del report\n");

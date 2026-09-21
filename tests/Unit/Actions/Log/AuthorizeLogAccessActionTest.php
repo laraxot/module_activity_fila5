@@ -15,7 +15,9 @@ uses(TestCase::class);
  */
 function mockLogUser(bool $isSuperAdmin, bool|Throwable $hasPermission = false): UserContract&Authenticatable
 {
-    $user = Mockery::mock(UserContract::class, Authenticatable::class);
+    // UserContract estende gia' Authenticatable: un solo mock basta ed e' tipizzabile da PHPStan.
+    /** @var Mockery\MockInterface&UserContract&Authenticatable $user */
+    $user = Mockery::mock(UserContract::class);
     $user->shouldReceive('hasRole')->with('super-admin')->andReturn($isSuperAdmin);
     $expectation = $user->shouldReceive('hasPermissionTo')->with('log.viewAny');
 
@@ -50,5 +52,8 @@ it('denies access, without crashing, when the permission does not exist yet', fu
 
 it('denies guests and users that do not implement the project user contract', function (): void {
     expect((new AuthorizeLogAccessAction)->execute(null))->toBeFalse();
-    expect((new AuthorizeLogAccessAction)->execute(Mockery::mock(Authenticatable::class)))->toBeFalse();
+
+    /** @var Mockery\MockInterface&Authenticatable $genericUser */
+    $genericUser = Mockery::mock(Authenticatable::class);
+    expect((new AuthorizeLogAccessAction)->execute($genericUser))->toBeFalse();
 });

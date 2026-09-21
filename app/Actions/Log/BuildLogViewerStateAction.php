@@ -28,7 +28,7 @@ class BuildLogViewerStateAction
     /** Finestre di lettura selezionabili, in KB. */
     public const array WINDOW_OPTIONS_KB = [128, 256, 512, 1024, 2048, 4096];
 
-    public const DEFAULT_WINDOW_KB = 256;
+    public const int DEFAULT_WINDOW_KB = 256;
 
     /**
      * @param  string  $file  percorso relativo a storage/logs del file scelto, '' se nessuno

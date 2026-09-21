@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Contracts\UserContract;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
@@ -40,8 +39,10 @@ beforeEach(function (): void {
         }
     };
 
-    $this->user = function (bool $isSuperAdmin, bool $hasPermission = false): UserContract&Authenticatable {
-        $user = Mockery::mock(UserContract::class, Authenticatable::class);
+    $this->user = function (bool $isSuperAdmin, bool $hasPermission = false): UserContract {
+        // UserContract estende gia' Authenticatable: un solo mock basta ed e' tipizzabile da PHPStan.
+        /** @var Mockery\MockInterface&UserContract $user */
+        $user = Mockery::mock(UserContract::class);
         $user->shouldReceive('hasRole')->with('super-admin')->andReturn($isSuperAdmin);
         $user->shouldReceive('hasPermissionTo')->with('log.viewAny')->andReturn($hasPermission);
 
@@ -70,9 +71,15 @@ it('streams the requested file to a super-admin', function (): void {
     $response = $this->actingAs(($this->user)(true))->get('/api/log-download?file=reports/252/daily.log');
 
     $response->assertOk();
-    expect($response->baseResponse)->toBeInstanceOf(BinaryFileResponse::class);
+    $binaryResponse = $response->baseResponse;
+    expect($binaryResponse)->toBeInstanceOf(BinaryFileResponse::class);
+
+    if (! $binaryResponse instanceof BinaryFileResponse) {
+        $this->fail('La risposta non e\' un BinaryFileResponse.');
+    }
+
     expect($response->headers->get('Content-Disposition'))->toContain('reports_252_daily.log');
-    expect(File::get($response->baseResponse->getFile()->getPathname()))->toBe("contenuto del report\n");
+    expect(File::get($binaryResponse->getFile()->getPathname()))->toBe("contenuto del report\n");
 });
 
 it('streams the requested file to a user with the log.viewAny permission', function (): void {
