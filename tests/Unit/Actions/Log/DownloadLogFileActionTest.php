@@ -5,6 +5,10 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\File;
 use Modules\Activity\Actions\Log\DownloadLogFileAction;
 use Modules\Activity\Exceptions\InvalidLogFileException;
+<<<<<<< HEAD
+=======
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
+>>>>>>> laraxot/dev
 use Tests\TestCase;
 
 uses(TestCase::class);
@@ -31,6 +35,7 @@ afterEach(function (): void {
 });
 
 it('returns a streamed download of the requested log file', function (): void {
+<<<<<<< HEAD
     $response = (new DownloadLogFileAction())->execute('reports/252/daily.log');
 
     expect($response->headers->get('Content-Disposition'))->toContain('reports_252_daily.log');
@@ -42,6 +47,18 @@ it('returns a streamed download of the requested log file', function (): void {
 
 it('refuses files outside the log directory, missing files and non-log files', function (): void {
     $action = new DownloadLogFileAction();
+=======
+    $response = (new DownloadLogFileAction)->execute('reports/252/daily.log');
+
+    expect($response)->toBeInstanceOf(BinaryFileResponse::class);
+    expect($response->headers->get('Content-Disposition'))->toContain('reports_252_daily.log');
+    expect($response->headers->get('Content-Type'))->toContain('text/plain');
+    expect(File::get($response->getFile()->getPathname()))->toBe("contenuto del report\n");
+});
+
+it('refuses files outside the log directory, missing files and non-log files', function (): void {
+    $action = new DownloadLogFileAction;
+>>>>>>> laraxot/dev
 
     foreach (['../framework/testing/segreto-download.log', 'non-esiste.log', '', 'laravel.log/../../.env', '/etc/passwd'] as $file) {
         expect(fn () => $action->execute($file))->toThrow(InvalidLogFileException::class);

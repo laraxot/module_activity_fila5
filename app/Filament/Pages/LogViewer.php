@@ -31,7 +31,11 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 class LogViewer extends XotBasePage
 {
     /** Indirizzo della pagina Folio del download. */
+<<<<<<< HEAD
     public const string DOWNLOAD_PATH = '/api/log-download';
+=======
+    public const DOWNLOAD_PATH = '/api/log-download';
+>>>>>>> laraxot/dev
 
     protected string $view = 'activity::filament.pages.log-viewer';
 
