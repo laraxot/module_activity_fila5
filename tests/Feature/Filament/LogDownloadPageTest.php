@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\File;
+use Mockery\MockInterface;
 use Modules\Xot\Contracts\UserContract;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpKernel\Exception\HttpException;
@@ -41,7 +42,7 @@ beforeEach(function (): void {
 
     $this->user = function (bool $isSuperAdmin, bool $hasPermission = false): UserContract {
         // UserContract estende gia' Authenticatable: un solo mock basta ed e' tipizzabile da PHPStan.
-        /** @var Mockery\MockInterface&UserContract $user */
+        /** @var MockInterface&UserContract $user */
         $user = Mockery::mock(UserContract::class);
         $user->shouldReceive('hasRole')->with('super-admin')->andReturn($isSuperAdmin);
         $user->shouldReceive('hasPermissionTo')->with('log.viewAny')->andReturn($hasPermission);

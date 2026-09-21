@@ -31,7 +31,7 @@ afterEach(function (): void {
 });
 
 it('lists the files and builds the tree even when no file is chosen', function (): void {
-    $state = (new BuildLogViewerStateAction)->execute('');
+    $state = (new BuildLogViewerStateAction())->execute('');
 
     expect(array_map(fn ($file) => $file->path, $state->files))->toContain('laravel.log')->toContain('reports/252/daily.log');
     expect($state->tree->count)->toBe(2);
@@ -43,7 +43,7 @@ it('lists the files and builds the tree even when no file is chosen', function (
 });
 
 it('reads the chosen file and returns its entries newest first with the tail metadata', function (): void {
-    $state = (new BuildLogViewerStateAction)->execute('laravel.log');
+    $state = (new BuildLogViewerStateAction())->execute('laravel.log');
 
     expect($state->error)->toBeNull();
     expect($state->total)->toBe(2);
@@ -55,7 +55,7 @@ it('reads the chosen file and returns its entries newest first with the tail met
 });
 
 it('applies the level filter and the text search', function (): void {
-    $action = new BuildLogViewerStateAction;
+    $action = new BuildLogViewerStateAction();
 
     expect($action->execute('laravel.log', 'INFO')->total)->toBe(1);
     expect($action->execute('laravel.log', '', 'smtp')->total)->toBe(1);
@@ -63,14 +63,14 @@ it('applies the level filter and the text search', function (): void {
 });
 
 it('ignores an invalid level and an invalid window instead of failing', function (): void {
-    $state = (new BuildLogViewerStateAction)->execute('laravel.log', 'INVENTATO', '', 'abc');
+    $state = (new BuildLogViewerStateAction())->execute('laravel.log', 'INVENTATO', '', 'abc');
 
     expect($state->error)->toBeNull();
     expect($state->total)->toBe(2);
 });
 
 it('returns a generic error and no entries for paths that try to leave the log directory', function (): void {
-    $action = new BuildLogViewerStateAction;
+    $action = new BuildLogViewerStateAction();
 
     foreach (['../framework/testing/segreto-stato.log', '../../.env', '/etc/passwd', 'laravel.log/../../../.env', 'non-esiste.log'] as $malicious) {
         $state = $action->execute($malicious);

@@ -83,6 +83,50 @@ stili in linea con un asset CSS (regola «no inline CSS»); se no, lo scostament
 - [ ] Eseguire PHPMD e PHPInsights in un ambiente che li ha (`phpmd.phar` e PHPInsights)
 - [ ] Decidere cosa fare di `/xot/admin/logs` (spostare, duplicare o rimuovere)
 
+## Update 2026-09-21
+
+PHPStan livello max su `Modules/Activity` segnalava 27 errori reali, tutti nei test della pagina Log introdotta da
+questa story (nessuno nel codice applicativo). Fix per causa reale, nessun `@phpstan-ignore`/baseline/`mixed`/cast
+di comodo:
+
+- **`pest.expectation.redundant` (13 occorrenze, 6 file)** — `expect(...)->toBeInstanceOf(...)` e `->toBeInt()`
+  ridondanti perché il tipo era già certo staticamente (i tipi di ritorno nativi delle Action e delle proprietà
+  Spatie Data lo dimostrano: `LogFileData::$modifiedAt` è `int` non nullable, `DownloadLogFileAction::execute()`
+  ritorna `BinaryFileResponse`, ecc.). Rimossa l'asserzione ridondante, tenute quelle che verificano un valore vero.
+- **`Response::getFile()` non esiste (2 occorrenze)** — non era un metodo mancante: `$response->baseResponse` è
+  tipizzato `Symfony\Component\HttpFoundation\Response` (la classe base), mentre `getFile()` vive solo su
+  `BinaryFileResponse`. Pest `expect()->toBeInstanceOf()` non restringe il tipo per PHPStan (a differenza di
+  PHPUnit `assertInstanceOf`, il cui bridge `phpstan/phpstan-phpunit` non è installato). Fix con una vera guardia
+  `if (! $x instanceof BinaryFileResponse) { $this->fail(...); }` prima di chiamare `getFile()`.
+- **Mockery return-type sbagliato (7 occorrenze)** — `Mockery::mock(UserContract::class, Authenticatable::class)`
+  viene tipizzato da PHPStan come semplice `Mockery\MockInterface`, non come l'interfaccia passata. Visto che
+  `UserContract` estende già `Authenticatable`, un solo mock basta; annotato con
+  `/** @var Mockery\MockInterface&UserContract $user */` subito dopo `Mockery::mock()`, convenzione già in uso in
+  tutto il repo (verificata con grep su altri moduli), non un modo per forzare un tipo diverso da quello reale.
+- **`theCodingMachineSafe.function` (7 occorrenze, 3 file)** — `touch()`, `realpath()`, `symlink()` senza
+  `use function Safe\...`. Per `touch()`/`realpath()` senza fallback e' bastato l'import. Per `symlink()`, usato con
+  pattern `if (! @symlink(...)) { $this->markTestSkipped(...); }` (l'ambiente potrebbe non supportare i link
+  simbolici), la variante Safe lancia eccezione invece di ritornare `false`: riscritto in `try { symlink(...); }
+  catch (Safe\Exceptions\FilesystemException) { $this->markTestSkipped(...); }`.
+- **`argument.type` su `array_map`** — `ListLogFilesActionTest.php` assegnava a `$this->paths` (proprietà dinamica
+  Pest) una closure con parametro nativo `array $files`; un PHPDoc `@param list<LogFileData>` sopra
+  `$this->paths = function(...)` non viene agganciato dal parser PHPStan/Pest al nodo Closure (stesso limite già
+  noto per `@return` su `TestCaseDynamicPropertyTypeExtension`). Sostituita con una funzione di livello superiore
+  `listedLogFilePaths(array $files): array` (stesso pattern già usato da `treeLogFile()` in
+  `BuildLogFileTreeActionTest.php`), con PHPDoc `@param`/`@return` regolarmente rispettato su una funzione
+  top-level.
+
+Verifica: `./vendor/bin/phpstan analyse Modules/Activity --memory-limit=-1` → 0 errori. 68 test Pest del modulo
+(`tests/Unit/Actions/Log/*`, `tests/Feature/Filament/LogDownloadPageTest`, `LogViewerPageTest`) tutti verdi
+(217 assertion). Pint eseguito solo sui file toccati (mai `--dirty` su questo repo condiviso).
+
+File toccati (solo test, nessun codice applicativo):
+`tests/Feature/Filament/LogDownloadPageTest.php`, `tests/Feature/Filament/LogViewerPageTest.php`,
+`tests/Unit/Actions/Log/AuthorizeLogAccessActionTest.php`, `tests/Unit/Actions/Log/BuildLogFileTreeActionTest.php`,
+`tests/Unit/Actions/Log/BuildLogViewerStateActionTest.php`, `tests/Unit/Actions/Log/DownloadLogFileActionTest.php`,
+`tests/Unit/Actions/Log/ListLogFilesActionTest.php`, `tests/Unit/Actions/Log/ParseAndFilterLogEntriesActionTest.php`,
+`tests/Unit/Actions/Log/ResolveLogFilePathActionTest.php`.
+
 ## GitHub (tracciamento)
 
 Il tracciamento sta nel repo Quaeris (il bisogno nasce lì) e nella root. L'implementazione è in `module_activity_fila5`.
