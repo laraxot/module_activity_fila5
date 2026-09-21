@@ -10,4 +10,4 @@ related:
 
 ## [2026-09-21] Nessun candidato conversione
 
-Docs only. Inventario chiuso. Http/Livewire solo .gitkeep. Audit log ≠ widget KPI. Zero conversione.
+Docs only. Inventario chiuso. Http/Livewire solo `.gitkeep` + `_components.json` vuoto. Audit log ≠ widget KPI. Zero conversione. Canone: [livewire-inventory.md](./livewire-inventory.md).

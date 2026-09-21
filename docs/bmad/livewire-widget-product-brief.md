@@ -8,4 +8,4 @@ related:
 
 # Brief Activity
 
-Nessuna UI HTTP da portare nel panel. Http/Livewire solo .gitkeep. Audit log ≠ widget KPI. Zero conversione.
+Nessuna UI HTTP da portare nel panel. Http/Livewire solo `.gitkeep` + `_components.json` vuoto. Audit log ≠ widget KPI. Zero conversione: [livewire-inventory.md](./livewire-inventory.md).
