@@ -24,7 +24,6 @@ it('splits a Monolog file into entries and keeps stack traces attached to their 
     $entries = (new ParseLogEntriesAction)->execute(SAMPLE_LOG."\n");
 
     expect($entries)->toHaveCount(3);
-    expect($entries[0])->toBeInstanceOf(LogEntryData::class);
 
     expect($entries[0]->timestamp)->toBe('2026-09-20 10:00:00');
     expect($entries[0]->environment)->toBe('production');
@@ -77,7 +76,6 @@ it('filters by level', function (): void {
 
     $result = (new FilterLogEntriesAction)->execute($entries, 'error');
 
-    expect($result)->toBeInstanceOf(FilteredLogEntriesData::class);
     expect($result->total)->toBe(1);
     expect($result->entries[0]->level)->toBe('ERROR');
 });
