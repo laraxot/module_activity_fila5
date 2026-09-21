@@ -24,7 +24,11 @@ class ParseLogEntriesAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     private const string HEADER_PATTERN = '/^\[(?<ts>\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}:\d{2}(?:[.,]\d+)?(?:[+-]\d{2}:?\d{2}|Z)?)\]\s+(?<env>[\w.-]+)\.(?<level>[A-Za-z]+):\s?(?<msg>.*)$/';
+=======
+    private const HEADER_PATTERN = '/^\[(?<ts>\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}:\d{2}(?:[.,]\d+)?(?:[+-]\d{2}:?\d{2}|Z)?)\]\s+(?<env>[\w.-]+)\.(?<level>[A-Za-z]+):\s?(?<msg>.*)$/';
+>>>>>>> laraxot/dev
 
     /**
      * @return list<LogEntryData>
