@@ -35,7 +35,7 @@ it('returns a streamed download of the requested log file', function (): void {
 
     expect($response->headers->get('Content-Disposition'))->toContain('reports_252_daily.log');
     expect($response->headers->get('Content-Type'))->toContain('text/plain');
-    /** @var \SplFileInfo $file */
+    /** @var \Symfony\Component\HttpFoundation\File\File $file */
     $file = $response->getFile();
     expect(File::get($file->getPathname()))->toBe("contenuto del report\n");
 });

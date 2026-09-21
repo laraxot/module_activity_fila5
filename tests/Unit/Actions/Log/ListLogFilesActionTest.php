@@ -19,7 +19,10 @@ uses(TestCase::class);
  */
 function listedLogFilePaths(array $files): array
 {
-    return array_map(fn (LogFileData $file): string => $file->path, $files);
+    return array_map(
+        static fn (LogFileData $file): string => $file->path,
+        $files
+    );
 }
 
 beforeEach(function (): void {
@@ -62,10 +65,10 @@ it('returns size, name, directory and modification time for each file', function
     $files = (new ListLogFilesAction())->execute($this->base);
 
     expect($files)->toHaveCount(1);
-    expect($files[0]->name)->toBe('daily_2026-09-17.log');
-    expect($files[0]->directory)->toBe('reports/252');
-    expect($files[0]->size)->toBe(5);
-    expect($files[0]->modifiedAt)->toBeGreaterThan(0);
+expect($files[0]->name)->toBe('daily_2026-09-17.log');
+     expect($files[0]->directory)->toBe('reports/252');
+     expect($files[0]->size)->toBe(5);
+     expect($files[0]->modifiedAt)->toBeGreaterThan(0);
 });
 
 it('sorts files from the most recently modified to the oldest', function (): void {
