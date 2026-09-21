@@ -41,8 +41,7 @@ beforeEach(function (): void {
 
     $this->actingAsUser = function (bool $isSuperAdmin, bool|Throwable $hasPermission = false): void {
         // UserContract estende gia' Authenticatable: un solo mock basta ed e' tipizzabile da PHPStan.
-        /** @var MockInterface&UserContract $user */
-        $user = Mockery::mock(UserContract::class);
+        /** @var MockInterface&UserContract&Authenticatable $user */
         $user = Mockery::mock(UserContract::class, Authenticatable::class);
         $user->shouldReceive('hasRole')->with('super-admin')->andReturn($isSuperAdmin);
         $expectation = $user->shouldReceive('hasPermissionTo')->with('log.viewAny');
@@ -148,7 +147,6 @@ it('passes the user choices to the state and exposes the tree', function (): voi
 
     $state = $page->getLogState();
 
-    expect($state)->toBeInstanceOf(LogViewerStateData::class);
     expect($state->total)->toBe(1);
     expect($state->tree->count)->toBe(2);
     expect($state->tree->folders[0]->path)->toBe('reports');

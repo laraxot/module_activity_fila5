@@ -44,10 +44,6 @@ it('returns a streamed download of the requested log file', function (): void {
 it('refuses files outside the log directory, missing files and non-log files', function (): void {
     $action = new DownloadLogFileAction();
 
-    expect($response)->toBeInstanceOf(BinaryFileResponse::class);
-    expect(File::get($response->getFile()->getPathname()))->toBe("contenuto del report\n");
-
-
     foreach (['../framework/testing/segreto-download.log', 'non-esiste.log', '', 'laravel.log/../../.env', '/etc/passwd'] as $file) {
         expect(fn () => $action->execute($file))->toThrow(InvalidLogFileException::class);
     }
