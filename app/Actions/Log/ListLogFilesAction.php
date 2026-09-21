@@ -22,11 +22,7 @@ class ListLogFilesAction
 
     // ponytail: tetto di 1000 file elencati, nessuna paginazione ne' ricerca per nome;
     // se non bastano, paginare l'albero o filtrare per nome/cartella.
-<<<<<<< HEAD
     public const int DEFAULT_LIMIT = 1000;
-=======
-    public const DEFAULT_LIMIT = 1000;
->>>>>>> laraxot/dev
 
     /**
      * @return list<LogFileData>

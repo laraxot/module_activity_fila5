@@ -2,13 +2,9 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 use Illuminate\Support\Facades\File;
 use Mockery\MockInterface;
-=======
 use Illuminate\Contracts\Auth\Authenticatable;
-use Illuminate\Support\Facades\File;
->>>>>>> laraxot/dev
 use Modules\Xot\Contracts\UserContract;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpKernel\Exception\HttpException;
@@ -45,15 +41,9 @@ beforeEach(function (): void {
         }
     };
 
-<<<<<<< HEAD
-    $this->user = function (bool $isSuperAdmin, bool $hasPermission = false): UserContract {
-        // UserContract estende gia' Authenticatable: un solo mock basta ed e' tipizzabile da PHPStan.
-        /** @var MockInterface&UserContract $user */
-        $user = Mockery::mock(UserContract::class);
-=======
     $this->user = function (bool $isSuperAdmin, bool $hasPermission = false): UserContract&Authenticatable {
+        /** @var MockInterface&UserContract&Authenticatable $user */
         $user = Mockery::mock(UserContract::class, Authenticatable::class);
->>>>>>> laraxot/dev
         $user->shouldReceive('hasRole')->with('super-admin')->andReturn($isSuperAdmin);
         $user->shouldReceive('hasPermissionTo')->with('log.viewAny')->andReturn($hasPermission);
 
@@ -82,7 +72,6 @@ it('streams the requested file to a super-admin', function (): void {
     $response = $this->actingAs(($this->user)(true))->get('/api/log-download?file=reports/252/daily.log');
 
     $response->assertOk();
-<<<<<<< HEAD
     $binaryResponse = $response->baseResponse;
     expect($binaryResponse)->toBeInstanceOf(BinaryFileResponse::class);
 
@@ -92,11 +81,8 @@ it('streams the requested file to a super-admin', function (): void {
 
     expect($response->headers->get('Content-Disposition'))->toContain('reports_252_daily.log');
     expect(File::get($binaryResponse->getFile()->getPathname()))->toBe("contenuto del report\n");
-=======
     expect($response->baseResponse)->toBeInstanceOf(BinaryFileResponse::class);
-    expect($response->headers->get('Content-Disposition'))->toContain('reports_252_daily.log');
     expect(File::get($response->baseResponse->getFile()->getPathname()))->toBe("contenuto del report\n");
->>>>>>> laraxot/dev
 });
 
 it('streams the requested file to a user with the log.viewAny permission', function (): void {

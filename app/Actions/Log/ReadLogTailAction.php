@@ -26,7 +26,6 @@ class ReadLogTailAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
     public const int DEFAULT_BYTES = 262144; // 256 KiB
 
     public const int MIN_BYTES = 1024;
@@ -34,15 +33,6 @@ class ReadLogTailAction
     // ponytail: massimo 4 MiB letti per richiesta (memory_limit basso sul server): ricerca e filtri valgono
     // solo su questa parte; per cercare in tutto il file serve una ricerca a blocchi (grep in streaming).
     public const int MAX_BYTES = 4194304; // 4 MiB
-=======
-    public const DEFAULT_BYTES = 262144; // 256 KiB
-
-    public const MIN_BYTES = 1024;
-
-    // ponytail: massimo 4 MiB letti per richiesta (memory_limit basso sul server): ricerca e filtri valgono
-    // solo su questa parte; per cercare in tutto il file serve una ricerca a blocchi (grep in streaming).
-    public const MAX_BYTES = 4194304; // 4 MiB
->>>>>>> laraxot/dev
 
     /**
      * @throws RuntimeException se il file non esiste, non e' leggibile o non si riesce a leggere
