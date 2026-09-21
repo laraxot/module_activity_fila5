@@ -7,7 +7,7 @@ namespace Modules\Activity\Actions\Query;
 use Illuminate\Database\Eloquent\Collection;
 use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -20,7 +20,7 @@ class GetUserActivitiesAction
     /**
      * @return Collection<int, Activity>
      */
-    public function execute(User $user, int $limit = 50): Collection
+    public function execute(UserContract $user, int $limit = 50): Collection
     {
         if ($limit <= 0) {
             throw new InvalidArgumentException('Limit must be positive');
