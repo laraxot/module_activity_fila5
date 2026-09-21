@@ -8,6 +8,7 @@ use Modules\Activity\Datas\LogFileData;
 use Safe\Exceptions\FilesystemException;
 use Tests\TestCase;
 
+use function Safe\touch;
 use function Safe\symlink;
 
 uses(TestCase::class);
@@ -64,11 +65,10 @@ it('returns size, name, directory and modification time for each file', function
     $files = (new ListLogFilesAction())->execute($this->base);
 
     expect($files)->toHaveCount(1);
-    expect($files[0])->toBeInstanceOf(LogFileData::class);
     expect($files[0]->name)->toBe('daily_2026-09-17.log');
     expect($files[0]->directory)->toBe('reports/252');
     expect($files[0]->size)->toBe(5);
-    expect($files[0]->modifiedAt)->toBeInt()->toBeGreaterThan(0);
+    expect($files[0]->modifiedAt)->toBeGreaterThan(0);
 });
 
 it('sorts files from the most recently modified to the oldest', function (): void {

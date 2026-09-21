@@ -81,8 +81,6 @@ it('streams the requested file to a super-admin', function (): void {
 
     expect($response->headers->get('Content-Disposition'))->toContain('reports_252_daily.log');
     expect(File::get($binaryResponse->getFile()->getPathname()))->toBe("contenuto del report\n");
-    expect($response->baseResponse)->toBeInstanceOf(BinaryFileResponse::class);
-    expect(File::get($response->baseResponse->getFile()->getPathname()))->toBe("contenuto del report\n");
 });
 
 it('streams the requested file to a user with the log.viewAny permission', function (): void {

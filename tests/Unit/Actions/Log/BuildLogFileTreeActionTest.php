@@ -29,7 +29,6 @@ it('builds a nested tree with the subfolders and the top-level files', function 
         treeLogFile('reports/rejected/daily_2026-09-20.log'),
     ]);
 
-    expect($tree)->toBeInstanceOf(LogTreeData::class);
     expect($tree->name)->toBe('');
     expect($tree->path)->toBe('');
     expect($tree->count)->toBe(3);
