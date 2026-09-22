@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
 title: "Activity Module Testing"
 type: guide
@@ -36,9 +34,6 @@ test('logs causer on user action', function () {
     expect($activity->causer_id)->toBe($admin->id);
 });
 ```
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 # Testing Documentation
 
 ## Overview
@@ -425,9 +420,5 @@ Remember: Good tests are the foundation of reliable software development.
 ---
 
 *Last updated: January 2025*
-<<<<<<< HEAD
 *
->>>>>>> 0a02158a (.)
-=======
 *
->>>>>>> 35d8cf69 (Initial commit)
