@@ -366,9 +366,20 @@ public function it_logs_activity_when_sending_email(): void
 
 ---
 
+<<<<<<< HEAD
 **
 **Ultimo Aggiornamento:** 2025-01-22
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**
+=======
+>>>>>>> laraxot/dev
 **Ultimo Aggiornamento:** 2025-01-22
+>>>>>>> 0a02158a (.)
+=======
+**Ultimo Aggiornamento:** 2025-01-22
+>>>>>>> 35d8cf69 (Initial commit)
 **Versione:** 1.0
 **Autore:** System Integration Documentation
 **Stato:** ✅ Production Ready
