@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+=======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: boost_skill_fix_summary
@@ -7,9 +10,12 @@ canonical: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Module
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
+<<<<<<< HEAD
+=======
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
 # Boost Skill Fix Summary - Activity Module
 
 **Date**: 2026-03-02  

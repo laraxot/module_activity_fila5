@@ -227,9 +227,14 @@ IndennitaResponsabilita::withoutEvents(function (): void {
 ---
 
 <<<<<<< HEAD
+**
+**Ultimo aggiornamento**: 19 Novembre 2025  
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 **
 =======
+>>>>>>> laraxot/dev
 **Ultimo aggiornamento**: 19 Novembre 2025  
 >>>>>>> 0a02158a (.)
 =======

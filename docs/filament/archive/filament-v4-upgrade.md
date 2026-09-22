@@ -15,6 +15,10 @@ This document outlines the key changes and upgrades implemented for Filament v4 
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {

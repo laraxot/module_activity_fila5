@@ -5,9 +5,14 @@ sources: []
 confidence: high
 created: 2026-05-06
 <<<<<<< HEAD
+updated: 2026-07-16
+updated: 2026-05-06
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 updated: 2026-07-16
 =======
+>>>>>>> laraxot/dev
 updated: 2026-05-06
 >>>>>>> 0a02158a (.)
 =======
@@ -26,6 +31,10 @@ related:
 **Core Rule**: `XotBaseResource` base class owns the `form()` and `table()` methods. Subclasses MUST NOT override them.
 
 <<<<<<< HEAD
+La frontiera vale per tutto il codice del modulo, inclusi test e fixture: una classe di supporto non puo estendere `Filament\*` direttamente. Deve usare la base dello stesso percorso in `Modules\Xot\Filament\*`, cosi i test esercitano lo stesso contratto architetturale della produzione.
+
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 La frontiera vale per tutto il codice del modulo, inclusi test e fixture: una classe di supporto non puo estendere `Filament\*` direttamente. Deve usare la base dello stesso percorso in `Modules\Xot\Filament\*`, cosi i test esercitano lo stesso contratto architetturale della produzione.
 
@@ -33,6 +42,7 @@ La frontiera vale per tutto il codice del modulo, inclusi test e fixture: una cl
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
 The base class performs auto-discovery:
 - `form()` → looks for `Schemas/<Model>Form::configure($schema)`
 - `table()` → looks for `Tables/<Model>Table::configure($table)`
@@ -98,12 +108,16 @@ XotBaseResource::table()
 - [ ] `Tables/<Model>Table.php` exists with `static getTableColumns(): array`
 - [ ] No `->label()` calls (LangServiceProvider owns labels)
 <<<<<<< HEAD
+- [ ] Test e fixture non estendono classi `Filament\*` direttamente
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [ ] Test e fixture non estendono classi `Filament\*` direttamente
 =======
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
 - [ ] Safe functions preserved (`use function Safe\...`)
 
 ## References

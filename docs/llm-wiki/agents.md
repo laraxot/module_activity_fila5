@@ -82,9 +82,14 @@ related:
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Every page MUST have 3+ outgoing links
+<<<<<<< HEAD
+- Every page MUST have 3+ outgoing links
+- Every page MUST have 3+ outgoing links
+=======
 =======
 - Every page MUST have 3+ outgoing links
 >>>>>>> 0a02158a (.)
 =======
 - Every page MUST have 3+ outgoing links
 >>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
