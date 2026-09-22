@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # Errori Comuni Filament nel Modulo Activity
 
 ## Errori di Metodi Statici
@@ -164,7 +167,10 @@ class ListSnapshots extends ListRecords
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
 - [ ] Eseguire PHPStan per verificare altri possibili errori
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: filament-errors-duplicate
@@ -172,16 +178,17 @@ canonical: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
 ---
 
 <<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
+See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
+See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
+See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
+<<<<<<< HEAD
 =======
-See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
->>>>>>> d4098eb (.)
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
->>>>>>> 26b6dbd (.)
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
 >>>>>>> 2d6a374 (.)
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

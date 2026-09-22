@@ -20,9 +20,13 @@ related:
 # Activity Module LLM Wiki Agent Instructions
 =======
 <<<<<<< HEAD
+# Activity Module LLM Wiki Agent Instructions
+=======
+<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
 # Activity {{TYPE^}} LLM Wiki Agent Instructions
 >>>>>>> laraxot/dev
 
@@ -166,9 +170,14 @@ Related:
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Module Documentation](../README.md)
+<<<<<<< HEAD
+- [Module Documentation](../README.md)
+- [Module Documentation](../README.md)
+=======
 =======
 - [Module Documentation](../README.md)
 >>>>>>> 0a02158a (.)
 =======
 - [Module Documentation](../README.md)
 >>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
