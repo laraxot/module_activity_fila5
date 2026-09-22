@@ -15,9 +15,20 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 ### 2. .env.testing
 
 - `.env.testing` è uguale a `.env` tranne per i nomi database
+<<<<<<< HEAD
 - I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)
 - I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)
+=======
+>>>>>>> laraxot/dev
 - I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
+>>>>>>> 0a02158a (.)
+=======
+- I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
+>>>>>>> 35d8cf69 (Initial commit)
 - Le variabili `DB_CONNECTION`, `DB_DATABASE` **NON** devono essere sovrascritte in phpunit.xml
 - Laravel carica `.env.testing` quando `APP_ENV=testing`
 
@@ -26,9 +37,20 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 - Il TestCase usa `DatabaseTransactions` per rollback automatico tra test
 - `$connectionsToTransact = ['mysql', 'activity', 'user']` per coprire tutte le connessioni
 - **CRITICO**: La connessione `activity` DEVE essere inclusa. Senza di essa, ActivityLoggerTest getRecent fallisce per inquinamento dati.
+<<<<<<< HEAD
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`)
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite una volta: `php artisan migrate --env=testing`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`)
+=======
+>>>>>>> laraxot/dev
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite una volta: `php artisan migrate --env=testing`
+>>>>>>> 0a02158a (.)
+=======
+- Nessuna migrazione nel setUp: le migrazioni vanno eseguite una volta: `php artisan migrate --env=testing`
+>>>>>>> 35d8cf69 (Initial commit)
 
 ### 4. Connessioni Database
 
@@ -40,6 +62,11 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 
 **Setup minimo .env.testing:**
 ```env
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE_USER=<nome progetto>_data_test
 ```
@@ -62,6 +89,12 @@ php artisan migrate --env=testing --path=Modules/Activity/database/migrations
   - `Modules/Xot/app`
   - `Modules/User/app`
 
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
 DB_DATABASE=techplanner_data_test
 DB_DATABASE_USER=techplanner_data_test
 ```
@@ -74,6 +107,10 @@ php artisan migrate --database=activity --env=testing --force
 php artisan config:clear
 ```
 
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 ## Workflow Coverage
 
 ### Comandi
@@ -116,6 +153,17 @@ tests/
 - [testing-errors-fixes](testing-errors-fixes.md) - Errori risolti e correzioni
 - [testing-rules](testing-rules.md)
 - [testing-strategy-implementation](testing-strategy-implementation.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
+<<<<<<< HEAD
 - [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
 - [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
+=======
+=======
 - [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
+>>>>>>> 0a02158a (.)
+=======
+- [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev

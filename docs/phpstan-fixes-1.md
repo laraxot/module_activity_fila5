@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # Correzioni PHPStan per il Modulo Activity
 
 ## Panoramica
@@ -76,13 +80,28 @@ Il modulo Activity dimostra un'eccellente qualità del codice, raggiungendo il l
 * [phpstan_fixes.md](laravel/Modules/User/docs/phpstan_fixes.md)
 * [phpstan_fixes.md](laravel/Modules/User/docs/fixes/phpstan_fixes.md)
 * [phpstan_fixes.md](laravel/Modules/Activity/docs/phpstan_fixes.md)
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: phpstan-fixes-1
 canonical: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
+<<<<<<< HEAD
+=======
+>>>>>>> 2d6a374 (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
