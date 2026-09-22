@@ -14,7 +14,7 @@ description: >
   `git restore --source=HEAD -- .` prima di qualunque commit, nessun
   danno reale avvenuto.
 epic: docs-conflict-markers-cleanup
-status: done
+status: done # regressione di 6db1c9e3 via merge baf9bfbd; ri-risolto
 assignee: ai-agent
 created: 2026-09-22
 updated: 2026-09-22
@@ -56,16 +56,34 @@ acceptance_criteria:
     when: Il conflitto viene risolto
     then: Nessun contenuto reale viene perso (solo le righe marker sono rimosse)
 notes: |
+  CAUSA REALE della regressione (trovata dopo il commit iniziale):
+  questi stessi 88/90 file erano GIA' stati risolti stamattina con commit
+  6db1c9e3 "fix(Activity): pulizia marker di conflitto residui in docs/ +
+  verifica indice" (09:40:04, stesso account utente marco.sottana@gmail.com).
+  Il fix e' stato ANNULLATO dal successivo merge commit baf9bfbd
+  "Merge remote-tracking branch 'laraxot/dev' into dev", che ha
+  reintrodotto la versione remota stale con i marker mai risolti
+  (pattern identico alla regressione gia' documentata per Xot in
+  sprint-status.yaml: "Xot/5.159-docs-conflict-markers-regression-2026-09-22").
+  Root cause: laraxot/dev remote conteneva ancora la history pre-fix al
+  momento del merge; nessun gate "verify-no-conflict-markers.sh" impedisce
+  che un merge da un remote stale reintroduca marker gia' risolti localmente.
+
   Caso particolare docs/testing-coverage-policy.md: sezione ".env.testing"
   aveva due varianti REALI non identiche (placeholder generico vs valore
   "techplanner") non deduplicabili automaticamente; mantenute entrambe con
   fence markdown propri e titolo "variante alternativa" invece di lasciare
   la seconda orfana senza fence di apertura.
 
-  Non è stato possibile identificare con certezza l'autore/processo che ha
-  prodotto il tentativo distruttivo (svuotamento file) scartato prima del
-  commit: nessun file di lock o story BMAD attiva trovata per Activity al
-  momento dell'intervento, nessuna prova diretta di un secondo agente
-  concorrente su QUESTO modulo specifico (a differenza di Xot, dove è
-  stata trovata una story BMAD non tracciata di un'altra sessione).
-commit: 5fe111e1
+  Tentativo distruttivo scartato prima del commit (svuotamento file fino
+  a 0 byte): nessun file di lock o story BMAD attiva trovata per Activity
+  al momento dell'intervento; nessuna prova diretta di un secondo agente
+  concorrente su QUESTO modulo specifico oltre al merge baf9bfbd stesso
+  (a differenza di Xot, dove e' stata trovata una story BMAD non tracciata
+  di un'altra sessione).
+
+  Follow-up aperto: senza un gate che blocchi merge da laraxot/dev quando
+  reintroduce marker gia' risolti, la regressione puo' ripetersi.
+commit: 5fe111e1 (fix contenuto) + e6eb12dd (story)
+regressed_from_commit: 6db1c9e3
+regressed_by_commit: baf9bfbd
