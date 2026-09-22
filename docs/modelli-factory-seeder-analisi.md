@@ -1,7 +1,12 @@
 <<<<<<< HEAD
+# Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, SaluteMo, Xot
+# Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, SaluteMo, Xot
 =======
+>>>>>>> laraxot/dev
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
 >>>>>>> 0a02158a (.)
 =======
@@ -81,9 +86,14 @@ Il modulo UI contiene solo componenti Blade e risorse frontend, nessun modello E
 ---
 
 <<<<<<< HEAD
+## Modulo SaluteMo
+## Modulo <nome progetto>
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## Modulo SaluteMo
 =======
+>>>>>>> laraxot/dev
 ## Modulo <nome progetto>
 >>>>>>> 0a02158a (.)
 =======
@@ -105,9 +115,14 @@ Il modulo UI contiene solo componenti Blade e risorse frontend, nessun modello E
 ### Seeder Obsoleti
 - **PatientSeeder.php.old** - 🗑️ Da rimuovere
 <<<<<<< HEAD
+- **SaluteMoDatabaseSeeder.php** - ✅ Mantiene struttura
+- **<nome progetto>DatabaseSeeder.php** - ✅ Mantiene struttura
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 - **SaluteMoDatabaseSeeder.php** - ✅ Mantiene struttura
 =======
+>>>>>>> laraxot/dev
 - **<nome progetto>DatabaseSeeder.php** - ✅ Mantiene struttura
 >>>>>>> 0a02158a (.)
 =======
@@ -164,9 +179,14 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 
 ### Totale Modelli Analizzati
 <<<<<<< HEAD
+- **SaluteOra**: 20 modelli attivi, 7 obsoleti
+- ****: 20 modelli attivi, 7 obsoleti
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 - **SaluteOra**: 20 modelli attivi, 7 obsoleti
 =======
+>>>>>>> laraxot/dev
 - ****: 20 modelli attivi, 7 obsoleti
 >>>>>>> 0a02158a (.)
 =======
@@ -184,9 +204,14 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 - **Tenant**: 3 modelli, 2 obsoleti
 - **UI**: 0 modelli (solo componenti)
 <<<<<<< HEAD
+- **SaluteMo**: 2 modelli base, 1 obsoleto
+- **<nome progetto>**: 2 modelli base, 1 obsoleto
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 - **SaluteMo**: 2 modelli base, 1 obsoleto
 =======
+>>>>>>> laraxot/dev
 - **<nome progetto>**: 2 modelli base, 1 obsoleto
 >>>>>>> 0a02158a (.)
 =======
@@ -210,10 +235,17 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 
 ### Moduli Critici per Business Logic
 <<<<<<< HEAD
+1. **SaluteOra** - Core sanitario ✅ Completo
+2. **User** - Autenticazione ✅ Completo  
+1. **** - Core sanitario ✅ Completo
+2. **User** - Autenticazione ✅ Completo
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 1. **SaluteOra** - Core sanitario ✅ Completo
 2. **User** - Autenticazione ✅ Completo  
 =======
+>>>>>>> laraxot/dev
 1. **** - Core sanitario ✅ Completo
 2. **User** - Autenticazione ✅ Completo
 >>>>>>> 0a02158a (.)
@@ -235,11 +267,15 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 
 *Ultimo aggiornamento: Gennaio 2025*
 <<<<<<< HEAD
+*Analisi completa sistema SaluteOra: 150+ modelli, 14 moduli*
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 *Analisi completa sistema SaluteOra: 150+ modelli, 14 moduli*
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
 *Analisi completa sistema : 150+ modelli, 14 moduli*
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
 
@@ -429,7 +465,11 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 *Ultimo aggiornamento: Gennaio 2025*
 <<<<<<< HEAD
 *Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
+<<<<<<< HEAD
+*Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
+=======
 >>>>>>> 0a02158a (.)
 =======
 *Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
 >>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev

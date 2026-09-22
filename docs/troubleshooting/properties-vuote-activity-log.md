@@ -351,9 +351,14 @@ $record->update(['stabi' => 999]);
 ---
 
 <<<<<<< HEAD
+**
+**Ultimo aggiornamento**: 27 Ottobre 2025
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 **
 =======
+>>>>>>> laraxot/dev
 **Ultimo aggiornamento**: 27 Ottobre 2025
 >>>>>>> 0a02158a (.)
 =======
