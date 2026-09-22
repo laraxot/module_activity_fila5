@@ -7,9 +7,9 @@ created: 2026-06-10
 updated: 2026-06-10
 qmd: "Activity rules index phpstan pest discipline"
 issues:
-  - "https://github.com/laraxot/<nome repitory>/issues/328"
+  - "https://github.com/laraxot/base_ptv_fila5/issues/328"
 discussions:
-  - "https://github.com/laraxot/<nome repitory>/discussions/329"
+  - "https://github.com/laraxot/base_ptv_fila5/discussions/329"
 ---
 
 # Rules — Activity Module Wiki

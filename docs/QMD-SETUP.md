@@ -18,7 +18,7 @@ Il progetto usa una collection QMD centralizzata in  che include:
 
 ```yaml
 collection:
-  name: <nome progetto>
+  name: ptv
   source: docs/wiki  # Include tutti i moduli
   
 paths:

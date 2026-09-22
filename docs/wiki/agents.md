@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 ---
 title: "Agent instructions"
 type: reference
@@ -11,7 +16,15 @@ related:
   - ./coding-agent-manifests.md
 ---
 
+<<<<<<< HEAD
+# Activity Module LLM Wiki Agent Instructions
+=======
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 # Activity {{TYPE^}} LLM Wiki Agent Instructions
+>>>>>>> laraxot/dev
 
 > **Module/Theme:** Activity
 > **Scope:** Activity-specific knowledge only
@@ -149,5 +162,13 @@ Related:
 ## Related Documentation
 
 - [Project Wiki Integration](../../docs/wiki/README.md)
-- [Project Wiki Agent Instructions](../../docs/wiki/agents.md)
+- [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
 - [Module Documentation](../README.md)
+=======
+- [Module Documentation](../README.md)
+>>>>>>> 0a02158a (.)
+=======
+- [Module Documentation](../README.md)
+>>>>>>> 35d8cf69 (Initial commit)

@@ -146,7 +146,7 @@ class ListSnapshots extends ListRecords
    - Commentare il codice complesso
    - Mantenere i metodi piccoli e focalizzati
    - Seguire il principio DRY (Don't Repeat Yourself)
-   - Documentare le modifiche nei file changelog.md
+   - Documentare le modifiche nei file CHANGELOG.md
 
 4. **Verifica del Codice**
    - Eseguire i test automatici dopo le modifiche
@@ -162,6 +162,12 @@ class ListSnapshots extends ListRecords
 - [ ] Testare il funzionamento delle liste dopo le modifiche
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [ ] Eseguire PHPStan per verificare altri possibili errori 
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 - [ ] Eseguire PHPStan per verificare altri possibili errori
 # Errori Comuni Filament nel Modulo Activity
 
@@ -311,7 +317,7 @@ class ListSnapshots extends ListRecords
    - Commentare il codice complesso
    - Mantenere i metodi piccoli e focalizzati
    - Seguire il principio DRY (Don't Repeat Yourself)
-   - Documentare le modifiche nei file changelog.md
+   - Documentare le modifiche nei file CHANGELOG.md
 
 4. **Verifica del Codice**
    - Eseguire i test automatici dopo le modifiche
@@ -328,3 +334,7 @@ class ListSnapshots extends ListRecords
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
 - [ ] Eseguire PHPStan per verificare altri possibili errori
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
