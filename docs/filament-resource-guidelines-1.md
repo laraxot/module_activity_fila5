@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # Activity Module Filament Resource Guidelines
 
 ## Extension Patterns
@@ -106,13 +110,28 @@ All resources must be tested to ensure:
 - [XotBaseResource Documentation](../../Xot/docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../Xot/docs/filament-best-practices.md)
 - [Laraxot Extension Patterns](../../Xot/docs/base-classes.md)
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: filament-resource-guidelines-1
 canonical: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md
+<<<<<<< HEAD
+=======
+>>>>>>> 2d6a374 (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
