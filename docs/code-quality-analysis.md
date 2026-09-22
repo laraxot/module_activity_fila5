@@ -5,14 +5,6 @@
 ### 1. Activity Listing Performance (MEDIUM)
 
 #### N+1 Queries in Activity Logs
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 **Problem**: 50-100 queries per page load
 **Issues**:
 - N+1 queries when loading activity logs
@@ -381,13 +373,6 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 ### 1. Activity Listing Performance (MEDIUM)
 
 #### N+1 Queries in Activity Logs
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 
 **Problem**: 50-100 queries per page load
 
@@ -498,19 +483,10 @@ public function searchActivities($searchTerm, $filters = [])
 {
     $cacheKey = "activity_search_" . md5($searchTerm . serialize($filters));
     
-<<<<<<< HEAD
     
     
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     
->>>>>>> 0a02158a (.)
-=======
     
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
     return Cache::remember($cacheKey, 300, function() use ($searchTerm, $filters) {
         $query = ActivityLog::with(['causer', 'subject'])
             ->where(function($q) use ($searchTerm) {
@@ -832,25 +808,12 @@ $defaultRecordsPerPageSelectOption → $defaultPerPageOption
 
 ## 📚 Related Documentation
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 - [ACTIVITY_LOG_OPTIMIZATION.md](./performance/activity_log_optimization.md)
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./query_optimization_analysis.md)
 - [bottlenecks.md](./bottlenecks.md)
 
 This analysis provides a comprehensive roadmap for improving code quality in the Activity module while maintaining data integrity and performance.
 
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 - [ACTIVITY_LOG_OPTIMIZATION.md](./performance/ACTIVITY_LOG_OPTIMIZATION.md)
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./QUERY_OPTIMIZATION_ANALYSIS.md)
 - [bottlenecks.md](./bottlenecks.md)

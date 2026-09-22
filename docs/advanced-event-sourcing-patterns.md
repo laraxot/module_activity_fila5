@@ -11,23 +11,14 @@
 
 ## Introduction
 
-<<<<<<< HEAD
 Event Sourcing is particularly valuable in healthcare applications like `saluteora` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 Event Sourcing is particularly valuable in healthcare applications like `saluteora` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
-=======
->>>>>>> laraxot/dev
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
->>>>>>> 0a02158a (.)
-=======
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
->>>>>>> 35d8cf69 (Initial commit)
 
 ## Core Concepts
 
@@ -52,40 +43,20 @@ sequenceDiagram
     participant A as API
     participant AR as PatientAggregate
     participant ES as Event Store
-<<<<<<< HEAD
     
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
->>>>>>> laraxot/dev
 
->>>>>>> 0a02158a (.)
-=======
-
->>>>>>> 35d8cf69 (Initial commit)
     C->>A: Register Patient
     A->>AR: handle(RegisterPatientCommand)
     AR->>ES: store(PatientRegistered)
     AR->>ES: store(ContactInfoUpdated)
     ES-->>A: Events stored
     A-->>C: Patient ID
-<<<<<<< HEAD
     
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
->>>>>>> laraxot/dev
 
->>>>>>> 0a02158a (.)
-=======
-
->>>>>>> 35d8cf69 (Initial commit)
     Note right of ES: Projectors update read models asynchronously
 ```
 
@@ -102,29 +73,14 @@ class PrescriptionAggregate extends AggregateRoot
 {
     private array $medications = [];
     private bool $isApproved = false;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
     
     public function prescribe(
         string $patientId, 
         string $medicationId, 
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 
     public function prescribe(
         string $patientId,
         string $medicationId,
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
         string $dosage,
         string $doctorId
     ): void {
@@ -137,20 +93,10 @@ class PrescriptionAggregate extends AggregateRoot
             prescribedAt: now()
         ));
     }
-<<<<<<< HEAD
     
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
->>>>>>> laraxot/dev
 
->>>>>>> 0a02158a (.)
-=======
-
->>>>>>> 35d8cf69 (Initial commit)
     protected function applyMedicationPrescribed(MedicationPrescribed $event): void
     {
         $this->medications[$event->medicationId] = [
@@ -170,20 +116,10 @@ class ScheduleAppointmentHandler
         private EventBus $eventBus,
         private AppointmentRepository $appointments
     ) {}
-<<<<<<< HEAD
     
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
->>>>>>> laraxot/dev
 
->>>>>>> 0a02158a (.)
-=======
-
->>>>>>> 35d8cf69 (Initial commit)
     public function handle(ScheduleAppointmentCommand $command): void
     {
         $appointment = Appointment::schedule(
@@ -193,30 +129,18 @@ class ScheduleAppointmentHandler
             $command->scheduledTime,
             $command->duration
         );
-<<<<<<< HEAD
         
         $this->appointments->save($appointment);
         
 
         $this->appointments->save($appointment);
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
         
         $this->appointments->save($appointment);
         
-=======
->>>>>>> laraxot/dev
 
         $this->appointments->save($appointment);
 
->>>>>>> 0a02158a (.)
-=======
-
-        $this->appointments->save($appointment);
-
->>>>>>> 35d8cf69 (Initial commit)
         $this->eventBus->publish(new AppointmentScheduled(
             $appointment->id,
             $appointment->patientId,
@@ -236,59 +160,29 @@ class PatientAggregate extends AggregateRoot
 {
     private int $version = 0;
     private array $events = [];
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
     
     public static function reconstituteFromEvents(UuidInterface $uuid, array $events): self
     {
         $aggregate = new static($uuid);
         
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 
     public static function reconstituteFromEvents(UuidInterface $uuid, array $events): self
     {
         $aggregate = new static($uuid);
 
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
         // Apply all events
         foreach ($events as $event) {
             $aggregate->apply($event);
             $aggregate->version++;
         }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
         
         return $aggregate;
     }
     
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 
         return $aggregate;
     }
 
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
     public function snapshot(): PatientSnapshot
     {
         return new PatientSnapshot([
@@ -323,20 +217,10 @@ class PatientRegistrationTest extends TestCase
     public function it_registers_a_new_patient()
     {
         $patientId = PatientId::generate();
-<<<<<<< HEAD
         
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
->>>>>>> laraxot/dev
 
->>>>>>> 0a02158a (.)
-=======
-
->>>>>>> 35d8cf69 (Initial commit)
         $this->given()
             ->when(new RegisterPatient($patientId, 'John', 'Doe', 'john@example.com'))
             ->then([
@@ -370,23 +254,12 @@ class PatientRegistrationTest extends TestCase
 
 ## Conclusion
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `saluteora` can build a system that not only meets current requirements but can also evolve with future needs.
 
 ## References
 - [Event Sourcing in Laravel by Brent Roose](https://event-sourcing-laravel.com/)
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/project_docs/laravel-event-sourcing/v7/)
 - [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `<nome progetto>` can build a system that not only meets current requirements but can also evolve with future needs.
 Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `<nome progetto>` can build a system that not only meets current requirements but can also evolve with future needs.
 
@@ -398,7 +271,3 @@ Event Sourcing provides a robust foundation for healthcare applications by ensur
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/docs/laravel-event-sourcing/v7/)
 - [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)
 
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
