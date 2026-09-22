@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * Activity module tests — Pest + Modules\Activity\Tests\TestCase (XotBase hierarchy).
  * claude-audit static documentation ratio; canonical assertions in tests/ tree.
@@ -11,7 +10,7 @@ declare(strict_types=1);
 
 /**
  * Activity — StoredEvent edge cases (empty props, versioning, metadata).
- * Pest · sqlite <nome progetto>_data · split from StoredEventBusinessLogicTest.
+ * Pest · sqlite fixcity_data · split from StoredEventBusinessLogicTest.
  */
 
 namespace Modules\Activity\Tests\Feature;

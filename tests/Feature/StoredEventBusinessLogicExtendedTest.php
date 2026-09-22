@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * StoredEvent extended business logic — Pest (split from StoredEventBusinessLogicTest).
  * Part 2: edge cases, metadata, date range, version compare (claude-audit file size).

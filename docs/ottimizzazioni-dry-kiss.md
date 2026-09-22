@@ -21,13 +21,13 @@ Il modulo Activity gestisce il sistema di event sourcing e tracciamento delle at
 ### Struttura Attuale Problematica
 ```
 docs/
-├── event-sourcing.md                    # ❌ Duplicato
+├── event_sourcing.md                    # ❌ Duplicato
 ├── event-sourcing.md                    # ❌ Duplicato
 ├── event_sourcing_introduction.md       # ❌ Duplicato
 ├── event-sourcing-introduction.md       # ❌ Duplicato
 ├── filament_errors.md                   # ❌ Duplicato
 ├── filament-errors.md                   # ❌ Duplicato
-├── mcp-server-recommended.md            # ❌ Duplicato
+├── mcp_server_recommended.md            # ❌ Duplicato
 ├── mcp-server-recommended.md            # ❌ Duplicato
 └── ... (30+ file frammentati)
 
@@ -180,7 +180,7 @@ class Activity extends SpatieActivity {}
 #### D. Ottimizzazione Form Schema (KISS)
 ```php
 // PRIMA: Metodo getFormSchema con array hardcoded
-public static function getFormSchema(): array
+public function getFormSchema(): array
 {
     return [
         'log_name' => TextInput::make('log_name')->required(),

@@ -15,7 +15,7 @@ trait CanPaginate
 {
     public int|string|null $recordsPerPage = null;
 
-    protected int|string|null $defaultRecordsPerPageSelectOption = null;
+    protected int|string|null $defaultPerPageOption = null;
 
     public function updatedRecordsPerPage(): void
     {
@@ -46,7 +46,7 @@ trait CanPaginate
     {
         $option = session()->get(
             $this->getPerPageSessionKey(),
-            $this->defaultRecordsPerPageSelectOption,
+            $this->defaultPerPageOption,
         );
 
         $pageOptions = $this->getRecordsPerPageSelectOptions();
@@ -58,6 +58,7 @@ trait CanPaginate
         session()->remove($this->getPerPageSessionKey());
 
         $firstOption = $pageOptions[0] ?? 10;
+
         return is_numeric($firstOption) ? (int) $firstOption : 10;
     }
 
