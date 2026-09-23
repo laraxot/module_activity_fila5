@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Activity Module - User Research
 
 **Module:** Activity  
@@ -103,12 +99,6 @@ Legal teams need configurable retention periods.
 ---
 
 *Last Updated: March 12, 2026*
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Activity Module - User Research
 
 **Module:** Activity  
@@ -210,18 +200,7 @@ Legal teams need configurable retention periods.
 ---
 
 *Last Updated: March 12, 2026*
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 # User Research: Activity Module
 
 ## 🔬 Research Goals
 Identify user needs for Activity functionality.
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
