@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Architecture Documentation
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
 title: "Activity Module Architecture"
 type: architecture
@@ -10,7 +6,6 @@ tags: [module, architecture, audit]
 created: 2026-07-28
 updated: 2026-07-28
 ---
->>>>>>> laraxot/dev
 
 ## Activity Module Architecture
 
@@ -53,13 +48,8 @@ Activity Module Architecture
 
 ### Data Flow
 
-<<<<<<< HEAD
-=======
 ## Quality Gates
 ✅ PHPStan L10: Executed (2026-07-28)
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 # Architecture Documentation
 ---
 title: "Activity Module Architecture"
@@ -155,7 +145,6 @@ Activity Module Architecture
 
 ### Data Flow
 
->>>>>>> laraxot/dev
 1. **Event Creation**: User actions trigger domain events
 2. **Event Storage**: Events persisted to `stored_events` table
 3. **Snapshot Creation**: Aggregates create snapshots for performance
@@ -272,19 +261,9 @@ class ActivityPolicy
 - [Security](SECURITY.md)
 - [Quality](QUALITY.md)
 - [Performance](PERFORMANCE.md)
-<<<<<<< HEAD
 - [Testing](TESTING.md)
 - [Testing](TESTING.md)
 - [Testing](TESTING.md)
-=======
-<<<<<<< HEAD
 - [Testing](TESTING.md)
-=======
-<<<<<<< HEAD
 - [Testing](TESTING.md)
->>>>>>> 0a02158a (.)
-=======
 - [Testing](TESTING.md)
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
