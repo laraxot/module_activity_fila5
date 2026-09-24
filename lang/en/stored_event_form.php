@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_IGAE0i
-=======
 declare(strict_types=1);
 
->>>>>>> .merge_file_aHW5hh
 return [
     'fields' => [
         'event_class' => [

@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_GKoDM1
-=======
 declare(strict_types=1);
 
->>>>>>> .merge_file_ySO3R0
 return [
     'fields' => [
         'log_name' => [
