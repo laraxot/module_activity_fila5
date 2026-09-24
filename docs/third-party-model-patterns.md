@@ -57,10 +57,6 @@ class Activity extends SpatieActivity
         'causer_type',
         'causer_id',
         'properties',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
         'batch_uuid',
         'created_at',
         'updated_at',
@@ -70,45 +66,12 @@ class Activity extends SpatieActivity
         'batch_uuid',
         'created_at',
         'updated_at',
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        'batch_uuid',
-        'created_at',
-        'updated_at',
->>>>>>> 0a02158a (.)
-=======
-        'batch_uuid',
-        'created_at',
-        'updated_at',
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
     ];
 }
 ```
 
-<<<<<<< HEAD
 **Importante**: non ridefinire `$table` nel modello Activity. Il nome della tabella è gestito da Spatie tramite `config('activitylog.table_name')` (vedi `config/activitylog.php` e `config/local/<tenant>/activitylog.php`). Se serve cambiare tabella, farlo via configurazione, non nel modello.
 
-=======
-<<<<<<< HEAD
-**Importante**: non ridefinire `$table` nel modello Activity. Il nome della tabella è gestito da Spatie tramite `config('activitylog.table_name')` (vedi `config/activitylog.php` e `config/local/<tenant>/activitylog.php`). Se serve cambiare tabella, farlo via configurazione, non nel modello.
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Importante**: non ridefinire `$table` nel modello Activity. Il nome della tabella è gestito da Spatie tramite `config('activitylog.table_name')` (vedi `config/activitylog.php` e `config/local/<tenant>/activitylog.php`). Se serve cambiare tabella, farlo via configurazione, non nel modello.
-
-=======
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 ### StoredEvent Model
 
 **File**: `Modules/Activity/app/Models/StoredEvent.php`
@@ -310,12 +273,4 @@ public function test_event_storage(): void
 
 **Integration Status**: ✅ Fully compatible with Spatie package ecosystem
 **Performance**: High - leverages optimized package implementations
-<<<<<<< HEAD
 **Scalability**: Excellent - designed for high-volume activity logging
-=======
-<<<<<<< HEAD
-**Scalability**: Excellent - designed for high-volume activity logging
-=======
-**Scalability**: Excellent - designed for high-volume activity logging
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev

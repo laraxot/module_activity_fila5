@@ -16,23 +16,7 @@ afterEach(function (): void {
 });
 
 test('ActivityRecorder record delega a RecordSubjectActivityAction', function (): void {
-<<<<<<< HEAD
     $activity = new Activity;
-=======
-<<<<<<< .merge_file_rk2uBH
-<<<<<<< HEAD
-<<<<<<< .merge_file_vMj96r
-    $activity = new Activity();
-=======
-    $activity = new Activity;
->>>>>>> .merge_file_y5IczX
-=======
-    $activity = new Activity();
->>>>>>> a95e8f36 (.)
-=======
-    $activity = new Activity;
->>>>>>> .merge_file_m3WLYM
->>>>>>> laraxot/dev
 
     $mock = Mockery::mock(RecordSubjectActivityAction::class);
     mockeryExpect($mock->shouldReceive('execute'))
@@ -41,23 +25,7 @@ test('ActivityRecorder record delega a RecordSubjectActivityAction', function ()
         ->andReturn($activity);
     app()->instance(RecordSubjectActivityAction::class, $mock);
 
-<<<<<<< HEAD
     (new ActivityRecorder)->record(
-=======
-<<<<<<< .merge_file_rk2uBH
-<<<<<<< HEAD
-<<<<<<< .merge_file_vMj96r
-    (new ActivityRecorder())->record(
-=======
-    (new ActivityRecorder)->record(
->>>>>>> .merge_file_y5IczX
-=======
-    (new ActivityRecorder())->record(
->>>>>>> a95e8f36 (.)
-=======
-    (new ActivityRecorder)->record(
->>>>>>> .merge_file_m3WLYM
->>>>>>> laraxot/dev
         'Modules\\User\\Models\\User',
         42,
         'updated',
@@ -75,23 +43,7 @@ test('ActivityRecorder getLog delega a GetSubjectActivityLogAction', function ()
         ->andReturn($logEntries);
     app()->instance(GetSubjectActivityLogAction::class, $mock);
 
-<<<<<<< HEAD
     $result = (new ActivityRecorder)->getLog('Modules\\User\\Models\\User', 7);
-=======
-<<<<<<< .merge_file_rk2uBH
-<<<<<<< HEAD
-<<<<<<< .merge_file_vMj96r
-    $result = (new ActivityRecorder())->getLog('Modules\\User\\Models\\User', 7);
-=======
-    $result = (new ActivityRecorder)->getLog('Modules\\User\\Models\\User', 7);
->>>>>>> .merge_file_y5IczX
-=======
-    $result = (new ActivityRecorder())->getLog('Modules\\User\\Models\\User', 7);
->>>>>>> a95e8f36 (.)
-=======
-    $result = (new ActivityRecorder)->getLog('Modules\\User\\Models\\User', 7);
->>>>>>> .merge_file_m3WLYM
->>>>>>> laraxot/dev
 
     Assert::assertSame($logEntries, $result);
 });

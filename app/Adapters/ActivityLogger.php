@@ -21,26 +21,8 @@ use Modules\Activity\Actions\Query\GetModelActivitiesAction;
 use Modules\Activity\Actions\Query\GetRecentActivitiesAction;
 use Modules\Activity\Actions\Query\GetUserActivitiesAction;
 use Modules\Activity\Models\Activity;
-<<<<<<< HEAD
 use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract;
-=======
-<<<<<<< .merge_file_B208IP
-<<<<<<< HEAD
-<<<<<<< .merge_file_9uFqwM
-=======
->>>>>>> .merge_file_vurhrf
-use Modules\User\Models\User;
-use Modules\Xot\Contracts\UserContract;
-<<<<<<< .merge_file_B208IP
->>>>>>> .merge_file_EWEHOo
->>>>>>> .merge_file_O1Az67
-=======
-use Modules\User\Models\User;
->>>>>>> a95e8f36 (.)
-=======
->>>>>>> .merge_file_vurhrf
->>>>>>> laraxot/dev
 
 /**
  * Coordinator — delegates to single-purpose QueueableActions (not an Action: multi-method API).
@@ -57,58 +39,13 @@ class ActivityLogger
         ?array $properties = null,
         ?string $description = null,
     ): Activity {
-<<<<<<< HEAD
         if ($user !== null && ! $user instanceof User) {
             throw new InvalidArgumentException('User must be an instance of User');
-=======
-<<<<<<< .merge_file_B208IP
-<<<<<<< HEAD
-<<<<<<< .merge_file_9uFqwM
-        if ($user !== null && ! $user instanceof User) {
-            throw new InvalidArgumentException('User must be an instance of User');
-=======
-<<<<<<< .merge_file_BHZkMl
-        if ($user !== null && ! $user instanceof User) {
-            throw new InvalidArgumentException('User must be an instance of User');
-=======
-        if ($user !== null && (! $user instanceof UserContract || ! $user instanceof Model)) {
-            throw new InvalidArgumentException('User must implement UserContract');
->>>>>>> .merge_file_EWEHOo
->>>>>>> .merge_file_O1Az67
-=======
-        if ($user !== null && ! $user instanceof User) {
-            throw new InvalidArgumentException('User must be an instance of User');
->>>>>>> a95e8f36 (.)
-=======
-        if ($user !== null && ! $user instanceof User) {
-            throw new InvalidArgumentException('User must be an instance of User');
->>>>>>> .merge_file_vurhrf
->>>>>>> laraxot/dev
         }
 
         $activity = (new LogActivityAction(
             type: $type,
-<<<<<<< HEAD
             user: $user instanceof User ? $user : null,
-=======
-<<<<<<< .merge_file_B208IP
-<<<<<<< HEAD
-<<<<<<< .merge_file_9uFqwM
-            user: $user instanceof User ? $user : null,
-=======
-<<<<<<< .merge_file_BHZkMl
-            user: $user instanceof User ? $user : null,
-=======
-            user: $user instanceof Model ? $user : null,
->>>>>>> .merge_file_EWEHOo
->>>>>>> .merge_file_O1Az67
-=======
-            user: $user instanceof User ? $user : null,
->>>>>>> a95e8f36 (.)
-=======
-            user: $user instanceof User ? $user : null,
->>>>>>> .merge_file_vurhrf
->>>>>>> laraxot/dev
             subject: $subject,
             properties: $properties,
             description: $description,
@@ -122,39 +59,6 @@ class ActivityLogger
         return $activity;
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_B208IP
-<<<<<<< HEAD
-<<<<<<< .merge_file_9uFqwM
-=======
-<<<<<<< .merge_file_BHZkMl
->>>>>>> .merge_file_O1Az67
-=======
->>>>>>> a95e8f36 (.)
-    public function created(Model $model, ?User $user = null): Activity
-    {
-        return (new LogModelCreatedAction($model, $user))->execute();
-    }
-
-    public function updated(Model $model, ?User $user = null): Activity
-    {
-        return (new LogModelUpdatedAction($model, $user))->execute();
-    }
-
-    public function deleted(Model $model, ?User $user = null): Activity
-    {
-        return (new LogModelDeletedAction($model, $user))->execute();
-    }
-
-    public function login(User $user): Activity
-<<<<<<< HEAD
-<<<<<<< .merge_file_9uFqwM
-=======
-=======
-=======
->>>>>>> .merge_file_vurhrf
->>>>>>> laraxot/dev
     public function created(Model $model, ?UserContract $user = null): Activity
     {
         return (new LogModelCreatedAction($model, $user instanceof Model ? $user : null))->execute();
@@ -171,41 +75,11 @@ class ActivityLogger
     }
 
     public function login(UserContract $user): Activity
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_B208IP
->>>>>>> .merge_file_EWEHOo
->>>>>>> .merge_file_O1Az67
-=======
->>>>>>> a95e8f36 (.)
-=======
->>>>>>> .merge_file_vurhrf
->>>>>>> laraxot/dev
     {
         return (new LogUserLoginAction($user))->execute();
     }
 
-<<<<<<< HEAD
     public function logout(UserContract $user): Activity
-=======
-<<<<<<< .merge_file_B208IP
-<<<<<<< HEAD
-<<<<<<< .merge_file_9uFqwM
-    public function logout(User $user): Activity
-=======
-<<<<<<< .merge_file_BHZkMl
-    public function logout(User $user): Activity
-=======
-    public function logout(UserContract $user): Activity
->>>>>>> .merge_file_EWEHOo
->>>>>>> .merge_file_O1Az67
-=======
-    public function logout(User $user): Activity
->>>>>>> a95e8f36 (.)
-=======
-    public function logout(UserContract $user): Activity
->>>>>>> .merge_file_vurhrf
->>>>>>> laraxot/dev
     {
         return (new LogUserLogoutAction($user))->execute();
     }
@@ -223,27 +97,7 @@ class ActivityLogger
     }
 
     /** @return Collection<int, Activity> */
-<<<<<<< HEAD
     public function getUserActivities(User $user, int $limit = 50): Collection
-=======
-<<<<<<< .merge_file_B208IP
-<<<<<<< HEAD
-<<<<<<< .merge_file_9uFqwM
-    public function getUserActivities(User $user, int $limit = 50): Collection
-=======
-<<<<<<< .merge_file_BHZkMl
-    public function getUserActivities(User $user, int $limit = 50): Collection
-=======
-    public function getUserActivities(UserContract $user, int $limit = 50): Collection
->>>>>>> .merge_file_EWEHOo
->>>>>>> .merge_file_O1Az67
-=======
-    public function getUserActivities(User $user, int $limit = 50): Collection
->>>>>>> a95e8f36 (.)
-=======
-    public function getUserActivities(User $user, int $limit = 50): Collection
->>>>>>> .merge_file_vurhrf
->>>>>>> laraxot/dev
     {
         return app(GetUserActivitiesAction::class)->execute($user, $limit);
     }
@@ -274,27 +128,7 @@ class ActivityLogger
     /**
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
-<<<<<<< HEAD
     public function getStatistics(?User $user = null): array
-=======
-<<<<<<< .merge_file_B208IP
-<<<<<<< HEAD
-<<<<<<< .merge_file_9uFqwM
-    public function getStatistics(?User $user = null): array
-=======
-<<<<<<< .merge_file_BHZkMl
-    public function getStatistics(?User $user = null): array
-=======
-    public function getStatistics(?UserContract $user = null): array
->>>>>>> .merge_file_EWEHOo
->>>>>>> .merge_file_O1Az67
-=======
-    public function getStatistics(?User $user = null): array
->>>>>>> a95e8f36 (.)
-=======
-    public function getStatistics(?User $user = null): array
->>>>>>> .merge_file_vurhrf
->>>>>>> laraxot/dev
     {
         return app(GetActivityStatisticsAction::class)->execute($user);
     }

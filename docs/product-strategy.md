@@ -1,18 +1,5 @@
-<<<<<<< HEAD
 # Activity Module - Product Strategy
 # Activity Module - Product Strategy
-=======
-<<<<<<< HEAD
-# Activity Module - Product Strategy
-# Activity Module - Product Strategy
-=======
-<<<<<<< HEAD
-# Activity Module - Product Strategy
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 # Activity Module - Product Strategy
 
 **Module:** Activity  
@@ -116,19 +103,7 @@ Transform raw activity data into actionable intelligence.
 ---
 
 *Last Updated: March 12, 2026*
-<<<<<<< HEAD
 # Activity - Product Strategy
-=======
-<<<<<<< HEAD
-# Activity - Product Strategy
-=======
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-# Activity - Product Strategy
->>>>>>> laraxot/dev
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 
 **Module:** Activity  
 **Version:** 1.0.0  
@@ -177,13 +152,6 @@ Maintain sub-100ms query performance even with billions of events.
 ### Pillar 3: Compliance Ready
 Meet SOC2, GDPR, and other regulatory requirements out of the box.
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 ### Pillar 4: Actionable Insights
 Transform raw activity data into actionable intelligence.
 
@@ -238,24 +206,6 @@ Transform raw activity data into actionable intelligence.
 ---
 
 *Last Updated: March 12, 2026*
-<<<<<<< HEAD
 - Action-first: niente generic `Services` per la business logic
 - Standard operativo: `spatie/laravel-queueable-action`
 - Convenzione: Action con metodo `execute()` e dispatch tramite container
-=======
-<<<<<<< HEAD
-- Action-first: niente generic `Services` per la business logic
-- Standard operativo: `spatie/laravel-queueable-action`
-- Convenzione: Action con metodo `execute()` e dispatch tramite container
-=======
-=======
-- Action-first: niente generic `Services` per la business logic
-- Standard operativo: `spatie/laravel-queueable-action`
-- Convenzione: Action con metodo `execute()` e dispatch tramite container
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev

@@ -12,25 +12,11 @@ use Modules\User\Models\Policies\UserBasePolicy;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 uses(TestCase::class);
 
 describe('Snapshot Policy', function (): void {
     test('policy extends user base policy', function (): void {
         $policy = new SnapshotPolicy;
-<<<<<<< HEAD
-=======
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
-
-describe('Snapshot Policy', function (): void {
-    test('policy extends user base policy', function (): void {
-        $policy = new SnapshotPolicy();
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(UserBasePolicy::class, $policy);
     });
@@ -49,15 +35,7 @@ describe('Snapshot Policy', function (): void {
         $user = Mockery::mock(User::class);
         $user->shouldReceive('hasPermissionTo')->with('snapshot.view')->andReturn(true);
 
-<<<<<<< HEAD
         $policy = new SnapshotPolicy;
-=======
-<<<<<<< HEAD
-        $policy = new SnapshotPolicy;
-=======
-        $policy = new SnapshotPolicy();
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
         $result = $policy->view($user);
 
         Assert::assertTrue($result);
@@ -68,15 +46,7 @@ describe('Snapshot Policy', function (): void {
         $user = Mockery::mock(User::class);
         $user->shouldReceive('hasPermissionTo')->with('snapshot.view')->andReturn(false);
 
-<<<<<<< HEAD
         $policy = new SnapshotPolicy;
-=======
-<<<<<<< HEAD
-        $policy = new SnapshotPolicy;
-=======
-        $policy = new SnapshotPolicy();
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
         $result = $policy->view($user);
 
         Assert::assertFalse($result);

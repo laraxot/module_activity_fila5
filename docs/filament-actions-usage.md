@@ -365,10 +365,6 @@ class ListMyModelActivities extends ListLogActivities
 
 ---
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 **
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **
@@ -376,19 +372,3 @@ class ListMyModelActivities extends ListLogActivities
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Pattern**: DRY + KISS per Actions riutilizzabili
 **Conformità**: ✅ PHPStan livello 9+, ✅ Pint, ✅ Test Suite
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**
-=======
-**Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> 0a02158a (.)
-=======
-**Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> 35d8cf69 (Initial commit)
-**Pattern**: DRY + KISS per Actions riutilizzabili
-**Conformità**: ✅ PHPStan livello 9+, ✅ Pint, ✅ Test Suite
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev

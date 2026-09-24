@@ -280,19 +280,7 @@ return [
                 'label' => 'Excel',
                 'mime_type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 'extension' => 'xlsx',
-<<<<<<< HEAD
                 'icon' => 'heroicon-o-table-cells',
-=======
-<<<<<<< .merge_file_iFgwwG
-<<<<<<< HEAD
-                'icon' => 'xot-files.xlsx',
-=======
-                'icon' => 'heroicon-o-table-cells',
->>>>>>> a95e8f36 (.)
-=======
-                'icon' => 'heroicon-o-table-cells',
->>>>>>> .merge_file_dwB71f
->>>>>>> laraxot/dev
             ],
         ],
         'columns' => [

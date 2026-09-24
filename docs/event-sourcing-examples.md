@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 # Practical Event Sourcing Examples for Healthcare
 
 ## Table of Contents
@@ -284,15 +277,6 @@ These examples demonstrate how event sourcing can be applied to various aspects 
 4. **Understandable**: The business logic is expressed in terms of domain events
 
 Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 # Practical Event Sourcing Examples for Healthcare
 
 ## Table of Contents
@@ -572,10 +556,6 @@ These examples demonstrate how event sourcing can be applied to various aspects 
 4. **Understandable**: The business logic is expressed in terms of domain events
 
 Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Practical Event Sourcing Examples for Healthcare
 
 ## Table of Contents
@@ -855,14 +835,6 @@ These examples demonstrate how event sourcing can be applied to various aspects 
 4. **Understandable**: The business logic is expressed in terms of domain events
 
 Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.
-<<<<<<< HEAD
-=======
-=======
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: event-sourcing-examples
@@ -870,14 +842,3 @@ canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplic
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev

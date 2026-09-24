@@ -248,24 +248,9 @@ return [
             'confirmation' => 'ATTENZIONE: Vuoi eseguire il replay di tutti gli eventi selezionati? Questa è un\'operazione critica.',
             'requires_permission' => 'events.bulk_replay',
         ],
-<<<<<<< HEAD
         'logout' => [
             'tooltip' => 'logout',
         ],
-=======
-<<<<<<< HEAD
-        'logout' => [
-            'tooltip' => 'logout',
-        ],
-=======
-<<<<<<< HEAD
-=======
-        'logout' => [
-            'tooltip' => 'logout',
-        ],
->>>>>>> laraxot/dev
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
     ],
     'messages' => [
         'no_events' => 'Nessun evento trovato',
@@ -298,19 +283,7 @@ return [
                 'label' => 'Excel',
                 'mime_type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 'extension' => 'xlsx',
-<<<<<<< HEAD
                 'icon' => 'heroicon-o-table-cells',
-=======
-<<<<<<< .merge_file_fmv9uA
-<<<<<<< HEAD
-                'icon' => 'xot-files.xlsx',
-=======
-                'icon' => 'heroicon-o-table-cells',
->>>>>>> a95e8f36 (.)
-=======
-                'icon' => 'heroicon-o-table-cells',
->>>>>>> .merge_file_dc2Jw1
->>>>>>> laraxot/dev
             ],
         ],
         'columns' => [

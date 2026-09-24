@@ -1,20 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_qxwS9F
-<<<<<<< HEAD
-<<<<<<< .merge_file_UrGZRt
-
-=======
->>>>>>> .merge_file_e7N99W
-=======
-
->>>>>>> a95e8f36 (.)
-=======
->>>>>>> .merge_file_eaqDVM
->>>>>>> laraxot/dev
 use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
@@ -24,23 +10,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-<<<<<<< .merge_file_qxwS9F
-<<<<<<< HEAD
-<<<<<<< .merge_file_UrGZRt
-uses(\Modules\Activity\Tests\TestCase::class);
-=======
-uses(TestCase::class);
->>>>>>> .merge_file_e7N99W
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> a95e8f36 (.)
-=======
-uses(TestCase::class);
->>>>>>> .merge_file_eaqDVM
->>>>>>> laraxot/dev
 
 /*
  * Il bootstrap Pest del modulo non lega cartelle a TestCase: ogni file
@@ -50,33 +20,9 @@ uses(TestCase::class);
  */
 
 test('activity models declare activity connection without database', function (): void {
-<<<<<<< HEAD
     Assert::assertSame('activity', (new Activity)->getConnectionName());
     Assert::assertSame('activity', (new Snapshot)->getConnectionName());
     Assert::assertSame('activity', (new StoredEvent)->getConnectionName());
-=======
-<<<<<<< .merge_file_qxwS9F
-<<<<<<< HEAD
-<<<<<<< .merge_file_UrGZRt
-    Assert::assertSame('activity', (new Activity())->getConnectionName());
-    Assert::assertSame('activity', (new Snapshot())->getConnectionName());
-    Assert::assertSame('activity', (new StoredEvent())->getConnectionName());
-=======
-    Assert::assertSame('activity', (new Activity)->getConnectionName());
-    Assert::assertSame('activity', (new Snapshot)->getConnectionName());
-    Assert::assertSame('activity', (new StoredEvent)->getConnectionName());
->>>>>>> .merge_file_e7N99W
-=======
-    Assert::assertSame('activity', (new Activity())->getConnectionName());
-    Assert::assertSame('activity', (new Snapshot())->getConnectionName());
-    Assert::assertSame('activity', (new StoredEvent())->getConnectionName());
->>>>>>> a95e8f36 (.)
-=======
-    Assert::assertSame('activity', (new Activity)->getConnectionName());
-    Assert::assertSame('activity', (new Snapshot)->getConnectionName());
-    Assert::assertSame('activity', (new StoredEvent)->getConnectionName());
->>>>>>> .merge_file_eaqDVM
->>>>>>> laraxot/dev
 });
 
 test('pest bootstrap binds no folder and requires no stub file', function (): void {

@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_PoGBfu
-<<<<<<< HEAD
-<<<<<<< .merge_file_iCGDew
-# API reference — bridge
-
-Case-variant duplicate. Canonical file: [api.md](./api.md).
-=======
-=======
->>>>>>> a95e8f36 (.)
-=======
->>>>>>> .merge_file_nclABa
->>>>>>> laraxot/dev
 ---
 title: "Activity Module API"
 type: reference
@@ -42,13 +28,3 @@ $activity->subject;       // Polymorphic: User, Post, etc.
 $activity->causer;        // User performing action
 $activity->properties;    // JSON metadata
 ```
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_PoGBfu
-<<<<<<< HEAD
->>>>>>> .merge_file_muCUYj
-=======
->>>>>>> a95e8f36 (.)
-=======
->>>>>>> .merge_file_nclABa
->>>>>>> laraxot/dev
