@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_kIG8pZ
-=======
 declare(strict_types=1);
 
->>>>>>> .merge_file_ARodJ5
 return [
     'navigation' => [
         'name' => 'Modifica Attività',

@@ -15,11 +15,7 @@ test('LogActivityAction rifiuta type vuoto nel costruttore', function (): void {
 });
 
 test('LogActivityAction accetta parametri opzionali nel costruttore', function (): void {
-<<<<<<< .merge_file_XPfzto
     $model = new class() extends Model
-=======
-    $model = new class extends Model
->>>>>>> .merge_file_JRTtqB
     {
         protected $table = 'stub_models';
     };
