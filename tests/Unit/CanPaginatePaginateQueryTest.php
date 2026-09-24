@@ -38,7 +38,11 @@ function makePaginateQueryMock(int $total = 0): Builder&MockInterface
 }
 
 test('CanPaginate paginateQuery usa LengthAwarePaginator in modalità default', function (): void {
+<<<<<<< .merge_file_LNon2z
+    $harness = new CanPaginateHarness();
+=======
     $harness = new CanPaginateHarness;
+>>>>>>> .merge_file_SkM6jw
     $harness->recordsPerPage = 10;
 
     $query = makePaginateQueryMock(0);
@@ -52,7 +56,11 @@ test('CanPaginate paginateQuery usa LengthAwarePaginator in modalità default', 
 });
 
 test('CanPaginate paginateQuery usa simplePaginate in modalità simple', function (): void {
+<<<<<<< .merge_file_LNon2z
+    $harness = new CanPaginateHarness();
+=======
     $harness = new CanPaginateHarness;
+>>>>>>> .merge_file_SkM6jw
     $harness->recordsPerPage = 10;
     $harness->setMode(PaginationMode::Simple);
 
@@ -67,7 +75,11 @@ test('CanPaginate paginateQuery usa simplePaginate in modalità simple', functio
 });
 
 test('CanPaginate paginateQuery usa cursorPaginate in modalità cursor', function (): void {
+<<<<<<< .merge_file_LNon2z
+    $harness = new CanPaginateHarness();
+=======
     $harness = new CanPaginateHarness;
+>>>>>>> .merge_file_SkM6jw
     $harness->recordsPerPage = 10;
     $harness->setMode(PaginationMode::Cursor);
 
@@ -82,7 +94,11 @@ test('CanPaginate paginateQuery usa cursorPaginate in modalità cursor', functio
 });
 
 test('CanPaginate paginateQuery gestisce recordsPerPage all', function (): void {
+<<<<<<< .merge_file_LNon2z
+    $harness = new CanPaginateHarness();
+=======
     $harness = new CanPaginateHarness;
+>>>>>>> .merge_file_SkM6jw
     $harness->recordsPerPage = 'all';
 
     $query = makePaginateQueryMock(3);
