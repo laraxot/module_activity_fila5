@@ -1,9 +1,5 @@
 # PHPStan Complete Fixes 2025 - Activity Module
 
-<<<<<<< HEAD
-=======
-**Data**: 2025-01-27
->>>>>>> 68a8e694 (.)
 **Status**: ✅ **COMPLETATO CON SUCCESSO**
 **Livello PHPStan**: 10
 **Errori**: 0
