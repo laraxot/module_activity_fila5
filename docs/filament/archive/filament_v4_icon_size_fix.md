@@ -34,11 +34,17 @@ In Filament v4, the `size` attribute for icons changed from accepting string val
    - Removed `:size="24"` from icon component
    - Size controlled via CSS classes `h-36`
 
+<<<<<<< .merge_file_2VxEid
 <<<<<<< HEAD
 3. **Modules/Quaeris/resources/views/filament/widgets/overlook-stats.blade.php**
 =======
 3. **Modules/<nome progetto>/resources/views/filament/widgets/overlook-stats.blade.php**
 >>>>>>> laraxot/dev
+=======
+3. **Modules/Quaeris/resources/views/filament/widgets/overlook-stats.blade.php**
+3. **Modules/Quaeris/resources/views/filament/widgets/overlook-stats.blade.php**
+3. **Modules/<nome progetto>/resources/views/filament/widgets/overlook-stats.blade.php**
+>>>>>>> .merge_file_8si6hn
    - Removed `:size="24"` from two icon instances
    - Size controlled via CSS classes `size-4` and `h-36`
 
@@ -69,4 +75,8 @@ After applying these fixes:
 
 ## Related Documentation
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
+<<<<<<< .merge_file_2VxEid
 - [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
+=======
+- [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
+>>>>>>> .merge_file_8si6hn

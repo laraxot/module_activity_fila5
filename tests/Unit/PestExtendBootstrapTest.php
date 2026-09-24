@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_Kl1DZT
 
+=======
+>>>>>>> .merge_file_wRptua
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 
