@@ -1,21 +1,7 @@
 # Modulo Activity
 
-<<<<<<< HEAD
 Data: [DATE] 19:09:55
 Data: [DATE] 19:09:55
-=======
-<<<<<<< HEAD
-Data: [DATE] 19:09:55
-Data: [DATE] 19:09:55
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Data: [DATE] 19:09:55
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 Data: 2025-04-23 19:09:55
 Data: [DATE] 19:09:55
 
@@ -428,16 +414,4 @@ Modules/Activity/
 - È possibile sincronizzare eventi e log tramite reactor dedicati
 
 ### Collegamenti
-<<<<<<< HEAD
 - [Best Practice Event Sourcing .mdc](../../.cursor/rules/ACTIVITY_EVENT_SOURCING_BEST_PRACTICES.mdc)
-=======
-<<<<<<< HEAD
-- [Best Practice Event Sourcing .mdc](../../.cursor/rules/ACTIVITY_EVENT_SOURCING_BEST_PRACTICES.mdc)
-=======
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
-- [Best Practice Event Sourcing .mdc](../../.cursor/rules/ACTIVITY_EVENT_SOURCING_BEST_PRACTICES.mdc)
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev

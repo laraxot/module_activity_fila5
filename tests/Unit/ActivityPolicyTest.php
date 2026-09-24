@@ -11,15 +11,7 @@ use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-<<<<<<< HEAD
-uses(TestCase::class);
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 
 describe('Activity Policy', function (): void {
     test('user with permission can view', function (): void {
@@ -28,14 +20,7 @@ describe('Activity Policy', function (): void {
         $user = Mockery::mock(User::class);
         $user->shouldReceive('hasPermissionTo')->with('activity.view')->andReturn(true);
 
-<<<<<<< HEAD
         $policy = new ActivityPolicy;
-<<<<<<< HEAD
-=======
-=======
-        $policy = new ActivityPolicy();
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
         $result = $policy->view($user);
 
         Assert::assertTrue($result);
@@ -47,14 +32,7 @@ describe('Activity Policy', function (): void {
         $user = Mockery::mock(User::class);
         $user->shouldReceive('hasPermissionTo')->with('activity.view')->andReturn(false);
 
-<<<<<<< HEAD
         $policy = new ActivityPolicy;
-<<<<<<< HEAD
-=======
-=======
-        $policy = new ActivityPolicy();
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
         $result = $policy->view($user);
 
         Assert::assertFalse($result);

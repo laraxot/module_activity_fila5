@@ -16,56 +16,15 @@ use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
 test('ActivityMaintenanceAction rifiuta giorni non positivi', function (): void {
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_afrlKq
-<<<<<<< HEAD
-<<<<<<< .merge_file_n4hQ1n
-=======
->>>>>>> a95e8f36 (.)
-    expect(fn (): int => (new ActivityMaintenanceAction())->execute(0))
-        ->toThrow(InvalidArgumentException::class, 'Days must be positive');
-
-    expect(fn (): int => (new ActivityMaintenanceAction())->execute(-5))
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_PNoA3Y
->>>>>>> laraxot/dev
     expect(fn (): int => (new ActivityMaintenanceAction)->execute(0))
         ->toThrow(InvalidArgumentException::class, 'Days must be positive');
 
     expect(fn (): int => (new ActivityMaintenanceAction)->execute(-5))
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_afrlKq
->>>>>>> .merge_file_QUchmr
-=======
->>>>>>> a95e8f36 (.)
-=======
->>>>>>> .merge_file_PNoA3Y
->>>>>>> laraxot/dev
         ->toThrow(InvalidArgumentException::class);
 });
 
 test('LogModelCreatedAction accetta model e user opzionale', function (): void {
-<<<<<<< HEAD
     $model = new class extends Model
-=======
-<<<<<<< .merge_file_afrlKq
-<<<<<<< HEAD
-<<<<<<< .merge_file_n4hQ1n
-    $model = new class() extends Model
-=======
-    $model = new class extends Model
->>>>>>> .merge_file_QUchmr
-=======
-    $model = new class() extends Model
->>>>>>> a95e8f36 (.)
-=======
-    $model = new class extends Model
->>>>>>> .merge_file_PNoA3Y
->>>>>>> laraxot/dev
     {
         protected $table = 'stub_models';
     };
@@ -74,23 +33,7 @@ test('LogModelCreatedAction accetta model e user opzionale', function (): void {
     Assert::assertSame($model, $action->model);
     Assert::assertNull($action->user);
 
-<<<<<<< HEAD
     $user = new class extends Model
-=======
-<<<<<<< .merge_file_afrlKq
-<<<<<<< HEAD
-<<<<<<< .merge_file_n4hQ1n
-    $user = new class() extends Model
-=======
-    $user = new class extends Model
->>>>>>> .merge_file_QUchmr
-=======
-    $user = new class() extends Model
->>>>>>> a95e8f36 (.)
-=======
-    $user = new class extends Model
->>>>>>> .merge_file_PNoA3Y
->>>>>>> laraxot/dev
     {
         protected $table = 'users';
     };
@@ -99,23 +42,7 @@ test('LogModelCreatedAction accetta model e user opzionale', function (): void {
 });
 
 test('LogModelUpdatedAction e LogModelDeletedAction accettano model', function (): void {
-<<<<<<< HEAD
     $model = new class extends Model
-=======
-<<<<<<< .merge_file_afrlKq
-<<<<<<< HEAD
-<<<<<<< .merge_file_n4hQ1n
-    $model = new class() extends Model
-=======
-    $model = new class extends Model
->>>>>>> .merge_file_QUchmr
-=======
-    $model = new class() extends Model
->>>>>>> a95e8f36 (.)
-=======
-    $model = new class extends Model
->>>>>>> .merge_file_PNoA3Y
->>>>>>> laraxot/dev
     {
         protected $table = 'stub_models';
 
@@ -131,23 +58,7 @@ test('LogModelUpdatedAction e LogModelDeletedAction accettano model', function (
 });
 
 test('LogUserLoginAction e LogUserLogoutAction accettano User', function (): void {
-<<<<<<< HEAD
     $user = new User;
-=======
-<<<<<<< .merge_file_afrlKq
-<<<<<<< HEAD
-<<<<<<< .merge_file_n4hQ1n
-    $user = new User();
-=======
-    $user = new User;
->>>>>>> .merge_file_QUchmr
-=======
-    $user = new User();
->>>>>>> a95e8f36 (.)
-=======
-    $user = new User;
->>>>>>> .merge_file_PNoA3Y
->>>>>>> laraxot/dev
 
     $login = new LogUserLoginAction(user: $user);
     Assert::assertSame($user, $login->user);

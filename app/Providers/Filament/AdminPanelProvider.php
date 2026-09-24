@@ -11,21 +11,8 @@ use Override;
 class AdminPanelProvider extends XotBasePanelProvider
 {
     protected string $module = 'Activity';
-<<<<<<< HEAD
 
     #[Override]
-=======
-<<<<<<< HEAD
-
-    #[Override]
-=======
-<<<<<<< HEAD
-=======
-
-    #[Override]
->>>>>>> laraxot/dev
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
     public function panel(Panel $panel): Panel
     {
         return parent::panel($panel);
