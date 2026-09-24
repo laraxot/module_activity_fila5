@@ -8,7 +8,15 @@ use Modules\Activity\Events\ActivityEvent;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+<<<<<<< HEAD
+uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 
 test('activity event can be constructed and dispatched', function (): void {
     $event = new ActivityEvent;

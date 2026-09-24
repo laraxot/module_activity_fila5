@@ -1,6 +1,20 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_KLIJbp
+<<<<<<< HEAD
+<<<<<<< .merge_file_m8tyC1
+
+=======
+>>>>>>> .merge_file_NnVjVp
+=======
+
+>>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_ZEvOYM
+>>>>>>> laraxot/dev
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 

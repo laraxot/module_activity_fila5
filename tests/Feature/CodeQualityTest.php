@@ -12,11 +12,24 @@ use PHPUnit\Framework\Assert;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use SplFileInfo;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 
 use function Safe\exec;
 use function Safe\file_get_contents;
 
 uses(TestCase::class);
+<<<<<<< HEAD
+=======
+=======
+use function Safe\exec;
+use function Safe\file_get_contents;
+
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 
 /**
  * @return list<string>
@@ -49,9 +62,20 @@ function activityAssertPhpFileHasValidSyntax(string $filePath): void
     exec('php -l '.escapeshellarg($filePath).' 2>&1', $outputLines, $resultCode);
 
     Assert::assertIsArray($outputLines);
+<<<<<<< HEAD
     /** @var list<string> $outputLines */
     $lines = array_map(static function (string $line): string {
         return $line;
+=======
+<<<<<<< HEAD
+    /** @var list<string> $outputLines */
+    $lines = array_map(static function (string $line): string {
+        return $line;
+=======
+    $lines = array_map(static function (mixed $line): string {
+        return is_string($line) ? $line : '';
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
     }, $outputLines);
     Assert::assertSame(0, $resultCode, "File {$filePath} ha errori di sintassi: ".implode("\n", $lines));
 }
