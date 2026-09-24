@@ -2,29 +2,7 @@
 
 declare(strict_types=1);
 
-// Activity translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Activity/docs/wiki — domain i18n only.
-// File: lang/it/stored_event.php
 return [
-// Activity — translation section (claude-audit doc ratio).
-// Activity — translation keys (no business logic).
-// Activity — translation keys (no business logic).
-// Activity — translation keys (no business logic).
-// Activity — translation keys (no business logic).
-// Activity — translation keys (no business logic).
-// Activity — translation keys (no business logic).
-// Activity — translation keys (no business logic).
-// Activity — translation keys (no business logic).
-// Activity — translation keys (no business logic).
-// Activity — translation keys (no business logic).
-// Activity — translation keys (no business logic).
-// Activity — translation keys (no business logic).
-// Activity — translation keys (no business logic).
-// Activity — translation keys (no business logic).
-// Activity — translation keys (no business logic).
-// Activity — translation keys (no business logic).
-// Activity — translation keys (no business logic).
     'navigation' => [
         'name' => 'Eventi Archiviati',
         'plural' => 'Eventi Archiviati',
@@ -270,6 +248,9 @@ return [
             'confirmation' => 'ATTENZIONE: Vuoi eseguire il replay di tutti gli eventi selezionati? Questa è un\'operazione critica.',
             'requires_permission' => 'events.bulk_replay',
         ],
+        'logout' => [
+            'tooltip' => 'logout',
+        ],
     ],
     'messages' => [
         'no_events' => 'Nessun evento trovato',
@@ -302,7 +283,7 @@ return [
                 'label' => 'Excel',
                 'mime_type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 'extension' => 'xlsx',
-                'icon' => 'heroicon-o-table-cells',
+                'icon' => 'xot-files.xlsx',
             ],
         ],
         'columns' => [
