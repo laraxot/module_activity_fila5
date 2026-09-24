@@ -4,13 +4,30 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Providers;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+use function Safe\json_encode;
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 use function Safe\json_encode;
 
 uses(TestCase::class);
+=======
+<<<<<<< HEAD
+use function Safe\json_encode;
+
+uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 
 test('activity service provider exposes expected metadata', function (): void {
     $provider = new ActivityServiceProvider(app());

@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_TIeQSd
+<<<<<<< HEAD
+<<<<<<< .merge_file_D08ncs
+---
+module: theme
+topic: filament_v4_icon_size_fix
+canonical: ../../../../Themes/docs/shared-components/filament_v4_icon_size_fix.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/filament_v4_icon_size_fix.md
+=======
+=======
+>>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_0drGcw
+>>>>>>> laraxot/dev
 # Filament v4 Icon Size Attribute Fix
 
 ## Issue Description
@@ -65,4 +83,17 @@ After applying these fixes:
 
 ## Related Documentation
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
+<<<<<<< HEAD
 - [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
+=======
+<<<<<<< .merge_file_TIeQSd
+<<<<<<< HEAD
+- [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
+>>>>>>> .merge_file_2JaGQN
+=======
+- [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
+>>>>>>> a95e8f36 (.)
+=======
+- [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
+>>>>>>> .merge_file_0drGcw
+>>>>>>> laraxot/dev

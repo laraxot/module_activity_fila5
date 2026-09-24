@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_AlQfhS
+<<<<<<< HEAD
+<<<<<<< .merge_file_coc3H0
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_frzv9j
+=======
+<<<<<<< HEAD
+>>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_FbnT2U
+>>>>>>> laraxot/dev
 ---
 title: "Rimando a filament_v4_upgrade.md"
 description: "Documento unificato: il contenuto canonico vive in filament_v4_upgrade.md."
@@ -8,6 +22,20 @@ tags: [merge, duplicato, case-only]
 # Documento unificato
 
 Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, in violazione della regola no-case-only-variations. Il contenuto canonico si trova in [filament_v4_upgrade.md](./filament_v4_upgrade.md).
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_AlQfhS
+<<<<<<< HEAD
+<<<<<<< .merge_file_coc3H0
+=======
+=======
+>>>>>>> .merge_file_frzv9j
+=======
+=======
+>>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_FbnT2U
+>>>>>>> laraxot/dev
 # Filament v4 Upgrade Documentation
 
 ## Overview
@@ -59,3 +87,17 @@ public static function getFormSchema(): array
 
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_AlQfhS
+<<<<<<< HEAD
+<<<<<<< .merge_file_coc3H0
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_frzv9j
+=======
+>>>>>>> laraxot/dev
+>>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_FbnT2U
+>>>>>>> laraxot/dev
