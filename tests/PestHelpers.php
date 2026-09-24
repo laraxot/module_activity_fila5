@@ -1,9 +1,15 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_DMWnAZ
 
 use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Models\Activity;
+=======
+use Modules\Activity\Database\Factories\ActivityFactory;
+use Modules\Activity\Models\Activity;
+use Modules\User\Contracts\UserContract;
+>>>>>>> .merge_file_ZzYkfE
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 
@@ -19,7 +25,11 @@ use Modules\User\Models\User;
 function activityCreateUser(array $attributes = []): User
 {
     $user = UserFactory::new()->createOne($attributes);
+<<<<<<< .merge_file_DMWnAZ
     assert($user instanceof User);
+=======
+    assert($user instanceof UserContract);
+>>>>>>> .merge_file_ZzYkfE
 
     return $user;
 }
