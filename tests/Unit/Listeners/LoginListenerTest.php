@@ -1,20 +1,25 @@
 <?php
 
 declare(strict_types=1);
+
+namespace Modules\Activity\Tests\Unit\Listeners;
+
 use Illuminate\Auth\Events\Login;
-use Modules\Activity\Listeners\LoginListener;
 use Modules\Activity\Providers\EventServiceProvider;
+use Modules\Activity\Listeners\LoginListener;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use ReflectionClass;
 
 uses(TestCase::class);
 
 test('login listener is registered for login event', function () {
     $reflection = new ReflectionClass(EventServiceProvider::class);
-    /** @var array<class-string, list<class-string>> $listen */
-    $listen = $reflection->getDefaultProperties()['listen'] ?? [];
-    /** @var list<class-string> $handlers */
+    $properties = $reflection->getDefaultProperties();
+    $listen = $properties['listen'] ?? null;
+    Assert::assertIsArray($listen);
     $handlers = $listen[Login::class] ?? [];
+    Assert::assertIsArray($handlers);
 
     Assert::assertContains(LoginListener::class, $handlers);
 });

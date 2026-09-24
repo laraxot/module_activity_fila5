@@ -4,10 +4,6 @@ type: concept
 sources: []
 confidence: high
 created: 2026-05-06
-updated: 2026-07-16
-updated: 2026-05-06
-updated: 2026-07-16
-updated: 2026-05-06
 updated: 2026-05-06
 tags: [filament, xotbase, zen-pattern, resource]
 related:
@@ -20,8 +16,6 @@ related:
 ## Zen Philosophy (2026-05-06)
 
 **Core Rule**: `XotBaseResource` base class owns the `form()` and `table()` methods. Subclasses MUST NOT override them.
-
-La frontiera vale per tutto il codice del modulo, inclusi test e fixture: una classe di supporto non puo estendere `Filament\*` direttamente. Deve usare la base dello stesso percorso in `Modules\Xot\Filament\*`, cosi i test esercitano lo stesso contratto architetturale della produzione.
 
 The base class performs auto-discovery:
 - `form()` → looks for `Schemas/<Model>Form::configure($schema)`
@@ -87,8 +81,6 @@ XotBaseResource::table()
 - [ ] `Schemas/<Model>Form.php` exists with `static getFormSchema(): array`
 - [ ] `Tables/<Model>Table.php` exists with `static getTableColumns(): array`
 - [ ] No `->label()` calls (LangServiceProvider owns labels)
-- [ ] Test e fixture non estendono classi `Filament\*` direttamente
-- [ ] Test e fixture non estendono classi `Filament\*` direttamente
 - [ ] Safe functions preserved (`use function Safe\...`)
 
 ## References

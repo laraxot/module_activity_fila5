@@ -298,6 +298,5 @@ PASS: 2 files formattati correttamente
 ---
 
 **Autore**: iFlow CLI
-**Data**: 2025-12-04
 **Versione**: 1.0
 **Status**: ✅ Production Ready

@@ -1,12 +1,10 @@
 <?php
 
 declare(strict_types=1);
+
 use Modules\Activity\Filament\Resources\ActivityResource;
-use Modules\Activity\Filament\Resources\ActivityResource\Schemas\ActivityForm;
 use Modules\Activity\Filament\Resources\SnapshotResource;
-use Modules\Activity\Filament\Resources\SnapshotResource\Schemas\SnapshotForm;
 use Modules\Activity\Filament\Resources\StoredEventResource;
-use Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventForm;
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use PHPUnit\Framework\Assert;
@@ -41,7 +39,7 @@ test('activity resource implements required getFormSchema method', function () {
 
     $method = $reflection->getMethod('getFormSchema');
     Assert::assertTrue($method->isPublic());
-    Assert::assertTrue($method->isStatic());
+    Assert::assertFalse($method->isStatic());
     $returnType = $method->getReturnType();
     Assert::assertInstanceOf(ReflectionNamedType::class, $returnType);
     Assert::assertSame('array', $returnType->getName());
@@ -92,8 +90,7 @@ test('activity resource has correct model configuration', function () {
 });
 
 test('activity resource form schema returns array', function () {
-    $formInstance = app(ActivityForm::class);
-    $form = $formInstance->getFormSchema();
+    $form = (new ActivityResource)->getFormSchema();
 
     Assert::assertNotEmpty($form);
 
@@ -111,8 +108,7 @@ test('activity resource form schema returns array', function () {
 });
 
 test('snapshot resource form schema returns array', function () {
-    $formInstance = app(SnapshotForm::class);
-    $form = $formInstance->getFormSchema();
+    $form = (new SnapshotResource)->getFormSchema();
 
     Assert::assertNotEmpty($form);
 
@@ -128,8 +124,7 @@ test('snapshot resource form schema returns array', function () {
 });
 
 test('stored event resource form schema returns array', function () {
-    $formInstance = app(StoredEventForm::class);
-    $form = $formInstance->getFormSchema();
+    $form = (new StoredEventResource)->getFormSchema();
 
     Assert::assertNotEmpty($form);
 
