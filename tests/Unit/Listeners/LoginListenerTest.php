@@ -1,12 +1,10 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Auth\Events\Login;
-use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Listeners\LoginListener;
+use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Tests\TestCase;
-use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -36,7 +34,6 @@ test('login listener has handle method', function () {
 
 test('login listener handle method is callable', function () {
     $listener = new LoginListener;
-    $user = User::factory()->make();
 
-    $listener->handle(new Login('web', $user, false));
+    $listener->handle();
 });

@@ -1,9 +1,11 @@
-import { defineConfig, loadEnv } from 'vite';
+const { expand } = require('dotenv-expand');
+expand(require('dotenv').config({ path: '../../.env'/*, debug: true*/ }));
+
+import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
-export default defineConfig(({ mode }) => {
-  process.env = { ...process.env, ...loadEnv(mode, '../../') };
-  return {
+export default defineConfig(
+    {
         build: {
             outDir: '../../public/build-activity',
             emptyOutDir: true,
@@ -23,5 +25,4 @@ export default defineConfig(({ mode }) => {
             ),
         ],
     }
-  }
 );

@@ -45,8 +45,8 @@
         }
     },
     "require": {
-        "spatie/laravel-activitylog": "^5.0",
-        "spatie/laravel-event-sourcing": "^7.15",
+        "spatie/laravel-activitylog": "*",
+        "spatie/laravel-event-sourcing": "*",
         "php": "^8.3"
     },
     "require-dev": {},
@@ -95,6 +95,6 @@
             "wikimedia/composer-merge-plugin": true
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }

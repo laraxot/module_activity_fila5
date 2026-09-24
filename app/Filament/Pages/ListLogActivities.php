@@ -18,7 +18,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Log;
 use InvalidArgumentException;
 use Livewire\WithPagination;
 use LogicException;
@@ -27,6 +26,8 @@ use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Filament\Resources\Pages\XotBasePage;
 use Webmozart\Assert\Assert;
+
+use function Safe\json_encode;
 
 /**
  * Classe base per visualizzare lo storico delle attività di un record.
@@ -51,8 +52,8 @@ abstract class ListLogActivities extends XotBasePage
 
     protected string $view = 'activity::filament.pages.list-log-activities';
 
-    /** @var Collection<string, string>|null */
-    protected ?Collection $fieldLabelMap = null;
+    /** @var Collection<string, string> */
+    protected static Collection $fieldLabelMap;
 
     public function mount(int|string $record): void
     {
@@ -64,20 +65,42 @@ abstract class ListLogActivities extends XotBasePage
     {
         $breadcrumb = static::$breadcrumb ?? __('activity::activities.breadcrumb');
 
-        return $this->normalizeTranslatable($breadcrumb, '');
+        // Convert to string (__() returns string|array|null)
+        if (is_array($breadcrumb)) {
+            /** @phpstan-ignore-next-line cast.string */
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $breadcrumb));
+        }
+
+        if (is_string($breadcrumb)) {
+            return $breadcrumb;
+        }
+
+        return '';
     }
 
     public function getTitle(): string
     {
+        // PHPStan Level 10: getRecordTitle returns string|Htmlable
         $recordTitle = $this->getRecordTitle();
 
+        // Convert to string (handle Htmlable)
         $titleString = $recordTitle instanceof Htmlable
             ? $recordTitle->toHtml()
             : (string) $recordTitle;
 
         $title = __('activity::activities.title', ['record' => $titleString]);
 
-        return $this->normalizeTranslatable($title, '');
+        // __() returns string|array|null
+        if (is_array($title)) {
+            /** @phpstan-ignore-next-line argument.type */
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $title));
+        }
+
+        if (is_string($title)) {
+            return $title;
+        }
+
+        return '';
     }
 
     /**
@@ -105,6 +128,10 @@ abstract class ListLogActivities extends XotBasePage
             ->latest()
             ->getQuery();
 
+        if (! $builderQuery instanceof Builder) {
+            throw new InvalidArgumentException('Query must be an Eloquent Builder');
+        }
+
         /** @var Builder<Activity> $builderQuery */
         $paginated = $this->paginateQuery($builderQuery);
 
@@ -122,9 +149,9 @@ abstract class ListLogActivities extends XotBasePage
 
     public function getFieldLabel(string $name): string
     {
-        $this->fieldLabelMap ??= $this->createFieldLabelMap();
+        static::$fieldLabelMap ??= $this->createFieldLabelMap();
 
-        $fieldLabel = $this->fieldLabelMap[$name] ?? $name;
+        $fieldLabel = static::$fieldLabelMap[$name] ?? $name;
 
         // PHPStan Level 10: Ensure string return type
         if (! \is_string($fieldLabel)) {
@@ -165,8 +192,7 @@ abstract class ListLogActivities extends XotBasePage
 
             $this->sendRestoreSuccessNotification();
         } catch (Exception $e) {
-            Log::error('Activity restore failed', ['exception' => $e]);
-            $this->sendRestoreFailureNotification();
+            $this->sendRestoreFailureNotification($e->getMessage());
         }
     }
 
@@ -207,16 +233,19 @@ abstract class ListLogActivities extends XotBasePage
                 continue;
             }
 
-            $children = $component->getDefaultChildComponents();
+            // PHPStan Level 10: Type-safe child components
+            if (method_exists($component, 'getChildComponents')) {
+                $children = $component->getDefaultChildComponents();
 
-            if (\is_array($children) && $children !== []) {
-                /** @var array<int|string, Component> $safeChildren */
-                $safeChildren = $children;
-                /** @var array<int, Component> $normalizedChildren */
-                $normalizedChildren = array_values($safeChildren);
-                $components = $components->merge($normalizedChildren);
+                if (\is_array($children) && $children !== []) {
+                    /** @var array<int|string, Component> $safeChildren */
+                    $safeChildren = $children;
+                    /** @var array<int, Component> $normalizedChildren */
+                    $normalizedChildren = array_values($safeChildren);
+                    $components = $components->merge($normalizedChildren);
 
-                continue;
+                    continue;
+                }
             }
 
             $extracted->push($component);
@@ -243,10 +272,10 @@ abstract class ListLogActivities extends XotBasePage
 
     protected function sendRestoreSuccessNotification(): Notification
     {
-        $titleString = $this->normalizeTranslatable(
-            __('activity::activities.events.restore_successful'),
-            '',
-        );
+        $title = __('activity::activities.events.restore_successful');
+        $titleString = is_array($title)
+            ? implode(' ', array_map(fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v), $title))
+            : (is_string($title) ? $title : '');
 
         return Notification::make()
             ->title($titleString)
@@ -256,10 +285,11 @@ abstract class ListLogActivities extends XotBasePage
 
     protected function sendRestoreFailureNotification(?string $message = null): Notification
     {
-        $titleString = $this->normalizeTranslatable(
-            __('activity::activities.events.restore_failed'),
-            '',
-        );
+        $title = __('activity::activities.events.restore_failed');
+        $titleString = is_array($title)
+            /** @phpstan-ignore-next-line cast.string */
+            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
+            : (is_string($title) ? $title : '');
 
         $notification = Notification::make()
             ->title($titleString)
@@ -311,25 +341,5 @@ abstract class ListLogActivities extends XotBasePage
 
         /** @var array<string, mixed> $old */
         return $old;
-    }
-
-    private function normalizeTranslatable(mixed $value, string $fallback): string
-    {
-        if (is_string($value)) {
-            return $value;
-        }
-
-        if (is_array($value)) {
-            $parts = [];
-            foreach ($value as $part) {
-                if (is_scalar($part)) {
-                    $parts[] = (string) $part;
-                }
-            }
-
-            return implode(' ', $parts);
-        }
-
-        return $fallback;
     }
 }

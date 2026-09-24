@@ -1,8 +1,7 @@
 <?php
 
 declare(strict_types=1);
-
-use Modules\Activity\Adapters\ActivityLogger;
+use Modules\Activity\Actions\ActivityLogger;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;

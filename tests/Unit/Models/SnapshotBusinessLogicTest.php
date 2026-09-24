@@ -1,14 +1,13 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-describe('Snapshot Business Logic', function () {
+test('Snapshot Business Logic', function () {
     test('snapshot has correct connection configured', function () {
         $reflection = new ReflectionClass(Snapshot::class);
         $property = $reflection->getProperty('connection');
