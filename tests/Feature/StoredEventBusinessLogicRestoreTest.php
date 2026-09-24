@@ -13,14 +13,7 @@ use Modules\Activity\Models\StoredEvent;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-<<<<<<< HEAD
-=======
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 
 test('can restore event from stored event', function (): void {
     $originalProperties = [
