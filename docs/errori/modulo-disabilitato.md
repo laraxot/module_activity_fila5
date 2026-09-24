@@ -328,6 +328,10 @@ Se `module:enable Activity` non funziona:
 
 ---
 
+**
+**Ultimo aggiornamento**: 27 Ottobre 2025
+**
+**Ultimo aggiornamento**: 27 Ottobre 2025
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Caso Reale**: personale2022.prov.tv.local
 **Soluzione Verificata**: ✅ Testata e funzionante

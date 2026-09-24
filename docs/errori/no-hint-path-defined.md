@@ -492,6 +492,10 @@ docker-compose restart app
 
 ---
 
+**
+**Ultimo aggiornamento**: 27 Ottobre 2025
+**
+**Ultimo aggiornamento**: 27 Ottobre 2025
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Versione Laravel**: 12.35.1
 **Errore Code**: `InvalidArgumentException`

@@ -5,9 +5,10 @@ declare(strict_types=1);
 namespace Modules\Activity\Actions\Query;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Modules\Activity\Models\Activity;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -20,7 +21,7 @@ class GetActivityStatisticsAction
     /**
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
-    public function execute(?User $user = null): array
+    public function execute(?UserContract $user = null): array
     {
         $userKey = $user?->getKey();
         $cacheKeySuffix = is_scalar($userKey) ? (string) $userKey : 'global';
@@ -37,9 +38,10 @@ class GetActivityStatisticsAction
     /**
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
-    private function computeStatistics(?User $user): array
+    private function computeStatistics(?UserContract $user): array
     {
-        $query = Activity::query();
+        /** @var Builder<Activity> $query */
+        $query = Activity::newQuery();
 
         if ($user) {
             $query->where('causer_id', $user->getKey())
@@ -71,7 +73,7 @@ class GetActivityStatisticsAction
         /** @var Builder<Activity> $clonedQuery */
         $clonedQuery = $query->clone();
 
-        /** @var \Illuminate\Support\Collection<int, object{event: string, count: int}> $results */
+        /** @var Collection<int, object{event: string, count: int}> $results */
         $results = $clonedQuery
             ->selectRaw('event, COUNT(*) as count')
             ->groupBy('event')

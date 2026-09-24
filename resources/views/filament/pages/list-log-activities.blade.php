@@ -1,47 +1,7 @@
-@php
-// Activity Blade view — see Modules/Activity/docs/wiki.
-@endphp
+<?php
 
-@php
-// Activity Blade view — see Modules/Activity/docs/wiki.
-@endphp
-
-@php
-// Activity Blade view — see Modules/Activity/docs/wiki.
-@endphp
-
-@php
-// Activity Blade view — see Modules/Activity/docs/wiki.
-@endphp
-
-@php
-// Activity Blade view — see Modules/Activity/docs/wiki.
-@endphp
-
-@php
-// Activity Blade view — see Modules/Activity/docs/wiki.
-@endphp
-
-@php
-// Activity Blade view — see Modules/Activity/docs/wiki.
-@endphp
-
-@php
-// Activity Blade view — see Modules/Activity/docs/wiki.
-@endphp
-
-@php
-// Activity Blade view — see Modules/Activity/docs/wiki.
-// Activity Blade view — see Modules/Activity/docs/wiki.
-// Activity Blade view — see Modules/Activity/docs/wiki.
-// Activity Blade view — see Modules/Activity/docs/wiki.
-// Activity Blade view — see Modules/Activity/docs/wiki.
-// Activity Blade view — see Modules/Activity/docs/wiki.
-// Activity Blade view — see Modules/Activity/docs/wiki.
-// Activity Blade view — see Modules/Activity/docs/wiki.
-// Activity Blade view — see Modules/Activity/docs/wiki.
-@endphp
-
+declare(strict_types=1);
+?>
 @php
     use \Illuminate\Support\Js;
 @endphp
