@@ -24,6 +24,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 
 function activitySubjectForPage(string $id = 'page-subj'): ActivitySubjectHarness
 {
+<<<<<<< .merge_file_tAwYr5
 <<<<<<< HEAD
 <<<<<<< .merge_file_gcxgXd
     $subject = new ActivitySubjectHarness();
@@ -33,6 +34,9 @@ function activitySubjectForPage(string $id = 'page-subj'): ActivitySubjectHarnes
 =======
     $subject = new ActivitySubjectHarness();
 >>>>>>> a95e8f36 (.)
+=======
+    $subject = new ActivitySubjectHarness;
+>>>>>>> .merge_file_MUZocN
     $subject->forceFill(['id' => $id, 'name' => 'S']);
     $subject->exists = true;
 
@@ -40,6 +44,7 @@ function activitySubjectForPage(string $id = 'page-subj'): ActivitySubjectHarnes
 }
 
 test('ListLogActivities getTitle e breadcrumb con Htmlable', function (): void {
+<<<<<<< .merge_file_tAwYr5
 <<<<<<< HEAD
 <<<<<<< .merge_file_gcxgXd
     $page = new ListLogActivitiesPageHarness();
@@ -49,11 +54,15 @@ test('ListLogActivities getTitle e breadcrumb con Htmlable', function (): void {
 =======
     $page = new ListLogActivitiesPageHarness();
 >>>>>>> a95e8f36 (.)
+=======
+    $page = new ListLogActivitiesPageHarness;
+>>>>>>> .merge_file_MUZocN
     $page->setRecordForTest(activitySubjectForPage());
 
     Assert::assertNotEmpty($page->getBreadcrumb());
     Assert::assertStringContainsString('Record Titolo', $page->getTitle());
 
+<<<<<<< .merge_file_tAwYr5
 <<<<<<< HEAD
 <<<<<<< .merge_file_gcxgXd
     $htmlPage = new ListLogActivitiesHtmlTitleHarness();
@@ -63,6 +72,9 @@ test('ListLogActivities getTitle e breadcrumb con Htmlable', function (): void {
 =======
     $htmlPage = new ListLogActivitiesHtmlTitleHarness();
 >>>>>>> a95e8f36 (.)
+=======
+    $htmlPage = new ListLogActivitiesHtmlTitleHarness;
+>>>>>>> .merge_file_MUZocN
     $htmlPage->setRecordForTest(activitySubjectForPage('html-subj'));
     Assert::assertStringContainsString('HTML', $htmlPage->getTitle());
 });
@@ -78,6 +90,7 @@ test('ListLogActivities getActivities paginate e errori record', function (): vo
         'properties' => ['old' => ['name' => 'a']],
     ]);
 
+<<<<<<< .merge_file_tAwYr5
 <<<<<<< HEAD
 <<<<<<< .merge_file_gcxgXd
     $page = new ListLogActivitiesPageHarness();
@@ -87,12 +100,16 @@ test('ListLogActivities getActivities paginate e errori record', function (): vo
 =======
     $page = new ListLogActivitiesPageHarness();
 >>>>>>> a95e8f36 (.)
+=======
+    $page = new ListLogActivitiesPageHarness;
+>>>>>>> .merge_file_MUZocN
     $page->setRecordForTest($subject);
 
     $paginator = $page->getActivities();
     Assert::assertInstanceOf(LengthAwarePaginator::class, $paginator);
     Assert::assertGreaterThanOrEqual(1, $paginator->total());
 
+<<<<<<< .merge_file_tAwYr5
 <<<<<<< HEAD
 <<<<<<< .merge_file_gcxgXd
 =======
@@ -111,6 +128,8 @@ test('ListLogActivities getActivities paginate e errori record', function (): vo
     expect(fn (): mixed => $pageBadRel->getActivities())
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_MUZocN
     $pageNoRecord = new ListLogActivitiesPageHarness;
     expect(fn (): \Illuminate\Contracts\Pagination\LengthAwarePaginator => $pageNoRecord->getActivities())
         ->toThrow(\Error::class);
@@ -123,9 +142,12 @@ test('ListLogActivities getActivities paginate e errori record', function (): vo
     $pageBadRel = new ListLogActivitiesPageHarness;
     $pageBadRel->setRecordForTest(new ActivitySubjectWithoutRelationHarness);
     expect(fn (): \Illuminate\Contracts\Pagination\LengthAwarePaginator => $pageBadRel->getActivities())
+<<<<<<< .merge_file_tAwYr5
 >>>>>>> .merge_file_euJqNR
 =======
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_MUZocN
         ->toThrow(\InvalidArgumentException::class);
 });
 
@@ -140,6 +162,7 @@ test('ListLogActivities canRestore e restoreActivity percorsi', function (): voi
         'properties' => ['old' => ['name' => 'prima']],
     ]);
 
+<<<<<<< .merge_file_tAwYr5
 <<<<<<< HEAD
 <<<<<<< .merge_file_gcxgXd
     $page = new ListLogActivitiesPageHarness();
@@ -149,10 +172,14 @@ test('ListLogActivities canRestore e restoreActivity percorsi', function (): voi
 =======
     $page = new ListLogActivitiesPageHarness();
 >>>>>>> a95e8f36 (.)
+=======
+    $page = new ListLogActivitiesPageHarness;
+>>>>>>> .merge_file_MUZocN
     $page->setRecordForTest($subject);
     ListLogActivitiesRestorableResource::$restoreAllowed = true;
     Assert::assertTrue($page->canRestoreActivity());
 
+<<<<<<< .merge_file_tAwYr5
 <<<<<<< HEAD
 <<<<<<< .merge_file_gcxgXd
     app()->instance(RestoreActivityAction::class, new RestoreActivityActionNoOp());
@@ -162,6 +189,9 @@ test('ListLogActivities canRestore e restoreActivity percorsi', function (): voi
 =======
     app()->instance(RestoreActivityAction::class, new RestoreActivityActionNoOp());
 >>>>>>> a95e8f36 (.)
+=======
+    app()->instance(RestoreActivityAction::class, new RestoreActivityActionNoOp);
+>>>>>>> .merge_file_MUZocN
     $page->restoreActivity((int) $activity->id);
 
     ListLogActivitiesRestorableResource::$restoreAllowed = false;
@@ -175,6 +205,7 @@ test('ListLogActivities canRestore e restoreActivity percorsi', function (): voi
     }
 
     ListLogActivitiesRestorableResource::$restoreAllowed = true;
+<<<<<<< .merge_file_tAwYr5
 <<<<<<< HEAD
 <<<<<<< .merge_file_gcxgXd
     app()->instance(RestoreActivityAction::class, new RestoreActivityActionFails());
@@ -184,6 +215,9 @@ test('ListLogActivities canRestore e restoreActivity percorsi', function (): voi
 =======
     app()->instance(RestoreActivityAction::class, new RestoreActivityActionFails());
 >>>>>>> a95e8f36 (.)
+=======
+    app()->instance(RestoreActivityAction::class, new RestoreActivityActionFails);
+>>>>>>> .merge_file_MUZocN
     $page->restoreActivity((int) $activity->id);
 });
 
@@ -198,6 +232,7 @@ test('ListLogActivities resolveActivity getOldProperties e field label map', fun
         'properties' => ['old' => ['name' => 'old']],
     ]);
 
+<<<<<<< .merge_file_tAwYr5
 <<<<<<< HEAD
 <<<<<<< .merge_file_gcxgXd
     $page = new ListLogActivitiesPageHarness();
@@ -207,12 +242,16 @@ test('ListLogActivities resolveActivity getOldProperties e field label map', fun
 =======
     $page = new ListLogActivitiesPageHarness();
 >>>>>>> a95e8f36 (.)
+=======
+    $page = new ListLogActivitiesPageHarness;
+>>>>>>> .merge_file_MUZocN
     $page->setRecordForTest($subject);
 
     $resolved = $page->exposeResolveActivity((int) $activity->id);
     Assert::assertSame($activity->id, $resolved->id);
     Assert::assertSame(['name' => 'old'], $page->exposeGetOldProperties($resolved));
 
+<<<<<<< .merge_file_tAwYr5
 <<<<<<< HEAD
 <<<<<<< .merge_file_gcxgXd
 =======
@@ -239,6 +278,8 @@ test('ListLogActivities resolveActivity getOldProperties e field label map', fun
     expect(fn (): mixed => $pageBadRel->exposeResolveActivity(1))
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_MUZocN
     $badProps = new Activity;
     $badProps->forceFill(['properties' => ['old' => 'not-array']]);
     expect(fn (): array => $page->exposeGetOldProperties($badProps))
@@ -259,9 +300,12 @@ test('ListLogActivities resolveActivity getOldProperties e field label map', fun
     $pageBadRel = new ListLogActivitiesPageHarness;
     $pageBadRel->setRecordForTest(new ActivitySubjectWithoutRelationHarness);
     expect(fn (): Activity => $pageBadRel->exposeResolveActivity(1))
+<<<<<<< .merge_file_tAwYr5
 >>>>>>> .merge_file_euJqNR
 =======
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_MUZocN
         ->toThrow(Exception::class, 'Invalid activities relation');
 
     Assert::assertSame('campo', $page->getFieldLabel('campo'));
@@ -270,6 +314,7 @@ test('ListLogActivities resolveActivity getOldProperties e field label map', fun
 });
 
 test('ListLogActivities canRestore senza record o resource invalida', function (): void {
+<<<<<<< .merge_file_tAwYr5
 <<<<<<< HEAD
 <<<<<<< .merge_file_gcxgXd
 =======
@@ -280,13 +325,18 @@ test('ListLogActivities canRestore senza record o resource invalida', function (
     $stdPage = new ListLogActivitiesStdClassResourceHarness();
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_MUZocN
     $page = new ListLogActivitiesPageHarness;
     Assert::assertFalse($page->canRestoreActivity());
 
     $stdPage = new ListLogActivitiesStdClassResourceHarness;
+<<<<<<< .merge_file_tAwYr5
 >>>>>>> .merge_file_euJqNR
 =======
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_MUZocN
     $stdPage->setRecordForTest(activitySubjectForPage('std'));
     Assert::assertFalse($stdPage->canRestoreActivity());
 });

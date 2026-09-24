@@ -28,6 +28,7 @@ test('EditActivity espone DeleteAction in header', function (): void {
     $method->setAccessible(true);
 
     /** @var array<string, DeleteAction> $actions */
+<<<<<<< .merge_file_HFipzE
 <<<<<<< HEAD
 <<<<<<< .merge_file_onJQbq
     $actions = $method->invoke(new EditActivity());
@@ -37,12 +38,16 @@ test('EditActivity espone DeleteAction in header', function (): void {
 =======
     $actions = $method->invoke(new EditActivity());
 >>>>>>> a95e8f36 (.)
+=======
+    $actions = $method->invoke(new EditActivity);
+>>>>>>> .merge_file_g4efdc
 
     Assert::assertArrayHasKey('delete', $actions);
     Assert::assertInstanceOf(DeleteAction::class, $actions['delete']);
 });
 
 test('ActivitiesTable espone colonne complete', function (): void {
+<<<<<<< .merge_file_HFipzE
 <<<<<<< HEAD
 <<<<<<< .merge_file_onJQbq
     $tabella = new ActivitiesTable();
@@ -52,6 +57,9 @@ test('ActivitiesTable espone colonne complete', function (): void {
 =======
     $tabella = new ActivitiesTable();
 >>>>>>> a95e8f36 (.)
+=======
+    $tabella = new ActivitiesTable;
+>>>>>>> .merge_file_g4efdc
 
     Assert::assertSame(
         [
@@ -64,6 +72,7 @@ test('ActivitiesTable espone colonne complete', function (): void {
 });
 
 test('ActivityInfolist espone schema infolist', function (): void {
+<<<<<<< .merge_file_HFipzE
 <<<<<<< HEAD
 <<<<<<< .merge_file_onJQbq
     $instance = app(\Modules\Activity\Filament\Resources\ActivityResource\Schemas\ActivityInfolist::class);
@@ -73,6 +82,9 @@ test('ActivityInfolist espone schema infolist', function (): void {
 =======
     $instance = app(\Modules\Activity\Filament\Resources\ActivityResource\Schemas\ActivityInfolist::class);
 >>>>>>> a95e8f36 (.)
+=======
+    $instance = app(ActivityInfolist::class);
+>>>>>>> .merge_file_g4efdc
     $schema = $instance->getInfolistSchema();
 
     Assert::assertSame(
@@ -85,6 +97,7 @@ test('ActivityInfolist espone schema infolist', function (): void {
 });
 
 test('SnapshotsTable espone colonne attese', function (): void {
+<<<<<<< .merge_file_HFipzE
 <<<<<<< HEAD
 <<<<<<< .merge_file_onJQbq
     $tabella = new SnapshotsTable();
@@ -94,6 +107,9 @@ test('SnapshotsTable espone colonne attese', function (): void {
 =======
     $tabella = new SnapshotsTable();
 >>>>>>> a95e8f36 (.)
+=======
+    $tabella = new SnapshotsTable;
+>>>>>>> .merge_file_g4efdc
 
     Assert::assertSame(
         ['id', 'aggregate_uuid', 'aggregate_version', 'state', 'created_at', 'updated_at'],
@@ -102,6 +118,7 @@ test('SnapshotsTable espone colonne attese', function (): void {
 });
 
 test('SnapshotForm e SnapshotInfolist espongono schema', function (): void {
+<<<<<<< .merge_file_HFipzE
 <<<<<<< HEAD
 <<<<<<< .merge_file_onJQbq
 =======
@@ -112,17 +129,23 @@ test('SnapshotForm e SnapshotInfolist espongono schema', function (): void {
         array_keys(app(\Modules\Activity\Filament\Resources\SnapshotResource\Schemas\SnapshotInfolist::class)->getInfolistSchema()),
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_g4efdc
     Assert::assertSame(['aggregate_uuid', 'aggregate_version', 'state'], array_keys(app(SnapshotForm::class)->getFormSchema()));
     Assert::assertSame(
         ['id', 'model_type', 'model_id', 'created_by_type', 'created_by_id', 'created_at'],
         array_keys(app(SnapshotInfolist::class)->getInfolistSchema()),
+<<<<<<< .merge_file_HFipzE
 >>>>>>> .merge_file_gheLFX
 =======
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_g4efdc
     );
 });
 
 test('StoredEventsTable StoredEventForm StoredEventInfolist espongono schema', function (): void {
+<<<<<<< .merge_file_HFipzE
 <<<<<<< HEAD
 <<<<<<< .merge_file_onJQbq
     $tabella = new StoredEventsTable();
@@ -132,6 +155,9 @@ test('StoredEventsTable StoredEventForm StoredEventInfolist espongono schema', f
 =======
     $tabella = new StoredEventsTable();
 >>>>>>> a95e8f36 (.)
+=======
+    $tabella = new StoredEventsTable;
+>>>>>>> .merge_file_g4efdc
     Assert::assertSame(
         ['id', 'event_class', 'properties', 'created_at', 'updated_at'],
         array_keys($tabella->getTableColumns()),
@@ -139,6 +165,7 @@ test('StoredEventsTable StoredEventForm StoredEventInfolist espongono schema', f
 
     Assert::assertSame(
         ['event_class', 'event_properties', 'aggregate_uuid', 'aggregate_version', 'meta_data', 'created_at'],
+<<<<<<< .merge_file_HFipzE
 <<<<<<< HEAD
 <<<<<<< .merge_file_onJQbq
         array_keys(app(\Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventForm::class)->getFormSchema()),
@@ -148,10 +175,14 @@ test('StoredEventsTable StoredEventForm StoredEventInfolist espongono schema', f
 =======
         array_keys(app(\Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventForm::class)->getFormSchema()),
 >>>>>>> a95e8f36 (.)
+=======
+        array_keys(app(StoredEventForm::class)->getFormSchema()),
+>>>>>>> .merge_file_g4efdc
     );
 
     Assert::assertSame(
         ['id', 'event_class', 'aggregate_uuid', 'aggregate_version', 'created_at'],
+<<<<<<< .merge_file_HFipzE
 <<<<<<< HEAD
 <<<<<<< .merge_file_onJQbq
         array_keys(app(\Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventInfolist::class)->getInfolistSchema()),
@@ -161,5 +192,8 @@ test('StoredEventsTable StoredEventForm StoredEventInfolist espongono schema', f
 =======
         array_keys(app(\Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventInfolist::class)->getInfolistSchema()),
 >>>>>>> a95e8f36 (.)
+=======
+        array_keys(app(StoredEventInfolist::class)->getInfolistSchema()),
+>>>>>>> .merge_file_g4efdc
     );
 });

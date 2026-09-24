@@ -280,11 +280,15 @@ return [
                 'label' => 'Excel',
                 'mime_type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 'extension' => 'xlsx',
+<<<<<<< .merge_file_1fznMH
 <<<<<<< HEAD
                 'icon' => 'xot-files.xlsx',
 =======
                 'icon' => 'heroicon-o-table-cells',
 >>>>>>> a95e8f36 (.)
+=======
+                'icon' => 'heroicon-o-table-cells',
+>>>>>>> .merge_file_TheDkV
             ],
         ],
         'columns' => [

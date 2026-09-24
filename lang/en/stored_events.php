@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< .merge_file_xbWmUA
 <<<<<<< HEAD
 <<<<<<< .merge_file_l4u7WI
 =======
@@ -8,6 +9,10 @@ declare(strict_types=1);
 >>>>>>> .merge_file_LlOYLw
 =======
 >>>>>>> a95e8f36 (.)
+=======
+declare(strict_types=1);
+
+>>>>>>> .merge_file_ghYngG
 return [
     'fields' => [
         'id' => [

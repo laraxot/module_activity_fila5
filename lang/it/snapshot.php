@@ -116,6 +116,7 @@ return [
             'icon' => 'delete',
             'tooltip' => 'delete',
         ],
+<<<<<<< .merge_file_FtgS80
         'logout' => [
             'tooltip' => 'logout',
         ],
@@ -123,5 +124,7 @@ return [
 =======
 >>>>>>> laraxot/dev
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_S4cksQ
     ],
 ];
