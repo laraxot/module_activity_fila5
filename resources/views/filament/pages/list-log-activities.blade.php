@@ -1,7 +1,16 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 <?php
 
 declare(strict_types=1);
 ?>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 @php
     use \Illuminate\Support\Js;
 @endphp

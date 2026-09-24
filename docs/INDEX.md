@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 # Activity Module Documentation Index
 
 **Stats**: 698 files | 20 categories | Last update: 2026-07-28
@@ -69,6 +77,15 @@ Architectural patterns and system design documentation
 ---
 
 **Complete inventory**: See [INDEX_GENERATED.md](INDEX_GENERATED.md) for full detailed categorization across all 698 files in 20 categories.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 # Documentation Index
 
 Modulo: Activity
@@ -76,3 +93,13 @@ Modulo: Activity
 ## File disponibili
 
 <!-- auto-generato: elencare i file .md presenti -->
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
