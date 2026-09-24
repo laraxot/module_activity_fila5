@@ -1,9 +1,16 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\File;
 use Mockery\MockInterface;
+=======
+
+use Illuminate\Support\Facades\File;
+use Mockery\MockInterface;
+use Illuminate\Contracts\Auth\Authenticatable;
+>>>>>>> a95e8f36 (.)
 use Modules\Xot\Contracts\UserContract;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpKernel\Exception\HttpException;

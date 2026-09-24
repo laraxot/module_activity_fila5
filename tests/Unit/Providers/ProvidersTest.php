@@ -3,7 +3,10 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Providers;
+<<<<<<< HEAD
 
+=======
+>>>>>>> a95e8f36 (.)
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Providers\RouteServiceProvider;
@@ -12,7 +15,11 @@ use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> a95e8f36 (.)
 
 test('ActivityServiceProvider extends XotBaseServiceProvider', function (): void {
     $reflection = new \ReflectionClass(ActivityServiceProvider::class);
