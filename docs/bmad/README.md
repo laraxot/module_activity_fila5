@@ -117,6 +117,10 @@ _bmad-output/
 
 ## Vedi Anche
 
+<<<<<<< .merge_file_bx5ELi
+=======
+- [Inventario Livewire → widget](livewire-inventory.md) — zero HTTP; nessun epic conversione
+>>>>>>> .merge_file_GsUswD
 - [quick-reference](quick-reference.md)
 - [setup-guide](setup-guide.md)
 - [BMAD Workflow Catalog](../bmad-workflow-catalog.md)

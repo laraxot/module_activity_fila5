@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< .merge_file_HBD7kt
+=======
+declare(strict_types=1);
+
+>>>>>>> .merge_file_SkQRFV
 return [
     'fields' => [
         'id' => [

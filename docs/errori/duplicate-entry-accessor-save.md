@@ -462,6 +462,10 @@ class SchedaObserver
 
 ---
 
+**
+**Ultimo aggiornamento**: 27 Ottobre 2025
+**
+**Ultimo aggiornamento**: 27 Ottobre 2025
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Severità**: CRITICA (blocca edit in produzione)
 **Workaround**: Disabilitare temporaneamente LogsActivity trait

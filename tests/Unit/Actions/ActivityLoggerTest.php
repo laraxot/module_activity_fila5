@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Activity\Actions\ActivityLogger;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
@@ -10,19 +9,6 @@ use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
 
 test('ActivityLogger can log basic activity', function () {
     $logger = new ActivityLogger;
