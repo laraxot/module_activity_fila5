@@ -8,7 +8,7 @@ use Modules\Activity\Events\ActivityEvent;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('activity event can be constructed and dispatched', function (): void {
     $event = new ActivityEvent;
