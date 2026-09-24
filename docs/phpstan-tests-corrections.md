@@ -1,9 +1,5 @@
 # PHPStan Tests Corrections - Activity Module
 
-<<<<<<< HEAD
-=======
-**Data**: 2025-10-10
->>>>>>> 68a8e694 (.)
 **Livello PHPStan**: max
 **Errori Totali**: 353
 
