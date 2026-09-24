@@ -12,15 +12,7 @@ use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-<<<<<<< HEAD
-uses(TestCase::class);
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 
 test('can create stored event with basic information', function (): void {
     $eventData = [

@@ -1,13 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 /*
  * Un livello dell'albero dei file di log: prima le sottocartelle (ricorsivo), poi i file.
  *
