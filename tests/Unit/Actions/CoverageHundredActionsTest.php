@@ -34,23 +34,7 @@ beforeEach(function (): void {
 
 function activityUnitUser(string $id = 'user-coverage-1'): User
 {
-<<<<<<< HEAD
     $user = new User;
-=======
-<<<<<<< .merge_file_o816rw
-<<<<<<< HEAD
-<<<<<<< .merge_file_vRM3wR
-    $user = new User();
-=======
-    $user = new User;
->>>>>>> .merge_file_vHI4f6
-=======
-    $user = new User();
->>>>>>> a95e8f36 (.)
-=======
-    $user = new User;
->>>>>>> .merge_file_1ABB6w
->>>>>>> laraxot/dev
     $user->forceFill([
         'id' => $id,
         'name' => 'Coverage User',
@@ -63,23 +47,7 @@ function activityUnitUser(string $id = 'user-coverage-1'): User
 
 function activityUnitSubject(string $id = 'subj-1'): ActivitySubjectHarness
 {
-<<<<<<< HEAD
     $subject = new ActivitySubjectHarness;
-=======
-<<<<<<< .merge_file_o816rw
-<<<<<<< HEAD
-<<<<<<< .merge_file_vRM3wR
-    $subject = new ActivitySubjectHarness();
-=======
-    $subject = new ActivitySubjectHarness;
->>>>>>> .merge_file_vHI4f6
-=======
-    $subject = new ActivitySubjectHarness();
->>>>>>> a95e8f36 (.)
-=======
-    $subject = new ActivitySubjectHarness;
->>>>>>> .merge_file_1ABB6w
->>>>>>> laraxot/dev
     $subject->forceFill(['id' => $id, 'name' => 'Subject']);
     $subject->exists = true;
 
@@ -132,23 +100,7 @@ test('RecordSubjectActivityAction e query actions coprono execute', function ():
     $subject = activityUnitSubject('subj-q');
     $user = activityUnitUser('causer-q');
 
-<<<<<<< HEAD
     $recorded = (new RecordSubjectActivityAction)->execute(
-=======
-<<<<<<< .merge_file_o816rw
-<<<<<<< HEAD
-<<<<<<< .merge_file_vRM3wR
-    $recorded = (new RecordSubjectActivityAction())->execute(
-=======
-    $recorded = (new RecordSubjectActivityAction)->execute(
->>>>>>> .merge_file_vHI4f6
-=======
-    $recorded = (new RecordSubjectActivityAction())->execute(
->>>>>>> a95e8f36 (.)
-=======
-    $recorded = (new RecordSubjectActivityAction)->execute(
->>>>>>> .merge_file_1ABB6w
->>>>>>> laraxot/dev
         ActivitySubjectHarness::class,
         $subject->id,
         'recorded',
@@ -164,37 +116,11 @@ test('RecordSubjectActivityAction e query actions coprono execute', function ():
         description: 'u',
     ))->execute();
 
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_o816rw
-<<<<<<< HEAD
-<<<<<<< .merge_file_vRM3wR
-=======
->>>>>>> a95e8f36 (.)
-    Assert::assertGreaterThanOrEqual(1, (new GetRecentActivitiesAction())->execute(10)->count());
-    Assert::assertGreaterThanOrEqual(1, (new GetActivitiesByTypeAction())->execute('login', 10)->count());
-    Assert::assertGreaterThanOrEqual(1, (new GetModelActivitiesAction())->execute($subject, 10)->count());
-    Assert::assertGreaterThanOrEqual(1, (new GetUserActivitiesAction())->execute($user, 10)->count());
-    Assert::assertNotEmpty((new GetSubjectActivityLogAction())->execute(ActivitySubjectHarness::class, $subject->id, 50));
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_1ABB6w
->>>>>>> laraxot/dev
     Assert::assertGreaterThanOrEqual(1, (new GetRecentActivitiesAction)->execute(10)->count());
     Assert::assertGreaterThanOrEqual(1, (new GetActivitiesByTypeAction)->execute('login', 10)->count());
     Assert::assertGreaterThanOrEqual(1, (new GetModelActivitiesAction)->execute($subject, 10)->count());
     Assert::assertGreaterThanOrEqual(1, (new GetUserActivitiesAction)->execute($user, 10)->count());
     Assert::assertNotEmpty((new GetSubjectActivityLogAction)->execute(ActivitySubjectHarness::class, $subject->id, 50));
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_o816rw
->>>>>>> .merge_file_vHI4f6
-=======
->>>>>>> a95e8f36 (.)
-=======
->>>>>>> .merge_file_1ABB6w
->>>>>>> laraxot/dev
 });
 
 test('GetActivityStatisticsAction con e senza user e event null', function (): void {
@@ -208,44 +134,12 @@ test('GetActivityStatisticsAction con e senza user e event null', function (): v
     $user = activityUnitUser('stats-user');
     (new LogActivityAction(type: 'stat_type', user: $user, description: 's'))->execute();
 
-<<<<<<< HEAD
     $global = (new GetActivityStatisticsAction)->execute();
-=======
-<<<<<<< .merge_file_o816rw
-<<<<<<< HEAD
-<<<<<<< .merge_file_vRM3wR
-    $global = (new GetActivityStatisticsAction())->execute();
-=======
-    $global = (new GetActivityStatisticsAction)->execute();
->>>>>>> .merge_file_vHI4f6
-=======
-    $global = (new GetActivityStatisticsAction())->execute();
->>>>>>> a95e8f36 (.)
-=======
-    $global = (new GetActivityStatisticsAction)->execute();
->>>>>>> .merge_file_1ABB6w
->>>>>>> laraxot/dev
     Assert::assertArrayHasKey('total', $global);
     Assert::assertArrayHasKey('by_type', $global);
     Assert::assertArrayHasKey('today', $global);
 
-<<<<<<< HEAD
     $forUser = (new GetActivityStatisticsAction)->execute($user);
-=======
-<<<<<<< .merge_file_o816rw
-<<<<<<< HEAD
-<<<<<<< .merge_file_vRM3wR
-    $forUser = (new GetActivityStatisticsAction())->execute($user);
-=======
-    $forUser = (new GetActivityStatisticsAction)->execute($user);
->>>>>>> .merge_file_vHI4f6
-=======
-    $forUser = (new GetActivityStatisticsAction())->execute($user);
->>>>>>> a95e8f36 (.)
-=======
-    $forUser = (new GetActivityStatisticsAction)->execute($user);
->>>>>>> .merge_file_1ABB6w
->>>>>>> laraxot/dev
     Assert::assertGreaterThanOrEqual(1, $forUser['total']);
 });
 
@@ -257,23 +151,7 @@ test('ActivityMaintenanceAction cleanOld e ActivityLogger Action percorsi comple
     $model->exists = true;
     $model->syncOriginal();
 
-<<<<<<< HEAD
     $logger = new ActivityLoggerAction;
-=======
-<<<<<<< .merge_file_o816rw
-<<<<<<< HEAD
-<<<<<<< .merge_file_vRM3wR
-    $logger = new ActivityLoggerAction();
-=======
-    $logger = new ActivityLoggerAction;
->>>>>>> .merge_file_vHI4f6
-=======
-    $logger = new ActivityLoggerAction();
->>>>>>> a95e8f36 (.)
-=======
-    $logger = new ActivityLoggerAction;
->>>>>>> .merge_file_1ABB6w
->>>>>>> laraxot/dev
 
     $logged = $logger->log('evt_log', activityUnitUser('evt-user'), $model, ['p' => 1], 'D');
     Assert::assertInstanceOf(Activity::class, $logged);
@@ -308,23 +186,7 @@ test('ActivityMaintenanceAction cleanOld e ActivityLogger Action percorsi comple
         'updated_at' => now()->subDays(120)->toDateTimeString(),
     ]);
 
-<<<<<<< HEAD
     $deleted = (new ActivityMaintenanceAction)->execute(90);
-=======
-<<<<<<< .merge_file_o816rw
-<<<<<<< HEAD
-<<<<<<< .merge_file_vRM3wR
-    $deleted = (new ActivityMaintenanceAction())->execute(90);
-=======
-    $deleted = (new ActivityMaintenanceAction)->execute(90);
->>>>>>> .merge_file_vHI4f6
-=======
-    $deleted = (new ActivityMaintenanceAction())->execute(90);
->>>>>>> a95e8f36 (.)
-=======
-    $deleted = (new ActivityMaintenanceAction)->execute(90);
->>>>>>> .merge_file_1ABB6w
->>>>>>> laraxot/dev
     Assert::assertGreaterThanOrEqual(1, $deleted);
 
     $cleaned = $logger->cleanOld(90);
@@ -333,33 +195,9 @@ test('ActivityMaintenanceAction cleanOld e ActivityLogger Action percorsi comple
 
 test('ActivityLogger Action log ignora Auth::id non scalare', function (): void {
     \Mockery::close();
-<<<<<<< HEAD
     Auth::shouldReceive('id')->once()->andReturn(new \stdClass);
 
     $activity = (new ActivityLoggerAction)->log('weird_auth', null, null, null, 'W');
-=======
-<<<<<<< .merge_file_o816rw
-<<<<<<< HEAD
-<<<<<<< .merge_file_vRM3wR
-    Auth::shouldReceive('id')->once()->andReturn(new \stdClass());
-
-    $activity = (new ActivityLoggerAction())->log('weird_auth', null, null, null, 'W');
-=======
-    Auth::shouldReceive('id')->once()->andReturn(new \stdClass);
-
-    $activity = (new ActivityLoggerAction)->log('weird_auth', null, null, null, 'W');
->>>>>>> .merge_file_vHI4f6
-=======
-    Auth::shouldReceive('id')->once()->andReturn(new \stdClass());
-
-    $activity = (new ActivityLoggerAction())->log('weird_auth', null, null, null, 'W');
->>>>>>> a95e8f36 (.)
-=======
-    Auth::shouldReceive('id')->once()->andReturn(new \stdClass);
-
-    $activity = (new ActivityLoggerAction)->log('weird_auth', null, null, null, 'W');
->>>>>>> .merge_file_1ABB6w
->>>>>>> laraxot/dev
 
     Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertNull($activity->causer_id);
@@ -371,23 +209,7 @@ test('ActivityLogger Adapter delega log created updated deleted login logout que
     $model->exists = true;
     $model->syncOriginal();
 
-<<<<<<< HEAD
     $adapter = new ActivityLoggerAdapter;
-=======
-<<<<<<< .merge_file_o816rw
-<<<<<<< HEAD
-<<<<<<< .merge_file_vRM3wR
-    $adapter = new ActivityLoggerAdapter();
-=======
-    $adapter = new ActivityLoggerAdapter;
->>>>>>> .merge_file_vHI4f6
-=======
-    $adapter = new ActivityLoggerAdapter();
->>>>>>> a95e8f36 (.)
-=======
-    $adapter = new ActivityLoggerAdapter;
->>>>>>> .merge_file_1ABB6w
->>>>>>> laraxot/dev
 
     Assert::assertInstanceOf(Activity::class, $adapter->log('ad_log', $user, $model, ['z' => 1], 'AD'));
     Assert::assertSame('created', $adapter->created($model, $user)->event);
@@ -408,22 +230,6 @@ test('ActivityLogger Adapter delega log created updated deleted login logout que
 test('ActivityLogger Adapter rifiuta user non User', function (): void {
     $invalid = new LogActivityActionTestModel(['name' => 'bad']);
 
-<<<<<<< HEAD
     expect(fn (): Activity => (new ActivityLoggerAdapter)->log('x', $invalid))
-=======
-<<<<<<< .merge_file_o816rw
-<<<<<<< HEAD
-<<<<<<< .merge_file_vRM3wR
-    expect(fn (): mixed => (new ActivityLoggerAdapter())->log('x', $invalid))
-=======
-    expect(fn (): Activity => (new ActivityLoggerAdapter)->log('x', $invalid))
->>>>>>> .merge_file_vHI4f6
-=======
-    expect(fn (): mixed => (new ActivityLoggerAdapter())->log('x', $invalid))
->>>>>>> a95e8f36 (.)
-=======
-    expect(fn (): Activity => (new ActivityLoggerAdapter)->log('x', $invalid))
->>>>>>> .merge_file_1ABB6w
->>>>>>> laraxot/dev
         ->toThrow(\InvalidArgumentException::class, 'User must be an instance of User');
 });

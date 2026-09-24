@@ -17,15 +17,7 @@ use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-<<<<<<< HEAD
-uses(TestCase::class);
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 
 test('activity event sourcing lifecycle works correctly', function () {
     $user = UserFactory::new()->createOne();
