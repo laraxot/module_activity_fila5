@@ -7,11 +7,10 @@ namespace Modules\Activity\Tests\Unit;
 use Carbon\Carbon;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
 use function Safe\json_decode;
 use function Safe\json_encode;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 /**
  * @return array{
