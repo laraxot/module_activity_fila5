@@ -1,0 +1,29 @@
+includes:
+    - ../../vendor/larastan/larastan/extension.neon
+    - ../../vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
+    - ../../vendor/phpstan/phpstan/conf/bleedingEdge.neon
+    - ../../vendor/pestphp/pest/extension.neon
+
+parameters:
+    level: 9
+    paths:
+        - app
+        - database
+        - routes
+        - tests
+
+    excludePaths:
+        - tests/coverage/*
+        - tests/Feature/*
+        - tests/unit/*
+        - vendor/*
+
+    tmpDir: build/phpstan
+    treatPhpDocTypesAsCertain: false
+    reportUnmatchedIgnoredErrors: false
+
+    bootstrapFiles:
+        - ../../vendor/autoload.php
+
+    scanFiles:
+        - ../Xot/tests/Support/PestFunctionBridge.php
