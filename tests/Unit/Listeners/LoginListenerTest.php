@@ -1,12 +1,9 @@
 <?php
 
 declare(strict_types=1);
-
-namespace Modules\Activity\Tests\Unit\Listeners;
-
 use Illuminate\Auth\Events\Login;
-use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Listeners\LoginListener;
+use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
