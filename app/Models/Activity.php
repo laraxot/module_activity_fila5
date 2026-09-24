@@ -16,7 +16,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 
 /**
  * Class Activity.
- * 
+ *
  * This class extends the BaseActivity model to represent activities in the application.
  *
  * @property int $id
@@ -39,6 +39,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property-read Model|null $causer
  * @property-read Collection<int, mixed> $changes
  * @property-read Model|null $subject
+ *
  * @method static ActivityFactory factory($count = null, $state = [])
  * @method static Builder<static>|Activity forBatch(string $batchUuid)
  * @method static Builder<static>|Activity forEvent(string $event)
@@ -74,14 +75,14 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static Builder<static>|Activity whereYear(string $column, string $operator, mixed $value = null)
  * @method static Builder<static>|Activity latest(string $column = 'created_at')
  * @method static Builder<static>|Activity limit(int $value)
- * @method static Builder<static>|Activity with(array<int, string>|string $relations)
+ * @method static Builder<static>|Activity with(array<string, mixed>|string $relations)
  * @method static int sum(string $column)
- * @method static Collection<int, static>|Builder<static>|Activity get(array<int, string>|string $columns = ['*'])
- * @method static static|null first(array<int, string>|string $columns = ['*'])
- * @method static static find(mixed $id, array<int, string>|string $columns = ['*'])
+ * @method static Collection<int, static> get(array<string>|string $columns = ['*'])
+ * @method static static|null first(array<string>|string $columns = ['*'])
+ * @method static static find(mixed $id, array<string>|string $columns = ['*'])
  * @method static static|null firstWhere(string $column, mixed $operator = null, mixed $value = null)
  * @method static Builder<static>|Activity orderBy(string $column, string $direction = 'asc')
- * @method static Builder<static>|Activity groupBy(array<int, string>|string $groups)
+ * @method static Builder<static>|Activity groupBy(array<string>|string $groups)
  * @method static Builder<static>|Activity having(string $column, string $operator, mixed $value)
  * @method static Builder<static>|Activity orWhere(string $column, mixed $operator = null, mixed $value = null)
  * @method static Builder<static>|Activity whereIn(string $column, array<int, mixed> $values)
@@ -102,11 +103,11 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static Builder<static>|Activity rightJoin(string $table, string $first, string $operator = null, string $second = null)
  * @method static Builder<static>|Activity crossJoin(string $table)
  * @method static Builder<static>|Activity causedBy(Model $causer)
+ *
  * @mixin \Eloquent
  */
 class Activity extends SpatieActivity
 {
-    /** @phpstan-use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     /** @var string */
@@ -145,7 +146,7 @@ class Activity extends SpatieActivity
     /**
      * Scope activities by batch UUID.
      *
-     * @param Builder<static> $query
+     * @param  Builder<static>  $query
      * @return Builder<static>
      */
     public function scopeForBatch(Builder $query, string $batchUuid): Builder
@@ -156,7 +157,7 @@ class Activity extends SpatieActivity
     /**
      * Scope activities that belong to any batch.
      *
-     * @param Builder<static> $query
+     * @param  Builder<static>  $query
      * @return Builder<static>
      */
     public function scopeHasBatch(Builder $query): Builder
