@@ -162,8 +162,22 @@ class ListSnapshots extends ListRecords
 - [ ] Testare il funzionamento delle liste dopo le modifiche
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
+<<<<<<< HEAD
 - [ ] Eseguire PHPStan per verificare altri possibili errori 
 - [ ] Eseguire PHPStan per verificare altri possibili errori 
+=======
+<<<<<<< HEAD
+- [ ] Eseguire PHPStan per verificare altri possibili errori 
+- [ ] Eseguire PHPStan per verificare altri possibili errori 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [ ] Eseguire PHPStan per verificare altri possibili errori 
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 - [ ] Eseguire PHPStan per verificare altri possibili errori
 # Errori Comuni Filament nel Modulo Activity
 
@@ -330,3 +344,13 @@ class ListSnapshots extends ListRecords
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
 - [ ] Eseguire PHPStan per verificare altri possibili errori
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev

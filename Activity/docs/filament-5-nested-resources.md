@@ -205,7 +205,11 @@ public static function getRelations(): array
 
 ### Custom Actions
 ```php
+<<<<<<< HEAD:Activity/docs/filament-5-nested-resources.md
 public function getHeaderActions(): array
+=======
+protected function getHeaderActions(): array
+>>>>>>> laraxot/dev:docs/filament-5-nested-resources.txt
 {
     return [
         Actions\CreateAction::make()
