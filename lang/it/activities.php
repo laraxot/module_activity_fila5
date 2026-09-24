@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-// Activity translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Activity/docs/wiki — domain i18n only.
-// File: lang/it/activities.php
 return [
     'breadcrumb' => 'Cronologia',
     'title' => 'Cronologia :record',
@@ -71,6 +67,33 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+        'log_name' => [
+            'label' => 'log_name',
+        ],
+        'description' => [
+            'label' => 'description',
+        ],
+        'event' => [
+            'label' => 'event',
+        ],
+        'subject_type' => [
+            'label' => 'subject_type',
+        ],
+        'subject_id' => [
+            'label' => 'subject_id',
+        ],
+        'causer_type' => [
+            'label' => 'causer_type',
+        ],
+        'causer_id' => [
+            'label' => 'causer_id',
+        ],
+        'batch_uuid' => [
+            'label' => 'batch_uuid',
+        ],
+        'properties' => [
+            'label' => 'properties',
+        ],
     ],
     'actions' => [
         'create' => [
@@ -81,6 +104,7 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Activities',
+            'tooltip' => 'delete',
         ],
     ],
 ];

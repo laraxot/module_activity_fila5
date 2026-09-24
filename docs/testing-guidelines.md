@@ -8,10 +8,6 @@ All tests MUST use `.env.testing` configuration:
 APP_ENV=testing
 DB_CONNECTION=mysql
 DB_DATABASE=<nome progetto>_data_test
-DB_DATABASE=<nome progetto>_data_test
-DB_DATABASE_USER=<nome progetto>_user_test
-DB_DATABASE=<nome progetto>_data_test
-DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE_USER=<nome progetto>_user_test
 ```
 

@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Modules\Activity\Tests\Security;
+
 /**
  * Security Test Case for Activity Module Access Control
  *
@@ -9,48 +11,48 @@ declare(strict_types=1);
  * and audit trail functionality.
  */
 
-use Illuminate\Http\Request;
-use Modules\Activity\Models\Activity;
-use Modules\User\Models\User;
+use Modules\Activity\Models\Policies\ActivityPolicy;
+use Modules\Activity\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-uses(Tests\TestCase::class);
+uses(TestCase::class);
 
-it('prevents unauthorized access to activity listing', function (): void {
-    // Security: Unauthenticated users should be redirected
-    $response = $this->get('/activity/logs');
-    expect($response->status())->toBe(302);
+it('denies activity viewAny to users without permission', function (): void {
+    $user = activityCreateUser();
+    $policy = new ActivityPolicy;
+
+    Assert::assertFalse($policy->viewAny($user));
 });
 
-it('allows authorized users to view activity logs', function (): void {
-    // Security: Authenticated users with permission should access
-    $user = User::factory()->create();
-    $response = $this->actingAs($user)->get('/activity/logs');
-    expect($response->status())->toBe(200);
+it('allows activity viewAny to users with the correct permission', function (): void {
+    $user = activityCreateUser();
+    $user->givePermissionTo('activity.viewAny');
+    $policy = new ActivityPolicy;
+
+    Assert::assertTrue($policy->viewAny($user));
 });
 
-it('restricts activity export to authorized users only', function (): void {
-    // Security: Export requires specific permission
-    $user = User::factory()->create();
-    $user->givePermissionTo('activities.export');
+it('denies activity view to users without permission', function (): void {
+    $user = activityCreateUser();
+    $policy = new ActivityPolicy;
 
-    $response = $this->actingAs($user)->post('/activity/export', ['format' => 'csv']);
-    expect($response->status())->toBe(200);
+    Assert::assertFalse($policy->view($user));
 });
 
-it('enforces IP-based access restrictions', function (): void {
-    // Security: IP blacklist checking
-    $request = Request::create('/activity/logs', 'GET');
-    $request->server->set('REMOTE_ADDR', '192.168.1.100');
+it('super-admin bypasses activity policy checks via before()', function (): void {
+    $superAdmin = activityCreateUser();
+    $superAdmin->assignRole('super-admin');
+    $policy = new ActivityPolicy;
 
-    expect($request->ip())->toBe('192.168.1.100');
+    Assert::assertTrue($policy->viewAny($superAdmin));
+    Assert::assertTrue($policy->view($superAdmin));
 });
 
 it('validates activity log data integrity', function (): void {
-    // Security: Prevent tampering with log data
-    $activity = Activity::factory()->create([
+    $activity = activityCreateActivity([
         'description' => 'Valid description',
     ]);
 
     $activity->description = 'Tampered description';
-    expect($activity->fresh()?->description)->toBe('Valid description');
+    Assert::assertSame('Valid description', $activity->fresh()?->description);
 });
