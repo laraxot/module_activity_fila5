@@ -117,7 +117,21 @@ _bmad-output/
 
 ## Vedi Anche
 
+<<<<<<< HEAD
 - [Inventario Livewire → widget](livewire-inventory.md) — zero HTTP; nessun epic conversione
+=======
+<<<<<<< .merge_file_YmfJkO
+<<<<<<< HEAD
+<<<<<<< .merge_file_bx5ELi
+=======
+- [Inventario Livewire → widget](livewire-inventory.md) — zero HTTP; nessun epic conversione
+>>>>>>> .merge_file_GsUswD
+=======
+>>>>>>> a95e8f36 (.)
+=======
+- [Inventario Livewire → widget](livewire-inventory.md) — zero HTTP; nessun epic conversione
+>>>>>>> .merge_file_U2abZq
+>>>>>>> laraxot/dev
 - [quick-reference](quick-reference.md)
 - [setup-guide](setup-guide.md)
 - [BMAD Workflow Catalog](../bmad-workflow-catalog.md)

@@ -101,8 +101,26 @@ Ogni modulo e tema deve documentare:
 4. Errori comuni da evitare
 
 I file di documentazione vanno nelle cartelle `docs/` dentro ogni modulo/tema.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 
 ### Regola TestCase Base (Laraxot)
 - Ogni `Modules/*/tests/TestCase.php` deve estendere `Modules\\Xot\\Tests\\XotBaseTestCase`.
 - Non estendere direttamente `Illuminate\\Foundation\\Testing\\TestCase` nei moduli.
 - Motivazione: DRY + KISS + bootstrap uniforme (container, translator, helper comuni).
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
