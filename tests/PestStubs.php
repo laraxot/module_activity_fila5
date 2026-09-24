@@ -1,13 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\Response;
 use Illuminate\Testing\TestResponse;

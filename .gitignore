@@ -181,24 +181,7 @@ workbench/
 /.vscode/
 .cursor~*
 .windsurf~*
-<<<<<<< HEAD
 tests/activity_coverage.xml
 
 # Artefatti audit vietati (rule: tests-auditcoverage-forbidden)
 audit-coverage/
-=======
-<<<<<<< HEAD
-tests/activity_coverage.xml
-<<<<<<< .merge_file_gchSCh
-=======
-<<<<<<< HEAD
-=======
-tests/activity_coverage.xml
->>>>>>> laraxot/dev
->>>>>>> a95e8f36 (.)
-=======
-
-# Artefatti audit vietati (rule: tests-auditcoverage-forbidden)
-audit-coverage/
->>>>>>> .merge_file_edEaVL
->>>>>>> laraxot/dev

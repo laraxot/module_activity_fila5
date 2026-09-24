@@ -16,15 +16,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('login listener handle executes without side effects', function (): void {
-<<<<<<< HEAD
     $listener = new LoginListener;
-=======
-<<<<<<< HEAD
-    $listener = new LoginListener;
-=======
-    $listener = new LoginListener();
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 
     $before = Activity::query()->count();
     $listener->handle();
@@ -34,16 +26,8 @@ test('login listener handle executes without side effects', function (): void {
 });
 
 test('logout listener returns early when event has no user', function (): void {
-<<<<<<< HEAD
     $listener = new LogoutListener;
     $user = new User;
-<<<<<<< HEAD
-=======
-=======
-    $listener = new LogoutListener();
-    $user = new User();
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
     $event = new Logout('web', $user);
     $userProperty = new \ReflectionClass(Logout::class)->getProperty('user');
     $userProperty->setValue($event, null);
@@ -69,15 +53,7 @@ test('logout listener creates auth activity with expected properties', function 
     request()->server->set('REMOTE_ADDR', '127.0.0.1');
     request()->headers->set('User-Agent', 'Pest');
 
-<<<<<<< HEAD
     $listener = new LogoutListener;
-=======
-<<<<<<< HEAD
-    $listener = new LogoutListener;
-=======
-    $listener = new LogoutListener();
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
     $listener->handle(new Logout('web', $user));
 
     $activity = Activity::query()->latest('id')->first();

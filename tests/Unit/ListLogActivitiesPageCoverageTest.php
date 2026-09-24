@@ -11,15 +11,7 @@ use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-<<<<<<< HEAD
-uses(TestCase::class);
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 
 describe('List Log Activities Page Coverage', function (): void {
     test('get breadcrumb returns string', function (): void {
@@ -29,15 +21,7 @@ describe('List Log Activities Page Coverage', function (): void {
     });
 
     test('get breadcrumb uses static breadcrumb when set', function (): void {
-<<<<<<< HEAD
         $page = new class extends ListLogActivities
-=======
-<<<<<<< HEAD
-        $page = new class extends ListLogActivities
-=======
-        $page = new class() extends ListLogActivities
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
         {
             protected static ?string $breadcrumb = 'Custom Breadcrumb';
 
@@ -56,15 +40,7 @@ describe('List Log Activities Page Coverage', function (): void {
     });
 
     test('can restore activity returns false when resource lacks can restore method', function (): void {
-<<<<<<< HEAD
         $page = new class extends ListLogActivities
-=======
-<<<<<<< HEAD
-        $page = new class extends ListLogActivities
-=======
-        $page = new class() extends ListLogActivities
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
         {
             public static function getResource(): string
             {
@@ -91,15 +67,7 @@ describe('List Log Activities Page Coverage', function (): void {
     });
 
     test('send restore success notification returns notification', function (): void {
-<<<<<<< HEAD
         $page = new class extends ListLogActivities
-=======
-<<<<<<< HEAD
-        $page = new class extends ListLogActivities
-=======
-        $page = new class() extends ListLogActivities
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
         {
             /** @return class-string */
             public static function getResource(): string
@@ -119,15 +87,7 @@ describe('List Log Activities Page Coverage', function (): void {
     });
 
     test('send restore failure notification without message returns notification', function (): void {
-<<<<<<< HEAD
         $page = new class extends ListLogActivities
-=======
-<<<<<<< HEAD
-        $page = new class extends ListLogActivities
-=======
-        $page = new class() extends ListLogActivities
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
         {
             /** @return class-string */
             public static function getResource(): string
@@ -147,15 +107,7 @@ describe('List Log Activities Page Coverage', function (): void {
     });
 
     test('send restore failure notification with message includes body', function (): void {
-<<<<<<< HEAD
         $page = new class extends ListLogActivities
-=======
-<<<<<<< HEAD
-        $page = new class extends ListLogActivities
-=======
-        $page = new class() extends ListLogActivities
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
         {
             /** @return class-string */
             public static function getResource(): string
