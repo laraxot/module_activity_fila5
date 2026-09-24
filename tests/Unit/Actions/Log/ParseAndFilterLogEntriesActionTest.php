@@ -1,8 +1,16 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Modules\Activity\Actions\Log\FilterLogEntriesAction;
 use Modules\Activity\Actions\Log\ParseLogEntriesAction;
+=======
+
+use Modules\Activity\Actions\Log\FilterLogEntriesAction;
+use Modules\Activity\Actions\Log\ParseLogEntriesAction;
+use Modules\Activity\Datas\FilteredLogEntriesData;
+use Modules\Activity\Datas\LogEntryData;
+>>>>>>> a95e8f36 (.)
 use Tests\TestCase;
 
 uses(TestCase::class);
@@ -35,7 +43,11 @@ it('splits a Monolog file into entries and keeps stack traces attached to their 
 });
 
 it('normalizes the level to uppercase', function (): void {
+<<<<<<< HEAD
     $entries = (new ParseLogEntriesAction)->execute(SAMPLE_LOG);
+=======
+    $entries = (new ParseLogEntriesAction())->execute(SAMPLE_LOG);
+>>>>>>> a95e8f36 (.)
 
     expect($entries[2]->level)->toBe('WARNING');
 });
@@ -43,7 +55,11 @@ it('normalizes the level to uppercase', function (): void {
 it('keeps unrecognized leading lines as a raw entry without date or level', function (): void {
     $text = "parte finale di una voce tagliata\n[2026-09-20 10:00:00] local.INFO: ok\n";
 
+<<<<<<< HEAD
     $entries = (new ParseLogEntriesAction)->execute($text);
+=======
+    $entries = (new ParseLogEntriesAction())->execute($text);
+>>>>>>> a95e8f36 (.)
 
     expect($entries)->toHaveCount(2);
     expect($entries[0]->level)->toBeNull();
@@ -53,15 +69,26 @@ it('keeps unrecognized leading lines as a raw entry without date or level', func
 });
 
 it('returns no entries for empty or blank text and trims trailing blank lines', function (): void {
+<<<<<<< HEAD
     expect((new ParseLogEntriesAction)->execute(''))->toBe([]);
     expect((new ParseLogEntriesAction)->execute("\n\n"))->toBe([]);
 
     $entries = (new ParseLogEntriesAction)->execute("[2026-09-20 10:00:00] local.INFO: ok\n\n\n");
+=======
+    expect((new ParseLogEntriesAction())->execute(''))->toBe([]);
+    expect((new ParseLogEntriesAction())->execute("\n\n"))->toBe([]);
+
+    $entries = (new ParseLogEntriesAction())->execute("[2026-09-20 10:00:00] local.INFO: ok\n\n\n");
+>>>>>>> a95e8f36 (.)
     expect($entries[0]->body)->toBe('[2026-09-20 10:00:00] local.INFO: ok');
 });
 
 it('understands Windows and old Mac line endings', function (): void {
+<<<<<<< HEAD
     $entries = (new ParseLogEntriesAction)->execute("[2026-09-20 10:00:00] local.INFO: uno\r\nriga di contesto\r[2026-09-20 10:01:00] local.ERROR: due\r\n");
+=======
+    $entries = (new ParseLogEntriesAction())->execute("[2026-09-20 10:00:00] local.INFO: uno\r\nriga di contesto\r[2026-09-20 10:01:00] local.ERROR: due\r\n");
+>>>>>>> a95e8f36 (.)
 
     expect($entries)->toHaveCount(2);
     expect($entries[0]->body)->toContain('riga di contesto');
@@ -78,6 +105,7 @@ it('filters by level', function (): void {
 });
 
 it('searches the whole entry body case-insensitively, including the stack trace', function (): void {
+<<<<<<< HEAD
     $entries = (new ParseLogEntriesAction)->execute(SAMPLE_LOG);
 
     expect((new FilterLogEntriesAction)->execute($entries, '', 'B@EXAMPLE')->total)->toBe(1);
@@ -96,6 +124,26 @@ it('returns the newest entries first and applies the limit while reporting the t
     $entries = (new ParseLogEntriesAction)->execute(SAMPLE_LOG);
 
     $result = (new FilterLogEntriesAction)->execute($entries, '', '', 2);
+=======
+    $entries = (new ParseLogEntriesAction())->execute(SAMPLE_LOG);
+
+    expect((new FilterLogEntriesAction())->execute($entries, '', 'B@EXAMPLE')->total)->toBe(1);
+    expect((new FilterLogEntriesAction())->execute($entries, '', 'transport.php')->total)->toBe(1);
+    expect((new FilterLogEntriesAction())->execute($entries, '', 'inesistente')->total)->toBe(0);
+});
+
+it('combines level and search filters', function (): void {
+    $entries = (new ParseLogEntriesAction())->execute(SAMPLE_LOG);
+
+    expect((new FilterLogEntriesAction())->execute($entries, 'INFO', 'a@example')->total)->toBe(1);
+    expect((new FilterLogEntriesAction())->execute($entries, 'ERROR', 'a@example')->total)->toBe(0);
+});
+
+it('returns the newest entries first and applies the limit while reporting the total', function (): void {
+    $entries = (new ParseLogEntriesAction())->execute(SAMPLE_LOG);
+
+    $result = (new FilterLogEntriesAction())->execute($entries, '', '', 2);
+>>>>>>> a95e8f36 (.)
 
     expect($result->total)->toBe(3);
     expect($result->entries)->toHaveCount(2);

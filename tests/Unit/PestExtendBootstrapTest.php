@@ -1,10 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_Kl1DZT
 
 =======
 >>>>>>> .merge_file_wRptua
+=======
+
+>>>>>>> a95e8f36 (.)
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 

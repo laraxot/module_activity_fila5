@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> a95e8f36 (.)
 use Illuminate\Support\Facades\File;
 use Modules\Activity\Actions\Log\ResolveLogDirectoryAction;
 use Modules\Activity\Actions\Log\ResolveLogFilePathAction;
@@ -37,7 +41,11 @@ afterEach(function (): void {
 });
 
 it('resolves a log file at the top level and in a nested folder', function (): void {
+<<<<<<< HEAD
     $action = new ResolveLogFilePathAction;
+=======
+    $action = new ResolveLogFilePathAction();
+>>>>>>> a95e8f36 (.)
     $base = realpath($this->base);
 
     $top = $action->execute('laravel.log', $this->base);
@@ -50,20 +58,32 @@ it('resolves a log file at the top level and in a nested folder', function (): v
 });
 
 it('rejects path traversal that would reach a file outside the log directory', function (): void {
+<<<<<<< HEAD
     $action = new ResolveLogFilePathAction;
+=======
+    $action = new ResolveLogFilePathAction();
+>>>>>>> a95e8f36 (.)
 
     expect(fn () => $action->execute('../secret.log', $this->base))->toThrow(InvalidLogFileException::class);
     expect(fn () => $action->execute('reports/../../secret.log', $this->base))->toThrow(InvalidLogFileException::class);
 });
 
 it('rejects an absolute path even if it points to a real log file', function (): void {
+<<<<<<< HEAD
     $action = new ResolveLogFilePathAction;
+=======
+    $action = new ResolveLogFilePathAction();
+>>>>>>> a95e8f36 (.)
 
     expect(fn () => $action->execute($this->root.'/secret.log', $this->base))->toThrow(InvalidLogFileException::class);
 });
 
 it('rejects files that are not .log, missing files, empty paths and null bytes', function (): void {
+<<<<<<< HEAD
     $action = new ResolveLogFilePathAction;
+=======
+    $action = new ResolveLogFilePathAction();
+>>>>>>> a95e8f36 (.)
 
     expect(fn () => $action->execute('note.txt', $this->base))->toThrow(InvalidLogFileException::class);
     expect(fn () => $action->execute('non-esiste.log', $this->base))->toThrow(InvalidLogFileException::class);
@@ -79,7 +99,11 @@ it('rejects a symlink inside the log directory that points outside of it', funct
         $this->markTestSkipped('Impossibile creare link simbolici in questo ambiente.');
     }
 
+<<<<<<< HEAD
     $action = new ResolveLogFilePathAction;
+=======
+    $action = new ResolveLogFilePathAction();
+>>>>>>> a95e8f36 (.)
 
     expect(fn () => $action->execute('link.log', $this->base))->toThrow(InvalidLogFileException::class);
 });
@@ -91,19 +115,31 @@ it('rejects a symlink named .log whose target is not a .log file', function (): 
         $this->markTestSkipped('Impossibile creare link simbolici in questo ambiente.');
     }
 
+<<<<<<< HEAD
     $action = new ResolveLogFilePathAction;
+=======
+    $action = new ResolveLogFilePathAction();
+>>>>>>> a95e8f36 (.)
 
     expect(fn () => $action->execute('finto.log', $this->base))->toThrow(InvalidLogFileException::class);
 });
 
 it('fails clearly when the base directory does not exist', function (): void {
+<<<<<<< HEAD
     $action = new ResolveLogFilePathAction;
+=======
+    $action = new ResolveLogFilePathAction();
+>>>>>>> a95e8f36 (.)
 
     expect(fn () => $action->execute('laravel.log', $this->root.'/non-esiste'))->toThrow(InvalidLogFileException::class);
 });
 
 it('resolves the log directory to its real path and fails when it is missing', function (): void {
+<<<<<<< HEAD
     $action = new ResolveLogDirectoryAction;
+=======
+    $action = new ResolveLogDirectoryAction();
+>>>>>>> a95e8f36 (.)
 
     expect($action->execute($this->base))->toBe(realpath($this->base));
     expect(fn () => $action->execute($this->root.'/non-esiste'))->toThrow(InvalidLogFileException::class);

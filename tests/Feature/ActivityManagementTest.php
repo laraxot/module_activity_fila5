@@ -10,7 +10,11 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> a95e8f36 (.)
 
 test('user can create activity', function () {
     $user = UserFactory::new()->createOne();

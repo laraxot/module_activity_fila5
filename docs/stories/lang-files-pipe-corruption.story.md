@@ -163,6 +163,7 @@ claude-opus-5[1m] — sessione `c21fdd4e`
 - `laravel/Modules/IndennitaResponsabilita/app/Models/Rating.php` — `@property int|null $parent_id`
 - `bashscripts/docs/prompts/03-quality-gates.md` — 3.24.0
 - `docs/sprint-status.yaml`, `docs/chat/quality-gates-preflight-file-corrotti.md`
+<<<<<<< HEAD
 <<<<<<< .merge_file_MpuN7O
 =======
 
@@ -199,3 +200,5 @@ Non ri-eseguito lo scan repo-wide di Task 1 in questa sessione (fuori scope, era
 al crash live). Se il fix qui sopra non si e' consolidato, vale la pena capire perche'
 prima di dichiarare `done` di nuovo.
 >>>>>>> .merge_file_vnPvLi
+=======
+>>>>>>> a95e8f36 (.)

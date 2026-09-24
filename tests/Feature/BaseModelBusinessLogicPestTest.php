@@ -12,8 +12,14 @@ use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Traits\Updater;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 
 uses(TestCase::class);
+=======
+use function Safe\class_uses;
+
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> a95e8f36 (.)
 
 test('can create base model instance', function (): void {
     $model = new TestActivityModel;

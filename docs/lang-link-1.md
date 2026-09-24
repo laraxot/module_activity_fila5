@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a95e8f36 (.)
 # Collegamento alle Traduzioni del Modulo Activity
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).
@@ -34,13 +38,34 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Activity/project_docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Patient/project_docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Cms/project_docs/lang-link.md)
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a95e8f36 (.)
 ---
 module: theme
 topic: lang-link-1
 canonical: ../../../Themes/docs/shared-components/lang-link-1.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/lang-link-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/lang-link-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/lang-link-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/lang-link-1.md
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+See canonical documentation: ../../../Themes/docs/shared-components/lang-link-1.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/lang-link-1.md
+>>>>>>> d4098eb (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/lang-link-1.md
+>>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/lang-link-1.md
+>>>>>>> 2d6a374 (.)
+>>>>>>> laraxot/dev
+>>>>>>> a95e8f36 (.)

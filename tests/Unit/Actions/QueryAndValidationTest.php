@@ -4,10 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Actions;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_UQlFJC
 =======
 use Illuminate\Database\Eloquent\Collection;
 >>>>>>> .merge_file_n6dP3F
+=======
+>>>>>>> a95e8f36 (.)
 use Illuminate\Database\Eloquent\Model;
 use InvalidArgumentException;
 use Mockery;
@@ -21,41 +24,56 @@ use Modules\Activity\Actions\RecordSubjectActivityAction;
 use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Adapters\ActivityLogger as ActivityLoggerAdapter;
 use Modules\Activity\Adapters\ActivityRecorder;
+<<<<<<< HEAD
 <<<<<<< .merge_file_UQlFJC
 =======
 use Modules\Activity\Models\Activity;
 >>>>>>> .merge_file_n6dP3F
+=======
+>>>>>>> a95e8f36 (.)
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 use Webmozart\Assert\InvalidArgumentException as AssertInvalidArgumentException;
 
 describe('Query Actions validation', function (): void {
     test('GetRecentActivitiesAction rifiuta limit non positivo', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_UQlFJC
         expect(fn (): mixed => (new GetRecentActivitiesAction())->execute(0))
 =======
         expect(fn (): Collection => (new GetRecentActivitiesAction)->execute(0))
 >>>>>>> .merge_file_n6dP3F
+=======
+        expect(fn (): mixed => (new GetRecentActivitiesAction())->execute(0))
+>>>>>>> a95e8f36 (.)
             ->toThrow(InvalidArgumentException::class, 'Limit must be positive');
     });
 
     test('GetUserActivitiesAction rifiuta limit non positivo', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_UQlFJC
         expect(fn (): mixed => (new GetUserActivitiesAction())->execute(new User(), -1))
 =======
         expect(fn (): Collection => (new GetUserActivitiesAction)->execute(new User, -1))
 >>>>>>> .merge_file_n6dP3F
+=======
+        expect(fn (): mixed => (new GetUserActivitiesAction())->execute(new User(), -1))
+>>>>>>> a95e8f36 (.)
             ->toThrow(InvalidArgumentException::class);
     });
 
     test('GetActivitiesByTypeAction rifiuta type vuoto e limit invalido', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_UQlFJC
+=======
+>>>>>>> a95e8f36 (.)
         $action = new GetActivitiesByTypeAction();
 
         expect(fn (): mixed => $action->execute(''))
             ->toThrow(InvalidArgumentException::class, 'Type cannot be empty');
 
         expect(fn (): mixed => $action->execute('login', 0))
+<<<<<<< HEAD
 =======
         $action = new GetActivitiesByTypeAction;
 
@@ -64,13 +82,18 @@ describe('Query Actions validation', function (): void {
 
         expect(fn (): Collection => $action->execute('login', 0))
 >>>>>>> .merge_file_n6dP3F
+=======
+>>>>>>> a95e8f36 (.)
             ->toThrow(InvalidArgumentException::class, 'Limit must be positive');
     });
 });
 
 describe('ActivityLogger Action validation', function (): void {
     test('getRecent getUserActivities getByType cleanOld validano input', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_UQlFJC
+=======
+>>>>>>> a95e8f36 (.)
         $logger = new ActivityLoggerAction();
         $user = new User();
 
@@ -87,6 +110,7 @@ describe('ActivityLogger Action validation', function (): void {
             ->toThrow(InvalidArgumentException::class);
 
         expect(fn (): mixed => $logger->cleanOld(0))
+<<<<<<< HEAD
 =======
         $logger = new ActivityLoggerAction;
         $user = new User;
@@ -105,17 +129,23 @@ describe('ActivityLogger Action validation', function (): void {
 
         expect(fn (): int => $logger->cleanOld(0))
 >>>>>>> .merge_file_n6dP3F
+=======
+>>>>>>> a95e8f36 (.)
             ->toThrow(InvalidArgumentException::class, 'Days must be positive');
     });
 });
 
 test('LogActivityAction execute rifiuta user non User', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_UQlFJC
+=======
+>>>>>>> a95e8f36 (.)
     $subject = new class() extends Model
     {
         protected $table = 'stub_models';
     };
     $invalidUser = new class() extends Model
+<<<<<<< HEAD
 =======
     $subject = new class extends Model
     {
@@ -123,22 +153,29 @@ test('LogActivityAction execute rifiuta user non User', function (): void {
     };
     $invalidUser = new class extends Model
 >>>>>>> .merge_file_n6dP3F
+=======
+>>>>>>> a95e8f36 (.)
     {
         protected $table = 'users';
     };
 
     $action = new LogActivityAction(type: 'test', user: $invalidUser, subject: $subject);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_UQlFJC
     expect(fn (): mixed => $action->execute())
 =======
     expect(fn (): Activity => $action->execute())
 >>>>>>> .merge_file_n6dP3F
+=======
+    expect(fn (): mixed => $action->execute())
+>>>>>>> a95e8f36 (.)
         ->toThrow(InvalidArgumentException::class, 'User must be an instance of User');
 });
 
 describe('ActivityLogger Adapter validation', function (): void {
     test('log rifiuta user non User', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_UQlFJC
         $logger = new ActivityLoggerAdapter();
 
@@ -148,15 +185,24 @@ describe('ActivityLogger Adapter validation', function (): void {
 
         expect(fn (): Activity => $logger->log('event', new \stdClass))
 >>>>>>> .merge_file_n6dP3F
+=======
+        $logger = new ActivityLoggerAdapter();
+
+        expect(fn (): mixed => $logger->log('event', new \stdClass()))
+>>>>>>> a95e8f36 (.)
             ->toThrow(InvalidArgumentException::class, 'User must be an instance of User');
     });
 
     test('getRecent delega validazione limit', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_UQlFJC
         expect(fn (): mixed => (new ActivityLoggerAdapter())->getRecent(0))
 =======
         expect(fn (): Collection => (new ActivityLoggerAdapter)->getRecent(0))
 >>>>>>> .merge_file_n6dP3F
+=======
+        expect(fn (): mixed => (new ActivityLoggerAdapter())->getRecent(0))
+>>>>>>> a95e8f36 (.)
             ->toThrow(InvalidArgumentException::class);
     });
 });
@@ -169,11 +215,15 @@ describe('ActivityRecorder Adapter', function (): void {
             ->with(User::class, 42, 'updated', ['name' => 'x'], null);
         app()->instance(RecordSubjectActivityAction::class, $mock);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_UQlFJC
         (new ActivityRecorder())->record(User::class, 42, 'updated', ['name' => 'x']);
 =======
         (new ActivityRecorder)->record(User::class, 42, 'updated', ['name' => 'x']);
 >>>>>>> .merge_file_n6dP3F
+=======
+        (new ActivityRecorder())->record(User::class, 42, 'updated', ['name' => 'x']);
+>>>>>>> a95e8f36 (.)
 
     });
 
@@ -185,11 +235,15 @@ describe('ActivityRecorder Adapter', function (): void {
             ->andReturn([['id' => 1]]);
         app()->instance(GetSubjectActivityLogAction::class, $mock);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_UQlFJC
         $log = (new ActivityRecorder())->getLog(User::class, 7);
 =======
         $log = (new ActivityRecorder)->getLog(User::class, 7);
 >>>>>>> .merge_file_n6dP3F
+=======
+        $log = (new ActivityRecorder())->getLog(User::class, 7);
+>>>>>>> a95e8f36 (.)
 
         Assert::assertSame([['id' => 1]], $log);
     });
@@ -197,20 +251,28 @@ describe('ActivityRecorder Adapter', function (): void {
 
 describe('RestoreActivityAction validation', function (): void {
     test('execute rifiuta oldProperties vuote', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_UQlFJC
         $model = new class() extends Model
 =======
         $model = new class extends Model
 >>>>>>> .merge_file_n6dP3F
+=======
+        $model = new class() extends Model
+>>>>>>> a95e8f36 (.)
         {
             protected $table = 'stub_models';
         };
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_UQlFJC
         expect(fn () => (new RestoreActivityAction())->execute($model, []))
 =======
         expect(fn () => (new RestoreActivityAction)->execute($model, []))
 >>>>>>> .merge_file_n6dP3F
+=======
+        expect(fn () => (new RestoreActivityAction())->execute($model, []))
+>>>>>>> a95e8f36 (.)
             ->toThrow(AssertInvalidArgumentException::class);
     });
 });

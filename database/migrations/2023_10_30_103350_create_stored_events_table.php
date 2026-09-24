@@ -1,11 +1,19 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> a95e8f36 (.)
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Activity\Models\StoredEvent;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< HEAD
 return new class extends XotBaseMigration
+=======
+return new class() extends XotBaseMigration
+>>>>>>> a95e8f36 (.)
 {
     protected ?string $model_class = StoredEvent::class;
 

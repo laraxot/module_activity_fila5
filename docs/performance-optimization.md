@@ -18,18 +18,24 @@ related:
 **Dopo**: Carico solo what's needed (~2K startup)
 
 ```diff
+<<<<<<< HEAD
 <<<<<<< .merge_file_J79TP2
+=======
+>>>>>>> a95e8f36 (.)
 <<<<<<< HEAD
 - 150+ rules embeddate in agents.md
 =======
 - 150+ rules embeddate in AGENTS.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 - 150+ rules embeddate in agents.md
 - 150+ rules embeddate in AGENTS.md
 - 150+ rules embeddate in agents.md
 - 150+ rules embeddate in AGENTS.md
 >>>>>>> .merge_file_yIK5Bp
+=======
+>>>>>>> a95e8f36 (.)
 + 0 rules embeddate — tutte on-demand
 ```
 

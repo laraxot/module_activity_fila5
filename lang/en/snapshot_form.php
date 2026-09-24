@@ -1,10 +1,13 @@
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_htOo0y
 =======
 declare(strict_types=1);
 
 >>>>>>> .merge_file_eQJOiB
+=======
+>>>>>>> a95e8f36 (.)
 return [
     'fields' => [
         'aggregate_uuid' => [

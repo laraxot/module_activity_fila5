@@ -9,6 +9,11 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 final class ListLogActivitiesActionTestResource extends XotBaseResource
 {
+<<<<<<< HEAD
+=======
+   
+
+>>>>>>> a95e8f36 (.)
     /**
      * @param  array<string, mixed>  $parameters
      */

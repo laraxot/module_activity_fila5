@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_f2c1fw
 # Best practices — bridge
 
 Underscore-variant duplicate (superseded — referenced a non-existent `ActivityService`
 and repository pattern). Canonical file: [best-practices.md](./best-practices.md).
 =======
+=======
+>>>>>>> a95e8f36 (.)
 # Best Practices – Activity
 
 ## Principi DRY/KISS
@@ -22,4 +25,7 @@ and repository pattern). Canonical file: [best-practices.md](./best-practices.md
 ## Documentazione
 - Aggiorna `docs/INDEX.md` con nuovi modelli e relazioni.
 - Collega a `Projects` e `Tasks` per contesto operativo.
+<<<<<<< HEAD
 >>>>>>> .merge_file_VBdSre
+=======
+>>>>>>> a95e8f36 (.)

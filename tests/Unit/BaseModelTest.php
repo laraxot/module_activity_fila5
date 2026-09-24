@@ -8,7 +8,11 @@ use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> a95e8f36 (.)
 
 it('base model is abstract', function (): void {
     $reflection = new \ReflectionClass(BaseModel::class);

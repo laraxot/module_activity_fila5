@@ -1,10 +1,13 @@
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_l4u7WI
 =======
 declare(strict_types=1);
 
 >>>>>>> .merge_file_LlOYLw
+=======
+>>>>>>> a95e8f36 (.)
 return [
     'fields' => [
         'id' => [

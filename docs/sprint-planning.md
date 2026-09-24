@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a95e8f36 (.)
 # Activity Module - Sprint Planning
 
 **Module:** Activity  
@@ -79,6 +83,12 @@ Complete core activity tracking infrastructure with admin dashboard for viewing 
 ---
 
 *Last Updated: March 12, 2026*
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a95e8f36 (.)
 # Activity Module - Sprint Planning
 
 **Module:** Activity  
@@ -160,7 +170,21 @@ Complete core activity tracking infrastructure with admin dashboard for viewing 
 ---
 
 *Last Updated: March 12, 2026*
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> a95e8f36 (.)
 # Sprint Planning: Activity Module
 
 ## 🏁 Sprint Goal
 Finalize documentation and validation for Activity.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
+>>>>>>> a95e8f36 (.)

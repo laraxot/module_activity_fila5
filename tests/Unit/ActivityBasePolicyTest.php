@@ -12,7 +12,11 @@ use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> a95e8f36 (.)
 
 describe('Activity Base Policy', function (): void {
     test('policy is abstract', function (): void {
@@ -36,7 +40,11 @@ describe('Activity Base Policy', function (): void {
         $user->shouldReceive('hasRole')->with('super-admin')->andReturn(true);
 
         // Test the policy
+<<<<<<< HEAD
         $policy = new class extends ActivityBasePolicy
+=======
+        $policy = new class() extends ActivityBasePolicy
+>>>>>>> a95e8f36 (.)
         {
             public function policyBefore(User $user): ?bool
             {

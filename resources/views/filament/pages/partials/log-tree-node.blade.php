@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> a95e8f36 (.)
 /*
  * Un livello dell'albero dei file di log: prima le sottocartelle (ricorsivo), poi i file.
  *

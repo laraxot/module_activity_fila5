@@ -15,9 +15,16 @@ interface ActivityRecorderInterface
     /**
      * Record a model action for audit trail.
      *
+<<<<<<< HEAD
      * @param  class-string  $modelClass
      * @param  string  $action  create|update|delete|restore
      * @param  array<string, mixed>  $changes
+=======
+     * @param class-string $modelClass
+     * @param int $modelId
+     * @param string $action create|update|delete|restore
+     * @param array<string, mixed> $changes
+>>>>>>> a95e8f36 (.)
      */
     public function record(
         string $modelClass,
