@@ -85,8 +85,5 @@ return [
             'icon' => 'delete',
             'tooltip' => 'delete',
         ],
-        'logout' => [
-            'tooltip' => 'logout',
-        ],
     ],
 ];
