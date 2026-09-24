@@ -1,9 +1,3 @@
-<<<<<<< .merge_file_f2c1fw
-# Best practices — bridge
-
-Underscore-variant duplicate (superseded — referenced a non-existent `ActivityService`
-and repository pattern). Canonical file: [best-practices.md](./best-practices.md).
-=======
 # Best Practices – Activity
 
 ## Principi DRY/KISS
@@ -22,4 +16,3 @@ and repository pattern). Canonical file: [best-practices.md](./best-practices.md
 ## Documentazione
 - Aggiorna `docs/INDEX.md` con nuovi modelli e relazioni.
 - Collega a `Projects` e `Tasks` per contesto operativo.
->>>>>>> .merge_file_VBdSre
