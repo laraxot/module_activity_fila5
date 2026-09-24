@@ -1,12 +1,3 @@
-<<<<<<< .merge_file_1tS9SI
----
-module: theme
-topic: filament_v4_upgrade
-canonical: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
-=======
 # Filament v4 Upgrade Documentation
 
 ## Overview
@@ -58,4 +49,3 @@ public static function getFormSchema(): array
 
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
->>>>>>> .merge_file_IToZlK
