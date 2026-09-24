@@ -58,7 +58,10 @@ final class CanPaginateHarness
         return $this->getRecordsPerPageSelectOptions();
     }
 
-    public function setDefaultPerPage(int|string|null $value): void
+    /** @var int|string|null */
+    public int|string|null $defaultRecordsPerPageSelectOption = null;
+
+        public function setDefaultPerPage(int|string|null $value): void
     {
         $this->defaultRecordsPerPageSelectOption = $value;
     }

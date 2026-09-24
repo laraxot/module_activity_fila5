@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< .merge_file_85Q0ja
 <<<<<<< HEAD
 <<<<<<< .merge_file_GKoDM1
 =======
@@ -8,6 +9,10 @@ declare(strict_types=1);
 >>>>>>> .merge_file_ySO3R0
 =======
 >>>>>>> a95e8f36 (.)
+=======
+declare(strict_types=1);
+
+>>>>>>> .merge_file_Bdynz3
 return [
     'fields' => [
         'log_name' => [

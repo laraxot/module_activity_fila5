@@ -1,9 +1,12 @@
+<<<<<<< .merge_file_UukRgz
 <<<<<<< HEAD
 <<<<<<< .merge_file_VCfmBT
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_pBtuxE
 # Login Test Implementation Summary - <nome progetto> Project
 
 ## 🎊 Mission Accomplished: Complete Login Testing Suite
@@ -215,17 +218,21 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 
 *Last Updated: Gennaio 2025*
 *Project: Laraxot <nome progetto>*
+<<<<<<< .merge_file_UukRgz
 <<<<<<< HEAD
 >>>>>>> .merge_file_mLpsVp
 =======
 =======
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_pBtuxE
 ---
 module: theme
 topic: login-test-implementation-summary-1
 canonical: ../../../Themes/docs/shared-components/login-test-implementation-summary-1.md
 ---
 
+<<<<<<< .merge_file_UukRgz
 <<<<<<< HEAD
 <<<<<<< .merge_file_VCfmBT
 See canonical documentation: ../../../Themes/docs/shared-components/login-test-implementation-summary-1.md
@@ -236,3 +243,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/login-test-i
 See canonical documentation: ../../../Themes/docs/shared-components/login-test-implementation-summary-1.md
 >>>>>>> laraxot/dev
 >>>>>>> a95e8f36 (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/login-test-implementation-summary-1.md
+>>>>>>> .merge_file_pBtuxE
