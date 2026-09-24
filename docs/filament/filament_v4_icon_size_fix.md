@@ -1,3 +1,12 @@
+<<<<<<< .merge_file_D08ncs
+---
+module: theme
+topic: filament_v4_icon_size_fix
+canonical: ../../../../Themes/docs/shared-components/filament_v4_icon_size_fix.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/filament_v4_icon_size_fix.md
+=======
 # Filament v4 Icon Size Attribute Fix
 
 ## Issue Description
@@ -66,3 +75,4 @@ After applying these fixes:
 ## Related Documentation
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
+>>>>>>> .merge_file_2JaGQN

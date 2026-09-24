@@ -10,7 +10,11 @@ use Modules\Activity\Actions\RestoreActivityAction;
 use Webmozart\Assert\InvalidArgumentException as AssertInvalidArgumentException;
 
 test('RestoreActivityAction aggiorna il record con le vecchie proprietà', function (): void {
+<<<<<<< .merge_file_Hkgd2e
+    $model = new class() extends Model
+=======
     $model = new class extends Model
+>>>>>>> .merge_file_H8wfmB
     {
         protected $table = 'stub_models';
 
@@ -28,13 +32,21 @@ test('RestoreActivityAction aggiorna il record con le vecchie proprietà', funct
         }
     };
 
+<<<<<<< .merge_file_Hkgd2e
+    (new RestoreActivityAction())->execute($model, ['name' => 'Ripristinato', 'status' => 'active']);
+=======
     (new RestoreActivityAction)->execute($model, ['name' => 'Ripristinato', 'status' => 'active']);
+>>>>>>> .merge_file_H8wfmB
 
     expect($model->updatedAttributes)->toBe(['name' => 'Ripristinato', 'status' => 'active']);
 });
 
 test('RestoreActivityAction incapsula eccezioni di update', function (): void {
+<<<<<<< .merge_file_Hkgd2e
+    $model = new class() extends Model
+=======
     $model = new class extends Model
+>>>>>>> .merge_file_H8wfmB
     {
         protected $table = 'stub_models';
 
@@ -48,17 +60,29 @@ test('RestoreActivityAction incapsula eccezioni di update', function (): void {
     };
 
     expect(function () use ($model): void {
+<<<<<<< .merge_file_Hkgd2e
+        (new RestoreActivityAction())->execute($model, ['name' => 'x']);
+=======
         (new RestoreActivityAction)->execute($model, ['name' => 'x']);
+>>>>>>> .merge_file_H8wfmB
     })->toThrow(Exception::class);
 });
 
 test('RestoreActivityAction rifiuta oldProperties vuote', function (): void {
+<<<<<<< .merge_file_Hkgd2e
+    $model = new class() extends Model
+=======
     $model = new class extends Model
+>>>>>>> .merge_file_H8wfmB
     {
         protected $table = 'stub_models';
     };
 
     expect(function () use ($model): void {
+<<<<<<< .merge_file_Hkgd2e
+        (new RestoreActivityAction())->execute($model, []);
+=======
         (new RestoreActivityAction)->execute($model, []);
+>>>>>>> .merge_file_H8wfmB
     })->toThrow(AssertInvalidArgumentException::class);
 });

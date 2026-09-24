@@ -12,9 +12,17 @@ This document outlines the key changes and upgrades implemented for Filament v4 
 
 ```php
 // v4 Approach (Current)
+<<<<<<< .merge_file_FAwCy8
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
 public function getFormSchema(): array
 public function getFormSchema(): array
 public static function getFormSchema(): array
+>>>>>>> .merge_file_t8O6BQ
 {
     return [
         'log_name' => TextInput::make('log_name')->required()->maxLength(255),
@@ -50,4 +58,8 @@ public static function getFormSchema(): array
 ## References
 
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
+<<<<<<< .merge_file_FAwCy8
 - [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
+=======
+- [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
+>>>>>>> .merge_file_t8O6BQ

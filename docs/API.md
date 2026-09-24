@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_iCGDew
+# API reference — bridge
+
+Case-variant duplicate. Canonical file: [api.md](./api.md).
+=======
 ---
 title: "Activity Module API"
 type: reference
@@ -28,3 +33,4 @@ $activity->subject;       // Polymorphic: User, Post, etc.
 $activity->causer;        // User performing action
 $activity->properties;    // JSON metadata
 ```
+>>>>>>> .merge_file_muCUYj
