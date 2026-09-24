@@ -9,15 +9,7 @@ use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-<<<<<<< HEAD
-uses(TestCase::class);
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
 
 describe('Can Paginate', function (): void {
     test('trait exists', function (): void {
@@ -47,15 +39,7 @@ describe('Can Paginate', function (): void {
 
     test('default pagination options return array', function (): void {
         // Test the default pagination options via reflection
-<<<<<<< HEAD
         $trait = new class
-=======
-<<<<<<< HEAD
-        $trait = new class
-=======
-        $trait = new class()
->>>>>>> a95e8f36 (.)
->>>>>>> laraxot/dev
         {
             use CanPaginate;
 
