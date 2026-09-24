@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 ---
 title: "Agent instructions"
 type: reference
@@ -11,9 +22,27 @@ related:
   - ./coding-agent-manifests.md
 ---
 
+<<<<<<< HEAD
 # Activity Module LLM Wiki Agent Instructions
 # Activity Module LLM Wiki Agent Instructions
 # Activity {{TYPE^}} LLM Wiki Agent Instructions
+=======
+<<<<<<< HEAD
+# Activity Module LLM Wiki Agent Instructions
+# Activity Module LLM Wiki Agent Instructions
+# Activity {{TYPE^}} LLM Wiki Agent Instructions
+=======
+<<<<<<< HEAD
+# Activity Module LLM Wiki Agent Instructions
+=======
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+# Activity {{TYPE^}} LLM Wiki Agent Instructions
+>>>>>>> laraxot/dev
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 
 > **Module/Theme:** Activity
 > **Scope:** Activity-specific knowledge only
@@ -152,8 +181,27 @@ Related:
 
 - [Project Wiki Integration](../../docs/wiki/README.md)
 - [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 - [Module Documentation](../README.md)
 - [Module Documentation](../README.md)
 - [Module Documentation](../README.md)
 - [Module Documentation](../README.md)
+<<<<<<< HEAD
 - [Module Documentation](../README.md)
+=======
+- [Module Documentation](../README.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Module Documentation](../README.md)
+=======
+- [Module Documentation](../README.md)
+>>>>>>> 0a02158a (.)
+=======
+- [Module Documentation](../README.md)
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev

@@ -8,11 +8,25 @@ use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 uses(TestCase::class);
 
 describe('Base Model Coverage', function (): void {
     test('casts returns array with required keys', function (): void {
         $concrete = new class extends BaseModel
+<<<<<<< HEAD
+=======
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+
+describe('Base Model Coverage', function (): void {
+    test('casts returns array with required keys', function (): void {
+$concrete = new class extends BaseModel
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
         {
             protected $table = 'test_base_coverage';
         };
@@ -32,7 +46,15 @@ describe('Base Model Coverage', function (): void {
     });
 
     test('casts merges with parent casts', function (): void {
+<<<<<<< HEAD
         $concrete = new class extends BaseModel
+=======
+<<<<<<< HEAD
+        $concrete = new class extends BaseModel
+=======
+$concrete = new class extends BaseModel
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
         {
             protected $table = 'test_base_coverage_merge';
         };

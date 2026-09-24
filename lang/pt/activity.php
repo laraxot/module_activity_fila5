@@ -301,13 +301,37 @@ return [
                 'label' => 'Excel',
                 'mime_type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 'extension' => 'xlsx',
+<<<<<<< HEAD
                 'icon' => 'heroicon-o-table-cells',
+=======
+<<<<<<< .merge_file_hM0HRT
+<<<<<<< HEAD
+                'icon' => 'xot-files.xlsx',
+=======
+                'icon' => 'heroicon-o-table-cells',
+>>>>>>> a95e8f36 (.)
+=======
+                'icon' => 'heroicon-o-table-cells',
+>>>>>>> .merge_file_zCrQ5h
+>>>>>>> laraxot/dev
             ],
             'pdf' => [
                 'label' => 'PDF',
                 'mime_type' => 'application/pdf',
                 'extension' => 'pdf',
+<<<<<<< HEAD
                 'icon' => 'heroicon-o-document',
+=======
+<<<<<<< .merge_file_hM0HRT
+<<<<<<< HEAD
+                'icon' => 'xot-files.pdf',
+=======
+                'icon' => 'heroicon-o-document',
+>>>>>>> a95e8f36 (.)
+=======
+                'icon' => 'heroicon-o-document',
+>>>>>>> .merge_file_zCrQ5h
+>>>>>>> laraxot/dev
             ],
         ],
         'columns' => [

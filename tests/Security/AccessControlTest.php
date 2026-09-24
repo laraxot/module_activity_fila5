@@ -15,11 +15,22 @@ use Modules\Activity\Models\Policies\ActivityPolicy;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
 it('denies activity viewAny to users without permission', function (): void {
     $user = activityCreateUser();
     $policy = new ActivityPolicy;
+<<<<<<< HEAD
+=======
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+
+it('denies activity viewAny to users without permission', function (): void {
+    $user = activityCreateUser();
+    $policy = new ActivityPolicy();
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 
     Assert::assertFalse($policy->viewAny($user));
 });
@@ -27,14 +38,30 @@ it('denies activity viewAny to users without permission', function (): void {
 it('allows activity viewAny to users with the correct permission', function (): void {
     $user = activityCreateUser();
     $user->givePermissionTo('activity.viewAny');
+<<<<<<< HEAD
     $policy = new ActivityPolicy;
+=======
+<<<<<<< HEAD
+    $policy = new ActivityPolicy;
+=======
+    $policy = new ActivityPolicy();
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 
     Assert::assertTrue($policy->viewAny($user));
 });
 
 it('denies activity view to users without permission', function (): void {
     $user = activityCreateUser();
+<<<<<<< HEAD
     $policy = new ActivityPolicy;
+=======
+<<<<<<< HEAD
+    $policy = new ActivityPolicy;
+=======
+    $policy = new ActivityPolicy();
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 
     Assert::assertFalse($policy->view($user));
 });
@@ -42,7 +69,15 @@ it('denies activity view to users without permission', function (): void {
 it('super-admin bypasses activity policy checks via before()', function (): void {
     $superAdmin = activityCreateUser();
     $superAdmin->assignRole('super-admin');
+<<<<<<< HEAD
     $policy = new ActivityPolicy;
+=======
+<<<<<<< HEAD
+    $policy = new ActivityPolicy;
+=======
+    $policy = new ActivityPolicy();
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 
     Assert::assertTrue($policy->viewAny($superAdmin));
     Assert::assertTrue($policy->view($superAdmin));
