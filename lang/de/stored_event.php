@@ -280,7 +280,7 @@ return [
                 'label' => 'Excel',
                 'mime_type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 'extension' => 'xlsx',
-                'icon' => 'xot-files.xlsx',
+                'icon' => 'heroicon-o-table-cells',
             ],
         ],
         'columns' => [
