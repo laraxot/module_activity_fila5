@@ -181,4 +181,11 @@ workbench/
 /.vscode/
 .cursor~*
 .windsurf~*
+<<<<<<< HEAD
 tests/activity_coverage.xml
+=======
+<<<<<<< HEAD
+=======
+tests/activity_coverage.xml
+>>>>>>> laraxot/dev
+>>>>>>> a95e8f36 (.)

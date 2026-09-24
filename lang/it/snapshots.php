@@ -58,7 +58,14 @@ return [
         'delete' => [
             'label' => 'Elimina',
             'tooltip' => 'Elimina lo snapshot',
+<<<<<<< HEAD
             'icon' => 'delete',
+=======
+<<<<<<< HEAD
+=======
+            'icon' => 'delete',
+>>>>>>> laraxot/dev
+>>>>>>> a95e8f36 (.)
         ],
         'view' => [
             'label' => 'Visualizza',

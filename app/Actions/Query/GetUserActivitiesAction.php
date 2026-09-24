@@ -7,11 +7,15 @@ namespace Modules\Activity\Actions\Query;
 use Illuminate\Database\Eloquent\Collection;
 use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
+<<<<<<< HEAD
 <<<<<<< .merge_file_aGyBbl
 use Modules\User\Models\User;
 =======
 use Modules\Xot\Contracts\UserContract;
 >>>>>>> .merge_file_sY4QLL
+=======
+use Modules\User\Models\User;
+>>>>>>> a95e8f36 (.)
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -24,11 +28,15 @@ class GetUserActivitiesAction
     /**
      * @return Collection<int, Activity>
      */
+<<<<<<< HEAD
 <<<<<<< .merge_file_aGyBbl
     public function execute(User $user, int $limit = 50): Collection
 =======
     public function execute(UserContract $user, int $limit = 50): Collection
 >>>>>>> .merge_file_sY4QLL
+=======
+    public function execute(User $user, int $limit = 50): Collection
+>>>>>>> a95e8f36 (.)
     {
         if ($limit <= 0) {
             throw new InvalidArgumentException('Limit must be positive');

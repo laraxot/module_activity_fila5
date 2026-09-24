@@ -9,11 +9,15 @@ use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
 use PHPUnit\Framework\Assert;
 
 test('CanPaginate gestisce session e default senza database', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_OtiMFY
     $harness = new CanPaginateHarness();
 =======
     $harness = new CanPaginateHarness;
 >>>>>>> .merge_file_eXQKTM
+=======
+    $harness = new CanPaginateHarness();
+>>>>>>> a95e8f36 (.)
     $harness->recordsPerPage = 25;
 
     $harness->updatedRecordsPerPage();
@@ -27,11 +31,15 @@ test('CanPaginate gestisce session e default senza database', function (): void 
 });
 
 test('CanPaginate default option fallback senza database', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_OtiMFY
     $harness = new CanPaginateHarness();
 =======
     $harness = new CanPaginateHarness;
 >>>>>>> .merge_file_eXQKTM
+=======
+    $harness = new CanPaginateHarness();
+>>>>>>> a95e8f36 (.)
     $harness->setDefaultPerPage(25);
 
     Assert::assertSame(25, $harness->getDefaultRecordsPerPageSelectOption());
@@ -43,22 +51,30 @@ test('CanPaginate default option fallback senza database', function (): void {
 });
 
 test('CanPaginate recordsPerPage null usa default option', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_OtiMFY
     $harness = new CanPaginateHarness();
 =======
     $harness = new CanPaginateHarness;
 >>>>>>> .merge_file_eXQKTM
+=======
+    $harness = new CanPaginateHarness();
+>>>>>>> a95e8f36 (.)
     $harness->setDefaultPerPage(50);
 
     Assert::assertSame(50, $harness->getRecordsPerPage());
 });
 
 test('CanPaginate espone pagination mode default', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_OtiMFY
     $harness = new CanPaginateHarness();
 =======
     $harness = new CanPaginateHarness;
 >>>>>>> .merge_file_eXQKTM
+=======
+    $harness = new CanPaginateHarness();
+>>>>>>> a95e8f36 (.)
 
     Assert::assertSame(PaginationMode::Default, $harness->getPaginationMode());
 });
