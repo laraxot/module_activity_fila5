@@ -25,9 +25,8 @@ use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Filament\Resources\Pages\XotBasePage;
+use Stringable;
 use Webmozart\Assert\Assert;
-
-use function Safe\json_encode;
 
 /**
  * Classe base per visualizzare lo storico delle attività di un record.
@@ -67,8 +66,10 @@ abstract class ListLogActivities extends XotBasePage
 
         // Convert to string (__() returns string|array|null)
         if (is_array($breadcrumb)) {
-            /** @phpstan-ignore-next-line cast.string */
-            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $breadcrumb));
+            return implode(' ', array_map(
+                static fn (mixed $value): string => self::stringifyTranslationValue($value),
+                $breadcrumb,
+            ));
         }
 
         if (is_string($breadcrumb)) {
@@ -92,8 +93,10 @@ abstract class ListLogActivities extends XotBasePage
 
         // __() returns string|array|null
         if (is_array($title)) {
-            /** @phpstan-ignore-next-line argument.type */
-            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $title));
+            return implode(' ', array_map(
+                static fn (mixed $value): string => self::stringifyTranslationValue($value),
+                $title,
+            ));
         }
 
         if (is_string($title)) {
@@ -274,7 +277,10 @@ abstract class ListLogActivities extends XotBasePage
     {
         $title = __('activity::activities.events.restore_successful');
         $titleString = is_array($title)
-            ? implode(' ', array_map(fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v), $title))
+            ? implode(' ', array_map(
+                static fn (mixed $value): string => self::stringifyTranslationValue($value),
+                $title,
+            ))
             : (is_string($title) ? $title : '');
 
         return Notification::make()
@@ -287,8 +293,10 @@ abstract class ListLogActivities extends XotBasePage
     {
         $title = __('activity::activities.events.restore_failed');
         $titleString = is_array($title)
-            /** @phpstan-ignore-next-line cast.string */
-            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
+            ? implode(' ', array_map(
+                static fn (mixed $value): string => self::stringifyTranslationValue($value),
+                $title,
+            ))
             : (is_string($title) ? $title : '');
 
         $notification = Notification::make()
@@ -300,6 +308,30 @@ abstract class ListLogActivities extends XotBasePage
         }
 
         return $notification->send();
+    }
+
+    private static function stringifyTranslationValue(mixed $value): string
+    {
+        if (is_string($value)) {
+            return $value;
+        }
+
+        if (is_scalar($value)) {
+            return (string) $value;
+        }
+
+        if ($value instanceof Stringable) {
+            return (string) $value;
+        }
+
+        if (is_array($value)) {
+            return implode(' ', array_map(
+                static fn (mixed $item): string => self::stringifyTranslationValue($item),
+                $value,
+            ));
+        }
+
+        return '';
     }
 
     private function resolveActivity(int|string $key): Activity

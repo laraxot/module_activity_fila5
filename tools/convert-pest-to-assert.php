@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\preg_match;
@@ -24,32 +25,25 @@ foreach ($iterator as $file) {
         continue;
     }
 
-    $code = file_get_contents($path);
+    $code = (string) file_get_contents($path);
     if (! str_contains($code, 'expect(')) {
         continue;
     }
 
-    $replaced = preg_replace('/\s*\/\/\s*@phpstan-ignore-(line|next-line)[^\n]*\n/', "\n", $code);
-    $code = is_string($replaced) ? $replaced : $code;
+    $code = preg_replace('/\s*\/\/\s*@phpstan-ignore-(line|next-line)[^\n]*\n/', "\n", $code) ?? $code;
 
     if (! str_contains($code, 'use PHPUnit\\Framework\\Assert;')) {
         $matches = [];
         if (preg_match('/namespace\s+[^;]+;\s*\n((?:use\s+[^;]+;\s*\n)*)/', $code, $matches, PREG_OFFSET_CAPTURE) === 1
-            && isset($matches[1][0], $matches[1][1])
-            && is_string($matches[1][0]) && is_int($matches[1][1])) {
+            && isset($matches[1]) && is_array($matches[1])) {
             $insertAt = $matches[1][1] + strlen($matches[1][0]);
-            $code = substr($code, 0, $insertAt).
-                "use PHPUnit\\Framework\\Assert;\n".
-                substr($code, $insertAt);
+            $code = substr($code, 0, $insertAt)."use PHPUnit\\Framework\\Assert;\n".substr($code, $insertAt);
         } else {
             $m = [];
             if (preg_match('/^(<\?php\s+declare\(strict_types=1\);\s*\n)/', $code, $m, PREG_OFFSET_CAPTURE) === 1
-                && isset($m[1][0], $m[1][1])
-                && is_string($m[1][0]) && is_int($m[1][1])) {
+                && isset($m[1]) && is_array($m[1])) {
                 $insertAt = $m[1][1] + strlen($m[1][0]);
-                $code = substr($code, 0, $insertAt).
-                    "use PHPUnit\\Framework\\Assert;\n\n".
-                    substr($code, $insertAt);
+                $code = substr($code, 0, $insertAt)."use PHPUnit\\Framework\\Assert;\n\n".substr($code, $insertAt);
             }
         }
     }
