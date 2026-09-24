@@ -10,11 +10,7 @@ final class ListLogActivitiesMountablePage extends ListLogActivitiesPageHarness
 {
     public function resolveRecord(int|string|Model $key): Model
     {
-<<<<<<< .merge_file_MGYFYX
         $subject = new ActivitySubjectHarness();
-=======
-        $subject = new ActivitySubjectHarness;
->>>>>>> .merge_file_iYpXhJ
         $subject->forceFill(['id' => (string) $key, 'name' => 'mounted']);
         $subject->exists = true;
 

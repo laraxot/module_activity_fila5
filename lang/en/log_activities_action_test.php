@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_WuKIhs
-=======
 declare(strict_types=1);
 
->>>>>>> .merge_file_HGm9G0
 return [
     'actions' => [
         'list_log_activities' => [
