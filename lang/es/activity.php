@@ -301,13 +301,13 @@ return [
                 'label' => 'Excel',
                 'mime_type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 'extension' => 'xlsx',
-                'icon' => 'xot-files.xlsx',
+                'icon' => 'heroicon-o-table-cells',
             ],
             'pdf' => [
                 'label' => 'PDF',
                 'mime_type' => 'application/pdf',
                 'extension' => 'pdf',
-                'icon' => 'xot-files.pdf',
+                'icon' => 'heroicon-o-document',
             ],
         ],
         'columns' => [

@@ -19,7 +19,7 @@ use Modules\User\Models\User;
 function activityCreateUser(array $attributes = []): User
 {
     $user = UserFactory::new()->createOne($attributes);
-    assert($user instanceof UserContract);
+    assert($user instanceof User);
 
     return $user;
 }
