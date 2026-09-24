@@ -301,13 +301,29 @@ return [
                 'label' => 'Excel',
                 'mime_type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 'extension' => 'xlsx',
+<<<<<<< HEAD
                 'icon' => 'heroicon-o-table-cells',
+=======
+<<<<<<< HEAD
+                'icon' => 'xot-files.xlsx',
+=======
+                'icon' => 'heroicon-o-table-cells',
+>>>>>>> 472c43a3 (.)
+>>>>>>> 68a8e694 (.)
             ],
             'pdf' => [
                 'label' => 'PDF',
                 'mime_type' => 'application/pdf',
                 'extension' => 'pdf',
+<<<<<<< HEAD
                 'icon' => 'heroicon-o-document',
+=======
+<<<<<<< HEAD
+                'icon' => 'xot-files.pdf',
+=======
+                'icon' => 'heroicon-o-document',
+>>>>>>> 472c43a3 (.)
+>>>>>>> 68a8e694 (.)
             ],
         ],
         'columns' => [
