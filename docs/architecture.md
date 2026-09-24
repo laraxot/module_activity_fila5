@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_H3Yirn
 <<<<<<< HEAD
 <<<<<<< .merge_file_wQuOTC
 ---
@@ -76,6 +77,8 @@ level and any module-specific baseline).
 =======
 <<<<<<< HEAD
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_FQePD0
 # Architecture Documentation
 
 ## Activity Module Architecture
@@ -269,8 +272,11 @@ Provides audit trail and activity logging via Spatie Laravel Activity Log. Track
 
 ## Quality Gates
 ✅ PHPStan L10: Executed (2026-07-28)
+<<<<<<< .merge_file_H3Yirn
 <<<<<<< HEAD
 >>>>>>> .merge_file_Da4mgP
 =======
 >>>>>>> laraxot/dev
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_FQePD0

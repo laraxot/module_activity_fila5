@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_0hU02Y
 <<<<<<< HEAD
 <<<<<<< .merge_file_tRLB5A
 <<<<<<< HEAD
@@ -6,6 +7,8 @@
 =======
 <<<<<<< HEAD
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_twelMy
 ---
 title: "Product Requirements Document (PRD) - Activity Module"
 module: "Activity"
@@ -35,6 +38,7 @@ Activity tracking and audit logging module for Laraxot platform.
 - Pest test coverage >90%
 - Integration with Xot base models
 
+<<<<<<< .merge_file_0hU02Y
 <<<<<<< HEAD
 <<<<<<< .merge_file_tRLB5A
 =======
@@ -43,6 +47,8 @@ Activity tracking and audit logging module for Laraxot platform.
 =======
 =======
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_twelMy
 # PRD - Activity Module
 
 ## 1. Executive Summary
@@ -89,6 +95,7 @@ Il modulo $(basename $(dirname $(dirname "$prd"))) segue la **Metodologia "Super
 - **No RefreshDatabase**: Utilizzo di `DatabaseTransactions`.
 - **Obiettivo**: 100% di coverage. Se un test fallisce, va sistemato o eliminato se il sito è funzionale.
 - **Obiettivo**: 100% di coverage. Se un test fallisce, va sistemato o eliminato se il sito è funzionale.
+<<<<<<< .merge_file_0hU02Y
 <<<<<<< HEAD
 <<<<<<< .merge_file_tRLB5A
 >>>>>>> laraxot/dev
@@ -97,3 +104,5 @@ Il modulo $(basename $(dirname $(dirname "$prd"))) segue la **Metodologia "Super
 =======
 >>>>>>> laraxot/dev
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_twelMy

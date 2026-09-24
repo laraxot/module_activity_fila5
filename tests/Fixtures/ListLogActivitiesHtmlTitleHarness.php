@@ -10,6 +10,7 @@ final class ListLogActivitiesHtmlTitleHarness extends ListLogActivitiesPageHarne
 {
     public function getRecordTitle(): Htmlable
     {
+<<<<<<< .merge_file_hKemKG
 <<<<<<< HEAD
 <<<<<<< .merge_file_U73rNp
         return new HtmlableRecordTitle();
@@ -19,5 +20,8 @@ final class ListLogActivitiesHtmlTitleHarness extends ListLogActivitiesPageHarne
 =======
         return new HtmlableRecordTitle();
 >>>>>>> a95e8f36 (.)
+=======
+        return new HtmlableRecordTitle;
+>>>>>>> .merge_file_h8dq68
     }
 }
