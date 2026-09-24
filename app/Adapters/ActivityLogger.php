@@ -21,7 +21,15 @@ use Modules\Activity\Actions\Query\GetModelActivitiesAction;
 use Modules\Activity\Actions\Query\GetRecentActivitiesAction;
 use Modules\Activity\Actions\Query\GetUserActivitiesAction;
 use Modules\Activity\Models\Activity;
+<<<<<<< .merge_file_9uFqwM
+use Modules\User\Models\User;
+=======
+<<<<<<< .merge_file_BHZkMl
+use Modules\User\Models\User;
+=======
 use Modules\Xot\Contracts\UserContract;
+>>>>>>> .merge_file_EWEHOo
+>>>>>>> .merge_file_O1Az67
 
 /**
  * Coordinator — delegates to single-purpose QueueableActions (not an Action: multi-method API).
@@ -38,13 +46,31 @@ class ActivityLogger
         ?array $properties = null,
         ?string $description = null,
     ): Activity {
+<<<<<<< .merge_file_9uFqwM
+        if ($user !== null && ! $user instanceof User) {
+            throw new InvalidArgumentException('User must be an instance of User');
+=======
+<<<<<<< .merge_file_BHZkMl
+        if ($user !== null && ! $user instanceof User) {
+            throw new InvalidArgumentException('User must be an instance of User');
+=======
         if ($user !== null && (! $user instanceof UserContract || ! $user instanceof Model)) {
             throw new InvalidArgumentException('User must implement UserContract');
+>>>>>>> .merge_file_EWEHOo
+>>>>>>> .merge_file_O1Az67
         }
 
         $activity = (new LogActivityAction(
             type: $type,
+<<<<<<< .merge_file_9uFqwM
+            user: $user instanceof User ? $user : null,
+=======
+<<<<<<< .merge_file_BHZkMl
+            user: $user instanceof User ? $user : null,
+=======
             user: $user instanceof Model ? $user : null,
+>>>>>>> .merge_file_EWEHOo
+>>>>>>> .merge_file_O1Az67
             subject: $subject,
             properties: $properties,
             description: $description,
@@ -58,6 +84,29 @@ class ActivityLogger
         return $activity;
     }
 
+<<<<<<< .merge_file_9uFqwM
+=======
+<<<<<<< .merge_file_BHZkMl
+>>>>>>> .merge_file_O1Az67
+    public function created(Model $model, ?User $user = null): Activity
+    {
+        return (new LogModelCreatedAction($model, $user))->execute();
+    }
+
+    public function updated(Model $model, ?User $user = null): Activity
+    {
+        return (new LogModelUpdatedAction($model, $user))->execute();
+    }
+
+    public function deleted(Model $model, ?User $user = null): Activity
+    {
+        return (new LogModelDeletedAction($model, $user))->execute();
+    }
+
+    public function login(User $user): Activity
+<<<<<<< .merge_file_9uFqwM
+=======
+=======
     public function created(Model $model, ?UserContract $user = null): Activity
     {
         return (new LogModelCreatedAction($model, $user instanceof Model ? $user : null))->execute();
@@ -74,11 +123,21 @@ class ActivityLogger
     }
 
     public function login(UserContract $user): Activity
+>>>>>>> .merge_file_EWEHOo
+>>>>>>> .merge_file_O1Az67
     {
         return (new LogUserLoginAction($user))->execute();
     }
 
+<<<<<<< .merge_file_9uFqwM
+    public function logout(User $user): Activity
+=======
+<<<<<<< .merge_file_BHZkMl
+    public function logout(User $user): Activity
+=======
     public function logout(UserContract $user): Activity
+>>>>>>> .merge_file_EWEHOo
+>>>>>>> .merge_file_O1Az67
     {
         return (new LogUserLogoutAction($user))->execute();
     }
@@ -96,7 +155,15 @@ class ActivityLogger
     }
 
     /** @return Collection<int, Activity> */
+<<<<<<< .merge_file_9uFqwM
+    public function getUserActivities(User $user, int $limit = 50): Collection
+=======
+<<<<<<< .merge_file_BHZkMl
+    public function getUserActivities(User $user, int $limit = 50): Collection
+=======
     public function getUserActivities(UserContract $user, int $limit = 50): Collection
+>>>>>>> .merge_file_EWEHOo
+>>>>>>> .merge_file_O1Az67
     {
         return app(GetUserActivitiesAction::class)->execute($user, $limit);
     }
@@ -127,7 +194,15 @@ class ActivityLogger
     /**
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
+<<<<<<< .merge_file_9uFqwM
+    public function getStatistics(?User $user = null): array
+=======
+<<<<<<< .merge_file_BHZkMl
+    public function getStatistics(?User $user = null): array
+=======
     public function getStatistics(?UserContract $user = null): array
+>>>>>>> .merge_file_EWEHOo
+>>>>>>> .merge_file_O1Az67
     {
         return app(GetActivityStatisticsAction::class)->execute($user);
     }
