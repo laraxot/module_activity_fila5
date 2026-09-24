@@ -9,6 +9,7 @@ use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
 use PHPUnit\Framework\Assert;
 
 test('CanPaginate gestisce session e default senza database', function (): void {
+<<<<<<< .merge_file_gR09tO
 <<<<<<< HEAD
 <<<<<<< .merge_file_OtiMFY
     $harness = new CanPaginateHarness();
@@ -18,6 +19,9 @@ test('CanPaginate gestisce session e default senza database', function (): void 
 =======
     $harness = new CanPaginateHarness();
 >>>>>>> a95e8f36 (.)
+=======
+    $harness = new CanPaginateHarness;
+>>>>>>> .merge_file_9gLO2v
     $harness->recordsPerPage = 25;
 
     $harness->updatedRecordsPerPage();
@@ -31,6 +35,7 @@ test('CanPaginate gestisce session e default senza database', function (): void 
 });
 
 test('CanPaginate default option fallback senza database', function (): void {
+<<<<<<< .merge_file_gR09tO
 <<<<<<< HEAD
 <<<<<<< .merge_file_OtiMFY
     $harness = new CanPaginateHarness();
@@ -40,6 +45,9 @@ test('CanPaginate default option fallback senza database', function (): void {
 =======
     $harness = new CanPaginateHarness();
 >>>>>>> a95e8f36 (.)
+=======
+    $harness = new CanPaginateHarness;
+>>>>>>> .merge_file_9gLO2v
     $harness->setDefaultPerPage(25);
 
     Assert::assertSame(25, $harness->getDefaultRecordsPerPageSelectOption());
@@ -51,6 +59,7 @@ test('CanPaginate default option fallback senza database', function (): void {
 });
 
 test('CanPaginate recordsPerPage null usa default option', function (): void {
+<<<<<<< .merge_file_gR09tO
 <<<<<<< HEAD
 <<<<<<< .merge_file_OtiMFY
     $harness = new CanPaginateHarness();
@@ -60,12 +69,16 @@ test('CanPaginate recordsPerPage null usa default option', function (): void {
 =======
     $harness = new CanPaginateHarness();
 >>>>>>> a95e8f36 (.)
+=======
+    $harness = new CanPaginateHarness;
+>>>>>>> .merge_file_9gLO2v
     $harness->setDefaultPerPage(50);
 
     Assert::assertSame(50, $harness->getRecordsPerPage());
 });
 
 test('CanPaginate espone pagination mode default', function (): void {
+<<<<<<< .merge_file_gR09tO
 <<<<<<< HEAD
 <<<<<<< .merge_file_OtiMFY
     $harness = new CanPaginateHarness();
@@ -75,6 +88,9 @@ test('CanPaginate espone pagination mode default', function (): void {
 =======
     $harness = new CanPaginateHarness();
 >>>>>>> a95e8f36 (.)
+=======
+    $harness = new CanPaginateHarness;
+>>>>>>> .merge_file_9gLO2v
 
     Assert::assertSame(PaginationMode::Default, $harness->getPaginationMode());
 });

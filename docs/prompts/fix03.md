@@ -29,6 +29,7 @@ env("DB_PASSWORD_ACTIVITY", $passwordFallback)
 ```
 
 Se le variabili non sono impostate, usa i valori della connessione default (mysql). In testing:
+<<<<<<< .merge_file_B229zr
 <<<<<<< HEAD
 <<<<<<< .merge_file_KkX5jK
 =======
@@ -44,14 +45,19 @@ Se le variabili non sono impostate, usa i valori della connessione default (mysq
 >>>>>>> 35d8cf69 (Initial commit)
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_tKLyWT
 - **DRY**: stesso DB per tutto (<nome progetto>_data_test)
 - **DRY**: stesso DB per tutto (techplanner_data_test)
 - **DRY**: stesso DB per tutto (<nome progetto>_data_test)
 - **DRY**: stesso DB per tutto (techplanner_data_test)
 - **DRY**: stesso DB per tutto (techplanner_data_test)
+<<<<<<< .merge_file_B229zr
 >>>>>>> .merge_file_gwoA99
 =======
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_tKLyWT
 - **Semplicità**: una sola configurazione DB da gestire
 - **Coerenza**: activity e mysql puntano allo stesso database di test
 

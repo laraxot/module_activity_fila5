@@ -16,6 +16,7 @@ afterEach(function (): void {
 });
 
 test('ActivityRecorder record delega a RecordSubjectActivityAction', function (): void {
+<<<<<<< .merge_file_rk2uBH
 <<<<<<< HEAD
 <<<<<<< .merge_file_vMj96r
     $activity = new Activity();
@@ -25,6 +26,9 @@ test('ActivityRecorder record delega a RecordSubjectActivityAction', function ()
 =======
     $activity = new Activity();
 >>>>>>> a95e8f36 (.)
+=======
+    $activity = new Activity;
+>>>>>>> .merge_file_m3WLYM
 
     $mock = Mockery::mock(RecordSubjectActivityAction::class);
     mockeryExpect($mock->shouldReceive('execute'))
@@ -33,6 +37,7 @@ test('ActivityRecorder record delega a RecordSubjectActivityAction', function ()
         ->andReturn($activity);
     app()->instance(RecordSubjectActivityAction::class, $mock);
 
+<<<<<<< .merge_file_rk2uBH
 <<<<<<< HEAD
 <<<<<<< .merge_file_vMj96r
     (new ActivityRecorder())->record(
@@ -42,6 +47,9 @@ test('ActivityRecorder record delega a RecordSubjectActivityAction', function ()
 =======
     (new ActivityRecorder())->record(
 >>>>>>> a95e8f36 (.)
+=======
+    (new ActivityRecorder)->record(
+>>>>>>> .merge_file_m3WLYM
         'Modules\\User\\Models\\User',
         42,
         'updated',
@@ -59,6 +67,7 @@ test('ActivityRecorder getLog delega a GetSubjectActivityLogAction', function ()
         ->andReturn($logEntries);
     app()->instance(GetSubjectActivityLogAction::class, $mock);
 
+<<<<<<< .merge_file_rk2uBH
 <<<<<<< HEAD
 <<<<<<< .merge_file_vMj96r
     $result = (new ActivityRecorder())->getLog('Modules\\User\\Models\\User', 7);
@@ -68,6 +77,9 @@ test('ActivityRecorder getLog delega a GetSubjectActivityLogAction', function ()
 =======
     $result = (new ActivityRecorder())->getLog('Modules\\User\\Models\\User', 7);
 >>>>>>> a95e8f36 (.)
+=======
+    $result = (new ActivityRecorder)->getLog('Modules\\User\\Models\\User', 7);
+>>>>>>> .merge_file_m3WLYM
 
     Assert::assertSame($logEntries, $result);
 });

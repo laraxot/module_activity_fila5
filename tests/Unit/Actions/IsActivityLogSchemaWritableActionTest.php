@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_ZrPVZT
 <<<<<<< HEAD
 <<<<<<< .merge_file_inA46j
 
@@ -9,10 +10,13 @@ declare(strict_types=1);
 =======
 
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_Q4x3qh
 use Modules\Activity\Actions\Schema\IsActivityLogSchemaWritableAction;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< .merge_file_ZrPVZT
 <<<<<<< HEAD
 <<<<<<< .merge_file_inA46j
 uses(\Modules\Activity\Tests\TestCase::class);
@@ -22,6 +26,9 @@ uses(TestCase::class);
 =======
 uses(\Modules\Activity\Tests\TestCase::class);
 >>>>>>> a95e8f36 (.)
+=======
+uses(TestCase::class);
+>>>>>>> .merge_file_Q4x3qh
 
 it('returns false when activity log is disabled', function (): void {
     config(['activitylog.enabled' => false]);

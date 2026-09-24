@@ -21,6 +21,10 @@ class ActivityServiceProvider extends XotBaseServiceProvider
      */
     public string $name = 'Activity';
 
+    protected string $module_dir = __DIR__;
+
+    protected string $module_ns = __NAMESPACE__;
+
     /**
      * Directory del modulo.
      */

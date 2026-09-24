@@ -3,6 +3,7 @@ title: "Activity Module API"
 type: reference
 tags: [activity, api]
 created: 2026-07-28
+<<<<<<< .merge_file_Tbdtcr
 <<<<<<< HEAD
 <<<<<<< .merge_file_TM0cP0
 updated: 2026-09-17
@@ -12,12 +13,16 @@ updated: 2026-07-28
 =======
 updated: 2026-07-28
 >>>>>>> a95e8f36 (.)
+=======
+updated: 2026-07-28
+>>>>>>> .merge_file_Yjz5gi
 ---
 
 # Activity Module — API
 
 ## LogActivityAction
 
+<<<<<<< .merge_file_Tbdtcr
 <<<<<<< HEAD
 <<<<<<< .merge_file_TM0cP0
 Constructor-based Spatie `QueueableAction`, not a static/array-args call. Verified against
@@ -40,6 +45,8 @@ use Modules\Activity\Actions\LogActivityAction;
 =======
 =======
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_Yjz5gi
 ```php
 execute(array $data): Activity
 ```
@@ -49,15 +56,19 @@ execute(array $data): Activity
 - `causer` (Model): User performing action
 - `type` (string): Event type (user.created, post.updated, etc.)
 - `properties` (array): Metadata
+<<<<<<< .merge_file_Tbdtcr
 <<<<<<< HEAD
 >>>>>>> .merge_file_LqyxAw
 =======
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_Yjz5gi
 
 ## Activity Model
 
 ```php
 Activity::find($id);
+<<<<<<< .merge_file_Tbdtcr
 <<<<<<< HEAD
 <<<<<<< .merge_file_TM0cP0
 $activity->subject;       // Polymorphic: any Model
@@ -70,5 +81,9 @@ $activity->causer;        // User performing action
 $activity->subject;       // Polymorphic: User, Post, etc.
 $activity->causer;        // User performing action
 >>>>>>> a95e8f36 (.)
+=======
+$activity->subject;       // Polymorphic: User, Post, etc.
+$activity->causer;        // User performing action
+>>>>>>> .merge_file_Yjz5gi
 $activity->properties;    // JSON metadata
 ```

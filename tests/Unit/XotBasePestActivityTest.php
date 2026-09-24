@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_KLIJbp
 <<<<<<< HEAD
 <<<<<<< .merge_file_m8tyC1
 
@@ -9,6 +10,8 @@ declare(strict_types=1);
 =======
 
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_ZEvOYM
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 

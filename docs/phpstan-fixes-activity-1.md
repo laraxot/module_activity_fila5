@@ -1,4 +1,7 @@
+<<<<<<< .merge_file_r5Hu9C
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_7yKuTz
 # Correzioni PHPStan - Modulo Activity
 
 ## 🚨 Errori PHPStan Risolti
@@ -43,13 +46,17 @@ $activities = \Modules\Activity\Database\Factories\ActivityFactory::new()
 - **PHPStan Level 9**: Compliance ripristinata
 
 *Ultimo aggiornamento: gennaio 2025*
+<<<<<<< .merge_file_r5Hu9C
 =======
+=======
+>>>>>>> .merge_file_7yKuTz
 ---
 module: theme
 topic: phpstan-fixes-activity-1
 canonical: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
 ---
 
+<<<<<<< .merge_file_r5Hu9C
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -64,3 +71,9 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixe
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
 >>>>>>> 2d6a374 (.)
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+>>>>>>> .merge_file_7yKuTz

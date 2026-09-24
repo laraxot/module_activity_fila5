@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Filament;
 
+<<<<<<< .merge_file_ZDIcjp
 <<<<<<< HEAD
 <<<<<<< .merge_file_nPdbm0
 =======
@@ -11,6 +12,9 @@ use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 >>>>>>> .merge_file_6yPwXo
 =======
 >>>>>>> a95e8f36 (.)
+=======
+use Illuminate\Contracts\Pagination\LengthAwarePaginator;
+>>>>>>> .merge_file_aeoNr2
 use Illuminate\Support\Collection;
 use Modules\Activity\Actions\ActivityLogger as ActivityLoggerAction;
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
@@ -31,6 +35,7 @@ use ReflectionProperty;
 test('ListLogActivitiesAction url closure genera log-activity', function (): void {
     $action = ListLogActivitiesAction::make();
     $livewire = ListLogActivitiesActionTestPage::usingResource(ListLogActivitiesActionTestResourceSimple::class);
+<<<<<<< .merge_file_ZDIcjp
 <<<<<<< HEAD
 <<<<<<< .merge_file_nPdbm0
     $record = new ListLogActivitiesActionTestRecord();
@@ -40,6 +45,9 @@ test('ListLogActivitiesAction url closure genera log-activity', function (): voi
 =======
     $record = new ListLogActivitiesActionTestRecord();
 >>>>>>> a95e8f36 (.)
+=======
+    $record = new ListLogActivitiesActionTestRecord();
+>>>>>>> .merge_file_aeoNr2
 
     $action->livewire($livewire);
     $action->record($record);
@@ -57,6 +65,7 @@ test('ActivityLogger getStatistics copre branch event null in by_type', function
         'event' => null,
     ]);
 
+<<<<<<< .merge_file_ZDIcjp
 <<<<<<< HEAD
 <<<<<<< .merge_file_nPdbm0
     $stats = (new ActivityLoggerAction())->getStatistics();
@@ -66,21 +75,28 @@ test('ActivityLogger getStatistics copre branch event null in by_type', function
 =======
     $stats = (new ActivityLoggerAction())->getStatistics();
 >>>>>>> a95e8f36 (.)
+=======
+    $stats = (new ActivityLoggerAction())->getStatistics();
+>>>>>>> .merge_file_aeoNr2
 
     Assert::assertArrayHasKey('by_type', $stats);
     Assert::assertIsArray($stats['by_type']);
 });
 
 test('ListLogActivities mount e branch record non Model', function (): void {
+<<<<<<< .merge_file_ZDIcjp
 <<<<<<< HEAD
 <<<<<<< .merge_file_nPdbm0
 =======
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_aeoNr2
     $page = new ListLogActivitiesMountablePage();
     $page->mount('mount-id-1');
     Assert::assertInstanceOf(ActivitySubjectHarness::class, $page->getRecord());
 
     $bad = new ListLogActivitiesPageHarness();
+<<<<<<< .merge_file_ZDIcjp
 <<<<<<< HEAD
 =======
     $page = new ListLogActivitiesMountablePage;
@@ -91,10 +107,13 @@ test('ListLogActivities mount e branch record non Model', function (): void {
 >>>>>>> .merge_file_6yPwXo
 =======
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_aeoNr2
     $prop = new ReflectionProperty($bad, 'record');
     $prop->setAccessible(true);
     $prop->setValue($bad, 'not-a-model');
 
+<<<<<<< .merge_file_ZDIcjp
 <<<<<<< HEAD
 <<<<<<< .merge_file_nPdbm0
     expect(fn (): mixed => $bad->getActivities())
@@ -104,10 +123,14 @@ test('ListLogActivities mount e branch record non Model', function (): void {
 =======
     expect(fn (): mixed => $bad->getActivities())
 >>>>>>> a95e8f36 (.)
+=======
+    expect(fn (): mixed => $bad->getActivities())
+>>>>>>> .merge_file_aeoNr2
         ->toThrow(\InvalidArgumentException::class);
 });
 
 test('ListLogActivities getFieldLabel con valore non stringa in map', function (): void {
+<<<<<<< .merge_file_ZDIcjp
 <<<<<<< HEAD
 <<<<<<< .merge_file_nPdbm0
     $page = new ListLogActivitiesPageHarness();
@@ -117,6 +140,9 @@ test('ListLogActivities getFieldLabel con valore non stringa in map', function (
 =======
     $page = new ListLogActivitiesPageHarness();
 >>>>>>> a95e8f36 (.)
+=======
+    $page = new ListLogActivitiesPageHarness();
+>>>>>>> .merge_file_aeoNr2
     $mapProp = new ReflectionProperty(ListLogActivities::class, 'fieldLabelMap');
     $mapProp->setAccessible(true);
     $mapProp->setValue(null, Collection::make(['x' => 123]));
@@ -125,16 +151,20 @@ test('ListLogActivities getFieldLabel con valore non stringa in map', function (
 });
 
 test('ListLogActivities createFieldLabelMap nested e schema invalido', function (): void {
+<<<<<<< .merge_file_ZDIcjp
 <<<<<<< HEAD
 <<<<<<< .merge_file_nPdbm0
 =======
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_aeoNr2
     $nested = new ListLogActivitiesNestedFormPage();
     $map = $nested->exposeCreateFieldLabelMap();
     Assert::assertInstanceOf(Collection::class, $map);
 
     $bad = new ListLogActivitiesNonSchemaFormPage();
     expect(fn (): mixed => $bad->exposeCreateFieldLabelMap())
+<<<<<<< .merge_file_ZDIcjp
 <<<<<<< HEAD
 =======
     $nested = new ListLogActivitiesNestedFormPage;
@@ -146,10 +176,13 @@ test('ListLogActivities createFieldLabelMap nested e schema invalido', function 
 >>>>>>> .merge_file_6yPwXo
 =======
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_aeoNr2
         ->toThrow(\InvalidArgumentException::class);
 });
 
 test('ListLogActivities rifiuta paginator non LengthAware', function (): void {
+<<<<<<< .merge_file_ZDIcjp
 <<<<<<< HEAD
 <<<<<<< .merge_file_nPdbm0
     $okSubject = new ActivitySubjectHarness();
@@ -159,6 +192,9 @@ test('ListLogActivities rifiuta paginator non LengthAware', function (): void {
 =======
     $okSubject = new ActivitySubjectHarness();
 >>>>>>> a95e8f36 (.)
+=======
+    $okSubject = new ActivitySubjectHarness();
+>>>>>>> .merge_file_aeoNr2
     $okSubject->forceFill(['id' => 'pag-subj', 'name' => 'p']);
     $okSubject->exists = true;
     Activity::create([
@@ -169,6 +205,7 @@ test('ListLogActivities rifiuta paginator non LengthAware', function (): void {
         'event' => 'e',
     ]);
 
+<<<<<<< .merge_file_ZDIcjp
 <<<<<<< HEAD
 <<<<<<< .merge_file_nPdbm0
     $badPag = new ListLogActivitiesBadPaginatorPage();
@@ -184,10 +221,16 @@ test('ListLogActivities rifiuta paginator non LengthAware', function (): void {
     $badPag->setRecordForTest($okSubject);
     expect(fn (): mixed => $badPag->getActivities())
 >>>>>>> a95e8f36 (.)
+=======
+    $badPag = new ListLogActivitiesBadPaginatorPage();
+    $badPag->setRecordForTest($okSubject);
+    expect(fn (): mixed => $badPag->getActivities())
+>>>>>>> .merge_file_aeoNr2
         ->toThrow(\InvalidArgumentException::class, 'paginateQuery()');
 });
 
 test('ListLogActivities resolveActivity Invalid record non-Model', function (): void {
+<<<<<<< .merge_file_ZDIcjp
 <<<<<<< HEAD
 <<<<<<< .merge_file_nPdbm0
     $page = new ListLogActivitiesPageHarness();
@@ -197,10 +240,14 @@ test('ListLogActivities resolveActivity Invalid record non-Model', function (): 
 =======
     $page = new ListLogActivitiesPageHarness();
 >>>>>>> a95e8f36 (.)
+=======
+    $page = new ListLogActivitiesPageHarness();
+>>>>>>> .merge_file_aeoNr2
     $prop = new ReflectionProperty($page, 'record');
     $prop->setAccessible(true);
     $prop->setValue($page, 'string-record');
 
+<<<<<<< .merge_file_ZDIcjp
 <<<<<<< HEAD
 <<<<<<< .merge_file_nPdbm0
     expect(fn (): mixed => $page->exposeResolveActivity(1))
@@ -210,5 +257,8 @@ test('ListLogActivities resolveActivity Invalid record non-Model', function (): 
 =======
     expect(fn (): mixed => $page->exposeResolveActivity(1))
 >>>>>>> a95e8f36 (.)
+=======
+    expect(fn (): mixed => $page->exposeResolveActivity(1))
+>>>>>>> .merge_file_aeoNr2
         ->toThrow(\Exception::class, 'Invalid record');
 });

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_qxwS9F
 <<<<<<< HEAD
 <<<<<<< .merge_file_UrGZRt
 
@@ -9,6 +10,8 @@ declare(strict_types=1);
 =======
 
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_eaqDVM
 use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
@@ -18,6 +21,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 
+<<<<<<< .merge_file_qxwS9F
 <<<<<<< HEAD
 <<<<<<< .merge_file_UrGZRt
 uses(\Modules\Activity\Tests\TestCase::class);
@@ -27,6 +31,9 @@ uses(TestCase::class);
 =======
 uses(\Modules\Activity\Tests\TestCase::class);
 >>>>>>> a95e8f36 (.)
+=======
+uses(TestCase::class);
+>>>>>>> .merge_file_eaqDVM
 
 /*
  * Il bootstrap Pest del modulo non lega cartelle a TestCase: ogni file
@@ -36,6 +43,7 @@ uses(\Modules\Activity\Tests\TestCase::class);
  */
 
 test('activity models declare activity connection without database', function (): void {
+<<<<<<< .merge_file_qxwS9F
 <<<<<<< HEAD
 <<<<<<< .merge_file_UrGZRt
     Assert::assertSame('activity', (new Activity())->getConnectionName());
@@ -51,6 +59,11 @@ test('activity models declare activity connection without database', function ()
     Assert::assertSame('activity', (new Snapshot())->getConnectionName());
     Assert::assertSame('activity', (new StoredEvent())->getConnectionName());
 >>>>>>> a95e8f36 (.)
+=======
+    Assert::assertSame('activity', (new Activity)->getConnectionName());
+    Assert::assertSame('activity', (new Snapshot)->getConnectionName());
+    Assert::assertSame('activity', (new StoredEvent)->getConnectionName());
+>>>>>>> .merge_file_eaqDVM
 });
 
 test('pest bootstrap binds no folder and requires no stub file', function (): void {

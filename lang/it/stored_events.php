@@ -50,9 +50,21 @@ return [
         'delete' => [
             'tooltip' => 'delete',
         ],
+<<<<<<< .merge_file_mAkwnF
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> a95e8f36 (.)
+=======
+        'id' => ['label' => 'id'],
+        'event_class' => ['label' => 'event_class'],
+        'properties' => ['label' => 'properties'],
+        'created_at' => ['label' => 'created_at'],
+        'updated_at' => ['label' => 'updated_at'],
+        'aggregate_uuid' => ['label' => 'aggregate_uuid'],
+        'aggregate_version' => ['label' => 'aggregate_version'],
+        'event_version' => ['label' => 'event_version'],
+        'event_properties' => ['label' => 'event_properties'],
+>>>>>>> .merge_file_6iMEjd
     ],
 ];

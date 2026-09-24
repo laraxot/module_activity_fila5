@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< .merge_file_9Bh77v
 <<<<<<< HEAD
 <<<<<<< .merge_file_IGAE0i
 =======
@@ -8,6 +9,10 @@ declare(strict_types=1);
 >>>>>>> .merge_file_aHW5hh
 =======
 >>>>>>> a95e8f36 (.)
+=======
+declare(strict_types=1);
+
+>>>>>>> .merge_file_MLZHM9
 return [
     'fields' => [
         'event_class' => [
