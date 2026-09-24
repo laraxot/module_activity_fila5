@@ -1,7 +1,16 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 <?php
 
 declare(strict_types=1);
 ?>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 <!-- Example DataTable for Dashboard Demo-->
 <div class="card mb-4">
     <div class="card-header">Personnel Management</div>

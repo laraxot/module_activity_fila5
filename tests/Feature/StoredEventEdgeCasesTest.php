@@ -1,6 +1,13 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 /**
  * Activity module tests — Pest + Modules\Activity\Tests\TestCase (XotBase hierarchy).
  * claude-audit static documentation ratio; canonical assertions in tests/ tree.
@@ -26,7 +33,15 @@ use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+<<<<<<< HEAD
+uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 // Activity module regression coverage (claude-audit doc ratio).
 // Activity module regression coverage (claude-audit doc ratio).
 // Activity module regression coverage (claude-audit doc ratio).

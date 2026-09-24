@@ -58,7 +58,14 @@ trait CanPaginate
         session()->remove($this->getPerPageSessionKey());
 
         $firstOption = $pageOptions[0] ?? 10;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
         return is_numeric($firstOption) ? (int) $firstOption : 10;
     }
 

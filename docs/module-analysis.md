@@ -1,5 +1,18 @@
+<<<<<<< HEAD
 # Modulo Activity - Logging e Event Sourcing
 # Modulo Activity - Logging e Event Sourcing
+=======
+<<<<<<< HEAD
+# Modulo Activity - Logging e Event Sourcing
+# Modulo Activity - Logging e Event Sourcing
+=======
+<<<<<<< HEAD
+# Modulo Activity - Logging e Event Sourcing
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 # Modulo Activity - Logging e Event Sourcing
 
 ## Scopo Principale
@@ -320,7 +333,19 @@ activity()->withProperties([
 
 **Versione**: v2.5.0-beta  
 **Stato**: Production Ready with Compliance Enhancement
+<<<<<<< HEAD
 # Activity Module - Comprehensive Analysis
+=======
+<<<<<<< HEAD
+# Activity Module - Comprehensive Analysis
+=======
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+# Activity Module - Comprehensive Analysis
+>>>>>>> laraxot/dev
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 
 ## Scopo Principale
 
@@ -382,6 +407,13 @@ Activity Module Stack:
     └── ReportGenerator
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 ### Data Flow
 ```
 User Action → Event → ActivityLogger → Database → Dashboard → Analytics
@@ -640,6 +672,13 @@ activity()->withProperties([
 
 **Versione**: v2.5.0-beta  
 **Stato**: Production Ready with Compliance Enhancement
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev
 ## Future Enhancements
 - Real-time monitoring
 - Advanced analytics
@@ -649,7 +688,23 @@ activity()->withProperties([
 - Performance optimization
 - Advanced search features
 - Integration with external systems
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 - Machine learning capabilities
 - Machine learning capabilities
 - Machine learning capabilities
 - Machine learning capabilities
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+- Machine learning capabilities
+>>>>>>> 0a02158a (.)
+=======
+- Machine learning capabilities
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
+>>>>>>> a95e8f36 (.)
+>>>>>>> laraxot/dev

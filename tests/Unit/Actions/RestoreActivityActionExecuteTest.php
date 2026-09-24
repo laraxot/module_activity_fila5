@@ -10,7 +10,23 @@ use Modules\Activity\Actions\RestoreActivityAction;
 use Webmozart\Assert\InvalidArgumentException as AssertInvalidArgumentException;
 
 test('RestoreActivityAction aggiorna il record con le vecchie proprietà', function (): void {
+<<<<<<< HEAD
     $model = new class extends Model
+=======
+<<<<<<< .merge_file_e8gEaq
+<<<<<<< HEAD
+<<<<<<< .merge_file_Hkgd2e
+    $model = new class() extends Model
+=======
+    $model = new class extends Model
+>>>>>>> .merge_file_H8wfmB
+=======
+    $model = new class() extends Model
+>>>>>>> a95e8f36 (.)
+=======
+    $model = new class extends Model
+>>>>>>> .merge_file_aYfrHp
+>>>>>>> laraxot/dev
     {
         protected $table = 'stub_models';
 
@@ -28,13 +44,45 @@ test('RestoreActivityAction aggiorna il record con le vecchie proprietà', funct
         }
     };
 
+<<<<<<< HEAD
     (new RestoreActivityAction)->execute($model, ['name' => 'Ripristinato', 'status' => 'active']);
+=======
+<<<<<<< .merge_file_e8gEaq
+<<<<<<< HEAD
+<<<<<<< .merge_file_Hkgd2e
+    (new RestoreActivityAction())->execute($model, ['name' => 'Ripristinato', 'status' => 'active']);
+=======
+    (new RestoreActivityAction)->execute($model, ['name' => 'Ripristinato', 'status' => 'active']);
+>>>>>>> .merge_file_H8wfmB
+=======
+    (new RestoreActivityAction())->execute($model, ['name' => 'Ripristinato', 'status' => 'active']);
+>>>>>>> a95e8f36 (.)
+=======
+    (new RestoreActivityAction)->execute($model, ['name' => 'Ripristinato', 'status' => 'active']);
+>>>>>>> .merge_file_aYfrHp
+>>>>>>> laraxot/dev
 
     expect($model->updatedAttributes)->toBe(['name' => 'Ripristinato', 'status' => 'active']);
 });
 
 test('RestoreActivityAction incapsula eccezioni di update', function (): void {
+<<<<<<< HEAD
     $model = new class extends Model
+=======
+<<<<<<< .merge_file_e8gEaq
+<<<<<<< HEAD
+<<<<<<< .merge_file_Hkgd2e
+    $model = new class() extends Model
+=======
+    $model = new class extends Model
+>>>>>>> .merge_file_H8wfmB
+=======
+    $model = new class() extends Model
+>>>>>>> a95e8f36 (.)
+=======
+    $model = new class extends Model
+>>>>>>> .merge_file_aYfrHp
+>>>>>>> laraxot/dev
     {
         protected $table = 'stub_models';
 
@@ -48,17 +96,65 @@ test('RestoreActivityAction incapsula eccezioni di update', function (): void {
     };
 
     expect(function () use ($model): void {
+<<<<<<< HEAD
         (new RestoreActivityAction)->execute($model, ['name' => 'x']);
+=======
+<<<<<<< .merge_file_e8gEaq
+<<<<<<< HEAD
+<<<<<<< .merge_file_Hkgd2e
+        (new RestoreActivityAction())->execute($model, ['name' => 'x']);
+=======
+        (new RestoreActivityAction)->execute($model, ['name' => 'x']);
+>>>>>>> .merge_file_H8wfmB
+=======
+        (new RestoreActivityAction())->execute($model, ['name' => 'x']);
+>>>>>>> a95e8f36 (.)
+=======
+        (new RestoreActivityAction)->execute($model, ['name' => 'x']);
+>>>>>>> .merge_file_aYfrHp
+>>>>>>> laraxot/dev
     })->toThrow(Exception::class);
 });
 
 test('RestoreActivityAction rifiuta oldProperties vuote', function (): void {
+<<<<<<< HEAD
     $model = new class extends Model
+=======
+<<<<<<< .merge_file_e8gEaq
+<<<<<<< HEAD
+<<<<<<< .merge_file_Hkgd2e
+    $model = new class() extends Model
+=======
+    $model = new class extends Model
+>>>>>>> .merge_file_H8wfmB
+=======
+    $model = new class() extends Model
+>>>>>>> a95e8f36 (.)
+=======
+    $model = new class extends Model
+>>>>>>> .merge_file_aYfrHp
+>>>>>>> laraxot/dev
     {
         protected $table = 'stub_models';
     };
 
     expect(function () use ($model): void {
+<<<<<<< HEAD
         (new RestoreActivityAction)->execute($model, []);
+=======
+<<<<<<< .merge_file_e8gEaq
+<<<<<<< HEAD
+<<<<<<< .merge_file_Hkgd2e
+        (new RestoreActivityAction())->execute($model, []);
+=======
+        (new RestoreActivityAction)->execute($model, []);
+>>>>>>> .merge_file_H8wfmB
+=======
+        (new RestoreActivityAction())->execute($model, []);
+>>>>>>> a95e8f36 (.)
+=======
+        (new RestoreActivityAction)->execute($model, []);
+>>>>>>> .merge_file_aYfrHp
+>>>>>>> laraxot/dev
     })->toThrow(AssertInvalidArgumentException::class);
 });
