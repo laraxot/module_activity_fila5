@@ -10,6 +10,7 @@ use PHPUnit\Framework\Assert;
 use ReflectionMethod;
 
 test('ListLogActivities toTranslationString normalizza stringhe e array', function (): void {
+<<<<<<< .merge_file_XXWofx
 <<<<<<< HEAD
 <<<<<<< .merge_file_yyQG2k
     $page = new class() extends ListLogActivities
@@ -19,12 +20,16 @@ test('ListLogActivities toTranslationString normalizza stringhe e array', functi
 =======
     $page = new class() extends ListLogActivities
 >>>>>>> a95e8f36 (.)
+=======
+    $page = new class extends ListLogActivities
+>>>>>>> .merge_file_pYI0YH
     {
         public static function getResource(): string
         {
             return ActivityResource::class;
         }
 
+<<<<<<< .merge_file_XXWofx
 <<<<<<< HEAD
 <<<<<<< .merge_file_yyQG2k
         public function exposeToTranslationString(mixed $value): string
@@ -35,6 +40,10 @@ test('ListLogActivities toTranslationString normalizza stringhe e array', functi
 =======
         public function exposeToTranslationString(mixed $value): string
 >>>>>>> a95e8f36 (.)
+=======
+        /** @param list<string>|string|int $value */
+        public function exposeToTranslationString(string|array|int $value): string
+>>>>>>> .merge_file_pYI0YH
         {
             $method = new ReflectionMethod(ListLogActivities::class, 'toTranslationString');
             $method->setAccessible(true);
@@ -52,6 +61,7 @@ test('ListLogActivities toTranslationString normalizza stringhe e array', functi
 });
 
 test('ListLogActivities getFieldLabel usa fallback per chiavi sconosciute', function (): void {
+<<<<<<< .merge_file_XXWofx
 <<<<<<< HEAD
 <<<<<<< .merge_file_yyQG2k
     $page = new class() extends ListLogActivities
@@ -61,6 +71,9 @@ test('ListLogActivities getFieldLabel usa fallback per chiavi sconosciute', func
 =======
     $page = new class() extends ListLogActivities
 >>>>>>> a95e8f36 (.)
+=======
+    $page = new class extends ListLogActivities
+>>>>>>> .merge_file_pYI0YH
     {
         public static function getResource(): string
         {

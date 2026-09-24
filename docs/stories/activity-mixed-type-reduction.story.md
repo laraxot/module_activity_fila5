@@ -96,9 +96,12 @@ in conflitto, nessuna sovrascrittura del lavoro altrui.
 - I restanti ~155 usi di `mixed` documentati come intenzionali in `docs/coverage.md`
   restano un audit trail, non un backlog da azzerare: la maggior parte e' legittimamente
   polimorfa o vincolata da firme vendor.
+<<<<<<< .merge_file_IQZMUi
 <<<<<<< HEAD
 <<<<<<< .merge_file_yiVygS
 =======
+=======
+>>>>>>> .merge_file_5hW9rv
 
 ## 2026-09-21 — follow-up `declare` su lang snapshot/activity
 
@@ -111,6 +114,9 @@ già `declare` dopo `<?php`.
 (`|<?php|` / `|declare(strict_types=1)|`). Hanno già `declare`. Toccarli
 rompe l'encoding, non aggiunge strict. Nessun file PHP/Blade di Activity
 modificato in questo follow-up.
+<<<<<<< .merge_file_IQZMUi
 >>>>>>> .merge_file_OL0JIw
 =======
 >>>>>>> a95e8f36 (.)
+=======
+>>>>>>> .merge_file_5hW9rv

@@ -15,6 +15,7 @@ test('LogActivityAction rifiuta type vuoto nel costruttore', function (): void {
 });
 
 test('LogActivityAction accetta parametri opzionali nel costruttore', function (): void {
+<<<<<<< .merge_file_OXqg3w
 <<<<<<< HEAD
 <<<<<<< .merge_file_XPfzto
     $model = new class() extends Model
@@ -24,6 +25,9 @@ test('LogActivityAction accetta parametri opzionali nel costruttore', function (
 =======
     $model = new class() extends Model
 >>>>>>> a95e8f36 (.)
+=======
+    $model = new class extends Model
+>>>>>>> .merge_file_sPpsTD
     {
         protected $table = 'stub_models';
     };

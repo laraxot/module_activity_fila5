@@ -13,6 +13,7 @@ interface ActivityRecorderContract
     /**
      * Record a model action for audit trail.
      *
+<<<<<<< .merge_file_LEPxRe
 <<<<<<< HEAD
 <<<<<<< .merge_file_4g901d
 =======
@@ -29,6 +30,11 @@ interface ActivityRecorderContract
 >>>>>>> .merge_file_q7sKqQ
 =======
 >>>>>>> a95e8f36 (.)
+=======
+     * @param  class-string  $modelClass
+     * @param  string  $action  create|update|delete|restore
+     * @param  array<string, mixed>  $changes
+>>>>>>> .merge_file_WL5q48
      */
     public function record(
         string $modelClass,
