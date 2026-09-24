@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> a95e8f36 (.)
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestPage;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestRecord;
@@ -8,7 +12,11 @@ use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestResourceSimple;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> a95e8f36 (.)
 
 test('action can be instantiated', function (): void {
     $action = ListLogActivitiesAction::make();
@@ -28,7 +36,11 @@ test('action generates a log-activity URL containing record key', function (): v
     $action = ListLogActivitiesAction::make();
 
     $livewire = ListLogActivitiesActionTestPage::usingResource(ListLogActivitiesActionTestResourceSimple::class);
+<<<<<<< HEAD
     $record = new ListLogActivitiesActionTestRecord;
+=======
+    $record = new ListLogActivitiesActionTestRecord();
+>>>>>>> a95e8f36 (.)
 
     $action->livewire($livewire);
     $action->record($record);

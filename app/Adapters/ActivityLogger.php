@@ -21,6 +21,7 @@ use Modules\Activity\Actions\Query\GetModelActivitiesAction;
 use Modules\Activity\Actions\Query\GetRecentActivitiesAction;
 use Modules\Activity\Actions\Query\GetUserActivitiesAction;
 use Modules\Activity\Models\Activity;
+<<<<<<< HEAD
 <<<<<<< .merge_file_9uFqwM
 use Modules\User\Models\User;
 =======
@@ -30,6 +31,9 @@ use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract;
 >>>>>>> .merge_file_EWEHOo
 >>>>>>> .merge_file_O1Az67
+=======
+use Modules\User\Models\User;
+>>>>>>> a95e8f36 (.)
 
 /**
  * Coordinator — delegates to single-purpose QueueableActions (not an Action: multi-method API).
@@ -46,6 +50,7 @@ class ActivityLogger
         ?array $properties = null,
         ?string $description = null,
     ): Activity {
+<<<<<<< HEAD
 <<<<<<< .merge_file_9uFqwM
         if ($user !== null && ! $user instanceof User) {
             throw new InvalidArgumentException('User must be an instance of User');
@@ -58,10 +63,15 @@ class ActivityLogger
             throw new InvalidArgumentException('User must implement UserContract');
 >>>>>>> .merge_file_EWEHOo
 >>>>>>> .merge_file_O1Az67
+=======
+        if ($user !== null && ! $user instanceof User) {
+            throw new InvalidArgumentException('User must be an instance of User');
+>>>>>>> a95e8f36 (.)
         }
 
         $activity = (new LogActivityAction(
             type: $type,
+<<<<<<< HEAD
 <<<<<<< .merge_file_9uFqwM
             user: $user instanceof User ? $user : null,
 =======
@@ -71,6 +81,9 @@ class ActivityLogger
             user: $user instanceof Model ? $user : null,
 >>>>>>> .merge_file_EWEHOo
 >>>>>>> .merge_file_O1Az67
+=======
+            user: $user instanceof User ? $user : null,
+>>>>>>> a95e8f36 (.)
             subject: $subject,
             properties: $properties,
             description: $description,
@@ -84,10 +97,13 @@ class ActivityLogger
         return $activity;
     }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_9uFqwM
 =======
 <<<<<<< .merge_file_BHZkMl
 >>>>>>> .merge_file_O1Az67
+=======
+>>>>>>> a95e8f36 (.)
     public function created(Model $model, ?User $user = null): Activity
     {
         return (new LogModelCreatedAction($model, $user))->execute();
@@ -104,6 +120,7 @@ class ActivityLogger
     }
 
     public function login(User $user): Activity
+<<<<<<< HEAD
 <<<<<<< .merge_file_9uFqwM
 =======
 =======
@@ -125,10 +142,13 @@ class ActivityLogger
     public function login(UserContract $user): Activity
 >>>>>>> .merge_file_EWEHOo
 >>>>>>> .merge_file_O1Az67
+=======
+>>>>>>> a95e8f36 (.)
     {
         return (new LogUserLoginAction($user))->execute();
     }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_9uFqwM
     public function logout(User $user): Activity
 =======
@@ -138,6 +158,9 @@ class ActivityLogger
     public function logout(UserContract $user): Activity
 >>>>>>> .merge_file_EWEHOo
 >>>>>>> .merge_file_O1Az67
+=======
+    public function logout(User $user): Activity
+>>>>>>> a95e8f36 (.)
     {
         return (new LogUserLogoutAction($user))->execute();
     }
@@ -155,6 +178,7 @@ class ActivityLogger
     }
 
     /** @return Collection<int, Activity> */
+<<<<<<< HEAD
 <<<<<<< .merge_file_9uFqwM
     public function getUserActivities(User $user, int $limit = 50): Collection
 =======
@@ -164,6 +188,9 @@ class ActivityLogger
     public function getUserActivities(UserContract $user, int $limit = 50): Collection
 >>>>>>> .merge_file_EWEHOo
 >>>>>>> .merge_file_O1Az67
+=======
+    public function getUserActivities(User $user, int $limit = 50): Collection
+>>>>>>> a95e8f36 (.)
     {
         return app(GetUserActivitiesAction::class)->execute($user, $limit);
     }
@@ -194,6 +221,7 @@ class ActivityLogger
     /**
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
+<<<<<<< HEAD
 <<<<<<< .merge_file_9uFqwM
     public function getStatistics(?User $user = null): array
 =======
@@ -203,6 +231,9 @@ class ActivityLogger
     public function getStatistics(?UserContract $user = null): array
 >>>>>>> .merge_file_EWEHOo
 >>>>>>> .merge_file_O1Az67
+=======
+    public function getStatistics(?User $user = null): array
+>>>>>>> a95e8f36 (.)
     {
         return app(GetActivityStatisticsAction::class)->execute($user);
     }

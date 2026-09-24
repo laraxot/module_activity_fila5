@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+use Modules\User\Models\User;
+>>>>>>> a95e8f36 (.)
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -39,8 +43,13 @@ class LogActivityAction
     {
         $causerId = null;
         if ($this->user !== null) {
+<<<<<<< HEAD
             if (! $this->user instanceof UserContract) {
                 throw new InvalidArgumentException('User must implement UserContract');
+=======
+            if (! $this->user instanceof User) {
+                throw new InvalidArgumentException('User must be an instance of User');
+>>>>>>> a95e8f36 (.)
             }
             // Type narrowing for user ID - use getAttribute for Eloquent models
             $userId = $this->user->getAttribute('id');
@@ -57,7 +66,11 @@ class LogActivityAction
             'description' => $this->description ?? sprintf('Activity: %s', $this->type),
             'subject_type' => $this->subject ? get_class($this->subject) : null,
             'subject_id' => $this->subject?->getKey(),
+<<<<<<< HEAD
             'causer_type' => $this->user !== null ? $this->user::class : null,
+=======
+            'causer_type' => $this->user ? User::class : null,
+>>>>>>> a95e8f36 (.)
             'causer_id' => $causerId,
             'properties' => $this->properties,
             'event' => $this->type,

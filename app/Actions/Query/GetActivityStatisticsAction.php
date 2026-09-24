@@ -8,11 +8,15 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Modules\Activity\Models\Activity;
+<<<<<<< HEAD
 <<<<<<< .merge_file_rFjckI
 use Modules\User\Models\User;
 =======
 use Modules\Xot\Contracts\UserContract;
 >>>>>>> .merge_file_5iHGtZ
+=======
+use Modules\User\Models\User;
+>>>>>>> a95e8f36 (.)
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -25,11 +29,15 @@ class GetActivityStatisticsAction
     /**
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
+<<<<<<< HEAD
 <<<<<<< .merge_file_rFjckI
     public function execute(?User $user = null): array
 =======
     public function execute(?UserContract $user = null): array
 >>>>>>> .merge_file_5iHGtZ
+=======
+    public function execute(?User $user = null): array
+>>>>>>> a95e8f36 (.)
     {
         $userKey = $user?->getKey();
         $cacheKeySuffix = is_scalar($userKey) ? (string) $userKey : 'global';
@@ -46,11 +54,15 @@ class GetActivityStatisticsAction
     /**
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
+<<<<<<< HEAD
 <<<<<<< .merge_file_rFjckI
     private function computeStatistics(?User $user): array
 =======
     private function computeStatistics(?UserContract $user): array
 >>>>>>> .merge_file_5iHGtZ
+=======
+    private function computeStatistics(?User $user): array
+>>>>>>> a95e8f36 (.)
     {
         /** @var Builder<Activity> $query */
         $query = Activity::newQuery();

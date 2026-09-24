@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_wQuOTC
 ---
 title: "Activity Module Architecture"
@@ -72,6 +73,9 @@ level and any module-specific baseline).
 - [api.md](./api.md) — `LogActivityAction` call signature.
 - [structure.md](./structure.md) / [architecture/structure.md](./architecture/structure.md) — internal module layout.
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> a95e8f36 (.)
 # Architecture Documentation
 
 ## Activity Module Architecture
@@ -232,6 +236,10 @@ class ActivityPolicy
 - [Quality](QUALITY.md)
 - [Performance](PERFORMANCE.md)
 - [Testing](TESTING.md)
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a95e8f36 (.)
 ---
 title: "Activity Module Architecture"
 type: architecture
@@ -261,4 +269,8 @@ Provides audit trail and activity logging via Spatie Laravel Activity Log. Track
 
 ## Quality Gates
 ✅ PHPStan L10: Executed (2026-07-28)
+<<<<<<< HEAD
 >>>>>>> .merge_file_Da4mgP
+=======
+>>>>>>> laraxot/dev
+>>>>>>> a95e8f36 (.)
