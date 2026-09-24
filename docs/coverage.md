@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Activity Module — Test Coverage & Quality Metrics
 
 **Last Updated:** 2026-09-11 (followup — `ActivitysTable.php` dead code removal)
@@ -84,3 +85,12 @@ Scope: single item from
 
 **Git Commit:** fix: PHPStan L10 — Activity module cast.string + generics fixes
 **Remote:** pushed to laraxot/module_activity_fila5/dev
+=======
+---
+module: theme
+topic: coverage
+canonical: ../../../Themes/docs/shared-components/coverage.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/coverage.txt
+>>>>>>> laraxot/dev
