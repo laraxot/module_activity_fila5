@@ -4,8 +4,6 @@ topic: module-activity
 canonical: ../../../../../Themes/docs/shared-components/module-activity.md
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## Overview
 Il modulo Activity fornisce un sistema completo di logging e monitoraggio delle attività nel sistema.
 
@@ -151,6 +149,7 @@ class ActivityTest extends TestCase
    - Pulizia periodica dei log
    - Backup dei dati di attività
    - Monitoraggio delle performance
+
 # Modulo Activity
 
 ## Overview
@@ -304,14 +303,7 @@ topic: module-activity
 canonical: ../../../../../Themes/docs/shared-components/module-activity.md
 ---
 
-<<<<<<< HEAD
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
-=======
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
->>>>>>> d4098eb (.)
-=======
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
->>>>>>> 26b6dbd (.)
-=======
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
->>>>>>> 2d6a374 (.)
