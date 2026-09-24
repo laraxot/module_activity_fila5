@@ -280,15 +280,7 @@ return [
                 'label' => 'Excel',
                 'mime_type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 'extension' => 'xlsx',
-<<<<<<< HEAD
                 'icon' => 'heroicon-o-table-cells',
-=======
-<<<<<<< HEAD
-                'icon' => 'xot-files.xlsx',
-=======
-                'icon' => 'heroicon-o-table-cells',
->>>>>>> 472c43a3 (.)
->>>>>>> 68a8e694 (.)
             ],
         ],
         'columns' => [
