@@ -1,9 +1,5 @@
 # PHPStan Syntax Fixes - Modulo Activity
 
-<<<<<<< HEAD
-=======
-**Data**: 2025-01-11
->>>>>>> 68a8e694 (.)
 **Versione PHPStan**: 1.12.x
 **Livello**: max
 **Status**: ✅ TUTTI I SYNTAX ERRORS RISOLTI
