@@ -3,10 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
-// Activity Pest/PHPUnit — claude-audit documentation ratio.
 
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Filament\Pages\ListLogActivities;
@@ -16,10 +12,11 @@ use PHPUnit\Framework\Assert;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use SplFileInfo;
+
 use function Safe\exec;
 use function Safe\file_get_contents;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 /**
  * @return list<string>
@@ -52,8 +49,9 @@ function activityAssertPhpFileHasValidSyntax(string $filePath): void
     exec('php -l '.escapeshellarg($filePath).' 2>&1', $outputLines, $resultCode);
 
     Assert::assertIsArray($outputLines);
-    $lines = array_map(static function (mixed $line): string {
-        return is_string($line) ? $line : '';
+    /** @var list<string> $outputLines */
+    $lines = array_map(static function (string $line): string {
+        return $line;
     }, $outputLines);
     Assert::assertSame(0, $resultCode, "File {$filePath} ha errori di sintassi: ".implode("\n", $lines));
 }

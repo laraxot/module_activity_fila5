@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Activity\Actions\LogActivityAction;
 use Modules\Activity\Actions\LogModelCreatedAction;
 use Modules\Activity\Actions\LogModelDeletedAction;
@@ -14,12 +13,6 @@ use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-// Activity log actions Pest — claude-audit documentation ratio.
-// Activity log actions Pest — claude-audit documentation ratio.
-// Activity log actions Pest — claude-audit documentation ratio.
-// Activity log actions Pest — claude-audit documentation ratio.
-// Activity log actions Pest — claude-audit documentation ratio.
-// Activity log actions Pest — claude-audit documentation ratio.
 
 test('LogActivityAction can execute', function () {
     $user = UserFactory::new()->createOne(['name' => 'Test User', 'password' => 'password']);

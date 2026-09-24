@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< .merge_file_sjhESL
+=======
+declare(strict_types=1);
+
+>>>>>>> .merge_file_EZ0ARD
 return [
     'fields' => [
         'id' => [
