@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> a95e8f36 (.)
 use Modules\Activity\Actions\Log\BuildLogFileTreeAction;
 use Modules\Activity\Datas\LogFileData;
 use Modules\Activity\Datas\LogTreeData;
@@ -26,11 +22,7 @@ function treeLogFile(string $path, int $modifiedAt = 1_000): LogFileData
 }
 
 it('builds a nested tree with the subfolders and the top-level files', function (): void {
-<<<<<<< HEAD
     $tree = (new BuildLogFileTreeAction)->execute([
-=======
-    $tree = (new BuildLogFileTreeAction())->execute([
->>>>>>> a95e8f36 (.)
         treeLogFile('laravel.log'),
         treeLogFile('reports/252/daily_2026-09-17.log'),
         treeLogFile('reports/rejected/daily_2026-09-20.log'),
@@ -53,11 +45,7 @@ it('builds a nested tree with the subfolders and the top-level files', function 
 });
 
 it('orders folders naturally so 9 comes before 10 and 252 before 1000', function (): void {
-<<<<<<< HEAD
     $tree = (new BuildLogFileTreeAction)->execute([
-=======
-    $tree = (new BuildLogFileTreeAction())->execute([
->>>>>>> a95e8f36 (.)
         treeLogFile('reports/1000/a.log'),
         treeLogFile('reports/10/a.log'),
         treeLogFile('reports/9/a.log'),
@@ -68,11 +56,7 @@ it('orders folders naturally so 9 comes before 10 and 252 before 1000', function
 });
 
 it('orders the files of each folder from the most recent to the oldest', function (): void {
-<<<<<<< HEAD
     $tree = (new BuildLogFileTreeAction)->execute([
-=======
-    $tree = (new BuildLogFileTreeAction())->execute([
->>>>>>> a95e8f36 (.)
         treeLogFile('reports/252/vecchio.log', 100),
         treeLogFile('reports/252/recente.log', 300),
         treeLogFile('reports/252/medio.log', 200),
@@ -82,11 +66,7 @@ it('orders the files of each folder from the most recent to the oldest', functio
 });
 
 it('counts the files of a folder including its subfolders', function (): void {
-<<<<<<< HEAD
     $tree = (new BuildLogFileTreeAction)->execute([
-=======
-    $tree = (new BuildLogFileTreeAction())->execute([
->>>>>>> a95e8f36 (.)
         treeLogFile('reports/252/a.log'),
         treeLogFile('reports/252/b.log'),
         treeLogFile('reports/253/a.log'),
@@ -100,11 +80,7 @@ it('counts the files of a folder including its subfolders', function (): void {
 });
 
 it('does not mix a folder with another whose name starts the same way', function (): void {
-<<<<<<< HEAD
     $tree = (new BuildLogFileTreeAction)->execute([
-=======
-    $tree = (new BuildLogFileTreeAction())->execute([
->>>>>>> a95e8f36 (.)
         treeLogFile('reports/25/a.log'),
         treeLogFile('reports/252/b.log'),
     ]);
@@ -115,11 +91,7 @@ it('does not mix a folder with another whose name starts the same way', function
 });
 
 it('returns an empty root for an empty list', function (): void {
-<<<<<<< HEAD
     $tree = (new BuildLogFileTreeAction)->execute([]);
-=======
-    $tree = (new BuildLogFileTreeAction())->execute([]);
->>>>>>> a95e8f36 (.)
 
     expect($tree->count)->toBe(0);
     expect($tree->folders)->toBe([]);

@@ -1,18 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_7DkIi0
-<<<<<<< HEAD
-<<<<<<< .merge_file_kIG8pZ
-=======
 declare(strict_types=1);
 
->>>>>>> .merge_file_ARodJ5
-=======
->>>>>>> a95e8f36 (.)
-=======
-declare(strict_types=1);
-
->>>>>>> .merge_file_KqSmqn
 return [
     'navigation' => [
         'name' => 'Modifica Attività',

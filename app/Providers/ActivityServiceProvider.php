@@ -40,14 +40,7 @@ class ActivityServiceProvider extends XotBaseServiceProvider
      *
      * Configura il modulo Activity e registra le configurazioni specifiche.
      */
-<<<<<<< HEAD
     #[Override]
-=======
-<<<<<<< HEAD
-=======
-    #[Override]
->>>>>>> laraxot/dev
->>>>>>> a95e8f36 (.)
     public function boot(): void
     {
         parent::boot();
@@ -66,14 +59,7 @@ class ActivityServiceProvider extends XotBaseServiceProvider
     /**
      * Registra le configurazioni del modulo.
      */
-<<<<<<< HEAD
     #[Override]
-=======
-<<<<<<< HEAD
-=======
-    #[Override]
->>>>>>> laraxot/dev
->>>>>>> a95e8f36 (.)
     protected function registerConfig(): void
     {
         $this->publishes([

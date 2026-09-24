@@ -149,13 +149,7 @@ class ActivityTest extends TestCase
    - Pulizia periodica dei log
    - Backup dei dati di attività
    - Monitoraggio delle performance
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> a95e8f36 (.)
 # Modulo Activity
 
 ## Overview
@@ -309,20 +303,7 @@ topic: module-activity
 canonical: ../../../../../Themes/docs/shared-components/module-activity.md
 ---
 
-<<<<<<< HEAD
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
-=======
-See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
->>>>>>> 77d3d692 (.)
-=======
-See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
->>>>>>> 4fb998e0 (.)
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> a95e8f36 (.)

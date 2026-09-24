@@ -1,18 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_DMlSPf
-<<<<<<< HEAD
-<<<<<<< .merge_file_sjhESL
-=======
 declare(strict_types=1);
 
->>>>>>> .merge_file_EZ0ARD
-=======
->>>>>>> a95e8f36 (.)
-=======
-declare(strict_types=1);
-
->>>>>>> .merge_file_ZOBGoL
 return [
     'fields' => [
         'id' => [

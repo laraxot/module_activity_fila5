@@ -8,19 +8,11 @@ use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
 describe('Base Model Coverage', function (): void {
     test('casts returns array with required keys', function (): void {
         $concrete = new class extends BaseModel
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
-
-describe('Base Model Coverage', function (): void {
-    test('casts returns array with required keys', function (): void {
-$concrete = new class extends BaseModel
->>>>>>> a95e8f36 (.)
         {
             protected $table = 'test_base_coverage';
         };
@@ -40,11 +32,7 @@ $concrete = new class extends BaseModel
     });
 
     test('casts merges with parent casts', function (): void {
-<<<<<<< HEAD
         $concrete = new class extends BaseModel
-=======
-$concrete = new class extends BaseModel
->>>>>>> a95e8f36 (.)
         {
             protected $table = 'test_base_coverage_merge';
         };

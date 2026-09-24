@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> a95e8f36 (.)
 use Illuminate\Support\Facades\File;
 use Modules\Activity\Actions\Log\ReadLogTailAction;
 use Tests\TestCase;

@@ -1,27 +1,16 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> a95e8f36 (.)
 use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Actions\LogActivityAction;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
 test('LogActivityAction can be instantiated', function () {
     $model = new class extends Model
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
-
-test('LogActivityAction can be instantiated', function () {
-    $model = new class() extends Model
->>>>>>> a95e8f36 (.)
     {
         protected $table = 'test_models';
 
@@ -42,11 +31,7 @@ test('LogActivityAction can be instantiated', function () {
 });
 
 test('LogActivityAction can execute', function () {
-<<<<<<< HEAD
     $modelClass = get_class(new class extends Model
-=======
-    $modelClass = get_class(new class() extends Model
->>>>>>> a95e8f36 (.)
     {
         protected $table = 'test_models';
 

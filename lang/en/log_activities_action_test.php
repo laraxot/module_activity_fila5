@@ -1,18 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_OLT155
-<<<<<<< HEAD
-<<<<<<< .merge_file_WuKIhs
-=======
 declare(strict_types=1);
 
->>>>>>> .merge_file_HGm9G0
-=======
->>>>>>> a95e8f36 (.)
-=======
-declare(strict_types=1);
-
->>>>>>> .merge_file_ct2FSE
 return [
     'actions' => [
         'list_log_activities' => [

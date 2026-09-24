@@ -1,18 +1,3 @@
-<<<<<<< .merge_file_6IIHpM
-<<<<<<< HEAD
-<<<<<<< .merge_file_I8cEDd
----
-module: theme
-topic: activity_log_optimization
-canonical: ../../../../Themes/docs/shared-components/ACTIVITY_LOG_OPTIMIZATION.md
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/ACTIVITY_LOG_OPTIMIZATION.md
-=======
-=======
->>>>>>> a95e8f36 (.)
-=======
->>>>>>> .merge_file_XGahmW
 # Activity Log Optimization - Activity Module
 
 ## 🚨 Critical Issues Identified
@@ -296,10 +281,3 @@ CREATE INDEX idx_activity_log_causer_type ON activity_log(causer_type);
 4. **Long-term**: Advanced performance strategies
 
 This document provides the roadmap for resolving the performance issues in the Activity module while maintaining data integrity and functionality.
-<<<<<<< .merge_file_6IIHpM
-<<<<<<< HEAD
->>>>>>> .merge_file_v597Wq
-=======
->>>>>>> a95e8f36 (.)
-=======
->>>>>>> .merge_file_XGahmW

@@ -1,18 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_OskSKG
-<<<<<<< HEAD
-<<<<<<< .merge_file_01z5Ex
-=======
 declare(strict_types=1);
 
->>>>>>> .merge_file_YdNXWi
-=======
->>>>>>> a95e8f36 (.)
-=======
-declare(strict_types=1);
-
->>>>>>> .merge_file_5a2EhO
 return [
     'fields' => [
         'id' => [

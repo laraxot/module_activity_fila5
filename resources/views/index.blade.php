@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 ?>
-=======
->>>>>>> a95e8f36 (.)
 @extends('activity::layouts.master')
 
 @section('content')

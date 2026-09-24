@@ -8,10 +8,6 @@ use Exception;
 use Filament\Forms\Components\Field;
 use Filament\Notifications\Notification;
 use Filament\Pages\Concerns\InteractsWithFormActions;
-<<<<<<< HEAD
-=======
-use function Safe\json_encode;
->>>>>>> a95e8f36 (.)
 use Filament\Resources\Pages\Concerns\InteractsWithRecord;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
@@ -31,11 +27,8 @@ use Modules\Activity\Models\Activity;
 use Modules\Xot\Filament\Resources\Pages\XotBasePage;
 use Webmozart\Assert\Assert;
 
-<<<<<<< HEAD
 use function Safe\json_encode;
 
-=======
->>>>>>> a95e8f36 (.)
 /**
  * Classe base per visualizzare lo storico delle attività di un record.
  *

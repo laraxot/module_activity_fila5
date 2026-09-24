@@ -1,12 +1,4 @@
-<<<<<<< HEAD
 # Activity Module - Product Launch Plan
-=======
-<<<<<<< HEAD
-# Activity Module - Product Launch Plan
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> a95e8f36 (.)
 # Activity Module - Product Launch Plan
 
 **Module:** Activity  
@@ -106,7 +98,6 @@
 ---
 
 *Last Updated: March 12, 2026*
-<<<<<<< HEAD
 # Activity - Product Launch Plan
 # Activity Module - Product Launch Plan
 # Activity Module - Product Launch Plan
@@ -209,13 +200,6 @@
 
 *Last Updated: March 12, 2026*
 # Activity - Product Launch Plan
-=======
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-# Activity - Product Launch Plan
->>>>>>> laraxot/dev
->>>>>>> a95e8f36 (.)
 
 **Module:** Activity  
 **Version:** 1.0.0  
@@ -313,13 +297,7 @@
 
 ---
 
-<<<<<<< HEAD
 *Last Updated: March 12, 2026*
-=======
-<<<<<<< HEAD
-*Last Updated: March 12, 2026*
-=======
->>>>>>> a95e8f36 (.)
 - lancio di superfici non ancora supportate dal backend
 - documentazione non aderente al codice reale
 - dipendenze inter-modulo sottostimate
@@ -329,11 +307,3 @@
 - [PRD](prd.md)
 - [User Research](user-research.md)
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
->>>>>>> a95e8f36 (.)

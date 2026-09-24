@@ -246,7 +246,6 @@ php artisan test
 
 ---
 
-<<<<<<< HEAD
 **
 **ultimo aggiornamento**: 20 agosto 2025
 **
@@ -254,16 +253,3 @@ php artisan test
 **ultimo aggiornamento**: 20 agosto 2025
 **analista**: claude code
 **stato**: pronto per implementazione
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**
-=======
-**ultimo aggiornamento**: 20 agosto 2025
->>>>>>> 0a02158a (.)
-=======
-**ultimo aggiornamento**: 20 agosto 2025
->>>>>>> 35d8cf69 (Initial commit)
-**analista**: claude code
-**stato**: pronto per implementazione
->>>>>>> a95e8f36 (.)

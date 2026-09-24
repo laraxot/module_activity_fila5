@@ -1,17 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_CLLSX0
-<<<<<<< HEAD
-<<<<<<< .merge_file_5ipiXw
-
-=======
->>>>>>> .merge_file_8wxAgZ
-=======
-
->>>>>>> a95e8f36 (.)
-=======
->>>>>>> .merge_file_Mhp8o7
 use Modules\Activity\Actions\RedactModelAttributesAction;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
@@ -22,19 +11,7 @@ uses()->group('no-activity-db');
 
 describe('coverage senza database activity_log', function (): void {
     test('RedactModelAttributesAction rimuove chiavi sensibili', function (): void {
-<<<<<<< .merge_file_CLLSX0
-<<<<<<< HEAD
-<<<<<<< .merge_file_5ipiXw
-        $action = new RedactModelAttributesAction();
-=======
         $action = new RedactModelAttributesAction;
->>>>>>> .merge_file_8wxAgZ
-=======
-        $action = new RedactModelAttributesAction();
->>>>>>> a95e8f36 (.)
-=======
-        $action = new RedactModelAttributesAction;
->>>>>>> .merge_file_Mhp8o7
 
         $redacted = $action->execute([
             'name' => 'Marco',
@@ -59,26 +36,8 @@ describe('coverage senza database activity_log', function (): void {
     });
 
     test('modelli event-sourcing usano connection activity', function (): void {
-<<<<<<< .merge_file_CLLSX0
-<<<<<<< HEAD
-<<<<<<< .merge_file_5ipiXw
-        Assert::assertSame('activity', (new Activity())->getConnectionName());
-        Assert::assertSame('activity', (new Snapshot())->getConnectionName());
-        Assert::assertSame('activity', (new StoredEvent())->getConnectionName());
-=======
         Assert::assertSame('activity', (new Activity)->getConnectionName());
         Assert::assertSame('activity', (new Snapshot)->getConnectionName());
         Assert::assertSame('activity', (new StoredEvent)->getConnectionName());
->>>>>>> .merge_file_8wxAgZ
-=======
-        Assert::assertSame('activity', (new Activity())->getConnectionName());
-        Assert::assertSame('activity', (new Snapshot())->getConnectionName());
-        Assert::assertSame('activity', (new StoredEvent())->getConnectionName());
->>>>>>> a95e8f36 (.)
-=======
-        Assert::assertSame('activity', (new Activity)->getConnectionName());
-        Assert::assertSame('activity', (new Snapshot)->getConnectionName());
-        Assert::assertSame('activity', (new StoredEvent)->getConnectionName());
->>>>>>> .merge_file_Mhp8o7
     });
 });
