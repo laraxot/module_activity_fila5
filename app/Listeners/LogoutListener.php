@@ -18,22 +18,22 @@ class LogoutListener
      */
     public function handle(Logout $event): void
     {
-        $user = $event->user;
-        if ($user === null) {
+        if (! $event->user) {
             return;
         }
 
         $properties = [
             'guard' => $event->guard,
             'ip_address' => Request::ip(),
-            'user_agent' => mb_substr((string) (Request::userAgent() ?? ''), 0, 512),
+            'user_agent' => Request::userAgent(),
             'timestamp' => now()->timestamp,
         ];
 
         // Handle session duration if last_login_at is available
-        if (isset($user->last_login_at)) {
-            /** @var mixed $lastLoginRaw */
-            $lastLoginRaw = $user->last_login_at;
+        // Assuming last_login_at is a Casted Carbon instance or string
+        if (isset($event->user->last_login_at)) {
+            /** @var string|DateTimeInterface|null $lastLoginRaw */
+            $lastLoginRaw = $event->user->last_login_at;
 
             // Type narrowing for $lastLoginRaw
             if (is_string($lastLoginRaw) || $lastLoginRaw instanceof DateTimeInterface) {
@@ -45,10 +45,7 @@ class LogoutListener
 
         // Handle logout reason from request
         if (Request::has('logout_reason')) {
-            $allowedReasons = ['manual', 'timeout', 'forced'];
-            /** @var mixed $reason */
-            $reason = Request::input('logout_reason');
-            $properties['logout_reason'] = in_array($reason, $allowedReasons, true) ? $reason : 'unknown';
+            $properties['logout_reason'] = Request::input('logout_reason');
         }
 
         // Creating the activity
@@ -60,9 +57,9 @@ class LogoutListener
         $activity->description = 'User logged out'; // specific string not enforced but 'logout' must be contained
         $activity->event = 'logout';
 
-        // Type narrowing for causer association
-        if ($user instanceof Model) {
-            $activity->causer()->associate($user);
+        // Type narrowing for $event->user to ensure it's a Model
+        if ($event->user instanceof Model) {
+            $activity->causer()->associate($event->user);
         }
 
         $activity->properties = $properties;

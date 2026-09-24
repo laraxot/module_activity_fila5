@@ -1,14 +1,13 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-describe('Activity Business Logic', function () {
+test('Activity Business Logic', function () {
     test('activity has correct connection configured', function () {
         $reflection = new ReflectionClass(Activity::class);
         $property = $reflection->getProperty('connection');
