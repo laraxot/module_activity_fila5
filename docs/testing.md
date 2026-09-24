@@ -1,39 +1,3 @@
----
-title: "Activity Module Testing"
-type: guide
-tags: [activity, testing, pest]
-created: 2026-07-28
-updated: 2026-07-28
----
-
-# Activity Module — Testing
-
-## Test Activity Logging
-
-```php
-test('logs activity on user creation', function () {
-    $user = User::factory()->create();
-
-    expect(Activity::where('subject_type', User::class)
-        ->where('subject_id', $user->id)
-        ->count())->toBeGreaterThan(0);
-});
-
-test('logs causer on user action', function () {
-    $admin = User::factory()->create();
-    $this->actingAs($admin);
-
-    (new LogActivityAction)->execute([
-        'description' => 'User updated',
-        'subject' => $user,
-        'causer' => $admin,
-        'type' => 'user.updated',
-    ]);
-
-    $activity = Activity::latest()->first();
-    expect($activity->causer_id)->toBe($admin->id);
-});
-```
 # Testing Documentation
 
 ## Overview
@@ -294,7 +258,7 @@ protected function createApplication()
 
 ### External Resources
 
-- [Laravel 13.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+- [Laravel 12.x Testing Documentation](https://laravel.com/docs/12.x/testing)
 - [Pest Installation Guide](https://pestphp.com/docs/installation)
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 
@@ -420,7 +384,4 @@ Remember: Good tests are the foundation of reliable software development.
 ---
 
 *Last updated: January 2025*
-*
-*
-*
 *

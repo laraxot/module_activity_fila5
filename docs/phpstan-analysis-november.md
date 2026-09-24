@@ -6,20 +6,7 @@
 **PHPStan Level:** 10 (Massimo)  
 **File Analizzati:** 102  
 **Data Analisi:** 24 Novembre 2025
-**PHPStan Level:** 10 (Massimo)
 **File Analizzati:** 106
-**Data Analisi:** 6 Novembre 2025  
-**PHPStan Level:** 10 (Massimo)  
-**File Analizzati:** 102  
-**Data Analisi:** 6 Novembre 2025  
-**PHPStan Level:** 10 (Massimo)  
-**File Analizzati:** 102  
-**Data Analisi:** 24 Novembre 2025
-**PHPStan Level:** 10 (Massimo)
-**File Analizzati:** 106
-**Data Analisi:** 6 Novembre 2025  
-**PHPStan Level:** 10 (Massimo)  
-**File Analizzati:** 102  
 **Errori Trovati:** 0 ✅
 
 ## Status

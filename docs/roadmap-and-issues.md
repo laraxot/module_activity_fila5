@@ -2,7 +2,7 @@
 
 **Modulo**: Activity (Audit Trail & Activity Logging)
 **Data Analisi**: 1 Ottobre 2025
-**Status PHPStan**: ✅ 0 errori (Level 10)
+**Status PHPStan**: ✅ 0 errori (Level 9)
 **Status Generale**: ✅ ECCELLENTE
 
 ---
@@ -49,7 +49,6 @@
 
 ## 🔗 Collegamenti
 
-- [← Activity Module README](../README.md)
 - [← Activity Module README](../readme.md)
 - [← Root Documentation](../../../docs/index.md)
 
