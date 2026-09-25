@@ -1,19 +1,9 @@
 # Activity Module - Business Logic Analysis
 
 ## Overview
-<<<<<<< HEAD
-<<<<<<< HEAD
-The Activity module provides comprehensive audit logging and event sourcing capabilities for the Quaeris platform. It tracks user actions, system events, and data changes across all modules.
-=======
 The Activity module provides comprehensive audit logging and event sourcing capabilities for the healthcare_app platform. It tracks user actions, system events, and data changes across all modules.
 The Activity module provides comprehensive audit logging and event sourcing capabilities for the Quaeris platform. It tracks user actions, system events, and data changes across all modules.
 The Activity module provides comprehensive audit logging and event sourcing capabilities for the healthcare_app platform. It tracks user actions, system events, and data changes across all modules.
->>>>>>> laraxot/dev
-=======
-The Activity module provides comprehensive audit logging and event sourcing capabilities for the healthcare_app platform. It tracks user actions, system events, and data changes across all modules.
-The Activity module provides comprehensive audit logging and event sourcing capabilities for the Quaeris platform. It tracks user actions, system events, and data changes across all modules.
-The Activity module provides comprehensive audit logging and event sourcing capabilities for the healthcare_app platform. It tracks user actions, system events, and data changes across all modules.
->>>>>>> 3cbe4341 (.)
 
 ## Business Purpose
 - **Audit Trail**: Maintain complete audit trails for compliance and security
@@ -204,12 +194,4 @@ The Activity module provides comprehensive audit logging and event sourcing capa
 - **Security**: Provides audit trails for security incidents
 - **Debugging**: Helps diagnose application issues
 - **Analytics**: Enables user behavior analysis
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Accountability**: Tracks user actions for accountability
-=======
-- **Accountability**: Tracks user actions for accountability
->>>>>>> laraxot/dev
-=======
-- **Accountability**: Tracks user actions for accountability
->>>>>>> 3cbe4341 (.)

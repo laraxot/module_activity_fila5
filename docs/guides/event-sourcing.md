@@ -1,29 +1,9 @@
 ---
 module: theme
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-topic: event_sourcing
-canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.md
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-=======
->>>>>>> 3cbe4341 (.)
 topic: event-sourcing
 canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
 ---
 
-<<<<<<< HEAD
-See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.md
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
-=======
 ## introduction to event sourcing
 
 event sourcing is an architectural approach where every change to application state is captured in an event object. these events are stored in sequence, representing the complete history of changes, unlike the traditional crud approach where only the final state is saved.
@@ -199,4 +179,3 @@ topic: event-sourcing
 canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
 
 See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.md
->>>>>>> 3cbe4341 (.)

@@ -9,11 +9,7 @@ use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
-uses(\Modules\Activity\Tests\TestCase::class);
-=======
 uses(TestCase::class);
->>>>>>> 3cbe4341 (.)
 
 test('activity resources extend xot base resource', function () {
     $activityResource = new ReflectionClass(ActivityResource::class);
@@ -43,11 +39,7 @@ test('activity resource implements required getFormSchema method', function () {
 
     $method = $reflection->getMethod('getFormSchema');
     Assert::assertTrue($method->isPublic());
-<<<<<<< HEAD
-    Assert::assertTrue($method->isStatic());
-=======
     Assert::assertFalse($method->isStatic());
->>>>>>> 3cbe4341 (.)
     $returnType = $method->getReturnType();
     Assert::assertInstanceOf(ReflectionNamedType::class, $returnType);
     Assert::assertSame('array', $returnType->getName());
@@ -98,12 +90,7 @@ test('activity resource has correct model configuration', function () {
 });
 
 test('activity resource form schema returns array', function () {
-<<<<<<< HEAD
-    $formInstance = app(\Modules\Activity\Filament\Resources\ActivityResource\Schemas\ActivityForm::class);
-    $form = $formInstance->getFormSchema();
-=======
     $form = (new ActivityResource)->getFormSchema();
->>>>>>> 3cbe4341 (.)
 
     Assert::assertNotEmpty($form);
 
@@ -121,12 +108,7 @@ test('activity resource form schema returns array', function () {
 });
 
 test('snapshot resource form schema returns array', function () {
-<<<<<<< HEAD
-    $formInstance = app(\Modules\Activity\Filament\Resources\SnapshotResource\Schemas\SnapshotForm::class);
-    $form = $formInstance->getFormSchema();
-=======
     $form = (new SnapshotResource)->getFormSchema();
->>>>>>> 3cbe4341 (.)
 
     Assert::assertNotEmpty($form);
 
@@ -142,12 +124,7 @@ test('snapshot resource form schema returns array', function () {
 });
 
 test('stored event resource form schema returns array', function () {
-<<<<<<< HEAD
-    $formInstance = app(\Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventForm::class);
-    $form = $formInstance->getFormSchema();
-=======
     $form = (new StoredEventResource)->getFormSchema();
->>>>>>> 3cbe4341 (.)
 
     Assert::assertNotEmpty($form);
 

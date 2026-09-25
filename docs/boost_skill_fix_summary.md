@@ -2,19 +2,11 @@
 module: theme
 topic: boost_skill_fix_summary
 canonical: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
-<<<<<<< HEAD
----
-=======
->>>>>>> 3cbe4341 (.)
 
 See canonical documentation: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
 # Boost Skill Fix Summary - Activity Module
 
-<<<<<<< HEAD
-**Date**: 2026-03-02
-=======
 **Date**: 2026-03-02  
->>>>>>> 3cbe4341 (.)
 **Module**: Activity (Activity Tracking & Logging)
 
 ## Issue Overview
@@ -43,9 +35,5 @@ See `/docs/BOOST_SKILL_SOLUTION_PLAN.md` for complete solution details.
 - Activity logging
 - User action tracking
 - Activity reports
-<<<<<<< HEAD
-- Module integration
-=======
 - Module integration
 
->>>>>>> 3cbe4341 (.)

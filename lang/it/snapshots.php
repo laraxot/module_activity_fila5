@@ -58,10 +58,6 @@ return [
         'delete' => [
             'label' => 'Elimina',
             'tooltip' => 'Elimina lo snapshot',
-<<<<<<< HEAD
-            'icon' => 'delete',
-=======
->>>>>>> 3cbe4341 (.)
         ],
         'view' => [
             'label' => 'Visualizza',

@@ -13,10 +13,7 @@ uses(\Modules\Activity\Tests\TestCase::class);
 
 describe('Can Paginate', function (): void {
     test('trait exists', function (): void {
-<<<<<<< HEAD
-=======
         /** @var \Modules\Activity\Tests\TestCase $this */
->>>>>>> 3cbe4341 (.)
         Assert::assertTrue(trait_exists(CanPaginate::class));
     });
 
@@ -43,11 +40,7 @@ describe('Can Paginate', function (): void {
 
     test('default pagination options return array', function (): void {
         // Test the default pagination options via reflection
-<<<<<<< HEAD
-        $trait = new class()
-=======
         $trait = new class
->>>>>>> 3cbe4341 (.)
         {
             use CanPaginate;
 

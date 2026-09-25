@@ -1,39 +1,5 @@
 # Bank Use Case: Approcci Event Sourcing e Tradizionale
 
-<<<<<<< HEAD
-[![Module](https://img.shields.io/badge/Module-Bank Use Case: Approcci Event Sourcing e Tradizionale-8B0000.svg)]()
-[![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
-[![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
-[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://php.net/)
-[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://phpstan.org/)
-[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)](https://www.php-fig.org/psr/psr-12/)
-[![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
-]()
-
-> **Core module for the FixCity Platform.**
-
-## Perché esiste
-
-Core module for the FixCity Platform.
-
-## Superpoteri
-
-- Modular component with XotBase patterns
-- Professional-grade implementation
-- Integrated with FixCity Platform
-
-## Documentazione
-
-| Lingua | Link |
-|--------|------|
-| 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
-
----
-
-**Modulo** `Activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-=======
 ## Introduzione
 Questo documento confronta tre approcci all'implementazione di un sistema bancario:
 - **Approccio Tradizionale** (CRUD)
@@ -98,4 +64,3 @@ L'obiettivo è fornire una panoramica neutra e riutilizzabile dei pattern, dei v
 
 ## Prossimi passi
 Consulta i file flow.md, domain_model.md, examples.md e tips.md per dettagli su flussi, modelli, esempi e best practice.
->>>>>>> 3cbe4341 (.)

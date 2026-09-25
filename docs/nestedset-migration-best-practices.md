@@ -18,10 +18,6 @@ return new class extends XotBaseMigration
     protected ?string $model_class = \Modules\Activity\Models\ActivityCategory::class;
 
     public function up(): void
-<<<<<<< HEAD
-    {
-=======
->>>>>>> 3cbe4341 (.)
         $this->tableCreate(function (Blueprint $table): void {
             $table->id();
 
@@ -49,37 +45,11 @@ return new class extends XotBaseMigration
             }
 
             $this->updateTimestamps($table, true);
-<<<<<<< HEAD
-        });
-    }
-=======
->>>>>>> 3cbe4341 (.)
 };
 ```
 
 ## Pattern per Activity Types
 
-<<<<<<< HEAD
-```php
-<?php
-
-return new class extends XotBaseMigration
-{
-    protected ?string $model_class = \Modules\Activity\Models\ActivityType::class;
-
-    public function up(): void
-    {
-        $this->tableCreate(function (Blueprint $table): void {
-            $table->id();
-
-            // Campi per tipi di attività
-            $table->string('name');
-            $table->string('code')->unique();
-            $table->text('description')->nullable();
-
-            // NestedSet per gerarchia tipi
-            NestedSet::columns($table);
-=======
 
     protected ?string $model_class = \Modules\Activity\Models\ActivityType::class;
 
@@ -88,42 +58,12 @@ return new class extends XotBaseMigration
             $table->string('code')->unique();
 
             // NestedSet per gerarchia tipi
->>>>>>> 3cbe4341 (.)
 
             // Configurazioni per tipi
             $table->json('settings')->nullable();
             $table->boolean('requires_approval')->default(false);
             $table->boolean('is_system')->default(false);
 
-<<<<<<< HEAD
-            $table->timestamps();
-        });
-    }
-};
-```
-
-## Pattern per Workflow States
-
-```php
-<?php
-
-return new class extends XotBaseMigration
-{
-    protected ?string $model_class = \Modules\Activity\Models\WorkflowState::class;
-
-    public function up(): void
-    {
-        $this->tableCreate(function (Blueprint $table): void {
-            $table->id();
-
-            // Campi per stati workflow
-            $table->string('name');
-            $table->string('code')->unique();
-            $table->text('description')->nullable();
-
-            // NestedSet per gerarchia stati
-            NestedSet::columns($table);
-=======
 
 ## Pattern per Workflow States
 
@@ -134,29 +74,15 @@ return new class extends XotBaseMigration
             // Campi per stati workflow
 
             // NestedSet per gerarchia stati
->>>>>>> 3cbe4341 (.)
 
             // Configurazioni workflow
             $table->json('transitions')->nullable()->comment('Transizioni possibili da questo stato');
             $table->boolean('is_final')->default(false);
             $table->boolean('is_initial')->default(false);
 
-<<<<<<< HEAD
-            $table->timestamps();
-        });
-    }
-};
-```
 
 ## Integrazione con Modelli Activity
 
-```php
-<?php
-=======
-
-## Integrazione con Modelli Activity
-
->>>>>>> 3cbe4341 (.)
 
 namespace Modules\Activity\Models;
 
@@ -164,10 +90,6 @@ use Illuminate\Database\Eloquent\Model;
 use Kalnoy\Nestedset\NodeTrait;
 
 class ActivityCategory extends Model
-<<<<<<< HEAD
-{
-=======
->>>>>>> 3cbe4341 (.)
     use NodeTrait;
 
     protected $fillable = [
@@ -185,22 +107,6 @@ class ActivityCategory extends Model
         'metadata' => 'array',
         'is_active' => 'boolean',
         'sort_order' => 'integer',
-<<<<<<< HEAD
-    ];
-
-    // Scopes specifici per Activity
-    public function scopeActive($query)
-    {
-        return $query->where('is_active', true);
-    }
-
-    public function scopeOrdered($query)
-    {
-        return $query->orderBy('sort_order')->orderBy('name');
-    }
-}
-```
-=======
 
     // Scopes specifici per Activity
     public function scopeActive($query)
@@ -208,7 +114,6 @@ class ActivityCategory extends Model
 
     public function scopeOrdered($query)
         return $query->orderBy('sort_order')->orderBy('name');
->>>>>>> 3cbe4341 (.)
 
 ## Best Practices Specifiche per Activity
 
@@ -220,10 +125,6 @@ class ActivityCategory extends Model
 
 ### 2. Metadata Flessibili
 
-<<<<<<< HEAD
-```php
-=======
->>>>>>> 3cbe4341 (.)
 // Esempio di metadata per ActivityCategory
 $metadata = [
     'default_duration' => 60, // minuti
@@ -232,33 +133,18 @@ $metadata = [
         'email' => true,
         'sms' => false
     ]
-<<<<<<< HEAD
-];
-```
 
 ### 3. Indici per Performance
 
-```php
-=======
-
-### 3. Indici per Performance
-
->>>>>>> 3cbe4341 (.)
 // Indici specifici per query Activity
 $table->index(['parent_id', 'is_active']);
 $table->index(['slug', 'is_active']);
 $table->index('sort_order');
-<<<<<<< HEAD
-```
-=======
->>>>>>> 3cbe4341 (.)
 
 ## Riferimenti
 
 - [Documentazione principale](/docs/migration/nestedset-best-practices.md)
 - [Activity Module Architecture](/docs/architecture/activity-module.md)
-<<<<<<< HEAD
-=======
 # NestedSet Migration Best Practices — DOCUMENTO LEGACY
 
 > **ATTENZIONE**: Questo documento è **legacy**. Il progetto ha completato la migrazione
@@ -292,4 +178,3 @@ class MyTreeModel extends BaseTreeModel
 - **2026-03**: Rimozione completa di `kalnoy/nestedset`
 
 *Ultimo aggiornamento: marzo 2026*
->>>>>>> 3cbe4341 (.)

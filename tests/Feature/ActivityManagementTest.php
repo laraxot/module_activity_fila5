@@ -12,8 +12,6 @@ use PHPUnit\Framework\Assert;
 
 uses(\Modules\Activity\Tests\TestCase::class);
 
-<<<<<<< HEAD
-=======
 beforeEach(function () {
     // Skip if database not available
     try {
@@ -23,7 +21,6 @@ beforeEach(function () {
     }
 });
 
->>>>>>> 3cbe4341 (.)
 test('user can create activity', function () {
     $user = UserFactory::new()->createOne();
     Assert::assertInstanceOf(User::class, $user);

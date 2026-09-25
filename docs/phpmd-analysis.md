@@ -46,10 +46,7 @@
 ```php
 // Instead of one complex method:
 private function validateActivityRestore(Activity $activity): bool
-<<<<<<< HEAD
-=======
 private function performActivityRestore(Activity $activity): void
->>>>>>> 3cbe4341 (.)
 private function performActivityRestore(Activity $activity): void  
 private function logActivityRestore(Activity $activity): void
 private function notifyActivityRestore(Activity $activity): void
@@ -71,10 +68,7 @@ if ($condition) {
     return $alternative;
 }
 
-<<<<<<< HEAD
-=======
 // ✅ AFTER
->>>>>>> 3cbe4341 (.)
 // ✅ AFTER  
 if ($condition) {
     return $result;
@@ -177,8 +171,6 @@ return $alternative;
 
 *Last Updated: 2025-11-12*
 *Status: In Progress - Complexity Fixes*
-<<<<<<< HEAD
-=======
 # PHPMD Analysis & Fixes - Activity Module
 
 ## 📊 Current Status
@@ -522,4 +514,3 @@ return $alternative;
 *Last Updated: 2025-11-12*
 *
 *Status: In Progress - Complexity Fixes*
->>>>>>> 3cbe4341 (.)

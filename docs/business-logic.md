@@ -5,8 +5,6 @@ canonical: ../../../Themes/docs/shared-components/business-logic-analysis.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/business-logic-analysis.md
-<<<<<<< HEAD
-=======
 ## Overview
 The Activity module provides comprehensive audit logging and event sourcing capabilities for the Quaeris platform. It tracks user actions, system events, and data changes across all modules.
 The Activity module provides comprehensive audit logging and event sourcing capabilities for the healthcare_app platform. It tracks user actions, system events, and data changes across all modules.
@@ -192,4 +190,3 @@ The Activity module provides comprehensive audit logging and event sourcing capa
 - **Debugging**: Helps diagnose application issues
 - **Analytics**: Enables user behavior analysis
 - **Accountability**: Tracks user actions for accountability
->>>>>>> 3cbe4341 (.)

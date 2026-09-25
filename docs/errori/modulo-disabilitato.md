@@ -328,19 +328,7 @@ Se `module:enable Activity` non funziona:
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 **
-=======
-**Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> 0a02158a (.)
-=======
-**Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> 35d8cf69 (Initial commit)
-=======
-**
->>>>>>> 3cbe4341 (.)
 **Caso Reale**: personale2022.prov.tv.local
 **Soluzione Verificata**: ✅ Testata e funzionante
 **Severità**: Critica (blocca completamente feature Activity Log)

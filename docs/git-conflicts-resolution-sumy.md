@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # Risoluzione Conflitti Git - Modulo Activity
 
 ## Data Risoluzione
@@ -51,7 +49,6 @@ Tutti i file risolti rispettano:
 - [Event Sourcing Architecture](./event-sourcing.md)
 - [<nome progetto>ion Market Use Cases](./use_cases/<nome progetto>ion_market/index.md)
 
->>>>>>> 3cbe4341 (.)
 ---
 module: theme
 topic: git-conflicts-resolution-sumy
