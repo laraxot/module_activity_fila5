@@ -38,9 +38,13 @@ return array (
   'plural_label' => 'Missing Plural label',
   'fields' => 
 <<<<<<< HEAD
+<<<<<<< HEAD
   array (
 =======
   array ()
 >>>>>>> 3cbe4341 (.)
   ),
+=======
+  array (),
+>>>>>>> 8c0345f9 (Fix syntax in Italian language file by correcting array structure for fields definition.)
 );
