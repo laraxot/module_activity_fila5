@@ -41,7 +41,6 @@ final class CanPaginateHarness
 
     /**
      * @template TModel of \Illuminate\Database\Eloquent\Model
-     *
      * @param  Builder<TModel>  $query
      * @return Paginator<int, TModel>|CursorPaginator<int, TModel>|LengthAwarePaginator<int, TModel>
      */
@@ -51,7 +50,7 @@ final class CanPaginateHarness
     }
 
     /**
-     * @return array<int|string>
+     * @return list<int|string>
      */
     public function exposeOptions(): array
     {
@@ -60,6 +59,6 @@ final class CanPaginateHarness
 
     public function setDefaultPerPage(int|string|null $value): void
     {
-        $this->defaultRecordsPerPageSelectOption = $value;
+        $this->defaultPerPageOption = $value;
     }
 }
