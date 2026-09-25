@@ -5,10 +5,7 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\File;
 use Modules\Activity\Actions\Log\BuildLogViewerStateAction;
 use Modules\Activity\Datas\LogViewerStateData;
-<<<<<<< HEAD
-=======
 use Modules\Activity\Datas\LogFileData;
->>>>>>> 3cbe4341 (.)
 use Tests\TestCase;
 
 uses(TestCase::class);
@@ -38,11 +35,7 @@ afterEach(function (): void {
 it('lists the files and builds the tree even when no file is chosen', function (): void {
     $state = (new BuildLogViewerStateAction)->execute('');
 
-<<<<<<< HEAD
-    expect(array_map(fn ($file) => $file->path, $state->files))->toContain('laravel.log')->toContain('reports/252/daily.log');
-=======
     expect(array_map(fn (LogFileData $file): string => $file->path, $state->files))->toContain('laravel.log')->toContain('reports/252/daily.log');
->>>>>>> 3cbe4341 (.)
     expect($state->tree->count)->toBe(2);
     expect($state->tail)->toBeNull();
     expect($state->entries)->toBe([]);
