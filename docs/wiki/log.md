@@ -50,9 +50,15 @@ discussions:
 
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
+<<<<<<< HEAD
+=======
 
 ---
 title: "Activity Log"
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4fb998e0 (.)
 type: log
 module: Activity
 tags: [activity, phpstan, pest, qmd]
@@ -63,7 +69,9 @@ issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/328"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/329"
+---
 
+---
 
 ## [2026-06-13] phpstan | Gate chef — 7 file Actions → Assert
 
@@ -104,6 +112,11 @@ discussions:
 
 ---
 title: "Activity Log"
+<<<<<<< HEAD
+=======
+>>>>>>> 77d3d692 (.)
+=======
+>>>>>>> 4fb998e0 (.)
 module: "Activity"
 ---
 
@@ -136,3 +149,14 @@ module: "Activity"
 - 2026-06-10: activity_log consolidato in 2026_06_10_140000_create_activity_table.php; duplicate in _bak/
 
 - 2026-06-10: activity_log — consolidate add/fix/update in 141000_create_activity_table; anti-pattern in _bak/
+>>>>>>> 35d8cf69 (Initial commit)
+
+
+## 2026-09-20 — Pagina Log nel pannello Activity (`/activity/admin/log-viewer`)
+
+- Nuova pagina `LogViewer` (voce Log, gruppo Monitoraggio) per consultare i file di `storage/logs` dal pannello, dove non c'è accesso SSH/FTP: elenco ricorsivo (anche `surveys/<id>/`) mostrato come albero di cartelle, lettura dalla coda del file, ricerca e filtro per livello, download in streaming da una pagina Folio (`/api/log-download`, nessun Controller). Solo super-admin o permesso `log.viewAny`, sola lettura.
+- Percorsi validati da `ResolveLogFilePathAction` (solo `.log` dentro `storage/logs`, link simbolici risolti). 68 test, PHPStan pulito; non ancora verificata in produzione né nel browser.
+- La risorsa `/xot/admin/logs` (modulo Xot) non è stata toccata: spostarla o rimuoverla resta una decisione del team.
+- Secondo audit alle linee guida: story anche in Activity, registro `sprint-status.yaml` aggiornato; scostamenti aperti (CSS in linea, TestCase, PHPMD/PHPInsights, chiavi lang) elencati nel concept.
+- Classi base di Xot: usata `XotBasePage` per `LogViewer`; per Action, Data ed eccezione non c'è una base applicabile (vedi il concept). Unico scostamento: i test usano `Tests\TestCase` della root e non il `TestCase` del modulo (manca `database/test_data.sqlite`).
+- Dettagli: [concepts/log-viewer-page-no-ssh.md](concepts/log-viewer-page-no-ssh.md), story [quaeris-admin-log-viewer-no-ssh](../../../Quaeris/docs/stories/quaeris-admin-log-viewer-no-ssh.md).

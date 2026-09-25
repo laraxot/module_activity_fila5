@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-use Modules\Activity\Actions\Schema\IsActivityLogSchemaWritableAction;
+use Modules\Activity\Support\ActivityLogSchema;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('returns false when activity log is disabled', function (): void {
     config(['activitylog.enabled' => false]);
 
-    Assert::assertFalse(app(IsActivityLogSchemaWritableAction::class)->execute());
+    Assert::assertFalse(ActivityLogSchema::isWritable());
 });

@@ -24,8 +24,6 @@ class ActivityLogger
     use QueueableAction;
 
     /**
-     * Log activity.
-     *
      * @param  array<string, mixed>|null  $properties
      */
     public function log(
@@ -120,8 +118,6 @@ class ActivityLogger
     }
 
     /**
-     * Log custom event.
-     *
      * @param  array<string, mixed>|null  $properties
      */
     public function custom(
@@ -265,7 +261,7 @@ class ActivityLogger
 
                 // Explicitly map and cast to ensure types
                 /** @var array<string, int> $byType */
-                $byType = $results->mapWithKeys(function (object $item, int $_key): array {
+                $byType = $results->mapWithKeys(function (object $item): array {
                     // PHPStan L10: isset() per magic attributes invece di property_exists()
                     if (! isset($item->event, $item->count)) {
                         return [];

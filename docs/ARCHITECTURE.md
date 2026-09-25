@@ -1,3 +1,65 @@
+<<<<<<< HEAD
+# Architecture Documentation
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+---
+title: "Activity Module Architecture"
+type: architecture
+tags: [module, architecture, audit]
+created: 2026-07-28
+updated: 2026-07-28
+---
+>>>>>>> laraxot/dev
+
+## Activity Module Architecture
+
+### System Overview
+
+The Activity module provides a comprehensive activity logging and event sourcing system for the Laraxot ecosystem. This document describes the module's architecture, components, and design patterns.
+
+### Core Components
+
+Vedi [wiki/concepts/queueable-action-execute-entrypoint.md](wiki/concepts/queueable-action-execute-entrypoint.md) per la mappa Actions attuale (no Services layer).
+
+```
+Activity Module Architecture
+┌─────────────────────────────────────────────────────────────┐
+│                     Activity Module                          │
+├─────────────────────────────────────────────────────────────┤
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
+│  │   Models     │  │ Repositories │  │  Services    │       │
+│  │              │  │              │  │              │       │
+│  │ ActivityLog  │  │ ActivityRepo │  │ ActivitySvc  │       │
+│  │ StoredEvent  │  │ EventRepo    │  │ EventSvc     │       │
+│  │ Snapshot     │  │ SnapRepo     │  │ SnapSvc      │       │
+│  └──────────────┘  └──────────────┘  └──────────────┘       │
+├─────────────────────────────────────────────────────────────┤
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
+│  │   Events     │  │   Commands   │  │  Projections │       │
+│  │              │  │              │  │              │       │
+│  │ DomainEvent  │  │ CreateAct    │  │ ActivityView │       │
+│  │ StoredEvt    │  │ UpdateAct    │  │ EventView    │       │
+│  └──────────────┘  └──────────────┘  └──────────────┘       │
+├─────────────────────────────────────────────────────────────┤
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
+│  │   Policies   │  │   Actions    │  │   Pages      │       │
+│  │              │  │              │  │              │       │
+│  │ ActPolicy    │  │ LogAct       │  │ ActListPage  │       │
+│  │ EvtPolicy    │  │ RevAct       │  │ EvtListPage  │       │
+│  └──────────────┘  └──────────────┘  └──────────────┘       │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Data Flow
+
+<<<<<<< HEAD
+=======
+## Quality Gates
+✅ PHPStan L10: Executed (2026-07-28)
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 # Architecture Documentation
 
 ## Activity Module Architecture
@@ -41,6 +103,7 @@ Activity Module Architecture
 
 ### Data Flow
 
+>>>>>>> laraxot/dev
 1. **Event Creation**: User actions trigger domain events
 2. **Event Storage**: Events persisted to `stored_events` table
 3. **Snapshot Creation**: Aggregates create snapshots for performance
@@ -157,4 +220,13 @@ class ActivityPolicy
 - [Security](SECURITY.md)
 - [Quality](QUALITY.md)
 - [Performance](PERFORMANCE.md)
+<<<<<<< HEAD
 - [Testing](TESTING.md)
+=======
+<<<<<<< HEAD
+- [Testing](TESTING.md)
+>>>>>>> 0a02158a (.)
+=======
+- [Testing](TESTING.md)
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
