@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< .merge_file_D08ncs
 ---
 module: theme
@@ -11,8 +10,6 @@ See canonical documentation: ../../../../Themes/docs/shared-components/filament_
 =======
 =======
 >>>>>>> 472c43a3 (.)
-=======
->>>>>>> laraxot/dev
 # Filament v4 Icon Size Attribute Fix
 
 ## Issue Description
@@ -81,12 +78,8 @@ After applying these fixes:
 ## Related Documentation
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
 <<<<<<< HEAD
-<<<<<<< HEAD
 - [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
 >>>>>>> .merge_file_2JaGQN
 =======
 - [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
 >>>>>>> 472c43a3 (.)
-=======
-- [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
->>>>>>> laraxot/dev

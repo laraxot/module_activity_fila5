@@ -110,15 +110,10 @@ return [
             'label' => 'Ripristina',
             'tooltip' => 'Ripristina stato precedente',
         ],
-<<<<<<< HEAD
         'delete' => [
             'label' => 'delete',
             'icon' => 'delete',
             'tooltip' => 'delete',
-=======
-        'logout' => [
-            'tooltip' => 'logout',
->>>>>>> laraxot/dev
         ],
     ],
     'messages' => [

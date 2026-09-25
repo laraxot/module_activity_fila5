@@ -17,7 +17,6 @@ class SnapshotResource extends XotBaseResource
 {
     protected static ?string $model = Snapshot::class;
 
-<<<<<<< HEAD
     #[Override]
     public function getFormSchemaOld(): array
     {
@@ -45,7 +44,4 @@ class SnapshotResource extends XotBaseResource
             'edit' => EditSnapshot::route('/{record}/edit'),
         ];
     }
-=======
-   
->>>>>>> laraxot/dev
 }

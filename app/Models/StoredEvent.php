@@ -64,10 +64,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
 class StoredEvent extends SpatieStoredEvent
 {
-<<<<<<< HEAD
     /** > */
-=======
->>>>>>> laraxot/dev
     use HasXotFactory;
 
     /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
@@ -75,7 +72,6 @@ class StoredEvent extends SpatieStoredEvent
 
     protected $table = 'stored_events';
 
-<<<<<<< HEAD
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);
@@ -85,8 +81,6 @@ class StoredEvent extends SpatieStoredEvent
         }
     }
 
-=======
->>>>>>> laraxot/dev
     protected $fillable = [
         'id',
         'aggregate_uuid',

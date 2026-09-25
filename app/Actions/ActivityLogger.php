@@ -24,11 +24,8 @@ class ActivityLogger
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
      * Log activity.
      *
-=======
->>>>>>> laraxot/dev
      * @param  array<string, mixed>|null  $properties
      */
     public function log(
@@ -77,16 +74,9 @@ class ActivityLogger
      */
     public function created(Model $model, ?User $user = null): Activity
     {
-<<<<<<< HEAD
-        return (new LogModelCreatedAction(
-            model: $model,
-            user: $user,
-        ))->execute();
-=======
         $action = new LogModelCreatedAction($model, $user);
 
         return $action->execute();
->>>>>>> laraxot/dev
     }
 
     /**
@@ -94,16 +84,9 @@ class ActivityLogger
      */
     public function updated(Model $model, ?User $user = null): Activity
     {
-<<<<<<< HEAD
-        return (new LogModelUpdatedAction(
-            model: $model,
-            user: $user,
-        ))->execute();
-=======
         $action = new LogModelUpdatedAction($model, $user);
 
         return $action->execute();
->>>>>>> laraxot/dev
     }
 
     /**
@@ -111,16 +94,9 @@ class ActivityLogger
      */
     public function deleted(Model $model, ?User $user = null): Activity
     {
-<<<<<<< HEAD
-        return (new LogModelDeletedAction(
-            model: $model,
-            user: $user,
-        ))->execute();
-=======
         $action = new LogModelDeletedAction($model, $user);
 
         return $action->execute();
->>>>>>> laraxot/dev
     }
 
     /**
@@ -128,13 +104,9 @@ class ActivityLogger
      */
     public function login(User $user): Activity
     {
-<<<<<<< HEAD
-        return (new LogUserLoginAction(user: $user))->execute();
-=======
         $action = new LogUserLoginAction($user);
 
         return $action->execute();
->>>>>>> laraxot/dev
     }
 
     /**
@@ -142,21 +114,14 @@ class ActivityLogger
      */
     public function logout(User $user): Activity
     {
-<<<<<<< HEAD
-        return (new LogUserLogoutAction(user: $user))->execute();
-    }
-
-    /**
-     * Log custom event.
-     *
-=======
         $action = new LogUserLogoutAction($user);
 
         return $action->execute();
     }
 
     /**
->>>>>>> laraxot/dev
+     * Log custom event.
+     *
      * @param  array<string, mixed>|null  $properties
      */
     public function custom(
@@ -300,11 +265,7 @@ class ActivityLogger
 
                 // Explicitly map and cast to ensure types
                 /** @var array<string, int> $byType */
-<<<<<<< HEAD
                 $byType = $results->mapWithKeys(function (object $item, int $_key): array {
-=======
-                $byType = $results->mapWithKeys(function (object $item): array {
->>>>>>> laraxot/dev
                     // PHPStan L10: isset() per magic attributes invece di property_exists()
                     if (! isset($item->event, $item->count)) {
                         return [];

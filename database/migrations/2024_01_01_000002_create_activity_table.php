@@ -8,12 +8,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
-<<<<<<< HEAD
     protected ?string $model_class = Activity::class;
 
-=======
-    // protected ?string $model_class = Activity::class;
->>>>>>> laraxot/dev
     public function up(): void
     {
         // -- CREATE --
@@ -30,7 +26,6 @@ return new class extends XotBaseMigration
         });
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-<<<<<<< HEAD
             // Convert subject/causer to string(36) for UUID support (User model uses UUID)
             if ($this->hasColumn('subject_id')) {
                 $table->string('subject_id', 36)->nullable()->change()->index();
@@ -38,9 +33,6 @@ return new class extends XotBaseMigration
             if ($this->hasColumn('subject_type')) {
                 $table->string('subject_type')->nullable()->change();
             }
-=======
-            // Ensure causer columns are nullable to allow console operations without an authenticated user
->>>>>>> laraxot/dev
             if ($this->hasColumn('causer_id')) {
                 $table->string('causer_id', 36)->nullable()->change()->index();
             }

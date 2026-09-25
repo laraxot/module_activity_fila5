@@ -2,7 +2,6 @@
 module: theme
 topic: 05-analysis-siti-esistenti
 canonical: ../../../../../Themes/docs/shared-components/05-analisi-siti-esistenti.md
-<<<<<<< HEAD
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/05-analisi-siti-esistenti.md
 # Analisi dei Principali <nome progetto>ion Market (2024-2025)
@@ -37,8 +36,3 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/05-ana
 
 
 
-=======
----
-
-See canonical documentation: ../../../../../Themes/docs/shared-components/05-analisi-siti-esistenti.md
->>>>>>> laraxot/dev

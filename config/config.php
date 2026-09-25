@@ -5,10 +5,7 @@ declare(strict_types=1);
 return [
     'name' => 'Activity',
     'description' => 'Modulo per il tracciamento delle attività degli utenti',
-<<<<<<< HEAD
     // 'icon' => 'heroicon-o-clock',
-=======
->>>>>>> laraxot/dev
     'icon' => 'activity-icon',
     'navigation' => [
         'enabled' => true,

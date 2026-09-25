@@ -58,10 +58,6 @@ return [
         'delete' => [
             'label' => 'Elimina',
             'tooltip' => 'Elimina lo snapshot',
-<<<<<<< HEAD
-=======
-            'icon' => 'delete',
->>>>>>> laraxot/dev
         ],
         'view' => [
             'label' => 'Visualizza',

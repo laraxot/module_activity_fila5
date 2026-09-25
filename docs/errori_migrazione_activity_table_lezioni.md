@@ -165,9 +165,5 @@ Questa lezione è ora memorizzata permanentemente per:
 - [SaluteOra Models](../../SaluteOra/docs/model_architecture.md)
 - [Activity Logging](./activity_logging_system.md)
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
-=======
-*
->>>>>>> laraxot/dev
 *Lezione appresa: Context-aware migrations con supporto UUID*

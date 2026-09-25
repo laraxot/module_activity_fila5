@@ -13,19 +13,11 @@ use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
 use Modules\Activity\Tests\TestCase;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
 function makeCanPaginateHarness(): CanPaginateHarness
 {
     return new CanPaginateHarness;
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
-
-function makeCanPaginateHarness(): CanPaginateHarness
-{
-    return new CanPaginateHarness();
->>>>>>> laraxot/dev
 }
 
 test('can paginate trait manages session, defaults and page helpers', function (): void {

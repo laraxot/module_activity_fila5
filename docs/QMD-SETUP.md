@@ -18,11 +18,7 @@ Il progetto usa una collection QMD centralizzata in  che include:
 
 ```yaml
 collection:
-<<<<<<< HEAD
   name: fixcity
-=======
-  name: ptv
->>>>>>> laraxot/dev
   source: docs/wiki  # Include tutti i moduli
   
 paths:

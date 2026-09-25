@@ -1,9 +1,5 @@
 # Cyclomatic Complexity Report - Module: Activity
 
-<<<<<<< HEAD
-=======
-**Generated:** 2025-10-01 19:44:11
->>>>>>> laraxot/dev
 **Analyzer:** Super Mucca 🐮
 
 ---

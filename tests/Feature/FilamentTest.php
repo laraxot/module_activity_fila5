@@ -3,13 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
-<<<<<<< HEAD
 use Filament\Actions\Action;
-=======
-
-use Filament\Actions\Action;
-use Filament\Actions\ActionGroup;
->>>>>>> laraxot/dev
 use Filament\Tables\Table;
 use Modules\Activity\Events\ActivityEvent;
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
@@ -28,16 +22,9 @@ use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
 use function Safe\class_uses;
 
 uses(\Modules\Activity\Tests\TestCase::class);
-=======
-
-use function Safe\class_uses;
-
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 describe('ActivityEvent', function (): void {
     test('can be instantiated', function (): void {
@@ -111,17 +98,10 @@ describe('CanPaginate trait', function (): void {
         Assert::assertTrue($trait->hasProperty('recordsPerPage'));
     });
 
-<<<<<<< HEAD
     test('trait has defaultRecordsPerPageSelectOption property', function (): void {
         $trait = new \ReflectionClass(CanPaginate::class);
 
         Assert::assertTrue($trait->hasProperty('defaultRecordsPerPageSelectOption'));
-=======
-    test('trait has defaultPerPageOption property', function (): void {
-        $trait = new \ReflectionClass(CanPaginate::class);
-
-        Assert::assertTrue($trait->hasProperty('defaultPerPageOption'));
->>>>>>> laraxot/dev
     });
 
     test('trait has getRecordsPerPageSelectOptions method', function (): void {
@@ -142,12 +122,7 @@ describe('ActivityResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
-<<<<<<< HEAD
         $schema = (new ActivityResource)->getFormSchema();
-=======
-        $instance = app(\Modules\Activity\Filament\Resources\ActivityResource\Schemas\ActivityForm::class);
-        $schema = $instance->getFormSchema();
->>>>>>> laraxot/dev
 
         Assert::assertArrayHasKey('log_name', $schema);
         Assert::assertArrayHasKey('description', $schema);
@@ -199,15 +174,9 @@ describe('ListActivities page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListActivities;
-<<<<<<< HEAD
         $table = $page->table(Table::make($page));
         $columns = $table->getColumns();
 
-=======
-        $columns = $page->table(Table::make($page))->getColumns();
-
-        Assert::assertNotEmpty($columns);
->>>>>>> laraxot/dev
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('description', $columns);
         Assert::assertArrayHasKey('subject_type', $columns);
@@ -229,12 +198,7 @@ describe('SnapshotResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
-<<<<<<< HEAD
         $schema = (new SnapshotResource)->getFormSchema();
-=======
-        $instance = app(\Modules\Activity\Filament\Resources\SnapshotResource\Schemas\SnapshotForm::class);
-        $schema = $instance->getFormSchema();
->>>>>>> laraxot/dev
 
         Assert::assertArrayHasKey('model_type', $schema);
         Assert::assertArrayHasKey('model_id', $schema);
@@ -261,15 +225,9 @@ describe('ListSnapshots page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListSnapshots;
-<<<<<<< HEAD
         $table = $page->table(Table::make($page));
         $columns = $table->getColumns();
 
-=======
-        $columns = $page->table(Table::make($page))->getColumns();
-
-        Assert::assertNotEmpty($columns);
->>>>>>> laraxot/dev
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('aggregate_uuid', $columns);
         Assert::assertArrayHasKey('aggregate_version', $columns);
@@ -280,40 +238,26 @@ describe('ListSnapshots page', function (): void {
 
     test('has table filters', function (): void {
         $page = new ListSnapshots;
-<<<<<<< HEAD
         $table = $page->table(Table::make($page));
         $filters = $table->getFilters();
-=======
-        $filters = $page->table(Table::make($page))->getFilters();
->>>>>>> laraxot/dev
 
         Assert::assertNotEmpty($filters);
     });
 
     test('has table actions', function (): void {
         $page = new ListSnapshots;
-<<<<<<< HEAD
         $table = $page->table(Table::make($page));
         $actions = $table->getRecordActions();
 
         Assert::assertArrayHasKey('view', $actions);
         Assert::assertArrayHasKey('edit', $actions);
         Assert::assertArrayHasKey('delete', $actions);
-=======
-        $actions = $page->table(Table::make($page))->getRecordActions();
-
-        Assert::assertNotEmpty($actions);
->>>>>>> laraxot/dev
     });
 
     test('has bulk actions', function (): void {
         $page = new ListSnapshots;
-<<<<<<< HEAD
         $table = $page->table(Table::make($page));
         $bulkActions = $table->getFlatBulkActions();
-=======
-        $bulkActions = $page->table(Table::make($page))->getToolbarActions();
->>>>>>> laraxot/dev
 
         Assert::assertNotEmpty($bulkActions);
     });
@@ -330,12 +274,7 @@ describe('StoredEventResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
-<<<<<<< HEAD
         $schema = (new StoredEventResource)->getFormSchema();
-=======
-        $instance = app(\Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventForm::class);
-        $schema = $instance->getFormSchema();
->>>>>>> laraxot/dev
 
         Assert::assertArrayHasKey('event_class', $schema);
         Assert::assertArrayHasKey('event_properties', $schema);
@@ -363,17 +302,11 @@ describe('ListStoredEvents page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListStoredEvents;
-<<<<<<< HEAD
         $table = $page->table(Table::make($page));
         $columns = $table->getColumns();
 
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('event_class', $columns);
         Assert::assertArrayHasKey('event_properties', $columns);
-=======
-        $columns = $page->table(Table::make($page))->getColumns();
-
-        Assert::assertNotEmpty($columns);
->>>>>>> laraxot/dev
     });
 });

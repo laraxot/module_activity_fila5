@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\SnapshotResource\Pages;
 
-<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
@@ -16,8 +15,6 @@ use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\SelectFilter;
-=======
->>>>>>> laraxot/dev
 use Modules\Activity\Filament\Resources\SnapshotResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
@@ -27,7 +24,6 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListSnapshots extends XotBaseListRecords
 {
     protected static string $resource = SnapshotResource::class;
-<<<<<<< HEAD
 
     /**
      * Get the list table columns.
@@ -83,6 +79,4 @@ class ListSnapshots extends XotBaseListRecords
             DeleteBulkAction::make(),
         ];
     }
-=======
->>>>>>> laraxot/dev
 }

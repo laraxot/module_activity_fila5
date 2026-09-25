@@ -14,9 +14,5 @@
 - Copri casi limite come transizioni di stato non valide.
 
 ## Documentazione
-<<<<<<< HEAD
 - Aggiorna `docs/INDEX.md` con nuovi modelli e relazioni.
-=======
-- Aggiorna `docs/index.md` con nuovi modelli e relazioni.
->>>>>>> laraxot/dev
 - Collega a `Projects` e `Tasks` per contesto operativo.

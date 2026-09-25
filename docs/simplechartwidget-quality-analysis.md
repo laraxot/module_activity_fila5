@@ -5,7 +5,6 @@ canonical: ../../../Themes/docs/shared-components/dual-label-chart-widget-implem
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/dual-label-chart-widget-implementation.md
-<<<<<<< HEAD
 ## Panoramica
 
 Questo documento fornisce un'analisi approfondita della qualità del codice del widget `SimpleChartWidget`, identificando pattern di codice debole, violazioni di principi DRY+KISS e proposte di miglioramento per raggiungere la qualità di codice di livello enterprise.
@@ -353,5 +352,3 @@ Il refactoring ha migliorato la qualità del codice da:
 - **Violazioni di principi** → **Conformità con best practices**
 
 Questo approccio DRY+KISS permette di mantenere un codice di alta qualità, facile da testare e manutenere nel tempo.
-=======
->>>>>>> laraxot/dev

@@ -3,11 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Providers;
-<<<<<<< HEAD
-=======
-
-use function Safe\json_encode;
->>>>>>> laraxot/dev
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -30,13 +25,8 @@ test('activity service provider exposes expected metadata', function (): void {
 
     Assert::assertSame('Activity', $name->getValue($provider));
     $moduleDirValue = $moduleDir->getValue($provider);
-<<<<<<< HEAD
     Assert::assertIsString($moduleDirValue);
     Assert::assertStringContainsString('Modules/Activity', $moduleDirValue);
-=======
-    $moduleDirString = is_string($moduleDirValue) ? $moduleDirValue : (is_scalar($moduleDirValue) ? (string) $moduleDirValue : (json_encode($moduleDirValue) ?: ''));
-    Assert::assertStringContainsString('Modules/Activity', $moduleDirString);
->>>>>>> laraxot/dev
     Assert::assertSame('Modules\\Activity\\Providers', $moduleNs->getValue($provider));
 });
 

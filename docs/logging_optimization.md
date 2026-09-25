@@ -2,7 +2,6 @@
 module: theme
 topic: logging_optimization
 canonical: ../../../Themes/docs/shared-components/logging-optimization.md
-<<<<<<< HEAD
 
 See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md
 # Activity Module - Logging Optimization
@@ -211,8 +210,3 @@ By removing logging from ActivityLogger:
 5. Error logging remains for debugging
 
 **Key Takeaway**: The Activity table IS the audit trail. Logging successful database writes is redundant and wastes performance.
-=======
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md
->>>>>>> laraxot/dev

@@ -1,10 +1,6 @@
 # Factory Coverage Report - Activity Module
 
 ## 📊 Status Report
-<<<<<<< HEAD
-=======
-**Date:** 2025-08-22
->>>>>>> laraxot/dev
 **Module:** Activity
 
 ## ✅ Factory Coverage Complete

@@ -1,9 +1,5 @@
 # PHPStan Tests Corrections - Activity Module
 
-<<<<<<< HEAD
-=======
-**Data**: 2025-10-10
->>>>>>> laraxot/dev
 **Livello PHPStan**: max
 **Errori Totali**: 353
 
