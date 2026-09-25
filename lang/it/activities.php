@@ -67,6 +67,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'log_name' => [
             'label' => 'log_name',
         ],
@@ -94,6 +95,8 @@ return [
         'properties' => [
             'label' => 'properties',
         ],
+=======
+>>>>>>> 3cbe4341 (.)
     ],
     'actions' => [
         'create' => [
@@ -104,7 +107,10 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Activities',
+<<<<<<< HEAD
             'tooltip' => 'delete',
+=======
+>>>>>>> 3cbe4341 (.)
         ],
     ],
 ];

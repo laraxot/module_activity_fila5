@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Activity Module - User Research
 
 **Module:** Activity  
@@ -207,12 +208,17 @@ Legal teams need configurable retention periods.
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 # User Research: Activity Module
 
 ## 🔬 Research Goals
 Identify user needs for Activity functionality.
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3cbe4341 (.)

@@ -26,7 +26,11 @@ For a given resource (e.g., `ActivityResource`), the structure is:
 
 ```php
 // Example in ActivityResource.php
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> 3cbe4341 (.)
 {
     return []; // Logic moved to ActivityForm.php
 }

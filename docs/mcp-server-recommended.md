@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -15,6 +16,10 @@ See canonical documentation: ../../../Themes/docs/shared-components/MCP-SERVER-R
 
 
 >>>>>>> laraxot/dev
+=======
+
+
+>>>>>>> 3cbe4341 (.)
 # MCP Server Consigliati per il Modulo Activity
 
 ## Scopo del Modulo
@@ -39,6 +44,9 @@ Gestione delle attività utente, log, cron e tracciamento eventi.
 ## Note
 - Adatta la configurazione se il modulo interagisce con sistemi di terze parti.
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)

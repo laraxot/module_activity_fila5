@@ -2,10 +2,13 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Data: [DATE] 19:09:55
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 Data: 2025-04-23 19:09:55
 Data: [DATE] 19:09:55
 
@@ -419,7 +422,10 @@ Modules/Activity/
 
 ### Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 - [Best Practice Event Sourcing .mdc](../../.cursor/rules/ACTIVITY_EVENT_SOURCING_BEST_PRACTICES.mdc)

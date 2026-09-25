@@ -1,4 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+---
+module: theme
+topic: bad-practices
+canonical: ../../../Themes/docs/shared-components/BAD_PRACTICES.md
+
+See canonical documentation: ../../../Themes/docs/shared-components/BAD_PRACTICES.md
+>>>>>>> 3cbe4341 (.)
 # Bad Practices – Activity
 
 ## ❌ Log delle attività senza livello di severità
@@ -9,6 +18,7 @@ Aggiungi indici su `user_id`, `log_name`, `created_at`.
 
 ## ❌ Dati duplicati nei "properties" JSON
 Normalizza campi ricorrenti in tabelle distinte per query efficienti.
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -37,3 +47,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/BAD_PRACTICE
 =======
 >>>>>>> 35d8cf69 (Initial commit)
 >>>>>>> laraxot/dev
+=======
+
+
+>>>>>>> 3cbe4341 (.)

@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 ---
 title: "Agent instructions"
 type: reference
@@ -19,10 +22,13 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3cbe4341 (.)
 # Activity Module LLM Wiki Agent Instructions
 
 > **Module/Theme:** Activity
@@ -81,6 +87,7 @@ related:
 - Every page MUST have 3+ incoming links
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Every page MUST have 3+ outgoing links
 =======
 - Every page MUST have 3+ outgoing links
@@ -88,3 +95,6 @@ related:
 =======
 - Every page MUST have 3+ outgoing links
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+- Every page MUST have 3+ outgoing links
+>>>>>>> 3cbe4341 (.)

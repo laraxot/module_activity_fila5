@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Architecture Documentation
 =======
 <<<<<<< HEAD
@@ -60,6 +61,8 @@ Activity Module Architecture
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 # Architecture Documentation
 
 ## Activity Module Architecture
@@ -103,7 +106,10 @@ Activity Module Architecture
 
 ### Data Flow
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3cbe4341 (.)
 1. **Event Creation**: User actions trigger domain events
 2. **Event Storage**: Events persisted to `stored_events` table
 3. **Snapshot Creation**: Aggregates create snapshots for performance
@@ -221,6 +227,7 @@ class ActivityPolicy
 - [Quality](QUALITY.md)
 - [Performance](PERFORMANCE.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Testing](TESTING.md)
 =======
 <<<<<<< HEAD
@@ -230,3 +237,6 @@ class ActivityPolicy
 - [Testing](TESTING.md)
 >>>>>>> 35d8cf69 (Initial commit)
 >>>>>>> laraxot/dev
+=======
+- [Testing](TESTING.md)
+>>>>>>> 3cbe4341 (.)

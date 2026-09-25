@@ -9,6 +9,11 @@ APP_ENV=testing
 DB_CONNECTION=mysql
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE_USER=<nome progetto>_user_test
+<<<<<<< HEAD
+=======
+DB_DATABASE=laravelpizza_data_test
+DB_DATABASE_USER=laravelpizza_user_test
+>>>>>>> 3cbe4341 (.)
 ```
 
 ### Pest Framework Usage

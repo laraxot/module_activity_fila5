@@ -107,7 +107,10 @@ $prices = $lmsr->getPrices($quantities);
 $command = new CreateMarket(
     name: 'Elezioni 2024',
     outcomes: ['A', 'B', 'C'],
+<<<<<<< HEAD
     closingDate: '2024-12-31 23:59:59'
+=======
+>>>>>>> 3cbe4341 (.)
 );
 ```
 

@@ -59,6 +59,7 @@ class Activity extends SpatieActivity
         'properties',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         'batch_uuid',
         'created_at',
@@ -69,10 +70,13 @@ class Activity extends SpatieActivity
         'created_at',
         'updated_at',
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
     ];
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Importante**: non ridefinire `$table` nel modello Activity. Il nome della tabella è gestito da Spatie tramite `config('activitylog.table_name')` (vedi `config/activitylog.php` e `config/local/<tenant>/activitylog.php`). Se serve cambiare tabella, farlo via configurazione, non nel modello.
@@ -81,6 +85,10 @@ class Activity extends SpatieActivity
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+**Importante**: non ridefinire `$table` nel modello Activity. Il nome della tabella è gestito da Spatie tramite `config('activitylog.table_name')` (vedi `config/activitylog.php` e `config/local/<tenant>/activitylog.php`). Se serve cambiare tabella, farlo via configurazione, non nel modello.
+
+>>>>>>> 3cbe4341 (.)
 ### StoredEvent Model
 
 **File**: `Modules/Activity/app/Models/StoredEvent.php`

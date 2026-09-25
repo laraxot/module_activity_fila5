@@ -110,8 +110,15 @@ return [
             'label' => 'Ripristina',
             'tooltip' => 'Ripristina stato precedente',
         ],
+<<<<<<< HEAD
         'logout' => [
             'tooltip' => 'logout',
+=======
+        'delete' => [
+            'label' => 'delete',
+            'icon' => 'delete',
+            'tooltip' => 'delete',
+>>>>>>> 3cbe4341 (.)
         ],
     ],
     'messages' => [

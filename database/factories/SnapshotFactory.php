@@ -65,6 +65,11 @@ class SnapshotFactory extends Factory
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Create snapshot with specific state.
+     *
+>>>>>>> 3cbe4341 (.)
      * @param  array<string, mixed>  $state
      */
     public function withState(array $state): static

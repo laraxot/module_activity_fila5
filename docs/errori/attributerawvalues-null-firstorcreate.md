@@ -149,6 +149,36 @@ Questo problema si verifica con tutti i modelli che:
 - `Modules\IndennitaCondizioniLavoro\Models\CondizioniLavoro`
 - Altri modelli che estendono `BaseScheda`
 
+<<<<<<< HEAD
+=======
+### Caso Sigma: Mutator che Persistono Valori Derivati
+
+Nel modulo **Sigma** alcuni mutator/accessor (es. trait `EnteMatrMutator`) calcolano valori derivati a partire da tabelle anagrafiche e li **persistono** sulla scheda (campi come `ente`, `cognome`, `email`, `titolo_di_studio`, `last_data_assunz`).
+
+Per evitare il problema `attributeRawValues` con Activity Log:
+
+- si applica SEMPRE la guard su PK (`$this->getKey() != null`) prima di salvare
+- si esegue l'`update()` **dentro** un blocco `static::withoutEvents(...)` per evitare che i salvataggi interni agli accessor ri‑inneschino gli eventi Eloquent e il logging.
+
+Esempio semplificato:
+
+```php
+if (\in_array('email', $this->getFillable(), false)) {
+    if ($this->getKey() != null) {
+        static::withoutEvents(function () use ($value): void {
+            $this->update(['email' => $value]);
+        });
+    }
+}
+```
+
+Questo pattern:
+
+- mantiene intatta la **business logic di caching** degli accessor di Sigma
+- evita gli errori di serializzazione in `LogsActivity`
+- limita l'uso di `withoutEvents()` al minimo necessario e solo per scritture interne agli accessor.
+
+>>>>>>> 3cbe4341 (.)
 ## Caso Particolare: Accessor che Triggerano Update
 
 Quando un accessor (es. `getValutatoreIdAttribute()`) chiama `update()` internamente, l'accesso all'attributo durante operazioni Collection (es. `whereNotIn()`) può causare lo stesso errore.
@@ -223,6 +253,7 @@ IndennitaResponsabilita::withoutEvents(function (): void {
 - [BaseScheda Activity Log Configuration](../../ptv/docs/models/base-scheda-activity-log.md)
 - [Activity Log Troubleshooting](../troubleshooting/properties-vuote-activity-log.md)
 - [PopulateByYearAction](../../Ptv/app/Actions/PopulateByYearAction.php)
+<<<<<<< HEAD
 
 ---
 
@@ -235,6 +266,13 @@ IndennitaResponsabilita::withoutEvents(function (): void {
 =======
 **Ultimo aggiornamento**: 19 Novembre 2025  
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+- [Business Logic Sigma](../../Sigma/docs/business-logic.md)
+
+---
+
+**
+>>>>>>> 3cbe4341 (.)
 **Severità**: Alta (blocca operazioni batch)  
 **Soluzione**: Usare `withoutEvents()` durante `firstOrCreate()`
 

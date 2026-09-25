@@ -128,6 +128,7 @@ Per activity_log, il nome corretto è `create_activity_log_table.php`, non `fix_
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *
 =======
 *Ultimo aggiornamento: 2026-02-26*
@@ -135,3 +136,6 @@ Per activity_log, il nome corretto è `create_activity_log_table.php`, non `fix_
 =======
 *Ultimo aggiornamento: 2026-02-26*
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+*
+>>>>>>> 3cbe4341 (.)

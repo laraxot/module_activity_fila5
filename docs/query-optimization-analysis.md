@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+This optimization plan will significantly improve the Activity module's performance while maintaining all existing functionality.
+>>>>>>> 3cbe4341 (.)
 # Activity Module - Query Optimization Analysis
 
 ## Overview
@@ -26,6 +30,7 @@ public static function getTableQuery(): Builder
 - Query 102-151: `SELECT * FROM [model_table] WHERE id = ?` (for each subject)
 
 **Optimization**:
+<<<<<<< HEAD
 ```php
 public static function getTableQuery(): Builder
 {
@@ -33,34 +38,50 @@ public static function getTableQuery(): Builder
         ->with(['subject', 'causer'])
         ->latest();
 }
+=======
+        ->with(['subject', 'causer'])
+        ->latest();
+>>>>>>> 3cbe4341 (.)
 
 // Add to ActivityResource table configuration
 Tables\Columns\TextColumn::make('causer.name')
     ->label('User')
     ->sortable(['causer_type', 'causer_id'])
     ->searchable(),
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> 3cbe4341 (.)
 
 ### 2. Batch Activity Processing (CRITICAL)
 
 **File**: `Modules/Activity/app/Models/Activity.php`
 **Problem**: Individual database inserts for batch operations
 
+<<<<<<< HEAD
 ```php
+=======
+>>>>>>> 3cbe4341 (.)
 // Current inefficient pattern - found in listeners
 foreach ($items as $item) {
     activity()
         ->on($item)
         ->by($user)
         ->log('Item processed');
+<<<<<<< HEAD
 }
 ```
+=======
+>>>>>>> 3cbe4341 (.)
 
 **Issue**: Each loop iteration creates a separate database transaction
 **Impact**: 1000 items = 1000 separate INSERT queries
 
+<<<<<<< HEAD
 **Optimization**:
 ```php
+=======
+>>>>>>> 3cbe4341 (.)
 // Batch insert approach
 $activities = collect($items)->map(function ($item) use ($user) {
     return [
@@ -77,14 +98,20 @@ $activities = collect($items)->map(function ($item) use ($user) {
 });
 
 Activity::insert($activities->toArray());
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> 3cbe4341 (.)
 
 ### 3. Activity Search and Filtering (HIGH IMPACT)
 
 **File**: Filament ActivityResource table filters
 **Problem**: Inefficient filtering without proper indexes
 
+<<<<<<< HEAD
 ```php
+=======
+>>>>>>> 3cbe4341 (.)
 // Current filtering causes full table scans
 Tables\Filters\SelectFilter::make('log_name')
     ->options(function () {
@@ -92,7 +119,10 @@ Tables\Filters\SelectFilter::make('log_name')
             ->pluck('log_name', 'log_name')
             ->toArray(); // Scans entire table!
     }),
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> 3cbe4341 (.)
 
 **Required Database Optimization**:
 ```sql
@@ -101,27 +131,37 @@ CREATE INDEX idx_activity_log_name_created ON activity_log(log_name, created_at)
 CREATE INDEX idx_activity_subject_type_created ON activity_log(subject_type, created_at);
 CREATE INDEX idx_activity_causer_created ON activity_log(causer_type, causer_id, created_at);
 CREATE INDEX idx_activity_batch_uuid ON activity_log(batch_uuid) WHERE batch_uuid IS NOT NULL;
+<<<<<<< HEAD
 ```
 
 **Optimized Filter Options**:
 ```php
 Tables\Filters\SelectFilter::make('log_name')
     ->options(function () {
+=======
+
+**Optimized Filter Options**:
+>>>>>>> 3cbe4341 (.)
         return Cache::remember('activity_log_names', 3600, function () {
             return Activity::select('log_name')
                 ->distinct()
                 ->orderBy('log_name')
+<<<<<<< HEAD
                 ->pluck('log_name', 'log_name')
                 ->toArray();
         });
     }),
 ```
+=======
+                ->toArray();
+>>>>>>> 3cbe4341 (.)
 
 ### 4. Event Sourcing Query Patterns (MEDIUM IMPACT)
 
 **File**: `Modules/Activity/app/Models/StoredEvent.php`
 **Problem**: Inefficient event replay queries
 
+<<<<<<< HEAD
 ```php
 // Current pattern loads all events into memory
 public function getEventsAfter($timestamp)
@@ -154,22 +194,46 @@ public static function getTableQuery(): Builder
         ->latest();
 }
 ```
+=======
+// Current pattern loads all events into memory
+public function getEventsAfter($timestamp)
+    return StoredEvent::where('created_at', '>', $timestamp)
+        ->orderBy('created_at')
+        ->get(); // Loads potentially millions of records!
+
+// Use chunked processing for large event replays
+public function replayEventsAfter($timestamp, callable $callback)
+    StoredEvent::where('created_at', '>', $timestamp)
+        ->chunk(1000, function ($events) use ($callback) {
+            foreach ($events as $event) {
+                $callback($event);
+
+// For Filament display, use pagination
+        ->select(['id', 'event_class', 'created_at', 'aggregate_uuid'])
+>>>>>>> 3cbe4341 (.)
 
 ### 5. Snapshot Generation (HIGH IMPACT)
 
 **File**: `Modules/Activity/app/Models/Snapshot.php`
 **Problem**: Heavy aggregation queries without optimization
 
+<<<<<<< HEAD
 ```php
 // Current expensive aggregation
 public function generateSnapshot($aggregateId)
 {
     $events = StoredEvent::where('aggregate_uuid', $aggregateId)
         ->orderBy('created_at')
+=======
+// Current expensive aggregation
+public function generateSnapshot($aggregateId)
+    $events = StoredEvent::where('aggregate_uuid', $aggregateId)
+>>>>>>> 3cbe4341 (.)
         ->get(); // Loads all events for aggregate
 
     // Heavy processing in PHP instead of database
     $state = [];
+<<<<<<< HEAD
     foreach ($events as $event) {
         $state = $this->applyEvent($state, $event);
     }
@@ -181,6 +245,11 @@ public function generateSnapshot($aggregateId)
 // Use database aggregation where possible
 public function generateSnapshot($aggregateId)
 {
+=======
+        $state = $this->applyEvent($state, $event);
+
+// Use database aggregation where possible
+>>>>>>> 3cbe4341 (.)
     // Get latest snapshot first
     $latestSnapshot = Snapshot::where('aggregate_uuid', $aggregateId)
         ->latest('created_at')
@@ -194,23 +263,32 @@ public function generateSnapshot($aggregateId)
 
     if ($fromDate) {
         $query->where('created_at', '>', $fromDate);
+<<<<<<< HEAD
     }
+=======
+>>>>>>> 3cbe4341 (.)
 
     // Use chunked processing
     $state = $latestSnapshot ? $latestSnapshot->state : [];
 
     $query->chunk(500, function ($events) use (&$state) {
+<<<<<<< HEAD
         foreach ($events as $event) {
             $state = $this->applyEvent($state, $event);
         }
     });
 }
 ```
+=======
+>>>>>>> 3cbe4341 (.)
 
 ## Activity Module Specific Optimizations
 
 ### Database Schema Improvements
+<<<<<<< HEAD
 ```sql
+=======
+>>>>>>> 3cbe4341 (.)
 -- Activity log partitioning for large datasets
 ALTER TABLE activity_log PARTITION BY RANGE (YEAR(created_at)) (
     PARTITION p2023 VALUES LESS THAN (2024),
@@ -225,6 +303,7 @@ CREATE INDEX idx_stored_events_event_class ON stored_events(event_class);
 
 -- Snapshots optimization
 CREATE INDEX idx_snapshots_aggregate_created ON snapshots(aggregate_uuid, created_at DESC);
+<<<<<<< HEAD
 ```
 
 ### Caching Strategy
@@ -236,6 +315,14 @@ class ActivityStatsService
     {
         return Cache::remember('activity_today_stats', 300, function () {
             return [
+=======
+
+### Caching Strategy
+// Activity statistics caching
+class ActivityStatsService
+    public function getTodayStats(): array
+        return Cache::remember('activity_today_stats', 300, function () {
+>>>>>>> 3cbe4341 (.)
                 'total_activities' => Activity::whereDate('created_at', today())->count(),
                 'unique_users' => Activity::whereDate('created_at', today())
                     ->distinct('causer_id')
@@ -247,6 +334,7 @@ class ActivityStatsService
                     ->limit(5)
                     ->pluck('count', 'description')
                     ->toArray(),
+<<<<<<< HEAD
             ];
         });
     }
@@ -260,11 +348,19 @@ class ProcessBatchActivitiesJob implements ShouldQueue
 {
     public function handle(array $activities): void
     {
+=======
+
+### Background Processing
+// Queue heavy activity processing
+class ProcessBatchActivitiesJob implements ShouldQueue
+    public function handle(array $activities): void
+>>>>>>> 3cbe4341 (.)
         // Process activities in background to avoid blocking requests
         $chunks = array_chunk($activities, 100);
 
         foreach ($chunks as $chunk) {
             Activity::insert($chunk);
+<<<<<<< HEAD
         }
     }
 }
@@ -272,6 +368,11 @@ class ProcessBatchActivitiesJob implements ShouldQueue
 // Usage in controllers/listeners
 dispatch(new ProcessBatchActivitiesJob($activitiesData));
 ```
+=======
+
+// Usage in controllers/listeners
+dispatch(new ProcessBatchActivitiesJob($activitiesData));
+>>>>>>> 3cbe4341 (.)
 
 ## Performance Impact Assessment
 
@@ -302,7 +403,10 @@ dispatch(new ProcessBatchActivitiesJob($activitiesData));
 - Event replay processing time
 
 ### Monitoring Setup:
+<<<<<<< HEAD
 ```php
+=======
+>>>>>>> 3cbe4341 (.)
 // Add to AppServiceProvider
 DB::listen(function ($query) {
     if ($query->time > 1000) { // Queries over 1 second
@@ -311,6 +415,7 @@ DB::listen(function ($query) {
             'bindings' => $query->bindings,
             'time' => $query->time
         ]);
+<<<<<<< HEAD
     }
 });
 ```
@@ -639,10 +744,14 @@ This optimization plan will significantly improve the Activity module's performa
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+
+>>>>>>> 3cbe4341 (.)
 ---
 module: theme
 topic: query-optimization-analysis
 canonical: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
+<<<<<<< HEAD
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
@@ -651,3 +760,9 @@ See canonical documentation: ../../../Themes/docs/shared-components/QUERY_OPTIMI
 =======
 >>>>>>> 35d8cf69 (Initial commit)
 >>>>>>> laraxot/dev
+=======
+
+See canonical documentation: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
+
+
+>>>>>>> 3cbe4341 (.)

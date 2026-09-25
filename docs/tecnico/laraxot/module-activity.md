@@ -56,10 +56,15 @@ Activity::log('Utente ha modificato il profilo', [
 // Log automatico per modelli
 protected static $logAttributes = ['name', 'email'];
 protected static $logOnlyDirty = true;
+<<<<<<< HEAD
 ```
 
 ### Query Attività
 ```php
+=======
+
+### Query Attività
+>>>>>>> 3cbe4341 (.)
 // Recupera tutte le attività
 $activities = Activity::all();
 
@@ -68,11 +73,15 @@ $userActivities = Activity::where('user_id', $userId)->get();
 
 // Filtra per tipo
 $modelChanges = Activity::where('type', 'model_change')->get();
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> 3cbe4341 (.)
 
 ## Integrazione con Filament
 
 ### Resource
+<<<<<<< HEAD
 ```php
 use Modules\Activity\Filament\Resources\ActivityResource;
 
@@ -82,6 +91,14 @@ class ActivityResource extends XotBaseResource
     
     public static function getTableColumns(): array
     {
+=======
+use Modules\Activity\Filament\Resources\ActivityResource;
+
+class ActivityResource extends XotBaseResource
+    protected static ?string $model = Activity::class;
+    
+    public static function getTableColumns(): array
+>>>>>>> 3cbe4341 (.)
         return [
             TextColumn::make('user.name')
                 ->label('Utente'),
@@ -91,6 +108,7 @@ class ActivityResource extends XotBaseResource
                 ->label('Data')
                 ->dateTime('d/m/Y H:i:s'),
         ];
+<<<<<<< HEAD
     }
 }
 ```
@@ -102,10 +120,18 @@ class ActivityTest extends TestCase
 {
     public function test_can_log_activity(): void
     {
+=======
+
+## Testing
+
+class ActivityTest extends TestCase
+    public function test_can_log_activity(): void
+>>>>>>> 3cbe4341 (.)
         $user = User::factory()->create();
 
         Activity::log('Test activity', [
             'user_id' => $user->id
+<<<<<<< HEAD
         ]);
 
         $this->assertDatabaseHas('activities', [
@@ -115,6 +141,11 @@ class ActivityTest extends TestCase
     }
 }
 ```
+=======
+
+        $this->assertDatabaseHas('activities', [
+            'description' => 'Test activity',
+>>>>>>> 3cbe4341 (.)
 
 ## Best Practices
 
@@ -148,6 +179,7 @@ class ActivityTest extends TestCase
 3. **Manutenzione**:
    - Pulizia periodica dei log
    - Backup dei dati di attività
+<<<<<<< HEAD
    - Monitoraggio delle performance
 <<<<<<< HEAD
 
@@ -299,10 +331,44 @@ class ActivityTest extends TestCase
    - Pulizia periodica dei log
    - Backup dei dati di attività
    - Monitoraggio delle performance
+=======
+# Modulo Activity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 3cbe4341 (.)
 ---
 module: theme
 topic: module-activity
 canonical: ../../../../../Themes/docs/shared-components/module-activity.md
+<<<<<<< HEAD
 ---
 
 <<<<<<< HEAD
@@ -315,3 +381,7 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/module
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
 >>>>>>> 4fb998e0 (.)
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
+>>>>>>> 3cbe4341 (.)

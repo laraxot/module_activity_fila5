@@ -1,6 +1,9 @@
 # Activity Module: Philosophy, Purpose, and Design Principles
 
+<<<<<<< HEAD
 **Date:** December 23, 2025
+=======
+>>>>>>> 3cbe4341 (.)
 
 ## 🎯 Purpose and Core Responsibilities
 

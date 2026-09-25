@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, SaluteMo, Xot
 =======
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
@@ -7,6 +8,9 @@
 =======
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+# Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
+>>>>>>> 3cbe4341 (.)
 
 ## Modulo Activity
 
@@ -82,6 +86,7 @@ Il modulo UI contiene solo componenti Blade e risorse frontend, nessun modello E
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Modulo SaluteMo
 =======
 ## Modulo <nome progetto>
@@ -89,6 +94,9 @@ Il modulo UI contiene solo componenti Blade e risorse frontend, nessun modello E
 =======
 ## Modulo <nome progetto>
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+## Modulo <nome progetto>
+>>>>>>> 3cbe4341 (.)
 
 ### Modelli Attivi e Business Logic
 | Modello | Factory | Seeder | Utilizzo Business Logic |
@@ -106,6 +114,7 @@ Il modulo UI contiene solo componenti Blade e risorse frontend, nessun modello E
 - **PatientSeeder.php.old** - 🗑️ Da rimuovere
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **SaluteMoDatabaseSeeder.php** - ✅ Mantiene struttura
 =======
 - **<nome progetto>DatabaseSeeder.php** - ✅ Mantiene struttura
@@ -113,6 +122,9 @@ Il modulo UI contiene solo componenti Blade e risorse frontend, nessun modello E
 =======
 - **<nome progetto>DatabaseSeeder.php** - ✅ Mantiene struttura
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+- **<nome progetto>DatabaseSeeder.php** - ✅ Mantiene struttura
+>>>>>>> 3cbe4341 (.)
 
 ### Note
 Modulo specifico per Modena, attualmente non utilizzato attivamente.
@@ -165,6 +177,7 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 ### Totale Modelli Analizzati
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **SaluteOra**: 20 modelli attivi, 7 obsoleti
 =======
 - ****: 20 modelli attivi, 7 obsoleti
@@ -172,6 +185,9 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 =======
 - ****: 20 modelli attivi, 7 obsoleti
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+- ****: 20 modelli attivi, 7 obsoleti
+>>>>>>> 3cbe4341 (.)
 - **User**: 35+ modelli attivi
 - **Geo**: 12 modelli attivi, 1 obsoleto
 - **Media**: 4 modelli attivi
@@ -185,6 +201,7 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 - **UI**: 0 modelli (solo componenti)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **SaluteMo**: 2 modelli base, 1 obsoleto
 =======
 - **<nome progetto>**: 2 modelli base, 1 obsoleto
@@ -192,6 +209,9 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 =======
 - **<nome progetto>**: 2 modelli base, 1 obsoleto
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+- **<nome progetto>**: 2 modelli base, 1 obsoleto
+>>>>>>> 3cbe4341 (.)
 - **Xot**: 12+ modelli sistema, molti base abstract
 
 ### Factory Coverage
@@ -211,6 +231,7 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 ### Moduli Critici per Business Logic
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **SaluteOra** - Core sanitario ✅ Completo
 2. **User** - Autenticazione ✅ Completo  
 =======
@@ -221,6 +242,10 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 1. **** - Core sanitario ✅ Completo
 2. **User** - Autenticazione ✅ Completo
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+1. **** - Core sanitario ✅ Completo
+2. **User** - Autenticazione ✅ Completo
+>>>>>>> 3cbe4341 (.)
 3. **Notify** - Comunicazioni ✅ Completo
 4. **Media** - File management ✅ Completo
 5. **Geo** - Localizzazione ✅ Completo
@@ -236,10 +261,13 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 *Ultimo aggiornamento: Gennaio 2025*
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Analisi completa sistema SaluteOra: 150+ modelli, 14 moduli*
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 *Analisi completa sistema : 150+ modelli, 14 moduli*
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
 
@@ -428,8 +456,12 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 
 *Ultimo aggiornamento: Gennaio 2025*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
 >>>>>>> 0a02158a (.)
 =======
 *Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+*Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
+>>>>>>> 3cbe4341 (.)

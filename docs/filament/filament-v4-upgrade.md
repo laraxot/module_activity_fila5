@@ -1,19 +1,36 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Filament v4 Upgrade Documentation
 
 ## Overview
 This document outlines the key changes and upgrades implemented for Filament v4 in the Activity module.
+=======
+- [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
+# Filament v4 Upgrade Documentation
+
+> **Storico** — migrazione verso Filament v4 (2025). **Stack attuale del progetto: Filament v5.** Vedi [filament-version.md](../filament-version.md) e [filament-version-policy.md](../../../../docs/wiki/memories/filament-version-policy.md).
+
+## Overview
+This document outlines the key changes and upgrades implemented for Filament v4 in the Activity module (archival).
+>>>>>>> 3cbe4341 (.)
 
 ## Key Changes Made
 
 ### 1. Schema-based Resource Definitions
+<<<<<<< HEAD
 - **Updated**: `ActivityResource` now uses `getFormSchema()` method
+=======
+>>>>>>> 3cbe4341 (.)
 - **New Pattern**: Returns array of `Filament\Schemas\Components\Component`
 - **Migration**: Moved from v3 `form(Form $form)` to v4 schema approach
 
 ```php
 // v4 Approach (Current)
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> 3cbe4341 (.)
 {
     return [
         'log_name' => TextInput::make('log_name')->required()->maxLength(255),
@@ -24,8 +41,11 @@ public function getFormSchema(): array
 ```
 
 ### 2. Table Method Updates
+<<<<<<< HEAD
 - **Updated**: Table actions now use `recordActions()` instead of `actions()`
 - **Updated**: Bulk actions now use `toolbarActions()`
+=======
+>>>>>>> 3cbe4341 (.)
 - **Base Class**: `XotBaseListRecords` properly implements v4 table patterns
 
 ### 3. Base Resource Updates
@@ -49,6 +69,7 @@ public function getFormSchema(): array
 ## References
 
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
+<<<<<<< HEAD
 - [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
 =======
 <<<<<<< HEAD
@@ -107,10 +128,13 @@ public static function getFormSchema(): array
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 ---
 module: theme
 topic: filament-v4-upgrade
 canonical: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
+<<<<<<< HEAD
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
@@ -119,3 +143,9 @@ See canonical documentation: ../../../../Themes/docs/shared-components/FILAMENT_
 =======
 >>>>>>> 35d8cf69 (Initial commit)
 >>>>>>> laraxot/dev
+=======
+
+See canonical documentation: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
+
+
+>>>>>>> 3cbe4341 (.)

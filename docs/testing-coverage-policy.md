@@ -17,6 +17,7 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 - `.env.testing` è uguale a `.env` tranne per i nomi database
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)
 =======
 - I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
@@ -25,6 +26,10 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 - I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
 >>>>>>> 35d8cf69 (Initial commit)
 - Le variabili `DB_CONNECTION`, `DB_DATABASE` **NON** devono essere sovrascritte in phpunit.xml
+=======
+- I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)
+- Le variabili `DB_CONNECTION`, `DB_DATABASE` **NON** devono essere sovrascritte in phpunit.xml (.)
+>>>>>>> 3cbe4341 (.)
 - Laravel carica `.env.testing` quando `APP_ENV=testing`
 
 ### 3. DatabaseTransactions
@@ -34,6 +39,7 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 - **CRITICO**: La connessione `activity` DEVE essere inclusa. Senza di essa, ActivityLoggerTest getRecent fallisce per inquinamento dati.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`)
 =======
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite una volta: `php artisan migrate --env=testing`
@@ -41,6 +47,9 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 =======
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite una volta: `php artisan migrate --env=testing`
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+- Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`)
+>>>>>>> 3cbe4341 (.)
 
 ### 4. Connessioni Database
 
@@ -54,6 +63,9 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 ```env
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3cbe4341 (.)
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE_USER=<nome progetto>_data_test
 ```
@@ -76,6 +88,7 @@ php artisan migrate --env=testing --path=Modules/Activity/database/migrations
   - `Modules/Xot/app`
   - `Modules/User/app`
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
@@ -95,6 +108,8 @@ php artisan config:clear
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 ## Workflow Coverage
 
 ### Comandi
@@ -139,6 +154,7 @@ tests/
 - [testing-strategy-implementation](testing-strategy-implementation.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
 =======
 - [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
@@ -146,3 +162,6 @@ tests/
 =======
 - [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+- [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
+>>>>>>> 3cbe4341 (.)

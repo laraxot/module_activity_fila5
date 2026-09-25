@@ -6,8 +6,12 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Activity\Models\TestModel;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
+=======
+return new class () extends XotBaseMigration {
+>>>>>>> 3cbe4341 (.)
     protected ?string $model_class = TestModel::class;
 
     public function up(): void

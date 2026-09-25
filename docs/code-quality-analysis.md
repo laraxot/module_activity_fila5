@@ -7,9 +7,12 @@
 #### N+1 Queries in Activity Logs
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 **Problem**: 50-100 queries per page load
 **Issues**:
 - N+1 queries when loading activity logs
@@ -316,7 +319,11 @@ private function updateActivityStatistics($activityData): void
 **Problem**: Nested search conditions
 **Solution**: Use query builders and break into smaller methods
 
+<<<<<<< HEAD
 ## 🔧 Laravel 13 Compliance Issues
+=======
+## 🔧 Laravel 12 Compliance Issues
+>>>>>>> 3cbe4341 (.)
 
 ### 1. Database Query Optimization
 **Problem**: Inefficient database queries
@@ -379,9 +386,12 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 
 #### N+1 Queries in Activity Logs
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 
 **Problem**: 50-100 queries per page load
 
@@ -494,12 +504,16 @@ public function searchActivities($searchTerm, $filters = [])
     
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     
 >>>>>>> 0a02158a (.)
 =======
     
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+    
+>>>>>>> 3cbe4341 (.)
     return Cache::remember($cacheKey, 300, function() use ($searchTerm, $filters) {
         $query = ActivityLog::with(['causer', 'subject'])
             ->where(function($q) use ($searchTerm) {
@@ -700,7 +714,11 @@ private function updateActivityStatistics($activityData): void
 **Problem**: Nested search conditions
 **Solution**: Use query builders and break into smaller methods
 
+<<<<<<< HEAD
 ## 🔧 Laravel 13 Compliance Issues
+=======
+## 🔧 Laravel 12 Compliance Issues
+>>>>>>> 3cbe4341 (.)
 
 ### 1. Database Query Optimization
 **Problem**: Inefficient database queries
@@ -823,9 +841,12 @@ $defaultRecordsPerPageSelectOption → $defaultPerPageOption
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 - [ACTIVITY_LOG_OPTIMIZATION.md](./performance/activity_log_optimization.md)
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./query_optimization_analysis.md)
 - [bottlenecks.md](./bottlenecks.md)
@@ -834,9 +855,12 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 - [ACTIVITY_LOG_OPTIMIZATION.md](./performance/ACTIVITY_LOG_OPTIMIZATION.md)
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./QUERY_OPTIMIZATION_ANALYSIS.md)
 - [bottlenecks.md](./bottlenecks.md)

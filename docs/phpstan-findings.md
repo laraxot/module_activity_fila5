@@ -1,6 +1,9 @@
 # PHPStan Findings - Activity Module
 
+<<<<<<< HEAD
 **Data**: 2025-10-10
+=======
+>>>>>>> 3cbe4341 (.)
 **Livello**: MAX (9)
 **Status**: ✅ MODELS CORRETTI
 

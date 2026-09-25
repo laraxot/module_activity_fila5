@@ -37,6 +37,10 @@ return array (
   'label' => 'Missing Label',
   'plural_label' => 'Missing Plural label',
   'fields' => 
+<<<<<<< HEAD
   array (
+=======
+  array ()
+>>>>>>> 3cbe4341 (.)
   ),
 );

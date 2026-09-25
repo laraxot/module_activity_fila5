@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 ---
 title: "Agent instructions"
 type: reference
@@ -17,6 +20,7 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Activity Module LLM Wiki Agent Instructions
 =======
 <<<<<<< HEAD
@@ -25,6 +29,9 @@ related:
 >>>>>>> 35d8cf69 (Initial commit)
 # Activity {{TYPE^}} LLM Wiki Agent Instructions
 >>>>>>> laraxot/dev
+=======
+# Activity {{TYPE^}} LLM Wiki Agent Instructions
+>>>>>>> 3cbe4341 (.)
 
 > **Module/Theme:** Activity
 > **Scope:** Activity-specific knowledge only
@@ -165,6 +172,7 @@ Related:
 - [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Module Documentation](../README.md)
 =======
 - [Module Documentation](../README.md)
@@ -172,3 +180,6 @@ Related:
 =======
 - [Module Documentation](../README.md)
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+- [Module Documentation](../README.md)
+>>>>>>> 3cbe4341 (.)

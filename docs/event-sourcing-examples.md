@@ -1,5 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Practical Event Sourcing Examples for Healthcare
+=======
+---
+module: theme
+topic: event-sourcing-examples
+canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+---
+>>>>>>> 3cbe4341 (.)
 
 ## Table of Contents
 - [Patient Management](#patient-management)
@@ -41,12 +49,16 @@ public function registerPatient(
         email: $email,
         registeredAt: new DateTimeImmutable()
     ));
+<<<<<<< HEAD
 }
+=======
+>>>>>>> 3cbe4341 (.)
 ```
 
 ### 2. Patient Information Update
 
 **Event**: `PatientInformationUpdated`
+<<<<<<< HEAD
 ```php
 class PatientInformationUpdated implements ShouldBeStored
 {
@@ -58,30 +70,45 @@ class PatientInformationUpdated implements ShouldBeStored
     ) {}
 }
 ```
+=======
+class PatientInformationUpdated implements ShouldBeStored
+        public array $changes,
+        public string $updatedBy,
+        public DateTimeImmutable $updatedAt
+>>>>>>> 3cbe4341 (.)
 
 ## Appointment Scheduling
 
 ### 1. Scheduling an Appointment
 
 **Event**: `AppointmentScheduled`
+<<<<<<< HEAD
 ```php
 class AppointmentScheduled implements ShouldBeStored
 {
     public function __construct(
         public string $appointmentId,
         public string $patientId,
+=======
+class AppointmentScheduled implements ShouldBeStored
+        public string $appointmentId,
+>>>>>>> 3cbe4341 (.)
         public string $doctorId,
         public DateTimeImmutable $scheduledTime,
         public int $durationMinutes,
         public string $reason,
         public string $scheduledBy
+<<<<<<< HEAD
     ) {}
 }
 ```
+=======
+>>>>>>> 3cbe4341 (.)
 
 ### 2. Rescheduling an Appointment
 
 **Event**: `AppointmentRescheduled`
+<<<<<<< HEAD
 ```php
 class AppointmentRescheduled implements ShouldBeStored
 {
@@ -94,12 +121,19 @@ class AppointmentRescheduled implements ShouldBeStored
     ) {}
 }
 ```
+=======
+class AppointmentRescheduled implements ShouldBeStored
+        public DateTimeImmutable $oldTime,
+        public DateTimeImmutable $newTime,
+        public string $rescheduledBy
+>>>>>>> 3cbe4341 (.)
 
 ## Medical Records
 
 ### 1. Adding a Medical Note
 
 **Event**: `MedicalNoteAdded`
+<<<<<<< HEAD
 ```php
 class MedicalNoteAdded implements ShouldBeStored
 {
@@ -107,17 +141,25 @@ class MedicalNoteAdded implements ShouldBeStored
         public string $noteId,
         public string $patientId,
         public string $doctorId,
+=======
+class MedicalNoteAdded implements ShouldBeStored
+        public string $noteId,
+>>>>>>> 3cbe4341 (.)
         public string $content,
         public array $tags,
         public bool $isConfidential,
         public DateTimeImmutable $recordedAt
+<<<<<<< HEAD
     ) {}
 }
 ```
+=======
+>>>>>>> 3cbe4341 (.)
 
 ### 2. Updating Vital Signs
 
 **Event**: `VitalSignsRecorded`
+<<<<<<< HEAD
 ```php
 class VitalSignsRecorded implements ShouldBeStored
 {
@@ -131,30 +173,46 @@ class VitalSignsRecorded implements ShouldBeStored
     ) {}
 }
 ```
+=======
+class VitalSignsRecorded implements ShouldBeStored
+        public string $recordingId,
+        public string $recordedBy,
+        public array $vitals, // [type => value, unit]
+        public ?string $notes,
+>>>>>>> 3cbe4341 (.)
 
 ## Billing and Insurance
 
 ### 1. Creating an Invoice
 
 **Event**: `InvoiceCreated`
+<<<<<<< HEAD
 ```php
 class InvoiceCreated implements ShouldBeStored
 {
     public function __construct(
         public string $invoiceId,
         public string $patientId,
+=======
+class InvoiceCreated implements ShouldBeStored
+        public string $invoiceId,
+>>>>>>> 3cbe4341 (.)
         public array $lineItems,
         public string $status,
         public float $totalAmount,
         public string $currency,
         public DateTimeImmutable $createdAt
+<<<<<<< HEAD
     ) {}
 }
 ```
+=======
+>>>>>>> 3cbe4341 (.)
 
 ### 2. Insurance Claim Filed
 
 **Event**: `InsuranceClaimFiled`
+<<<<<<< HEAD
 ```php
 class InsuranceClaimFiled implements ShouldBeStored
 {
@@ -168,51 +226,76 @@ class InsuranceClaimFiled implements ShouldBeStored
     ) {}
 }
 ```
+=======
+class InsuranceClaimFiled implements ShouldBeStored
+        public string $claimId,
+        public string $insuranceProviderId,
+        public array $services, // [serviceId, description, amount]
+        public DateTimeImmutable $filedAt
+>>>>>>> 3cbe4341 (.)
 
 ## Pharmacy and Prescriptions
 
 ### 1. Prescription Filled
 
 **Event**: `PrescriptionFilled`
+<<<<<<< HEAD
 ```php
 class PrescriptionFilled implements ShouldBeStored
 {
     public function __construct(
+=======
+class PrescriptionFilled implements ShouldBeStored
+>>>>>>> 3cbe4341 (.)
         public string $fulfillmentId,
         public string $prescriptionId,
         public string $pharmacyId,
         public string $pharmacistId,
         public array $medications, // [medId, name, dosage, quantity]
+<<<<<<< HEAD
         public string $status,
         public DateTimeImmutable $filledAt
     ) {}
 }
 ```
+=======
+        public DateTimeImmutable $filledAt
+>>>>>>> 3cbe4341 (.)
 
 ## Integration Patterns
 
 ### 1. External System Integration
 
 **Event**: `ExternalSystemNotificationSent`
+<<<<<<< HEAD
 ```php
 class ExternalSystemNotificationSent implements ShouldBeStored
 {
     public function __construct(
+=======
+class ExternalSystemNotificationSent implements ShouldBeStored
+>>>>>>> 3cbe4341 (.)
         public string $notificationId,
         public string $systemName,
         public string $eventType,
         public array $payload,
+<<<<<<< HEAD
         public string $status,
         public ?string $response,
         public DateTimeImmutable $sentAt
     ) {}
 }
 ```
+=======
+        public ?string $response,
+        public DateTimeImmutable $sentAt
+>>>>>>> 3cbe4341 (.)
 
 ## Testing Strategies
 
 ### 1. Unit Testing Aggregates
 
+<<<<<<< HEAD
 ```php
 class PatientAggregateTest extends TestCase
 {
@@ -225,15 +308,30 @@ class PatientAggregateTest extends TestCase
         
         $aggregate->registerPatient(
             patientId: $patientId,
+=======
+class PatientAggregateTest extends TestCase
+    /** @test */
+    public function it_can_register_a_patient()
+        $patientId = 'patient-123';
+
+        $aggregate = PatientAggregate::retrieve($patientId);
+
+        $aggregate->registerPatient(
+>>>>>>> 3cbe4341 (.)
             firstName: 'John',
             lastName: 'Doe',
             email: 'john@example.com'
         )->persist();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 3cbe4341 (.)
         $this->assertDatabaseHas('stored_events', [
             'event_class' => PatientRegistered::class,
             'aggregate_uuid' => $patientId
         ]);
+<<<<<<< HEAD
     }
 }
 ```
@@ -251,22 +349,41 @@ class PatientProjectorTest extends TestCase
         $patientId = 'patient-123';
         $event = new PatientRegistered(
             patientId: $patientId,
+=======
+
+### 2. Testing Projectors
+
+class PatientProjectorTest extends TestCase
+    use RefreshProjection;
+
+    public function it_projects_patient_registration()
+        $event = new PatientRegistered(
+>>>>>>> 3cbe4341 (.)
             firstName: 'Jane',
             lastName: 'Smith',
             email: 'jane@example.com',
             registeredAt: now()
         );
+<<<<<<< HEAD
         
         event($event);
         
+=======
+
+        event($event);
+
+>>>>>>> 3cbe4341 (.)
         $this->assertDatabaseHas('patients', [
             'id' => $patientId,
             'email' => 'jane@example.com',
             'full_name' => 'Jane Smith'
+<<<<<<< HEAD
         ]);
     }
 }
 ```
+=======
+>>>>>>> 3cbe4341 (.)
 
 ## Conclusion
 
@@ -278,6 +395,7 @@ These examples demonstrate how event sourcing can be applied to various aspects 
 4. **Understandable**: The business logic is expressed in terms of domain events
 
 Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -563,10 +681,13 @@ Remember to always consider the specific needs of your healthcare application an
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 ---
 module: theme
 topic: event-sourcing-examples
 canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+<<<<<<< HEAD
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
@@ -575,3 +696,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/event-sourci
 =======
 >>>>>>> 35d8cf69 (Initial commit)
 >>>>>>> laraxot/dev
+=======
+
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+>>>>>>> 3cbe4341 (.)

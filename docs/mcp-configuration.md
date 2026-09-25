@@ -37,6 +37,10 @@ The Activity module's MCP configuration enables AI assistants to interact with:
     "filesystem": {
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-filesystem", ". progetto>/laravel"],
+<<<<<<< HEAD
+=======
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_<nome progetto>/laravel"],
+>>>>>>> 3cbe4341 (.)
       "description": "Access to Activity module files"
     },
     "database": {
@@ -44,6 +48,10 @@ The Activity module's MCP configuration enables AI assistants to interact with:
       "args": ["-y", "@bytebase/dbhub"],
       "env": {
         "DATABASE_URL": "sqlite://. progetto>/laravel/database/database.sqlite"
+<<<<<<< HEAD
+=======
+        "DATABASE_URL": "sqlite:///var/www/_bases/base_<nome progetto>/laravel/database/database.sqlite"
+>>>>>>> 3cbe4341 (.)
       },
       "description": "SQLite database queries"
     }

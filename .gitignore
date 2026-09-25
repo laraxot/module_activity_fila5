@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Auto-generated forbidden paths — do not edit manually
 # Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
 
@@ -22,6 +23,18 @@ tests/.claude-audit
 # Modulo Activity Laraxot - Template standardizzato
 # Ultimo aggiornamento: 2025-01-31
 # DEPENDENCIES & PACKAGES
+=======
+# ==============================================
+# LARAXOT MODULE ACTIVITY - .GITIGNORE
+# ==============================================
+# Modulo Activity Laraxot - Template standardizzato
+# Ultimo aggiornamento: 2025-01-31
+# ==============================================
+
+# ==============================================
+# DEPENDENCIES & PACKAGES
+# ==============================================
+>>>>>>> 3cbe4341 (.)
 /vendor/
 /vendor
 /node_modules/
@@ -32,14 +45,28 @@ yarn.lock
 composer.lock
 yarn-error.log
 npm-debug.log
+<<<<<<< HEAD
 # BUILD & COMPILED FILES
+=======
+
+# ==============================================
+# BUILD & COMPILED FILES
+# ==============================================
+>>>>>>> 3cbe4341 (.)
 /build
 /build/
 build/
 dist/
 docs/cache/
 cache/
+<<<<<<< HEAD
 # CACHE & TEMPORARY FILES
+=======
+
+# ==============================================
+# CACHE & TEMPORARY FILES
+# ==============================================
+>>>>>>> 3cbe4341 (.)
 *.cache
 *.lock
 *.phar
@@ -52,13 +79,27 @@ cache/
 v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
+<<<<<<< HEAD
 # LOG FILES
+=======
+
+# ==============================================
+# LOG FILES
+# ==============================================
+>>>>>>> 3cbe4341 (.)
 *.log
 error_log
 npm-debug.log*
 yarn-error.log*
 lerna-debug.log*
+<<<<<<< HEAD
 # LARAVEL SPECIFIC
+=======
+
+# ==============================================
+# LARAVEL SPECIFIC
+# ==============================================
+>>>>>>> 3cbe4341 (.)
 bootstrap/compiled.php
 app/storage/
 public/storage
@@ -69,18 +110,39 @@ storage/*.key
 .env
 .env.*
 !.env.example
+<<<<<<< HEAD
 # ENVIRONMENT & CONFIGURATION
+=======
+
+# ==============================================
+# ENVIRONMENT & CONFIGURATION
+# ==============================================
+>>>>>>> 3cbe4341 (.)
 Homestead.yaml
 Homestead.json
 /.vagrant
 /.idea
 .phpintel
 .vscode/
+<<<<<<< HEAD
 # GIT SPECIFIC
 .git-rewrite/
 .git-rewrite
 .git-blame-ignore-revs
 # SYSTEM FILES
+=======
+
+# ==============================================
+# GIT SPECIFIC
+# ==============================================
+.git-rewrite/
+.git-rewrite
+.git-blame-ignore-revs
+
+# ==============================================
+# SYSTEM FILES
+# ==============================================
+>>>>>>> 3cbe4341 (.)
 .DS_Store
 .DS_Store?
 ._*
@@ -89,7 +151,14 @@ Homestead.json
 ehthumbs.db
 Thumbs.db
 *~
+<<<<<<< HEAD
 # BACKUP FILES
+=======
+
+# ==============================================
+# BACKUP FILES
+# ==============================================
+>>>>>>> 3cbe4341 (.)
 *.old
 *.old1
 *.old2
@@ -100,6 +169,7 @@ Thumbs.db
 *.bak
 *.bakcup
 *.new
+<<<<<<< HEAD
 # DEVELOPMENT TOOLS
 .windsurf/
 .cursor/
@@ -110,11 +180,39 @@ docs/phpstan/
 lang/lang/
 resources/lang/
 # OLD DIRECTORIES (LEGACY CLEANUP)
+=======
+
+# ==============================================
+# DEVELOPMENT TOOLS
+# ==============================================
+.windsurf/
+.cursor/
+.phpstorm.meta.php
+
+# ==============================================
+# DOCUMENTATION CACHE
+# ==============================================
+docs/phpstan/
+docs/cache/
+docs/legacy/
+docs/legacy/**
+
+# ==============================================
+# LANGUAGE FILES
+# ==============================================
+lang/lang/
+resources/lang/
+
+# ==============================================
+# OLD DIRECTORIES (LEGACY CLEANUP)
+# ==============================================
+>>>>>>> 3cbe4341 (.)
 resources/views/Components_old/
 database/Migrations_old/
 database/Seeders_old/
 database/Factories_old/
 database_old/
+<<<<<<< HEAD
 # MODULE SPECIFIC - ACTIVITY
 # File di configurazione locale
 config/local.php
@@ -126,16 +224,51 @@ storage/logs/
 activity_test_data.json
 test_activity_logs.sql
 # END OF ACTIVITY .GITIGNORE
+=======
+
+# ==============================================
+# MODULE SPECIFIC - ACTIVITY
+# ==============================================
+# File di configurazione locale
+config/local.php
+config/development.php
+
+# Cache activity log
+storage/activity/
+storage/logs/
+
+# File di test activity
+activity_test_data.json
+test_activity_logs.sql
+
+# ==============================================
+# END OF ACTIVITY .GITIGNORE
+# ==============================================
+
+>>>>>>> 3cbe4341 (.)
 # File specifici del progetto
 *.fila2
 laravel
 public_html
 tests/coverage
+<<<<<<< HEAD
 tests/coverage/
 tests/coverage.xml/
 activity_coverage.xml
 # -----------------------------------------------------------------------------
 # Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+=======
+lang/lang/
+_docs/
+_docs/
+tests/coverage/
+tests/coverage.xml/
+activity_coverage.xml
+
+# -----------------------------------------------------------------------------
+# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+# -----------------------------------------------------------------------------
+>>>>>>> 3cbe4341 (.)
 *~HEAD
 *~BASE
 *~LOCAL
@@ -143,6 +276,7 @@ activity_coverage.xml
 *.orig
 *.rej
 *~head
+<<<<<<< HEAD
 agentdb.rvf
 tests/AuditCoverage
 # AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
@@ -182,3 +316,22 @@ workbench/
 .cursor~*
 .windsurf~*
 tests/activity_coverage.xml
+=======
+tests/coverage/
+tests/coverage.xml/
+activity_coverage.xml
+*~head
+agentdb.rvf
+build/
+docs/legacy
+audit-coverage/
+.claude-audit
+.claude-audit-ai
+.claude-audit-ai-agent
+.devcontainer/
+.vscode/
+workbench/
+
+# Laraxot — tests/AuditCoverage forbidden (AI scaffold, never commit)
+tests/AuditCoverage/
+>>>>>>> 3cbe4341 (.)

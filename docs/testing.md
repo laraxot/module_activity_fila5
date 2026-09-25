@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Activity Module Testing"
 type: guide
@@ -39,6 +40,8 @@ test('logs causer on user action', function () {
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 # Testing Documentation
 
 ## Overview
@@ -299,7 +302,11 @@ protected function createApplication()
 
 ### External Resources
 
+<<<<<<< HEAD
 - [Laravel 13.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+=======
+- [Laravel 12.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+>>>>>>> 3cbe4341 (.)
 - [Pest Installation Guide](https://pestphp.com/docs/installation)
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 
@@ -426,8 +433,12 @@ Remember: Good tests are the foundation of reliable software development.
 
 *Last updated: January 2025*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *
 >>>>>>> 0a02158a (.)
 =======
 *
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+*
+>>>>>>> 3cbe4341 (.)

@@ -14,5 +14,9 @@
 - Copri casi limite come transizioni di stato non valide.
 
 ## Documentazione
+<<<<<<< HEAD
 - Aggiorna `docs/index.md` con nuovi modelli e relazioni.
+=======
+- Aggiorna `docs/INDEX.md` con nuovi modelli e relazioni.
+>>>>>>> 3cbe4341 (.)
 - Collega a `Projects` e `Tasks` per contesto operativo.

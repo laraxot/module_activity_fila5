@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: aws_test_vs_database_connection
@@ -10,6 +11,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/aws-test-vs-
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 # AWS Test Bugfix vs Database Connection Configuration
 
 ## Overview
@@ -54,8 +57,12 @@ This is required for proper database transaction management in the multi-tenant 
 
 ## Docblock Comments
 <<<<<<< HEAD
+<<<<<<< HEAD
 The pattern `/** @reference/to/documentation.md type */` may be used to document that a property can have a specific type while referencing documentation, but this pattern is specifically NOT appropriate for the Activity module's database connection property, which must always be 'activity'.
 >>>>>>> 0a02158a (.)
 =======
 The pattern `/** @reference/to/documentation.md type */` may be used to document that a property can have a specific type while referencing documentation, but this pattern is specifically NOT appropriate for the Activity module's database connection property, which must always be 'activity'.
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+The pattern `/** @reference/to/documentation.md type */` may be used to document that a property can have a specific type while referencing documentation, but this pattern is specifically NOT appropriate for the Activity module's database connection property, which must always be 'activity'.
+>>>>>>> 3cbe4341 (.)

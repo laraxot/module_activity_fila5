@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Event Sourcing in Laravel
 
 Questo documento fornisce una guida completa sull'implementazione dell'**Event Sourcing** in Laravel, basata sul libro *Event Sourcing in Laravel* di Brent Roose, pubblicato da Spatie nel 2021. Include concetti fondamentali, pattern avanzati, sfide, casi d'uso pratici e consigli per migliorare il codice esistente nel contesto del modulo `Activity`.
@@ -160,12 +161,15 @@ L'Event Sourcing offre un approccio potente per gestire la complessità nel modu
 
 Se hai bisogno di ulteriori dettagli o di un'implementazione specifica, fammi sapere!
 =======
+=======
+>>>>>>> 3cbe4341 (.)
 ---
 module: theme
 topic: event-sourcing-duplicate
 canonical: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -180,3 +184,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/event-sourci
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
 >>>>>>> 2d6a374 (.)
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
+>>>>>>> 3cbe4341 (.)

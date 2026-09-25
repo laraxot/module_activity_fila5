@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: Activity
 topic: METODI_DUPLICATI_ANALISI
@@ -198,6 +199,8 @@ _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨
@@ -1297,8 +1300,12 @@ public function getTableFilters(): array
 4. Implementazione ColumnBuilder
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
 >>>>>>> 0a02158a (.)
 =======
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+**Domande?** Chiedi alla Super Mucca! 🐄⚡
+>>>>>>> 3cbe4341 (.)

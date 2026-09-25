@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 📚 **Indice Documentazione Modulo Activity**
 =======
 <<<<<<< HEAD
@@ -57,6 +58,8 @@ updated: 2026-07-23
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 # 📚 **Indice Documentazione Modulo Activity**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -99,16 +102,23 @@ updated: 2026-07-23
 | CODE_QUALITY_ANALYSIS.md | Code quality |
 | QUERY_OPTIMIZATION_ANALYSIS.md | Query optimization |
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3cbe4341 (.)
 ### Filament
 | File | Scopo |
 |------|-------|
 | FILAMENT_RESOURCE_GUIDELINES.md | Resource guidelines |
-<<<<<<< HEAD
 
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
+<<<<<<< HEAD
 =======
+=======
+- `spatie/laravel-activitylog` - Audit trail
+- `spatie/laravel-event-sourcing` - Event sourcing, CQRS
+>>>>>>> 3cbe4341 (.)
 
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
@@ -157,9 +167,12 @@ use Modules\Activity\Actions\LogActivityAction;
 
 // Pattern di utilizzo
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 app(LogActivityAction::class)->execute(
     type: 'user.login',
     user: $user,
@@ -169,6 +182,7 @@ app(LogActivityAction::class)->execute(
 );
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 ## 📦 Pacchetti Composer
@@ -190,6 +204,8 @@ app(LogActivityAction::class)->execute(
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 ### 📊 Best Practices
 
 1. **Type Safety Nativa**: Il modulo è già type-safe
@@ -281,7 +297,10 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 ---
 
 *Modulo di riferimento per PHPStan compliance nel progetto Laraxot*
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3cbe4341 (.)
 
 ## Dependency Intelligence
 
@@ -293,6 +312,7 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 - Riferimento globale: [Pre-Edit Docs-First Rule](../../../../docs/rules/pre-edit-docs-first-rule.md)
 - Memory: [Pre-Edit Docs-First Memory](../../../../docs/memory/pre-edit-docs-first-memory.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
 =======
 <<<<<<< HEAD
@@ -302,3 +322,6 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
 >>>>>>> 35d8cf69 (Initial commit)
 >>>>>>> laraxot/dev
+=======
+- Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
+>>>>>>> 3cbe4341 (.)

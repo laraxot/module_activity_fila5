@@ -12,6 +12,10 @@ use Illuminate\Support\Str;
 use Modules\Activity\Models\StoredEvent;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
+=======
+use Spatie\SchemalessAttributes\SchemalessAttributes;
+>>>>>>> 3cbe4341 (.)
 
 uses(\Modules\Activity\Tests\TestCase::class);
 

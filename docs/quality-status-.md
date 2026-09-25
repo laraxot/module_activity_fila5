@@ -92,6 +92,10 @@ public function withCustomProperties(array $attributes): static
 - `/docs/guides/` - Implementation guides
 - `/docs/phpstan/` - PHPStan specific docs
 - `/docs/archivedd/` - Historical records
+<<<<<<< HEAD
+=======
+- `/docs/archived/` - Historical records
+>>>>>>> 3cbe4341 (.)
 
 ## 🎓 Documentation Structure
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Activity Module Filament Resource Guidelines
 
 ## Extension Patterns
@@ -106,3 +107,12 @@ All resources must be tested to ensure:
 - [XotBaseResource Documentation](../../Xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../Xot/project_docs/filament-best-practices.md)
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
+=======
+---
+module: theme
+topic: filament_resource_guidelines
+canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules
+>>>>>>> 3cbe4341 (.)

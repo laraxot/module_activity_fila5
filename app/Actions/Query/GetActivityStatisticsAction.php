@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Activity\Actions\Query;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
+=======
+>>>>>>> 3cbe4341 (.)
 use Illuminate\Support\Facades\Cache;
 use Modules\Activity\Models\Activity;
 use Modules\User\Models\User;
@@ -24,6 +27,7 @@ class GetActivityStatisticsAction
     public function execute(?User $user = null): array
     {
         $userKey = $user?->getKey();
+<<<<<<< HEAD
         $cacheKeySuffix = is_scalar($userKey) ? (string) $userKey : 'global';
         $cacheKey = 'activity.statistics.'.$cacheKeySuffix;
 
@@ -33,6 +37,18 @@ class GetActivityStatisticsAction
         });
 
         return $stats;
+=======
+        $cacheKeySuffix = match (true) {
+            is_int($userKey) => (string) $userKey,
+            is_string($userKey) && $userKey !== '' => $userKey,
+            default => 'global',
+        };
+        $cacheKey = 'activity.statistics.'.$cacheKeySuffix;
+
+        return Cache::remember($cacheKey, now()->addMinutes(5), function () use ($user): array {
+            return $this->computeStatistics($user);
+        });
+>>>>>>> 3cbe4341 (.)
     }
 
     /**
@@ -40,7 +56,10 @@ class GetActivityStatisticsAction
      */
     private function computeStatistics(?User $user): array
     {
+<<<<<<< HEAD
         /** @var Builder<Activity> $query */
+=======
+>>>>>>> 3cbe4341 (.)
         $query = Activity::newQuery();
 
         if ($user) {
@@ -70,15 +89,20 @@ class GetActivityStatisticsAction
      */
     private function countByType(Builder $query): array
     {
+<<<<<<< HEAD
         /** @var Builder<Activity> $clonedQuery */
         $clonedQuery = $query->clone();
 
         /** @var Collection<int, object{event: string, count: int}> $results */
         $results = $clonedQuery
+=======
+        $results = $query->clone()
+>>>>>>> 3cbe4341 (.)
             ->selectRaw('event, COUNT(*) as count')
             ->groupBy('event')
             ->get();
 
+<<<<<<< HEAD
         /** @var array<string, int> $byType */
         $byType = $results->mapWithKeys(function (object $item): array {
             // PHPStan L10: isset() per magic attributes invece di property_exists()
@@ -88,6 +112,23 @@ class GetActivityStatisticsAction
 
             return [(string) $item->event => (int) $item->count];
         })->toArray();
+=======
+        $byType = [];
+        foreach ($results as $activity) {
+            $event = $activity->getAttribute('event');
+            $count = $activity->getAttribute('count');
+
+            if (! is_string($event) || $event === '') {
+                continue;
+            }
+
+            if (! is_int($count) && ! (is_string($count) && ctype_digit($count))) {
+                continue;
+            }
+
+            $byType[$event] = (int) $count;
+        }
+>>>>>>> 3cbe4341 (.)
 
         return $byType;
     }

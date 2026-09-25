@@ -6,6 +6,7 @@ namespace Modules\Activity\Filament\Resources\StoredEventResource\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 use Modules\Activity\Models\StoredEvent;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
@@ -20,10 +21,19 @@ class StoredEventsTable extends XotBaseResourceTable
 
     /**
      * @return array<string, Column>
+=======
+use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
+
+class StoredEventsTable extends XotBaseResourceTable
+{
+    /**
+     * @return array<int|string, Column>
+>>>>>>> 3cbe4341 (.)
      */
     public function getTableColumns(): array
     {
         return [
+<<<<<<< HEAD
             'event_class' => TextColumn::make('event_class')->searchable()->sortable()->wrap(),
             'aggregate_uuid' => TextColumn::make('aggregate_uuid')->searchable()->sortable()->copyable(),
             'aggregate_version' => TextColumn::make('aggregate_version')->numeric()->sortable(),
@@ -35,6 +45,13 @@ class StoredEventsTable extends XotBaseResourceTable
                 ->toggleable(isToggledHiddenByDefault: true),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
             'id' => TextColumn::make('id')->searchable()->sortable()->toggleable(isToggledHiddenByDefault: true),
+=======
+            'id' => TextColumn::make('id')->searchable()->sortable(),
+            'event_class' => TextColumn::make('event_class')->searchable(),
+            'properties' => TextColumn::make('properties')->limit(50),
+            'created_at' => TextColumn::make('created_at')->dateTime(),
+            'updated_at' => TextColumn::make('updated_at')->dateTime(),
+>>>>>>> 3cbe4341 (.)
         ];
     }
 }

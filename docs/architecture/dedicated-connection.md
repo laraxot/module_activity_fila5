@@ -58,6 +58,7 @@ Il **doppio fallback** `env('DB_DATABASE_ACTIVITY', env('DB_DATABASE'))` è la c
 # ✅ CORRETTO — .env.testing
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 DB_DATABASE=<nome progetto>_data_test
 =======
 DB_DATABASE=techplanner_data_test
@@ -65,12 +66,16 @@ DB_DATABASE=techplanner_data_test
 =======
 DB_DATABASE=techplanner_data_test
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+DB_DATABASE=<nome progetto>_data_test
+>>>>>>> 3cbe4341 (.)
 DB_USERNAME=marco
 DB_PASSWORD=marco
 # NESSUNA DB_DATABASE_ACTIVITY, DB_USERNAME_ACTIVITY, DB_PASSWORD_ACTIVITY
 ```
 
 Il fallback in `database.php` garantisce che la connessione `activity` usi automaticamente
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 `<nome progetto>_data_test` senza configurazione aggiuntiva nei test.
@@ -80,6 +85,9 @@ Il fallback in `database.php` garantisce che la connessione `activity` usi autom
 =======
 `techplanner_data_test` senza configurazione aggiuntiva nei test.
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+`<nome progetto>_data_test` senza configurazione aggiuntiva nei test.
+>>>>>>> 3cbe4341 (.)
 
 ---
 

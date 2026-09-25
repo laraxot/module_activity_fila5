@@ -9,10 +9,17 @@ use Modules\Activity\Models\Policies\StoredEventPolicy;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
 
 test('ActivityPolicy can be instantiated', function () {
     $policy = new ActivityPolicy();
+=======
+uses(TestCase::class);
+
+test('ActivityPolicy can be instantiated', function () {
+    $policy = new ActivityPolicy;
+>>>>>>> 3cbe4341 (.)
 
     Assert::assertInstanceOf(ActivityPolicy::class, $policy);
 });
@@ -24,19 +31,31 @@ test('ActivityBasePolicy is an abstract class', function () {
 });
 
 test('SnapshotPolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new SnapshotPolicy();
+=======
+    $policy = new SnapshotPolicy;
+>>>>>>> 3cbe4341 (.)
 
     Assert::assertInstanceOf(SnapshotPolicy::class, $policy);
 });
 
 test('StoredEventPolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new StoredEventPolicy();
+=======
+    $policy = new StoredEventPolicy;
+>>>>>>> 3cbe4341 (.)
 
     Assert::assertInstanceOf(StoredEventPolicy::class, $policy);
 });
 
 test('ActivityPolicy method signatures', function () {
+<<<<<<< HEAD
     $policy = new ActivityPolicy();
+=======
+    $policy = new ActivityPolicy;
+>>>>>>> 3cbe4341 (.)
     $reflection = new ReflectionClass($policy);
     $expectedMethods = ['view', 'create', 'update', 'delete', 'restore', 'forceDelete'];
 

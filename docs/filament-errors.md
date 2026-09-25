@@ -164,10 +164,13 @@ class ListSnapshots extends ListRecords
 - [ ] Documentare le modifiche nel CHANGELOG
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Eseguire PHPStan per verificare altri possibili errori 
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)
 - [ ] Eseguire PHPStan per verificare altri possibili errori
 # Errori Comuni Filament nel Modulo Activity
 
@@ -335,6 +338,9 @@ class ListSnapshots extends ListRecords
 - [ ] Documentare le modifiche nel CHANGELOG
 - [ ] Eseguire PHPStan per verificare altri possibili errori
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> 3cbe4341 (.)

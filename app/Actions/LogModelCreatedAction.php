@@ -10,8 +10,12 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Log Model Created Action.
+<<<<<<< HEAD
  *
  * Logs when a model is created using Queueable Actions
+=======
+ * Optimized for Laraxot architecture.
+>>>>>>> 3cbe4341 (.)
  */
 class LogModelCreatedAction
 {
@@ -21,6 +25,7 @@ class LogModelCreatedAction
         public Model $model,
         public ?Model $user = null,
     ) {
+<<<<<<< HEAD
         if ($user !== null) {
             // Type already narrowed to Model|null, assertion not needed
         }
@@ -40,5 +45,24 @@ class LogModelCreatedAction
         );
 
         return $action->execute();
+=======
+    }
+
+    /**
+     * Execute the action.
+     */
+    public function execute(): Activity
+    {
+        /** @var array<string, mixed> $properties */
+        $properties = $this->model->toArray();
+
+        return (new LogActivityAction(
+            type: 'created',
+            user: $this->user,
+            subject: $this->model,
+            properties: $properties,
+            description: sprintf('%s was created', class_basename($this->model)),
+        ))->execute();
+>>>>>>> 3cbe4341 (.)
     }
 }

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 module: Activity
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
@@ -193,3 +194,17 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 ---
 _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
+=======
+module: theme
+topic: metodi_duplicati_analisi
+canonical: ../../../Themes/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+# 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
+
+**Powered by**: Super Mucca AI 🐄✨  
+**Versione**: 2.0 ULTIMATE  
+**Confidenza**: 99.9% (Dati Reali dal Codice)
+
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+>>>>>>> 3cbe4341 (.)

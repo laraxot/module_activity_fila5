@@ -1,6 +1,9 @@
 # Activity Module - Complete Roadmap 2026
 
+<<<<<<< HEAD
 **Generated**: 2026-01-02
+=======
+>>>>>>> 3cbe4341 (.)
 **Status**: Event Sourcing & Audit Foundation
 **Methodology**: Super Mucca (DRY + KISS + Deep Understanding)
 **PHPStan Level**: 10 ✅ (0 errors)
@@ -246,7 +249,11 @@ class Activity extends SpatieActivity
 #### **2.2 Intelligent Activity Analytics**
 - Implement machine learning for anomaly detection
 - Add user behavior pattern recognition
+<<<<<<< HEAD
 - Create <nome progetto>ive analytics for system usage
+=======
+- Create predictive analytics for system usage
+>>>>>>> 3cbe4341 (.)
 - Add automated security alerting
 
 #### **2.3 Advanced Reporting System**
@@ -308,7 +315,11 @@ class Activity extends SpatieActivity
 #### **5. Void (Intelligence)**
 *"From the emptiness of raw data, wisdom emerges"*
 - Pattern recognition in activities
+<<<<<<< HEAD
 - <nome progetto>ive analytics
+=======
+- Predictive analytics
+>>>>>>> 3cbe4341 (.)
 - Anomaly detection
 
 ### **The Activity Mantras**
@@ -412,25 +423,37 @@ class Activity extends SpatieActivity
 ## 📝 **DECISION LOG**
 
 ### **Snapshot Strategy Decision**
+<<<<<<< HEAD
 **Date**: 2026-01-02
+=======
+>>>>>>> 3cbe4341 (.)
 **Date**: [DATE]
 **Decision**: Create snapshots every 50 events automatically
 **Rationale**: Balance memory usage with snapshot storage overhead
 
 ### **Tenant Isolation Decision**
+<<<<<<< HEAD
 **Date**: 2026-01-02
+=======
+>>>>>>> 3cbe4341 (.)
 **Date**: [DATE]
 **Decision**: Use global scopes with automatic tenant_id injection
 **Rationale**: Transparent isolation without code changes in existing modules
 
 ### **Performance Optimization Decision**
+<<<<<<< HEAD
 **Date**: 2026-01-02
+=======
+>>>>>>> 3cbe4341 (.)
 **Date**: [DATE]
 **Decision**: Partition activities by month, index by causer/subject
 **Rationale**: Optimize for most common query patterns
 
 ### **Event Sourcing Integration Decision**
+<<<<<<< HEAD
 **Date**: 2026-01-02
+=======
+>>>>>>> 3cbe4341 (.)
 **Date**: [DATE]
 **Decision**: Keep Spatie ActivityLog and Event Sourcing separate but complementary
 **Rationale**: Different use cases - ActivityLog for audit, Event Sourcing for state
@@ -525,4 +548,8 @@ class Survey extends BaseModel
 **Next**: Implement database indexes, tenant isolation, and snapshot strategy
 
 **"The system's memory is only as good as its ability to recall what matters when it matters."**
+<<<<<<< HEAD
 *- Super Mucca Methodology*
+=======
+*- Super Mucca Methodology*
+>>>>>>> 3cbe4341 (.)
