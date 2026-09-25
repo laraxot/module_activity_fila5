@@ -5,9 +5,18 @@ declare(strict_types=1);
 namespace Modules\Activity\Filament\Pages;
 
 use Exception;
+<<<<<<< HEAD
 use Filament\Notifications\Notification;
 use Filament\Pages\Concerns\InteractsWithFormActions;
 use Filament\Resources\Pages\Concerns\InteractsWithRecord;
+=======
+use Filament\Forms\Components\Field;
+use Filament\Notifications\Notification;
+use Filament\Pages\Concerns\InteractsWithFormActions;
+use function Safe\json_encode;
+use Filament\Resources\Pages\Concerns\InteractsWithRecord;
+use Filament\Schemas\Components\Component;
+>>>>>>> laraxot/dev
 use Filament\Schemas\Schema;
 use Filament\Tables\Enums\PaginationMode;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
@@ -23,7 +32,11 @@ use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Filament\Resources\Pages\XotBasePage;
+<<<<<<< HEAD
 use Stringable;
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> laraxot/dev
 
 /**
  * Classe base per visualizzare lo storico delle attività di un record.
@@ -40,6 +53,10 @@ use Stringable;
 abstract class ListLogActivities extends XotBasePage
 {
     use CanPaginate;
+<<<<<<< HEAD
+=======
+    use InteractsWithFormActions;
+>>>>>>> laraxot/dev
     use InteractsWithRecord;
     use WithPagination {
         WithPagination::resetPage as resetLivewirePage;
@@ -62,10 +79,15 @@ abstract class ListLogActivities extends XotBasePage
 
         // Convert to string (__() returns string|array|null)
         if (is_array($breadcrumb)) {
+<<<<<<< HEAD
             return implode(' ', array_map(
                 static fn (mixed $value): string => self::stringifyTranslationValue($value),
                 $breadcrumb,
             ));
+=======
+            /** @phpstan-ignore-next-line cast.string */
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $breadcrumb));
+>>>>>>> laraxot/dev
         }
 
         if (is_string($breadcrumb)) {
@@ -89,10 +111,15 @@ abstract class ListLogActivities extends XotBasePage
 
         // __() returns string|array|null
         if (is_array($title)) {
+<<<<<<< HEAD
             return implode(' ', array_map(
                 static fn (mixed $value): string => self::stringifyTranslationValue($value),
                 $title,
             ));
+=======
+            /** @phpstan-ignore-next-line argument.type */
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $title));
+>>>>>>> laraxot/dev
         }
 
         if (is_string($title)) {
@@ -186,7 +213,12 @@ abstract class ListLogActivities extends XotBasePage
             $activity = $this->resolveActivity($key);
             $oldProperties = $this->getOldProperties($activity);
 
+<<<<<<< HEAD
             app(RestoreActivityAction::class)->execute($this->getRecord(), $oldProperties);
+=======
+            Assert::isInstanceOf($this->record, Model::class);
+            app(RestoreActivityAction::class)->execute($this->record, $oldProperties);
+>>>>>>> laraxot/dev
 
             $this->sendRestoreSuccessNotification();
         } catch (Exception $e) {
@@ -208,22 +240,87 @@ abstract class ListLogActivities extends XotBasePage
             throw new InvalidArgumentException('Form must return a Schema instance');
         }
 
+<<<<<<< HEAD
         $labelMap = [];
         foreach ($schema->getFlatFields(withHidden: true) as $field) {
             $labelMap[$field->getName()] = self::stringifyTranslationValue($field->getLabel());
         }
 
         return new Collection($labelMap);
+=======
+        /** @var array<int|string, Component> $componentsArray */
+        $componentsArray = $schema->getComponents();
+
+        /** @var Collection<int, Component> $components */
+        $components = collect($componentsArray);
+
+        /** @var Collection<int, Component> $extracted */
+        $extracted = collect();
+
+        while (true) {
+            /** @var Component|null $component */
+            $component = $components->shift();
+
+            if ($component === null) {
+                break;
+            }
+
+            if ($component instanceof Field) {
+                $extracted->push($component);
+
+                continue;
+            }
+
+            // PHPStan Level 10: Type-safe child components
+            if (method_exists($component, 'getChildComponents')) {
+                $children = $component->getDefaultChildComponents();
+
+                if (\is_array($children) && $children !== []) {
+                    /** @var array<int|string, Component> $safeChildren */
+                    $safeChildren = $children;
+                    /** @var array<int, Component> $normalizedChildren */
+                    $normalizedChildren = array_values($safeChildren);
+                    $components = $components->merge($normalizedChildren);
+
+                    continue;
+                }
+            }
+
+            $extracted->push($component);
+        }
+
+        /** @var Collection<string, string> $labelMap */
+        $labelMap = $extracted
+            ->filter(static fn ($field): bool => $field instanceof Field)
+            ->mapWithKeys(
+                /** @param Field $field
+                 * @return array<string, string>
+                 */
+                static function (Component $field): array {
+                    $name = $field->getName();
+                    $label = $field->getLabel();
+                    $labelString = $label instanceof Htmlable ? $label->toHtml() : (string) $label;
+
+                    return [$name => $labelString];
+                }
+            );
+
+        return $labelMap;
+>>>>>>> laraxot/dev
     }
 
     protected function sendRestoreSuccessNotification(): Notification
     {
         $title = __('activity::activities.events.restore_successful');
         $titleString = is_array($title)
+<<<<<<< HEAD
             ? implode(' ', array_map(
                 static fn (mixed $value): string => self::stringifyTranslationValue($value),
                 $title,
             ))
+=======
+            ? implode(' ', array_map(fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v), $title))
+>>>>>>> laraxot/dev
             : (is_string($title) ? $title : '');
 
         return Notification::make()
@@ -236,10 +333,15 @@ abstract class ListLogActivities extends XotBasePage
     {
         $title = __('activity::activities.events.restore_failed');
         $titleString = is_array($title)
+<<<<<<< HEAD
             ? implode(' ', array_map(
                 static fn (mixed $value): string => self::stringifyTranslationValue($value),
                 $title,
             ))
+=======
+            /** @phpstan-ignore-next-line cast.string */
+            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
+>>>>>>> laraxot/dev
             : (is_string($title) ? $title : '');
 
         $notification = Notification::make()
@@ -253,6 +355,7 @@ abstract class ListLogActivities extends XotBasePage
         return $notification->send();
     }
 
+<<<<<<< HEAD
     private static function stringifyTranslationValue(mixed $value): string
     {
         if (is_string($value)) {
@@ -281,6 +384,8 @@ abstract class ListLogActivities extends XotBasePage
         return '';
     }
 
+=======
+>>>>>>> laraxot/dev
     private function resolveActivity(int|string $key): Activity
     {
         $record = $this->record;
@@ -318,6 +423,7 @@ abstract class ListLogActivities extends XotBasePage
             throw new Exception('Invalid properties format in activity log');
         }
 
+<<<<<<< HEAD
         $oldProperties = [];
         foreach ($old as $field => $value) {
             if (! \is_string($field)) {
@@ -328,5 +434,9 @@ abstract class ListLogActivities extends XotBasePage
         }
 
         return $oldProperties;
+=======
+        /** @var array<string, mixed> $old */
+        return $old;
+>>>>>>> laraxot/dev
     }
 }

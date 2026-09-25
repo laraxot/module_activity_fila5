@@ -15,7 +15,11 @@ trait CanPaginate
 {
     public int|string|null $recordsPerPage = null;
 
+<<<<<<< HEAD
     protected int|string|null $defaultRecordsPerPageSelectOption = null;
+=======
+    protected int|string|null $defaultPerPageOption = null;
+>>>>>>> laraxot/dev
 
     public function updatedRecordsPerPage(): void
     {
@@ -38,17 +42,26 @@ trait CanPaginate
     public function getTablePage(): int
     {
         $page = $this->getPage($this->getPaginationPageName());
+<<<<<<< HEAD
         if (is_numeric($page)) {
             return (int) $page;
         }
         return 1;
+=======
+
+        return is_numeric($page) ? (int) $page : 1;
+>>>>>>> laraxot/dev
     }
 
     public function getDefaultRecordsPerPageSelectOption(): int|string
     {
         $option = session()->get(
             $this->getPerPageSessionKey(),
+<<<<<<< HEAD
             $this->defaultRecordsPerPageSelectOption,
+=======
+            $this->defaultPerPageOption,
+>>>>>>> laraxot/dev
         );
 
         $pageOptions = $this->getRecordsPerPageSelectOptions();

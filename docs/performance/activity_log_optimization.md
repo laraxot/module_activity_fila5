@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_I8cEDd
 ---
 module: theme
@@ -10,6 +11,8 @@ See canonical documentation: ../../../../Themes/docs/shared-components/ACTIVITY_
 =======
 =======
 >>>>>>> 472c43a3 (.)
+=======
+>>>>>>> laraxot/dev
 # Activity Log Optimization - Activity Module
 
 ## 🚨 Critical Issues Identified
@@ -294,6 +297,9 @@ CREATE INDEX idx_activity_log_causer_type ON activity_log(causer_type);
 
 This document provides the roadmap for resolving the performance issues in the Activity module while maintaining data integrity and functionality.
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> .merge_file_v597Wq
 =======
 >>>>>>> 472c43a3 (.)
+=======
+>>>>>>> laraxot/dev

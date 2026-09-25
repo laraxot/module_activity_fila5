@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
 
+<<<<<<< HEAD
 use Closure;
 use Illuminate\Database\Eloquent\Builder;
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Str;
 use Modules\Activity\Database\Factories\ActivityFactory;
@@ -21,6 +24,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
 beforeEach(function () {
@@ -40,6 +44,9 @@ beforeEach(function () {
         $this->markTestSkipped('Database not available: '.$e->getMessage());
     }
 });
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 test('activity module models work together in integrated scenarios', function () {
     $user = UserFactory::new()->createOne();
@@ -186,11 +193,18 @@ test('activity module handles concurrent operations correctly', function () {
     $concurrentActivities = [];
     $concurrentSnapshots = [];
 
+<<<<<<< HEAD
     /** @var list<Closure(): bool> $promises */
     $promises = [];
 
     for ($i = 0; $i < 10; $i++) {
         $promises[] = function () use ($user, &$concurrentActivities, &$concurrentSnapshots, $i): bool {
+=======
+    $promises = [];
+
+    for ($i = 0; $i < 10; $i++) {
+        $promises[] = function () use ($user, &$concurrentActivities, &$concurrentSnapshots, $i) {
+>>>>>>> laraxot/dev
             $activity = ActivityFactory::new()->createOne([
                 'causer_type' => User::class,
                 'causer_id' => $user->id,
@@ -217,7 +231,11 @@ test('activity module handles concurrent operations correctly', function () {
         };
     }
 
+<<<<<<< HEAD
     $results = array_map(static fn (Closure $promise): bool => $promise(), $promises);
+=======
+    $results = array_map(fn ($promise) => $promise(), $promises);
+>>>>>>> laraxot/dev
     Assert::assertCount(10, $results);
     foreach ($results as $result) {
         Assert::assertTrue($result);
@@ -261,7 +279,11 @@ test('activity module supports complex query patterns', function () {
     $complexQuery = Activity::query()
         ->where('causer_type', User::class)
         ->whereIn('log_name', ['security', 'audit'])
+<<<<<<< HEAD
         ->where(function (Builder $query) use ($user1, $user2): void {
+=======
+        ->where(function ($query) use ($user1, $user2) {
+>>>>>>> laraxot/dev
             $query->where('causer_id', $user1->id)
                 ->orWhere('causer_id', $user2->id);
         })

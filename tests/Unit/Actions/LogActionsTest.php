@@ -13,7 +13,11 @@ use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 test('LogActivityAction can execute', function () {
     $user = UserFactory::new()->createOne(['name' => 'Test User', 'password' => 'password']);

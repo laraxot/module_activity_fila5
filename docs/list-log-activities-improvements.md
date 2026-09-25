@@ -298,5 +298,9 @@ PASS: 2 files formattati correttamente
 ---
 
 **Autore**: iFlow CLI
+<<<<<<< HEAD
+=======
+**Data**: 2025-12-04
+>>>>>>> laraxot/dev
 **Versione**: 1.0
 **Status**: ✅ Production Ready

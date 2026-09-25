@@ -41,12 +41,16 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  */
 class Snapshot extends SpatieSnapshot
 {
+<<<<<<< HEAD
     /** > */
+=======
+>>>>>>> laraxot/dev
     use HasXotFactory;
 
     /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
     protected $connection = 'activity';
 
+<<<<<<< HEAD
     protected $table = 'snapshots';
 
     /**
@@ -63,6 +67,8 @@ class Snapshot extends SpatieSnapshot
         return $this->connection instanceof \UnitEnum ? $this->connection->name : $this->connection;
     }
 
+=======
+>>>>>>> laraxot/dev
     /** @var list<string> */
     protected $fillable = ['id', 'aggregate_uuid', 'aggregate_version', 'state', 'created_at', 'updated_at'];
 }

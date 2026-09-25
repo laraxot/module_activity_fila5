@@ -8,14 +8,25 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
 test('LogUserLogoutAction can execute for a user', function (): void {
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+
+test('LogUserLogoutAction can be instantiated', function () {
+>>>>>>> laraxot/dev
     $user = UserFactory::new()->createOne();
     Assert::assertInstanceOf(User::class, $user);
 
     $action = new LogUserLogoutAction($user);
+<<<<<<< HEAD
     $activity = $action->execute();
 
     Assert::assertSame($user->getKey(), $activity->causer_id);
+=======
+
+    Assert::assertSame($user, $action->user);
+>>>>>>> laraxot/dev
 });

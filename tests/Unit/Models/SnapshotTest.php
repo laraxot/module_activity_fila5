@@ -7,7 +7,11 @@ use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\EventSourcing\Snapshots\EloquentSnapshot;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 test('Snapshot model can be instantiated', function () {
     $reflection = new ReflectionClass(Snapshot::class);

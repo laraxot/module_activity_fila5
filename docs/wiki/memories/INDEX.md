@@ -7,10 +7,17 @@ created: 2026-06-10
 updated: 2026-06-10
 qmd: "Activity memories testcase xotbasetestcase nwidart missing base"
 issues:
+<<<<<<< HEAD
   - "https://github.com/laraxot/base_fixcity_fila5/issues/316"
   - "https://github.com/laraxot/module_xot_fila5/issues/33"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/316"
+=======
+  - "https://github.com/laraxot/base_ptv_fila5/issues/316"
+  - "https://github.com/laraxot/module_xot_fila5/issues/33"
+discussions:
+  - "https://github.com/laraxot/base_ptv_fila5/discussions/316"
+>>>>>>> laraxot/dev
   - "https://github.com/laraxot/module_xot_fila5/discussions/34"
 ---
 
@@ -22,7 +29,11 @@ Persistent memories and decision records for Activity module development.
 ## Memories (Rules, Checklist, Decisions)
 
 ### Testing Architecture
+<<<<<<< HEAD
 - [testcase-hierarchy-decision-2026-06-10](./testcase-hierarchy-decision-2026-06-10.md) — **ACTIVE**
+=======
+- [testcase-hierarchy-decision](./testcase-hierarchy-decision.md) — **ACTIVE**
+>>>>>>> laraxot/dev
   - Activity TestCase -> `Modules\Xot\Tests\XotBaseTestCase` -> Laravel TestCase
   - `Nwidart\Modules\Tests\BaseTestCase` is not available in the installed package
   - Rules for platform vs module logic separation
@@ -45,7 +56,11 @@ qmd search "test isolation connections" --intent="prevent test crosstalk"
 - [testcase-hierarchy-architecture](../concepts/testcase-hierarchy-architecture.md) — Detailed concept page
 
 ### Brainstorm Artifacts (Full Thinking)
+<<<<<<< HEAD
 - [BRAINSTORM-TestCase-Architecture-2026-06-10.md](../../BRAINSTORM-TestCase-Architecture-2026-06-10.md) — Complete brainstorm with 28 ideas, 7 insights
+=======
+- [brainstorm-testcase-architecture.md](../../brainstorm-testcase-architecture.md) — Complete brainstorm with 28 ideas, 7 insights
+>>>>>>> laraxot/dev
 
 ### Implementation Guides (TBD)
 - Central TESTING.md in Modules/Xot/docs/

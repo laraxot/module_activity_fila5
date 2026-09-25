@@ -2,9 +2,15 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenNormalClasses;
 use NunoMaduro\PhpInsights\Domain\Sniffs\ForbiddenSetterSniff;
 use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenTraits;
+=======
+use NunoMaduro\PhpInsights\Domain\Sniffs\ForbiddenNormalClassesSniff;
+use NunoMaduro\PhpInsights\Domain\Sniffs\ForbiddenSetterSniff;
+use NunoMaduro\PhpInsights\Domain\Sniffs\ForbiddenTraitsSniff;
+>>>>>>> laraxot/dev
 
 return [
     /*
@@ -60,8 +66,13 @@ return [
     ],
 
     'remove' => [
+<<<<<<< HEAD
         ForbiddenNormalClasses::class,
         ForbiddenTraits::class,
+=======
+        ForbiddenNormalClassesSniff::class,
+        ForbiddenTraitsSniff::class,
+>>>>>>> laraxot/dev
         ForbiddenSetterSniff::class,
     ],
 
@@ -113,8 +124,13 @@ return [
         */
 
         'remove' => [
+<<<<<<< HEAD
             ForbiddenNormalClasses::class,
             ForbiddenTraits::class,
+=======
+            ForbiddenNormalClassesSniff::class,
+            ForbiddenTraitsSniff::class,
+>>>>>>> laraxot/dev
             ForbiddenSetterSniff::class,
         ],
 

@@ -60,6 +60,10 @@ final class CanPaginateHarness
 
     public function setDefaultPerPage(int|string|null $value): void
     {
+<<<<<<< HEAD
         $this->defaultRecordsPerPageSelectOption = $value;
+=======
+        $this->defaultPerPageOption = $value;
+>>>>>>> laraxot/dev
     }
 }

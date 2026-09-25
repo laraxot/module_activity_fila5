@@ -11,6 +11,7 @@ namespace Modules\Activity\Tests\Security;
  * and audit trail functionality.
  */
 
+<<<<<<< HEAD
 use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Policies\ActivityPolicy;
@@ -24,36 +25,68 @@ uses(TestCase::class);
 it('denies activity viewAny to users without permission', function (): void {
     $user = UserFactory::new()->createOne();
     $policy = new ActivityPolicy;
+=======
+use Modules\Activity\Models\Policies\ActivityPolicy;
+use Modules\Activity\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+uses(\Modules\Activity\Tests\TestCase::class);
+
+it('denies activity viewAny to users without permission', function (): void {
+    $user = activityCreateUser();
+    $policy = new ActivityPolicy();
+>>>>>>> laraxot/dev
 
     Assert::assertFalse($policy->viewAny($user));
 });
 
 it('allows activity viewAny to users with the correct permission', function (): void {
+<<<<<<< HEAD
     $user = UserFactory::new()->createOne();
     $user->givePermissionTo('activity.viewAny');
     $policy = new ActivityPolicy;
+=======
+    $user = activityCreateUser();
+    $user->givePermissionTo('activity.viewAny');
+    $policy = new ActivityPolicy();
+>>>>>>> laraxot/dev
 
     Assert::assertTrue($policy->viewAny($user));
 });
 
 it('denies activity view to users without permission', function (): void {
+<<<<<<< HEAD
     $user = UserFactory::new()->createOne();
     $policy = new ActivityPolicy;
+=======
+    $user = activityCreateUser();
+    $policy = new ActivityPolicy();
+>>>>>>> laraxot/dev
 
     Assert::assertFalse($policy->view($user));
 });
 
 it('super-admin bypasses activity policy checks via before()', function (): void {
+<<<<<<< HEAD
     $superAdmin = UserFactory::new()->createOne();
     $superAdmin->assignRole('super-admin');
     $policy = new ActivityPolicy;
+=======
+    $superAdmin = activityCreateUser();
+    $superAdmin->assignRole('super-admin');
+    $policy = new ActivityPolicy();
+>>>>>>> laraxot/dev
 
     Assert::assertTrue($policy->viewAny($superAdmin));
     Assert::assertTrue($policy->view($superAdmin));
 });
 
 it('validates activity log data integrity', function (): void {
+<<<<<<< HEAD
     $activity = ActivityFactory::new()->createOne([
+=======
+    $activity = activityCreateActivity([
+>>>>>>> laraxot/dev
         'description' => 'Valid description',
     ]);
 

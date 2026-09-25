@@ -67,6 +67,36 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
+=======
+        'log_name' => [
+            'label' => 'log_name',
+        ],
+        'description' => [
+            'label' => 'description',
+        ],
+        'event' => [
+            'label' => 'event',
+        ],
+        'subject_type' => [
+            'label' => 'subject_type',
+        ],
+        'subject_id' => [
+            'label' => 'subject_id',
+        ],
+        'causer_type' => [
+            'label' => 'causer_type',
+        ],
+        'causer_id' => [
+            'label' => 'causer_id',
+        ],
+        'batch_uuid' => [
+            'label' => 'batch_uuid',
+        ],
+        'properties' => [
+            'label' => 'properties',
+        ],
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => [
@@ -77,6 +107,10 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Activities',
+<<<<<<< HEAD
+=======
+            'tooltip' => 'delete',
+>>>>>>> laraxot/dev
         ],
     ],
 ];

@@ -1,6 +1,7 @@
 # Changelog
 
 Tutte le variazioni importanti di Activity saranno generate automaticamente da semantic-release.
+<<<<<<< HEAD
 
 ## [Unreleased]
 
@@ -19,3 +20,5 @@ Tutte le variazioni importanti di Activity saranno generate automaticamente da s
 - `getStatistics()` ora usa cache (5 minuti)
 - `cleanOld()` usa `chunkById` invece di un DELETE bulk non limitato
 - Dipendenze `spatie/laravel-activitylog` e `spatie/laravel-event-sourcing` pinnate al major installato (`^5.0`, `^7.15`) invece di `"*"`
+=======
+>>>>>>> laraxot/dev

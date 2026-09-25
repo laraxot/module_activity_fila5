@@ -91,7 +91,11 @@ public function withCustomProperties(array $attributes): static
 - `/docs/analysis/` - Quality analysis files
 - `/docs/guides/` - Implementation guides
 - `/docs/phpstan/` - PHPStan specific docs
+<<<<<<< HEAD
 - `/docs/archived/` - Historical records
+=======
+- `/docs/archivedd/` - Historical records
+>>>>>>> laraxot/dev
 
 ## 🎓 Documentation Structure
 
@@ -153,6 +157,10 @@ public function withCustomProperties(array $attributes): static
 
 ---
 
+<<<<<<< HEAD
 *
+=======
+*Last Updated: November 15, 2025*
+>>>>>>> laraxot/dev
 *PHPStan Version: Latest*
 *PHPMD Version: Latest*

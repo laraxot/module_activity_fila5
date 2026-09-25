@@ -12,7 +12,10 @@ use Illuminate\Support\Str;
 use Modules\Activity\Models\StoredEvent;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use Spatie\SchemalessAttributes\SchemalessAttributes;
+=======
+>>>>>>> laraxot/dev
 
 uses(\Modules\Activity\Tests\TestCase::class);
 

@@ -95,8 +95,13 @@ MAIL_FROM_NAME="${APP_NAME}"
 - **Log Mailer**: Output mail in log per debugging
 - **Array Cache**: Performance ottimizzata per sviluppo rapido
 
+<<<<<<< HEAD
 ### 3. Compatibilità con Laravel 12.x
 - Configurazione conforme alle best practices Laravel 12.x
+=======
+### 3. Compatibilità con Laravel 13.x
+- Configurazione conforme alle best practices Laravel 13.x
+>>>>>>> laraxot/dev
 - Variabili d'ambiente ottimizzate per ambiente di sviluppo
 - Supporto completo per tutte le funzionalità di Laravel
 
@@ -205,16 +210,27 @@ DEBUGBAR_ENABLED=true
 LOG_LEVEL=debug
 ```
 
+<<<<<<< HEAD
 ## Compatibilità con Laravel 12.x
 
 ### ✅ Compatibile
 - Tutte le funzionalità Laravel 12.x
+=======
+## Compatibilità con Laravel 13.x
+
+### ✅ Compatibile
+- Tutte le funzionalità Laravel 13.x
+>>>>>>> laraxot/dev
 - Configurazione database SQLite standard
 - Supporto completo per Redis
 - Compatibilità con Filament 5.x
 
 ### 🔄 Configurazioni Automatiche
+<<<<<<< HEAD
 - Laravel 12.x riconosce automaticamente SQLite
+=======
+- Laravel 13.x riconosce automaticamente SQLite
+>>>>>>> laraxot/dev
 - Configurazione Redis ottimizzata
 - Supporto per tutte le funzionalità di sviluppo
 

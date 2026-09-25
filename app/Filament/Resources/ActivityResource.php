@@ -28,6 +28,7 @@ class ActivityResource extends XotBaseResource
 {
     protected static ?string $model = Activity::class;
 
+<<<<<<< HEAD
     /**
      * Define the form schema for the Activity resource.
      *
@@ -47,4 +48,7 @@ class ActivityResource extends XotBaseResource
             'batch_uuid' => TextInput::make('batch_uuid')->maxLength(36),
         ];
     }
+=======
+   
+>>>>>>> laraxot/dev
 }

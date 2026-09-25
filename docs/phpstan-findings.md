@@ -1,5 +1,9 @@
 # PHPStan Findings - Activity Module
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-10-10
+>>>>>>> laraxot/dev
 **Livello**: MAX (9)
 **Status**: ✅ MODELS CORRETTI
 

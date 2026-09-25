@@ -6,7 +6,11 @@ use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 test('Snapshot Business Logic', function () {
     test('snapshot has correct connection configured', function () {

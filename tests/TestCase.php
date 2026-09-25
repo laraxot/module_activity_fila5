@@ -4,10 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests;
 
+<<<<<<< HEAD
+=======
+use Filament\Notifications\Notification;
+>>>>>>> laraxot/dev
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\ServiceProvider;
 use Modules\Activity\Filament\Pages\ListLogActivities;
+<<<<<<< HEAD
+=======
+use Modules\Activity\Filament\Resources\ActivityResource;
+>>>>>>> laraxot/dev
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Providers\EventServiceProvider;
 use Modules\User\Models\User;
@@ -18,7 +26,11 @@ use Modules\Xot\Tests\XotBaseTestCase;
  * Base test case for Activity module.
  *
  * Uses shared fixcity_data.sqlite (no RefreshDatabase / migrate:fresh).
+<<<<<<< HEAD
  * prepareSharedFixcitySqliteForTesting() runs before transactions begin.
+=======
+ * prepareSharedSqliteForTesting() runs before transactions begin.
+>>>>>>> laraxot/dev
  *
  * @property ListLogActivities|null $page
  */
@@ -82,4 +94,36 @@ abstract class TestCase extends XotBaseTestCase
 
         return $this->page;
     }
+<<<<<<< HEAD
+=======
+
+    /**
+     * Builds a fresh ListLogActivities page instance exposing the
+     * restore-notification helpers for coverage tests.
+     *
+     * Static so it can be called directly from within Pest test closures
+     * (including nested describe()/test() closures) without relying on
+     * $this, which PHPStan/Larastan cannot type-infer in that context.
+     */
+    public static function makeListLogActivitiesPage(): ListLogActivities
+    {
+        return new class() extends ListLogActivities
+        {
+            public static function getResource(): string
+            {
+                return ActivityResource::class;
+            }
+
+            public function exposeRestoreSuccess(): Notification
+            {
+                return $this->sendRestoreSuccessNotification();
+            }
+
+            public function exposeRestoreFailure(?string $message = null): Notification
+            {
+                return $this->sendRestoreFailureNotification($message);
+            }
+        };
+    }
+>>>>>>> laraxot/dev
 }

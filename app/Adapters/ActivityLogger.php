@@ -22,7 +22,10 @@ use Modules\Activity\Actions\Query\GetRecentActivitiesAction;
 use Modules\Activity\Actions\Query\GetUserActivitiesAction;
 use Modules\Activity\Models\Activity;
 use Modules\User\Models\User;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+>>>>>>> laraxot/dev
 
 /**
  * Coordinator — delegates to single-purpose QueueableActions (not an Action: multi-method API).
@@ -39,13 +42,22 @@ class ActivityLogger
         ?array $properties = null,
         ?string $description = null,
     ): Activity {
+<<<<<<< HEAD
         if ($user !== null && (! $user instanceof UserContract || ! $user instanceof Model)) {
             throw new InvalidArgumentException('User must implement UserContract');
+=======
+        if ($user !== null && ! $user instanceof User) {
+            throw new InvalidArgumentException('User must be an instance of User');
+>>>>>>> laraxot/dev
         }
 
         $activity = (new LogActivityAction(
             type: $type,
+<<<<<<< HEAD
             user: $user instanceof Model ? $user : null,
+=======
+            user: $user instanceof User ? $user : null,
+>>>>>>> laraxot/dev
             subject: $subject,
             properties: $properties,
             description: $description,
@@ -59,6 +71,7 @@ class ActivityLogger
         return $activity;
     }
 
+<<<<<<< HEAD
     public function created(Model $model, ?UserContract $user = null): Activity
     {
         return (new LogModelCreatedAction(
@@ -95,6 +108,31 @@ class ActivityLogger
         return (new LogUserLogoutAction(
             user: $user instanceof User ? $user : null,
         ))->execute();
+=======
+    public function created(Model $model, ?User $user = null): Activity
+    {
+        return (new LogModelCreatedAction($model, $user))->execute();
+    }
+
+    public function updated(Model $model, ?User $user = null): Activity
+    {
+        return (new LogModelUpdatedAction($model, $user))->execute();
+    }
+
+    public function deleted(Model $model, ?User $user = null): Activity
+    {
+        return (new LogModelDeletedAction($model, $user))->execute();
+    }
+
+    public function login(User $user): Activity
+    {
+        return (new LogUserLoginAction($user))->execute();
+    }
+
+    public function logout(User $user): Activity
+    {
+        return (new LogUserLogoutAction($user))->execute();
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -110,12 +148,17 @@ class ActivityLogger
     }
 
     /** @return Collection<int, Activity> */
+<<<<<<< HEAD
     public function getUserActivities(UserContract $user, int $limit = 50): Collection
     {
         if (! $user instanceof User) {
             throw new InvalidArgumentException('User must be an instance of User');
         }
 
+=======
+    public function getUserActivities(User $user, int $limit = 50): Collection
+    {
+>>>>>>> laraxot/dev
         return app(GetUserActivitiesAction::class)->execute($user, $limit);
     }
 
@@ -145,6 +188,7 @@ class ActivityLogger
     /**
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
+<<<<<<< HEAD
     public function getStatistics(?UserContract $user = null): array
     {
         if ($user !== null && ! $user instanceof User) {
@@ -152,5 +196,10 @@ class ActivityLogger
         }
 
         return app(GetActivityStatisticsAction::class)->execute($user instanceof User ? $user : null);
+=======
+    public function getStatistics(?User $user = null): array
+    {
+        return app(GetActivityStatisticsAction::class)->execute($user);
+>>>>>>> laraxot/dev
     }
 }

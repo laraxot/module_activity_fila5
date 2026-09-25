@@ -17,7 +17,19 @@ Tests:    28 failed, 2 skipped, 203 passed (831 assertions)
 **Descrizione:**
 ```
 SQLSTATE[42S22]: Column not found: 1054 Unknown column 'state' in 'field list'
+<<<<<<< HEAD
 (Connection: user, Host: 127.0.0.1, Port: 3306, Database: <nome progetto>_data)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+(Connection: user, Host: 127.0.0.1, Port: 3306, Database: <nome progetto>_data)
+=======
+(Connection: user, Host: 127.0.0.1, Port: 3306, Database: techplanner_data)
+>>>>>>> 0a02158a (.)
+=======
+(Connection: user, Host: 127.0.0.1, Port: 3306, Database: techplanner_data)
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
 ```
 
 **Causa:**
@@ -45,7 +57,19 @@ SQLSTATE[42S22]: Column not found: 1054 Unknown column 'state' in 'field list'
 **Descrizione:**
 ```
 SQLSTATE[42S22]: Column not found: 1054 Unknown column 'state' in 'field list'
+<<<<<<< HEAD
 (Connection: user, Host: 127.0.0.1, Port: 3306, Database: <nome progetto>_data)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+(Connection: user, Host: 127.0.0.1, Port: 3306, Database: <nome progetto>_data)
+=======
+(Connection: user, Host: 127.0.0.1, Port: 3306, Database: techplanner_data)
+>>>>>>> 0a02158a (.)
+=======
+(Connection: user, Host: 127.0.0.1, Port: 3306, Database: techplanner_data)
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
 ```
 
 **Causa:**

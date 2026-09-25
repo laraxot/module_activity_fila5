@@ -2,7 +2,11 @@
 
 **Modulo**: Activity (Audit Trail & Activity Logging)
 **Data Analisi**: 1 Ottobre 2025
+<<<<<<< HEAD
 **Status PHPStan**: ✅ 0 errori (Level 9)
+=======
+**Status PHPStan**: ✅ 0 errori (Level 10)
+>>>>>>> laraxot/dev
 **Status Generale**: ✅ ECCELLENTE
 
 ---
@@ -49,10 +53,18 @@
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
+=======
+- [← Activity Module README](../README.md)
+>>>>>>> laraxot/dev
 - [← Activity Module README](../readme.md)
 - [← Root Documentation](../../../docs/index.md)
 
 ---
 
 **Status**: ✅ COMPLETO
+<<<<<<< HEAD
 **Maintenance**: Routine
+=======
+**Maintenance**: Routine
+>>>>>>> laraxot/dev

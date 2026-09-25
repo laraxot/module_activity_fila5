@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace Modules\Activity\Actions\Query;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Collection;
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Cache;
 use Modules\Activity\Models\Activity;
 use Modules\User\Models\User;
@@ -23,6 +27,7 @@ class GetActivityStatisticsAction
     public function execute(?User $user = null): array
     {
         $userKey = $user?->getKey();
+<<<<<<< HEAD
         $cacheKeySuffix = match (true) {
             is_int($userKey) => (string) $userKey,
             is_string($userKey) && $userKey !== '' => $userKey,
@@ -33,6 +38,17 @@ class GetActivityStatisticsAction
         return Cache::remember($cacheKey, now()->addMinutes(5), function () use ($user): array {
             return $this->computeStatistics($user);
         });
+=======
+        $cacheKeySuffix = is_scalar($userKey) ? (string) $userKey : 'global';
+        $cacheKey = 'activity.statistics.'.$cacheKeySuffix;
+
+        /** @var array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int} $stats */
+        $stats = Cache::remember($cacheKey, now()->addMinutes(5), function () use ($user): array {
+            return $this->computeStatistics($user);
+        });
+
+        return $stats;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -40,6 +56,10 @@ class GetActivityStatisticsAction
      */
     private function computeStatistics(?User $user): array
     {
+<<<<<<< HEAD
+=======
+        /** @var Builder<Activity> $query */
+>>>>>>> laraxot/dev
         $query = Activity::newQuery();
 
         if ($user) {
@@ -69,11 +89,20 @@ class GetActivityStatisticsAction
      */
     private function countByType(Builder $query): array
     {
+<<<<<<< HEAD
         $results = $query->clone()
+=======
+        /** @var Builder<Activity> $clonedQuery */
+        $clonedQuery = $query->clone();
+
+        /** @var Collection<int, object{event: string, count: int}> $results */
+        $results = $clonedQuery
+>>>>>>> laraxot/dev
             ->selectRaw('event, COUNT(*) as count')
             ->groupBy('event')
             ->get();
 
+<<<<<<< HEAD
         $byType = [];
         foreach ($results as $activity) {
             $event = $activity->getAttribute('event');
@@ -89,6 +118,17 @@ class GetActivityStatisticsAction
 
             $byType[$event] = (int) $count;
         }
+=======
+        /** @var array<string, int> $byType */
+        $byType = $results->mapWithKeys(function (object $item): array {
+            // PHPStan L10: isset() per magic attributes invece di property_exists()
+            if (! isset($item->event, $item->count)) {
+                return [];
+            }
+
+            return [(string) $item->event => (int) $item->count];
+        })->toArray();
+>>>>>>> laraxot/dev
 
         return $byType;
     }

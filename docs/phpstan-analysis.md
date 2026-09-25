@@ -1,5 +1,9 @@
 # PHPStan Analysis - Activity Module
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-10-10T12:40:18+02:00
+>>>>>>> laraxot/dev
 **Livello**: MAX (9)
 **Files Analizzati**: 68 (app + tests)
 

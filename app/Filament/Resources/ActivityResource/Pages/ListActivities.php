@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\ActivityResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
+=======
+>>>>>>> laraxot/dev
 use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
@@ -14,6 +17,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListActivities extends XotBaseListRecords
 {
     protected static string $resource = ActivityResource::class;
+<<<<<<< HEAD
 
     public function getTableColumns(): array
     {
@@ -37,4 +41,6 @@ class ListActivities extends XotBaseListRecords
                 ->sortable(),
         ];
     }
+=======
+>>>>>>> laraxot/dev
 }

@@ -14,8 +14,11 @@ class RestoreActivityAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * Esegue il ripristino di un record basandosi sui dati di un'attività.
      *
+=======
+>>>>>>> laraxot/dev
      * @param  array<string, mixed>  $oldProperties
      */
     public function execute(Model $record, array $oldProperties): void

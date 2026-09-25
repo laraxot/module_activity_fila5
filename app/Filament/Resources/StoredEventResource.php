@@ -19,6 +19,7 @@ class StoredEventResource extends XotBaseResource
 {
     protected static ?string $model = StoredEvent::class;
 
+<<<<<<< HEAD
     #[Override]
     public function getFormSchemaOld(): array
     {
@@ -47,4 +48,7 @@ class StoredEventResource extends XotBaseResource
             'edit' => EditStoredEvent::route('/{record}/edit'),
         ];
     }
+=======
+    
+>>>>>>> laraxot/dev
 }

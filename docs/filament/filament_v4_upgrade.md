@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_1tS9SI
 ---
 module: theme
@@ -10,6 +11,8 @@ See canonical documentation: ../../../../Themes/docs/shared-components/FILAMENT_
 =======
 =======
 >>>>>>> 472c43a3 (.)
+=======
+>>>>>>> laraxot/dev
 # Filament v4 Upgrade Documentation
 
 ## Overview
@@ -61,8 +64,12 @@ public static function getFormSchema(): array
 
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
 >>>>>>> .merge_file_IToZlK
 =======
 - [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
 >>>>>>> 472c43a3 (.)
+=======
+- [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
+>>>>>>> laraxot/dev

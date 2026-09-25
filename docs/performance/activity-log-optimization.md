@@ -115,7 +115,18 @@ public function searchActivities($searchTerm, $filters = [])
 {
     $cacheKey = "activity_search_" . md5($searchTerm . serialize($filters));
     
+<<<<<<< HEAD
     
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 0a02158a (.)
+=======
+    
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
     return Cache::remember($cacheKey, 300, function() use ($searchTerm, $filters) {
         $query = ActivityLog::with(['causer', 'subject'])
             ->where(function($q) use ($searchTerm) {
@@ -214,7 +225,11 @@ CREATE INDEX idx_activity_log_causer_type ON activity_log(causer_type);
 
 ## 📚 Related Documentation
 
+<<<<<<< HEAD
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./query_optimization_analysis.md)
+=======
+- [QUERY_OPTIMIZATION_ANALYSIS.md](./QUERY_OPTIMIZATION_ANALYSIS.md)
+>>>>>>> laraxot/dev
 - [bottlenecks.md](./bottlenecks.md)
 - [event-sourcing.md](./event-sourcing.md)
 
@@ -281,6 +296,14 @@ CREATE INDEX idx_activity_log_causer_type ON activity_log(causer_type);
 3. **Medium-term**: Implement systematic optimizations
 4. **Long-term**: Advanced performance strategies
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
 This document provides the roadmap for resolving the performance issues in the Activity module while maintaining data integrity and functionality.
 # Activity Log Optimization - Activity Module
 
@@ -565,4 +588,11 @@ CREATE INDEX idx_activity_log_causer_type ON activity_log(causer_type);
 3. **Medium-term**: Implement systematic optimizations
 4. **Long-term**: Advanced performance strategies
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
 This document provides the roadmap for resolving the performance issues in the Activity module while maintaining data integrity and functionality.
