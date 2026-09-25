@@ -115,7 +115,6 @@ Thumbs.db
 # DEVELOPMENT TOOLS
 # ==============================================
 .windsurf/
-.cursor/
 .phpstorm.meta.php
 
 # ==============================================
@@ -189,7 +188,6 @@ activity_coverage.xml
 agentdb.rvf
 build/
 docs/legacy
-audit-coverage/
 .claude-audit
 .claude-audit-ai
 .claude-audit-ai-agent
@@ -199,3 +197,23 @@ workbench/
 
 # Laraxot — tests/AuditCoverage forbidden (AI scaffold, never commit)
 tests/AuditCoverage/
+
+# Agent tooling and local audit output
+
+# Module-local quality tool configuration
+.rector.php
+.phpinsights.php
+
+# Root agent tooling and PHP quality configuration
+/.agents/
+/.codex/
+/.cursor/
+/.opencode/
+/.qwen/
+/rector.php
+/phpinsights.php
+/.php-cs-fixer.php
+/.php-cs-fixer.dist.php
+
+# Generated Claude audit coverage scaffold (never commit)
+/audit-coverage/
