@@ -24,8 +24,6 @@ class ActivityLogger
     use QueueableAction;
 
     /**
-     * Log activity.
-     *
      * @param  array<string, mixed>|null  $properties
      */
     public function log(
@@ -74,9 +72,9 @@ class ActivityLogger
      */
     public function created(Model $model, ?User $user = null): Activity
     {
-        $action = new LogModelCreatedAction();
+        $action = new LogModelCreatedAction($model, $user);
 
-        return $action->execute($model);
+        return $action->execute();
     }
 
     /**
@@ -84,9 +82,9 @@ class ActivityLogger
      */
     public function updated(Model $model, ?User $user = null): Activity
     {
-        $action = new LogModelUpdatedAction();
+        $action = new LogModelUpdatedAction($model, $user);
 
-        return $action->execute($model);
+        return $action->execute();
     }
 
     /**
@@ -94,9 +92,9 @@ class ActivityLogger
      */
     public function deleted(Model $model, ?User $user = null): Activity
     {
-        $action = new LogModelDeletedAction();
+        $action = new LogModelDeletedAction($model, $user);
 
-        return $action->execute($model);
+        return $action->execute();
     }
 
     /**
@@ -104,9 +102,9 @@ class ActivityLogger
      */
     public function login(User $user): Activity
     {
-        $action = new LogUserLoginAction();
+        $action = new LogUserLoginAction($user);
 
-        return $action->execute($user);
+        return $action->execute();
     }
 
     /**
@@ -114,14 +112,12 @@ class ActivityLogger
      */
     public function logout(User $user): Activity
     {
-        $action = new LogUserLogoutAction();
+        $action = new LogUserLogoutAction($user);
 
-        return $action->execute($user);
+        return $action->execute();
     }
 
     /**
-     * Log custom event.
-     *
      * @param  array<string, mixed>|null  $properties
      */
     public function custom(
@@ -265,7 +261,7 @@ class ActivityLogger
 
                 // Explicitly map and cast to ensure types
                 /** @var array<string, int> $byType */
-                $byType = $results->mapWithKeys(function (object $item, int $_key): array {
+                $byType = $results->mapWithKeys(function (object $item): array {
                     // PHPStan L10: isset() per magic attributes invece di property_exists()
                     if (! isset($item->event, $item->count)) {
                         return [];
