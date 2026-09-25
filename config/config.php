@@ -5,10 +5,6 @@ declare(strict_types=1);
 return [
     'name' => 'Activity',
     'description' => 'Modulo per il tracciamento delle attività degli utenti',
-<<<<<<< HEAD
-=======
-    // 'icon' => 'heroicon-o-clock',
->>>>>>> 3cbe4341 (.)
     'icon' => 'activity-icon',
     'navigation' => [
         'enabled' => true,
