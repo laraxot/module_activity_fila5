@@ -1,0 +1,180 @@
+
+._*
+# -----------------------------------------------------------------------------
+# ==============================================
+*~
+*~BASE
+*~head
+*~HEAD
+*~LOCAL
+*~REMOTE
+activity_coverage.xml
+activity_test_data.json
+agentdb.rvf
+.agents
+.agents~HEAD
+# AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
+app/storage/
+# Auto-generated forbidden paths — do not edit manually
+*.backup
+*.backup_*
+*.backup-*
+*.backup.*
+# BACKUP FILES
+*.bak
+*.bakcup
+bashscripts
+_bmad-output
+bootstrap/compiled.php
+/build
+/build/
+build/
+# BUILD & COMPILED FILES
+*.cache
+cache/
+# Cache activity log
+# CACHE & TEMPORARY FILES
+.circleci
+.claude*
+.claude-audit
+.codex*
+composer.lock
+config/development.php
+config/local.php
+# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+.cursor
+.cursor/
+/.cursor
+/.cursor/
+.cursor~*
+database/Factories_old/
+database/Migrations_old/
+database_old/
+database/Seeders_old/
+# DEPENDENCIES & PACKAGES
+.devcontainer
+.devcontainer/
+# DEVELOPMENT TOOLS
+dist/
+_docs
+docs/archive
+docs/archived
+docs/cache/
+docs/legacy
+docs/phpstan/
+/docs/vendor/
+docs/workbench
+# DOCUMENTATION CACHE
+.DS_Store
+.DS_Store?
+ehthumbs.db
+# END OF ACTIVITY .GITIGNORE
+.env
+.env.*
+!.env.example
+# ENVIRONMENT & CONFIGURATION
+error_log
+*.fila2
+# File di configurazione locale
+# File di test activity
+# File specifici del progetto
+.git-blame-ignore-revs
+.gitmodules
+.git-rewrite
+.git-rewrite/
+# GIT SPECIFIC
+graphify-out
+graphify-out/
+Homestead.json
+Homestead.yaml
+/.idea
+*.jar
+.kilocode
+.kiro
+lang/lang/
+# LANGUAGE FILES
+laravel
+# LARAVEL SPECIFIC
+# Laraxot — forbidden at module/theme root (rector.php, phpinsights.php, .cursor, .windsurf, .vscode)
+# Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
+# LARAXOT MODULE ACTIVITY - .GITIGNORE
+# Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
+lerna-debug.log*
+*.lock
+*.log
+# LOG FILES
+# MODULE SPECIFIC - ACTIVITY
+# Modulo Activity Laraxot - Template standardizzato
+*.new
+/node_modules
+/node_modules/
+npm-debug.log
+npm-debug.log*
+*.old
+*.old1
+*.old2
+# OLD DIRECTORIES (LEGACY CLEANUP)
+.opencode
+.opencode~HEAD
+*.orig
+package-lock.json
+*.phar
+.php-cs-fixer.cache
+/phpinsights.php
+phpinsights.php
+.phpintel
+.phpstorm.meta.php
+.phpunit.result.cache
+public/hot
+public_html
+public_html/hot
+public_html/storage
+public/storage
+.ralph
+# Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
+/rector.php
+rector.php
+*.rej
+resources/lang/
+resources/views/Components_old/
+scripts
+.Spotlight-V100
+*.stackdump
+storage/activity/
+storage/*.key
+storage/logs/
+*.swo
+*.swp
+# SYSTEM FILES
+test_activity_logs.sql
+test-results
+tests/activity_coverage.xml
+tests/AuditCoverage/
+tests/.claude-audit
+tests/coverage
+tests/coverage/
+tests/coverage.xml/
+Thumbs.db
+*.tmp
+tools
+.Trashes
+# Ultimo aggiornamento: 2025-01-31
+v8-compile-cache-*
+/.vagrant
+/vendor
+/vendor/
+.vscode
+.vscode/
+/.vscode
+/.vscode/
+.windsurf
+.windsurf/
+/.windsurf
+/.windsurf/
+.windsurf~*
+workbench
+workbench/
+yarn-error.log
+yarn-error.log*
+yarn.lock
+*:Zone.Identifier
