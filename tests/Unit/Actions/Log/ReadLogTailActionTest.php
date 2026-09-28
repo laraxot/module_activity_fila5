@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\File;
 use Modules\Activity\Actions\Log\ReadLogTailAction;
 use Tests\TestCase;

@@ -95,7 +95,11 @@ abstract class TestCase extends XotBaseTestCase
      */
     public static function makeListLogActivitiesPage(): ListLogActivities
     {
+<<<<<<< HEAD
         return new class extends ListLogActivities
+=======
+        return new class() extends ListLogActivities
+>>>>>>> laraxot/dev
         {
             public static function getResource(): string
             {

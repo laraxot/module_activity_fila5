@@ -10,15 +10,23 @@ use PHPUnit\Framework\Assert;
 use ReflectionMethod;
 
 test('ListLogActivities toTranslationString normalizza stringhe e array', function (): void {
+<<<<<<< HEAD
     $page = new class extends ListLogActivities
+=======
+    $page = new class() extends ListLogActivities
+>>>>>>> laraxot/dev
     {
         public static function getResource(): string
         {
             return ActivityResource::class;
         }
 
+<<<<<<< HEAD
         /** @param list<string>|string|int $value */
         public function exposeToTranslationString(string|array|int $value): string
+=======
+        public function exposeToTranslationString(mixed $value): string
+>>>>>>> laraxot/dev
         {
             $method = new ReflectionMethod(ListLogActivities::class, 'toTranslationString');
             $method->setAccessible(true);
@@ -36,7 +44,11 @@ test('ListLogActivities toTranslationString normalizza stringhe e array', functi
 });
 
 test('ListLogActivities getFieldLabel usa fallback per chiavi sconosciute', function (): void {
+<<<<<<< HEAD
     $page = new class extends ListLogActivities
+=======
+    $page = new class() extends ListLogActivities
+>>>>>>> laraxot/dev
     {
         public static function getResource(): string
         {

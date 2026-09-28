@@ -9,7 +9,11 @@ use Modules\Activity\Providers\Filament\AdminPanelProvider;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 test('admin panel provider returns a panel instance', function () {
     $provider = new AdminPanelProvider(app());

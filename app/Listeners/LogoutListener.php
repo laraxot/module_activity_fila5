@@ -32,7 +32,11 @@ class LogoutListener
         // Handle session duration if last_login_at is available
         // Assuming last_login_at is a Casted Carbon instance or string
         if (isset($event->user->last_login_at)) {
+<<<<<<< HEAD
             /** @var string|DateTimeInterface|null $lastLoginRaw */
+=======
+            /** @var mixed $lastLoginRaw */
+>>>>>>> laraxot/dev
             $lastLoginRaw = $event->user->last_login_at;
 
             // Type narrowing for $lastLoginRaw

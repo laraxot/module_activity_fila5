@@ -323,6 +323,7 @@ foreach (glob('Modules/*/app/Filament/Resources/*/Pages/*.php') as $file) {
 
 ---
 
+<<<<<<< HEAD
 **
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **
@@ -331,3 +332,17 @@ foreach (glob('Modules/*/app/Filament/Resources/*/Pages/*.php') as $file) {
 **Versione Filament**: 4.x
 **Severità**: Alta (blocca registrazione Resource Pages)
 **Causa**: Confusione tra Standalone Page e Resource Page
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**
+=======
+**Ultimo aggiornamento**: 27 Ottobre 2025
+>>>>>>> 0a02158a (.)
+=======
+**Ultimo aggiornamento**: 27 Ottobre 2025
+>>>>>>> 35d8cf69 (Initial commit)
+**Versione Filament**: 4.x
+**Severità**: Alta (blocca registrazione Resource Pages)
+**Causa**: Confusione tra Standalone Page e Resource Page
+>>>>>>> laraxot/dev

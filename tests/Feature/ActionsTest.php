@@ -12,7 +12,11 @@ use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 function createActionsTestUser(): User
 {
@@ -23,7 +27,11 @@ describe('ActivityLogger', function (): void {
 
     test('logs simple activity', function (): void {
         $user = createActionsTestUser();
+<<<<<<< HEAD
         $logger = new ActivityLogger;
+=======
+        $logger = new ActivityLogger();
+>>>>>>> laraxot/dev
         $activity = $logger->log('test_event', $user);
 
         Assert::assertInstanceOf(Activity::class, $activity);
@@ -33,7 +41,11 @@ describe('ActivityLogger', function (): void {
 
     test('logs created event', function (): void {
         $user = createActionsTestUser();
+<<<<<<< HEAD
         $logger = new ActivityLogger;
+=======
+        $logger = new ActivityLogger();
+>>>>>>> laraxot/dev
         $model = activityCreateUser();
 
         $activity = $logger->created($model, $user);
@@ -45,7 +57,11 @@ describe('ActivityLogger', function (): void {
 
     test('logs updated event', function (): void {
         $user = createActionsTestUser();
+<<<<<<< HEAD
         $logger = new ActivityLogger;
+=======
+        $logger = new ActivityLogger();
+>>>>>>> laraxot/dev
         $model = activityCreateUser();
 
         $activity = $logger->updated($model, $user);
@@ -57,7 +73,11 @@ describe('ActivityLogger', function (): void {
 
     test('logs deleted event', function (): void {
         $user = createActionsTestUser();
+<<<<<<< HEAD
         $logger = new ActivityLogger;
+=======
+        $logger = new ActivityLogger();
+>>>>>>> laraxot/dev
         $model = activityCreateUser();
 
         $activity = $logger->deleted($model, $user);
@@ -69,7 +89,11 @@ describe('ActivityLogger', function (): void {
 
     test('logs login event', function (): void {
         $user = createActionsTestUser();
+<<<<<<< HEAD
         $logger = new ActivityLogger;
+=======
+        $logger = new ActivityLogger();
+>>>>>>> laraxot/dev
         $activity = $logger->login($user);
 
         Assert::assertInstanceOf(Activity::class, $activity);
@@ -79,7 +103,11 @@ describe('ActivityLogger', function (): void {
 
     test('logs logout event', function (): void {
         $user = createActionsTestUser();
+<<<<<<< HEAD
         $logger = new ActivityLogger;
+=======
+        $logger = new ActivityLogger();
+>>>>>>> laraxot/dev
         $activity = $logger->logout($user);
 
         Assert::assertInstanceOf(Activity::class, $activity);

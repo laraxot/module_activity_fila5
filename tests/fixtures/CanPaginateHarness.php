@@ -41,7 +41,10 @@ final class CanPaginateHarness
 
     /**
      * @template TModel of \Illuminate\Database\Eloquent\Model
+<<<<<<< HEAD
      *
+=======
+>>>>>>> laraxot/dev
      * @param  Builder<TModel>  $query
      * @return Paginator<int, TModel>|CursorPaginator<int, TModel>|LengthAwarePaginator<int, TModel>
      */
@@ -51,18 +54,28 @@ final class CanPaginateHarness
     }
 
     /**
+<<<<<<< HEAD
      * @return array<int|string>
+=======
+     * @return list<int|string>
+>>>>>>> laraxot/dev
      */
     public function exposeOptions(): array
     {
         return $this->getRecordsPerPageSelectOptions();
     }
 
+<<<<<<< HEAD
     /** @var int|string|null */
     public int|string|null $defaultRecordsPerPageSelectOption = null;
 
         public function setDefaultPerPage(int|string|null $value): void
     {
         $this->defaultRecordsPerPageSelectOption = $value;
+=======
+    public function setDefaultPerPage(int|string|null $value): void
+    {
+        $this->defaultPerPageOption = $value;
+>>>>>>> laraxot/dev
     }
 }

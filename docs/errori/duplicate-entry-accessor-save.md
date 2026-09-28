@@ -462,6 +462,7 @@ class SchedaObserver
 
 ---
 
+<<<<<<< HEAD
 **
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **
@@ -471,3 +472,18 @@ class SchedaObserver
 **Workaround**: Disabilitare temporaneamente LogsActivity trait
 **Fix Definitivo**: Refactoring accessor in SchedaTrait
 **Impatto**: Tutti i modelli che usano BaseScheda (IndennitaResponsabilita, Progressioni, etc.)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**
+=======
+**Ultimo aggiornamento**: 27 Ottobre 2025
+>>>>>>> 0a02158a (.)
+=======
+**Ultimo aggiornamento**: 27 Ottobre 2025
+>>>>>>> 35d8cf69 (Initial commit)
+**Severità**: CRITICA (blocca edit in produzione)
+**Workaround**: Disabilitare temporaneamente LogsActivity trait
+**Fix Definitivo**: Refactoring accessor in SchedaTrait
+**Impatto**: Tutti i modelli che usano BaseScheda (IndennitaResponsabilita, Progressioni, etc.)
+>>>>>>> laraxot/dev

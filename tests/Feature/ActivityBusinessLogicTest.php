@@ -8,11 +8,18 @@ use Illuminate\Support\Str;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 
 use function Safe\json_decode;
 use function Safe\json_encode;
 
 uses(TestCase::class);
+=======
+use function Safe\json_decode;
+use function Safe\json_encode;
+
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 test('Activity Business Logic', function () {
     test('can create activity with basic information', function () {

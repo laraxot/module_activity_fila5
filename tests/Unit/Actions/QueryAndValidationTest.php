@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Actions;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Collection;
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use InvalidArgumentException;
 use Mockery;
@@ -18,7 +21,10 @@ use Modules\Activity\Actions\RecordSubjectActivityAction;
 use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Adapters\ActivityLogger as ActivityLoggerAdapter;
 use Modules\Activity\Adapters\ActivityRecorder;
+<<<<<<< HEAD
 use Modules\Activity\Models\Activity;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 use Webmozart\Assert\InvalidArgumentException as AssertInvalidArgumentException;

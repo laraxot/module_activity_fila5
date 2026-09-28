@@ -8,7 +8,11 @@ use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 test('RestoreActivityAction can be instantiated', function () {
     $action = new RestoreActivityAction;

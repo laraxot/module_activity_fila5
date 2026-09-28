@@ -58,7 +58,10 @@ trait CanPaginate
         session()->remove($this->getPerPageSessionKey());
 
         $firstOption = $pageOptions[0] ?? 10;
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
         return is_numeric($firstOption) ? (int) $firstOption : 10;
     }
 
@@ -76,7 +79,10 @@ trait CanPaginate
 
     /**
      * @template TModel of Model
+<<<<<<< HEAD
      *
+=======
+>>>>>>> laraxot/dev
      * @param  Builder<TModel>  $query
      * @return Paginator<int, TModel>|CursorPaginator<int, TModel>|LengthAwarePaginator<int, TModel>
      */
@@ -113,7 +119,11 @@ trait CanPaginate
     }
 
     /**
+<<<<<<< HEAD
      * @return array<int|string>
+=======
+     * @return list<int|string>
+>>>>>>> laraxot/dev
      */
     protected function getRecordsPerPageSelectOptions(): array
     {

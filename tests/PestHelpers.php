@@ -1,9 +1,15 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Models\Activity;
 use Modules\User\Contracts\UserContract;
+=======
+
+use Modules\Activity\Database\Factories\ActivityFactory;
+use Modules\Activity\Models\Activity;
+>>>>>>> laraxot/dev
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 

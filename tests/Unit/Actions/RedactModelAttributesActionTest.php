@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Modules\Activity\Actions\RedactModelAttributesAction;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
@@ -11,7 +15,11 @@ uses()->group('no-activity-db');
 
 describe('coverage senza database activity_log', function (): void {
     test('RedactModelAttributesAction rimuove chiavi sensibili', function (): void {
+<<<<<<< HEAD
         $action = new RedactModelAttributesAction;
+=======
+        $action = new RedactModelAttributesAction();
+>>>>>>> laraxot/dev
 
         $redacted = $action->execute([
             'name' => 'Marco',
@@ -36,8 +44,14 @@ describe('coverage senza database activity_log', function (): void {
     });
 
     test('modelli event-sourcing usano connection activity', function (): void {
+<<<<<<< HEAD
         Assert::assertSame('activity', (new Activity)->getConnectionName());
         Assert::assertSame('activity', (new Snapshot)->getConnectionName());
         Assert::assertSame('activity', (new StoredEvent)->getConnectionName());
+=======
+        Assert::assertSame('activity', (new Activity())->getConnectionName());
+        Assert::assertSame('activity', (new Snapshot())->getConnectionName());
+        Assert::assertSame('activity', (new StoredEvent())->getConnectionName());
+>>>>>>> laraxot/dev
     });
 });

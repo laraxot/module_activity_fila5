@@ -49,8 +49,13 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereEventVersion($value)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereId($value)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereMetaData($value)
+<<<<<<< HEAD
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent wherePropertyIs(string $property, mixed $value)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent wherePropertyIsNot(string $property, mixed $value)
+=======
+ * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent wherePropertyIs(string $property, ?mixed $value)
+ * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent wherePropertyIsNot(string $property, ?mixed $value)
+>>>>>>> laraxot/dev
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereUpdatedBy($value)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent withMetaDataAttributes()
  * @method static StoredEventFactory factory($count = null, $state = [])

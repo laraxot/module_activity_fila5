@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # Correzioni PHPStan - Modulo Activity
 
 ## 🚨 Errori PHPStan Risolti
@@ -42,13 +46,34 @@ $activities = \Modules\Activity\Database\Factories\ActivityFactory::new()
 - **PHPStan Level 9**: Compliance ripristinata
 
 *Ultimo aggiornamento: gennaio 2025*
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: phpstan-fixes-activity-1
 canonical: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+>>>>>>> d4098eb (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+>>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+>>>>>>> 2d6a374 (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

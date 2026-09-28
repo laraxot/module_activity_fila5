@@ -12,8 +12,14 @@ use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Traits\Updater;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 
 uses(TestCase::class);
+=======
+use function Safe\class_uses;
+
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 test('can create base model instance', function (): void {
     $model = new TestActivityModel;

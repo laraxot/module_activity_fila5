@@ -3,7 +3,10 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 use Filament\Tables\Enums\PaginationMode;
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Filament\Pages\ListLogActivities;

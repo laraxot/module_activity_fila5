@@ -36,6 +36,7 @@ return [
         'delete' => [
             'tooltip' => 'delete',
         ],
+<<<<<<< HEAD
         'id' => ['label' => 'id'],
         'event_class' => ['label' => 'event_class'],
         'properties' => ['label' => 'properties'],
@@ -45,5 +46,7 @@ return [
         'aggregate_version' => ['label' => 'aggregate_version'],
         'event_version' => ['label' => 'event_version'],
         'event_properties' => ['label' => 'event_properties'],
+=======
+>>>>>>> laraxot/dev
     ],
 ];

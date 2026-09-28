@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Feature;
 
 use Filament\Actions\Action;
+<<<<<<< HEAD
+=======
+use Filament\Actions\ActionGroup;
+>>>>>>> laraxot/dev
 use Filament\Tables\Table;
 use Modules\Activity\Events\ActivityEvent;
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
@@ -12,6 +16,7 @@ use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages\EditActivity;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages\ListActivities;
+<<<<<<< HEAD
 use Modules\Activity\Filament\Resources\ActivityResource\Schemas\ActivityForm;
 use Modules\Activity\Filament\Resources\SnapshotResource;
 use Modules\Activity\Filament\Resources\SnapshotResource\Pages\ListSnapshots;
@@ -19,6 +24,12 @@ use Modules\Activity\Filament\Resources\SnapshotResource\Schemas\SnapshotForm;
 use Modules\Activity\Filament\Resources\StoredEventResource;
 use Modules\Activity\Filament\Resources\StoredEventResource\Pages\ListStoredEvents;
 use Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventForm;
+=======
+use Modules\Activity\Filament\Resources\SnapshotResource;
+use Modules\Activity\Filament\Resources\SnapshotResource\Pages\ListSnapshots;
+use Modules\Activity\Filament\Resources\StoredEventResource;
+use Modules\Activity\Filament\Resources\StoredEventResource\Pages\ListStoredEvents;
+>>>>>>> laraxot/dev
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
@@ -127,7 +138,11 @@ describe('ActivityResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
+<<<<<<< HEAD
         $instance = app(ActivityForm::class);
+=======
+        $instance = app(\Modules\Activity\Filament\Resources\ActivityResource\Schemas\ActivityForm::class);
+>>>>>>> laraxot/dev
         $schema = $instance->getFormSchema();
 
         Assert::assertArrayHasKey('log_name', $schema);
@@ -204,7 +219,11 @@ describe('SnapshotResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
+<<<<<<< HEAD
         $instance = app(SnapshotForm::class);
+=======
+        $instance = app(\Modules\Activity\Filament\Resources\SnapshotResource\Schemas\SnapshotForm::class);
+>>>>>>> laraxot/dev
         $schema = $instance->getFormSchema();
 
         Assert::assertArrayHasKey('model_type', $schema);
@@ -276,7 +295,11 @@ describe('StoredEventResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
+<<<<<<< HEAD
         $instance = app(StoredEventForm::class);
+=======
+        $instance = app(\Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventForm::class);
+>>>>>>> laraxot/dev
         $schema = $instance->getFormSchema();
 
         Assert::assertArrayHasKey('event_class', $schema);

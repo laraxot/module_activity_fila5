@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 # Activity Module - Product Roadmap
 # Activity Module - Product Roadmap
+=======
+<<<<<<< HEAD
+# Activity Module - Product Roadmap
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # Activity Module - Product Roadmap
 
 **Module:** Activity  
@@ -134,7 +142,15 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 ---
 
 *Last Updated: March 12, 2026*
+<<<<<<< HEAD
 # Activity - Product Roadmap
+=======
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+# Activity - Product Roadmap
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Module:** Activity  
 **Version:** 1.0.0  
@@ -184,6 +200,10 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 | W29-32 | Privacy & GDPR | - Data subject access<br>- Right to erasure workflows<br>- Consent tracking<br>- Privacy reports |
 | W33-36 | Security Monitoring | - Suspicious activity detection<br>- Failed login tracking<br>- Access pattern analysis |
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ### Q4 2026 - Scale & Intelligence
 
 | Week | Milestone | Deliverables |
@@ -268,7 +288,19 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 ---
 
 *Last Updated: March 12, 2026*
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 - [PRD](prd.md)
 - [Product Strategy](product-strategy.md)
 - [Sprint Planning Meeting](sprint-planning-meeting.md)
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

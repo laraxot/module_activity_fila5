@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Http\Request;
 use Modules\Activity\Actions\Log\AuthorizeLogAccessAction;
 use Modules\Activity\Actions\Log\DownloadLogFileAction;

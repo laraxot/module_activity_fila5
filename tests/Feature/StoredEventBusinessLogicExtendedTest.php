@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 /**
  * StoredEvent extended business logic — Pest (split from StoredEventBusinessLogicTest).
  * Part 2: edge cases, metadata, date range, version compare (claude-audit file size).
@@ -22,7 +26,11 @@ use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 // Pest test — Activity module regression case
 test('can handle event with empty properties', function (): void {

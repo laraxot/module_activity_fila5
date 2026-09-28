@@ -19,7 +19,11 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 test('activity module models work together in integrated scenarios', function () {
     $user = UserFactory::new()->createOne();

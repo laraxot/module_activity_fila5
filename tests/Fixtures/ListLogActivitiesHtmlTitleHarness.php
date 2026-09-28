@@ -10,6 +10,10 @@ final class ListLogActivitiesHtmlTitleHarness extends ListLogActivitiesPageHarne
 {
     public function getRecordTitle(): Htmlable
     {
+<<<<<<< HEAD
         return new HtmlableRecordTitle;
+=======
+        return new HtmlableRecordTitle();
+>>>>>>> laraxot/dev
     }
 }

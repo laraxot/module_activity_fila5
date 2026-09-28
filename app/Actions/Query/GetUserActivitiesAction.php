@@ -7,7 +7,11 @@ namespace Modules\Activity\Actions\Query;
 use Illuminate\Database\Eloquent\Collection;
 use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -20,7 +24,11 @@ class GetUserActivitiesAction
     /**
      * @return Collection<int, Activity>
      */
+<<<<<<< HEAD
     public function execute(UserContract $user, int $limit = 50): Collection
+=======
+    public function execute(User $user, int $limit = 50): Collection
+>>>>>>> laraxot/dev
     {
         if ($limit <= 0) {
             throw new InvalidArgumentException('Limit must be positive');

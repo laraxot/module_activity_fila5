@@ -58,7 +58,11 @@ class ListLogFilesAction
 
         usort(
             $files,
+<<<<<<< HEAD
             static fn (LogFileData $left, LogFileData $right): int => [$right->modifiedAt, $left->path] <=> [$left->modifiedAt, $right->path],
+=======
+            static fn (LogFileData $a, LogFileData $b): int => [$b->modifiedAt, $a->path] <=> [$a->modifiedAt, $b->path],
+>>>>>>> laraxot/dev
         );
 
         return array_slice($files, 0, max(1, $limit));

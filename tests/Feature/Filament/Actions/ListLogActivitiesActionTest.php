@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestPage;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestRecord;
@@ -8,7 +12,11 @@ use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestResource;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 test('action has correct default name', function (): void {
     Assert::assertSame('list_log_activities', ListLogActivitiesAction::getDefaultName());
@@ -32,7 +40,11 @@ test('action generates correct URL for activity log page', function (): void {
     $action = ListLogActivitiesAction::make();
 
     $livewire = ListLogActivitiesActionTestPage::usingResource(ListLogActivitiesActionTestResource::class);
+<<<<<<< HEAD
     $record = new ListLogActivitiesActionTestRecord;
+=======
+    $record = new ListLogActivitiesActionTestRecord();
+>>>>>>> laraxot/dev
 
     $action->livewire($livewire);
     $action->record($record);

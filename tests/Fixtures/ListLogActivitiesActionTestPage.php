@@ -21,7 +21,11 @@ final class ListLogActivitiesActionTestPage extends XotBaseListRecords
 
         self::$resourceClass = $resourceClass;
 
+<<<<<<< HEAD
         return new self;
+=======
+        return new self();
+>>>>>>> laraxot/dev
     }
 
     /**
