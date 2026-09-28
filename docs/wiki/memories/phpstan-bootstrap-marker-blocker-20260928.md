@@ -27,3 +27,7 @@ Un tentativo successivo ha prodotto 114 finding reali, ma il tree ha nuovamente 
 marker durante la remediation: il gate è tornato al bootstrap failure e la scansione ha
 rilevato 211 file PHP marcati. Non eseguire altri fix paralleli finché il working tree non
 resta stabile per tutta la durata di un run PHPStan.
+
+Ultimo run: 53 errori e 10 processi PHPStan concorrenti. Sono ricomparsi file già corretti;
+il conteggio è quindi non deterministico. Un gate fleet-wide richiede un solo orchestratore
+e nessun writer concorrente.

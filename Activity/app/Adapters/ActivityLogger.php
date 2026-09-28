@@ -76,11 +76,19 @@ class ActivityLogger
 
     public function login(UserContract $user): Activity
     {
+        if (! $user instanceof User) {
+            throw new InvalidArgumentException('User must be an instance of User');
+        }
+
         return (new LogUserLoginAction($user))->execute();
     }
 
     public function logout(UserContract $user): Activity
     {
+        if (! $user instanceof User) {
+            throw new InvalidArgumentException('User must be an instance of User');
+        }
+
         return (new LogUserLogoutAction($user))->execute();
     }
 

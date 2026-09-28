@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
+use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -102,6 +103,10 @@ class ActivityLogger
      */
     public function login(UserContract $user): Activity
     {
+        if (! $user instanceof User) {
+            throw new InvalidArgumentException('User must be an instance of User');
+        }
+
         $action = new LogUserLoginAction($user);
 
         return $action->execute();
@@ -112,6 +117,10 @@ class ActivityLogger
      */
     public function logout(UserContract $user): Activity
     {
+        if (! $user instanceof User) {
+            throw new InvalidArgumentException('User must be an instance of User');
+        }
+
         $action = new LogUserLogoutAction($user);
 
         return $action->execute();

@@ -36,6 +36,14 @@ correzione il working tree ha reintrodotto marker di conflitto. La riesecuzione 
 è tornata al bootstrap failure (`unexpected token <<`) con 211 file PHP marcati, quindi
 il gate non è attribuibile ai fix e il lavoro viene fermato fino a stabilizzazione del tree.
 
+## Ultimo run
+
+Il run ha attraversato il bootstrap e ha restituito 53 errori, ma nello stesso momento
+erano attivi 10 processi PHPStan concorrenti. File già corretti sono ricomparsi nella
+versione precedente (`Activity/phpinsights.php`, `Activity/rector.php`, `UI/LocationSelector.php`)
+e il risultato non è una baseline affidabile. STOP operativo: nessun altro edit finché
+non restano un solo processo di gate e un working tree stabile.
+
 ## Riesecuzione 2026-09-28 — STOP concorrenti
 
 La riesecuzione richiesta dall'utente ha fallito al bootstrap su
