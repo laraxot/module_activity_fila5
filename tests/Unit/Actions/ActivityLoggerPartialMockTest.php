@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Actions;
 
-<<<<<<< HEAD
-use Illuminate\Database\Eloquent\Collection;
-=======
->>>>>>> laraxot/dev
 use Mockery;
 use Modules\Activity\Actions\ActivityLogger as ActivityLoggerAction;
 use Modules\Activity\Adapters\ActivityLogger as ActivityLoggerAdapter;

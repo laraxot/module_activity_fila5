@@ -8,11 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Modules\Activity\Models\Activity;
-<<<<<<< HEAD
-use Modules\Xot\Contracts\UserContract;
-=======
 use Modules\User\Models\User;
->>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -25,11 +21,7 @@ class GetActivityStatisticsAction
     /**
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
-<<<<<<< HEAD
-    public function execute(?UserContract $user = null): array
-=======
     public function execute(?User $user = null): array
->>>>>>> laraxot/dev
     {
         $userKey = $user?->getKey();
         $cacheKeySuffix = is_scalar($userKey) ? (string) $userKey : 'global';
@@ -46,11 +38,7 @@ class GetActivityStatisticsAction
     /**
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
-<<<<<<< HEAD
-    private function computeStatistics(?UserContract $user): array
-=======
     private function computeStatistics(?User $user): array
->>>>>>> laraxot/dev
     {
         /** @var Builder<Activity> $query */
         $query = Activity::newQuery();

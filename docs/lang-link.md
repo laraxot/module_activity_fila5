@@ -1,13 +1,10 @@
 # Collegamento alle Traduzioni del Modulo Activity
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
 
 Consulta la documentazione delle traduzioni qui:
@@ -95,12 +92,9 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 # Collegamento alle Traduzioni del Modulo Activity
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).
 
 Consulta la documentazione delle traduzioni qui:
@@ -117,15 +111,12 @@ Consulta la documentazione delle traduzioni qui:
 - [Vai a Traduzioni](./translations.md)
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../../Lang/project_docs/).
 
 > Aggiorna entrambi i riferimenti se aggiungi nuove chiavi di traduzione o modifichi la struttura.
@@ -144,8 +135,4 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Tenant/project_docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Activity/project_docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Patient/project_docs/lang-link.md)
-<<<<<<< HEAD
 * [lang-link.md](laravel/Modules/Cms/project_docs/lang-link.md)
-=======
-* [lang-link.md](laravel/Modules/Cms/project_docs/lang-link.md)
->>>>>>> laraxot/dev

@@ -5,13 +5,6 @@ canonical: ../../../Themes/docs/shared-components/dry-kiss-analysis-1.md
 ---
 
 <<<<<<< HEAD
-See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-1.md
-See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-1.md
-See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-1.md
-See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-1.md
-See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-1.md
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-1.md
@@ -24,4 +17,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-ana
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-1.md
 >>>>>>> 2d6a374 (.)
->>>>>>> laraxot/dev

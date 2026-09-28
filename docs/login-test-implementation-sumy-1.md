@@ -176,19 +176,12 @@ Pattern avanzato per testare widget Filament Livewire con form, validazione, not
 - [LoginTest.php](../laravel/Modules/Cms/tests/Feature/Auth/LoginTest.php) - Main test file
 <<<<<<< HEAD
 - [Implementation Guide](../laravel/modules/cms/docs/tests/login-test-implementation.md) - Complete documentation
-- [Implementation Guide](../laravel/modules/cms/docs/tests/login-test-implementation.md) - Complete documentation
-- [Implementation Guide](../laravel/modules/cms/docs/tests/login-test-implementation.md) - Complete documentation
-- [Implementation Guide](../laravel/Modules/Cms/docs/tests/login-test-implementation.md) - Complete documentation
-=======
-<<<<<<< HEAD
-- [Implementation Guide](../laravel/modules/cms/docs/tests/login-test-implementation.md) - Complete documentation
 =======
 <<<<<<< HEAD
 - [Implementation Guide](../laravel/modules/cms/docs/tests/login-test-implementation.md) - Complete documentation
 =======
 - [Implementation Guide](../laravel/Modules/Cms/docs/tests/login-test-implementation.md) - Complete documentation
 >>>>>>> c18fbe2 (.)
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [LoginWidget](../laravel/Modules/User/app/Filament/Widgets/LoginWidget.php) - Widget under test
 - [Login Page](../laravel/Themes/One/resources/views/pages/auth/login.blade.php) - UI page
@@ -198,20 +191,6 @@ Pattern avanzato per testare widget Filament Livewire con form, validazione, not
 - [UserFactory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md) - Enterprise factory
 - [STI Architecture](../laravel/modules/<nome progetto>/docs/models/sti-architecture.md) - User type system
 - [Authentication Flow](../laravel/modules/user/docs/authentication-flow.md) - Login process
-- [UserFactory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md) - Enterprise factory
-- [STI Architecture](../laravel/modules/<nome progetto>/docs/models/sti-architecture.md) - User type system
-- [Authentication Flow](../laravel/modules/user/docs/authentication-flow.md) - Login process
-- [UserFactory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md) - Enterprise factory
-- [STI Architecture](../laravel/modules/<nome progetto>/docs/models/sti-architecture.md) - User type system
-- [Authentication Flow](../laravel/modules/user/docs/authentication-flow.md) - Login process
-- [UserFactory Implementation](../laravel/Modules/<nome progetto>/docs/factories/UserFactory-implementation-final.md) - Enterprise factory
-- [STI Architecture](../laravel/Modules/<nome progetto>/docs/models/sti-architecture.md) - User type system
-- [Authentication Flow](../laravel/Modules/User/docs/authentication-flow.md) - Login process
-=======
-<<<<<<< HEAD
-- [UserFactory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md) - Enterprise factory
-- [STI Architecture](../laravel/modules/<nome progetto>/docs/models/sti-architecture.md) - User type system
-- [Authentication Flow](../laravel/modules/user/docs/authentication-flow.md) - Login process
 =======
 <<<<<<< HEAD
 - [UserFactory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md) - Enterprise factory
@@ -222,7 +201,6 @@ Pattern avanzato per testare widget Filament Livewire con form, validazione, not
 - [STI Architecture](../laravel/Modules/<nome progetto>/docs/models/sti-architecture.md) - User type system
 - [Authentication Flow](../laravel/Modules/User/docs/authentication-flow.md) - Login process
 >>>>>>> c18fbe2 (.)
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ### **Testing Framework**

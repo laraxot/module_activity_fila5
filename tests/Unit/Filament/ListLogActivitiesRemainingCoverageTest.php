@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Filament;
 
-<<<<<<< HEAD
-use Illuminate\Contracts\Pagination\LengthAwarePaginator;
-=======
->>>>>>> laraxot/dev
 use Illuminate\Support\Collection;
 use Modules\Activity\Actions\ActivityLogger as ActivityLoggerAction;
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;

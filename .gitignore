@@ -182,9 +182,3 @@ workbench/
 .cursor~*
 .windsurf~*
 tests/activity_coverage.xml
-<<<<<<< HEAD
-
-# Artefatti audit vietati (rule: tests-auditcoverage-forbidden)
-audit-coverage/
-=======
->>>>>>> laraxot/dev

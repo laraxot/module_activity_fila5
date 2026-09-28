@@ -1,8 +1,5 @@
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: logging_optimization
@@ -10,12 +7,9 @@ canonical: ../../../Themes/docs/shared-components/logging-optimization.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md
-<<<<<<< HEAD
-=======
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 # Activity Module - Logging Optimization
 
 ## Current Issues
@@ -310,14 +304,7 @@ By removing logging from ActivityLogger:
 
 <<<<<<< HEAD
 **Key Takeaway**: The Activity table IS the audit trail. Logging successful database writes is redundant and wastes performance.
-**Key Takeaway**: The Activity table IS the audit trail. Logging successful database writes is redundant and wastes performance.
-**Key Takeaway**: The Activity table IS the audit trail. Logging successful database writes is redundant and wastes performance.
-**Key Takeaway**: The Activity table IS the audit trail. Logging successful database writes is redundant and wastes performance.
-=======
-<<<<<<< HEAD
-**Key Takeaway**: The Activity table IS the audit trail. Logging successful database writes is redundant and wastes performance.
 >>>>>>> 0a02158a (.)
 =======
 **Key Takeaway**: The Activity table IS the audit trail. Logging successful database writes is redundant and wastes performance.
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev

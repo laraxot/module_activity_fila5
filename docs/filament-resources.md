@@ -163,20 +163,14 @@ class ListSnapshots extends XotBaseListRecords
 ## Riferimenti
 
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 - [Documentazione Filament](https://filamentphp.com/project_docs/tables)
 - [XotBaseListRecords](../Xot/project_docs/filament-pages.md)
 - [Best Practices Filament](../Xot/project_docs/filament-best-practices.md)
 - [Compatibilità dei Metodi in PHP](https://www.php.net/manual/en/language.oop5.inheritance.php) 
-<<<<<<< HEAD
-=======
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 - [Documentazione Filament](https://filamentphp.com/docs/tables)
 - [XotBaseListRecords](../Xot/docs/filament-pages.md)
 - [Best Practices Filament](../Xot/docs/filament-best-practices.md)
@@ -354,14 +348,7 @@ class ListSnapshots extends XotBaseListRecords
 - [Best Practices Filament](../xot/project_docs/filament-best-practices.md)
 <<<<<<< HEAD
 - [Compatibilità dei Metodi in PHP](https://www.php.net/manual/en/language.oop5.inheritance.php)
-- [Compatibilità dei Metodi in PHP](https://www.php.net/manual/en/language.oop5.inheritance.php)
-- [Compatibilità dei Metodi in PHP](https://www.php.net/manual/en/language.oop5.inheritance.php)
-- [Compatibilità dei Metodi in PHP](https://www.php.net/manual/en/language.oop5.inheritance.php)
-=======
-<<<<<<< HEAD
-- [Compatibilità dei Metodi in PHP](https://www.php.net/manual/en/language.oop5.inheritance.php)
 >>>>>>> 0a02158a (.)
 =======
 - [Compatibilità dei Metodi in PHP](https://www.php.net/manual/en/language.oop5.inheritance.php)
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev

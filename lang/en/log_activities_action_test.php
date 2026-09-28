@@ -1,10 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-
-=======
->>>>>>> laraxot/dev
 return [
     'actions' => [
         'list_log_activities' => [

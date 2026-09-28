@@ -10,11 +10,7 @@ use Modules\Activity\Actions\RestoreActivityAction;
 use Webmozart\Assert\InvalidArgumentException as AssertInvalidArgumentException;
 
 test('RestoreActivityAction aggiorna il record con le vecchie proprietà', function (): void {
-<<<<<<< HEAD
-    $model = new class extends Model
-=======
     $model = new class() extends Model
->>>>>>> laraxot/dev
     {
         protected $table = 'stub_models';
 
@@ -32,21 +28,13 @@ test('RestoreActivityAction aggiorna il record con le vecchie proprietà', funct
         }
     };
 
-<<<<<<< HEAD
-    (new RestoreActivityAction)->execute($model, ['name' => 'Ripristinato', 'status' => 'active']);
-=======
     (new RestoreActivityAction())->execute($model, ['name' => 'Ripristinato', 'status' => 'active']);
->>>>>>> laraxot/dev
 
     expect($model->updatedAttributes)->toBe(['name' => 'Ripristinato', 'status' => 'active']);
 });
 
 test('RestoreActivityAction incapsula eccezioni di update', function (): void {
-<<<<<<< HEAD
-    $model = new class extends Model
-=======
     $model = new class() extends Model
->>>>>>> laraxot/dev
     {
         protected $table = 'stub_models';
 
@@ -60,29 +48,17 @@ test('RestoreActivityAction incapsula eccezioni di update', function (): void {
     };
 
     expect(function () use ($model): void {
-<<<<<<< HEAD
-        (new RestoreActivityAction)->execute($model, ['name' => 'x']);
-=======
         (new RestoreActivityAction())->execute($model, ['name' => 'x']);
->>>>>>> laraxot/dev
     })->toThrow(Exception::class);
 });
 
 test('RestoreActivityAction rifiuta oldProperties vuote', function (): void {
-<<<<<<< HEAD
-    $model = new class extends Model
-=======
     $model = new class() extends Model
->>>>>>> laraxot/dev
     {
         protected $table = 'stub_models';
     };
 
     expect(function () use ($model): void {
-<<<<<<< HEAD
-        (new RestoreActivityAction)->execute($model, []);
-=======
         (new RestoreActivityAction())->execute($model, []);
->>>>>>> laraxot/dev
     })->toThrow(AssertInvalidArgumentException::class);
 });

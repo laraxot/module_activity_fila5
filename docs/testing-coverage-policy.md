@@ -16,13 +16,6 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 
 - `.env.testing` è uguale a `.env` tranne per i nomi database
 <<<<<<< HEAD
-- I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)
-- I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
-- I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)
-- I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
-- I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 - I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)
 =======
@@ -31,7 +24,6 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 =======
 - I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 - Le variabili `DB_CONNECTION`, `DB_DATABASE` **NON** devono essere sovrascritte in phpunit.xml
 - Laravel carica `.env.testing` quando `APP_ENV=testing`
 
@@ -41,13 +33,6 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 - `$connectionsToTransact = ['mysql', 'activity', 'user']` per coprire tutte le connessioni
 - **CRITICO**: La connessione `activity` DEVE essere inclusa. Senza di essa, ActivityLoggerTest getRecent fallisce per inquinamento dati.
 <<<<<<< HEAD
-- Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`)
-- Nessuna migrazione nel setUp: le migrazioni vanno eseguite una volta: `php artisan migrate --env=testing`
-- Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`)
-- Nessuna migrazione nel setUp: le migrazioni vanno eseguite una volta: `php artisan migrate --env=testing`
-- Nessuna migrazione nel setUp: le migrazioni vanno eseguite una volta: `php artisan migrate --env=testing`
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`)
 =======
@@ -56,7 +41,6 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 =======
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite una volta: `php artisan migrate --env=testing`
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 
 ### 4. Connessioni Database
 
@@ -69,10 +53,7 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 **Setup minimo .env.testing:**
 ```env
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE_USER=<nome progetto>_data_test
 ```
@@ -95,15 +76,9 @@ php artisan migrate --env=testing --path=Modules/Activity/database/migrations
   - `Modules/Xot/app`
   - `Modules/User/app`
 
-<<<<<<< HEAD
-
-**Setup minimo .env.testing (variante alternativa):**
-```env
-=======
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 DB_DATABASE=techplanner_data_test
 DB_DATABASE_USER=techplanner_data_test
 ```
@@ -117,12 +92,9 @@ php artisan config:clear
 ```
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 ## Workflow Coverage
 
 ### Comandi
@@ -166,13 +138,6 @@ tests/
 - [testing-rules](testing-rules.md)
 - [testing-strategy-implementation](testing-strategy-implementation.md)
 <<<<<<< HEAD
-- [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
-- [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
-- [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
-- [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
-- [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 - [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
 =======
@@ -181,4 +146,3 @@ tests/
 =======
 - [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev

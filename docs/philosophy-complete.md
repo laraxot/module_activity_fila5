@@ -95,13 +95,6 @@ class Activity extends ActivityLog
 
 Il modulo Activity **è utilizzato da** tutti i moduli business:
 <<<<<<< HEAD
-- **<nome progetto>**: Traccia modifiche clienti, appuntamenti, dispositivi
-- **TechPlanner**: Traccia modifiche clienti, appuntamenti, dispositivi
-- **<nome progetto>**: Traccia modifiche clienti, appuntamenti, dispositivi
-- **TechPlanner**: Traccia modifiche clienti, appuntamenti, dispositivi
-- **TechPlanner**: Traccia modifiche clienti, appuntamenti, dispositivi
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 - **<nome progetto>**: Traccia modifiche clienti, appuntamenti, dispositivi
 =======
@@ -110,7 +103,6 @@ Il modulo Activity **è utilizzato da** tutti i moduli business:
 =======
 - **TechPlanner**: Traccia modifiche clienti, appuntamenti, dispositivi
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 - **User**: Traccia azioni utente, login, cambi ruoli
 - **Employee**: Traccia timbrature, modifiche dipendenti
 - **Notify**: Traccia invii notifiche
@@ -248,8 +240,4 @@ class ClientObserver
 
 ---
 
-<<<<<<< HEAD
 **Filosofia**: Track Everything, Reconstruct Anything, Privacy First, Silent Observer
-=======
-**Filosofia**: Track Everything, Reconstruct Anything, Privacy First, Silent Observer
->>>>>>> laraxot/dev

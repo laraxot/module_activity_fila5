@@ -30,13 +30,6 @@ env("DB_PASSWORD_ACTIVITY", $passwordFallback)
 
 Se le variabili non sono impostate, usa i valori della connessione default (mysql). In testing:
 <<<<<<< HEAD
-- **DRY**: stesso DB per tutto (<nome progetto>_data_test)
-- **DRY**: stesso DB per tutto (techplanner_data_test)
-- **DRY**: stesso DB per tutto (<nome progetto>_data_test)
-- **DRY**: stesso DB per tutto (techplanner_data_test)
-- **DRY**: stesso DB per tutto (techplanner_data_test)
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 - **DRY**: stesso DB per tutto (<nome progetto>_data_test)
 =======
@@ -45,7 +38,6 @@ Se le variabili non sono impostate, usa i valori della connessione default (mysq
 =======
 - **DRY**: stesso DB per tutto (techplanner_data_test)
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 - **Semplicità**: una sola configurazione DB da gestire
 - **Coerenza**: activity e mysql puntano allo stesso database di test
 

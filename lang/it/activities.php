@@ -104,10 +104,7 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Activities',
-<<<<<<< HEAD
-=======
             'tooltip' => 'delete',
->>>>>>> laraxot/dev
         ],
     ],
 ];

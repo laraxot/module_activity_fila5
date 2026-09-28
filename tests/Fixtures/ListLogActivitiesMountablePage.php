@@ -10,11 +10,7 @@ final class ListLogActivitiesMountablePage extends ListLogActivitiesPageHarness
 {
     public function resolveRecord(int|string|Model $key): Model
     {
-<<<<<<< HEAD
-        $subject = new ActivitySubjectHarness;
-=======
         $subject = new ActivitySubjectHarness();
->>>>>>> laraxot/dev
         $subject->forceFill(['id' => (string) $key, 'name' => 'mounted']);
         $subject->exists = true;
 

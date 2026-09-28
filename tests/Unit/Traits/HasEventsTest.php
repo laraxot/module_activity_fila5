@@ -11,11 +11,7 @@ use Modules\Activity\Tests\Fixtures\HasEventsDummyModel;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
-uses(TestCase::class);
-=======
 uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> laraxot/dev
 
 test('stored events relation is configured as morphMany', function () {
     $model = new HasEventsDummyModel;

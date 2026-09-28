@@ -35,16 +35,11 @@ In Filament v4, the `size` attribute for icons changed from accepting string val
    - Size controlled via CSS classes `h-36`
 
 <<<<<<< HEAD
-3. **Modules/Quaeris/resources/views/filament/widgets/overlook-stats.blade.php**
-3. **Modules/Quaeris/resources/views/filament/widgets/overlook-stats.blade.php**
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 3. **Modules/Quaeris/resources/views/filament/widgets/overlook-stats.blade.php**
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 3. **Modules/<nome progetto>/resources/views/filament/widgets/overlook-stats.blade.php**
    - Removed `:size="24"` from two icon instances
    - Size controlled via CSS classes `size-4` and `h-36`
@@ -117,12 +112,9 @@ In Filament v4, the `size` attribute for icons changed from accepting string val
 3. **Modules/Quaeris/resources/views/filament/widgets/overlook-stats.blade.php**
 3. **Modules/healthcare_app/resources/views/filament/widgets/overlook-stats.blade.php**
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
    - Removed `:size="24"` from two icon instances
    - Size controlled via CSS classes `size-4` and `h-36`
 
@@ -154,12 +146,6 @@ After applying these fixes:
 ## Related Documentation
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
 <<<<<<< HEAD
-- [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
-- [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
-- [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
-- [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 - [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
@@ -168,4 +154,3 @@ After applying these fixes:
 - [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
 >>>>>>> 35d8cf69 (Initial commit)
 - [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
->>>>>>> laraxot/dev

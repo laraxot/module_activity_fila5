@@ -37,15 +37,6 @@ test('snapshot test', function () {
 - [Snapshot Testing Patterns](./testing/snapshot-testing-patterns.md)
 <<<<<<< HEAD
 - [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)
-- [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)
-- [Xot Testing Strategy](../../xot/docs/testing-strategy.md)
-- [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)
-- [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)
-- [Xot Testing Strategy](../../xot/docs/testing-strategy.md)
-- [Xot Testing Strategy](../../xot/docs/testing-strategy.md)
-=======
-<<<<<<< HEAD
-- [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -56,7 +47,6 @@ test('snapshot test', function () {
 =======
 - [Xot Testing Strategy](../../xot/docs/testing-strategy.md)
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 #### Test Coverage
@@ -85,9 +75,6 @@ php artisan test --filter=Snapshot
 # Con coverage
 php artisan test Modules/Activity --coverage
 <<<<<<< HEAD
-```
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 ```
 =======
@@ -98,4 +85,3 @@ php artisan test Modules/Activity --coverage
 ```
 
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev

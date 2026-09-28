@@ -85,11 +85,8 @@ return [
             'icon' => 'delete',
             'tooltip' => 'delete',
         ],
-<<<<<<< HEAD
-=======
         'logout' => [
             'tooltip' => 'logout',
         ],
->>>>>>> laraxot/dev
     ],
 ];

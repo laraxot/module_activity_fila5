@@ -76,14 +76,6 @@ app/Domain/<nome progetto>ionMarket/
 - [Esempi di modularizzazione](https://github.com/nWidart/laravel-modules)
 <<<<<<< HEAD
 - [Indice prediction_market](./README.md)
-- [Indice prediction_market](./README.md)
-- [Indice prediction_market](./readme.md)
-- [Indice prediction_market](./README.md)
-- [Indice prediction_market](./readme.md)
-- [Indice prediction_market](./readme.md)
-=======
-<<<<<<< HEAD
-- [Indice prediction_market](./README.md)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -95,22 +87,15 @@ app/Domain/<nome progetto>ionMarket/
 - [Indice prediction_market](./readme.md)
 >>>>>>> 4fb998e0 (.)
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 - [Architettura prediction_market](./02_architettura.md)
 - [Best practice prediction_market](./04_best_practice.md)
 - [API prediction_market](./06_api.md)
 - [Testing prediction_market](./07_test.md)
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [Indice <nome progetto>ion_market](./readme.md)
 - [Architettura <nome progetto>ion_market](./02_architettura.md)
 - [Best practice <nome progetto>ion_market](./04_best_practice.md)
 - [API <nome progetto>ion_market](./06_api.md)
 - [Testing <nome progetto>ion_market](./07_test.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev

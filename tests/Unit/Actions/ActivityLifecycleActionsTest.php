@@ -12,11 +12,7 @@ use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
-uses(TestCase::class);
-=======
 uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> laraxot/dev
 
 /**
  * @param  array<string, mixed>  $attributes

@@ -11,11 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
-<<<<<<< HEAD
-use Modules\Xot\Contracts\UserContract;
-=======
 use Modules\User\Models\User;
->>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -40,13 +36,8 @@ class ActivityLogger
         $userId = null;
         if ($user !== null) {
             // Type checking for User model
-<<<<<<< HEAD
-            if (! $user instanceof UserContract) {
-                throw new InvalidArgumentException('User must implement UserContract');
-=======
             if (! $user instanceof User) {
                 throw new InvalidArgumentException('User must be an instance of User');
->>>>>>> laraxot/dev
             }
 
             // Type narrowing for user ID - use getAttribute for Eloquent models
@@ -79,15 +70,9 @@ class ActivityLogger
     /**
      * Log created event.
      */
-<<<<<<< HEAD
-    public function created(Model $model, ?UserContract $user = null): Activity
-    {
-        $action = new LogModelCreatedAction($model, $user instanceof Model ? $user : null);
-=======
     public function created(Model $model, ?User $user = null): Activity
     {
         $action = new LogModelCreatedAction($model, $user);
->>>>>>> laraxot/dev
 
         return $action->execute();
     }
@@ -95,15 +80,9 @@ class ActivityLogger
     /**
      * Log updated event.
      */
-<<<<<<< HEAD
-    public function updated(Model $model, ?UserContract $user = null): Activity
-    {
-        $action = new LogModelUpdatedAction($model, $user instanceof Model ? $user : null);
-=======
     public function updated(Model $model, ?User $user = null): Activity
     {
         $action = new LogModelUpdatedAction($model, $user);
->>>>>>> laraxot/dev
 
         return $action->execute();
     }
@@ -111,15 +90,9 @@ class ActivityLogger
     /**
      * Log deleted event.
      */
-<<<<<<< HEAD
-    public function deleted(Model $model, ?UserContract $user = null): Activity
-    {
-        $action = new LogModelDeletedAction($model, $user instanceof Model ? $user : null);
-=======
     public function deleted(Model $model, ?User $user = null): Activity
     {
         $action = new LogModelDeletedAction($model, $user);
->>>>>>> laraxot/dev
 
         return $action->execute();
     }
@@ -127,11 +100,7 @@ class ActivityLogger
     /**
      * Log login event.
      */
-<<<<<<< HEAD
-    public function login(UserContract $user): Activity
-=======
     public function login(User $user): Activity
->>>>>>> laraxot/dev
     {
         $action = new LogUserLoginAction($user);
 
@@ -141,11 +110,7 @@ class ActivityLogger
     /**
      * Log logout event.
      */
-<<<<<<< HEAD
-    public function logout(UserContract $user): Activity
-=======
     public function logout(User $user): Activity
->>>>>>> laraxot/dev
     {
         $action = new LogUserLogoutAction($user);
 
@@ -169,11 +134,7 @@ class ActivityLogger
      *
      * @return Collection<int, Activity>
      */
-<<<<<<< HEAD
-    public function getUserActivities(UserContract $user, int $limit = 50): Collection
-=======
     public function getUserActivities(User $user, int $limit = 50): Collection
->>>>>>> laraxot/dev
     {
         if ($limit <= 0) {
             throw new InvalidArgumentException('Limit must be positive');
@@ -277,11 +238,7 @@ class ActivityLogger
      *
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
-<<<<<<< HEAD
-    public function getStatistics(?UserContract $user = null): array
-=======
     public function getStatistics(?User $user = null): array
->>>>>>> laraxot/dev
     {
         $query = Activity::query();
 

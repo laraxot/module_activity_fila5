@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Activity
 
 [![Module](https://img.shields.io/badge/Module-Activity-8B0000.svg)]()
@@ -36,12 +33,9 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-<<<<<<< HEAD
-=======
 =======
 <<<<<<< HEAD
 =======
->>>>>>> laraxot/dev
 # Modulo Activity - Documentazione Completa
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -226,12 +220,9 @@ php artisan activity:test-events
 ```
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 4fb998e0 (.)
->>>>>>> laraxot/dev
 ## 🎛️ **Filament Integration**
 
 - **ListLogActivitiesAction** - Action per visualizzare lo storico attività da tabella Resource
@@ -240,12 +231,9 @@ php artisan activity:test-events
 
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
 >>>>>>> 77d3d692 (.)
 =======
 >>>>>>> 4fb998e0 (.)
->>>>>>> laraxot/dev
 ## 📚 **Documentazione Completa**
 
 ### 🏗️ **Architettura**
@@ -607,10 +595,7 @@ Elimina un'attività (soft delete).
 - [Deployment](./deployment.md)
 
 *Ultimo aggiornamento: gennaio 2025*
-<<<<<<< HEAD
-=======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 ---
 title: "Activity Module Documentation"
 type: documentation
@@ -628,14 +613,6 @@ Il modulo **Activity** fa parte dell'ecosistema Laraxot PTVX.
 ## Scopo
 
 <<<<<<< HEAD
-Fornisce audit trail e activity logging basato su `spatie/laravel-activitylog` ed `spatie/laravel-event-sourcing`. Espone `LogActivityAction` (`app/Actions/LogActivityAction.php`) come entrypoint per registrare eventi (type, causer, subject, properties) e risorse Filament per consultare/analizzare i log.
-Questo modulo gestisce [DESCRIZIONE SPECIFICA DA COMPLETARE].
-Questo modulo gestisce [DESCRIZIONE SPECIFICA DA COMPLETARE].
-Fornisce audit trail e activity logging basato su `spatie/laravel-activitylog` ed `spatie/laravel-event-sourcing`. Espone `LogActivityAction` (`app/Actions/LogActivityAction.php`) come entrypoint per registrare eventi (type, causer, subject, properties) e risorse Filament per consultare/analizzare i log.
-Questo modulo gestisce [DESCRIZIONE SPECIFICA DA COMPLETARE].
-Questo modulo gestisce [DESCRIZIONE SPECIFICA DA COMPLETARE].
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 Fornisce audit trail e activity logging basato su `spatie/laravel-activitylog` ed `spatie/laravel-event-sourcing`. Espone `LogActivityAction` (`app/Actions/LogActivityAction.php`) come entrypoint per registrare eventi (type, causer, subject, properties) e risorse Filament per consultare/analizzare i log.
 =======
@@ -644,7 +621,6 @@ Questo modulo gestisce [DESCRIZIONE SPECIFICA DA COMPLETARE].
 =======
 Questo modulo gestisce [DESCRIZIONE SPECIFICA DA COMPLETARE].
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 
 ## Struttura
 
@@ -683,7 +659,4 @@ Activity/
 
 ## AI Workflows
 - [AI Methodologies](./ai-methodologies.md)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

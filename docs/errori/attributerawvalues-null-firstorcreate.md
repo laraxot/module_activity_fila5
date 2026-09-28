@@ -227,13 +227,6 @@ IndennitaResponsabilita::withoutEvents(function (): void {
 ---
 
 <<<<<<< HEAD
-**
-**Ultimo aggiornamento**: 19 Novembre 2025  
-**
-**Ultimo aggiornamento**: 19 Novembre 2025  
-**Ultimo aggiornamento**: 19 Novembre 2025  
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 **
 =======
@@ -242,7 +235,6 @@ IndennitaResponsabilita::withoutEvents(function (): void {
 =======
 **Ultimo aggiornamento**: 19 Novembre 2025  
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 **Severità**: Alta (blocca operazioni batch)  
 **Soluzione**: Usare `withoutEvents()` durante `firstOrCreate()`
 

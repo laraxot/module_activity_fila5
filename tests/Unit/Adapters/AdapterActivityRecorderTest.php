@@ -16,11 +16,7 @@ afterEach(function (): void {
 });
 
 test('ActivityRecorder record delega a RecordSubjectActivityAction', function (): void {
-<<<<<<< HEAD
-    $activity = new Activity;
-=======
     $activity = new Activity();
->>>>>>> laraxot/dev
 
     $mock = Mockery::mock(RecordSubjectActivityAction::class);
     mockeryExpect($mock->shouldReceive('execute'))
@@ -29,11 +25,7 @@ test('ActivityRecorder record delega a RecordSubjectActivityAction', function ()
         ->andReturn($activity);
     app()->instance(RecordSubjectActivityAction::class, $mock);
 
-<<<<<<< HEAD
-    (new ActivityRecorder)->record(
-=======
     (new ActivityRecorder())->record(
->>>>>>> laraxot/dev
         'Modules\\User\\Models\\User',
         42,
         'updated',
@@ -51,11 +43,7 @@ test('ActivityRecorder getLog delega a GetSubjectActivityLogAction', function ()
         ->andReturn($logEntries);
     app()->instance(GetSubjectActivityLogAction::class, $mock);
 
-<<<<<<< HEAD
-    $result = (new ActivityRecorder)->getLog('Modules\\User\\Models\\User', 7);
-=======
     $result = (new ActivityRecorder())->getLog('Modules\\User\\Models\\User', 7);
->>>>>>> laraxot/dev
 
     Assert::assertSame($logEntries, $result);
 });

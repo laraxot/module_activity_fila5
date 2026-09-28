@@ -152,10 +152,6 @@ class ActivityTest extends TestCase
 <<<<<<< HEAD
 
 =======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
 # Modulo Activity
 
 ## Overview
@@ -310,12 +306,6 @@ canonical: ../../../../../Themes/docs/shared-components/module-activity.md
 ---
 
 <<<<<<< HEAD
-See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
-See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
-See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
-See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
 =======
@@ -325,4 +315,3 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/module
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
 >>>>>>> 4fb998e0 (.)
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev

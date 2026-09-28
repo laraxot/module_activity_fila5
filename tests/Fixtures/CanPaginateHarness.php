@@ -40,15 +40,8 @@ final class CanPaginateHarness
     }
 
     /**
-<<<<<<< HEAD
-     * @template TModel of \Illuminate\Database\Eloquent\Model
-     *
-     * @param  Builder<TModel>  $query
-     * @return Paginator<int, TModel>|CursorPaginator<int, TModel>|LengthAwarePaginator<int, TModel>
-=======
      * @param  Builder<\Illuminate\Database\Eloquent\Model>  $query
      * @return Paginator<int, \Illuminate\Database\Eloquent\Model>|CursorPaginator<int, \Illuminate\Database\Eloquent\Model>|LengthAwarePaginator<int, \Illuminate\Database\Eloquent\Model>
->>>>>>> laraxot/dev
      */
     public function exposePaginateQuery(Builder $query): Paginator|CursorPaginator|LengthAwarePaginator
     {

@@ -247,15 +247,6 @@ php artisan test
 ---
 
 <<<<<<< HEAD
-**
-**ultimo aggiornamento**: 20 agosto 2025
-**
-**ultimo aggiornamento**: 20 agosto 2025
-**ultimo aggiornamento**: 20 agosto 2025
-**analista**: claude code
-**stato**: pronto per implementazione
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 **
 =======
@@ -266,4 +257,3 @@ php artisan test
 >>>>>>> 35d8cf69 (Initial commit)
 **analista**: claude code
 **stato**: pronto per implementazione
->>>>>>> laraxot/dev

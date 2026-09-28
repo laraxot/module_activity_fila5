@@ -15,11 +15,7 @@ test('LogActivityAction rifiuta type vuoto nel costruttore', function (): void {
 });
 
 test('LogActivityAction accetta parametri opzionali nel costruttore', function (): void {
-<<<<<<< HEAD
-    $model = new class extends Model
-=======
     $model = new class() extends Model
->>>>>>> laraxot/dev
     {
         protected $table = 'stub_models';
     };

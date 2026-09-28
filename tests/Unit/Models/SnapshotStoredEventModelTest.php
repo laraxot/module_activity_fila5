@@ -10,11 +10,7 @@ use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 
-<<<<<<< HEAD
-uses(TestCase::class);
-=======
 uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> laraxot/dev
 
 test('snapshot getConnectionName resolves activity connection', function (): void {
     $snapshot = new Snapshot;

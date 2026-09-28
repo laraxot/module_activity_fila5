@@ -16,13 +16,6 @@ Per modificare una tabella esistente:
 ### 1. Single Source of Truth
 **Principio**: Una tabella = Una migrazione
 <<<<<<< HEAD
-**Motivazione**: 
-**Motivazione**:
-**Motivazione**: 
-**Motivazione**:
-**Motivazione**:
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 **Motivazione**: 
 =======
@@ -31,7 +24,6 @@ Per modificare una tabella esistente:
 =======
 **Motivazione**:
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 - Tutta l'evoluzione della tabella visibile in un punto
 - Nessuna frammentazione della logica
 - Storia lineare e comprensibile
@@ -54,13 +46,6 @@ Per modificare una tabella esistente:
 
 ### **Problema Identificato**
 <<<<<<< HEAD
-Nel sistema SaluteOra abbiamo modelli con tipi di ID diversi:
-Nel sistema  abbiamo modelli con tipi di ID diversi:
-Nel sistema SaluteOra abbiamo modelli con tipi di ID diversi:
-Nel sistema  abbiamo modelli con tipi di ID diversi:
-Nel sistema  abbiamo modelli con tipi di ID diversi:
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 Nel sistema SaluteOra abbiamo modelli con tipi di ID diversi:
 =======
@@ -69,7 +54,6 @@ Nel sistema  abbiamo modelli con tipi di ID diversi:
 =======
 Nel sistema  abbiamo modelli con tipi di ID diversi:
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 - **User**: UUID (string 36 caratteri)
 - **Admin**: Integer auto-increment
 - **Activity**: Deve supportare relazioni polimorfiche con ENTRAMBI
@@ -92,13 +76,6 @@ causer_type = "Modules\User\Models\User"
 // Caso 2: Admin con integer
 causer_id = "123" (integer convertito in string)
 <<<<<<< HEAD
-causer_type = "Modules\SaluteOra\Models\Admin"
-causer_type = "Modules\<nome modulo>\Models\Admin"
-causer_type = "Modules\SaluteOra\Models\Admin"
-causer_type = "Modules\<nome modulo>\Models\Admin"
-causer_type = "Modules\<nome modulo>\Models\Admin"
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 causer_type = "Modules\SaluteOra\Models\Admin"
 =======
@@ -107,7 +84,6 @@ causer_type = "Modules\<nome modulo>\Models\Admin"
 =======
 causer_type = "Modules\<nome modulo>\Models\Admin"
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 ```
 
 ### **Errore Concettuale Precedente**
@@ -205,13 +181,10 @@ Questa lezione è ora memorizzata permanentemente per:
 
 ### Documentazione Aggiornata
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 - [Regole Migrazioni Laraxot](../../xot/docs/migration_rules.md)
 - [Polimorfismo UUID](../../xot/docs/polymorphic_uuid_support.md)
 - [Principi Architetturali](../../../../docs/architectural_principles.md)
@@ -222,12 +195,9 @@ Questa lezione è ora memorizzata permanentemente per:
 - [Activity Logging](./activity_logging_system.md)
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 - [Regole Migrazioni Laraxot](../../Xot/docs/migration_rules.md)
 - [Polimorfismo UUID](../../Xot/docs/polymorphic_uuid_support.md)
 - [Principi Architetturali](../../../docs/architectural_principles.md)
@@ -235,16 +205,11 @@ Questa lezione è ora memorizzata permanentemente per:
 ### Moduli Correlati
 - [User Module UUID](../../User/docs/uuid_implementation.md)
 <<<<<<< HEAD
-- [SaluteOra Models](../../SaluteOra/docs/model_architecture.md)
-- [SaluteOra Models](../../SaluteOra/docs/model_architecture.md)
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 - [SaluteOra Models](../../SaluteOra/docs/model_architecture.md)
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 - [ Models](../../<nome modulo>/docs/model_architecture.md)
 - [Activity Logging](./activity_logging_system.md)
 
@@ -425,12 +390,6 @@ Questa lezione è ora memorizzata permanentemente per:
 - [User Module UUID](../../User/docs/uuid_implementation.md)
 - [<nome progetto> Models](../../<nome progetto>/docs/model_architecture.md)
 <<<<<<< HEAD
-- [Activity Logging](./activity_logging_system.md)
-
-*Ultimo aggiornamento: Gennaio 2025*
-*Lezione appresa: Context-aware migrations con supporto UUID*
-=======
-<<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
@@ -438,4 +397,3 @@ Questa lezione è ora memorizzata permanentemente per:
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Lezione appresa: Context-aware migrations con supporto UUID*
->>>>>>> laraxot/dev

@@ -2,11 +2,7 @@
 # 📚 **Indice Documentazione Modulo Activity**
 =======
 <<<<<<< HEAD
-# 📚 **Indice Documentazione Modulo Activity**
-=======
 <<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: Activity Module - Documentation Index
 type: index
@@ -14,9 +10,6 @@ tags: [activity, audit-log, event-sourcing, phpstan]
 created: 2025-12-13
 updated: 2026-07-23
 ---
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -59,63 +52,11 @@ updated: 2026-07-23
 | CODE_QUALITY_ANALYSIS.md | Code quality |
 | QUERY_OPTIMIZATION_ANALYSIS.md | Query optimization |
 
-<<<<<<< HEAD
-# 📚 **Indice Documentazione Modulo Activity**
----
-title: Activity Module - Documentation Index
-type: index
-tags: [activity, audit-log, event-sourcing, phpstan]
-created: 2025-12-13
-updated: 2026-07-23
----
-
-**Status**: ✅ PHPStan Level 10 Compliant
-**Module Version**: 2.3.0
-
-## 🎯 **Lettura Essenziale**
-1. [README.md](./readme.md) - Panoramica completa e Quick Start.
-2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
-3. [philosophy.md](./philosophy.md) - I principi dell'Audit Trail e dell'Event Sourcing.
-
-## 🏗️ **Architettura e Pattern**
-- 🧩 **[Core Structure](./structure.md)** - Organizzazione interna del modulo.
-- 🎯 **[Event Sourcing](./event-sourcing.md)** - Dettagli sull'implementazione degli eventi di dominio.
-- 🔧 **[Actions Calling Actions](./actions-calling-actions-pattern.md)** - Pattern per la composizione delle azioni di logging.
-
-## 📊 **Filament & UI**
-- 📈 **[Filament Resources](./filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
-- 📉 **[Analytics Widgets](./dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
-- 🧭 **[Nested Resources](./filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
-
-## 🧪 **Qualità e Testing**
-- ✅ **[PHPStan Compliance](./phpstan-analysis.md)** - Report sulla stabilità Level 10.
-- 🔬 **[Testing Strategy](./testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
-- 🧹 **[PHPMD Fixes](./phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
-- 🧪 **PSR-4 Test Helpers** - Preferire Pest e classi anonime nei test; evitare classi helper top-level non allineate al filepath.
-
-## 📋 **Documenti Prodotto & Sviluppo**
-
-### Product
-| File | Scopo |
-|------|-------|
-| PRODUCT_ROADMAP.md | Roadmap |
-| PRODUCT_STRATEGY.md | Strategy |
-| PRODUCT_LAUNCH_PLAN.md | Launch Plan |
-
-### Development
-| File | Scopo |
-|------|-------|
-| BUSINESS_LOGIC_ANALYSIS.md | Business logic |
-| CODE_QUALITY_ANALYSIS.md | Code quality |
-| QUERY_OPTIMIZATION_ANALYSIS.md | Query optimization |
-
-=======
 <<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 # 📚 **Indice Documentazione Modulo Activity**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -158,9 +99,6 @@ updated: 2026-07-23
 | CODE_QUALITY_ANALYSIS.md | Code quality |
 | QUERY_OPTIMIZATION_ANALYSIS.md | Query optimization |
 
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ### Filament
 | File | Scopo |
@@ -171,12 +109,6 @@ updated: 2026-07-23
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
 =======
-<<<<<<< HEAD
-
-## 📦 **Pacchetti Composer**
-- [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
-=======
->>>>>>> laraxot/dev
 
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
@@ -185,11 +117,8 @@ updated: 2026-07-23
 
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
-<<<<<<< HEAD
-=======
 - `spatie/laravel-activitylog` - Audit trail
 - `spatie/laravel-event-sourcing` - Event sourcing, CQRS
->>>>>>> laraxot/dev
 
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
@@ -227,13 +156,10 @@ Il modulo Activity fornisce funzionalità di logging delle attività utente nel 
 use Modules\Activity\Actions\LogActivityAction;
 
 // Pattern di utilizzo
-<<<<<<< HEAD
-=======
 <<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 app(LogActivityAction::class)->execute(
     type: 'user.login',
     user: $user,
@@ -244,16 +170,9 @@ app(LogActivityAction::class)->execute(
 ```
 
 <<<<<<< HEAD
-## 📦 Pacchetti Composer
-- [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
-## 📦 Pacchetti Composer
-- [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 ## 📦 Pacchetti Composer
 - [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - `spatie/laravel-activitylog` - Audit trail
 - `spatie/laravel-event-sourcing` - Event sourcing, CQRS
@@ -266,16 +185,11 @@ app(LogActivityAction::class)->execute(
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 <<<<<<< HEAD
-</content>
-</content>
-=======
-<<<<<<< HEAD
 =======
 </content>
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 ### 📊 Best Practices
 
 1. **Type Safety Nativa**: Il modulo è già type-safe
@@ -367,9 +281,6 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 ---
 
 *Modulo di riferimento per PHPStan compliance nel progetto Laraxot*
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ## Dependency Intelligence
@@ -383,14 +294,6 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 - Memory: [Pre-Edit Docs-First Memory](../../../../docs/memory/pre-edit-docs-first-memory.md)
 <<<<<<< HEAD
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
-- Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
-- Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
-- Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
-- Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
-- Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
-=======
-<<<<<<< HEAD
-- Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
 =======
 <<<<<<< HEAD
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
@@ -398,5 +301,4 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 =======
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
 >>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -14,14 +14,8 @@ This document outlines the key changes and upgrades implemented for Filament v4 
 // v4 Approach (Current)
 <<<<<<< HEAD
 public function getFormSchema(): array
-public function getFormSchema(): array
-public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -58,8 +52,4 @@ public static function getFormSchema(): array
 ## References
 
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
-<<<<<<< HEAD
 - [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
-=======
-- [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
->>>>>>> laraxot/dev

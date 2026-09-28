@@ -88,10 +88,6 @@ class <nome progetto>ionMarketController
         return response()->json(['success' => true]);
     }
 }
-<<<<<<< HEAD
-```
-=======
->>>>>>> laraxot/dev
 
 ## Considerazioni sulle Performance
 

@@ -4,15 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
 
-<<<<<<< HEAD
-use Modules\Activity\Models\Activity;
-use Modules\Activity\Tests\TestCase;
-use Modules\User\Database\Factories\UserFactory;
-use PHPUnit\Framework\Assert;
-use Spatie\SchemalessAttributes\SchemalessAttributes;
-
-uses(TestCase::class);
-=======
 use Illuminate\Support\Collection;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
@@ -21,7 +12,6 @@ use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
 
 uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> laraxot/dev
 
 test('can create activity with basic information', function () {
     $user = UserFactory::new()->createOne();

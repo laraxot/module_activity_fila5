@@ -117,10 +117,6 @@ _bmad-output/
 
 ## Vedi Anche
 
-<<<<<<< HEAD
-- [Inventario Livewire → widget](livewire-inventory.md) — zero HTTP; nessun epic conversione
-=======
->>>>>>> laraxot/dev
 - [quick-reference](quick-reference.md)
 - [setup-guide](setup-guide.md)
 - [BMAD Workflow Catalog](../bmad-workflow-catalog.md)

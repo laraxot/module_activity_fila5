@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Collegamento alle Traduzioni del Modulo Activity
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).
@@ -38,22 +35,13 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Activity/project_docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Patient/project_docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Cms/project_docs/lang-link.md)
-<<<<<<< HEAD
 =======
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: lang-link-1
 canonical: ../../../Themes/docs/shared-components/lang-link-1.md
 ---
 
-<<<<<<< HEAD
-See canonical documentation: ../../../Themes/docs/shared-components/lang-link-1.md
-See canonical documentation: ../../../Themes/docs/shared-components/lang-link-1.md
-See canonical documentation: ../../../Themes/docs/shared-components/lang-link-1.md
-See canonical documentation: ../../../Themes/docs/shared-components/lang-link-1.md
-=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -67,5 +55,4 @@ See canonical documentation: ../../../Themes/docs/shared-components/lang-link-1.
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/lang-link-1.md
 >>>>>>> 2d6a374 (.)
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
