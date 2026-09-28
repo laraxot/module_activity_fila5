@@ -1,14 +1,3 @@
----
-title: "static instance method incompatibility"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "static instance method incompatibility"
-issues: []
-discussions: []
----
-
 # Incompatibilità tra metodi statici e di istanza in Filament
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo Activity.

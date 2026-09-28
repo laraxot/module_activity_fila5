@@ -1,14 +1,3 @@
----
-title: "PRODUCT ROADMAP"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "PRODUCT ROADMAP"
-issues: []
-discussions: []
----
-
 # Activity Module - Product Roadmap
 
 **Module:** Activity  
@@ -19,14 +8,6 @@ discussions: []
 
 ---
 
-title: "PRODUCT ROADMAP"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "PRODUCT ROADMAP"
-issues: []
-discussions: []
 ## Vision Statement
 
 To provide a **comprehensive activity tracking and audit trail system** that enables complete visibility into user actions, system events, and data changes across the entire platform. The Activity module serves as the central nervous system for understanding user behavior, debugging issues, and maintaining compliance.

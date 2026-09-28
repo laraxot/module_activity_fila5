@@ -1,14 +1,3 @@
----
-title: "roadmap vision"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "roadmap vision"
-issues: []
-discussions: []
----
-
 # Activity Module - Complete Roadmap 2026
 
 **Generated**: 2026-01-02
@@ -18,14 +7,6 @@ discussions: []
 
 ---
 
-title: "roadmap vision"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "roadmap vision"
-issues: []
-discussions: []
 ## 🎯 **MODULE IDENTITY**
 
 ### **Domain**: Event Sourcing & Audit Trail

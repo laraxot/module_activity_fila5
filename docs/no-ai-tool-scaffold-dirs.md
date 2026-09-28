@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "no ai tool scaffold dirs"
-issues: []
-discussions: []
 title: No AI/tool scaffold directories in module tree
 ---
 

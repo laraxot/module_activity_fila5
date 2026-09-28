@@ -1,14 +1,3 @@
----
-title: "phpstan baseline fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan baseline fixes"
-issues: []
-discussions: []
----
-
 # Correzioni PHPStan Baseline - Modulo Activity
 
 ## Obiettivo
@@ -131,14 +120,6 @@ Ogni file modificato verificato con:
 
 ---
 
-title: "phpstan baseline fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan baseline fixes"
-issues: []
-discussions: []
 **Data correzioni**: Novembre 2025
 **PHPStan Level**: 10 (MAX)
 **Errori risolti**: 21 → 0

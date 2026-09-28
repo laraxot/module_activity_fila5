@@ -1,14 +1,3 @@
----
-title: "activity log ui improvements"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "activity log ui improvements"
-issues: []
-discussions: []
----
-
 # Activity Log UI/UX Improvements - Implementation Summary
 
 **Date**: 2025-12-04
@@ -199,14 +188,6 @@ All components use dark mode variants:
 
 ---
 
-title: "activity log ui improvements"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "activity log ui improvements"
-issues: []
-discussions: []
 **Status**: ✅ Complete
 **Quality**: PHPStan Level 10 Compliant
 **Last Updated**: 2025-12-04

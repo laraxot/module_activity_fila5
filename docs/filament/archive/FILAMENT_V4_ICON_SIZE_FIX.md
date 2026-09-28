@@ -1,14 +1,3 @@
----
-title: "FILAMENT V4 ICON SIZE FIX"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "FILAMENT V4 ICON SIZE FIX"
-issues: []
-discussions: []
----
-
 # Filament v4 Icon Size Attribute Fix
 
 ## Issue Description

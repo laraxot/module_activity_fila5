@@ -1,14 +1,3 @@
----
-title: "current status"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "current status"
-issues: []
-discussions: []
----
-
 # Activity Module - Status Attuale
 
 ## ⚠️ STATO: Parzialmente Disabilitato
@@ -129,13 +118,5 @@ activity()
 
 ---
 
-title: "current status"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "current status"
-issues: []
-discussions: []
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Prossimo check**: Sprint Planning

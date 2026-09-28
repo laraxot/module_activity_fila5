@@ -1,14 +1,3 @@
----
-title: "testing rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing rules"
-issues: []
-discussions: []
----
-
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test
@@ -112,18 +101,14 @@ Ogni modulo e tema deve documentare:
 4. Errori comuni da evitare
 
 I file di documentazione vanno nelle cartelle `docs/` dentro ogni modulo/tema.
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 ### Regola TestCase Base (Laraxot)
 - Ogni `Modules/*/tests/TestCase.php` deve estendere `Modules\\Xot\\Tests\\XotBaseTestCase`.
 - Non estendere direttamente `Illuminate\\Foundation\\Testing\\TestCase` nei moduli.
 - Motivazione: DRY + KISS + bootstrap uniforme (container, translator, helper comuni).
----
-title: "testing rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing rules"
-issues: []
-discussions: []
----
+=======
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)

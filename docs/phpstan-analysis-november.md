@@ -1,37 +1,22 @@
----
-title: "phpstan analysis november"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan analysis november"
-issues: []
-discussions: []
----
-
 # PHPStan Analysis - Activity Module - November 2025
 
 ## Risultato Analisi
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 **Data Analisi:** 6 Novembre 2025  
 **PHPStan Level:** 10 (Massimo)  
 **File Analizzati:** 102  
----
-title: "phpstan analysis november"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan analysis november"
-issues: []
-discussions: []
+=======
 **Data Analisi:** 24 Novembre 2025
 **PHPStan Level:** 10 (Massimo)
 **File Analizzati:** 106
----
+>>>>>>> a1e3a4e (.)
+=======
 **Data Analisi:** 6 Novembre 2025  
 **PHPStan Level:** 10 (Massimo)  
 **File Analizzati:** 102  
+>>>>>>> 2d6a374 (.)
 **Errori Trovati:** 0 ✅
 
 ## Status
@@ -52,21 +37,27 @@ Il modulo Activity è completamente conforme all'analisi PHPStan livello 10, dim
 
 Prima dell'analisi PHPStan, sono stati risolti conflitti Git nei seguenti moduli che bloccavano l'analisi:
 
----
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2d6a374 (.)
 1. **Modules/Quaeris/app/Filament/Pages/AutoPage.php** - Risolti 4 conflitti
 2. **Modules/Quaeris/app/Filament/Pages/DashboardV2.php** - Risolti 4 conflitti
 3. **Modules/Quaeris/app/Filament/Widgets/BaseTableWidget.php** - Risolto 1 conflitto
 4. **Modules/Quaeris/app/Filament/Widgets/ContactWidget.php** - Risolto 1 conflitto
 5. **Modules/Quaeris/app/Datas/DashboardFilterData.php** - Risolto 1 conflitto
 6. **Modules/Quaeris/app/Datas/AlertDashboardFilterData.php** - Risolto 1 conflitto
----
+<<<<<<< HEAD
+=======
 1. **Modules/<nome progetto>/app/Filament/Pages/AutoPage.php** - Risolti 4 conflitti
 2. **Modules/<nome progetto>/app/Filament/Pages/DashboardV2.php** - Risolti 4 conflitti
 3. **Modules/<nome progetto>/app/Filament/Widgets/BaseTableWidget.php** - Risolto 1 conflitto
 4. **Modules/<nome progetto>/app/Filament/Widgets/ContactWidget.php** - Risolto 1 conflitto
 5. **Modules/<nome progetto>/app/Datas/DashboardFilterData.php** - Risolto 1 conflitto
 6. **Modules/<nome progetto>/app/Datas/AlertDashboardFilterData.php** - Risolto 1 conflitto
----
+>>>>>>> a1e3a4e (.)
+=======
+>>>>>>> 2d6a374 (.)
 7. **Modules/Xot/app/Actions/Filament/GetModulesNavigationItems.php** - Risolto 1 conflitto
 8. **Modules/Xot/app/Actions/Factory/GetPropertiesFromMethodsByModelAction.php** - Risolto 1 conflitto
 9. **Modules/Xot/tests/Unit/metatagdatatest.php** - Risolto 1 conflitto

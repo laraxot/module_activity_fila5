@@ -1,12 +1,4 @@
 ---
-title: "model migration seeder rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "model migration seeder rule"
-issues: []
-discussions: []
 name: model-migration-seeder-rule
 description: Implementation of 1 model = 1 migration + 1 seeder rule for Activity module
 metadata:

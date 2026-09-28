@@ -1,14 +1,3 @@
----
-title: "properties vuote activity log"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "properties vuote activity log"
-issues: []
-discussions: []
----
-
 # Troubleshooting: Properties Vuote in Activity Log
 
 ## Problema
@@ -361,18 +350,14 @@ $record->update(['stabi' => 999]);
 
 ---
 
-title: "properties vuote activity log"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "properties vuote activity log"
-issues: []
-discussions: []
+<<<<<<< HEAD
+<<<<<<< HEAD
 **
----
+=======
 **Ultimo aggiornamento**: 27 Ottobre 2025
----
+>>>>>>> 0a02158a (.)
+=======
 **Ultimo aggiornamento**: 27 Ottobre 2025
+>>>>>>> 35d8cf69 (Initial commit)
 **Severità**: Media (funziona ma properties vuote)
 **Soluzione**: Aggiungere `->logAll()` o `->logOnly()` in getActivitylogOptions()

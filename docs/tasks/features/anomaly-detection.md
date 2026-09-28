@@ -1,14 +1,3 @@
----
-title: "anomaly detection"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "anomaly detection"
-issues: []
-discussions: []
----
-
 # Anomaly Detection - Activity
 
 **Task ID**: ACTIVITY-FEATURE-013

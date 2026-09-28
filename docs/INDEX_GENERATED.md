@@ -1,14 +1,3 @@
----
-title: "INDEX GENERATED"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "INDEX GENERATED"
-issues: []
-discussions: []
----
-
 # Activity Module Documentation Index
 
 **Stats**: 698 files | 20 categories | Last update: 2026-07-28 10:45
@@ -231,14 +220,6 @@ Testing strategies and guidelines:
 
 ---
 
-title: "INDEX GENERATED"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "INDEX GENERATED"
-issues: []
-discussions: []
 ## Recently Updated
 
 **Last 20 files by modification date**

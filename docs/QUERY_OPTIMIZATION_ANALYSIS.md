@@ -1,14 +1,3 @@
----
-title: "QUERY OPTIMIZATION ANALYSIS"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "QUERY OPTIMIZATION ANALYSIS"
-issues: []
-discussions: []
----
-
 # Activity Module - Query Optimization Analysis
 
 ## Overview

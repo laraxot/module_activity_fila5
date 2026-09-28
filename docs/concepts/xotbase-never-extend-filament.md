@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Activity — mai Filament\*, sempre XotBase*"
 type: concept
 module: Activity

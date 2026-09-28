@@ -1,14 +1,3 @@
----
-title: "security guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "security guide"
-issues: []
-discussions: []
----
-
 # Security Guide - Activity
 
 **Task ID**: ACTIVITY-DOC-002

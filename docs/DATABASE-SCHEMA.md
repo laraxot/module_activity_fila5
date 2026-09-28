@@ -1,7 +1,4 @@
 ---
-qmd: "DATABASE SCHEMA"
-issues: []
-discussions: []
 title: "Activity Module Database Schema"
 type: reference
 tags: [activity, database, schema]

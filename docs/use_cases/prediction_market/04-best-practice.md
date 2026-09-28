@@ -1,14 +1,3 @@
----
-title: "04 best practice"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "04 best practice"
-issues: []
-discussions: []
----
-
 # Best Practice <nome progetto>ion Market
 
 ## Sicurezza

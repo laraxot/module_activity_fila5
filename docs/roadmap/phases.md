@@ -1,14 +1,3 @@
----
-title: "phases"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phases"
-issues: []
-discussions: []
----
-
 # Fasi di sviluppo - Activity Module
 
 ## Fase 1: Qualità e Pulizia (In Corso)

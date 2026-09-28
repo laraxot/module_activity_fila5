@@ -1,14 +1,3 @@
----
-title: "subject id causer id uuid migration fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "subject id causer id uuid migration fix"
-issues: []
-discussions: []
----
-
 # Fix: subject_id e causer_id devono supportare UUID
 
 ## Problema

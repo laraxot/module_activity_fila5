@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbaseresourcetable model audit batch activity.story"
-issues: []
-discussions: []
 title: XotBaseResourceTable model audit — batch-activity
 slug: xotbaseresourcetable-model-audit-batch-activity
 status: done

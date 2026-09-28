@@ -8,6 +8,7 @@ use Exception;
 use Filament\Forms\Components\Field;
 use Filament\Notifications\Notification;
 use Filament\Pages\Concerns\InteractsWithFormActions;
+use function Safe\json_encode;
 use Filament\Resources\Pages\Concerns\InteractsWithRecord;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
@@ -26,8 +27,6 @@ use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Filament\Resources\Pages\XotBasePage;
 use Webmozart\Assert\Assert;
-
-use function Safe\json_encode;
 
 /**
  * Classe base per visualizzare lo storico delle attività di un record.
@@ -254,7 +253,7 @@ abstract class ListLogActivities extends XotBasePage
 
         /** @var Collection<string, string> $labelMap */
         $labelMap = $extracted
-            ->filter(static fn (mixed $field): bool => $field instanceof Field)
+            ->filter(static fn ($field): bool => $field instanceof Field)
             ->mapWithKeys(
                 /** @param Field $field
                  * @return array<string, string>

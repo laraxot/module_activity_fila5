@@ -1,14 +1,3 @@
----
-title: "snapshot test fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "snapshot test fix"
-issues: []
-discussions: []
----
-
 # Snapshot Business Logic Test Fix
 
 ## Problema Identificato
@@ -46,14 +35,6 @@ test('snapshot can query by aggregate version', function () {
 
 ---
 
-title: "snapshot test fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "snapshot test fix"
-issues: []
-discussions: []
 ## Soluzione
 
 ### Pattern Applicato: Same as StoredEvent & Activity

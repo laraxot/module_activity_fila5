@@ -1,14 +1,3 @@
----
-title: "legacy roadmap vision"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "legacy roadmap vision"
-issues: []
-discussions: []
----
-
 # Activity Module - Complete Roadmap 2026
 
 **Status**: Event Sourcing & Audit Foundation
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "legacy roadmap vision"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "legacy roadmap vision"
-issues: []
-discussions: []
 ## 🎯 **MODULE IDENTITY**
 
 ### **Domain**: Event Sourcing & Audit Trail

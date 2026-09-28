@@ -1,14 +1,3 @@
----
-title: "bugfix geturl signature mismatch"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bugfix geturl signature mismatch"
-issues: []
-discussions: []
----
-
 # Bugfix: PHPStan `getUrl()` signature mismatch + enum/getColumnDefinitions drift
 
 ## 🐛 Errori

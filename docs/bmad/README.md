@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
 title: "Activity — BMAD Method Integration"
 description: "BMAD workflow documentation per il modulo Activity"
 module: "Activity"

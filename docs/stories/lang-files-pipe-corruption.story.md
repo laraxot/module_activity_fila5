@@ -1,14 +1,3 @@
----
-title: "lang files pipe corruption.story"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "lang files pipe corruption.story"
-issues: []
-discussions: []
----
-
 # Story: file di lingua corrotti da una pipe prima di ogni carattere
 
 Status: done

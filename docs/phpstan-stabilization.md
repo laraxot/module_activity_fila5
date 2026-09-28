@@ -1,14 +1,3 @@
----
-title: "phpstan stabilization"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan stabilization"
-issues: []
-discussions: []
----
-
 # PHPStan Stabilization - Activity Module
 
 This document tracks the systematic effort to achieve and maintain PHPStan Level 10 compliance for the Activity module, focusing on type safety, architectural robustness, and the "Super Mucca" methodology.
@@ -31,12 +20,4 @@ This document tracks the systematic effort to achieve and maintain PHPStan Level
 - Systematic resolution of namespace mismatches and missing class references from the initial PHPStan Level 10 report.
 
 ---
-title: "phpstan stabilization"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan stabilization"
-issues: []
-discussions: []
 *This document is maintained as a living record of the module's quality status.*

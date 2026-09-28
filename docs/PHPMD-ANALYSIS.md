@@ -1,14 +1,3 @@
----
-title: "PHPMD ANALYSIS"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "PHPMD ANALYSIS"
-issues: []
-discussions: []
----
-
 # PHPMD Analysis & Fixes - Activity Module
 
 ## 📊 Current Status
@@ -178,13 +167,5 @@ return $alternative;
 
 ---
 
-title: "PHPMD ANALYSIS"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "PHPMD ANALYSIS"
-issues: []
-discussions: []
 *Last Updated: 2025-11-12*
 *Status: In Progress - Complexity Fixes*

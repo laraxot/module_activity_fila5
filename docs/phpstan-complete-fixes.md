@@ -1,14 +1,3 @@
----
-title: "phpstan complete fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan complete fixes"
-issues: []
-discussions: []
----
-
 # PHPStan Complete Fixes 2025 - Activity Module
 
 **Data**: 2025-01-27
@@ -101,14 +90,6 @@ Note: Using configuration file phpstan.neon.
 - Le relazioni Eloquent sono verificate prima dell'uso
 
 ---
-title: "phpstan complete fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan complete fixes"
-issues: []
-discussions: []
 **Documento creato**: 2025-01-27
 **Documento creato**: [DATE]
 **Stato**: ✅ COMPLETATO

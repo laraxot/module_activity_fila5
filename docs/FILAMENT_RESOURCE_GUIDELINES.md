@@ -1,14 +1,3 @@
----
-title: "FILAMENT RESOURCE GUIDELINES"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "FILAMENT RESOURCE GUIDELINES"
-issues: []
-discussions: []
----
-
 # Activity Module Filament Resource Guidelines
 
 ## Extension Patterns

@@ -1,24 +1,8 @@
----
-title: "00 index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "00 index"
-issues: []
-discussions: []
----
-
+<<<<<<< HEAD
 # 📚 **Indice Documentazione Modulo Activity**
----
-title: "00 index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "00 index"
-issues: []
-discussions: []
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: Activity Module - Documentation Index
 type: index
@@ -26,6 +10,7 @@ tags: [activity, audit-log, event-sourcing, phpstan]
 created: 2025-12-13
 updated: 2026-07-23
 ---
+>>>>>>> laraxot/dev
 
 **Status**: ✅ PHPStan Level 10 Compliant
 **Module Version**: 2.3.0
@@ -67,9 +52,11 @@ updated: 2026-07-23
 | CODE_QUALITY_ANALYSIS.md | Code quality |
 | QUERY_OPTIMIZATION_ANALYSIS.md | Query optimization |
 
----
----
----
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 # 📚 **Indice Documentazione Modulo Activity**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -112,14 +99,16 @@ updated: 2026-07-23
 | CODE_QUALITY_ANALYSIS.md | Code quality |
 | QUERY_OPTIMIZATION_ANALYSIS.md | Query optimization |
 
+>>>>>>> laraxot/dev
 ### Filament
 | File | Scopo |
 |------|-------|
 | FILAMENT_RESOURCE_GUIDELINES.md | Resource guidelines |
+<<<<<<< HEAD
 
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
----
+=======
 
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
@@ -167,7 +156,10 @@ Il modulo Activity fornisce funzionalità di logging delle attività utente nel 
 use Modules\Activity\Actions\LogActivityAction;
 
 // Pattern di utilizzo
----
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 app(LogActivityAction::class)->execute(
     type: 'user.login',
     user: $user,
@@ -177,8 +169,11 @@ app(LogActivityAction::class)->execute(
 );
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 ## 📦 Pacchetti Composer
 - [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
+>>>>>>> laraxot/dev
 - `spatie/laravel-activitylog` - Audit trail
 - `spatie/laravel-event-sourcing` - Event sourcing, CQRS
 
@@ -189,10 +184,12 @@ app(LogActivityAction::class)->execute(
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
----
+<<<<<<< HEAD
+=======
 </content>
----
----
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 ### 📊 Best Practices
 
 1. **Type Safety Nativa**: Il modulo è già type-safe
@@ -284,6 +281,7 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 ---
 
 *Modulo di riferimento per PHPStan compliance nel progetto Laraxot*
+>>>>>>> laraxot/dev
 
 ## Dependency Intelligence
 
@@ -294,8 +292,13 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 - Prima di modificare codice: ragionare, studiare i docs del modulo/tema, aggiornare docs/rules/memory/skills.
 - Riferimento globale: [Pre-Edit Docs-First Rule](../../../../docs/rules/pre-edit-docs-first-rule.md)
 - Memory: [Pre-Edit Docs-First Memory](../../../../docs/memory/pre-edit-docs-first-memory.md)
+<<<<<<< HEAD
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
----
+=======
+<<<<<<< HEAD
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
----
+>>>>>>> 0a02158a (.)
+=======
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev

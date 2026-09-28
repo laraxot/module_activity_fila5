@@ -1,14 +1,3 @@
----
-title: "analisi laravel shop main"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analisi laravel shop main"
-issues: []
-discussions: []
----
-
 # Analisi Approfondita: laravel-shop-main
 
 ## 1. Struttura delle Cartelle e Naming

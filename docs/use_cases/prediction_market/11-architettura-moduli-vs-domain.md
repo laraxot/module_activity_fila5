@@ -1,14 +1,3 @@
----
-title: "11 architettura moduli vs domain"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "11 architettura moduli vs domain"
-issues: []
-discussions: []
----
-
 # Architettura a Moduli vs Domain per <nome progetto>ion Market
 
 ## Introduzione
@@ -85,28 +74,28 @@ app/Domain/<nome progetto>ionMarket/
 - [CQRS e DDD](https://martinfowler.com/bliki/CQRS.html)
 - [Best practice modularità](https://laravelmodules.com/docs/12/basic-usage/creating-a-module)
 - [Esempi di modularizzazione](https://github.com/nWidart/laravel-modules)
+<<<<<<< HEAD
 - [Indice prediction_market](./README.md)
----
-title: "11 architettura moduli vs domain"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "11 architettura moduli vs domain"
-issues: []
-discussions: []
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 - [Indice prediction_market](./readme.md)
----
+=======
 - [Indice prediction_market](./README.md)
----
+>>>>>>> 77d3d692 (.)
+=======
 - [Indice prediction_market](./readme.md)
+>>>>>>> 4fb998e0 (.)
+>>>>>>> 35d8cf69 (Initial commit)
 - [Architettura prediction_market](./02_architettura.md)
 - [Best practice prediction_market](./04_best_practice.md)
 - [API prediction_market](./06_api.md)
 - [Testing prediction_market](./07_test.md)
----
+<<<<<<< HEAD
+=======
 - [Indice <nome progetto>ion_market](./readme.md)
 - [Architettura <nome progetto>ion_market](./02_architettura.md)
 - [Best practice <nome progetto>ion_market](./04_best_practice.md)
 - [API <nome progetto>ion_market](./06_api.md)
 - [Testing <nome progetto>ion_market](./07_test.md)
+>>>>>>> 35d8cf69 (Initial commit)

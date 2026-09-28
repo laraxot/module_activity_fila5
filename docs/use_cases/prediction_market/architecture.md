@@ -1,14 +1,3 @@
----
-title: "architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture"
-issues: []
-discussions: []
----
-
 # 🏗️ Architettura del Modulo <nome progetto>ion Market
 
 ## 🌟 Panoramica dell'Architettura

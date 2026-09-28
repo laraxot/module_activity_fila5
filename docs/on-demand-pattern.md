@@ -1,7 +1,4 @@
 ---
-qmd: "on demand pattern"
-issues: []
-discussions: []
 title: "On-Demand Pattern — Module Activity"
 type: documentation
 created: 2026-05-11

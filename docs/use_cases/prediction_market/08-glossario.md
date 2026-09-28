@@ -1,14 +1,3 @@
----
-title: "08 glossario"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "08 glossario"
-issues: []
-discussions: []
----
-
 # Glossario <nome progetto>ion Market
 
 - **<nome progetto>ion Market**: Mercato di previsione, piattaforma per scommettere su eventi futuri.

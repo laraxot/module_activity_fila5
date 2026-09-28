@@ -1,14 +1,3 @@
----
-title: "phpstan quality rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan quality rules"
-issues: []
-discussions: []
----
-
 # PHPStan Quality Rules
 
 ## ⚠️ REGOLA CRITICA: NON ESCLUDERE MAI I TEST DA PHPSTAN
@@ -182,14 +171,6 @@ test('activity is logged correctly', function (): void {
 
 ---
 
-title: "phpstan quality rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan quality rules"
-issues: []
-discussions: []
 **Documento creato per prevenire la pratica sbagliata di escludere i test dall'analisi statica.**
 
 **Data:** 2025-10-10

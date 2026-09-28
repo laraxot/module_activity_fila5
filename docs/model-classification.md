@@ -1,14 +1,3 @@
----
-title: "model classification"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "model classification"
-issues: []
-discussions: []
----
-
 # Activity Module - Model Classification
 
 ## Business-Relevant Models (Require Factories/Seeders)

@@ -1,14 +1,3 @@
----
-title: "003 activity analytics dashboard"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "003 activity analytics dashboard"
-issues: []
-discussions: []
----
-
 # Task 003: Build Activity Analytics Dashboard
 
 ## Description
@@ -116,7 +105,7 @@ Activity data is being logged but there's no visualization or analytics. Users n
   - Interactive hover details
 
 ### 4. Dashboard Page
-- [ ] Create `Dashboard` (XotBaseDashboard)
+- [ ] Create `ActivityDashboardPage` (XotBasePage)
   - Grid layout for widgets
   - Responsive design
   - Customizable widget positions
@@ -249,13 +238,5 @@ Activity data is being logged but there's no visualization or analytics. Users n
 
 ---
 
-title: "003 activity analytics dashboard"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "003 activity analytics dashboard"
-issues: []
-discussions: []
 **Status**: Pending
 **Assignee**: TBD

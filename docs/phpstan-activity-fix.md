@@ -1,14 +1,3 @@
----
-title: "phpstan activity fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan activity fix"
-issues: []
-discussions: []
----
-
 # PHPStan Activity Module Fix
 
 ## Problema

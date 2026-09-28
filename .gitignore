@@ -1,180 +1,184 @@
-
-._*
-# -----------------------------------------------------------------------------
-# ==============================================
-*~
-*~BASE
-*~head
-*~HEAD
-*~LOCAL
-*~REMOTE
-activity_coverage.xml
-activity_test_data.json
-agentdb.rvf
-.agents
-.agents~HEAD
-# AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
-app/storage/
 # Auto-generated forbidden paths — do not edit manually
-*.backup
-*.backup_*
-*.backup-*
-*.backup.*
-# BACKUP FILES
-*.bak
-*.bakcup
+# Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
+
 bashscripts
 _bmad-output
-bootstrap/compiled.php
-/build
-/build/
-build/
-# BUILD & COMPILED FILES
-*.cache
-cache/
-# Cache activity log
-# CACHE & TEMPORARY FILES
 .circleci
-.claude*
 .claude-audit
-.codex*
-composer.lock
-config/development.php
-config/local.php
-# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
-.cursor
-.cursor/
-/.cursor
-/.cursor/
-.cursor~*
-database/Factories_old/
-database/Migrations_old/
-database_old/
-database/Seeders_old/
-# DEPENDENCIES & PACKAGES
 .devcontainer
-.devcontainer/
-# DEVELOPMENT TOOLS
-dist/
 _docs
 docs/archive
 docs/archived
-docs/cache/
 docs/legacy
-docs/phpstan/
-/docs/vendor/
 docs/workbench
-# DOCUMENTATION CACHE
-.DS_Store
-.DS_Store?
-ehthumbs.db
-# END OF ACTIVITY .GITIGNORE
+.kilocode
+.kiro
+.ralph
+scripts
+test-results
+tests/.claude-audit
+# ==============================================
+# LARAXOT MODULE ACTIVITY - .GITIGNORE
+# Modulo Activity Laraxot - Template standardizzato
+# Ultimo aggiornamento: 2025-01-31
+# DEPENDENCIES & PACKAGES
+/vendor/
+/vendor
+/node_modules/
+/node_modules
+/docs/vendor/
+package-lock.json
+yarn.lock
+composer.lock
+yarn-error.log
+npm-debug.log
+# BUILD & COMPILED FILES
+/build
+/build/
+build/
+dist/
+docs/cache/
+cache/
+# CACHE & TEMPORARY FILES
+*.cache
+*.lock
+*.phar
+*.jar
+*.tmp
+*.swp
+*.swo
+*.stackdump
+*:Zone.Identifier
+v8-compile-cache-*
+.php-cs-fixer.cache
+.phpunit.result.cache
+# LOG FILES
+*.log
+error_log
+npm-debug.log*
+yarn-error.log*
+lerna-debug.log*
+# LARAVEL SPECIFIC
+bootstrap/compiled.php
+app/storage/
+public/storage
+public/hot
+public_html/storage
+public_html/hot
+storage/*.key
 .env
 .env.*
 !.env.example
 # ENVIRONMENT & CONFIGURATION
-error_log
-*.fila2
-# File di configurazione locale
-# File di test activity
-# File specifici del progetto
-.git-blame-ignore-revs
-.gitmodules
-.git-rewrite
-.git-rewrite/
-# GIT SPECIFIC
-graphify-out
-graphify-out/
-Homestead.json
 Homestead.yaml
+Homestead.json
+/.vagrant
 /.idea
-*.jar
-.kilocode
-.kiro
-lang/lang/
-# LANGUAGE FILES
-laravel
-# LARAVEL SPECIFIC
-# Laraxot — forbidden at module/theme root (rector.php, phpinsights.php, .cursor, .windsurf, .vscode)
-# Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
-# LARAXOT MODULE ACTIVITY - .GITIGNORE
-# Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
-lerna-debug.log*
-*.lock
-*.log
-# LOG FILES
-# MODULE SPECIFIC - ACTIVITY
-# Modulo Activity Laraxot - Template standardizzato
-*.new
-/node_modules
-/node_modules/
-npm-debug.log
-npm-debug.log*
+.phpintel
+.vscode/
+# GIT SPECIFIC
+.git-rewrite/
+.git-rewrite
+.git-blame-ignore-revs
+# SYSTEM FILES
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+# BACKUP FILES
 *.old
 *.old1
 *.old2
-# OLD DIRECTORIES (LEGACY CLEANUP)
-.opencode
-.opencode~HEAD
-*.orig
-package-lock.json
-*.phar
-.php-cs-fixer.cache
-/phpinsights.php
-phpinsights.php
-.phpintel
+*.backup
+*.backup.*
+*.backup-*
+*.backup_*
+*.bak
+*.bakcup
+*.new
+# DEVELOPMENT TOOLS
+.windsurf/
+.cursor/
 .phpstorm.meta.php
-.phpunit.result.cache
-public/hot
-public_html
-public_html/hot
-public_html/storage
-public/storage
-.ralph
-# Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
-/rector.php
-rector.php
-*.rej
+# DOCUMENTATION CACHE
+docs/phpstan/
+# LANGUAGE FILES
+lang/lang/
 resources/lang/
+# OLD DIRECTORIES (LEGACY CLEANUP)
 resources/views/Components_old/
-scripts
-.Spotlight-V100
-*.stackdump
+database/Migrations_old/
+database/Seeders_old/
+database/Factories_old/
+database_old/
+# MODULE SPECIFIC - ACTIVITY
+# File di configurazione locale
+config/local.php
+config/development.php
+# Cache activity log
 storage/activity/
-storage/*.key
 storage/logs/
-*.swo
-*.swp
-# SYSTEM FILES
+# File di test activity
+activity_test_data.json
 test_activity_logs.sql
-test-results
-tests/activity_coverage.xml
-tests/AuditCoverage/
-tests/.claude-audit
+# END OF ACTIVITY .GITIGNORE
+# File specifici del progetto
+*.fila2
+laravel
+public_html
 tests/coverage
 tests/coverage/
 tests/coverage.xml/
-Thumbs.db
-*.tmp
+activity_coverage.xml
+# -----------------------------------------------------------------------------
+# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+*~HEAD
+*~BASE
+*~LOCAL
+*~REMOTE
+*.orig
+*.rej
+*~head
+agentdb.rvf
+tests/AuditCoverage
+# AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
+
+# Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
+.devcontainer/
+tests/AuditCoverage/
+
+# Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
+phpinsights.php
+rector.php
+graphify-out
+graphify-out/
+.agents
 tools
-.Trashes
-# Ultimo aggiornamento: 2025-01-31
-v8-compile-cache-*
-/.vagrant
-/vendor
-/vendor/
-.vscode
-.vscode/
-/.vscode
-/.vscode/
+workbench
+.claude*
+.codex*
+.gitmodules
+.opencode
+.agents~HEAD
+.opencode~HEAD
+workbench/
+.cursor
 .windsurf
-.windsurf/
+.vscode
+
+# Laraxot — forbidden at module/theme root (rector.php, phpinsights.php, .cursor, .windsurf, .vscode)
+/rector.php
+/phpinsights.php
+/.cursor
+/.cursor/
 /.windsurf
 /.windsurf/
+/.vscode
+/.vscode/
+.cursor~*
 .windsurf~*
-workbench
-workbench/
-yarn-error.log
-yarn-error.log*
-yarn.lock
-*:Zone.Identifier
+tests/activity_coverage.xml

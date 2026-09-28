@@ -1,14 +1,3 @@
----
-title: "coverage"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "coverage"
-issues: []
-discussions: []
----
-
 # Activity Module Test Coverage
 
 ## Coverage Results
@@ -92,14 +81,6 @@ To run with coverage:
 ./vendor/bin/pest --coverage Modules/Activity/tests/
 
 ---
-title: "coverage"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "coverage"
-issues: []
-discussions: []
 *Last updated: January 17, 2026*
 module: theme
 topic: coverage

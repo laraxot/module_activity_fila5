@@ -1,14 +1,3 @@
----
-title: "duplicate methods analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "duplicate methods analysis"
-issues: []
-discussions: []
----
-
 # Analisi Metodi Duplicati - Modulo Activity
 
 **Data Generazione**: 2025-10-15 06:41:17
@@ -87,14 +76,6 @@ public function user(): BelongsTo
 
 ---
 
-title: "duplicate methods analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "duplicate methods analysis"
-issues: []
-discussions: []
 ### 2. Metodo: `login`
 
 **Tipo Refactoring**: `Interface` | **Complessità**: 🟢 Low | **Confidenza**: ⚠️ 50%

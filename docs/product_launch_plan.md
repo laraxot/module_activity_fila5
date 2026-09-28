@@ -1,14 +1,3 @@
----
-title: "product launch plan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "product launch plan"
-issues: []
-discussions: []
----
-
 # Activity Module - Product Launch Plan
 
 **Module:** Activity  
@@ -18,14 +7,6 @@ discussions: []
 
 ---
 
-title: "product launch plan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "product launch plan"
-issues: []
-discussions: []
 ## Launch Objectives
 
 1. **Product:** Deploy activity tracking across all modules

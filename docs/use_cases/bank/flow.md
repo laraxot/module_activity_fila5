@@ -1,14 +1,3 @@
----
-title: "flow"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "flow"
-issues: []
-discussions: []
----
-
 # Flussi Principali - Use Case Bancario
 
 ## 1. Apertura Conto

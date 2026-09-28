@@ -1,14 +1,3 @@
----
-title: "coverage status"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "coverage status"
-issues: []
-discussions: []
----
-
 # Activity Module - Errori e Coverage
 
 ## Stato Test

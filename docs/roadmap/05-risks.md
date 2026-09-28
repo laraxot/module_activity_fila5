@@ -1,14 +1,3 @@
----
-title: "05 risks"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "05 risks"
-issues: []
-discussions: []
----
-
 # Risks - Activity
 
 ## Top Risks

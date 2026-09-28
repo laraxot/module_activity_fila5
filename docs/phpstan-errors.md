@@ -1,14 +1,3 @@
----
-title: "phpstan errors"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan errors"
-issues: []
-discussions: []
----
-
 # PHPStan Errors - Activity Module
 
 **Date**: 2025-12-16
@@ -61,14 +50,6 @@ trait HasEvents
 
 ---
 
-title: "phpstan errors"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan errors"
-issues: []
-discussions: []
 ### Error 2: Missing Return Type on snapshots()
 
 **Line**: 17

@@ -1,14 +1,3 @@
----
-title: "analysis traditional"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analysis traditional"
-issues: []
-discussions: []
----
-
 # Analisi di Larabank Traditional
 
 ## Panoramica

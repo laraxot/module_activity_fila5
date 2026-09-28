@@ -1,14 +1,3 @@
----
-title: "analisi laravel shop command bus"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analisi laravel shop command bus"
-issues: []
-discussions: []
----
-
 # Analisi Approfondita: laravel-shop-command-bus
 
 ## 1. Struttura delle Cartelle e Naming

@@ -1,8 +1,4 @@
 ---
-updated: 2026-09-26
-qmd: "redundancy audit"
-issues: []
-discussions: []
 title: "Activity redundancy audit 2026-05-21"
 type: audit
 module: Activity

@@ -1,14 +1,3 @@
----
-title: "analysis aggregates"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analysis aggregates"
-issues: []
-discussions: []
----
-
 # Analisi di Larabank Aggregates
 
 ## Panoramica

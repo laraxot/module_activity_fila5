@@ -1,14 +1,3 @@
----
-title: "activity factory uuid consistency"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "activity factory uuid consistency"
-issues: []
-discussions: []
----
-
 # Fix: ActivityFactory subject_id deve usare UUID
 
 ## Problema

@@ -1,14 +1,3 @@
----
-title: "custom exports"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "custom exports"
-issues: []
-discussions: []
----
-
 # Custom Exports - Activity
 
 **Task ID**: ACTIVITY-FEATURE-019

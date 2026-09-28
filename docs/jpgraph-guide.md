@@ -1,7 +1,4 @@
 ---
-qmd: "jpgraph guide"
-issues: []
-discussions: []
 title: 'JpGraph 4.4.2 Guide'
 module: Activity
 type: reference

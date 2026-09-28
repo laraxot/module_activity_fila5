@@ -1,7 +1,4 @@
 ---
-qmd: "quick start"
-issues: []
-discussions: []
 title: "Activity Module Quick Start"
 type: guide
 tags: [activity, audit, logging]

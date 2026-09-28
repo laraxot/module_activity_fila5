@@ -1,14 +1,3 @@
----
-title: "filament5 pattern migration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament5 pattern migration"
-issues: []
-discussions: []
----
-
 # Filament 5 Pattern Migration - Activity Module
 
 ## Data Migration

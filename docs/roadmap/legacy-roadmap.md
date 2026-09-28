@@ -1,14 +1,3 @@
----
-title: "legacy roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "legacy roadmap"
-issues: []
-discussions: []
----
-
 # Roadmap Activity
 
 Roadmap operativo del module **Activity**, suddiviso in file tematici.

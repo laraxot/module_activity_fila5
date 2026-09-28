@@ -1,14 +1,3 @@
----
-title: "security alerts"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "security alerts"
-issues: []
-discussions: []
----
-
 # Security Alerts - Activity
 
 **Task ID**: ACTIVITY-FEATURE-012

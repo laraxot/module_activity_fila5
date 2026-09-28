@@ -1,7 +1,4 @@
 ---
-qmd: "activity migration ownership"
-issues: []
-discussions: []
 title: "Activity Migration Ownership"
 type: concept
 sources: []

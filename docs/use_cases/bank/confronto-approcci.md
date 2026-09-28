@@ -1,14 +1,3 @@
----
-title: "confronto approcci"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "confronto approcci"
-issues: []
-discussions: []
----
-
 # Confronto tra Approcci: Traditional, Projectors, Aggregates, Eventsauce
 
 ## 1. Larabank-Traditional

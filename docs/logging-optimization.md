@@ -1,20 +1,15 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 ---
-title: "logging optimization"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logging optimization"
-issues: []
-discussions: []
 module: theme
 topic: logging_optimization
 canonical: ../../../Themes/docs/shared-components/logging-optimization.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md
----
----
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 # Activity Module - Logging Optimization
 
 ## Current Issues
@@ -307,6 +302,9 @@ By removing logging from ActivityLogger:
 4. Application scales better under load
 5. Error logging remains for debugging
 
+<<<<<<< HEAD
 **Key Takeaway**: The Activity table IS the audit trail. Logging successful database writes is redundant and wastes performance.
----
+>>>>>>> 0a02158a (.)
+=======
 **Key Takeaway**: The Activity table IS the audit trail. Logging successful database writes is redundant and wastes performance.
+>>>>>>> 35d8cf69 (Initial commit)

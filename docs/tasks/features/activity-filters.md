@@ -1,14 +1,3 @@
----
-title: "activity filters"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "activity filters"
-issues: []
-discussions: []
----
-
 # Activity Filters - Activity
 
 **Task ID**: ACTIVITY-FEATURE-014

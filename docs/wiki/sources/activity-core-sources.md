@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "activity core sources"
-issues: []
-discussions: []
 title: "Activity Core Sources"
 module: "Activity"
 type: source

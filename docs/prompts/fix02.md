@@ -1,7 +1,4 @@
 ---
-qmd: "fix02"
-issues: []
-discussions: []
 title: "Fix: Rimuovere 'activity' da database.php"
 module: Activity
 type: reference

@@ -1,14 +1,3 @@
----
-title: "phpstan syntax fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan syntax fixes"
-issues: []
-discussions: []
----
-
 # PHPStan Syntax Fixes - Modulo Activity
 
 **Data**: 2025-01-11
@@ -44,14 +33,6 @@ use Modules\Activity\Models\Snapshot;
 
 ---
 
-title: "phpstan syntax fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan syntax fixes"
-issues: []
-discussions: []
 ### 2. StoredEventBusinessLogicTest.php - Duplicate Import
 
 **Problema**:

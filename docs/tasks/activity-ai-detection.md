@@ -1,14 +1,3 @@
----
-title: "activity ai detection"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "activity ai detection"
-issues: []
-discussions: []
----
-
 # Task: AI-Driven Anomaly Detection - Activity
 
 **Modulo**: Activity  

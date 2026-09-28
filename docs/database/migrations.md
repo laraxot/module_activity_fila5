@@ -1,14 +1,3 @@
----
-title: "migrations"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "migrations"
-issues: []
-discussions: []
----
-
 # Migrazioni del modulo Activity
 
 Questo documento descrive le migrazioni del database per il modulo Activity. Ogni migrazione include un docblock e un type hint `Blueprint $table` per migliorare la leggibilità e l'analisi statica con PHPStan.

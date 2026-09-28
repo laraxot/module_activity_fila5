@@ -1,14 +1,3 @@
----
-title: "docs index audit.story"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "docs index audit.story"
-issues: []
-discussions: []
----
-
 # Story: Audit indice documentazione — Activity
 
 **Modulo**: Activity

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Activity — scopo, confini e come servirlo meglio"
 type: concept
 module: Activity

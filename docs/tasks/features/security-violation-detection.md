@@ -1,14 +1,3 @@
----
-title: "security violation detection"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "security violation detection"
-issues: []
-discussions: []
----
-
 # Security Violation Detection - Activity
 
 **Task ID**: ACTIVITY-FEATURE-011

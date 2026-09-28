@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Activity\Providers;
 
 use Modules\Xot\Providers\XotBaseServiceProvider;
-use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 use Override;
 
 /**
@@ -59,17 +58,10 @@ class ActivityServiceProvider extends XotBaseServiceProvider
     #[Override]
     protected function registerConfig(): void
     {
-        $configFile = app(GetModulePathByGeneratorAction::class)
-            ->execute($this->name, 'config').'/config.php';
-
-        if (! is_file($configFile)) {
-            return;
-        }
-
         $this->publishes([
-            $configFile => config_path('activity.php'),
+            module_path($this->name, 'config/config.php') => config_path('activity.php'),
         ], 'config');
 
-        $this->mergeConfigFrom($configFile, 'activity');
+        $this->mergeConfigFrom(module_path($this->name, 'config/config.php'), 'activity');
     }
 }

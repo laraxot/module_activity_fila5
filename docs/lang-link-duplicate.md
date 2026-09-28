@@ -1,53 +1,40 @@
----
-title: "lang link duplicate"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "lang link duplicate"
-issues: []
-discussions: []
----
-
 # Collegamento alle Traduzioni del Modulo Activity
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
 
 Consulta la documentazione delle traduzioni qui:
+<<<<<<< HEAD
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
----
-title: "lang link duplicate"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "lang link duplicate"
-issues: []
-discussions: []
+=======
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
+>>>>>>> laraxot/dev
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
 
 Consulta la documentazione delle traduzioni qui:
+<<<<<<< HEAD
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
----
+=======
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
+>>>>>>> laraxot/dev
 
 ## Collegamento Bidirezionale
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Torna a README](./README.md)
----
+=======
 - [Torna a README](./readme.md)
+>>>>>>> laraxot/dev
 - [Vai a Struttura](./structure.md)
 - [Vai a Traduzioni](./translations.md)
 
@@ -60,6 +47,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 > Aggiorna entrambi i riferimenti se aggiungi nuove chiavi di traduzione o modifichi la struttura.
 
 ## Collegamenti tra versioni di lang-link.md
+<<<<<<< HEAD
 * [lang-link.md](laravel/Modules/Chart/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Reporting/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Gdpr/docs/lang-link.md)
@@ -89,7 +77,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Activity/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Patient/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
----
+=======
 * [lang-link.md](laravel/modules/chart/docs/lang-link.md)
 * [lang-link.md](laravel/modules/reporting/docs/lang-link.md)
 * [lang-link.md](laravel/modules/gdpr/docs/lang-link.md)
@@ -119,3 +107,4 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/modules/activity/docs/lang-link.md)
 * [lang-link.md](laravel/modules/patient/docs/lang-link.md)
 * [lang-link.md](laravel/modules/cms/docs/lang-link.md)
+>>>>>>> laraxot/dev

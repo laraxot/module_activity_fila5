@@ -1,14 +1,5 @@
----
-title: "INDEX"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "INDEX"
-issues: []
-discussions: []
----
-
+<<<<<<< HEAD
+<<<<<<< HEAD
 # Activity Module Documentation Index
 
 **Stats**: 698 files | 20 categories | Last update: 2026-07-28
@@ -20,14 +11,6 @@ discussions: []
 
 ---
 
-title: "INDEX"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "INDEX"
-issues: []
-discussions: []
 ## Documentation by Category
 
 ### Root (292 files)
@@ -88,8 +71,9 @@ Architectural patterns and system design documentation
 ---
 
 **Complete inventory**: See [INDEX_GENERATED.md](INDEX_GENERATED.md) for full detailed categorization across all 698 files in 20 categories.
----
----
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 # Documentation Index
 
 Modulo: Activity
@@ -97,4 +81,7 @@ Modulo: Activity
 ## File disponibili
 
 <!-- auto-generato: elencare i file .md presenti -->
----
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)

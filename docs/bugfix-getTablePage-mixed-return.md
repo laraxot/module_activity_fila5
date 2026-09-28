@@ -1,14 +1,3 @@
----
-title: "bugfix getTablePage mixed return"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bugfix getTablePage mixed return"
-issues: []
-discussions: []
----
-
 # Bugfix: `getTablePage()` returns `mixed` instead of `int` (PHPStan)
 
 ## 🐛 Errore

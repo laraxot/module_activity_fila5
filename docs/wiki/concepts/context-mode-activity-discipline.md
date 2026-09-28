@@ -1,7 +1,4 @@
 ---
-qmd: "context mode activity discipline"
-issues: []
-discussions: []
 title: "Activity Module — Context-Mode Discipline"
 type: "rule"
 tags: [activity, context-mode, xotbase-zen]

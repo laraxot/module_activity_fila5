@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Activity Module — Doctrine"
 type: doctrine
 tags: [activity, audit, event-sourcing, module-doctrine]

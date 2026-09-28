@@ -1,14 +1,3 @@
----
-title: "glossario"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "glossario"
-issues: []
-discussions: []
----
-
 # Glossario Bank (Event Sourcing)
 
 - **Event Sourcing**: Pattern di persistenza basato su eventi immutabili.

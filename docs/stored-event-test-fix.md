@@ -1,14 +1,3 @@
----
-title: "stored event test fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "stored event test fix"
-issues: []
-discussions: []
----
-
 # StoredEvent Business Logic Test Fix
 
 ## Problema Identificato
@@ -38,14 +27,6 @@ Failed asserting that false is true.
 
 ---
 
-title: "stored event test fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "stored event test fix"
-issues: []
-discussions: []
 ## Analisi del Problema
 
 ### Dove Sono i Metodi?

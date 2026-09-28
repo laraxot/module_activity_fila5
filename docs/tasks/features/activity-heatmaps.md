@@ -1,14 +1,3 @@
----
-title: "activity heatmaps"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "activity heatmaps"
-issues: []
-discussions: []
----
-
 # Activity Heatmaps - Activity
 
 **Task ID**: ACTIVITY-FEATURE-010

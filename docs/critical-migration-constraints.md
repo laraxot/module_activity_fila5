@@ -1,14 +1,3 @@
----
-title: "critical migration constraints"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "critical migration constraints"
-issues: []
-discussions: []
----
-
 # ⚠️ CRITICAL: MAI FARE migrate:refresh/fresh/rollback O --force 🔴🔴
 
 ## I Dati Sono SACRI
@@ -75,12 +64,4 @@ Se esegui `migrate --force` in produzione:
 
 ---
 
-title: "critical migration constraints"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "critical migration constraints"
-issues: []
-discussions: []
 **URLATO PER ESSERE LETTO PRIMA DI OGNI MIGRATION** 🔴🔴🔴

@@ -1,28 +1,9 @@
----
-title: "acceptance criteria"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "acceptance criteria"
-issues: []
-discussions: []
----
-
 # Criteri di accettazione Modulo Activity
 
 Criteri verificabili per le fasi della roadmap Activity (audit trail e observability).
 
 ---
 
-title: "acceptance criteria"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "acceptance criteria"
-issues: []
-discussions: []
 ## Fase 1 · Qualità e pulizia (in corso)
 
 - [ ] PHPStan Level 10 su tutto il modulo; nessun errore.

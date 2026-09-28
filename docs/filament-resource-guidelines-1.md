@@ -1,14 +1,4 @@
----
-title: "filament resource guidelines 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament resource guidelines 1"
-issues: []
-discussions: []
----
-
+<<<<<<< HEAD
 # Activity Module Filament Resource Guidelines
 
 ## Extension Patterns
@@ -117,25 +107,24 @@ All resources must be tested to ensure:
 - [XotBaseResource Documentation](../../Xot/docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../Xot/docs/filament-best-practices.md)
 - [Laraxot Extension Patterns](../../Xot/docs/base-classes.md)
----
-title: "filament resource guidelines 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament resource guidelines 1"
-issues: []
-discussions: []
+=======
 ---
 module: theme
 topic: filament-resource-guidelines-1
 canonical: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md
 ---
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md
----
+=======
 See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md
----
+>>>>>>> d4098eb (.)
+=======
 See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md
----
+>>>>>>> 26b6dbd (.)
+=======
 See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md
+>>>>>>> 2d6a374 (.)
+>>>>>>> laraxot/dev

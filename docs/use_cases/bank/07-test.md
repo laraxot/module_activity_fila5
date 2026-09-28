@@ -1,14 +1,3 @@
----
-title: "07 test"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "07 test"
-issues: []
-discussions: []
----
-
 # Testing Bank (Event Sourcing)
 
 ## Unit Test

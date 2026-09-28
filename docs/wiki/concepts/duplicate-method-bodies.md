@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "corpi metodo duplicati — Activity"
 type: analysis
 module: Activity

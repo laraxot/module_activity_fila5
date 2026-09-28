@@ -1,14 +1,3 @@
----
-title: "quality status"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quality status"
-issues: []
-discussions: []
----
-
 # Activity Module - Quality Status (November 2025)
 
 ## 🎯 Overview
@@ -164,14 +153,6 @@ public function withCustomProperties(array $attributes): static
 
 ---
 
-title: "quality status"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quality status"
-issues: []
-discussions: []
 *
 *PHPStan Version: Latest*
 *PHPMD Version: Latest*

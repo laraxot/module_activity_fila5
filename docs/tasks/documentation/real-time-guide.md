@@ -1,14 +1,3 @@
----
-title: "real time guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "real time guide"
-issues: []
-discussions: []
----
-
 # Real-Time Guide - Activity
 
 **Task ID**: ACTIVITY-DOC-001

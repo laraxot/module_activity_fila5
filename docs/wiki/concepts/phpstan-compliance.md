@@ -1,7 +1,4 @@
 ---
-qmd: "phpstan compliance"
-issues: []
-discussions: []
 title: "Activity Module - PHPStan Type Compliance"
 type: concept
 tags: [activity, phpstan, types, compliance, quality, static-analysis]

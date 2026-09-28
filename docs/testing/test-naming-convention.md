@@ -1,14 +1,3 @@
----
-title: "test naming convention"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "test naming convention"
-issues: []
-discussions: []
----
-
 # Convenzione Naming File Test - Activity Module
 
 **Modulo:** Activity
@@ -62,12 +51,4 @@ done
 
 ---
 
-title: "test naming convention"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "test naming convention"
-issues: []
-discussions: []
 **Activity Module - Test Naming Standards** ✅

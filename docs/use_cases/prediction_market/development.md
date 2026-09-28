@@ -1,14 +1,3 @@
----
-title: "development"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "development"
-issues: []
-discussions: []
----
-
 # 🛠️ Guida allo Sviluppo del Modulo <nome progetto>ion Market
 
 ## 📋 Prerequisiti

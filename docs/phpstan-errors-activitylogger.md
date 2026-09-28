@@ -1,14 +1,3 @@
----
-title: "phpstan errors activitylogger"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan errors activitylogger"
-issues: []
-discussions: []
----
-
 # PHPStan Errori ActivityLogger - Analisi e Correzione
 
 ## Problema Identificato

@@ -1,14 +1,4 @@
----
-title: "event sourcing examples"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "event sourcing examples"
-issues: []
-discussions: []
----
-
+<<<<<<< HEAD
 # Practical Event Sourcing Examples for Healthcare
 
 ## Table of Contents
@@ -288,15 +278,9 @@ These examples demonstrate how event sourcing can be applied to various aspects 
 4. **Understandable**: The business logic is expressed in terms of domain events
 
 Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.
----
-title: "event sourcing examples"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "event sourcing examples"
-issues: []
-discussions: []
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 # Practical Event Sourcing Examples for Healthcare
 
 ## Table of Contents
@@ -576,8 +560,9 @@ These examples demonstrate how event sourcing can be applied to various aspects 
 4. **Understandable**: The business logic is expressed in terms of domain events
 
 Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.
----
----
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 ---
 module: theme
 topic: event-sourcing-examples
@@ -585,4 +570,8 @@ canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplic
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
----
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev

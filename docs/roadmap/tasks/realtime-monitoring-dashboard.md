@@ -1,14 +1,3 @@
----
-title: "realtime monitoring dashboard"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "realtime monitoring dashboard"
-issues: []
-discussions: []
----
-
 # Task: Real-time Activity Monitoring Dashboard
 
 ## 🎯 Objective

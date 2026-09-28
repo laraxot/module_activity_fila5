@@ -1,7 +1,4 @@
 ---
-qmd: "phpstan fixes activity"
-issues: []
-discussions: []
 title: fix phpstan modulo activity
 type: memory
 tags: [phpstan, activity, filament]

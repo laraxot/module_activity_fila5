@@ -1,14 +1,3 @@
----
-title: "index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "index"
-issues: []
-discussions: []
----
-
 # Activity Module Wiki Index
 
 > **Module**: Activity
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "index"
-issues: []
-discussions: []
 ## Concepts
 
 _No concept pages created yet_

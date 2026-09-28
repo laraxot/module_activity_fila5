@@ -1,14 +1,3 @@
----
-title: "lmsr"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "lmsr"
-issues: []
-discussions: []
----
-
 # LMSR – Logarithmic Market Scoring Rule nei <nome progetto>ion Market
 
 ## Cos'è LMSR?
@@ -60,12 +49,4 @@ $prices = $lmsr->getPrices($quantities);
 
 ---
 
-title: "lmsr"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "lmsr"
-issues: []
-discussions: []
 > **Nota:** L’integrazione di LMSR rende il modulo <nome progetto>ion Market più robusto, liquido e trasparente, allineandolo alle migliori piattaforme internazionali. Per dettagli matematici e implementativi, consultare la sezione "Best Practice" e gli esempi pratici.

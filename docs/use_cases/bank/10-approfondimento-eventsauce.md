@@ -1,14 +1,3 @@
----
-title: "10 approfondimento eventsauce"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "10 approfondimento eventsauce"
-issues: []
-discussions: []
----
-
 # Approfondimento: Larabank-Eventsauce
 
 ## Cos'è Eventsauce

@@ -1,7 +1,4 @@
 ---
-qmd: "product strategy"
-issues: []
-discussions: []
 title: "Activity Module - Product Strategy"
 type: product
 tags: [product]

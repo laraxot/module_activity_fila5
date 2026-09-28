@@ -1,14 +1,3 @@
----
-title: "console commands"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "console commands"
-issues: []
-discussions: []
----
-
 # Comandi da Console per il Caso d'Uso <nome progetto>ion Market
 
 ## Introduzione

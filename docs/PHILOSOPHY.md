@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "PHILOSOPHY"
-issues: []
-discussions: []
 title: "Activity Module Philosophy"
 description: "The soul, dogma, and architectural decisions behind the Activity module"
 tags: [activity, philosophy, audit, event-sourcing, architecture]

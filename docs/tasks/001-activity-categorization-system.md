@@ -1,14 +1,3 @@
----
-title: "001 activity categorization system"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "001 activity categorization system"
-issues: []
-discussions: []
----
-
 # Task 001: Implement Complete Activity Categorization System
 
 ## Description
@@ -205,13 +194,5 @@ The Activity module currently has basic activity logging but lacks a proper cate
 
 ---
 
-title: "001 activity categorization system"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "001 activity categorization system"
-issues: []
-discussions: []
 **Status**: Pending
 **Assignee**: TBD

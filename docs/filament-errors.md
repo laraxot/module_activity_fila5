@@ -1,14 +1,3 @@
----
-title: "filament errors"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament errors"
-issues: []
-discussions: []
----
-
 # Errori Comuni Filament nel Modulo Activity
 
 ## Errori di Metodi Statici
@@ -173,17 +162,12 @@ class ListSnapshots extends ListRecords
 - [ ] Testare il funzionamento delle liste dopo le modifiche
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
+<<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Eseguire PHPStan per verificare altri possibili errori 
----
-title: "filament errors"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament errors"
-issues: []
-discussions: []
----
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 - [ ] Eseguire PHPStan per verificare altri possibili errori
 # Errori Comuni Filament nel Modulo Activity
 
@@ -350,4 +334,7 @@ class ListSnapshots extends ListRecords
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
 - [ ] Eseguire PHPStan per verificare altri possibili errori
----
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)

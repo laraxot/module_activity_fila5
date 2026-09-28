@@ -1,14 +1,3 @@
----
-title: "roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "roadmap"
-issues: []
-discussions: []
----
-
 # 🎯 ACTIVITY MODULE - ROADMAP 2025
 
 **Modulo**: Activity ([Description])  
@@ -19,14 +8,6 @@ discussions: []
 
 ---
 
-title: "roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "roadmap"
-issues: []
-discussions: []
 ## 🎯 MODULE OVERVIEW
 
 Il modulo **Activity** [descrizione del modulo].

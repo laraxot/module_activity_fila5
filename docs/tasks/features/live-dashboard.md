@@ -1,14 +1,3 @@
----
-title: "live dashboard"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "live dashboard"
-issues: []
-discussions: []
----
-
 # Live Dashboard - Activity
 
 **Task ID**: ACTIVITY-FEATURE-005

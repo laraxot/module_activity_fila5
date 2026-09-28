@@ -1,14 +1,3 @@
----
-title: "activity pdf reports"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "activity pdf reports"
-issues: []
-discussions: []
----
-
 # Activity Log PDF Reports
 
 ## 📋 Overview
@@ -17,14 +6,6 @@ Guida completa per generare report PDF delle attività utente utilizzando HTML2P
 
 ---
 
-title: "activity pdf reports"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "activity pdf reports"
-issues: []
-discussions: []
 ## 🎯 Funzionalità PDF
 
 ### 1. Report Attività Utente

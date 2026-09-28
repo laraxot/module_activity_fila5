@@ -1,14 +1,3 @@
----
-title: "domain vs modules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "domain vs modules"
-issues: []
-discussions: []
----
-
 # Confronto tra Struttura a Domain e Struttura a Moduli
 
 ## Introduzione

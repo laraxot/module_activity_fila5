@@ -1,7 +1,4 @@
 ---
-qmd: "API"
-issues: []
-discussions: []
 title: "Activity Module API"
 type: reference
 tags: [activity, api]

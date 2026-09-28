@@ -1,14 +1,3 @@
----
-title: "activity filament v5"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "activity filament v5"
-issues: []
-discussions: []
----
-
 # Task: Allineamento Filament v5 (Clusters) - Activity
 
 **Modulo**: Activity  

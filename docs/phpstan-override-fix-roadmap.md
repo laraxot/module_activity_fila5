@@ -1,14 +1,3 @@
----
-title: "phpstan override fix roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan override fix roadmap"
-issues: []
-discussions: []
----
-
 # PHPStan Error Resolution Roadmap - Activity Module
 
 ## Data: 2026-01-08
@@ -19,14 +8,6 @@ discussions: []
 
 ---
 
-title: "phpstan override fix roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan override fix roadmap"
-issues: []
-discussions: []
 ## 🧠 La Litigata Interna
 
 ### Contesto

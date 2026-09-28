@@ -1,7 +1,4 @@
 ---
-qmd: "queueable action execute entrypoint"
-issues: []
-discussions: []
 title: "QueueableAction execute entrypoint"
 type: rule
 module: Activity

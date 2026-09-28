@@ -1,14 +1,3 @@
----
-title: "filament v4 icon size fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament v4 icon size fix"
-issues: []
-discussions: []
----
-
 # Filament v4 Icon Size Attribute Fix
 
 ## Issue Description
@@ -45,17 +34,12 @@ In Filament v4, the `size` attribute for icons changed from accepting string val
    - Removed `:size="24"` from icon component
    - Size controlled via CSS classes `h-36`
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 3. **Modules/Quaeris/resources/views/filament/widgets/overlook-stats.blade.php**
----
-title: "filament v4 icon size fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament v4 icon size fix"
-issues: []
-discussions: []
----
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 3. **Modules/<nome progetto>/resources/views/filament/widgets/overlook-stats.blade.php**
    - Removed `:size="24"` from two icon instances
    - Size controlled via CSS classes `size-4` and `h-36`
@@ -127,7 +111,10 @@ In Filament v4, the `size` attribute for icons changed from accepting string val
 3. **Modules/Quaeris/resources/views/filament/widgets/overlook-stats.blade.php**
 3. **Modules/Quaeris/resources/views/filament/widgets/overlook-stats.blade.php**
 3. **Modules/healthcare_app/resources/views/filament/widgets/overlook-stats.blade.php**
----
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
    - Removed `:size="24"` from two icon instances
    - Size controlled via CSS classes `size-4` and `h-36`
 
@@ -158,8 +145,12 @@ After applying these fixes:
 
 ## Related Documentation
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
----
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 - [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
----
+>>>>>>> 0a02158a (.)
+=======
 - [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
+>>>>>>> 35d8cf69 (Initial commit)
 - [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)

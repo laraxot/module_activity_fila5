@@ -1,14 +1,3 @@
----
-title: "FILAMENT V4 UPGRADE"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "FILAMENT V4 UPGRADE"
-issues: []
-discussions: []
----
-
 # Filament v4 Upgrade Documentation
 
 ## Overview

@@ -1,14 +1,3 @@
----
-title: "activity quality gate 03 execution 2026 09 10.story"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "activity quality gate 03 execution 2026 09 10.story"
-issues: []
-discussions: []
----
-
 # Story: Quality gate 03 — esecuzione, fix e blocco repo-wide — Activity
 
 **Modulo**: Activity

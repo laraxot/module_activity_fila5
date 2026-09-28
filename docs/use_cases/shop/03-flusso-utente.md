@@ -1,14 +1,3 @@
----
-title: "03 flusso utente"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "03 flusso utente"
-issues: []
-discussions: []
----
-
 # Flusso Utente Shop Event Sourced
 
 ## 1. Navigazione e Scoperta Prodotti

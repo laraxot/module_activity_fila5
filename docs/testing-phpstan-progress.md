@@ -1,14 +1,3 @@
----
-title: "testing phpstan progress"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing phpstan progress"
-issues: []
-discussions: []
----
-
 # Activity Module - PHPStan Testing Progress
 
 **Date**: 2025-12-15
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "testing phpstan progress"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing phpstan progress"
-issues: []
-discussions: []
 ## Current Status
 
 ### PHPStan Analysis

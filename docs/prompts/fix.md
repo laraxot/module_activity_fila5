@@ -1,7 +1,4 @@
 ---
-qmd: "fix"
-issues: []
-discussions: []
 title: 'Fix'
 module: Activity
 type: reference

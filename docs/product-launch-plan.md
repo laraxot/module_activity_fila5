@@ -1,24 +1,8 @@
----
-title: "product launch plan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "product launch plan"
-issues: []
-discussions: []
----
-
+<<<<<<< HEAD
 # Activity Module - Product Launch Plan
----
-title: "product launch plan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "product launch plan"
-issues: []
-discussions: []
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 # Activity Module - Product Launch Plan
 
 **Module:** Activity  
@@ -118,9 +102,11 @@ discussions: []
 ---
 
 *Last Updated: March 12, 2026*
----
----
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 # Activity - Product Launch Plan
+>>>>>>> laraxot/dev
 
 **Module:** Activity  
 **Version:** 1.0.0  
@@ -218,8 +204,9 @@ discussions: []
 
 ---
 
+<<<<<<< HEAD
 *Last Updated: March 12, 2026*
----
+=======
 - lancio di superfici non ancora supportate dal backend
 - documentazione non aderente al codice reale
 - dipendenze inter-modulo sottostimate
@@ -229,4 +216,8 @@ discussions: []
 - [PRD](prd.md)
 - [User Research](user-research.md)
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
----
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev

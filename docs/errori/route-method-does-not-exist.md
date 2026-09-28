@@ -1,14 +1,3 @@
----
-title: "route method does not exist"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "route method does not exist"
-issues: []
-discussions: []
----
-
 # Errore: Method ::route does not exist
 
 ## Descrizione dell'Errore
@@ -334,19 +323,15 @@ foreach (glob('Modules/*/app/Filament/Resources/*/Pages/*.php') as $file) {
 
 ---
 
-title: "route method does not exist"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "route method does not exist"
-issues: []
-discussions: []
+<<<<<<< HEAD
+<<<<<<< HEAD
 **
----
+=======
 **Ultimo aggiornamento**: 27 Ottobre 2025
----
+>>>>>>> 0a02158a (.)
+=======
 **Ultimo aggiornamento**: 27 Ottobre 2025
+>>>>>>> 35d8cf69 (Initial commit)
 **Versione Filament**: 4.x
 **Severità**: Alta (blocca registrazione Resource Pages)
 **Causa**: Confusione tra Standalone Page e Resource Page

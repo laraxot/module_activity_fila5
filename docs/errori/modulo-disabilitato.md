@@ -1,14 +1,3 @@
----
-title: "modulo disabilitato"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "modulo disabilitato"
-issues: []
-discussions: []
----
-
 # Errore: Modulo Activity Disabilitato
 
 ## Descrizione del Problema
@@ -339,19 +328,15 @@ Se `module:enable Activity` non funziona:
 
 ---
 
-title: "modulo disabilitato"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "modulo disabilitato"
-issues: []
-discussions: []
+<<<<<<< HEAD
+<<<<<<< HEAD
 **
----
+=======
 **Ultimo aggiornamento**: 27 Ottobre 2025
----
+>>>>>>> 0a02158a (.)
+=======
 **Ultimo aggiornamento**: 27 Ottobre 2025
+>>>>>>> 35d8cf69 (Initial commit)
 **Caso Reale**: personale2022.prov.tv.local
 **Soluzione Verificata**: ✅ Testata e funzionante
 **Severità**: Critica (blocca completamente feature Activity Log)

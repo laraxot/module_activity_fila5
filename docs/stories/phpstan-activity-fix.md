@@ -1,11 +1,4 @@
 ---
-title: "phpstan activity fix"
-type: note
-tags: [documentation]
-updated: 2026-09-26
-qmd: "phpstan activity fix"
-issues: []
-discussions: []
 id: phpstan-activity-fix
 slug: phpstan-activity
 scope: [module:Activity, project:base_workorder_fila5]

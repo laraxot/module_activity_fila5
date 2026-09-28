@@ -1,14 +1,3 @@
----
-title: "ottimizzazioni dry kiss"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ottimizzazioni dry kiss"
-issues: []
-discussions: []
----
-
 # Ottimizzazioni DRY + KISS - Modulo Activity
 
 ## Panoramica del Modulo
@@ -378,14 +367,6 @@ protected function registerConfig(): void
 
 ---
 
-title: "ottimizzazioni dry kiss"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ottimizzazioni dry kiss"
-issues: []
-discussions: []
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS Activity Module*
 - [Template Standardizzato](../../../docs/template-modulo-standardizzato.md)
 - [Ottimizzazioni Master](../../../docs/ottimizzazioni-modulari-master.md)

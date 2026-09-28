@@ -1,14 +1,3 @@
----
-title: "module path assets resolution"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "module path assets resolution"
-issues: []
-discussions: []
----
-
 # Activity Module - Path Assets Resolution
 
 **Data Creazione**: 2026-01-02
@@ -75,12 +64,4 @@ Il problema è stato risolto a livello di framework (Xot) con:
 
 ---
 
-title: "module path assets resolution"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "module path assets resolution"
-issues: []
-discussions: []
 **Filosofia**: Activity è non-intrusivo - non blocca il sistema per risorse opzionali.

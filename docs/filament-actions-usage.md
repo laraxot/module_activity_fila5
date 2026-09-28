@@ -1,14 +1,3 @@
----
-title: "filament actions usage"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament actions usage"
-issues: []
-discussions: []
----
-
 # Filament Actions nel Modulo Activity
 
 ## Panoramica
@@ -376,18 +365,14 @@ class ListMyModelActivities extends ListLogActivities
 
 ---
 
-title: "filament actions usage"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament actions usage"
-issues: []
-discussions: []
+<<<<<<< HEAD
+<<<<<<< HEAD
 **
----
+=======
 **Ultimo aggiornamento**: 27 Ottobre 2025
----
+>>>>>>> 0a02158a (.)
+=======
 **Ultimo aggiornamento**: 27 Ottobre 2025
+>>>>>>> 35d8cf69 (Initial commit)
 **Pattern**: DRY + KISS per Actions riutilizzabili
 **Conformità**: ✅ PHPStan livello 9+, ✅ Pint, ✅ Test Suite

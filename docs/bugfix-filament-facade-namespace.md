@@ -1,14 +1,3 @@
----
-title: "bugfix filament facade namespace"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bugfix filament facade namespace"
-issues: []
-discussions: []
----
-
 # Bugfix: Filament Facade Namespace Error
 
 ## 🐛 Errore
@@ -36,14 +25,6 @@ L'errore si verificava quando si accedeva alla lista delle progressioni in Filam
 
 ---
 
-title: "bugfix filament facade namespace"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bugfix filament facade namespace"
-issues: []
-discussions: []
 ## 🔍 Causa
 
 **Namespace errato della facade Filament:**
