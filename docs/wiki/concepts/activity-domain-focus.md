@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "activity domain focus"
+issues: []
+discussions: []
 title: "Activity Domain Focus"
 module: "Activity"
 type: concept

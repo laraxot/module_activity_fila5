@@ -1,3 +1,14 @@
+---
+title: "activity mixed type reduction.story"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "activity mixed type reduction.story"
+issues: []
+discussions: []
+---
+
 # Story: Riduzione uso di `mixed` — Activity
 
 **Modulo**: Activity

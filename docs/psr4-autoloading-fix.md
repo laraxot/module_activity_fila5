@@ -1,3 +1,14 @@
+---
+title: "psr4 autoloading fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "psr4 autoloading fix"
+issues: []
+discussions: []
+---
+
 # PSR-4 Autoloading Compliance Fix
 
 ## Data: 21 Gennaio 2025
@@ -318,6 +329,14 @@ obsoleto — non richiedono modifiche al codice, solo `composer dump-autoload`.
 
 ---
 
+title: "psr4 autoloading fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "psr4 autoloading fix"
+issues: []
+discussions: []
 **PHPStan Level**: 10
 **PSR-4 Compliance**: 100%
 **Status**: ✅ Completato e Verificato

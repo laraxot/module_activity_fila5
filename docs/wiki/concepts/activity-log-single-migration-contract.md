@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "activity_log — una migrazione per modello"
 type: concept
 tags: [activity, migration, spatie, activitylog, xotbasemigration]

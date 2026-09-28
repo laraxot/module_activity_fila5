@@ -1,3 +1,14 @@
+---
+title: "errori migrazione activity table lezioni"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "errori migrazione activity table lezioni"
+issues: []
+discussions: []
+---
+
 # Lezioni Apprese: Errori Migrazione Activity Table
 
 ## Caso Studio: Errore Critico nella Modifica Migrazione Activity

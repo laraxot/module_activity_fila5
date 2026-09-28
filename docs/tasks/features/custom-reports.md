@@ -1,3 +1,14 @@
+---
+title: "custom reports"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "custom reports"
+issues: []
+discussions: []
+---
+
 # Custom Reports - Activity
 
 **Task ID**: ACTIVITY-FEATURE-009

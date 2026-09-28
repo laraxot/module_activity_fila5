@@ -1,3 +1,14 @@
+---
+title: "phpstan errors activitylogger reasoning"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan errors activitylogger reasoning"
+issues: []
+discussions: []
+---
+
 # PHPStan Errors - ActivityLogger.php - Critical Reasoning ("Litigare con te stesso")
 
 **File**: `Modules/Activity/app/Actions/ActivityLogger.php`
@@ -8,6 +19,14 @@
 
 ---
 
+title: "phpstan errors activitylogger reasoning"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan errors activitylogger reasoning"
+issues: []
+discussions: []
 ## 🎯 Purpose of This Document
 
 Following the Super Mucca workflow principle of "litigare con te stesso per migliorare le tue risposte", this document critically evaluates the 3 proposed solutions from `phpstan-errors-activitylogger-analysis.md` to ensure we choose the BEST approach, not just the first acceptable one.

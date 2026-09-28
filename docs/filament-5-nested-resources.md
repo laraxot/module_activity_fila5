@@ -1,3 +1,14 @@
+---
+title: "filament 5 nested resources"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament 5 nested resources"
+issues: []
+discussions: []
+---
+
 # Filament 5.x Nested Resources Guide
 
 ## Overview

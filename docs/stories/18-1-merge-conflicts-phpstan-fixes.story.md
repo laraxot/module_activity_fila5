@@ -1,4 +1,10 @@
 ---
+type: note
+tags: [documentation]
+updated: 2026-09-26
+qmd: "18 1 merge conflicts phpstan fixes.story"
+issues: []
+discussions: []
 epic: 18
 story: 1
 slug: merge-conflicts-phpstan-fixes

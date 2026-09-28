@@ -1,3 +1,14 @@
+---
+title: "projectors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "projectors"
+issues: []
+discussions: []
+---
+
 # Proiettori per <nome progetto>ion Market
 
 I proiettori sono utilizzati per creare viste di lettura basate sugli eventi del <nome progetto>ion market. Queste viste possono essere utilizzate per report, dashboard o per fornire dati in tempo reale agli utenti.

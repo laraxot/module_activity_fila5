@@ -1,3 +1,14 @@
+---
+title: "karpathy llm wiki pattern"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "karpathy llm wiki pattern"
+issues: []
+discussions: []
+---
+
 # Karpathy LLM Wiki Pattern
 
 **Source:** Andrej Karpathy's GitHub gist and social media posts  
@@ -83,5 +94,13 @@ docs/
 
 ---
 
+title: "karpathy llm wiki pattern"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "karpathy llm wiki pattern"
+issues: []
+discussions: []
 **Tags:** #knowledge-management #llm #architecture #karpathy #documentation
 **Related:** [[docs/wiki/overview.md]], [[docs/llm-wiki-architecture.md]]

@@ -1,3 +1,14 @@
+---
+title: "custom events"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "custom events"
+issues: []
+discussions: []
+---
+
 # Custom Events - Activity
 
 **Task ID**: ACTIVITY-FEATURE-001

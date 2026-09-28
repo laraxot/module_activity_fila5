@@ -1,3 +1,14 @@
+---
+title: "list log activities improvements"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "list log activities improvements"
+issues: []
+discussions: []
+---
+
 # ListLogActivities UI/UX Improvements - 2025-12-04
 
 ## Data Intervento: 2025-12-04
@@ -297,6 +308,14 @@ PASS: 2 files formattati correttamente
 
 ---
 
+title: "list log activities improvements"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "list log activities improvements"
+issues: []
+discussions: []
 **Autore**: iFlow CLI
 **Data**: 2025-12-04
 **Versione**: 1.0

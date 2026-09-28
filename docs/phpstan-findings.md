@@ -1,3 +1,14 @@
+---
+title: "phpstan findings"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan findings"
+issues: []
+discussions: []
+---
+
 # PHPStan Findings - Activity Module
 
 **Data**: 2025-10-10
@@ -85,5 +96,13 @@ Rimuovere @mixin per classi IdeHelper* generate da ide-helper package (non esist
 
 ---
 
+title: "phpstan findings"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan findings"
+issues: []
+discussions: []
 **Aggiornato**: 2025-10-10T10:54:56+02:00
 **Aggiornato**: [DATE]T10:54:56+02:00

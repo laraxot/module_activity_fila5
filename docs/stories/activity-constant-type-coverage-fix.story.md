@@ -1,3 +1,14 @@
+---
+title: "activity constant type coverage fix.story"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "activity constant type coverage fix.story"
+issues: []
+discussions: []
+---
+
 # Story: Activity module constantTypeCoverage fix + redactor
 Status: backlog
 Module: Modules/Activity (independent .git)

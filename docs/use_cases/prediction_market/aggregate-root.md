@@ -1,3 +1,14 @@
+---
+title: "aggregate root"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "aggregate root"
+issues: []
+discussions: []
+---
+
 # Radice Aggregate per <nome progetto>ion Market
 
 La radice aggregate `<nome progetto>ionMarketAggregateRoot` è responsabile della gestione della logica di business per un mercato di previsione. Incapsula gli eventi e garantisce che lo stato del mercato rimanga coerente.

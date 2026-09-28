@@ -1,4 +1,14 @@
-<<<<<<< HEAD
+---
+title: "query optimization analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "query optimization analysis"
+issues: []
+discussions: []
+---
+
 # Activity Module - Query Optimization Analysis
 
 ## Overview
@@ -316,9 +326,15 @@ DB::listen(function ($query) {
 ```
 
 This optimization plan will significantly improve the Activity module's performance while maintaining all existing functionality.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
+---
+title: "query optimization analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "query optimization analysis"
+issues: []
+discussions: []
 # Activity Module - Query Optimization Analysis
 
 ## Overview
@@ -636,9 +652,8 @@ DB::listen(function ($query) {
 ```
 
 This optimization plan will significantly improve the Activity module's performance while maintaining all existing functionality.
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
+---
+---
 ---
 module: theme
 topic: query-optimization-analysis
@@ -646,8 +661,4 @@ canonical: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
+---

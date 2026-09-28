@@ -1,3 +1,14 @@
+---
+title: "event sourcing cnastasi"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "event sourcing cnastasi"
+issues: []
+discussions: []
+---
+
 # Event Sourcing con Laravel: Analisi del Repository di cnastasi
 
 ## Introduzione

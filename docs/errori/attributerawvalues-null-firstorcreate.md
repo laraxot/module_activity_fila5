@@ -1,3 +1,14 @@
+---
+title: "attributerawvalues null firstorcreate"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "attributerawvalues null firstorcreate"
+issues: []
+discussions: []
+---
+
 # Errore: Attempt to read property "attributeRawValues" on null durante firstOrCreate
 
 ## Problema
@@ -226,15 +237,19 @@ IndennitaResponsabilita::withoutEvents(function (): void {
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+title: "attributerawvalues null firstorcreate"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "attributerawvalues null firstorcreate"
+issues: []
+discussions: []
 **
-=======
+---
 **Ultimo aggiornamento**: 19 Novembre 2025  
->>>>>>> 0a02158a (.)
-=======
+---
 **Ultimo aggiornamento**: 19 Novembre 2025  
->>>>>>> 35d8cf69 (Initial commit)
 **Severità**: Alta (blocca operazioni batch)  
 **Soluzione**: Usare `withoutEvents()` durante `firstOrCreate()`
 

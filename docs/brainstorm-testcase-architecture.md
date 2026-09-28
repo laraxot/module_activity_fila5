@@ -1,4 +1,9 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "brainstorm testcase architecture"
 title: "Brainstorm: TestCase Architecture for Laravel Modules"
 date: 2026-06-10
 created_at: '2026-06-10'

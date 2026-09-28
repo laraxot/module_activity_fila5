@@ -1,3 +1,14 @@
+---
+title: "MIGRATIONS"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "MIGRATIONS"
+issues: []
+discussions: []
+---
+
 # Activity — Migrazioni
 
 Bridge minimale alla **fonte canonica**:
@@ -8,6 +19,14 @@ Non duplicare la filosofia qui. Questa pagina è solo un ponte.
 
 ---
 
+title: "MIGRATIONS"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "MIGRATIONS"
+issues: []
+discussions: []
 ## Regola rapida per Activity
 
 - Tutte le migrazioni estendono `XotBaseMigration`

@@ -1,4 +1,7 @@
 ---
+qmd: "jpgraph guide"
+issues: []
+discussions: []
 title: "JpGraph Guide"
 type: concept
 tags: [docs, migrated-from-txt]

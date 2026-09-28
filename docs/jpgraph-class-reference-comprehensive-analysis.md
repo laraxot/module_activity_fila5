@@ -1,3 +1,14 @@
+---
+title: "jpgraph class reference comprehensive analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "jpgraph class reference comprehensive analysis"
+issues: []
+discussions: []
+---
+
 # 📚 JpGraph Class Reference - Analisi Completta 2024
 
 ## 🎯 **Introduzione alla Documentazione JpGraph**
@@ -473,6 +484,14 @@ class JpGraphChartGenerator
 
 ---
 
+title: "jpgraph class reference comprehensive analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "jpgraph class reference comprehensive analysis"
+issues: []
+discussions: []
 **
 **Versione JpGraph:** 4.4.2  
 **Stato:** 📚 Completamente Analizzato e Documentato

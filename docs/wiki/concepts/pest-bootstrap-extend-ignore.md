@@ -1,4 +1,8 @@
 ---
+type: note
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "pest bootstrap extend ignore"
 title: pest bootstrap extend con phpstan-ignore inline
 description: Eccezione Activity — pest()->extend(TestCase) al posto di require_once PestStubs.php.
 document_type: concept

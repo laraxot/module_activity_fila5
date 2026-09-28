@@ -1,3 +1,14 @@
+---
+title: "no hint path defined"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no hint path defined"
+issues: []
+discussions: []
+---
+
 # Errore: No hint path defined for [activity]
 
 ## Descrizione dell'Errore
@@ -91,6 +102,14 @@ php artisan optimize:clear
 
 ---
 
+title: "no hint path defined"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no hint path defined"
+issues: []
+discussions: []
 ## Cause Possibili (se modulo è abilitato)
 
 ### 1. ServiceProvider Non Caricato
@@ -492,15 +511,11 @@ docker-compose restart app
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 **
-=======
+---
 **Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> 0a02158a (.)
-=======
+---
 **Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> 35d8cf69 (Initial commit)
 **Versione Laravel**: 12.35.1
 **Errore Code**: `InvalidArgumentException`
 **Severità**: Alta (blocca funzionalità Activity Log)

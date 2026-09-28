@@ -1,4 +1,7 @@
 ---
+qmd: "PATTERNS"
+issues: []
+discussions: []
 title: "Activity Module Patterns"
 type: guide
 tags: [activity, patterns]

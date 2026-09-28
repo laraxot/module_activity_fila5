@@ -1,3 +1,14 @@
+---
+title: "01 introduzione"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "01 introduzione"
+issues: []
+discussions: []
+---
+
 # Introduzione al <nome progetto>ion Market
 
 Un **<nome progetto>ion market** è una piattaforma dove gli utenti possono scommettere sull'esito di eventi futuri (politica, sport, economia, ecc.), aggregando la "saggezza della folla" per produrre previsioni statisticamente rilevanti. I <nome progetto>ion market moderni sono spesso decentralizzati (Web3), basati su blockchain e smart contract.

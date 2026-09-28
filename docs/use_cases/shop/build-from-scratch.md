@@ -1,3 +1,14 @@
+---
+title: "build from scratch"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "build from scratch"
+issues: []
+discussions: []
+---
+
 # Creazione di un Carrello della Spesa da Zero con Event Sourcing
 
 ## Introduzione

@@ -1,3 +1,14 @@
+---
+title: "testing testcase database connection fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing testcase database connection fix"
+issues: []
+discussions: []
+---
+
 # Fix: Activity TestCase - Database Connection Configuration
 
 **Data**: 2025-01-22
@@ -74,5 +85,13 @@ protected function setUp(): void
 
 ---
 
+title: "testing testcase database connection fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing testcase database connection fix"
+issues: []
+discussions: []
 **Status**: Completed
 **Risultato**: Test Activity ora configurano correttamente le connessioni database

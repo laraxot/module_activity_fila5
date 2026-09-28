@@ -1,3 +1,14 @@
+---
+title: "analisi ottimizzazioni"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analisi ottimizzazioni"
+issues: []
+discussions: []
+---
+
 # 📊 analisi e ottimizzazioni - modulo activity
 
 ## 🎯 panoramica analisi
@@ -246,14 +257,18 @@ php artisan test
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+title: "analisi ottimizzazioni"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analisi ottimizzazioni"
+issues: []
+discussions: []
 **
-=======
+---
 **ultimo aggiornamento**: 20 agosto 2025
->>>>>>> 0a02158a (.)
-=======
+---
 **ultimo aggiornamento**: 20 agosto 2025
->>>>>>> 35d8cf69 (Initial commit)
 **analista**: claude code
 **stato**: pronto per implementazione

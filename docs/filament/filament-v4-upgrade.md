@@ -1,4 +1,14 @@
-<<<<<<< HEAD
+---
+title: "filament v4 upgrade"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament v4 upgrade"
+issues: []
+discussions: []
+---
+
 # Filament v4 Upgrade Documentation
 
 ## Overview
@@ -50,9 +60,15 @@ public function getFormSchema(): array
 
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
+---
+title: "filament v4 upgrade"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament v4 upgrade"
+issues: []
+discussions: []
 # Filament v4 Upgrade Documentation
 
 ## Overview
@@ -104,9 +120,8 @@ public static function getFormSchema(): array
 
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
+---
+---
 ---
 module: theme
 topic: filament-v4-upgrade
@@ -114,8 +129,4 @@ canonical: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
+---

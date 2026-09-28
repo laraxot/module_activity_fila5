@@ -1,3 +1,14 @@
+---
+title: "filament v4 upgrade"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament v4 upgrade"
+issues: []
+discussions: []
+---
+
 # Filament v4 Upgrade Documentation
 
 ## Overview
@@ -12,11 +23,17 @@ This document outlines the key changes and upgrades implemented for Filament v4 
 
 ```php
 // v4 Approach (Current)
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
+---
+title: "filament v4 upgrade"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament v4 upgrade"
+issues: []
+discussions: []
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         'log_name' => TextInput::make('log_name')->required()->maxLength(255),

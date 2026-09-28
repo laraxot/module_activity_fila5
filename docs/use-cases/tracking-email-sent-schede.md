@@ -1,3 +1,14 @@
+---
+title: "tracking email sent schede"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "tracking email sent schede"
+issues: []
+discussions: []
+---
+
 # Use Case: Tracking Email Sent - Schede Valutazione
 
 ## 📋 Overview
@@ -10,6 +21,14 @@ Caso d'uso concreto: Tracciamento invio email schede valutazione nel modulo Ptv.
 
 ---
 
+title: "tracking email sent schede"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "tracking email sent schede"
+issues: []
+discussions: []
 ## 🎯 Business Requirements
 
 ### Obiettivi
@@ -366,15 +385,11 @@ public function it_logs_activity_when_sending_email(): void
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 **
-=======
+---
 **Ultimo Aggiornamento:** 2025-01-22
->>>>>>> 0a02158a (.)
-=======
+---
 **Ultimo Aggiornamento:** 2025-01-22
->>>>>>> 35d8cf69 (Initial commit)
 **Versione:** 1.0
 **Autore:** System Integration Documentation
 **Stato:** ✅ Production Ready

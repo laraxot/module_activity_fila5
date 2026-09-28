@@ -1,4 +1,10 @@
 ---
+type: note
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "16 3 restore corrupted var docblocks"
+issues: []
+discussions: []
 id: story-163-restore-corrupted-var-docblocks
 slug: story-163-restore-corrupted-var-docblocks
 title: "STORY-163 — Ripristino dei docblock @var corrotti da merge nei modelli Activity"

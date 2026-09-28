@@ -1,3 +1,14 @@
+---
+title: "activity module quality report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "activity module quality report"
+issues: []
+discussions: []
+---
+
 # Analisi Qualità - Modulo Activity
 
 **Data Analisi**: 2025-01-22  

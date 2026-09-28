@@ -1,3 +1,14 @@
+---
+title: "env development configuration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "env development configuration"
+issues: []
+discussions: []
+---
+
 # Configurazione .env.development - Ambiente di Sviluppo
 
 ## Panoramica

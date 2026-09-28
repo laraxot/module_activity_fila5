@@ -1,3 +1,14 @@
+---
+title: "coverage analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "coverage analysis"
+issues: []
+discussions: []
+---
+
 # Activity Module - Analisi Coverage e Errori
 
 ## Stato Attuale Coverage

@@ -1,3 +1,14 @@
+---
+title: "third party model patterns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "third party model patterns"
+issues: []
+discussions: []
+---
+
 # Activity Module - Third-Party Model Patterns
 
 ## Spatie Package Integration
@@ -57,30 +68,30 @@ class Activity extends SpatieActivity
         'causer_type',
         'causer_id',
         'properties',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+---
+title: "third party model patterns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "third party model patterns"
+issues: []
+discussions: []
         'batch_uuid',
         'created_at',
         'updated_at',
->>>>>>> 0a02158a (.)
-=======
+---
         'batch_uuid',
         'created_at',
         'updated_at',
->>>>>>> 35d8cf69 (Initial commit)
     ];
 }
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Importante**: non ridefinire `$table` nel modello Activity. Il nome della tabella è gestito da Spatie tramite `config('activitylog.table_name')` (vedi `config/activitylog.php` e `config/local/<tenant>/activitylog.php`). Se serve cambiare tabella, farlo via configurazione, non nel modello.
 
-=======
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
+---
+---
 ### StoredEvent Model
 
 **File**: `Modules/Activity/app/Models/StoredEvent.php`

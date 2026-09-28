@@ -1,3 +1,14 @@
+---
+title: "03 flusso utente"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "03 flusso utente"
+issues: []
+discussions: []
+---
+
 # Flusso Utente <nome progetto>ion Market
 
 1. **Creazione Mercato**: un utente crea un mercato (es. “Vincerà il candidato X?”).

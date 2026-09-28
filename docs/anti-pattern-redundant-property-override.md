@@ -1,3 +1,14 @@
+---
+title: "anti pattern redundant property override"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "anti pattern redundant property override"
+issues: []
+discussions: []
+---
+
 # Anti-Pattern: Redundant Property Override in Extended Models
 
 ## Il Problema

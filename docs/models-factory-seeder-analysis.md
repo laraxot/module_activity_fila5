@@ -1,3 +1,14 @@
+---
+title: "models factory seeder analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "models factory seeder analysis"
+issues: []
+discussions: []
+---
+
 # Analisi Modelli, Factory e Seeder - Modulo Activity
 
 ## Riepilogo Modelli
@@ -66,5 +77,13 @@
 Il modulo Activity è completamente configurato con tutte le factory necessarie e tutti i modelli sono attivamente utilizzati nella business logic del sistema.
 
 ---
+title: "models factory seeder analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "models factory seeder analysis"
+issues: []
+discussions: []
 *Ultimo aggiornamento: 2025-01-06*
 *Analizzato da: Sistema di analisi automatica moduli*

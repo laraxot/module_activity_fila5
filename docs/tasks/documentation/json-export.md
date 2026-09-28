@@ -1,3 +1,14 @@
+---
+title: "json export"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "json export"
+issues: []
+discussions: []
+---
+
 # JSON Export - Activity
 
 **Task ID**: ACTIVITY-FEATURE-017

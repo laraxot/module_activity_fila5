@@ -1,4 +1,28 @@
 ---
+title: "conflict markers cleanup 2026 09 22.story"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict markers cleanup 2026 09 22.story"
+issues: []
+discussions: []
+title: "conflict markers cleanup 2026 09 22.story"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict markers cleanup 2026 09 22.story"
+issues: []
+discussions: []
+title: "conflict markers cleanup 2026 09 22.story"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict markers cleanup 2026 09 22.story"
+issues: []
+discussions: []
 story: activity-conflict-markers-cleanup
 title: Risolvere marker di conflitto annidati mai risolti in 90 file docs/
 description: >

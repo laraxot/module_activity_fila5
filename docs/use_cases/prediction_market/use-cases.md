@@ -1,3 +1,14 @@
+---
+title: "use cases"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "use cases"
+issues: []
+discussions: []
+---
+
 # Casi d'Uso del <nome progetto>ion Market
 
 ## 1. Previsioni Economiche

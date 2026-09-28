@@ -1,3 +1,14 @@
+---
+title: "implementation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "implementation"
+issues: []
+discussions: []
+---
+
 # Implementazione del <nome progetto>ion Market
 
 Questa guida fornisce i passaggi per implementare un <nome progetto>ion market nel modulo `Activity` utilizzando l'Event Sourcing.

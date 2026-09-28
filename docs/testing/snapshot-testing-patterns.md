@@ -1,3 +1,14 @@
+---
+title: "snapshot testing patterns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "snapshot testing patterns"
+issues: []
+discussions: []
+---
+
 # Snapshot Testing Patterns - Best Practices
 
 ## Overview
@@ -258,6 +269,14 @@ test('can reconstruct aggregate from snapshots', function () {
 
 ---
 
+title: "snapshot testing patterns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "snapshot testing patterns"
+issues: []
+discussions: []
 **Pattern**: Manual Cleanup con UUID Isolation
 **Status**: ✅ STANDARD PROGETTO
 **Ultimo aggiornamento**: 27 Ottobre 2025

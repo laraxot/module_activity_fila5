@@ -1,3 +1,14 @@
+---
+title: "SPRINT PLANNING"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "SPRINT PLANNING"
+issues: []
+discussions: []
+---
+
 # Activity Module - Sprint Planning
 
 **Module:** Activity  
@@ -6,6 +17,14 @@
 
 ---
 
+title: "SPRINT PLANNING"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "SPRINT PLANNING"
+issues: []
+discussions: []
 ## Sprint Goal
 
 Complete core activity tracking infrastructure with admin dashboard for viewing and searching activities.

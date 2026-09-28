@@ -1,3 +1,14 @@
+---
+title: "guida migrazione step by step"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "guida migrazione step by step"
+issues: []
+discussions: []
+---
+
 # Activity Module - Guida Step-by-Step Migrazione Filament 4
 
 ## 🎯 Panoramica della Migrazione
@@ -6,6 +17,14 @@ Il modulo Activity gestisce logging delle attività utente con Spatie Activity L
 
 ---
 
+title: "guida migrazione step by step"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "guida migrazione step by step"
+issues: []
+discussions: []
 ## 📋 Pre-Migrazione Checklist
 
 ### Step 1: Environment Preparation

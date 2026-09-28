@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: Best Practices – Activity
 type: rule
 tags: [activity, best-practices, dry, kiss]

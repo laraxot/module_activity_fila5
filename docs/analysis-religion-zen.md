@@ -1,7 +1,26 @@
+---
+title: "analysis religion zen"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analysis religion zen"
+issues: []
+discussions: []
+---
+
 # Activity Module: Complete Analysis (Religion, Philosophy, Politics, Zen)
 
 ---
 
+title: "analysis religion zen"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analysis religion zen"
+issues: []
+discussions: []
 ## Analisi del modulo
 
 Il modulo Activity gestisce il tracciamento delle attività degli utenti e il log delle azioni, con supporto per event sourcing. Si integra con Spatie Laravel Activitylog e Spatie Laravel Event Sourcing per mantenere un audit trail completo di tutte le operazioni nel sistema.

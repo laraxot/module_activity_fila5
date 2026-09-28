@@ -1,3 +1,14 @@
+---
+title: "002 advanced activity filtering"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "002 advanced activity filtering"
+issues: []
+discussions: []
+---
+
 # Task 002: Implement Advanced Activity Filtering and Search
 
 ## Description
@@ -192,5 +203,13 @@ The current activity filtering is basic and limited. Users need powerful search 
 
 ---
 
+title: "002 advanced activity filtering"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "002 advanced activity filtering"
+issues: []
+discussions: []
 **Status**: Pending
 **Assignee**: TBD

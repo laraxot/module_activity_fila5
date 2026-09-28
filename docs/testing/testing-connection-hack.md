@@ -1,3 +1,14 @@
+---
+title: "testing connection hack"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing connection hack"
+issues: []
+discussions: []
+---
+
 # Activity Model: Testing Connection Hack
 
 ## Cosa (STORICO – HACK RIMOSSO)

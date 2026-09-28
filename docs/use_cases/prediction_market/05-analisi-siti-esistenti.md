@@ -1,3 +1,14 @@
+---
+title: "05 analisi siti esistenti"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "05 analisi siti esistenti"
+issues: []
+discussions: []
+---
+
 # Analisi dei Principali <nome progetto>ion Market (2024-2025)
 
 ## Polymarket

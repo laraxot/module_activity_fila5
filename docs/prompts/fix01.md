@@ -1,4 +1,7 @@
 ---
+qmd: "fix01"
+issues: []
+discussions: []
 title: "Fix: Connessione database 'activity' - Regola corretta"
 module: Activity
 type: reference

@@ -1,3 +1,14 @@
+---
+title: "export features"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "export features"
+issues: []
+discussions: []
+---
+
 # Export Features - Activity
 
 **Task ID**: ACTIVITY-FEATURE-015

@@ -1,3 +1,14 @@
+---
+title: "phpstan analysis november 2025"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis november 2025"
+issues: []
+discussions: []
+---
+
 # PHPStan Analysis - Activity Module - November 2025
 
 ## Risultato Analisi
@@ -107,6 +118,14 @@ Tutti i componenti Filament nel modulo sono compatibili con Filament 4.x:
 
 ---
 
+title: "phpstan analysis november 2025"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis november 2025"
+issues: []
+discussions: []
 **Ultimo Aggiornamento:** 6 Novembre 2025  
 **Versione:** 1.0.0  
 **Status:** ✅ Production Ready - PHPStan Level 10 Compliant

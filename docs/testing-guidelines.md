@@ -1,3 +1,14 @@
+---
+title: "testing guidelines"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing guidelines"
+issues: []
+discussions: []
+---
+
 # Activity Module - Testing Guidelines
 
 ## Testing Framework Requirements
@@ -243,6 +254,14 @@ it('creates snapshots efficiently', function () {
 
 ---
 
+title: "testing guidelines"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing guidelines"
+issues: []
+discussions: []
 **Last Updated**: 2025-08-28
 
 **Testing Framework**: Pest

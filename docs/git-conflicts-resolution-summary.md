@@ -1,3 +1,14 @@
+---
+title: "git conflicts resolution summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "git conflicts resolution summary"
+issues: []
+discussions: []
+---
+
 # Risoluzione Conflitti Git - Modulo Activity
 
 ## Data Risoluzione
@@ -50,4 +61,12 @@ Tutti i file risolti rispettano:
 - [<nome progetto>ion Market Use Cases](./use_cases/<nome progetto>ion_market/index.md)
 
 ---
+title: "git conflicts resolution summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "git conflicts resolution summary"
+issues: []
+discussions: []
 *Aggiornato automaticamente dopo risoluzione conflitti Git*

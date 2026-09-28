@@ -1,3 +1,14 @@
+---
+title: "roadmap miglioramenti"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roadmap miglioramenti"
+issues: []
+discussions: []
+---
+
 # Activity — cosa migliorare (visione, non lamento)
 
 I numeri misurati (PHPStan, PHPMD, PHPInsights, coverage, casi di test) sono

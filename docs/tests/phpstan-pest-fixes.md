@@ -1,3 +1,14 @@
+---
+title: "phpstan pest fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan pest fixes"
+issues: []
+discussions: []
+---
+
 # Risoluzione Errori PHPStan nei Test Pest del Modulo Activity
 
 ## Contesto

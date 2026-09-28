@@ -1,3 +1,14 @@
+---
+title: "batch processing"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "batch processing"
+issues: []
+discussions: []
+---
+
 # Batch Processing - Activity
 
 **Task ID**: ACTIVITY-REFACTOR-002

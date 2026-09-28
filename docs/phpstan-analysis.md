@@ -1,3 +1,14 @@
+---
+title: "phpstan analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis"
+issues: []
+discussions: []
+---
+
 # PHPStan Analysis - Activity Module
 
 **Data**: 2025-10-10T12:40:18+02:00
@@ -6,6 +17,14 @@
 
 ---
 
+title: "phpstan analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis"
+issues: []
+discussions: []
 ## �️ Correzioni Merge Conflict - 2026-06-18
 
 ### Files Ripristinati

@@ -1,3 +1,14 @@
+---
+title: "examples"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "examples"
+issues: []
+discussions: []
+---
+
 # Esempi Reali di <nome progetto>ion Market Platforms
 
 Questa sezione fornisce una panoramica di alcune delle principali piattaforme di <nome progetto>ion market esistenti, evidenziando le loro caratteristiche, approcci tecnologici e lezioni che possiamo applicare al nostro sistema nel modulo `Activity`.

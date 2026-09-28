@@ -1,3 +1,14 @@
+---
+title: "no refresh database policy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no refresh database policy"
+issues: []
+discussions: []
+---
+
 # Policy: MAI Usare RefreshDatabase nei Test
 
 ## Regola Fondamentale
@@ -476,6 +487,14 @@ fi
 
 ---
 
+title: "no refresh database policy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no refresh database policy"
+issues: []
+discussions: []
 **Policy Status**: 🔴 OBBLIGATORIA
 **Eccezioni**: Nessuna per modulo Activity (Event Sourcing)
 **Ultimo aggiornamento**: 27 Ottobre 2025

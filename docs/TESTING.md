@@ -1,4 +1,7 @@
 ---
+qmd: "TESTING"
+issues: []
+discussions: []
 title: "Activity Module Testing"
 type: guide
 tags: [activity, testing, pest]

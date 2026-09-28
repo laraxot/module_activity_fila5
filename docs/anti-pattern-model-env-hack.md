@@ -1,3 +1,14 @@
+---
+title: "anti pattern model env hack"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "anti pattern model env hack"
+issues: []
+discussions: []
+---
+
 # Anti-Pattern: Environment-Specific Logic in Models
 
 ## Il Problema

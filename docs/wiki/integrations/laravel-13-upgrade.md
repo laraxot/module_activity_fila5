@@ -1,4 +1,7 @@
 ---
+qmd: "laravel 13 upgrade"
+issues: []
+discussions: []
 title: "Upgrade Laravel 13 - Activity 🐄✨"
 type: integration
 tags: [integrations]

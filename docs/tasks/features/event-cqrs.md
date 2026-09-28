@@ -1,3 +1,14 @@
+---
+title: "event cqrs"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "event cqrs"
+issues: []
+discussions: []
+---
+
 # Event CQRS - Activity
 
 **Task ID**: ACTIVITY-FEATURE-004

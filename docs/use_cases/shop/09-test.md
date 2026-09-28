@@ -1,3 +1,14 @@
+---
+title: "09 test"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "09 test"
+issues: []
+discussions: []
+---
+
 # Testing di uno Shop Event Sourced
 
 ## 1. Unit Test

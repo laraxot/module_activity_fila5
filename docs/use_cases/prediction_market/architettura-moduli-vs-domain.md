@@ -1,3 +1,14 @@
+---
+title: "architettura moduli vs domain"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architettura moduli vs domain"
+issues: []
+discussions: []
+---
+
 # Architettura a Moduli vs Domain per <nome progetto>ion Market
 
 ## Introduzione

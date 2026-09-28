@@ -1,4 +1,14 @@
-<<<<<<< HEAD
+---
+title: "errori migrazione activity table lezioni 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "errori migrazione activity table lezioni 1"
+issues: []
+discussions: []
+---
+
 # Lezioni Apprese: Errori Migrazione Activity Table
 
 ## Caso Studio: Errore Critico nella Modifica Migrazione Activity
@@ -171,24 +181,25 @@ Questa lezione è ora memorizzata permanentemente per:
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Lezione appresa: Context-aware migrations con supporto UUID*
-=======
+---
+title: "errori migrazione activity table lezioni 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "errori migrazione activity table lezioni 1"
+issues: []
+discussions: []
 ---
 module: theme
 topic: errori-migrazione-activity-table-lezioni-1
 canonical: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
-=======
+---
 See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
->>>>>>> d4098eb (.)
-=======
+---
 See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
->>>>>>> 26b6dbd (.)
-=======
+---
 See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
->>>>>>> 2d6a374 (.)
->>>>>>> laraxot/dev

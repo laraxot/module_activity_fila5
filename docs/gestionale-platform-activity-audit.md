@@ -1,3 +1,14 @@
+---
+title: "gestionale platform activity audit"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "gestionale platform activity audit"
+issues: []
+discussions: []
+---
+
 # Activity vs Platform.AuditLog — Mappatura e Gap Analysis
 
 > Ultimo aggiornamento: 2026-07-23
@@ -12,6 +23,14 @@
 
 ---
 
+title: "gestionale platform activity audit"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "gestionale platform activity audit"
+issues: []
+discussions: []
 ## Cosa fa Platform.AuditLog (SRC)
 
 - **Modello `AuditLog`** — tabella `audit_logs`

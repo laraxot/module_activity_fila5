@@ -1,3 +1,14 @@
+---
+title: "dual label chart widget implementation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "dual label chart widget implementation"
+issues: []
+discussions: []
+---
+
 # SimpleChartWidget - Analisi Qualità del Codice e Best Practices
 
 ## Panoramica

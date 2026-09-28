@@ -1,3 +1,14 @@
+---
+title: "BUSINESS LOGIC ANALYSIS"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "BUSINESS LOGIC ANALYSIS"
+issues: []
+discussions: []
+---
+
 # Activity Module - Business Logic Analysis
 
 ## Overview

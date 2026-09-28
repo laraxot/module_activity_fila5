@@ -1,3 +1,14 @@
+---
+title: "flow"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "flow"
+issues: []
+discussions: []
+---
+
 # Flusso degli Eventi - <nome progetto>ion Market
 
 ## 1. Creazione Mercato

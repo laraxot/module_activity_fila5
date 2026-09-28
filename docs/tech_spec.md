@@ -1,4 +1,7 @@
 ---
+qmd: "tech spec"
+issues: []
+discussions: []
 title: "Technical Specification - Activity Module"
 type: technical_spec
 tags: [tech spec, activity, audit]

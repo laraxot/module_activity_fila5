@@ -1,4 +1,14 @@
-<<<<<<< HEAD
+---
+title: "modelli factory seeder analisi 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "modelli factory seeder analisi 1"
+issues: []
+discussions: []
+---
+
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
 
 ## Modulo Activity
@@ -23,6 +33,14 @@
 
 ---
 
+title: "modelli factory seeder analisi 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "modelli factory seeder analisi 1"
+issues: []
+discussions: []
 ## Modulo Gdpr
 
 ### Modelli Attivi e Business Logic
@@ -189,24 +207,17 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 *Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
 *Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
-=======
+---
 ---
 module: theme
 topic: modelli-factory-seeder-analisi-1
 canonical: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-1.md
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-1.md
-=======
+---
 See canonical documentation: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-1.md
->>>>>>> d4098eb (.)
-=======
+---
 See canonical documentation: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-1.md
->>>>>>> 26b6dbd (.)
-=======
+---
 See canonical documentation: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-1.md
->>>>>>> 2d6a374 (.)
->>>>>>> laraxot/dev

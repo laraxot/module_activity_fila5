@@ -1,3 +1,14 @@
+---
+title: "cleanup activity docs"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cleanup activity docs"
+issues: []
+discussions: []
+---
+
 # Task: Cleanup Documentazione Activity
 
 **Modulo**: Activity  

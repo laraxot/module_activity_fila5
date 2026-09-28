@@ -1,4 +1,8 @@
 ---
+created: 2026-09-26
+updated: 2026-09-26
+issues: []
+discussions: []
 title: activity_log — colonna attribute_changes (Spatie v4+)
 type: concept
 tags: [activity, spatie, migration, register]

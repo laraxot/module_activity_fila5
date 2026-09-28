@@ -1,3 +1,14 @@
+---
+title: "testing errors fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing errors fixes"
+issues: []
+discussions: []
+---
+
 # Activity Module - Errori di Test e Correzioni
 
 ## Obiettivo

@@ -1,4 +1,11 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "consolidation analysis"
+issues: []
+discussions: []
 title: Root .md Consolidation Analysis — Activity Module
 date: 2026-08-18
 status: analysis

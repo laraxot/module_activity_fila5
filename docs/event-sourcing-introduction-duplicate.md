@@ -1,4 +1,14 @@
-<<<<<<< HEAD
+---
+title: "event sourcing introduction duplicate"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "event sourcing introduction duplicate"
+issues: []
+discussions: []
+---
+
 # Event Sourcing in `<nome progetto>`
 
 ## Introduction to Event Sourcing
@@ -156,24 +166,25 @@ public function store(Request $request)
 
 This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `<nome progetto>`, ensuring full traceability and compliance with healthcare standards.
 This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `<nome progetto>`, ensuring full traceability and compliance with healthcare standards.
-=======
+---
+title: "event sourcing introduction duplicate"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "event sourcing introduction duplicate"
+issues: []
+discussions: []
 ---
 module: theme
 topic: event-sourcing-introduction-duplicate
 canonical: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
-=======
+---
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
->>>>>>> d4098eb (.)
-=======
+---
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
->>>>>>> 26b6dbd (.)
-=======
+---
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
->>>>>>> 2d6a374 (.)
->>>>>>> laraxot/dev

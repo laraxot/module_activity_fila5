@@ -1,4 +1,7 @@
 ---
+qmd: "activity epics and stories"
+issues: []
+discussions: []
 title: "Activity Epics and User Stories"
 type: user_stories
 tags: [user stories, epics, activity]
