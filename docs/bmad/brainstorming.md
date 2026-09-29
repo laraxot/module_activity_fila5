@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_DQ8BXG
 <<<<<<< .merge_file_oKLrEB
 ---
 title: "Activity — brainstorming BMAD"
@@ -115,6 +116,8 @@ da `Activity` per nome. Il costo di migrazione supera il beneficio.
 Scartato e **vietato**: `migrate:fresh` e `--force` sono banditi dallo standing
 order (dati sacri, host `10.100.200.15`).
 =======
+=======
+>>>>>>> .merge_file_yhXWGR
 # Brainstorming - Modulo Activity
 
 ## Idee iniziali
@@ -137,4 +140,7 @@ order (dati sacri, host `10.100.200.15`).
 
 - [DOMANDA 1]
 - [DOMANDA 2]
+<<<<<<< .merge_file_DQ8BXG
 >>>>>>> .merge_file_GL5oeS
+=======
+>>>>>>> .merge_file_yhXWGR
