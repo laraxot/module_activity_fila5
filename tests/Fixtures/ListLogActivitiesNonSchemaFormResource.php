@@ -4,17 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Fixtures;
 
-use Filament\Schemas\Schema;
-use Illuminate\Database\Eloquent\Model;
-
 final class ListLogActivitiesNonSchemaFormResource
 {
-    public static function form(Schema $schema): object
+    public static function form(mixed $schema): object
     {
-        return new \stdClass;
+        return new \stdClass();
     }
 
-    public static function canRestore(Model $record): bool
+    public static function canRestore(mixed $record): bool
     {
         return false;
     }

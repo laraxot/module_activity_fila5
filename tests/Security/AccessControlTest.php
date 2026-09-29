@@ -15,11 +15,11 @@ use Modules\Activity\Models\Policies\ActivityPolicy;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 it('denies activity viewAny to users without permission', function (): void {
     $user = activityCreateUser();
-    $policy = new ActivityPolicy;
+    $policy = new ActivityPolicy();
 
     Assert::assertFalse($policy->viewAny($user));
 });
@@ -27,14 +27,14 @@ it('denies activity viewAny to users without permission', function (): void {
 it('allows activity viewAny to users with the correct permission', function (): void {
     $user = activityCreateUser();
     $user->givePermissionTo('activity.viewAny');
-    $policy = new ActivityPolicy;
+    $policy = new ActivityPolicy();
 
     Assert::assertTrue($policy->viewAny($user));
 });
 
 it('denies activity view to users without permission', function (): void {
     $user = activityCreateUser();
-    $policy = new ActivityPolicy;
+    $policy = new ActivityPolicy();
 
     Assert::assertFalse($policy->view($user));
 });
@@ -42,7 +42,7 @@ it('denies activity view to users without permission', function (): void {
 it('super-admin bypasses activity policy checks via before()', function (): void {
     $superAdmin = activityCreateUser();
     $superAdmin->assignRole('super-admin');
-    $policy = new ActivityPolicy;
+    $policy = new ActivityPolicy();
 
     Assert::assertTrue($policy->viewAny($superAdmin));
     Assert::assertTrue($policy->view($superAdmin));

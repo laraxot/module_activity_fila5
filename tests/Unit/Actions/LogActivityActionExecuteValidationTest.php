@@ -7,10 +7,9 @@ namespace Modules\Activity\Tests\Unit\Actions;
 use Illuminate\Database\Eloquent\Model;
 use InvalidArgumentException;
 use Modules\Activity\Actions\LogActivityAction;
-use Modules\Activity\Models\Activity;
 
 test('LogActivityAction execute rifiuta user non User', function (): void {
-    $nonUser = new class extends Model
+    $nonUser = new class() extends Model
     {
         protected $table = 'stub_users';
     };
@@ -20,7 +19,7 @@ test('LogActivityAction execute rifiuta user non User', function (): void {
         user: $nonUser,
     );
 
-    expect(fn (): Activity => $action->execute())
+    expect(fn (): mixed => $action->execute())
         ->toThrow(InvalidArgumentException::class, 'User must be an instance of User');
 });
 
