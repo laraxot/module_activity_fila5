@@ -1,15 +1,12 @@
 # Activity Module - Business Logic Analysis
 
 ## Overview
-<<<<<<< HEAD
-<<<<<<< HEAD
 The Activity module provides comprehensive audit logging and event sourcing capabilities for the Quaeris platform. It tracks user actions, system events, and data changes across all modules.
-=======
 The Activity module provides comprehensive audit logging and event sourcing capabilities for the <nome progetto> platform. It tracks user actions, system events, and data changes across all modules.
->>>>>>> 0a02158a (.)
-=======
 The Activity module provides comprehensive audit logging and event sourcing capabilities for the <nome progetto> platform. It tracks user actions, system events, and data changes across all modules.
->>>>>>> 35d8cf69 (Initial commit)
+The Activity module provides comprehensive audit logging and event sourcing capabilities for the Quaeris platform. It tracks user actions, system events, and data changes across all modules.
+The Activity module provides comprehensive audit logging and event sourcing capabilities for the <nome progetto> platform. It tracks user actions, system events, and data changes across all modules.
+The Activity module provides comprehensive audit logging and event sourcing capabilities for the <nome progetto> platform. It tracks user actions, system events, and data changes across all modules.
 
 ## Business Purpose
 - **Audit Trail**: Maintain complete audit trails for compliance and security
@@ -200,11 +197,6 @@ The Activity module provides comprehensive audit logging and event sourcing capa
 - **Security**: Provides audit trails for security incidents
 - **Debugging**: Helps diagnose application issues
 - **Analytics**: Enables user behavior analysis
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 - **Accountability**: Tracks user actions for accountability
 # Activity Module - Business Logic Analysis
 
@@ -403,8 +395,4 @@ The Activity module provides comprehensive audit logging and event sourcing capa
 - **Debugging**: Helps diagnose application issues
 - **Analytics**: Enables user behavior analysis
 - **Accountability**: Tracks user actions for accountability
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
 - **Accountability**: Tracks user actions for accountability

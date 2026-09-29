@@ -182,3 +182,27 @@ workbench/
 .cursor~*
 .windsurf~*
 tests/activity_coverage.xml
+
+# Cartelle vietate nella root del modulo (root cleanup policy)
+/bashscripts/
+/graphify-out/
+/tools/
+/scripts/
+/.agents/
+/.claude-audit/
+/.claude/
+/.codex/
+/.opencode/
+/tests/graphify-out/
+build
+.claude
+/.github/skills/
+.github/skills
+docs/graphify
+resources/lang
+
+# docs/chat — coordination notes replaced by BMAD stories in docs/bmad/
+docs/chat
+
+# Laraxot — app/Application forbidden (belongs to laravel/app/, not module app/)
+app/Application

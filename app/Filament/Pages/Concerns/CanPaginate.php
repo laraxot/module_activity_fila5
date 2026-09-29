@@ -58,6 +58,7 @@ trait CanPaginate
         session()->remove($this->getPerPageSessionKey());
 
         $firstOption = $pageOptions[0] ?? 10;
+
         return is_numeric($firstOption) ? (int) $firstOption : 10;
     }
 
@@ -75,6 +76,7 @@ trait CanPaginate
 
     /**
      * @template TModel of Model
+     *
      * @param  Builder<TModel>  $query
      * @return Paginator<int, TModel>|CursorPaginator<int, TModel>|LengthAwarePaginator<int, TModel>
      */

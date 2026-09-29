@@ -96,3 +96,15 @@ in conflitto, nessuna sovrascrittura del lavoro altrui.
 - I restanti ~155 usi di `mixed` documentati come intenzionali in `docs/coverage.md`
   restano un audit trail, non un backlog da azzerare: la maggior parte e' legittimamente
   polimorfa o vincolata da firme vendor.
+
+## 2026-09-21 — follow-up `declare` su lang snapshot/activity
+
+**Perché**: le label Filament di Activity/Snapshot sono il contratto UI del
+log. `lang/` canonico (`lang/en|it/{snapshot,activity}-resource.php`) aveva
+già `declare` dopo `<?php`.
+
+**Skip (stesso motivo di Job `lang/lang/it`)**: i quattro file in
+`resources/lang/{en,it}/{snapshot,activity}-resource.php` sono pipe-encoded
+(`|<?php|` / `|declare(strict_types=1)|`). Hanno già `declare`. Toccarli
+rompe l'encoding, non aggiunge strict. Nessun file PHP/Blade di Activity
+modificato in questo follow-up.

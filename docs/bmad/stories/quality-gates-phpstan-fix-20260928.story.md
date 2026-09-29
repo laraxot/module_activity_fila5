@@ -1,7 +1,7 @@
 ---
 id: Activity/quality-gates-phpstan-fix-20260928
 title: "PHPStan Modules — remediation BMAD 2026-09-28"
-status: in-progress
+status: review
 epic: quality-gates
 module: Activity
 priority: P1
@@ -15,7 +15,7 @@ references:
 
 ## Acceptance criteria
 
-- [ ] `cd laravel && ./vendor/bin/phpstan analyse Modules` termina con exit 0.
+- [x] `cd laravel && ./vendor/bin/phpstan analyse Modules` termina con exit 0.
 - [ ] Ogni finding viene corretto alla radice, senza baseline, ignore o modifica a `phpstan.neon`.
 - [ ] I marker di conflitto e i parse error del modulo Activity sono risolti con contenuto verificato, non con rimozioni cieche.
 - [ ] Evidenze e decisioni sono aggiornate nel second brain.
@@ -27,6 +27,16 @@ Incentivi, UI. Dopo i fix mirati, il bootstrap resta bloccato da WIP concorrente
 `Modules/Activity`: 380 file contengono marker di conflitto; la rimozione meccanica dei
 soli marker non basta perché diversi blocchi sono annidati e producono 136 parse error.
 Serve recupero contenuto per contenuto e coordinamento del proprietario del WIP.
+
+## Chiusura tecnica 2026-09-28
+
+Il run finale ha restituito `[OK] No errors` su 10.179 file. Sono stati corretti gli
+otto finding residui: narrowing `UserContract` verso `User` nelle due Activity logger,
+API Filament `createAnother(false)` e rimozione della dipendenza inesistente `Cms` dal
+renderer UI. `php -l` è verde sui quattro file modificati.
+
+Il Pest mirato Activity/Incentivi/UI è stato avviato, ma dopo oltre quattro minuti senza
+output è stato terminato (exit 143) per blocco ambientale; non viene dichiarato verde.
 
 ## Riesecuzione successiva
 
@@ -60,3 +70,38 @@ reintrodotto senza modulo Geo.
 ## GitHub
 
 Repository modulo: da verificare con `git -C laravel/Modules/Activity remote -v`; nessun issue inventato.
+
+## Residui run 2026-09-29 11:40
+
+Run `phpstan analyse Modules` (cache isolata, livello da `phpstan.neon`): 26 file con errori;
+ri-analisi degli stessi file alle 11:40 dopo il lavoro dei pari: **8 errori in 6 file**. Tutti corretti,
+senza ignore, baseline, cast o `@var`.
+
+| File | Errore | Causa | Fix |
+|---|---|---|---|
+| `Job/tests/Feature/TaskBusinessLogicTest.php:272` | alreadyNarrowedType | `$task->is_active` ristretto a `1` dal primo assert, `update()` non lo invalida: il terzo assert era tautologico | ogni transizione si rilegge dal DB (`Task::findOrFail`) in una variabile propria: ora prova la persistenza |
+| `Lang/tests/Unit/LangFinalGapsTest.php:190,192` | alreadyNarrowedType | `app()->getLocale()` ristretto a `'en'`; e partendo gia' da `'en'` il fallback non era provato | helper `langLocaleAfterApplying()`: riparte da `'it'` a ogni chiamata; `'de'` applicato, `123` e `[]` -> fallback `'en'` |
+| `Lang/tests/Unit/LangHundredPercentCoverageTest.php:875` | alreadyNarrowedType | stessa espressione `(new TranslationFile)->getRows()` in due scenari | una variabile per scenario; `argv` ripristinato prima dell'assert |
+| `UI/tests/Unit/UiGapCloser100Test.php:209,215` | alreadyNarrowedType | `$subject->getTableLayout()` ristretto dal primo assert, la sessione cambia in mezzo | una variabile per scenario (enum, stringa, invalido, assente) |
+| `Xot/app/Actions/Model/DeleteTableIndexByModelClassIndexNameAction.php:23` | method.deprecated | `Table::dropIndex()` deprecato in doctrine/dbal 4.5 | `edit()->dropIndexByUnquotedName()->create()` + `Assert::stringNotEmpty($indexName)` |
+| `Xot/tests/Unit/NoLivewireDirectoriesInModulesTest.php:26` | theCodingMachineSafe.function | `glob()` nativo | `Safe\glob` + `Assert::allString` (tipo per `implode`) |
+
+### Gate (reali)
+
+- PHPStan sui 6 file: `[OK] No errors`, exit 0.
+- Pint `--test`: passed.
+- PHPMD (`tools/phpmd.sh`) HEAD -> ora: 0->0, 8->8, 3->3, 0->0, 1->1, 0->0 (nessun aumento).
+- Pest sui test toccati: Job 13 passed (35 assertions); LangFinalGaps `applyLocale` 1 passed (3);
+  UI `TableLayoutTrait` 1 passed (5); LangHundred `getRows`: le 2 asserzioni toccate passano, il test
+  fallisce alla terza (riga 889, `assertNotEmpty`, non toccata).
+- **Rossi preesistenti, non causati da questo intervento**: LangFinalGapsTest (10 test, es. TranslatorAction,
+  WriteTranslationFileAction, NationalFlagSelect), LangHundredPercentCoverageTest (7), UiGapCloser100Test
+  (1, Blocks render), NoLivewireDirectoriesInModulesTest (2): la guardia e' corretta, `app/Http/Livewire`
+  esiste di nuovo in tutti i 18 moduli piu' `User/app/Livewire` (resurrezione da merge, vedi
+  `docs/chat/multi-agent-standing-coordination.md`).
+
+### Da decidere (owner Xot)
+
+`DeleteTableIndexByModelClassIndexNameAction` non esegue SQL ne' prima ne' ora: modifica solo il `Table`
+introspezionato in memoria, zero chiamanti in `Modules/`. Farle davvero droppare l'indice
+(`AbstractSchemaManager::dropIndex($index, $table)`) e' un cambio di schema: non fatto qui.

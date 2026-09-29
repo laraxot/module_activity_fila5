@@ -21,6 +21,20 @@ bmad_track: "core-foundation"
 
 # Activity — BMAD Method Integration
 
+## Documenti canonici
+
+| Documento | Contenuto |
+|---|---|
+| [architecture.md](./architecture.md) | architettura del modulo: modelli, contratti, Action, DTO, Resource, provider |
+| [architecture/module-map.md](./architecture/module-map.md) | mappa file -> responsabilita, una riga per file |
+| [architecture/module-boundary.md](./architecture/module-boundary.md) | cosa NON mettere nel modulo |
+| [brainstorming.md](./brainstorming.md) | decisioni prese, problemi aperti, scelte scartate |
+| [brainstorming/module-opportunities.md](./brainstorming/module-opportunities.md) | brainstorming preesistente |
+| [epics/module-roadmap.md](./epics/module-roadmap.md) | roadmap delle epic |
+| [quick-reference.md](./quick-reference.md) | riferimento rapido ancorato ai file reali |
+| [setup-guide.md](./setup-guide.md) | regole del progetto applicate al modulo |
+| `stories/` | storie di lavoro del modulo |
+
 ## Scopo BMAD per Activity
 
 Activity è il **modulo di audit e tracciamento** dell'ecosistema. In BMAD, questo modulo rappresenta l'**osservabilità** del sistema: registra ogni azione significativa per debugging, compliance e analytics.
@@ -117,9 +131,10 @@ _bmad-output/
 
 ## Vedi Anche
 
+- [Inventario Livewire → widget](livewire-inventory.md) — zero HTTP; nessun epic conversione
 - [quick-reference](quick-reference.md)
 - [setup-guide](setup-guide.md)
-- [BMAD Workflow Catalog](../bmad-workflow-catalog.md)
+- [Metodo BMAD (SSoT del progetto)](../../../Xot/docs/bmad-method.md)
 
 ---
 
