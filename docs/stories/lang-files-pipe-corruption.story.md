@@ -163,3 +163,36 @@ claude-opus-5[1m] — sessione `c21fdd4e`
 - `laravel/Modules/IndennitaResponsabilita/app/Models/Rating.php` — `@property int|null $parent_id`
 - `bashscripts/docs/prompts/03-quality-gates.md` — 3.24.0
 - `docs/sprint-status.yaml`, `docs/chat/quality-gates-preflight-file-corrotti.md`
+
+## Aggiornamento 2026-09-21 — occorrenza 2, trovata via root-cause di un crash live
+
+Sessione indipendente (root-cause di `array_replace_recursive(): Argument #2 must be
+of type array, int given` in produzione su `/user/admin`, via
+`Modules/Lang/app/Actions/Filament/AutoLabelAction.php:113`). I quattro file elencati
+in File List erano **di nuovo/ancora corrotti** in questo stesso clone
+(`base_quaeris_fila5`) al momento del controllo, nonostante `status: done` e la tabella
+sopra li segnasse gia' "ancora rotto" per questo clone — quindi il fix descritto sopra
+non risulta essersi consolidato qui, o e' stato reintrodotto. Non determinato quale dei
+due.
+
+Riparati di nuovo, sorgente `git -C Modules/Activity show 88335e88:resources/lang/<locale>/<name>.php`
+(submodule Activity, remote `laraxot/module_activity_fila5`, non `provtv` come nella
+tabella GitHub sopra — i due account esistono entrambi su GitHub come repo distinti,
+non fork; discrepanza segnalata, non risolta). Verifica via `include()` + conteggio
+chiavi: **6, 6, 7, 6** — identico a quanto gia' riportato in Completion Notes sopra,
+quindi stesso contenuto sorgente, non una ricostruzione diversa.
+
+Stesso identico pattern di corruzione (pipe `0x7C` prima di ogni carattere) trovato
+in parallelo in 8 file di `Modules/Job/lang/lang/it/*.php` — modulo diverso, ownership
+diversa, tracciato separatamente: [`Modules/Job/docs/stories/lang-files-pipe-corruption-job.story.md`](../../Job/docs/stories/lang-files-pipe-corruption-job.story.md),
+issue https://github.com/laraxot/module_job_fila5/issues/58.
+
+Nella stessa sessione trovato anche un **secondo meccanismo di corruzione**, distinto
+da questo (stub `<?php declare(strict_types=1);` senza `return`, non pipe), in 4 file
+di `Modules/User/lang/it/*.php` — tracciato in
+[`Modules/User/docs/stories/lang-files-empty-stub-corruption.story.md`](../../User/docs/stories/lang-files-empty-stub-corruption.story.md),
+issue https://github.com/laraxot/module_user_fila5/issues/102.
+
+Non ri-eseguito lo scan repo-wide di Task 1 in questa sessione (fuori scope, era mirato
+al crash live). Se il fix qui sopra non si e' consolidato, vale la pena capire perche'
+prima di dichiarare `done` di nuovo.

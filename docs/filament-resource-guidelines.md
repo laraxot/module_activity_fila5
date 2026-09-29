@@ -61,15 +61,12 @@ public static function table(Table $table): Table { ... }
 - Implements unnecessary getPages() and getRelations() methods ✗
 - These methods return standard/default values and should be removed
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 #### ❌ StoredEventResource - NEEDS REFACTORING  
-=======
 #### ❌ StoredEventResource - NEEDS REFACTORING
->>>>>>> 0a02158a (.)
-=======
 #### ❌ StoredEventResource - NEEDS REFACTORING
->>>>>>> 35d8cf69 (Initial commit)
+#### ❌ StoredEventResource - NEEDS REFACTORING  
+#### ❌ StoredEventResource - NEEDS REFACTORING
+#### ❌ StoredEventResource - NEEDS REFACTORING
 - Extends XotBaseResource ✓
 - Implements unnecessary getPages() and getRelations() methods ✗
 - These methods return standard/default values and should be removed
@@ -113,12 +110,8 @@ All resources must be tested to ensure:
 
 - [XotBaseResource Documentation](../../Xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../Xot/project_docs/filament-best-practices.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
+- [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
 - [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../xot/project_docs/filament-best-practices.md)
@@ -233,9 +226,7 @@ All resources must be tested to ensure:
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
 - [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../xot/project_docs/filament-best-practices.md)
-<<<<<<< HEAD
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
->>>>>>> 0a02158a (.)
-=======
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
->>>>>>> 35d8cf69 (Initial commit)
+- [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
+- [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
