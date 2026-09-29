@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 # Modulo Activity - Logging e Event Sourcing
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
+# Modulo Activity - Logging e Event Sourcing
 # Modulo Activity - Logging e Event Sourcing
 
 ## Scopo Principale
@@ -323,11 +320,7 @@ activity()->withProperties([
 
 **Versione**: v2.5.0-beta  
 **Stato**: Production Ready with Compliance Enhancement
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 # Activity Module - Comprehensive Analysis
->>>>>>> laraxot/dev
 
 ## Scopo Principale
 
@@ -389,7 +382,6 @@ Activity Module Stack:
     └── ReportGenerator
 ```
 
-<<<<<<< HEAD
 ### Data Flow
 ```
 User Action → Event → ActivityLogger → Database → Dashboard → Analytics
@@ -648,7 +640,6 @@ activity()->withProperties([
 
 **Versione**: v2.5.0-beta  
 **Stato**: Production Ready with Compliance Enhancement
-=======
 ## Future Enhancements
 - Real-time monitoring
 - Advanced analytics
@@ -658,10 +649,7 @@ activity()->withProperties([
 - Performance optimization
 - Advanced search features
 - Integration with external systems
-<<<<<<< HEAD
 - Machine learning capabilities
->>>>>>> 0a02158a (.)
-=======
 - Machine learning capabilities
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
+- Machine learning capabilities
+- Machine learning capabilities
