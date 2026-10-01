@@ -114,7 +114,7 @@ trait CanPaginate
     }
 
     /**
-     * @return array<int|string>
+     * @return list<int|string>
      */
     protected function getRecordsPerPageSelectOptions(): array
     {
