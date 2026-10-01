@@ -92,6 +92,9 @@ public function withCustomProperties(array $attributes): static
 - `/docs/guides/` - Implementation guides
 - `/docs/phpstan/` - PHPStan specific docs
 - `/docs/archived/` - Historical records
+- `/docs/archivedd/` - Historical records
+- `/docs/archived/` - Historical records
+- `/docs/archivedd/` - Historical records
 
 ## 🎓 Documentation Structure
 
@@ -153,6 +156,6 @@ public function withCustomProperties(array $attributes): static
 
 ---
 
-*
+*Last Updated: November 15, 2025*
 *PHPStan Version: Latest*
 *PHPMD Version: Latest*
