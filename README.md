@@ -119,6 +119,7 @@ class ActivityEvent
 > **Chi ha fatto cosa, quando.** Audit trail trasparente per operatori e compliance.
 
 ---
+<<<<<<< .merge_file_0mKiy5
 
 ## Perché esiste
 
@@ -154,6 +155,25 @@ Accountability **non negoziabile** in PA digitale.
 
 Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — vedi [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
 
+=======
+id: module-activity-readme
+title: "Activity — Audit Trail e Tracciabilità Operativa"
+type: module-readme
+category: module-documentation
+module: Activity
+status: active
+tags: [activity, audit, events, traceability]
+created: 2026-09-14
+updated: 2026-09-28
+qmd: "activity audit trail events operator history module documentation"
+issues:
+  - "https://github.com/laraxot/module_activity_fila5/issues/50"
+discussions:
+  - "https://github.com/laraxot/module_activity_fila5/discussions/51"
+related:
+  - "./docs/"
+sources: []
+>>>>>>> .merge_file_EC1EfY
 ---
 
 ## Documentazione
@@ -640,4 +660,34 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
 
 ---
 
+<<<<<<< .merge_file_0mKiy5
 **Modulo** `activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+**Modulo** `activity` · **Laraxot ecosystem** · **Project-agnostic**
+---
+
+## Scheda tecnica verificata (2026-09-28)
+
+| Voce | Valore |
+|---|---|
+| Nome dichiarato | `Activity` |
+| Namespace | `Modules\\Activity\\` |
+| File PHP (escluso vendor) | 701 |
+| File PHP di test | 290 |
+| Aree `app/` rilevate | Actions, Adapters, Contracts, Datas, Events, Exceptions, Filament, Listeners, Models, Providers, Support, Traits |
+| Migrazioni PHP | 27 |
+| SSoT locale | [`docs/`](docs/) e [`docs/bmad/`](docs/bmad/) |
+
+Questa scheda è un inventario statico, non una dichiarazione di qualità. Per ogni
+modifica eseguire i gate dal progetto Laravel:
+
+```bash
+cd laravel
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Activity
+./vendor/bin/pest Modules/Activity
+```
+
+La responsabilità del modulo, le decisioni architetturali e le opportunità sono
+documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
+rigenerati quando il modulo cambia; non copiarli in badge non verificati.
+>>>>>>> .merge_file_EC1EfY
