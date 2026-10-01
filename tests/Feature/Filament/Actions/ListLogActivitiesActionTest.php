@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestPage;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestRecord;
