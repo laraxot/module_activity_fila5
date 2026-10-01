@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< .merge_file_VCfmBT
-=======
-=======
->>>>>>> 472c43a3 (.)
 # Login Test Implementation Summary - <nome progetto> Project
 
 ## 🎊 Mission Accomplished: Complete Login Testing Suite
@@ -214,22 +209,10 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 
 *Last Updated: Gennaio 2025*
 *Project: Laraxot <nome progetto>*
-<<<<<<< HEAD
->>>>>>> .merge_file_mLpsVp
-=======
->>>>>>> 472c43a3 (.)
 ---
 module: theme
 topic: login-test-implementation-summary-1
 canonical: ../../../Themes/docs/shared-components/login-test-implementation-summary-1.md
 ---
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_VCfmBT
 See canonical documentation: ../../../Themes/docs/shared-components/login-test-implementation-summary-1.md
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/login-test-implementation-summary-1.md
->>>>>>> .merge_file_mLpsVp
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/login-test-implementation-summary-1.md
->>>>>>> 472c43a3 (.)

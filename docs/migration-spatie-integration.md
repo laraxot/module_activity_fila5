@@ -127,3 +127,7 @@ Per activity_log, il nome corretto è `create_activity_log_table.php`, non `fix_
 - [Root Migration Rules](../../../.windsurf/rules/migration-complete-rules.md)
 
 *
+*Ultimo aggiornamento: 2026-02-26*
+*
+*Ultimo aggiornamento: 2026-02-26*
+*Ultimo aggiornamento: 2026-02-26*

@@ -57,6 +57,15 @@ class Activity extends SpatieActivity
         'causer_type',
         'causer_id',
         'properties',
+        'batch_uuid',
+        'created_at',
+        'updated_at',
+        'batch_uuid',
+        'created_at',
+        'updated_at',
+        'batch_uuid',
+        'created_at',
+        'updated_at',
     ];
 }
 ```
