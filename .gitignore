@@ -196,11 +196,9 @@ audit-coverage/
 .devcontainer/
 .vscode/
 workbench/
-<<<<<<< .merge_file_eNZa35
 
 # Laraxot — tests/AuditCoverage forbidden (AI scaffold, never commit)
 tests/AuditCoverage/
-=======
 .cursor
 .windsurf
 .vscode
@@ -241,4 +239,3 @@ docs/chat
 
 # Laraxot — app/Application forbidden (belongs to laravel/app/, not module app/)
 app/Application
->>>>>>> .merge_file_bs9VDN
