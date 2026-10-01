@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 return array (
   'sections' => 
   array (
@@ -37,6 +36,6 @@ return array (
   'label' => 'Missing Label',
   'plural_label' => 'Missing Plural label',
   'fields' => 
-  array ()
+  array (
   ),
 );

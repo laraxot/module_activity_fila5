@@ -88,6 +88,7 @@ class <nome progetto>ionMarketController
         return response()->json(['success' => true]);
     }
 }
+```
 
 ## Considerazioni sulle Performance
 

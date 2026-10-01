@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -24,8 +24,6 @@ class ActivityLogger
     use QueueableAction;
 
     /**
-     * Log activity.
-     *
      * @param  array<string, mixed>|null  $properties
      */
     public function log(
@@ -38,8 +36,8 @@ class ActivityLogger
         $userId = null;
         if ($user !== null) {
             // Type checking for User model
-            if (! $user instanceof User) {
-                throw new InvalidArgumentException('User must be an instance of User');
+            if (! $user instanceof UserContract) {
+                throw new InvalidArgumentException('User must implement UserContract');
             }
 
             // Type narrowing for user ID - use getAttribute for Eloquent models
@@ -72,56 +70,54 @@ class ActivityLogger
     /**
      * Log created event.
      */
-    public function created(Model $model, ?User $user = null): Activity
+    public function created(Model $model, ?UserContract $user = null): Activity
     {
-        $action = new LogModelCreatedAction();
+        $action = new LogModelCreatedAction($model, $user instanceof Model ? $user : null);
 
-        return $action->execute($model);
+        return $action->execute();
     }
 
     /**
      * Log updated event.
      */
-    public function updated(Model $model, ?User $user = null): Activity
+    public function updated(Model $model, ?UserContract $user = null): Activity
     {
-        $action = new LogModelUpdatedAction();
+        $action = new LogModelUpdatedAction($model, $user instanceof Model ? $user : null);
 
-        return $action->execute($model);
+        return $action->execute();
     }
 
     /**
      * Log deleted event.
      */
-    public function deleted(Model $model, ?User $user = null): Activity
+    public function deleted(Model $model, ?UserContract $user = null): Activity
     {
-        $action = new LogModelDeletedAction();
+        $action = new LogModelDeletedAction($model, $user instanceof Model ? $user : null);
 
-        return $action->execute($model);
+        return $action->execute();
     }
 
     /**
      * Log login event.
      */
-    public function login(User $user): Activity
+    public function login(UserContract $user): Activity
     {
-        $action = new LogUserLoginAction();
+        $action = new LogUserLoginAction($user);
 
-        return $action->execute($user);
+        return $action->execute();
     }
 
     /**
      * Log logout event.
      */
-    public function logout(User $user): Activity
+    public function logout(UserContract $user): Activity
     {
-        $action = new LogUserLogoutAction();
+        $action = new LogUserLogoutAction($user);
 
-        return $action->execute($user);
+        return $action->execute();
     }
 
     /**
-     * Log custom event.
-     *
      * @param  array<string, mixed>|null  $properties
      */
     public function custom(
@@ -138,7 +134,7 @@ class ActivityLogger
      *
      * @return Collection<int, Activity>
      */
-    public function getUserActivities(User $user, int $limit = 50): Collection
+    public function getUserActivities(UserContract $user, int $limit = 50): Collection
     {
         if ($limit <= 0) {
             throw new InvalidArgumentException('Limit must be positive');
@@ -242,7 +238,7 @@ class ActivityLogger
      *
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
-    public function getStatistics(?User $user = null): array
+    public function getStatistics(?UserContract $user = null): array
     {
         $query = Activity::query();
 
@@ -265,7 +261,7 @@ class ActivityLogger
 
                 // Explicitly map and cast to ensure types
                 /** @var array<string, int> $byType */
-                $byType = $results->mapWithKeys(function (object $item, int $_key): array {
+                $byType = $results->mapWithKeys(function (object $item): array {
                     // PHPStan L10: isset() per magic attributes invece di property_exists()
                     if (! isset($item->event, $item->count)) {
                         return [];

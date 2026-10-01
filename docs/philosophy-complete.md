@@ -95,6 +95,10 @@ class Activity extends ActivityLog
 
 Il modulo Activity **è utilizzato da** tutti i moduli business:
 - **<nome progetto>**: Traccia modifiche clienti, appuntamenti, dispositivi
+- **TechPlanner**: Traccia modifiche clienti, appuntamenti, dispositivi
+- **<nome progetto>**: Traccia modifiche clienti, appuntamenti, dispositivi
+- **TechPlanner**: Traccia modifiche clienti, appuntamenti, dispositivi
+- **TechPlanner**: Traccia modifiche clienti, appuntamenti, dispositivi
 - **User**: Traccia azioni utente, login, cambi ruoli
 - **Employee**: Traccia timbrature, modifiche dipendenti
 - **Notify**: Traccia invii notifiche
