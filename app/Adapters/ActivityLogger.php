@@ -21,7 +21,6 @@ use Modules\Activity\Actions\Query\GetModelActivitiesAction;
 use Modules\Activity\Actions\Query\GetRecentActivitiesAction;
 use Modules\Activity\Actions\Query\GetUserActivitiesAction;
 use Modules\Activity\Models\Activity;
-use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract;
 
 /**
@@ -61,33 +60,27 @@ class ActivityLogger
 
     public function created(Model $model, ?UserContract $user = null): Activity
     {
-        unset($user);
-
-        return app(LogModelCreatedAction::class)->execute($model);
+        return (new LogModelCreatedAction($model, $user instanceof Model ? $user : null))->execute();
     }
 
     public function updated(Model $model, ?UserContract $user = null): Activity
     {
-        unset($user);
-
-        return app(LogModelUpdatedAction::class)->execute($model);
+        return (new LogModelUpdatedAction($model, $user instanceof Model ? $user : null))->execute();
     }
 
     public function deleted(Model $model, ?UserContract $user = null): Activity
     {
-        unset($user);
-
-        return app(LogModelDeletedAction::class)->execute($model);
+        return (new LogModelDeletedAction($model, $user instanceof Model ? $user : null))->execute();
     }
 
     public function login(UserContract $user): Activity
     {
-        return app(LogUserLoginAction::class)->execute($user instanceof User ? $user : null);
+        return (new LogUserLoginAction($user))->execute();
     }
 
     public function logout(UserContract $user): Activity
     {
-        return app(LogUserLogoutAction::class)->execute($user instanceof User ? $user : null);
+        return (new LogUserLogoutAction($user))->execute();
     }
 
     /**
@@ -105,10 +98,6 @@ class ActivityLogger
     /** @return Collection<int, Activity> */
     public function getUserActivities(UserContract $user, int $limit = 50): Collection
     {
-        if (! $user instanceof User) {
-            throw new InvalidArgumentException('User must be an instance of User');
-        }
-
         return app(GetUserActivitiesAction::class)->execute($user, $limit);
     }
 
@@ -140,10 +129,6 @@ class ActivityLogger
      */
     public function getStatistics(?UserContract $user = null): array
     {
-        if ($user !== null && ! $user instanceof User) {
-            throw new InvalidArgumentException('User must be an instance of User');
-        }
-
-        return app(GetActivityStatisticsAction::class)->execute($user instanceof User ? $user : null);
+        return app(GetActivityStatisticsAction::class)->execute($user);
     }
 }
