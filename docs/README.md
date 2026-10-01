@@ -1,3 +1,37 @@
+# Activity
+
+[![Module](https://img.shields.io/badge/Module-Activity-8B0000.svg)]()
+[![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
+[![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
+[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://php.net/)
+[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://phpstan.org/)
+[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)](https://www.php-fig.org/psr/psr-12/)
+[![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
+]()
+
+> **Core module for the FixCity Platform.**
+
+## Perché esiste
+
+Core module for the FixCity Platform.
+
+## Superpoteri
+
+- Modular component with XotBase patterns
+- Professional-grade implementation
+- Integrated with FixCity Platform
+
+## Documentazione
+
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+
+---
+
+**Modulo** `Activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 # Modulo Activity - Documentazione Completa
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -57,30 +91,41 @@ activity()
 ```
 
 ### 🎯 **Event Sourcing**
+```php
 // Eventi di dominio
 class UserRegisteredEvent
+{
     public function __construct(
         public readonly string $userId,
         public readonly string $email,
         public readonly DateTimeImmutable $registeredAt,
     ) {}
+}
 
 // Event Store
 class EventStore
+{
     public function store(DomainEvent $event): void
+    {
         Event::create([
             'aggregate_id' => $event->aggregateId,
             'event_type' => get_class($event),
             'event_data' => $event->toArray(),
             'occurred_at' => $event->occurredAt,
         ]);
+    }
+}
+```
 
 ### 📈 **Analytics Dashboard**
+```php
 // Widget analytics attività
 class ActivityStatsWidget extends XotBaseWidget
+{
     protected static string $view = 'activity::filament.widgets.activity-stats';
 
     public function getViewData(): array
+    {
         return [
             'total_activities' => Activity::count(),
             'today_activities' => Activity::whereDate('created_at', today())->count(),
@@ -90,6 +135,9 @@ class ActivityStatsWidget extends XotBaseWidget
                 ->limit(5)
                 ->get(),
         ];
+    }
+}
+```
 
 ## 🎯 **Stato Qualità - Gennaio 2025**
 
@@ -126,9 +174,12 @@ php artisan vendor:publish --tag=activity-config
 
 # Configurare cleanup automatico
 php artisan activity:setup-cleanup
+```
 
 ### ⚙️ **Configurazione**
+```php
 // config/activity.php
+return [
     'enabled' => env('ACTIVITY_LOGGER_ENABLED', true),
 
     'log_events' => [
@@ -141,13 +192,19 @@ php artisan activity:setup-cleanup
             'login' => true,
             'logout' => true,
             'failed' => true,
+        ],
+    ],
 
     'cleanup' => [
         'enabled' => true,
         'older_than_days' => 90,
         'batch_size' => 1000,
+    ],
+];
+```
 
 ### 🧪 **Testing**
+```bash
 # Test del modulo
 php artisan test --testsuite=Activity
 
@@ -156,6 +213,7 @@ php artisan test --testsuite=Activity
 
 # Test event sourcing
 php artisan activity:test-events
+```
 
 ## 🎛️ **Filament Integration**
 
@@ -185,88 +243,155 @@ php artisan activity:test-events
 ## 🎨 **Componenti Filament**
 
 ### 📊 **Activity Resource**
+```php
 // Filament Resource per gestione attività
 class ActivityResource extends XotBaseResource
+{
     protected static ?string $model = Activity::class;
 
     public static function getFormSchema(): array
+    {
+        return [
             Forms\Components\TextInput::make('log_name')
                 ->label(__('activity::fields.log_name.label'))
                 ->required(),
             Forms\Components\TextInput::make('description')
                 ->label(__('activity::fields.description.label'))
+                ->required(),
             Forms\Components\Select::make('causer_type')
                 ->label(__('activity::fields.causer_type.label'))
                 ->options([
                     'App\Models\User' => 'User',
                     'App\Models\Admin' => 'Admin',
                 ]),
+        ];
+    }
+}
+```
 
 ### 📈 **Activity Stats Widget**
+```php
 // Widget statistiche attività
+class ActivityStatsWidget extends XotBaseWidget
+{
+    protected static string $view = 'activity::filament.widgets.activity-stats';
 
+    public function getViewData(): array
+    {
+        return [
+            'total_activities' => Activity::count(),
+            'today_activities' => Activity::whereDate('created_at', today())->count(),
             'weekly_trend' => $this->getWeeklyTrend(),
             'top_actions' => $this->getTopActions(),
+        ];
+    }
+}
+```
 
 ## 🔧 **Best Practices**
 
 ### 1️⃣ **Activity Logging**
+```php
 // ✅ CORRETTO - Logging strutturato
 class UserService
+{
     public function updateProfile(User $user, array $data): void
+    {
         $oldData = $user->toArray();
 
         $user->update($data);
 
+        activity()
+            ->performedOn($user)
+            ->causedBy(auth()->user())
             ->withProperties([
                 'old_data' => $oldData,
                 'new_data' => $data,
                 'changed_fields' => array_keys(array_diff($oldData, $user->toArray())),
             ])
+            ->log('User profile updated');
+    }
+}
+```
 
 ### 2️⃣ **Event Sourcing**
+```php
 // ✅ CORRETTO - Eventi immutabili
 class UserRegisteredEvent implements DomainEvent
+{
+    public function __construct(
+        public readonly string $userId,
+        public readonly string $email,
         public readonly DateTimeImmutable $occurredAt,
+    ) {}
 
     public function toArray(): array
+    {
+        return [
             'user_id' => $this->userId,
             'email' => $this->email,
             'occurred_at' => $this->occurredAt->format('Y-m-d H:i:s'),
+        ];
+    }
+}
+```
 
 ### 3️⃣ **Performance Optimization**
+```php
 // ✅ CORRETTO - Query ottimizzate
 class ActivityRepository
+{
     public function getRecentActivities(int $limit = 50): Collection
+    {
         return Activity::with(['causer', 'subject'])
             ->orderBy('created_at', 'desc')
             ->limit($limit)
             ->get();
+    }
 
     public function getActivitiesByUser(User $user): Collection
+    {
         return Activity::where('causer_id', $user->id)
             ->where('causer_type', get_class($user))
             ->with('subject')
+            ->orderBy('created_at', 'desc')
+            ->get();
+    }
+}
+```
 
 ## 🐛 **Troubleshooting**
 
 ### **Problemi Comuni**
 
 #### 📊 **Performance Issues**
+```bash
 # Verificare indici database
 php artisan activity:check-indexes
 
 # Pulire log vecchi
 php artisan activity:cleanup --older-than=90
+```
 **Soluzione**: Consulta [Performance Monitoring](bottlenecks.md)
 
 #### 🔍 **Missing Activities**
+```php
 // Verificare configurazione logging
+'log_events' => [
+    'eloquent' => [
+        'created' => true,
+        'updated' => true,
+        'deleted' => true,
+    ],
+],
+```
 **Soluzione**: Consulta [Activity Logging](structure.md)
 
 #### 📈 **Dashboard Issues**
+```bash
 # Verificare widget Filament
 php artisan activity:test-dashboard
+```
 **Soluzione**: Consulta [Filament Integration](filament.md)
 
 ## 🤝 **Contributing**
@@ -330,6 +455,7 @@ php artisan activity:test-dashboard
 - **🧪 Test Coverage**: 94%
 - **⚡ Performance Score**: 94/100
 
+---
 
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025
 **📦 Versione**: 2.3.0
@@ -363,15 +489,23 @@ Il modulo Activity gestisce il tracciamento delle attività e degli eventi all'i
 ## Implementazione
 
 ### Configurazione
+```php
+// config/activity.php
+return [
     'enabled' => env('ACTIVITY_ENABLED', true),
+    'log_events' => [
         'user_login',
         'user_logout',
         'model_created',
         'model_updated',
         'model_deleted',
+    ],
     'prune_after_days' => 90,
+];
+```
 
 ### Utilizzo Base
+```php
 use Modules\Activity\Models\Activity;
 
 // Creare un'attività
@@ -380,14 +514,22 @@ Activity::create([
     'type' => 'user_login',
     'description' => 'User logged in',
     'properties' => ['ip' => request()->ip()],
+]);
+```
 
 ### Tracciamento Automatico
+```php
 // Nel modello
 use Modules\Activity\Traits\LogsActivity;
 
 class User extends Authenticatable
+{
+    use LogsActivity;
 
     protected static $logAttributes = ['name', 'email'];
+    protected static $logOnlyDirty = true;
+}
+```
 
 ## API Endpoints
 
@@ -440,11 +582,13 @@ Elimina un'attività (soft delete).
 - [Deployment](./deployment.md)
 
 *Ultimo aggiornamento: gennaio 2025*
+---
 title: "Activity Module Documentation"
 type: documentation
 tags: [module, documentation]
 created: 2026-06-05
 updated: 2026-06-05
+---
 
 # Modulo Activity
 
@@ -454,10 +598,16 @@ Il modulo **Activity** fa parte dell'ecosistema Laraxot PTVX.
 
 ## Scopo
 
+Fornisce audit trail e activity logging basato su `spatie/laravel-activitylog` ed `spatie/laravel-event-sourcing`. Espone `LogActivityAction` (`app/Actions/LogActivityAction.php`) come entrypoint per registrare eventi (type, causer, subject, properties) e risorse Filament per consultare/analizzare i log.
+Questo modulo gestisce [DESCRIZIONE SPECIFICA DA COMPLETARE].
+Questo modulo gestisce [DESCRIZIONE SPECIFICA DA COMPLETARE].
+Fornisce audit trail e activity logging basato su `spatie/laravel-activitylog` ed `spatie/laravel-event-sourcing`. Espone `LogActivityAction` (`app/Actions/LogActivityAction.php`) come entrypoint per registrare eventi (type, causer, subject, properties) e risorse Filament per consultare/analizzare i log.
+Questo modulo gestisce [DESCRIZIONE SPECIFICA DA COMPLETARE].
 Questo modulo gestisce [DESCRIZIONE SPECIFICA DA COMPLETARE].
 
 ## Struttura
 
+```
 Activity/
 ├── app/
 │   ├── Models/
@@ -466,6 +616,7 @@ Activity/
 ├── docs/
 ├── lang/
 └── resources/
+```
 
 ## Dipendenze
 
@@ -473,31 +624,10 @@ Activity/
 - [User Module](../User/docs/) (se usa autenticazione)
 - [Tenant Module](../Tenant/docs/) (se multi-tenant)
 
+## Collegamenti
 
 - [Documentazione Root](../../../docs/ACTIVITY_MODULE.md)
 - [Regole Architecture](../Xot/docs/architecture/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Backlinks
 
@@ -512,4 +642,3 @@ Activity/
 
 ## AI Workflows
 - [AI Methodologies](./ai-methodologies.md)
-
