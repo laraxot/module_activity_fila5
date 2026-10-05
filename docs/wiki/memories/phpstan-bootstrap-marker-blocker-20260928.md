@@ -31,3 +31,6 @@ resta stabile per tutta la durata di un run PHPStan.
 Ultimo run: 53 errori e 10 processi PHPStan concorrenti. Sono ricomparsi file già corretti;
 il conteggio è quindi non deterministico. Un gate fleet-wide richiede un solo orchestratore
 e nessun writer concorrente.
+
+Verifica finale 2026-09-28: tree stabile, PHPStan verde su 10.179 file. Il blocco di
+bootstrap è superato; il Pest mirato resta non verificato per timeout/blocco ambientale.

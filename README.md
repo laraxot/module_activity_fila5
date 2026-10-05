@@ -7,7 +7,7 @@ module: Activity
 status: active
 tags: [activity, audit, events, traceability]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-28
 qmd: "activity audit trail events operator history module documentation"
 issues:
   - "https://github.com/laraxot/module_activity_fila5/issues/50"
@@ -60,3 +60,29 @@ Keep `declare(strict_types=1);` in PHP, respect project‑wide PHPStan config, a
 ---
 
 **Modulo** `activity` · **Laraxot ecosystem** · **Project-agnostic**
+---
+
+## Scheda tecnica verificata (2026-09-28)
+
+| Voce | Valore |
+|---|---|
+| Nome dichiarato | `Activity` |
+| Namespace | `Modules\\Activity\\` |
+| File PHP (escluso vendor) | 701 |
+| File PHP di test | 290 |
+| Aree `app/` rilevate | Actions, Adapters, Contracts, Datas, Events, Exceptions, Filament, Listeners, Models, Providers, Support, Traits |
+| Migrazioni PHP | 27 |
+| SSoT locale | [`docs/`](docs/) e [`docs/bmad/`](docs/bmad/) |
+
+Questa scheda è un inventario statico, non una dichiarazione di qualità. Per ogni
+modifica eseguire i gate dal progetto Laravel:
+
+```bash
+cd laravel
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Activity
+./vendor/bin/pest Modules/Activity
+```
+
+La responsabilità del modulo, le decisioni architetturali e le opportunità sono
+documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
+rigenerati quando il modulo cambia; non copiarli in badge non verificati.
