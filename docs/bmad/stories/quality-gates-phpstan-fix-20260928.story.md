@@ -1,7 +1,7 @@
 ---
 id: Activity/quality-gates-phpstan-fix-20260928
 title: "PHPStan Modules — remediation BMAD 2026-09-28"
-status: in-progress
+status: review
 epic: quality-gates
 module: Activity
 priority: P1
@@ -15,7 +15,7 @@ references:
 
 ## Acceptance criteria
 
-- [ ] `cd laravel && ./vendor/bin/phpstan analyse Modules` termina con exit 0.
+- [x] `cd laravel && ./vendor/bin/phpstan analyse Modules` termina con exit 0.
 - [ ] Ogni finding viene corretto alla radice, senza baseline, ignore o modifica a `phpstan.neon`.
 - [ ] I marker di conflitto e i parse error del modulo Activity sono risolti con contenuto verificato, non con rimozioni cieche.
 - [ ] Evidenze e decisioni sono aggiornate nel second brain.
@@ -27,6 +27,16 @@ Incentivi, UI. Dopo i fix mirati, il bootstrap resta bloccato da WIP concorrente
 `Modules/Activity`: 380 file contengono marker di conflitto; la rimozione meccanica dei
 soli marker non basta perché diversi blocchi sono annidati e producono 136 parse error.
 Serve recupero contenuto per contenuto e coordinamento del proprietario del WIP.
+
+## Chiusura tecnica 2026-09-28
+
+Il run finale ha restituito `[OK] No errors` su 10.179 file. Sono stati corretti gli
+otto finding residui: narrowing `UserContract` verso `User` nelle due Activity logger,
+API Filament `createAnother(false)` e rimozione della dipendenza inesistente `Cms` dal
+renderer UI. `php -l` è verde sui quattro file modificati.
+
+Il Pest mirato Activity/Incentivi/UI è stato avviato, ma dopo oltre quattro minuti senza
+output è stato terminato (exit 143) per blocco ambientale; non viene dichiarato verde.
 
 ## Riesecuzione successiva
 
