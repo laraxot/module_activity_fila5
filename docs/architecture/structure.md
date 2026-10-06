@@ -1,3 +1,8 @@
+---
+title: Structure
+module: Activity
+---
+
 # Modulo Activity
 
 Data: 2025-04-23 19:09:55

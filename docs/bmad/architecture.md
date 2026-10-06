@@ -1,3 +1,8 @@
+---
+title: Architecture
+module: Activity
+---
+
 <<<<<<< .merge_file_tTLpcO
 <<<<<<< .merge_file_oPoQaH
 ---

@@ -1,3 +1,8 @@
+---
+title: Architecture rules
+module: Activity
+---
+
 -   [Super Cow Methodology](../../Xot/docs/super_cow_methodology.md)
 -   [PHP Quality Guide](../../Xot/docs/php_quality_guide.md)
 -   [Filament Extension Rules](../../Xot/docs/filament_extension_rules.md)

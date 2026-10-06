@@ -1,3 +1,8 @@
+---
+title: Readme
+module: Activity
+---
+
 # LLM Wiki (module)
 
 [![Module](https://img.shields.io/badge/Module-LLM Wiki (module)-8B0000.svg)]()

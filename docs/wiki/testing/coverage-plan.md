@@ -1,3 +1,8 @@
+---
+title: Coverage plan
+module: Activity
+---
+
 # Activity Coverage Plan
 
 Owner: multi-agent execution thread

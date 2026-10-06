@@ -1,3 +1,8 @@
+---
+title: Coverage
+module: Activity
+---
+
 # Activity — quality gate status (2026-09-22)
 
 Eseguito dopo la pulizia dei marker di conflitto in `docs/*.md` (commit

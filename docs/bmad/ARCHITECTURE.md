@@ -1,3 +1,8 @@
+---
+title: ARCHITECTURE
+module: Activity
+---
+
 # Architecture Documentation
 ---
 title: "Activity Module Architecture"
