@@ -1,6 +1,8 @@
 <?php
 
 declare(strict_types=1);
+
+use Mockery\Expectation;
 use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Models\Activity;
 use Modules\User\Contracts\UserContract;
@@ -33,4 +35,14 @@ function activityCreateActivity(array $attributes = []): Activity
     assert($activity instanceof Activity);
 
     return $activity;
+}
+
+/**
+ * @param  object  $expectation
+ */
+function mockeryExpect(object $expectation): Expectation
+{
+    assert($expectation instanceof Expectation);
+
+    return $expectation;
 }
