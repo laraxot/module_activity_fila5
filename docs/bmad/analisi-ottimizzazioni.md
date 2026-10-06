@@ -1,3 +1,8 @@
+---
+title: Analisi ottimizzazioni
+module: Activity
+---
+
 # 📊 analisi e ottimizzazioni - modulo activity
 
 ## 🎯 panoramica analisi

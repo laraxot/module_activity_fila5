@@ -1,3 +1,8 @@
+---
+title: Coverage clean
+module: Activity
+---
+
   Activity/app/Actions/ActivityLogger ................................... 0.0%  
   Activity/app/Actions/LogActivityAction ................................ 0.0%  
   Activity/app/Actions/LogModelCreatedAction ............................ 0.0%  

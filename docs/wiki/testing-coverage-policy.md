@@ -1,3 +1,8 @@
+---
+title: Testing coverage policy
+module: Activity
+---
+
 # Activity Module - Testing Coverage Policy
 
 ## Obiettivo

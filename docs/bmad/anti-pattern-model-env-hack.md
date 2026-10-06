@@ -1,3 +1,8 @@
+---
+title: Anti pattern model env hack
+module: Activity
+---
+
 # Anti-Pattern: Environment-Specific Logic in Models
 
 ## Il Problema
