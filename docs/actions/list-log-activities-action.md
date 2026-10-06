@@ -1,3 +1,8 @@
+---
+title: List log activities action
+module: Activity
+---
+
 # ListLogActivitiesAction - Documentazione Completa
 
 ## Panoramica

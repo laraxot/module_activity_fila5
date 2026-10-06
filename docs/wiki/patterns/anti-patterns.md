@@ -1,3 +1,8 @@
+---
+title: Anti patterns
+module: Activity
+---
+
 # Anti-patterns in Activity Module
 
 ## Model Environment Variable Hack
