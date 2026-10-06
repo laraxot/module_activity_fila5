@@ -1,3 +1,8 @@
+---
+title: Activity pdf reports
+module: Activity
+---
+
 # Activity Log PDF Reports
 
 ## 📋 Overview

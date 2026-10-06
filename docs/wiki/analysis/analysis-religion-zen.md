@@ -1,3 +1,8 @@
+---
+title: Analysis religion zen
+module: Activity
+---
+
 # Activity Module: Complete Analysis (Religion, Philosophy, Politics, Zen)
 
 ---

@@ -1,3 +1,8 @@
+---
+title: Anti pattern redundant property override
+module: Activity
+---
+
 # Anti-Pattern: Redundant Property Override in Extended Models
 
 ## Il Problema

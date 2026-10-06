@@ -1,3 +1,8 @@
+---
+title: Dedicated connection
+module: Activity
+---
+
 # Activity Module — Database Connection: Pattern Corretto
 
 ## Regola definitiva
