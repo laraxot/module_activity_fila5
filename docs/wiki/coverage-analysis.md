@@ -1,3 +1,8 @@
+---
+title: Coverage analysis
+module: Activity
+---
+
 # Activity Module - Analisi Coverage e Errori
 
 ## Stato Attuale Coverage

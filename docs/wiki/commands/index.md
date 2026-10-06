@@ -1,3 +1,8 @@
+---
+title: Index
+module: Activity
+---
+
 # Activity Module - commands Index
 
 ## Purpose

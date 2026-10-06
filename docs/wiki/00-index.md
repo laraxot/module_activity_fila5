@@ -1,3 +1,8 @@
+---
+title: 00 index
+module: Activity
+---
+
 # 📚 **Indice Documentazione Modulo Activity**
 ---
 title: Activity Module - Documentation Index

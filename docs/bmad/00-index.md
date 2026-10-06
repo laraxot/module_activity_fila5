@@ -1,3 +1,8 @@
+---
+title: 00 index
+module: Activity
+---
+
 # 📚 **Indice Documentazione Modulo Activity**
 
 **Status**: ✅ PHPStan Level 10 Compliant
