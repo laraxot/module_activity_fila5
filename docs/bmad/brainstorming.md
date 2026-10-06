@@ -1,3 +1,8 @@
+---
+title: Brainstorming
+module: Activity
+---
+
 <<<<<<< .merge_file_DQ8BXG
 <<<<<<< .merge_file_oKLrEB
 ---

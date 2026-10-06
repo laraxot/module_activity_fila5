@@ -1,3 +1,8 @@
+---
+title: Phpstan l10 coverage
+module: Activity
+---
+
 # PHPStan Level 10 Compliance - Activity Module
 
 ## Session: 2026-09-04
