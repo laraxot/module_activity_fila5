@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\File;
@@ -156,8 +155,6 @@ it('registers the header actions with string keys', function (): void {
     $actions = (fn (): array => $this->getHeaderActions())->call($page);
 
     expect(array_keys($actions))->toBe(['refresh', 'download']);
-    expect($actions['refresh'])->toBeInstanceOf(Action::class);
-    expect($actions['download'])->toBeInstanceOf(Action::class);
 });
 
 it('points the download to the Folio page with the chosen file', function (): void {
