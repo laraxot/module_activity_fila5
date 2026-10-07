@@ -4,31 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Filament;
 
-use Modules\Activity\Filament\Pages\ListLogActivities;
-use Modules\Activity\Filament\Resources\ActivityResource;
+use Modules\Activity\Tests\Fixtures\ListLogActivitiesTranslationHarness;
 use PHPUnit\Framework\Assert;
-use ReflectionMethod;
 
 test('ListLogActivities toTranslationString normalizza stringhe e array', function (): void {
-    $page = new class extends ListLogActivities
-    {
-        public static function getResource(): string
-        {
-            return ActivityResource::class;
-        }
-
-        /** @param list<string>|string|int $value */
-        public function exposeToTranslationString(string|array|int $value): string
-        {
-            $method = new ReflectionMethod(ListLogActivities::class, 'toTranslationString');
-            $method->setAccessible(true);
-
-            /** @var string $result */
-            $result = $method->invoke($this, $value);
-
-            return $result;
-        }
-    };
+    $page = new ListLogActivitiesTranslationHarness;
 
     Assert::assertSame('Titolo semplice', $page->exposeToTranslationString('Titolo semplice'));
     Assert::assertSame('parte uno parte due', $page->exposeToTranslationString(['parte uno', 'parte due']));
@@ -36,13 +16,7 @@ test('ListLogActivities toTranslationString normalizza stringhe e array', functi
 });
 
 test('ListLogActivities getFieldLabel usa fallback per chiavi sconosciute', function (): void {
-    $page = new class extends ListLogActivities
-    {
-        public static function getResource(): string
-        {
-            return ActivityResource::class;
-        }
-    };
+    $page = new ListLogActivitiesTranslationHarness;
 
     Assert::assertSame('campo_custom', $page->getFieldLabel('campo_custom'));
 });
