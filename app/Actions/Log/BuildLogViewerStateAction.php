@@ -23,9 +23,14 @@ class BuildLogViewerStateAction
 {
     use QueueableAction;
 
+    /** @var list<string> */
     public const array LEVELS = ['EMERGENCY', 'ALERT', 'CRITICAL', 'ERROR', 'WARNING', 'NOTICE', 'INFO', 'DEBUG'];
 
-    /** Finestre di lettura selezionabili, in KB. */
+    /**
+     * Finestre di lettura selezionabili, in KB.
+     *
+     * @var list<int>
+     */
     public const array WINDOW_OPTIONS_KB = [128, 256, 512, 1024, 2048, 4096];
 
     public const int DEFAULT_WINDOW_KB = 256;
@@ -63,7 +68,7 @@ class BuildLogViewerStateAction
                 $entries = [];
                 $total = 0;
                 $tail = null;
-                $modifiedAt = null;
+                // $modifiedAt resta null: filemtime() e' l'ultima istruzione del try e lancia prima di assegnare.
                 $error = (string) __('activity::log_viewer.messages.file_unavailable');
             }
         }
