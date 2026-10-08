@@ -75,14 +75,6 @@ Il modulo Activity dimostra un'eccellente qualità del codice, raggiungendo il l
 * [phpstan_fixes.md](laravel/Modules/Xot/docs/phpstan_fixes.md)
 * [phpstan_fixes.md](laravel/Modules/User/docs/phpstan_fixes.md)
 * [phpstan_fixes.md](laravel/Modules/User/docs/fixes/phpstan_fixes.md)
-* [phpstan_fixes.md](laravel/Modules/Activity/docs/phpstan_fixes.md)
----
-module: theme
-topic: phpstan-fixes-1
-canonical: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
+* [phpstan_fixes.md](laravel/Modules/Activity/docs/phpstan_fixes.md)=======
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md

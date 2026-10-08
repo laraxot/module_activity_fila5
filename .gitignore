@@ -182,6 +182,3 @@ workbench/
 .cursor~*
 .windsurf~*
 tests/activity_coverage.xml
-
-# Artefatti audit vietati (rule: tests-auditcoverage-forbidden)
-audit-coverage/

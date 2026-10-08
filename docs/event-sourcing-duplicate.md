@@ -157,14 +157,6 @@ class UserActivityReportProjector
 
 L'Event Sourcing offre un approccio potente per gestire la complessità nel modulo `Activity`, garantendo tracciabilità e flessibilità. Implementando radici aggregate, proiettori e strategie come snapshotting, è possibile migliorare la robustezza e la scalabilità del codice esistente. Seguendo i pattern e i consigli descritti, il modulo può evolversi per supportare requisiti futuri senza compromettere la coerenza dei dati.
 
-Se hai bisogno di ulteriori dettagli o di un'implementazione specifica, fammi sapere!
----
-module: theme
-topic: event-sourcing-duplicate
-canonical: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
-See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
+Se hai bisogno di ulteriori dettagli o di un'implementazione specifica, fammi sapere!=======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
