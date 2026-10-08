@@ -13,7 +13,7 @@ use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Traits\Updater;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('it can create base model instance', function (): void {
     $model = new TestActivityModel;
