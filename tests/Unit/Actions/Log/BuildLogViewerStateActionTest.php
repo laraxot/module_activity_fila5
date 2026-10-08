@@ -3,6 +3,7 @@
 declare(strict_types=1);
 use Illuminate\Support\Facades\File;
 use Modules\Activity\Actions\Log\BuildLogViewerStateAction;
+use Modules\Activity\Enums\LogLevelEnum;
 use Tests\TestCase;
 
 uses(TestCase::class);
@@ -37,7 +38,7 @@ it('lists the files and builds the tree even when no file is chosen', function (
     expect($state->tail)->toBeNull();
     expect($state->entries)->toBe([]);
     expect($state->error)->toBeNull();
-    expect($state->levels)->toContain('ERROR');
+    expect($state->levels)->toBe(LogLevelEnum::cases());
     expect($state->windows)->toContain(256);
 });
 
