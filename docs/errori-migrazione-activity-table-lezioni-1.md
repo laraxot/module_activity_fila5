@@ -169,14 +169,6 @@ Questa lezione è ora memorizzata permanentemente per:
 - [Activity Logging](./activity_logging_system.md)
 
 *Ultimo aggiornamento: Gennaio 2025*
-*Lezione appresa: Context-aware migrations con supporto UUID*
----
-module: theme
-topic: errori-migrazione-activity-table-lezioni-1
-canonical: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
-See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
+*Lezione appresa: Context-aware migrations con supporto UUID*=======
 See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
