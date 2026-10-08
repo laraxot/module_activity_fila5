@@ -63,7 +63,6 @@ class BuildLogViewerStateAction
                 $entries = [];
                 $total = 0;
                 $tail = null;
-                $modifiedAt = null;
                 $error = (string) __('activity::log_viewer.messages.file_unavailable');
             }
         }
