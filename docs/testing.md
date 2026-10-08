@@ -33,8 +33,7 @@ test('logs causer on user action', function () {
     $activity = Activity::latest()->first();
     expect($activity->causer_id)->toBe($admin->id);
 });
-```
-# Testing Documentation
+```# Testing Documentation
 
 ## Overview
 
@@ -420,7 +419,4 @@ Remember: Good tests are the foundation of reliable software development.
 ---
 
 *Last updated: January 2025*
-*
-*
-*
 *

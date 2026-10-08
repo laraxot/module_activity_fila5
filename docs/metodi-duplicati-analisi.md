@@ -192,8 +192,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - **Setting:** 1 metodi in comune
 
 ---
-_Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
-# 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
+_Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_# 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨
 **Data**: 15 Ottobre 2025
@@ -1291,7 +1290,4 @@ public function getTableFilters(): array
 3. Kick-off Fase 1
 4. Implementazione ColumnBuilder
 
-**Domande?** Chiedi alla Super Mucca! 🐄⚡
-**Domande?** Chiedi alla Super Mucca! 🐄⚡
-**Domande?** Chiedi alla Super Mucca! 🐄⚡
 **Domande?** Chiedi alla Super Mucca! 🐄⚡

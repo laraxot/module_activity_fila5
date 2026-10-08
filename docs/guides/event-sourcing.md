@@ -4,8 +4,7 @@ topic: event_sourcing
 canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
 ---
 
-See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.md
-topic: event-sourcing
+See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.mdtopic: event-sourcing
 canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
 ---
 

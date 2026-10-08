@@ -68,8 +68,7 @@ Architectural patterns and system design documentation
 
 ---
 
-**Complete inventory**: See [INDEX_GENERATED.md](INDEX_GENERATED.md) for full detailed categorization across all 698 files in 20 categories.
-# Documentation Index
+**Complete inventory**: See [INDEX_GENERATED.md](INDEX_GENERATED.md) for full detailed categorization across all 698 files in 20 categories.# Documentation Index
 
 Modulo: Activity
 
