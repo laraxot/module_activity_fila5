@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Activity\Actions\Log;
 
 use Modules\Activity\Datas\LogViewerStateData;
+use Modules\Activity\Enums\LogLevelEnum;
 use Modules\Activity\Exceptions\InvalidLogFileException;
 use RuntimeException;
 use Safe\Exceptions\SafeExceptionInterface;
@@ -22,9 +23,6 @@ use function Safe\filemtime;
 class BuildLogViewerStateAction
 {
     use QueueableAction;
-
-    /** @var list<string> */
-    public const array LEVELS = ['EMERGENCY', 'ALERT', 'CRITICAL', 'ERROR', 'WARNING', 'NOTICE', 'INFO', 'DEBUG'];
 
     /**
      * Finestre di lettura selezionabili, in KB.
@@ -76,7 +74,7 @@ class BuildLogViewerStateAction
         return new LogViewerStateData(
             files: $files,
             tree: app(BuildLogFileTreeAction::class)->execute($files),
-            levels: self::LEVELS,
+            levels: LogLevelEnum::cases(),
             windows: self::WINDOW_OPTIONS_KB,
             entries: $entries,
             total: $total,
@@ -98,8 +96,6 @@ class BuildLogViewerStateAction
 
     private function validLevel(string $level): string
     {
-        $level = mb_strtoupper(trim($level));
-
-        return in_array($level, self::LEVELS, true) ? $level : '';
+        return LogLevelEnum::tryFrom(mb_strtoupper(trim($level)))->value ?? '';
     }
 }
