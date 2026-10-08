@@ -15,11 +15,13 @@ if (! function_exists('actingAs')) { // Changed from Pest\Laravel\actingAs
     /**
      * Authenticate as a given user.
      *
+     * @param  Authenticatable  $user
+     * @param  string|null  $driver
      * @return TestResponse<Response>
      */
     function actingAs(Authenticatable $user, ?string $driver = null): TestResponse
     {
-        throw new RuntimeException('Stub not intended for runtime use');
+        throw new RuntimeException('Stub not intended for runtime use: '.get_debug_type($user).'/'.get_debug_type($driver));
     }
 }
 
@@ -27,12 +29,13 @@ if (! function_exists('livewire')) { // Changed from Pest\Laravel\livewire
     /**
      * Create a new Livewire test helper instance.
      *
+     * @param  string  $component
      * @param  array<string, mixed>  $params
      * @return Testable<Component>
      */
     function livewire(string $component, array $params = []): Testable
     {
-        throw new RuntimeException('Stub not intended for runtime use');
+        throw new RuntimeException('Stub not intended for runtime use: '.get_debug_type($component).'/'.get_debug_type($params));
     }
 }
 
