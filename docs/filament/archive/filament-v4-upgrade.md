@@ -12,12 +12,7 @@ This document outlines the key changes and upgrades implemented for Filament v4 
 
 ```php
 // v4 Approach (Current)
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-{
+public function getFormSchema(): array{
     return [
         'log_name' => TextInput::make('log_name')->required()->maxLength(255),
         'description' => TextInput::make('description')->required()->maxLength(255),

@@ -366,12 +366,7 @@ class ListMyModelActivities extends ListLogActivities
 ---
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-**
-=======
-**Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> 0a02158a (.)
-=======
+**=======
 **Ultimo aggiornamento**: 27 Ottobre 2025
 >>>>>>> 35d8cf69 (Initial commit)
 **Pattern**: DRY + KISS per Actions riutilizzabili

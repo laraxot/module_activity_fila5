@@ -15,13 +15,7 @@ Per modificare una tabella esistente:
 
 ### 1. Single Source of Truth
 **Principio**: Una tabella = Una migrazione
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Motivazione**: 
-=======
-**Motivazione**:
->>>>>>> 0a02158a (.)
-=======
+**Motivazione**: =======
 **Motivazione**:
 >>>>>>> 35d8cf69 (Initial commit)
 - Tutta l'evoluzione della tabella visibile in un punto
@@ -45,13 +39,7 @@ Per modificare una tabella esistente:
 ## 🎯 **LEZIONE CRITICA: Polimorfismo con ID Misti**
 
 ### **Problema Identificato**
-<<<<<<< HEAD
-<<<<<<< HEAD
-Nel sistema SaluteOra abbiamo modelli con tipi di ID diversi:
-=======
-Nel sistema  abbiamo modelli con tipi di ID diversi:
->>>>>>> 0a02158a (.)
-=======
+Nel sistema SaluteOra abbiamo modelli con tipi di ID diversi:=======
 Nel sistema  abbiamo modelli con tipi di ID diversi:
 >>>>>>> 35d8cf69 (Initial commit)
 - **User**: UUID (string 36 caratteri)
@@ -76,12 +64,7 @@ causer_type = "Modules\User\Models\User"
 // Caso 2: Admin con integer
 causer_id = "123" (integer convertito in string)
 <<<<<<< HEAD
-<<<<<<< HEAD
-causer_type = "Modules\SaluteOra\Models\Admin"
-=======
-causer_type = "Modules\<nome modulo>\Models\Admin"
->>>>>>> 0a02158a (.)
-=======
+causer_type = "Modules\SaluteOra\Models\Admin"=======
 causer_type = "Modules\<nome modulo>\Models\Admin"
 >>>>>>> 35d8cf69 (Initial commit)
 ```
@@ -181,11 +164,7 @@ Questa lezione è ora memorizzata permanentemente per:
 
 ### Documentazione Aggiornata
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-- [Regole Migrazioni Laraxot](../../xot/docs/migration_rules.md)
+<<<<<<< HEAD- [Regole Migrazioni Laraxot](../../xot/docs/migration_rules.md)
 - [Polimorfismo UUID](../../xot/docs/polymorphic_uuid_support.md)
 - [Principi Architetturali](../../../../docs/architectural_principles.md)
 
@@ -195,22 +174,7 @@ Questa lezione è ora memorizzata permanentemente per:
 - [Activity Logging](./activity_logging_system.md)
 
 <<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
-- [Regole Migrazioni Laraxot](../../Xot/docs/migration_rules.md)
-- [Polimorfismo UUID](../../Xot/docs/polymorphic_uuid_support.md)
-- [Principi Architetturali](../../../docs/architectural_principles.md)
-
-### Moduli Correlati
-- [User Module UUID](../../User/docs/uuid_implementation.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [SaluteOra Models](../../SaluteOra/docs/model_architecture.md)
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-- [ Models](../../<nome modulo>/docs/model_architecture.md)
+>>>>>>> 0a02158a (.)- [ Models](../../<nome modulo>/docs/model_architecture.md)
 - [Activity Logging](./activity_logging_system.md)
 
 *Ultimo aggiornamento: Gennaio 2025*

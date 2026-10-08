@@ -1,11 +1,5 @@
-<<<<<<< HEAD
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
----
+<<<<<<< HEAD---
 title: "Agent instructions"
 type: reference
 tags: [agents, coding-agent, llm-wiki]
@@ -18,12 +12,7 @@ related:
   - ./coding-agent-manifests.md
 ---
 
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
-# Activity Module LLM Wiki Agent Instructions
+>>>>>>> 0a02158a (.)# Activity Module LLM Wiki Agent Instructions
 
 > **Module/Theme:** Activity
 > **Scope:** Activity-specific knowledge only
@@ -81,10 +70,6 @@ related:
 - Every page MUST have 3+ incoming links
 <<<<<<< HEAD
 <<<<<<< HEAD
-- Every page MUST have 3+ outgoing links
-=======
-- Every page MUST have 3+ outgoing links
->>>>>>> 0a02158a (.)
-=======
+- Every page MUST have 3+ outgoing links=======
 - Every page MUST have 3+ outgoing links
 >>>>>>> 35d8cf69 (Initial commit)
