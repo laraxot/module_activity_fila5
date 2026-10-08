@@ -162,14 +162,6 @@ class ListSnapshots extends ListRecords
 - [ ] Testare il funzionamento delle liste dopo le modifiche
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
-- [ ] Eseguire PHPStan per verificare altri possibili errori
----
-module: theme
-topic: filament-errors-duplicate
-canonical: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
-See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
+- [ ] Eseguire PHPStan per verificare altri possibili errori=======
 See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
 See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md

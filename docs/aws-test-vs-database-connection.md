@@ -4,8 +4,7 @@ topic: aws_test_vs_database_connection
 canonical: ../../../Themes/docs/shared-components/aws-test-vs-database-connection.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/aws-test-vs-database-connection.md
-# AWS Test Bugfix vs Database Connection Configuration
+See canonical documentation: ../../../Themes/docs/shared-components/aws-test-vs-database-connection.md# AWS Test Bugfix vs Database Connection Configuration
 
 ## Overview
 This document clarifies the distinction between two separate concepts that may appear related but serve completely different purposes:
@@ -48,7 +47,4 @@ protected $connection = null;
 This is required for proper database transaction management in the multi-tenant environment.
 
 ## Docblock Comments
-The pattern `/** @reference/to/documentation.md type */` may be used to document that a property can have a specific type while referencing documentation, but this pattern is specifically NOT appropriate for the Activity module's database connection property, which must always be 'activity'.
-The pattern `/** @reference/to/documentation.md type */` may be used to document that a property can have a specific type while referencing documentation, but this pattern is specifically NOT appropriate for the Activity module's database connection property, which must always be 'activity'.
-The pattern `/** @reference/to/documentation.md type */` may be used to document that a property can have a specific type while referencing documentation, but this pattern is specifically NOT appropriate for the Activity module's database connection property, which must always be 'activity'.
 The pattern `/** @reference/to/documentation.md type */` may be used to document that a property can have a specific type while referencing documentation, but this pattern is specifically NOT appropriate for the Activity module's database connection property, which must always be 'activity'.
