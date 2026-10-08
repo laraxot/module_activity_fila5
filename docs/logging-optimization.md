@@ -296,6 +296,4 @@ By removing logging from ActivityLogger:
 4. Application scales better under load
 5. Error logging remains for debugging
 
-<<<<<<< HEAD
 **Key Takeaway**: The Activity table IS the audit trail. Logging successful database writes is redundant and wastes performance.
->>>>>>> 0a02158a (.)
