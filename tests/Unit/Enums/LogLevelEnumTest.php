@@ -30,8 +30,6 @@ it('gives every level a label and a badge color from the lang file', function ()
     ]);
 });
 
-it('does not know a level that Monolog does not write', function (): void {
-    $unknownLevel = strtoupper('inventato');
-
-    expect(LogLevelEnum::tryFrom($unknownLevel))->toBeNull();
-});
+it('does not know a level that Monolog does not write', function (string $name): void {
+    expect(LogLevelEnum::tryFrom($name))->toBeNull();
+})->with(['INVENTATO', 'error', '']);

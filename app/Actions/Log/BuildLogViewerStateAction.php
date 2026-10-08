@@ -96,6 +96,8 @@ class BuildLogViewerStateAction
 
     private function validLevel(string $level): string
     {
-        return LogLevelEnum::tryFrom(mb_strtoupper(trim($level)))->value ?? '';
+        $levelEnum = LogLevelEnum::tryFrom(mb_strtoupper(trim($level)));
+
+        return $levelEnum instanceof LogLevelEnum ? $levelEnum->value : '';
     }
 }
