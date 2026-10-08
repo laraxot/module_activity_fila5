@@ -24,7 +24,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 
 function activitySubjectForPage(string $id = 'page-subj'): ActivitySubjectHarness
 {
-    $subject = new ActivitySubjectHarness();
+    $subject = new ActivitySubjectHarness;
     $subject->forceFill(['id' => $id, 'name' => 'S']);
     $subject->exists = true;
 
@@ -32,13 +32,13 @@ function activitySubjectForPage(string $id = 'page-subj'): ActivitySubjectHarnes
 }
 
 test('ListLogActivities getTitle e breadcrumb con Htmlable', function (): void {
-    $page = new ListLogActivitiesPageHarness();
+    $page = new ListLogActivitiesPageHarness;
     $page->setRecordForTest(activitySubjectForPage());
 
     Assert::assertNotEmpty($page->getBreadcrumb());
     Assert::assertStringContainsString('Record Titolo', $page->getTitle());
 
-    $htmlPage = new ListLogActivitiesHtmlTitleHarness();
+    $htmlPage = new ListLogActivitiesHtmlTitleHarness;
     $htmlPage->setRecordForTest(activitySubjectForPage('html-subj'));
     Assert::assertStringContainsString('HTML', $htmlPage->getTitle());
 });
@@ -54,25 +54,25 @@ test('ListLogActivities getActivities paginate e errori record', function (): vo
         'properties' => ['old' => ['name' => 'a']],
     ]);
 
-    $page = new ListLogActivitiesPageHarness();
+    $page = new ListLogActivitiesPageHarness;
     $page->setRecordForTest($subject);
 
     $paginator = $page->getActivities();
     Assert::assertInstanceOf(LengthAwarePaginator::class, $paginator);
     Assert::assertGreaterThanOrEqual(1, $paginator->total());
 
-    $pageNoRecord = new ListLogActivitiesPageHarness();
-    expect(fn (): mixed => $pageNoRecord->getActivities())
+    $pageNoRecord = new ListLogActivitiesPageHarness;
+    expect(fn (): \Illuminate\Contracts\Pagination\LengthAwarePaginator => $pageNoRecord->getActivities())
         ->toThrow(\Error::class);
 
-    $pageNoMethod = new ListLogActivitiesPageHarness();
-    $pageNoMethod->setRecordForTest(new ActivitySubjectNoActivitiesMethodHarness());
-    expect(fn (): mixed => $pageNoMethod->getActivities())
+    $pageNoMethod = new ListLogActivitiesPageHarness;
+    $pageNoMethod->setRecordForTest(new ActivitySubjectNoActivitiesMethodHarness);
+    expect(fn (): \Illuminate\Contracts\Pagination\LengthAwarePaginator => $pageNoMethod->getActivities())
         ->toThrow(LogicException::class);
 
-    $pageBadRel = new ListLogActivitiesPageHarness();
-    $pageBadRel->setRecordForTest(new ActivitySubjectWithoutRelationHarness());
-    expect(fn (): mixed => $pageBadRel->getActivities())
+    $pageBadRel = new ListLogActivitiesPageHarness;
+    $pageBadRel->setRecordForTest(new ActivitySubjectWithoutRelationHarness);
+    expect(fn (): \Illuminate\Contracts\Pagination\LengthAwarePaginator => $pageBadRel->getActivities())
         ->toThrow(\InvalidArgumentException::class);
 });
 
@@ -87,12 +87,12 @@ test('ListLogActivities canRestore e restoreActivity percorsi', function (): voi
         'properties' => ['old' => ['name' => 'prima']],
     ]);
 
-    $page = new ListLogActivitiesPageHarness();
+    $page = new ListLogActivitiesPageHarness;
     $page->setRecordForTest($subject);
     ListLogActivitiesRestorableResource::$restoreAllowed = true;
     Assert::assertTrue($page->canRestoreActivity());
 
-    app()->instance(RestoreActivityAction::class, new RestoreActivityActionNoOp());
+    app()->instance(RestoreActivityAction::class, new RestoreActivityActionNoOp);
     $page->restoreActivity((int) $activity->id);
 
     ListLogActivitiesRestorableResource::$restoreAllowed = false;
@@ -106,7 +106,7 @@ test('ListLogActivities canRestore e restoreActivity percorsi', function (): voi
     }
 
     ListLogActivitiesRestorableResource::$restoreAllowed = true;
-    app()->instance(RestoreActivityAction::class, new RestoreActivityActionFails());
+    app()->instance(RestoreActivityAction::class, new RestoreActivityActionFails);
     $page->restoreActivity((int) $activity->id);
 });
 
@@ -121,33 +121,33 @@ test('ListLogActivities resolveActivity getOldProperties e field label map', fun
         'properties' => ['old' => ['name' => 'old']],
     ]);
 
-    $page = new ListLogActivitiesPageHarness();
+    $page = new ListLogActivitiesPageHarness;
     $page->setRecordForTest($subject);
 
     $resolved = $page->exposeResolveActivity((int) $activity->id);
     Assert::assertSame($activity->id, $resolved->id);
     Assert::assertSame(['name' => 'old'], $page->exposeGetOldProperties($resolved));
 
-    $badProps = new Activity();
+    $badProps = new Activity;
     $badProps->forceFill(['properties' => ['old' => 'not-array']]);
-    expect(fn (): mixed => $page->exposeGetOldProperties($badProps))
+    expect(fn (): array => $page->exposeGetOldProperties($badProps))
         ->toThrow(Exception::class);
 
-    expect(fn (): mixed => $page->exposeResolveActivity(999999))
+    expect(fn (): Activity => $page->exposeResolveActivity(999999))
         ->toThrow(Exception::class, 'Activity not found');
 
-    $pageNoRec = new ListLogActivitiesPageHarness();
-    expect(fn (): mixed => $pageNoRec->exposeResolveActivity(1))
+    $pageNoRec = new ListLogActivitiesPageHarness;
+    expect(fn (): Activity => $pageNoRec->exposeResolveActivity(1))
         ->toThrow(\Error::class);
 
-    $pageNoMethod = new ListLogActivitiesPageHarness();
-    $pageNoMethod->setRecordForTest(new ActivitySubjectNoActivitiesMethodHarness());
-    expect(fn (): mixed => $pageNoMethod->exposeResolveActivity(1))
+    $pageNoMethod = new ListLogActivitiesPageHarness;
+    $pageNoMethod->setRecordForTest(new ActivitySubjectNoActivitiesMethodHarness);
+    expect(fn (): Activity => $pageNoMethod->exposeResolveActivity(1))
         ->toThrow(LogicException::class);
 
-    $pageBadRel = new ListLogActivitiesPageHarness();
-    $pageBadRel->setRecordForTest(new ActivitySubjectWithoutRelationHarness());
-    expect(fn (): mixed => $pageBadRel->exposeResolveActivity(1))
+    $pageBadRel = new ListLogActivitiesPageHarness;
+    $pageBadRel->setRecordForTest(new ActivitySubjectWithoutRelationHarness);
+    expect(fn (): Activity => $pageBadRel->exposeResolveActivity(1))
         ->toThrow(Exception::class, 'Invalid activities relation');
 
     Assert::assertSame('campo', $page->getFieldLabel('campo'));
@@ -156,10 +156,10 @@ test('ListLogActivities resolveActivity getOldProperties e field label map', fun
 });
 
 test('ListLogActivities canRestore senza record o resource invalida', function (): void {
-    $page = new ListLogActivitiesPageHarness();
+    $page = new ListLogActivitiesPageHarness;
     Assert::assertFalse($page->canRestoreActivity());
 
-    $stdPage = new ListLogActivitiesStdClassResourceHarness();
+    $stdPage = new ListLogActivitiesStdClassResourceHarness;
     $stdPage->setRecordForTest(activitySubjectForPage('std'));
     Assert::assertFalse($stdPage->canRestoreActivity());
 });
