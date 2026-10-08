@@ -1,16 +1,11 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 ---
 module: theme
 topic: boost_skill_fix_summary
 canonical: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-# Boost Skill Fix Summary - Activity Module
+See canonical documentation: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md# Boost Skill Fix Summary - Activity Module
 
 **Date**: 2026-03-02  
 **Module**: Activity (Activity Tracking & Logging)
