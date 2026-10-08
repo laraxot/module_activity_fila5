@@ -1,17 +1,16 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Actions\LogModelDeletedAction;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('LogModelDeletedAction can be instantiated', function () {
-    $model = new class() extends Model
+    $model = new class extends Model
     {
         protected $table = 'test_models';
 

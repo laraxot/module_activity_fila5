@@ -2,8 +2,10 @@
 
 declare(strict_types=1);
 
+use Mockery\Expectation;
 use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Models\Activity;
+use Modules\User\Contracts\UserContract;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 
@@ -19,7 +21,7 @@ use Modules\User\Models\User;
 function activityCreateUser(array $attributes = []): User
 {
     $user = UserFactory::new()->createOne($attributes);
-    assert($user instanceof User);
+    assert($user instanceof UserContract);
 
     return $user;
 }
@@ -33,4 +35,14 @@ function activityCreateActivity(array $attributes = []): Activity
     assert($activity instanceof Activity);
 
     return $activity;
+}
+
+/**
+ * @param  object  $expectation
+ */
+function mockeryExpect(object $expectation): Expectation
+{
+    assert($expectation instanceof Expectation);
+
+    return $expectation;
 }

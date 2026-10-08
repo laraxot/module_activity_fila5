@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Support\Facades\File;
 use Modules\Activity\Actions\Log\ReadLogTailAction;
 use Tests\TestCase;

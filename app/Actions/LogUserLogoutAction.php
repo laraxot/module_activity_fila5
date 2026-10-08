@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Actions;
 
+use Illuminate\Database\Eloquent\Model;
+use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -18,11 +20,15 @@ class LogUserLogoutAction
     use QueueableAction;
 
     public function __construct(
-        public User $user
+        public UserContract $user
     ) {}
 
     public function execute(): Activity
     {
+        if (! $this->user instanceof Model) {
+            throw new InvalidArgumentException('User must implement UserContract and extend Model');
+        }
+
         $action = new LogActivityAction(
             type: 'logout',
             user: $this->user,
