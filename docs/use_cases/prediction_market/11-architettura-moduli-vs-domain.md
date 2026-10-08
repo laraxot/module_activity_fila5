@@ -74,16 +74,7 @@ app/Domain/<nome progetto>ionMarket/
 - [CQRS e DDD](https://martinfowler.com/bliki/CQRS.html)
 - [Best practice modularità](https://laravelmodules.com/docs/12/basic-usage/creating-a-module)
 - [Esempi di modularizzazione](https://github.com/nWidart/laravel-modules)
-<<<<<<< HEAD
-- [Indice prediction_market](./README.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Indice prediction_market](./readme.md)
-=======
-- [Indice prediction_market](./README.md)
->>>>>>> 77d3d692 (.)
-=======
+- [Indice prediction_market](./README.md)=======
 - [Indice prediction_market](./readme.md)
 >>>>>>> 4fb998e0 (.)
 >>>>>>> 35d8cf69 (Initial commit)

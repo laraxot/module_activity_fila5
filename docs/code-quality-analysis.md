@@ -5,12 +5,7 @@
 ### 1. Activity Listing Performance (MEDIUM)
 
 #### N+1 Queries in Activity Logs
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-**Problem**: 50-100 queries per page load
+<<<<<<< HEAD**Problem**: 50-100 queries per page load
 **Issues**:
 - N+1 queries when loading activity logs
 - No proper indexing for common queries
@@ -378,126 +373,7 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 ### 1. Activity Listing Performance (MEDIUM)
 
 #### N+1 Queries in Activity Logs
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
-
-**Problem**: 50-100 queries per page load
-
-**Issues**:
-
-- N+1 queries when loading activity logs
-- No proper indexing for common queries
-- Missing eager loading for relationships
-
-**Solution**:
-
-```php
-// ✅ OPTIMIZED ACTIVITY LISTING
-public function getActivities($filters = [])
-{
-    $query = ActivityLog::with(['causer', 'subject'])
-        ->select([
-            'id',
-            'log_name',
-            'description',
-            'subject_type',
-            'subject_id',
-            'causer_type',
-            'causer_id',
-            'properties',
-            'created_at'
-        ]);
-
-    // Apply filters with proper indexing
-    if (isset($filters['causer_id'])) {
-        $query->where('causer_id', $filters['causer_id']);
-    }
-
-    if (isset($filters['subject_type'])) {
-        $query->where('subject_type', $filters['subject_type']);
-    }
-
-    if (isset($filters['date_from'])) {
-        $query->where('created_at', '>=', $filters['date_from']);
-    }
-
-    if (isset($filters['date_to'])) {
-        $query->where('created_at', '<=', $filters['date_to']);
-    }
-
-    return $query->orderBy('created_at', 'desc')
-        ->paginate(50);
-}
-```
-
-### 2. Batch Processing Linear Degradation (MEDIUM)
-
-#### Individual Activity Processing
-**Problem**: Performance degrades linearly with batch size
-**Issues**:
-- Processing activities one by one
-- No bulk operations for similar activities
-- Missing database optimizations
-
-**Solution**:
-```php
-// ✅ BULK ACTIVITY PROCESSING
-public function processBatchActivities($activities)
-{
-    $chunkSize = 1000;
-    $chunks = array_chunk($activities, $chunkSize);
-
-    foreach ($chunks as $chunk) {
-        $this->processActivityChunk($chunk);
-    }
-}
-
-private function processActivityChunk($activities)
-{
-    $processedActivities = [];
-
-    foreach ($activities as $activity) {
-        $processedActivities[] = [
-            'log_name' => $activity['log_name'],
-            'description' => $activity['description'],
-            'subject_type' => $activity['subject_type'],
-            'subject_id' => $activity['subject_id'],
-            'causer_type' => $activity['causer_type'],
-            'causer_id' => $activity['causer_id'],
-            'properties' => json_encode($activity['properties']),
-            'created_at' => now(),
-            'updated_at' => now(),
-        ];
-    }
-
-    DB::table('activity_log')->insert($processedActivities);
-}
-```
-
-### 3. Search Operations Full Table Scans (MEDIUM)
-
-#### Activity Log Search
-**Problem**: Full table scans on large audit logs
-**Issues**:
-- No proper indexing for search fields
-- Complex search queries without optimization
-- Missing search result caching
-
-**Solution**:
-```php
-// ✅ OPTIMIZED SEARCH WITH CACHING
-public function searchActivities($searchTerm, $filters = [])
-{
-    $cacheKey = "activity_search_" . md5($searchTerm . serialize($filters));
-    
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    
->>>>>>> 0a02158a (.)
-=======
+>>>>>>> 0a02158a (.)=======
     
 >>>>>>> 35d8cf69 (Initial commit)
     return Cache::remember($cacheKey, 300, function() use ($searchTerm, $filters) {
@@ -821,12 +697,7 @@ $defaultRecordsPerPageSelectOption → $defaultPerPageOption
 
 ## 📚 Related Documentation
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-- [ACTIVITY_LOG_OPTIMIZATION.md](./performance/activity_log_optimization.md)
+<<<<<<< HEAD- [ACTIVITY_LOG_OPTIMIZATION.md](./performance/activity_log_optimization.md)
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./query_optimization_analysis.md)
 - [bottlenecks.md](./bottlenecks.md)
 

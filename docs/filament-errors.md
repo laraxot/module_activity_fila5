@@ -163,12 +163,7 @@ class ListSnapshots extends ListRecords
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
 <<<<<<< HEAD
-<<<<<<< HEAD
-- [ ] Eseguire PHPStan per verificare altri possibili errori 
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-- [ ] Eseguire PHPStan per verificare altri possibili errori
+- [ ] Eseguire PHPStan per verificare altri possibili errori - [ ] Eseguire PHPStan per verificare altri possibili errori
 # Errori Comuni Filament nel Modulo Activity
 
 ## Errori di Metodi Statici

@@ -1,12 +1,7 @@
 # Modulo Activity
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-Data: [DATE] 19:09:55
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-Data: 2025-04-23 19:09:55
+Data: [DATE] 19:09:55Data: 2025-04-23 19:09:55
 Data: [DATE] 19:09:55
 
 ## Informazioni generali

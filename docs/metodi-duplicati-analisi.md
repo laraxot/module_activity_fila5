@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
 module: Activity
 topic: METODI_DUPLICATI_ANALISI
@@ -194,11 +192,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - **Setting:** 1 metodi in comune
 
 ---
-_Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-# 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
+_Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_# 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨
 **Data**: 15 Ottobre 2025
@@ -1299,6 +1293,3 @@ public function getTableFilters(): array
 <<<<<<< HEAD
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
 >>>>>>> 0a02158a (.)
-=======
-**Domande?** Chiedi alla Super Mucca! 🐄⚡
->>>>>>> 35d8cf69 (Initial commit)

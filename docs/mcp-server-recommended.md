@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9,10 +8,6 @@ canonical: ../../../Themes/docs/shared-components/MCP-SERVER-RECOMMENDED.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/MCP-SERVER-RECOMMENDED.md
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-
 
 >>>>>>> laraxot/dev
 # MCP Server Consigliati per il Modulo Activity
