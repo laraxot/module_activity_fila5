@@ -102,4 +102,3 @@ Legal teams need configurable retention periods.
 
 ## 🔬 Research Goals
 Identify user needs for Activity functionality.
->>>>>>> 0a02158a (.)

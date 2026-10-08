@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: boost_skill_fix_summary
@@ -38,7 +37,3 @@ See `/docs/BOOST_SKILL_SOLUTION_PLAN.md` for complete solution details.
 - Activity reports
 - Module integration
 
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)

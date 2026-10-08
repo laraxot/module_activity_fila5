@@ -8,7 +8,6 @@
 **Data Analisi:** 6 Novembre 2025  
 **PHPStan Level:** 10 (Massimo)  
 **File Analizzati:** 102  
->>>>>>> 2d6a374 (.)
 **Errori Trovati:** 0 ✅
 
 ## Status
@@ -29,9 +28,6 @@ Il modulo Activity è completamente conforme all'analisi PHPStan livello 10, dim
 
 Prima dell'analisi PHPStan, sono stati risolti conflitti Git nei seguenti moduli che bloccavano l'analisi:
 
-<<<<<<< HEAD
-<<<<<<< HEAD=======
->>>>>>> 2d6a374 (.)
 7. **Modules/Xot/app/Actions/Filament/GetModulesNavigationItems.php** - Risolto 1 conflitto
 8. **Modules/Xot/app/Actions/Factory/GetPropertiesFromMethodsByModelAction.php** - Risolto 1 conflitto
 9. **Modules/Xot/tests/Unit/metatagdatatest.php** - Risolto 1 conflitto

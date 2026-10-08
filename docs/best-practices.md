@@ -22,4 +22,3 @@ canonical: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
->>>>>>> 0a02158a (.)

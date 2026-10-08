@@ -105,8 +105,5 @@ In Filament v4, the `size` attribute for icons changed from accepting string val
 3. **Modules/Quaeris/resources/views/filament/widgets/overlook-stats.blade.php**
 3. **Modules/Quaeris/resources/views/filament/widgets/overlook-stats.blade.php**
 3. **Modules/healthcare_app/resources/views/filament/widgets/overlook-stats.blade.php**
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)=======
 - [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
->>>>>>> 35d8cf69 (Initial commit)
 - [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
