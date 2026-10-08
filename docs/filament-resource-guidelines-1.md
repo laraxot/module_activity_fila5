@@ -107,8 +107,4 @@ All resources must be tested to ensure:
 - [Filament Best Practices](../../Xot/docs/filament-best-practices.md)
 - [Laraxot Extension Patterns](../../Xot/docs/base-classes.md)=======
 See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md
->>>>>>> 26b6dbd (.)
-=======
 See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md
->>>>>>> 2d6a374 (.)
->>>>>>> laraxot/dev

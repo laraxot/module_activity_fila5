@@ -82,4 +82,3 @@ Complete core activity tracking infrastructure with admin dashboard for viewing 
 
 ## 🏁 Sprint Goal
 Finalize documentation and validation for Activity.
->>>>>>> 0a02158a (.)

@@ -3,8 +3,6 @@ title: Brainstorming
 module: Activity
 ---
 
-<<<<<<< .merge_file_DQ8BXG
-<<<<<<< .merge_file_oKLrEB
 ---
 title: "Activity — brainstorming BMAD"
 type: concept
@@ -119,11 +117,7 @@ da `Activity` per nome. Il costo di migrazione supera il beneficio.
 
 ### S3 — Unificare le cinque migrazioni in un `migrate:fresh`
 Scartato e **vietato**: `migrate:fresh` e `--force` sono banditi dallo standing
-order (dati sacri, host `10.100.200.15`).
-=======
-=======
->>>>>>> .merge_file_yhXWGR
-# Brainstorming - Modulo Activity
+order (dati sacri, host `10.100.200.15`).# Brainstorming - Modulo Activity
 
 ## Idee iniziali
 
@@ -145,7 +139,3 @@ order (dati sacri, host `10.100.200.15`).
 
 - [DOMANDA 1]
 - [DOMANDA 2]
-<<<<<<< .merge_file_DQ8BXG
->>>>>>> .merge_file_GL5oeS
-=======
->>>>>>> .merge_file_yhXWGR

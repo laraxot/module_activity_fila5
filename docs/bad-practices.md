@@ -14,4 +14,3 @@ canonical: ../../../Themes/docs/shared-components/BAD_PRACTICES.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/BAD_PRACTICES.md
->>>>>>> 0a02158a (.)

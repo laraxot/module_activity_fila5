@@ -3,9 +3,6 @@ title: Readme
 module: Activity
 ---
 
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Activity
 
 [![Module](https://img.shields.io/badge/Module-Activity-8B0000.svg)]()
@@ -650,4 +647,3 @@ Activity/
 
 ## AI Workflows
 - [AI Methodologies](./ai-methodologies.md)
-<<<<<<< HEAD>>>>>>> laraxot/dev

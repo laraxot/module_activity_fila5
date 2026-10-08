@@ -37,8 +37,6 @@ Core module for the FixCity Platform.
 - **ListLogActivities** - Pagina dettaglio log con paginazione custom
 - **ActivityServiceProvider** - Registrazione moduli, route, view, traduzioni
 
-=======
->>>>>>> 77d3d692 (.)---
 title: "Activity Module Documentation"
 type: documentation
 tags: [module, documentation]
@@ -54,10 +52,8 @@ Il modulo **Activity** fa parte dell'ecosistema Laraxot PTVX.
 
 ## Scopo
 
-<<<<<<< HEAD
 Fornisce audit trail e activity logging basato su `spatie/laravel-activitylog` ed `spatie/laravel-event-sourcing`. Espone `LogActivityAction` (`app/Actions/LogActivityAction.php`) come entrypoint per registrare eventi (type, causer, subject, properties) e risorse Filament per consultare/analizzare i log.=======
 Questo modulo gestisce [DESCRIZIONE SPECIFICA DA COMPLETARE].
->>>>>>> 35d8cf69 (Initial commit)
 
 ## Struttura
 
@@ -96,4 +92,3 @@ Activity/
 
 ## AI Workflows
 - [AI Methodologies](./ai-methodologies.md)
->>>>>>> laraxot/dev

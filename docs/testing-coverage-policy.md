@@ -17,7 +17,6 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 - `.env.testing` è uguale a `.env` tranne per i nomi database
 - I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)=======
 - I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
->>>>>>> 35d8cf69 (Initial commit)
 - Le variabili `DB_CONNECTION`, `DB_DATABASE` **NON** devono essere sovrascritte in phpunit.xml
 - Laravel carica `.env.testing` quando `APP_ENV=testing`
 
@@ -28,7 +27,6 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 - **CRITICO**: La connessione `activity` DEVE essere inclusa. Senza di essa, ActivityLoggerTest getRecent fallisce per inquinamento dati.
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`)=======
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite una volta: `php artisan migrate --env=testing`
->>>>>>> 35d8cf69 (Initial commit)
 
 ### 4. Connessioni Database
 
@@ -40,8 +38,6 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 
 **Setup minimo .env.testing:**
 ```env
-<<<<<<< HEAD
-<<<<<<< HEAD
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE_USER=<nome progetto>_data_test
 ```
@@ -75,7 +71,4 @@ php artisan migrate --database=activity --env=testing --force
 php artisan config:clear
 ```
 
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)=======
 - [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
->>>>>>> 35d8cf69 (Initial commit)

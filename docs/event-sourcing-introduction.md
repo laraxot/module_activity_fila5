@@ -153,4 +153,3 @@ canonical: ../../../Themes/docs/shared-components/event-sourcing-introduction-du
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
->>>>>>> 0a02158a (.)

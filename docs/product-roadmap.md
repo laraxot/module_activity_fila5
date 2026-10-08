@@ -1,5 +1,4 @@
 # Activity Module - Product Roadmap# Activity - Product Roadmap
->>>>>>> laraxot/dev
 
 **Module:** Activity  
 **Version:** 1.0.0  
@@ -133,5 +132,3 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 ---
 
 *Last Updated: March 12, 2026*=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
