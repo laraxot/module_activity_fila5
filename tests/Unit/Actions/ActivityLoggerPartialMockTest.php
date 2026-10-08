@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Actions;
 
+use Illuminate\Database\Eloquent\Collection;
 use Mockery;
 use Modules\Activity\Actions\ActivityLogger as ActivityLoggerAction;
 use Modules\Activity\Adapters\ActivityLogger as ActivityLoggerAdapter;
@@ -16,7 +17,7 @@ afterEach(function (): void {
 });
 
 test('ActivityLogger Action custom delega a log', function (): void {
-    $activity = new Activity();
+    $activity = new Activity;
 
     /** @var ActivityLoggerAction&Mockery\MockInterface $logger */
     $logger = Mockery::mock(ActivityLoggerAction::class)->makePartial();
@@ -29,13 +30,13 @@ test('ActivityLogger Action custom delega a log', function (): void {
 });
 
 test('ActivityLogger Action getByType rifiuta type vuoto', function (): void {
-    expect(fn (): mixed => (new ActivityLoggerAction())->getByType(''))
+    expect(fn (): Collection => (new ActivityLoggerAction)->getByType(''))
         ->toThrow(\InvalidArgumentException::class);
 });
 
 test('ActivityLogger Adapter login e logout sono invocabili con partial mock', function (): void {
-    $activity = new Activity();
-    $user = new User();
+    $activity = new Activity;
+    $user = new User;
 
     /** @var ActivityLoggerAdapter&Mockery\MockInterface $logger */
     $logger = Mockery::mock(ActivityLoggerAdapter::class)->makePartial();
