@@ -40,7 +40,6 @@ Activity Module Architecture
 
 ### Data Flow
 
-=======
 ## Quality Gates
 ✅ PHPStan L10: Executed (2026-07-28)# Architecture Documentation
 
@@ -85,7 +84,6 @@ Activity Module Architecture
 
 ### Data Flow
 
->>>>>>> laraxot/dev
 1. **Event Creation**: User actions trigger domain events
 2. **Event Storage**: Events persisted to `stored_events` table
 3. **Snapshot Creation**: Aggregates create snapshots for performance
@@ -204,5 +202,3 @@ class ActivityPolicy
 - [Performance](PERFORMANCE.md)
 - [Testing](TESTING.md)=======
 - [Testing](TESTING.md)
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev

@@ -1,5 +1,4 @@
 # Activity Module - Product Launch Plan# Activity - Product Launch Plan
->>>>>>> laraxot/dev
 
 **Module:** Activity  
 **Version:** 1.0.0  
@@ -98,5 +97,3 @@
 ---
 
 *Last Updated: March 12, 2026*=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev

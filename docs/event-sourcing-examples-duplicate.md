@@ -278,8 +278,4 @@ These examples demonstrate how event sourcing can be applied to various aspects 
 
 Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.=======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
->>>>>>> 26b6dbd (.)
-=======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
->>>>>>> 2d6a374 (.)
->>>>>>> laraxot/dev

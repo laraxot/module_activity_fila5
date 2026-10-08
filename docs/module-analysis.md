@@ -1,5 +1,4 @@
 # Modulo Activity - Logging e Event Sourcing# Activity Module - Comprehensive Analysis
->>>>>>> laraxot/dev
 
 ## Scopo Principale
 
@@ -320,5 +319,3 @@ activity()->withProperties([
 **Versione**: v2.5.0-beta  
 **Stato**: Production Ready with Compliance Enhancement=======
 - Machine learning capabilities
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev

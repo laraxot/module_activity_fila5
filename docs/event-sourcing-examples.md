@@ -283,4 +283,3 @@ canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplic
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
->>>>>>> 0a02158a (.)

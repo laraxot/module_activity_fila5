@@ -1,6 +1,5 @@
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, SaluteMo, Xot=======
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
->>>>>>> 35d8cf69 (Initial commit)
 
 ## Modulo Activity
 
@@ -76,7 +75,6 @@ Il modulo UI contiene solo componenti Blade e risorse frontend, nessun modello E
 
 ## Modulo SaluteMo=======
 ## Modulo <nome progetto>
->>>>>>> 35d8cf69 (Initial commit)
 
 ### Modelli Attivi e Business Logic
 | Modello | Factory | Seeder | Utilizzo Business Logic |
@@ -94,7 +92,6 @@ Il modulo UI contiene solo componenti Blade e risorse frontend, nessun modello E
 - **PatientSeeder.php.old** - 🗑️ Da rimuovere
 - **SaluteMoDatabaseSeeder.php** - ✅ Mantiene struttura=======
 - **<nome progetto>DatabaseSeeder.php** - ✅ Mantiene struttura
->>>>>>> 35d8cf69 (Initial commit)
 
 ### Note
 Modulo specifico per Modena, attualmente non utilizzato attivamente.
@@ -147,7 +144,6 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 ### Totale Modelli Analizzati
 - **SaluteOra**: 20 modelli attivi, 7 obsoleti=======
 - ****: 20 modelli attivi, 7 obsoleti
->>>>>>> 35d8cf69 (Initial commit)
 - **User**: 35+ modelli attivi
 - **Geo**: 12 modelli attivi, 1 obsoleto
 - **Media**: 4 modelli attivi
@@ -159,11 +155,8 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 - **Gdpr**: 7 modelli
 - **Tenant**: 3 modelli, 2 obsoleti
 - **UI**: 0 modelli (solo componenti)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **SaluteMo**: 2 modelli base, 1 obsoleto=======
 - **<nome progetto>**: 2 modelli base, 1 obsoleto
->>>>>>> 35d8cf69 (Initial commit)
 - **Xot**: 12+ modelli sistema, molti base abstract
 
 ### Factory Coverage
@@ -181,13 +174,10 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 4. **Documentazione**: Aggiornare documentazione moduli
 
 ### Moduli Critici per Business Logic
-<<<<<<< HEAD
-<<<<<<< HEAD
 1. **SaluteOra** - Core sanitario ✅ Completo
 2. **User** - Autenticazione ✅ Completo  =======
 1. **** - Core sanitario ✅ Completo
 2. **User** - Autenticazione ✅ Completo
->>>>>>> 35d8cf69 (Initial commit)
 3. **Notify** - Comunicazioni ✅ Completo
 4. **Media** - File management ✅ Completo
 5. **Geo** - Localizzazione ✅ Completo
@@ -201,8 +191,6 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 6. **Xot** - Framework base ✅ Completo
 
 *Ultimo aggiornamento: Gennaio 2025*
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Analisi completa sistema SaluteOra: 150+ modelli, 14 moduli**Analisi completa sistema : 150+ modelli, 14 moduli*
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
 
@@ -390,6 +378,4 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 6. **Xot** - Framework base ✅ Completo
 
 *Ultimo aggiornamento: Gennaio 2025*
-<<<<<<< HEAD
 *Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
->>>>>>> 0a02158a (.)

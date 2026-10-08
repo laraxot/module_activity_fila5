@@ -39,7 +39,6 @@
 | CODE_QUALITY_ANALYSIS.md | Code quality |
 | QUERY_OPTIMIZATION_ANALYSIS.md | Query optimization |
 
-=======# 📚 **Indice Documentazione Modulo Activity**
 
 **Status**: ✅ PHPStan Level 10 Compliant
 **Module Version**: 2.3.0
@@ -81,7 +80,6 @@
 | CODE_QUALITY_ANALYSIS.md | Code quality |
 | QUERY_OPTIMIZATION_ANALYSIS.md | Query optimization |
 
->>>>>>> laraxot/dev
 ### Filament
 | File | Scopo |
 |------|-------|
@@ -89,7 +87,6 @@
 
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)=======
->>>>>>> 35d8cf69 (Initial commit)
 app(LogActivityAction::class)->execute(
     type: 'user.login',
     user: $user,
@@ -101,7 +98,6 @@ app(LogActivityAction::class)->execute(
 
 ## 📦 Pacchetti Composer
 - [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
->>>>>>> laraxot/dev
 - `spatie/laravel-activitylog` - Audit trail
 - `spatie/laravel-event-sourcing` - Event sourcing, CQRS
 
@@ -112,7 +108,6 @@ app(LogActivityAction::class)->execute(
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-<<<<<<< HEAD### 📊 Best Practices
 
 1. **Type Safety Nativa**: Il modulo è già type-safe
 2. **Type Narrowing**: Uso corretto di `getAttribute()` e validazioni
@@ -203,7 +198,6 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 ---
 
 *Modulo di riferimento per PHPStan compliance nel progetto Laraxot*
->>>>>>> laraxot/dev
 
 ## Dependency Intelligence
 
@@ -214,8 +208,5 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 - Prima di modificare codice: ragionare, studiare i docs del modulo/tema, aggiornare docs/rules/memory/skills.
 - Riferimento globale: [Pre-Edit Docs-First Rule](../../../../docs/rules/pre-edit-docs-first-rule.md)
 - Memory: [Pre-Edit Docs-First Memory](../../../../docs/memory/pre-edit-docs-first-memory.md)
-<<<<<<< HEAD
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)=======
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev

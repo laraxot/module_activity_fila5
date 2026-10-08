@@ -164,8 +164,4 @@ class ListSnapshots extends ListRecords
 - [ ] Documentare le modifiche nel CHANGELOG
 - [ ] Eseguire PHPStan per verificare altri possibili errori=======
 See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
->>>>>>> 26b6dbd (.)
-=======
 See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
->>>>>>> 2d6a374 (.)
->>>>>>> laraxot/dev
