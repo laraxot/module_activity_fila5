@@ -65,4 +65,3 @@ php artisan test --filter=Snapshot
 php artisan test Modules/Activity --coverage
 ```=======
 ```
-
