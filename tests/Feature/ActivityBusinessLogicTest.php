@@ -257,9 +257,6 @@ test('Activity Business Logic', function () {
 
         /** @var array<string, mixed> $orderDetails */
         $orderDetails = $properties['order_details'];
-        /** @var array<string, mixed> $customerInfo */
-        $customerInfo = $properties['customer_info'];
-
         Assert::assertIsArray($orderDetails);
         Assert::assertSame(67.48, $orderDetails['total_amount']);
     });
