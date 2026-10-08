@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, SaluteMo, Xot
-=======
-# Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
->>>>>>> 0a02158a (.)
-=======
+# Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, SaluteMo, Xot=======
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
 >>>>>>> 35d8cf69 (Initial commit)
 
@@ -80,13 +74,7 @@ Il modulo UI contiene solo componenti Blade e risorse frontend, nessun modello E
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Modulo SaluteMo
-=======
-## Modulo <nome progetto>
->>>>>>> 0a02158a (.)
-=======
+## Modulo SaluteMo=======
 ## Modulo <nome progetto>
 >>>>>>> 35d8cf69 (Initial commit)
 
@@ -104,13 +92,7 @@ Il modulo UI contiene solo componenti Blade e risorse frontend, nessun modello E
 
 ### Seeder Obsoleti
 - **PatientSeeder.php.old** - 🗑️ Da rimuovere
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **SaluteMoDatabaseSeeder.php** - ✅ Mantiene struttura
-=======
-- **<nome progetto>DatabaseSeeder.php** - ✅ Mantiene struttura
->>>>>>> 0a02158a (.)
-=======
+- **SaluteMoDatabaseSeeder.php** - ✅ Mantiene struttura=======
 - **<nome progetto>DatabaseSeeder.php** - ✅ Mantiene struttura
 >>>>>>> 35d8cf69 (Initial commit)
 
@@ -163,13 +145,7 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 ## Riepilogo Generale
 
 ### Totale Modelli Analizzati
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **SaluteOra**: 20 modelli attivi, 7 obsoleti
-=======
-- ****: 20 modelli attivi, 7 obsoleti
->>>>>>> 0a02158a (.)
-=======
+- **SaluteOra**: 20 modelli attivi, 7 obsoleti=======
 - ****: 20 modelli attivi, 7 obsoleti
 >>>>>>> 35d8cf69 (Initial commit)
 - **User**: 35+ modelli attivi
@@ -185,11 +161,7 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 - **UI**: 0 modelli (solo componenti)
 <<<<<<< HEAD
 <<<<<<< HEAD
-- **SaluteMo**: 2 modelli base, 1 obsoleto
-=======
-- **<nome progetto>**: 2 modelli base, 1 obsoleto
->>>>>>> 0a02158a (.)
-=======
+- **SaluteMo**: 2 modelli base, 1 obsoleto=======
 - **<nome progetto>**: 2 modelli base, 1 obsoleto
 >>>>>>> 35d8cf69 (Initial commit)
 - **Xot**: 12+ modelli sistema, molti base abstract
@@ -212,12 +184,7 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 <<<<<<< HEAD
 <<<<<<< HEAD
 1. **SaluteOra** - Core sanitario ✅ Completo
-2. **User** - Autenticazione ✅ Completo  
-=======
-1. **** - Core sanitario ✅ Completo
-2. **User** - Autenticazione ✅ Completo
->>>>>>> 0a02158a (.)
-=======
+2. **User** - Autenticazione ✅ Completo  =======
 1. **** - Core sanitario ✅ Completo
 2. **User** - Autenticazione ✅ Completo
 >>>>>>> 35d8cf69 (Initial commit)
@@ -236,11 +203,7 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 *Ultimo aggiornamento: Gennaio 2025*
 <<<<<<< HEAD
 <<<<<<< HEAD
-*Analisi completa sistema SaluteOra: 150+ modelli, 14 moduli*
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-*Analisi completa sistema : 150+ modelli, 14 moduli*
+*Analisi completa sistema SaluteOra: 150+ modelli, 14 moduli**Analisi completa sistema : 150+ modelli, 14 moduli*
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
 
 ## Modulo Activity
@@ -430,6 +393,3 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 <<<<<<< HEAD
 *Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
 >>>>>>> 0a02158a (.)
-=======
-*Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
->>>>>>> 35d8cf69 (Initial commit)

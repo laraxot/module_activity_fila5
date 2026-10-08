@@ -4,13 +4,7 @@ type: concept
 sources: []
 confidence: high
 created: 2026-05-06
-<<<<<<< HEAD
-<<<<<<< HEAD
-updated: 2026-07-16
-=======
-updated: 2026-05-06
->>>>>>> 0a02158a (.)
-=======
+updated: 2026-07-16=======
 updated: 2026-05-06
 >>>>>>> 35d8cf69 (Initial commit)
 tags: [filament, xotbase, zen-pattern, resource]
@@ -26,13 +20,7 @@ related:
 **Core Rule**: `XotBaseResource` base class owns the `form()` and `table()` methods. Subclasses MUST NOT override them.
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 La frontiera vale per tutto il codice del modulo, inclusi test e fixture: una classe di supporto non puo estendere `Filament\*` direttamente. Deve usare la base dello stesso percorso in `Modules\Xot\Filament\*`, cosi i test esercitano lo stesso contratto architetturale della produzione.
-
-=======
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
 The base class performs auto-discovery:
 - `form()` → looks for `Schemas/<Model>Form::configure($schema)`
 - `table()` → looks for `Tables/<Model>Table::configure($table)`
@@ -99,12 +87,7 @@ XotBaseResource::table()
 - [ ] No `->label()` calls (LangServiceProvider owns labels)
 <<<<<<< HEAD
 <<<<<<< HEAD
-- [ ] Test e fixture non estendono classi `Filament\*` direttamente
-=======
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
-- [ ] Safe functions preserved (`use function Safe\...`)
+- [ ] Test e fixture non estendono classi `Filament\*` direttamente- [ ] Safe functions preserved (`use function Safe\...`)
 
 ## References
 
