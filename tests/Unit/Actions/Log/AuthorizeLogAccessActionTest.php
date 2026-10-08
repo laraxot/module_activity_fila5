@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Contracts\Auth\Authenticatable;
 use Mockery\MockInterface;
 use Modules\Activity\Actions\Log\AuthorizeLogAccessAction;
@@ -35,25 +34,25 @@ afterEach(function (): void {
 });
 
 it('allows super-admins', function (): void {
-    expect((new AuthorizeLogAccessAction())->execute(mockLogUser(true)))->toBeTrue();
+    expect((new AuthorizeLogAccessAction)->execute(mockLogUser(true)))->toBeTrue();
 });
 
 it('allows users with the log.viewAny permission', function (): void {
-    expect((new AuthorizeLogAccessAction())->execute(mockLogUser(false, true)))->toBeTrue();
+    expect((new AuthorizeLogAccessAction)->execute(mockLogUser(false, true)))->toBeTrue();
 });
 
 it('denies users without the role and without the permission', function (): void {
-    expect((new AuthorizeLogAccessAction())->execute(mockLogUser(false, false)))->toBeFalse();
+    expect((new AuthorizeLogAccessAction)->execute(mockLogUser(false, false)))->toBeFalse();
 });
 
 it('denies access, without crashing, when the permission does not exist yet', function (): void {
-    expect((new AuthorizeLogAccessAction())->execute(mockLogUser(false, new PermissionDoesNotExist())))->toBeFalse();
+    expect((new AuthorizeLogAccessAction)->execute(mockLogUser(false, new PermissionDoesNotExist)))->toBeFalse();
 });
 
 it('denies guests and users that do not implement the project user contract', function (): void {
-    expect((new AuthorizeLogAccessAction())->execute(null))->toBeFalse();
+    expect((new AuthorizeLogAccessAction)->execute(null))->toBeFalse();
 
     /** @var MockInterface&Authenticatable $genericUser */
     $genericUser = Mockery::mock(Authenticatable::class);
-    expect((new AuthorizeLogAccessAction())->execute($genericUser))->toBeFalse();
+    expect((new AuthorizeLogAccessAction)->execute($genericUser))->toBeFalse();
 });

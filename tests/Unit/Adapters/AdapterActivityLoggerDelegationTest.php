@@ -24,7 +24,7 @@ afterEach(function (): void {
 });
 
 test('Adapter ActivityLogger custom delega a log', function (): void {
-    $activity = new Activity();
+    $activity = new Activity;
 
     /** @var ActivityLoggerAdapter&Mockery\MockInterface $logger */
     $logger = Mockery::mock(ActivityLoggerAdapter::class)->makePartial();
@@ -40,22 +40,22 @@ test('Adapter ActivityLogger custom delega a log', function (): void {
 
 test('Adapter ActivityLogger getUserActivities delega al container', function (): void {
     /** @var Collection<int, Activity> $expected */
-    $expected = new Collection();
-    $user = new User();
+    $expected = new Collection;
+    $user = new User;
 
     $mock = Mockery::mock(GetUserActivitiesAction::class);
     mockeryExpect($mock->shouldReceive('execute'))->once()->with($user, 25)->andReturn($expected);
     app()->instance(GetUserActivitiesAction::class, $mock);
 
-    $result = (new ActivityLoggerAdapter())->getUserActivities($user, 25);
+    $result = (new ActivityLoggerAdapter)->getUserActivities($user, 25);
 
     Assert::assertSame($expected, $result);
 });
 
 test('Adapter ActivityLogger getModelActivities delega al container', function (): void {
     /** @var Collection<int, Activity> $expected */
-    $expected = new Collection();
-    $model = new class() extends Model
+    $expected = new Collection;
+    $model = new class extends Model
     {
         protected $table = 'stub_models';
     };
@@ -64,33 +64,33 @@ test('Adapter ActivityLogger getModelActivities delega al container', function (
     mockeryExpect($mock->shouldReceive('execute'))->once()->with($model, 10)->andReturn($expected);
     app()->instance(GetModelActivitiesAction::class, $mock);
 
-    $result = (new ActivityLoggerAdapter())->getModelActivities($model, 10);
+    $result = (new ActivityLoggerAdapter)->getModelActivities($model, 10);
 
     Assert::assertSame($expected, $result);
 });
 
 test('Adapter ActivityLogger getByType delega al container', function (): void {
     /** @var Collection<int, Activity> $expected */
-    $expected = new Collection();
+    $expected = new Collection;
 
     $mock = Mockery::mock(GetActivitiesByTypeAction::class);
     mockeryExpect($mock->shouldReceive('execute'))->once()->with('login', 5)->andReturn($expected);
     app()->instance(GetActivitiesByTypeAction::class, $mock);
 
-    $result = (new ActivityLoggerAdapter())->getByType('login', 5);
+    $result = (new ActivityLoggerAdapter)->getByType('login', 5);
 
     Assert::assertSame($expected, $result);
 });
 
 test('Adapter ActivityLogger getRecent delega al container', function (): void {
     /** @var Collection<int, Activity> $expected */
-    $expected = new Collection();
+    $expected = new Collection;
 
     $mock = Mockery::mock(GetRecentActivitiesAction::class);
     mockeryExpect($mock->shouldReceive('execute'))->once()->with(50)->andReturn($expected);
     app()->instance(GetRecentActivitiesAction::class, $mock);
 
-    $result = (new ActivityLoggerAdapter())->getRecent(50);
+    $result = (new ActivityLoggerAdapter)->getRecent(50);
 
     Assert::assertSame($expected, $result);
 });
@@ -100,13 +100,13 @@ test('Adapter ActivityLogger cleanOld delega al container', function (): void {
     mockeryExpect($mock->shouldReceive('execute'))->once()->with(30)->andReturn(3);
     app()->instance(ActivityMaintenanceAction::class, $mock);
 
-    $deleted = (new ActivityLoggerAdapter())->cleanOld(30);
+    $deleted = (new ActivityLoggerAdapter)->cleanOld(30);
 
     Assert::assertSame(3, $deleted);
 });
 
 test('Adapter ActivityLogger getStatistics delega al container', function (): void {
-    $user = new User();
+    $user = new User;
     $stats = [
         'total' => 1,
         'by_type' => ['login' => 1],
@@ -119,7 +119,7 @@ test('Adapter ActivityLogger getStatistics delega al container', function (): vo
     mockeryExpect($mock->shouldReceive('execute'))->once()->with($user)->andReturn($stats);
     app()->instance(GetActivityStatisticsAction::class, $mock);
 
-    $result = (new ActivityLoggerAdapter())->getStatistics($user);
+    $result = (new ActivityLoggerAdapter)->getStatistics($user);
 
     Assert::assertSame($stats, $result);
 });
@@ -129,6 +129,6 @@ test('Adapter ActivityLogger getRecent propaga InvalidArgumentException', functi
     mockeryExpect($mock->shouldReceive('execute'))->once()->with(0)->andThrow(new InvalidArgumentException('Limit must be positive'));
     app()->instance(GetRecentActivitiesAction::class, $mock);
 
-    expect(fn (): Collection => (new ActivityLoggerAdapter())->getRecent(0))
+    expect(fn (): Collection => (new ActivityLoggerAdapter)->getRecent(0))
         ->toThrow(InvalidArgumentException::class, 'Limit must be positive');
 });
