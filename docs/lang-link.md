@@ -1,6 +1,5 @@
 # Collegamento alle Traduzioni del Modulo Activity
 
-<<<<<<< HEADQuesto modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
 
 Consulta la documentazione delle traduzioni qui:
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
@@ -86,8 +85,6 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
 # Collegamento alle Traduzioni del Modulo Activity
 
->>>>>>> 0a02158a (.)=======
->>>>>>> 35d8cf69 (Initial commit)
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../../Lang/project_docs/).
 
 > Aggiorna entrambi i riferimenti se aggiungi nuove chiavi di traduzione o modifichi la struttura.

@@ -5,7 +5,6 @@
 ### 1. Activity Listing Performance (MEDIUM)
 
 #### N+1 Queries in Activity Logs
-<<<<<<< HEAD**Problem**: 50-100 queries per page load
 **Issues**:
 - N+1 queries when loading activity logs
 - No proper indexing for common queries
@@ -373,9 +372,7 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 ### 1. Activity Listing Performance (MEDIUM)
 
 #### N+1 Queries in Activity Logs
->>>>>>> 0a02158a (.)=======
     
->>>>>>> 35d8cf69 (Initial commit)
     return Cache::remember($cacheKey, 300, function() use ($searchTerm, $filters) {
         $query = ActivityLog::with(['causer', 'subject'])
             ->where(function($q) use ($searchTerm) {
@@ -697,17 +694,12 @@ $defaultRecordsPerPageSelectOption → $defaultPerPageOption
 
 ## 📚 Related Documentation
 
-<<<<<<< HEAD- [ACTIVITY_LOG_OPTIMIZATION.md](./performance/activity_log_optimization.md)
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./query_optimization_analysis.md)
 - [bottlenecks.md](./bottlenecks.md)
 
 This analysis provides a comprehensive roadmap for improving code quality in the Activity module while maintaining data integrity and performance.
 
 
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
 - [ACTIVITY_LOG_OPTIMIZATION.md](./performance/ACTIVITY_LOG_OPTIMIZATION.md)
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./QUERY_OPTIMIZATION_ANALYSIS.md)
 - [bottlenecks.md](./bottlenecks.md)

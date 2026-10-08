@@ -1,5 +1,4 @@
 # Activity Module - Product Strategy# Activity - Product Strategy
->>>>>>> laraxot/dev
 
 **Module:** Activity  
 **Version:** 1.0.0  
@@ -102,5 +101,3 @@ Transform raw activity data into actionable intelligence.
 ---
 
 *Last Updated: March 12, 2026*=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev

@@ -1290,6 +1290,4 @@ public function getTableFilters(): array
 3. Kick-off Fase 1
 4. Implementazione ColumnBuilder
 
-<<<<<<< HEAD
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
->>>>>>> 0a02158a (.)
