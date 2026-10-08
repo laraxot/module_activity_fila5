@@ -159,8 +159,4 @@ L'Event Sourcing offre un approccio potente per gestire la complessità nel modu
 
 Se hai bisogno di ulteriori dettagli o di un'implementazione specifica, fammi sapere!=======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
->>>>>>> 26b6dbd (.)
-=======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
->>>>>>> 2d6a374 (.)
->>>>>>> laraxot/dev

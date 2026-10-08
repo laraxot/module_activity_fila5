@@ -14,7 +14,6 @@
 Event Sourcing is particularly valuable in healthcare applications like `saluteora` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.=======
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
->>>>>>> 35d8cf69 (Initial commit)
 
 ## Core Concepts
 
@@ -41,7 +40,6 @@ sequenceDiagram
     participant ES as Event Store
     =======
 
->>>>>>> 35d8cf69 (Initial commit)
     C->>A: Register Patient
     A->>AR: handle(RegisterPatientCommand)
     AR->>ES: store(PatientRegistered)
@@ -50,7 +48,6 @@ sequenceDiagram
     A-->>C: Patient ID
     =======
 
->>>>>>> 35d8cf69 (Initial commit)
     Note right of ES: Projectors update read models asynchronously
 ```
 
@@ -74,9 +71,7 @@ class PrescriptionAggregate extends AggregateRoot
     public function prescribe(
         string $patientId,
         string $medicationId,
->>>>>>> 0a02158a (.)=======
 
->>>>>>> 35d8cf69 (Initial commit)
     protected function applyMedicationPrescribed(MedicationPrescribed $event): void
     {
         $this->medications[$event->medicationId] = [
@@ -98,7 +93,6 @@ class ScheduleAppointmentHandler
     ) {}
     =======
 
->>>>>>> 35d8cf69 (Initial commit)
     public function handle(ScheduleAppointmentCommand $command): void
     {
         $appointment = Appointment::schedule(
@@ -108,15 +102,12 @@ class ScheduleAppointmentHandler
             $command->scheduledTime,
             $command->duration
         );
-<<<<<<< HEAD
-<<<<<<< HEAD
         
         $this->appointments->save($appointment);
         =======
 
         $this->appointments->save($appointment);
 
->>>>>>> 35d8cf69 (Initial commit)
         $this->eventBus->publish(new AppointmentScheduled(
             $appointment->id,
             $appointment->patientId,
@@ -136,8 +127,6 @@ class PatientAggregate extends AggregateRoot
 {
     private int $version = 0;
     private array $events = [];
-<<<<<<< HEAD
-<<<<<<< HEAD
     
     public static function reconstituteFromEvents(UuidInterface $uuid, array $events): self
     {
@@ -147,15 +136,10 @@ class PatientAggregate extends AggregateRoot
     {
         $aggregate = new static($uuid);
 
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
         return $aggregate;
     }
 
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)=======
 
->>>>>>> 35d8cf69 (Initial commit)
         $this->given()
             ->when(new RegisterPatient($patientId, 'John', 'Doe', 'john@example.com'))
             ->then([
@@ -189,8 +173,6 @@ class PatientAggregate extends AggregateRoot
 
 ## Conclusion
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `saluteora` can build a system that not only meets current requirements but can also evolve with future needs.
 
 ## References
@@ -207,7 +189,3 @@ Event Sourcing provides a robust foundation for healthcare applications by ensur
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/docs/laravel-event-sourcing/v7/)
 - [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)
 
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
