@@ -1,3 +1,11 @@
+---
+title: "Bugfix: Filament Facade Namespace Error"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "bugfix: filament facade namespace error activity"
+---
 # Bugfix: Filament Facade Namespace Error
 
 ## 🐛 Errore

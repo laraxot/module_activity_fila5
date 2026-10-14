@@ -1,6 +1,11 @@
 ---
 title: Anti pattern redundant property override
 module: Activity
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, wiki]
+qmd: "anti-pattern: redundant property override in extended models activity"
 ---
 
 # Anti-Pattern: Redundant Property Override in Extended Models

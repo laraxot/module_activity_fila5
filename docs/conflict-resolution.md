@@ -1,3 +1,11 @@
+---
+title: "Conflict Resolution — Module Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "conflict resolution   module activity activity"
+---
 # Conflict Resolution — Module Activity
 
 ## Summary

@@ -1,3 +1,11 @@
+---
+title: "Bugfix: PHPStan `getUrl()` signature mismatch + enum/getColumnDefinitions drift"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "bugfix: phpstan `geturl()` signature mismatch + enum/getcolumndefinitions drift activity"
+---
 # Bugfix: PHPStan `getUrl()` signature mismatch + enum/getColumnDefinitions drift
 
 ## 🐛 Errori
