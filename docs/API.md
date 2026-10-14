@@ -4,7 +4,11 @@ type: reference
 tags: [activity, api]
 created: 2026-07-28
 updated: 2026-07-28
+qmd: "activity module   api activity"
+status: stale
 ---
+
+> Nota 2026-10-14 (docs-audit): La firma 'execute(array $data): Activity' non esiste: LogActivityAction prende type, user, subject, properties, description nel costruttore e ha execute(): Activity (app/Actions/LogActivityAction.php). Vedi README.md. Contenuto non riscritto, verificare prima di usarlo.
 
 # Activity Module — API
 

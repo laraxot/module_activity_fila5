@@ -1,3 +1,11 @@
+---
+title: "MCP Server Consigliati per il Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "mcp server consigliati per il modulo activity activity"
+---
 # MCP Server Consigliati per il Modulo Activity
 
 ## Scopo del Modulo

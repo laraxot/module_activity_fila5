@@ -3,6 +3,8 @@ title: "Riorganizzazione docs core Activity"
 type: story
 tags: [docs, bmad, activity, reorganization]
 qmd: "riorganizzazione docs core Activity"
+status: draft
+updated: 2026-10-09
 ---
 
 # Story — riorganizzazione docs core: Activity

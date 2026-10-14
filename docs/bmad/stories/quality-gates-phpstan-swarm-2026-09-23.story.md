@@ -13,6 +13,8 @@ related:
   - ./continuazione-domani.md
 references:
   - sprint-status: "Activity/nested-conflict-markers-86-files (2026-09-22) — ultimo stato verificato: PHPStan Modules/Activity 0 errori"
+tags: [docs, activity, bmad]
+qmd: "activity   phpstan quality gate swarm (2026-09-23) activity"
 ---
 
 # Activity — PHPStan quality gate swarm (2026-09-23)

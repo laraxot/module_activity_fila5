@@ -1,3 +1,11 @@
+---
+title: "PHPStan Level 10 Compliance Status"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan level 10 compliance status activity"
+---
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2026-06-10
