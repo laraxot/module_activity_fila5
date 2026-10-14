@@ -1,3 +1,11 @@
+---
+title: "Risoluzione Errori PHPStan nei Test Pest del Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, tests]
+qmd: "risoluzione errori phpstan nei test pest del modulo activity activity"
+---
 # Risoluzione Errori PHPStan nei Test Pest del Modulo Activity
 
 ## Contesto

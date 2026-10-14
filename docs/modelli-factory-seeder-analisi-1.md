@@ -1,3 +1,11 @@
+---
+title: "Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "analisi modelli, factory e seeder - moduli activity, gdpr, tenant, ui, <nome progetto>, xot activity"
+---
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
 
 ## Modulo Activity
