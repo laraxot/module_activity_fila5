@@ -1,3 +1,11 @@
+---
+title: "PHPStan Roadmap - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan roadmap - activity module activity"
+---
 # PHPStan Roadmap - Activity Module
 
 > **Date**: 2026-01-14

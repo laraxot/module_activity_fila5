@@ -1,3 +1,11 @@
+---
+title: "Activity Coverage Plan"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity coverage plan activity"
+---
 # Activity Coverage Plan
 
 Owner: multi-agent execution thread

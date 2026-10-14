@@ -1,3 +1,11 @@
+---
+title: "Testing Rules Summary"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "testing rules summary activity"
+---
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test

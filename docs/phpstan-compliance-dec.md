@@ -1,3 +1,11 @@
+---
+title: "PHPStan Compliance - Dicembre 2025"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan compliance - dicembre 2025 activity"
+---
 # PHPStan Compliance - Dicembre 2025
 
 ## 🎯 Status: COMPLIANCE NATIVA

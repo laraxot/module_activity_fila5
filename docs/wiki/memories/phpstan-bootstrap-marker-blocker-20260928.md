@@ -5,6 +5,7 @@ status: active
 created: 2026-09-28
 tags: [phpstan, bootstrap, merge-markers, activity, multi-agent]
 qmd: "phpstan Modules bootstrap Activity marker conflitto parse error remediation"
+updated: 2026-10-08
 ---
 
 # PHPStan: bootstrap bloccato da marker Activity

@@ -1,3 +1,11 @@
+---
+title: "Errore: Method ::route does not exist"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, errori]
+qmd: "errore: method ::route does not exist activity"
+---
 # Errore: Method ::route does not exist
 
 ## Descrizione dell'Errore

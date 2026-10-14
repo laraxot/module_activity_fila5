@@ -1,7 +1,15 @@
+---
+title: "Indice documentazione — Modulo Activity"
+type: index
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "indice documentazione   modulo activity activity"
+---
 # Indice documentazione — Modulo Activity
 
 Indice organizzato per argomento. Copre tutti i file `.md` sotto `Modules/Activity/docs/`
-(755 file al 2026-09-03, non 362 come indicato nel task originale — la cartella e'
+(890 file al 2026-10-14, 755 al 2026-09-03, non 362 come indicato nel task originale — la cartella e'
 cresciuta molto oltre le stime precedenti, vedi `docs/task-consolidare-documentazione.md`
 e `docs/docs-health.md`).
 
@@ -226,7 +234,7 @@ sono elencati nello Storico.
 - [roadmap/index.md](roadmap/index.md) — indice della serie numerata `roadmap/01-current-state.md` … `roadmap/05-risks.md` (`roadmap/00-index.md` e' duplicato, vedi Storico). La serie numerata ha alias senza numero con contenuto identico (`roadmap/current-state.md`, `roadmap/goals.md`, `roadmap/workstreams.md`, `roadmap/milestones.md`, `roadmap/risks.md`, `roadmap/now.md`, `roadmap/next.md`, `roadmap/later.md`, `roadmap/overview.md`) — vedi Storico.
 - [roadmap/legacy-roadmap.md](roadmap/legacy-roadmap.md) — roadmap legacy, gia' marcata come tale.
 - [roadmap/acceptance-criteria.md](roadmap/acceptance-criteria.md), [roadmap/dependencies.md](roadmap/dependencies.md), [roadmap/metrics.md](roadmap/metrics.md), [roadmap/phases.md](roadmap/phases.md), [roadmap/quality.md](roadmap/quality.md), [roadmap/vision.md](roadmap/vision.md) — sezioni tematiche della roadmap.
-- [roadmap/tasks/enhanced-activity-filtering.md](roadmap/tasks/enhanced-activity-filtering.md), [roadmap/tasks/gdpr-compliance-enhancement.md](roadmap/tasks/gdpr-compliance-enhancement.md), [roadmap/tasks/realtime-monitoring-dashboard.md](roadmap/tasks/realtime-monitoring-dashboard.md) — task di roadmap dettagliati.
+- `roadmap/tasks/` (enhanced-activity-filtering, gdpr-compliance-enhancement, realtime-monitoring-dashboard): i tre file non esistono piu' (rimossi nel commit `7e00cedf` del 2026-10-08, verificato 2026-10-14); recuperabili con `git show 7e00cedf^:docs/roadmap/tasks/<nome>.md`.
 - [development/roadmap.md](development/roadmap.md) — roadmap orientata allo sviluppo (documento distinto da `roadmap/README.md`).
 - [stabilization-roadmap.md](stabilization-roadmap.md) — roadmap di stabilizzazione.
 - [prd.md](prd.md) — PRD del modulo.
@@ -261,23 +269,11 @@ sono elencati nello Storico.
 
 ## Task e backlog dettagliato
 
-- [tasks/tasks-index.md](tasks/tasks-index.md) — indice ufficiale (nota: copre solo 3 dei 36 file sotto `tasks/`, vedi "Storico / da consolidare").
-- [tasks/001-activity-categorization-system.md](tasks/001-activity-categorization-system.md)
-- [tasks/002-advanced-activity-filtering.md](tasks/002-advanced-activity-filtering.md)
-- [tasks/003-activity-analytics-dashboard.md](tasks/003-activity-analytics-dashboard.md)
-- [tasks/004-activity-notification-system.md](tasks/004-activity-notification-system.md)
-- [tasks/005-activity-audit-trail.md](tasks/005-activity-audit-trail.md)
-- [tasks/activity-ai-detection.md](tasks/activity-ai-detection.md)
-- [tasks/activity-filament-v5.md](tasks/activity-filament-v5.md)
-- [tasks/cleanup-activity-docs.md](tasks/cleanup-activity-docs.md) — task di pulizia documentazione (precursore diretto di questo audit).
+- `tasks/` (36 file: `tasks-index.md`, `001`..`005`, `activity-ai-detection`, `activity-filament-v5`, `cleanup-activity-docs`, `documentation/*`, `features/*`, `refactoring/*`, `testing/*`): la cartella non contiene piu' nessun `.md` (rimossa nel commit `7e00cedf` del 2026-10-08, verificato 2026-10-14; resta un solo file `.lock`). Ogni file e' recuperabile con `git show 7e00cedf^:docs/tasks/<percorso>`. I link a questi file sono stati tolti da questo elenco.
 - [task-consolidare-documentazione.md](task-consolidare-documentazione.md) — task gemello nella root di `docs/` (30% completo secondo il file stesso).
 - [task-migliorare-report-pdf.md](task-migliorare-report-pdf.md), [task-ridurre-phpstan-test.md](task-ridurre-phpstan-test.md) — altri task nella root di `docs/`.
-- Documentazione: [tasks/documentation/csv-export.md](tasks/documentation/csv-export.md), [custom-exports.md](tasks/documentation/custom-exports.md), [json-export.md](tasks/documentation/json-export.md), [pdf-export.md](tasks/documentation/pdf-export.md), [real-time-guide.md](tasks/documentation/real-time-guide.md), [security-guide.md](tasks/documentation/security-guide.md).
-- Feature: [tasks/features/activity-alerts.md](tasks/features/activity-alerts.md), [activity-filters.md](tasks/features/activity-filters.md), [activity-heatmaps.md](tasks/features/activity-heatmaps.md), [activity-streams.md](tasks/features/activity-streams.md), [advanced-analytics.md](tasks/features/advanced-analytics.md), [anomaly-detection.md](tasks/features/anomaly-detection.md), [custom-events.md](tasks/features/custom-events.md), [custom-reports.md](tasks/features/custom-reports.md), [event-cqrs.md](tasks/features/event-cqrs.md), [event-groups.md](tasks/features/event-groups.md), [event-projection.md](tasks/features/event-projection.md), [export-features.md](tasks/features/export-features.md), [live-dashboard.md](tasks/features/live-dashboard.md), [security-alerts.md](tasks/features/security-alerts.md), [security-violation-detection.md](tasks/features/security-violation-detection.md).
-- Refactoring: [tasks/refactoring/batch-processing.md](tasks/refactoring/batch-processing.md), [performance-optimization.md](tasks/refactoring/performance-optimization.md).
-- Testing: [tasks/testing/achieve-95-test-coverage.md](tasks/testing/achieve-95-test-coverage.md), [integration-tests.md](tasks/testing/integration-tests.md), [performance-tests.md](tasks/testing/performance-tests.md), [security-tests.md](tasks/testing/security-tests.md).
 
-Tutti i file sopra hanno lo stesso template ma contenuto (task ID, descrizione, criteri) distinto: non sono duplicati tra loro.
+Le voci `tasks/` rimosse sopra avevano lo stesso template ma contenuto distinto; i tre file `task-*.md` della radice di `docs/` esistono ancora.
 
 ## Wiki (second brain del modulo)
 
@@ -315,7 +311,7 @@ solo in [llm-wiki/agents.md](llm-wiki/agents.md) e [llm-wiki/log.md](llm-wiki/lo
 
 - [rules-index.md](rules-index.md) — indice regole.
 - [docs-health.md](docs-health.md) — stato di salute della documentazione (gia' segnalava 190 file "top-level" prima di questo audit; ora sono 755).
-- [docs-archive-policy.md](docs-archive-policy.md) — policy di archiviazione docs.
+- `docs-archive-policy.md`: file rimosso nel commit `a871d44e` del 2026-10-08 (verificato 2026-10-14); non esiste piu' in `docs/`.
 - [module-root-hygiene.md](module-root-hygiene.md), [root-file-policy.md](root-file-policy.md), [root-files-hygiene.md](root-files-hygiene.md) — igiene della root del modulo (tre documenti distinti ma tematicamente sovrapposti).
 - [no-ai-tool-scaffold-dirs.md](no-ai-tool-scaffold-dirs.md) — perche' certe cartelle scaffold da tool AI non devono esistere qui.
 - [no-git-lfs.md](no-git-lfs.md) — Git LFS non si usa in questo progetto.

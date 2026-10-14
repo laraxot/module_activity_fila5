@@ -1,6 +1,11 @@
 ---
 title: Analisi ottimizzazioni
 module: Activity
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "analisi e ottimizzazioni - modulo activity activity"
 ---
 
 # 📊 analisi e ottimizzazioni - modulo activity

@@ -2,6 +2,10 @@
 type: investigation
 title: "Investigation Activity Audit Log"
 links: {github_issue: #401}
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, investigation]
+qmd: "investigation: activity audit log activity"
 ---
 # Investigation: Activity Audit Log
 

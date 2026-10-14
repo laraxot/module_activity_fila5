@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Errori Rilevati e Soluzioni"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "activity module - errori rilevati e soluzioni activity"
+---
 # Activity Module - Errori Rilevati e Soluzioni
 
 ## Stato Test Attuale
