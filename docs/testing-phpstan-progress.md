@@ -1,3 +1,11 @@
+---
+title: "Activity Module - PHPStan Testing Progress"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - phpstan testing progress activity"
+---
 # Activity Module - PHPStan Testing Progress
 
 **Date**: 2025-12-15

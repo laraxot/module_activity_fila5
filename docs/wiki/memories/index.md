@@ -52,9 +52,9 @@ qmd search "test isolation connections" --intent="prevent test crosstalk"
 - Per-module TESTING.md files
 
 ## See Also
-- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+- [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
 - [Root Wiki Index](../)
-- [Root Concepts (Architecture Decisions)](../../../../../docs/wiki/concepts/)
+- [Root Concepts (Architecture Decisions)](../../../../../../docs/wiki/concepts)
 
 ---
 **Updated:** 2026-06-10  

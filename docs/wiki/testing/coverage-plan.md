@@ -1,6 +1,11 @@
 ---
 title: Coverage plan
 module: Activity
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, wiki]
+qmd: "activity coverage plan activity"
 ---
 
 # Activity Coverage Plan

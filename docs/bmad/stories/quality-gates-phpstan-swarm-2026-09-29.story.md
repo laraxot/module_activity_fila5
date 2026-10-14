@@ -13,6 +13,8 @@ related:
   - ./conflict-markers-cleanup-2026-09-22.story.md
 references:
   - sprint-status: "Activity — swarm phpstan Activity+Progressioni+Sigma, 2026-09-29"
+tags: [docs, activity, bmad]
+qmd: "activity   phpstan quality gate swarm (2026-09-29) activity"
 ---
 
 # Activity — PHPStan quality gate swarm (2026-09-29)
