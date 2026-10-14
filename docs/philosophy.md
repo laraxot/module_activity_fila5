@@ -1,3 +1,11 @@
+---
+title: "Activity Module: Philosophy, Purpose, and Design Principles"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module: philosophy, purpose, and design principles activity"
+---
 # Activity Module: Philosophy, Purpose, and Design Principles
 
 **Date:** December 23, 2025

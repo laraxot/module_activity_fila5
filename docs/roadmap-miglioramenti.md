@@ -1,3 +1,11 @@
+---
+title: "Activity — cosa migliorare (visione, non lamento)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity   cosa migliorare (visione, non lamento) activity"
+---
 # Activity — cosa migliorare (visione, non lamento)
 
 I numeri misurati (PHPStan, PHPMD, PHPInsights, coverage, casi di test) sono

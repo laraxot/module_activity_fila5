@@ -1,3 +1,11 @@
+---
+title: "PHPStan Analysis - Activity Module - November 2025"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan analysis - activity module - november 2025 activity"
+---
 # PHPStan Analysis - Activity Module - November 2025
 
 ## Risultato Analisi

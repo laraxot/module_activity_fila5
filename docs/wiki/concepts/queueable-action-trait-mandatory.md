@@ -14,6 +14,7 @@ related:
   - ./queueable-action-execute-entrypoint.md
   - ../../../../../../docs/wiki/rules/queueable-action-trait-mandatory.md
   - ../../../Xot/docs/wiki/concepts/queueable-action-trait-mandatory.md
+status: draft
 ---
 
 # QueueableAction trait — Activity

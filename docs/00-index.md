@@ -1,3 +1,14 @@
+---
+title: "**Indice Documentazione Modulo Activity**"
+type: index
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "**indice documentazione modulo activity** activity"
+status: stale
+---
+
+> Nota 2026-10-14 (docs-audit): Copia con contenuto raddoppiato di 00-INDEX.md (varianti di sola maiuscola) con link a file inesistenti; l'indice canonico e' 00-INDEX.md. Contenuto non riscritto, verificare prima di usarlo.
+
 # 📚 **Indice Documentazione Modulo Activity**
 **Status**: ✅ PHPStan Level 10 Compliant
 **Module Version**: 2.3.0

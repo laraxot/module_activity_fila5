@@ -1,3 +1,11 @@
+---
+title: "Resource table columns"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, wiki]
+qmd: "resource table columns activity"
+---
 # Resource table columns
 
 ## BMAD story and evidence

@@ -1,6 +1,11 @@
 ---
 title: Brainstorming
 module: Activity
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, bmad]
+qmd: "activity   brainstorming bmad activity"
 ---
 
 ---

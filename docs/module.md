@@ -8,6 +8,7 @@ qmd: "Activity module doctrine BMAD analysis purpose religion philosophy policy 
 related:
   - "../../Xot/docs/module.md"
   - "../../Tenant/docs/module.md"
+status: draft
 ---
 
 # Activity Module — Doctrine

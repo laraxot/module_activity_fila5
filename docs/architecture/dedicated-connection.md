@@ -1,3 +1,11 @@
+---
+title: "Activity Module — Database Connection: Pattern Corretto"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, architecture]
+qmd: "activity module   database connection: pattern corretto activity"
+---
 # Activity Module — Database Connection: Pattern Corretto
 
 ## Regola definitiva

@@ -1,3 +1,15 @@
+---
+title: "Activity: architettura (diagramma non allineato al codice)"
+type: reference
+status: stale
+module: Activity
+updated: 2026-10-14
+tags: [activity, architecture, stale]
+qmd: "activity architettura diagramma repositories services projections stale"
+---
+
+> Nota 2026-10-14 (docs-audit): il diagramma elenca Repositories, Services, Commands e Projections che non esistono in `app/` (cartelle reali: Actions, Adapters, Console, Contracts, Datas, Enums, Events, Exceptions, Filament, Http, Listeners, Models, Providers, Support, Traits, View). Il modulo non ha un layer Services (regola no-services). Fonte corretta: [README.md](./README.md) e [wiki/concepts/queueable-action-execute-entrypoint.md](./wiki/concepts/queueable-action-execute-entrypoint.md). Contenuto non riscritto, verificare prima di usarlo.
+
 # Architecture Documentation
 ## Activity Module Architecture
 
@@ -198,7 +210,7 @@ class ActivityPolicy
 ### Related Documentation
 
 - [Security](SECURITY.md)
-- [Quality](QUALITY.md)
-- [Performance](PERFORMANCE.md)
+- [Quality](roadmap/quality.md)
+- [Performance](PERFORMANCE.md) _(target mancante, verificato 2026-10-14)_
 - [Testing](TESTING.md)=======
 - [Testing](TESTING.md)

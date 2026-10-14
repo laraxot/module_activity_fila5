@@ -15,6 +15,7 @@ related:
   - ../../../Xot/docs/queueable-actions.md
   - ./activity-domain-focus.md
   - ../../../../../../docs/wiki/rules/no-services-rule.md
+status: draft
 ---
 
 # QueueableAction — unico ingresso `execute`

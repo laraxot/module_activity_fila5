@@ -13,6 +13,7 @@ related:
   - overviews/completion-status.md
   - concepts/phpstan-pest-discipline.md
   - ../../../Xot/docs/wiki/overviews/platform-completion-roadmap.md
+status: draft
 ---
 
 # Activity — roadmap modulo

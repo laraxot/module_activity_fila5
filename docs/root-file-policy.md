@@ -1,3 +1,11 @@
+---
+title: "Root file policy"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "root file policy activity"
+---
 # Root file policy
 
 Updated: 2026-07-08
