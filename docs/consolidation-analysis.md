@@ -89,11 +89,8 @@ Details: see `docs/CRITICAL_MIGRATION_CONSTRAINTS.md`
 ## Reference
 
 **Global consolidation plan:** See `ROOT_MD_CONSOLIDATION_PLAN.md` (to be created in docs/).
-<<<<<<< .merge_file_CuIlhA
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_VJWdR8
