@@ -1,3 +1,11 @@
+---
+title: "Massimizzare il livello di confidenza"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "massimizzare il livello di confidenza activity"
+---
 # Massimizzare il livello di confidenza
 
 1. **Test automatizzati**: copertura >90%, includi test unitari, integrazione, e fine‑to‑end.
@@ -7,3 +15,8 @@
 5. **Monitoraggio in produzione**: New Relic / Sentry per errori e performance.
 6. **Documentazione**: mantieni aggiornati doc e changelog.
 7. **Rollback rapido**: feature flags e versioni per tornare indietro.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

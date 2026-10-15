@@ -1,10 +1,9 @@
 # Collegamento alle Traduzioni del Modulo Activity
 
-Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
 
 Consulta la documentazione delle traduzioni qui:
-- [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
-- [Struttura delle Traduzioni](../../lang/docs/structure.md)
+- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).
 
@@ -86,21 +85,6 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
 # Collegamento alle Traduzioni del Modulo Activity
 
-Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).
-
-Consulta la documentazione delle traduzioni qui:
-- [Introduzione alle Traduzioni](../../Lang/project_docs/introduction.md)
-- [Struttura delle Traduzioni](../../Lang/project_docs/structure.md)
-- [Gestione dei File di Lingua](../../Lang/project_docs/module_lang.md)
-
-## Collegamento Bidirezionale
-
-## Collegamenti
-
-- [Torna a README](./README.md)
-- [Vai a Struttura](./structure.md)
-- [Vai a Traduzioni](./translations.md)
-
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../../Lang/project_docs/).
 
 > Aggiorna entrambi i riferimenti se aggiungi nuove chiavi di traduzione o modifichi la struttura.
@@ -120,3 +104,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Activity/project_docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Patient/project_docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Cms/project_docs/lang-link.md)
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

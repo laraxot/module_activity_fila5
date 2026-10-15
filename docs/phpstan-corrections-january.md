@@ -1,3 +1,11 @@
+---
+title: "PHPStan Corrections - Activity Module - Gennaio 2025"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan corrections - activity module - gennaio 2025 activity"
+---
 # PHPStan Corrections - Activity Module - Gennaio 2025
 
 **Data**: 2025-01-10  
@@ -58,3 +66,8 @@ public function snapshots(): MorphMany
 
 *Ultimo aggiornamento: 2025-01-10*
 
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

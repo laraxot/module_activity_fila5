@@ -7,6 +7,7 @@ created: "2026-05-26"
 updated: "2026-05-26"
 owner: "Activity"
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/150"
+qmd: "code redundancy audit   activity activity"
 ---
 
 # Code redundancy audit — Activity
@@ -79,3 +80,8 @@ Ridurre rumore, duplicazione e ambiguita' nel codice di questo module, senza per
 ## Prossimo passo
 
 Aprire issue mirata per i primi 3 file grandi o per il duplicato cross-owner piu' evidente, poi validare con PHPStan/PHPMD/PHPInsights se si modifica codice.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

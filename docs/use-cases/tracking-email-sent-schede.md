@@ -361,11 +361,12 @@ public function it_logs_activity_when_sending_email(): void
 - [Activity - README](../../README.md)
 - [Ptv - Analisi Filosofica](../../../ptv/docs/activity-log-email-tracking-philosophical-analysis.md)
 - [Ptv - Implementation Guide](../../../ptv/docs/activity-log-email-tracking-implementation.md)
-- [Activity - README](../../readme.md)
+- [Activity - README](../../README.md)
 - [Activity - LogActivityAction](../../app/Actions/LogActivityAction.php)
 
 ---
 
+**=======
 **Ultimo Aggiornamento:** 2025-01-22
 **Versione:** 1.0
 **Autore:** System Integration Documentation

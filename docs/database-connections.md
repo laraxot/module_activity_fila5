@@ -1,3 +1,11 @@
+---
+title: "Regola: Connessioni Database - Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "regola: connessioni database - modulo activity activity"
+---
 # Regola: Connessioni Database - Modulo Activity
 
 ## Principio
@@ -36,3 +44,8 @@ NON usare DB_DATABASE_ACTIVITY, DB_USERNAME_ACTIVITY, DB_PASSWORD_ACTIVITY in .e
 - [basemodel-connection-why-activity-not-null](basemodel-connection-why-activity-not-null.md)
 - [testing-coverage-policy](testing-coverage-policy.md)
 - [database-connections rule](../../../.cursor/rules/database-connections.mdc)
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

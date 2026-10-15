@@ -1,3 +1,11 @@
+---
+title: "Filament Resources nel Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "filament resources nel modulo activity activity"
+---
 # Filament Resources nel Modulo Activity
 
 ## Struttura delle Risorse
@@ -166,3 +174,7 @@ class ListSnapshots extends XotBaseListRecords
 - [XotBaseListRecords](../Xot/project_docs/filament-pages.md)
 - [Best Practices Filament](../Xot/project_docs/filament-best-practices.md)
 - [Compatibilità dei Metodi in PHP](https://www.php.net/manual/en/language.oop5.inheritance.php) 
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

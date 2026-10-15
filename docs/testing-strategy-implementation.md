@@ -1,3 +1,11 @@
+---
+title: "Testing Strategy Implementation - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "testing strategy implementation - activity module activity"
+---
 # Testing Strategy Implementation - Activity Module
 
 ## Status
@@ -196,3 +204,7 @@ Applicare pattern NO RefreshDatabase a tutti i test Activity:
 **Pattern**: ✅ Manual Cleanup con UUID Isolation
 **Documentazione**: ✅ COMPLETA
 **Ultimo aggiornamento**: 27 Ottobre 2025
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

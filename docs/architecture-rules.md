@@ -1,3 +1,11 @@
+---
+title: "Architecture rules (puntatore)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "architecture rules (puntatore) activity"
+---
 -   [Super Cow Methodology](../../Xot/docs/super_cow_methodology.md)
 -   [PHP Quality Guide](../../Xot/docs/php_quality_guide.md)
 -   [Filament Extension Rules](../../Xot/docs/filament_extension_rules.md)
@@ -16,3 +24,7 @@ updated: 2026-05-21
 # Architecture rules (puntatore)
 
 Regole globali: [../../../../docs/wiki/rules/00-TRIGGER_MAP.md](../../../../docs/wiki/rules/00-TRIGGER_MAP.md).
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

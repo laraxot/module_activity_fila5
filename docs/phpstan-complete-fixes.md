@@ -1,3 +1,11 @@
+---
+title: "PHPStan Complete Fixes 2025 - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan complete fixes 2025 - activity module activity"
+---
 # PHPStan Complete Fixes 2025 - Activity Module
 
 **Data**: 2025-01-27
@@ -94,3 +102,7 @@ Note: Using configuration file phpstan.neon.
 **Documento creato**: [DATE]
 **Stato**: ✅ COMPLETATO
 **Prossima revisione**: Con necessità
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

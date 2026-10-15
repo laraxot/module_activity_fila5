@@ -1,3 +1,11 @@
+---
+title: "Errori Comuni Filament nel Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "errori comuni filament nel modulo activity activity"
+---
 # Errori Comuni Filament nel Modulo Activity
 
 ## Errori di Metodi Statici
@@ -163,3 +171,7 @@ class ListSnapshots extends ListRecords
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
 - [ ] Eseguire PHPStan per verificare altri possibili errori 
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

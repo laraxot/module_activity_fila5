@@ -1,3 +1,11 @@
+---
+title: "PHPStan Syntax Fixes - Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan syntax fixes - modulo activity activity"
+---
 # PHPStan Syntax Fixes - Modulo Activity
 
 **Data**: 2025-01-11
@@ -168,3 +176,7 @@ Questi fix erano necessari per permettere a PHPStan di completare l'analisi del 
 **Fix Completati**: [DATE]
 **Priority**: ALTA
 **Impact**: MEDIO (Bloccava analisi modulo Activity)
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

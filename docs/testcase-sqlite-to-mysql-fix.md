@@ -1,3 +1,11 @@
+---
+title: "TestCase SQLite to MySQL Fix - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "testcase sqlite to mysql fix - activity module activity"
+---
 # TestCase SQLite to MySQL Fix - Activity Module
 
 ## Problema Identificato
@@ -208,3 +216,7 @@ Activity dipende da User per `causedBy()`. Assicurarsi che:
 **Stato:** Pronto per implementazione
 **Righe:** 156 → ~40 (-74%)
 **Filosofia:** MySQL Production = MySQL Tests ✅
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

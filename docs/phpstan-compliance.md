@@ -1,3 +1,11 @@
+---
+title: "PHPStan Compliance - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan compliance - activity module activity"
+---
 # PHPStan Compliance - Activity Module
 
 ## Status: ✅ FULLY COMPLIANT
@@ -39,3 +47,7 @@ The module follows these coding standards:
 - Comprehensive type hints
 - Null safety practices
 - Modern PHP 8.2+ features utilization
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

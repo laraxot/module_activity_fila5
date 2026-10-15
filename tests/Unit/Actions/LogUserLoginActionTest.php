@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Activity\Actions\LogUserLoginAction;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;

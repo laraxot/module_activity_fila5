@@ -1,3 +1,11 @@
+---
+title: "Ponytail audit — Activity (over-engineering)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "ponytail audit   activity (over-engineering) activity"
+---
 # Ponytail audit — Activity (over-engineering)
 
 **Ultimo run:** 2026-06-30  
@@ -14,3 +22,8 @@ Eventuali voci storiche (ActivityLogger, contratti Geo) sono in [docs/audit/pony
 ## Collegamenti
 
 - [wiki/concepts/ponytail-audit.md](./wiki/concepts/ponytail-audit.md)
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

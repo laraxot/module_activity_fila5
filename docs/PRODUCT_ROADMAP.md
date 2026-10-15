@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Product Roadmap"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - product roadmap activity"
+---
 # Activity Module - Product Roadmap
 
 **Module:** Activity  
@@ -132,3 +140,8 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 ---
 
 *Last Updated: March 12, 2026*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

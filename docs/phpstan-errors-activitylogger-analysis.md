@@ -1,3 +1,11 @@
+---
+title: "PHPStan Errors - ActivityLogger.php - Deep Analysis"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan errors - activitylogger.php - deep analysis activity"
+---
 # PHPStan Errors - ActivityLogger.php - Deep Analysis
 
 **File**: `Modules/Activity/app/Actions/ActivityLogger.php`
@@ -424,3 +432,7 @@ The Activity module is the **audit trail and compliance backbone** of the entire
 **Date**: 2025-01-27
 **Date**: [DATE]
 **Workflow**: Super Mucca Step 3 - Document errors with deep context ✅
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

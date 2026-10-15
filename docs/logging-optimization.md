@@ -1,4 +1,16 @@
-# Activity Module - Logging Optimization
+---
+module: theme
+topic: logging_optimization
+canonical: ../../../Themes/docs/shared-components/logging-optimization.md
+title: "logging optimization"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "logging optimization activity"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md# Activity Module - Logging Optimization
 
 ## Current Issues
 
@@ -291,3 +303,7 @@ By removing logging from ActivityLogger:
 5. Error logging remains for debugging
 
 **Key Takeaway**: The Activity table IS the audit trail. Logging successful database writes is redundant and wastes performance.
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

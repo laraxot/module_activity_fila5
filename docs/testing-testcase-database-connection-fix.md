@@ -1,3 +1,11 @@
+---
+title: "Fix: Activity TestCase - Database Connection Configuration"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "fix: activity testcase - database connection configuration activity"
+---
 # Fix: Activity TestCase - Database Connection Configuration
 
 **Data**: 2025-01-22
@@ -76,3 +84,7 @@ protected function setUp(): void
 
 **Status**: Completed
 **Risultato**: Test Activity ora configurano correttamente le connessioni database
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

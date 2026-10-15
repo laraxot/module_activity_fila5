@@ -1,3 +1,11 @@
+---
+title: "PHPStan Corrections - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan corrections - activity module activity"
+---
 # PHPStan Corrections - Activity Module
 
 **Data**: 2025-10-10  
@@ -42,3 +50,7 @@
 ✅ **0 errori PHPStan**  
 ✅ **Type safety migliorato**  
 ✅ **Codice più robusto**
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

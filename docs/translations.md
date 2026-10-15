@@ -1,3 +1,11 @@
+---
+title: "Traduzioni del Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "traduzioni del modulo activity activity"
+---
 # Traduzioni del Modulo Activity
 
 ## Collegamenti
@@ -209,3 +217,7 @@ Traduzioni specifiche per gli eventi archiviati:
 * [translations.md](laravel/Modules/Activity/docs/translations.md)
 * [translations.md](laravel/Modules/Patient/docs/translations.md)
 * [translations.md](laravel/Modules/Cms/docs/translations.md)
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

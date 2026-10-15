@@ -1,3 +1,11 @@
+---
+title: "SimpleChartWidget - Analisi Qualità del Codice e Best Practices"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "simplechartwidget - analisi qualità del codice e best practices activity"
+---
 # SimpleChartWidget - Analisi Qualità del Codice e Best Practices
 
 ## Panoramica
@@ -797,3 +805,7 @@ Il refactoring ha migliorato la qualità del codice da:
 - **Violazioni di principi** → **Conformità con best practices**
 
 Questo approccio DRY+KISS permette di mantenere un codice di alta qualità, facile da testare e manutenere nel tempo.
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

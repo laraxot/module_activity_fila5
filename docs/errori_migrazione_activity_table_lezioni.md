@@ -1,3 +1,11 @@
+---
+title: "Lezioni Apprese: Errori Migrazione Activity Table"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "lezioni apprese: errori migrazione activity table activity"
+---
 # Lezioni Apprese: Errori Migrazione Activity Table
 
 ## Caso Studio: Errore Critico nella Modifica Migrazione Activity
@@ -165,5 +173,10 @@ Questa lezione è ora memorizzata permanentemente per:
 - [SaluteOra Models](../../SaluteOra/docs/model_architecture.md)
 - [Activity Logging](./activity_logging_system.md)
 
-*Ultimo aggiornamento: Gennaio 2025*
+*
 *Lezione appresa: Context-aware migrations con supporto UUID*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

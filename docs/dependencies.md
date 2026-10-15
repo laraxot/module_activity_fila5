@@ -1,3 +1,11 @@
+---
+title: "Dependencies (Module Activity)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "dependencies (module activity) activity"
+---
 # Dependencies (Module Activity)
 
 Canonical dependency map:
@@ -11,3 +19,8 @@ Module/theme specific notes:
 Installed packages index:
 
 - [../../../../docs/packages/index.md](../../../../docs/packages/index.md)
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

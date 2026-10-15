@@ -1,3 +1,11 @@
+---
+title: "Event Sourcing in `saluteora`"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "event sourcing in `saluteora` activity"
+---
 # Event Sourcing in `saluteora`
 
 ## Introduction to Event Sourcing
@@ -147,3 +155,8 @@ public function store(Request $request)
 - [Larabank Examples](https://github.com/spatie/larabank-traditional)
 
 This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `saluteora`, ensuring full traceability and compliance with healthcare standards.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

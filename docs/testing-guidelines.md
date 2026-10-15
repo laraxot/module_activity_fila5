@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Testing Guidelines"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - testing guidelines activity"
+---
 # Activity Module - Testing Guidelines
 
 ## Testing Framework Requirements
@@ -7,10 +15,6 @@ All tests MUST use `.env.testing` configuration:
 ```env
 APP_ENV=testing
 DB_CONNECTION=mysql
-DB_DATABASE=<nome progetto>_data_test
-DB_DATABASE=<nome progetto>_data_test
-DB_DATABASE_USER=<nome progetto>_user_test
-DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE_USER=<nome progetto>_user_test
 ```
@@ -251,3 +255,7 @@ it('creates snapshots efficiently', function () {
 
 **Testing Framework**: Pest
 **Environment**: .env.testing
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

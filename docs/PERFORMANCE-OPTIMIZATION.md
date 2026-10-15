@@ -5,7 +5,7 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [performance, optimization, tokens, context]
 related:
-  - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+  - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
 ---
 
 # Performance Optimization — Module **Activity**
@@ -18,7 +18,7 @@ related:
 **Dopo**: Carico solo what's needed (~2K startup)
 
 ```diff
-- 150+ rules embeddate in AGENTS.md
+- 150+ rules embeddate in agents.md
 + 0 rules embeddate — tutte on-demand
 ```
 
@@ -119,3 +119,8 @@ context-mode ctx-stats
 
 ---
 *Status: Ottimizzato | Token risparmiati: ~48K per session*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

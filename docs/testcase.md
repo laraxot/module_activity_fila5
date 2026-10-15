@@ -1,3 +1,11 @@
+---
+title: "TestCase Configuration"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "testcase configuration activity"
+---
 # TestCase Configuration
 
 ## Overview
@@ -69,3 +77,8 @@ If you encounter migration issues:
    ```bash
    php artisan module:migrate Activity --env=testing
    ```
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

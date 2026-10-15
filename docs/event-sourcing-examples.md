@@ -1,8 +1,12 @@
 ---
-module: theme
-topic: event-sourcing-examples
-canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+title: "Practical Event Sourcing Examples for Healthcare"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "practical event sourcing examples for healthcare activity"
 ---
+# Practical Event Sourcing Examples for Healthcare
 
 ## Table of Contents
 - [Patient Management](#patient-management)
@@ -223,16 +227,16 @@ class PatientAggregateTest extends TestCase
     public function it_can_register_a_patient()
     {
         $patientId = 'patient-123';
-
+        
         $aggregate = PatientAggregate::retrieve($patientId);
-
+        
         $aggregate->registerPatient(
             patientId: $patientId,
             firstName: 'John',
             lastName: 'Doe',
             email: 'john@example.com'
         )->persist();
-
+        
         $this->assertDatabaseHas('stored_events', [
             'event_class' => PatientRegistered::class,
             'aggregate_uuid' => $patientId
@@ -247,7 +251,7 @@ class PatientAggregateTest extends TestCase
 class PatientProjectorTest extends TestCase
 {
     use RefreshProjection;
-
+    
     /** @test */
     public function it_projects_patient_registration()
     {
@@ -259,9 +263,9 @@ class PatientProjectorTest extends TestCase
             email: 'jane@example.com',
             registeredAt: now()
         );
-
+        
         event($event);
-
+        
         $this->assertDatabaseHas('patients', [
             'id' => $patientId,
             'email' => 'jane@example.com',
@@ -280,11 +284,14 @@ These examples demonstrate how event sourcing can be applied to various aspects 
 3. **Resilient**: The system can be rebuilt by replaying events
 4. **Understandable**: The business logic is expressed in terms of domain events
 
-Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.
----
+Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.---
 module: theme
 topic: event-sourcing-examples
 canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

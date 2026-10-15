@@ -1,3 +1,11 @@
+---
+title: "Merge conflict markers — file list"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "merge conflict markers   file list activity"
+---
 # Merge conflict markers — file list
 
 Elenco dei file trovati contenenti marker di merge (<<<<<<<, >>>>>>>, .merge_file). Seguire la lista per assegnare task agli agenti.
@@ -52,3 +60,7 @@ Elenco dei file trovati contenenti marker di merge (<<<<<<<, >>>>>>>, .merge_fil
 
 - Regola: ogni modulo e tema deve avere un file `docs/merge-conflicts-list.md` con la lista locale e lo stato di avanzamento.
 - Quando si risolve un file, aggiornare lo stato nella lista e sincronizzare l'LLM Wiki (qmd embed) per ingestione.
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

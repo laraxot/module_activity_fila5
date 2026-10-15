@@ -1,3 +1,11 @@
+---
+title: "Activity Module - PHPStan Testing Progress"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - phpstan testing progress activity"
+---
 # Activity Module - PHPStan Testing Progress
 
 **Date**: 2025-12-15
@@ -95,3 +103,7 @@ parameters:
 > "The site works. If tests fail, the tests are wrong, not the code."
 
 🤖 Generated with [Claude Code](https://claude.com/claude-code)
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

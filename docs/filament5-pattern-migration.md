@@ -1,3 +1,11 @@
+---
+title: "Filament 5 Pattern Migration - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "filament 5 pattern migration - activity module activity"
+---
 # Filament 5 Pattern Migration - Activity Module
 
 ## Data Migration
@@ -71,3 +79,8 @@ Apply this same pattern to ALL Filament Resources in ALL modules:
 - Media module
 - Geo module
 - And all others...
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

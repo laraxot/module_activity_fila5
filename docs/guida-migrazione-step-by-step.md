@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Guida Step-by-Step Migrazione Filament 4"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - guida step-by-step migrazione filament 4 activity"
+---
 # Activity Module - Guida Step-by-Step Migrazione Filament 4
 
 ## 🎯 Panoramica della Migrazione
@@ -607,3 +615,8 @@ php artisan tinker
 6. **Export capabilities** per audit compliance
 
 La migrazione Activity module dimostra come gestire **large datasets** con Filament 4 mantenendo performance ottimali.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

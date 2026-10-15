@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Product Launch Plan"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - product launch plan activity"
+---
 # Activity Module - Product Launch Plan
 
 **Module:** Activity  
@@ -97,3 +105,8 @@
 ---
 
 *Last Updated: March 12, 2026*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

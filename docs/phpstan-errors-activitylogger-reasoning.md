@@ -1,3 +1,11 @@
+---
+title: "PHPStan Errors - ActivityLogger.php - Critical Reasoning ('Litigare con te stesso')"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan errors - activitylogger.php - critical reasoning ('litigare con te stesso') activity"
+---
 # PHPStan Errors - ActivityLogger.php - Critical Reasoning ("Litigare con te stesso")
 
 **File**: `Modules/Activity/app/Actions/ActivityLogger.php`
@@ -375,3 +383,7 @@ protected function getStatisticsByType(\Illuminate\Database\Eloquent\Builder $qu
 **Date**: 2025-01-27
 **Date**: [DATE]
 **Workflow**: Super Mucca Step 4 - Ragionare sulle correzioni proposte ✅
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

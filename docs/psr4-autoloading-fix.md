@@ -1,3 +1,11 @@
+---
+title: "PSR-4 Autoloading Compliance Fix"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "psr-4 autoloading compliance fix activity"
+---
 # PSR-4 Autoloading Compliance Fix
 
 ## Data: 21 Gennaio 2025
@@ -321,3 +329,7 @@ obsoleto — non richiedono modifiche al codice, solo `composer dump-autoload`.
 **PHPStan Level**: 10
 **PSR-4 Compliance**: 100%
 **Status**: ✅ Completato e Verificato
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -1,3 +1,11 @@
+---
+title: "PHPStan Quality Rules"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan quality rules activity"
+---
 # PHPStan Quality Rules
 
 ## ⚠️ REGOLA CRITICA: NON ESCLUDERE MAI I TEST DA PHPSTAN
@@ -177,3 +185,7 @@ test('activity is logged correctly', function (): void {
 **Data:** [DATE]
 **Severity:** CRITICA
 **Categoria:** Code Quality & Testing Standards
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

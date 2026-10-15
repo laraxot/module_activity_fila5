@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Complete Roadmap 2026"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - complete roadmap 2026 activity"
+---
 # Activity Module - Complete Roadmap 2026
 
 **Generated**: 2026-01-02
@@ -526,3 +534,7 @@ class Survey extends BaseModel
 
 **"The system's memory is only as good as its ability to recall what matters when it matters."**
 *- Super Mucca Methodology*
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

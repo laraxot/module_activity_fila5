@@ -1,3 +1,11 @@
+---
+title: "Advanced Event Sourcing Patterns for Healthcare Applications"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "advanced event sourcing patterns for healthcare applications activity"
+---
 # Advanced Event Sourcing Patterns for Healthcare Applications
 
 ## Table of Contents
@@ -221,3 +229,8 @@ Event Sourcing provides a robust foundation for healthcare applications by ensur
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/project_docs/laravel-event-sourcing/v7/)
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/docs/laravel-event-sourcing/v7/)
 - [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -6,6 +6,7 @@ tags: [release, semantic-versioning, changelog, readme, marketing]
 created: "2026-05-26"
 updated: "2026-05-26"
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/153"
+qmd: "release e readme marketing   activity activity"
 ---
 
 # Release e README marketing — Activity
@@ -24,3 +25,8 @@ Ogni modulo/tema deve essere pubblicabile, comprensibile e desiderabile: workflo
 ## Confidenza
 
 La configurazione usa semantic-release con Conventional Commits, changelog, GitHub release e commit automatico del changelog.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

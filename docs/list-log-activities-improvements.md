@@ -1,3 +1,11 @@
+---
+title: "ListLogActivities UI/UX Improvements - 2025-12-04"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "listlogactivities ui/ux improvements - 2025-12-04 activity"
+---
 # ListLogActivities UI/UX Improvements - 2025-12-04
 
 ## Data Intervento: 2025-12-04
@@ -301,3 +309,7 @@ PASS: 2 files formattati correttamente
 **Data**: 2025-12-04
 **Versione**: 1.0
 **Status**: ✅ Production Ready
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

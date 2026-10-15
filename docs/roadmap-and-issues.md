@@ -50,10 +50,14 @@
 ## 🔗 Collegamenti
 
 - [← Activity Module README](../README.md)
-- [← Activity Module README](../readme.md)
-- [← Root Documentation](../../../docs/index.md)
+- [← Activity Module README](../README.md)
+- [← Root Documentation](../../../../docs/index.md)
 
 ---
 
 **Status**: ✅ COMPLETO
 **Maintenance**: Routine
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -1,3 +1,11 @@
+---
+title: "Factory Coverage Report - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "factory coverage report - activity module activity"
+---
 # Factory Coverage Report - Activity Module
 
 ## 📊 Status Report
@@ -56,3 +64,7 @@ All factories have been tested and:
 
 ---
 *Report generated automatically - Factory coverage: 100%*
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

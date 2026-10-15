@@ -1,3 +1,11 @@
+---
+title: "Bugfix: Filament Facade Namespace Error"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "bugfix: filament facade namespace error activity"
+---
 # Bugfix: Filament Facade Namespace Error
 
 ## 🐛 Errore
@@ -270,3 +278,7 @@ Usare sempre file esistenti del progetto come riferimento per i namespace.
 **Stato:** ✅ RISOLTO - Pronto per produzione
 **Severity:** 🔴 CRITICA (500 error)
 **Time to Fix:** 2 minuti
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

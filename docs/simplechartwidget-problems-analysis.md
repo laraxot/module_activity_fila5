@@ -1,3 +1,11 @@
+---
+title: "SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "simplechartwidget - analisi problemi e miglioramenti ui/ux activity"
+---
 # SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX
 
 ## Panoramica
@@ -467,3 +475,7 @@ L'analisi del `SimpleChartWidget` ha identificato diversi problemi che impattano
 3. **Migliorano la manutenibilità** (separazione logica, refactoring)
 
 L'implementazione incrementale permette di validare ogni miglioramento prima di procedere con la fase successiva, garantendo un processo di refactoring sicuro e controllato.
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

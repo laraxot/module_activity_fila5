@@ -1,3 +1,11 @@
+---
+title: "Activity Module — Database Connection: Pattern Corretto"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, architecture]
+qmd: "activity module   database connection: pattern corretto activity"
+---
 # Activity Module — Database Connection: Pattern Corretto
 
 ## Regola definitiva
@@ -56,6 +64,7 @@ Il **doppio fallback** `env('DB_DATABASE_ACTIVITY', env('DB_DATABASE'))` è la c
 
 ```bash
 # ✅ CORRETTO — .env.testing
+DB_DATABASE=<nome progetto>_data_test=======
 DB_DATABASE=techplanner_data_test
 DB_USERNAME=marco
 DB_PASSWORD=marco
@@ -63,6 +72,7 @@ DB_PASSWORD=marco
 ```
 
 Il fallback in `database.php` garantisce che la connessione `activity` usi automaticamente
+`<nome progetto>_data_test` senza configurazione aggiuntiva nei test.=======
 `techplanner_data_test` senza configurazione aggiuntiva nei test.
 
 ---

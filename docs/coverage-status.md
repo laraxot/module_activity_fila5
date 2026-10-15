@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Errori e Coverage"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - errori e coverage activity"
+---
 # Activity Module - Errori e Coverage
 
 ## Stato Test
@@ -47,3 +55,8 @@ Aggiungere testsuite dedicata per Activity:
 
 - [Pest Coverage](https://pestphp.com/docs/test-coverage)
 - [Laravel Modules Tests](https://laravelmodules.com/docs/12/advanced/tests)
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -8,10 +8,11 @@ use Illuminate\Support\Str;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
 use function Safe\json_decode;
 use function Safe\json_encode;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('Activity Business Logic', function () {
     test('can create activity with basic information', function () {
@@ -262,5 +263,9 @@ test('Activity Business Logic', function () {
 
         Assert::assertIsArray($orderDetails);
         Assert::assertSame(67.48, $orderDetails['total_amount']);
+
+        Assert::assertIsArray($customerInfo);
+        Assert::assertSame('Jane Smith', $customerInfo['name']);
+        Assert::assertSame('jane@example.com', $customerInfo['email']);
     });
 });

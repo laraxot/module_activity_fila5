@@ -1,3 +1,11 @@
+---
+title: "PHPStan Compliance - Dicembre 2025"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan compliance - dicembre 2025 activity"
+---
 # PHPStan Compliance - Dicembre 2025
 
 ## 🎯 Status: COMPLIANCE NATIVA
@@ -53,3 +61,7 @@ public function execute(): Activity
 ## 🎉 Riferimento
 
 Il modulo Activity serve da eccellente riferimento di come strutturare codice PHPStan-compliant nel progetto Laraxot.
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
