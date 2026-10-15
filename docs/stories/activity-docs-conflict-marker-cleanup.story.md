@@ -6,7 +6,7 @@ consolidazione editoriale di README.md/index.md (non fatta qui, vedi sotto).
 
 ## Contesto
 Stesso task ricorrente descritto in
-`Modules/Media/docs/stories/media-docs-conflict-marker-cleanup-2026-09-22.story.md`,
+`Modules/Media/docs/stories/media-docs-conflict-marker-cleanup.story.md`,
 applicato ad Activity. Causa radice: daemon locale di auto-commit che
 committa marker non risolti dopo merge con remote divergente (diagnosi in
 `docs/stories/5.122-gitmodules-sync-2026-09-15-safe-subset.story.md`, repo

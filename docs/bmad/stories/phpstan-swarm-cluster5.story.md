@@ -25,7 +25,7 @@ Activity, IndennitaCondizioniLavoro, Performance. Coordinatrice:
 
 ## Stato pregresso
 Activity era a 0 errori (commit `cda1698b2f`, story
-`quality-gates-phpstan-fix-20260928.story.md`). Nessuna modifica ad `app/`
+`quality-gates-phpstan-fix.story.md`). Nessuna modifica ad `app/`
 successiva: `git log` mostra solo docs. Nessuna regressione attesa.
 
 ## Gate

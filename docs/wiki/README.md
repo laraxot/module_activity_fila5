@@ -21,7 +21,7 @@ Pagine brevi e riusabili (concetti, regole, memorie) che completano le story. Mi
 - [INDEX.md](./INDEX.md): indice della wiki (catalogo fermo al 2026-06-10, vedi il suo piede di pagina).
 - [log.md](./log.md): registro datato di cio' che e' cambiato nel modulo e nei suoi docs.
 - Identita' e contenuto reale del modulo: [../README.md](../README.md). Indice operativo di tutta la cartella docs: [../00-INDEX.md](../00-INDEX.md).
-- `00-INDEX.md`, `00-index.md`, `00-index-1.md`, `index.md` di questa cartella sono copie marcate `stale`: non vanno aggiornate.
+- `00-INDEX.md`, `00-index.md`, `00-index-documentation.md`, `index.md` di questa cartella sono copie marcate `stale`: non vanno aggiornate.
 
 ## Sottocartelle con pagine
 
