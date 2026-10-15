@@ -60,7 +60,7 @@ qmd: "analisi qualità - modulo activity activity"
 
 ## 🔗 Collegamenti
 
-- [Activity Code Quality Analysis](./code_quality_analysis.md)
+- [Activity Code Quality Analysis](./code-quality-analysis.md)
 - [Xot Quality Analysis](../../xot/docs/quality-analysis/current-status.md)
 
 ## 📝 Note

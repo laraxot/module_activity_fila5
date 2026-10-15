@@ -115,7 +115,7 @@ public function withCustomProperties(array $attributes): static
 - `testing-strategy-implementation.md` ✅ Testing approach
 
 ### Duplicate/Redundant Files
-- `README.md` vs `readme.md` (case sensitivity)
+- `README.md` vs `README.md` (case sensitivity)
 - `README.md.update` (outdated?)
 - Multiple phpstan analysis files with overlapping content
 

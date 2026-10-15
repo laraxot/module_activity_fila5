@@ -159,7 +159,7 @@ use function Safe\json_encode;
 - [PHPStan Quality Rules](./PHPSTAN_QUALITY_RULES.md)
 - [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
 - [PHPStan Quality Rules](./phpstan_quality_rules.md)
-- [PHPStan Fixes Activity (Completo)](./phpstan_fixes_activity.md)
+- [PHPStan Fixes Activity (Completo)](./phpstan-fixes-activity.md)
 
 ## 📝 Note
 

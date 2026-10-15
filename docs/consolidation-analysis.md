@@ -66,7 +66,7 @@ laravel/Modules/Activity/
 ## Action Items
 
 - [ ] Move `critical-mai-fare-migrate-refresh.md` from root to `laravel/Modules/Activity/docs/`
-- [ ] Rename to `CRITICAL_MIGRATION_CONSTRAINTS.md` for clarity
+- [ ] Rename to `critical-migration-constraints.md` for clarity
 - [ ] Add reference in `laravel/Modules/Activity/README.md` with ⚠️ badge
 - [ ] Cross-link from Progressioni/docs (note shared constraint)
 - [ ] Commit as atomic: "docs(activity): consolidate critical migration constraints from root"
