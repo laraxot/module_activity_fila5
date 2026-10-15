@@ -167,8 +167,11 @@ public function withCustomProperties(array $attributes): static
 *Last Updated: November 15, 2025*
 *PHPStan Version: Latest*
 *PHPMD Version: Latest*
+<<<<<<< .merge_file_OBXc68
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_8Y5vOd

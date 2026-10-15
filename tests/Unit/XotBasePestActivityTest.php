@@ -2,7 +2,11 @@
 
 declare(strict_types=1);
 use Modules\Activity\Tests\TestCase;
+<<<<<<< .merge_file_lqPGYi
 use Modules\Xot\tests\XotBasePest;
+=======
+use Modules\Xot\Tests\XotBasePest;
+>>>>>>> .merge_file_oIPnqW
 
 it('tests that TestCase class structure is correct', function () {
     /** @var TestCase $this */

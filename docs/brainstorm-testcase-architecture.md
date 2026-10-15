@@ -105,8 +105,11 @@ All 16 `Modules/*/tests/TestCase.php` files now extend `XotBaseTestCase`.
 Modules migrated: User, Geo, Media, UI, Lang, Notify, Gdpr, Job, Fixcity, Tenant, Seo, Rating.
 See canonical rule: `Modules/Xot/docs/wiki/rules/module-testcase-xotbase-hierarchy.md`
 PHPStan after migration: 0 parse errors, 0 pure prod errors.
+<<<<<<< .merge_file_1ViJGl
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_Zx9wOR

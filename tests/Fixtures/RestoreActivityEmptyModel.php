@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Fixtures;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< .merge_file_tZ5UKm
 use Modules\Activity\Models\BaseModel;
 
 /**
@@ -18,4 +19,13 @@ final class RestoreActivityEmptyModel extends BaseModel
 
     /** @var list<string> */
     protected $fillable = [];
+=======
+
+/**
+ * Modello finto minimo per i test di RestoreActivityAction (classe con nome, non anonima).
+ */
+final class RestoreActivityEmptyModel extends Model
+{
+    protected $table = 'stub_models';
+>>>>>>> .merge_file_PtOn34
 }

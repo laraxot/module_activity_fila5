@@ -12,6 +12,10 @@ test('ListLogActivities toTranslationString normalizza stringhe e array', functi
 
     Assert::assertSame('Titolo semplice', $page->exposeToTranslationString('Titolo semplice'));
     Assert::assertSame('parte uno parte due', $page->exposeToTranslationString(['parte uno', 'parte due']));
+<<<<<<< .merge_file_4cT1v4
+=======
+    Assert::assertSame('', $page->exposeToTranslationString(123));
+>>>>>>> .merge_file_ieIfgo
 });
 
 test('ListLogActivities getFieldLabel usa fallback per chiavi sconosciute', function (): void {

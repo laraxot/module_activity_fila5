@@ -28,8 +28,11 @@ Activity tracking and audit logging module for Laraxot platform.
 - PHPStan Level 10 compliance
 - Pest test coverage >90%
 - Integration with Xot base models
+<<<<<<< .merge_file_J5X4XK
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_xhsgQx

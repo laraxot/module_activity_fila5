@@ -109,8 +109,11 @@ Transform raw activity data into actionable intelligence.
 ---
 
 *Last Updated: March 12, 2026*
+<<<<<<< .merge_file_cCeqSb
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_JquDa2

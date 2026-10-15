@@ -36,8 +36,11 @@ test('logs causer on user action', function () {
     expect($activity->causer_id)->toBe($admin->id);
 });
 ```
+<<<<<<< .merge_file_wU0hYb
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_LFAQww

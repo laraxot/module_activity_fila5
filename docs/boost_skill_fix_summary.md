@@ -42,8 +42,12 @@ See `/docs/BOOST_SKILL_SOLUTION_PLAN.md` for complete solution details.
 - Activity logging
 - User action tracking
 - Activity reports
+<<<<<<< .merge_file_SZuIG0
 - Module integration
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+- Module integration
+>>>>>>> .merge_file_2JVzDQ

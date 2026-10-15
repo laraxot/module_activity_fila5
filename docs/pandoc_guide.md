@@ -175,8 +175,11 @@ done
 - Installation guide: docs/wiki/tools/pandoc-installation.md
 - Usage guide: docs/wiki/tools/pandoc-usage.md
 - Module docs home: Modules/Activity/docs/
+<<<<<<< .merge_file_m3Y1iw
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_QlEq2y

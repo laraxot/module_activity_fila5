@@ -157,8 +157,12 @@ class ActivityPolicy
 - [Security](SECURITY.md)
 - [Quality](roadmap/quality.md)
 - [Performance](PERFORMANCE.md)
+<<<<<<< .merge_file_LpTMFW
 - [Testing](TESTING.md)
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+- [Testing](TESTING.md)
+>>>>>>> .merge_file_IE4YHU

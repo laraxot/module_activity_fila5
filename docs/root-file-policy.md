@@ -19,8 +19,11 @@ Archived root files live in:
 - docs/root-code-workspace-files/ (1 files)
 
 Current root counts after normalization: 3 markdown files, 0 workspace files.
+<<<<<<< .merge_file_hWEjMg
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_ddXtrM

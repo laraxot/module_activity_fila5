@@ -73,8 +73,11 @@ php artisan test --filter=Snapshot
 php artisan test Modules/Activity --coverage
 ```=======
 ```
+<<<<<<< .merge_file_7hLGo9
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_TKMCjg

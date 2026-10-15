@@ -107,8 +107,11 @@ Legal teams need configurable retention periods.
 ---
 
 *Last Updated: March 12, 2026*
+<<<<<<< .merge_file_dhQrUv
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_RD4z8I
