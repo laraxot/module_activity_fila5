@@ -214,8 +214,11 @@ class ActivityPolicy
 - [Performance](PERFORMANCE.md) _(target mancante, verificato 2026-10-14)_
 - [Testing](TESTING.md)=======
 - [Testing](TESTING.md)
+<<<<<<< .merge_file_eBEOiq
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_tJkzCC

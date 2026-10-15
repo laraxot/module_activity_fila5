@@ -122,8 +122,11 @@ scrivendo sul tree, altrimenti la misura e falsa e diversa a ogni run.
 
 Audit complessivo e confronto fra tutte le unita: [`docs/quality-audit.md`](../../../../docs/quality-audit.md) nella root del progetto.
 
+<<<<<<< .merge_file_Ngt8jf
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_ITVX1z

@@ -650,8 +650,11 @@ Activity/
 
 ## AI Workflows
 - [AI Methodologies](./ai-methodologies.md)
+<<<<<<< .merge_file_kLILa6
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_5qQc1u

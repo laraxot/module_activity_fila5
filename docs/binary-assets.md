@@ -15,8 +15,11 @@ Regole:
 - non committare file pointer al posto del contenuto reale;
 - se un asset manca, recuperare il binario originale e committarlo direttamente;
 - prima del push verificare che immagini, font, archivi e PDF siano contenuti reali.
+<<<<<<< .merge_file_ZIVckO
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_RkTOdY

@@ -36,8 +36,11 @@ Totale: 890 file `.md`, di cui 377 nella radice e 513 in sottocartelle.
 Sotto i 5 file: `testing/`, `tecnico/`, `guides/` (4 ciascuna), `root-txt-files/`, `architecture/` (3 ciascuna), `investigation/` (2), e 13 cartelle con 1 file (`use-cases`, `ui-ux`, `troubleshooting`, `tests`, `quality-analysis`, `outputs`, `epics`, `development`, `database`, `concepts`, `charts`, `actions`, `_integration`). Senza alcun `.md`: `tasks/` (solo un `.lock`), `archived/`, `logs/`, `schema/`, `screenshots/` (una immagine), `superseded/`, `root-code-workspace-files/`.
 
 Dentro `wiki/`: `concepts/` 37, `testing/` 11, `rules/` 4, `memories/` 4, `howto/` 3, `_templates/` 3, `troubleshooting/` 2, `skills/` 2, `integrations/` 2, `features/` 2, `commands/` 2, `analysis/` 2; 39 file nella radice di `wiki/`.
+<<<<<<< .merge_file_XU2DkI
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_dljTeM

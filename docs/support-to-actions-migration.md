@@ -54,8 +54,11 @@ php vendor/bin/pest Modules/Activity/tests/Unit/Actions/IsActivityLogSchemaWrita
 4. Replace static calls with `app(<Action>::class)->execute(...)`.
 5. Delete the old Support file and its test.
 6. Update every `use` statement and call site.
+<<<<<<< .merge_file_QSsjCV
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_WLj767
