@@ -176,3 +176,7 @@ trait HasEvents
 **Last Updated**: 2025-12-16
 
 **Fix Complexity**: ⭐ (Very Easy - Just add return types)
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -183,3 +183,7 @@ Pattern minimo (quando applicabile):
 - Activity correlation across different modules
 - System-wide activity analytics
 - Business process tracking through activities
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

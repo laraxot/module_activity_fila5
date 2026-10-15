@@ -81,3 +81,8 @@ Factories enable testing of:
 - **Spatie Integration**: Leverages well-tested packages
 - **Event Sourcing Support**: Advanced architecture capability
 - **Proper Abstraction**: Base classes provide clean extension points
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -65,7 +65,7 @@ qmd: "phpstan analysis - activity module activity"
 - Multiple files with uppercase letters in names
 - Alcuni file hanno ancora underscore anziché trattini
 - Necessaria la rimozione progressiva di duplicati/backup
-- ✅ Eliminato `readme.md` duplicato rispetto a `README.md`
+- ✅ Eliminato `README.md` duplicato rispetto a `README.md`
 
 ## 🛠️ Recommendations
 
@@ -87,3 +87,7 @@ qmd: "phpstan analysis - activity module activity"
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1
 **Filament Version**: 4.2.0
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

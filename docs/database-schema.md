@@ -27,3 +27,8 @@ created_at, updated_at TIMESTAMP
 - **Polymorphic:** subject_id + subject_type (can be any model)
 - **Causer:** User performing the action
 - **Properties:** JSON metadata (email, old values, etc.)
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

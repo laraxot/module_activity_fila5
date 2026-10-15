@@ -38,3 +38,7 @@ abstract class BaseModel extends XotBaseModel
 
 ---
 [DRY/KISS Global](../../../docs/dry_kiss_analysis_[date].md)
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
