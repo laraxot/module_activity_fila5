@@ -116,3 +116,8 @@ Tutti i componenti Filament nel modulo sono compatibili con Filament 4.x:
 **Versione:** 1.0.0  
 **Status:** ✅ Production Ready - PHPStan Level 10 Compliant
 
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

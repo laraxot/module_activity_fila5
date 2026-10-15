@@ -180,3 +180,8 @@ Questa lezione è ora memorizzata permanentemente per:
 *Lezione appresa: Context-aware migrations con supporto UUID*=======
 See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-apprese.md
 See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-apprese.md
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

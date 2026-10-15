@@ -75,7 +75,7 @@ Percorsi coinvolti:
 
 ### 25 collisioni di case nei docs
 
-Coppie tipo `INDEX.md` e `index.md`. Sono documenti che divergono in silenzio:
+Coppie tipo `index.md` e `index.md`. Sono documenti che divergono in silenzio:
 nessun linter le segnala e chi legge non sa quale delle due e la buona.
 
 ## Coverage
@@ -122,3 +122,8 @@ scrivendo sul tree, altrimenti la misura e falsa e diversa a ogni run.
 
 Audit complessivo e confronto fra tutte le unita: [`docs/quality-audit.md`](../../../../docs/quality-audit.md) nella root del progetto.
 
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

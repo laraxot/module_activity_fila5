@@ -275,3 +275,7 @@ public function test_event_storage(): void
 **Integration Status**: ✅ Fully compatible with Spatie package ecosystem
 **Performance**: High - leverages optimized package implementations
 **Scalability**: Excellent - designed for high-volume activity logging
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

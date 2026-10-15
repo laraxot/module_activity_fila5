@@ -287,3 +287,9 @@ These examples demonstrate how event sourcing can be applied to various aspects 
 Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.=======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

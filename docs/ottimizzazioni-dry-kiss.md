@@ -15,9 +15,9 @@ Il modulo Activity gestisce il sistema di event sourcing e tracciamento delle at
 
 ### Problemi Identificati
 1. **Duplicazioni critiche**:
-   - `event_sourcing.md` vs `event-sourcing.md` vs `event_sourcing_introduction.md`
-   - `filament_errors.md` vs `filament-errors.md`
-   - `mcp_server_recommended.md` vs `mcp-server-recommended.md`
+   - `event_sourcing.md` vs `event-sourcing.md` vs `event-sourcing-introduction.md`
+   - `filament-errors.md` vs `filament-errors.md`
+   - `mcp-server-recommended.md` vs `mcp-server-recommended.md`
 2. **File di test temporanei**: 10+ file `.txt` nella root del modulo
 3. **Configurazioni PHPStan duplicate**: 5 file di configurazione diversi
 4. **Documentazione frammentata**: 30+ file sparsi senza struttura logica
@@ -379,3 +379,7 @@ protected function registerConfig(): void
 - [Template Standardizzato](../../../docs/template-modulo-standardizzato.md)
 - [Ottimizzazioni Master](../../../docs/ottimizzazioni-modulari-master.md)
 - [Modulo UI](../ui/docs/ottimizzazioni-dry-kiss.md)
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

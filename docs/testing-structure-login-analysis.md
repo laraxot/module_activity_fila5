@@ -185,3 +185,7 @@ function createTestUser(array $attributes = []): UserContract
 4. **SEMPRE** approfondire prima di agire
 
 *Ultimo aggiornamento: Dicembre 2024 - Analisi completa struttura login*
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

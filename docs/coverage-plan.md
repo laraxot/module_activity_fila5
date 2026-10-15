@@ -102,3 +102,8 @@ it('can mount and display activities', function () {
 - #198: Achieve 100% Pest coverage for Activity module
 - #191: Epic: 100% Pest Coverage Across All Modules
 - #208: Activity refactoring
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

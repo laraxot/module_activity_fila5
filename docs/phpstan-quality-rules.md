@@ -185,3 +185,7 @@ test('activity is logged correctly', function (): void {
 **Data:** [DATE]
 **Severity:** CRITICA
 **Categoria:** Code Quality & Testing Standards
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
