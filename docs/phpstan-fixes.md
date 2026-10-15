@@ -226,7 +226,7 @@ Il modulo utilizza Filament per fornire interfacce amministrative per:
 
 ## Collegamenti
 - [README.md](./README.md)
-- [README.md](./readme.md)
+- [README.md](./README.md)
 - [Activity Logging Documentation](./activity-logging.md)
 - [Filament Resources Documentation](./filament-resources.md)
 # PHPStan Analysis Report for Activity Module
