@@ -615,3 +615,8 @@ php artisan tinker
 6. **Export capabilities** per audit compliance
 
 La migrazione Activity module dimostra come gestire **large datasets** con Filament 4 mantenendo performance ottimali.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -26,3 +26,8 @@ qmd: "activity module - model classification activity"
 - Only create factories/seeders for concrete business entities (Activity, Snapshot, StoredEvent)
 - Base classes should not have factories as they're not instantiable
 - Focus testing on the core business models
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -128,3 +128,7 @@ activity()
 
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Prossimo check**: Sprint Planning
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -11,3 +11,8 @@ qmd: "metodiuplicati analisi activity"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/metodi-duplicati-analisi-Modules.md
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

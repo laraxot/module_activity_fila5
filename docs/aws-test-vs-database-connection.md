@@ -54,3 +54,7 @@ This is required for proper database transaction management in the multi-tenant 
 
 ## Docblock Comments
 The pattern `/** @reference/to/documentation.md type */` may be used to document that a property can have a specific type while referencing documentation, but this pattern is specifically NOT appropriate for the Activity module's database connection property, which must always be 'activity'.
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

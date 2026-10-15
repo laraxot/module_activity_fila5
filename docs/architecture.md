@@ -1,4 +1,59 @@
+---
+title: "Activity: architettura (diagramma non allineato al codice)"
+type: reference
+status: stale
+module: Activity
+updated: 2026-10-14
+tags: [activity, architecture, stale]
+qmd: "activity architettura diagramma repositories services projections stale"
+---
+
+> Nota 2026-10-14 (docs-audit): il diagramma elenca Repositories, Services, Commands e Projections che non esistono in `app/` (cartelle reali: Actions, Adapters, Console, Contracts, Datas, Enums, Events, Exceptions, Filament, Http, Listeners, Models, Providers, Support, Traits, View). Il modulo non ha un layer Services (regola no-services). Fonte corretta: [README.md](./README.md) e [wiki/concepts/queueable-action-execute-entrypoint.md](./wiki/concepts/queueable-action-execute-entrypoint.md). Contenuto non riscritto, verificare prima di usarlo.
+
 # Architecture Documentation
+## Activity Module Architecture
+
+### System Overview
+
+The Activity module provides a comprehensive activity logging and event sourcing system for the Laraxot ecosystem. This document describes the module's architecture, components, and design patterns.
+
+### Core Components
+
+Vedi [wiki/concepts/queueable-action-execute-entrypoint.md](wiki/concepts/queueable-action-execute-entrypoint.md) per la mappa Actions attuale (no Services layer).
+
+```
+Activity Module Architecture
+┌─────────────────────────────────────────────────────────────┐
+│                     Activity Module                          │
+├─────────────────────────────────────────────────────────────┤
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
+│  │   Models     │  │ Repositories │  │  Services    │       │
+│  │              │  │              │  │              │       │
+│  │ ActivityLog  │  │ ActivityRepo │  │ ActivitySvc  │       │
+│  │ StoredEvent  │  │ EventRepo    │  │ EventSvc     │       │
+│  │ Snapshot     │  │ SnapRepo     │  │ SnapSvc      │       │
+│  └──────────────┘  └──────────────┘  └──────────────┘       │
+├─────────────────────────────────────────────────────────────┤
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
+│  │   Events     │  │   Commands   │  │  Projections │       │
+│  │              │  │              │  │              │       │
+│  │ DomainEvent  │  │ CreateAct    │  │ ActivityView │       │
+│  │ StoredEvt    │  │ UpdateAct    │  │ EventView    │       │
+│  └──────────────┘  └──────────────┘  └──────────────┘       │
+├─────────────────────────────────────────────────────────────┤
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
+│  │   Policies   │  │   Actions    │  │   Pages      │       │
+│  │              │  │              │  │              │       │
+│  │ ActPolicy    │  │ LogAct       │  │ ActListPage  │       │
+│  │ EvtPolicy    │  │ RevAct       │  │ EvtListPage  │       │
+│  └──────────────┘  └──────────────┘  └──────────────┘       │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Data Flow
+
+## Quality Gates
+✅ PHPStan L10: Executed (2026-07-28)# Architecture Documentation
 
 ## Activity Module Architecture
 
@@ -154,7 +209,13 @@ class ActivityPolicy
 
 ### Related Documentation
 
-- [Security](SECURITY.md)
+- [Security](security.md)
 - [Quality](roadmap/quality.md)
-- [Performance](PERFORMANCE.md)
-- [Testing](TESTING.md)
+- [Performance](PERFORMANCE.md) _(target mancante, verificato 2026-10-14)_
+- [Testing](testing.md)=======
+- [Testing](testing.md)
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

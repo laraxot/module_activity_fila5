@@ -24,3 +24,7 @@ updated: 2026-05-21
 # Architecture rules (puntatore)
 
 Regole globali: [../../../../docs/wiki/rules/00-TRIGGER_MAP.md](../../../../docs/wiki/rules/00-TRIGGER_MAP.md).
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

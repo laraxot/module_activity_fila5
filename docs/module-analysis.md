@@ -327,3 +327,8 @@ activity()->withProperties([
 **Versione**: v2.5.0-beta  
 **Stato**: Production Ready with Compliance Enhancement=======
 - Machine learning capabilities
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

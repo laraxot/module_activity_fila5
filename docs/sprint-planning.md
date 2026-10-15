@@ -90,3 +90,7 @@ Complete core activity tracking infrastructure with admin dashboard for viewing 
 
 ## 🏁 Sprint Goal
 Finalize documentation and validation for Activity.
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -73,6 +73,10 @@ To maintain PHPStan compliance:
 
 ## Related Documentation
 - [Activity Logging Guide](activity-log-ui-improvements.md)
-- [Event Sourcing Patterns](advanced_event_sourcing_patterns.md)
-- [Business Logic Analysis](business_logic_analysis.md)
+- [Event Sourcing Patterns](advanced-event-sourcing-patterns.md)
+- [Business Logic Analysis](business-logic-analysis.md)
 - [Architecture Documentation](architecture/)
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -117,3 +117,7 @@ return [
 - L'annotazione PHPDoc completa aiuta PHPStan
 
 *Ultimo aggiornamento: 2025-01-27*
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

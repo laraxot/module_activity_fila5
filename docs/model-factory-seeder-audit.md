@@ -25,3 +25,7 @@ Generated: [DATE] 16:20
 ## Actions
 - Add seeding inside `Modules/Activity/database/seeders/ActivityDatabaseSeeder.php`
 - Keep factories updated with strict typing
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
