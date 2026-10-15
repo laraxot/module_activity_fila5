@@ -2937,3 +2937,7 @@ Quaeris/app/Actions/Contact/CreateContactFromArrayAction [90m..............[39
   Xot/app/View/Composers/XotComposer [90m....................................[39m [31m0.0%[39m  
   [90m────────────────────────────────────────────────────────────────────────────[39m  
                                                                   [1mTotal: 0.0 %[22m  
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

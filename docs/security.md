@@ -143,5 +143,9 @@ Route::middleware(['auth:sanctum'])->group(function () {
 ## Related Files
 
 - [`phpstan.md`](#phpstan) - PHPStan security configuration
-- [`CODE_QUALITY_ANALYSIS.md`](CODE_QUALITY_ANALYSIS.md) - Code quality standards
-- [`TESTING.md`](#testing) - Testing procedures
+- [`code-quality-analysis.md`](code-quality-analysis.md) - Code quality standards
+- [`testing.md`](#testing) - Testing procedures
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -30,3 +30,8 @@ status: draft
 
 - Allineare UI audit business alle resource SRC solo se manca vista operativa
 - Settings di Platform → vedi Tenant (`gestionale-platform-mapping.md`)
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

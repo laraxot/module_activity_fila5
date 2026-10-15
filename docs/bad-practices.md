@@ -22,3 +22,7 @@ canonical: ../../../Themes/docs/shared-components/BAD_PRACTICES.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/BAD_PRACTICES.md
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

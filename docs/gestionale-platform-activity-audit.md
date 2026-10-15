@@ -65,3 +65,8 @@ qmd: "activity vs platform.auditlog   mappatura e gap analysis activity"
 - SRC Platform: `/var/www/_bases/gestionale_commesse/Modules/Platform/`
 - Nostro: `/var/www/_bases/base_workorder_fila5/laravel/Modules/Activity/`
 - Story: `docs/wiki/skills/bmad-create-story/stories/gestionale-commesse-module-parity.story.md`
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

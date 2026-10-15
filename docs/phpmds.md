@@ -11,3 +11,8 @@ qmd: "phpmds activity"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpmd-errors-Modules.md
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

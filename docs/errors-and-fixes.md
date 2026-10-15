@@ -149,3 +149,8 @@ php artisan migrate --database=user --env=testing
 # Verificare tabelle
 php artisan tinker --execute="echo implode(', ', DB::connection('user')->getSchemaBuilder()->getTableListing());"
 ```
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -61,3 +61,7 @@ public function execute(): Activity
 ## 🎉 Riferimento
 
 Il modulo Activity serve da eccellente riferimento di come strutturare codice PHPStan-compliant nel progetto Laraxot.
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
