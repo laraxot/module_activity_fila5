@@ -107,8 +107,11 @@ cd laravel
 - Issue: https://github.com/laraxot/module_activity_fila5/issues/15 (STORY-303: PHPStan zero-error Activity tests)
 - Issue: https://github.com/laraxot/module_activity_fila5/issues/8 (Fix PHPStan errors: PHPDoc union syntax and return types)
 - Regola correlata: `docs/wiki/rules/module-git-sync-after-fix.md` (root del progetto)
+<<<<<<< .merge_file_5zjU3p
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_BcKgY4
