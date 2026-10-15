@@ -2,6 +2,11 @@
 title: "Module Schema"
 module: "Activity"
 created: "2026-04-15T08:28:40Z"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module schema activity"
 ---
 
 # Activity Module Schema
@@ -75,3 +80,8 @@ confidence: high|medium|low
 
 **Maintained By:** All AI agents working on Activity  
 **Last Updated:** 2026-04-15T08:28:40Z
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

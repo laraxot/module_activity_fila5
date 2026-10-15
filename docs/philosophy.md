@@ -1,3 +1,11 @@
+---
+title: "Activity Module: Philosophy, Purpose, and Design Principles"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module: philosophy, purpose, and design principles activity"
+---
 # Activity Module: Philosophy, Purpose, and Design Principles
 
 **Date:** December 23, 2025
@@ -55,3 +63,7 @@ The `Activity` module, as the application's memory and audit trail provider, can
 5.  **Sequential Thinking (MCP)**: Crucial for analyzing sequences of activities to understand complex user journeys or diagnose multi-step issues, providing a structured approach to interpreting the audit trail.
 
 By leveraging these MCPs, the `Activity` module can ensure its role as the application's memory is robust, easily verifiable, and deeply integrated into the development and operational workflows.
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

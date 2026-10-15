@@ -1,3 +1,11 @@
+---
+title: "PHPStan Error Resolution Roadmap - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan error resolution roadmap - activity module activity"
+---
 # PHPStan Error Resolution Roadmap - Activity Module
 
 ## Data: 2026-01-08
@@ -234,3 +242,7 @@ Potrebbero esserci altri casi di import duplicati oltre a Override:
 **Ultimo aggiornamento**: [DATE]
 **Versione**: 1.0.0
 **Status**: In corso di implementazione
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

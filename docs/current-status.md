@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Status Attuale"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - status attuale activity"
+---
 # Activity Module - Status Attuale
 
 ## ⚠️ STATO: Parzialmente Disabilitato
@@ -120,3 +128,7 @@ activity()
 
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Prossimo check**: Sprint Planning
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

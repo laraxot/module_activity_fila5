@@ -1,3 +1,11 @@
+---
+title: "Collegamento alle Traduzioni del Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "collegamento alle traduzioni del modulo activity activity"
+---
 # Collegamento alle Traduzioni del Modulo Activity
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).
@@ -36,3 +44,8 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Patient/project_docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Cms/project_docs/lang-link.md)
 
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

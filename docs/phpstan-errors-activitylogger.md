@@ -1,3 +1,11 @@
+---
+title: "PHPStan Errori ActivityLogger - Analisi e Correzione"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan errori activitylogger - analisi e correzione activity"
+---
 # PHPStan Errori ActivityLogger - Analisi e Correzione
 
 ## Problema Identificato
@@ -109,3 +117,7 @@ return [
 - L'annotazione PHPDoc completa aiuta PHPStan
 
 *Ultimo aggiornamento: 2025-01-27*
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

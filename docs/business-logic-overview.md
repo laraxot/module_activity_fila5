@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Business Logic Overview"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - business logic overview activity"
+---
 # Activity Module - Business Logic Overview
 
 ## Core Business Logic Components
@@ -109,3 +117,8 @@ Activity::create([
 - System usage metrics
 - Performance bottleneck identification
 - Business intelligence reporting
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

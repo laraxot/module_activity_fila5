@@ -1,3 +1,11 @@
+---
+title: "Activity Module Filament Resource Guidelines"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module filament resource guidelines activity"
+---
 # Activity Module Filament Resource Guidelines
 
 ## Extension Patterns
@@ -106,3 +114,7 @@ All resources must be tested to ensure:
 - [XotBaseResource Documentation](../../Xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../Xot/project_docs/filament-best-practices.md)
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

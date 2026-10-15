@@ -1,3 +1,11 @@
+---
+title: "PHPMD Analysis & Fixes - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpmd analysis & fixes - activity module activity"
+---
 # PHPMD Analysis & Fixes - Activity Module
 
 ## 📊 Current Status
@@ -169,3 +177,8 @@ return $alternative;
 
 *Last Updated: 2025-11-12*
 *Status: In Progress - Complexity Fixes*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

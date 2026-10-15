@@ -1,3 +1,11 @@
+---
+title: "ACTIVITY MODULE - ROADMAP 2025"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - roadmap 2025 activity"
+---
 # 🎯 ACTIVITY MODULE - ROADMAP 2025
 
 **Modulo**: Activity ([Description])  
@@ -212,3 +220,8 @@ Activity Module
 ---
 
 *Questa roadmap è specifica per il modulo Activity e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

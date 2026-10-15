@@ -1,6 +1,14 @@
+---
+title: "Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "modulo activity activity"
+---
 # Modulo Activity
 
-Data: 2025-04-23 19:09:55
+Data: [DATE] 19:09:55Data: 2025-04-23 19:09:55
 Data: [DATE] 19:09:55
 
 ## Informazioni generali
@@ -413,3 +421,7 @@ Modules/Activity/
 
 ### Collegamenti
 - [Best Practice Event Sourcing .mdc](../../.cursor/rules/ACTIVITY_EVENT_SOURCING_BEST_PRACTICES.mdc)
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

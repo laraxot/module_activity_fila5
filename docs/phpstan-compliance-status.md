@@ -1,3 +1,11 @@
+---
+title: "PHPStan Level 10 Compliance Status"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan level 10 compliance status activity"
+---
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2026-06-10
@@ -68,3 +76,7 @@ To maintain PHPStan compliance:
 - [Event Sourcing Patterns](advanced_event_sourcing_patterns.md)
 - [Business Logic Analysis](business_logic_analysis.md)
 - [Architecture Documentation](architecture/)
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

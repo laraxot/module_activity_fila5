@@ -1,3 +1,11 @@
+---
+title: "Report: Metodi con nome duplicato nei moduli e nei temi"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "report: metodi con nome duplicato nei moduli e nei temi activity"
+---
 # Report: Metodi con nome duplicato nei moduli e nei temi
 
 ## Introduzione
@@ -76,3 +84,7 @@ Di seguito la classifica dei metodi più frequenti (solo quelli con più di una 
 ## Allegati
 - `docs/duplicate_methods_report.md` (questo file)
 - Script di ricerca (`find_duplicate_methods.sh`) disponibile in `bashscripts/` per replicare l’analisi.
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

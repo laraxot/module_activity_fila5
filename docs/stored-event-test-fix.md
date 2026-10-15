@@ -1,3 +1,11 @@
+---
+title: "StoredEvent Business Logic Test Fix"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "storedevent business logic test fix activity"
+---
 # StoredEvent Business Logic Test Fix
 
 ## Problema Identificato
@@ -256,3 +264,7 @@ test('stored event has query builder methods documented', function (): void {
 **Data:** [DATE]
 **Stato:** Pronto per implementazione
 **Test Type:** Behavior > Implementation ✅
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

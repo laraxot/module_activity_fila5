@@ -3,6 +3,11 @@ module: Activity
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+title: "Metodi Duplicati — Analisi Activity"
+type: note
+status: stub
+updated: 2026-10-07
+qmd: "metodi duplicati   analisi activity activity"
 ---
 
 # Metodi Duplicati — Analisi Activity
@@ -193,3 +198,8 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 ---
 _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

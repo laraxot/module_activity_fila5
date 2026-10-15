@@ -1,4 +1,16 @@
-# AWS Test Bugfix vs Database Connection Configuration
+---
+module: theme
+topic: aws_test_vs_database_connection
+canonical: ../../../Themes/docs/shared-components/aws-test-vs-database-connection.md
+title: "aws test vs database connection"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "aws test vs database connection activity"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/aws-test-vs-database-connection.md# AWS Test Bugfix vs Database Connection Configuration
 
 ## Overview
 This document clarifies the distinction between two separate concepts that may appear related but serve completely different purposes:
@@ -42,3 +54,7 @@ This is required for proper database transaction management in the multi-tenant 
 
 ## Docblock Comments
 The pattern `/** @reference/to/documentation.md type */` may be used to document that a property can have a specific type while referencing documentation, but this pattern is specifically NOT appropriate for the Activity module's database connection property, which must always be 'activity'.
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

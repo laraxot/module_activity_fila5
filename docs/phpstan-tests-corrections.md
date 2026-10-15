@@ -1,3 +1,11 @@
+---
+title: "PHPStan Tests Corrections - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan tests corrections - activity module activity"
+---
 # PHPStan Tests Corrections - Activity Module
 
 **Data**: 2025-10-10
@@ -124,3 +132,7 @@ Sempre verificare con `instanceof` prima di accedere alle proprietà.
 ### UUID Handling
 Larav `Str::uuid()` restituisce `UuidInterface`, ma molti metodi richiedono `string`.
 Usare sempre `(string) $uuid` quando necessario.
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

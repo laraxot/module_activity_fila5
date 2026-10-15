@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Path Assets Resolution"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - path assets resolution activity"
+---
 # Activity Module - Path Assets Resolution
 
 **Data Creazione**: 2026-01-02
@@ -65,3 +73,7 @@ Il problema è stato risolto a livello di framework (Xot) con:
 ---
 
 **Filosofia**: Activity è non-intrusivo - non blocca il sistema per risorse opzionali.
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

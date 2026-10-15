@@ -1,3 +1,11 @@
+---
+title: "Accessor Delegation Pattern (SACRO)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "accessor delegation pattern (sacro) activity"
+---
 # Accessor Delegation Pattern (SACRO)
 
 Questo documento descrive il pattern di delegazione per gli accessor Eloquent con auto-persistenza, parte degli standard architetturali del modulo.
@@ -42,3 +50,8 @@ protected function getSomeValue(): float
 **Riferimenti**:
 - [Documento Canonico AI Agents](../../../../.agents/docs/accessor-auto-persistence.md)
 - [00-INDEX.md](00-INDEX.md)
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

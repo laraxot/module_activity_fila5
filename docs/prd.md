@@ -1,19 +1,11 @@
-# PRD: Activity Module
-=======
-# PRD - Activity Module
-
-## 1. Executive Summary
-The Activity module is responsible for tracking and logging all system actions, audit trails, and user interactions across the PTVX platform. It provides a centralized repository for observability and compliance.
-
-## 2. Target Personas
-- **System Administrators:** Monitor system health and audit logs.
-- **Security Officers:** Review access logs for compliance and security investigations.
-- **Internal Developers:** Integrate activity logging into other modules.
-
-## 🎯 Goals & Success Metrics
-- **Goal 1:** 100% PHPStan L10 compliance.
-- **Goal 2:** Seamless integration with XotBase.
->>>>>>> 8fad5a4 (.)
+---
+title: "PRD - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "prd - activity module activity"
+---
 # PRD - Activity Module
 
 ## 1. Executive Summary
@@ -43,3 +35,8 @@ The Activity module is responsible for tracking and logging all system actions, 
 - 100% PHPStan Level 10 compliance.
 - Test coverage > 80% for logging logic.
 - API documentation completed.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

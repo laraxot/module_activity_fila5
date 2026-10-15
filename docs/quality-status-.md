@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Quality Status (November 2025)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - quality status (november 2025) activity"
+---
 # Activity Module - Quality Status (November 2025)
 
 ## 🎯 Overview
@@ -156,3 +164,8 @@ public function withCustomProperties(array $attributes): static
 *
 *PHPStan Version: Latest*
 *PHPMD Version: Latest*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Sprint Planning"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - sprint planning activity"
+---
 # Activity Module - Sprint Planning
 
 **Module:** Activity  
@@ -79,3 +87,8 @@ Complete core activity tracking infrastructure with admin dashboard for viewing 
 ---
 
 *Last Updated: March 12, 2026*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

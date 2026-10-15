@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Analisi Coverage e Errori"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - analisi coverage e errori activity"
+---
 # Activity Module - Analisi Coverage e Errori
 
 ## Stato Attuale Coverage
@@ -150,3 +158,8 @@ Eseguendo `./vendor/bin/pest Modules/Activity/tests --coverage`:
 - [Laravel Modules Testing](https://laravelmodules.com/docs/12/advanced/tests)
 - [Pest Coverage](https://pestphp.com/docs/test-coverage)
 - [Laravel Testing](https://laravel.com/docs/12.x/testing)
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

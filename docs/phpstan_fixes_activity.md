@@ -1,3 +1,11 @@
+---
+title: "Correzioni PHPStan - Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "correzioni phpstan - modulo activity activity"
+---
 # Correzioni PHPStan - Modulo Activity
 
 ## 🚨 Errori PHPStan Risolti
@@ -42,3 +50,8 @@ $activities = \Modules\Activity\Database\Factories\ActivityFactory::new()
 - **PHPStan Level 9**: Compliance ripristinata
 
 *Ultimo aggiornamento: gennaio 2025*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

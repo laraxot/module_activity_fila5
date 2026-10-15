@@ -1,3 +1,11 @@
+---
+title: "Upgrade Laravel 13 - Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "upgrade laravel 13 - activity activity"
+---
 # Upgrade Laravel 13 - Activity 🐄✨
 
 ## 🎯 Visione Architetturale
@@ -24,3 +32,8 @@ L'aggiornamento richiede l'esecuzione di `composer go` dalla root per consolidar
 
 ---
 **Status**: Purificato e Pronto per il Futuro.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

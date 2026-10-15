@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Ottimizzazioni e Correzioni"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - ottimizzazioni e correzioni activity"
+---
 # Activity Module - Ottimizzazioni e Correzioni
 
 ## Panoramica
@@ -246,3 +254,7 @@ class ActivityService
 ## 💡 Conclusioni
 
 Il modulo Activity è funzionale ma necessita di pulizia e ottimizzazioni. Le correzioni prioritarie riguardano sicurezza e pulizia codebase, mentre le ottimizzazioni performance possono essere implementate gradualmente.
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

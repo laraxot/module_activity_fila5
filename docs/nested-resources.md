@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Nested Resource Implementation Guide"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - nested resource implementation guide activity"
+---
 # Activity Module - Nested Resource Implementation Guide
 
 ## Overview
@@ -175,3 +183,7 @@ Pattern minimo (quando applicabile):
 - Activity correlation across different modules
 - System-wide activity analytics
 - Business process tracking through activities
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

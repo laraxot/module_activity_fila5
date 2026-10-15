@@ -1,3 +1,11 @@
+---
+title: "PHPStan Errors - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan errors - activity module activity"
+---
 # PHPStan Errors - Activity Module
 
 **Date**: 2025-12-16
@@ -168,3 +176,7 @@ trait HasEvents
 **Last Updated**: 2025-12-16
 
 **Fix Complexity**: ⭐ (Very Easy - Just add return types)
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

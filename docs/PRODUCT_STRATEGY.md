@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Product Strategy"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - product strategy activity"
+---
 # Activity Module - Product Strategy
 
 **Module:** Activity  
@@ -101,3 +109,8 @@ Transform raw activity data into actionable intelligence.
 ---
 
 *Last Updated: March 12, 2026*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

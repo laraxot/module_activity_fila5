@@ -1,3 +1,11 @@
+---
+title: "Models Analysis - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "models analysis - activity module activity"
+---
 # Models Analysis - Activity Module
 
 ## Factory e Seeder Status
@@ -73,3 +81,8 @@ Factories enable testing of:
 - **Spatie Integration**: Leverages well-tested packages
 - **Event Sourcing Support**: Advanced architecture capability
 - **Proper Abstraction**: Base classes provide clean extension points
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

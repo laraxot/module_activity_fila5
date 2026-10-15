@@ -1,3 +1,11 @@
+---
+title: "copilot redundancy audit"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "copilot redundancy audit activity"
+---
 Copilot Redundancy Audit — 2026-05-25
 
 Sintesi
@@ -19,3 +27,8 @@ Prossimi step
 - Eseguire analisi automatica per metodi duplicati e refactor candidates; riportare risultati in docs/ dedicated.
 
 Autore: Copilot CLI
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -1,3 +1,11 @@
+---
+title: "Product Requirements Document (PRD)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "product requirements document (prd) activity"
+---
 # Product Requirements Document (PRD)
 
 ## Metadata
@@ -152,3 +160,8 @@ activities
 | Event Sourcing | Pattern architetturale con eventi |
 | Reactor | Handler che reagisce agli eventi |
 | Aggregate | Entity che gestisce sequence di eventi |
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

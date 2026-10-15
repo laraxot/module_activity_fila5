@@ -1,3 +1,11 @@
+---
+title: "Activity Module - User Research"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - user research activity"
+---
 # Activity Module - User Research
 
 **Module:** Activity  
@@ -99,3 +107,8 @@ Legal teams need configurable retention periods.
 ---
 
 *Last Updated: March 12, 2026*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

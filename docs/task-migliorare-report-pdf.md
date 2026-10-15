@@ -1,3 +1,11 @@
+---
+title: "Task: Migliorare Report PDF - Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "task: migliorare report pdf - activity activity"
+---
 # Task: Migliorare Report PDF - Activity
 
 **Modulo**: Activity
@@ -16,3 +24,8 @@ I report PDF di attivita' funzionano ma possono essere migliorati con grafici e 
 - [ ] Filtri per data range
 - [ ] Filtri per tipo attivita'
 - [ ] Export in formato Excel alternativo
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

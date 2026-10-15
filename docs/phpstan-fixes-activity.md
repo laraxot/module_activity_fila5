@@ -8,6 +8,7 @@ status: approved
 related:
   - ./phpstan-analysis-activity.md
   - ../../../../docs/wiki/memories/phpstan-modules-inventory.md
+qmd: "fix phpstan   modulo activity activity"
 ---
 
 # Fix PHPStan — modulo Activity
@@ -125,3 +126,7 @@ $activities = \Modules\Activity\Database\Factories\ActivityFactory::new()
 - **PHPStan Level 9**: Compliance ripristinata
 
 *Ultimo aggiornamento: gennaio 2025*
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

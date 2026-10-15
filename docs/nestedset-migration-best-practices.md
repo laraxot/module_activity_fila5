@@ -1,3 +1,11 @@
+---
+title: "NestedSet Migration Best Practices - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "nestedset migration best practices - activity module activity"
+---
 # NestedSet Migration Best Practices - Activity Module
 
 ## Overview
@@ -196,3 +204,8 @@ $table->index('sort_order');
 
 - [Documentazione principale](/docs/migration/nestedset-best-practices.md)
 - [Activity Module Architecture](/docs/architecture/activity-module.md)
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

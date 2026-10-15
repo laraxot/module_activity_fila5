@@ -1,3 +1,11 @@
+---
+title: "Risoluzione Conflitti Git - Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "risoluzione conflitti git - modulo activity activity"
+---
 # Risoluzione Conflitti Git - Modulo Activity
 
 ## Data Risoluzione
@@ -51,3 +59,7 @@ Tutti i file risolti rispettano:
 
 ---
 *Aggiornato automaticamente dopo risoluzione conflitti Git*
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

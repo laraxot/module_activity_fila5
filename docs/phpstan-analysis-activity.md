@@ -1,3 +1,11 @@
+---
+title: "PHPStan Analysis - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan analysis - activity module activity"
+---
 # PHPStan Analysis - Activity Module
 
 ## 📊 Status
@@ -79,3 +87,7 @@
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1
 **Filament Version**: 4.2.0
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

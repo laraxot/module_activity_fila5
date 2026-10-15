@@ -1,3 +1,11 @@
+---
+title: "Practical Event Sourcing Examples for Healthcare"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "practical event sourcing examples for healthcare activity"
+---
 # Practical Event Sourcing Examples for Healthcare
 
 ## Table of Contents
@@ -277,3 +285,8 @@ These examples demonstrate how event sourcing can be applied to various aspects 
 4. **Understandable**: The business logic is expressed in terms of domain events
 
 Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

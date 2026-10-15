@@ -2,6 +2,9 @@
 title: agent edit discipline — puntatore
 type: reference
 updated: 2026-05-21
+status: draft
+tags: [docs, activity]
+qmd: "disciplina edit e qualità (puntatore) activity"
 ---
 
 # Disciplina edit e qualità (puntatore)
@@ -16,3 +19,8 @@ Stub **DRY**: policy nella wiki di progetto; discussioni GitHub issue [#124](htt
 - Deduplica docs: [../../../../docs/wiki/how-to/module-docs-deduplication.md](../../../../docs/wiki/how-to/module-docs-deduplication.md)
 - Prompt LLM: [../../../../bashscripts/tools/prompts/llm-wiki.txt](../../../../bashscripts/tools/prompts/llm-wiki.txt) §2.1
 - Autocompact thrashing (recovery): [../../../../docs/wiki/how-to/autocompact-thrashing-recovery.md](../../../../docs/wiki/how-to/autocompact-thrashing-recovery.md)
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

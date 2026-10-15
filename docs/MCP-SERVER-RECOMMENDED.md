@@ -1,3 +1,11 @@
+---
+title: "MCP Server Consigliati per il Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "mcp server consigliati per il modulo activity activity"
+---
 # MCP Server Consigliati per il Modulo Activity
 
 ## Scopo del Modulo
@@ -21,3 +29,8 @@ Gestione delle attività utente, log, cron e tracciamento eventi.
 
 ## Note
 - Adatta la configurazione se il modulo interagisce con sistemi di terze parti.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

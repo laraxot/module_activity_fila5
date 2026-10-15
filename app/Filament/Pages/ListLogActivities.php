@@ -27,6 +27,8 @@ use Modules\Activity\Models\Activity;
 use Modules\Xot\Filament\Resources\Pages\XotBasePage;
 use Webmozart\Assert\Assert;
 
+use function Safe\json_encode;
+
 /**
  * Classe base per visualizzare lo storico delle attività di un record.
  *
@@ -65,7 +67,10 @@ abstract class ListLogActivities extends XotBasePage
 
         // Convert to string (__() returns string|array|null)
         if (is_array($breadcrumb)) {
-            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $breadcrumb));
+            return implode(' ', array_map(
+                fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v),
+                $breadcrumb,
+            ));
         }
 
         if (is_string($breadcrumb)) {
@@ -89,7 +94,10 @@ abstract class ListLogActivities extends XotBasePage
 
         // __() returns string|array|null
         if (is_array($title)) {
-            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $title));
+            return implode(' ', array_map(
+                fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v),
+                $title,
+            ));
         }
 
         if (is_string($title)) {
@@ -270,7 +278,7 @@ abstract class ListLogActivities extends XotBasePage
     {
         $title = __('activity::activities.events.restore_successful');
         $titleString = is_array($title)
-            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
+            ? implode(' ', array_map(fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v), $title))
             : (is_string($title) ? $title : '');
 
         return Notification::make()
@@ -283,7 +291,10 @@ abstract class ListLogActivities extends XotBasePage
     {
         $title = __('activity::activities.events.restore_failed');
         $titleString = is_array($title)
-            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
+            ? implode(' ', array_map(
+                fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v),
+                $title,
+            ))
             : (is_string($title) ? $title : '');
 
         $notification = Notification::make()

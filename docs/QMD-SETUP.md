@@ -5,7 +5,7 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [qmd, search, docs, performance]
 related:
-  - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+  - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
 ---
 
 # QMD Setup per Module **Activity**
@@ -18,7 +18,7 @@ Il progetto usa una collection QMD centralizzata in  che include:
 
 ```yaml
 collection:
-  name: fixcity
+  name: ptv
   source: docs/wiki  # Include tutti i moduli
   
 paths:
@@ -87,8 +87,13 @@ graph TD
 ## Riferimenti
 
 - [Global QMD Config](../qmd.md) (root docs)
-- [Operational Discipline](../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
+- [Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
 - [On-Demand Pattern](./ON-DEMAND-PATTERN.md)
 
 ---
 *Cache: ~/.cache/qmd-cache/ | Index: ~/.cache/qmd-cache/index*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

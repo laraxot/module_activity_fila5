@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;

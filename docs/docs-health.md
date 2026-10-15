@@ -1,3 +1,11 @@
+---
+title: "Docs Health - Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "docs health - activity activity"
+---
 # Docs Health - Activity
 
 ## Snapshot
@@ -29,3 +37,8 @@
 
 ---
 Generated during docs confidence hardening batch (2026-03-07).
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

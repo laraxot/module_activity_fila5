@@ -1,3 +1,11 @@
+---
+title: "Activity Log PDF Reports"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity log pdf reports activity"
+---
 # Activity Log PDF Reports
 
 ## 📋 Overview
@@ -647,3 +655,7 @@ private function generateFallbackPdf($user, Exception $e): string
 **Version:** 1.0.0
  **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

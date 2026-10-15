@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Query Optimization Analysis"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - query optimization analysis activity"
+---
 # Activity Module - Query Optimization Analysis
 
 ## Overview
@@ -315,3 +323,7 @@ DB::listen(function ($query) {
 ```
 
 This optimization plan will significantly improve the Activity module's performance while maintaining all existing functionality.
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

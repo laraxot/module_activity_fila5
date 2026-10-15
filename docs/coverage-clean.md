@@ -1,3 +1,11 @@
+---
+title: "coverage clean"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "coverage clean activity"
+---
   Activity/app/Actions/ActivityLogger ................................... 0.0%  
   Activity/app/Actions/LogActivityAction ................................ 0.0%  
   Activity/app/Actions/LogModelCreatedAction ............................ 0.0%  
@@ -35,3 +43,8 @@
   Activity/app/Models/StoredEvent ..................................... 100.0%  
   Activity/app/Traits/HasEvents ......................................... 0.0%  
   Activity/app/Traits/HasSnapshots .................................... 100.0%  
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

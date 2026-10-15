@@ -1,3 +1,11 @@
+---
+title: "CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "critical architecture rule: no migrate:fresh activity"
+---
 # CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH
 
 ## Rule
@@ -11,3 +19,8 @@
 ## Correct Approach
 - Only use `DatabaseTransactions` to rollback state after tests.
 - Maintain strict database boundaries.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

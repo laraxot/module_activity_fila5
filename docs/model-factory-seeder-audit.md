@@ -1,3 +1,11 @@
+---
+title: "Model/Factory/Seeder Audit"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "model/factory/seeder audit activity"
+---
 # Model/Factory/Seeder Audit
 
 Generated: 2025-08-22 16:20
@@ -17,3 +25,7 @@ Generated: [DATE] 16:20
 ## Actions
 - Add seeding inside `Modules/Activity/database/seeders/ActivityDatabaseSeeder.php`
 - Keep factories updated with strict typing
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

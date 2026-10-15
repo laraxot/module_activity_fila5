@@ -1,3 +1,11 @@
+---
+title: "Best Practices – Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "best practices   activity activity"
+---
 # Best Practices – Activity
 
 ## Principi DRY/KISS
@@ -14,5 +22,10 @@
 - Copri casi limite come transizioni di stato non valide.
 
 ## Documentazione
-- Aggiorna `docs/INDEX.md` con nuovi modelli e relazioni.
+- Aggiorna `docs/index.md` con nuovi modelli e relazioni.
 - Collega a `Projects` e `Tasks` per contesto operativo.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
