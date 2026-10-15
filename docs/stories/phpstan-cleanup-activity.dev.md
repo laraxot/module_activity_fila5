@@ -2,7 +2,7 @@
 title: "[DEV] PHPStan cleanup — Activity"
 type: dev
 module: Activity
-story: "./2026-10-06-phpstan-cleanup-activity.story.md"
+story: "./phpstan-cleanup-activity.story.md"
 status: done
 created: 2026-10-06
 updated: 2026-10-06

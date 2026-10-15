@@ -97,7 +97,7 @@ Activity/docs/
 
 ### Created
 - `docs/TODO.md` — Consolidation tracking and next steps
-- `docs/stories/consolidation-activity-docs-2026-10-06.story.md` — This story
+- `docs/stories/consolidation-activity-docs.story.md` — This story
 - `docs/wiki/testing/` — New directory (11 files)
 - `docs/wiki/analysis/` — New directory (2 files)
 - `docs/wiki/features/` — New directory (2 files)
