@@ -35,11 +35,8 @@ laraxot/master, non una modifica intenzionale).
 Rimosso di nuovo oggi, stessa diagnosi di `696303d6`. Se ricompare una quarta
 volta, la causa è a monte (storia condivisa `laraxot/dev` mai sistemata), non
 questo file — vedi story `5.27-laraxot-master-pollution-ricorrente`.
-<<<<<<< .merge_file_hXhXWc
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_p712MM
