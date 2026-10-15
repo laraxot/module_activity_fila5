@@ -84,7 +84,7 @@ riferimento primario; tutte le varianti restano elencate in fondo, sezione
 - [filament-table-architecture.md](filament-table-architecture.md) — la tabella si configura nella classe Table, non nella Page.
 - [filament-actions-usage.md](filament-actions-usage.md) — uso delle Filament Actions nel modulo.
 - [filament5-pattern-migration.md](filament5-pattern-migration.md) — migrazione pattern verso Filament 5.
-- [migration-filament.md](migration-filament.md) / [migration-filament-4.md](migration-filament-4.md) / [migrazione-filament.md](migrazione-filament.md) / [migrazione-filament-4.md](migrazione-filament-4.md) — stub quasi vuoti (6-7 righe) su migrazione Filament 4; contenuto reale nella guida `guida-migrazione-step-by-step.md`.
+- [migration-filament.md](migration-filament.md) / [migration-filament-4.md](migration-filament.md) / [migrazione-filament.md](migrazione-filament.md) / [migrazione-filament-4.md](migrazione-filament.md) — stub quasi vuoti (6-7 righe) su migrazione Filament 4; contenuto reale nella guida `guida-migrazione-step-by-step.md`.
 - [guida-migrazione-step-by-step.md](guida-migrazione-step-by-step.md) — guida step-by-step migrazione Filament 4.
 - [filament-version.md](filament-version.md) — dichiarazione versione Filament del modulo.
 - [filament-errors.md](filament-errors.md) — errori comuni Filament (versione piu' estesa, 330 righe; varianti in Storico).
@@ -471,8 +471,8 @@ intenzionale di "on-demand", non un incidente di duplicazione): `ai-methodologie
 `git-conflicts-resolution-sumy.md`, `guides/event-sourcing.md`, `guides/event_sourcing.md`,
 `jpgraph.md`, `logging_optimization.md`, `login-test-implementation.md`,
 `mcp_server_recommended.md`, `MCP_SERVER_RECOMMENDED.md`, `merge-conflict-files-list.md`,
-`metodiuplicati-analisi.md`, `migration-filament.md`, `migration-filament-4.md`,
-`migrazione-filament.md`, `migrazione-filament-4.md`, `outputs/README.md`,
+`metodiuplicati-analisi.md`, `migration-filament.md`, `migration-filament.md`,
+`migrazione-filament.md`, `migrazione-filament.md`, `outputs/README.md`,
 `performance/archive/activity_log_optimization-renamed.md`, `phpinsightss.md`,
 `phpmd.md`, `phpmd.md`, `phpmd_analysis.md`, `PHPMD_ANALYSIS.md`, `phpmds.md`,
 `phpstan.md`, `phpstan_fixes.md`, `quality-status-nov.md`, `query-optimization.md`,
@@ -504,7 +504,7 @@ Questi 4 gruppi restano come testimonianza storica di un import automatico mal r
 
 `domain-logic.md`, `data-models.md`, `validation.md`, `integration.md`, `workflows.md`,
 `troubleshooting.md`, `2024-03-27.md`, `archived-note.md`, `documentation.md`,
-`documentation-2024-03-27.md`, `documentation-archive-1.md` e i loro equivalenti nelle
+`documentation.md`, `documentation-archive-1.md` e i loro equivalenti nelle
 cartelle di import grezzo sopra citate (49 file a 0 righe in tutto il modulo).
 
 ## Numeri di questo audit
