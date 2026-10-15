@@ -2,7 +2,7 @@
 title: "Testing Rules Summary"
 type: note
 status: draft
-updated: 2026-10-08
+updated: 2026-10-15
 tags: [docs, activity]
 qmd: "testing rules summary activity"
 ---
@@ -118,3 +118,15 @@ I file di documentazione vanno nelle cartelle `docs/` dentro ogni modulo/tema.
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+
+## Cartella `tests/` (minuscolo obbligatorio)
+
+- Nei moduli Laravel la directory dei test e' **`tests/`** (tutto minuscolo).
+- **`Tests/` e' vietato**: su filesystem case-insensitive collide con `tests/`, rompe autoload PSR-4 e confonde Pest/PHPUnit.
+- Path canonici: `laravel/Modules/<Modulo>/tests/`, `laravel/Themes/<Tema>/tests/`, `laravel/tests/`.
+
+## PHPStan standing order
+
+- Obiettivo: **zero errori** PHPStan sul codice del modulo.
+- Non modificare `phpstan.neon` del progetto per "far passare" i fail.
+- Qualita' + documentazione del modulo + BMAD vanno avanti insieme al fix, non dopo.
