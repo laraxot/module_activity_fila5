@@ -42,8 +42,11 @@ See `/docs/BOOST_SKILL_SOLUTION_PLAN.md` for complete solution details.
 - User action tracking
 - Activity reports
 - Module integration
+<<<<<<< .merge_file_HUETc4
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_ofbrXI

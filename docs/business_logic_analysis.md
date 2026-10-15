@@ -200,8 +200,12 @@ The Activity module provides comprehensive audit logging and event sourcing capa
 - **Security**: Provides audit trails for security incidents
 - **Debugging**: Helps diagnose application issues
 - **Analytics**: Enables user behavior analysis
+<<<<<<< .merge_file_9zVnFr
 - **Accountability**: Tracks user actions for accountability
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+- **Accountability**: Tracks user actions for accountability
+>>>>>>> .merge_file_Oq7836

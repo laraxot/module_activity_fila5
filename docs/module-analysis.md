@@ -327,8 +327,11 @@ activity()->withProperties([
 **Versione**: v2.5.0-beta  
 **Stato**: Production Ready with Compliance Enhancement=======
 - Machine learning capabilities
+<<<<<<< .merge_file_C4eNpa
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_yRz4S5

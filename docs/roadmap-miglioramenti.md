@@ -98,8 +98,11 @@ onesto che l'unica cosa fuori controllo qui è quanto testo produciamo
 *parlando* del modulo invece di lasciarlo parlare da solo. Il modulo più
 maturo del progetto non è quello con più `docs/`, è quello con l'`index.md`
 più corto che resta vero per più tempo.
+<<<<<<< .merge_file_hPgFqj
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_xWcDLQ
