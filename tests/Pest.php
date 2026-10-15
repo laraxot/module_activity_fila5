@@ -1,2 +1,4 @@
 <?php
-uses(\Modules\Activity\Tests\TestCase::class)->in('Unit');
+
+declare(strict_types=1);
+require_once __DIR__.'/PestHelpers.php';
