@@ -216,3 +216,7 @@ Activity dipende da User per `causedBy()`. Assicurarsi che:
 **Stato:** Pronto per implementazione
 **Righe:** 156 → ~40 (-74%)
 **Filosofia:** MySQL Production = MySQL Tests ✅
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

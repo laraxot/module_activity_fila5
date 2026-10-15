@@ -35,3 +35,8 @@ The Activity module is responsible for tracking and logging all system actions, 
 - 100% PHPStan Level 10 compliance.
 - Test coverage > 80% for logging logic.
 - API documentation completed.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -76,3 +76,7 @@ Il modulo Activity è completamente configurato con tutte le factory necessarie 
 ---
 *Ultimo aggiornamento: 2025-01-06*
 *Analizzato da: Sistema di analisi automatica moduli*
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

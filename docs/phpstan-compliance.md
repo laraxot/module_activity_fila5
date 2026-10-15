@@ -47,3 +47,7 @@ The module follows these coding standards:
 - Comprehensive type hints
 - Null safety practices
 - Modern PHP 8.2+ features utilization
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

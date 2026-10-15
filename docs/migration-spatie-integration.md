@@ -136,3 +136,8 @@ Per activity_log, il nome corretto è `create_activity_log_table.php`, non `fix_
 
 *=======
 *Ultimo aggiornamento: 2026-02-26*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

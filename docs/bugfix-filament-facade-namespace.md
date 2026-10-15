@@ -227,7 +227,7 @@ Usare sempre file esistenti del progetto come riferimento per i namespace.
 
 - [ListLogActivitiesAction.php](../app/Filament/Actions/ListLogActivitiesAction.php) - File fixato
 - [XotBasePage.php](../../Xot/app/Filament/Pages/XotBasePage.php) - Reference corretta
-- [Activity Module README](./readme.md)
+- [Activity Module README](./README.md)
 
 ### Regole e Best Practices
 
@@ -278,3 +278,7 @@ Usare sempre file esistenti del progetto come riferimento per i namespace.
 **Stato:** ✅ RISOLTO - Pronto per produzione
 **Severity:** 🔴 CRITICA (500 error)
 **Time to Fix:** 2 minuti
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

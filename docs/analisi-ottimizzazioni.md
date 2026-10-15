@@ -258,3 +258,7 @@ php artisan test
 **ultimo aggiornamento**: 20 agosto 2025
 **analista**: claude code
 **stato**: pronto per implementazione
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

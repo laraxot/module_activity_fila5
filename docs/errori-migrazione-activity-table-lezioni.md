@@ -357,3 +357,7 @@ Questa lezione è ora memorizzata permanentemente per:
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Lezione appresa: Context-aware migrations con supporto UUID*
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

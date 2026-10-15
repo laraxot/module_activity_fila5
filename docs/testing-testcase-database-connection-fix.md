@@ -84,3 +84,7 @@ protected function setUp(): void
 
 **Status**: Completed
 **Risultato**: Test Activity ora configurano correttamente le connessioni database
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

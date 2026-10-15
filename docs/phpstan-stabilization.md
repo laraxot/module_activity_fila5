@@ -29,3 +29,8 @@ This document tracks the systematic effort to achieve and maintain PHPStan Level
 
 ---
 *This document is maintained as a living record of the module's quality status.*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

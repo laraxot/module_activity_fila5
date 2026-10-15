@@ -44,3 +44,8 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Cms/project_docs/lang-link.md)=======
 See canonical documentation: ../../../Themes/docs/shared-components/lang-link-collegamento-alle.md
 See canonical documentation: ../../../Themes/docs/shared-components/lang-link-collegamento-alle.md
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
