@@ -92,3 +92,8 @@ class BulkActivityService
 
 ---
 *Stato: 🟡 Funzionale ma Necessita Ottimizzazione Performance*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -242,3 +242,7 @@ Potrebbero esserci altri casi di import duplicati oltre a Override:
 **Ultimo aggiornamento**: [DATE]
 **Versione**: 1.0.0
 **Status**: In corso di implementazione
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

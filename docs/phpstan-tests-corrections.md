@@ -132,3 +132,7 @@ Sempre verificare con `instanceof` prima di accedere alle proprietà.
 ### UUID Handling
 Larav `Str::uuid()` restituisce `UuidInterface`, ma molti metodi richiedono `string`.
 Usare sempre `(string) $uuid` quando necessario.
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -13,3 +13,8 @@ Specialized requirement for Activity within the Public Administration sector.
 
 ## 💎 Unique Value Proposition
 Agnostic, modular, and type-safe implementation of Activity logic.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

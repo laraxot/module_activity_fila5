@@ -534,3 +534,7 @@ class Survey extends BaseModel
 
 **"The system's memory is only as good as its ability to recall what matters when it matters."**
 *- Super Mucca Methodology*
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

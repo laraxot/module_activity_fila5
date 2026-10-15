@@ -35,3 +35,8 @@ Gestione delle attività utente, log, cron e tracciamento eventi.
 
 ## Note
 - Adatta la configurazione se il modulo interagisce con sistemi di terze parti.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

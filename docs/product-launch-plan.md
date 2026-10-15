@@ -72,6 +72,12 @@ qmd: "activity module - product launch plan# activity - product launch plan acti
 | 2:00 PM | Admin access enabled | PM |
 | 4:00 PM | Metrics review | Team |
 
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+
 ---
 
 ## Post-Launch Activities
