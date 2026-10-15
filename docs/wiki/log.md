@@ -18,7 +18,7 @@ status: draft
 ## [2026-10-14] docs | Ingressi di `docs/` riallineati al codice
 
 - Riscritti con fatti verificati su `app/`, `routes/`, `config/`, `database/migrations`, `tests/`: [README.md](../README.md), [00-INDEX.md](../00-INDEX.md) (indice canonico: stato delle cartelle e famiglie della radice con conteggi), [INDEX.md](../INDEX.md) (solo inventario numerico), [README.md](./README.md) di questa wiki. Corretti i link di [INDEX.md](./INDEX.md) della wiki e tolti da `../index.md` i 40 link a `tasks/` e `roadmap/tasks/` (file rimossi nel commit `7e00cedf` del 2026-10-08).
-- Marcati `stale` senza cambiare il contenuto: `../ARCHITECTURE.md` (Repositories, Services e Projections inesistenti), `../API.md` (firma `execute(array $data)` inesistente), `../readme.md` (`ActivityStatsWidget` e `EventStore` inesistenti) e le copie di indice `../00-index.md`, `../00-index-documentation.md`, `00-INDEX.md`, `00-index.md`, `00-index-1.md`, `index.md`.
+- Marcati `stale` senza cambiare il contenuto: `../ARCHITECTURE.md` (Repositories, Services e Projections inesistenti), `../API.md` (firma `execute(array $data)` inesistente), `../readme.md` (`ActivityStatsWidget` e `EventStore` inesistenti) e le copie di indice `../00-index.md`, `../00-index-documentation.md`, `00-INDEX.md`, `00-index.md`, `00-index-documentation.md`, `index.md`.
 - Nel codice: `LoginListener::handle()` e' vuoto, nessuna rotta attiva, PHPStan su `Modules/Activity` esce con 0. Quattro migrazioni `create_activity_table` restano accanto a quella "unica" del 2026-06-10 (la voce del 2026-06-10 qui sotto cita `140000`, il file e' `141000`).
 - Link non risolti sui file toccati e verifiche: [story](../stories/docs-ingressi-activity.story.md).
 
