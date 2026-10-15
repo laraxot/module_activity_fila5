@@ -224,11 +224,8 @@ Event Sourcing provides a robust foundation for healthcare applications by ensur
 - [Event Sourcing in Laravel by Brent Roose](https://event-sourcing-laravel.com/)
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/project_docs/laravel-event-sourcing/v7/)
 - [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)
-<<<<<<< .merge_file_DR8uC3
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_mol9oz

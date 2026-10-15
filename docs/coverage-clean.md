@@ -49,11 +49,8 @@ Activity/app/Actions/ActivityLogger ................................... 0.0%
   Activity/app/Models/StoredEvent ..................................... 100.0%
   Activity/app/Traits/HasEvents ......................................... 0.0%
   Activity/app/Traits/HasSnapshots .................................... 100.0%
-<<<<<<< .merge_file_jPMVnR
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_ewidYS

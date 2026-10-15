@@ -31,11 +31,8 @@ ambiguo cosa sia la SSoT. La cronologia vive in Git, non in cartelle.
 - Nessuna cartella `archive/`: i file restano dov'erano, solo disabilitati
 - Canon attivo: `2026_06_10_141000_create_activity_table.php` (`XotBaseMigration`, consolida
   `add_attribute_changes` + `fix_causer` + `update_schema`)
-<<<<<<< .merge_file_2Oacgk
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_k6INUq

@@ -34,11 +34,8 @@ XDEBUG_MODE=coverage php -d memory_limit=2G ./vendor/bin/pest Modules/Activity/t
 
 - PHPStan gira a level max su tutto `Modules/`: il valore sopra è quello del singolo modulo.
 - Il coverage completo per tutti i moduli è costoso (~2 min/modulo con Xdebug): da eseguire selettivamente o via CI.
-<<<<<<< .merge_file_1feHn0
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_XX6rAF
