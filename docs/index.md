@@ -46,8 +46,8 @@ riferimento primario; tutte le varianti restano elencate in fondo, sezione
 - [third-party-model-patterns.md](third-party-model-patterns.md) — pattern per modelli di terze parti.
 - [business-logic-overview.md](business-logic-overview.md) — panoramica sintetica della business logic.
 - [business-logic-analysis.md](business-logic-analysis.md) — analisi estesa (392 righe, versione piu' completa; varianti in Storico).
-- [module.md](module.md) — "Modulo Activity - Logging e Event Sourcing" (vedi nota Storico su `module_analysis.md`).
-- [module-analysis.md](module-analysis.md) — analisi comprensiva del modulo (contenuto diverso da `module.md`/`module_analysis.md` nonostante il nome simile — collisione di naming, non duplicato di contenuto).
+- [module.md](module.md) — "Modulo Activity - Logging e Event Sourcing" (vedi nota Storico su `module-analysis.md`).
+- [module-analysis.md](module-analysis.md) — analisi comprensiva del modulo (contenuto diverso da `module.md`/`module-analysis.md` nonostante il nome simile — collisione di naming, non duplicato di contenuto).
 - [module-root-hygiene.md](module-root-hygiene.md) — perche' la root del modulo resta pulita.
 - [module-path-assets-resolution.md](module-path-assets-resolution.md) — risoluzione path/assets del modulo.
 - [anti-pattern-model-env-hack.md](anti-pattern-model-env-hack.md) — anti-pattern: logica env-specifica nei model.
@@ -65,7 +65,7 @@ riferimento primario; tutte le varianti restano elencate in fondo, sezione
 - [database/migrations.md](database/migrations.md) — guida alle migrazioni del modulo.
 - [migrations.md](migrations.md) — "Activity — Migrazioni" (MIGRATIONS.md duplicato per maiuscole, vedi Storico).
 - [migration-policy.md](migration-policy.md) — politica di gestione delle migrazioni.
-- [critical_migration_constraints.md](critical_migration_constraints.md) — vincolo critico: mai `migrate:refresh/fresh/rollback --force` (CRITICAL_MIGRATION_CONSTRAINTS.md duplicato, vedi Storico).
+- [critical_migration_constraints.md](critical-migration-constraints.md) — vincolo critico: mai `migrate:refresh/fresh/rollback --force` (CRITICAL_MIGRATION_CONSTRAINTS.md duplicato, vedi Storico).
 - [rules-testing-no-migrate-fresh.md](rules-testing-no-migrate-fresh.md) — regola test: no `migrate:fresh`.
 - [nestedset-migration-best-practices.md](nestedset-migration-best-practices.md) — best practice migrazioni NestedSet.
 - [migration-spatie-integration.md](migration-spatie-integration.md) — integrazione migrazioni con Spatie Activity Log.
@@ -76,7 +76,7 @@ riferimento primario; tutte le varianti restano elencate in fondo, sezione
 ## Filament / UI
 
 - [filament.md](filament.md) — nota minima (2 righe).
-- [filament-resources.md](filament-resources.md) — risorse Filament nel modulo (versione piu' estesa, 339 righe; `filament_resources.md` duplicato in Storico).
+- [filament-resources.md](filament-resources.md) — risorse Filament nel modulo (versione piu' estesa, 339 righe; `filament-resources.md` duplicato in Storico).
 - [filament-resource-guidelines.md](filament-resource-guidelines.md) — linee guida risorse (versione piu' estesa, 221 righe; varianti in Storico).
 - [filament-5-nested-resources-complete-guide.md](filament-5-nested-resources-complete-guide.md) — guida completa risorse annidate Filament 5.x.
 - [filament-5-nested-resources.md](filament-5-nested-resources.md) — guida piu' breve, stesso argomento (da valutare fusione con la guida completa, non e' un duplicato letterale).
@@ -91,8 +91,8 @@ riferimento primario; tutte le varianti restano elencate in fondo, sezione
 - [filament/errors/label-usage-error.md](filament/errors/label-usage-error.md) — mai usare `->label()` nei componenti Filament.
 - [filament/errors/static-instance-method-incompatibility.md](filament/errors/static-instance-method-incompatibility.md) — incompatibilita' metodi statici/istanza in Filament.
 - [bugfix-filament-facade-namespace.md](bugfix-filament-facade-namespace.md) — bugfix namespace facade Filament.
-- [bugfix-getTablePage-mixed-return.md](bugfix-getTablePage-mixed-return.md) — bugfix `getTablePage()` ritorna `mixed` (PHPStan).
-- [bugfix-getUrl-signature-mismatch.md](bugfix-getUrl-signature-mismatch.md) — bugfix signature `getUrl()` + drift enum/colonne.
+- [bugfix-getTablePage-mixed-return.md](bugfix-get-table-page-mixed-return.md) — bugfix `getTablePage()` ritorna `mixed` (PHPStan).
+- [bugfix-getUrl-signature-mismatch.md](bugfix-get-url-signature-mismatch.md) — bugfix signature `getUrl()` + drift enum/colonne.
 - [filament/filament-v4-icon-size-fix.md](filament/filament-v4-icon-size-fix.md) — fix dimensione icone Filament v4 (versione piu' estesa 138 righe; varianti in Storico).
 - [filament/filament-v4-upgrade-documentation.md](filament/filament-v4-upgrade-documentation.md) — upgrade Filament v4 (varianti in Storico).
 - [filament/archive/filament-v4-icon-size-fix.md](filament/archive/filament-v4-icon-size-fix.md), [filament/archive/filament-v4-upgrade.md](filament/archive/filament-v4-upgrade.md) — copie archiviate degli stessi documenti (vedi Storico).
@@ -117,8 +117,8 @@ riferimento primario; tutte le varianti restano elencate in fondo, sezione
 
 - [module.md](module.md) — vedi sopra (logging + event sourcing).
 - [event-sourcing-duplicate.md](event-sourcing-duplicate.md) — "Event Sourcing in Laravel" (nome storico "duplicate" ma e' l'unica versione con contenuto reale; `event-sourcing.md` e' uno stub puntatore, vedi Storico).
-- [event_sourcing_examples.md](event_sourcing_examples.md) — esempi pratici di event sourcing per healthcare (`event-sourcing-examples-duplicate.md` identico, vedi Storico).
-- [event_sourcing_introduction.md](event_sourcing_introduction.md) — introduzione event sourcing (`event-sourcing-introduction-duplicate.md` variante, vedi Storico).
+- [event_sourcing_examples.md](event-sourcing-examples.md) — esempi pratici di event sourcing per healthcare (`event-sourcing-examples-duplicate.md` identico, vedi Storico).
+- [event_sourcing_introduction.md](event-sourcing-introduction.md) — introduzione event sourcing (`event-sourcing-introduction-duplicate.md` variante, vedi Storico).
 - [advanced-event-sourcing-patterns.md](advanced-event-sourcing-patterns.md) — pattern avanzati per applicazioni healthcare (versione piu' estesa 224 righe; 4 varianti quasi identiche in Storico).
 - [advanced-event-sourcings.md](advanced-event-sourcings.md) — variante con titolo identico ma nome file diverso (non intercettata dal raggruppamento automatico; contenuto da confrontare con `advanced-event-sourcing-patterns.md`).
 - [guides/archive/event-sourcing.md](guides/archive/event-sourcing.md) — guida completa event sourcing, archiviata (`guides/event-sourcing.md` e `guides/event_sourcing.md` sono stub puntatori vuoti, vedi Storico).
@@ -163,7 +163,7 @@ sono elencati nello Storico.
 - [coverage-analysis.md](coverage-analysis.md), [coverage-plan.md](coverage-plan.md), [coverage-status.md](coverage-status.md), [coverage-coordination-workflow.md](coverage-coordination-workflow.md) — analisi, piano e stato coverage.
 - [coverage.md](coverage.md) — nota di sessione PHPStan 2026-09-02 (contiene anche un puntatore boilerplate a Themes; il contenuto rilevante e' la nota di sessione in fondo al file).
 - [coverage-full.md](coverage-full.md) — output esteso (2930 righe) di una run di coverage/PHPStan; da trattare come log grezzo, non come guida.
-- [coverage-clean.md](coverage-clean.md) / [coverage_clean.md](coverage_clean.md) — varianti dello stesso log ripulito (vedi Storico).
+- [coverage-clean.md](coverage-clean.md) / [coverage_clean.md](coverage-clean.md) — varianti dello stesso log ripulito (vedi Storico).
 - [login-test-implementation-summary.md](login-test-implementation-summary.md) — login test implementation summary (versione piu' estesa 429 righe; 4 varianti in Storico).
 - [testing-structure-login-analysis.md](testing-structure-login-analysis.md) — vedi sopra.
 
@@ -191,22 +191,22 @@ sono elencati nello Storico.
 - [code-redundancy-audit.md](code-redundancy-audit.md) — audit ridondanza codice.
 - [duplicate-methods-analysis.md](duplicate-methods-analysis.md) — analisi metodi duplicati (documento principale in inglese).
 - [metodi-duplicati-analisi.md](metodi-duplicati-analisi.md) — "SUPER MUCCA EDITION", 1098 righe, versione piu' estesa dell'analisi in italiano (varianti in Storico).
-- [duplicate_methods.md](duplicate_methods.md), [duplicate_methods_report.md](duplicate_methods_report.md) — report correlati su metodi con nome duplicato nei moduli/temi.
+- [duplicate_methods.md](duplicate-methods.md), [duplicate_methods_report.md](duplicate-methods-report.md) — report correlati su metodi con nome duplicato nei moduli/temi.
 - [wiki/concepts/duplicate-method-bodies.md](wiki/concepts/duplicate-method-bodies.md), [wiki/concepts/method-name-homonyms.md](wiki/concepts/method-name-homonyms.md) — censimento corpi/metodi omonimi (wiki, piu' recenti).
 - [redundancy-audit.md](redundancy-audit.md) — audit ridondanza 2026-05-21 (`redundancy-audit.md` e' lo stesso contenuto con nome datato, vedi Storico).
 - [copilot-redundancy-audit.md](copilot-redundancy-audit.md) — audit ridondanza (variante `-2026-05-25` identica, vedi Storico).
-- [consolidation_analysis.md](consolidation_analysis.md) — analisi di consolidamento (CONSOLIDATION_ANALYSIS.md duplicato maiuscolo, vedi Storico).
+- [consolidation_analysis.md](consolidation-analysis.md) — analisi di consolidamento (CONSOLIDATION_ANALYSIS.md duplicato maiuscolo, vedi Storico).
 - [dry-kiss-analysis.md](dry-kiss-analysis.md) — analisi DRY & KISS (varianti `-latest`/`-.md` identiche, vedi Storico).
 - [dry-kiss.md](dry-kiss.md) — versione piu' corta, stesso argomento.
 - [ottimizzazioni-dry-kiss.md](ottimizzazioni-dry-kiss.md) — ottimizzazioni DRY+KISS (documento distinto, piu' esteso).
 - [optimization-analysis.md](optimization-analysis.md), [analisi-ottimizzazioni.md](analisi-ottimizzazioni.md), [ottimizzazioni-correzioni.md](ottimizzazioni-correzioni.md), [modules-optimization-analysis.md](modules-optimization-analysis.md) — quattro audit di ottimizzazione distinti nel tempo, forte sovrapposizione tematica ma non identici: candidati a consolidamento futuro (vedi `task-consolidare-documentazione.md`).
 - [bottlenecks.md](bottlenecks.md) — colli di bottiglia e soluzioni.
-- [query-optimization-analysis.md](query-optimization-analysis.md) — nota: file quasi vuoto (7 righe); il contenuto reale (316 righe) e' in `query_optimization_analysis.md` (vedi Storico).
-- [logging-optimization.md](logging-optimization.md) — ottimizzazione logging (`logging_optimization.md` e' uno stub puntatore vuoto, vedi Storico).
+- [query-optimization-analysis.md](query-optimization-analysis.md) — nota: file quasi vuoto (7 righe); il contenuto reale (316 righe) e' in `query-optimization-analysis.md` (vedi Storico).
+- [logging-optimization.md](logging-optimization.md) — ottimizzazione logging (`logging-optimization.md` e' uno stub puntatore vuoto, vedi Storico).
 - [quality-analysis/activity-module-quality-report.md](quality-analysis/activity-module-quality-report.md) — report qualita' modulo.
 - [quality-audit.md](quality-audit.md) — audit di qualita'.
-- [quality_report.md](quality_report.md) — quality report (QUALITY_REPORT.md duplicato maiuscolo, vedi Storico).
-- [quality-status.md](quality-status.md) — stato qualita' novembre 2025 (`quality-status-.md` identico, `quality-status-activity-module-november.md` quasi identico, `quality-status-nov.md` e' stub puntatore vuoto; vedi Storico).
+- [quality_report.md](quality-report.md) — quality report (QUALITY_REPORT.md duplicato maiuscolo, vedi Storico).
+- [quality-status.md](quality-status.md) — stato qualita' novembre 2025 (`quality-status.md` identico, `quality-status-activity-module-november.md` quasi identico, `quality-status-nov.md` e' stub puntatore vuoto; vedi Storico).
 - [psr4-autoloading-fix.md](psr4-autoloading-fix.md) — fix compliance PSR-4.
 - [case-variant-collisions.md](case-variant-collisions.md) — collisioni di nome file per sola differenza di maiuscole nel codice PHP del modulo (documento gemello di questo problema, ma sui sorgenti, non sui docs).
 - [ponytail-audit-over-engineering.md](ponytail-audit-over-engineering.md) e [wiki/concepts/ponytail-audit.md](wiki/concepts/ponytail-audit.md) — audit over-engineering.
@@ -243,10 +243,10 @@ sono elencati nello Storico.
 - [product-strategy.md](product-strategy.md) — product strategy (varianti maiuscole/underscore in Storico).
 - [product-launch-plan.md](product-launch-plan.md) — piano di lancio (varianti in Storico).
 - [launch-plan.md](launch-plan.md) — piano di lancio sintetico (documento distinto, molto piu' corto).
-- [tech_spec.md](tech_spec.md) — technical specification (TECH_SPEC.md duplicato maiuscolo, vedi Storico).
+- [tech_spec.md](tech-spec.md) — technical specification (TECH_SPEC.md duplicato maiuscolo, vedi Storico).
 - [sprint-planning-meeting.md](sprint-planning-meeting.md) — verbale sprint planning.
-- [sprint_planning.md](sprint_planning.md) — sprint planning esteso (SPRINT_PLANNING.md duplicato, `sprint-planning.md` e' una versione molto piu' corta dello stesso argomento, vedi Storico).
-- [user-research.md](user-research.md) / [user_research.md](user_research.md) — user research (versione estesa in underscore, 101 righe; vedi Storico).
+- [sprint_planning.md](sprint-planning.md) — sprint planning esteso (SPRINT_PLANNING.md duplicato, `sprint-planning.md` e' una versione molto piu' corta dello stesso argomento, vedi Storico).
+- [user-research.md](user-research.md) / [user_research.md](user-research.md) — user research (versione estesa in underscore, 101 righe; vedi Storico).
 - [release-marketing-standard.md](release-marketing-standard.md) — standard release/README marketing.
 - [readme-en.md](readme-en.md) — presentazione in inglese del modulo.
 - [readme-update.md](readme-update.md) — aggiornamento README, sezione testing (readme_update.md duplicato, vedi Storico).
@@ -317,7 +317,7 @@ solo in [llm-wiki/agents.md](llm-wiki/agents.md) e [llm-wiki/log.md](llm-wiki/lo
 - [no-git-lfs.md](no-git-lfs.md) — Git LFS non si usa in questo progetto.
 - [case-variant-collisions.md](case-variant-collisions.md) — collisioni di nome per sola differenza di maiuscole (nel codice sorgente; vedi anche la sezione Storico di questo stesso indice per il fenomeno equivalente nei `.md`).
 - [second-brain.md](second-brain.md) — nota sul second brain di modulo.
-- [agent-confidence-discipline.md](agent-confidence-discipline.md), [agent-confidence-protocol.md](agent-confidence-protocol.md), [confidence_guidelines.md](confidence_guidelines.md) — tre documenti quasi gemelli sulla disciplina di confidenza dell'agente (contenuto simile ma non identico, candidati a fusione futura).
+- [agent-confidence-discipline.md](agent-confidence-discipline.md), [agent-confidence-protocol.md](agent-confidence-protocol.md), [confidence_guidelines.md](confidence-guidelines.md) — tre documenti quasi gemelli sulla disciplina di confidenza dell'agente (contenuto simile ma non identico, candidati a fusione futura).
 - [agent-edit-discipline.md](agent-edit-discipline.md) — puntatore a disciplina edit/qualita'.
 - [architecture-rules.md](architecture-rules.md) — puntatore regole architetturali.
 - [dependencies.md](dependencies.md), [dependency-intelligence.md](dependency-intelligence.md) — dipendenze del modulo.
@@ -336,9 +336,9 @@ solo in [llm-wiki/agents.md](llm-wiki/agents.md) e [llm-wiki/log.md](llm-wiki/lo
 
 - [env-development-configuration.md](env-development-configuration.md) — configurazione ambiente di sviluppo.
 - [mcp-configuration.md](mcp-configuration.md) — configurazione server MCP.
-- [mcp-server-recommended.md](mcp-server-recommended.md) — MCP consigliati per il modulo (MCP-SERVER-RECOMMENDED.md duplicato maiuscolo; `mcp_server_recommended.md`/`MCP_SERVER_RECOMMENDED.md` sono invece stub puntatori a Themes, vedi Storico — attenzione: 4 file quasi omonimi con due ruoli diversi).
+- [mcp-server-recommended.md](mcp-server-recommended.md) — MCP consigliati per il modulo (MCP-SERVER-RECOMMENDED.md duplicato maiuscolo; `mcp-server-recommended.md`/`mcp-server-recommended.md` sono invece stub puntatori a Themes, vedi Storico — attenzione: 4 file quasi omonimi con due ruoli diversi).
 - [qmd-setup.md](qmd-setup.md) — setup QMD per il modulo (QMD-SETUP.md duplicato maiuscolo, vedi Storico).
-- [boost-skill-fix-summary.md](boost-skill-fix-summary.md) — fix skill Boost (`boost_skill_fix_summary.md` e' invece uno stub puntatore Themes, vedi Storico).
+- [boost-skill-fix-summary.md](boost-skill-fix-summary.md) — fix skill Boost (`boost-skill-fix-summary.md` e' invece uno stub puntatore Themes, vedi Storico).
 - [laravel-13-upgrade.md](laravel-13-upgrade.md) — upgrade Laravel 13 (contenuto simile a `wiki/integrations/laravel-13-upgrade.md`, non identico).
 
 ## Git, conflitti e sync multi-organizzazione
@@ -368,7 +368,7 @@ solo in [llm-wiki/agents.md](llm-wiki/agents.md) e [llm-wiki/log.md](llm-wiki/lo
 - [on-demand-pattern.md](on-demand-pattern.md) — pattern on-demand del modulo (ON-DEMAND-PATTERN.md duplicato, vedi Storico).
 - [performance-optimization.md](performance-optimization.md) — performance optimization (PERFORMANCE-OPTIMIZATION.md duplicato, vedi Storico).
 - [performance/activity-log-optimization.md](performance/activity-log-optimization.md) — ottimizzazione log attivita' (versione piu' estesa 567 righe; 3 varianti + 3 copie in `performance/archive/` in Storico).
-- [pandoc_guide.md](pandoc_guide.md) — generazione documentazione con Pandoc (PANDOC_GUIDE.md duplicato maiuscolo, vedi Storico).
+- [pandoc_guide.md](pandoc-guide.md) — generazione documentazione con Pandoc (PANDOC_GUIDE.md duplicato maiuscolo, vedi Storico).
 - [tecnico/laraxot/module-activity.md](tecnico/laraxot/module-activity.md) — overview tecnica modulo (contiene anche un puntatore Themes in testa; `tecnico/laraxot/archive/module-activity.md` e' una versione archiviata piu' corta, vedi Storico).
 - [changelog.md](changelog.md) — changelog del modulo (CHANGELOG.md e' un "documento unificato" diverso, non lo stesso changelog: verificarne il ruolo prima di consolidare).
 
@@ -381,21 +381,21 @@ variante e' collegata come riferimento primario nelle sezioni sopra.
 
 ### Varianti di sola maiuscola/minuscola o underscore/trattino (stesso contenuto)
 
-`api.md`/`API.md` · `architecture.md`/`ARCHITECTURE.md` · `bad_practices.md`/`BAD_PRACTICES.md` ·
-`best_practices.md`/`BEST_PRACTICES.md` · `business_logic_analysis.md`/`BUSINESS_LOGIC_ANALYSIS.md` ·
-`code_quality_analysis.md`/`CODE_QUALITY_ANALYSIS.md` · `consolidation_analysis.md`/`CONSOLIDATION_ANALYSIS.md` ·
-`critical_migration_constraints.md`/`CRITICAL_MIGRATION_CONSTRAINTS.md` · `database-schema.md`/`DATABASE-SCHEMA.md` ·
-`frameworks.md`/`FRAMEWORKS.md` · `index.md`/`INDEX.md` · `migrations.md`/`MIGRATIONS.md` ·
-`metodi_duplicati_analisi.md`/`METODI_DUPLICATI_ANALISI.md` · `on-demand-pattern.md`/`ON-DEMAND-PATTERN.md` ·
-`pandoc_guide.md`/`PANDOC_GUIDE.md` · `patterns.md`/`PATTERNS.md` · `performance-optimization.md`/`PERFORMANCE-OPTIMIZATION.md` ·
-`phpmd-analysis.md`/`PHPMD-ANALYSIS.md` (+ stub `phpmd_analysis.md`/`PHPMD_ANALYSIS.md`) ·
-`product_launch_plan.md`/`PRODUCT_LAUNCH_PLAN.md` · `product_roadmap.md`/`PRODUCT_ROADMAP.md` ·
-`product_strategy.md`/`PRODUCT_STRATEGY.md` · `project-structure.md`/`PROJECT-STRUCTURE.md` ·
-`qmd-setup.md`/`QMD-SETUP.md` · `quality_report.md`/`QUALITY_REPORT.md` ·
-`query_optimization_analysis.md`/`QUERY_OPTIMIZATION_ANALYSIS.md` (+ stub quasi vuoto `query-optimization-analysis.md`) ·
-`quick-start.md`/`QUICK-START.md` · `security.md`/`SECURITY.md` · `sprint_planning.md`/`SPRINT_PLANNING.md` ·
-`tech_spec.md`/`TECH_SPEC.md` · `user_research.md`/`USER_RESEARCH.md` · `readme-update.md`/`readme_update.md` ·
-`redundancy_analysis.md`/`REDUNDANCY_ANALYSIS.md` (entrambi stub vuoti) ·
+`api.md`/`api.md` · `architecture.md`/`architecture.md` · `bad-practices.md`/`bad-practices.md` ·
+`best-practices.md`/`best-practices.md` · `business-logic-analysis.md`/`business-logic-analysis.md` ·
+`code-quality-analysis.md`/`code-quality-analysis.md` · `consolidation-analysis.md`/`consolidation-analysis.md` ·
+`critical-migration-constraints.md`/`critical-migration-constraints.md` · `database-schema.md`/`database-schema.md` ·
+`frameworks.md`/`frameworks.md` · `index.md`/`index.md` · `migrations.md`/`migrations.md` ·
+`metodi-duplicati-analisi.md`/`metodi-duplicati-analisi.md` · `on-demand-pattern.md`/`on-demand-pattern.md` ·
+`pandoc-guide.md`/`pandoc-guide.md` · `patterns.md`/`patterns.md` · `performance-optimization.md`/`performance-optimization.md` ·
+`phpmd-analysis.md`/`phpmd-analysis.md` (+ stub `phpmd-analysis.md`/`phpmd-analysis.md`) ·
+`product-launch-plan.md`/`product-launch-plan.md` · `product-roadmap.md`/`product-roadmap.md` ·
+`product-strategy.md`/`product-strategy.md` · `project-structure.md`/`project-structure.md` ·
+`qmd-setup.md`/`qmd-setup.md` · `quality-report.md`/`quality-report.md` ·
+`query-optimization-analysis.md`/`query-optimization-analysis.md` (+ stub quasi vuoto `query-optimization-analysis.md`) ·
+`quick-start.md`/`quick-start.md` · `security.md`/`security.md` · `sprint-planning.md`/`sprint-planning.md` ·
+`tech-spec.md`/`tech-spec.md` · `user-research.md`/`user-research.md` · `readme-update.md`/`readme-update.md` ·
+`redundancy-analysis.md`/`redundancy-analysis.md` (entrambi stub vuoti) ·
 `filament/filament-v4-icon-size-fix.md` (+ `appunti-continuous-integration-tools.md`, `FILAMENT_V4_ICON_SIZE_FIX.md`, `filament_v4_icon_size_fix.md`) ·
 `filament/filament-v4-upgrade.md` (+ `appunti-continuous-integration-tools.md`, `FILAMENT_V4_UPGRADE.md`, `filament_v4_upgrade.md`) ·
 `filament/archive/filament-v4-icon-size-fix.md` (+ maiuscolo/underscore) ·
@@ -411,38 +411,38 @@ variante e' collegata come riferimento primario nelle sezioni sopra.
 `wiki/memories/INDEX.md`/`wiki/memories/index.md` · `wiki/rules/INDEX.md`/`wiki/rules/index.md` ·
 `wiki/skills/INDEX.md`/`wiki/skills/index.md` · `tecnico/laraxot/archive/module-activity.md`/`module_activity.md` ·
 `use_cases/shop/archive/console-commands.md`/`console_commands.md` (entrambi stub vuoti) ·
-`00-index.md`/`00-INDEX.md` (+ `00-index-documentation.md` quasi vuoto).
+`00-index.md`/`00-index.md` (+ `00-index-documentation.md` quasi vuoto).
 
-**Nota**: `bad-practices.md`, `best-practices.md`, `code-quality.md`, `mcp_server_recommended.md`/`MCP_SERVER_RECOMMENDED.md`,
-`boost_skill_fix_summary.md`, `phpmd_analysis.md`/`PHPMD_ANALYSIS.md` non sono duplicati del contenuto reale:
+**Nota**: `bad-practices.md`, `best-practices.md`, `code-quality.md`, `mcp-server-recommended.md`/`mcp-server-recommended.md`,
+`boost-skill-fix-summary.md`, `phpmd-analysis.md`/`phpmd-analysis.md` non sono duplicati del contenuto reale:
 sono stub con frontmatter `canonical:` che puntano a `Themes/docs/shared-components/...` (vedi sezione dedicata
 sotto). Coesistono per coincidenza di nome con le varianti che invece hanno contenuto reale — non vanno confusi.
 
 ### Numerazioni progressive (`-1`, `-2`, `-duplicate`, `-latest`) con contenuto quasi identico
 
-`advanced-event-sourcing-patterns.md` (+ `-1.md`, `-duplicate.md`, `advanced_event_sourcing_patterns.md`, e imparentato `advanced-event-sourcings.md`) ·
+`advanced-event-sourcing-patterns.md` (+ `-1.md`, `-duplicate.md`, `advanced-event-sourcing-patterns.md`, e imparentato `advanced-event-sourcings.md`) ·
 `business-logic-analysis.md` (+ `-1.md`) · `dry-kiss-analysis.md` (+ `-latest.md`, `-.md`) ·
-`errori-migrazione-activity-table-lezioni.md` (+ `-1.md`, `errori_migrazione_activity_table_lezioni.md`) ·
-`filament-errors.md` (+ `-duplicate.md`, `filament_errors.md`) ·
+`errori-migrazione-activity-table-lezioni.md` (+ `-1.md`, `errori-migrazione-activity-table-lezioni.md`) ·
+`filament-errors.md` (+ `-duplicate.md`, `filament-errors.md`) ·
 `filament-resource-guidelines.md` (+ `-1.md`, maiuscolo, underscore) ·
-`lang-link.md` (+ `-1.md`, `-duplicate.md`, `lang_link.md`) ·
+`lang-link.md` (+ `-1.md`, `-duplicate.md`, `lang-link.md`) ·
 `login-test-implementation-summary.md` (+ `-1.md`, underscore) ·
 `login-test-implementation-sumy.md` (+ `-1.md`, refuso di "summary") ·
 `metodi-duplicati-analisi.md` (+ maiuscolo/underscore) · `modelli-factory-seeder-analisi.md` (+ `-1.md`, underscore) ·
 `phpstan-analysis-november.md`/`phpstan-analysis-november-2025.md` · `phpstan-fixes.md` (+ `-1.md`, stub underscore) ·
 `phpstan-fixes-activity.md` (+ `-1.md`, underscore) · `quality-status.md` (+ `-.md`, `-2025-11.md`; `-nov.md` e' stub) ·
-`roadmap-2025.md`/`roadmap-.md` (+ `roadmap-archive-1.md`, quasi identico con 2 righe di differenza) ·
-`event-sourcing-examples-duplicate.md`/`event_sourcing_examples.md` (+ stub `event-sourcing-examples.md`) ·
-`event-sourcing-introduction-duplicate.md`/`event_sourcing_introduction.md` (+ stub `event-sourcing-introduction.md`) ·
+`roadmap-2025.md`/`roadmap.md` (+ `roadmap-archive-1.md`, quasi identico con 2 righe di differenza) ·
+`event-sourcing-examples-duplicate.md`/`event-sourcing-examples.md` (+ stub `event-sourcing-examples.md`) ·
+`event-sourcing-introduction-duplicate.md`/`event-sourcing-introduction.md` (+ stub `event-sourcing-introduction.md`) ·
 `test-archive-1.md`/`test-archive-2.md` (entrambi vuoti).
 
 ### Collisione di naming con contenuto diverso (attenzione, non fondere alla cieca)
 
-- `module-analysis.md` (87 righe, "Comprehensive Analysis") vs `module_analysis.md` (319 righe, "Modulo Activity - Logging e Event Sourcing"): nomi quasi identici, contenuto diverso. `module_analysis.md` e' invece un quasi-duplicato di `module.md` (320 righe, stesso titolo).
+- `module-analysis.md` (87 righe, "Comprehensive Analysis") vs `module-analysis.md` (319 righe, "Modulo Activity - Logging e Event Sourcing"): nomi quasi identici, contenuto diverso. `module-analysis.md` e' invece un quasi-duplicato di `module.md` (320 righe, stesso titolo).
 - `structure.md` (root, 414 righe) vs `architecture/structure.md` (413 righe): stesso titolo "Modulo Activity", da verificare a mano se sono la stessa cosa copiata in due posti o se sono divergenti.
 - `testing-structure-login-analysis.md` (root, 186 righe) vs `architecture/testing-structure-login-analysis.md` (174 righe): stesso titolo "Struttura Corretta dei Test di Login - Analisi Completa".
-- `mcp-server-recommended.md`/`MCP-SERVER-RECOMMENDED.md` (contenuto reale, 23 righe) vs `mcp_server_recommended.md`/`MCP_SERVER_RECOMMENDED.md` (stub puntatore Themes, 7 righe): quattro file quasi omonimi, due ruoli diversi.
-- `bad-practices.md`/`best-practices.md` (trattino, stub puntatore Themes) vs `bad_practices.md`/`best_practices.md` (underscore, contenuto reale locale): stesso schema del punto precedente.
+- `mcp-server-recommended.md`/`mcp-server-recommended.md` (contenuto reale, 23 righe) vs `mcp-server-recommended.md`/`mcp-server-recommended.md` (stub puntatore Themes, 7 righe): quattro file quasi omonimi, due ruoli diversi.
+- `bad-practices.md`/`best-practices.md` (trattino, stub puntatore Themes) vs `bad-practices.md`/`best-practices.md` (underscore, contenuto reale locale): stesso schema del punto precedente.
 - `git-conflicts-resolution-summary.md` (contenuto reale) vs `git-conflicts-resolution-sumy.md` (stub puntatore Themes, refuso "sumy" per "summary").
 - `merge-conflicts-list.md` (contenuto reale) vs `merge-conflict-files-list.md` (stub puntatore Themes, nome simile ma non identico).
 
@@ -464,20 +464,20 @@ find Modules/Activity/docs/use_cases Modules/Activity/docs/roadmap -regextype po
 63 file sotto `docs/` sono stub minimi (6-7 righe) con frontmatter `module: theme` +
 `canonical: ../../../Themes/docs/shared-components/...` (pattern architetturale
 intenzionale di "on-demand", non un incidente di duplicazione): `ai-methodologies.md`,
-`aws_test_vs_database_connection.md`, `bad-practices.md`, `best-practices.md`,
-`boost_skill_fix_summary.md`, `business-logic.md`, `code-quality.md`, `codex-error-fix.md`,
+`aws-test-vs-database-connection.md`, `bad-practices.md`, `best-practices.md`,
+`boost-skill-fix-summary.md`, `business-logic.md`, `code-quality.md`, `codex-error-fix.md`,
 `event-sourcing-examples.md`, `event-sourcing-introduction.md`, `event-sourcing.md`,
 `filament/filament-v4-upgrade.md`, `filaments.md`, `file-naming-rules.md`,
 `git-conflicts-resolution-sumy.md`, `guides/event-sourcing.md`, `guides/event_sourcing.md`,
-`jpgraph.md`, `logging_optimization.md`, `login-test-implementation.md`,
-`mcp_server_recommended.md`, `MCP_SERVER_RECOMMENDED.md`, `merge-conflict-files-list.md`,
+`jpgraph.md`, `logging-optimization.md`, `login-test-implementation.md`,
+`mcp-server-recommended.md`, `mcp-server-recommended.md`, `merge-conflict-files-list.md`,
 `metodiuplicati-analisi.md`, `migration-filament.md`, `migration-filament.md`,
 `migrazione-filament.md`, `migrazione-filament.md`, `outputs/README.md`,
 `performance/archive/activity_log_optimization-renamed.md`, `phpinsightss.md`,
-`phpmd.md`, `phpmd.md`, `phpmd_analysis.md`, `PHPMD_ANALYSIS.md`, `phpmds.md`,
-`phpstan.md`, `phpstan_fixes.md`, `quality-status-nov.md`, `query-optimization.md`,
-`query-optimization-analysis.md`, `raw/README.md`, `redundancy_analysis.md`,
-`REDUNDANCY_ANALYSIS.md`, `simplechartwidget-quality-analysis.md`,
+`phpmd.md`, `phpmd.md`, `phpmd-analysis.md`, `phpmd-analysis.md`, `phpmds.md`,
+`phpstan.md`, `phpstan-fixes.md`, `quality-status-nov.md`, `query-optimization.md`,
+`query-optimization-analysis.md`, `raw/README.md`, `redundancy-analysis.md`,
+`redundancy-analysis.md`, `simplechartwidget-quality-analysis.md`,
 `tecnico/laraxot/module_activity.md`, `wiki/bmad-method.md`, e le varianti "best-practice"/
 "analysis"/"flusso-utente"/"console-commands" dentro `use_cases/bank/`,
 `use_cases/prediction_market/` e `use_cases/shop/` (incluso `use_cases/shop/archive/`).

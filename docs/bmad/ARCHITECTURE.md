@@ -263,12 +263,12 @@ class ActivityPolicy
 
 ### Related Documentation
 
-- [Security](SECURITY.md)
+- [Security](security.md)
 - [Quality](../roadmap/quality.md)
 - [Performance](PERFORMANCE.md)
-- [Testing](TESTING.md)
-- [Testing](TESTING.md)
-- [Testing](TESTING.md)
-- [Testing](TESTING.md)
-- [Testing](TESTING.md)
-- [Testing](TESTING.md)
+- [Testing](testing.md)
+- [Testing](testing.md)
+- [Testing](testing.md)
+- [Testing](testing.md)
+- [Testing](testing.md)
+- [Testing](testing.md)
