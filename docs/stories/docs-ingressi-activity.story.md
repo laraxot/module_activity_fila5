@@ -9,7 +9,7 @@ module: Activity
 tags: [docs, bmad, indice, readme, link, doc-010, doc-002]
 qmd: "activity docs ingressi readme 00-index indice canonico stale link non risolti famiglie radice 890 file"
 related:
-  - ../../../Fixcity/docs/stories/2026-10-13-dcp-56-organizzazione-docs-moduli-e-temi.story.md
+  - ../../../Fixcity/docs/stories/dcp-56-organizzazione-docs-moduli-e-temi.story.md
   - ../../../../../bmad-output/docs-architecture/module-theme-docs-contract.md
 ---
 

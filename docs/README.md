@@ -9,7 +9,7 @@ tags: [activity, activitylog, event-sourcing, docs]
 qmd: "activity modulo docs readme identita ownership actions log viewer event sourcing quick start limiti"
 related:
   - ./00-INDEX.md
-  - ./stories/2026-10-14-docs-ingressi-activity.story.md
+  - ./stories/docs-ingressi-activity.story.md
 ---
 
 # Activity: docs del modulo
