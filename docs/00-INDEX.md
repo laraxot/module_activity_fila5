@@ -9,12 +9,12 @@ tags: [docs, activity, index]
 qmd: "indice documentazione modulo activity canonico evidence legacy famiglie radice conteggi"
 related:
   - ./README.md
-  - ./stories/2026-10-14-docs-ingressi-activity.story.md
+  - ./stories/docs-ingressi-activity.story.md
 ---
 
 # Indice operativo del modulo Activity
 
-`00-INDEX.md` e' l'unico indice canonico. Gli altri file con nome simile non vanno aggiornati: [index.md](./index.md) (elenco per argomento, scritto prima della rimozione di `tasks/`), [INDEX.md](./INDEX.md) (inventario per categoria), `00-index.md` e `00-index-1.md` (copie e segnaposto). Identita', contenuto reale del modulo e limiti sono in [README.md](./README.md).
+`00-INDEX.md` e' l'unico indice canonico. Gli altri file con nome simile non vanno aggiornati: [index.md](./index.md) (elenco per argomento, scritto prima della rimozione di `tasks/`), [INDEX.md](./INDEX.md) (inventario per categoria), `00-index.md` e `00-index-documentation.md` (copie e segnaposto). Identita', contenuto reale del modulo e limiti sono in [README.md](./README.md).
 
 ## Misure del 2026-10-14
 
@@ -27,7 +27,7 @@ related:
 ## Da leggere per primo
 
 1. [README.md](./README.md): identita', cosa fa il codice, quick start, limiti.
-2. [stories/](./stories/): 40 file; le piu' recenti sono `2026-10-06-phpstan-cleanup-activity.story.md` e `2026-10-14-docs-ingressi-activity.story.md`.
+2. [stories/](./stories/): 40 file; le piu' recenti sono `phpstan-cleanup-activity.story.md` e `docs-ingressi-activity.story.md`.
 3. [decision-log.md](./decision-log.md): decisioni del modulo (la voce del 2026-10-08 riallinea il modulo al commit `bc3d22ca`).
 4. [wiki/concepts/activity-log-single-migration-contract.md](./wiki/concepts/activity-log-single-migration-contract.md): una sola migrazione per `activity_log`.
 5. [wiki/concepts/queueable-action-execute-entrypoint.md](./wiki/concepts/queueable-action-execute-entrypoint.md) e [actions-convention.md](./actions-convention.md): come sono scritte le Action.

@@ -16,7 +16,7 @@ qmd: "git conflict inventory activity"
 
 - docs/anti-pattern-model-env-hack.md
 - docs/archive/module-analysis.md
-- docs/business-logic-analysis-1.md
+- docs/business-logic-analysis-activity-module.md
 - docs/business-logic-analysis.md
 - docs/business-logic.md
 - docs/coverage-full.md

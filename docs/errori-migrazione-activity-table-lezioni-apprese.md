@@ -178,5 +178,5 @@ Questa lezione è ora memorizzata permanentemente per:
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Lezione appresa: Context-aware migrations con supporto UUID*=======
-See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
-See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-apprese.md
+See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-apprese.md
