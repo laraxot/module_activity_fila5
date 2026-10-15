@@ -73,11 +73,8 @@ Se esegui `migrate --force` in produzione:
 ---
 
 **URLATO PER ESSERE LETTO PRIMA DI OGNI MIGRATION** 🔴🔴🔴
-<<<<<<< .merge_file_blnF4Y
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_a4vZQd

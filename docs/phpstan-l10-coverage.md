@@ -102,11 +102,8 @@ These errors are **pre-existing** and unrelated to the UserContract namespace fi
 ### Key Learning
 
 The issue stemmed from namespace aliasing inconsistency. Some files used `UserContract` directly (relying on the import), while the Adapter tried to use `XotUserContract` without importing the alias. Standardizing to the imported `UserContract` resolved all 24 type-related errors in the Action/Adapter layer.
-<<<<<<< .merge_file_Q7SvDq
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_XX7oJ4

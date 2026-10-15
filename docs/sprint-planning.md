@@ -89,12 +89,8 @@ Complete core activity tracking infrastructure with admin dashboard for viewing 
 *Last Updated: March 12, 2026*# Sprint Planning: Activity Module
 
 ## 🏁 Sprint Goal
-<<<<<<< .merge_file_5g7QEC
 Finalize documentation and validation for Activity.
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
-Finalize documentation and validation for Activity.
->>>>>>> .merge_file_Wv9Obx
