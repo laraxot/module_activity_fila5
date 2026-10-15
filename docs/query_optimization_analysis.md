@@ -322,8 +322,12 @@ DB::listen(function ($query) {
 });
 ```
 
+<<<<<<< .merge_file_p99r0t
 This optimization plan will significantly improve the Activity module's performance while maintaining all existing functionality.
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+This optimization plan will significantly improve the Activity module's performance while maintaining all existing functionality.
+>>>>>>> .merge_file_gURO5P

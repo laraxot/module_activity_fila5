@@ -14,8 +14,11 @@ status: draft
 /var/www/_bases/base_techplanner_fila5/laravel/Modules/Activity/app/Filament/Pages/ListLogActivities.php:95   ShortVariable  Avoid variables with short names like $v. Configured minimum length is 2.
 /var/www/_bases/base_techplanner_fila5/laravel/Modules/Activity/app/Filament/Pages/ListLogActivities.php:276  ShortVariable  Avoid variables with short names like $v. Configured minimum length is 2.
 /var/www/_bases/base_techplanner_fila5/laravel/Modules/Activity/app/Filament/Pages/ListLogActivities.php:290  ShortVariable  Avoid variables with short names like $v. Configured minimum length is 2.
+<<<<<<< .merge_file_92GZRJ
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_mVVuvD

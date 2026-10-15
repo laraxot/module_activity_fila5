@@ -283,8 +283,11 @@ Testing strategies and guidelines:
 *Generated: 2026-07-28 10:45:00*  
 *Total Files Analyzed: 698 files across 20 categories*  
 *Ready for discovery, navigation, and improvement planning*
+<<<<<<< .merge_file_tQA5Hl
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_oEGdIV

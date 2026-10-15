@@ -290,8 +290,12 @@ topic: event-sourcing-examples
 canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
 ---
 
+<<<<<<< .merge_file_pmltDy
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+>>>>>>> .merge_file_MViYFW

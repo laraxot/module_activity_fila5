@@ -65,6 +65,7 @@ Vuote o con solo un file di lock: `tasks/`, `archived/`, `logs/`, `schema/`, `su
 | Event sourcing | 13 | `event-sourcing.md`, `advanced-event-sourcing-patterns.md` |
 
 La classificazione e' fatta sul nome del file, non sulla lettura di tutti i 377: usarla per orientarsi, non come verita'.
+<<<<<<< .merge_file_3H4nFt
 
 ## Documenti non attendibili
 
@@ -86,3 +87,21 @@ La classificazione e' fatta sul nome del file, non sulla lettura di tutti i 377:
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+
+## Documenti non attendibili
+
+- [ARCHITECTURE.md](./ARCHITECTURE.md): descrive Repositories, Services e Projections che non esistono in `app/`.
+- [API.md](./API.md): la firma `execute(array $data)` non esiste.
+- [readme.md](./readme.md): `ActivityStatsWidget`, `EventStore` e il monitoraggio in tempo reale non esistono nel codice.
+- [index.md](./index.md): elenca 40 file di `tasks/` e `roadmap/tasks/` rimossi nel commit `7e00cedf` del 2026-10-08; recuperabili con `git show 7e00cedf^:docs/tasks/<file>`.
+
+## Moduli e riferimenti correlati
+
+- [Xot](../../Xot/docs/README.md): classi base (`XotBaseResource`, `XotBasePage`, `XotBaseMigration`).
+- [User](../../User/docs/readme.md): modello utente usato come causer; `RegisterWidget` chiama `IsActivityLogSchemaWritableAction`.
+- [Fixcity](../../Fixcity/docs/README.md): usa `LogActivityAction` in `ChangeTicketPriorityAction`.
+- [Tenant](../../Tenant/docs/README.md): isolamento dati per tenant.
+- [Elenco pacchetti Composer](../../../../bashscripts/ai/wiki/rules/composer-packages-reference.md): riferimento globale.
+- [Regola pre-edit docs-first](../../../../bashscripts/ai/wiki/rules/pre-edit-docs-first.md): leggere i docs prima di cambiare codice.
+>>>>>>> .merge_file_9Sr8gU

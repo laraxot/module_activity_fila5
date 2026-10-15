@@ -192,8 +192,12 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 6. **Xot** - Framework base ✅ Completo
 
 *Ultimo aggiornamento: Gennaio 2025*
+<<<<<<< .merge_file_mPf7bP
 *Analisi completa sistema SaluteOra: 150+ modelli, 14 moduli*
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+*Analisi completa sistema SaluteOra: 150+ modelli, 14 moduli*
+>>>>>>> .merge_file_Cxbt8O

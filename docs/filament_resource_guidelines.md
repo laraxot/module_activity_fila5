@@ -113,8 +113,12 @@ All resources must be tested to ensure:
 
 - [XotBaseResource Documentation](../../Xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../Xot/project_docs/filament-best-practices.md)
+<<<<<<< .merge_file_moPT8W
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+- [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
+>>>>>>> .merge_file_DHuBUz
