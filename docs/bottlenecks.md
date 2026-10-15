@@ -319,13 +319,13 @@ class ListActivities extends XotBasePage
 ## Collegamenti Bidirezionali
 
 - [README Activity](./README.md)
-- [README Activity](./readme.md)
+- [README Activity](./README.md)
 - [Roadmap](./roadmap.md)
 - [Struttura del Modulo](./structure.md)
 ## Collegamenti
 
 - [Torna a README](./README.md)
-- [Torna a README](./readme.md)
+- [Torna a README](./README.md)
 - [Vai a Roadmap](./roadmap.md)
 - [Vai a Struttura](./structure.md)
 

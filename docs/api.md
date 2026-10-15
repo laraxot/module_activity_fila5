@@ -4,9 +4,11 @@ type: reference
 tags: [activity, api]
 created: 2026-07-28
 updated: 2026-07-28
-status: draft
 qmd: "activity module   api activity"
+status: stale
 ---
+
+> Nota 2026-10-14 (docs-audit): La firma 'execute(array $data): Activity' non esiste: LogActivityAction prende type, user, subject, properties, description nel costruttore e ha execute(): Activity (app/Actions/LogActivityAction.php). Vedi README.md. Contenuto non riscritto, verificare prima di usarlo.
 
 # Activity Module — API
 
@@ -30,11 +32,11 @@ $activity->subject;       // Polymorphic: User, Post, etc.
 $activity->causer;        // User performing action
 $activity->properties;    // JSON metadata
 ```
-<<<<<<< .merge_file_6ibV7b
+<<<<<<< .merge_file_YE17fm
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
 =======
->>>>>>> .merge_file_JNodbY
+>>>>>>> .merge_file_IVjO4F

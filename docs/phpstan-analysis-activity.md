@@ -65,7 +65,7 @@ qmd: "phpstan analysis - activity module activity"
 - Multiple files with uppercase letters in names
 - Alcuni file hanno ancora underscore anziché trattini
 - Necessaria la rimozione progressiva di duplicati/backup
-- ✅ Eliminato `readme.md` duplicato rispetto a `README.md`
+- ✅ Eliminato `README.md` duplicato rispetto a `README.md`
 
 ## 🛠️ Recommendations
 
