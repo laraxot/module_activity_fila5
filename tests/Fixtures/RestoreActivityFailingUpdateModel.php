@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Fixtures;
 
+<<<<<<< .merge_file_CvyQ8E
 use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Models\BaseModel;
 
@@ -23,4 +24,23 @@ final class RestoreActivityFailingUpdateModel extends BaseModel
 
     /** @var list<string> */
     protected $fillable = ['name'];
+=======
+use Exception;
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * Modello finto la cui update() fallisce sempre (classe con nome, non anonima).
+ */
+final class RestoreActivityFailingUpdateModel extends Model
+{
+    protected $table = 'stub_models';
+
+    /**
+     * @param  array<string, mixed>  $attributes
+     */
+    public function update(array $attributes = [], array $options = []): bool
+    {
+        throw new Exception('db error');
+    }
+>>>>>>> .merge_file_B8Px4w
 }

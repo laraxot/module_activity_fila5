@@ -11,8 +11,11 @@ qmd: "redundancy analysis activity"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/REDUNDANCY_ANALYSIS.md
+<<<<<<< .merge_file_c8crB9
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_gFLUTh

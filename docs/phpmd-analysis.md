@@ -177,8 +177,11 @@ return $alternative;
 
 *Last Updated: 2025-11-12*
 *Status: In Progress - Complexity Fixes*
+<<<<<<< .merge_file_4gWo2h
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_zXg8cx
