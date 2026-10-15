@@ -50,5 +50,5 @@ $activities = \Modules\Activity\Database\Factories\ActivityFactory::new()
 - **PHPStan Level 9**: Compliance ripristinata
 
 *Ultimo aggiornamento: gennaio 2025*=======
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-correzioni-modulo.md
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-correzioni-modulo.md

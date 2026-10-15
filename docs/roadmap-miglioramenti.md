@@ -41,12 +41,12 @@ strato racconta una sessione diversa che non ha letto lo strato sotto:
   di prova mai ripuliti, ancora versionati
 - 13 coppie di file duplicati per sola differenza di maiuscole/minuscole
   solo al primo livello di `docs/` (`00-index.md` / `00-INDEX.md` /
-  `00-index-1.md` è un trio, non una coppia)
+  `00-index-documentation.md` è un trio, non una coppia)
 
 Questo non è un problema estetico. È un debito di fiducia: se il second
 brain (qmd/graphify) indicizza 705 varianti quasi-identiche, ogni query
 futura su "Activity" restituisce rumore invece di segnale, e il prossimo
-agente (io compreso, tra un'ora) rischia di leggere `phpstan-fixes-1.md`
+agente (io compreso, tra un'ora) rischia di leggere `phpstan-fixes-correzioni-modulo-activity.md`
 invece di `phpstan-fixes.md` e agire su uno stato vecchio credendolo
 attuale — esattamente il tipo di errore che [[feedback-verify-code-not-docs]]
 esiste per prevenire.
