@@ -208,11 +208,8 @@ done
 - [migration-filename-from-model-name](../../../../docs/wiki/rules/migration-filename-from-model-name.md) — 1 modello = 1 migrazione, filename dal modello
 - [Sigma — scopo](../../Sigma/docs/scopo.md) — lo stesso esercizio sul modulo adattatore
 - [coverage.md](coverage.md) — perché la coverage di questo modulo non è misurabile col comando standard
-<<<<<<< .merge_file_GCvLfU
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_thm6vU

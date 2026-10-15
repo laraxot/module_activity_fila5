@@ -32,11 +32,8 @@ $activity->subject;       // Polymorphic: User, Post, etc.
 $activity->causer;        // User performing action
 $activity->properties;    // JSON metadata
 ```
-<<<<<<< .merge_file_YE17fm
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_IVjO4F

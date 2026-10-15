@@ -308,11 +308,8 @@ public function testChartInPDF()
 - GitHub repository
 - Community forums
 - Stack Overflow questions
-<<<<<<< .merge_file_MN4RK6
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_MmTfOT

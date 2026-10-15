@@ -29,12 +29,8 @@ topic: best-practices
 canonical: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
 ---
 
-<<<<<<< .merge_file_rOINK1
 See canonical documentation: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
->>>>>>> .merge_file_chm70F

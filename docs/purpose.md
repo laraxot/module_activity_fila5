@@ -96,11 +96,8 @@ argomento.
 
 - `laravel/Modules/Incentivi/docs/purpose.md` — la collisione di nome
 - `docs/wiki/memories/data-sacred-no-destructive-db.md`
-<<<<<<< .merge_file_Bj9BqC
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_P6JVeE
