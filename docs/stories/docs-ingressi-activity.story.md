@@ -19,7 +19,7 @@ Fase BMAD: documentazione e qualita' (DOC-010 e DOC-002 del piano `bmad-output/s
 
 ## Richiesta
 
-Studiare il modulo Activity, confrontare con il codice gli ingressi di `docs/` (`README.md`, `00-INDEX.md`, `index.md`, `INDEX.md`, wiki di primo livello) e correggerli solo con fatti verificati. L'indice deve dichiarare le directory canoniche, evidence e legacy e linkare solo file esistenti. Niente spostamenti, rinomine o cancellazioni; niente `dups --fix`. Contratto: `bmad-output/docs-architecture/module-theme-docs-contract.md`.
+Studiare il modulo Activity, confrontare con il codice gli ingressi di `docs/` (`README.md`, `00-index.md`, `index.md`, `index.md`, wiki di primo livello) e correggerli solo con fatti verificati. L'indice deve dichiarare le directory canoniche, evidence e legacy e linkare solo file esistenti. Niente spostamenti, rinomine o cancellazioni; niente `dups --fix`. Contratto: `bmad-output/docs-architecture/module-theme-docs-contract.md`.
 
 ## Analisi
 
@@ -47,7 +47,7 @@ Riscritti (sostituzione dell'intero contenuto guardata da sha1 e mtime; versione
 
 Modificati con sostituzioni mirate: `docs/index.md` (le voci `tasks/` e `roadmap/tasks/` e `docs-archive-policy.md` sono una nota con commit e comando `git show` per recuperarle; conteggio file aggiornato), `docs/wiki/INDEX.md` (3 link, piede di pagina), `docs/readme.md` (3 link annotati), `docs/wiki/log.md` (4 link annotati, nuova voce del 2026-10-14), `docs/ARCHITECTURE.md` (aggiunto frontmatter, un link annotato).
 
-Marcati `stale` con `docs-organizer.py stale --fix` (contenuto non riscritto): `API.md`, `readme.md`, `ARCHITECTURE.md` (a mano, mancava il frontmatter), `00-index.md`, `wiki/00-INDEX.md`, `wiki/00-index.md`, `wiki/index.md`; come `stub`: `00-index-1.md`, `wiki/00-index-documentation.md`.
+Marcati `stale` con `docs-organizer.py stale --fix` (contenuto non riscritto): `api.md`, `README.md`, `architecture.md` (a mano, mancava il frontmatter), `00-index.md`, `wiki/00-INDEX.md`, `wiki/00-index.md`, `wiki/index.md`; come `stub`: `00-index-1.md`, `wiki/00-index-documentation.md`.
 
 ## Verifica
 
@@ -55,22 +55,22 @@ Link non risolti (`docs-organizer.py --busy-minutes 0 links docs --by-name`, sol
 
 | File | Prima | Dopo |
 |---|---|---|
-| `README.md`, `00-INDEX.md`, `INDEX.md`, `index.md`, `wiki/INDEX.md`, `wiki/README.md` (ingressi canonici) | 50 | 0 |
-| `readme.md`, `wiki/log.md` (annotati: lo strumento li conta ancora) | 7 | 7 |
-| `ARCHITECTURE.md` (annotato) | 1 | 1 |
+| `README.md`, `00-index.md`, `index.md`, `index.md`, `wiki/INDEX.md`, `wiki/README.md` (ingressi canonici) | 50 | 0 |
+| `README.md`, `wiki/log.md` (annotati: lo strumento li conta ancora) | 7 | 7 |
+| `architecture.md` (annotato) | 1 | 1 |
 | copie stale `00-index.md`, `wiki/00-INDEX.md`, `wiki/00-index.md`, `wiki/index.md` | 50 | 50 |
 | Totale file toccati | 108 | 58 |
 
 Intero modulo: 1.195 prima, 1.145 dopo. Nota: alle 07:38 lo stesso comando senza `--busy-minutes 0` riportava 5 eventi, perche' salta in silenzio i file modificati da meno di 10 minuti.
 
 - PHPStan: `cd laravel && ./vendor/bin/phpstan analyse Modules/Activity --memory-limit=3G` esce con 0 (2026-10-14, `phpstan.neon` del progetto).
-- Frontmatter YAML: i 16 file riscritti o marcati si leggono con `yaml.safe_load`. Restano blocchi `---` spuri nel corpo di `readme.md` (1), `wiki/00-index.md` (2) e `wiki/log.md` (1): `frontmatter` li elenca come interventi manuali e non sono stati toccati.
+- Frontmatter YAML: i 16 file riscritti o marcati si leggono con `yaml.safe_load`. Restano blocchi `---` spuri nel corpo di `README.md` (1), `wiki/00-index.md` (2) e `wiki/log.md` (1): `frontmatter` li elenca come interventi manuali e non sono stati toccati.
 - Tutti i link dei quattro file riscritti verificati con `os.path.exists` prima della scrittura (0 mancanti).
 - Pest non rieseguito: non verificato che i 100 file di test passino.
 
 ## Decisioni
 
-- `00-INDEX.md` e' l'unico indice canonico; nessun indice con nome alternativo e' stato creato. Le copie con altre maiuscole sono marcate, non cancellate.
+- `00-index.md` e' l'unico indice canonico; nessun indice con nome alternativo e' stato creato. Le copie con altre maiuscole sono marcate, non cancellate.
 - `links --annotate` non e' stato lanciato: lo strumento lavora sull'intera cartella (nessun filtro per file) e avrebbe toccato centinaia di file non miei. Le 8 annotazioni sono state fatte a mano.
 - I link morti delle copie stale non sono stati riscritti: sono copie, la loro sorte (superseded o rimozione) spetta a DOC-004 e DOC-006.
 

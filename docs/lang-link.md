@@ -24,7 +24,7 @@ Consulta la documentazione delle traduzioni qui:
 ## Collegamenti
 
 - [Torna a README](./README.md)
-- [Torna a README](./readme.md)
+- [Torna a README](./README.md)
 - [Vai a Struttura](./structure.md)
 - [Vai a Traduzioni](./translations.md)
 
