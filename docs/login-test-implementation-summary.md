@@ -227,11 +227,8 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 
 *Last Updated: Gennaio 2025*
 *Project: Laraxot <nome progetto>*
-<<<<<<< .merge_file_mXutTn
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_9Jhn2q

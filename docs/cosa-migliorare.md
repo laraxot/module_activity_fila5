@@ -54,11 +54,8 @@ php -r 'echo count(require "vendor/composer/autoload_classmap.php");'   # ~25358
 
 Quadro comparativo di tutte le unità: [`docs/quality-audit.md`](quality-audit.md).
 
-<<<<<<< .merge_file_mUJa53
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_aTF4PA

@@ -35,11 +35,8 @@ Activity::where('subject_type', User::class)
 ## Filament Browse
 
 Visit admin panel → Activity Resource to browse all logged activities.
-<<<<<<< .merge_file_Favu4k
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_a3ddh6

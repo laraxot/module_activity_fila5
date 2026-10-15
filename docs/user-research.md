@@ -109,12 +109,8 @@ Legal teams need configurable retention periods.
 *Last Updated: March 12, 2026*# User Research: Activity Module
 
 ## 🔬 Research Goals
-<<<<<<< .merge_file_LEKsae
 Identify user needs for Activity functionality.
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
-Identify user needs for Activity functionality.
->>>>>>> .merge_file_DzeCsA

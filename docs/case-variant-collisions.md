@@ -88,11 +88,8 @@ Modules/Activity/workbench/app/Providers/WorkbenchServiceProvider.php
 
 Serve un test che impedisca la ricomparsa del difetto: senza, il conteggio torna a
 crescere. Vedi il punto 4 del quadro generale.
-<<<<<<< .merge_file_WO8CZw
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_zie9pu

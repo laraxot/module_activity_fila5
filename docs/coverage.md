@@ -97,11 +97,8 @@ canonical: ../../../Themes/docs/shared-components/coverage.txt
 See canonical documentation: ../../../Themes/docs/shared-components/coverage.txt
 
 
-<<<<<<< .merge_file_UEMFhY
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_bPlAkV

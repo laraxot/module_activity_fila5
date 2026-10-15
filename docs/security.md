@@ -144,12 +144,8 @@ Route::middleware(['auth:sanctum'])->group(function () {
 
 - [`phpstan.md`](#phpstan) - PHPStan security configuration
 - [`code-quality-analysis.md`](code-quality-analysis.md) - Code quality standards
-<<<<<<< .merge_file_IcUkDk
 - [`testing.md`](#testing) - Testing procedures
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
-- [`testing.md`](#testing) - Testing procedures
->>>>>>> .merge_file_fhqapl

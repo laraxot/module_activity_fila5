@@ -52,11 +52,8 @@ $activities = \Modules\Activity\Database\Factories\ActivityFactory::new()
 *Ultimo aggiornamento: gennaio 2025*=======
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-correzioni-modulo.md
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-correzioni-modulo.md
-<<<<<<< .merge_file_vrgtFB
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_wg3a7D
