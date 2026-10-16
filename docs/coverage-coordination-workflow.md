@@ -35,8 +35,3 @@ Usare `coverage-plan.md` come registro condiviso tra agenti per arrivare a 100% 
 
 Il target è coverage reale su `Modules/Activity/app`, non il totale globale inquinato da altri moduli.
 
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

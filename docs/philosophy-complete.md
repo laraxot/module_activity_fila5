@@ -235,14 +235,10 @@ class ClientObserver
 - [Business Logic Overview](./README.md)
 - [Business Logic Analysis](./business-logic-analysis.md)
 - [Xot Module Foundation](../../Xot/docs/philosophy-complete.md)
-- [Business Logic Overview](./README.md)
+- [Business Logic Overview](./readme.md)
 - [Business Logic Analysis](./business-logic-analysis.md)
 - [Xot Module Foundation](../../xot/docs/philosophy-complete.md)
 
 ---
 
 **Filosofia**: Track Everything, Reconstruct Anything, Privacy First, Silent Observer
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

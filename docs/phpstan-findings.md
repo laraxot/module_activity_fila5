@@ -95,7 +95,3 @@ Rimuovere @mixin per classi IdeHelper* generate da ide-helper package (non esist
 
 **Aggiornato**: 2025-10-10T10:54:56+02:00
 **Aggiornato**: [DATE]T10:54:56+02:00
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

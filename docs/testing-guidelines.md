@@ -255,7 +255,3 @@ it('creates snapshots efficiently', function () {
 
 **Testing Framework**: Pest
 **Environment**: .env.testing
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

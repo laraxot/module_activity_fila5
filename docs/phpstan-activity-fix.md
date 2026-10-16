@@ -119,8 +119,3 @@ Secondo la filosofia Laraxot:
 - **Politics**: Standardizzare l'approccio PHPStan in tutti i moduli
 - **Religion**: Strong typing attraverso PHPDoc e type hints
 - **Zen**: Accettare le limitazioni degli strumenti esterni e trovare soluzioni eleganti
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

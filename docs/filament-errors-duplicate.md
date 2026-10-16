@@ -173,8 +173,3 @@ class ListSnapshots extends ListRecords
 - [ ] Eseguire PHPStan per verificare altri possibili errori=======
 See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
 See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
