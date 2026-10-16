@@ -282,7 +282,7 @@ workbench/routes
 ## Collegamenti
 
 - [Torna a README](./README.md)
-- [Torna a README](./README.md)
+- [Torna a README](./readme.md)
 - [Vai a Roadmap](./roadmap.md)
 - [Vai a Bottlenecks](../bottlenecks.md)
 

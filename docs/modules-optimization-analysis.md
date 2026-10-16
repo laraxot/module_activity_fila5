@@ -251,7 +251,3 @@ public function logActivity(string $description, Model $subject, array $properti
 
 **Module Health**: 🟢 Good - Ready for optimization
 **Priority Level**: High - Foundation module
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

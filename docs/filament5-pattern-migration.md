@@ -79,8 +79,3 @@ Apply this same pattern to ALL Filament Resources in ALL modules:
 - Media module
 - Geo module
 - And all others...
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

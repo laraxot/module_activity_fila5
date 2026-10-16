@@ -37,8 +37,3 @@ Status: 4 Errors (varTag.variableNotFound)
 
 ## Zen Note
 "A variable name mismatch is a disconnect between intent and reality. Restoration requires alignment."
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

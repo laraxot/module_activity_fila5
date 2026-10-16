@@ -137,8 +137,3 @@ sbagliato.
   `BaseListSchedas::getTableFilters()`, col nome vecchio.
 - **1 settembre 2026** — `use HasXotTable;` tolto da `XotBaseListRecords`, prefisso `Xot`
   rimosso dai nomi, candidato per-Resource in `getTableClass()`, test di regressione.
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

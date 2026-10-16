@@ -23,8 +23,3 @@ qmd: "task: ridurre suppressioni phpstan nei test - activity activity"
 - [ ] Analizzate tutte le 79 suppressioni
 - [ ] Risolte quelle non dovute a limiti Pest
 - [ ] Documentati pattern di integrazione Pest/PHPStan
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
