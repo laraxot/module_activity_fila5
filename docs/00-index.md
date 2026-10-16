@@ -14,7 +14,7 @@ status: stale
 **Module Version**: 2.3.0
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./README.md) - Panoramica completa e Quick Start.
+1. [README.md](./readme.md) - Panoramica completa e Quick Start.
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
 3. [philosophy.md](./philosophy.md) - I principi dell'Audit Trail e dell'Event Sourcing.
 
@@ -55,7 +55,7 @@ status: stale
 **Module Version**: 2.3.0
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./README.md) - Panoramica completa e Quick Start.
+1. [README.md](./readme.md) - Panoramica completa e Quick Start.
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
 3. [philosophy.md](./philosophy.md) - I principi dell'Audit Trail e dell'Event Sourcing.
 
@@ -221,8 +221,3 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 - Memory: [Pre-Edit Docs-First Memory](../../../../docs/memory/pre-edit-docs-first-memory.md)
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)=======
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

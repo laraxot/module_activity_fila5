@@ -296,7 +296,3 @@ $this->assertDatabaseHas('posts', $data->toArray());
 3. **Use parameterized queries** to prevent SQL injection
 4. **Sanitize user input** before storage
 5. **Implement proper error handling** without information leakage
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

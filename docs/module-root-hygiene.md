@@ -62,8 +62,3 @@ The `.gitignore` in this module now blocks every forbidden pattern (see the
 "AI/TOOL SCAFFOLD" section), so the folders cannot silently return. When a tool
 insists on a scratch directory, point it outside the module tree — the answer is
 never to commit the mess.
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

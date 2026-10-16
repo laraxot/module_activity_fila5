@@ -28,7 +28,3 @@ Non duplicare la filosofia qui. Questa pagina è solo un ponte.
 - Regola tecnica: `.kilo/rules/migration-xot-base-standard.md`
 - Pattern completo: `docs/wiki/patterns/migration-xot-base-pattern.md`
 - Zen: `docs/wiki/rules/migration-convention-zen.md`
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

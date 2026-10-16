@@ -329,7 +329,3 @@ canonical: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
