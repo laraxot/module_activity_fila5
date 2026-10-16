@@ -126,7 +126,3 @@ $activities = \Modules\Activity\Database\Factories\ActivityFactory::new()
 - **PHPStan Level 9**: Compliance ripristinata
 
 *Ultimo aggiornamento: gennaio 2025*
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
