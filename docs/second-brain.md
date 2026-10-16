@@ -23,8 +23,3 @@ Stub **puntatore**: disciplina e link esterni curati stanno nella wiki di proget
 - Guida wiki modulo: [../../../../docs/wiki/how-to/module-wiki-documentation.md](../../../../docs/wiki/how-to/module-wiki-documentation.md)
 - Benchmark lettura esterna (Karpathy, Obsidian, PARA, …): [../../../../docs/wiki/sources/second-brain-external-benchmarks.md](../../../../docs/wiki/sources/second-brain-external-benchmarks.md)
 - **Filament (stack attuale): v5** — non v4. [filament-version.md](./filament-version.md) · policy: [../../../../docs/wiki/memories/filament-version-policy.md](../../../../docs/wiki/memories/filament-version-policy.md) · Xot: [../../Xot/docs/filament-5-laraxot-rules.md](../../Xot/docs/filament-5-laraxot-rules.md)
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

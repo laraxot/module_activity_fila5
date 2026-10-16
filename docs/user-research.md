@@ -110,7 +110,3 @@ Legal teams need configurable retention periods.
 
 ## 🔬 Research Goals
 Identify user needs for Activity functionality.
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

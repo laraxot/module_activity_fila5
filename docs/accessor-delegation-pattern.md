@@ -49,9 +49,4 @@ protected function getSomeValue(): float
 ---
 **Riferimenti**:
 - [Documento Canonico AI Agents](../../../../.agents/docs/accessor-auto-persistence.md)
-- [00-INDEX.md](00-index.md)
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+- [00-INDEX.md](00-INDEX.md)

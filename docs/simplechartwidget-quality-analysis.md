@@ -11,8 +11,3 @@ qmd: "simplechartwidget quality analysis activity"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/dual-label-chart-widget-implementation.md
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

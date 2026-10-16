@@ -204,7 +204,3 @@ Applicare pattern NO RefreshDatabase a tutti i test Activity:
 **Pattern**: ✅ Manual Cleanup con UUID Isolation
 **Documentazione**: ✅ COMPLETA
 **Ultimo aggiornamento**: 27 Ottobre 2025
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

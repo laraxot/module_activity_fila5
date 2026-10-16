@@ -308,8 +308,3 @@ public function testChartInPDF()
 - GitHub repository
 - Community forums
 - Stack Overflow questions
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

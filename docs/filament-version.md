@@ -23,8 +23,3 @@ All resources, forms, tables, infolists, widgets and actions must follow the v5 
 **Last verified**: 2026-05-21
 
 **Firmato:** Cursor Agent (Composer) — template propagato ai package `docs/`
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -232,7 +232,7 @@ php artisan activity:test-events
 - [Event Sourcing](event-sourcing.md) - Sistema event sourcing completo
 - [Activity Logging](structure.md) - Architettura logging attività
 - [Filament Integration](filament.md) - Integrazione dashboard Filament
-- [Advanced Patterns](advanced-event-sourcing-patterns.md) - Pattern avanzati
+- [Advanced Patterns](advanced_event_sourcing_patterns.md) - Pattern avanzati
 
 ### 📊 **Analytics & Monitoring**
 - [Activity Dashboard](../filament-resources.md) - Dashboard analytics attività
@@ -242,7 +242,7 @@ php artisan activity:test-events
 
 ### 🔧 **Development**
 - [PHPStan Fixes](phpstan/README.md) - Log completo correzioni PHPStan
-- [Event Sourcing Examples](event-sourcing-examples.md) - Esempi event sourcing
+- [Event Sourcing Examples](event_sourcing_examples.md) - Esempi event sourcing
 - [Testing Structure](testing-structure-login-analysis.md) - Struttura testing
 
 ## 🎨 **Componenti Filament**

@@ -55,8 +55,8 @@ Consolidated 41 orphaned `.md` files in `laravel/Modules/Activity/docs/` into st
 
 ### Consolidated
 
-- **API docs**: Removed duplicate `api.md`, kept `api.md`
-- **Index files**: Consolidated 3 variants (`00-index.md`, `00-index-1.md`), kept `00-index.md`
+- **API docs**: Removed duplicate `api.md`, kept `API.md`
+- **Index files**: Consolidated 3 variants (`00-index.md`, `00-index-1.md`), kept `00-INDEX.md`
 - **Event-sourcing patterns**: 5 variants consolidated to 1 canonical, duplicates archived
 - **README updates**: Old update variants archived to `archive/old-updates/`
 
@@ -69,9 +69,9 @@ Consolidated 41 orphaned `.md` files in `laravel/Modules/Activity/docs/` into st
 ## Canonical Files (docs root)
 
 ✓ `README.md` — Module overview (644 lines)  
-✓ `api.md` — Public API documentation (30 lines)  
-✓ `architecture.md` — Architecture overview (269 lines)  
-✓ `00-index.md` — Index (69 lines)  
+✓ `API.md` — Public API documentation (30 lines)  
+✓ `ARCHITECTURE.md` — Architecture overview (269 lines)  
+✓ `00-INDEX.md` — Index (69 lines)  
 ✓ `purpose.md` — Module purpose (98 lines)
 
 ## Structure

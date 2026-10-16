@@ -56,8 +56,3 @@ I modelli Activity usano `$connection = 'activity'` che viene creata dinamicamen
 
 - [Laravel Migrations](https://laravel.com/docs/12.x/migrations)
 - [Testing Database](https://laravel.com/docs/12.x/testing#refreshing-the-database)
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

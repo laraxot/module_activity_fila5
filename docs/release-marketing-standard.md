@@ -25,8 +25,3 @@ Ogni modulo/tema deve essere pubblicabile, comprensibile e desiderabile: workflo
 ## Confidenza
 
 La configurazione usa semantic-release con Conventional Commits, changelog, GitHub release e commit automatico del changelog.
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -77,8 +77,3 @@ metodo esterno non tipizzato.
 
 - Issue: https://github.com/laraxot/module_activity_fila5/issues/15 (STORY-303: PHPStan zero-error Activity tests — riaperta/verificata per questo secondo errore)
 - Regola correlata: `docs/wiki/rules/module-git-sync-after-fix.md` (root del progetto)
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
