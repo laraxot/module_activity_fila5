@@ -11,7 +11,3 @@ qmd: "git conflicts resolution sumy activity"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-resolution-summary-Modules.md
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

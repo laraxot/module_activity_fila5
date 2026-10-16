@@ -94,8 +94,3 @@ qmd: "phpmd fixes - activity module activity"
 3. **Shorten long variable names** - Improve readability
 4. **Reduce coupling in Actions** - Extract dependencies
 5. **Final PHPMD validation** - Ensure 0 issues
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

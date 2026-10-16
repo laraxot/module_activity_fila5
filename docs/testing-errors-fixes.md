@@ -44,8 +44,3 @@ Failed asserting that actual size 1 matches expected size 2.
 ## Collegamenti
 
 - [testing-coverage-policy](testing-coverage-policy.md)
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
