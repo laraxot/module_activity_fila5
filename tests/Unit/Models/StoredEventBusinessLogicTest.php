@@ -1,26 +1,25 @@
 <?php
 
 declare(strict_types=1);
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Modules\Activity\Models\StoredEvent;
-use Modules\Activity\Tests\TestCase;
-use PHPUnit\Framework\Assert;
+use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent;
 
-uses(TestCase::class);
-
-describe('StoredEvent Business Logic', function (): void {
-    test('stored event has correct connection configured', function (): void {
+describe('StoredEvent Business Logic', function () {
+    test('stored event has correct connection configured', function () {
         $storedEvent = new StoredEvent;
 
-        Assert::assertSame('activity', $storedEvent->getConnectionName());
+        expect($storedEvent->getConnectionName())->toBe('activity');
     });
 
-    test('stored event has correct table configured', function (): void {
+    test('stored event has correct table configured', function () {
         $storedEvent = new StoredEvent;
 
-        Assert::assertSame('stored_events', $storedEvent->getTable());
+        expect($storedEvent->getTable())->toBe('stored_events');
     });
 
-    test('stored event has expected fillable fields for event sourcing', function (): void {
+    test('stored event has expected fillable fields for event sourcing', function () {
         $storedEvent = new StoredEvent;
         $expectedFillable = [
             'id',
@@ -35,16 +34,31 @@ describe('StoredEvent Business Logic', function (): void {
             'created_by',
         ];
 
-        Assert::assertEquals($expectedFillable, $storedEvent->getFillable());
+        expect($storedEvent->getFillable())->toEqual($expectedFillable);
     });
 
-    test('stored event has query builder methods documented', function (): void {
-        $reflection = new ReflectionClass(StoredEvent::class);
-        $docComment = $reflection->getDocComment();
+    test('stored event extends eloquent stored event for event sourcing', function () {
+        expect(is_subclass_of(
+            StoredEvent::class,
+            EloquentStoredEvent::class,
+        ))->toBeTrue();
+    });
 
-        Assert::assertStringContainsString('@method', (string) $docComment);
-        Assert::assertStringContainsString('afterVersion', (string) $docComment);
-        Assert::assertStringContainsString('whereAggregateRoot', (string) $docComment);
-        Assert::assertStringContainsString('whereEvent', (string) $docComment);
+    test('stored event has factory trait for testing', function () {
+        $traits = class_uses(StoredEvent::class);
+
+        expect($traits)->toHaveKey(HasFactory::class);
+    });
+
+    test('stored event has after version scope method', function () {
+        expect(method_exists(StoredEvent::class, 'scopeAfterVersion'))->toBeTrue();
+    });
+
+    test('stored event has where aggregate root scope method', function () {
+        expect(method_exists(StoredEvent::class, 'scopeWhereAggregateRoot'))->toBeTrue();
+    });
+
+    test('stored event has where event scope method', function () {
+        expect(method_exists(StoredEvent::class, 'scopeWhereEvent'))->toBeTrue();
     });
 });
