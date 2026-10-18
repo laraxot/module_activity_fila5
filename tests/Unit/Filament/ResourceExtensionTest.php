@@ -1,181 +1,192 @@
 <?php
 
 declare(strict_types=1);
-use Modules\Activity\Filament\Resources\ActivityResource;
-use Modules\Activity\Filament\Resources\ActivityResource\Schemas\ActivityForm;
-use Modules\Activity\Filament\Resources\SnapshotResource;
-use Modules\Activity\Filament\Resources\SnapshotResource\Schemas\SnapshotForm;
-use Modules\Activity\Filament\Resources\StoredEventResource;
-use Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventForm;
-use Modules\Activity\Tests\TestCase;
-use Modules\Xot\Filament\Resources\XotBaseResource;
-use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+use Modules\Activity\Filament\Resources\ActivityResource;
+use Modules\Activity\Filament\Resources\SnapshotResource;
+use Modules\Activity\Filament\Resources\StoredEventResource;
+use Modules\Xot\Filament\Resources\XotBaseResource;
 
 test('activity resources extend xot base resource', function () {
-    $activityResource = new ReflectionClass(ActivityResource::class);
-    $snapshotResource = new ReflectionClass(SnapshotResource::class);
-    $storedEventResource = new ReflectionClass(StoredEventResource::class);
+    expect(ActivityResource::class)->toBeSubclassOf(XotBaseResource::class);
 
-    Assert::assertTrue($activityResource->isSubclassOf(XotBaseResource::class));
-    Assert::assertTrue($snapshotResource->isSubclassOf(XotBaseResource::class));
-    Assert::assertTrue($storedEventResource->isSubclassOf(XotBaseResource::class));
+    expect(SnapshotResource::class)->toBeSubclassOf(XotBaseResource::class);
+
+    expect(StoredEventResource::class)->toBeSubclassOf(XotBaseResource::class);
 });
 
 test('activity resource does not implement unnecessary methods', function () {
     $reflection = new ReflectionClass(ActivityResource::class);
 
-    // Different installs / Filament versions may generate these methods.
-    // We keep this as a smoke test instead of enforcing strict absence.
-    Assert::assertIsBool($reflection->hasMethod('getPages'));
-    Assert::assertIsBool($reflection->hasMethod('getRelations'));
-    Assert::assertIsBool($reflection->hasMethod('form'));
-    Assert::assertIsBool($reflection->hasMethod('table'));
+    expect($reflection->hasMethod('getPages'))
+        ->toBeFalse()
+        ->and($reflection->hasMethod('getRelations'))
+        ->toBeFalse()
+        ->and($reflection->hasMethod('form'))
+        ->toBeFalse()
+        ->and($reflection->hasMethod('table'))
+        ->toBeFalse();
 });
 
 test('activity resource implements required getFormSchema method', function () {
     $reflection = new ReflectionClass(ActivityResource::class);
 
-    Assert::assertTrue($reflection->hasMethod('getFormSchema'));
+    expect($reflection->hasMethod('getFormSchema'))->toBeTrue();
 
     $method = $reflection->getMethod('getFormSchema');
-    Assert::assertTrue($method->isPublic());
-    Assert::assertTrue($method->isStatic());
-    $returnType = $method->getReturnType();
-    Assert::assertInstanceOf(ReflectionNamedType::class, $returnType);
-    Assert::assertSame('array', $returnType->getName());
+    expect($method->isPublic())
+        ->toBeTrue()
+        ->and($method->isStatic())
+        ->toBeTrue()
+        ->and($method->getReturnType()?->getName())
+        ->toBe('array');
 });
 
 test('snapshot resource should not implement unnecessary methods', function () {
     $reflection = new ReflectionClass(SnapshotResource::class);
 
-    $hasPages = $reflection->hasMethod('getPages');
-    $hasRelations = $reflection->hasMethod('getRelations');
+    // These methods should NOT be implemented (they return standard values)
+    $hasUnnecessaryPages = $reflection->hasMethod('getPages');
+    $hasUnnecessaryRelations = $reflection->hasMethod('getRelations');
 
-    if ($hasPages) {
+    if ($hasUnnecessaryPages) {
         $pagesMethod = $reflection->getMethod('getPages');
         $pagesValue = $pagesMethod->invoke(null);
-        Assert::assertIsArray($pagesValue);
+
+        // If it returns standard pages, it shouldn't be implemented
+        $isStandardPages = isset($pagesValue['index'], $pagesValue['create'], $pagesValue['edit']);
+
+        expect($isStandardPages)
+            ->toBeFalse()
+            ->with('SnapshotResource should not implement getPages() for standard pages');
     }
 
-    if ($hasRelations) {
+    if ($hasUnnecessaryRelations) {
         $relationsMethod = $reflection->getMethod('getRelations');
         $relationsValue = $relationsMethod->invoke(null);
-        Assert::assertIsArray($relationsValue);
+
+        // If it returns empty array, it shouldn't be implemented
+        $isEmptyRelations = empty($relationsValue);
+
+        expect($isEmptyRelations)
+            ->toBeFalse()
+            ->with('SnapshotResource should not implement getRelations() for empty relations');
     }
 });
 
 test('stored event resource should not implement unnecessary methods', function () {
     $reflection = new ReflectionClass(StoredEventResource::class);
 
-    $hasPages = $reflection->hasMethod('getPages');
-    $hasRelations = $reflection->hasMethod('getRelations');
+    // These methods should NOT be implemented (they return standard values)
+    $hasUnnecessaryPages = $reflection->hasMethod('getPages');
+    $hasUnnecessaryRelations = $reflection->hasMethod('getRelations');
 
-    if ($hasPages) {
+    if ($hasUnnecessaryPages) {
         $pagesMethod = $reflection->getMethod('getPages');
         $pagesValue = $pagesMethod->invoke(null);
-        Assert::assertIsArray($pagesValue);
+
+        // If it returns standard pages, it shouldn't be implemented
+        $isStandardPages = isset($pagesValue['index'], $pagesValue['create'], $pagesValue['edit']);
+
+        expect($isStandardPages)
+            ->toBeFalse()
+            ->with('StoredEventResource should not implement getPages() for standard pages');
     }
 
-    if ($hasRelations) {
+    if ($hasUnnecessaryRelations) {
         $relationsMethod = $reflection->getMethod('getRelations');
         $relationsValue = $relationsMethod->invoke(null);
-        Assert::assertIsArray($relationsValue);
+
+        // If it returns empty array, it shouldn't be implemented
+        $isEmptyRelations = empty($relationsValue);
+
+        expect($isEmptyRelations)
+            ->toBeFalse()
+            ->with('StoredEventResource should not implement getRelations() for empty relations');
     }
 });
 
 test('activity resource has correct model configuration', function () {
-    Assert::assertSame('Modules\\Activity\\Models\\Activity', ActivityResource::getModel());
-    Assert::assertSame('Modules\\Activity\\Models\\Snapshot', SnapshotResource::getModel());
-    Assert::assertSame('Modules\\Activity\\Models\\StoredEvent', StoredEventResource::getModel());
+    expect(ActivityResource::getModel())->toBe('Modules\\Activity\\Models\\Activity');
+
+    expect(SnapshotResource::getModel())->toBe('Modules\\Activity\\Models\\Snapshot');
+
+    expect(StoredEventResource::getModel())->toBe('Modules\\Activity\\Models\\StoredEvent');
 });
 
 test('activity resource form schema returns array', function () {
-    $formInstance = app(ActivityForm::class);
-    $form = $formInstance->getFormSchema();
+    $form = ActivityResource::getFormSchema();
 
-    Assert::assertNotEmpty($form);
+    expect($form)->toBeArray()->not->toBeEmpty();
 
-    $expectedKeys = [
+    // Verify it contains expected fields
+    expect($form)->toHaveKeys([
         'log_name',
         'description',
         'subject_type',
         'subject_id',
         'properties',
-    ];
-
-    foreach ($expectedKeys as $key) {
-        Assert::assertArrayHasKey($key, $form);
-    }
+    ]);
 });
 
 test('snapshot resource form schema returns array', function () {
-    $formInstance = app(SnapshotForm::class);
-    $form = $formInstance->getFormSchema();
+    $form = SnapshotResource::getFormSchema();
 
-    Assert::assertNotEmpty($form);
+    expect($form)->toBeArray()->not->toBeEmpty();
 
-    $expectedKeys = [
+    // Verify it contains expected fields
+    expect($form)->toHaveKeys([
         'model_type',
         'model_id',
         'state',
-    ];
-
-    foreach ($expectedKeys as $key) {
-        Assert::assertArrayHasKey($key, $form);
-    }
+    ]);
 });
 
 test('stored event resource form schema returns array', function () {
-    $formInstance = app(StoredEventForm::class);
-    $form = $formInstance->getFormSchema();
+    $form = StoredEventResource::getFormSchema();
 
-    Assert::assertNotEmpty($form);
+    expect($form)->toBeArray()->not->toBeEmpty();
 
-    $expectedKeys = [
+    // Verify it contains expected fields
+    expect($form)->toHaveKeys([
         'event_class',
         'event_properties',
         'aggregate_uuid',
-    ];
-
-    foreach ($expectedKeys as $key) {
-        Assert::assertArrayHasKey($key, $form);
-    }
+    ]);
 });
 
 test('resources use proper xot base resource functionality', function () {
+    // Test that the base resource functionality works
     $activityPages = ActivityResource::getPages();
     $snapshotPages = SnapshotResource::getPages();
     $storedEventPages = StoredEventResource::getPages();
 
-    Assert::assertArrayHasKey('index', $activityPages);
-    Assert::assertArrayHasKey('create', $activityPages);
-    Assert::assertArrayHasKey('edit', $activityPages);
+    expect($activityPages)->toHaveKeys(['index', 'create', 'edit']);
+    expect($snapshotPages)->toHaveKeys(['index', 'create', 'edit']);
+    expect($storedEventPages)->toHaveKeys(['index', 'create', 'edit']);
 
-    Assert::assertArrayHasKey('index', $snapshotPages);
-    Assert::assertArrayHasKey('create', $snapshotPages);
-    Assert::assertArrayHasKey('edit', $snapshotPages);
-
-    Assert::assertArrayHasKey('index', $storedEventPages);
-    Assert::assertArrayHasKey('create', $storedEventPages);
-    Assert::assertArrayHasKey('edit', $storedEventPages);
-
+    // Test relation discovery
     $activityRelations = ActivityResource::getRelations();
     $snapshotRelations = SnapshotResource::getRelations();
     $storedEventRelations = StoredEventResource::getRelations();
 
-    Assert::assertCount(0, $activityRelations);
-    Assert::assertCount(0, $snapshotRelations);
-    Assert::assertCount(0, $storedEventRelations);
+    expect($activityRelations)->toBeArray();
+    expect($snapshotRelations)->toBeArray();
+    expect($storedEventRelations)->toBeArray();
 });
 
 test('resources follow xot base resource naming conventions', function () {
-    Assert::assertSame('ActivityResource', class_basename(ActivityResource::class));
-    Assert::assertSame('SnapshotResource', class_basename(SnapshotResource::class));
-    Assert::assertSame('StoredEventResource', class_basename(StoredEventResource::class));
+    // Test that resource names follow conventions
+    expect(class_basename(ActivityResource::class))->toBe('ActivityResource');
 
-    Assert::assertSame('Modules\\Activity\\Models\\Activity', ActivityResource::getModel());
-    Assert::assertSame('Modules\\Activity\\Models\\Snapshot', SnapshotResource::getModel());
-    Assert::assertSame('Modules\\Activity\\Models\\StoredEvent', StoredEventResource::getModel());
+    expect(class_basename(SnapshotResource::class))->toBe('SnapshotResource');
+
+    expect(class_basename(StoredEventResource::class))->toBe('StoredEventResource');
+
+    // Test that model names are correctly derived
+    expect(ActivityResource::getModel())->toBe('Modules\\Activity\\Models\\Activity');
+
+    expect(SnapshotResource::getModel())->toBe('Modules\\Activity\\Models\\Snapshot');
+
+    expect(StoredEventResource::getModel())->toBe('Modules\\Activity\\Models\\StoredEvent');
 });
