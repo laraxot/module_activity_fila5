@@ -2,20 +2,30 @@
 
 declare(strict_types=1);
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Modules\Activity\Models\BaseSnapshot;
+namespace Modules\Activity\Tests\Unit\Models;
+
+use Illuminate\Database\Eloquent\Builder;
 use Modules\Activity\Models\Snapshot;
+use Modules\Activity\Tests\TestCase;
+use Modules\Xot\Models\Traits\HasXotFactory;
+use PHPUnit\Framework\Assert;
+use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
 
-describe('Snapshot Business Logic', function () {
-    test('snapshot has correct connection configured', function () {
-        $snapshot = new Snapshot;
+use function Safe\class_uses;
 
-        expect($snapshot->getConnectionName())->toBe('activity');
-    });
+/**
+ * Verifica il contratto pubblico del model Snapshot per event sourcing.
+ */
+final class SnapshotBusinessLogicTest extends TestCase
+{
+    public function test_uses_dedicated_activity_database_connection(): void
+    {
+        Assert::assertSame('activity', (new Snapshot)->getConnectionName());
+    }
 
-    test('snapshot has expected fillable fields for event sourcing', function () {
-        $snapshot = new Snapshot;
-        $expectedFillable = [
+    public function test_exposes_expected_fillable_attributes_for_aggregate_state(): void
+    {
+        $expected = [
             'id',
             'aggregate_uuid',
             'aggregate_version',
@@ -24,24 +34,28 @@ describe('Snapshot Business Logic', function () {
             'updated_at',
         ];
 
-        expect($snapshot->getFillable())->toEqual($expectedFillable);
-    });
+        Assert::assertSame($expected, (new Snapshot)->getFillable());
+    }
 
-    test('snapshot extends base snapshot', function () {
-        expect(is_subclass_of(Snapshot::class, BaseSnapshot::class))->toBeTrue();
-    });
+    public function test_extends_spatie_eloquent_snapshot(): void
+    {
+        $snapshot = new Snapshot;
 
-    test('snapshot has factory trait for testing', function () {
-        $traits = class_uses(Snapshot::class);
+        Assert::assertInstanceOf(SpatieSnapshot::class, $snapshot);
+    }
 
-        expect($traits)->toHaveKey(HasFactory::class);
-    });
+    public function test_uses_xot_factory_trait_for_test_data(): void
+    {
+        Assert::assertArrayHasKey(HasXotFactory::class, class_uses(Snapshot::class));
+    }
 
-    test('snapshot has uuid scope method', function () {
-        expect(method_exists(Snapshot::class, 'scopeUuid'))->toBeTrue();
-    });
+    public function test_can_query_snapshots_by_aggregate_uuid(): void
+    {
+        Assert::assertInstanceOf(Builder::class, Snapshot::uuid('00000000-0000-0000-0000-000000000001'));
+    }
 
-    test('snapshot can query by aggregate version', function () {
-        expect(method_exists(Snapshot::class, 'whereAggregateVersion'))->toBeTrue();
-    });
-});
+    public function test_can_query_snapshots_by_aggregate_version(): void
+    {
+        Assert::assertInstanceOf(Builder::class, Snapshot::whereAggregateVersion(1));
+    }
+}
