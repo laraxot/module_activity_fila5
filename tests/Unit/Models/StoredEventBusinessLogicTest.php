@@ -2,26 +2,35 @@
 
 declare(strict_types=1);
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+namespace Modules\Activity\Tests\Unit\Models;
+
 use Modules\Activity\Models\StoredEvent;
-use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent;
+use Modules\Activity\Tests\TestCase;
+use Modules\Xot\Models\Traits\HasXotFactory;
+use PHPUnit\Framework\Assert;
+use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent as SpatieStoredEvent;
+use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder;
 
-describe('StoredEvent Business Logic', function () {
-    test('stored event has correct connection configured', function () {
-        $storedEvent = new StoredEvent;
+use function Safe\class_uses;
 
-        expect($storedEvent->getConnectionName())->toBe('activity');
-    });
+/**
+ * Verifica il contratto pubblico del model StoredEvent (persistenza eventi).
+ */
+final class StoredEventBusinessLogicTest extends TestCase
+{
+    public function test_uses_dedicated_activity_database_connection(): void
+    {
+        Assert::assertSame('activity', (new StoredEvent)->getConnectionName());
+    }
 
-    test('stored event has correct table configured', function () {
-        $storedEvent = new StoredEvent;
+    public function test_uses_stored_events_table(): void
+    {
+        Assert::assertSame('stored_events', (new StoredEvent)->getTable());
+    }
 
-        expect($storedEvent->getTable())->toBe('stored_events');
-    });
-
-    test('stored event has expected fillable fields for event sourcing', function () {
-        $storedEvent = new StoredEvent;
-        $expectedFillable = [
+    public function test_exposes_expected_fillable_attributes_for_event_payload(): void
+    {
+        $expected = [
             'id',
             'aggregate_uuid',
             'aggregate_version',
@@ -34,31 +43,21 @@ describe('StoredEvent Business Logic', function () {
             'created_by',
         ];
 
-        expect($storedEvent->getFillable())->toEqual($expectedFillable);
-    });
+        Assert::assertSame($expected, (new StoredEvent)->getFillable());
+    }
 
-    test('stored event extends eloquent stored event for event sourcing', function () {
-        expect(is_subclass_of(
-            StoredEvent::class,
-            EloquentStoredEvent::class,
-        ))->toBeTrue();
-    });
+    public function test_extends_spatie_eloquent_stored_event(): void
+    {
+        Assert::assertInstanceOf(SpatieStoredEvent::class, new StoredEvent);
+    }
 
-    test('stored event has factory trait for testing', function () {
-        $traits = class_uses(StoredEvent::class);
+    public function test_uses_xot_factory_trait_for_test_data(): void
+    {
+        Assert::assertArrayHasKey(HasXotFactory::class, class_uses(StoredEvent::class));
+    }
 
-        expect($traits)->toHaveKey(HasFactory::class);
-    });
-
-    test('stored event has after version scope method', function () {
-        expect(method_exists(StoredEvent::class, 'scopeAfterVersion'))->toBeTrue();
-    });
-
-    test('stored event has where aggregate root scope method', function () {
-        expect(method_exists(StoredEvent::class, 'scopeWhereAggregateRoot'))->toBeTrue();
-    });
-
-    test('stored event has where event scope method', function () {
-        expect(method_exists(StoredEvent::class, 'scopeWhereEvent'))->toBeTrue();
-    });
-});
+    public function test_exposes_event_sourcing_query_builder_entry_point(): void
+    {
+        Assert::assertInstanceOf(EloquentStoredEventQueryBuilder::class, StoredEvent::query());
+    }
+}

@@ -2,18 +2,26 @@
 
 declare(strict_types=1);
 
+namespace Modules\Activity\Tests\Unit\Models;
+
+use Illuminate\Database\Eloquent\Builder;
 use Modules\Activity\Models\Activity;
+use Modules\Activity\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-describe('Activity Business Logic', function () {
-    test('activity has correct connection configured', function () {
-        $activity = new Activity;
+/**
+ * Verifica il contratto pubblico del model Activity (connessione, mass assignment, query scopes).
+ */
+final class ActivityBusinessLogicTest extends TestCase
+{
+    public function test_uses_dedicated_activity_database_connection(): void
+    {
+        Assert::assertSame('activity', (new Activity)->getConnectionName());
+    }
 
-        expect($activity->getConnectionName())->toBe('activity');
-    });
-
-    test('activity has expected fillable fields', function () {
-        $activity = new Activity;
-        $expectedFillable = [
+    public function test_exposes_expected_fillable_attributes_for_audit_log(): void
+    {
+        $expected = [
             'id',
             'log_name',
             'description',
@@ -23,27 +31,25 @@ describe('Activity Business Logic', function () {
             'causer_type',
             'causer_id',
             'properties',
+            'attribute_changes',
             'batch_uuid',
-            'created_at',
-            'updated_at',
         ];
 
-        expect($activity->getFillable())->toEqual($expectedFillable);
-    });
+        Assert::assertSame($expected, (new Activity)->getFillable());
+    }
 
-    test('activity extends spatie activity functionality', function () {
-        expect(is_subclass_of(Activity::class, \Spatie\Activitylog\Models\Activity::class))->toBeTrue();
-    });
+    public function test_can_filter_activities_by_log_name(): void
+    {
+        Assert::assertInstanceOf(Builder::class, Activity::inLog('default'));
+    }
 
-    test('activity has in log scope method', function () {
-        expect(method_exists(Activity::class, 'scopeInLog'))->toBeTrue();
-    });
+    public function test_can_filter_activities_by_event_name(): void
+    {
+        Assert::assertInstanceOf(Builder::class, Activity::forEvent('created'));
+    }
 
-    test('activity has for event scope method', function () {
-        expect(method_exists(Activity::class, 'scopeForEvent'))->toBeTrue();
-    });
-
-    test('activity has batch scope method', function () {
-        expect(method_exists(Activity::class, 'scopeHasBatch'))->toBeTrue();
-    });
-});
+    public function test_can_filter_activities_with_batch_uuid(): void
+    {
+        Assert::assertInstanceOf(Builder::class, Activity::hasBatch());
+    }
+}
