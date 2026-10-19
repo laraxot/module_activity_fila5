@@ -84,6 +84,10 @@ Il test `ListLogActivitiesActionTest.php` faceva riferimento a un modulo `Indenn
 -   **Migliore Leggibilità dei Test**: La dichiarazione esplicita del contesto `$this` migliora la comprensione del codice del test.
 -   **Scalabilità**: Questo pattern può essere replicato in altri moduli per risolvere problemi simili nei test Pest.
 
+## Test unitari BusinessLogic (PHPUnit Assert)
+
+I file `tests/Unit/Models/*BusinessLogicTest.php` del modulo Activity usano classi PHPUnit (`PHPUnit\Framework\TestCase` + `Assert::assert*`) invece di closure Pest/`expect()`. Motivo: PHPStan livello massimo segnala errori interni e asserzioni ridondanti sulle higher-order expectation Pest; i test restano **purpose-first** (connessione, fillable, query builder pubblici) senza `@phpstan-ignore` e senza toccare `phpstan.neon`.
+
 ## Lezioni Apprese
 
 -   La gestione dei tipi virtuali di PHPStan come `view-string` o il contesto dinamico di Pest richiede un'attenta configurazione di stub e PHPDoc, anche se le dipendenze sono installate.
