@@ -6,6 +6,7 @@ module: Activity
 created: 2026-09-28
 updated: 2026-09-28
 qmd: "Activity brainstorming rischi opportunità domande aperte"
+tags: [docs, activity, bmad]
 ---
 # Activity — brainstorming
 

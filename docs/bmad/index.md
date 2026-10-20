@@ -3,6 +3,8 @@ title: Activity — indice BMAD
 type: index
 tags: [docs, bmad, activity]
 qmd: "Activity indice BMAD documentazione"
+status: draft
+updated: 2026-10-09
 ---
 
 # Activity — indice BMAD

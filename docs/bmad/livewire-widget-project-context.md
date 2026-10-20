@@ -5,6 +5,10 @@ module: Activity
 related:
   - ./livewire-inventory.md
   - ../../Xot/docs/bmad/livewire-widget-project-context.md
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "context activity activity"
 ---
 
 # Context Activity

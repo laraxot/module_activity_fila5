@@ -1,6 +1,11 @@
 ---
 title: Epics
 module: Activity
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "epics e user stories - modulo activity activity"
 ---
 
 # Epics e User Stories - Modulo Activity

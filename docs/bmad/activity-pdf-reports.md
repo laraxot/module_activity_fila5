@@ -1,6 +1,11 @@
 ---
 title: Activity pdf reports
 module: Activity
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "activity log pdf reports activity"
 ---
 
 # Activity Log PDF Reports
