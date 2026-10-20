@@ -10,6 +10,10 @@ references:
   - laravel/Modules/Xot/docs/bmad/stories/phpstan-modules-swarm-random-20261006.story.md
   - bashscripts/ai/wiki/memories/multiagent-phpstan-scan-resource-contention.md
   - bashscripts/ai/wiki/memories/phpstan-swarm-single-slot-sequencing.md
+type: story
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "phpstan swarm cluster 5   activity activity"
 ---
 
 # PHPStan swarm cluster 5 — Activity
@@ -21,7 +25,7 @@ Activity, IndennitaCondizioniLavoro, Performance. Coordinatrice:
 
 ## Stato pregresso
 Activity era a 0 errori (commit `cda1698b2f`, story
-`quality-gates-phpstan-fix-20260928.story.md`). Nessuna modifica ad `app/`
+`quality-gates-phpstan-fix.story.md`). Nessuna modifica ad `app/`
 successiva: `git log` mostra solo docs. Nessuna regressione attesa.
 
 ## Gate

@@ -1,6 +1,11 @@
 ---
 title: Anti pattern model env hack
 module: Activity
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "anti-pattern: environment-specific logic in models activity"
 ---
 
 # Anti-Pattern: Environment-Specific Logic in Models

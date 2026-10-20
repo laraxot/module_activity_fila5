@@ -1,6 +1,11 @@
 ---
 title: Activity log ui improvements
 module: Activity
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "activity log ui/ux improvements - implementation summary activity"
 ---
 
 # Activity Log UI/UX Improvements - Implementation Summary
