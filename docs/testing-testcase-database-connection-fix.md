@@ -76,7 +76,7 @@ protected function setUp(): void
 
 ## 🔗 Collegamenti
 
-- [Testing Rules](../testing-rules.md)
+- [Testing Rules](testing-rules.md)
 - [TestCase SQLite to MySQL Fix](testcase-sqlite-to-mysql-fix.md)
 - [User TestCase](../../User/tests/TestCase.php)
 

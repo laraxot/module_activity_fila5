@@ -1,7 +1,19 @@
 ---
+title: legacy snapshot (ex readme.md)
+status: archive
+canonical: README.md
+---
+
+> Snapshot recuperato da git dopo unificazione `readme.md` verso `README.md`.
+> Ingresso attivo: [README.md](./README.md).
+
+---
 title: Readme
 module: Activity
+status: stale
 ---
+
+> Nota 2026-10-14 (docs-audit): ActivityStatsWidget, EventStore, dashboard in tempo reale e punteggio qualita' non corrispondono al codice: app/Filament non ha Widgets, routes/ e' vuoto. Vedi README.md. Contenuto non riscritto, verificare prima di usarlo.
 
 # Activity
 
@@ -31,8 +43,8 @@ Core module for the FixCity Platform.
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](..) |
+| 🇬🇧 Business card | [docs/readme-en.md](./readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](.) |
 
 ---
 
@@ -235,13 +247,13 @@ php artisan activity:test-events
 - [Advanced Patterns](advanced_event_sourcing_patterns.md) - Pattern avanzati
 
 ### 📊 **Analytics & Monitoring**
-- [Activity Dashboard](../filament-resources.md) - Dashboard analytics attività
+- [Activity Dashboard](filament-resources.md) - Dashboard analytics attività
 - [Event Analytics](event-sourcing-examples.md) - Analytics eventi
-- [Performance Monitoring](../bottlenecks.md) - Monitoraggio performance
-- [Security Compliance](../translations.md) - Conformità sicurezza
+- [Performance Monitoring](bottlenecks.md) - Monitoraggio performance
+- [Security Compliance](translations.md) - Conformità sicurezza
 
 ### 🔧 **Development**
-- [PHPStan Fixes](phpstan/README.md) - Log completo correzioni PHPStan
+- [PHPStan Fixes](phpstan/README.md) _(target mancante, verificato 2026-10-14)_ - Log completo correzioni PHPStan
 - [Event Sourcing Examples](event_sourcing_examples.md) - Esempi event sourcing
 - [Testing Structure](testing-structure-login-analysis.md) - Struttura testing
 
@@ -377,7 +389,7 @@ php artisan activity:check-indexes
 # Pulire log vecchi
 php artisan activity:cleanup --older-than=90
 ```
-**Soluzione**: Consulta [Performance Monitoring](../bottlenecks.md)
+**Soluzione**: Consulta [Performance Monitoring](bottlenecks.md)
 
 #### 🔍 **Missing Activities**
 ```php
@@ -582,9 +594,9 @@ Elimina un'attività (soft delete).
 
 - [Architettura](./architecture.md)
 - [API Documentation](./api.md)
-- [Filament Resources](../filament-resources.md)
+- [Filament Resources](./filament-resources.md)
 - [Testing](./testing.md)
-- [Deployment](./deployment.md)
+- [Deployment](./deployment.md) _(target mancante, verificato 2026-10-14)_
 
 *Ultimo aggiornamento: gennaio 2025*
 ---
@@ -625,14 +637,14 @@ Activity/
 
 ## Dipendenze
 
-- [Xot Base](../../../Xot/docs)
-- [User Module](../../../User/docs) (se usa autenticazione)
-- [Tenant Module](../../../Tenant/docs) (se multi-tenant)
+- [Xot Base](../../Xot/docs)
+- [User Module](../../User/docs) (se usa autenticazione)
+- [Tenant Module](../../Tenant/docs) (se multi-tenant)
 
 ## Collegamenti
 
-- [Documentazione Root](../../../docs/ACTIVITY_MODULE.md)
-- [Regole Architecture](../../../Xot/docs/architecture)
+- [Documentazione Root](../../../docs/ACTIVITY_MODULE.md) _(target mancante, verificato 2026-10-14)_
+- [Regole Architecture](../../Xot/docs/architecture)
 
 ## Backlinks
 
