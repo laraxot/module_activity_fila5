@@ -2,8 +2,8 @@
 
 
 Consulta la documentazione delle traduzioni qui:
-- [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
-- [Struttura delle Traduzioni](../../lang/docs/structure.md)
+- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).
 

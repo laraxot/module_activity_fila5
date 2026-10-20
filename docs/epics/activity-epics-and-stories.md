@@ -4,6 +4,8 @@ type: user_stories
 tags: [user stories, epics, activity]
 created: 2026-08-04
 updated: 2026-08-04
+status: draft
+qmd: "activity epics and user stories activity"
 ---
 # Activity Epics and User Stories
 

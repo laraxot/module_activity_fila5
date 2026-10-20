@@ -1,3 +1,11 @@
+---
+title: "PHPStan Error Resolution Roadmap - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan error resolution roadmap - activity module activity"
+---
 # PHPStan Error Resolution Roadmap - Activity Module
 
 ## Data: 2026-01-08

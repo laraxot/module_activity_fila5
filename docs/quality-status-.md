@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Quality Status (November 2025)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - quality status (november 2025) activity"
+---
 # Activity Module - Quality Status (November 2025)
 
 ## 🎯 Overview

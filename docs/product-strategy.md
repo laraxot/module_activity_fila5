@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Product Strategy# Activity - Product Strategy"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "activity module - product strategy# activity - product strategy activity"
+---
 # Activity Module - Product Strategy# Activity - Product Strategy
 
 **Module:** Activity  

@@ -1,3 +1,11 @@
+---
+title: "Confronto tra Approcci: Traditional, Projectors, Aggregates, Eventsauce"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "confronto tra approcci: traditional, projectors, aggregates, eventsauce activity"
+---
 # Confronto tra Approcci: Traditional, Projectors, Aggregates, Eventsauce
 
 ## 1. Larabank-Traditional

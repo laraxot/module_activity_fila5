@@ -1,3 +1,11 @@
+---
+title: "Code Quality Analysis - Activity Module"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "code quality analysis - activity module activity"
+---
 # Code Quality Analysis - Activity Module
 
 ## 🚨 Critical Issues Identified

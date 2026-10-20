@@ -253,8 +253,8 @@ test('can reconstruct aggregate from snapshots', function () {
 - [Snapshot Model](../models/snapshot-model.md)
 
 ### Test Esempi
-- [SnapshotBusinessLogicTest](../tests/Feature/SnapshotBusinessLogicTest.php)
-- [ActivityBusinessLogicTest](../tests/Feature/ActivityBusinessLogicTest.php)
+- [SnapshotBusinessLogicTest](../../tests/Feature/SnapshotBusinessLogicTest.php)
+- [ActivityBusinessLogicTest](../../tests/Feature/ActivityBusinessLogicTest.php)
 
 ---
 

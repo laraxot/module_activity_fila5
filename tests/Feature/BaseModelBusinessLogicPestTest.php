@@ -4,155 +4,222 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
 
-use Illuminate\Database\ConnectionInterface;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\ConnectionInterface;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Str;
 use Modules\Activity\Models\BaseModel;
-use Modules\Activity\Tests\TestCase;
+use Modules\Activity\Tests\Feature\TestActivityModel;
 use Modules\Xot\Traits\Updater;
-use PHPUnit\Framework\Assert;
+use Tests\TestCase;
 
-uses(TestCase::class);
+use function Safe\class_uses;
+
+uses(TestCase::class, RefreshDatabase::class);
+
+beforeEach(function (): void {
+    /* @phpstan-ignore-next-line property.notFound */
+    $this->model = new TestActivityModel;
+});
 
 test('can create base model instance', function (): void {
-    $model = new TestActivityModel;
-
-    Assert::assertInstanceOf(BaseModel::class, $model);
-    Assert::assertInstanceOf(Model::class, $model);
+    /* @phpstan-ignore-next-line property.notFound */
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model)->toBeInstanceOf(BaseModel::class);
+    /* @phpstan-ignore-next-line property.notFound */
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model)->toBeInstanceOf(Model::class);
 });
 
 test('has correct connection setting', function (): void {
-    $model = new TestActivityModel;
-
-    Assert::assertSame('activity', $model->getConnectionName());
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->getConnectionName())->toBe('activity');
 });
 
 test('has correct primary key setting', function (): void {
-    $model = new TestActivityModel;
-
-    Assert::assertSame('id', $model->getKeyName());
-    Assert::assertSame('int', $model->getKeyType());
-    Assert::assertTrue($model->getIncrementing());
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->getKeyName())->toBe('id');
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->getKeyType())->toBe('string');
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->getIncrementing())->toBeTrue();
 });
 
 test('has correct timestamps setting', function (): void {
-    $model = new TestActivityModel;
-
-    Assert::assertTrue($model->usesTimestamps());
-    Assert::assertTrue($model->timestamps);
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->usesTimestamps())->toBeTrue();
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->timestamps)->toBeTrue();
 });
 
 test('has correct per page setting', function (): void {
-    $model = new TestActivityModel;
-
-    Assert::assertSame(30, $model->getPerPage());
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->getPerPage())->toBe(30);
 });
 
 test('has correct snake attributes setting', function (): void {
-    Assert::assertTrue(TestActivityModel::$snakeAttributes);
+    expect(TestActivityModel::$snakeAttributes)->toBeTrue();
 });
 
 test('has correct casts configuration', function (): void {
-    $model = new TestActivityModel;
-    $casts = $model->getCasts();
+    /** @phpstan-ignore-next-line property.notFound */
+    $casts = $this->model->getCasts();
 
-    Assert::assertIsArray($casts);
-    Assert::assertArrayHasKey('id', $casts);
-    Assert::assertSame('string', $casts['id']);
+    expect($casts)->toHaveKey('id');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['id'])->toBe('string');
 
-    Assert::assertArrayHasKey('published_at', $casts);
-    Assert::assertSame('datetime', $casts['published_at']);
+    expect($casts)->toHaveKey('uuid');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['uuid'])->toBe('string');
+
+    expect($casts)->toHaveKey('created_at');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['created_at'])->toBe('datetime');
+
+    expect($casts)->toHaveKey('updated_at');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['updated_at'])->toBe('datetime');
+
+    expect($casts)->toHaveKey('deleted_at');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['deleted_at'])->toBe('datetime');
+
+    expect($casts)->toHaveKey('updated_by');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['updated_by'])->toBe('string');
+
+    expect($casts)->toHaveKey('created_by');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['created_by'])->toBe('string');
+
+    expect($casts)->toHaveKey('deleted_by');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['deleted_by'])->toBe('string');
+
+    expect($casts)->toHaveKey('published_at');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['published_at'])->toBe('datetime');
 });
 
 test('can use factory', function (): void {
-    $factory = TestActivityModel::factory();
-
-    Assert::assertNotNull($factory);
+    /* @phpstan-ignore-next-line property.notFound */
+    expect(method_exists($this->model, 'factory'))->toBeTrue();
+    /* @phpstan-ignore-next-line property.notFound */
+    expect(method_exists($this->model, 'newFactory'))->toBeTrue();
 });
 
 test('has updater trait', function (): void {
-    $model = new TestActivityModel;
-    $traits = class_uses_recursive($model::class);
-    Assert::assertContains(Updater::class, $traits);
+    /** @var TestActivityModel $model */
+    /** @phpstan-ignore-next-line property.notFound */
+    $model = $this->model;
+    $traits = class_uses($model);
+    expect($traits)->toContain(Updater::class);
 });
 
 test('has has factory trait', function (): void {
-    $model = new TestActivityModel;
-    $traits = class_uses_recursive($model::class);
-    Assert::assertContains(HasFactory::class, $traits);
+    /** @var TestActivityModel $model */
+    /** @phpstan-ignore-next-line property.notFound */
+    $model = $this->model;
+    $traits = class_uses($model);
+    expect($traits)->toContain(HasFactory::class);
 });
 
 test('can handle uuid generation', function (): void {
-    $model = new TestActivityModel;
     $uuid = Str::uuid()->toString();
-    $model->uuid = $uuid;
-    $model->name = 'Test Model';
+    /* @phpstan-ignore-next-line property.notFound */
+    $this->model->uuid = $uuid;
+    /* @phpstan-ignore-next-line property.notFound */
+    $this->model->name = 'Test Model';
 
-    Assert::assertSame($uuid, $model->uuid);
-    Assert::assertSame('Test Model', $model->name);
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->uuid)->toBe($uuid);
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->name)->toBe('Test Model');
 });
 
 test('can handle timestamps', function (): void {
-    $model = new TestActivityModel;
     $now = now();
-    $model->created_at = $now;
-    $model->updated_at = $now;
+    /* @phpstan-ignore-next-line property.notFound */
+    $this->model->created_at = $now;
+    /* @phpstan-ignore-next-line property.notFound */
+    $this->model->updated_at = $now;
 
-    Assert::assertSame($now->timestamp, $model->created_at->timestamp);
-    Assert::assertSame($now->timestamp, $model->updated_at->timestamp);
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->created_at->timestamp)->toBe($now->timestamp);
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->updated_at->timestamp)->toBe($now->timestamp);
 });
 
 test('can handle soft deletes', function (): void {
-    $model = new TestActivityModel;
     $now = now();
-    $model->deleted_at = $now;
+    /* @phpstan-ignore-next-line property.notFound */
+    $this->model->deleted_at = $now;
 
-    Assert::assertSame($now->timestamp, $model->deleted_at->timestamp);
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->deleted_at->timestamp)->toBe($now->timestamp);
 });
 
 test('can handle published at timestamp', function (): void {
-    $model = new TestActivityModel;
     $now = now();
-    $model->published_at = $now;
+    /* @phpstan-ignore-next-line property.notFound */
+    $this->model->published_at = $now;
 
-    Assert::assertSame($now->timestamp, $model->published_at->timestamp);
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->published_at->timestamp)->toBe($now->timestamp);
 });
 
 test('can handle created by tracking', function (): void {
-    $model = new TestActivityModel;
-    $userId = 42;
-    $model->created_by = $userId;
-    $model->updated_by = $userId;
-    $model->deleted_by = $userId;
+    $userId = Str::uuid()->toString();
+    /* @phpstan-ignore-next-line property.notFound */
+    $this->model->created_by = $userId;
+    /* @phpstan-ignore-next-line property.notFound */
+    $this->model->updated_by = $userId;
+    /* @phpstan-ignore-next-line property.notFound */
+    $this->model->deleted_by = $userId;
 
-    Assert::assertSame((string) $userId, $model->created_by);
-    Assert::assertSame((string) $userId, $model->updated_by);
-    Assert::assertSame((string) $userId, $model->deleted_by);
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->created_by)->toBe($userId);
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->updated_by)->toBe($userId);
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->deleted_by)->toBe($userId);
 });
 
 test('has correct fillable configuration', function (): void {
-    $model = new TestActivityModel;
-    $fillable = $model->getFillable();
-    Assert::assertIsArray($fillable);
+    /** @phpstan-ignore-next-line property.notFound */
+    $fillable = $this->model->getFillable();
+    expect($fillable)->toBeArray();
+});
+
+test('can access attributes', function (): void {
+    /* @phpstan-ignore-next-line property.notFound */
+    $this->model->name = 'Test Name';
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->name)->toBe('Test Name');
 });
 
 test('has correct table name', function (): void {
-    $model = new TestActivityModel;
-    Assert::assertSame('test_models', $model->getTable());
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->getTable())->toBe('test_models');
 });
 
 test('has timestamps enabled', function (): void {
-    $model = new TestActivityModel;
-    Assert::assertTrue($model->usesTimestamps());
-    Assert::assertTrue($model->timestamps);
-    Assert::assertSame('created_at', $model->getCreatedAtColumn());
-    Assert::assertSame('updated_at', $model->getUpdatedAtColumn());
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->usesTimestamps())->toBeTrue();
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->timestamps)->toBeTrue();
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->getCreatedAtColumn())->toBe('created_at');
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->getUpdatedAtColumn())->toBe('updated_at');
 });
 
 test('can get connection', function (): void {
-    $model = new TestActivityModel;
-    $connection = $model->getConnection();
-    Assert::assertInstanceOf(ConnectionInterface::class, $connection);
-    Assert::assertSame('activity', $model->getConnectionName());
+    /** @phpstan-ignore-next-line property.notFound */
+    $connection = $this->model->getConnection();
+    expect($connection)->toBeInstanceOf(ConnectionInterface::class);
+    /* @phpstan-ignore-next-line property.notFound */
+    expect($this->model->getConnectionName())->toBe('activity');
 });

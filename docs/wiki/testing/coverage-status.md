@@ -1,6 +1,11 @@
 ---
 title: Coverage status
 module: Activity
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, wiki]
+qmd: "activity module - errori e coverage activity"
 ---
 
 # Activity Module - Errori e Coverage

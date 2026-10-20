@@ -1,3 +1,11 @@
+---
+title: "Flusso Utente <nome progetto>ion Market"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "flusso utente <nome progetto>ion market activity"
+---
 # Flusso Utente <nome progetto>ion Market
 
 1. **Creazione Mercato**: un utente crea un mercato (es. “Vincerà il candidato X?”).

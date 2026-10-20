@@ -1,6 +1,11 @@
 ---
 title: Accessor delegation pattern
 module: Activity
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, wiki]
+qmd: "accessor delegation pattern (sacro) activity"
 ---
 
 # Accessor Delegation Pattern (SACRO)

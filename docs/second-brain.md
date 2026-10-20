@@ -3,6 +3,8 @@ title: second brain — puntatore modulo
 type: reference
 qmd: second brain modulo wiki locale laravel
 updated: 2026-05-21
+status: draft
+tags: [docs, activity]
 ---
 
 # Second brain (modulo)

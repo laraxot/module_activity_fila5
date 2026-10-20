@@ -1,3 +1,11 @@
+---
+title: "coverage full"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "coverage full activity"
+---
 
 > Conflict cleanup note — 2026-04-28
 >
