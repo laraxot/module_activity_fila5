@@ -1,3 +1,11 @@
+---
+title: "Introduzione: Lo Shop Event Sourced Definitivo"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "introduzione: lo shop event sourced definitivo activity"
+---
 # Introduzione: Lo Shop Event Sourced Definitivo
 
 ## Visione e Filosofia

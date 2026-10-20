@@ -1,6 +1,11 @@
 ---
 title: Coverage analysis
 module: Activity
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, wiki]
+qmd: "activity module - analisi coverage e errori activity"
 ---
 
 # Activity Module - Analisi Coverage e Errori

@@ -1,3 +1,11 @@
+---
+title: "Migration Policy"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "migration policy activity"
+---
 # Migration Policy
 
 Regola canonica di progetto: [`docs/wiki/concepts/no-legacy-folders-code.md`](../../../../docs/wiki/concepts/no-legacy-folders-code.md)

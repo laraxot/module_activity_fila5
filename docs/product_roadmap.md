@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Product Roadmap"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - product roadmap activity"
+---
 # Activity Module - Product Roadmap
 
 **Module:** Activity  

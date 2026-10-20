@@ -1,3 +1,11 @@
+---
+title: "Module Root Hygiene — Why the Activity Root Stays Clean"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "module root hygiene   why the activity root stays clean activity"
+---
 # Module Root Hygiene — Why the Activity Root Stays Clean
 
 Extends the canonical rule: [`docs/wiki/rules/module-theme-root-cleanup.md`](../../../../docs/wiki/rules/module-theme-root-cleanup.md).

@@ -1,3 +1,11 @@
+---
+title: "PHPStan Quality Rules"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan quality rules activity"
+---
 # PHPStan Quality Rules
 
 ## ⚠️ REGOLA CRITICA: NON ESCLUDERE MAI I TEST DA PHPSTAN

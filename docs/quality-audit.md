@@ -4,6 +4,8 @@ type: report
 module: Activity
 updated: 2026-09-01
 qmd: "audit qualita activity phpstan phpmd phpinsights pest coverage soppressioni collisioni case"
+status: draft
+tags: [docs, activity]
 ---
 
 # Audit di qualita — modulo Activity

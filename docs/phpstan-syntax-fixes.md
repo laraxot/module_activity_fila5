@@ -1,3 +1,11 @@
+---
+title: "PHPStan Syntax Fixes - Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan syntax fixes - modulo activity activity"
+---
 # PHPStan Syntax Fixes - Modulo Activity
 
 **Data**: 2025-01-11

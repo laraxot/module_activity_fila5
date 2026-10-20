@@ -1,3 +1,11 @@
+---
+title: "Fix: Activity TestCase - Database Connection Configuration"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "fix: activity testcase - database connection configuration activity"
+---
 # Fix: Activity TestCase - Database Connection Configuration
 
 **Data**: 2025-01-22

@@ -4,6 +4,8 @@ type: "rule"
 tags: [activity, context-mode, xotbase-zen]
 created: 2026-05-12
 updated: 2026-05-12
+status: draft
+qmd: "activity module   context-mode discipline activity"
 ---
 
 # Activity Module — Context-Mode Discipline

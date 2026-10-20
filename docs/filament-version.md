@@ -1,3 +1,11 @@
+---
+title: "Filament Version Declaration — Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "filament version declaration   activity activity"
+---
 # Filament Version Declaration — Activity
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)

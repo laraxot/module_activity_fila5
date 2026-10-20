@@ -4,6 +4,8 @@ type: guideline
 module: Activity
 updated: 2026-09-01
 qmd: "tabella filament resource table class getTableFilters XotBaseResourceTable HasXotTable list page activity"
+status: draft
+tags: [docs, activity]
 ---
 
 # La tabella si configura nella Table class, non nella pagina

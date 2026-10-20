@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Errori Test e Configurazione"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "activity module - errori test e configurazione activity"
+---
 # Activity Module - Errori Test e Configurazione
 
 ## Sommario
