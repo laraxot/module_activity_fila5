@@ -4,6 +4,10 @@ type: epics
 module: Activity
 related:
   - ./livewire-inventory.md
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "epics activity activity"
 ---
 
 # Epics Activity

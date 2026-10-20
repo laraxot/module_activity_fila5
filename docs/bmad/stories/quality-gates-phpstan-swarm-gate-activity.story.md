@@ -9,10 +9,12 @@ updated: 2026-09-23
 epic: quality-gates-phpstan-fleet-2026-09-23
 assignee: ai-agent
 related:
-  - ./conflict-markers-cleanup-2026-09-22.story.md
+  - ./conflict-markers-cleanup.story.md
   - ./continuazione-domani.md
 references:
   - sprint-status: "Activity/nested-conflict-markers-86-files (2026-09-22) — ultimo stato verificato: PHPStan Modules/Activity 0 errori"
+tags: [docs, activity, bmad]
+qmd: "activity   phpstan quality gate swarm (2026-09-23) activity"
 ---
 
 # Activity — PHPStan quality gate swarm (2026-09-23)
@@ -35,7 +37,7 @@ Working tree **completamente pulito** (0 righe da `git status --short`).
 Remote: `laraxot/dev` (github.com/laraxot/module_activity_fila5) +
 `provtv/dev`. Branch `dev`, HEAD `d6648338` (". ", commit del daemon
 auto-commit). Nessun `.git/MERGE_HEAD`, nessun marker di conflitto residuo
-(già risolti in `conflict-markers-cleanup-2026-09-22.story.md`).
+(già risolti in `conflict-markers-cleanup.story.md`).
 
 Lock: **libero** al check iniziale (`bash bashscripts/lock/check.sh
 laravel/Modules/Activity` → `FREE`). Acquisito con motivo
@@ -106,7 +108,7 @@ non modificabile per vincolo di scope.
    bloccata 4/4 volte da un fatal error di bootstrap causato da
    `Modules/Incentivi` (vedi sopra). Non risolvibile restando nello scope
    di Activity. Ultimo stato **realmente verificato** (sessione precedente,
-   `docs/bmad/stories/conflict-markers-cleanup-2026-09-22.story.md` +
+   `docs/bmad/stories/conflict-markers-cleanup.story.md` +
    `docs/coverage.md`, commit `d0bc6e4f`, 2026-09-22): **PHPStan
    Modules/Activity → 0 errori**. Nessuna modifica al codice `app/` di
    Activity è avvenuta tra quel commit e questa sessione (working tree
