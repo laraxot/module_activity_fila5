@@ -15,9 +15,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('policy extends user base policy', function (): void {
-    $policy = new StoredEventPolicy;
-
-    Assert::assertInstanceOf(UserBasePolicy::class, $policy);
+    Assert::assertTrue((new \ReflectionClass(StoredEventPolicy::class))->isSubclassOf(UserBasePolicy::class));
 });
 
 test('user with permission can view', function (): void {
