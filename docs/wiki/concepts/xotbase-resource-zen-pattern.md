@@ -10,6 +10,8 @@ tags: [filament, xotbase, zen-pattern, resource]
 related:
   - ../../Xot/docs/wiki/concepts/xotbase-resourceform-zen-pattern.md
   - ../../Xot/docs/wiki/concepts/xotbase-resource-table-zen-pattern.md
+status: draft
+qmd: "xotbaseresource zen pattern activity"
 ---
 
 # XotBaseResource Zen Pattern

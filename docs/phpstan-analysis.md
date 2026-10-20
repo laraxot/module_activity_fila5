@@ -1,3 +1,11 @@
+---
+title: "PHPStan Analysis - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan analysis - activity module activity"
+---
 # PHPStan Analysis - Activity Module
 
 **Data**: 2025-10-10T12:40:18+02:00

@@ -1,6 +1,11 @@
 ---
 title: Analysis religion zen
 module: Activity
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, wiki]
+qmd: "activity module: complete analysis (religion, philosophy, politics, zen) activity"
 ---
 
 # Activity Module: Complete Analysis (Religion, Philosophy, Politics, Zen)

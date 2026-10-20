@@ -1,3 +1,11 @@
+---
+title: "Merge conflict markers — file list"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "merge conflict markers   file list activity"
+---
 # Merge conflict markers — file list
 
 Elenco dei file trovati contenenti marker di merge (<<<<<<<, >>>>>>>, .merge_file). Seguire la lista per assegnare task agli agenti.

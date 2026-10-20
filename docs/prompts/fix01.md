@@ -8,6 +8,8 @@ tags: [migrato-da-txt, activity]
 converted_from: fix01.txt
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
+qmd: "fix: connessione database 'activity' - regola corretta activity"
 ---
 
 # Fix: Connessione database 'activity' - Regola corretta

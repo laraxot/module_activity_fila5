@@ -1,3 +1,11 @@
+---
+title: "Console Commands per Shop Event Sourced"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "console commands per shop event sourced activity"
+---
 # Console Commands per Shop Event Sourced
 
 ## Introduzione
