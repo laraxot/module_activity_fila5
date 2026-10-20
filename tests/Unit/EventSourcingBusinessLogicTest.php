@@ -253,7 +253,11 @@ describe('Event Sourcing Business Logic', function () {
                 }
             }
 
-            Assert::assertSame(2, $finalState['login_count']);
+            $loginEvents = array_filter(
+                $events,
+                static fn (array $event): bool => $event['type'] === 'login',
+            );
+            Assert::assertSame(count($loginEvents), $finalState['login_count']);
             Assert::assertSame('2024-12-01 10:00:00', $finalState['last_login']);
         });
 
@@ -284,7 +288,7 @@ describe('Event Sourcing Business Logic', function () {
             $events = array_fill(0, $batchSize, $this->storedEventData);
 
             // Business Logic: Batch processing should handle reasonable loads
-            Assert::assertSame($batchSize, count($events));
+            Assert::assertCount($batchSize, $events);
             Assert::assertLessThanOrEqual(1000, $batchSize); // Reasonable batch limit
         });
 

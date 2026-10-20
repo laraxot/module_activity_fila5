@@ -3,13 +3,20 @@ type: decision-log
 title: "Decision Log — Activity"
 links: {github_issue: #XXX, discussion: #XXX}
 status: draft
-updated: 2026-10-08
+updated: 2026-10-20
 tags: [docs, activity]
 qmd: "decision log   activity activity"
 ---
 # Decision Log — Activity
 
 ## Decisions
+
+### 2026-10-20: PHPStan `variable.unused` nei test — scopo prima del fix
+
+- **Choose:** ripulire assegnazioni morte nei test (skeleton post-merge) senza inventare asserzioni o schema DB; documentare famiglia e file in [bmad-variable-unused.md](./bmad-variable-unused.md).
+- **Over:** `@phpstan-ignore`, stub vuoti extra, escludere test dal neon.
+- **Because:** l'errore segnala test che non verificano nulla; zittire PHPStan lascia falsi verdi. Gate unico: [ordine permanente](../../../../bashscripts/docs/prompts/00-start.md#ordine-permanente-dellutente), memoria [phpstan-modules-zero-standing-order](../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md).
+- **Track:** [filament-blueprint](./bmad/filament-blueprint.md) (Actions, no Service).
 
 ### 2026-10-08: Riallineamento dell'intero modulo all'ultimo commit buono `bc3d22ca`
 - **Choose**: Confronto a tre vie dell'intero modulo (app, config, routes, resources, lang, database, tests) con `bc3d22ca` (07/10 06:35), l'ultimo commit prima degli eventi del 07/10 (copia vecchia fusa alle 10:59, re-import).
