@@ -80,7 +80,33 @@ Il corpo scartato resta nel repo Activity al commit `b88f43dd`, stesso path.
 
 Nessuno. Per `Model::factory()` il modulo Xot ha gia' un resolver (`XotServiceProvider::registerFactoryNameResolver()`, `Factory::guessFactoryNamesUsing`): fino a poco prima il tipo era `*ERROR*`/`mixed` perche' Larastan non trovava una factory per i modelli dei moduli (richiede `newFactory()` tipizzato o la convenzione di Laravel, e `HasXotFactory` non ha piu' `newFactory()`). I test ripristinati usano la factory concreta (`ActivityFactory::new()`), come nella forma di `c49eef12`: non e' una riscrittura di `::factory()` ma il ripristino della forma storica, e la misura finale (0 errori) non dipende dal resolver. Ri-misurato dopo la nota della lane user-b: ancora 0 sul bucket e su `Modules/Activity`.
 
+## Wave TSV `.cursor-scratch/phpstan-wave/Activity.tsv` (2026-10-20 sera)
+
+Lane su 18 path del TSV: assert tautologici / empty closure / unused / parent policy allineati a `UserBasePolicy` (non `ActivityBasePolicy` per `StoredEventPolicy`). Verifica: `flock /tmp/phpstan-gate.lock` + phpstan sui path TSV → `0 file_errors`, banner `[OK] No errors`. Nessun edit a `phpstan.neon`, nessun commit.
+
+| File | Scopo (1 frase) |
+|------|-----------------|
+| `tests/Feature/FilamentTest.php` | Contratto Filament Resource/Action/Page del modulo Activity |
+| `tests/Unit/Actions/LogModelCreatedActionTest.php` | Action che registra creazione modello su activity log |
+| `tests/Unit/Actions/RestoreActivityActionTest.php` | Action di restore stato da activity |
+| `tests/Unit/EventSourcingBusinessLogicTest.php` | Replay eventi e ricostruzione stato aggregato |
+| `tests/Unit/Filament/ListLogActivitiesDeepCoverageTest.php` | Copertura edge ListLogActivities (resolve, label map) |
+| `tests/Unit/Filament/ListLogActivitiesRemainingCoverageTest.php` | Residui copertura createFieldLabelMap / paginator |
+| `tests/Unit/ListLogActivitiesActionTest.php` | Action Filament lista log (icon/name/color) |
+| `tests/Unit/ListLogActivitiesPageCoverageTest.php` | Notifiche restore success/failure della page |
+| `tests/Unit/ListLogActivitiesPageTest.php` | Contratto astratto page + trait CanPaginate |
+| `tests/Unit/Listeners/ActivityListenersTest.php` | Listener login/logout istanziabili |
+| `tests/Unit/Listeners/LogoutListenerTest.php` | Registrazione e firma handle(Logout) |
+| `tests/Unit/Models/BaseModelTest.php` | BaseModel connection `activity` + parent Xot |
+| `tests/Unit/Models/OtherModelsTest.php` | Snapshot/StoredEvent/BaseModel istanziabili |
+| `tests/Unit/Models/Policies/ActivityPolicyTest.php` | Policy Activity/Snapshot/StoredEvent sotto UserBasePolicy |
+| `tests/Unit/Models/SnapshotBusinessLogicTest.php` | Contratto Snapshot event-sourcing |
+| `tests/Unit/Providers/ProvidersTest.php` | Service/Event/Route provider del modulo |
+| `tests/Unit/SnapshotPolicyTest.php` | Permessi SnapshotPolicy |
+| `tests/Unit/StoredEventPolicyTest.php` | Permessi StoredEventPolicy |
+
 ## Docs toccate
+
 
 - [testcase.md](../testcase.md): riscritta (descriveva `ensureTestDatabasesExist()` e un flag `$migrated` che nel codice non esistono; `connectionsToTransact` con `mysql` invece di `sqlite`).
 - [wiki/concepts/testcase-hierarchy-architecture.md](../wiki/concepts/testcase-hierarchy-architecture.md): connessioni, provider ed esempio allineati al `TestCase`; riferimento `related` rotto verso Xot ripuntato a `BRAINSTORM-TestCase-Hierarchy-XotBase.md`.
