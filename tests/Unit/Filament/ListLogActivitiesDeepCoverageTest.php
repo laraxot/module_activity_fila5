@@ -6,7 +6,6 @@ namespace Modules\Activity\Tests\Unit\Filament;
 
 use Exception;
 use Illuminate\Pagination\LengthAwarePaginator;
-use Illuminate\Support\Collection;
 use LogicException;
 use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Models\Activity;
@@ -151,8 +150,7 @@ test('ListLogActivities resolveActivity getOldProperties e field label map', fun
         ->toThrow(Exception::class, 'Invalid activities relation');
 
     Assert::assertSame('campo', $page->getFieldLabel('campo'));
-    $map = $page->exposeCreateFieldLabelMap();
-    Assert::assertInstanceOf(Collection::class, $map);
+    Assert::assertTrue($page->exposeCreateFieldLabelMap()->isNotEmpty());
 });
 
 test('ListLogActivities canRestore senza record o resource invalida', function (): void {
