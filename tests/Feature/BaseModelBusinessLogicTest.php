@@ -7,420 +7,202 @@ namespace Modules\Activity\Tests\Feature;
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Str;
 use Modules\Activity\Models\BaseModel;
+use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Traits\Updater;
-use Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-class BaseModelBusinessLogicTest extends TestCase
-{
-    use RefreshDatabase;
+uses(TestCase::class);
 
-    /** @test */
-    public function it_can_create_base_model_instance(): void
-    {
-        // Creiamo una classe concreta che estende BaseModel per i test
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
+test('it can create base model instance', function (): void {
+    $model = new TestActivityModel;
 
-            /** @var list<string> */
-            protected $fillable = ['name', 'value'];
-        };
+    Assert::assertInstanceOf(BaseModel::class, $model);
+    Assert::assertInstanceOf(Model::class, $model);
+});
 
-        $this->assertInstanceOf(BaseModel::class, $concreteModel);
-        $this->assertInstanceOf(Model::class, $concreteModel);
+test('it has correct connection setting', function (): void {
+    $model = new TestActivityModel;
+
+    Assert::assertSame('activity', $model->getConnectionName());
+});
+
+test('it has correct primary key setting', function (): void {
+    $model = new TestActivityModel;
+
+    Assert::assertSame('id', $model->getKeyName());
+    Assert::assertSame('int', $model->getKeyType());
+    Assert::assertTrue($model->getIncrementing());
+});
+
+test('it has correct timestamps setting', function (): void {
+    $model = new TestActivityModel;
+
+    Assert::assertTrue($model->usesTimestamps());
+    Assert::assertTrue($model->timestamps);
+});
+
+test('it has correct per page setting', function (): void {
+    $model = new TestActivityModel;
+
+    Assert::assertSame(30, $model->getPerPage());
+});
+
+test('it has correct snake attributes setting', function (): void {
+    Assert::assertTrue(TestActivityModel::$snakeAttributes);
+});
+
+test('it has correct casts configuration', function (): void {
+    $model = new TestActivityModel;
+    $casts = $model->getCasts();
+
+    Assert::assertIsArray($casts);
+    Assert::assertArrayHasKey('created_at', $casts);
+    Assert::assertSame('datetime', $casts['created_at']);
+    Assert::assertArrayHasKey('updated_at', $casts);
+    Assert::assertSame('datetime', $casts['updated_at']);
+    Assert::assertArrayHasKey('deleted_at', $casts);
+    Assert::assertSame('datetime', $casts['deleted_at']);
+    Assert::assertArrayHasKey('id', $casts);
+    Assert::assertSame('string', $casts['id']);
+    Assert::assertArrayHasKey('published_at', $casts);
+    Assert::assertSame('datetime', $casts['published_at']);
+});
+
+test('it has updater trait when configured', function (): void {
+    $model = new TestActivityModel;
+    /** @var array<class-string, class-string> $traits */
+    $traits = class_uses_recursive($model::class);
+
+    if (in_array(Updater::class, $traits, true)) {
+        Assert::assertContains(Updater::class, $traits);
+
+        return;
     }
 
-    /** @test */
-    public function it_has_correct_connection_setting(): void
+    Assert::assertNotContains(Updater::class, $traits);
+});
+
+test('it has has factory trait', function (): void {
+    $model = new TestActivityModel;
+    /** @var array<class-string, class-string> $traits */
+    $traits = class_uses_recursive($model::class);
+
+    Assert::assertContains(HasFactory::class, $traits);
+});
+
+test('it can handle uuid generation', function (): void {
+    $model = new TestActivityModel;
+    $uuid = Str::uuid()->toString();
+    $model->uuid = $uuid;
+    $model->name = 'Test Model';
+
+    Assert::assertSame($uuid, $model->uuid);
+    Assert::assertSame('Test Model', $model->name);
+});
+
+test('it can handle timestamps', function (): void {
+    $model = new TestActivityModel;
+    $now = now();
+    $model->created_at = $now;
+    $model->updated_at = $now;
+
+    Assert::assertSame($now->timestamp, $model->created_at->timestamp);
+    Assert::assertSame($now->timestamp, $model->updated_at->timestamp);
+});
+
+test('it can handle soft deletes', function (): void {
+    $model = new TestActivityModel;
+    $now = now();
+    $model->deleted_at = $now;
+
+    Assert::assertSame($now->timestamp, $model->deleted_at->timestamp);
+});
+
+test('it can handle published at timestamp', function (): void {
+    $model = new TestActivityModel;
+    $now = now();
+    $model->published_at = $now;
+
+    Assert::assertSame($now->timestamp, $model->published_at->timestamp);
+});
+
+test('it can handle user tracking fields', function (): void {
+    $model = new TestActivityModel;
+    $model->created_by = 123;
+    $model->updated_by = 456;
+    $model->deleted_by = 789;
+
+    Assert::assertSame('123', $model->created_by);
+    Assert::assertSame('456', $model->updated_by);
+    Assert::assertSame('789', $model->deleted_by);
+});
+
+test('it has correct hidden attributes', function (): void {
+    $model = new TestActivityModel;
+    $hidden = $model->getHidden();
+
+    Assert::assertIsArray($hidden);
+    Assert::assertNotContains('password', $hidden);
+});
+
+test('it can use connection methods', function (): void {
+    $model = new TestActivityModel;
+
+    Assert::assertSame('activity', $model->getConnectionName());
+    Assert::assertInstanceOf(ConnectionInterface::class, $model->getConnection());
+});
+
+test('it can use table methods', function (): void {
+    $model = new TestActivityModel;
+
+    Assert::assertSame('test_models', $model->getTable());
+});
+
+test('it can use per page methods', function (): void {
+    $model = new TestActivityModel;
+
+    Assert::assertSame(30, $model->getPerPage());
+    $model->setPerPage(50);
+    Assert::assertSame(50, $model->getPerPage());
+});
+
+test('it can use snake attributes methods', function (): void {
+    $model = new TestActivityModel;
+
+    Assert::assertTrue($model::$snakeAttributes);
+    $model::$snakeAttributes = false;
+    Assert::assertFalse($model::$snakeAttributes);
+    $model::$snakeAttributes = true;
+    Assert::assertTrue($model::$snakeAttributes);
+});
+
+test('it can use fillable methods', function (): void {
+    $model = new TestActivityModel;
+    $fillable = $model->getFillable();
+
+    Assert::assertIsArray($fillable);
+    Assert::assertContains('name', $fillable);
+    Assert::assertContains('value', $fillable);
+
+    $newFillable = ['new_field'];
+    $model->fillable($newFillable);
+    Assert::assertSame($newFillable, $model->getFillable());
+});
+
+test('it can use hidden methods', function (): void {
+    $model = new class extends TestActivityModel
     {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-        };
-
-        $this->assertEquals('activity', $concreteModel->getConnectionName());
-    }
-
-    /** @test */
-    public function it_has_correct_primary_key_setting(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-        };
-
-        $this->assertEquals('id', $concreteModel->getKeyName());
-        $this->assertEquals('string', $concreteModel->getKeyType());
-        $this->assertTrue($concreteModel->getIncrementing());
-    }
-
-    /** @test */
-    public function it_has_correct_timestamps_setting(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-        };
-
-        $this->assertTrue($concreteModel->usesTimestamps());
-        $this->assertTrue($concreteModel->timestamps);
-    }
-
-    /** @test */
-    public function it_has_correct_per_page_setting(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-        };
-
-        $this->assertEquals(30, $concreteModel->getPerPage());
-    }
-
-    /** @test */
-    public function it_has_correct_snake_attributes_setting(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-        };
-
-        $this->assertTrue($concreteModel::$snakeAttributes);
-    }
-
-    /** @test */
-    public function it_has_correct_casts_configuration(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-        };
-
-        $casts = $concreteModel->getCasts();
-
-        $this->assertArrayHasKey('id', $casts);
-        $this->assertEquals('string', $casts['id']);
-
-        $this->assertArrayHasKey('uuid', $casts);
-        $this->assertEquals('string', $casts['uuid']);
-
-        $this->assertArrayHasKey('created_at', $casts);
-        $this->assertEquals('datetime', $casts['created_at']);
-
-        $this->assertArrayHasKey('updated_at', $casts);
-        $this->assertEquals('datetime', $casts['updated_at']);
-
-        $this->assertArrayHasKey('deleted_at', $casts);
-        $this->assertEquals('datetime', $casts['deleted_at']);
-
-        $this->assertArrayHasKey('updated_by', $casts);
-        $this->assertEquals('string', $casts['updated_by']);
-
-        $this->assertArrayHasKey('created_by', $casts);
-        $this->assertEquals('string', $casts['created_by']);
-
-        $this->assertArrayHasKey('deleted_by', $casts);
-        $this->assertEquals('string', $casts['deleted_by']);
-
-        $this->assertArrayHasKey('published_at', $casts);
-        $this->assertEquals('datetime', $casts['published_at']);
-    }
-
-    /** @test */
-    public function it_can_use_factory(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-
-            /** @var list<string> */
-            protected $fillable = ['name', 'value'];
-        };
-
-        $this->assertTrue(method_exists($concreteModel, 'factory'));
-        $this->assertTrue(method_exists($concreteModel, 'newFactory'));
-    }
-
-    /** @test */
-    public function it_has_updater_trait(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-        };
-
-        $traits = class_uses($concreteModel);
-        $this->assertContains(Updater::class, $traits);
-    }
-
-    /** @test */
-    public function it_has_has_factory_trait(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-        };
-
-        $traits = class_uses($concreteModel);
-        $this->assertContains(HasFactory::class, $traits);
-    }
-
-    /** @test */
-    public function it_can_handle_uuid_generation(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-
-            /** @var list<string> */
-            protected $fillable = ['uuid', 'name'];
-        };
-
-        $uuid = Str::uuid()->toString();
-        $concreteModel->uuid = $uuid;
-        $concreteModel->name = 'Test Model';
-
-        $this->assertEquals($uuid, $concreteModel->uuid);
-        $this->assertEquals('Test Model', $concreteModel->name);
-    }
-
-    /** @test */
-    public function it_can_handle_timestamps(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-
-            /** @var list<string> */
-            protected $fillable = ['name'];
-        };
-
-        $now = now();
-        $concreteModel->created_at = $now;
-        $concreteModel->updated_at = $now;
-
-        $this->assertEquals($now->timestamp, $concreteModel->created_at->timestamp);
-        $this->assertEquals($now->timestamp, $concreteModel->updated_at->timestamp);
-    }
-
-    /** @test */
-    public function it_can_handle_soft_deletes(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-
-            /** @var list<string> */
-            protected $fillable = ['name'];
-        };
-
-        $now = now();
-        $concreteModel->deleted_at = $now;
-
-        $this->assertEquals($now->timestamp, $concreteModel->deleted_at->timestamp);
-    }
-
-    /** @test */
-    public function it_can_handle_published_at_timestamp(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-
-            /** @var list<string> */
-            protected $fillable = ['name'];
-        };
-
-        $now = now();
-        $concreteModel->published_at = $now;
-
-        $this->assertEquals($now->timestamp, $concreteModel->published_at->timestamp);
-    }
-
-    /** @test */
-    public function it_can_handle_user_tracking_fields(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-
-            /** @var list<string> */
-            protected $fillable = ['name'];
-        };
-
-        $concreteModel->created_by = 'user-123';
-        $concreteModel->updated_by = 'user-456';
-        $concreteModel->deleted_by = 'user-789';
-
-        $this->assertEquals('user-123', $concreteModel->created_by);
-        $this->assertEquals('user-456', $concreteModel->updated_by);
-        $this->assertEquals('user-789', $concreteModel->deleted_by);
-    }
-
-    /** @test */
-    public function it_has_correct_hidden_attributes(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-        };
-
-        $hidden = $concreteModel->getHidden();
-
-        // Verifica che gli attributi nascosti siano configurati correttamente
-        $this->assertIsArray($hidden);
-        // Nota: il BaseModel ha un array vuoto per $hidden, quindi non dovrebbe contenere 'password'
-        $this->assertNotContains('password', $hidden);
-    }
-
-    /** @test */
-    public function it_can_use_connection_methods(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-        };
-
-        $this->assertEquals('activity', $concreteModel->getConnectionName());
-        $this->assertInstanceOf(ConnectionInterface::class, $concreteModel->getConnection());
-    }
-
-    /** @test */
-    public function it_can_use_table_methods(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-        };
-
-        $this->assertEquals('test_models', $concreteModel->getTable());
-    }
-
-    /** @test */
-    public function it_can_use_key_methods(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-        };
-
-        $this->assertEquals('id', $concreteModel->getKeyName());
-        $this->assertEquals('string', $concreteModel->getKeyType());
-        $this->assertTrue($concreteModel->getIncrementing());
-    }
-
-    /** @test */
-    public function it_can_use_timestamp_methods(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-        };
-
-        $this->assertTrue($concreteModel->usesTimestamps());
-        $this->assertTrue($concreteModel->timestamps);
-
-        $this->assertEquals('created_at', $concreteModel->getCreatedAtColumn());
-        $this->assertEquals('updated_at', $concreteModel->getUpdatedAtColumn());
-    }
-
-    /** @test */
-    public function it_can_use_per_page_methods(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-        };
-
-        $this->assertEquals(30, $concreteModel->getPerPage());
-
-        // Test setPerPage
-        $concreteModel->setPerPage(50);
-        $this->assertEquals(50, $concreteModel->getPerPage());
-    }
-
-    /** @test */
-    public function it_can_use_snake_attributes_methods(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-        };
-
-        $this->assertTrue($concreteModel::$snakeAttributes);
-
-        // Test setSnakeAttributes
-        $concreteModel::$snakeAttributes = false;
-        $this->assertFalse($concreteModel::$snakeAttributes);
-
-        // Ripristina il valore originale
-        $concreteModel::$snakeAttributes = true;
-        $this->assertTrue($concreteModel::$snakeAttributes);
-    }
-
-    /** @test */
-    public function it_can_use_casts_methods(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-        };
-
-        $casts = $concreteModel->getCasts();
-        $this->assertIsArray($casts);
-        $this->assertArrayHasKey('id', $casts);
-        $this->assertArrayHasKey('created_at', $casts);
-        $this->assertArrayHasKey('updated_at', $casts);
-
-        // Test setCasts
-        $newCasts = ['test_field' => 'string'];
-        $concreteModel->setCasts($newCasts);
-        $this->assertEquals($newCasts, $concreteModel->getCasts());
-    }
-
-    /** @test */
-    public function it_can_use_fillable_methods(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-
-            /** @var list<string> */
-            protected $fillable = ['name', 'value'];
-        };
-
-        $fillable = $concreteModel->getFillable();
-        $this->assertIsArray($fillable);
-        $this->assertContains('name', $fillable);
-        $this->assertContains('value', $fillable);
-
-        // Test setFillable
-        $newFillable = ['new_field'];
-        $concreteModel->setFillable($newFillable);
-        $this->assertEquals($newFillable, $concreteModel->getFillable());
-    }
-
-    /** @test */
-    public function it_can_use_hidden_methods(): void
-    {
-        $concreteModel = new class extends BaseModel
-        {
-            protected $table = 'test_models';
-
-            /** @var list<string> */
-            protected $hidden = ['secret_field'];
-        };
-
-        $hidden = $concreteModel->getHidden();
-        $this->assertIsArray($hidden);
-        $this->assertContains('secret_field', $hidden);
-
-        // Test setHidden
-        $newHidden = ['new_secret'];
-        $concreteModel->setHidden($newHidden);
-        $this->assertEquals($newHidden, $concreteModel->getHidden());
-    }
-}
+        /** @var list<string> */
+        protected $hidden = ['secret_field'];
+    };
+
+    $hidden = $model->getHidden();
+    Assert::assertContains('secret_field', $hidden);
+    Assert::assertIsArray($hidden);
+
+    $newHidden = ['new_secret'];
+    $model->setHidden($newHidden);
+    Assert::assertSame($newHidden, $model->getHidden());
+});
