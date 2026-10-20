@@ -11,6 +11,7 @@ related:
   - ../brainstorming.md
 issues: []
 discussions: []
+status: draft
 ---
 
 # Activity — mappa file -> responsabilita

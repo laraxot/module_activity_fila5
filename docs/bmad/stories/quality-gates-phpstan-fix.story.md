@@ -9,6 +9,10 @@ references:
   - ../../../Xot/docs/bmad/stories/5.227-phpstan-modules-verify-coordinated.story.md
   - ../../../../../../docs/sprint-status.yaml
   - ../../../../../../bashscripts/ai/wiki/memories/feedback-scan-committed-conflict-markers-first-on-bootstrap-crash.md
+type: story
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "story   phpstan fleet remediation activity"
 ---
 
 # Story — PHPStan fleet remediation
