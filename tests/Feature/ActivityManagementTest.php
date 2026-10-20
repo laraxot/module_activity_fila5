@@ -2,50 +2,73 @@
 
 declare(strict_types=1);
 
+namespace Modules\Activity\Tests\Feature;
+
 use Modules\Activity\Models\Activity;
+use Modules\Activity\Tests\TestCase;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('user can create activity', function () {
-    $user = User::factory()->create();
+    $user = UserFactory::new()->createOne();
+    Assert::assertInstanceOf(User::class, $user);
 
-    $activityData = [
-        'name' => 'Test Activity',
+    $activity = Activity::create([
+        'log_name' => 'test',
         'description' => 'Test Description',
-        'user_id' => $user->id,
-    ];
+        'causer_type' => User::class,
+        'causer_id' => $user->id,
+    ]);
+    Assert::assertNotNull($activity);
 
-    $activity = createActivity($activityData);
-
-    expect($activity)
-        ->toBeActivity()
-        ->and($activity->name)
-        ->toBe('Test Activity')
-        ->and($activity->user_id)
-        ->toBe($user->id);
+    Assert::assertInstanceOf(Activity::class, $activity);
+    Assert::assertSame('Test Description', $activity->description);
+    Assert::assertSame($user->id, $activity->causer_id);
 });
 
 test('activity can be updated', function () {
-    $activity = createActivity();
-
+    $activity = Activity::create([
+        'log_name' => 'test',
+        'description' => 'Original Description',
+    ]);
     $activity->update([
-        'name' => 'Updated Activity',
         'description' => 'Updated Description',
     ]);
 
-    expect($activity->fresh())->name->toBe('Updated Activity')->description->toBe('Updated Description');
+    $freshActivity = $activity->fresh();
+    Assert::assertNotNull($freshActivity);
+    Assert::assertSame('Updated Description', $freshActivity->description);
 });
 
 test('activity can be deleted', function () {
-    $activity = createActivity();
+    $activity = Activity::create([
+        'log_name' => 'test',
+        'description' => 'Test Description',
+    ]);
+    Assert::assertNotNull($activity);
 
+    $activityId = $activity->id;
     $activity->delete();
 
-    expect(Activity::find($activity->id))->toBeNull();
+    Assert::assertNull(Activity::find($activityId));
 });
 
 test('activity belongs to user', function () {
-    $user = User::factory()->create();
-    $activity = createActivity(['user_id' => $user->id]);
+    $user = UserFactory::new()->createOne();
+    Assert::assertInstanceOf(User::class, $user);
 
-    expect($activity->user)->toBeInstanceOf(User::class)->and($activity->user->id)->toBe($user->id);
+    $activity = Activity::create([
+        'log_name' => 'test',
+        'description' => 'Test Description',
+        'causer_type' => User::class,
+        'causer_id' => $user->id,
+    ]);
+    Assert::assertNotNull($activity);
+
+    $causer = $activity->causer;
+    Assert::assertInstanceOf(User::class, $causer);
+    Assert::assertSame($user->id, $causer->id);
 });
