@@ -1,3 +1,11 @@
+---
+title: "TestCase Configuration"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "testcase configuration activity"
+---
 # TestCase Configuration
 
 ## Overview

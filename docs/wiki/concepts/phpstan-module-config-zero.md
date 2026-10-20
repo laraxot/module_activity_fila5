@@ -12,6 +12,7 @@ discussions:
 related:
   - phpstan-pest-discipline.md
   - ../../../../Xot/docs/wiki/concepts/fixcity-data-sqlite-pest-bootstrap.md
+status: draft
 ---
 
 # PHPStan Activity — config modulo e test

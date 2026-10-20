@@ -1,3 +1,11 @@
+---
+title: "Risoluzione Errori PHPStan nei Test Pest del Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, tests]
+qmd: "risoluzione errori phpstan nei test pest del modulo activity activity"
+---
 # Risoluzione Errori PHPStan nei Test Pest del Modulo Activity
 
 ## Contesto
@@ -75,6 +83,10 @@ Il test `ListLogActivitiesActionTest.php` faceva riferimento a un modulo `Indenn
 -   **Aderenza ai Principi Laraxot**: La soluzione è `DRY` (centralizzando gli stub e la dichiarazione delle proprietà), `KISS` (mantenendo il codice del test pulito), e `Robust` (garantendo la type safety a livello di analisi statica).
 -   **Migliore Leggibilità dei Test**: La dichiarazione esplicita del contesto `$this` migliora la comprensione del codice del test.
 -   **Scalabilità**: Questo pattern può essere replicato in altri moduli per risolvere problemi simili nei test Pest.
+
+## Test unitari BusinessLogic (PHPUnit Assert)
+
+I file `tests/Unit/Models/*BusinessLogicTest.php` del modulo Activity usano classi PHPUnit (`PHPUnit\Framework\TestCase` + `Assert::assert*`) invece di closure Pest/`expect()`. Motivo: PHPStan livello massimo segnala errori interni e asserzioni ridondanti sulle higher-order expectation Pest; i test restano **purpose-first** (connessione, fillable, query builder pubblici) senza `@phpstan-ignore` e senza toccare `phpstan.neon`.
 
 ## Lezioni Apprese
 

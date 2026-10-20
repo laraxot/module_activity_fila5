@@ -1,3 +1,11 @@
+---
+title: "CRITICAL: MAI FARE migrate:refresh/fresh/rollback O --force"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "critical: mai fare migrate:refresh/fresh/rollback o --force activity"
+---
 # ⚠️ CRITICAL: MAI FARE migrate:refresh/fresh/rollback O --force 🔴🔴
 
 ## I Dati Sono SACRI

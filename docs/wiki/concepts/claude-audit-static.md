@@ -14,6 +14,7 @@ related:
   - ./testing.md
   - ./ponytail-audit.md
   - ../../../../../../bashscripts/tools/run-claude-audit-module-static.sh
+status: draft
 ---
 
 # claude-audit static (Activity)

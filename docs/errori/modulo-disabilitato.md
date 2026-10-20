@@ -1,3 +1,11 @@
+---
+title: "Errore: Modulo Activity Disabilitato"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, errori]
+qmd: "errore: modulo activity disabilitato activity"
+---
 # Errore: Modulo Activity Disabilitato
 
 ## Descrizione del Problema
