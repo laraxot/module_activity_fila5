@@ -20,7 +20,7 @@ The Activity module provides a comprehensive activity logging and event sourcing
 
 ### Core Components
 
-Vedi [wiki/concepts/queueable-action-execute-entrypoint.md](wiki/concepts/queueable-action-execute-entrypoint.md) per la mappa Actions attuale (no Services layer).
+Vedi [wiki/concepts/queueable-action-execute-entrypoint.md](../wiki/concepts/queueable-action-execute-entrypoint.md) per la mappa Actions attuale (no Services layer).
 
 ```
 Activity Module Architecture
@@ -72,7 +72,7 @@ The Activity module provides a comprehensive activity logging and event sourcing
 
 ### Core Components
 
-Vedi [wiki/concepts/queueable-action-execute-entrypoint.md](wiki/concepts/queueable-action-execute-entrypoint.md) per la mappa Actions attuale (no Services layer).
+Vedi [wiki/concepts/queueable-action-execute-entrypoint.md](../wiki/concepts/queueable-action-execute-entrypoint.md) per la mappa Actions attuale (no Services layer).
 
 ```
 Activity Module Architecture
@@ -117,7 +117,7 @@ The Activity module provides a comprehensive activity logging and event sourcing
 
 ### Core Components
 
-Vedi [wiki/concepts/queueable-action-execute-entrypoint.md](wiki/concepts/queueable-action-execute-entrypoint.md) per la mappa Actions attuale (no Services layer).
+Vedi [wiki/concepts/queueable-action-execute-entrypoint.md](../wiki/concepts/queueable-action-execute-entrypoint.md) per la mappa Actions attuale (no Services layer).
 
 ```
 Activity Module Architecture
