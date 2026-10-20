@@ -2,7 +2,7 @@
 title: "Risoluzione Errori PHPStan nei Test Pest del Modulo Activity"
 type: note
 status: draft
-updated: 2026-10-07
+updated: 2026-10-20
 tags: [docs, activity, tests]
 qmd: "risoluzione errori phpstan nei test pest del modulo activity activity"
 ---
@@ -11,6 +11,10 @@ qmd: "risoluzione errori phpstan nei test pest del modulo activity activity"
 ## Contesto
 
 Questa documentazione descrive il processo di risoluzione degli errori di analisi statica di PHPStan riscontrati nei test Pest del modulo `Activity`. Gli errori principali erano relativi a funzioni globali (`actingAs`, `livewire`) non trovate e a proprietà (`$this->user`) non definite nel contesto delle closure di Pest. La risoluzione è stata guidata dai principi della metodologia "Super Mucca" di `DRY`, `KISS`, `SOLID`, `Robust` e dalla necessità di una compliance PHPStan `livello 10` senza ignorare errori o modificare file di configurazione globali (`phpstan.neon`).
+
+## Stato al 2026-10-20
+
+Le sezioni 3 e 4 descrivono un passaggio intermedio e oggi non valgono: `tests/TestCase.php` non dichiara `$user` (ha `$page`, `$activityData`, `$storedEventData`, `$snapshotData`) e i test di `ListLogActivitiesAction` non usano il PHPDoc `@var TestCase $this`. `tests/PestStubs.php` esiste ma non e' in `autoload-dev.files` di `composer.json`: PHPStan lo legge perche' sta in `Modules/`, Pest no. Il punto 5 (nessun riferimento a `IndennitaResponsabilita`) e' stato violato dal pull del 2026-10-20 e ripristinato: vedi [stories/phpstan-test-wave-activity.story.md](../stories/phpstan-test-wave-activity.story.md) e [testcase.md](../testcase.md).
 
 ## Problemi Identificati
 
@@ -96,8 +100,8 @@ I file `tests/Unit/Models/*BusinessLogicTest.php` del modulo Activity usano clas
 
 ## Collegamenti Utili
 
--   [PestStubs.php Source Code](./PestStubs.php)
--   [ListLogActivitiesActionTest.php Source Code](../Feature/Filament/Actions/ListLogActivitiesActionTest.php)
--   [TestCase.php Source Code](../TestCase.php)
+-   [PestStubs.php Source Code](../../tests/PestStubs.php)
+-   [ListLogActivitiesActionTest.php Source Code](../../tests/Feature/Filament/Actions/ListLogActivitiesActionTest.php)
+-   [TestCase.php Source Code](../../tests/TestCase.php)
 -   [Modules/Xot/composer.json Source Code](../../../Xot/composer.json)
 -   [Modules/Activity/composer.json Source Code](../../composer.json)
