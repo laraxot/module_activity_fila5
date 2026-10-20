@@ -1,3 +1,11 @@
+---
+title: "Security Documentation"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "security documentation activity"
+---
 # Security Documentation
 
 ## Security Overview

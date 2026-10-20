@@ -1,3 +1,11 @@
+---
+title: "Architettura del Carrello della Spesa"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "architettura del carrello della spesa activity"
+---
 # Architettura del Carrello della Spesa
 
 ## Introduzione

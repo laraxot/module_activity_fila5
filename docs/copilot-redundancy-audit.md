@@ -1,3 +1,11 @@
+---
+title: "copilot redundancy audit"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "copilot redundancy audit activity"
+---
 Copilot Redundancy Audit — 2026-05-25
 
 Sintesi

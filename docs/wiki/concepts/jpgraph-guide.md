@@ -5,6 +5,8 @@ tags: [docs, migrated-from-txt]
 created: 2026-08-24
 updated: 2026-08-24
 source: laravel/Themes/Zero/docs/jpgraph-guide.txt
+status: draft
+qmd: "jpgraph 4.4.2 guide activity"
 ---
 
 # JpGraph 4.4.2 Guide

@@ -12,6 +12,7 @@ discussions:
 related:
   - "./00-index.md"
   - "../../../../docs/gestionale-commesse-comparison/module-mapping.md"
+status: draft
 ---
 
 # Platform AuditLog (SRC) vs Activity

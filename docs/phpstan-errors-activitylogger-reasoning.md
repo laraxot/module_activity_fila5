@@ -1,3 +1,11 @@
+---
+title: "PHPStan Errors - ActivityLogger.php - Critical Reasoning ('Litigare con te stesso')"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan errors - activitylogger.php - critical reasoning ('litigare con te stesso') activity"
+---
 # PHPStan Errors - ActivityLogger.php - Critical Reasoning ("Litigare con te stesso")
 
 **File**: `Modules/Activity/app/Actions/ActivityLogger.php`

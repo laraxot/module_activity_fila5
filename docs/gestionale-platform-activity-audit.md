@@ -1,3 +1,11 @@
+---
+title: "Activity vs Platform.AuditLog — Mappatura e Gap Analysis"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity vs platform.auditlog   mappatura e gap analysis activity"
+---
 # Activity vs Platform.AuditLog — Mappatura e Gap Analysis
 
 > Ultimo aggiornamento: 2026-07-23

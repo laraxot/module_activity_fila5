@@ -1,6 +1,11 @@
 ---
 title: Actions convention
 module: Activity
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, wiki]
+qmd: "actions convention activity"
 ---
 
 # Actions Convention

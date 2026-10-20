@@ -1,3 +1,11 @@
+---
+title: "Asset binari"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "asset binari activity"
+---
 # Asset binari
 
 Gli asset binari sono file normali del repository.
