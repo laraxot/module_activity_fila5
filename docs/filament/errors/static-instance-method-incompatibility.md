@@ -1,3 +1,11 @@
+---
+title: "Incompatibilità tra metodi statici e di istanza in Filament"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, filament]
+qmd: "incompatibilità tra metodi statici e di istanza in filament activity"
+---
 # Incompatibilità tra metodi statici e di istanza in Filament
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo Activity.

@@ -2,6 +2,10 @@
 type: decision-log
 title: "Decision Log — Activity"
 links: {github_issue: #XXX, discussion: #XXX}
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "decision log   activity activity"
 ---
 # Decision Log — Activity
 

@@ -4,410 +4,420 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
 
-use Illuminate\Support\Carbon;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Str;
-use Modules\Activity\Database\Factories\SnapshotFactory;
 use Modules\Activity\Models\Snapshot;
-use Modules\Activity\Tests\TestCase;
-use PHPUnit\Framework\Assert;
+use Tests\TestCase;
 
-uses(TestCase::class);
+class SnapshotBusinessLogicTest extends TestCase
+{
+    use RefreshDatabase;
 
-test('can create snapshot with basic information', function (): void {
-    $snapshot = SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => Str::uuid()->toString(),
-        'aggregate_version' => 1,
-        'state' => ['name' => 'Test Aggregate', 'status' => 'active'],
-    ]);
-    Assert::assertInstanceOf(Snapshot::class, $snapshot);
+    /** @test */
+    public function it_can_create_snapshot_with_basic_information(): void
+    {
+        $snapshotData = [
+            'aggregate_uuid' => Str::uuid()->toString(),
+            'aggregate_version' => 1,
+            'state' => json_encode([
+                'name' => 'Test Aggregate',
+                'status' => 'active',
+                'created_at' => now()->toISOString(),
+            ]),
+        ];
 
-    Assert::assertIsString($snapshot->aggregate_uuid);
-    Assert::assertSame(1, $snapshot->aggregate_version);
+        $snapshot = Snapshot::create($snapshotData);
 
-    $state = $snapshot->state;
-    Assert::assertIsArray($state);
-    Assert::assertSame('Test Aggregate', $state['name']);
-    Assert::assertSame('active', $state['status']);
-});
+        $this->assertDatabaseHas('snapshots', [
+            'id' => $snapshot->id,
+            'aggregate_uuid' => $snapshotData['aggregate_uuid'],
+            'aggregate_version' => 1,
+        ]);
 
-test('can create snapshot with complex state', function (): void {
-    $complexState = [
-        'user_info' => [
-            'id' => 123,
-            'name' => 'John Doe',
-            'email' => 'john@example.com',
-            'profile' => [
-                'avatar' => '/avatars/john.jpg',
-                'bio' => 'Software Developer',
-                'preferences' => [
-                    'theme' => 'dark',
-                    'language' => 'en',
-                    'notifications' => true,
+        $this->assertEquals($snapshotData['aggregate_uuid'], $snapshot->aggregate_uuid);
+        $this->assertEquals(1, $snapshot->aggregate_version);
+        $this->assertIsArray($snapshot->state);
+        $this->assertEquals('Test Aggregate', $snapshot->state['name']);
+        $this->assertEquals('active', $snapshot->state['status']);
+    }
+
+    /** @test */
+    public function it_can_create_snapshot_with_complex_state(): void
+    {
+        $complexState = [
+            'user_info' => [
+                'id' => 123,
+                'name' => 'John Doe',
+                'email' => 'john@example.com',
+                'profile' => [
+                    'avatar' => '/avatars/john.jpg',
+                    'bio' => 'Software Developer',
+                    'preferences' => [
+                        'theme' => 'dark',
+                        'language' => 'en',
+                        'notifications' => true,
+                    ],
                 ],
             ],
-        ],
-        'account_status' => [
-            'is_active' => true,
-            'last_login' => now()->subHours(2)->toISOString(),
-            'login_count' => 45,
-            'subscription' => [
-                'plan' => 'premium',
-                'expires_at' => now()->addYear()->toISOString(),
-                'features' => ['api_access', 'priority_support', 'advanced_analytics'],
+            'account_status' => [
+                'is_active' => true,
+                'last_login' => now()->subHours(2)->toISOString(),
+                'login_count' => 45,
+                'subscription' => [
+                    'plan' => 'premium',
+                    'expires_at' => now()->addYear()->toISOString(),
+                    'features' => ['api_access', 'priority_support', 'advanced_analytics'],
+                ],
             ],
-        ],
-        'metadata' => [
-            'created_by' => 'system',
-            'source' => 'web_registration',
-            'tags' => ['verified', 'premium_user'],
-        ],
-    ];
-
-    $snapshot = SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => Str::uuid()->toString(),
-        'aggregate_version' => 5,
-        'state' => $complexState,
-    ]);
-    Assert::assertInstanceOf(Snapshot::class, $snapshot);
-
-    Assert::assertSame(5, $snapshot->aggregate_version);
-
-    $state = $snapshot->state;
-    Assert::assertIsArray($state);
-
-    /** @var array<array-key, mixed> $userInfo */
-    $userInfo = $state['user_info'];
-    Assert::assertIsArray($userInfo);
-    Assert::assertSame('John Doe', $userInfo['name']);
-
-    /** @var array<array-key, mixed> $accountStatus */
-    $accountStatus = $state['account_status'];
-    Assert::assertIsArray($accountStatus);
-
-    /** @var array<array-key, mixed> $subscription */
-    $subscription = $accountStatus['subscription'];
-    Assert::assertIsArray($subscription);
-    Assert::assertSame('premium', $subscription['plan']);
-    Assert::assertTrue($accountStatus['is_active']);
-
-    /** @var array<array-key, mixed> $meta */
-    $meta = $state['metadata'];
-    Assert::assertIsArray($meta);
-    Assert::assertIsArray($meta['tags']);
-    Assert::assertContains('verified', $meta['tags']);
-});
-
-test('can manage snapshot versioning', function (): void {
-    $aggregateUuid = Str::uuid()->toString();
-
-    $snapshot1 = SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => $aggregateUuid,
-        'aggregate_version' => 1,
-        'state' => ['version' => 1, 'data' => 'Initial state'],
-    ]);
-    Assert::assertInstanceOf(Snapshot::class, $snapshot1);
-
-    $snapshot2 = SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => $aggregateUuid,
-        'aggregate_version' => 2,
-        'state' => ['version' => 2, 'data' => 'Updated state'],
-    ]);
-    Assert::assertInstanceOf(Snapshot::class, $snapshot2);
-
-    $snapshot3 = SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => $aggregateUuid,
-        'aggregate_version' => 3,
-        'state' => ['version' => 3, 'data' => 'Final state'],
-    ]);
-    Assert::assertInstanceOf(Snapshot::class, $snapshot3);
-
-    Assert::assertSame($snapshot1->aggregate_uuid, $aggregateUuid);
-    Assert::assertSame($snapshot2->aggregate_uuid, $aggregateUuid);
-    Assert::assertSame($snapshot3->aggregate_uuid, $aggregateUuid);
-
-    Assert::assertSame($snapshot1->aggregate_version, 1);
-    Assert::assertSame($snapshot2->aggregate_version, 2);
-    Assert::assertSame($snapshot3->aggregate_version, 3);
-});
-
-test('can query snapshots by aggregate uuid', function (): void {
-    $uuid1 = Str::uuid()->toString();
-    $uuid2 = Str::uuid()->toString();
-
-    SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => $uuid1,
-        'aggregate_version' => 1,
-        'state' => ['aggregate' => 'first', 'version' => 1],
-    ]);
-
-    SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => $uuid1,
-        'aggregate_version' => 2,
-        'state' => ['aggregate' => 'first', 'version' => 2],
-    ]);
-
-    SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => $uuid2,
-        'aggregate_version' => 1,
-        'state' => ['aggregate' => 'second', 'version' => 1],
-    ]);
-
-    $snapshots1 = Snapshot::where('aggregate_uuid', $uuid1)->get();
-    $snapshots2 = Snapshot::where('aggregate_uuid', $uuid2)->get();
-
-    Assert::assertCount(2, $snapshots1);
-    Assert::assertCount(1, $snapshots2);
-
-    $first1 = $snapshots1->first();
-    $first2 = $snapshots2->first();
-    Assert::assertNotNull($first1);
-    Assert::assertNotNull($first2);
-    Assert::assertSame($uuid1, $first1->aggregate_uuid);
-    Assert::assertSame($uuid2, $first2->aggregate_uuid);
-});
-
-test('can query snapshots by version', function (): void {
-    $uuid = Str::uuid()->toString();
-
-    SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => $uuid,
-        'aggregate_version' => 1,
-        'state' => ['version' => 1],
-    ]);
-
-    SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => $uuid,
-        'aggregate_version' => 5,
-        'state' => ['version' => 5],
-    ]);
-
-    SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => $uuid,
-        'aggregate_version' => 10,
-        'state' => ['version' => 10],
-    ]);
-
-    $version1Snapshot = Snapshot::where('aggregate_uuid', $uuid)
-        ->where('aggregate_version', 1)
-        ->first();
-
-    $version5Snapshot = Snapshot::where('aggregate_uuid', $uuid)
-        ->where('aggregate_version', 5)
-        ->first();
-
-    $version10Snapshot = Snapshot::where('aggregate_uuid', $uuid)
-        ->where('aggregate_version', 10)
-        ->first();
-
-    Assert::assertNotNull($version1Snapshot);
-    Assert::assertNotNull($version5Snapshot);
-    Assert::assertNotNull($version10Snapshot);
-
-    Assert::assertSame($version1Snapshot->aggregate_version, 1);
-    Assert::assertSame($version5Snapshot->aggregate_version, 5);
-    Assert::assertSame($version10Snapshot->aggregate_version, 10);
-});
-
-test('can handle snapshot with empty state', function (): void {
-    $snapshot = SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => Str::uuid()->toString(),
-        'aggregate_version' => 1,
-        'state' => [],
-    ]);
-    Assert::assertInstanceOf(Snapshot::class, $snapshot);
-
-    $state = $snapshot->state;
-    Assert::assertIsArray($state);
-    Assert::assertEmpty($state);
-});
-
-test('can handle snapshot with empty array state', function (): void {
-    $snapshot = SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => Str::uuid()->toString(),
-        'aggregate_version' => 1,
-        'state' => [],
-    ]);
-    Assert::assertInstanceOf(Snapshot::class, $snapshot);
-
-    $state = $snapshot->state;
-    Assert::assertIsArray($state);
-    Assert::assertEmpty($state);
-});
-
-test('can restore state from snapshot', function (): void {
-    $originalState = [
-        'user_id' => 456,
-        'settings' => [
-            'theme' => 'light',
-            'language' => 'it',
-            'notifications' => false,
-        ],
-        'preferences' => [
-            'timezone' => 'Europe/Rome',
-            'date_format' => 'd/m/Y',
-            'currency' => 'EUR',
-        ],
-    ];
-
-    $snapshot = SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => Str::uuid()->toString(),
-        'aggregate_version' => 7,
-        'state' => $originalState,
-    ]);
-    Assert::assertInstanceOf(Snapshot::class, $snapshot);
-
-    $restoredState = $snapshot->state;
-    Assert::assertIsArray($restoredState);
-    Assert::assertSame($restoredState, $originalState);
-    Assert::assertSame(456, $restoredState['user_id']);
-
-    /** @var array<array-key, mixed> $settings */
-    $settings = $restoredState['settings'];
-    Assert::assertIsArray($settings);
-    Assert::assertSame('light', $settings['theme']);
-
-    /** @var array<array-key, mixed> $preferences */
-    $preferences = $restoredState['preferences'];
-    Assert::assertIsArray($preferences);
-    Assert::assertSame('Europe/Rome', $preferences['timezone']);
-    Assert::assertSame('EUR', $preferences['currency']);
-});
-
-test('can compare snapshot versions', function (): void {
-    $uuid = Str::uuid()->toString();
-
-    $snapshot1 = SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => $uuid,
-        'aggregate_version' => 1,
-        'state' => ['value' => 100, 'status' => 'initial'],
-    ]);
-    Assert::assertInstanceOf(Snapshot::class, $snapshot1);
-
-    $snapshot2 = SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => $uuid,
-        'aggregate_version' => 2,
-        'state' => ['value' => 200, 'status' => 'updated'],
-    ]);
-    Assert::assertInstanceOf(Snapshot::class, $snapshot2);
-
-    $snapshot3 = SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => $uuid,
-        'aggregate_version' => 3,
-        'state' => ['value' => 300, 'status' => 'final'],
-    ]);
-    Assert::assertInstanceOf(Snapshot::class, $snapshot3);
-
-    Assert::assertLessThan($snapshot2->aggregate_version, $snapshot1->aggregate_version);
-    Assert::assertLessThan($snapshot3->aggregate_version, $snapshot2->aggregate_version);
-
-    /** @var array<array-key, mixed> $state1 */
-    $state1 = $snapshot1->state;
-    /** @var array<array-key, mixed> $state2 */
-    $state2 = $snapshot2->state;
-    /** @var array<array-key, mixed> $state3 */
-    $state3 = $snapshot3->state;
-
-    Assert::assertSame(100, $state1['value']);
-    Assert::assertSame(200, $state2['value']);
-    Assert::assertSame(300, $state3['value']);
-
-    Assert::assertSame('initial', $state1['status']);
-    Assert::assertSame('updated', $state2['status']);
-    Assert::assertSame('final', $state3['status']);
-});
-
-test('can handle snapshot with timestamps', function (): void {
-    $now = now();
-
-    $snapshot = SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => Str::uuid()->toString(),
-        'aggregate_version' => 1,
-        'state' => ['created_at' => $now->toISOString()],
-    ]);
-    Assert::assertInstanceOf(Snapshot::class, $snapshot);
-
-    Assert::assertIsString($snapshot->aggregate_uuid);
-    Assert::assertSame(1, $snapshot->aggregate_version);
-    Assert::assertInstanceOf(Carbon::class, $snapshot->created_at);
-});
-
-test('can query snapshots by date range', function (): void {
-    $yesterday = now()->subDay();
-    $today = now();
-    $tomorrow = now()->addDay();
-
-    $yesterdaySnapshot = SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => Str::uuid()->toString(),
-        'aggregate_version' => 1,
-        'state' => ['date' => 'yesterday'],
-        'created_at' => $yesterday,
-    ]);
-
-    $todaySnapshotRecord = SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => Str::uuid()->toString(),
-        'aggregate_version' => 1,
-        'state' => ['date' => 'today'],
-        'created_at' => $today,
-    ]);
-
-    $tomorrowSnapshot = SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => Str::uuid()->toString(),
-        'aggregate_version' => 1,
-        'state' => ['date' => 'tomorrow'],
-        'created_at' => $tomorrow,
-    ]);
-    $snapshotIds = [$yesterdaySnapshot->id, $todaySnapshotRecord->id, $tomorrowSnapshot->id];
-
-    $todaySnapshots = Snapshot::whereKey($snapshotIds)->whereDate('created_at', today())->get();
-    Assert::assertCount(1, $todaySnapshots);
-    $todaySnapshot = $todaySnapshots->first();
-    Assert::assertNotNull($todaySnapshot);
-
-    /** @var array<array-key, mixed> $todayState */
-    $todayState = $todaySnapshot->state;
-    Assert::assertSame('today', $todayState['date']);
-
-    $recentSnapshots = Snapshot::whereKey($snapshotIds)->where('created_at', '>=', $yesterday)->get();
-    Assert::assertCount(3, $recentSnapshots);
-});
-
-test('can handle snapshot with metadata', function (): void {
-    $metadata = [
-        'source' => 'user_action',
-        'user_id' => 789,
-        'action' => 'profile_update',
-        'timestamp' => now()->toISOString(),
-        'ip_address' => '192.168.1.100',
-        'user_agent' => 'Mozilla/5.0',
-        'session_id' => Str::random(40),
-    ];
-
-    $snapshot = SnapshotFactory::new()->createOne([
-        'aggregate_uuid' => Str::uuid()->toString(),
-        'aggregate_version' => 1,
-        'state' => [
-            'profile' => [
-                'name' => 'Alice Johnson',
-                'email' => 'alice@example.com',
+            'metadata' => [
+                'created_by' => 'system',
+                'source' => 'web_registration',
+                'tags' => ['verified', 'premium_user'],
             ],
-            'metadata' => $metadata,
-        ],
-    ]);
-    Assert::assertInstanceOf(Snapshot::class, $snapshot);
+        ];
 
-    /** @var array<array-key, mixed> $state */
-    $state = $snapshot->state;
+        $snapshot = Snapshot::create([
+            'aggregate_uuid' => Str::uuid()->toString(),
+            'aggregate_version' => 5,
+            'state' => json_encode($complexState),
+        ]);
 
-    /** @var array<array-key, mixed> $profile */
-    $profile = $state['profile'];
-    Assert::assertIsArray($profile);
-    Assert::assertSame('Alice Johnson', $profile['name']);
-    Assert::assertSame('alice@example.com', $profile['email']);
+        $this->assertDatabaseHas('snapshots', [
+            'id' => $snapshot->id,
+            'aggregate_version' => 5,
+        ]);
 
-    /** @var array<array-key, mixed> $meta */
-    $meta = $state['metadata'];
-    Assert::assertIsArray($meta);
-    Assert::assertSame('user_action', $meta['source']);
-    Assert::assertSame(789, $meta['user_id']);
-    Assert::assertSame('profile_update', $meta['action']);
-});
+        $this->assertEquals(5, $snapshot->aggregate_version);
+        $this->assertIsArray($snapshot->state);
+        $this->assertEquals('John Doe', $snapshot->state['user_info']['name']);
+        $this->assertEquals('premium', $snapshot->state['account_status']['subscription']['plan']);
+        $this->assertTrue($snapshot->state['account_status']['is_active']);
+        $this->assertContains('verified', $snapshot->state['metadata']['tags']);
+    }
+
+    /** @test */
+    public function it_can_manage_snapshot_versioning(): void
+    {
+        $aggregateUuid = Str::uuid()->toString();
+
+        // Crea snapshot con versioni progressive
+        $snapshot1 = Snapshot::create([
+            'aggregate_uuid' => $aggregateUuid,
+            'aggregate_version' => 1,
+            'state' => json_encode(['version' => 1, 'data' => 'Initial state']),
+        ]);
+
+        $snapshot2 = Snapshot::create([
+            'aggregate_uuid' => $aggregateUuid,
+            'aggregate_version' => 2,
+            'state' => json_encode(['version' => 2, 'data' => 'Updated state']),
+        ]);
+
+        $snapshot3 = Snapshot::create([
+            'aggregate_uuid' => $aggregateUuid,
+            'aggregate_version' => 3,
+            'state' => json_encode(['version' => 3, 'data' => 'Final state']),
+        ]);
+
+        $this->assertDatabaseHas('snapshots', [
+            'id' => $snapshot1->id,
+            'aggregate_version' => 1,
+        ]);
+
+        $this->assertDatabaseHas('snapshots', [
+            'id' => $snapshot2->id,
+            'aggregate_version' => 2,
+        ]);
+
+        $this->assertDatabaseHas('snapshots', [
+            'id' => $snapshot3->id,
+            'aggregate_version' => 3,
+        ]);
+
+        // Verifica che tutti gli snapshot abbiano lo stesso UUID ma versioni diverse
+        $this->assertEquals($aggregateUuid, $snapshot1->aggregate_uuid);
+        $this->assertEquals($aggregateUuid, $snapshot2->aggregate_uuid);
+        $this->assertEquals($aggregateUuid, $snapshot3->aggregate_uuid);
+
+        $this->assertEquals(1, $snapshot1->aggregate_version);
+        $this->assertEquals(2, $snapshot2->aggregate_version);
+        $this->assertEquals(3, $snapshot3->aggregate_version);
+    }
+
+    /** @test */
+    public function it_can_query_snapshots_by_aggregate_uuid(): void
+    {
+        $uuid1 = Str::uuid()->toString();
+        $uuid2 = Str::uuid()->toString();
+
+        // Crea snapshot per il primo aggregate
+        Snapshot::create([
+            'aggregate_uuid' => $uuid1,
+            'aggregate_version' => 1,
+            'state' => json_encode(['aggregate' => 'first', 'version' => 1]),
+        ]);
+
+        Snapshot::create([
+            'aggregate_uuid' => $uuid1,
+            'aggregate_version' => 2,
+            'state' => json_encode(['aggregate' => 'first', 'version' => 2]),
+        ]);
+
+        // Crea snapshot per il secondo aggregate
+        Snapshot::create([
+            'aggregate_uuid' => $uuid2,
+            'aggregate_version' => 1,
+            'state' => json_encode(['aggregate' => 'second', 'version' => 1]),
+        ]);
+
+        // Query per UUID specifico
+        $snapshots1 = Snapshot::where('aggregate_uuid', $uuid1)->get();
+        $snapshots2 = Snapshot::where('aggregate_uuid', $uuid2)->get();
+
+        $this->assertCount(2, $snapshots1);
+        $this->assertCount(1, $snapshots2);
+
+        $this->assertEquals($uuid1, $snapshots1->first()->aggregate_uuid);
+        $this->assertEquals($uuid2, $snapshots2->first()->aggregate_uuid);
+    }
+
+    /** @test */
+    public function it_can_query_snapshots_by_version(): void
+    {
+        $uuid = Str::uuid()->toString();
+
+        Snapshot::create([
+            'aggregate_uuid' => $uuid,
+            'aggregate_version' => 1,
+            'state' => json_encode(['version' => 1]),
+        ]);
+
+        Snapshot::create([
+            'aggregate_uuid' => $uuid,
+            'aggregate_version' => 5,
+            'state' => json_encode(['version' => 5]),
+        ]);
+
+        Snapshot::create([
+            'aggregate_uuid' => $uuid,
+            'aggregate_version' => 10,
+            'state' => json_encode(['version' => 10]),
+        ]);
+
+        // Query per versione specifica
+        $version1Snapshot = Snapshot::where('aggregate_uuid', $uuid)->where('aggregate_version', 1)->first();
+
+        $version5Snapshot = Snapshot::where('aggregate_uuid', $uuid)->where('aggregate_version', 5)->first();
+
+        $version10Snapshot = Snapshot::where('aggregate_uuid', $uuid)->where('aggregate_version', 10)->first();
+
+        $this->assertNotNull($version1Snapshot);
+        $this->assertNotNull($version5Snapshot);
+        $this->assertNotNull($version10Snapshot);
+
+        $this->assertEquals(1, $version1Snapshot->aggregate_version);
+        $this->assertEquals(5, $version5Snapshot->aggregate_version);
+        $this->assertEquals(10, $version10Snapshot->aggregate_version);
+    }
+
+    /** @test */
+    public function it_can_handle_snapshot_with_empty_state(): void
+    {
+        $snapshot = Snapshot::create([
+            'aggregate_uuid' => Str::uuid()->toString(),
+            'aggregate_version' => 1,
+            'state' => json_encode([]),
+        ]);
+
+        $this->assertDatabaseHas('snapshots', [
+            'id' => $snapshot->id,
+            'aggregate_version' => 1,
+        ]);
+
+        $this->assertIsArray($snapshot->state);
+        $this->assertEmpty($snapshot->state);
+    }
+
+    /** @test */
+    public function it_can_handle_snapshot_with_null_state(): void
+    {
+        $snapshot = Snapshot::create([
+            'aggregate_uuid' => Str::uuid()->toString(),
+            'aggregate_version' => 1,
+            'state' => null,
+        ]);
+
+        $this->assertDatabaseHas('snapshots', [
+            'id' => $snapshot->id,
+            'aggregate_version' => 1,
+        ]);
+
+        $this->assertNull($snapshot->state);
+    }
+
+    /** @test */
+    public function it_can_restore_state_from_snapshot(): void
+    {
+        $originalState = [
+            'user_id' => 456,
+            'settings' => [
+                'theme' => 'light',
+                'language' => 'it',
+                'notifications' => false,
+            ],
+            'preferences' => [
+                'timezone' => 'Europe/Rome',
+                'date_format' => 'd/m/Y',
+                'currency' => 'EUR',
+            ],
+        ];
+
+        $snapshot = Snapshot::create([
+            'aggregate_uuid' => Str::uuid()->toString(),
+            'aggregate_version' => 7,
+            'state' => json_encode($originalState),
+        ]);
+
+        // Simula il ripristino dello stato
+        $restoredState = $snapshot->state;
+
+        $this->assertEquals($originalState, $restoredState);
+        $this->assertEquals(456, $restoredState['user_id']);
+        $this->assertEquals('light', $restoredState['settings']['theme']);
+        $this->assertEquals('Europe/Rome', $restoredState['preferences']['timezone']);
+        $this->assertEquals('EUR', $restoredState['preferences']['currency']);
+    }
+
+    /** @test */
+    public function it_can_compare_snapshot_versions(): void
+    {
+        $uuid = Str::uuid()->toString();
+
+        $snapshot1 = Snapshot::create([
+            'aggregate_uuid' => $uuid,
+            'aggregate_version' => 1,
+            'state' => json_encode(['value' => 100, 'status' => 'initial']),
+        ]);
+
+        $snapshot2 = Snapshot::create([
+            'aggregate_uuid' => $uuid,
+            'aggregate_version' => 2,
+            'state' => json_encode(['value' => 200, 'status' => 'updated']),
+        ]);
+
+        $snapshot3 = Snapshot::create([
+            'aggregate_uuid' => $uuid,
+            'aggregate_version' => 3,
+            'state' => json_encode(['value' => 300, 'status' => 'final']),
+        ]);
+
+        // Verifica che le versioni siano progressive
+        $this->assertLessThan($snapshot2->aggregate_version, $snapshot1->aggregate_version);
+        $this->assertLessThan($snapshot3->aggregate_version, $snapshot2->aggregate_version);
+
+        // Verifica che i valori cambino tra le versioni
+        $this->assertEquals(100, $snapshot1->state['value']);
+        $this->assertEquals(200, $snapshot2->state['value']);
+        $this->assertEquals(300, $snapshot3->state['value']);
+
+        $this->assertEquals('initial', $snapshot1->state['status']);
+        $this->assertEquals('updated', $snapshot2->state['status']);
+        $this->assertEquals('final', $snapshot3->state['status']);
+    }
+
+    /** @test */
+    public function it_can_handle_snapshot_with_timestamps(): void
+    {
+        $now = now();
+
+        $snapshot = Snapshot::create([
+            'aggregate_uuid' => Str::uuid()->toString(),
+            'aggregate_version' => 1,
+            'state' => json_encode(['created_at' => $now->toISOString()]),
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+
+        $this->assertDatabaseHas('snapshots', [
+            'id' => $snapshot->id,
+            'created_at' => $now->toDateTimeString(),
+            'updated_at' => $now->toDateTimeString(),
+        ]);
+
+        $this->assertEquals($now->timestamp, $snapshot->created_at->timestamp);
+        $this->assertEquals($now->timestamp, $snapshot->updated_at->timestamp);
+    }
+
+    /** @test */
+    public function it_can_query_snapshots_by_date_range(): void
+    {
+        $yesterday = now()->subDay();
+        $today = now();
+        $tomorrow = now()->addDay();
+
+        Snapshot::create([
+            'aggregate_uuid' => Str::uuid()->toString(),
+            'aggregate_version' => 1,
+            'state' => json_encode(['date' => 'yesterday']),
+            'created_at' => $yesterday,
+        ]);
+
+        Snapshot::create([
+            'aggregate_uuid' => Str::uuid()->toString(),
+            'aggregate_version' => 1,
+            'state' => json_encode(['date' => 'today']),
+            'created_at' => $today,
+        ]);
+
+        Snapshot::create([
+            'aggregate_uuid' => Str::uuid()->toString(),
+            'aggregate_version' => 1,
+            'state' => json_encode(['date' => 'tomorrow']),
+            'created_at' => $tomorrow,
+        ]);
+
+        $todaySnapshots = Snapshot::whereDate('created_at', today())->get();
+        $this->assertCount(1, $todaySnapshots);
+        $this->assertEquals('today', $todaySnapshots->first()->state['date']);
+
+        $recentSnapshots = Snapshot::where('created_at', '>=', $yesterday)->get();
+        $this->assertCount(2, $recentSnapshots);
+    }
+
+    /** @test */
+    public function it_can_handle_snapshot_with_metadata(): void
+    {
+        $metadata = [
+            'source' => 'user_action',
+            'user_id' => 789,
+            'action' => 'profile_update',
+            'timestamp' => now()->toISOString(),
+            'ip_address' => '192.168.1.100',
+            'user_agent' => 'Mozilla/5.0',
+            'session_id' => Str::random(40),
+        ];
+
+        $snapshot = Snapshot::create([
+            'aggregate_uuid' => Str::uuid()->toString(),
+            'aggregate_version' => 1,
+            'state' => json_encode([
+                'profile' => [
+                    'name' => 'Alice Johnson',
+                    'email' => 'alice@example.com',
+                ],
+                'metadata' => $metadata,
+            ]),
+        ]);
+
+        $this->assertDatabaseHas('snapshots', [
+            'id' => $snapshot->id,
+            'aggregate_version' => 1,
+        ]);
+
+        $this->assertEquals('Alice Johnson', $snapshot->state['profile']['name']);
+        $this->assertEquals('alice@example.com', $snapshot->state['profile']['email']);
+        $this->assertEquals('user_action', $snapshot->state['metadata']['source']);
+        $this->assertEquals(789, $snapshot->state['metadata']['user_id']);
+        $this->assertEquals('profile_update', $snapshot->state['metadata']['action']);
+    }
+}

@@ -1,3 +1,11 @@
+---
+title: "Bad Practices – Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "bad practices   activity activity"
+---
 # Bad Practices – Activity
 
 ## ❌ Log delle attività senza livello di severità

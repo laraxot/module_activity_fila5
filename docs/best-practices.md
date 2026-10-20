@@ -1,3 +1,11 @@
+---
+title: "Best Practices – Activity"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "best practices   activity activity"
+---
 # Best Practices – Activity
 
 ## Principi DRY/KISS

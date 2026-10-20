@@ -29,7 +29,7 @@ qmd search "Activity concepts" --limit 5
 - [testcase-hierarchy-architecture](testcase-hierarchy-architecture.md) — Activity TestCase estende XotBaseTestCase; nessun Nwidart BaseTestCase nella v13 installata.
 
 ## See Also
-- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+- [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
 - [Root Wiki](../../../docs/wiki/)
 
 ---

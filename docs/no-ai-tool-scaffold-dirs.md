@@ -1,5 +1,10 @@
 ---
 title: No AI/tool scaffold directories in module tree
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "perché queste cartelle non devono esistere qui activity"
 ---
 
 # Perché queste cartelle non devono esistere qui

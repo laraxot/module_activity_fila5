@@ -1,3 +1,11 @@
+---
+title: "Activity Module - User Research"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - user research activity"
+---
 # Activity Module - User Research
 
 **Module:** Activity  

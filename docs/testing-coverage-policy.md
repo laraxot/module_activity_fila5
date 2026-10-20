@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Testing Coverage Policy"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "activity module - testing coverage policy activity"
+---
 # Activity Module - Testing Coverage Policy
 
 ## Obiettivo

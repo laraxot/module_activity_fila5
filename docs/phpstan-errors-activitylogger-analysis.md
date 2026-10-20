@@ -1,3 +1,11 @@
+---
+title: "PHPStan Errors - ActivityLogger.php - Deep Analysis"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan errors - activitylogger.php - deep analysis activity"
+---
 # PHPStan Errors - ActivityLogger.php - Deep Analysis
 
 **File**: `Modules/Activity/app/Actions/ActivityLogger.php`

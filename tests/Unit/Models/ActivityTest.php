@@ -1,37 +1,43 @@
 <?php
 
 declare(strict_types=1);
-use Modules\Activity\Database\Factories\ActivityFactory;
+
 use Modules\Activity\Models\Activity;
-use Modules\Activity\Tests\TestCase;
-use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-
-test('activity model can be created', function () {
-    $activity = ActivityFactory::new()->make();
-
-    Assert::assertInstanceOf(Activity::class, $activity);
-});
-
-test('activity model can be saved and retrieved', function () {
-    $activity = ActivityFactory::new()->createOne([
-        'description' => 'Test action',
-        'event' => 'test_event',
+test('activity can be created', function () {
+    $activity = createActivity([
+        'name' => 'Test Activity',
+        'description' => 'Test Description',
     ]);
 
-    $retrieved = Activity::find($activity->id);
-
-    Assert::assertInstanceOf(Activity::class, $retrieved);
-    Assert::assertSame('Test action', $retrieved->description);
-    Assert::assertSame('test_event', $retrieved->event);
+    expect($activity)
+        ->toBeActivity()
+        ->and($activity->name)
+        ->toBe('Test Activity')
+        ->and($activity->description)
+        ->toBe('Test Description');
 });
 
-test('activity model has expected attributes', function () {
-    $activity = ActivityFactory::new()->make();
+test('activity has required attributes', function () {
+    $activity = makeActivity();
 
-    // Testiamo solo alcuni attributi per verificare che il modello funzioni
-    // Siccome non possiamo usare toHaveProperty direttamente su Eloquent models, usiamo isset
-    Assert::assertTrue(isset($activity->description));
-    Assert::assertTrue(isset($activity->event));
+    expect($activity)
+        ->toHaveProperty('name')
+        ->toHaveProperty('description')
+        ->toHaveProperty('created_at')
+        ->toHaveProperty('updated_at');
+});
+
+test('activity can be soft deleted', function () {
+    $activity = createActivity();
+
+    $activity->delete();
+
+    expect($activity->trashed())->toBeTrue();
+});
+
+test('activity factory creates valid instances', function () {
+    $activity = Activity::factory()->make();
+
+    expect($activity)->toBeActivity()->and($activity->name)->toBeString()->and($activity->description)->toBeString();
 });

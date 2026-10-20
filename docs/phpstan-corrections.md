@@ -1,3 +1,11 @@
+---
+title: "PHPStan Corrections - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan corrections - activity module activity"
+---
 # PHPStan Corrections - Activity Module
 
 **Data**: 2025-10-10  
