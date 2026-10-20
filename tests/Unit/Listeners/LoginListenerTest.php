@@ -22,7 +22,7 @@ test('login listener is registered for login event', function () {
 test('login listener can be instantiated', function () {
     $listener = new LoginListener;
 
-    Assert::assertInstanceOf(LoginListener::class, $listener);
+    Assert::assertTrue((new ReflectionClass($listener))->hasMethod('handle'));
 });
 
 test('login listener has handle method', function () {

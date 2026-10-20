@@ -326,8 +326,8 @@ test('snapshot state maintains data integrity with large datasets', function () 
     Assert::assertArrayHasKey('users', $state);
     Assert::assertArrayHasKey('metadata', $state);
 
-    $users = $state['users'] ?? null;
-    $metadata = $state['metadata'] ?? null;
+    $users = $state['users'];
+    $metadata = $state['metadata'];
 
     Assert::assertIsArray($users);
     Assert::assertCount(100, $users);
@@ -396,9 +396,9 @@ test('stored event handles complex event properties with nested arrays', functio
     Assert::assertArrayHasKey('customer', $eventProperties);
     Assert::assertArrayHasKey('payment', $eventProperties);
 
-    $order = $eventProperties['order'] ?? null;
-    $customer = $eventProperties['customer'] ?? null;
-    $payment = $eventProperties['payment'] ?? null;
+    $order = $eventProperties['order'];
+    $customer = $eventProperties['customer'];
+    $payment = $eventProperties['payment'];
 
     Assert::assertIsArray($order);
     Assert::assertArrayHasKey('id', $order);
@@ -417,7 +417,7 @@ test('stored event handles complex event properties with nested arrays', functio
     Assert::assertArrayHasKey('status', $payment);
     Assert::assertArrayHasKey('amount', $payment);
 
-    $items = $order['items'] ?? null;
+    $items = $order['items'];
     Assert::assertIsArray($items);
     Assert::assertCount(50, $items);
 });

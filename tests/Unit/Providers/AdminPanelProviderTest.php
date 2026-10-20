@@ -16,5 +16,5 @@ test('admin panel provider returns a panel instance', function () {
 
     $panel = $provider->panel(Panel::make());
 
-    Assert::assertInstanceOf(Panel::class, $panel);
+    Assert::assertNotSame('', $panel->getId());
 });
