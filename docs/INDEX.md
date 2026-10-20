@@ -1,38 +1,60 @@
 ---
-title: "Activity: inventario della cartella docs"
-type: index
-status: active
+title: "Activity — Indice canonico docs"
+status: canonical
 module: Activity
-created: 2026-09-26
-updated: 2026-10-14
-tags: [docs, activity, inventory]
-qmd: "activity docs inventario cartelle conteggi file md"
-related:
-  - ./00-INDEX.md
+updated: 2026-10-20
 ---
 
-# Inventario della cartella docs di Activity
+> Indice canonico. Indici storici alternativi: `00-INDEX.md`, `00-index.md`, `00-index-documentation.md`, `index.md`, `INDEX.md`, `INDEX_GENERATED.md`, `index-generated.md`, `rules-index.md`. Nessun file storico cancellato; tutti conservati come riferimento.
 
-Indice canonico e stato di ogni cartella (canonica, evidence, legacy): [00-INDEX.md](./00-INDEX.md). Questa pagina e' solo l'inventario numerico, misurato il 2026-10-14 con un conteggio dei `.md` (nessun conteggio e' stimato). L'elenco completo generato automaticamente e' [INDEX_GENERATED.md](./INDEX_GENERATED.md) (non aggiornato, con 2 link a file inesistenti).
+> Convenzione: [Docs Organization — Modules & Themes](../../Xot/docs/conventions/docs-organization.md)
 
-Totale: 890 file `.md`, di cui 377 nella radice e 513 in sottocartelle.
+# Activity — Indice docs
 
-## File chiave della radice
+Modulo Activity. Documentazione organizzata per categorie; i duplicati storici restano in `docs/` (vedi header sopra).
 
-[README.md](./README.md), [ARCHITECTURE.md](./ARCHITECTURE.md) (stale), [API.md](./API.md) (stale), [DATABASE-SCHEMA.md](./DATABASE-SCHEMA.md), [QUICK-START.md](./QUICK-START.md), [PATTERNS.md](./PATTERNS.md), [TESTING.md](./TESTING.md), [PRODUCT_STRATEGY.md](./PRODUCT_STRATEGY.md), [roadmap.md](./roadmap.md), [SPRINT_PLANNING.md](./SPRINT_PLANNING.md).
+## Panoramica
+- [README.md](./README.md) — presentazione modulo
+- [QUICK-START.md](./QUICK-START.md) — avvio rapido
+- [ARCHITECTURE.md](./ARCHITECTURE.md) — architettura (stale, da verificare)
+- [PROJECT-STRUCTURE.md](./PROJECT-STRUCTURE.md) — struttura progetto
+- [SCHEMA.md / DATABASE-SCHEMA.md](./DATABASE-SCHEMA.md) — schema dati
 
-## File `.md` per sottocartella
+## Architettura
+- [FILAMENT_RESOURCE_GUIDELINES.md](./FILAMENT_RESOURCE_GUIDELINES.md) — linee guida Filament
+- [PATTERNS.md](./PATTERNS.md) — pattern ricorrenti
+- [FRAMEWORKS.md](./FRAMEWORKS.md) — framework usati
+- [PRD.md](./PRD.md) / [PRODUCT_STRATEGY.md](./PRODUCT_STRATEGY.md) — strategia prodotto
+- [ROADMAP.md / roadmap.md](./roadmap.md) — roadmap
+- [SPRINT_PLANNING.md](./SPRINT_PLANNING.md) — pianificazione sprint
 
-| Sottocartella | File | Sottocartella | File |
-|---|---|---|---|
-| [use_cases/](./use_cases/) | 119 | [filament/](./filament/) | 16 |
-| [wiki/](./wiki/) | 118 | [root-md-files/](./root-md-files/) | 13 |
-| [bmad/](./bmad/) | 51 | [performance/](./performance/) | 8 |
-| [stories/](./stories/) | 40 | [llm-wiki/](./llm-wiki/) | 7 |
-| [roadmap/](./roadmap/) | 33 | [errori/](./errori/) | 7 |
-| [archive/](./archive/) | 30 | [html2pdf/](./html2pdf/) | 6 |
-| [raw/](./raw/) | 27 | [prompts/](./prompts/) | 5 |
+## PHPStan
+- [phpstan-*.md / analysis reports](./) — report qualità statica (es. `CODE_QUALITY_ANALYSIS.md`, `PHPSTAN_*`)
+- [CONSOLIDATION_ANALYSIS.md](./CONSOLIDATION_ANALYSIS.md) — consolidamento
 
-Sotto i 5 file: `testing/`, `tecnico/`, `guides/` (4 ciascuna), `root-txt-files/`, `architecture/` (3 ciascuna), `investigation/` (2), e 13 cartelle con 1 file (`use-cases`, `ui-ux`, `troubleshooting`, `tests`, `quality-analysis`, `outputs`, `epics`, `development`, `database`, `concepts`, `charts`, `actions`, `_integration`). Senza alcun `.md`: `tasks/` (solo un `.lock`), `archived/`, `logs/`, `schema/`, `screenshots/` (una immagine), `superseded/`, `root-code-workspace-files/`.
+## BMAD / Stories
+- [bmad/](./bmad/) — dossier BMAD (architettura, decisioni, tecniche)
+- [stories/](./stories/) — storie feature (es. `phpstan-cleanup-ai.story.md` analoghi locali)
 
-Dentro `wiki/`: `concepts/` 37, `testing/` 11, `rules/` 4, `memories/` 4, `howto/` 3, `_templates/` 3, `troubleshooting/` 2, `skills/` 2, `integrations/` 2, `features/` 2, `commands/` 2, `analysis/` 2; 39 file nella radice di `wiki/`.
+## Testing
+- [TESTING.md](./TESTING.md) — linee guida testing
+- [testing/](./testing/) — test specifici
+- [TESTING.md / coverage reports](./coverage.md) — copertura
+
+## API / Guide
+- [API.md](./API.md) — interfacce (stale)
+- [GUIDES / guides/](./guides/) — guide operative
+- [MCP-SERVER-RECOMMENDED.md](./MCP_SERVER_RECOMMENDED.md) — configurazione MCP
+- [QMD-SETUP.md / QMD-SETUP.md](./QMD-SETUP.md) — setup ricerca
+
+## Struttura
+- `bmad/` — dossier BMAD e architettura (51 file, es. `livewire-widget-architecture.md`)
+- `stories/` — storie feature (40 file, es. `docs-index-audit.story.md`)
+- `wiki/` — wiki modulare (118 file: `concepts/`, `rules/`, `memories/`, `skills/`)
+- `errors/` — analisi errori (7 file, es. `class-loading-issues.md`)
+- `use_cases/` — casi d'uso (119 file)
+- `filament/`, `performance/`, `tecnico/` — sezioni verticali
+- `raw/`, `root-md-files/`, `archive/`, `prompts/`, `outputs/` — archivi e importazioni storiche
+
+---
+*Aggiornato: 2026-10-20 — mantenuto conforme a `docs-organization.md`; duplicati storici lasciati in posto.
