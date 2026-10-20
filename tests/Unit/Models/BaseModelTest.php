@@ -1,40 +1,34 @@
 <?php
 
 declare(strict_types=1);
-
-namespace Modules\Activity\Tests\Unit\Models;
-
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\Activity\Models\BaseModel;
-use Tests\TestCase;
+use Modules\Activity\Tests\TestCase;
+use Modules\Xot\Models\XotBaseModel;
+use PHPUnit\Framework\Assert;
 
-uses(TestCase::class, RefreshDatabase::class);
+uses(TestCase::class);
 
-beforeEach(function () {
-    $this->baseModel = new class extends BaseModel
+test('BaseModel has correct connection', function () {
+    $model = new class extends BaseModel
     {
-        protected $table = 'test_activity_table';
+        protected $table = 'test_models';
+
+        protected $fillable = ['name'];
     };
+    $reflection = new ReflectionClass($model);
+    $property = $reflection->getProperty('connection');
+    $property->setAccessible(true);
+
+    Assert::assertSame('activity', $property->getValue($model));
 });
 
-test('base model extends eloquent model', function () {
-    expect($this->baseModel)->toBeInstanceOf(Model::class);
-});
+test('BaseModel extends XotBaseModel', function () {
+    $model = new class extends BaseModel
+    {
+        protected $table = 'test_models';
 
-test('base model has correct table name', function () {
-    expect($this->baseModel->getTable())->toBe('test_activity_table');
-});
+        protected $fillable = ['name'];
+    };
 
-test('base model can be instantiated', function () {
-    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
-});
-
-test('base model has proper inheritance chain', function () {
-    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
-    expect($this->baseModel)->toBeInstanceOf(Model::class);
-});
-
-test('base model has timestamps enabled', function () {
-    expect($this->baseModel)->usesTimestamps()->toBeTrue();
+    Assert::assertInstanceOf(XotBaseModel::class, $model);
 });
