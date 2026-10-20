@@ -1,6 +1,11 @@
 ---
 title: Decision log
 module: Activity
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "decision log - modulo activity activity"
 ---
 
 # Decision Log - Modulo Activity

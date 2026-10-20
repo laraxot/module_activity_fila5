@@ -1,6 +1,11 @@
 ---
 title: Todo
 module: Activity
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "activity module documentation consolidation todo activity"
 ---
 
 # Activity Module Documentation Consolidation TODO

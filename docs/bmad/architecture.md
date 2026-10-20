@@ -1,6 +1,11 @@
 ---
 title: Architecture
 module: Activity
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, bmad]
+qmd: "activity   architettura bmad activity"
 ---
 
 ---
