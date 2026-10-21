@@ -1,3 +1,8 @@
+---
+title: Consolidation activity docs 2026 10 06.story
+module: Activity
+---
+
 # Story: Activity Module Documentation Consolidation (Phase 1)
 
 **Phase**: BMAD  

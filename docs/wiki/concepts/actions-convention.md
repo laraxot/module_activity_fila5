@@ -1,3 +1,8 @@
+---
+title: Actions convention
+module: Activity
+---
+
 # Actions Convention
 
 All classes under `app/Actions/` MUST use the **Spatie QueueableAction** trait

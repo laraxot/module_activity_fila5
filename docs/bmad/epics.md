@@ -1,3 +1,8 @@
+---
+title: Epics
+module: Activity
+---
+
 # Epics e User Stories - Modulo Activity
 
 ## Epics
