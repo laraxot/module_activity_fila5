@@ -11,12 +11,7 @@
 
 ## Introduction
 
-Event Sourcing is particularly valuable in healthcare applications like `saluteora` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
-Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
-Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
-Event Sourcing is particularly valuable in healthcare applications like `saluteora` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
-Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
-Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
+Event Sourcing is particularly valuable in healthcare applications like `saluteora` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.=======
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
 
@@ -43,9 +38,7 @@ sequenceDiagram
     participant A as API
     participant AR as PatientAggregate
     participant ES as Event Store
-    
-
-    
+    =======
 
     C->>A: Register Patient
     A->>AR: handle(RegisterPatientCommand)
@@ -53,9 +46,7 @@ sequenceDiagram
     AR->>ES: store(ContactInfoUpdated)
     ES-->>A: Events stored
     A-->>C: Patient ID
-    
-
-    
+    =======
 
     Note right of ES: Projectors update read models asynchronously
 ```
@@ -77,25 +68,9 @@ class PrescriptionAggregate extends AggregateRoot
     public function prescribe(
         string $patientId, 
         string $medicationId, 
-
     public function prescribe(
         string $patientId,
         string $medicationId,
-        string $dosage,
-        string $doctorId
-    ): void {
-        $this->recordThat(new MedicationPrescribed(
-            prescriptionId: $this->uuid(),
-            patientId: $patientId,
-            medicationId: $medicationId,
-            dosage: $dosage,
-            prescribedBy: $doctorId,
-            prescribedAt: now()
-        ));
-    }
-    
-
-    
 
     protected function applyMedicationPrescribed(MedicationPrescribed $event): void
     {
@@ -116,9 +91,7 @@ class ScheduleAppointmentHandler
         private EventBus $eventBus,
         private AppointmentRepository $appointments
     ) {}
-    
-
-    
+    =======
 
     public function handle(ScheduleAppointmentCommand $command): void
     {
@@ -131,13 +104,7 @@ class ScheduleAppointmentHandler
         );
         
         $this->appointments->save($appointment);
-        
-
-        $this->appointments->save($appointment);
-
-        
-        $this->appointments->save($appointment);
-        
+        =======
 
         $this->appointments->save($appointment);
 
@@ -165,61 +132,13 @@ class PatientAggregate extends AggregateRoot
     {
         $aggregate = new static($uuid);
         
-
     public static function reconstituteFromEvents(UuidInterface $uuid, array $events): self
     {
         $aggregate = new static($uuid);
 
-        // Apply all events
-        foreach ($events as $event) {
-            $aggregate->apply($event);
-            $aggregate->version++;
-        }
-        
-        return $aggregate;
-    }
-    
-
         return $aggregate;
     }
 
-    public function snapshot(): PatientSnapshot
-    {
-        return new PatientSnapshot([
-            'aggregate_id' => $this->uuid->toString(),
-            'version' => $this->version,
-            'state' => [
-                // Current state properties
-            ]
-        ]);
-    }
-}
-```
-
-### 2. Read Model Optimization
-- Use dedicated read models for common queries
-- Implement caching strategies
-- Consider eventual consistency where appropriate
-
-## Best Practices
-
-### 1. Event Design
-- Keep events small and focused
-- Use past tense for event names
-- Include all necessary context
-- Make events immutable
-
-### 2. Testing
-```php
-class PatientRegistrationTest extends TestCase
-{
-    /** @test */
-    public function it_registers_a_new_patient()
-    {
-        $patientId = PatientId::generate();
-        
-
-        
 
         $this->given()
             ->when(new RegisterPatient($patientId, 'John', 'Doe', 'john@example.com'))
@@ -259,8 +178,7 @@ Event Sourcing provides a robust foundation for healthcare applications by ensur
 ## References
 - [Event Sourcing in Laravel by Brent Roose](https://event-sourcing-laravel.com/)
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/project_docs/laravel-event-sourcing/v7/)
-- [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)
-Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `<nome progetto>` can build a system that not only meets current requirements but can also evolve with future needs.
+- [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `<nome progetto>` can build a system that not only meets current requirements but can also evolve with future needs.
 Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `<nome progetto>` can build a system that not only meets current requirements but can also evolve with future needs.
 
 ## References
@@ -270,4 +188,3 @@ Event Sourcing provides a robust foundation for healthcare applications by ensur
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/project_docs/laravel-event-sourcing/v7/)
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/docs/laravel-event-sourcing/v7/)
 - [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)
-

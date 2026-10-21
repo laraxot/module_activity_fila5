@@ -3,6 +3,7 @@
 declare(strict_types=1);
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Number;
+use Modules\Activity\Enums\LogLevelEnum;
 
 /*
  * ponytail: stili di layout in linea (style="...") e un <style> locale al posto di classi Tailwind, perche' il pannello
@@ -16,16 +17,6 @@ use Illuminate\Support\Number;
 
 /** @var \Modules\Activity\Filament\Pages\LogViewer $this */
 $state = $this->getLogState();
-$levelColors = [
-    'EMERGENCY' => 'danger',
-    'ALERT' => 'danger',
-    'CRITICAL' => 'danger',
-    'ERROR' => 'danger',
-    'WARNING' => 'warning',
-    'NOTICE' => 'info',
-    'INFO' => 'info',
-    'DEBUG' => 'gray',
-];
 // Voci molto lunghe (per esempio un log con una sola intestazione seguita da migliaia di righe JSON):
 // si mostrano l'inizio E la fine, perche' le righe piu' recenti sono in fondo.
 $maxBodyChars = 20000;
@@ -73,8 +64,8 @@ $labelStyle = 'display:block;font-size:.875rem;font-weight:500;margin-bottom:.25
                         <x-filament::input.wrapper>
                             <x-filament::input.select wire:model.live="level">
                                 <option value="">{{ __('activity::log_viewer.placeholders.all_levels') }}</option>
-                                @foreach ($state->levels as $levelName)
-                                    <option value="{{ $levelName }}">{{ $levelName }}</option>
+                                @foreach ($state->levels as $levelCase)
+                                    <option value="{{ $levelCase->value }}">{{ $levelCase->getLabel() }}</option>
                                 @endforeach
                             </x-filament::input.select>
                         </x-filament::input.wrapper>
@@ -130,7 +121,7 @@ $labelStyle = 'display:block;font-size:.875rem;font-weight:500;margin-bottom:.25
                             <summary style="cursor:pointer;padding:.5rem .75rem;display:flex;flex-wrap:wrap;gap:.5rem;align-items:baseline;font-size:.875rem;">
                                 <span style="opacity:.7;white-space:nowrap;">{{ $entry->timestamp ?? '—' }}</span>
                                 @if ($entry->level !== null)
-                                    <x-filament::badge :color="$levelColors[$entry->level] ?? 'gray'">{{ $entry->level }}</x-filament::badge>
+                                    <x-filament::badge :color="LogLevelEnum::tryFrom($entry->level)?->getColor() ?? 'gray'">{{ $entry->level }}</x-filament::badge>
                                 @endif
                                 <span style="word-break:break-word;min-width:0;flex:1 1 20rem;">{{ mb_substr($entry->message, 0, 300) }}@if (mb_strlen($entry->message) > 300)…@endif</span>
                             </summary>

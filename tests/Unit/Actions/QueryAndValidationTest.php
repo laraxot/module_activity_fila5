@@ -80,7 +80,7 @@ test('LogActivityAction execute rifiuta user non User', function (): void {
     $action = new LogActivityAction(type: 'test', user: $invalidUser, subject: $subject);
 
     expect(fn (): Activity => $action->execute())
-        ->toThrow(InvalidArgumentException::class, 'User must be an instance of User');
+        ->toThrow(InvalidArgumentException::class, 'User must implement UserContract');
 });
 
 describe('ActivityLogger Adapter validation', function (): void {
@@ -88,7 +88,7 @@ describe('ActivityLogger Adapter validation', function (): void {
         $logger = new ActivityLoggerAdapter;
 
         expect(fn (): Activity => $logger->log('event', new \stdClass))
-            ->toThrow(InvalidArgumentException::class, 'User must be an instance of User');
+            ->toThrow(InvalidArgumentException::class, 'User must implement UserContract');
     });
 
     test('getRecent delega validazione limit', function (): void {

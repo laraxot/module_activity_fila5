@@ -1,3 +1,8 @@
+---
+title: Event sourcing patterns
+module: Activity
+---
+
 # Advanced Event Sourcing Patterns for Healthcare Applications
 
 ## Table of Contents

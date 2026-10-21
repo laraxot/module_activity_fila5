@@ -1,3 +1,8 @@
+---
+title: Coverage full
+module: Activity
+---
+
 
 > Conflict cleanup note — 2026-04-28
 >

@@ -263,5 +263,9 @@ test('Activity Business Logic', function () {
 
         Assert::assertIsArray($orderDetails);
         Assert::assertSame(67.48, $orderDetails['total_amount']);
+
+        Assert::assertIsArray($customerInfo);
+        Assert::assertSame('Jane Smith', $customerInfo['name']);
+        Assert::assertSame('jane@example.com', $customerInfo['email']);
     });
 });
