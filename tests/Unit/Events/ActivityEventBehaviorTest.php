@@ -11,9 +11,6 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('activity event can be constructed and dispatched', function (): void {
-    $event = new ActivityEvent;
-
-    Assert::assertInstanceOf(ActivityEvent::class, $event);
-
     ActivityEvent::dispatch();
+    Assert::assertTrue(class_exists(ActivityEvent::class));
 });

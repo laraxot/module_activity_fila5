@@ -1,6 +1,14 @@
 ---
 title: Event sourcing patterns
 module: Activity
+<<<<<<< .merge_file_i0WTfX
+=======
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, wiki]
+qmd: "advanced event sourcing patterns for healthcare applications activity"
+>>>>>>> .merge_file_FwUJZG
 ---
 
 # Advanced Event Sourcing Patterns for Healthcare Applications

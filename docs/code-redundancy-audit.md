@@ -7,6 +7,10 @@ created: "2026-05-26"
 updated: "2026-05-26"
 owner: "Activity"
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/150"
+<<<<<<< .merge_file_y9f4bj
+=======
+qmd: "code redundancy audit   activity activity"
+>>>>>>> .merge_file_N9myDB
 ---
 
 # Code redundancy audit — Activity

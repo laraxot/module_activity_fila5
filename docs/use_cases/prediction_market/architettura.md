@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_6Tx4eH
+=======
+---
+title: "Architettura di un <nome progetto>ion Market"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "architettura di un <nome progetto>ion market activity"
+---
+>>>>>>> .merge_file_Lw5yiV
 # Architettura di un <nome progetto>ion Market
 
 ## Pattern Principali

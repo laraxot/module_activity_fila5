@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_19hK4K
+=======
+---
+title: "Laravel Folio + Volt - Best Practices and Patterns Analysis"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "laravel folio + volt - best practices and patterns analysis activity"
+---
+>>>>>>> .merge_file_cwEmPA
 # Laravel Folio + Volt - Best Practices and Patterns Analysis
 
 ## Overview

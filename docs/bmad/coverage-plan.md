@@ -1,6 +1,14 @@
 ---
 title: Coverage plan
 module: Activity
+<<<<<<< .merge_file_fTHrWw
+=======
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "activity coverage plan activity"
+>>>>>>> .merge_file_soSMY3
 ---
 
 # Activity Coverage Plan

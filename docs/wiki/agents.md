@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_IzOROK
+=======
+---
+title: "Activity Module LLM Wiki Agent Instructions======="
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, wiki]
+qmd: "activity module llm wiki agent instructions======= activity"
+---
+>>>>>>> .merge_file_AfR4VQ
 title: "Agent instructions"
 type: reference
 tags: [agents, coding-agent, llm-wiki]

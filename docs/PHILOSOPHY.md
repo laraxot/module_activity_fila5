@@ -2,6 +2,13 @@
 title: "Activity Module Philosophy"
 description: "The soul, dogma, and architectural decisions behind the Activity module"
 tags: [activity, philosophy, audit, event-sourcing, architecture]
+<<<<<<< .merge_file_kViBUB
+=======
+type: note
+status: draft
+updated: 2026-10-07
+qmd: "activity module philosophy activity"
+>>>>>>> .merge_file_AYW5bl
 ---
 
 # Activity Module Philosophy

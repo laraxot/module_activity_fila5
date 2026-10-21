@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_K140Q7
+=======
+---
+title: "Analisi di Larabank Projectors"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "analisi di larabank projectors activity"
+---
+>>>>>>> .merge_file_OWVD65
 # Analisi di Larabank Projectors
 
 ## Panoramica

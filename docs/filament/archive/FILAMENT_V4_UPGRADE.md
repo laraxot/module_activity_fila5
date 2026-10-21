@@ -3,6 +3,12 @@ title: "Rimando a filament_v4_upgrade.md"
 description: "Documento unificato: il contenuto canonico vive in filament_v4_upgrade.md."
 status: merged
 tags: [merge, duplicato, case-only]
+<<<<<<< .merge_file_QlupYo
+=======
+type: note
+updated: 2026-10-08
+qmd: "documento unificato activity"
+>>>>>>> .merge_file_TaZuDO
 ---
 
 # Documento unificato

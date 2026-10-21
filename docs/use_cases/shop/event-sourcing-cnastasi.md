@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_dLn42F
+=======
+---
+title: "Event Sourcing con Laravel: Analisi del Repository di cnastasi"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "event sourcing con laravel: analisi del repository di cnastasi activity"
+---
+>>>>>>> .merge_file_WhNF2I
 # Event Sourcing con Laravel: Analisi del Repository di cnastasi
 
 ## Introduzione

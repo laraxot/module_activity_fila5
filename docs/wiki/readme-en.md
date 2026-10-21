@@ -44,7 +44,11 @@ Traceability on sensitive system entities.
 
 Accountability is **non-negotiable** in digital government.
 
+<<<<<<< .merge_file_Gv0pcb
 Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+=======
+Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+>>>>>>> .merge_file_kwBu9U
 
 ---
 

@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_1Nt7Db
+=======
+---
+title: "Fix: Activity TestCase - Database Connection Configuration"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "fix: activity testcase - database connection configuration activity"
+---
+>>>>>>> .merge_file_LhUNc9
 # Fix: Activity TestCase - Database Connection Configuration
 
 **Data**: 2025-01-22
@@ -68,7 +79,11 @@ protected function setUp(): void
 
 ## 🔗 Collegamenti
 
+<<<<<<< .merge_file_1Nt7Db
 - [Testing Rules](../testing-rules.md)
+=======
+- [Testing Rules](testing-rules.md)
+>>>>>>> .merge_file_LhUNc9
 - [TestCase SQLite to MySQL Fix](testcase-sqlite-to-mysql-fix.md)
 - [User TestCase](../../User/tests/TestCase.php)
 

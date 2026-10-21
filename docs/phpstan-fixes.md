@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_oDzie3
+=======
+---
+title: "PHPStan Fixes - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan fixes - activity module activity"
+---
+>>>>>>> .merge_file_tcgic8
 # PHPStan Fixes - Activity Module
 
 ## Errori Risolti

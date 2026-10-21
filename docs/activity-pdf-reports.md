@@ -1,3 +1,11 @@
+---
+title: "Activity Log PDF Reports"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity log pdf reports activity"
+---
 # Activity Log PDF Reports
 
 ## 📋 Overview
