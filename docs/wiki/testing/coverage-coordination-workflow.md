@@ -1,3 +1,8 @@
+---
+title: Coverage coordination workflow
+module: Activity
+---
+
 # Activity Coverage Coordination Workflow
 
 ## Scopo

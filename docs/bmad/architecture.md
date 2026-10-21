@@ -1,5 +1,8 @@
-<<<<<<< .merge_file_tTLpcO
-<<<<<<< .merge_file_oPoQaH
+---
+title: Architecture
+module: Activity
+---
+
 ---
 title: "Activity — architettura BMAD"
 type: concept
@@ -102,11 +105,7 @@ E il modulo piu testato del monorepo in rapporto alle sue dimensioni.
 
 - [module-boundary.md](./architecture/module-boundary.md) — confini del modulo.
 - [module-map.md](./architecture/module-map.md) — mappa file -> responsabilita, una riga per file.
-- [brainstorming.md](./brainstorming.md) — decisioni prese e problemi aperti.
-=======
-=======
->>>>>>> .merge_file_QgaouB
-# Architettura del modulo Activity
+- [brainstorming.md](./brainstorming.md) — decisioni prese e problemi aperti.# Architettura del modulo Activity
 
 ## Overview
 
@@ -139,7 +138,3 @@ Interfacce per l'iniezione di dipendenze.
 - Filament Widget invece di Livewire
 - Array una chiave per riga
 - Schema-driven Forms (XotBaseSchemaWidget)
-<<<<<<< .merge_file_tTLpcO
->>>>>>> .merge_file_NiN8ob
-=======
->>>>>>> .merge_file_QgaouB

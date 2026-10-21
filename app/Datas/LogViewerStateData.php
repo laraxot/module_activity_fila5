@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Datas;
 
+use Modules\Activity\Enums\LogLevelEnum;
 use Spatie\LaravelData\Data;
 
 /**
@@ -16,7 +17,7 @@ final class LogViewerStateData extends Data
 {
     /**
      * @param  list<LogFileData>  $files
-     * @param  list<string>  $levels
+     * @param  list<LogLevelEnum>  $levels
      * @param  list<int>  $windows  finestre di lettura selezionabili, in KB
      * @param  list<LogEntryData>  $entries
      */
