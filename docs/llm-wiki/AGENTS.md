@@ -9,6 +9,10 @@ issues: []
 discussions: []
 related:
   - ./coding-agent-manifests.md
+<<<<<<< .merge_file_DCmI66
+=======
+status: draft
+>>>>>>> .merge_file_sBksIo
 ---
 
 # Activity Module LLM Wiki Agent Instructions

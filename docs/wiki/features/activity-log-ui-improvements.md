@@ -1,6 +1,14 @@
 ---
 title: Activity log ui improvements
 module: Activity
+<<<<<<< .merge_file_U0QjUU
+=======
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, wiki]
+qmd: "activity log ui/ux improvements - implementation summary activity"
+>>>>>>> .merge_file_MX96FS
 ---
 
 # Activity Log UI/UX Improvements - Implementation Summary

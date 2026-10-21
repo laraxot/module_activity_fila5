@@ -2,6 +2,13 @@
 title: Root .md Consolidation Analysis — Activity Module
 date: 2026-08-18
 status: analysis
+<<<<<<< .merge_file_TolMtR
+=======
+type: note
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "consolidation analysis   activity module activity"
+>>>>>>> .merge_file_xVZVEI
 ---
 
 # Consolidation Analysis — Activity Module

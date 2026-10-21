@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_8CqitQ
+=======
+---
+title: "PHPStan Error Resolution Roadmap - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan error resolution roadmap - activity module activity"
+---
+>>>>>>> .merge_file_DU6z87
 # PHPStan Error Resolution Roadmap - Activity Module
 
 ## Data: 2026-01-08

@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_Ulji9d
+=======
+---
+title: "Activity Module - Product Roadmap"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - product roadmap activity"
+---
+>>>>>>> .merge_file_gjn1BF
 # Activity Module - Product Roadmap
 
 **Module:** Activity  

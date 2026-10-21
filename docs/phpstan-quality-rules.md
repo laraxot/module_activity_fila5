@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_GJ8XTF
+=======
+---
+title: "PHPStan Quality Rules"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan quality rules activity"
+---
+>>>>>>> .merge_file_N3XZql
 # PHPStan Quality Rules
 
 ## ⚠️ REGOLA CRITICA: NON ESCLUDERE MAI I TEST DA PHPSTAN

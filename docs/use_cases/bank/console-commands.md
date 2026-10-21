@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_n04ggX
+=======
+---
+title: "Console Commands per Use Case Bancario"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "console commands per use case bancario activity"
+---
+>>>>>>> .merge_file_UqjVGy
 # Console Commands per Use Case Bancario
 
 ## Introduzione

@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_Um8wUk
+=======
+---
+title: "Root file policy"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "root file policy activity"
+---
+>>>>>>> .merge_file_2zdJmz
 # Root file policy
 
 Updated: 2026-07-08

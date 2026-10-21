@@ -1,3 +1,11 @@
+---
+title: "Aggiornamento README Activity - Sezione Testing"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "aggiornamento readme activity - sezione testing activity"
+---
 # Aggiornamento README Activity - Sezione Testing
 
 ## Sezione da Aggiungere

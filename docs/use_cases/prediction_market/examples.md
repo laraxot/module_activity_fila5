@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_9NHHvn
+=======
+---
+title: "Esempi Reali di <nome progetto>ion Market Platforms"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "esempi reali di <nome progetto>ion market platforms activity"
+---
+>>>>>>> .merge_file_hv1f4y
 # Esempi Reali di <nome progetto>ion Market Platforms
 
 Questa sezione fornisce una panoramica di alcune delle principali piattaforme di <nome progetto>ion market esistenti, evidenziando le loro caratteristiche, approcci tecnologici e lezioni che possiamo applicare al nostro sistema nel modulo `Activity`.

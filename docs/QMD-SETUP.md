@@ -5,7 +5,11 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [qmd, search, docs, performance]
 related:
+<<<<<<< .merge_file_UUiwHi
   - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+=======
+  - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+>>>>>>> .merge_file_06urXC
 ---
 
 # QMD Setup per Module **Activity**
@@ -87,7 +91,11 @@ graph TD
 ## Riferimenti
 
 - [Global QMD Config](../qmd.md) (root docs)
+<<<<<<< .merge_file_UUiwHi
 - [Operational Discipline](../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
+=======
+- [Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
+>>>>>>> .merge_file_06urXC
 - [On-Demand Pattern](./ON-DEMAND-PATTERN.md)
 
 ---

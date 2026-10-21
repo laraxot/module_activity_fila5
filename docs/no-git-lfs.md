@@ -4,6 +4,11 @@ type: guideline
 module: Activity
 updated: 2026-09-01
 qmd: "git lfs vietato gitattributes prototipo binari blob normali activity puntatori immagini"
+<<<<<<< .merge_file_eflCmR
+=======
+status: draft
+tags: [docs, activity]
+>>>>>>> .merge_file_CZUJur
 ---
 
 # Git LFS non si usa in questo progetto

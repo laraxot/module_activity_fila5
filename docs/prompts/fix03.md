@@ -8,6 +8,11 @@ tags: [migrato-da-txt, activity]
 converted_from: fix03.txt
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_WXLLeK
+=======
+status: draft
+qmd: "fix: .env.testing - non usare variabili db_*_activity activity"
+>>>>>>> .merge_file_idJi0f
 ---
 
 # Fix: .env.testing - NON usare variabili DB_*_ACTIVITY

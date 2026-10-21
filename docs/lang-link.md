@@ -2,8 +2,13 @@
 
 
 Consulta la documentazione delle traduzioni qui:
+<<<<<<< .merge_file_sckRoX
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
+=======
+- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
+>>>>>>> .merge_file_IH2dCf
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).
 

@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_qEDMXT
+=======
+---
+title: "PSR-4 Autoloading Compliance Fix"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "psr-4 autoloading compliance fix activity"
+---
+>>>>>>> .merge_file_8CnaId
 # PSR-4 Autoloading Compliance Fix
 
 ## Data: 21 Gennaio 2025

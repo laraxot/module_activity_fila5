@@ -4,6 +4,10 @@ type: decision-log
 module: Activity
 related:
   - ./livewire-inventory.md
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "decision log activity activity"
 ---
 
 # Decision log Activity

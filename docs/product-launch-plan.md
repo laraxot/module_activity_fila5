@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_rB5lkD
+=======
+---
+title: "Activity Module - Product Launch Plan# Activity - Product Launch Plan"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "activity module - product launch plan# activity - product launch plan activity"
+---
+>>>>>>> .merge_file_9OZOQD
 # Activity Module - Product Launch Plan# Activity - Product Launch Plan
 
 **Module:** Activity  

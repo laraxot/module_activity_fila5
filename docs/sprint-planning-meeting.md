@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_E5aoLU
+=======
+---
+title: "Activity - Sprint Planning Meeting"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity - sprint planning meeting activity"
+---
+>>>>>>> .merge_file_DLOQnT
 # Activity - Sprint Planning Meeting
 
 > Documento operativo per sprint planning. Modulo.

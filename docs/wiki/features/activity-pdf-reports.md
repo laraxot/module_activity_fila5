@@ -1,6 +1,14 @@
 ---
 title: Activity pdf reports
 module: Activity
+<<<<<<< .merge_file_z103op
+=======
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, wiki]
+qmd: "activity log pdf reports activity"
+>>>>>>> .merge_file_ELpsFI
 ---
 
 # Activity Log PDF Reports

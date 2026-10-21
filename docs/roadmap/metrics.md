@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_m7PPK9
+=======
+---
+title: "Metriche Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, roadmap]
+qmd: "metriche modulo activity activity"
+---
+>>>>>>> .merge_file_1jxz1P
 # Metriche Modulo Activity
 
 | Metrica | Obiettivo | Verifica |
