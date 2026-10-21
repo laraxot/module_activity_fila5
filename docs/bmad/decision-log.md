@@ -1,3 +1,8 @@
+---
+title: Decision log
+module: Activity
+---
+
 # Decision Log - Modulo Activity
 
 ## Formato
