@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_X7PdjW
+=======
+---
+title: "Best Practice, Zen e Pattern per uno Shop Event Sourced"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "best practice, zen e pattern per uno shop event sourced activity"
+---
+>>>>>>> .merge_file_SzlgFg
 # Best Practice, Zen e Pattern per uno Shop Event Sourced
 
 ## 1. Eventi Immutabili e Atomici

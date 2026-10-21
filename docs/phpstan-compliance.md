@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_o0MXzm
+=======
+---
+title: "PHPStan Compliance - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan compliance - activity module activity"
+---
+>>>>>>> .merge_file_UTXb69
 # PHPStan Compliance - Activity Module
 
 ## Status: ✅ FULLY COMPLIANT

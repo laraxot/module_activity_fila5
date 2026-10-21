@@ -4,6 +4,11 @@ type: product
 tags: [product]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_NGrVLB
+=======
+status: draft
+qmd: "activity module - product strategy activity"
+>>>>>>> .merge_file_SkE6uQ
 ---
 
 # Activity Module - Product Strategy

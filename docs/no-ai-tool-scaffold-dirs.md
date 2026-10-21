@@ -1,5 +1,13 @@
 ---
 title: No AI/tool scaffold directories in module tree
+<<<<<<< .merge_file_R6cSw3
+=======
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "perché queste cartelle non devono esistere qui activity"
+>>>>>>> .merge_file_zkrTY6
 ---
 
 # Perché queste cartelle non devono esistere qui

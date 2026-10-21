@@ -17,10 +17,25 @@ extended_by: 40
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
 bmad_track: "core-foundation"
+type: index
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "activity   bmad method integration activity"
 ---
 
 # Activity — BMAD Method Integration
 
+<<<<<<< .merge_file_FMUKMz
+=======
+## Kit BMAD owner (canonico)
+
+- [BMAD Planning](../bmad-planning.md)
+- [BMAD Brainstorming](../bmad-brainstorming.md)
+- [Filament blueprint](./filament-blueprint.md)
+- [Project context](./project-context.md)
+- [Decision log](./decision-log.md)
+
+>>>>>>> .merge_file_FO5PWS
 ## Scopo BMAD per Activity
 
 Activity è il **modulo di audit e tracciamento** dell'ecosistema. In BMAD, questo modulo rappresenta l'**osservabilità** del sistema: registra ogni azione significativa per debugging, compliance e analytics.
@@ -123,4 +138,8 @@ _bmad-output/
 
 ---
 
+<<<<<<< .merge_file_FMUKMz
 *Activity · BMAD Method · data 2026-05-27*
+=======
+*Activity · BMAD Method · data 2026-05-27*
+>>>>>>> .merge_file_FO5PWS

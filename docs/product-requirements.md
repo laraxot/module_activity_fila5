@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_gBCQCp
+=======
+---
+title: "Product Requirements Document (PRD)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "product requirements document (prd) activity"
+---
+>>>>>>> .merge_file_8IVmZU
 # Product Requirements Document (PRD)
 
 ## Metadata

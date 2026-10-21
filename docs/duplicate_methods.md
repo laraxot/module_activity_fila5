@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_PgskLn
+=======
+---
+title: "Metodi duplicati — Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "metodi duplicati   activity activity"
+---
+>>>>>>> .merge_file_AwKmRN
 # Metodi duplicati — Activity
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.

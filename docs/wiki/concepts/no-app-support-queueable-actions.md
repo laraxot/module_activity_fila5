@@ -10,7 +10,11 @@ issues:
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
+<<<<<<< .merge_file_G8VyyU
   - ../../../../docs/wiki/concepts/no-app-support-monorepo-migration.md
+=======
+  - ../../../../../../docs/wiki/concepts/no-app-support-monorepo-migration.md
+>>>>>>> .merge_file_DFv2g4
 ---
 
 # Activity — `app/Support/` eliminato

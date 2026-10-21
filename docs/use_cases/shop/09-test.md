@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_L0Ptld
+=======
+---
+title: "Testing di uno Shop Event Sourced"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "testing di uno shop event sourced activity"
+---
+>>>>>>> .merge_file_AfzT3s
 # Testing di uno Shop Event Sourced
 
 ## 1. Unit Test

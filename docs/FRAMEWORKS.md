@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_4euRDi
+=======
+---
+title: "Activity — Framework Integration Notes"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity   framework integration notes activity"
+---
+>>>>>>> .merge_file_uIw1e5
 # Activity — Framework Integration Notes
 
 Integration guidelines for caveman, graphify, bmad-method, headroom, ponytail.

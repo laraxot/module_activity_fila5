@@ -10,6 +10,10 @@ qmd: "duplicate method bodies Activity identical hash DRY"
 related:
   - ../../../../../../docs/wiki/duplicate-method-bodies-census.md
   - ./method-name-homonyms.md
+<<<<<<< .merge_file_rJxIg3
+=======
+status: draft
+>>>>>>> .merge_file_YLINmp
 ---
 
 # Corpi metodo duplicati — Activity

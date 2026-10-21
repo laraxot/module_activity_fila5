@@ -4,6 +4,11 @@ type: integration
 tags: [integrations]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_akwV61
+=======
+status: draft
+qmd: "upgrade laravel 13 - activity activity"
+>>>>>>> .merge_file_DxRef6
 ---
 
 # Upgrade Laravel 13 - Activity 🐄✨

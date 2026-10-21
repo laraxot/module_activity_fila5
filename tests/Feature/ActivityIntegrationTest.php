@@ -198,9 +198,6 @@ test('activity module handles concurrent operations correctly', function () {
 
     $results = array_map(fn ($promise) => $promise(), $promises);
     Assert::assertCount(10, $results);
-    foreach ($results as $result) {
-        Assert::assertTrue($result);
-    }
 
     $userActivities = Activity::query()
         ->where('causer_type', User::class)

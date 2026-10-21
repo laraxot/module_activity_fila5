@@ -37,5 +37,5 @@ test('LogModelCreatedAction can execute', function () {
 
     $action = new LogModelCreatedAction($model, $user);
 
-    Assert::assertInstanceOf(LogModelCreatedAction::class, $action);
+    Assert::assertSame($model, $action->model);
 });

@@ -2,6 +2,15 @@
 module: theme
 topic: module-activity
 canonical: ../../../../../Themes/docs/shared-components/module-activity.md
+<<<<<<< .merge_file_cWaS8I
+=======
+title: "module activity"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, activity, tecnico]
+qmd: "module activity activity"
+>>>>>>> .merge_file_43AFW2
 ---
 
 ## Overview

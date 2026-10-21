@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_PimEFy
+=======
+---
+title: "Activity Module - Testing Guidelines"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - testing guidelines activity"
+---
+>>>>>>> .merge_file_DYINaf
 # Activity Module - Testing Guidelines
 
 ## Testing Framework Requirements

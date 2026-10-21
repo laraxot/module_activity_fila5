@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_eRE9Dr
+=======
+---
+title: "Current State - Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, roadmap]
+qmd: "current state - activity activity"
+---
+>>>>>>> .merge_file_21KzsS
 # Current State - Activity
 
 ## Baseline

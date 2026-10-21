@@ -26,8 +26,13 @@ Core module for the FixCity Platform.
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
+<<<<<<< .merge_file_MP2Mdd
 | 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+=======
+| 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](../..) |
+>>>>>>> .merge_file_ReQbRZ
 
 ---
 

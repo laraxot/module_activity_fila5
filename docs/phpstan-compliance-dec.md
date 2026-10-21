@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_ig6yB9
+=======
+---
+title: "PHPStan Compliance - Dicembre 2025"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan compliance - dicembre 2025 activity"
+---
+>>>>>>> .merge_file_et4re6
 # PHPStan Compliance - Dicembre 2025
 
 ## 🎯 Status: COMPLIANCE NATIVA

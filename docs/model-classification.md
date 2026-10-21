@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_ZNVR32
+=======
+---
+title: "Activity Module - Model Classification"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - model classification activity"
+---
+>>>>>>> .merge_file_sj6CGC
 # Activity Module - Model Classification
 
 ## Business-Relevant Models (Require Factories/Seeders)

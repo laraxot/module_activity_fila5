@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_F5OBVj
+=======
+---
+title: "Activity Model: Testing Connection Hack"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, testing]
+qmd: "activity model: testing connection hack activity"
+---
+>>>>>>> .merge_file_hsAvNB
 # Activity Model: Testing Connection Hack
 
 ## Cosa (STORICO – HACK RIMOSSO)

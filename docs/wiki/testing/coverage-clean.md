@@ -1,6 +1,14 @@
 ---
 title: Coverage clean
 module: Activity
+<<<<<<< .merge_file_cdqCMC
+=======
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, wiki]
+qmd: "coverage clean activity"
+>>>>>>> .merge_file_BsuYei
 ---
 
   Activity/app/Actions/ActivityLogger ................................... 0.0%  

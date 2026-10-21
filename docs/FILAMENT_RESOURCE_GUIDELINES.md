@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_DHBhHU
+=======
+---
+title: "Activity Module Filament Resource Guidelines"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module filament resource guidelines activity"
+---
+>>>>>>> .merge_file_3DL40X
 # Activity Module Filament Resource Guidelines
 
 ## Extension Patterns

@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_UgRSET
+=======
+---
+title: "Configurazione .env.development - Ambiente di Sviluppo"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "configurazione .env.development - ambiente di sviluppo activity"
+---
+>>>>>>> .merge_file_5Z8jYo
 # Configurazione .env.development - Ambiente di Sviluppo
 
 ## Panoramica

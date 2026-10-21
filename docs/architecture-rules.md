@@ -1,3 +1,11 @@
+---
+title: "Architecture rules (puntatore)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "architecture rules (puntatore) activity"
+---
 -   [Super Cow Methodology](../../Xot/docs/super_cow_methodology.md)
 -   [PHP Quality Guide](../../Xot/docs/php_quality_guide.md)
 -   [Filament Extension Rules](../../Xot/docs/filament_extension_rules.md)

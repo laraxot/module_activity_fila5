@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_DQo83H
+=======
+---
+title: "Activity Module - User Research"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "activity module - user research activity"
+---
+>>>>>>> .merge_file_709Z57
 # Activity Module - User Research
 
 **Module:** Activity  

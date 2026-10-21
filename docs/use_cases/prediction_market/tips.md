@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_H303Ti
+=======
+---
+title: "Consigli e Best Practice - <nome progetto>ion Market"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "consigli e best practice - <nome progetto>ion market activity"
+---
+>>>>>>> .merge_file_fAHqy1
 # Consigli e Best Practice - <nome progetto>ion Market
 
 ## Refactoring e Miglioramenti

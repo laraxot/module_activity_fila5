@@ -1,6 +1,14 @@
 ---
 title: Brainstorming
 module: Activity
+<<<<<<< .merge_file_djAKy9
+=======
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, bmad]
+qmd: "activity   brainstorming bmad activity"
+>>>>>>> .merge_file_BX8MTv
 ---
 
 ---

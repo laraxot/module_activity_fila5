@@ -6,6 +6,10 @@ tags: [release, semantic-versioning, changelog, readme, marketing]
 created: "2026-05-26"
 updated: "2026-05-26"
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/153"
+<<<<<<< .merge_file_6lEmO4
+=======
+qmd: "release e readme marketing   activity activity"
+>>>>>>> .merge_file_34LJiH
 ---
 
 # Release e README marketing — Activity

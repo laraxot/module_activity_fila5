@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_mr3GLc
+=======
+---
+title: "Esempi Pratici - Use Case Bancario"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "esempi pratici - use case bancario activity"
+---
+>>>>>>> .merge_file_us5xoq
 # Esempi Pratici - Use Case Bancario
 
 ## Approccio Tradizionale (CRUD)

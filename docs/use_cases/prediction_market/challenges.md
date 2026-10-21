@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_hvHR4z
+=======
+---
+title: "Sfide e Soluzioni per il <nome progetto>ion Market"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "sfide e soluzioni per il <nome progetto>ion market activity"
+---
+>>>>>>> .merge_file_xkzLyC
 # Sfide e Soluzioni per il <nome progetto>ion Market
 
 L'implementazione di un <nome progetto>ion market con Event Sourcing presenta diverse sfide. Di seguito sono elencate le principali, insieme alle soluzioni proposte.

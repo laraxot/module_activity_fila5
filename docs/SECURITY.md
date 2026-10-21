@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_I7D0Nf
+=======
+---
+title: "Security Documentation"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "security documentation activity"
+---
+>>>>>>> .merge_file_RNp8g6
 # Security Documentation
 
 ## Security Overview

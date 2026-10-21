@@ -4,6 +4,12 @@ type: reference
 updated: 2026-05-21
 related:
   - "../../../Media/docs/html2pdf/styling.md"
+<<<<<<< .merge_file_8X3fls
+=======
+status: draft
+tags: [docs, activity, html2pdf]
+qmd: "html2pdf   styling activity"
+>>>>>>> .merge_file_FBeaNc
 ---
 
 # Html2Pdf — styling
