@@ -3,11 +3,8 @@ title: Activity — indice BMAD
 type: index
 tags: [docs, bmad, activity]
 qmd: "Activity indice BMAD documentazione"
-<<<<<<< .merge_file_C4Wmsf
-=======
 status: draft
-updated: 2026-10-09
->>>>>>> .merge_file_QnNVTE
+updated: 2026-10-21
 ---
 
 # Activity — indice BMAD
@@ -19,6 +16,7 @@ updated: 2026-10-09
 - [Brainstorming](./brainstorming/)
 - [Epiche](./epics/)
 - [Stories](./stories/)
+  - [PHPStan cluster A 2026-10-21](./stories/phpstan-clusterA-20261021.story.md)
 - [Wiki del modulo](../wiki/)
 
 ## Legacy da consultare, non da estendere
