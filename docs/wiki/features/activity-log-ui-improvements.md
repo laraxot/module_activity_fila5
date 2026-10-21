@@ -1,3 +1,8 @@
+---
+title: Activity log ui improvements
+module: Activity
+---
+
 # Activity Log UI/UX Improvements - Implementation Summary
 
 **Date**: 2025-12-04

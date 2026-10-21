@@ -1,3 +1,8 @@
+---
+title: Factory coverage report
+module: Activity
+---
+
 # Factory Coverage Report - Activity Module
 
 ## 📊 Status Report

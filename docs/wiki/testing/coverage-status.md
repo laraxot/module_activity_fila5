@@ -1,3 +1,8 @@
+---
+title: Coverage status
+module: Activity
+---
+
 # Activity Module - Errori e Coverage
 
 ## Stato Test
