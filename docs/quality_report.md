@@ -6,6 +6,10 @@ module: Activity
 created: 2026-08-24
 updated: 2026-08-24
 qmd: "Activity quality report phpstan pest coverage test ratio"
+<<<<<<< .merge_file_WRaobe
+=======
+status: draft
+>>>>>>> .merge_file_Or9dKN
 ---
 
 # Quality Report — Activity

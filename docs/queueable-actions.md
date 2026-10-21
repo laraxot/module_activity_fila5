@@ -7,6 +7,11 @@ confidence: high
 tags: [queueable-action, spatie, architecture, laraxot, activity]
 related:
   - Modules/Xot/docs/queueable-actions.md
+<<<<<<< .merge_file_lG7q1q
+=======
+status: draft
+qmd: "queueable actions   activity module doctrine activity"
+>>>>>>> .merge_file_5RSXho
 ---
 
 # Queueable Actions — Activity Module Doctrine

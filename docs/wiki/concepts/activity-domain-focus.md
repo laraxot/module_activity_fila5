@@ -6,6 +6,12 @@ created: "2026-04-29T00:00:00Z"
 updated: "2026-04-29T07:22:00Z"
 related:
   - "[[Activity Core Sources]]"
+<<<<<<< .merge_file_JPfnKK
+=======
+status: draft
+tags: [docs, activity, wiki]
+qmd: "activity domain focus activity"
+>>>>>>> .merge_file_YEpx7C
 ---
 
 # Activity Domain Focus

@@ -3,6 +3,11 @@ title: Activity — indice BMAD
 type: index
 tags: [docs, bmad, activity]
 qmd: "Activity indice BMAD documentazione"
+<<<<<<< .merge_file_C4Wmsf
+=======
+status: draft
+updated: 2026-10-09
+>>>>>>> .merge_file_QnNVTE
 ---
 
 # Activity — indice BMAD

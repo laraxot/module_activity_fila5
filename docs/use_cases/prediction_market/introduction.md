@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_j4C6JD
+=======
+---
+title: "Introduzione al <nome progetto>ion Market"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "introduzione al <nome progetto>ion market activity"
+---
+>>>>>>> .merge_file_qjde0V
 # Introduzione al <nome progetto>ion Market
 
 Un **<nome progetto>ion Market** è un mercato in cui i partecipanti possono scommettere su eventi futuri, come risultati elettorali, eventi sportivi o trend di mercato. Questi mercati utilizzano la "saggezza della folla" per prevedere risultati con una precisione spesso superiore ai metodi tradizionali.

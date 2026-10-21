@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_rmXQDt
+=======
+---
+title: "Dependency Intelligence - Module Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "dependency intelligence - module activity activity"
+---
+>>>>>>> .merge_file_cS2eAy
 # Dependency Intelligence - Module Activity
 
 Aggiornato da `composer show` il 2026-03-02.

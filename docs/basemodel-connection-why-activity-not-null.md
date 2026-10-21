@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_7vZmAL
+=======
+---
+title: "BaseModel Activity: Perché $connection = 'activity' e NON null"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "basemodel activity: perché $connection = 'activity' e non null activity"
+---
+>>>>>>> .merge_file_uxMoDs
 # BaseModel Activity: Perché $connection = 'activity' e NON null
 
 ## Risposta diretta

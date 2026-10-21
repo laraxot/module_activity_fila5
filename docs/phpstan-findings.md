@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_vsQ6kw
+=======
+---
+title: "PHPStan Findings - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan findings - activity module activity"
+---
+>>>>>>> .merge_file_6IwKAO
 # PHPStan Findings - Activity Module
 
 **Data**: 2025-10-10

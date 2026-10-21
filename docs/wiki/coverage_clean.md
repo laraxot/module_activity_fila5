@@ -8,6 +8,11 @@ tags: [migrato-da-txt, activity]
 converted_from: coverage_clean.txt
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_8KUOmR
+=======
+status: draft
+qmd: "coverage clean activity"
+>>>>>>> .merge_file_7GHlaq
 ---
 
 Activity/app/Actions/ActivityLogger ................................... 0.0%

@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_18nkg7
+=======
+---
+title: "Code Quality Analysis - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "code quality analysis - activity module activity"
+---
+>>>>>>> .merge_file_qh01t4
 # Code Quality Analysis - Activity Module
 
 ## 🚨 Critical Issues Identified

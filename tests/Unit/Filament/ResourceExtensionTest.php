@@ -41,7 +41,8 @@ test('activity resource implements required getFormSchema method', function () {
 
     $method = $reflection->getMethod('getFormSchema');
     Assert::assertTrue($method->isPublic());
-    Assert::assertTrue($method->isStatic());
+    // XotBaseResource::getFormSchema() e' un metodo d'istanza final: lo schema vero sta nelle classi Schemas\*Form.
+    Assert::assertFalse($method->isStatic());
     $returnType = $method->getReturnType();
     Assert::assertInstanceOf(ReflectionNamedType::class, $returnType);
     Assert::assertSame('array', $returnType->getName());
@@ -117,8 +118,8 @@ test('snapshot resource form schema returns array', function () {
     Assert::assertNotEmpty($form);
 
     $expectedKeys = [
-        'model_type',
-        'model_id',
+        'aggregate_uuid',
+        'aggregate_version',
         'state',
     ];
 

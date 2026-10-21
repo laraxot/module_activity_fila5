@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_iwKg1b
+=======
+---
+title: "Filament Version Declaration — Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "filament version declaration   activity activity"
+---
+>>>>>>> .merge_file_XoJSna
 # Filament Version Declaration — Activity
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)

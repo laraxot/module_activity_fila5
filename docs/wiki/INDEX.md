@@ -4,26 +4,27 @@ type: index
 module: Activity
 tags: [activity, wiki, index, audit]
 created: 2026-04-15
-updated: 2026-06-13
+updated: 2026-10-14
+status: active
 qmd: "activity module wiki index audit log second brain"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
-  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
-  - ../../../../docs/wiki/bmad/architecture.md
-  - ../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
-  - ../../docs/wiki/concepts/ai-harness-module-discipline.md
+  - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+  - ../../../../../docs/wiki/bmad/architecture.md
+  - ../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
+  - ../../../Fixcity/docs/wiki/concepts/ai-harness-module-discipline.md
 ---
 
 # Wiki Index — Activity
 ## AI / second brain
 
-- [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
-- [bmad/architecture](../../../../docs/wiki/bmad/architecture.md)
-- [frontmatter + GitHub](../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
-- [ai-harness-module-discipline](../../docs/wiki/concepts/ai-harness-module-discipline.md)
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
+- [bmad/architecture](../../../../../docs/wiki/bmad/architecture.md)
+- [frontmatter + GitHub](../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
+- [ai-harness-module-discipline](../../../Fixcity/docs/wiki/concepts/ai-harness-module-discipline.md) (canone nel modulo Fixcity)
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) → canon Xot
 
 
@@ -34,7 +35,7 @@ related:
 
 - [overviews/completion-status.md](./overviews/completion-status.md) — stato modulo post gate chef
 - [PROJECT-ROADMAP.md](./PROJECT-ROADMAP.md) — milestone Activity
-- [platform-completion-roadmap (Xot)](../../Xot/docs/wiki/overviews/platform-completion-roadmap.md)
+- platform-completion-roadmap (Xot): _(target mancante, verificato 2026-10-14: nessun file con questo nome nel repository)_
 
 ## Concepts
 
@@ -63,8 +64,8 @@ _No comparisons synthesized yet._
 
 ---
 
-**Last Updated:** 2026-06-10T22:20:00Z  
-**Total Pages:** 5 (concepts: 4, brainstorm: 1)  
+**Last Updated:** 2026-10-14 (conteggi); elenco delle pagine fermo al 2026-06-10  
+**Total Pages (misurate 2026-10-14):** 118 file `.md` in `wiki/`, di cui `concepts/` 37 e `testing/` 11; il catalogo qui sopra ne elenca solo una parte  
 **Total Raw Sources:** 1  
 **Shared References:** 2
 **Brainstorm Artifacts:** 1 (TestCase Architecture)

@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_LklBUW
+=======
+---
+title: "event sourcing comprehensive guide"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, guides]
+qmd: "event sourcing comprehensive guide activity"
+---
+>>>>>>> .merge_file_qS1J5Q
 # event sourcing comprehensive guide
 
 ## introduction to event sourcing

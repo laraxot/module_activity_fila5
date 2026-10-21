@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_gwG8uI
+=======
+---
+title: "Stabilization Roadmap - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "stabilization roadmap - activity module activity"
+---
+>>>>>>> .merge_file_cWI62r
 # Stabilization Roadmap - Activity Module
 
 ## Context & Philosophy

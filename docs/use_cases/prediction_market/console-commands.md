@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_Mkznml
+=======
+---
+title: "Comandi da Console per il Caso d'Uso <nome progetto>ion Market"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "comandi da console per il caso d'uso <nome progetto>ion market activity"
+---
+>>>>>>> .merge_file_koCo9r
 # Comandi da Console per il Caso d'Uso <nome progetto>ion Market
 
 ## Introduzione

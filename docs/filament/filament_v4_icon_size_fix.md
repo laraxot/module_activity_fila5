@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_knzxhu
+=======
+---
+title: "Filament v4 Icon Size Attribute Fix"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, filament]
+qmd: "filament v4 icon size attribute fix activity"
+---
+>>>>>>> .merge_file_mLsxXY
 # Filament v4 Icon Size Attribute Fix
 
 ## Issue Description

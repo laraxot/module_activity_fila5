@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_LBRGn8
+=======
+---
+title: "Testing Strategy Implementation - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "testing strategy implementation - activity module activity"
+---
+>>>>>>> .merge_file_jas0EG
 # Testing Strategy Implementation - Activity Module
 
 ## Status

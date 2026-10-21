@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_G22jti
+=======
+---
+title: "DRY & KISS Analysis - Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "dry & kiss analysis - modulo activity activity"
+---
+>>>>>>> .merge_file_3n4Xiw
 # DRY & KISS Analysis - Modulo Activity
 
 **Data:** 15 Ottobre 2025

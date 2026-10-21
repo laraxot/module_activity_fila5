@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_HWDX9J
+=======
+---
+title: "MCP Server Configuration - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "mcp server configuration - activity module activity"
+---
+>>>>>>> .merge_file_5tgrxa
 # MCP Server Configuration - Activity Module
 
 

@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_lOkrMv
+=======
+---
+title: "Errore: Duplicate Entry Durante Activity Log"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, errori]
+qmd: "errore: duplicate entry durante activity log activity"
+---
+>>>>>>> .merge_file_R0QSfb
 # Errore: Duplicate Entry Durante Activity Log
 
 ## Problema

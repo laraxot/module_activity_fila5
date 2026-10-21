@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_VU3AVP
+=======
+---
+title: "Implementazione di un Carrello della Spesa"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "implementazione di un carrello della spesa activity"
+---
+>>>>>>> .merge_file_yyUQEE
 # Implementazione di un Carrello della Spesa
 
 ## Introduzione

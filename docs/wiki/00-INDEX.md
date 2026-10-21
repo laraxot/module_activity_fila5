@@ -1,8 +1,16 @@
 ---
 title: 00 INDEX
 module: Activity
+<<<<<<< .merge_file_A9BNb9
 ---
 
+=======
+status: stale
+---
+
+> Nota 2026-10-14 (docs-audit): Copia dell'indice radice con link relativi calcolati dalla radice di docs/ e non validi da wiki/ (./roadmap.md, ./structure.md, ./philosophy.md non esistono in wiki/); l'indice canonico e' ../00-INDEX.md. Contenuto non riscritto, verificare prima di usarlo.
+
+>>>>>>> .merge_file_WhHcoA
 # 📚 **Indice Documentazione Modulo Activity**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -19,6 +27,7 @@ module: Activity
 - 🔧 **[Actions Calling Actions](./actions-calling-actions-pattern.md)** - Pattern per la composizione delle azioni di logging.
 
 ## 📊 **Filament & UI**
+<<<<<<< .merge_file_A9BNb9
 - 📈 **[Filament Resources](./filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
 - 📉 **[Analytics Widgets](./dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
 - 🧭 **[Nested Resources](./filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
@@ -27,6 +36,16 @@ module: Activity
 - ✅ **[PHPStan Compliance](./phpstan-analysis.md)** - Report sulla stabilità Level 10.
 - 🔬 **[Testing Strategy](./testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
 - 🧹 **[PHPMD Fixes](./phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
+=======
+- 📈 **[Filament Resources](../filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
+- 📉 **[Analytics Widgets](../dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
+- 🧭 **[Nested Resources](../filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
+
+## 🧪 **Qualità e Testing**
+- ✅ **[PHPStan Compliance](../phpstan-analysis.md)** - Report sulla stabilità Level 10.
+- 🔬 **[Testing Strategy](../testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
+- 🧹 **[PHPMD Fixes](../phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
+>>>>>>> .merge_file_WhHcoA
 - 🧪 **PSR-4 Test Helpers** - Preferire Pest e classi anonime nei test; evitare classi helper top-level non allineate al filepath.
 
 ## 📋 **Documenti Prodotto & Sviluppo**
@@ -56,16 +75,26 @@ module: Activity
 - `spatie/laravel-event-sourcing` - Event sourcing, CQRS
 
 ## 🔗 **Moduli Correlati**
+<<<<<<< .merge_file_A9BNb9
 - [Xot](../../xot/docs/readme.md) - Core framework.
 - [Tenant](../../tenant/docs/readme.md) - Isolamento dati per tenant.
 - [User](../../user/docs/readme.md) - Autenticazione e causer activity.
+=======
+- [Xot](../../../Xot/docs/README.md) - Core framework.
+- [Tenant](../../../Tenant/docs/README.md) - Isolamento dati per tenant.
+- [User](../../../User/docs/readme.md) - Autenticazione e causer activity.
+>>>>>>> .merge_file_WhHcoA
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 
 ## Dependency Intelligence
 
+<<<<<<< .merge_file_A9BNb9
 - [Dependency intelligence](dependency-intelligence.md)
+=======
+- [Dependency intelligence](../dependency-intelligence.md)
+>>>>>>> .merge_file_WhHcoA
 
 ## Regola Operativa Obbligatoria
 

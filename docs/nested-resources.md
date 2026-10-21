@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_dlBA8U
+=======
+---
+title: "Activity Module - Nested Resource Implementation Guide"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - nested resource implementation guide activity"
+---
+>>>>>>> .merge_file_phajvd
 # Activity Module - Nested Resource Implementation Guide
 
 ## Overview

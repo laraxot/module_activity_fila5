@@ -15,6 +15,10 @@ discussions:
 related:
   - ../../../../../../docs/wiki/rules/phpstan-pest-tests-stay-pest.md
   - ../../../../../../docs/wiki/troubleshooting/phpstan-test-assertion-chaining.md
+<<<<<<< .merge_file_JDR2py
+=======
+status: draft
+>>>>>>> .merge_file_q671yV
 ---
 
 # Activity PHPStan Pest Discipline

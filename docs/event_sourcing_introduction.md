@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_5jhcDu
+=======
+---
+title: "Event Sourcing in `saluteora`"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "event sourcing in `saluteora` activity"
+---
+>>>>>>> .merge_file_vr0WZ8
 # Event Sourcing in `saluteora`
 
 ## Introduction to Event Sourcing

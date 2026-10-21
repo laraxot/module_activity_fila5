@@ -471,7 +471,11 @@ docker-compose restart app
 ### Documentazione Correlata
 - [Activity Module - README](../readme.md)
 - [XotBaseServiceProvider Architecture](../../xot/docs/service-provider-architecture.md)
+<<<<<<< .merge_file_mxgAot
 - [Xot Module - README](../../xot/docs/readme.md)
+=======
+- [Xot Module - README](../../../Xot/docs/README.md)
+>>>>>>> .merge_file_iaW6Y4
 
 ### Altri Moduli con Activity Log
 - [IndennitaResponsabilita - Activity Log Integration](../../indennitaresponsabilita/docs/activity-log-integration.md)
@@ -480,7 +484,11 @@ docker-compose restart app
 - [Service Provider Architecture](../../xot/docs/service-provider-architecture.md) - Architettura completa del sistema ServiceProvider
 - [Activity Module - README](../README.md)
 - [XotBaseServiceProvider Architecture](../../Xot/docs/service-provider-architecture.md)
+<<<<<<< .merge_file_mxgAot
 - [Xot Module - README](../../Xot/docs/README.md)
+=======
+- [Xot Module - README](../../../Xot/docs/README.md)
+>>>>>>> .merge_file_iaW6Y4
 
 ### Altri Moduli con Activity Log
 - [IndennitaResponsabilita - Activity Log Integration](../../IndennitaResponsabilita/docs/activity-log-integration.md)

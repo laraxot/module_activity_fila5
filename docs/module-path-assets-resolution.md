@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_Mo7pSr
+=======
+---
+title: "Activity Module - Path Assets Resolution"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - path assets resolution activity"
+---
+>>>>>>> .merge_file_fyllc1
 # Activity Module - Path Assets Resolution
 
 **Data Creazione**: 2026-01-02

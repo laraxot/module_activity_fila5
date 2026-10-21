@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_emsaSf
+=======
+---
+title: "StoredEvent Business Logic Test Fix"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "storedevent business logic test fix activity"
+---
+>>>>>>> .merge_file_qxpRmP
 # StoredEvent Business Logic Test Fix
 
 ## Problema Identificato

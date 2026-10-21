@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_clKKvO
+=======
+---
+title: "Integrazione con Laravel e Event Sourcing"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "integrazione con laravel e event sourcing activity"
+---
+>>>>>>> .merge_file_nDIXH8
 # Integrazione con Laravel e Event Sourcing
 
 ## 1. Configurazione Iniziale

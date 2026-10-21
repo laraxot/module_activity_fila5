@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_1KJqZX
+=======
+---
+title: "Task: Ridurre Suppressioni PHPStan nei Test - Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "task: ridurre suppressioni phpstan nei test - activity activity"
+---
+>>>>>>> .merge_file_451Sjz
 # Task: Ridurre Suppressioni PHPStan nei Test - Activity
 
 **Modulo**: Activity

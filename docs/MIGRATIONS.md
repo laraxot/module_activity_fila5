@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_KiujKa
+=======
+---
+title: "Activity — Migrazioni"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity   migrazioni activity"
+---
+>>>>>>> .merge_file_OlMU1o
 # Activity — Migrazioni
 
 Bridge minimale alla **fonte canonica**:

@@ -1,6 +1,14 @@
 ---
 title: Activity pdf reports
 module: Activity
+<<<<<<< .merge_file_cUb1Sp
+=======
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "activity log pdf reports activity"
+>>>>>>> .merge_file_xjZ2jn
 ---
 
 # Activity Log PDF Reports

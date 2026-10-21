@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_8qDCTG
+=======
+---
+title: "Analisi di Larabank Eventsauce"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "analisi di larabank eventsauce activity"
+---
+>>>>>>> .merge_file_LYigXS
 # Analisi di Larabank Eventsauce
 
 ## Panoramica

@@ -4,6 +4,12 @@ type: reference
 updated: 2026-05-21
 related:
   - "../../../Media/docs/html2pdf/advanced.md"
+<<<<<<< .merge_file_6cWXPA
+=======
+status: draft
+tags: [docs, activity, html2pdf]
+qmd: "html2pdf   advanced activity"
+>>>>>>> .merge_file_Ggrxz6
 ---
 
 # Html2Pdf — advanced

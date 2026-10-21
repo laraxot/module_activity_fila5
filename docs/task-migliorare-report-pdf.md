@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_4oR69W
+=======
+---
+title: "Task: Migliorare Report PDF - Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "task: migliorare report pdf - activity activity"
+---
+>>>>>>> .merge_file_7MiTR7
 # Task: Migliorare Report PDF - Activity
 
 **Modulo**: Activity
