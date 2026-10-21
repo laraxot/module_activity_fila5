@@ -8,6 +8,11 @@ tags: [migrato-da-txt, activity]
 converted_from: filament-import.txt
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_mCc8g3
+=======
+status: draft
+qmd: "filament import   risorse esterne activity"
+>>>>>>> .merge_file_y5KZpy
 ---
 
 # Filament import — risorse esterne

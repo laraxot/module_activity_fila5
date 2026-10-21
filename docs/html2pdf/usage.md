@@ -4,6 +4,12 @@ type: reference
 updated: 2026-05-21
 related:
   - "../../../Media/docs/html2pdf/usage.md"
+<<<<<<< .merge_file_ae4AFK
+=======
+status: draft
+tags: [docs, activity, html2pdf]
+qmd: "html2pdf   usage activity"
+>>>>>>> .merge_file_UH79aZ
 ---
 
 # Html2Pdf — usage

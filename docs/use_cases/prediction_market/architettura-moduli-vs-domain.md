@@ -79,7 +79,11 @@ app/Domain/<nome progetto>ionMarket/
 - [Best practice prediction_market](./04_best_practice.md)
 - [API prediction_market](./06_api.md)
 - [Testing prediction_market](./07_test.md)
+<<<<<<< .merge_file_w03Dyu
 - [Indice <nome progetto>ion_market](./readme.md)
+=======
+- [Indice <nome progetto>ion_market](./README.md)
+>>>>>>> .merge_file_LiIwAT
 - [Architettura <nome progetto>ion_market](./02_architettura.md)
 - [Best practice <nome progetto>ion_market](./04_best_practice.md)
 - [API <nome progetto>ion_market](./06_api.md)

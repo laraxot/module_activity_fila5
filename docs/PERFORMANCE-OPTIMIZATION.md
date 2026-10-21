@@ -5,7 +5,11 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [performance, optimization, tokens, context]
 related:
+<<<<<<< .merge_file_51i6gw
   - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+=======
+  - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+>>>>>>> .merge_file_97cG71
 ---
 
 # Performance Optimization — Module **Activity**

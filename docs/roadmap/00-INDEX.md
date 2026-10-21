@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_2RQpa9
+=======
+---
+title: "Roadmap Index - Activity"
+type: index
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, roadmap]
+qmd: "roadmap index - activity activity"
+---
+>>>>>>> .merge_file_UUZbJH
 # Roadmap Index - Activity
 
 ## Scope

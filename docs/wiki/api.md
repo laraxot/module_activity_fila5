@@ -4,6 +4,11 @@ type: reference
 tags: [activity, api]
 created: 2026-07-28
 updated: 2026-07-28
+<<<<<<< .merge_file_o5P6Y0
+=======
+status: draft
+qmd: "activity module   api activity"
+>>>>>>> .merge_file_HHy0KS
 ---
 
 # Activity Module — API

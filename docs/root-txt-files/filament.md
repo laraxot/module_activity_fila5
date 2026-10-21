@@ -8,6 +8,11 @@ tags: [migrato-da-txt, activity]
 converted_from: filament.txt
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_PiSCay
+=======
+status: draft
+qmd: "filament   risorse esterne activity"
+>>>>>>> .merge_file_S2qEul
 ---
 
 # Filament — risorse esterne

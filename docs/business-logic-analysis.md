@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_9Rcvdf
+=======
+---
+title: "Activity Module - Business Logic Analysis"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "activity module - business logic analysis activity"
+---
+>>>>>>> .merge_file_oTT4zi
 # Activity Module - Business Logic Analysis
 
 ## Overview

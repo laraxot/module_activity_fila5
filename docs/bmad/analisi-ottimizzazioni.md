@@ -1,6 +1,14 @@
 ---
 title: Analisi ottimizzazioni
 module: Activity
+<<<<<<< .merge_file_gWtsUR
+=======
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "analisi e ottimizzazioni - modulo activity activity"
+>>>>>>> .merge_file_40Yw1m
 ---
 
 # 📊 analisi e ottimizzazioni - modulo activity

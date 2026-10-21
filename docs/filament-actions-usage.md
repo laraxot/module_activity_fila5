@@ -344,7 +344,11 @@ class ListMyModelActivities extends ListLogActivities
 
 ### Documentazione Interna
 - [README Activity Module](../README.md)
+<<<<<<< .merge_file_P2ISp8
 - [README Activity Module](../readme.md)
+=======
+- [README Activity Module](../README.md)
+>>>>>>> .merge_file_frUxSj
 - [ListLogActivitiesAction Details](./actions/list-log-activities-action.md)
 - [ListLogActivities Page](./pages/list-log-activities.md)
 

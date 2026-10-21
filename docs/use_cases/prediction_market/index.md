@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_oskCLQ
+=======
+---
+title: "<nome progetto>ion Market Use Case"
+type: index
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "<nome progetto>ion market use case activity"
+---
+>>>>>>> .merge_file_P5jk4I
 # <nome progetto>ion Market Use Case
 
 ## Introduzione

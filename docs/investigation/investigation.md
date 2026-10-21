@@ -2,6 +2,13 @@
 type: investigation
 title: "Investigation Audit Log Completamento Workflow"
 links: {github_issue: #XXX}
+<<<<<<< .merge_file_6U95k9
+=======
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, investigation]
+qmd: "investigation: audit log completamento workflow activity"
+>>>>>>> .merge_file_mPITG6
 ---
 # Investigation: Audit Log Completamento Workflow
 

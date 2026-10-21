@@ -75,12 +75,20 @@ app/Domain/<nome progetto>ionMarket/
 - [Best practice modularità](https://laravelmodules.com/docs/12/basic-usage/creating-a-module)
 - [Esempi di modularizzazione](https://github.com/nWidart/laravel-modules)
 - [Indice prediction_market](./README.md)=======
+<<<<<<< .merge_file_dzldT6
 - [Indice prediction_market](./readme.md)
+=======
+- [Indice prediction_market](./README.md)
+>>>>>>> .merge_file_muRK18
 - [Architettura prediction_market](./02_architettura.md)
 - [Best practice prediction_market](./04_best_practice.md)
 - [API prediction_market](./06_api.md)
 - [Testing prediction_market](./07_test.md)
+<<<<<<< .merge_file_dzldT6
 - [Indice <nome progetto>ion_market](./readme.md)
+=======
+- [Indice <nome progetto>ion_market](./README.md)
+>>>>>>> .merge_file_muRK18
 - [Architettura <nome progetto>ion_market](./02_architettura.md)
 - [Best practice <nome progetto>ion_market](./04_best_practice.md)
 - [API <nome progetto>ion_market](./06_api.md)

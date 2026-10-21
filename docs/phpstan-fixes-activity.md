@@ -8,6 +8,10 @@ status: approved
 related:
   - ./phpstan-analysis-activity.md
   - ../../../../docs/wiki/memories/phpstan-modules-inventory.md
+<<<<<<< .merge_file_WFNVOa
+=======
+qmd: "fix phpstan   modulo activity activity"
+>>>>>>> .merge_file_GqvHfM
 ---
 
 # Fix PHPStan — modulo Activity

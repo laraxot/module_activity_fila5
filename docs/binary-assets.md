@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_NQI7W1
+=======
+---
+title: "Asset binari"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "asset binari activity"
+---
+>>>>>>> .merge_file_fDFFEJ
 # Asset binari
 
 Gli asset binari sono file normali del repository.

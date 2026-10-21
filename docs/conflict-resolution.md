@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_qWJoio
+=======
+---
+title: "Conflict Resolution — Module Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "conflict resolution   module activity activity"
+---
+>>>>>>> .merge_file_LSpkOk
 # Conflict Resolution — Module Activity
 
 ## Summary

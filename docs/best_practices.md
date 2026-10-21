@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_15rGFL
+=======
+---
+title: "Best Practices – Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "best practices   activity activity"
+---
+>>>>>>> .merge_file_tCcU5x
 # Best Practices – Activity
 
 ## Principi DRY/KISS

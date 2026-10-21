@@ -141,7 +141,11 @@ function createTestUser(array $attributes = []): UserContract
 ## 🔗 **Collegamenti Documentazione**
 
 ### **Pattern Architetturali**
+<<<<<<< .merge_file_6368J5
 - [laravel/Modules/Cms/docs/architecture-xotdata-pattern.md](../laravel/modules/cms/docs/architecture-xotdata-pattern.md)
+=======
+- [laravel/Modules/Cms/docs/architecture-xotdata-pattern.md](../../Cms/docs/architecture-xotdata-pattern.md)
+>>>>>>> .merge_file_4EAtWv
 - [laravel/Modules/Xot/docs/architecture-violations-and-fixes.md](../laravel/modules/xot/docs/architecture-violations-and-fixes.md)
 
 ### **Sistema Folio/Volt**
@@ -153,7 +157,11 @@ function createTestUser(array $attributes = []): UserContract
 ### **Sistema Folio/Volt**
 - [laravel/Themes/One/project_docs/folio-pages.md](../laravel/themes/one/project_docs/folio-pages.md)
 - [laravel/Themes/One/project_docs/routing_with_folio_volt.md](../laravel/themes/one/project_docs/routing_with_folio_volt.md)
+<<<<<<< .merge_file_6368J5
 - [laravel/Modules/Cms/docs/architecture-xotdata-pattern.md](../laravel/Modules/Cms/docs/architecture-xotdata-pattern.md)
+=======
+- [laravel/Modules/Cms/docs/architecture-xotdata-pattern.md](../../Cms/docs/architecture-xotdata-pattern.md)
+>>>>>>> .merge_file_4EAtWv
 - [laravel/Modules/Xot/docs/architecture-violations-and-fixes.md](../laravel/Modules/Xot/docs/architecture-violations-and-fixes.md)
 
 ### **Sistema Folio/Volt**
@@ -167,8 +175,13 @@ function createTestUser(array $attributes = []): UserContract
 - [laravel/Themes/One/project_docs/routing_with_folio_volt.md](../laravel/Themes/One/project_docs/routing_with_folio_volt.md)
 
 ### **Test Esistenti di Riferimento**
+<<<<<<< .merge_file_6368J5
 - [laravel/Modules/User/tests/Feature/Filament/Widgets/LoginWidgetTest.php](../laravel/Modules/User/tests/Feature/Filament/Widgets/LoginWidgetTest.php)
 - [laravel/Modules/Cms/tests/Feature/Auth/AuthenticationTest.php](../laravel/Modules/Cms/tests/Feature/Auth/AuthenticationTest.php)
+=======
+- [laravel/Modules/User/tests/Feature/Filament/Widgets/LoginWidgetTest.php](../../User/tests/Feature/Filament/Widgets/LoginWidgetTest.php)
+- [laravel/Modules/Cms/tests/Feature/Auth/AuthenticationTest.php](../../Cms/tests/Feature/Auth/AuthenticationTest.php)
+>>>>>>> .merge_file_4EAtWv
 
 ## 📝 **Lezioni Apprese**
 

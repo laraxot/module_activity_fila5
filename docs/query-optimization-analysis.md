@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_8XUCdX
+=======
+---
+title: "Activity Module - Query Optimization Analysis"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "activity module - query optimization analysis activity"
+---
+>>>>>>> .merge_file_Xaz4TW
 # Activity Module - Query Optimization Analysis
 
 ## Overview

@@ -5,6 +5,14 @@ module: "Activity"
 alias: "activity"
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
+<<<<<<< .merge_file_xa9N2I
+=======
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "activity   bmad quick reference activity"
+>>>>>>> .merge_file_xG5I22
 ---
 
 # Activity — BMAD Quick Reference
