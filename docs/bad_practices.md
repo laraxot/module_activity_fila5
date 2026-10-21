@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_x1w0gn
+=======
+---
+title: "Bad Practices – Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "bad practices   activity activity"
+---
+>>>>>>> .merge_file_3aAgFi
 # Bad Practices – Activity
 
 ## ❌ Log delle attività senza livello di severità

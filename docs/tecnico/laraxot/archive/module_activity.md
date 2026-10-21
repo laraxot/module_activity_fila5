@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_SRm0MY
+=======
+---
+title: "Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, tecnico]
+qmd: "modulo activity activity"
+---
+>>>>>>> .merge_file_PAgnKU
 # Modulo Activity
 
 ## Overview

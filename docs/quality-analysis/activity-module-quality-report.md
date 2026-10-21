@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_aO8bXJ
+=======
+---
+title: "Analisi Qualità - Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, quality-analysis]
+qmd: "analisi qualità - modulo activity activity"
+---
+>>>>>>> .merge_file_HB9xaZ
 # Analisi Qualità - Modulo Activity
 
 **Data Analisi**: 2025-01-22  

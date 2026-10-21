@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_ftgAJn
+=======
+---
+title: "Regola: Connessioni Database - Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "regola: connessioni database - modulo activity activity"
+---
+>>>>>>> .merge_file_508hdn
 # Regola: Connessioni Database - Modulo Activity
 
 ## Principio

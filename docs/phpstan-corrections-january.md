@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_ixybxV
+=======
+---
+title: "PHPStan Corrections - Activity Module - Gennaio 2025"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan corrections - activity module - gennaio 2025 activity"
+---
+>>>>>>> .merge_file_jxpcdD
 # PHPStan Corrections - Activity Module - Gennaio 2025
 
 **Data**: 2025-01-10  

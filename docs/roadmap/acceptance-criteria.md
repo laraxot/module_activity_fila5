@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_HnXqDS
+=======
+---
+title: "Criteri di accettazione Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, roadmap]
+qmd: "criteri di accettazione modulo activity activity"
+---
+>>>>>>> .merge_file_2s9bil
 # Criteri di accettazione Modulo Activity
 
 Criteri verificabili per le fasi della roadmap Activity (audit trail e observability).

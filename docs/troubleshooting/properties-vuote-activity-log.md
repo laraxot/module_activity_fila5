@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_X4Ok10
+=======
+---
+title: "Troubleshooting: Properties Vuote in Activity Log"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, troubleshooting]
+qmd: "troubleshooting: properties vuote in activity log activity"
+---
+>>>>>>> .merge_file_gXcor3
 # Troubleshooting: Properties Vuote in Activity Log
 
 ## Problema

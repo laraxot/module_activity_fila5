@@ -8,6 +8,11 @@ updated: 2026-06-10
 tags: [migration, activity, module-owner, one-per-model]
 related:
   - ../../../../wiki/rules/one-migration-per-model.md
+<<<<<<< .merge_file_tQePG6
+=======
+status: draft
+qmd: "activity migration ownership activity"
+>>>>>>> .merge_file_1cEmeq
 ---
 
 # Activity Migration Ownership

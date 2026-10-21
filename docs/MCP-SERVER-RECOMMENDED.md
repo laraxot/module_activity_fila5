@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_Xxo1V2
+=======
+---
+title: "MCP Server Consigliati per il Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "mcp server consigliati per il modulo activity activity"
+---
+>>>>>>> .merge_file_PDxC3V
 # MCP Server Consigliati per il Modulo Activity
 
 ## Scopo del Modulo

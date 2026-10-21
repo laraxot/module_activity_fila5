@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_j5BaAU
+=======
+---
+title: "SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "simplechartwidget - analisi problemi e miglioramenti ui/ux activity"
+---
+>>>>>>> .merge_file_VLuXyF
 # SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX
 
 ## Panoramica

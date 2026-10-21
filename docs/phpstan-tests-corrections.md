@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_vCVdOe
+=======
+---
+title: "PHPStan Tests Corrections - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan tests corrections - activity module activity"
+---
+>>>>>>> .merge_file_rEj9OV
 # PHPStan Tests Corrections - Activity Module
 
 **Data**: 2025-10-10

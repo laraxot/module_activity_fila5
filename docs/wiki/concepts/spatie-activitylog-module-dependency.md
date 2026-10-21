@@ -14,6 +14,10 @@ related:
   - ./activity-domain-focus.md
   - ./xotbase-resource-zen-pattern.md
   - ../../../Modules/Xot/docs/composer-module-dependency-management.md
+<<<<<<< .merge_file_aStdWJ
+=======
+status: draft
+>>>>>>> .merge_file_fK6zj0
 ---
 
 # spatie/laravel-activitylog — owner Activity

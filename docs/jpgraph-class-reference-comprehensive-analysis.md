@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_neNoOk
+=======
+---
+title: "JpGraph Class Reference - Analisi Completta 2024"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "jpgraph class reference - analisi completta 2024 activity"
+---
+>>>>>>> .merge_file_to9m9T
 # 📚 JpGraph Class Reference - Analisi Completta 2024
 
 ## 🎯 **Introduzione alla Documentazione JpGraph**

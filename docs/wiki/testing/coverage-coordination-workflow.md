@@ -1,6 +1,14 @@
 ---
 title: Coverage coordination workflow
 module: Activity
+<<<<<<< .merge_file_8yDX5K
+=======
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, wiki]
+qmd: "activity coverage coordination workflow activity"
+>>>>>>> .merge_file_K5jA6a
 ---
 
 # Activity Coverage Coordination Workflow

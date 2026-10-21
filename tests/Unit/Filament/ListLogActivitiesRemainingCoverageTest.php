@@ -75,7 +75,7 @@ test('ListLogActivities getFieldLabel con valore non stringa in map', function (
 test('ListLogActivities createFieldLabelMap nested e schema invalido', function (): void {
     $nested = new ListLogActivitiesNestedFormPage;
     $map = $nested->exposeCreateFieldLabelMap();
-    Assert::assertInstanceOf(Collection::class, $map);
+    Assert::assertFalse($map->isEmpty());
 
     $bad = new ListLogActivitiesNonSchemaFormPage;
     expect(fn (): Collection => $bad->exposeCreateFieldLabelMap())

@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_zBhjqN
+=======
+---
+title: "Activity Log UI/UX Enhancement"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, ui-ux]
+qmd: "activity log ui/ux enhancement activity"
+---
+>>>>>>> .merge_file_QoYYU3
 # Activity Log UI/UX Enhancement
 
 ## Overview

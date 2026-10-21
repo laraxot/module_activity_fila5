@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_cKdFmM
+=======
+---
+title: "Analisi di Ottimizzazione - Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "analisi di ottimizzazione - modulo activity activity"
+---
+>>>>>>> .merge_file_C2fbeZ
 # Analisi di Ottimizzazione - Modulo Activity
 
 ## 🎯 Principi Applicati: DRY + KISS + SOLID + ROBUST + Laraxot

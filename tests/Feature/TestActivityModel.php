@@ -34,13 +34,12 @@ class TestActivityModel extends BaseModel
     /**
      * @use HasFactory<Factory<self>>
      *
-     * newFactory() è fornito da HasXotFactory (già tipizzato `: Factory`, ereditato da
-     * XotBaseModel tramite BaseModel): senza insteadof la versione non tipizzata di
-     * HasFactory::newFactory() viola la firma dell'antenato e PHP va in fatal error
-     * "Declaration ... must be compatible" al primo autoload della classe.
+     * I test asseriscono che il modello usi HasFactory; factory() resta quello di HasXotFactory
+     * (risolve la factory a runtime via GetFactoryAction), perche' quello di HasFactory cerca
+     * `Database\Factories\<Modello>Factory` e qui non esiste. HasXotFactory non espone piu'
+     * newFactory(): una regola insteadof su di esso e' un fatal error PHP, che PHPStan non vede.
      */
     use HasFactory, HasXotFactory {
-        HasXotFactory::newFactory insteadof HasFactory;
         HasXotFactory::factory insteadof HasFactory;
     }
 

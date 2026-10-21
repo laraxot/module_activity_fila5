@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_Fi7nRv
+=======
+---
+title: "SimpleChartWidget - Analisi Qualità del Codice e Best Practices"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "simplechartwidget - analisi qualità del codice e best practices activity"
+---
+>>>>>>> .merge_file_fUpjHT
 # SimpleChartWidget - Analisi Qualità del Codice e Best Practices
 
 ## Panoramica
