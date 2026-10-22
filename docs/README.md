@@ -1,42 +1,4 @@
 ---
-<<<<<<< .merge_file_qNIaaC
-
-**Modulo** `Activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5## 🎛️ **Filament Integration**
-
-- **ListLogActivitiesAction** - Action per visualizzare lo storico attività da tabella Resource
-- **ListLogActivities** - Pagina dettaglio log con paginazione custom
-- **ActivityServiceProvider** - Registrazione moduli, route, view, traduzioni
-
-title: "Activity Module Documentation"
-type: documentation
-tags: [module, documentation]
-created: 2026-06-05
-updated: 2026-06-05
----
-
-# Modulo Activity
-
-## Overview
-
-Il modulo **Activity** fa parte dell'ecosistema Laraxot PTVX.
-
-## Scopo
-
-Fornisce audit trail e activity logging basato su `spatie/laravel-activitylog` ed `spatie/laravel-event-sourcing`. Espone `LogActivityAction` (`app/Actions/LogActivityAction.php`) come entrypoint per registrare eventi (type, causer, subject, properties) e risorse Filament per consultare/analizzare i log.=======
-Questo modulo gestisce [DESCRIZIONE SPECIFICA DA COMPLETARE].
-
-## Struttura
-
-```
-Activity/
-├── app/
-│   ├── Models/
-│   ├── Filament/
-│   └── ...
-├── docs/
-├── lang/
-└── resources/
-=======
 title: "Activity: documentazione del modulo (docs)"
 type: readme
 status: active
@@ -97,7 +59,6 @@ Controllare la qualita' del modulo (eseguito il 2026-10-14 con `laravel/phpstan.
 ```bash
 cd laravel
 ./vendor/bin/phpstan analyse Modules/Activity --memory-limit=3G
->>>>>>> .merge_file_L4fMo6
 ```
 
 I test Pest non sono stati rieseguiti in questa sessione: non verificato che passino.
