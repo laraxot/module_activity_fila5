@@ -7,7 +7,7 @@ created: 2026-10-21
 updated: 2026-10-21
 tags: [phpstan, quality, source-first, seeder]
 related:
-  - ./phpstan-modules-2026-09-24.story.md
+  - ./phpstan-modules-story-analyse-fix-fleet.story.md
 ---
 
 # ActivityMassSeeder — fix alla sorgente (19 errori method.nonObject)

@@ -11,7 +11,7 @@ updated: 2026-10-21
 tags: [phpstan, cluster-a, swarm, quality, activity]
 qmd: "phpstan cluster a activity zero errori level max verifica 2026-10-21"
 related:
-  - ../../../../Xot/docs/bmad/stories/phpstan-modules-swarm-20261021.story.md
+  - ../../../../Xot/docs/bmad/stories/phpstan-modules-swarm.story.md
   - ./phpstan-swarm-cluster5.story.md
   - ../filament-blueprint.md
 ---
@@ -21,7 +21,7 @@ related:
 ## Contesto
 
 Cluster A dello swarm PHPStan (Rating, Activity, Media), coordinato da
-`Xot/docs/bmad/stories/phpstan-modules-swarm-20261021.story.md`. Activity
+`Xot/docs/bmad/stories/phpstan-modules-swarm.story.md`. Activity
 implementa l'audit trail e l'event sourcing del gestionale: Actions di
 logging/ripristino, modelli `Activity`, `Snapshot`, `StoredEvent`, policy e
 risorse Filament di sola consultazione.
