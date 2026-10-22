@@ -1,14 +1,11 @@
-<<<<<<< .merge_file_BnPlmh
-=======
 ---
 title: "Migration: Support → Actions"
 type: note
-status: draft
-updated: 2026-10-07
+status: done
+updated: 2026-10-22
 tags: [docs, activity]
 qmd: "migration: support → actions activity"
 ---
->>>>>>> .merge_file_q5k2mT
 # Migration: Support → Actions
 
 **Module:** Activity  
