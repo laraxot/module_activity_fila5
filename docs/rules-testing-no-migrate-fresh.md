@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_gAHxA6
-=======
 ---
 title: "CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "critical architecture rule: no migrate:fresh activity"
 ---
->>>>>>> .merge_file_fxUAHC
 # CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH
 
 ## Rule

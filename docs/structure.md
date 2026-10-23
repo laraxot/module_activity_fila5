@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_KjsEKM
-=======
 ---
 title: "Modulo Activity"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, activity]
 qmd: "modulo activity activity"
 ---
->>>>>>> .merge_file_zRoZ35
 # Modulo Activity
 
 Data: [DATE] 19:09:55Data: 2025-04-23 19:09:55

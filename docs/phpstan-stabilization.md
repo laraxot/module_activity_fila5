@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_18Z6Vj
-=======
 ---
 title: "PHPStan Stabilization - Activity Module"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "phpstan stabilization - activity module activity"
 ---
->>>>>>> .merge_file_bO4r8Y
 # PHPStan Stabilization - Activity Module
 
 This document tracks the systematic effort to achieve and maintain PHPStan Level 10 compliance for the Activity module, focusing on type safety, architectural robustness, and the "Super Mucca" methodology.

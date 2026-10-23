@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_jmyPKI
-=======
 ---
 title: "Activity — Migrazioni"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity   migrazioni activity"
 ---
->>>>>>> .merge_file_H7avwx
 # Activity — Migrazioni
 
 Bridge minimale alla **fonte canonica**:

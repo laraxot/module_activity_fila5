@@ -1,14 +1,11 @@
 ---
 title: Actions convention
 module: Activity
-<<<<<<< .merge_file_qkhF1n
-=======
 type: note
 status: draft
 updated: 2026-10-08
 tags: [docs, activity, wiki]
 qmd: "actions convention activity"
->>>>>>> .merge_file_TGzKwr
 ---
 
 # Actions Convention

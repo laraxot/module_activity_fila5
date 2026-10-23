@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_nyLACA
-=======
 ---
 title: "Linee Guida API per uno Shop Event Sourced"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "linee guida api per uno shop event sourced activity"
 ---
->>>>>>> .merge_file_LwHYsx
 # Linee Guida API per uno Shop Event Sourced
 
 ## 1. Endpoints Principali

@@ -6,11 +6,8 @@ qmd:
   index: true
 created_at: 2026-06-10
 updated_at: 2026-06-10
-<<<<<<< .merge_file_J99qRs
-=======
 status: draft
 updated: 2026-10-07
->>>>>>> .merge_file_hNnGOC
 ---
 
 # activity_log — attribute_changes

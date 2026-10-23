@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_d9Lfkl
-=======
 ---
 title: "PHPStan Errors - Activity Module"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "phpstan errors - activity module activity"
 ---
->>>>>>> .merge_file_lrlITm
 # PHPStan Errors - Activity Module
 
 **Date**: 2025-12-16

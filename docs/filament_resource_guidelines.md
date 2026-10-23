@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_19IhsU
-=======
 ---
 title: "Activity Module Filament Resource Guidelines"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module filament resource guidelines activity"
 ---
->>>>>>> .merge_file_BEERhh
 # Activity Module Filament Resource Guidelines
 
 ## Extension Patterns

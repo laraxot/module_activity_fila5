@@ -50,8 +50,4 @@ Playbook: [wiki/troubleshooting/git-push-dual-remote.md](./wiki/troubleshooting/
 ### Caso User 2026-07-23 (unrelated)
 
 `merge-base` vuoto vs un org → STOP. User: laraxot `3ea7273a` OK; provtv unrelated.
-<<<<<<< .merge_file_SCenfw
-[../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
-=======
 [../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
->>>>>>> .merge_file_SUXmKw

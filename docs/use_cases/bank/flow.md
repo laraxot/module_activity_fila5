@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_Z7FnSu
-=======
 ---
 title: "Flussi Principali - Use Case Bancario"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "flussi principali - use case bancario activity"
 ---
->>>>>>> .merge_file_Q55AfR
 # Flussi Principali - Use Case Bancario
 
 ## 1. Apertura Conto

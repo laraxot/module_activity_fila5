@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_ZQlKBo
-=======
 ---
 title: "Console Commands per <nome progetto>ion Market"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "console commands per <nome progetto>ion market activity"
 ---
->>>>>>> .merge_file_PxiDeO
 # Console Commands per <nome progetto>ion Market
 
 ## Introduzione

@@ -6,12 +6,9 @@ created: "2026-04-29T00:00:00Z"
 updated: "2026-04-29T00:00:00Z"
 related:
   - "[[Activity Domain Focus]]"
-<<<<<<< .merge_file_DVkoji
-=======
 status: draft
 tags: [docs, activity, wiki]
 qmd: "activity core sources activity"
->>>>>>> .merge_file_BiGgjy
 ---
 
 # Activity Core Sources

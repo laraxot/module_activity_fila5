@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_vynqrC
-=======
 ---
 title: "Casi d'Uso del <nome progetto>ion Market"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "casi d'uso del <nome progetto>ion market activity"
 ---
->>>>>>> .merge_file_sXBn6t
 # Casi d'Uso del <nome progetto>ion Market
 
 ## 1. Previsioni Economiche

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_GnuMzE
-=======
 ---
 title: "PHPStan Activity Module Fix"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "phpstan activity module fix activity"
 ---
->>>>>>> .merge_file_RrwUPM
 # PHPStan Activity Module Fix
 
 ## Problema

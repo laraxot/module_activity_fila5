@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_b6UHfA
-=======
 ---
 title: "Analisi Metodi Duplicati - Modulo Activity"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "analisi metodi duplicati - modulo activity activity"
 ---
->>>>>>> .merge_file_pWSV8u
 # Analisi Metodi Duplicati - Modulo Activity
 
 **Data Generazione**: 2025-10-15 06:41:17

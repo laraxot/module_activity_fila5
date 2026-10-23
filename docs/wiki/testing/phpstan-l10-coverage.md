@@ -1,14 +1,11 @@
 ---
 title: Phpstan l10 coverage
 module: Activity
-<<<<<<< .merge_file_TxVn8r
-=======
 type: note
 status: draft
 updated: 2026-10-08
 tags: [docs, activity, wiki]
 qmd: "phpstan level 10 compliance - activity module activity"
->>>>>>> .merge_file_pDBhuR
 ---
 
 # PHPStan Level 10 Compliance - Activity Module

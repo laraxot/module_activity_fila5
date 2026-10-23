@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_HGaqRP
-=======
 ---
 title: "Proiettori in Larabank"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "proiettori in larabank activity"
 ---
->>>>>>> .merge_file_dvjV3O
 # Proiettori in Larabank
 
 ## Introduzione

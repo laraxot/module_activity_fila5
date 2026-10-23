@@ -344,11 +344,7 @@ class ListMyModelActivities extends ListLogActivities
 
 ### Documentazione Interna
 - [README Activity Module](../README.md)
-<<<<<<< .merge_file_P2ISp8
-- [README Activity Module](../readme.md)
-=======
 - [README Activity Module](../README.md)
->>>>>>> .merge_file_frUxSj
 - [ListLogActivitiesAction Details](./actions/list-log-activities-action.md)
 - [ListLogActivities Page](./pages/list-log-activities.md)
 
@@ -369,7 +365,6 @@ class ListMyModelActivities extends ListLogActivities
 
 ---
 
-**=======
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Pattern**: DRY + KISS per Actions riutilizzabili
 **Conformità**: ✅ PHPStan livello 9+, ✅ Pint, ✅ Test Suite

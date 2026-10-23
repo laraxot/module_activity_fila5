@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_QNdQSS
-=======
 ---
 title: "Confronto tra le Implementazioni di Larabank"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "confronto tra le implementazioni di larabank activity"
 ---
->>>>>>> .merge_file_caCvRK
 # Confronto tra le Implementazioni di Larabank
 
 ## Introduzione

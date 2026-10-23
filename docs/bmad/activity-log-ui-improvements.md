@@ -1,14 +1,11 @@
 ---
 title: Activity log ui improvements
 module: Activity
-<<<<<<< .merge_file_A68oq4
-=======
 type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, activity, bmad]
 qmd: "activity log ui/ux improvements - implementation summary activity"
->>>>>>> .merge_file_3iXCAz
 ---
 
 # Activity Log UI/UX Improvements - Implementation Summary

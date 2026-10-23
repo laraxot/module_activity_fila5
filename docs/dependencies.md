@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_D5R50b
-=======
 ---
 title: "Dependencies (Module Activity)"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "dependencies (module activity) activity"
 ---
->>>>>>> .merge_file_fpYDSY
 # Dependencies (Module Activity)
 
 Canonical dependency map:

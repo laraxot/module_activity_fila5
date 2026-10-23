@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_XgDzX1
-=======
 ---
 title: "Model/Factory/Seeder Audit"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "model/factory/seeder audit activity"
 ---
->>>>>>> .merge_file_QVtjvj
 # Model/Factory/Seeder Audit
 
 Generated: 2025-08-22 16:20

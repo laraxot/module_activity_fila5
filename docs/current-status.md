@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_2wU6kp
-=======
 ---
 title: "Activity Module - Status Attuale"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - status attuale activity"
 ---
->>>>>>> .merge_file_mRVB9H
 # Activity Module - Status Attuale
 
 ## ⚠️ STATO: Parzialmente Disabilitato

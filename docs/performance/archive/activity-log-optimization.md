@@ -214,11 +214,7 @@ CREATE INDEX idx_activity_log_causer_type ON activity_log(causer_type);
 ## 📚 Related Documentation
 
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./query_optimization_analysis.md)
-<<<<<<< .merge_file_L8kdrz
-- [bottlenecks.md](./bottlenecks.md)
-=======
 - [bottlenecks.md](../../bottlenecks.md)
->>>>>>> .merge_file_jgMKjZ
 - [event-sourcing.md](./event-sourcing.md)
 
 ## 🎯 Implementation Checklist

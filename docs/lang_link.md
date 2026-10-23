@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_Z5E6L4
-=======
 ---
 title: "Collegamento alle Traduzioni del Modulo Activity"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "collegamento alle traduzioni del modulo activity activity"
 ---
->>>>>>> .merge_file_KBmtgy
 # Collegamento alle Traduzioni del Modulo Activity
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).

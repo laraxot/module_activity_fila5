@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_6piinP
-=======
 ---
 title: "Snapshot Business Logic Test Fix"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "snapshot business logic test fix activity"
 ---
->>>>>>> .merge_file_7kdFdF
 # Snapshot Business Logic Test Fix
 
 ## Problema Identificato

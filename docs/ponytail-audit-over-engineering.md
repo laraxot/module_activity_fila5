@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_UcgEnq
-=======
 ---
 title: "Ponytail audit — Activity (over-engineering)"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "ponytail audit   activity (over-engineering) activity"
 ---
->>>>>>> .merge_file_AJsinO
 # Ponytail audit — Activity (over-engineering)
 
 **Ultimo run:** 2026-06-30  

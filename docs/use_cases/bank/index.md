@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_CekN4E
-=======
 ---
 title: "Larabank: Caso d'Uso Bancario con Event Sourcing"
 type: index
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "larabank: caso d'uso bancario con event sourcing activity"
 ---
->>>>>>> .merge_file_CSmGBu
 # Larabank: Caso d'Uso Bancario con Event Sourcing
 
 ## Introduzione

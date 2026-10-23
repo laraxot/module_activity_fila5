@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_TUZyZV
-=======
 ---
 title: "ACTIVITY MODULE - ROADMAP 2025"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - roadmap 2025 activity"
 ---
->>>>>>> .merge_file_19oet4
 # 🎯 ACTIVITY MODULE - ROADMAP 2025
 
 **Modulo**: Activity ([Description])  

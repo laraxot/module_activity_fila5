@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_EGuuCc
-=======
 ---
 title: "Activity Module - Errori Rilevati e Soluzioni"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, activity]
 qmd: "activity module - errori rilevati e soluzioni activity"
 ---
->>>>>>> .merge_file_A2Gjka
 # Activity Module - Errori Rilevati e Soluzioni
 
 ## Stato Test Attuale

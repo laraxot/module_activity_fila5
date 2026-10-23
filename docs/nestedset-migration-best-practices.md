@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_Cu2oww
-=======
 ---
 title: "NestedSet Migration Best Practices - Activity Module"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "nestedset migration best practices - activity module activity"
 ---
->>>>>>> .merge_file_E5577W
 # NestedSet Migration Best Practices - Activity Module
 
 ## Overview

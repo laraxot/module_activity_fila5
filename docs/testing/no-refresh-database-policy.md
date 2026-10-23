@@ -471,13 +471,8 @@ fi
 - [Real Data vs Mock Testing](../../xot/docs/testing/real-data-vs-mock-testing-strategy.md)
 
 ### Test Esempi
-<<<<<<< .merge_file_JfXaIN
-- [SnapshotBusinessLogicTest](../tests/Feature/SnapshotBusinessLogicTest.php) - Esempio corretto
-- [ActivityBusinessLogicTest](../tests/Feature/ActivityBusinessLogicTest.php)
-=======
 - [SnapshotBusinessLogicTest](../../tests/Feature/SnapshotBusinessLogicTest.php) - Esempio corretto
 - [ActivityBusinessLogicTest](../../tests/Feature/ActivityBusinessLogicTest.php)
->>>>>>> .merge_file_tESEyL
 
 ---
 

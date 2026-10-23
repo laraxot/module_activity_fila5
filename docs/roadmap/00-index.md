@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_ERC2Ns
-=======
 ---
 title: "Roadmap Index - Activity"
 type: index
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, roadmap]
 qmd: "roadmap index - activity activity"
 ---
->>>>>>> .merge_file_zG5qKo
 # Roadmap Index - Activity
 
 ## Scope

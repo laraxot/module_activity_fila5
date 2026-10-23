@@ -3,12 +3,9 @@ title: "Audit @phpstan-ignore — Activity"
 type: report
 created: '2026-09-01'
 qmd: "audit phpstan ignore activity hassnapshots trait unused debito soppresso"
-<<<<<<< .merge_file_leNuhX
-=======
 status: draft
 updated: 2026-10-07
 tags: [docs, activity]
->>>>>>> .merge_file_SbiRJ9
 ---
 
 # Audit `@phpstan-ignore` — Activity

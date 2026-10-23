@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_oj6M0y
-=======
 ---
 title: "Risoluzione Conflitti Git - Modulo Activity"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "risoluzione conflitti git - modulo activity activity"
 ---
->>>>>>> .merge_file_W604BO
 # Risoluzione Conflitti Git - Modulo Activity
 
 ## Data Risoluzione

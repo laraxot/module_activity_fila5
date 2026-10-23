@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_5UUr5N
-=======
 ---
 title: "Modello di Dominio - <nome progetto>ion Market"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "modello di dominio - <nome progetto>ion market activity"
 ---
->>>>>>> .merge_file_0ZUj2o
 # Modello di Dominio - <nome progetto>ion Market
 
 ## Aggregate

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_MGtWwy
-=======
 ---
 title: "Fasi di sviluppo - Activity Module"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, roadmap]
 qmd: "fasi di sviluppo - activity module activity"
 ---
->>>>>>> .merge_file_n2pj38
 # Fasi di sviluppo - Activity Module
 
 ## Fase 1: Qualità e Pulizia (In Corso)

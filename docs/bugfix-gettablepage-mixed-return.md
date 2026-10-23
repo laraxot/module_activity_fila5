@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_kZqGcD
-=======
 ---
 title: "Bugfix: `getTablePage()` returns `mixed` instead of `int` (PHPStan)"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "bugfix: `gettablepage()` returns `mixed` instead of `int` (phpstan) activity"
 ---
->>>>>>> .merge_file_Z0BeFM
 # Bugfix: `getTablePage()` returns `mixed` instead of `int` (PHPStan)
 
 ## 🐛 Errore

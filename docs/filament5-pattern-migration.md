@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_wxcsH1
-=======
 ---
 title: "Filament 5 Pattern Migration - Activity Module"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "filament 5 pattern migration - activity module activity"
 ---
->>>>>>> .merge_file_sEb1CI
 # Filament 5 Pattern Migration - Activity Module
 
 ## Data Migration
