@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_YmdUKF
-=======
 ---
 title: "Modulo Activity - Logging e Event Sourcing# Activity Module - Comprehensive Analysis"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, activity]
 qmd: "modulo activity - logging e event sourcing# activity module - comprehensive analysis activity"
 ---
->>>>>>> .merge_file_8CSMUC
 # Modulo Activity - Logging e Event Sourcing# Activity Module - Comprehensive Analysis
 
 ## Scopo Principale

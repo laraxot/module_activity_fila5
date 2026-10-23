@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_8YLhGT
-=======
 ---
 title: "PHPStan Syntax Fixes - Modulo Activity"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "phpstan syntax fixes - modulo activity activity"
 ---
->>>>>>> .merge_file_GlAvE3
 # PHPStan Syntax Fixes - Modulo Activity
 
 **Data**: 2025-01-11
@@ -159,15 +156,8 @@ use function Safe\json_encode;
 
 ## 🔗 Collegamenti
 
-<<<<<<< .merge_file_8YLhGT
-- [PHPStan Quality Rules](./PHPSTAN_QUALITY_RULES.md)
-- [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
-- [PHPStan Quality Rules](./phpstan_quality_rules.md)
-=======
 - [PHPStan Quality Rules](./phpstan-quality-rules.md)
 - [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
-- [PHPStan Quality Rules](./phpstan-quality-rules.md)
->>>>>>> .merge_file_GlAvE3
 - [PHPStan Fixes Activity (Completo)](./phpstan_fixes_activity.md)
 
 ## 📝 Note

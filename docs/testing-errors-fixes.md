@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_OP0BSz
-=======
 ---
 title: "Activity Module - Errori di Test e Correzioni"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - errori di test e correzioni activity"
 ---
->>>>>>> .merge_file_EhqV5p
 # Activity Module - Errori di Test e Correzioni
 
 ## Obiettivo

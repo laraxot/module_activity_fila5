@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_kxyRwK
-=======
 ---
 title: "Bugfix: PHPStan `getUrl()` signature mismatch + enum/getColumnDefinitions drift"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "bugfix: phpstan `geturl()` signature mismatch + enum/getcolumndefinitions drift activity"
 ---
->>>>>>> .merge_file_US6nmd
 # Bugfix: PHPStan `getUrl()` signature mismatch + enum/getColumnDefinitions drift
 
 ## 🐛 Errori

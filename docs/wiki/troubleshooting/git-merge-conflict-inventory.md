@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_4PkWsV
-=======
 ---
 title: "Git Conflict Inventory"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, wiki]
 qmd: "git conflict inventory activity"
 ---
->>>>>>> .merge_file_ZRLYQn
 # Git Conflict Inventory
 
 - Date: 2026-04-28
@@ -19,11 +16,7 @@ qmd: "git conflict inventory activity"
 
 - docs/anti-pattern-model-env-hack.md
 - docs/archive/module-analysis.md
-<<<<<<< .merge_file_4PkWsV
-- docs/business-logic-analysis-1.md
-=======
 - docs/business-logic-analysis-activity-module.md
->>>>>>> .merge_file_ZRLYQn
 - docs/business-logic-analysis.md
 - docs/business-logic.md
 - docs/coverage-full.md

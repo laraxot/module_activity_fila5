@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_IQNtdy
-=======
 ---
 title: "Activity Module - Complete Roadmap 2026"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - complete roadmap 2026 activity"
 ---
->>>>>>> .merge_file_qSXwWP
 # Activity Module - Complete Roadmap 2026
 
 **Generated**: 2026-01-02

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_PKjxII
-=======
 ---
 title: "Activity vs Platform.AuditLog — Mappatura e Gap Analysis"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity vs platform.auditlog   mappatura e gap analysis activity"
 ---
->>>>>>> .merge_file_O7CDer
 # Activity vs Platform.AuditLog — Mappatura e Gap Analysis
 
 > Ultimo aggiornamento: 2026-07-23

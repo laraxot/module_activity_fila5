@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_VoFrvA
-=======
 ---
 title: "Architettura del Modulo <nome progetto>ion Market"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "architettura del modulo <nome progetto>ion market activity"
 ---
->>>>>>> .merge_file_rjFEvG
 # 🏗️ Architettura del Modulo <nome progetto>ion Market
 
 ## 🌟 Panoramica dell'Architettura

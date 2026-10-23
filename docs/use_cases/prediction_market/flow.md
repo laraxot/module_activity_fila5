@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_WiMO4j
-=======
 ---
 title: "Flusso degli Eventi - <nome progetto>ion Market"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "flusso degli eventi - <nome progetto>ion market activity"
 ---
->>>>>>> .merge_file_5KqcvT
 # Flusso degli Eventi - <nome progetto>ion Market
 
 ## 1. Creazione Mercato

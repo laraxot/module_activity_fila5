@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_Nku2YY
-=======
 ---
 title: "Confronto tra Implementazioni del Carrello della Spesa"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "confronto tra implementazioni del carrello della spesa activity"
 ---
->>>>>>> .merge_file_nJYkwB
 # Confronto tra Implementazioni del Carrello della Spesa
 
 ## Introduzione

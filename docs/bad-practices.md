@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_uMmy5D
-=======
 ---
 title: "Bad Practices – Activity"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, activity]
 qmd: "bad practices   activity activity"
 ---
->>>>>>> .merge_file_Gh8mUZ
 # Bad Practices – Activity
 
 ## ❌ Log delle attività senza livello di severità
