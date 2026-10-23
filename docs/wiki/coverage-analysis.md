@@ -1,14 +1,11 @@
 ---
 title: Coverage analysis
 module: Activity
-<<<<<<< .merge_file_aVhnXf
-=======
 type: note
 status: draft
 updated: 2026-10-08
 tags: [docs, activity, wiki]
 qmd: "activity module - analisi coverage e errori activity"
->>>>>>> .merge_file_mNpWmX
 ---
 
 # Activity Module - Analisi Coverage e Errori

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_VnGRI0
-=======
 ---
 title: "Modello di Dominio - Use Case Bancario"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "modello di dominio - use case bancario activity"
 ---
->>>>>>> .merge_file_K9oGkk
 # Modello di Dominio - Use Case Bancario
 
 ## Aggregate

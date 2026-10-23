@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_DeKdG2
-=======
 ---
 title: "Best Practices per un <nome progetto>ion Market"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "best practices per un <nome progetto>ion market activity"
 ---
->>>>>>> .merge_file_oM196c
 # Best Practices per un <nome progetto>ion Market
 
 Questa sezione raccoglie le migliori pratiche per progettare e gestire un <nome progetto>ion market nel modulo `Activity`, basandosi su analisi di piattaforme reali e sull'approccio Event Sourcing.

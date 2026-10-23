@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_QCEK0G
-=======
 ---
 title: "Console Commands per Shop Event Sourced"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "console commands per shop event sourced activity"
 ---
->>>>>>> .merge_file_wlK3X5
 # Console Commands per Shop Event Sourced
 
 ## Introduzione
@@ -61,12 +58,6 @@ class CloseExpiredOrders extends Command
 ## Collegamenti correlati
 - [Architettura shop](./02_architettura.md)
 - [Best practice shop](./04_best_practice.md)
-<<<<<<< .merge_file_QCEK0G
-- [Testing shop](./09_test.md)
-- [API shop](./08_api.md)
-- [Glossario shop](./10_glossario.md)
-=======
 - [Testing shop](./09-test.md)
 - [API shop](./08-api.md)
 - [Glossario shop](./10-glossario.md)
->>>>>>> .merge_file_wlK3X5

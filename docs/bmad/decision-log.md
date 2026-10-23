@@ -1,14 +1,11 @@
 ---
 title: Decision log
 module: Activity
-<<<<<<< .merge_file_fKu1nA
-=======
 type: note
 status: draft
 updated: 2026-10-20
 tags: [docs, activity, bmad]
 qmd: "decision log - modulo activity activity"
->>>>>>> .merge_file_Rklmdn
 ---
 
 # Decision Log - Modulo Activity

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_VlDaeC
-=======
 ---
 title: "TestCase SQLite to MySQL Fix - Activity Module"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "testcase sqlite to mysql fix - activity module activity"
 ---
->>>>>>> .merge_file_1eixAf
 # TestCase SQLite to MySQL Fix - Activity Module
 
 ## Problema Identificato

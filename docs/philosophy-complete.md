@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_sdzQ0v
-=======
 ---
 title: "Activity - Filosofia Completa: Logica, Religione, Politica, Zen"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, activity]
 qmd: "activity - filosofia completa: logica, religione, politica, zen activity"
 ---
->>>>>>> .merge_file_OXsSFc
 # Activity - Filosofia Completa: Logica, Religione, Politica, Zen
 
 **Data Creazione**: 2025-12-23

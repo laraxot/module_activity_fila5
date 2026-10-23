@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "quality status 2025 11"
 issues: []
 discussions: []
-<<<<<<< .merge_file_4mnlu0
-=======
 status: draft
->>>>>>> .merge_file_805G6D
 ---
 
 # Activity Module - Quality Status (November 2025)
@@ -167,7 +164,6 @@ public function withCustomProperties(array $attributes): static
 **Maintenance Focus**: Keep PHPStan at level max, fix minor PHPMD warnings, maintain documentation quality.
 
 ---
-<<<<<<< .merge_file_4mnlu0
 
 title: "quality status 2025 11"
 type: note
@@ -177,8 +173,6 @@ updated: 2026-09-26
 qmd: "quality status 2025 11"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_805G6D
 *Last Updated: November 15, 2025*
 *PHPStan Version: Latest*
 *PHPMD Version: Latest*

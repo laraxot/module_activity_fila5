@@ -4,12 +4,9 @@ type: reference
 updated: 2026-05-21
 related:
   - "../../../Media/docs/html2pdf/security.md"
-<<<<<<< .merge_file_HoNn3i
-=======
 status: draft
 tags: [docs, activity, html2pdf]
 qmd: "html2pdf   security activity"
->>>>>>> .merge_file_VQZH1Q
 ---
 
 # Html2Pdf — security

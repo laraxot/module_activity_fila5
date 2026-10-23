@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_5Hcsm3
-=======
 ---
 title: "Code quality — modulo Activity"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "code quality   modulo activity activity"
 ---
->>>>>>> .merge_file_m2WVrt
 # Code quality — modulo Activity
 
 Report locale (2026-07-17). Metodo: `phpstan analyse` livello max, `phpmd` (ruleset codesize+unusedcode), grep mirati (TODO/FIXME/@deprecated, dd()/dump(), facade in app/Actions, extends Filament diretto), rapporto file test/app.

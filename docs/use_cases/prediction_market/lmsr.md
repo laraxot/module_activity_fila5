@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_JT5BVo
-=======
 ---
 title: "LMSR – Logarithmic Market Scoring Rule nei <nome progetto>ion Market"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "lmsr   logarithmic market scoring rule nei <nome progetto>ion market activity"
 ---
->>>>>>> .merge_file_lDiDCv
 # LMSR – Logarithmic Market Scoring Rule nei <nome progetto>ion Market
 
 ## Cos'è LMSR?

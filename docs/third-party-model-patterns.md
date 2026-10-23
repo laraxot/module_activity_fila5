@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_Nae6ue
-=======
 ---
 title: "Activity Module - Third-Party Model Patterns"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, activity]
 qmd: "activity module - third-party model patterns activity"
 ---
->>>>>>> .merge_file_6bgs0i
 # Activity Module - Third-Party Model Patterns
 
 ## Spatie Package Integration

@@ -1,14 +1,11 @@
 ---
 title: Analysis religion zen
 module: Activity
-<<<<<<< .merge_file_HHx4Ju
-=======
 type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, activity, bmad]
 qmd: "activity module: complete analysis (religion, philosophy, politics, zen) activity"
->>>>>>> .merge_file_SUItSL
 ---
 
 # Activity Module: Complete Analysis (Religion, Philosophy, Politics, Zen)

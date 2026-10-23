@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_7vidKG
-=======
 ---
 title: "Dipendenze e confini Modulo Activity"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, roadmap]
 qmd: "dipendenze e confini modulo activity activity"
 ---
->>>>>>> .merge_file_usbtZF
 # Dipendenze e confini Modulo Activity
 
 ## Dipendenze in ingresso

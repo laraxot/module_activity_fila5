@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_vcxWMd
-=======
 ---
 title: "Traduzioni del Modulo Activity"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "traduzioni del modulo activity activity"
 ---
->>>>>>> .merge_file_jYHUYE
 # Traduzioni del Modulo Activity
 
 ## Collegamenti

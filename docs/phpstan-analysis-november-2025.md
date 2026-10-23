@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_n0Uc2d
-=======
 ---
 title: "PHPStan Analysis - Activity Module - November 2025"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "phpstan analysis - activity module - november 2025 activity"
 ---
->>>>>>> .merge_file_0zstB1
 # PHPStan Analysis - Activity Module - November 2025
 
 ## Risultato Analisi

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_gPrvR2
-=======
 ---
 title: "Architettura Bank (Event Sourcing)"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "architettura bank (event sourcing) activity"
 ---
->>>>>>> .merge_file_AcY0W0
 # Architettura Bank (Event Sourcing)
 
 ## Pattern Principali

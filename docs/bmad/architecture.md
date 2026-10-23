@@ -1,14 +1,11 @@
 ---
 title: Architecture
 module: Activity
-<<<<<<< .merge_file_s9OLdB
-=======
 type: note
 status: draft
 updated: 2026-10-08
 tags: [docs, activity, bmad]
 qmd: "activity   architettura bmad activity"
->>>>>>> .merge_file_FRpnD7
 ---
 
 ---

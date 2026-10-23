@@ -3,14 +3,11 @@ module: Activity
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
-<<<<<<< .merge_file_l8rz6u
-=======
 title: "Metodi Duplicati — Analisi Activity"
 type: note
 status: stub
 updated: 2026-10-08
 qmd: "metodi duplicati   analisi activity activity"
->>>>>>> .merge_file_Ciz4V0
 ---
 
 # Metodi Duplicati — Analisi Activity

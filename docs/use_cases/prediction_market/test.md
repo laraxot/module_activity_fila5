@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_IJTvFQ
-=======
 ---
 title: "Testing <nome progetto>ion Market"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "testing <nome progetto>ion market activity"
 ---
->>>>>>> .merge_file_yhkpA0
 # Testing <nome progetto>ion Market
 
 ## Unit Test

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_OGpEpD
-=======
 ---
 title: "Code Quality Analysis - Activity Module"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "code quality analysis - activity module activity"
 ---
->>>>>>> .merge_file_n5hAjr
 # Code Quality Analysis - Activity Module
 
 ## 🚨 Critical Issues Identified
