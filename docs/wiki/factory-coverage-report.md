@@ -1,14 +1,11 @@
 ---
 title: Factory coverage report
 module: Activity
-<<<<<<< .merge_file_tY5hy4
-=======
 type: note
 status: draft
 updated: 2026-10-08
 tags: [docs, activity, wiki]
 qmd: "factory coverage report - activity module activity"
->>>>>>> .merge_file_9vBQAj
 ---
 
 # Factory Coverage Report - Activity Module

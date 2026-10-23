@@ -4,11 +4,8 @@ type: technical_spec
 tags: [tech spec, activity, audit]
 created: 2026-08-04
 updated: 2026-08-04
-<<<<<<< .merge_file_JbKZ2O
-=======
 status: draft
 qmd: "technical specification - activity module activity"
->>>>>>> .merge_file_TBJZL7
 ---
 # Technical Specification - Activity Module
 

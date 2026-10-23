@@ -50,13 +50,8 @@
 ## 🔗 Collegamenti
 
 - [← Activity Module README](../README.md)
-<<<<<<< .merge_file_9b4DXO
-- [← Activity Module README](../readme.md)
-- [← Root Documentation](../../../docs/index.md)
-=======
 - [← Activity Module README](../README.md)
 - [← Root Documentation](../../../../docs/index.md)
->>>>>>> .merge_file_sGinj6
 
 ---
 

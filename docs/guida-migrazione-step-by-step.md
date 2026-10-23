@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_ooxhZ8
-=======
 ---
 title: "Activity Module - Guida Step-by-Step Migrazione Filament 4"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - guida step-by-step migrazione filament 4 activity"
 ---
->>>>>>> .merge_file_CvHcFg
 # Activity Module - Guida Step-by-Step Migrazione Filament 4
 
 ## 🎯 Panoramica della Migrazione

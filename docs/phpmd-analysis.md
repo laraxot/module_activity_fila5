@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_momHQN
-=======
 ---
 title: "PHPMD Analysis & Fixes - Activity Module"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "phpmd analysis & fixes - activity module activity"
 ---
->>>>>>> .merge_file_306HMd
 # PHPMD Analysis & Fixes - Activity Module
 
 ## 📊 Current Status

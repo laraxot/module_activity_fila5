@@ -6,12 +6,9 @@ updated: 2026-06-15
 related:
   - ../../../../../../docs/wiki/method-name-homonym-census.md
   - ../../../../../../bashscripts/docs/method-homonym-census.json
-<<<<<<< .merge_file_czNi9r
-=======
 status: draft
 tags: [docs, activity, wiki]
 qmd: "censimento omonimi metodi   activity activity"
->>>>>>> .merge_file_0ClgOq
 ---
 
 # Censimento omonimi metodi — Activity

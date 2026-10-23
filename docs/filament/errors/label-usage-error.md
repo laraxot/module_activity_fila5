@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_0tZJFC
-=======
 ---
 title: "Non utilizzare `->label()` nei componenti Filament"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, filament]
 qmd: "non utilizzare `->label()` nei componenti filament activity"
 ---
->>>>>>> .merge_file_6IS3cY
 # Non utilizzare `->label()` nei componenti Filament
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo Activity.

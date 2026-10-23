@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_7U5gUQ
-=======
 ---
 title: "Lezioni Apprese: Errori Migrazione Activity Table"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "lezioni apprese: errori migrazione activity table activity"
 ---
->>>>>>> .merge_file_wQiXvl
 # Lezioni Apprese: Errori Migrazione Activity Table
 
 ## Caso Studio: Errore Critico nella Modifica Migrazione Activity

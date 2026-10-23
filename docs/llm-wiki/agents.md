@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_unubuG
-=======
 ---
 title: "agents"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, activity, llm-wiki]
 qmd: "agents activity"
 ---
->>>>>>> .merge_file_nn3nPW
 title: "Agent instructions"
 type: reference
 tags: [agents, coding-agent, llm-wiki]

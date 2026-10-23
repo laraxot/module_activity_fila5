@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_54EBWU
-=======
 ---
 title: "Ottimizzazioni DRY + KISS - Modulo Activity"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "ottimizzazioni dry + kiss - modulo activity activity"
 ---
->>>>>>> .merge_file_fUDalA
 # Ottimizzazioni DRY + KISS - Modulo Activity
 
 ## Panoramica del Modulo

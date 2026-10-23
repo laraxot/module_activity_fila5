@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_17Lmvv
-=======
 ---
 title: "PHPStan Level 10 Compliance Status"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "phpstan level 10 compliance status activity"
 ---
->>>>>>> .merge_file_b2xW0M
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2026-06-10

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_0JQ3WP
-=======
 ---
 title: "Testing Bank (Event Sourcing)"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "testing bank (event sourcing) activity"
 ---
->>>>>>> .merge_file_LgYIC8
 # Testing Bank (Event Sourcing)
 
 ## Unit Test

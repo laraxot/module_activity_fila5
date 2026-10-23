@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_vJTR4B
-=======
 ---
 title: "Activity Module Test Coverage"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, activity]
 qmd: "activity module test coverage activity"
 ---
->>>>>>> .merge_file_ElvD1A
 # Activity Module Test Coverage
 
 ## Coverage Results

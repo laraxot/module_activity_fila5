@@ -1,14 +1,11 @@
 ---
 title: Coverage full
 module: Activity
-<<<<<<< .merge_file_KHKZ9L
-=======
 type: note
 status: draft
 updated: 2026-10-08
 tags: [docs, activity, wiki]
 qmd: "coverage full activity"
->>>>>>> .merge_file_VYtahj
 ---
 
 

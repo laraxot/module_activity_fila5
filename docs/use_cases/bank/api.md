@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_m4x0qQ
-=======
 ---
 title: "Linee Guida API Bank (Event Sourcing)"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "linee guida api bank (event sourcing) activity"
 ---
->>>>>>> .merge_file_38xF0a
 # Linee Guida API Bank (Event Sourcing)
 
 ## Endpoints Principali

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_S6Rs7T
-=======
 ---
 title: "Activity Module: Philosophy, Purpose, and Design Principles"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module: philosophy, purpose, and design principles activity"
 ---
->>>>>>> .merge_file_7i1qSK
 # Activity Module: Philosophy, Purpose, and Design Principles
 
 **Date:** December 23, 2025

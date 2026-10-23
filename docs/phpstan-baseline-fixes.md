@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_RxC5rx
-=======
 ---
 title: "Correzioni PHPStan Baseline - Modulo Activity"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "correzioni phpstan baseline - modulo activity activity"
 ---
->>>>>>> .merge_file_C3oO9N
 # Correzioni PHPStan Baseline - Modulo Activity
 
 ## Obiettivo

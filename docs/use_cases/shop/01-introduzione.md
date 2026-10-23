@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_xPcxvi
-=======
 ---
 title: "Introduzione: Lo Shop Event Sourced Definitivo"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "introduzione: lo shop event sourced definitivo activity"
 ---
->>>>>>> .merge_file_DFjN54
 # Introduzione: Lo Shop Event Sourced Definitivo
 
 ## Visione e Filosofia

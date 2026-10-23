@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_byzf6B
-=======
 ---
 title: "Console Commands per Bank (Event Sourcing)"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "console commands per bank (event sourcing) activity"
 ---
->>>>>>> .merge_file_DUC3E5
 # Console Commands per Bank (Event Sourcing)
 
 ## Introduzione

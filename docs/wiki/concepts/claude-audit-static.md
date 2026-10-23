@@ -14,10 +14,7 @@ related:
   - ./testing.md
   - ./ponytail-audit.md
   - ../../../../../../bashscripts/tools/run-claude-audit-module-static.sh
-<<<<<<< .merge_file_5EpmF5
-=======
 status: draft
->>>>>>> .merge_file_XxAPZ1
 ---
 
 # claude-audit static (Activity)

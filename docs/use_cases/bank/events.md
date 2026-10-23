@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_v98G2v
-=======
 ---
 title: "Eventi in Larabank"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "eventi in larabank activity"
 ---
->>>>>>> .merge_file_8MVm5U
 # Eventi in Larabank
 
 ## Introduzione

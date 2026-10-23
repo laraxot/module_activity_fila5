@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_wyrdOH
-=======
 ---
 title: "Analisi Modelli, Factory e Seeder - Modulo Activity"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "analisi modelli, factory e seeder - modulo activity activity"
 ---
->>>>>>> .merge_file_BE5zGp
 # Analisi Modelli, Factory e Seeder - Modulo Activity
 
 ## Riepilogo Modelli

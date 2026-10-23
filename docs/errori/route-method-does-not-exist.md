@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_RsUKo2
-=======
 ---
 title: "Errore: Method ::route does not exist"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, activity, errori]
 qmd: "errore: method ::route does not exist activity"
 ---
->>>>>>> .merge_file_DdtqLO
 # Errore: Method ::route does not exist
 
 ## Descrizione dell'Errore

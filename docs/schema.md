@@ -2,14 +2,11 @@
 title: "Module Schema"
 module: "Activity"
 created: "2026-04-15T08:28:40Z"
-<<<<<<< .merge_file_pzAM41
-=======
 type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module schema activity"
->>>>>>> .merge_file_cdGKbQ
 ---
 
 # Activity Module Schema

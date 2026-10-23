@@ -1,14 +1,11 @@
 ---
 title: Advanced event sourcing patterns
 module: Activity
-<<<<<<< .merge_file_kyD3ir
-=======
 type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, activity, bmad]
 qmd: "advanced event sourcing patterns for healthcare applications activity"
->>>>>>> .merge_file_e2ikTM
 ---
 
 # Advanced Event Sourcing Patterns for Healthcare Applications

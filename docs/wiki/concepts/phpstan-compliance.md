@@ -5,11 +5,7 @@ tags: [activity, phpstan, types, compliance, quality, static-analysis]
 created: 2026-06-10
 updated: 2026-06-10
 related:
-<<<<<<< .merge_file_ivo5KX
-  - ../../../../Themes/Sixteen/docs/wiki/concepts/phpstan-compliance.md
-=======
   - ../../../../../Themes/Sixteen/docs/wiki/concepts/phpstan-compliance.md
->>>>>>> .merge_file_zaDej2
   - ../../../../../docs/wiki/concepts/phpstan-level-max-compliance.md
 ---
 

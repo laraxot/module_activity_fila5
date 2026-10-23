@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_YANrei
-=======
 ---
 title: "Activity Module - User Research"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - user research activity"
 ---
->>>>>>> .merge_file_yzugDy
 # Activity Module - User Research
 
 **Module:** Activity  

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_Kh55RY
-=======
 ---
 title: "PHPStan Errors - ActivityLogger.php - Deep Analysis"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "phpstan errors - activitylogger.php - deep analysis activity"
 ---
->>>>>>> .merge_file_e3sNUg
 # PHPStan Errors - ActivityLogger.php - Deep Analysis
 
 **File**: `Modules/Activity/app/Actions/ActivityLogger.php`

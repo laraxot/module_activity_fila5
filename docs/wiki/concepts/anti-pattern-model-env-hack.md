@@ -1,14 +1,11 @@
 ---
 title: Anti pattern model env hack
 module: Activity
-<<<<<<< .merge_file_pCGKBe
-=======
 type: note
 status: draft
 updated: 2026-10-08
 tags: [docs, activity, wiki]
 qmd: "anti-pattern: environment-specific logic in models activity"
->>>>>>> .merge_file_Pw4csV
 ---
 
 # Anti-Pattern: Environment-Specific Logic in Models

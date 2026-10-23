@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_w4VH5i
-=======
 ---
 title: "Cyclomatic Complexity Report - Module: Activity"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "cyclomatic complexity report - module: activity activity"
 ---
->>>>>>> .merge_file_wzEP5E
 # Cyclomatic Complexity Report - Module: Activity
 
 **Generated:** 2025-10-01 19:44:11
