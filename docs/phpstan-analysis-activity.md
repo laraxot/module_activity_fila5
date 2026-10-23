@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_i4igZH
-=======
 ---
 title: "PHPStan Analysis - Activity Module"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "phpstan analysis - activity module activity"
 ---
->>>>>>> .merge_file_6rO1TZ
 # PHPStan Analysis - Activity Module
 
 ## 📊 Status

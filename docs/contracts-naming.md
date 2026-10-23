@@ -6,11 +6,8 @@ updated: 2026-07-12
 tags: [contract, naming, architecture, laraxot, activity]
 related:
   - ../../../../docs/wiki/rules/module-contracts-naming-placement.md
-<<<<<<< .merge_file_7eMgvU
-=======
 status: draft
 qmd: "contracts naming & placement in activity activity"
->>>>>>> .merge_file_zGilXf
 ---
 
 # Contracts Naming & Placement in Activity

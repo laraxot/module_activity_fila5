@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_bsyih5
-=======
 ---
 title: "Activity Module - Query Optimization Analysis"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - query optimization analysis activity"
 ---
->>>>>>> .merge_file_PKEIQ6
 # Activity Module - Query Optimization Analysis
 
 ## Overview

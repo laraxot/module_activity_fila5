@@ -1,14 +1,11 @@
 ---
 title: Accessor delegation pattern
 module: Activity
-<<<<<<< .merge_file_09YdUY
-=======
 type: note
 status: draft
 updated: 2026-10-08
 tags: [docs, activity, wiki]
 qmd: "accessor delegation pattern (sacro) activity"
->>>>>>> .merge_file_vjIN9e
 ---
 
 # Accessor Delegation Pattern (SACRO)

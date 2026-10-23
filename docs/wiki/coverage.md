@@ -1,14 +1,11 @@
 ---
 title: Coverage
 module: Activity
-<<<<<<< .merge_file_yGPWwA
-=======
 type: note
 status: draft
 updated: 2026-10-08
 tags: [docs, activity, wiki]
 qmd: "activity   quality gate status (2026-09-22) activity"
->>>>>>> .merge_file_2pmIK1
 ---
 
 # Activity — quality gate status (2026-09-22)

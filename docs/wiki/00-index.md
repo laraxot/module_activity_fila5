@@ -1,16 +1,11 @@
 ---
 title: 00 index
 module: Activity
-<<<<<<< .merge_file_H5X9U0
----
-
-=======
 status: stale
 ---
 
-> Nota 2026-10-14 (docs-audit): Copia dell'indice radice (varianti di sola maiuscola) con link relativi non validi da wiki/ e riferimenti a pagine inesistenti; l'indice canonico e' ../00-INDEX.md, l'indice della wiki e' INDEX.md. Contenuto non riscritto, verificare prima di usarlo.
+> Nota 2026-10-14 (docs-audit): Copia dell'indice radice (varianti di sola maiuscola) con link relativi non validi da wiki/ e riferimenti a pagine inesistenti; l'indice per argomento e' ../index.md, quello della wiki e' index.md (`../00-INDEX.md` e `INDEX.md` sono stati rimossi il 2026-10-22, commit `7e2a1509`). Contenuto non riscritto, verificare prima di usarlo.
 
->>>>>>> .merge_file_sOS8TG
 # 📚 **Indice Documentazione Modulo Activity**
 ---
 title: Activity Module - Documentation Index
@@ -34,16 +29,6 @@ updated: 2026-07-23
 - 🔧 **[Actions Calling Actions](./actions-calling-actions-pattern.md)** - Pattern per la composizione delle azioni di logging.
 
 ## 📊 **Filament & UI**
-<<<<<<< .merge_file_H5X9U0
-- 📈 **[Filament Resources](./filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
-- 📉 **[Analytics Widgets](./dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
-- 🧭 **[Nested Resources](./filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
-
-## 🧪 **Qualità e Testing**
-- ✅ **[PHPStan Compliance](./phpstan-analysis.md)** - Report sulla stabilità Level 10.
-- 🔬 **[Testing Strategy](./testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
-- 🧹 **[PHPMD Fixes](./phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
-=======
 - 📈 **[Filament Resources](../filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
 - 📉 **[Analytics Widgets](../dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
 - 🧭 **[Nested Resources](../filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
@@ -52,7 +37,6 @@ updated: 2026-07-23
 - ✅ **[PHPStan Compliance](../phpstan-analysis.md)** - Report sulla stabilità Level 10.
 - 🔬 **[Testing Strategy](../testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
 - 🧹 **[PHPMD Fixes](../phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
->>>>>>> .merge_file_sOS8TG
 - 🧪 **PSR-4 Test Helpers** - Preferire Pest e classi anonime nei test; evitare classi helper top-level non allineate al filepath.
 
 ## 📋 **Documenti Prodotto & Sviluppo**
@@ -94,16 +78,6 @@ updated: 2026-07-23
 - 🔧 **[Actions Calling Actions](./actions-calling-actions-pattern.md)** - Pattern per la composizione delle azioni di logging.
 
 ## 📊 **Filament & UI**
-<<<<<<< .merge_file_H5X9U0
-- 📈 **[Filament Resources](./filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
-- 📉 **[Analytics Widgets](./dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
-- 🧭 **[Nested Resources](./filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
-
-## 🧪 **Qualità e Testing**
-- ✅ **[PHPStan Compliance](./phpstan-analysis.md)** - Report sulla stabilità Level 10.
-- 🔬 **[Testing Strategy](./testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
-- 🧹 **[PHPMD Fixes](./phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
-=======
 - 📈 **[Filament Resources](../filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
 - 📉 **[Analytics Widgets](../dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
 - 🧭 **[Nested Resources](../filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
@@ -112,7 +86,6 @@ updated: 2026-07-23
 - ✅ **[PHPStan Compliance](../phpstan-analysis.md)** - Report sulla stabilità Level 10.
 - 🔬 **[Testing Strategy](../testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
 - 🧹 **[PHPMD Fixes](../phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
->>>>>>> .merge_file_sOS8TG
 - 🧪 **PSR-4 Test Helpers** - Preferire Pest e classi anonime nei test; evitare classi helper top-level non allineate al filepath.
 
 ## 📋 **Documenti Prodotto & Sviluppo**
@@ -147,16 +120,6 @@ updated: 2026-07-23
 - 🔧 **[Actions Calling Actions](./actions-calling-actions-pattern.md)** - Pattern per la composizione delle azioni di logging.
 
 ## 📊 **Filament & UI**
-<<<<<<< .merge_file_H5X9U0
-- 📈 **[Filament Resources](./filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
-- 📉 **[Analytics Widgets](./dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
-- 🧭 **[Nested Resources](./filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
-
-## 🧪 **Qualità e Testing**
-- ✅ **[PHPStan Compliance](./phpstan-analysis.md)** - Report sulla stabilità Level 10.
-- 🔬 **[Testing Strategy](./testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
-- 🧹 **[PHPMD Fixes](./phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
-=======
 - 📈 **[Filament Resources](../filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
 - 📉 **[Analytics Widgets](../dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
 - 🧭 **[Nested Resources](../filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
@@ -165,7 +128,6 @@ updated: 2026-07-23
 - ✅ **[PHPStan Compliance](../phpstan-analysis.md)** - Report sulla stabilità Level 10.
 - 🔬 **[Testing Strategy](../testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
 - 🧹 **[PHPMD Fixes](../phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
->>>>>>> .merge_file_sOS8TG
 - 🧪 **PSR-4 Test Helpers** - Preferire Pest e classi anonime nei test; evitare classi helper top-level non allineate al filepath.
 
 ## 📋 **Documenti Prodotto & Sviluppo**
@@ -206,15 +168,9 @@ updated: 2026-07-23
 - `spatie/laravel-event-sourcing` - Event sourcing, CQRS
 
 ## 🔗 **Moduli Correlati**
-<<<<<<< .merge_file_H5X9U0
-- [Xot](../../xot/docs/readme.md) - Core framework.
-- [Tenant](../../tenant/docs/readme.md) - Isolamento dati per tenant.
-- [User](../../user/docs/readme.md) - Autenticazione e causer activity.
-=======
 - [Xot](../../../Xot/docs/README.md) - Core framework.
 - [Tenant](../../../Tenant/docs/README.md) - Isolamento dati per tenant.
-- [User](../../../User/docs/readme.md) - Autenticazione e causer activity.
->>>>>>> .merge_file_sOS8TG
+- [User](../../../User/docs/README.md) - Autenticazione e causer activity.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
@@ -252,28 +208,16 @@ app(LogActivityAction::class)->execute(
 ```
 
 ## 📦 Pacchetti Composer
-<<<<<<< .merge_file_H5X9U0
-- [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
-## 📦 Pacchetti Composer
-- [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
-=======
 - [Riferimento composer packages](../../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
 ## 📦 Pacchetti Composer
 - [Riferimento composer packages](../../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
->>>>>>> .merge_file_sOS8TG
 - `spatie/laravel-activitylog` - Audit trail
 - `spatie/laravel-event-sourcing` - Event sourcing, CQRS
 
 ## 🔗 **Moduli Correlati**
-<<<<<<< .merge_file_H5X9U0
-- [Xot](../../xot/docs/readme.md) - Core framework.
-- [Tenant](../../tenant/docs/readme.md) - Isolamento dati per tenant.
-- [User](../../user/docs/readme.md) - Autenticazione e causer activity.
-=======
 - [Xot](../../../Xot/docs/README.md) - Core framework.
 - [Tenant](../../../Tenant/docs/README.md) - Isolamento dati per tenant.
-- [User](../../../User/docs/readme.md) - Autenticazione e causer activity.
->>>>>>> .merge_file_sOS8TG
+- [User](../../../User/docs/README.md) - Autenticazione e causer activity.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
@@ -295,13 +239,8 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 
 ### 🔗 Related Modules
 
-<<<<<<< .merge_file_H5X9U0
-- [Xot](../../Xot/docs/README.md) - Core framework
-- [User](../../User/docs/README.md) - User authentication
-=======
 - [Xot](../../../Xot/docs/README.md) - Core framework
 - [User](../../../User/docs/README.md) - User authentication
->>>>>>> .merge_file_sOS8TG
 
 ## 📈 Module Statistics
 
@@ -362,13 +301,8 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 
 ### 🔗 Related Modules
 
-<<<<<<< .merge_file_H5X9U0
-- [Xot](../../Xot/docs/README.md) - Core framework
-- [User](../../User/docs/README.md) - User authentication
-=======
 - [Xot](../../../Xot/docs/README.md) - Core framework
 - [User](../../../User/docs/README.md) - User authentication
->>>>>>> .merge_file_sOS8TG
 
 ## 📈 Module Statistics
 
@@ -383,11 +317,7 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 
 ## Dependency Intelligence
 
-<<<<<<< .merge_file_H5X9U0
-- [Dependency intelligence](dependency-intelligence.md)
-=======
 - [Dependency intelligence](../dependency-intelligence.md)
->>>>>>> .merge_file_sOS8TG
 
 ## Regola Operativa Obbligatoria
 

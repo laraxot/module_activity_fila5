@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_XvJUx8
-=======
 ---
 title: "PRD - Activity Module"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "prd - activity module activity"
 ---
->>>>>>> .merge_file_1Uh9cC
 # PRD - Activity Module
 
 ## 1. Executive Summary

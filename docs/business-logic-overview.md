@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_1GQhbm
-=======
 ---
 title: "Activity Module - Business Logic Overview"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - business logic overview activity"
 ---
->>>>>>> .merge_file_O76dji
 # Activity Module - Business Logic Overview
 
 ## Core Business Logic Components

@@ -13,10 +13,7 @@ related:
   - ../concepts/phpstan-pest-discipline.md
   - ../concepts/activity-log-single-migration-contract.md
   - ../../../Xot/docs/wiki/overviews/platform-completion-roadmap.md
-<<<<<<< .merge_file_uZrBWN
-=======
 status: draft
->>>>>>> .merge_file_hjtkkf
 ---
 
 # Activity — stato completamento

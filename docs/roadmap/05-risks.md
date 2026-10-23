@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_P23fk4
-=======
 ---
 title: "Risks - Activity"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, roadmap]
 qmd: "risks - activity activity"
 ---
->>>>>>> .merge_file_l2MyGN
 # Risks - Activity
 
 ## Top Risks

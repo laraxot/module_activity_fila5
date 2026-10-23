@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_G0cyab
-=======
 ---
 title: "Modulo Activity - Logging e Event Sourcing"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "modulo activity - logging e event sourcing activity"
 ---
->>>>>>> .merge_file_aBAdVn
 # Modulo Activity - Logging e Event Sourcing
 
 ## Scopo Principale

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_5P9xZy
-=======
 ---
 title: "Activity Module - Optimization Analysis"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - optimization analysis activity"
 ---
->>>>>>> .merge_file_n4hhdB
 # 📊 Activity Module - Optimization Analysis
 
 ## 🎯 Current Status

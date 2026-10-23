@@ -1,14 +1,11 @@
 ---
 title: Epics
 module: Activity
-<<<<<<< .merge_file_t95ieL
-=======
 type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, activity, bmad]
 qmd: "epics e user stories - modulo activity activity"
->>>>>>> .merge_file_f5bH7J
 ---
 
 # Epics e User Stories - Modulo Activity

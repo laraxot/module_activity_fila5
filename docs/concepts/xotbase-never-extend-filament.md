@@ -7,24 +7,14 @@ created: 2026-07-16
 updated: 2026-07-16
 qmd: "Activity filament never extend Filament class XotBase mirror path"
 related:
-<<<<<<< .merge_file_wwiKdP
-  - ../../../../docs/wiki/rules/xotbase-critical-rules.md
-  - ../../../../docs/wiki/rules/xot-base-filament-widgets.md
-  - ../../../../docs/wiki/memories/xotbase-never-extend-filament.md
-=======
   - ../../../../../docs/wiki/rules/xotbase-critical-rules.md
   - ../../../../../docs/wiki/rules/xot-base-filament-widgets.md
   - ../../../../../docs/wiki/memories/xotbase-never-extend-filament.md
->>>>>>> .merge_file_rf6WIu
 ---
 
 # Mai `Filament\*` — sempre `Modules\Xot\Filament\...\XotBase*`
 
-<<<<<<< .merge_file_wwiKdP
-Bridge on-demand. Contenuto canonico: [docs/wiki/rules/xotbase-critical-rules.md](../../../../docs/wiki/rules/xotbase-critical-rules.md).
-=======
 Bridge on-demand. Contenuto canonico: [docs/wiki/rules/xotbase-critical-rules.md](../../../../../docs/wiki/rules/xotbase-critical-rules.md).
->>>>>>> .merge_file_rf6WIu
 
 ## Zen (riassunto)
 

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_iWAo00
-=======
 ---
 title: "ListLogActivities UI/UX Improvements - 2025-12-04"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "listlogactivities ui/ux improvements - 2025-12-04 activity"
 ---
->>>>>>> .merge_file_b5OVu1
 # ListLogActivities UI/UX Improvements - 2025-12-04
 
 ## Data Intervento: 2025-12-04

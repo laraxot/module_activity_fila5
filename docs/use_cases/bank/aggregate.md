@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_uuPTYR
-=======
 ---
 title: "Aggregate in Larabank"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "aggregate in larabank activity"
 ---
->>>>>>> .merge_file_cBi6hF
 # Aggregate in Larabank
 
 ## Introduzione

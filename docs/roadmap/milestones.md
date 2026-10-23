@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_Nq9vsT
-=======
 ---
 title: "Milestones - Activity"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, roadmap]
 qmd: "milestones - activity activity"
 ---
->>>>>>> .merge_file_d668b5
 # Milestones - Activity
 
 ## M1 Documentation Baseline

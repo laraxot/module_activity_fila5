@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_LkeAJZ
-=======
 ---
 title: "Fix: ActivityFactory subject_id deve usare UUID"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, errori]
 qmd: "fix: activityfactory subject_id deve usare uuid activity"
 ---
->>>>>>> .merge_file_Dz7zAA
 # Fix: ActivityFactory subject_id deve usare UUID
 
 ## Problema

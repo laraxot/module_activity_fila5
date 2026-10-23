@@ -2,15 +2,12 @@
 module: theme
 topic: aws_test_vs_database_connection
 canonical: ../../../Themes/docs/shared-components/aws-test-vs-database-connection.md
-<<<<<<< .merge_file_0DMUvl
-=======
 title: "aws test vs database connection"
 type: note
 status: stub
 updated: 2026-10-08
 tags: [docs, activity]
 qmd: "aws test vs database connection activity"
->>>>>>> .merge_file_Jwzw3y
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/aws-test-vs-database-connection.md# AWS Test Bugfix vs Database Connection Configuration

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_lQbejv
-=======
 ---
 title: "Activity Module - Product Strategy"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - product strategy activity"
 ---
->>>>>>> .merge_file_9i5uTJ
 # Activity Module - Product Strategy
 
 **Module:** Activity  

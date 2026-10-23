@@ -15,11 +15,7 @@ related:
   - ./activity-domain-focus.md
   - ../../../../Xot/docs/wiki/concepts/composer-root-skeleton-modular.md
   - ../../../../../../docs/wiki/concepts/composer-root-minimal-nwidart.md
-<<<<<<< .merge_file_qA3Sjv
-  - ../../composer.json
-=======
   - ../../../composer.json
->>>>>>> .merge_file_8VwT7O
 ---
 
 # Package ownership — Activity

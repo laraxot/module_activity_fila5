@@ -1,14 +1,11 @@
 ---
 title: Anti patterns
 module: Activity
-<<<<<<< .merge_file_za76PT
-=======
 type: note
 status: draft
 updated: 2026-10-08
 tags: [docs, activity, wiki]
 qmd: "anti-patterns in activity module activity"
->>>>>>> .merge_file_Qz1oDf
 ---
 
 # Anti-patterns in Activity Module

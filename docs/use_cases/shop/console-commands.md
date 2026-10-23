@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_nldGLl
-=======
 ---
 title: "Guida Completa ai Console Commands per il Modulo Shop"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "guida completa ai console commands per il modulo shop activity"
 ---
->>>>>>> .merge_file_fRA9Oy
 # Guida Completa ai Console Commands per il Modulo Shop
 
 ## Indice

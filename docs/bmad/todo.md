@@ -1,14 +1,11 @@
 ---
 title: Todo
 module: Activity
-<<<<<<< .merge_file_Q8afER
-=======
 type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, activity, bmad]
 qmd: "activity module documentation consolidation todo activity"
->>>>>>> .merge_file_ecv7G6
 ---
 
 # Activity Module Documentation Consolidation TODO
