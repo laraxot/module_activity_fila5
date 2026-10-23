@@ -4,12 +4,9 @@ type: reference
 updated: 2026-05-21
 related:
   - "../../../Media/docs/html2pdf/laravel.md"
-<<<<<<< .merge_file_rYwsV1
-=======
 status: draft
 tags: [docs, activity, html2pdf]
 qmd: "html2pdf   laravel activity"
->>>>>>> .merge_file_1l1OB9
 ---
 
 # Html2Pdf — laravel

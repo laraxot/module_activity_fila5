@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_Mox8jn
-=======
 ---
 title: "PHPStan Complete Fixes 2025 - Activity Module"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "phpstan complete fixes 2025 - activity module activity"
 ---
->>>>>>> .merge_file_gKLRON
 # PHPStan Complete Fixes 2025 - Activity Module
 
 **Data**: 2025-01-27

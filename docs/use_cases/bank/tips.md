@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_ctUZHP
-=======
 ---
 title: "Consigli e Best Practice - Use Case Bancario"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "consigli e best practice - use case bancario activity"
 ---
->>>>>>> .merge_file_p7rAlO
 # Consigli e Best Practice - Use Case Bancario
 
 ## Refactoring e Miglioramenti

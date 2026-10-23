@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_gcqtE5
-=======
 ---
 title: "Upgrade Laravel 13 - Activity"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "upgrade laravel 13 - activity activity"
 ---
->>>>>>> .merge_file_zTYdI5
 # Upgrade Laravel 13 - Activity 🐄✨
 
 ## 🎯 Visione Architetturale

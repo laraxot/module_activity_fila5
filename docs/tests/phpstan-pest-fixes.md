@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_gxQLjL
-=======
 ---
 title: "Risoluzione Errori PHPStan nei Test Pest del Modulo Activity"
 type: note
@@ -8,20 +6,16 @@ updated: 2026-10-20
 tags: [docs, activity, tests]
 qmd: "risoluzione errori phpstan nei test pest del modulo activity activity"
 ---
->>>>>>> .merge_file_ra75G2
 # Risoluzione Errori PHPStan nei Test Pest del Modulo Activity
 
 ## Contesto
 
 Questa documentazione descrive il processo di risoluzione degli errori di analisi statica di PHPStan riscontrati nei test Pest del modulo `Activity`. Gli errori principali erano relativi a funzioni globali (`actingAs`, `livewire`) non trovate e a proprietà (`$this->user`) non definite nel contesto delle closure di Pest. La risoluzione è stata guidata dai principi della metodologia "Super Mucca" di `DRY`, `KISS`, `SOLID`, `Robust` e dalla necessità di una compliance PHPStan `livello 10` senza ignorare errori o modificare file di configurazione globali (`phpstan.neon`).
 
-<<<<<<< .merge_file_gxQLjL
-=======
 ## Stato al 2026-10-20
 
 Le sezioni 3 e 4 descrivono un passaggio intermedio e oggi non valgono: `tests/TestCase.php` non dichiara `$user` (ha `$page`, `$activityData`, `$storedEventData`, `$snapshotData`) e i test di `ListLogActivitiesAction` non usano il PHPDoc `@var TestCase $this`. `tests/PestStubs.php` esiste ma non e' in `autoload-dev.files` di `composer.json`: PHPStan lo legge perche' sta in `Modules/`, Pest no. Il punto 5 (nessun riferimento a `IndennitaResponsabilita`) e' stato violato dal pull del 2026-10-20 e ripristinato: vedi [stories/phpstan-test-wave-activity.story.md](../stories/phpstan-test-wave-activity.story.md) e [testcase.md](../testcase.md).
 
->>>>>>> .merge_file_ra75G2
 ## Problemi Identificati
 
 1.  **`function.notFound` per `Pest\Laravel` e `livewire`**: PHPStan non riconosceva le funzioni globali fornite dai plugin Pest Laravel e Livewire.
@@ -94,13 +88,10 @@ Il test `ListLogActivitiesActionTest.php` faceva riferimento a un modulo `Indenn
 -   **Migliore Leggibilità dei Test**: La dichiarazione esplicita del contesto `$this` migliora la comprensione del codice del test.
 -   **Scalabilità**: Questo pattern può essere replicato in altri moduli per risolvere problemi simili nei test Pest.
 
-<<<<<<< .merge_file_gxQLjL
-=======
 ## Test unitari BusinessLogic (PHPUnit Assert)
 
-I file `tests/Unit/Models/*BusinessLogicTest.php` del modulo Activity usano classi PHPUnit (`PHPUnit\Framework\TestCase` + `Assert::assert*`) invece di closure Pest/`expect()`. Motivo: PHPStan livello massimo segnala errori interni e asserzioni ridondanti sulle higher-order expectation Pest; i test restano **purpose-first** (connessione, fillable, query builder pubblici) senza `@phpstan-ignore` e senza toccare `phpstan.neon`.
+I file `tests/Unit/Models/*BusinessLogicTest.php` del modulo Activity sono classi `final` che estendono `Modules\Activity\Tests\TestCase` e usano `PHPUnit\Framework\Assert::assert*` invece di closure Pest/`expect()`. Motivo: PHPStan livello massimo segnala errori interni e asserzioni ridondanti sulle higher-order expectation Pest; i test restano **purpose-first** (connessione, fillable, query builder pubblici) senza `@phpstan-ignore` e senza toccare `phpstan.neon`.
 
->>>>>>> .merge_file_ra75G2
 ## Lezioni Apprese
 
 -   La gestione dei tipi virtuali di PHPStan come `view-string` o il contesto dinamico di Pest richiede un'attenta configurazione di stub e PHPDoc, anche se le dipendenze sono installate.
@@ -109,14 +100,8 @@ I file `tests/Unit/Models/*BusinessLogicTest.php` del modulo Activity usano clas
 
 ## Collegamenti Utili
 
-<<<<<<< .merge_file_gxQLjL
--   [PestStubs.php Source Code](./PestStubs.php)
--   [ListLogActivitiesActionTest.php Source Code](../Feature/Filament/Actions/ListLogActivitiesActionTest.php)
--   [TestCase.php Source Code](../TestCase.php)
-=======
 -   [PestStubs.php Source Code](../../tests/PestStubs.php)
 -   [ListLogActivitiesActionTest.php Source Code](../../tests/Feature/Filament/Actions/ListLogActivitiesActionTest.php)
 -   [TestCase.php Source Code](../../tests/TestCase.php)
->>>>>>> .merge_file_ra75G2
 -   [Modules/Xot/composer.json Source Code](../../../Xot/composer.json)
 -   [Modules/Activity/composer.json Source Code](../../composer.json)

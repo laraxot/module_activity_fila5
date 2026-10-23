@@ -6,13 +6,10 @@ tags:
   - conventions
   - llm-instructions
 created: 2026-04-15
-<<<<<<< .merge_file_Slpap8
-=======
 type: note
 status: draft
 updated: 2026-10-07
 qmd: "wiki schema - activity activity"
->>>>>>> .merge_file_3S0sGk
 ---
 
 # Wiki Schema - Activity

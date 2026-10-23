@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_yQIDgK
-=======
 ---
 title: "phpinsights errors"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "phpinsights errors activity"
 ---
->>>>>>> .merge_file_pYtOYH
 
 
 

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_IFoVlm
-=======
 ---
 title: "Checklist qualità - Activity Module"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, roadmap]
 qmd: "checklist qualità - activity module activity"
 ---
->>>>>>> .merge_file_qog5qw
 # Checklist qualità - Activity Module
 
 - [x] PHPStan Level 10

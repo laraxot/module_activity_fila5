@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_BX57dH
-=======
 ---
 title: "Filament v4 Upgrade Documentation"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, activity, filament]
 qmd: "filament v4 upgrade documentation activity"
 ---
->>>>>>> .merge_file_rxZvlW
 # Filament v4 Upgrade Documentation
 
 ## Overview

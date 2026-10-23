@@ -5,10 +5,7 @@ tags: [activity, best-practices, dry, kiss]
 created: 2026-06-10
 updated: 2026-06-10
 qmd: self
-<<<<<<< .merge_file_AIWAmr
-=======
 status: draft
->>>>>>> .merge_file_XPex1R
 ---
 
 # Best Practices – Activity

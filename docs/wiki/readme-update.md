@@ -38,13 +38,8 @@ test('snapshot test', function () {
 ```
 
 **Documentazione**:
-<<<<<<< .merge_file_pXXAGF
-- [No RefreshDatabase Policy](./testing/no-refresh-database-policy.md)
-- [Snapshot Testing Patterns](./testing/snapshot-testing-patterns.md)
-=======
 - [No RefreshDatabase Policy](../testing/no-refresh-database-policy.md)
 - [Snapshot Testing Patterns](../testing/snapshot-testing-patterns.md)
->>>>>>> .merge_file_SB4lL5
 - [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)
 - [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)
 - [Xot Testing Strategy](../../xot/docs/testing-strategy.md)

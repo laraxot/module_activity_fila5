@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_2r46On
-=======
 ---
 title: "Activity Module - Errori Test e Configurazione"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, activity]
 qmd: "activity module - errori test e configurazione activity"
 ---
->>>>>>> .merge_file_mGGpAc
 # Activity Module - Errori Test e Configurazione
 
 ## Sommario

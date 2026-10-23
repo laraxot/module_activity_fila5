@@ -4,12 +4,9 @@ type: reference
 updated: 2026-05-21
 related:
   - "../../../Media/docs/html2pdf/index.md"
-<<<<<<< .merge_file_wjzFD8
-=======
 status: draft
 tags: [docs, activity, html2pdf]
 qmd: "html2pdf   index activity"
->>>>>>> .merge_file_aJHtto
 ---
 
 # Html2Pdf — index

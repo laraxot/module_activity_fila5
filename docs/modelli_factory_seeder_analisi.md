@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_l5pFJq
-=======
 ---
 title: "Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, SaluteMo, Xot"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "analisi modelli, factory e seeder - moduli activity, gdpr, tenant, ui, salutemo, xot activity"
 ---
->>>>>>> .merge_file_4ukdfB
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, SaluteMo, Xot
 
 ## Modulo Activity

@@ -1,10 +1,3 @@
-<<<<<<< .merge_file_JUeDdA
-# Architecture Documentation
-## Activity Module Architecture
-
-### System Overview
-
-=======
 ---
 title: "Activity: architettura (diagramma non allineato al codice)"
 type: reference
@@ -15,14 +8,13 @@ tags: [activity, architecture, stale]
 qmd: "activity architettura diagramma repositories services projections stale"
 ---
 
-> Nota 2026-10-14 (docs-audit): il diagramma elenca Repositories, Services, Commands e Projections che non esistono in `app/` (cartelle reali: Actions, Adapters, Console, Contracts, Datas, Enums, Events, Exceptions, Filament, Http, Listeners, Models, Providers, Support, Traits, View). Il modulo non ha un layer Services (regola no-services). Fonte corretta: [README.md](./README.md) e [wiki/concepts/queueable-action-execute-entrypoint.md](./wiki/concepts/queueable-action-execute-entrypoint.md). Contenuto non riscritto, verificare prima di usarlo.
+> Nota 2026-10-14 (docs-audit): il diagramma elenca Repositories, Services, Commands e Projections che non esistono in `app/` (cartelle reali: Actions, Adapters, Console, Contracts, Datas, Enums, Events, Exceptions, Filament, Http, Listeners, Models, Providers, Traits, View; `Support` assente, riverificato 2026-10-23). Il modulo non ha un layer Services (regola no-services). Fonte corretta: [README.md](./README.md) e [wiki/concepts/queueable-action-execute-entrypoint.md](./wiki/concepts/queueable-action-execute-entrypoint.md). Contenuto non riscritto, verificare prima di usarlo.
 
 # Architecture Documentation
 ## Activity Module Architecture
 
 ### System Overview
 
->>>>>>> .merge_file_mzLGCt
 The Activity module provides a comprehensive activity logging and event sourcing system for the Laraxot ecosystem. This document describes the module's architecture, components, and design patterns.
 
 ### Core Components
@@ -217,13 +209,7 @@ class ActivityPolicy
 
 ### Related Documentation
 
-- [Security](SECURITY.md)
-<<<<<<< .merge_file_JUeDdA
-- [Quality](QUALITY.md)
-- [Performance](PERFORMANCE.md)
-=======
+- [Security](security.md)
 - [Quality](roadmap/quality.md)
 - [Performance](PERFORMANCE.md) _(target mancante, verificato 2026-10-14)_
->>>>>>> .merge_file_mzLGCt
-- [Testing](TESTING.md)=======
-- [Testing](TESTING.md)
+- [Testing](testing.md)
