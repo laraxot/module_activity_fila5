@@ -30,7 +30,7 @@ riferimento primario; tutte le varianti restano elencate in fondo, sezione
 
 ## Architettura, dominio e Actions
 
-- [architecture.md](architecture.md) — architettura generale del modulo.
+- [architecture.md](ARCHITECTURE.md) — architettura generale del modulo.
 - [architecture/structure.md](architecture/structure.md) — organizzazione interna dettagliata.
 - [structure.md](structure.md) — nota: contenuto quasi identico a `architecture/structure.md` (stesso titolo "Modulo Activity", 414 vs 413 righe); vedi Storico.
 - [architecture-rules.md](architecture-rules.md) — puntatore alle regole architetturali generali.
@@ -91,8 +91,8 @@ riferimento primario; tutte le varianti restano elencate in fondo, sezione
 - [filament/errors/label-usage-error.md](filament/errors/label-usage-error.md) — mai usare `->label()` nei componenti Filament.
 - [filament/errors/static-instance-method-incompatibility.md](filament/errors/static-instance-method-incompatibility.md) — incompatibilita' metodi statici/istanza in Filament.
 - [bugfix-filament-facade-namespace.md](bugfix-filament-facade-namespace.md) — bugfix namespace facade Filament.
-- [bugfix-getTablePage-mixed-return.md](bugfix-getTablePage-mixed-return.md) — bugfix `getTablePage()` ritorna `mixed` (PHPStan).
-- [bugfix-getUrl-signature-mismatch.md](bugfix-getUrl-signature-mismatch.md) — bugfix signature `getUrl()` + drift enum/colonne.
+- [bugfix-getTablePage-mixed-return.md](bugfix-gettablepage-mixed-return.md) — bugfix `getTablePage()` ritorna `mixed` (PHPStan).
+- [bugfix-getUrl-signature-mismatch.md](bugfix-geturl-signature-mismatch.md) — bugfix signature `getUrl()` + drift enum/colonne.
 - [filament/filament-v4-icon-size-fix.md](filament/filament-v4-icon-size-fix.md) — fix dimensione icone Filament v4 (versione piu' estesa 138 righe; varianti in Storico).
 - [filament/filament-v4-upgrade-documentation.md](filament/filament-v4-upgrade-documentation.md) — upgrade Filament v4 (varianti in Storico).
 - [filament/archive/filament-v4-icon-size-fix.md](filament/archive/filament-v4-icon-size-fix.md), [filament/archive/filament-v4-upgrade.md](filament/archive/filament-v4-upgrade.md) — copie archiviate degli stessi documenti (vedi Storico).

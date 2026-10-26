@@ -1,3 +1,11 @@
+---
+title: "Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-20
+tags: [docs, activity, architecture]
+qmd: "modulo activity activity"
+---
 # Modulo Activity
 
 Data: 2025-04-23 19:09:55

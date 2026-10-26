@@ -1,10 +1,11 @@
 ---
 title: "Filament v4 Upgrade Documentation"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, activity, filament]
 qmd: "filament v4 upgrade documentation activity"
+status: superseded
+superseded_by: ../filament_v4_upgrade.md
 ---
 # Filament v4 Upgrade Documentation
 

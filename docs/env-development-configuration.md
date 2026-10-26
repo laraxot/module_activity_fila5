@@ -241,7 +241,7 @@ DB_PORT=3306
 DB_DATABASE=Quaeris_data
 DB_DATABASE=healthcare_app_data
 DB_USERNAME=marco
-DB_PASSWORD=marco
+DB_PASSWORD=[segreto locale, non nel repo]
 ```
 
 ### 2. Cache e Queue

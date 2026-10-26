@@ -10,6 +10,7 @@ issues:
   - "https://github.com/laraxot/base_ptv_fila5/issues/328"
 discussions:
   - "https://github.com/laraxot/base_ptv_fila5/discussions/329"
+status: draft
 ---
 
 # Activity Module - concepts Index

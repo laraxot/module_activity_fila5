@@ -1,3 +1,11 @@
+---
+title: "Activity Module - commands Index"
+type: index
+status: draft
+updated: 2026-10-15
+tags: [docs, activity, wiki]
+qmd: "activity module - commands index activity"
+---
 # Activity Module - commands Index
 
 ## Purpose

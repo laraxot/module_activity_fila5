@@ -1,3 +1,11 @@
+---
+title: "Use Case: Tracking Email Sent - Schede Valutazione"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, use-cases]
+qmd: "use case: tracking email sent - schede valutazione activity"
+---
 # Use Case: Tracking Email Sent - Schede Valutazione
 
 ## 📋 Overview

@@ -2,6 +2,10 @@
 title: 00 index
 module: Activity
 status: stale
+type: index
+updated: 2026-10-23
+tags: [docs, activity, wiki]
+qmd: "**indice documentazione modulo activity** activity"
 ---
 
 > Nota 2026-10-14 (docs-audit): Copia dell'indice radice (varianti di sola maiuscola) con link relativi non validi da wiki/ e riferimenti a pagine inesistenti; l'indice per argomento e' ../index.md, quello della wiki e' index.md (`../00-INDEX.md` e `INDEX.md` sono stati rimossi il 2026-10-22, commit `7e2a1509`). Contenuto non riscritto, verificare prima di usarlo.

@@ -1,3 +1,11 @@
+---
+title: "Filament Actions nel Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity]
+qmd: "filament actions nel modulo activity activity"
+---
 # Filament Actions nel Modulo Activity
 
 ## Panoramica
