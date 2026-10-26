@@ -1,3 +1,11 @@
+---
+title: "Activity Charts - Filament Widget Integration"
+type: index
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, charts]
+qmd: "activity charts - filament widget integration activity"
+---
 # 📊 Activity Charts - Filament Widget Integration
 
 [![Module](https://img.shields.io/badge/Module-📊 Activity Charts - Filament Widget Integration-8B0000.svg)]()

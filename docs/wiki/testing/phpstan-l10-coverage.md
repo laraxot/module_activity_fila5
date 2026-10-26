@@ -2,10 +2,11 @@
 title: Phpstan l10 coverage
 module: Activity
 type: note
-status: draft
 updated: 2026-10-08
 tags: [docs, activity, wiki]
 qmd: "phpstan level 10 compliance - activity module activity"
+status: superseded
+superseded_by: ../../phpstan-l10-coverage.md
 ---
 
 # PHPStan Level 10 Compliance - Activity Module

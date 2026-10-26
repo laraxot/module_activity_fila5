@@ -1,3 +1,11 @@
+---
+title: "Errore: No hint path defined for [activity]"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, errori]
+qmd: "errore: no hint path defined for [activity] activity"
+---
 # Errore: No hint path defined for [activity]
 
 ## Descrizione dell'Errore

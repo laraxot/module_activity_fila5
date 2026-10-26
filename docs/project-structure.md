@@ -4,6 +4,8 @@ type: documentation
 created: 2026-05-11
 updated: 2026-05-11
 tags: [structure, architecture, module]
+status: draft
+qmd: "project structure   module **activity** activity"
 ---
 
 # Project Structure — Module **Activity**

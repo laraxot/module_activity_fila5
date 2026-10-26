@@ -4,6 +4,8 @@ type: report
 module: Activity
 updated: 2026-09-01
 qmd: "cosa migliorare activity phpstan phpmd phpinsights coverage debito priorita"
+status: draft
+tags: [docs, activity]
 ---
 
 # Cosa migliorare — modulo Activity

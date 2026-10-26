@@ -124,7 +124,7 @@ Ogni file modificato verificato con:
 
 - [Activity Module Overview](./README.md)
 - [Guida PHPStan Level 10](../../../docs/phpstan-level10-achievement.md)
-- [Activity Module Overview](./readme.md)
+- [Activity Module Overview](./README.md)
 
 ---
 

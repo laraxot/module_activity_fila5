@@ -1,3 +1,11 @@
+---
+title: "Fix: subject_id e causer_id devono supportare UUID"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, errori]
+qmd: "fix: subject_id e causer_id devono supportare uuid activity"
+---
 # Fix: subject_id e causer_id devono supportare UUID
 
 ## Problema

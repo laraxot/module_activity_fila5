@@ -1,10 +1,11 @@
 ---
 title: "event sourcing comprehensive guide"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, activity, guides]
 qmd: "event sourcing comprehensive guide activity"
+status: superseded
+superseded_by: event-sourcing.md
 ---
 # event sourcing comprehensive guide
 

@@ -8,6 +8,7 @@ updated: 2026-10-21
 tags: [phpstan, quality, source-first, seeder]
 related:
   - ./phpstan-modules-story-analyse-fix-fleet.story.md
+qmd: "activitymassseeder   fix alla sorgente (19 errori method.nonobject) activity"
 ---
 
 # ActivityMassSeeder — fix alla sorgente (19 errori method.nonObject)
