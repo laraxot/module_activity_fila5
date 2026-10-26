@@ -1,6 +1,11 @@
 ---
 title: Readme update
 module: Activity
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, wiki]
+qmd: "aggiornamento readme activity - sezione testing activity"
 ---
 
 # Aggiornamento README Activity - Sezione Testing

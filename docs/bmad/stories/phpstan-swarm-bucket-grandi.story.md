@@ -11,6 +11,8 @@ qmd: "activity phpstan variable.unused alreadyNarrowedType nullCoalesce swarm bu
 related:
   - ./phpstan-swarm-cluster5.story.md
   - ./quality-gates-phpstan-swarm.story.md
+type: story
+tags: [docs, activity, bmad]
 ---
 
 # Activity — PHPStan swarm (bucket grandi)

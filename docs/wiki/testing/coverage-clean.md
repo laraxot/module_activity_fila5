@@ -2,10 +2,11 @@
 title: Coverage clean
 module: Activity
 type: note
-status: draft
 updated: 2026-10-08
 tags: [docs, activity, wiki]
 qmd: "coverage clean activity"
+status: superseded
+superseded_by: ../../coverage-clean.md
 ---
 
   Activity/app/Actions/ActivityLogger ................................... 0.0%  

@@ -8,6 +8,7 @@ qmd: "Activity module no Support RedactModelAttributes IsActivityLogSchemaWritab
 related:
   - ../../../../../../docs/second-brain/process/no-app-support-queueable-actions.md
   - ../../../../../../bashscripts/ai/wiki/concepts/no-app-support-monorepo-migration.md
+status: draft
 ---
 
 # Activity — `app/Support/` eliminato
