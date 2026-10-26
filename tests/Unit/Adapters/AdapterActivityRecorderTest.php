@@ -9,7 +9,10 @@ use Modules\Activity\Actions\Query\GetSubjectActivityLogAction;
 use Modules\Activity\Actions\RecordSubjectActivityAction;
 use Modules\Activity\Adapters\ActivityRecorder;
 use Modules\Activity\Models\Activity;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 afterEach(function (): void {
     Mockery::close();
