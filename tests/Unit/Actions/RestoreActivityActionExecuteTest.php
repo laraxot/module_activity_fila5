@@ -9,7 +9,10 @@ use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Tests\Fixtures\RestoreActivityEmptyModel;
 use Modules\Activity\Tests\Fixtures\RestoreActivityFailingUpdateModel;
 use Modules\Activity\Tests\Fixtures\RestoreActivityRecordingModel;
+use Modules\Activity\Tests\TestCase;
 use Webmozart\Assert\InvalidArgumentException as AssertInvalidArgumentException;
+
+uses(TestCase::class);
 
 test('RestoreActivityAction aggiorna il record con le vecchie proprietà', function (): void {
     $model = new RestoreActivityRecordingModel;
