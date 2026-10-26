@@ -1,10 +1,11 @@
 ---
 title: "Linee Guida API Bank (Event Sourcing)"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "linee guida api bank (event sourcing) activity"
+status: superseded
+superseded_by: api.md
 ---
 # Linee Guida API Bank (Event Sourcing)
 

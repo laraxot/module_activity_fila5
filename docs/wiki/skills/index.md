@@ -4,6 +4,8 @@ type: "index"
 tags: [skills, activity, filament, xotbase, phpstan, pest]
 module: "Activity"
 updated: 2026-06-10
+status: draft
+qmd: "skills   activity module wiki activity"
 ---
 
 # Skills — Activity Module Wiki

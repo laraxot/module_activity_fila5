@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Roadmap"
+type: index
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, roadmap]
+qmd: "activity module - roadmap activity"
+---
 # Activity Module - Roadmap
 
 [![Module](https://img.shields.io/badge/Module-Activity Module - Roadmap-8B0000.svg)]()

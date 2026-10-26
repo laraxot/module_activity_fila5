@@ -1,3 +1,11 @@
+---
+title: "Policy: MAI Usare RefreshDatabase nei Test"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, testing]
+qmd: "policy: mai usare refreshdatabase nei test activity"
+---
 # Policy: MAI Usare RefreshDatabase nei Test
 
 ## Regola Fondamentale

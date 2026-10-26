@@ -1,10 +1,11 @@
 ---
 title: "Glossario Shop Event Sourced"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "glossario shop event sourced activity"
+status: superseded
+superseded_by: glossario.md
 ---
 # Glossario Shop Event Sourced
 

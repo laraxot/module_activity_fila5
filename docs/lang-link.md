@@ -1,3 +1,11 @@
+---
+title: "Collegamento alle Traduzioni del Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity]
+qmd: "collegamento alle traduzioni del modulo activity activity"
+---
 # Collegamento alle Traduzioni del Modulo Activity
 
 
