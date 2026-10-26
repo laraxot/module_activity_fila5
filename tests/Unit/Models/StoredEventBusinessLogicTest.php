@@ -12,6 +12,8 @@ use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder;
 
 use function Safe\class_uses;
 
+uses(TestCase::class);
+
 /**
  * Verifica il contratto pubblico del model StoredEvent (persistenza eventi).
  */

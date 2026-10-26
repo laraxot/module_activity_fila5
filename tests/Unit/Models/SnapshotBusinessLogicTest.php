@@ -13,6 +13,8 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
 
 use function Safe\class_uses;
 
+uses(TestCase::class);
+
 /**
  * Verifica il contratto pubblico del model Snapshot per event sourcing.
  */
