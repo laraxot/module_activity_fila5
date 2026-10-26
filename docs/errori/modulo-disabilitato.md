@@ -321,7 +321,7 @@ Se `module:enable Activity` non funziona:
 
 ### Documentazione Correlata
 - [No Hint Path Defined - Guida Completa](./no-hint-path-defined.md)
-- [Activity Module - README](../readme.md)
+- [Activity Module - README](../README.md)
 - [Service Provider Architecture](../../xot/docs/service-provider-architecture.md)
 
 ### Issue Simili

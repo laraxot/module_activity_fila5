@@ -1,6 +1,11 @@
 ---
 title: 00 index
 module: Activity
+type: index
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, bmad]
+qmd: "**indice documentazione modulo activity** activity"
 ---
 
 # 📚 **Indice Documentazione Modulo Activity**

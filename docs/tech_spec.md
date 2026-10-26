@@ -4,8 +4,9 @@ type: technical_spec
 tags: [tech spec, activity, audit]
 created: 2026-08-04
 updated: 2026-08-04
-status: draft
 qmd: "technical specification - activity module activity"
+status: superseded
+superseded_by: tech-spec.md
 ---
 # Technical Specification - Activity Module
 

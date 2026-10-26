@@ -1,10 +1,11 @@
 ---
 title: "Analisi Approfondita: laravel-shop-main"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "analisi approfondita: laravel-shop-main activity"
+status: superseded
+superseded_by: analisi-laravel-shop-main.md
 ---
 # Analisi Approfondita: laravel-shop-main
 

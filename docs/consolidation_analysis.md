@@ -1,11 +1,12 @@
 ---
 title: Root .md Consolidation Analysis — Activity Module
 date: 2026-08-18
-status: analysis
 type: note
 updated: 2026-10-07
 tags: [docs, activity]
 qmd: "consolidation analysis   activity module activity"
+status: superseded
+superseded_by: consolidation-analysis.md
 ---
 
 # Consolidation Analysis — Activity Module

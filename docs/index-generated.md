@@ -1,3 +1,11 @@
+---
+title: "Activity Module Documentation Index"
+type: note
+status: draft
+updated: 2026-10-20
+tags: [docs, activity]
+qmd: "activity module documentation index activity"
+---
 # Activity Module Documentation Index
 
 **Stats**: 698 files | 20 categories | Last update: 2026-07-28 10:45

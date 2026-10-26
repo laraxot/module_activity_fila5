@@ -42,7 +42,7 @@ cross-tenant per comodita admin.
 
 ## PHPStan
 
-Filament e test del modulo passano da `laravel/phpstan.neon` solo; ogni turn non banale riallinea verso `analyse Modules` a zero senza conferma. Memoria: [phpstan-modules-zero-standing-order](../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md).
+Filament e test del modulo passano da `laravel/phpstan.neon` solo; ogni turn non banale riallinea verso `analyse Modules` a zero senza conferma. Memoria: [phpstan-modules-zero-standing-order](../../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md).
 
 ## Related
 
