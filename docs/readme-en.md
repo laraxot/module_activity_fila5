@@ -1,3 +1,11 @@
+---
+title: "Activity — English presentation"
+type: note
+status: draft
+updated: 2026-10-20
+tags: [docs, activity]
+qmd: "activity   english presentation activity"
+---
 # 📋 Activity — English presentation
 
 [![Domain-Audit](https://img.shields.io/badge/Domain-Activity%20Log-455A64.svg)](#)

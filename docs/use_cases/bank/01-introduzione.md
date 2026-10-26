@@ -1,10 +1,11 @@
 ---
 title: "Introduzione al Use Case Bank (Event Sourcing)"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "introduzione al use case bank (event sourcing) activity"
+status: superseded
+superseded_by: introduzione.md
 ---
 # Introduzione al Use Case Bank (Event Sourcing)
 

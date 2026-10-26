@@ -25,7 +25,7 @@ qmd: "decision log - modulo activity activity"
 
 - **Verifica:** `cd laravel && php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Activity` (audit random) → exit 0; allineato a [decision-log.md](../decision-log.md) (wave test 2026-10-20).
 - **Docs:** `md-filenames.py check` su `docs/` → 0 date/suffissi; legacy maiuscole in radice (73 file) — inventory only.
-- **Track:** [phpstan-fixes.md](../phpstan-fixes.md), [00-INDEX.md](../00-INDEX.md), [phpstan-test-wave-activity.story.md](../stories/phpstan-test-wave-activity.story.md).
+- **Track:** [phpstan-fixes.md](../phpstan-fixes.md), [00-INDEX.md](../00-index.md), [phpstan-test-wave-activity.story.md](../stories/phpstan-test-wave-activity.story.md).
 
 ### 2026-09-29
 **Decisione:** [Esempio: Utilizzare Filament Widget invece di Livewire per i componenti di UI]

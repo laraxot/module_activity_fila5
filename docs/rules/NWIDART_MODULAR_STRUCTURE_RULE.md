@@ -1,3 +1,11 @@
+---
+title: "Nwidart modular structure — test ownership"
+type: note
+status: draft
+updated: 2026-10-20
+tags: [docs, activity, rules]
+qmd: "nwidart modular structure   test ownership activity"
+---
 # Nwidart modular structure — test ownership
 
 **Status:** mandatory; canonical rule is

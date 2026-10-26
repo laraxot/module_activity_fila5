@@ -1,3 +1,11 @@
+---
+title: "Activity — PHPStan variable.unused BMAD"
+type: note
+status: draft
+updated: 2026-10-20
+tags: [docs, activity]
+qmd: "activity   phpstan variable.unused bmad activity"
+---
 # Activity — PHPStan variable.unused BMAD
 
 **Module purpose:** Activity log / event tracking (listeners, actions, subscribers); production = logs/actions, tests = feature + unit coverage.

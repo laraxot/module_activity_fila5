@@ -1,3 +1,11 @@
+---
+title: "Architettura a Moduli vs Domain per <nome progetto>ion Market"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, use_cases]
+qmd: "architettura a moduli vs domain per <nome progetto>ion market activity"
+---
 # Architettura a Moduli vs Domain per <nome progetto>ion Market
 
 ## Introduzione
