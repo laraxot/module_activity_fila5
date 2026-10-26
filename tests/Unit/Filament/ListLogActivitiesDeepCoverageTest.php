@@ -18,8 +18,11 @@ use Modules\Activity\Tests\Fixtures\ListLogActivitiesRestorableResource;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesStdClassResourceHarness;
 use Modules\Activity\Tests\Fixtures\RestoreActivityActionFails;
 use Modules\Activity\Tests\Fixtures\RestoreActivityActionNoOp;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpKernel\Exception\HttpException;
+
+uses(TestCase::class);
 
 function activitySubjectForPage(string $id = 'page-subj'): ActivitySubjectHarness
 {
