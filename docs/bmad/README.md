@@ -25,6 +25,14 @@ qmd: "activity   bmad method integration activity"
 
 # Activity — BMAD Method Integration
 
+## Kit BMAD owner (canonico)
+
+- [BMAD Planning](../bmad-planning.md)
+- [BMAD Brainstorming](../bmad-brainstorming.md)
+- [Filament blueprint](./filament-blueprint.md)
+- [Project context](./project-context.md)
+- [Decision log](./decision-log.md)
+
 ## Scopo BMAD per Activity
 
 Activity è il **modulo di audit e tracciamento** dell'ecosistema. In BMAD, questo modulo rappresenta l'**osservabilità** del sistema: registra ogni azione significativa per debugging, compliance e analytics.

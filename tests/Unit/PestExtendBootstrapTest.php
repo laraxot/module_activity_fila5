@@ -1,8 +1,10 @@
 <?php
 
 declare(strict_types=1);
-use Tests\Modules\Activity\TestCase;
-use Tests\Modules\Xot\XotBasePest;
+use Modules\Activity\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
+
+uses(TestCase::class);
 
 it('uses the correct TestCase class', function () {
     /** @var TestCase $this */

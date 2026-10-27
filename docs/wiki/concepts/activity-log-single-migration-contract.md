@@ -5,6 +5,7 @@ tags: [activity, migration, spatie, activitylog, xotbasemigration]
 created: 2026-06-10
 updated: 2026-06-10
 qmd: activity_log single migration xotbasemigration add fix update forbidden
+status: draft
 ---
 
 # activity_log — una migrazione per modello

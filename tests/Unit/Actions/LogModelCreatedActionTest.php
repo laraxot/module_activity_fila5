@@ -3,7 +3,7 @@
 declare(strict_types=1);
 use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Actions\LogModelCreatedAction;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
 
@@ -37,5 +37,5 @@ test('LogModelCreatedAction can execute', function () {
 
     $action = new LogModelCreatedAction($model, $user);
 
-    Assert::assertInstanceOf(LogModelCreatedAction::class, $action);
+    Assert::assertSame($model, $action->model);
 });

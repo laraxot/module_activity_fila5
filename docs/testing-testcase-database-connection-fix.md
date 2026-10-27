@@ -76,7 +76,7 @@ protected function setUp(): void
 
 ## 🔗 Collegamenti
 
-- [Testing Rules](../testing-rules.md)
+- [Testing Rules](testing-rules.md)
 - [TestCase SQLite to MySQL Fix](testcase-sqlite-to-mysql-fix.md)
 - [User TestCase](../../User/tests/TestCase.php)
 
@@ -84,7 +84,3 @@ protected function setUp(): void
 
 **Status**: Completed
 **Risultato**: Test Activity ora configurano correttamente le connessioni database
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -67,7 +67,7 @@ Il **doppio fallback** `env('DB_DATABASE_ACTIVITY', env('DB_DATABASE'))` è la c
 DB_DATABASE=<nome progetto>_data_test=======
 DB_DATABASE=techplanner_data_test
 DB_USERNAME=marco
-DB_PASSWORD=marco
+DB_PASSWORD=[segreto locale, non nel repo]
 # NESSUNA DB_DATABASE_ACTIVITY, DB_USERNAME_ACTIVITY, DB_PASSWORD_ACTIVITY
 ```
 

@@ -10,7 +10,7 @@ use Modules\Activity\Enums\LogLevelEnum;
  * Activity non ha un tema Vite proprio e le utility non gia' usate da Filament non verrebbero compilate.
  * Scostamento noto dalla regola Blade «no inline CSS»: via d'uscita conforme = asset CSS costruito con Vite
  * (Vite::asset('resources/css/app.css', 'assets/activity') in un FilamentAsset::register, come Chart e Geo), che richiede
- * build e deploy degli asset del modulo. Il file che Xot registra (header-actions-wrap.css) non esiste: non e' un precedente.
+ * build e deploy degli asset del modulo. Xot pubblica header-actions-wrap.css solo per il wrap delle azioni Filament: non e' un precedente per gli stili di questa pagina.
  *
  * Il testo dei log e' sempre passato da {{ }} (escape): un log puo' contenere HTML/JS arrivato da input esterni.
  */

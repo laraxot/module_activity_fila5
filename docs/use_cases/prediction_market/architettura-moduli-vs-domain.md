@@ -1,3 +1,11 @@
+---
+title: "Architettura a Moduli vs Domain per <nome progetto>ion Market"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, use_cases]
+qmd: "architettura a moduli vs domain per <nome progetto>ion market activity"
+---
 # Architettura a Moduli vs Domain per <nome progetto>ion Market
 
 ## Introduzione
@@ -79,8 +87,3 @@ app/Domain/<nome progetto>ionMarket/
 - [Best practice prediction_market](./04_best_practice.md)
 - [API prediction_market](./06_api.md)
 - [Testing prediction_market](./07_test.md)
-- [Indice <nome progetto>ion_market](./README.md)
-- [Architettura <nome progetto>ion_market](./02_architettura.md)
-- [Best practice <nome progetto>ion_market](./04_best_practice.md)
-- [API <nome progetto>ion_market](./06_api.md)
-- [Testing <nome progetto>ion_market](./07_test.md)

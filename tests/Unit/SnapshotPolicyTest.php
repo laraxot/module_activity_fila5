@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit;
+namespace Modules\Activity\Tests\Unit;
 
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Activity\Models\Policies\SnapshotPolicy;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\Policies\UserBasePolicy;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
@@ -16,9 +16,7 @@ uses(TestCase::class);
 
 describe('Snapshot Policy', function (): void {
     test('policy extends user base policy', function (): void {
-        $policy = new SnapshotPolicy;
-
-        Assert::assertInstanceOf(UserBasePolicy::class, $policy);
+        Assert::assertTrue((new \ReflectionClass(SnapshotPolicy::class))->isSubclassOf(UserBasePolicy::class));
     });
 
     test('policy has expected public methods', function (): void {

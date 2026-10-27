@@ -27,8 +27,3 @@ Prossimi step
 - Eseguire analisi automatica per metodi duplicati e refactor candidates; riportare risultati in docs/ dedicated.
 
 Autore: Copilot CLI
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

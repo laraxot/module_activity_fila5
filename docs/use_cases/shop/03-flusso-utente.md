@@ -1,10 +1,11 @@
 ---
 title: "Flusso Utente Shop Event Sourced"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "flusso utente shop event sourced activity"
+status: superseded
+superseded_by: flusso-utente.md
 ---
 # Flusso Utente Shop Event Sourced
 

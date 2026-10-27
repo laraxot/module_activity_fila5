@@ -199,7 +199,3 @@ All components use dark mode variants:
 **Status**: ✅ Complete
 **Quality**: PHPStan Level 10 Compliant
 **Last Updated**: 2025-12-04
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
