@@ -13,9 +13,9 @@ use Tests\TestCase;
 uses(TestCase::class);
 
 /*
- * Usa Tests\TestCase (root) e non Tests\Modules\Activity\TestCase: la pagina Log non tocca il database e la
+ * Usa Tests\TestCase (root) e non Modules\Activity\Tests\TestCase: la pagina Log non tocca il database e la
  * seconda richiede un file sqlite condiviso non presente in ogni ambiente (stesso motivo di
- * tests/Modules/Xot/Feature/Filament/Widgets/EnvWidgetTest.php).
+ * Modules/Xot/tests/Feature/Filament/Widgets/EnvWidgetTest.php).
  *
  * Gli utenti sono mock (nessuna riga nel database). storage_path() viene puntato a una cartella temporanea
  * con useStoragePath(), cosi' i test non leggono ne' scrivono mai il vero storage/logs; il percorso

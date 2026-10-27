@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit;
+namespace Modules\Activity\Tests\Unit;
 
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use PHPUnit\Framework\Assert;
 
@@ -13,8 +13,7 @@ uses(TestCase::class);
 
 describe('List Log Activities Action', function (): void {
     test('_extends_xot_base_action', function (): void {
-        $action = new ListLogActivitiesAction('test');
-        Assert::assertInstanceOf(XotBaseAction::class, $action);
+        Assert::assertSame(XotBaseAction::class, get_parent_class(ListLogActivitiesAction::class));
     });
 
     test('_has_correct_default_name', function (): void {

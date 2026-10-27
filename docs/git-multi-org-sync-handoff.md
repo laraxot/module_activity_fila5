@@ -9,6 +9,8 @@ issues:
   - "https://github.com/provtv/module_activity_fila5/issues/15"
 discussions:
   - "https://github.com/provtv/base_ptv_fila5/discussions/204"
+status: draft
+qmd: "handoff   multi-org sync (story-003) activity"
 ---
 
 # Handoff — multi-org sync (STORY-003)
@@ -51,8 +53,3 @@ Playbook: [wiki/troubleshooting/git-push-dual-remote.md](./wiki/troubleshooting/
 
 `merge-base` vuoto vs un org → STOP. User: laraxot `3ea7273a` OK; provtv unrelated.
 [../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

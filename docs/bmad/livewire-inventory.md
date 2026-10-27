@@ -11,6 +11,9 @@ related:
   - ./livewire-widget-prd.md
   - ../../Xot/docs/bmad/livewire-widget-project-context.md
   - ../../../Cms/docs/bmad/livewire-inventory.md
+updated: 2026-10-15
+tags: [docs, activity, bmad]
+qmd: "inventario: livewire http → filament   modulo activity activity"
 ---
 
 # Inventario: Livewire HTTP → Filament — modulo Activity

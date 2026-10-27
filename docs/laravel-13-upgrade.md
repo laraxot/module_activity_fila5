@@ -32,8 +32,3 @@ L'aggiornamento richiede l'esecuzione di `composer go` dalla root per consolidar
 
 ---
 **Status**: Purificato e Pronto per il Futuro.
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

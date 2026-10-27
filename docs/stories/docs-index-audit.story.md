@@ -32,7 +32,7 @@ cancellare alcun file esistente. Nessuna modifica al codice del modulo.
 - Consolidamento vero e proprio dei 92 cluster (task gia' tracciato in
   `task-consolidare-documentazione.md`, fermo al 30%): richiede lettura a mano dei
   duplicati a "contenuto diverso nonostante nome simile" (es. `module-analysis.md` vs
-  `module-analysis.md`) prima di unire qualunque cosa.
+  `module_analysis.md`) prima di unire qualunque cosa.
 - Aggiornare `tasks/tasks-index.md`, che copre solo 3 dei 36 file sotto `tasks/`.
 - Decidere il destino delle 4 cartelle di import grezzo (`root-md-files/`,
   `root-txt-files/`, `raw/root-import/`, file orfani in root) — candidate a rimozione

@@ -14,9 +14,9 @@ use function Safe\symlink;
 uses(TestCase::class);
 
 /*
- * Usa Tests\TestCase (root) e non Tests\Modules\Activity\TestCase: queste azioni lavorano solo sul
+ * Usa Tests\TestCase (root) e non Modules\Activity\Tests\TestCase: queste azioni lavorano solo sul
  * filesystem e la seconda richiede un file sqlite condiviso non presente in ogni ambiente
- * (stesso motivo dei test di tests/Modules/Xot/Feature/Filament/Widgets/EnvWidgetTest.php).
+ * (stesso motivo dei test di Modules/Xot/tests/Feature/Filament/Widgets/EnvWidgetTest.php).
  *
  * Ogni test lavora in una cartella temporanea dentro storage/framework/testing, mai in storage/logs.
  * `$this->root` contiene `logs/` (la cartella base) e, accanto, un `secret.log` FUORI dalla base:

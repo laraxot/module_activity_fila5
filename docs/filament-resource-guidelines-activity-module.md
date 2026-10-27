@@ -116,8 +116,3 @@ All resources must be tested to ensure:
 - [Laraxot Extension Patterns](../../Xot/docs/base-classes.md)=======
 See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-guidelines-activity-module.md
 See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-guidelines-activity-module.md
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

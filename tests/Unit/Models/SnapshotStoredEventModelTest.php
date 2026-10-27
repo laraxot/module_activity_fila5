@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit\Models;
+namespace Modules\Activity\Tests\Unit\Models;
 
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 

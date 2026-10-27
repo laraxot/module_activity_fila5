@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Feature;
+namespace Modules\Activity\Tests\Feature;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
 use Modules\Activity\Database\Factories\SnapshotFactory;
 use Modules\Activity\Models\Snapshot;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -258,19 +258,8 @@ test('can restore state from snapshot', function (): void {
 
     $restoredState = $snapshot->state;
     Assert::assertIsArray($restoredState);
-    Assert::assertSame($restoredState, $originalState);
-    Assert::assertSame(456, $restoredState['user_id']);
-
-    /** @var array<array-key, mixed> $settings */
-    $settings = $restoredState['settings'];
-    Assert::assertIsArray($settings);
-    Assert::assertSame('light', $settings['theme']);
-
-    /** @var array<array-key, mixed> $preferences */
-    $preferences = $restoredState['preferences'];
-    Assert::assertIsArray($preferences);
-    Assert::assertSame('Europe/Rome', $preferences['timezone']);
-    Assert::assertSame('EUR', $preferences['currency']);
+    // Parità strutturale col payload originale: prova lo scopo dello snapshot (round-trip state).
+    Assert::assertSame($originalState, $restoredState);
 });
 
 test('can compare snapshot versions', function (): void {

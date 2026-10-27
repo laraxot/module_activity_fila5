@@ -1,3 +1,11 @@
+---
+title: "Roadmap Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, development]
+qmd: "roadmap modulo activity activity"
+---
 # Roadmap Modulo Activity
 
 ## Stato Attuale
@@ -62,7 +70,7 @@
 ## Collegamenti
 
 - [Torna a README](./README.md)
-- [Torna a README](./README.md)
+- [Torna a README](./readme.md)
 - [Vai a Struttura](./structure.md)
 - [Vai a Bottlenecks](../bottlenecks.md)
 

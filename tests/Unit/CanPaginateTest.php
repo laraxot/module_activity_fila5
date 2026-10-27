@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit;
+namespace Modules\Activity\Tests\Unit;
 
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
-use Tests\Modules\Activity\Fixtures\CanPaginateHarness;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

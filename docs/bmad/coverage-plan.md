@@ -2,10 +2,11 @@
 title: Coverage plan
 module: Activity
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, activity, bmad]
 qmd: "activity coverage plan activity"
+status: superseded
+superseded_by: ../coverage-plan.md
 ---
 
 # Activity Coverage Plan

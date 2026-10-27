@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 use Modules\Activity\Models\StoredEvent;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent;
 

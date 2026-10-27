@@ -168,9 +168,3 @@ L'Event Sourcing offre un approccio potente per gestire la complessità nel modu
 Se hai bisogno di ulteriori dettagli o di un'implementazione specifica, fammi sapere!=======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
-See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

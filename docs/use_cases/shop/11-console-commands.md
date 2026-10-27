@@ -58,6 +58,6 @@ class CloseExpiredOrders extends Command
 ## Collegamenti correlati
 - [Architettura shop](./02_architettura.md)
 - [Best practice shop](./04_best_practice.md)
-- [Testing shop](./09_test.md)
-- [API shop](./08_api.md)
-- [Glossario shop](./10_glossario.md)
+- [Testing shop](./09-test.md)
+- [API shop](./08-api.md)
+- [Glossario shop](./10-glossario.md)

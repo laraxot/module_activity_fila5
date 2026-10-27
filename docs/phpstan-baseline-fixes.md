@@ -132,7 +132,3 @@ Ogni file modificato verificato con:
 **PHPStan Level**: 10 (MAX)
 **Errori risolti**: 21 → 0
 **Stato**: ✅ PRODUCTION READY
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

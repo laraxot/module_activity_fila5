@@ -86,8 +86,3 @@ Il modulo Activity dimostra un'eccellente qualità del codice, raggiungendo il l
 * [phpstan_fixes.md](laravel/Modules/Activity/docs/phpstan_fixes.md)=======
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-documentation-themes.md
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-documentation-themes.md
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

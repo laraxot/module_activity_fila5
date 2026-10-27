@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity;
+namespace Modules\Activity\Tests;
 
 use Filament\Notifications\Notification;
 use Illuminate\Foundation\Application;
@@ -14,7 +14,7 @@ use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Providers\EventServiceProvider;
 use Modules\User\Models\User;
 use Modules\User\Providers\UserServiceProvider;
-use Tests\Modules\Xot\XotBaseTestCase;
+use Modules\Xot\Tests\XotBaseTestCase;
 
 /**
  * Base test case for Activity module.

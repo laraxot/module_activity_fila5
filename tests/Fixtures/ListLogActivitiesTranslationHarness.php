@@ -2,37 +2,35 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Fixtures;
+namespace Modules\Activity\Tests\Fixtures;
 
-use Illuminate\Database\Eloquent\Model;
+use Modules\Activity\Filament\Pages\ListLogActivities;
+use Modules\Activity\Filament\Resources\ActivityResource;
+use ReflectionMethod;
+use Webmozart\Assert\Assert;
 
 /**
- * Test harness for ListLogActivities translation methods.
- * Provides a minimal test fixture for translation and field label methods.
+ * Pagina ListLogActivities con risorsa ActivityResource che espone il metodo privato toTranslationString
+ * (classe con nome, non anonima).
  */
-class ListLogActivitiesTranslationHarness extends Model
+final class ListLogActivitiesTranslationHarness extends ListLogActivities
 {
-    /**
-     * Convert value to translation string format.
-     *
-     * @param  string|array<int, string>  $value
-     */
-    public function exposeToTranslationString(string|array $value): string
+    public static function getResource(): string
     {
-        if (is_string($value)) {
-            return $value;
-        }
-
-        return implode(' ', $value);
+        return ActivityResource::class;
     }
 
     /**
-     * Get field label with fallback to field name.
-     *
-     * @param  string  $fieldName
+     * @param  list<string>|string|int  $value
      */
-    public function getFieldLabel(string $fieldName): string
+    public function exposeToTranslationString(string|array|int $value): string
     {
-        return $fieldName;
+        $method = new ReflectionMethod(ListLogActivities::class, 'toTranslationString');
+        $method->setAccessible(true);
+
+        $result = $method->invoke($this, $value);
+        Assert::string($result);
+
+        return $result;
     }
 }

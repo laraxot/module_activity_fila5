@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit;
+namespace Modules\Activity\Tests\Unit;
 
 use Filament\Tables\Enums\PaginationMode;
 use Illuminate\Contracts\Pagination\CursorPaginator;
@@ -15,8 +15,11 @@ use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\Paginator as LaravelPaginator;
 use Mockery;
 use Mockery\MockInterface;
-use Tests\Modules\Activity\Fixtures\CanPaginateHarness;
+use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 afterEach(function (): void {
     Mockery::close();

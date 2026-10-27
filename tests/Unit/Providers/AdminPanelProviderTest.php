@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit\Providers;
+namespace Modules\Activity\Tests\Unit\Providers;
 
 use Filament\Panel;
 use Modules\Activity\Providers\Filament\AdminPanelProvider;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -16,5 +16,5 @@ test('admin panel provider returns a panel instance', function () {
 
     $panel = $provider->panel(Panel::make());
 
-    Assert::assertInstanceOf(Panel::class, $panel);
+    Assert::assertNotSame('', $panel->getId());
 });

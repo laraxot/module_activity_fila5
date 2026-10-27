@@ -241,7 +241,7 @@ DB_PORT=3306
 DB_DATABASE=Quaeris_data
 DB_DATABASE=healthcare_app_data
 DB_USERNAME=marco
-DB_PASSWORD=marco
+DB_PASSWORD=[segreto locale, non nel repo]
 ```
 
 ### 2. Cache e Queue
@@ -274,8 +274,3 @@ SESSION_DOMAIN=null
 
 Il file `.env.development` rappresenta la configurazione ottimale per lo sviluppo rapido e efficiente di Quaeris Fila5 Mono. La sua struttura differenzia significativamente dalla produzione per favorire setup zero-setup, performance ottimizzate e debugging più semplice. Questa configurazione è essenziale per mantenere un ambiente di sviluppo fluido e produttivo.
 Il file `.env.development` rappresenta la configurazione ottimale per lo sviluppo rapido e efficiente di healthcare_app Fila5 Mono. La sua struttura differenzia significativamente dalla produzione per favorire setup zero-setup, performance ottimizzate e debugging più semplice. Questa configurazione è essenziale per mantenere un ambiente di sviluppo fluido e produttivo.
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

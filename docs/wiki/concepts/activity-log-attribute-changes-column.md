@@ -26,7 +26,7 @@ cd laravel && php artisan migrate
 
 ## Runtime
 
-`Modules\Activity\Support\ActivityLogSchema::isWritable()` — connection da `config('activitylog.database_connection')`.
+`app(IsActivityLogSchemaWritableAction::class)->execute()` (`Actions/Schema/`) — connection da `config('activitylog.database_connection')`.
 
 ## Collegamenti
 

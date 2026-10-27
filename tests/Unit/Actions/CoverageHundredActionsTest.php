@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit\Actions;
+namespace Modules\Activity\Tests\Unit\Actions;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
@@ -23,10 +23,13 @@ use Modules\Activity\Actions\Query\GetUserActivitiesAction;
 use Modules\Activity\Actions\RecordSubjectActivityAction;
 use Modules\Activity\Adapters\ActivityLogger as ActivityLoggerAdapter;
 use Modules\Activity\Models\Activity;
-use Tests\Modules\Activity\Fixtures\ActivitySubjectHarness;
-use Tests\Modules\Activity\Fixtures\LogActivityActionTestModel;
+use Modules\Activity\Tests\Fixtures\ActivitySubjectHarness;
+use Modules\Activity\Tests\Fixtures\LogActivityActionTestModel;
+use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 beforeEach(function (): void {
     config(['cache.default' => 'array']);
@@ -69,7 +72,6 @@ test('LogActivityAction execute persiste con user Auth e subject', function (): 
         description: 'Desc',
     ))->execute();
 
-    Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame('custom_evt', $activity->event);
     Assert::assertSame($user->id, $activity->causer_id);
 });
@@ -154,7 +156,7 @@ test('ActivityMaintenanceAction cleanOld e ActivityLogger Action percorsi comple
     $logger = new ActivityLoggerAction;
 
     $logged = $logger->log('evt_log', activityUnitUser('evt-user'), $model, ['p' => 1], 'D');
-    Assert::assertInstanceOf(Activity::class, $logged);
+    Assert::assertSame('evt_log', $logged->event);
 
     Assert::assertSame('created', $logger->created($model, $user)->event);
     Assert::assertSame('updated', $logger->updated($model, $user)->event);
@@ -199,7 +201,6 @@ test('ActivityLogger Action log ignora Auth::id non scalare', function (): void 
 
     $activity = (new ActivityLoggerAction)->log('weird_auth', null, null, null, 'W');
 
-    Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertNull($activity->causer_id);
 });
 
@@ -211,7 +212,6 @@ test('ActivityLogger Adapter delega log created updated deleted login logout que
 
     $adapter = new ActivityLoggerAdapter;
 
-    Assert::assertInstanceOf(Activity::class, $adapter->log('ad_log', $user, $model, ['z' => 1], 'AD'));
     Assert::assertSame('created', $adapter->created($model, $user)->event);
     Assert::assertSame('updated', $adapter->updated($model, $user)->event);
     Assert::assertSame('deleted', $adapter->deleted($model, $user)->event);

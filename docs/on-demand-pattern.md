@@ -7,6 +7,8 @@ tags: [on-demand, pattern, wiki, qmd]
 related:
   - ../../../../docs/wiki/rules/on-demand-pattern.md
   - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+status: draft
+qmd: "on-demand pattern   module **activity** activity"
 ---
 
 # On-Demand Pattern — Module **Activity**
@@ -93,8 +95,3 @@ qmd search "<topic>"
 
 ---
 *Ultimo aggiornamento: 2026-05-11 | Pattern: on-demand via QMD*
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

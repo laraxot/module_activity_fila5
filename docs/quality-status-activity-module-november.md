@@ -111,7 +111,7 @@ public function withCustomProperties(array $attributes): static
 - `testing-strategy-implementation.md` ✅ Testing approach
 
 ### Duplicate/Redundant Files
-- `README.md` vs `README.md` (case sensitivity)
+- `README.md` vs `readme.md` (case sensitivity)
 - `README.md.update` (outdated?)
 - Multiple phpstan analysis files with overlapping content
 
@@ -164,8 +164,3 @@ public function withCustomProperties(array $attributes): static
 *Last Updated: November 15, 2025*
 *PHPStan Version: Latest*
 *PHPMD Version: Latest*
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

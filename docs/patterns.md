@@ -44,8 +44,3 @@ Activity::where('causer_type', User::class)
     ->orderBy('created_at', 'desc')
     ->get();
 ```
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

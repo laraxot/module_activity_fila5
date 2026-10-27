@@ -1,7 +1,6 @@
 ---
 title: "Activity — scopo del modulo e come raggiungerlo meglio"
 type: concept
-status: active
 created: 2026-09-02
 tags: [activity, purpose, audit, event-sourcing, snapshot, tracciabilita]
 qmd: "activity scopo modulo audit log event sourcing snapshot stored event tracciabilita chi ha cambiato"
@@ -13,6 +12,8 @@ issues:
 discussions:
   # DA CREARE — vedi sopra.
   - "https://github.com/provtv/module_activity_fila5/discussions/"
+status: superseded
+superseded_by: ../purpose.md
 ---
 
 # Activity — perche' esiste

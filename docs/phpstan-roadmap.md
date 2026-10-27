@@ -24,7 +24,3 @@ The **Activity** module is fully compliant with PHPStan Level 10. No errors were
 ## Future Goals
 - Maintain 0 errors.
 - Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
