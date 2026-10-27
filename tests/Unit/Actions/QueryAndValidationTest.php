@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit\Actions;
+namespace Modules\Activity\Tests\Unit\Actions;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -19,9 +19,12 @@ use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Adapters\ActivityLogger as ActivityLoggerAdapter;
 use Modules\Activity\Adapters\ActivityRecorder;
 use Modules\Activity\Models\Activity;
+use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 use Webmozart\Assert\InvalidArgumentException as AssertInvalidArgumentException;
+
+uses(TestCase::class);
 
 describe('Query Actions validation', function (): void {
     test('GetRecentActivitiesAction rifiuta limit non positivo', function (): void {

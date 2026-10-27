@@ -32,8 +32,3 @@ Activity logging implementation using Spatie Laravel ActivityLog.
 - PHPStan Level 10
 - Pest test coverage >90%
 - Security audit passed
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

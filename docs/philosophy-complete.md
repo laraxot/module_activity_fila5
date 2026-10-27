@@ -242,7 +242,3 @@ class ClientObserver
 ---
 
 **Filosofia**: Track Everything, Reconstruct Anything, Privacy First, Silent Observer
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

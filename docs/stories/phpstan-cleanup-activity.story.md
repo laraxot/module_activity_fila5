@@ -47,4 +47,4 @@ La pagina resta sottile: passa la scelta dell'utente a `BuildLogViewerStateActio
 - Issue: TODO (gh non installato su questa macchina)
 - Discussion: TODO
 
-Dev story: [2026-10-06-phpstan-cleanup-activity.dev.md](./phpstan-cleanup-activity.dev.md)
+Dev story: [2026-10-06-phpstan-cleanup-activity.dev.md](./phpstan-cleanup-activity-dev.dev.md)

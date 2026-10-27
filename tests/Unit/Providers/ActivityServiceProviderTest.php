@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit\Providers;
+namespace Modules\Activity\Tests\Unit\Providers;
 
 use Modules\Activity\Providers\ActivityServiceProvider;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;

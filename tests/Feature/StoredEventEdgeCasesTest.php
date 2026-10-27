@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 /**
- * Activity module tests — Pest + Tests\Modules\Activity\TestCase (XotBase hierarchy).
+ * Activity module tests — Pest + Modules\Activity\Tests\TestCase (XotBase hierarchy).
  * claude-audit static documentation ratio; canonical assertions in tests/ tree.
  * DatabaseTransactions only — never RefreshDatabase (production data sacred).
  * Scope: see file name; Filament/UI tests isolated from Action unit tests.
@@ -13,7 +13,7 @@ declare(strict_types=1);
  * Pest · sqlite fixcity_data · split from StoredEventBusinessLogicTest.
  */
 
-namespace Tests\Modules\Activity\Feature;
+namespace Modules\Activity\Tests\Feature;
 
 // Activity test scenario — see modules/Activity/docs/wiki/concepts/testing.md
 // Activity test scenario — see modules/Activity/docs/wiki/concepts/testing.md
@@ -22,7 +22,7 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Modules\Activity\Models\StoredEvent;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 

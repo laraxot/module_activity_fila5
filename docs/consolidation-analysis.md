@@ -66,7 +66,7 @@ laravel/Modules/Activity/
 ## Action Items
 
 - [ ] Move `critical-mai-fare-migrate-refresh.md` from root to `laravel/Modules/Activity/docs/`
-- [ ] Rename to `critical-migration-constraints.md` for clarity
+- [ ] Rename to `CRITICAL_MIGRATION_CONSTRAINTS.md` for clarity
 - [ ] Add reference in `laravel/Modules/Activity/README.md` with ⚠️ badge
 - [ ] Cross-link from Progressioni/docs (note shared constraint)
 - [ ] Commit as atomic: "docs(activity): consolidate critical migration constraints from root"
@@ -89,8 +89,3 @@ Details: see `docs/CRITICAL_MIGRATION_CONSTRAINTS.md`
 ## Reference
 
 **Global consolidation plan:** See `ROOT_MD_CONSOLIDATION_PLAN.md` (to be created in docs/).
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

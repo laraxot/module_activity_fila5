@@ -1,10 +1,11 @@
 ---
 title: "Filament v4 Icon Size Attribute Fix"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, activity, filament]
 qmd: "filament v4 icon size attribute fix activity"
+status: superseded
+superseded_by: filament-v4-icon-size-fix-attribute.md
 ---
 # Filament v4 Icon Size Attribute Fix
 

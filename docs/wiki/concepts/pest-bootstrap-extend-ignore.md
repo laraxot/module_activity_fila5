@@ -16,6 +16,9 @@ issues:
   - "https://github.com/laraxot/module_activity_fila5/issues/48"
 discussions:
   - "https://github.com/laraxot/module_activity_fila5/discussions/16"
+type: note
+updated: 2026-10-23
+qmd: "pest bootstrap   `pest()->extend()` con ignore inline (activity) activity"
 ---
 
 # Pest bootstrap — `pest()->extend()` con ignore inline (Activity)

@@ -156,10 +156,9 @@ use function Safe\json_encode;
 
 ## 🔗 Collegamenti
 
-- [PHPStan Quality Rules](./PHPSTAN_QUALITY_RULES.md)
+- [PHPStan Quality Rules](./phpstan-quality-rules.md)
 - [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
-- [PHPStan Quality Rules](./phpstan_quality_rules.md)
-- [PHPStan Fixes Activity (Completo)](./phpstan-fixes-activity.md)
+- [PHPStan Fixes Activity (Completo)](./phpstan_fixes_activity.md)
 
 ## 📝 Note
 
@@ -176,7 +175,3 @@ Questi fix erano necessari per permettere a PHPStan di completare l'analisi del 
 **Fix Completati**: [DATE]
 **Priority**: ALTA
 **Impact**: MEDIO (Bloccava analisi modulo Activity)
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

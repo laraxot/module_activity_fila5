@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 use Modules\Activity\Events\ActivityEvent;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

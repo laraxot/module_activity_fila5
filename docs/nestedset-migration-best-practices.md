@@ -204,8 +204,3 @@ $table->index('sort_order');
 
 - [Documentazione principale](/docs/migration/nestedset-best-practices.md)
 - [Activity Module Architecture](/docs/architecture/activity-module.md)
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

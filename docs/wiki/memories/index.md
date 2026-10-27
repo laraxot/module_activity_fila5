@@ -12,6 +12,7 @@ issues:
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/316"
   - "https://github.com/laraxot/module_xot_fila5/discussions/34"
+status: draft
 ---
 
 # Activity Module - Memories Index
