@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit\Filament;
+namespace Modules\Activity\Tests\Unit\Filament;
 
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
@@ -10,17 +10,20 @@ use Modules\Activity\Actions\ActivityLogger as ActivityLoggerAction;
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Models\Activity;
-use Tests\Modules\Activity\Fixtures\ActivitySubjectHarness;
-use Tests\Modules\Activity\Fixtures\ListLogActivitiesActionTestPage;
-use Tests\Modules\Activity\Fixtures\ListLogActivitiesActionTestRecord;
-use Tests\Modules\Activity\Fixtures\ListLogActivitiesActionTestResourceSimple;
-use Tests\Modules\Activity\Fixtures\ListLogActivitiesBadPaginatorPage;
-use Tests\Modules\Activity\Fixtures\ListLogActivitiesMountablePage;
-use Tests\Modules\Activity\Fixtures\ListLogActivitiesNestedFormPage;
-use Tests\Modules\Activity\Fixtures\ListLogActivitiesNonSchemaFormPage;
-use Tests\Modules\Activity\Fixtures\ListLogActivitiesPageHarness;
+use Modules\Activity\Tests\Fixtures\ActivitySubjectHarness;
+use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestPage;
+use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestRecord;
+use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestResourceSimple;
+use Modules\Activity\Tests\Fixtures\ListLogActivitiesBadPaginatorPage;
+use Modules\Activity\Tests\Fixtures\ListLogActivitiesMountablePage;
+use Modules\Activity\Tests\Fixtures\ListLogActivitiesNestedFormPage;
+use Modules\Activity\Tests\Fixtures\ListLogActivitiesNonSchemaFormPage;
+use Modules\Activity\Tests\Fixtures\ListLogActivitiesPageHarness;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionProperty;
+
+uses(TestCase::class);
 
 test('ListLogActivitiesAction url closure genera log-activity', function (): void {
     $action = ListLogActivitiesAction::make();
@@ -75,7 +78,7 @@ test('ListLogActivities getFieldLabel con valore non stringa in map', function (
 test('ListLogActivities createFieldLabelMap nested e schema invalido', function (): void {
     $nested = new ListLogActivitiesNestedFormPage;
     $map = $nested->exposeCreateFieldLabelMap();
-    Assert::assertInstanceOf(Collection::class, $map);
+    Assert::assertFalse($map->isEmpty());
 
     $bad = new ListLogActivitiesNonSchemaFormPage;
     expect(fn (): Collection => $bad->exposeCreateFieldLabelMap())

@@ -44,8 +44,3 @@ NON usare DB_DATABASE_ACTIVITY, DB_USERNAME_ACTIVITY, DB_PASSWORD_ACTIVITY in .e
 - [basemodel-connection-why-activity-not-null](basemodel-connection-why-activity-not-null.md)
 - [testing-coverage-policy](testing-coverage-policy.md)
 - [database-connections rule](../../../.cursor/rules/database-connections.mdc)
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

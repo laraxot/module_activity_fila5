@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Roadmap & Optimization"
+type: note
+status: draft
+updated: 2026-10-15
+tags: [docs, activity, roadmap]
+qmd: "activity module - roadmap & optimization activity"
+---
 # Activity Module - Roadmap & Optimization
 
 **Modulo**: Activity (Audit Trail & Activity Logging)

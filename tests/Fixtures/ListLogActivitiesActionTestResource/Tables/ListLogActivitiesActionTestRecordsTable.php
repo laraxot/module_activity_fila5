@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Fixtures\ListLogActivitiesActionTestResource\Tables;
+namespace Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestResource\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;

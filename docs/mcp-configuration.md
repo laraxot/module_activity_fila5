@@ -137,7 +137,3 @@ The Activity module's MCP configuration enables AI assistants to interact with:
 **Module**: Activity (Logging & Tracking)
 **MCP Version**: 2.0.0
 **Last Review**: 31 Gennaio 2026
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

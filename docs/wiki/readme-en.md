@@ -1,6 +1,11 @@
 ---
 title: Readme en
 module: Activity
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, wiki]
+qmd: "activity   english presentation activity"
 ---
 
 # 📋 Activity — English presentation

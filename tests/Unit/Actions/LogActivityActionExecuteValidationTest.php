@@ -2,12 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit\Actions;
+namespace Modules\Activity\Tests\Unit\Actions;
 
 use Illuminate\Database\Eloquent\Model;
 use InvalidArgumentException;
 use Modules\Activity\Actions\LogActivityAction;
 use Modules\Activity\Models\Activity;
+use Modules\Activity\Tests\TestCase;
+
+uses(TestCase::class);
 
 test('LogActivityAction execute rifiuta user non User', function (): void {
     $nonUser = new class extends Model

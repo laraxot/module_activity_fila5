@@ -11,7 +11,3 @@ qmd: "rules index activity"
 This module follows the global Laraxot coding standards.
 
 - [Coding Standards](../../../../docs/laraxot-coding-standards.md)
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

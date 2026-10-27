@@ -2,23 +2,27 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Fixtures;
+namespace Modules\Activity\Tests\Fixtures;
 
 use Illuminate\Database\Eloquent\Model;
-use Modules\Activity\Models\BaseModel;
 
 /**
- * Test model that simulates a record with updatedAttributes property
- * Used to test RestoreActivityAction's ability to update records
+ * Modello finto che registra gli attributi passati a update() (classe con nome, non anonima).
  */
-final class RestoreActivityRecordingModel extends BaseModel
+final class RestoreActivityRecordingModel extends Model
 {
+    protected $table = 'stub_models';
+
     /** @var array<string, mixed> */
-    public $updatedAttributes = [];
+    public array $updatedAttributes = [];
 
-    /** @var string */
-    protected $table = 'activity_recordings';
+    /**
+     * @param  array<string, mixed>  $attributes
+     */
+    public function update(array $attributes = [], array $options = []): bool
+    {
+        $this->updatedAttributes = $attributes;
 
-    /** @var list<string> */
-    protected $fillable = ['name', 'status'];
+        return true;
+    }
 }

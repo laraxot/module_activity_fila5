@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit;
+namespace Modules\Activity\Tests\Unit;
 
 use Filament\Tables\Enums\PaginationMode;
 use Illuminate\Contracts\Pagination\CursorPaginator;
@@ -10,8 +10,8 @@ use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Models\Activity;
-use Tests\Modules\Activity\Fixtures\CanPaginateHarness;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
+use Modules\Activity\Tests\TestCase;
 
 uses(TestCase::class);
 

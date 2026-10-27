@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Fixtures;
+namespace Modules\Activity\Tests\Fixtures;
 
 use Filament\Notifications\Notification;
 use Illuminate\Contracts\Support\Htmlable;

@@ -2,10 +2,11 @@
 title: Activity log ui improvements
 module: Activity
 type: note
-status: draft
 updated: 2026-10-08
 tags: [docs, activity, wiki]
 qmd: "activity log ui/ux improvements - implementation summary activity"
+status: superseded
+superseded_by: ../../activity-log-ui-improvements.md
 ---
 
 # Activity Log UI/UX Improvements - Implementation Summary

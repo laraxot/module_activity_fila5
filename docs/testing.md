@@ -4,6 +4,8 @@ type: guide
 tags: [activity, testing, pest]
 created: 2026-07-28
 updated: 2026-07-28
+status: draft
+qmd: "activity module   testing activity"
 ---
 
 # Activity Module — Testing
@@ -420,7 +422,3 @@ Remember: Good tests are the foundation of reliable software development.
 
 *Last updated: January 2025*
 *
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

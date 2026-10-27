@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 use Modules\Activity\Actions\LogUserLogoutAction;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;

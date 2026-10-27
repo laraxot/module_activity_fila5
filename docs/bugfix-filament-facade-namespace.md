@@ -231,12 +231,12 @@ Usare sempre file esistenti del progetto come riferimento per i namespace.
 
 ### Regole e Best Practices
 
-- [Filament Best Practices](../../xot/docs/filament-best-practices.md)
+- [Filament Best Practices](../../Xot/docs/filament-best-practices.md)
 - [Activity Module README](./README.md)
 
 ### Regole e Best Practices
 
-- [Filament Best Practices](../../Xot/docs/FILAMENT-BEST-PRACTICES.md)
+- [Filament Best Practices](../../Xot/docs/filament-best-practices.md)
 - [Namespace Rules](../../../docs/MODULE_NAMESPACE_RULES.md)
 - [Namespace Rules](../../../../docs/module_namespace_rules.md)
 
@@ -278,7 +278,3 @@ Usare sempre file esistenti del progetto come riferimento per i namespace.
 **Stato:** ✅ RISOLTO - Pronto per produzione
 **Severity:** 🔴 CRITICA (500 error)
 **Time to Fix:** 2 minuti
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

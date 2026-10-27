@@ -475,7 +475,3 @@ L'analisi del `SimpleChartWidget` ha identificato diversi problemi che impattano
 3. **Migliorano la manutenibilità** (separazione logica, refactoring)
 
 L'implementazione incrementale permette di validare ogni miglioramento prima di procedere con la fase successiva, garantendo un processo di refactoring sicuro e controllato.
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

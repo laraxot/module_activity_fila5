@@ -1,3 +1,11 @@
+---
+title: "Activity — English presentation"
+type: note
+status: draft
+updated: 2026-10-20
+tags: [docs, activity]
+qmd: "activity   english presentation activity"
+---
 # 📋 Activity — English presentation
 
 [![Domain-Audit](https://img.shields.io/badge/Domain-Activity%20Log-455A64.svg)](#)
@@ -54,8 +62,3 @@ Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 ---
 
 **Module** `activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

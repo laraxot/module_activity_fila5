@@ -1,3 +1,11 @@
+---
+title: "Fix PHPStan complete — 11 → 0"
+type: note
+status: draft
+updated: 2026-10-20
+tags: [docs, activity]
+qmd: "fix phpstan complete   11 → 0 activity"
+---
 # Fix PHPStan complete — 11 → 0
 - Analisi origine → scopo → utilità → funzionalità per ogni errore rimanente.
 - Correzioni: `makeTestSushiModelForPath` (arg opzionale), `ExporterEagerLoadModelStub` (tipo Builder static), fixtures `StubGetCommandsAction`, `OrderQueueFactory`.
