@@ -11,8 +11,3 @@ qmd: "login test implementation activity"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/login-test-implementation-sumy.md
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

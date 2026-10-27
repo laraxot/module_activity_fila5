@@ -2,10 +2,11 @@
 title: Coverage
 module: Activity
 type: note
-status: draft
 updated: 2026-10-08
 tags: [docs, activity, wiki]
 qmd: "activity   quality gate status (2026-09-22) activity"
+status: superseded
+superseded_by: ../coverage.md
 ---
 
 # Activity — quality gate status (2026-09-22)

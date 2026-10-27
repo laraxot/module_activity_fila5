@@ -1,3 +1,11 @@
+---
+title: "Use Case Shop – Event Sourcing e Console Commands"
+type: index
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, use_cases]
+qmd: "use case shop   event sourcing e console commands activity"
+---
 # Use Case Shop – Event Sourcing e Console Commands
 
 [![Module](https://img.shields.io/badge/Module-Use Case Shop – Event Sourcing e Console Commands-8B0000.svg)]()

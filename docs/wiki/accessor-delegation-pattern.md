@@ -2,10 +2,11 @@
 title: Accessor delegation pattern
 module: Activity
 type: note
-status: draft
 updated: 2026-10-08
 tags: [docs, activity, wiki]
 qmd: "accessor delegation pattern (sacro) activity"
+status: superseded
+superseded_by: ../accessor-delegation-pattern.md
 ---
 
 # Accessor Delegation Pattern (SACRO)
@@ -51,4 +52,4 @@ protected function getSomeValue(): float
 ---
 **Riferimenti**:
 - [Documento Canonico AI Agents](../../../../.agents/docs/accessor-auto-persistence.md)
-- [00-INDEX.md](00-index.md)
+- [00-INDEX.md](00-INDEX.md)

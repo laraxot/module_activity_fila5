@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit\Providers;
+namespace Modules\Activity\Tests\Unit\Providers;
 
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Providers\RouteServiceProvider;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use PHPUnit\Framework\Assert;
@@ -28,17 +28,17 @@ test('ActivityServiceProvider registers migrations', function (): void {
     $provider = new ActivityServiceProvider(app());
     $provider->boot();
 
-    Assert::assertInstanceOf(ActivityServiceProvider::class, $provider);
 });
 
 test('EventServiceProvider can be instantiated', function (): void {
     $provider = new EventServiceProvider(app());
-    Assert::assertInstanceOf(EventServiceProvider::class, $provider);
+    $listen = (new \ReflectionClass($provider))->getDefaultProperties()['listen'] ?? [];
+    Assert::assertIsArray($listen);
 });
 
 test('RouteServiceProvider can be instantiated', function (): void {
     $provider = new RouteServiceProvider(app());
-    Assert::assertInstanceOf(RouteServiceProvider::class, $provider);
+    Assert::assertSame('Activity', $provider->name);
 });
 
 test('RouteServiceProvider has correct properties', function (): void {

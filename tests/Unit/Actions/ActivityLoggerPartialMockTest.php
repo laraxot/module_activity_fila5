@@ -2,15 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit\Actions;
+namespace Modules\Activity\Tests\Unit\Actions;
 
 use Illuminate\Database\Eloquent\Collection;
 use Mockery;
 use Modules\Activity\Actions\ActivityLogger as ActivityLoggerAction;
 use Modules\Activity\Adapters\ActivityLogger as ActivityLoggerAdapter;
 use Modules\Activity\Models\Activity;
+use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 afterEach(function (): void {
     Mockery::close();

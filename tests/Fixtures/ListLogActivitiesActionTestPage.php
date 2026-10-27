@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Fixtures;
+namespace Modules\Activity\Tests\Fixtures;
 
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Xot\Filament\Resources\XotBaseResource;

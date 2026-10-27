@@ -1,10 +1,11 @@
 <?php
 
 declare(strict_types=1);
+
 use Illuminate\Auth\Events\Logout;
 use Modules\Activity\Listeners\LogoutListener;
 use Modules\Activity\Providers\EventServiceProvider;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
@@ -21,9 +22,7 @@ test('logout listener is registered for logout event', function () {
 });
 
 test('logout listener can be instantiated', function () {
-    $listener = new LogoutListener;
-
-    Assert::assertInstanceOf(LogoutListener::class, $listener);
+    Assert::assertTrue((new ReflectionClass(LogoutListener::class))->isInstantiable());
 });
 
 test('logout listener has handle method', function () {

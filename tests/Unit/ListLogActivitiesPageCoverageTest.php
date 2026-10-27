@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit;
+namespace Modules\Activity\Tests\Unit;
 
 use Filament\Notifications\Notification;
 use Filament\Tables\Enums\PaginationMode;
 use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Filament\Resources\ActivityResource;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -82,8 +82,7 @@ describe('List Log Activities Page Coverage', function (): void {
         };
 
         $notification = $page->exposeRestoreSuccess();
-
-        Assert::assertInstanceOf(Notification::class, $notification);
+        Assert::assertNotEmpty($notification->getTitle());
     });
 
     test('send restore failure notification without message returns notification', function (): void {
@@ -102,8 +101,7 @@ describe('List Log Activities Page Coverage', function (): void {
         };
 
         $notification = $page->exposeRestoreFailure();
-
-        Assert::assertInstanceOf(Notification::class, $notification);
+        Assert::assertNotEmpty($notification->getTitle());
     });
 
     test('send restore failure notification with message includes body', function (): void {
@@ -122,8 +120,7 @@ describe('List Log Activities Page Coverage', function (): void {
         };
 
         $notification = $page->exposeRestoreFailure('test message');
-
-        Assert::assertInstanceOf(Notification::class, $notification);
+        Assert::assertSame('test message', $notification->getBody());
     });
 
     test('can restore activity with record executes resource check', function (): void {

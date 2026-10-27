@@ -4,8 +4,9 @@ type: integration
 tags: [integrations]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
 qmd: "upgrade laravel 13 - activity activity"
+status: superseded
+superseded_by: ../../laravel-13-upgrade.md
 ---
 
 # Upgrade Laravel 13 - Activity 🐄✨

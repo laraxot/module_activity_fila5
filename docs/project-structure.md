@@ -4,6 +4,8 @@ type: documentation
 created: 2026-05-11
 updated: 2026-05-11
 tags: [structure, architecture, module]
+status: draft
+qmd: "project structure   module **activity** activity"
 ---
 
 # Project Structure — Module **Activity**
@@ -121,8 +123,3 @@ git commit -m "docs: add wiki structure for Activity"
 
 ---
 *Pattern: On-Demand | Source: docs/wiki/*
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

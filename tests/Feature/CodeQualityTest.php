@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Feature;
+namespace Modules\Activity\Tests\Feature;
 
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Providers\ActivityServiceProvider;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;

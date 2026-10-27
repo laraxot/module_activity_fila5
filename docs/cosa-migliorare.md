@@ -4,6 +4,8 @@ type: report
 module: Activity
 updated: 2026-09-01
 qmd: "cosa migliorare activity phpstan phpmd phpinsights coverage debito priorita"
+status: draft
+tags: [docs, activity]
 ---
 
 # Cosa migliorare — modulo Activity
@@ -54,8 +56,3 @@ php -r 'echo count(require "vendor/composer/autoload_classmap.php");'   # ~25358
 
 Quadro comparativo di tutte le unità: [`docs/quality-audit.md`](quality-audit.md).
 
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

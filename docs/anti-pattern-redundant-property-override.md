@@ -98,8 +98,3 @@ class CustomActivity extends SpatieActivity
 - [ ] Se override necessario, documentare il perché
 - [ ] Preferire composition over inheritance quando possibile
 - [ ] Review di codice: flaggare ridondanze
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

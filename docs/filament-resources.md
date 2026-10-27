@@ -175,9 +175,9 @@ class ListSnapshots extends XotBaseListRecords
 - [Best Practices Filament](../Xot/project_docs/filament-best-practices.md)
 - [Compatibilità dei Metodi in PHP](https://www.php.net/manual/en/language.oop5.inheritance.php) - [Documentazione Filament](https://filamentphp.com/docs/tables)
 - [XotBaseListRecords](../Xot/docs/filament-pages.md)
-- [Best Practices Filament](../Xot/docs/filament-best-practices.md)
+- [Best Practices Filament](../../Xot/docs/filament-best-practices.md)
 - [XotBaseListRecords](../xot/docs/filament-pages.md)
-- [Best Practices Filament](../xot/docs/filament-best-practices.md)
+- [Best Practices Filament](../../Xot/docs/filament-best-practices.md)
 - [Compatibilità dei Metodi in PHP](https://www.php.net/manual/en/language.oop5.inheritance.php)
 # Filament Resources nel Modulo Activity
 
@@ -349,7 +349,3 @@ class ListSnapshots extends XotBaseListRecords
 - [XotBaseListRecords](../xot/project_docs/filament-pages.md)
 - [Best Practices Filament](../xot/project_docs/filament-best-practices.md)
 - [Compatibilità dei Metodi in PHP](https://www.php.net/manual/en/language.oop5.inheritance.php)
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

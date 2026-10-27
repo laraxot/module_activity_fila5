@@ -1,10 +1,11 @@
 ---
 title: "Workstreams - Activity"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, activity, roadmap]
 qmd: "workstreams - activity activity"
+status: superseded
+superseded_by: workstreams.md
 ---
 # Workstreams - Activity
 
