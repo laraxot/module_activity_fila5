@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 use Modules\Activity\Models\BaseModel;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Models\XotBaseModel;
 use PHPUnit\Framework\Assert;
 
@@ -23,12 +23,5 @@ test('BaseModel has correct connection', function () {
 });
 
 test('BaseModel extends XotBaseModel', function () {
-    $model = new class extends BaseModel
-    {
-        protected $table = 'test_models';
-
-        protected $fillable = ['name'];
-    };
-
-    Assert::assertInstanceOf(XotBaseModel::class, $model);
+    Assert::assertTrue((new ReflectionClass(BaseModel::class))->isSubclassOf(XotBaseModel::class));
 });

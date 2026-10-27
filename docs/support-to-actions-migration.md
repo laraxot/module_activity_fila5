@@ -1,8 +1,8 @@
 ---
 title: "Migration: Support → Actions"
 type: note
-status: draft
-updated: 2026-10-07
+status: done
+updated: 2026-10-22
 tags: [docs, activity]
 qmd: "migration: support → actions activity"
 ---
@@ -54,8 +54,3 @@ php vendor/bin/pest Modules/Activity/tests/Unit/Actions/IsActivityLogSchemaWrita
 4. Replace static calls with `app(<Action>::class)->execute(...)`.
 5. Delete the old Support file and its test.
 6. Update every `use` statement and call site.
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

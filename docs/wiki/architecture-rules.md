@@ -1,6 +1,11 @@
 ---
 title: Architecture rules
 module: Activity
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, wiki]
+qmd: "architecture rules (puntatore) activity"
 ---
 
 -   [Super Cow Methodology](../../Xot/docs/super_cow_methodology.md)

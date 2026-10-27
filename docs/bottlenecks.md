@@ -1,3 +1,11 @@
+---
+title: "Colli di Bottiglia e Soluzioni - Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity]
+qmd: "colli di bottiglia e soluzioni - modulo activity activity"
+---
 # Colli di Bottiglia e Soluzioni - Modulo Activity
 
 ## Panoramica
@@ -319,13 +327,13 @@ class ListActivities extends XotBasePage
 ## Collegamenti Bidirezionali
 
 - [README Activity](./README.md)
-- [README Activity](./README.md)
+- [README Activity](./readme.md)
 - [Roadmap](./roadmap.md)
 - [Struttura del Modulo](./structure.md)
 ## Collegamenti
 
 - [Torna a README](./README.md)
-- [Torna a README](./README.md)
+- [Torna a README](./readme.md)
 - [Vai a Roadmap](./roadmap.md)
 - [Vai a Struttura](./structure.md)
 
@@ -341,8 +349,8 @@ class ListActivities extends XotBasePage
 * [bottlenecks.md](../../dental/docs/bottlenecks.md)
 * [bottlenecks.md](../../User/docs/bottlenecks.md)
 * [bottlenecks.md](../../User/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../ui/docs/bottlenecks.md)
-* [bottlenecks.md](../../ui/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../UI/docs/bottlenecks.md)
+* [bottlenecks.md](../../UI/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../Lang/docs/bottlenecks.md)
 * [bottlenecks.md](../../Lang/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Job/docs/performance/bottlenecks.md)
@@ -369,7 +377,3 @@ class ListActivities extends XotBasePage
 * [bottlenecks.md](../../Media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

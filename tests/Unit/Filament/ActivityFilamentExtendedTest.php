@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit\Filament;
+namespace Modules\Activity\Tests\Unit\Filament;
 
 use Filament\Actions\DeleteAction;
 use Filament\Tables\Columns\Column;
@@ -16,8 +16,11 @@ use Modules\Activity\Filament\Resources\SnapshotResource\Tables\SnapshotsTable;
 use Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventForm;
 use Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventInfolist;
 use Modules\Activity\Filament\Resources\StoredEventResource\Tables\StoredEventsTable;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
+
+uses(TestCase::class);
 
 afterEach(function (): void {
     Mockery::close();

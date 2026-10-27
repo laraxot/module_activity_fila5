@@ -6,6 +6,8 @@ created: "2026-07-21"
 updated: "2026-07-23"
 related:
   - "../../../bashscripts/tools/prompts/02-gitmodules-sync.md"
+status: draft
+qmd: "sincronizzazione multi-organizzazione (laraxot + provtv) activity"
 ---
 
 # Sincronizzazione multi-organizzazione (laraxot + provtv)
@@ -62,8 +64,3 @@ solo 1 commit locale non ancora pushato su entrambi i remote. Push riuscito senz
 conflitti: `laraxot dev` e `provtv dev` (`29d5363a..94e99d77`). Stato finale: `0 0`
 su entrambi i remote, working tree pulito.
 
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

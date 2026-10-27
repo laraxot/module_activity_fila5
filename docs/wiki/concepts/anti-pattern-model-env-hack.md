@@ -2,10 +2,11 @@
 title: Anti pattern model env hack
 module: Activity
 type: note
-status: draft
 updated: 2026-10-08
 tags: [docs, activity, wiki]
 qmd: "anti-pattern: environment-specific logic in models activity"
+status: superseded
+superseded_by: ../../anti-pattern-model-env-hack.md
 ---
 
 # Anti-Pattern: Environment-Specific Logic in Models

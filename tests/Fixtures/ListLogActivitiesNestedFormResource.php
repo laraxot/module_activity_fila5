@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Fixtures;
+namespace Modules\Activity\Tests\Fixtures;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;

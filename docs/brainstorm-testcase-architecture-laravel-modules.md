@@ -2,7 +2,6 @@
 title: "Brainstorm: TestCase Architecture for Laravel Modules"
 date: 2026-06-10
 objective: "Valutare se Modules/<Module>/tests/TestCase.php debba estendere XotBaseTestCase e se XotBaseTestCase debba estendere un BaseTestCase Nwidart"
-status: "completed"
 issues:
   - https://github.com/laraxot/base_fixcity_fila5/issues/316
 discussions:
@@ -14,6 +13,8 @@ type: note
 updated: 2026-10-07
 tags: [docs, activity]
 qmd: "brainstorm: testcase architecture for laravel modules activity"
+status: superseded
+superseded_by: brainstorm-testcase-architecture.md
 ---
 
 # Brainstorm: TestCase Architecture for Laravel Modules
@@ -104,8 +105,3 @@ All 16 `Modules/*/tests/TestCase.php` files now extend `XotBaseTestCase`.
 Modules migrated: User, Geo, Media, UI, Lang, Notify, Gdpr, Job, Fixcity, Tenant, Seo, Rating.
 See canonical rule: `Modules/Xot/docs/wiki/rules/module-testcase-xotbase-hierarchy.md`
 PHPStan after migration: 0 parse errors, 0 pure prod errors.
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

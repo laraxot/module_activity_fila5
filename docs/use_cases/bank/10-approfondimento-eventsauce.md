@@ -1,10 +1,11 @@
 ---
 title: "Approfondimento: Larabank-Eventsauce"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "approfondimento: larabank-eventsauce activity"
+status: superseded
+superseded_by: approfondimento-eventsauce.md
 ---
 # Approfondimento: Larabank-Eventsauce
 

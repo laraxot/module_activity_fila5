@@ -2,25 +2,23 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Fixtures;
+namespace Modules\Activity\Tests\Fixtures;
 
+use Exception;
 use Illuminate\Database\Eloquent\Model;
-use Modules\Activity\Models\BaseModel;
 
 /**
- * Test model that simulates a record whose update() method throws an exception
- * Used to test RestoreActivityAction's exception handling
+ * Modello finto la cui update() fallisce sempre (classe con nome, non anonima).
  */
-final class RestoreActivityFailingUpdateModel extends BaseModel
+final class RestoreActivityFailingUpdateModel extends Model
 {
-    public function update(array $attributes = [], array $options = [])
+    protected $table = 'stub_models';
+
+    /**
+     * @param  array<string, mixed>  $attributes
+     */
+    public function update(array $attributes = [], array $options = []): bool
     {
-        throw new \Exception('Simulated update failure');
+        throw new Exception('db error');
     }
-
-    /** @var string */
-    protected $table = 'activity_failing_updates';
-
-    /** @var list<string> */
-    protected $fillable = ['name'];
 }

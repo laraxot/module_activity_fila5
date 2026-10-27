@@ -2,9 +2,13 @@
 title: 00 index
 module: Activity
 status: stale
+type: index
+updated: 2026-10-23
+tags: [docs, activity, wiki]
+qmd: "**indice documentazione modulo activity** activity"
 ---
 
-> Nota 2026-10-14 (docs-audit): Copia dell'indice radice (varianti di sola maiuscola) con link relativi non validi da wiki/ e riferimenti a pagine inesistenti; l'indice canonico e' ../00-INDEX.md, l'indice della wiki e' INDEX.md. Contenuto non riscritto, verificare prima di usarlo.
+> Nota 2026-10-14 (docs-audit): Copia dell'indice radice (varianti di sola maiuscola) con link relativi non validi da wiki/ e riferimenti a pagine inesistenti; l'indice per argomento e' ../index.md, quello della wiki e' index.md (`../00-INDEX.md` e `INDEX.md` sono stati rimossi il 2026-10-22, commit `7e2a1509`). Contenuto non riscritto, verificare prima di usarlo.
 
 # 📚 **Indice Documentazione Modulo Activity**
 ---
@@ -19,7 +23,7 @@ updated: 2026-07-23
 **Module Version**: 2.3.0
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./README.md) - Panoramica completa e Quick Start.
+1. [README.md](./readme.md) - Panoramica completa e Quick Start.
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
 3. [philosophy.md](./philosophy.md) - I principi dell'Audit Trail e dell'Event Sourcing.
 
@@ -68,7 +72,7 @@ updated: 2026-07-23
 **Module Version**: 2.3.0
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./README.md) - Panoramica completa e Quick Start.
+1. [README.md](./readme.md) - Panoramica completa e Quick Start.
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
 3. [philosophy.md](./philosophy.md) - I principi dell'Audit Trail e dell'Event Sourcing.
 
@@ -110,7 +114,7 @@ updated: 2026-07-23
 **Module Version**: 2.3.0
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./README.md) - Panoramica completa e Quick Start.
+1. [README.md](./readme.md) - Panoramica completa e Quick Start.
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
 3. [philosophy.md](./philosophy.md) - I principi dell'Audit Trail e dell'Event Sourcing.
 
@@ -170,7 +174,7 @@ updated: 2026-07-23
 ## 🔗 **Moduli Correlati**
 - [Xot](../../../Xot/docs/README.md) - Core framework.
 - [Tenant](../../../Tenant/docs/README.md) - Isolamento dati per tenant.
-- [User](../../../User/docs/readme.md) - Autenticazione e causer activity.
+- [User](../../../User/docs/README.md) - Autenticazione e causer activity.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
@@ -217,7 +221,7 @@ app(LogActivityAction::class)->execute(
 ## 🔗 **Moduli Correlati**
 - [Xot](../../../Xot/docs/README.md) - Core framework.
 - [Tenant](../../../Tenant/docs/README.md) - Isolamento dati per tenant.
-- [User](../../../User/docs/readme.md) - Autenticazione e causer activity.
+- [User](../../../User/docs/README.md) - Autenticazione e causer activity.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

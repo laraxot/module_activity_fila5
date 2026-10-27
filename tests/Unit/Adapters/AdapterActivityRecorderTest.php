@@ -2,14 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Unit\Adapters;
+namespace Modules\Activity\Tests\Unit\Adapters;
 
 use Mockery;
 use Modules\Activity\Actions\Query\GetSubjectActivityLogAction;
 use Modules\Activity\Actions\RecordSubjectActivityAction;
 use Modules\Activity\Adapters\ActivityRecorder;
 use Modules\Activity\Models\Activity;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 afterEach(function (): void {
     Mockery::close();

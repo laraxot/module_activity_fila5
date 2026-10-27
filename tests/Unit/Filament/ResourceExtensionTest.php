@@ -7,7 +7,7 @@ use Modules\Activity\Filament\Resources\SnapshotResource;
 use Modules\Activity\Filament\Resources\SnapshotResource\Schemas\SnapshotForm;
 use Modules\Activity\Filament\Resources\StoredEventResource;
 use Modules\Activity\Filament\Resources\StoredEventResource\Schemas\StoredEventForm;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use PHPUnit\Framework\Assert;
 
@@ -41,7 +41,8 @@ test('activity resource implements required getFormSchema method', function () {
 
     $method = $reflection->getMethod('getFormSchema');
     Assert::assertTrue($method->isPublic());
-    Assert::assertTrue($method->isStatic());
+    // XotBaseResource::getFormSchema() e' un metodo d'istanza final: lo schema vero sta nelle classi Schemas\*Form.
+    Assert::assertFalse($method->isStatic());
     $returnType = $method->getReturnType();
     Assert::assertInstanceOf(ReflectionNamedType::class, $returnType);
     Assert::assertSame('array', $returnType->getName());
@@ -117,8 +118,8 @@ test('snapshot resource form schema returns array', function () {
     Assert::assertNotEmpty($form);
 
     $expectedKeys = [
-        'model_type',
-        'model_id',
+        'aggregate_uuid',
+        'aggregate_version',
         'state',
     ];
 

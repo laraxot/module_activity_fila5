@@ -55,8 +55,3 @@ Spostare **Activity** in avanti sui gap P0/P1 piu' vicini al valore, evitando la
 - [Product Strategy](product-strategy.md)
 - [Product Launch Plan](product-launch-plan.md)
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

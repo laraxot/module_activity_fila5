@@ -1,3 +1,11 @@
+---
+title: "Use Case: Tracking Email Sent - Schede Valutazione"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, use-cases]
+qmd: "use case: tracking email sent - schede valutazione activity"
+---
 # Use Case: Tracking Email Sent - Schede Valutazione
 
 ## 📋 Overview
@@ -366,7 +374,6 @@ public function it_logs_activity_when_sending_email(): void
 
 ---
 
-**=======
 **Ultimo Aggiornamento:** 2025-01-22
 **Versione:** 1.0
 **Autore:** System Integration Documentation

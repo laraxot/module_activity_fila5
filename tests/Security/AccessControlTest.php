@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Activity\Security;
+namespace Modules\Activity\Tests\Security;
 
 /**
  * Security Test Case for Activity Module Access Control
@@ -12,7 +12,7 @@ namespace Tests\Modules\Activity\Security;
  */
 
 use Modules\Activity\Models\Policies\ActivityPolicy;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

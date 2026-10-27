@@ -126,8 +126,3 @@ Traits ......................................................... 7.5 %
  [ERROR] The architecture score is too low                                                              
 
 
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

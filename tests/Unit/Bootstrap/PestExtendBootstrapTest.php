@@ -5,7 +5,7 @@ use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
@@ -16,7 +16,7 @@ uses(TestCase::class);
  * Il bootstrap Pest del modulo non lega cartelle a TestCase: ogni file
  * dichiara `uses()` nudo. Eseguire con:
  *   ./vendor/bin/pest -c Modules/Activity/phpunit.xml \
- *     --test-directory=tests/Modules/Activity Unit/Bootstrap
+ *     --test-directory=Modules/Activity/tests Unit/Bootstrap
  */
 
 test('activity models declare activity connection without database', function (): void {

@@ -50,8 +50,3 @@ Aggiornato da `composer show` il 2026-03-02.
 
 - [Composer packages study](../../../../docs/architecture/composer-packages-study.md)
 - [Composer packages full inventory](../../../../docs/architecture/composer-packages-full-inventory.md)
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

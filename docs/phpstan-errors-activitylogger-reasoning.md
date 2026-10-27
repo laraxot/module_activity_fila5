@@ -383,7 +383,3 @@ protected function getStatisticsByType(\Illuminate\Database\Eloquent\Builder $qu
 **Date**: 2025-01-27
 **Date**: [DATE]
 **Workflow**: Super Mucca Step 4 - Ragionare sulle correzioni proposte ✅
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

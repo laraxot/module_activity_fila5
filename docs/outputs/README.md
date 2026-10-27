@@ -1,3 +1,11 @@
+---
+title: "Activity"
+type: index
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, outputs]
+qmd: "activity activity"
+---
 # Activity
 
 [![Module](https://img.shields.io/badge/Module-Activity-8B0000.svg)]()

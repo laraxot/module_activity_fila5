@@ -7,6 +7,8 @@ updated: 2026-06-10
 related:
   - ../../../../../Themes/Sixteen/docs/wiki/concepts/phpstan-compliance.md
   - ../../../../../docs/wiki/concepts/phpstan-level-max-compliance.md
+status: draft
+qmd: "activity module   phpstan type compliance activity"
 ---
 
 # Activity Module — PHPStan Type Compliance

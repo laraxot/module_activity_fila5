@@ -103,7 +103,8 @@ parameters:
 > "The site works. If tests fail, the tests are wrong, not the code."
 
 🤖 Generated with [Claude Code](https://claude.com/claude-code)
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+
+## event sourcing business logic (2026-10)
+
+`EventSourcingBusinessLogicTest` usa asserzioni PHPUnit e `Safe\json_encode`/`json_decode` al posto delle catene Pest higher-order.
+

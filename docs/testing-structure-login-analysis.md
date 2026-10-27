@@ -1,3 +1,11 @@
+---
+title: "Struttura Corretta dei Test di Login - Analisi Completa"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity]
+qmd: "struttura corretta dei test di login - analisi completa activity"
+---
 # Struttura Corretta dei Test di Login - Analisi Completa
 # Struttura Corretta dei Test di Login - Analisi Completa <nome progetto>
 
@@ -185,7 +193,3 @@ function createTestUser(array $attributes = []): UserContract
 4. **SEMPRE** approfondire prima di agire
 
 *Ultimo aggiornamento: Dicembre 2024 - Analisi completa struttura login*
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

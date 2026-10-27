@@ -329,8 +329,3 @@ php artisan tinker
 - **Generated**: 2026-09-06
 - **Verified Against**: laravel/Modules/Activity/ full codebase
 - **Author**: Visionary analysis
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

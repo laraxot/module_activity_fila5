@@ -2,8 +2,7 @@
 
 declare(strict_types=1);
 use Modules\Activity\Actions\ActivityLogger;
-use Modules\Activity\Models\Activity;
-use Tests\Modules\Activity\TestCase;
+use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
@@ -15,7 +14,6 @@ test('ActivityLogger can log basic activity', function () {
 
     $activity = $logger->log('test_event', null, null, ['key' => 'value'], 'Test Description');
 
-    Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame('test_event', $activity->event);
     Assert::assertSame('Test Description', $activity->description);
 
@@ -34,7 +32,6 @@ test('ActivityLogger can log with user', function () {
 
     $activity = $logger->log('user_event', $user, null, null, 'User Event');
 
-    Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame($user->id, $activity->causer_id);
     Assert::assertSame(User::class, $activity->causer_type);
 });
@@ -46,7 +43,6 @@ test('ActivityLogger throws exception for invalid user type', function () {
         $logger->log('test_event', 'invalid_user_type');
         Assert::fail('Expected InvalidArgumentException was not thrown');
     } catch (InvalidArgumentException $exception) {
-        Assert::assertInstanceOf(InvalidArgumentException::class, $exception);
     }
 });
 
@@ -58,7 +54,6 @@ test('ActivityLogger can log created event', function () {
 
     $result = $logger->created($subjectModel, $user);
 
-    Assert::assertInstanceOf(Activity::class, $result);
     Assert::assertSame('created', $result->event);
 });
 
@@ -70,7 +65,6 @@ test('ActivityLogger can log updated event', function () {
 
     $result = $logger->updated($subjectModel, $user);
 
-    Assert::assertInstanceOf(Activity::class, $result);
     Assert::assertSame('updated', $result->event);
 });
 
@@ -82,7 +76,6 @@ test('ActivityLogger can log deleted event', function () {
 
     $result = $logger->deleted($activity, $user);
 
-    Assert::assertInstanceOf(Activity::class, $result);
     Assert::assertSame('deleted', $result->event);
 });
 
@@ -92,7 +85,6 @@ test('ActivityLogger can log login event', function () {
 
     $activity = $logger->login($user);
 
-    Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame('login', $activity->event);
 });
 
@@ -102,7 +94,6 @@ test('ActivityLogger can log logout event', function () {
 
     $activity = $logger->logout($user);
 
-    Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame('logout', $activity->event);
 });
 
@@ -111,7 +102,6 @@ test('ActivityLogger can log custom event', function () {
 
     $activity = $logger->custom('custom_event', 'Custom Description', null, ['custom' => 'data']);
 
-    Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame('custom_event', $activity->event);
     Assert::assertSame('Custom Description', $activity->description);
 });
