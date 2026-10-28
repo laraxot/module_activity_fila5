@@ -4,11 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Support\Carbon;
 use Modules\Activity\Models\BaseModel;
-use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
  * Classe concreta di test per BaseModel.
@@ -25,12 +22,11 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property int|null $updated_by
  * @property int|null $deleted_by
  *
- * @method static Factory<static> factory()
- *
  * @coversNothing
  */
 class TestActivityModel extends BaseModel
 {
+<<<<<<< HEAD
     /**
      * @use HasFactory<Factory<self>>
      *
@@ -43,6 +39,8 @@ class TestActivityModel extends BaseModel
         HasXotFactory::factory insteadof HasFactory;
     }
 
+=======
+>>>>>>> 83de853d (.)
     /** @var string */
     protected $table = 'test_models';
 

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Activity"
 type: index
 status: draft
@@ -37,6 +38,11 @@ Core module for the FixCity Platform.
 | 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](..) |
 
+=======
+module: theme
+topic: README
+canonical: ../../../../Themes/docs/shared-components/README-Modules.md
+>>>>>>> 83de853d (.)
 ---
 
-**Modulo** `Activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+See canonical documentation: ../../../../Themes/docs/shared-components/README-Modules.md

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 83de853d (.)
 use Modules\Activity\Actions\Schema\IsActivityLogSchemaWritableAction;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;

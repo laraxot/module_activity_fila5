@@ -11,7 +11,7 @@ use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('can create snapshot with basic information', function (): void {
     $snapshot = SnapshotFactory::new()->createOne([

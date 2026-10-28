@@ -6,12 +6,15 @@ namespace Modules\Activity\Tests\Unit;
 
 use Carbon\Carbon;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use Tests\TestCase;
 
+=======
+>>>>>>> 83de853d (.)
 use function Safe\json_decode;
 use function Safe\json_encode;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 describe('Event Sourcing Business Logic', function () {
     beforeEach(function () {

@@ -10,7 +10,7 @@ qmd: "activity module - roadmap & optimization activity"
 
 **Modulo**: Activity (Audit Trail & Activity Logging)
 **Data Analisi**: 1 Ottobre 2025
-**Status PHPStan**: ✅ 0 errori (Level 10)
+**Status PHPStan**: ✅ 0 errori (Level 9)
 **Status Generale**: ✅ ECCELLENTE
 
 ---
@@ -57,9 +57,14 @@ qmd: "activity module - roadmap & optimization activity"
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [← Activity Module README](../README.md)
 - [← Activity Module README](../README.md)
 - [← Root Documentation](../../../../docs/index.md)
+=======
+- [← Activity Module README](../readme.md)
+- [← Root Documentation](../../../docs/index.md)
+>>>>>>> 83de853d (.)
 
 ---
 

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Errori Comuni Filament nel Modulo Activity"
 type: note
 status: draft
@@ -172,4 +173,11 @@ class ListSnapshots extends ListRecords
 - [ ] Documentare le modifiche nel CHANGELOG
 - [ ] Eseguire PHPStan per verificare altri possibili errori=======
 See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
+=======
+module: theme
+topic: filament-errors-duplicate
+canonical: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
+---
+
+>>>>>>> 83de853d (.)
 See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Activity Module Test Coverage"
 type: note
@@ -6,6 +7,8 @@ updated: 2026-10-08
 tags: [docs, activity]
 qmd: "activity module test coverage activity"
 ---
+=======
+>>>>>>> 83de853d (.)
 # Activity Module Test Coverage
 
 ## Coverage Results

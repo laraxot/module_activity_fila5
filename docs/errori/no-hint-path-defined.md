@@ -500,7 +500,11 @@ docker-compose restart app
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 27 Ottobre 2025
+=======
+**
+>>>>>>> 83de853d (.)
 **Versione Laravel**: 12.35.1
 **Errore Code**: `InvalidArgumentException`
 **Severità**: Alta (blocca funzionalità Activity Log)

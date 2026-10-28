@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;

@@ -19,7 +19,10 @@ qmd: "advanced event sourcing patterns for healthcare applications activity"
 
 ## Introduction
 
+<<<<<<< HEAD
 Event Sourcing is particularly valuable in healthcare applications like `saluteora` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.=======
+=======
+>>>>>>> 83de853d (.)
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
 
@@ -46,7 +49,10 @@ sequenceDiagram
     participant A as API
     participant AR as PatientAggregate
     participant ES as Event Store
+<<<<<<< HEAD
     =======
+=======
+>>>>>>> 83de853d (.)
 
     C->>A: Register Patient
     A->>AR: handle(RegisterPatientCommand)
@@ -54,7 +60,10 @@ sequenceDiagram
     AR->>ES: store(ContactInfoUpdated)
     ES-->>A: Events stored
     A-->>C: Patient ID
+<<<<<<< HEAD
     =======
+=======
+>>>>>>> 83de853d (.)
 
     Note right of ES: Projectors update read models asynchronously
 ```
@@ -72,6 +81,7 @@ class PrescriptionAggregate extends AggregateRoot
 {
     private array $medications = [];
     private bool $isApproved = false;
+<<<<<<< HEAD
     
     public function prescribe(
         string $patientId, 
@@ -79,6 +89,24 @@ class PrescriptionAggregate extends AggregateRoot
     public function prescribe(
         string $patientId,
         string $medicationId,
+=======
+
+    public function prescribe(
+        string $patientId,
+        string $medicationId,
+        string $dosage,
+        string $doctorId
+    ): void {
+        $this->recordThat(new MedicationPrescribed(
+            prescriptionId: $this->uuid(),
+            patientId: $patientId,
+            medicationId: $medicationId,
+            dosage: $dosage,
+            prescribedBy: $doctorId,
+            prescribedAt: now()
+        ));
+    }
+>>>>>>> 83de853d (.)
 
     protected function applyMedicationPrescribed(MedicationPrescribed $event): void
     {
@@ -99,7 +127,10 @@ class ScheduleAppointmentHandler
         private EventBus $eventBus,
         private AppointmentRepository $appointments
     ) {}
+<<<<<<< HEAD
     =======
+=======
+>>>>>>> 83de853d (.)
 
     public function handle(ScheduleAppointmentCommand $command): void
     {
@@ -110,9 +141,12 @@ class ScheduleAppointmentHandler
             $command->scheduledTime,
             $command->duration
         );
+<<<<<<< HEAD
         
         $this->appointments->save($appointment);
         =======
+=======
+>>>>>>> 83de853d (.)
 
         $this->appointments->save($appointment);
 
@@ -135,18 +169,68 @@ class PatientAggregate extends AggregateRoot
 {
     private int $version = 0;
     private array $events = [];
+<<<<<<< HEAD
     
     public static function reconstituteFromEvents(UuidInterface $uuid, array $events): self
     {
         $aggregate = new static($uuid);
         
+=======
+
+>>>>>>> 83de853d (.)
     public static function reconstituteFromEvents(UuidInterface $uuid, array $events): self
     {
         $aggregate = new static($uuid);
 
+<<<<<<< HEAD
         return $aggregate;
     }
 
+=======
+        // Apply all events
+        foreach ($events as $event) {
+            $aggregate->apply($event);
+            $aggregate->version++;
+        }
+
+        return $aggregate;
+    }
+
+    public function snapshot(): PatientSnapshot
+    {
+        return new PatientSnapshot([
+            'aggregate_id' => $this->uuid->toString(),
+            'version' => $this->version,
+            'state' => [
+                // Current state properties
+            ]
+        ]);
+    }
+}
+```
+
+### 2. Read Model Optimization
+- Use dedicated read models for common queries
+- Implement caching strategies
+- Consider eventual consistency where appropriate
+
+## Best Practices
+
+### 1. Event Design
+- Keep events small and focused
+- Use past tense for event names
+- Include all necessary context
+- Make events immutable
+
+### 2. Testing
+```php
+class PatientRegistrationTest extends TestCase
+{
+    /** @test */
+    public function it_registers_a_new_patient()
+    {
+        $patientId = PatientId::generate();
+>>>>>>> 83de853d (.)
 
         $this->given()
             ->when(new RegisterPatient($patientId, 'John', 'Doe', 'john@example.com'))
@@ -181,12 +265,16 @@ class PatientAggregate extends AggregateRoot
 
 ## Conclusion
 
+<<<<<<< HEAD
 Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `saluteora` can build a system that not only meets current requirements but can also evolve with future needs.
 
 ## References
 - [Event Sourcing in Laravel by Brent Roose](https://event-sourcing-laravel.com/)
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/project_docs/laravel-event-sourcing/v7/)
 - [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `<nome progetto>` can build a system that not only meets current requirements but can also evolve with future needs.
+=======
+Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `<nome progetto>` can build a system that not only meets current requirements but can also evolve with future needs.
+>>>>>>> 83de853d (.)
 Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `<nome progetto>` can build a system that not only meets current requirements but can also evolve with future needs.
 
 ## References

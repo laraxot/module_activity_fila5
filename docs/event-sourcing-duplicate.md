@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Event Sourcing in Laravel"
 type: note
 status: draft
@@ -167,4 +168,11 @@ L'Event Sourcing offre un approccio potente per gestire la complessità nel modu
 
 Se hai bisogno di ulteriori dettagli o di un'implementazione specifica, fammi sapere!=======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
+=======
+module: theme
+topic: event-sourcing-duplicate
+canonical: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
+---
+
+>>>>>>> 83de853d (.)
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md

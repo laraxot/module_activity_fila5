@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Filament v4 Upgrade Documentation"
 type: note
 status: draft
@@ -7,20 +8,31 @@ tags: [docs, activity, filament]
 qmd: "filament v4 upgrade documentation activity"
 ---
 # Filament v4 Upgrade Documentation
+=======
+module: theme
+topic: filament-v4-upgrade
+canonical: ../../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
+---
+>>>>>>> 83de853d (.)
 
+See canonical documentation: ../../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
 ## Overview
 This document outlines the key changes and upgrades implemented for Filament v4 in the Activity module.
 
 ## Key Changes Made
 
 ### 1. Schema-based Resource Definitions
-- **Updated**: `ActivityResource` now uses `getFormSchema()` method
 - **New Pattern**: Returns array of `Filament\Schemas\Components\Component`
 - **Migration**: Moved from v3 `form(Form $form)` to v4 schema approach
 
 ```php
 // v4 Approach (Current)
+<<<<<<< HEAD
 public function getFormSchema(): array{
+=======
+public static function getFormSchema(): array
+{
+>>>>>>> 83de853d (.)
     return [
         'log_name' => TextInput::make('log_name')->required()->maxLength(255),
         'description' => TextInput::make('description')->required()->maxLength(255),
@@ -30,8 +42,6 @@ public function getFormSchema(): array{
 ```
 
 ### 2. Table Method Updates
-- **Updated**: Table actions now use `recordActions()` instead of `actions()`
-- **Updated**: Bulk actions now use `toolbarActions()`
 - **Base Class**: `XotBaseListRecords` properly implements v4 table patterns
 
 ### 3. Base Resource Updates

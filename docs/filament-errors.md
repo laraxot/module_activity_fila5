@@ -170,7 +170,11 @@ class ListSnapshots extends ListRecords
 - [ ] Testare il funzionamento delle liste dopo le modifiche
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
+<<<<<<< HEAD
 - [ ] Eseguire PHPStan per verificare altri possibili errori - [ ] Eseguire PHPStan per verificare altri possibili errori
+=======
+- [ ] Eseguire PHPStan per verificare altri possibili errori
+>>>>>>> 83de853d (.)
 # Errori Comuni Filament nel Modulo Activity
 
 ## Errori di Metodi Statici
