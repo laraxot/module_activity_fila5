@@ -228,8 +228,6 @@ All resources must be tested to ensure:
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
 - [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../xot/project_docs/filament-best-practices.md)
-<<<<<<< .merge_file_QrU5Sb
-=======
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
 # Activity Module Filament Resource Guidelines
 
@@ -341,5 +339,4 @@ All resources must be tested to ensure:
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
 - [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../xot/project_docs/filament-best-practices.md)
->>>>>>> .merge_file_3TDlxN
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)

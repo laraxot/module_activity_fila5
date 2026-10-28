@@ -8,8 +8,6 @@ use Modules\Activity\Listeners\LogoutListener;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
-
 uses(TestCase::class);
 
 test('logout listener is registered for logout event', function () {

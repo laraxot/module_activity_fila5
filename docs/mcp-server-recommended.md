@@ -10,10 +10,7 @@ tags: [docs, activity]
 qmd: "mcp server consigliati per il modulo activity activity"
 ---
 
-<<<<<<< .merge_file_BDkqSw
 See canonical documentation: ../../../Themes/docs/shared-components/MCP-SERVER-RECOMMENDED.md
-=======
->>>>>>> .merge_file_Fj0Hy3
 
 # MCP Server Consigliati per il Modulo Activity
 

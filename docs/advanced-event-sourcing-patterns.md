@@ -46,10 +46,6 @@ sequenceDiagram
     participant A as API
     participant AR as PatientAggregate
     participant ES as Event Store
-<<<<<<< .merge_file_Fwq9ag
-    =======
-=======
->>>>>>> .merge_file_5P2xCU
 
     C->>A: Register Patient
     A->>AR: handle(RegisterPatientCommand)
@@ -57,10 +53,6 @@ sequenceDiagram
     AR->>ES: store(ContactInfoUpdated)
     ES-->>A: Events stored
     A-->>C: Patient ID
-<<<<<<< .merge_file_Fwq9ag
-    =======
-=======
->>>>>>> .merge_file_5P2xCU
 
     Note right of ES: Projectors update read models asynchronously
 ```
@@ -105,10 +97,6 @@ class ScheduleAppointmentHandler
         private EventBus $eventBus,
         private AppointmentRepository $appointments
     ) {}
-<<<<<<< .merge_file_Fwq9ag
-    =======
-=======
->>>>>>> .merge_file_5P2xCU
 
     public function handle(ScheduleAppointmentCommand $command): void
     {
@@ -120,16 +108,7 @@ class ScheduleAppointmentHandler
             $command->duration
         );
         
-<<<<<<< .merge_file_Fwq9ag
         $this->appointments->save($appointment);
-        =======
-
-        $this->appointments->save($appointment);
-=======
-        $this->appointments->save($appointment);
-
-        $this->appointments->save($appointment);
->>>>>>> .merge_file_5P2xCU
 
         $this->eventBus->publish(new AppointmentScheduled(
             $appointment->id,
@@ -210,8 +189,4 @@ Event Sourcing provides a robust foundation for healthcare applications by ensur
 
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/project_docs/laravel-event-sourcing/v7/)
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/docs/laravel-event-sourcing/v7/)
-<<<<<<< .merge_file_Fwq9ag
 - [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)
-=======
-- [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)
->>>>>>> .merge_file_5P2xCU

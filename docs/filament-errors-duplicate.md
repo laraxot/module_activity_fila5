@@ -171,10 +171,5 @@ class ListSnapshots extends ListRecords
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
 - [ ] Eseguire PHPStan per verificare altri possibili errori=======
-<<<<<<< .merge_file_JBd1KW
 See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
 See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
-See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
->>>>>>> .merge_file_iwfbKb

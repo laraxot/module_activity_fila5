@@ -139,9 +139,6 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 
 ---
 
-<<<<<<< .merge_file_feCKHi
-*Last Updated: March 12, 2026*=======
-=======
 ## Related Documents
 
 - [PRD](prd.md)
@@ -151,4 +148,3 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 ---
 
 *Last Updated: March 12, 2026*
->>>>>>> .merge_file_CAAubk

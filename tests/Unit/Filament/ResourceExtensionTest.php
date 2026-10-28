@@ -28,10 +28,11 @@ test('activity resource does not implement unnecessary methods', function () {
 
     // Different installs / Filament versions may generate these methods.
     // We keep this as a smoke test instead of enforcing strict absence.
-    Assert::assertIsBool($reflection->hasMethod('getPages'));
-    Assert::assertIsBool($reflection->hasMethod('getRelations'));
-    Assert::assertIsBool($reflection->hasMethod('form'));
-    Assert::assertIsBool($reflection->hasMethod('table'));
+    foreach (['getPages', 'getRelations', 'form', 'table'] as $methodName) {
+        if ($reflection->hasMethod($methodName)) {
+            Assert::assertTrue($reflection->getMethod($methodName)->isPublic());
+        }
+    }
 });
 
 test('activity resource implements required getFormSchema method', function () {
@@ -93,12 +94,8 @@ test('activity resource has correct model configuration', function () {
 });
 
 test('activity resource form schema returns array', function () {
-<<<<<<< .merge_file_2tSmm5
     $formInstance = app(ActivityForm::class);
     $form = $formInstance->getFormSchema();
-=======
-    $form = (new ActivityResource)->getFormSchema();
->>>>>>> .merge_file_NKu2AC
 
     Assert::assertNotEmpty($form);
 
@@ -116,12 +113,8 @@ test('activity resource form schema returns array', function () {
 });
 
 test('snapshot resource form schema returns array', function () {
-<<<<<<< .merge_file_2tSmm5
     $formInstance = app(SnapshotForm::class);
     $form = $formInstance->getFormSchema();
-=======
-    $form = (new SnapshotResource)->getFormSchema();
->>>>>>> .merge_file_NKu2AC
 
     Assert::assertNotEmpty($form);
 
@@ -137,12 +130,8 @@ test('snapshot resource form schema returns array', function () {
 });
 
 test('stored event resource form schema returns array', function () {
-<<<<<<< .merge_file_2tSmm5
     $formInstance = app(StoredEventForm::class);
     $form = $formInstance->getFormSchema();
-=======
-    $form = (new StoredEventResource)->getFormSchema();
->>>>>>> .merge_file_NKu2AC
 
     Assert::assertNotEmpty($form);
 
