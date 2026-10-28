@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Activity Module Testing"
 type: guide
@@ -37,9 +36,6 @@ test('logs causer on user action', function () {
     expect($activity->causer_id)->toBe($admin->id);
 });
 ```# Testing Documentation
-=======
-# Testing Documentation
->>>>>>> 83de853d (.)
 
 ## Overview
 

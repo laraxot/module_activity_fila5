@@ -2,7 +2,6 @@
 module: theme
 topic: logging_optimization
 canonical: ../../../Themes/docs/shared-components/logging-optimization.md
-<<<<<<< HEAD
 title: "logging optimization"
 type: note
 status: stub
@@ -10,8 +9,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "logging optimization activity"
 ---
-=======
->>>>>>> 83de853d (.)
 
 See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md
 # Activity Module - Logging Optimization

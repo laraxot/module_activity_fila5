@@ -8,7 +8,6 @@ qmd: "activity charts - filament widget integration activity"
 ---
 # 📊 Activity Charts - Filament Widget Integration
 
-<<<<<<< HEAD
 [![Module](https://img.shields.io/badge/Module-📊 Activity Charts - Filament Widget Integration-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
 [![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
@@ -37,12 +36,6 @@ Core module for the FixCity Platform.
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
 | 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](..) |
-=======
-**Modulo**: Activity
-**Data**: 2025-12-09
-**Versione Filament**: 4.x
-**Status**: ✅ Production Ready
->>>>>>> 83de853d (.)
 
 ---
 

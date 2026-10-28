@@ -15,6 +15,13 @@ status: draft
 
 ---
 
+## [2026-10-28] phpstan | Modulo sovrascritto da un rebase fermo: 383 errori → 0
+
+- Causa: repo del modulo in `interactive rebase in progress` (onto `7083148f`); l'auto-commit `36463864` ha fissato un conflitto a meta' (71 file mancanti, 135 tornati a fine settembre): LogViewer, `Adapters\ActivityLogger`, fixture `*Harness`, firme `UserContract`. Non erano rimozioni volute.
+- Ricostruiti `lang/{it,en}/log_viewer.php`, download Folio `pages/api/log-download`, test `Unit/Actions/Log/*` e `LogDownloadPageTest`; `LogActivityAction` e `Actions\ActivityLogger` di nuovo su `UserContract`.
+- Regola: con tanti `class.notFound` in un modulo guarda prima `git status` del modulo (rebase?) e confronta con l'albero `onto`, non riscrivere i test. Vedi [story](../stories/phpstan-zero-errors-activity.story.md) e [dev](../stories/phpstan-zero-errors-activity.dev.md).
+- Aperto: rebase da concludere/abortire (lo decide l'utente); questo file ha ancora marcatori `<<<<<<< HEAD` del rebase piu' sotto.
+
 ## [2026-10-14] docs | Ingressi di `docs/` riallineati al codice
 
 - Riscritti con fatti verificati su `app/`, `routes/`, `config/`, `database/migrations`, `tests/`: [README.md](../README.md), `../00-INDEX.md` (indice canonico: stato delle cartelle e famiglie della radice con conteggi), `../INDEX.md` (solo inventario numerico), [README.md](./README.md) di questa wiki. Corretti i link di `INDEX.md` della wiki e tolti da `../index.md` i 40 link a `tasks/` e `roadmap/tasks/` (file rimossi nel commit `7e00cedf` del 2026-10-08).
@@ -61,8 +68,6 @@ status: draft
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
 
 ---
-<<<<<<< HEAD
-=======
 title: "Activity Log"
 type: log
 module: Activity
@@ -117,7 +122,6 @@ discussions:
 title: "Activity Log"
 module: "Activity"
 ---
->>>>>>> 83de853d (.)
 
 # Activity Log — Activity
 
@@ -148,7 +152,6 @@ module: "Activity"
 - 2026-06-10: activity_log consolidato in 2026_06_10_140000_create_activity_table.php; duplicate in _bak/
 
 - 2026-06-10: activity_log — consolidate add/fix/update in 141000_create_activity_table; anti-pattern in _bak/
-<<<<<<< HEAD
 
 
 ## 2026-09-20 — Pagina Log nel pannello Activity (`/activity/admin/log-viewer`)
@@ -167,5 +170,3 @@ module: "Activity"
 - `tests/Fixtures/CanPaginateHarness.php` + `tests/fixtures/CanPaginateHarness.php`: aligned `exposePaginateQuery()` PHPDoc to `Builder<Model>` (removed own `@template` that shadowed the trait's).
 - `app/Filament/Pages/ListLogActivities.php`: added `@var LengthAwarePaginator<int, Activity>` after the instanceof check to satisfy return-type covariance.
 - Cleared 6 `argument.type` / `return.type` errors.
-=======
->>>>>>> 83de853d (.)

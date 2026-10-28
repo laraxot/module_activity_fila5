@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: MCP_SERVER_RECOMMENDED
@@ -10,8 +9,6 @@ updated: 2026-10-08
 tags: [docs, activity]
 qmd: "mcp server consigliati per il modulo activity activity"
 ---
-=======
->>>>>>> 83de853d (.)
 
 
 # MCP Server Consigliati per il Modulo Activity

@@ -22,7 +22,6 @@ class ActivityResource extends XotBaseResource
 {
     protected static ?string $model = Activity::class;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
     {
         return [
@@ -136,9 +135,6 @@ class ActivityResource extends XotBaseResource
     protected static ?string $model = Activity::class;
 
     public function getFormSchema(): array
-=======
-    public static function getFormSchema(): array
->>>>>>> 83de853d (.)
     {
         return [
             // Form schema components only
@@ -232,8 +228,6 @@ All resources must be tested to ensure:
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
 - [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../xot/project_docs/filament-best-practices.md)
-<<<<<<< HEAD
-=======
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
 # Activity Module Filament Resource Guidelines
 
@@ -345,5 +339,4 @@ All resources must be tested to ensure:
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
 - [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../xot/project_docs/filament-best-practices.md)
->>>>>>> 83de853d (.)
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)

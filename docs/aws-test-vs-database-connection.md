@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: aws_test_vs_database_connection
@@ -12,9 +11,6 @@ qmd: "aws test vs database connection activity"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/aws-test-vs-database-connection.md# AWS Test Bugfix vs Database Connection Configuration
-=======
-# AWS Test Bugfix vs Database Connection Configuration
->>>>>>> 83de853d (.)
 
 ## Overview
 This document clarifies the distinction between two separate concepts that may appear related but serve completely different purposes:
