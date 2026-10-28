@@ -212,8 +212,4 @@ class ActivityPolicy
 - [Security](security.md)
 - [Quality](roadmap/quality.md)
 - [Performance](PERFORMANCE.md) _(target mancante, verificato 2026-10-14)_
-<<<<<<< .merge_file_JmBlOC
 - [Testing](testing.md)
-=======
-- [Testing](testing.md)
->>>>>>> .merge_file_dLafaT

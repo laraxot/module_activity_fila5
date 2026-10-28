@@ -47,7 +47,7 @@ Riscritti (sostituzione dell'intero contenuto guardata da sha1 e mtime; versione
 
 Modificati con sostituzioni mirate: `docs/index.md` (le voci `tasks/` e `roadmap/tasks/` e `docs-archive-policy.md` sono una nota con commit e comando `git show` per recuperarle; conteggio file aggiornato), `docs/wiki/INDEX.md` (3 link, piede di pagina), `docs/readme.md` (3 link annotati), `docs/wiki/log.md` (4 link annotati, nuova voce del 2026-10-14), `docs/ARCHITECTURE.md` (aggiunto frontmatter, un link annotato).
 
-Marcati `stale` con `docs-organizer.py stale --fix` (contenuto non riscritto): `API.md`, `readme.md`, `ARCHITECTURE.md` (a mano, mancava il frontmatter), `00-index.md`, `wiki/00-INDEX.md`, `wiki/00-index.md`, `wiki/index.md`; come `stub`: `00-index-1.md`, `wiki/00-index-documentation.md`.
+Marcati `stale` con `docs-organizer.py stale --fix` (contenuto non riscritto): `API.md`, `readme.md`, `ARCHITECTURE.md` (a mano, mancava il frontmatter), `00-index.md`, `wiki/00-INDEX.md`, `wiki/00-index.md`, `wiki/index.md`; come `stub`: `00-index.md`, `wiki/00-index-documentation.md`.
 
 ## Verifica
 

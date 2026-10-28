@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_v34ZSO
-=======
-
->>>>>>> .merge_file_5nIHl7
 /**
  * StoredEvent extended business logic — Pest (split from StoredEventBusinessLogicTest).
  * Part 2: edge cases, metadata, date range, version compare (claude-audit file size).
@@ -26,11 +22,7 @@ use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
-<<<<<<< .merge_file_v34ZSO
 uses(TestCase::class);
-=======
-uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> .merge_file_5nIHl7
 
 // Pest test — Activity module regression case
 test('can handle event with empty properties', function (): void {

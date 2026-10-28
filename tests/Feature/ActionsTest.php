@@ -22,11 +22,7 @@ function createUser(): User
 describe('ActivityLogger', function (): void {
 
     test('logs simple activity', function (): void {
-<<<<<<< .merge_file_g4kZCT
-        $user = createActionsTestUser();
-=======
         $user = createUser();
->>>>>>> .merge_file_7tOKb5
         $logger = new ActivityLogger;
         $activity = $logger->log('test_event', $user);
 
@@ -35,15 +31,9 @@ describe('ActivityLogger', function (): void {
     });
 
     test('logs created event', function (): void {
-<<<<<<< .merge_file_g4kZCT
-        $user = createActionsTestUser();
-        $logger = new ActivityLogger;
-        $model = activityCreateUser();
-=======
         $user = createUser();
         $logger = new ActivityLogger;
-        $model = (new UserFactory)->createOne();
->>>>>>> .merge_file_7tOKb5
+        $model = activityCreateUser();
 
         $activity = $logger->created($model, $user);
 
@@ -52,15 +42,9 @@ describe('ActivityLogger', function (): void {
     });
 
     test('logs updated event', function (): void {
-<<<<<<< .merge_file_g4kZCT
-        $user = createActionsTestUser();
-        $logger = new ActivityLogger;
-        $model = activityCreateUser();
-=======
         $user = createUser();
         $logger = new ActivityLogger;
-        $model = (new UserFactory)->createOne();
->>>>>>> .merge_file_7tOKb5
+        $model = activityCreateUser();
 
         $activity = $logger->updated($model, $user);
 
@@ -69,15 +53,9 @@ describe('ActivityLogger', function (): void {
     });
 
     test('logs deleted event', function (): void {
-<<<<<<< .merge_file_g4kZCT
-        $user = createActionsTestUser();
-        $logger = new ActivityLogger;
-        $model = activityCreateUser();
-=======
         $user = createUser();
         $logger = new ActivityLogger;
-        $model = (new UserFactory)->createOne();
->>>>>>> .merge_file_7tOKb5
+        $model = activityCreateUser();
 
         $activity = $logger->deleted($model, $user);
 
@@ -86,11 +64,7 @@ describe('ActivityLogger', function (): void {
     });
 
     test('logs login event', function (): void {
-<<<<<<< .merge_file_g4kZCT
-        $user = createActionsTestUser();
-=======
         $user = createUser();
->>>>>>> .merge_file_7tOKb5
         $logger = new ActivityLogger;
         $activity = $logger->login($user);
 
@@ -99,11 +73,7 @@ describe('ActivityLogger', function (): void {
     });
 
     test('logs logout event', function (): void {
-<<<<<<< .merge_file_g4kZCT
-        $user = createActionsTestUser();
-=======
         $user = createUser();
->>>>>>> .merge_file_7tOKb5
         $logger = new ActivityLogger;
         $activity = $logger->logout($user);
 

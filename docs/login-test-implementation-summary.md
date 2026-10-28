@@ -81,12 +81,6 @@ test('doctor can login successfully', function (): void {
     ]);
     
     // Test complete authentication flow...
-<<<<<<< .merge_file_pelgLn
-    =======
-=======
->>>>>>> .merge_file_07dGtJ
-
-    // Test complete authentication flow...
 
     expect(Auth::user()->type)->toBe(UserTypeEnum::DOCTOR);
 });
@@ -134,10 +128,6 @@ test('successful login regenerates session', function (): void {
 # Complete test suite
 ./vendor/bin/pest Modules/Cms/tests/Feature/Auth/LoginTest.php
 
-<<<<<<< .merge_file_pelgLn
-# Specific functionality group  =======
-=======
->>>>>>> .merge_file_07dGtJ
 # Specific functionality group
 ./vendor/bin/pest --filter="Authentication Logic"
 
@@ -234,8 +224,4 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 **Maintainability**: 📈 **EXCELLENT**
 
 *Last Updated: Gennaio 2025*
-<<<<<<< .merge_file_pelgLn
 *Project: Laraxot <nome progetto>*
-=======
-*Project: Laraxot <nome progetto>*
->>>>>>> .merge_file_07dGtJ

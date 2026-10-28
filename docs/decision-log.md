@@ -1,7 +1,7 @@
 ---
 type: decision-log
 title: "Decision Log — Activity"
-links: {github_issue: #XXX, discussion: #XXX}
+links: {github_issue: "#XXX", discussion: "#XXX"}
 status: draft
 updated: 2026-10-20
 tags: [docs, activity]
@@ -11,8 +11,6 @@ qmd: "decision log   activity activity"
 
 ## Decisions
 
-<<<<<<< .merge_file_Zncduh
-=======
 ### 2026-10-28: LogViewer e `Adapters\ActivityLogger` sono stati cancellati da un rebase, non da una scelta
 
 - **Choose:** ricostruire in avanti (lang, download Folio, test) cio' che il rebase fermo ha tolto; `LogActivityAction`/`Actions\ActivityLogger` su `UserContract`.
@@ -20,7 +18,6 @@ qmd: "decision log   activity activity"
 - **Because:** `git diff <orig-head> <onto>` e' vuoto, quindi l'albero corretto e' `7083148f`, che contiene tutto; il commit `36463864` e' l'auto-commit di un conflitto. Dettaglio: [story](./stories/phpstan-zero-errors-activity.story.md).
 - **Open:** concludere o abortire il rebase (utente); unificare i due `ActivityLogger`; scegliere una sola forma (costruttore o `execute($model)`) per le Action `LogModel*`/`LogUser*`.
 
->>>>>>> .merge_file_uPrPFs
 ### 2026-10-20: PHPStan `variable.unused` nei test — scopo prima del fix
 
 - **Choose:** ripulire assegnazioni morte nei test (skeleton post-merge) senza inventare asserzioni o schema DB; documentare famiglia e file in [bmad-variable-unused.md](./bmad-variable-unused.md).

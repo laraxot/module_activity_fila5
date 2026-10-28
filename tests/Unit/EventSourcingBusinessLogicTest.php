@@ -7,19 +7,12 @@ namespace Modules\Activity\Tests\Unit;
 use Carbon\Carbon;
 use PHPUnit\Framework\Assert;
 use Tests\TestCase;
-<<<<<<< .merge_file_yPkjT0
-=======
 use RuntimeException;
->>>>>>> .merge_file_W49wdW
 
 use function Safe\json_decode;
 use function Safe\json_encode;
 
-<<<<<<< .merge_file_yPkjT0
-uses(TestCase::class);
-=======
 uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> .merge_file_W49wdW
 
 describe('Event Sourcing Business Logic', function () {
     beforeEach(function () {
@@ -93,12 +86,9 @@ describe('Event Sourcing Business Logic', function () {
         it('validates activity properties structure', function () {
             $activity = (object) $this->activityData;
             $properties = $activity->properties;
-<<<<<<< .merge_file_yPkjT0
-=======
             if (! is_array($properties)) {
                 throw new \RuntimeException('Activity properties must be an array');
             }
->>>>>>> .merge_file_W49wdW
 
             // Business Logic: Properties must contain tracking data
             Assert::assertArrayHasKey('ip_address', $properties);
@@ -108,12 +98,9 @@ describe('Event Sourcing Business Logic', function () {
             Assert::assertArrayHasKey('new_values', $properties);
 
             // IP validation business logic
-<<<<<<< .merge_file_yPkjT0
-=======
             if (! is_string($properties['ip_address'] ?? null)) {
                 throw new \RuntimeException('Activity IP address must be a string');
             }
->>>>>>> .merge_file_W49wdW
             Assert::assertMatchesRegularExpression('/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/', $properties['ip_address']);
         });
 
@@ -121,10 +108,7 @@ describe('Event Sourcing Business Logic', function () {
             $activity = (object) $this->activityData;
 
             // Business Logic: Batch activities must have same UUID
-<<<<<<< .merge_file_yPkjT0
-=======
             Assert::assertIsString($activity->batch_uuid);
->>>>>>> .merge_file_W49wdW
             Assert::assertSame('batch-uuid-123', $activity->batch_uuid);
             Assert::assertStringStartsWith('batch-', $activity->batch_uuid);
         });
@@ -149,10 +133,6 @@ describe('Event Sourcing Business Logic', function () {
     describe('Event Sourcing Business Logic', function () {
         it('maintains event ordering with versions', function () {
             $event = (object) $this->storedEventData;
-<<<<<<< .merge_file_yPkjT0
-
-=======
->>>>>>> .merge_file_W49wdW
             // Business Logic: Event versions must be sequential
             Assert::assertSame(1, $event->aggregate_version);
             Assert::assertSame(1, $event->event_version);
@@ -163,12 +143,9 @@ describe('Event Sourcing Business Logic', function () {
             $event = (object) $this->storedEventData;
 
             // Business Logic: Event class must be valid PHP class name
-<<<<<<< .merge_file_yPkjT0
-=======
             if (! is_string($event->event_class)) {
                 throw new \RuntimeException('Event class must be a string');
             }
->>>>>>> .merge_file_W49wdW
             Assert::assertMatchesRegularExpression('/^[A-Z][a-zA-Z0-9\\\\]*$/', $event->event_class);
             Assert::assertStringContainsString('\\', $event->event_class);
         });
@@ -176,12 +153,9 @@ describe('Event Sourcing Business Logic', function () {
         it('ensures event properties contain business data', function () {
             $event = (object) $this->storedEventData;
             $properties = $event->event_properties;
-<<<<<<< .merge_file_yPkjT0
-=======
             if (! is_array($properties)) {
                 throw new \RuntimeException('Event properties must be an array');
             }
->>>>>>> .merge_file_W49wdW
 
             // Business Logic: Event properties must have identifiers
             Assert::assertArrayHasKey('user_id', $properties);
@@ -193,36 +167,27 @@ describe('Event Sourcing Business Logic', function () {
         it('validates metadata structure for tracing', function () {
             $event = (object) $this->storedEventData;
             $metadata = $event->meta_data;
-<<<<<<< .merge_file_yPkjT0
-=======
             if (! is_array($metadata)) {
                 throw new \RuntimeException('Event metadata must be an array');
             }
->>>>>>> .merge_file_W49wdW
 
             // Business Logic: Metadata must support distributed tracing
             Assert::assertArrayHasKey('source', $metadata);
             Assert::assertArrayHasKey('correlation_id', $metadata);
             Assert::assertArrayHasKey('causation_id', $metadata);
 
-<<<<<<< .merge_file_yPkjT0
-=======
             if (! is_string($metadata['correlation_id'] ?? null) || ! is_string($metadata['causation_id'] ?? null)) {
                 throw new \RuntimeException('Event tracing identifiers must be strings');
             }
->>>>>>> .merge_file_W49wdW
             Assert::assertStringStartsWith('corr-', $metadata['correlation_id']);
             Assert::assertStringStartsWith('cause-', $metadata['causation_id']);
         });
 
         it('maintains aggregate UUID consistency', function () {
             $event = (object) $this->storedEventData;
-<<<<<<< .merge_file_yPkjT0
-=======
             if (! is_string($event->aggregate_uuid)) {
                 throw new \RuntimeException('Aggregate UUID must be a string');
             }
->>>>>>> .merge_file_W49wdW
 
             // Business Logic: Aggregate UUID must be consistent across events
             Assert::assertSame('user-uuid-456', $event->aggregate_uuid);
@@ -242,12 +207,9 @@ describe('Event Sourcing Business Logic', function () {
         it('preserves complete aggregate state', function () {
             $snapshot = (object) $this->snapshotData;
             $state = $snapshot->state;
-<<<<<<< .merge_file_yPkjT0
-=======
             if (! is_array($state)) {
                 throw new \RuntimeException('Snapshot state must be an array');
             }
->>>>>>> .merge_file_W49wdW
 
             // Business Logic: Snapshot must contain complete state
             Assert::assertArrayHasKey('user_id', $state);
@@ -267,10 +229,7 @@ describe('Event Sourcing Business Logic', function () {
             $snapshot = (object) $this->snapshotData;
 
             // Business Logic: Snapshots must be relatively recent
-<<<<<<< .merge_file_yPkjT0
-=======
             Assert::assertInstanceOf(Carbon::class, $snapshot->created_at);
->>>>>>> .merge_file_W49wdW
             $ageInHours = Carbon::now()->diffInHours($snapshot->created_at);
             Assert::assertLessThan(24, $ageInHours); // Snapshots should be recent
         });

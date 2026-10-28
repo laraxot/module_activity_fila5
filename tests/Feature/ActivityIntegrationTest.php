@@ -21,27 +21,6 @@ use PHPUnit\Framework\Assert;
 use function Safe\json_encode;
 
 uses(TestCase::class);
-<<<<<<< .merge_file_LFWVgE
-=======
-
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        \DB::connection()->getPdo();
-    } catch (\Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
-
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        \DB::connection()->getPdo();
-    } catch (\Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
->>>>>>> .merge_file_844YWq
 
 test('activity module models work together in integrated scenarios', function () {
     $user = UserFactory::new()->createOne();

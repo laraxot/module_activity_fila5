@@ -109,12 +109,8 @@ describe('ActivityResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
-<<<<<<< .merge_file_Kk7ttY
         $instance = app(ActivityForm::class);
         $schema = $instance->getFormSchema();
-=======
-        $schema = (new ActivityResource)->getFormSchema();
->>>>>>> .merge_file_iUlorw
 
         Assert::assertArrayHasKey('log_name', $schema);
         Assert::assertArrayHasKey('description', $schema);
@@ -186,12 +182,8 @@ describe('SnapshotResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
-<<<<<<< .merge_file_Kk7ttY
         $instance = app(SnapshotForm::class);
         $schema = $instance->getFormSchema();
-=======
-        $schema = (new SnapshotResource)->getFormSchema();
->>>>>>> .merge_file_iUlorw
 
         Assert::assertArrayHasKey('model_type', $schema);
         Assert::assertArrayHasKey('model_id', $schema);
@@ -265,12 +257,8 @@ describe('StoredEventResource', function (): void {
     });
 
     test('has required form schema fields', function (): void {
-<<<<<<< .merge_file_Kk7ttY
         $instance = app(StoredEventForm::class);
         $schema = $instance->getFormSchema();
-=======
-        $schema = (new StoredEventResource)->getFormSchema();
->>>>>>> .merge_file_iUlorw
 
         Assert::assertArrayHasKey('event_class', $schema);
         Assert::assertArrayHasKey('event_properties', $schema);

@@ -10,9 +10,6 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-<<<<<<< .merge_file_VCbh5o
-test('LogModelCreatedAction can be instantiated', function () {
-=======
 test('LogModelCreatedAction can execute for a model', function (): void {
     $model = UserFactory::new()->createOne();
     $action = new LogModelCreatedAction;
@@ -23,7 +20,6 @@ test('LogModelCreatedAction can execute for a model', function (): void {
 });
 
 test('LogModelCreatedAction accepts any Eloquent model', function (): void {
->>>>>>> .merge_file_pWBG8s
     $model = new class extends Model
     {
         protected $table = 'test_models';

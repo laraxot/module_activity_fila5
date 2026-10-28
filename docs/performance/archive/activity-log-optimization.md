@@ -1,13 +1,14 @@
 ---
 title: "Activity Log Optimization - Activity Module"
 type: note
-<<<<<<< .merge_file_Fu9XRM
-status: draft
+status: archived
 updated: 2026-10-23
 tags: [docs, activity, performance]
 qmd: "activity log optimization - activity module activity"
 ---
 # Activity Log Optimization - Activity Module
+
+> Copia archiviata. Documentazione mantenuta: [activity-log-optimization.md](../activity-log-optimization.md).
 
 ## 🚨 Critical Issues Identified
 
@@ -290,12 +291,3 @@ CREATE INDEX idx_activity_log_causer_type ON activity_log(causer_type);
 4. **Long-term**: Advanced performance strategies
 
 This document provides the roadmap for resolving the performance issues in the Activity module while maintaining data integrity and functionality.
-=======
-status: archived
-updated: 2026-10-23
-tags: [docs, activity, performance]
-qmd: "activity log optimization activity performance"
----
-
-This archived copy points to the maintained module documentation: [activity-log-optimization.md](../activity-log-optimization.md).
->>>>>>> .merge_file_4e63mc

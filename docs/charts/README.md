@@ -36,8 +36,6 @@ Core module for the FixCity Platform.
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
 | 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](..) |
-<<<<<<< .merge_file_Ehj0pc
-=======
 
 ---
 
@@ -795,7 +793,6 @@ it('exports chart to SVG', function () {
 - [Spatie Browsershot](https://github.com/spatie/browsershot)
 - [Chart.js Documentation](https://www.chartjs.org/)
 - [Filament Charts](https://filamentphp.com/docs/4.x/widgets/charts)
->>>>>>> .merge_file_Y6zTNJ
 
 ---
 
