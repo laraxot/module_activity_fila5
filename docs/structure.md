@@ -8,7 +8,11 @@ qmd: "modulo activity activity"
 ---
 # Modulo Activity
 
+<<<<<<< HEAD
 Data: [DATE] 19:09:55Data: 2025-04-23 19:09:55
+=======
+Data: 2025-04-23 19:09:55
+>>>>>>> 83de853d (.)
 Data: [DATE] 19:09:55
 
 ## Informazioni generali

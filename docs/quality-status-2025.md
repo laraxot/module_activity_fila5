@@ -103,7 +103,7 @@ public function withCustomProperties(array $attributes): static
 - `/docs/analysis/` - Quality analysis files
 - `/docs/guides/` - Implementation guides
 - `/docs/phpstan/` - PHPStan specific docs
-- `/docs/archivedd/` - Historical records
+- `/docs/archived/` - Historical records
 
 ## 🎓 Documentation Structure
 
@@ -164,6 +164,11 @@ public function withCustomProperties(array $attributes): static
 **Maintenance Focus**: Keep PHPStan at level max, fix minor PHPMD warnings, maintain documentation quality.
 
 ---
+<<<<<<< HEAD:docs/quality-status-2025.md
 *Last Updated: November 15, 2025*
+=======
+
+*
+>>>>>>> 83de853d (.):docs/quality-status-2025-11.md
 *PHPStan Version: Latest*
 *PHPMD Version: Latest*

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: boost_skill_fix_summary
@@ -11,6 +12,9 @@ qmd: "boost skill fix summary activity"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md# Boost Skill Fix Summary - Activity Module
+=======
+# Boost Skill Fix Summary - Activity Module
+>>>>>>> 83de853d (.)
 
 **Date**: 2026-03-02  
 **Module**: Activity (Activity Tracking & Logging)

@@ -10,8 +10,9 @@ use Illuminate\Support\Str;
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Traits\Updater;
 use PHPUnit\Framework\Assert;
+use function Safe\class_uses;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('can create base model instance', function (): void {
     $model = new TestActivityModel;

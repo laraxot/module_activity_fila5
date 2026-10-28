@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Activity: architettura (diagramma non allineato al codice)"
 type: reference
@@ -54,6 +55,9 @@ Activity Module Architecture
 
 ## Quality Gates
 ✅ PHPStan L10: Executed (2026-07-28)# Architecture Documentation
+=======
+# Architecture Documentation
+>>>>>>> 83de853d (.)
 
 ## Activity Module Architecture
 
@@ -209,7 +213,14 @@ class ActivityPolicy
 
 ### Related Documentation
 
+<<<<<<< HEAD
 - [Security](security.md)
 - [Quality](roadmap/quality.md)
 - [Performance](PERFORMANCE.md) _(target mancante, verificato 2026-10-14)_
 - [Testing](testing.md)
+=======
+- [Security](SECURITY.md)
+- [Quality](QUALITY.md)
+- [Performance](PERFORMANCE.md)
+- [Testing](TESTING.md)
+>>>>>>> 83de853d (.)
