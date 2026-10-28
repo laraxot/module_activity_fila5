@@ -26,7 +26,6 @@ use Modules\Activity\Models\BaseModel;
  */
 class TestActivityModel extends BaseModel
 {
-<<<<<<< HEAD
     /**
      * @use HasFactory<Factory<self>>
      *
@@ -39,8 +38,6 @@ class TestActivityModel extends BaseModel
         HasXotFactory::factory insteadof HasFactory;
     }
 
-=======
->>>>>>> 83de853d (.)
     /** @var string */
     protected $table = 'test_models';
 

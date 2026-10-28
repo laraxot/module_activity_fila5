@@ -19,7 +19,6 @@ return [
         'updated_at' => [
             'label' => 'updated_at',
         ],
-<<<<<<< HEAD
         'aggregate_uuid' => [
             'label' => 'aggregate_uuid',
         ],
@@ -37,7 +36,5 @@ return [
         'delete' => [
             'tooltip' => 'delete',
         ],
-=======
->>>>>>> 83de853d (.)
     ],
 ];

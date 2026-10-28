@@ -2,11 +2,8 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\Activity\Tests\Unit\Models;
 
-=======
->>>>>>> 83de853d (.)
 use Modules\Activity\Models\StoredEvent;
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Models\Traits\HasXotFactory;
