@@ -4,34 +4,39 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Actions;
 
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\Eloquent\Model;
+use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
- * Log User Logout Action.
- * Optimized for Laraxot architecture.
+ * Log User Logout Action
+ *
+ * Logs when a user logs out using Queueable Actions
  */
 class LogUserLogoutAction
 {
     use QueueableAction;
 
-    /**
-     * Execute the action.
-     */
-    public function execute(?User $user = null): Activity
-    {
-        $user = $user ?? Auth::user();
+    public function __construct(
+        public ?UserContract $user = null
+    ) {}
 
-        return (new LogActivityAction(
+    public function execute(?UserContract $user = null): Activity
+    {
+        $user = $user ?? $this->user;
+        if (! $user instanceof Model) {
+            throw new InvalidArgumentException('User must implement UserContract and extend Model');
+        }
+
+        $action = new LogActivityAction(
             type: 'logout',
             user: $user,
-            properties: [
-                'ip' => request()->ip(),
-                'user_agent' => request()->userAgent(),
-            ],
-            description: sprintf('User %s logged out', $user->name ?? 'unknown'),
-        ))->execute();
+            subject: $user,
+            description: 'User logged out'
+        );
+
+        return $action->execute();
     }
 }

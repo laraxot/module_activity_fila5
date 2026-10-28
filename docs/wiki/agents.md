@@ -18,10 +18,7 @@ related:
   - ./coding-agent-manifests.md
 ---
 
-<<<<<<< HEAD
 # Activity Module LLM Wiki Agent Instructions=======
-=======
->>>>>>> 83de853d (.)
 # Activity {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Activity
@@ -161,8 +158,5 @@ Related:
 
 - [Project Wiki Integration](../../docs/wiki/README.md)
 - [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
-<<<<<<< HEAD
 - [Module Documentation](../README.md)=======
-=======
->>>>>>> 83de853d (.)
 - [Module Documentation](../README.md)

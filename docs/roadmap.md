@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "ACTIVITY MODULE - ROADMAP 2025"
 type: note
@@ -8,9 +7,6 @@ tags: [docs, activity]
 qmd: "activity module - roadmap 2025 activity"
 ---
 # 🎯 ACTIVITY MODULE - ROADMAP 2025
-=======
-# Activity Module - Complete Roadmap
->>>>>>> 83de853d (.)
 
 ## Module Overview
 **Purpose**: Activity tracking and logging functionality
@@ -223,5 +219,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Mod
 - [roadmap/tasks/realtime-monitoring-dashboard.md](roadmap/tasks/realtime-monitoring-dashboard.md)
 - [roadmap/vision.md](roadmap/vision.md)
 - [stabilization-roadmap.md](stabilization-roadmap.md)
-
-

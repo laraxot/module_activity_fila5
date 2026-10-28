@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, SaluteMo, Xot======="
 type: note
@@ -8,8 +7,6 @@ tags: [docs, activity]
 qmd: "analisi modelli, factory e seeder - moduli activity, gdpr, tenant, ui, salutemo, xot======= activity"
 ---
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, SaluteMo, Xot=======
-=======
->>>>>>> 83de853d (.)
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
 
 ## Modulo Activity
@@ -84,10 +81,7 @@ Il modulo UI contiene solo componenti Blade e risorse frontend, nessun modello E
 
 ---
 
-<<<<<<< HEAD
 ## Modulo SaluteMo=======
-=======
->>>>>>> 83de853d (.)
 ## Modulo <nome progetto>
 
 ### Modelli Attivi e Business Logic
@@ -104,10 +98,7 @@ Il modulo UI contiene solo componenti Blade e risorse frontend, nessun modello E
 
 ### Seeder Obsoleti
 - **PatientSeeder.php.old** - 🗑️ Da rimuovere
-<<<<<<< HEAD
 - **SaluteMoDatabaseSeeder.php** - ✅ Mantiene struttura=======
-=======
->>>>>>> 83de853d (.)
 - **<nome progetto>DatabaseSeeder.php** - ✅ Mantiene struttura
 
 ### Note
@@ -159,10 +150,7 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 ## Riepilogo Generale
 
 ### Totale Modelli Analizzati
-<<<<<<< HEAD
 - **SaluteOra**: 20 modelli attivi, 7 obsoleti=======
-=======
->>>>>>> 83de853d (.)
 - ****: 20 modelli attivi, 7 obsoleti
 - **User**: 35+ modelli attivi
 - **Geo**: 12 modelli attivi, 1 obsoleto
@@ -175,10 +163,7 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 - **Gdpr**: 7 modelli
 - **Tenant**: 3 modelli, 2 obsoleti
 - **UI**: 0 modelli (solo componenti)
-<<<<<<< HEAD
 - **SaluteMo**: 2 modelli base, 1 obsoleto=======
-=======
->>>>>>> 83de853d (.)
 - **<nome progetto>**: 2 modelli base, 1 obsoleto
 - **Xot**: 12+ modelli sistema, molti base abstract
 
@@ -197,11 +182,8 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 4. **Documentazione**: Aggiornare documentazione moduli
 
 ### Moduli Critici per Business Logic
-<<<<<<< HEAD
 1. **SaluteOra** - Core sanitario ✅ Completo
 2. **User** - Autenticazione ✅ Completo  =======
-=======
->>>>>>> 83de853d (.)
 1. **** - Core sanitario ✅ Completo
 2. **User** - Autenticazione ✅ Completo
 3. **Notify** - Comunicazioni ✅ Completo
@@ -217,11 +199,7 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 6. **Xot** - Framework base ✅ Completo
 
 *Ultimo aggiornamento: Gennaio 2025*
-<<<<<<< HEAD
 *Analisi completa sistema SaluteOra: 150+ modelli, 14 moduli**Analisi completa sistema : 150+ modelli, 14 moduli*
-=======
-*Analisi completa sistema : 150+ modelli, 14 moduli*
->>>>>>> 83de853d (.)
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
 
 ## Modulo Activity

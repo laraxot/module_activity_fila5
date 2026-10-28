@@ -28,6 +28,8 @@ use Modules\Xot\Filament\Resources\Pages\XotBasePage;
 use Stringable;
 use Webmozart\Assert\Assert;
 
+use function Safe\json_encode;
+
 /**
  * Classe base per visualizzare lo storico delle attività di un record.
  *

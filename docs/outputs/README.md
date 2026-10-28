@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Activity"
 type: index
 status: draft
@@ -38,11 +37,6 @@ Core module for the FixCity Platform.
 | 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](..) |
 
-=======
-module: theme
-topic: README
-canonical: ../../../../Themes/docs/shared-components/README-Modules.md
->>>>>>> 83de853d (.)
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/README-Modules.md

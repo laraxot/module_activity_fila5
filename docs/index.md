@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Indice documentazione — Modulo Activity"
 type: index
@@ -13,14 +12,6 @@ Indice organizzato per argomento. Copre tutti i file `.md` sotto `Modules/Activi
 (890 file al 2026-10-14, 755 al 2026-09-03, non 362 come indicato nel task originale — la cartella e'
 cresciuta molto oltre le stime precedenti, vedi `docs/task-consolidare-documentazione.md`
 e `docs/docs-health.md`).
-=======
-# Activity Module Documentation
-
-## Overview
-The Activity module provides comprehensive activity logging and tracking functionality for the Laraxot system. It records user actions, system events, and business operations to enable audit trails, analytics, and monitoring.
-**
-**Status**: Active Development
->>>>>>> 83de853d (.)
 
 ## Key Features
 - **Activity Logging**: Automatic logging of user and system activities
@@ -42,7 +33,6 @@ The module follows the Laraxot architecture principles:
 - `Activity` - Main activity model
 - `ActivityLog` - Detailed activity logging
 
-<<<<<<< HEAD
 - [architecture.md](ARCHITECTURE.md) — architettura generale del modulo.
 - [architecture/structure.md](architecture/structure.md) — organizzazione interna dettagliata.
 - [structure.md](structure.md) — nota: contenuto quasi identico a `architecture/structure.md` (stesso titolo "Modulo Activity", 414 vs 413 righe); vedi Storico.
@@ -68,11 +58,6 @@ The module follows the Laraxot architecture principles:
 - [concepts/xotbase-never-extend-filament.md](concepts/xotbase-never-extend-filament.md) — mai estendere `Filament\*` direttamente, sempre `XotBase*`.
 - [_integration/filament.md](_integration/filament.md) — nota minima con link esterno di confronto pacchetti activity log.
 - [domain-logic.md](domain-logic.md), [data-models.md](data-models.md), [validation.md](validation.md), [integration.md](integration.md), [workflows.md](workflows.md), [troubleshooting.md](troubleshooting.md) — placeholder vuoti (solo titolo, nessun contenuto); non cancellati, da popolare o rimuovere in un task dedicato.
-=======
-### Resources
-- `ActivityResource` - Filament resource for activity management
-- `ActivityLogResource` - Resource for detailed logs
->>>>>>> 83de853d (.)
 
 ### Services
 - `ActivityService` - Core activity management logic
@@ -85,7 +70,6 @@ The module follows the Laraxot architecture principles:
 // Log an activity
 activity()->log('User logged in');
 
-<<<<<<< HEAD
 - [filament.md](filament.md) — nota minima (2 righe).
 - [filament-resources.md](filament-resources.md) — risorse Filament nel modulo (versione piu' estesa, 339 righe; `filament_resources.md` duplicato in Storico).
 - [filament-resource-guidelines.md](filament-resource-guidelines.md) — linee guida risorse (versione piu' estesa, 221 righe; varianti in Storico).
@@ -468,14 +452,6 @@ sezioni sopra; gli alias non sono cancellati. Esempio verificabile:
 ```bash
 find Modules/Activity/docs/use_cases Modules/Activity/docs/roadmap -regextype posix-extended \
   -regex '.*/[0-9]{2}-[a-z-]+\.md'
-=======
-// Log activity with properties
-activity()
-    ->performedOn($user)
-    ->causedBy(auth()->user())
-    ->withProperties(['ip' => request()->ip()])
-    ->log('User updated profile');
->>>>>>> 83de853d (.)
 ```
 
 ### Configuration
@@ -484,7 +460,6 @@ The module can be configured through the `config/activity.php` file:
 - Activity types to track
 - Database connection settings
 
-<<<<<<< HEAD
 63 file sotto `docs/` sono stub minimi (6-7 righe) con frontmatter `module: theme` +
 `canonical: ../../../Themes/docs/shared-components/...` (pattern architetturale
 intenzionale di "on-demand", non un incidente di duplicazione): `ai-methodologies.md`,
@@ -506,13 +481,6 @@ intenzionale di "on-demand", non un incidente di duplicazione): `ai-methodologie
 "analysis"/"flusso-utente"/"console-commands" dentro `use_cases/bank/`,
 `use_cases/prediction_market/` e `use_cases/shop/` (incluso `use_cases/shop/archive/`).
 Non richiedono consolidamento: sono puntatori voluti, non copie accidentali.
-=======
-## Best Practices
-1. **Selective Logging**: Only log meaningful activities to avoid performance issues
-2. **Property Management**: Store relevant context data with activities
-3. **Cleanup Policies**: Implement regular cleanup of old activity logs
-4. **Privacy Compliance**: Ensure activity logging complies with data protection regulations
->>>>>>> 83de853d (.)
 
 ## Related Modules
 - [User Module](../User/docs/README.md) - User authentication and management
@@ -522,7 +490,6 @@ Non richiedono consolidamento: sono puntatori voluti, non copie accidentali.
 - [Notify Module](../notify/docs/index.md) - Notification system
 - [Xot Module](../xot/docs/index.md) - Core base classes
 
-<<<<<<< HEAD
 Quattro copie parallele dello stesso lotto di file di test/placeholder, quasi tutte a
 0-3 righe (`archived-note.md`, `documentation*.md`, `2024-03-27.md`, `test*.md`,
 `import-placeholder*.md`, `filament*.md`, `changelog*.md`): presenti sia direttamente
@@ -552,12 +519,3 @@ cartelle di import grezzo sopra citate (49 file a 0 righe in tutto il modulo).
 - File completamente vuoti (0 righe): 49.
 - File stub con puntatore `canonical:` verso `Themes/docs/shared-components/`: 73 (di cui 6 template `_templates/`, 4 ibridi con contenuto reale aggiuntivo, 63 stub puri).
 - File indicizzati esplicitamente per argomento in questo documento: la quasi totalita' dei restanti file con contenuto reale; le eccezioni (import grezzo/placeholder vuoti) sono referenziate per gruppo con comando `find` riproducibile, non singolarmente.
-=======
-## Troubleshooting
-Common issues and solutions:
-- Database performance with large activity logs
-- Missing activity entries
-- Configuration issues
-
-- [Conflict Resolution](conflict-resolution.md)
->>>>>>> 83de853d (.)

@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD:docs/wiki/concepts/event-sourcing-patterns.md
 title: Event sourcing patterns
 module: Activity
 type: note
@@ -281,12 +280,3 @@ Event Sourcing provides a robust foundation for healthcare applications by ensur
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/project_docs/laravel-event-sourcing/v7/)
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/docs/laravel-event-sourcing/v7/)
 - [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)
-
-=======
-module: theme
-topic: advanced-event-sourcing-patterns-1
-canonical: ../../../../Themes/docs/shared-components/advanced-event-sourcing-patterns-1.md
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/advanced-event-sourcing-patterns-1.md
->>>>>>> 83de853d (.):docs/advanced-event-sourcing-patterns-1.md

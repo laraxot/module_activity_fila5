@@ -17,7 +17,6 @@ Structure:
 - wiki/: distilled summaries and canonical pages for LLM
 - archived/: historical/obsolete docs
 
-<<<<<<< HEAD
 ## Perché esiste
 
 Core module for the FixCity Platform.
@@ -77,6 +76,3 @@ qmd search "Activity <argomento>" --limit 5
 ```
 
 I documenti sorgente grezzi stanno in `../raw/` (immutabile). Prima di creare una pagina nuova controllare [INDEX.md](./INDEX.md) e le pagine di `concepts/` per non duplicarla.
-=======
-Use qmd to serve or convert these documents (https://github.com/tobi/qmd).
->>>>>>> 83de853d (.)

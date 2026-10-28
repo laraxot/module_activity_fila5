@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "PRD - Activity Module"
 type: note
@@ -7,9 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "prd - activity module activity"
 ---
-=======
-# PRD: Activity Module
->>>>>>> 83de853d (.)
 # PRD - Activity Module
 
 ## 1. Executive Summary
@@ -90,8 +86,3 @@ System observability and audit trails are fragmented and lack a unified, type-sa
 - **Performance:** Logging must be asynchronous to avoid blocking main requests.
 - **Observability:** Must expose metrics for logging rate and failure rate.
 - **Security:** Logs must be immutable and access-controlled.
-
-
-
-
-

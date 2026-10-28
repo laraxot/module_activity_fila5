@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 module: theme
 topic: event-sourcing-examples
@@ -198,7 +196,6 @@ These examples demonstrate how event sourcing can be applied to various aspects 
 4. **Understandable**: The business logic is expressed in terms of domain events
 
 Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.
->>>>>>> 83de853d (.)
 ---
 title: "Practical Event Sourcing Examples for Healthcare"
 type: note

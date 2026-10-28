@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Auto-generated forbidden paths — do not edit manually
 # Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
 
@@ -19,8 +18,6 @@ docs/workbench
 scripts
 test-results
 tests/.claude-audit
-=======
->>>>>>> 83de853d (.)
 # ==============================================
 # LARAXOT MODULE ACTIVITY - .GITIGNORE
 # ==============================================
@@ -210,8 +207,8 @@ tests/coverage.xml/
 activity_coverage.xml
 *~head
 agentdb.rvf
-<<<<<<< HEAD
 tests/AuditCoverage
+audit-coverage/
 # AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
 
 # Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
@@ -254,17 +251,3 @@ tests/activity_coverage.xml
 /.github/skills/
 docs/graphify
 resources/lang
-=======
-build/
-docs/legacy
-audit-coverage/
-.claude-audit
-.claude-audit-ai
-.claude-audit-ai-agent
-.devcontainer/
-.vscode/
-workbench/
-
-# Laraxot — tests/AuditCoverage forbidden (AI scaffold, never commit)
-tests/AuditCoverage/
->>>>>>> 83de853d (.)

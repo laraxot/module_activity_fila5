@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Activity Module - User Research"
 type: note
@@ -108,9 +107,6 @@ Legal teams need configurable retention periods.
 ---
 
 *Last Updated: March 12, 2026*# User Research: Activity Module
-=======
-# User Research: Activity Module
->>>>>>> 83de853d (.)
 
 ## 🔬 Research Goals
 Identify user needs for Activity functionality.

@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 module: Activity
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
@@ -10,12 +9,6 @@ status: stub
 updated: 2026-10-07
 qmd: "metodi duplicati   analisi activity activity"
 ---
-=======
-module: theme
-topic: metodi_duplicati_analisi
-canonical: ../../../Themes/docs/shared-components/METODI_DUPLICATI_ANALISI.md
-# 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
->>>>>>> 83de853d (.)
 
 **Powered by**: Super Mucca AI 🐄✨  
 **Versione**: 2.0 ULTIMATE  
