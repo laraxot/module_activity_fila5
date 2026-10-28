@@ -39,10 +39,7 @@ test('activity resource implements required getFormSchema method', function () {
 
     $method = $reflection->getMethod('getFormSchema');
     Assert::assertTrue($method->isPublic());
-<<<<<<< HEAD
     // XotBaseResource::getFormSchema() e' un metodo d'istanza final: lo schema vero sta nelle classi Schemas\*Form.
-=======
->>>>>>> 83de853d (.)
     Assert::assertFalse($method->isStatic());
     $returnType = $method->getReturnType();
     Assert::assertInstanceOf(ReflectionNamedType::class, $returnType);

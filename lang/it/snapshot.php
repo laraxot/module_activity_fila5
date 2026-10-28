@@ -25,7 +25,6 @@ return [
         'aggregate_type' => ['label' => 'aggregate_type'],
     ],
     'actions' => [
-<<<<<<< HEAD
         'view' => [
             'label' => 'view',
             'icon' => 'view',
@@ -44,12 +43,6 @@ return [
         'logout' => [
             'tooltip' => 'logout',
         ],
-=======
-        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
-        'create' => ['label' => 'Crea Snapshot'],
-        'edit' => ['label' => 'Modifica Snapshot', 'icon' => 'edit', 'tooltip' => 'edit'],
-        'delete' => ['label' => 'Elimina Snapshot', 'icon' => 'delete', 'tooltip' => 'delete'],
->>>>>>> 83de853d (.)
     ],
     'label' => 'Snapshot',
     'plural_label' => 'Snapshot (Plurale)',

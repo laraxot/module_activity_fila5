@@ -14,14 +14,7 @@ uses(TestCase::class);
 
 describe('Snapshot Policy', function (): void {
     test('policy extends user base policy', function (): void {
-<<<<<<< HEAD
         Assert::assertTrue((new \ReflectionClass(SnapshotPolicy::class))->isSubclassOf(UserBasePolicy::class));
-=======
-        /** @var TestCase $this */
-        $policy = new SnapshotPolicy;
-
-        Assert::assertInstanceOf(UserBasePolicy::class, $policy);
->>>>>>> 83de853d (.)
     });
 
     test('policy has expected public methods', function (): void {
