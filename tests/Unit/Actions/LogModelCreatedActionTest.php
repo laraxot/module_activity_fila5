@@ -28,7 +28,6 @@ test('LogModelCreatedAction accepts any Eloquent model', function (): void {
     $action = new LogModelCreatedAction;
     $activity = $action->execute($model);
 
-<<<<<<< HEAD
     $action = new LogModelCreatedAction($model, $user);
 
     Assert::assertSame($user, $action->user);
@@ -48,7 +47,4 @@ test('LogModelCreatedAction can execute', function () {
     $action = new LogModelCreatedAction($model, $user);
 
     Assert::assertSame($model, $action->model);
-=======
-    Assert::assertSame('created', $activity->event);
->>>>>>> 83de853d (.)
 });

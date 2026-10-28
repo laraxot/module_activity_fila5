@@ -2,12 +2,9 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\Activity\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-=======
->>>>>>> 83de853d (.)
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Models\Traits\HasXotFactory;

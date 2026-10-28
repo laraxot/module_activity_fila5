@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-namespace Modules\Activity\Tests\Unit\Listeners;
-
->>>>>>> 83de853d (.)
 use Illuminate\Auth\Events\Logout;
 use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Listeners\LogoutListener;
