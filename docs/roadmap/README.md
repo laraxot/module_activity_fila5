@@ -36,20 +36,11 @@ The Activity module provides comprehensive audit trail and event sourcing capabi
 - [ ] Export functionality (CSV, PDF, JSON)
 - [ ] Performance optimization for high-volume logging
 
-<<<<<<< HEAD
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
 | 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](..) |
-=======
-### Phase 3: Integration & Compliance (Q3 2026)
-- [ ] GDPR compliance features
-- [ ] Integration with external monitoring systems
-- [ ] Custom event types and handlers
-- [ ] Activity retention policies
-- [ ] Audit report generation
->>>>>>> 83de853d (.)
 
 ### Phase 4: Advanced Analytics (Q4 2026)
 - [ ] Machine learning insights

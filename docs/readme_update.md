@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Aggiornamento README Activity - Sezione Testing"
 type: note
 status: draft
@@ -72,11 +71,5 @@ php artisan test --filter=Snapshot
 # Con coverage
 php artisan test Modules/Activity --coverage
 ```
-=======
-module: theme
-topic: readme_update
-canonical: ../../../Themes/docs/shared-components/README.md.update
----
->>>>>>> 83de853d (.)
 
 See canonical documentation: ../../../Themes/docs/shared-components/README.md.update

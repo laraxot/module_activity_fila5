@@ -1,6 +1,5 @@
 ---
 module: theme
-<<<<<<< HEAD
 topic: event_sourcing
 canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
 title: "event sourcing"
@@ -12,9 +11,6 @@ qmd: "event sourcing activity"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.mdtopic: event-sourcing
-=======
-topic: event-sourcing
->>>>>>> 83de853d (.)
 canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
 ---
 

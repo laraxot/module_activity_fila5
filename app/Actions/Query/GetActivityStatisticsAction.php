@@ -5,10 +5,11 @@ declare(strict_types=1);
 namespace Modules\Activity\Actions\Query;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Modules\Activity\Models\Activity;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -21,7 +22,7 @@ class GetActivityStatisticsAction
     /**
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
-    public function execute(?User $user = null): array
+    public function execute(?UserContract $user = null): array
     {
         $userKey = $user?->getKey();
         $cacheKeySuffix = is_scalar($userKey) ? (string) $userKey : 'global';
@@ -38,11 +39,14 @@ class GetActivityStatisticsAction
     /**
      * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
      */
-    private function computeStatistics(?User $user): array
+    private function computeStatistics(?UserContract $user): array
     {
         $query = Activity::newQuery();
 
         if ($user) {
+            if (! $user instanceof Model) {
+                throw new \InvalidArgumentException('User must be an Eloquent model');
+            }
             $query->where('causer_id', $user->getKey())
                 ->where('causer_type', $user::class);
         }

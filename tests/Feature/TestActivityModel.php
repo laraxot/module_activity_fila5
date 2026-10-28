@@ -6,6 +6,9 @@ namespace Modules\Activity\Tests\Feature;
 
 use Illuminate\Support\Carbon;
 use Modules\Activity\Models\BaseModel;
+use Modules\Xot\Models\Traits\HasXotFactory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * Classe concreta di test per BaseModel.

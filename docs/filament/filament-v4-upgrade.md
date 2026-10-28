@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 - [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
 # Filament v4 Upgrade Documentation
 
@@ -50,7 +48,6 @@ public static function getFormSchema(): array
 ## References
 
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
->>>>>>> 83de853d (.)
 ---
 title: "Filament v4 Upgrade Documentation"
 type: note
@@ -114,10 +111,4 @@ module: theme
 topic: filament-v4-upgrade
 canonical: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
 
-<<<<<<< HEAD
 See canonical documentation: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
-=======
-See canonical documentation: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
-
-
->>>>>>> 83de853d (.)

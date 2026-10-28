@@ -470,12 +470,7 @@ class SchedaObserver
 
 ---
 
-<<<<<<< HEAD
-**=======
 **Ultimo aggiornamento**: 27 Ottobre 2025
-=======
-**
->>>>>>> 83de853d (.)
 **Severità**: CRITICA (blocca edit in produzione)
 **Workaround**: Disabilitare temporaneamente LogsActivity trait
 **Fix Definitivo**: Refactoring accessor in SchedaTrait

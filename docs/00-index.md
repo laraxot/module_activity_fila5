@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "**Indice Documentazione Modulo Activity**"
 type: index
@@ -51,19 +50,12 @@ status: stale
 | CODE_QUALITY_ANALYSIS.md | Code quality |
 | QUERY_OPTIMIZATION_ANALYSIS.md | Query optimization |
 
-=======
-# 📚 **Indice Documentazione Modulo Activity**
->>>>>>> 83de853d (.)
 
 **Status**: ✅ PHPStan Level 10 Compliant
 **Module Version**: 2.3.0
 
 ## 🎯 **Lettura Essenziale**
-<<<<<<< HEAD
 1. [README.md](./README.md) - Panoramica completa e Quick Start.
-=======
-1. [README.md](./readme.md) - Panoramica completa e Quick Start.
->>>>>>> 83de853d (.)
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
 3. [philosophy.md](./philosophy.md) - I principi dell'Audit Trail e dell'Event Sourcing.
 
@@ -105,60 +97,7 @@ status: stale
 | FILAMENT_RESOURCE_GUIDELINES.md | Resource guidelines |
 
 ## 📦 **Pacchetti Composer**
-<<<<<<< HEAD
-- [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)=======
-=======
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
-- `spatie/laravel-activitylog` - Audit trail
-- `spatie/laravel-event-sourcing` - Event sourcing, CQRS
-
-## 📦 **Pacchetti Composer**
-- [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
-- `spatie/laravel-activitylog` - Audit trail
-- `spatie/laravel-event-sourcing` - Event sourcing, CQRS
-
-## 📦 **Pacchetti Composer**
-- [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
-- `spatie/laravel-activitylog` - Audit trail
-- `spatie/laravel-event-sourcing` - Event sourcing, CQRS
-
-## 📦 **Pacchetti Composer**
-- [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
-- `spatie/laravel-activitylog` - Audit trail
-- `spatie/laravel-event-sourcing` - Event sourcing, CQRS
-
-## 🔗 **Moduli Correlati**
-- [Xot](../../xot/docs/readme.md) - Core framework.
-- [Tenant](../../tenant/docs/readme.md) - Isolamento dati per tenant.
-- [User](../../user/docs/readme.md) - Autenticazione e causer activity.
-
----
-*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-# Activity Module - Documentation Index
-
-**Last Update**: 13 Dicembre 2025
-**Status**: ✅ PHPStan Level 10 Compliant (Nativo)
-**Module Version**: 1.0
-
-## 📚 Quick Navigation
-
-### 🎯 Essential Reading
-1. [README.md](./README.md) - Overview del modulo Activity
-2. [phpstan_compliance_dec_2025.md](./phpstan_compliance_dec_2025.md) - Compliance nativa
-
-### 🏗️ Architecture
-Il modulo Activity fornisce funzionalità di logging delle attività utente nel sistema.
-
-**Core Components**:
-- **LogActivityAction**: Action principale per logging
-- **Activity Model**: Modello per memorizzare attività
-
-### 🔧 Actions Pattern
-```php
-use Modules\Activity\Actions\LogActivityAction;
-
-// Pattern di utilizzo
->>>>>>> 83de853d (.)
 app(LogActivityAction::class)->execute(
     type: 'user.login',
     user: $user,
@@ -168,7 +107,6 @@ app(LogActivityAction::class)->execute(
 );
 ```
 
-<<<<<<< HEAD
 ## 📦 Pacchetti Composer
 - [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
 - `spatie/laravel-activitylog` - Audit trail
@@ -181,9 +119,6 @@ app(LogActivityAction::class)->execute(
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-=======
-### 📊 Best Practices
->>>>>>> 83de853d (.)
 
 1. **Type Safety Nativa**: Il modulo è già type-safe
 2. **Type Narrowing**: Uso corretto di `getAttribute()` e validazioni
@@ -284,9 +219,4 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 - Prima di modificare codice: ragionare, studiare i docs del modulo/tema, aggiornare docs/rules/memory/skills.
 - Riferimento globale: [Pre-Edit Docs-First Rule](../../../../docs/rules/pre-edit-docs-first-rule.md)
 - Memory: [Pre-Edit Docs-First Memory](../../../../docs/memory/pre-edit-docs-first-memory.md)
-<<<<<<< HEAD
-- Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)=======
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
-=======
-- Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
->>>>>>> 83de853d (.)

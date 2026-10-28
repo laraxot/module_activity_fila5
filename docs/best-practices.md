@@ -29,9 +29,6 @@ topic: best-practices
 canonical: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
 ---
 
-<<<<<<< HEAD
-See canonical documentation: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
-=======
 See canonical documentation: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
 title: Best Practices – Activity
 type: rule
@@ -58,6 +55,3 @@ qmd: self
 ## Documentazione
 - Aggiorna `docs/INDEX.md` con nuovi modelli e relazioni.
 - Collega a `Projects` e `Tasks` per contesto operativo.
-
-
->>>>>>> 83de853d (.)
