@@ -161,4 +161,8 @@ modulo Activity: è un limite architetturale del setup PHPStan+Larastan+
 Filament auto-discovery di questo monorepo, da tenere presente per i
 prossimi cicli di swarm (es. serializzare i run PHPStan, o far girare il
 gate solo dopo che tutti i moduli hanno raggiunto un working tree
+<<<<<<< .merge_file_xpIeOg
 bootstrappabile).
+=======
+bootstrappabile).
+>>>>>>> .merge_file_TsZtMA

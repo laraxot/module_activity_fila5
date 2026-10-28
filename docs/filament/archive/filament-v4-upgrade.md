@@ -1,11 +1,16 @@
 ---
 title: "Filament v4 Upgrade Documentation"
 type: note
+<<<<<<< .merge_file_M0kiEx
 status: draft
+=======
+status: archived
+>>>>>>> .merge_file_xWHEjn
 updated: 2026-10-08
 tags: [docs, activity, filament]
 qmd: "filament v4 upgrade documentation activity"
 ---
+<<<<<<< .merge_file_M0kiEx
 # Filament v4 Upgrade Documentation
 
 ## Overview
@@ -56,3 +61,7 @@ public function getFormSchema(): array{
 
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
+=======
+
+This archived copy points to the maintained module documentation: [filament-v4-upgrade.md](../filament-v4-upgrade.md).
+>>>>>>> .merge_file_xWHEjn

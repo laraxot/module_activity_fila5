@@ -25,6 +25,7 @@ use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Filament\Resources\Pages\XotBasePage;
+use Stringable;
 use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
@@ -278,7 +279,10 @@ abstract class ListLogActivities extends XotBasePage
     {
         $title = __('activity::activities.events.restore_successful');
         $titleString = is_array($title)
-            ? implode(' ', array_map(fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v), $title))
+            ? implode(' ', array_map(
+                static fn (mixed $value): string => self::stringifyTranslationValue($value),
+                $title,
+            ))
             : (is_string($title) ? $title : '');
 
         return Notification::make()
@@ -306,6 +310,30 @@ abstract class ListLogActivities extends XotBasePage
         }
 
         return $notification->send();
+    }
+
+    private static function stringifyTranslationValue(mixed $value): string
+    {
+        if (is_string($value)) {
+            return $value;
+        }
+
+        if (is_scalar($value)) {
+            return (string) $value;
+        }
+
+        if ($value instanceof Stringable) {
+            return (string) $value;
+        }
+
+        if (is_array($value)) {
+            return implode(' ', array_map(
+                static fn (mixed $item): string => self::stringifyTranslationValue($item),
+                $value,
+            ));
+        }
+
+        return '';
     }
 
     private function resolveActivity(int|string $key): Activity

@@ -331,7 +331,10 @@ foreach (glob('Modules/*/app/Filament/Resources/*/Pages/*.php') as $file) {
 
 ---
 
+<<<<<<< .merge_file_459Hcn
 **=======
+=======
+>>>>>>> .merge_file_gRHdIe
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Versione Filament**: 4.x
 **Severità**: Alta (blocca registrazione Resource Pages)

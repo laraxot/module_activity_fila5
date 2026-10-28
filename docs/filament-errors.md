@@ -335,4 +335,8 @@ class ListSnapshots extends ListRecords
 - [ ] Testare il funzionamento delle liste dopo le modifiche
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
+<<<<<<< .merge_file_cfGvSQ
 - [ ] Eseguire PHPStan per verificare altri possibili errori
+=======
+- [ ] Eseguire PHPStan per verificare altri possibili errori
+>>>>>>> .merge_file_PkAKA8

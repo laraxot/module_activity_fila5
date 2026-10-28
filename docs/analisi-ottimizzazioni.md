@@ -254,7 +254,10 @@ php artisan test
 
 ---
 
+<<<<<<< .merge_file_TMlAM6
 **=======
+=======
+>>>>>>> .merge_file_0JAQHO
 **ultimo aggiornamento**: 20 agosto 2025
 **analista**: claude code
 **stato**: pronto per implementazione

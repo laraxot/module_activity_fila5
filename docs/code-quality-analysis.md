@@ -318,7 +318,7 @@ private function updateActivityStatistics($activityData): void
 **Problem**: Nested search conditions
 **Solution**: Use query builders and break into smaller methods
 
-## 🔧 Laravel 13 Compliance Issues
+## 🔧 Laravel 12 Compliance Issues
 
 ### 1. Database Query Optimization
 **Problem**: Inefficient database queries
@@ -581,7 +581,7 @@ private function updateActivityStatistics($activityData): void
 **Problem**: Nested search conditions
 **Solution**: Use query builders and break into smaller methods
 
-## 🔧 Laravel 13 Compliance Issues
+## 🔧 Laravel 12 Compliance Issues
 
 ### 1. Database Query Optimization
 **Problem**: Inefficient database queries

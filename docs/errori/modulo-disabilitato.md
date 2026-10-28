@@ -336,7 +336,10 @@ Se `module:enable Activity` non funziona:
 
 ---
 
+<<<<<<< .merge_file_ZmkMoD
 **=======
+=======
+>>>>>>> .merge_file_aMKqHU
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Caso Reale**: personale2022.prov.tv.local
 **Soluzione Verificata**: ✅ Testata e funzionante
