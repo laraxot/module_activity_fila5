@@ -130,7 +130,6 @@ test('successful login regenerates session', function (): void {
 # Complete test suite
 ./vendor/bin/pest Modules/Cms/tests/Feature/Auth/LoginTest.php
 
-# Specific functionality group  =======
 # Specific functionality group
 ./vendor/bin/pest --filter="Authentication Logic"
 
