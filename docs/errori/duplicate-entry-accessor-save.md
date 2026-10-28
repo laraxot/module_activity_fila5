@@ -470,10 +470,7 @@ class SchedaObserver
 
 ---
 
-<<<<<<< .merge_file_0tSwRB
 **=======
-=======
->>>>>>> .merge_file_bjFX2A
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Severità**: CRITICA (blocca edit in produzione)
 **Workaround**: Disabilitare temporaneamente LogsActivity trait

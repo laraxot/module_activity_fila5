@@ -7,8 +7,6 @@ tags: [docs, activity]
 qmd: "event sourcing in `saluteora` activity"
 ---
 # Event Sourcing in `saluteora`
-<<<<<<< .merge_file_6iGYJS
-=======
 
 ## Introduction to Event Sourcing
 Event Sourcing is an architectural pattern where application state is derived from a sequence of events. Instead of storing the current state in a database, the application stores all events that led to the current state. This approach is particularly beneficial in a healthcare context like `saluteora` for tracking patient activities, medical records, and system interactions with full auditability.
@@ -162,7 +160,6 @@ topic: event-sourcing-introduction
 canonical: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
 
 # Event Sourcing in `<nome progetto>`
->>>>>>> .merge_file_LZbUae
 
 ## Introduction to Event Sourcing
 Event Sourcing is an architectural pattern where application state is derived from a sequence of events. Instead of storing the current state in a database, the application stores all events that led to the current state. This approach is particularly beneficial in a healthcare context like `<nome progetto>` for tracking patient activities, medical records, and system interactions with full auditability.
@@ -280,14 +277,4 @@ public function store(Request $request)
 - [Microsoft Azure Event Sourcing Pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing)
 - [Larabank Examples](https://github.com/spatie/larabank-traditional)
 
-<<<<<<< .merge_file_6iGYJS
-This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `saluteora`, ensuring full traceability and compliance with healthcare standards.---
-module: theme
-topic: event-sourcing-introduction
-canonical: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
----
-=======
-This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `<nome progetto>`, ensuring full traceability and compliance with healthcare standards.
->>>>>>> .merge_file_LZbUae
-
-See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
+This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `saluteora`, ensuring full traceability and compliance with healthcare standards.

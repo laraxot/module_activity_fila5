@@ -250,8 +250,4 @@ tests/activity_coverage.xml
 # module-root-hygiene (story module-root-hygiene)
 /.github/skills/
 docs/graphify
-<<<<<<< .merge_file_ZEzpmk
 resources/lang
-=======
-resources/lang
->>>>>>> .merge_file_XmA9Rg

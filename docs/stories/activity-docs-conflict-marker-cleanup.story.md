@@ -61,8 +61,4 @@ grep -rl '^<<<<<<< \|^=======$\|^>>>>>>> ' docs/ --include='*.md'
 # atteso: nessun output (verificato, exit 1)
 ```
 
-<<<<<<< .merge_file_caki9o
 Commit: `6db1c9e3`.
-=======
-Commit: `6db1c9e3`.
->>>>>>> .merge_file_0824am

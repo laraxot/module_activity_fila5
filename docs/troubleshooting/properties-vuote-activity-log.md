@@ -358,10 +358,7 @@ $record->update(['stabi' => 999]);
 
 ---
 
-<<<<<<< .merge_file_79t34N
 **=======
-=======
->>>>>>> .merge_file_gctQig
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Severità**: Media (funziona ma properties vuote)
 **Soluzione**: Aggiungere `->logAll()` o `->logOnly()` in getActivitylogOptions()

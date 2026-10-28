@@ -56,7 +56,7 @@ Consolidated 41 orphaned `.md` files in `laravel/Modules/Activity/docs/` into st
 ### Consolidated
 
 - **API docs**: Removed duplicate `api.md`, kept `API.md`
-- **Index files**: Consolidated 3 variants (`00-index.md`, `00-index-1.md`), kept `00-INDEX.md`
+- **Index files**: Consolidated 3 variants (`00-index.md`, `00-index.md`), kept `00-INDEX.md`
 - **Event-sourcing patterns**: 5 variants consolidated to 1 canonical, duplicates archived
 - **README updates**: Old update variants archived to `archive/old-updates/`
 

@@ -197,8 +197,4 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 *Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
 *Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*=======
 See canonical documentation: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-1.md
-<<<<<<< .merge_file_84wn4d
 See canonical documentation: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-1.md
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-1.md
->>>>>>> .merge_file_DTkmjT

@@ -97,11 +97,7 @@ status: stale
 | FILAMENT_RESOURCE_GUIDELINES.md | Resource guidelines |
 
 ## 📦 **Pacchetti Composer**
-<<<<<<< .merge_file_7vb3DS
-- [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)=======
-=======
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
->>>>>>> .merge_file_3TfRaP
 app(LogActivityAction::class)->execute(
     type: 'user.login',
     user: $user,
@@ -223,9 +219,4 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 - Prima di modificare codice: ragionare, studiare i docs del modulo/tema, aggiornare docs/rules/memory/skills.
 - Riferimento globale: [Pre-Edit Docs-First Rule](../../../../docs/rules/pre-edit-docs-first-rule.md)
 - Memory: [Pre-Edit Docs-First Memory](../../../../docs/memory/pre-edit-docs-first-memory.md)
-<<<<<<< .merge_file_7vb3DS
-- Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)=======
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
-=======
-- Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
->>>>>>> .merge_file_3TfRaP

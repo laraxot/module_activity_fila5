@@ -86,8 +86,4 @@ notes: |
   reintroduce marker gia' risolti, la regressione puo' ripetersi.
 commit: 5fe111e1 (fix contenuto) + e6eb12dd (story)
 regressed_from_commit: 6db1c9e3
-<<<<<<< .merge_file_bX1qCM
 regressed_by_commit: baf9bfbd
-=======
-regressed_by_commit: baf9bfbd
->>>>>>> .merge_file_20KbBL

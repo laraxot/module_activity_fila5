@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_41A0Hh
 ---
 title: "ACTIVITY MODULE - ROADMAP 2025"
 type: note
@@ -98,8 +97,6 @@ Activity Module
 - [ ] Criterion 2
 - [ ] Criterion 3
 
-=======
->>>>>>> .merge_file_U8RYyZ
 ---
 title: "ACTIVITY MODULE - ROADMAP 2025"
 type: note
