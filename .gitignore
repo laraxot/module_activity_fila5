@@ -183,3 +183,8 @@ workbench/
 .cursor~*
 .windsurf~*
 tests/activity_coverage.xml
+
+# module-root-hygiene (story module-root-hygiene)
+/.github/skills/
+docs/graphify
+resources/lang
