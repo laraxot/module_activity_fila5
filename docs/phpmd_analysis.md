@@ -11,7 +11,11 @@ qmd: "phpmd analysis activity"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/PHPMD-ANALYSIS.md*
+<<<<<<< .merge_file_pKOhS4
 *Status: In Progress - Complexity Fixes*
 See canonical documentation: ../../../Themes/docs/shared-components/PHPMD-ANALYSIS.md
 See canonical documentation: ../../../Themes/docs/shared-components/PHPMD-ANALYSIS.md
 See canonical documentation: ../../../Themes/docs/shared-components/PHPMD-ANALYSIS.md
+=======
+*Status: In Progress - Complexity Fixes*
+>>>>>>> .merge_file_8uvIoA

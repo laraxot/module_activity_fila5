@@ -69,4 +69,8 @@ I test Pest non sono stati rieseguiti in questa sessione: non verificato che pas
 - `LoginListener` non registra nulla: gli accessi non finiscono nel log, solo le uscite.
 - In `database/migrations` restano altre quattro migrazioni `create_activity_table` (`2023_03_31_103350`, `2023_03_31_103351`, `2024_01_01_000001`, `2024_01_01_000002`) oltre a quella del 2026-06-10. Se siano innocue non e' verificato.
 - La connessione `activity` e' dichiarata nei modelli (`$connection = 'activity'`) ma non e' definita in `laravel/config/database.php`: dove venga creata non e' verificato.
+<<<<<<< .merge_file_vKGR0m
 - Documenti che non descrivono il codice: [ARCHITECTURE.md](./ARCHITECTURE.md) (Repositories, Services, Projections inesistenti), [API.md](./api.md) (firma `execute(array $data)` inesistente), [readme.md](./readme.md) (`ActivityStatsWidget`, `EventStore`, monitoraggio in tempo reale inesistenti). Sono marcati `stale`.
+=======
+- Documenti che non descrivono il codice: [ARCHITECTURE.md](./ARCHITECTURE.md) (Repositories, Services, Projections inesistenti), [API.md](./api.md) (firma `execute(array $data)` inesistente), [readme.md](./readme.md) (`ActivityStatsWidget`, `EventStore`, monitoraggio in tempo reale inesistenti). Sono marcati `stale`.
+>>>>>>> .merge_file_k6l44K

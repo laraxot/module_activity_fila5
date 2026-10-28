@@ -163,5 +163,10 @@ public function store(Request $request)
 
 This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `<nome progetto>`, ensuring full traceability and compliance with healthcare standards.
 This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `<nome progetto>`, ensuring full traceability and compliance with healthcare standards.=======
+<<<<<<< .merge_file_4vPgcS
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
+>>>>>>> .merge_file_Ad1fDN
