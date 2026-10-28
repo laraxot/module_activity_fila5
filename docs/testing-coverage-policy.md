@@ -23,8 +23,12 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 ### 2. .env.testing
 
 - `.env.testing` è uguale a `.env` tranne per i nomi database
+<<<<<<< .merge_file_8E5Kwh
 - I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)=======
 - I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
+=======
+- I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)
+>>>>>>> .merge_file_qo6Adz
 - Le variabili `DB_CONNECTION`, `DB_DATABASE` **NON** devono essere sovrascritte in phpunit.xml
 - Laravel carica `.env.testing` quando `APP_ENV=testing`
 
@@ -33,8 +37,12 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 - Il TestCase usa `DatabaseTransactions` per rollback automatico tra test
 - `$connectionsToTransact = ['mysql', 'activity', 'user']` per coprire tutte le connessioni
 - **CRITICO**: La connessione `activity` DEVE essere inclusa. Senza di essa, ActivityLoggerTest getRecent fallisce per inquinamento dati.
+<<<<<<< .merge_file_8E5Kwh
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`)=======
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite una volta: `php artisan migrate --env=testing`
+=======
+- Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`)
+>>>>>>> .merge_file_qo6Adz
 
 ### 4. Connessioni Database
 
@@ -67,6 +75,7 @@ php artisan migrate --env=testing --path=Modules/Activity/database/migrations
   - `Modules/Activity/app`
   - `Modules/Xot/app`
   - `Modules/User/app`
+<<<<<<< .merge_file_8E5Kwh
 DB_DATABASE=techplanner_data_test
 DB_DATABASE_USER=techplanner_data_test
 ```
@@ -80,3 +89,49 @@ php artisan config:clear
 ```
 
 - [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
+=======
+
+## Workflow Coverage
+
+### Comandi
+
+```bash
+# Test modulo Activity
+cd laravel && php artisan test Modules/Activity/tests --compact
+
+# Coverage
+cd laravel && php artisan test Modules/Activity/tests --coverage --min=100
+
+# Singolo file
+php artisan test Modules/Activity/tests/Unit/Actions/LogActivityActionTest.php --compact
+```
+
+### Struttura Test
+
+```
+tests/
+├── Feature/          # Test integrazione, Filament, business logic
+├── Unit/              # Test unitari Actions, Models, Listeners
+├── Pest.php           # Estensioni, helper, expectations
+└── TestCase.php       # Base con DatabaseTransactions
+```
+
+## Checklist Pre-Commit
+
+- [ ] Nessun RefreshDatabase
+- [ ] Nessun migrate nel setUp
+- [ ] .env.testing con DB _test
+- [ ] DatabaseTransactions attivo
+- [ ] Coverage 100% su app/
+- [ ] PHPStan livello 10 passa
+
+## Riferimenti Documentazione
+
+- [Laravel Modules Testing](https://laravelmodules.com/docs/12/advanced/tests)
+- [Pest Coverage](https://pestphp.com/docs/test-coverage)
+- [Laravel Testing](https://laravel.com/docs/12.x/testing)
+- [testing-errors-fixes](testing-errors-fixes.md) - Errori risolti e correzioni
+- [testing-rules](testing-rules.md)
+- [testing-strategy-implementation](testing-strategy-implementation.md)
+- [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
+>>>>>>> .merge_file_qo6Adz

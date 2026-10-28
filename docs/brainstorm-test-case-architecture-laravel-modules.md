@@ -3,9 +3,15 @@ title: "Brainstorm: TestCase Architecture for Laravel Modules"
 date: 2026-06-10
 objective: "Valutare se Modules/<Module>/tests/TestCase.php debba estendere XotBaseTestCase e se XotBaseTestCase debba estendere un BaseTestCase Nwidart"
 issues:
+<<<<<<< .merge_file_EEELKK
   - https://github.com/laraxot/base_ptv_fila5/issues/316
 discussions:
   - https://github.com/laraxot/base_ptv_fila5/discussions/316
+=======
+  - https://github.com/laraxot/base_fixcity_fila5/issues/316
+discussions:
+  - https://github.com/laraxot/base_fixcity_fila5/discussions/316
+>>>>>>> .merge_file_HrGgMN
 sources:
   - https://laravelmodules.com/docs/13/advanced/tests
   - https://github.com/nWidart/laravel-modules

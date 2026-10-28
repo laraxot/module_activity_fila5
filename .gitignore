@@ -20,9 +20,14 @@ test-results
 tests/.claude-audit
 # ==============================================
 # LARAXOT MODULE ACTIVITY - .GITIGNORE
+# ==============================================
 # Modulo Activity Laraxot - Template standardizzato
 # Ultimo aggiornamento: 2025-01-31
+# ==============================================
+
+# ==============================================
 # DEPENDENCIES & PACKAGES
+# ==============================================
 /vendor/
 /vendor
 /node_modules/
@@ -33,14 +38,20 @@ yarn.lock
 composer.lock
 yarn-error.log
 npm-debug.log
+
+# ==============================================
 # BUILD & COMPILED FILES
+# ==============================================
 /build
 /build/
 build/
 dist/
 docs/cache/
 cache/
+
+# ==============================================
 # CACHE & TEMPORARY FILES
+# ==============================================
 *.cache
 *.lock
 *.phar
@@ -53,13 +64,19 @@ cache/
 v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
+
+# ==============================================
 # LOG FILES
+# ==============================================
 *.log
 error_log
 npm-debug.log*
 yarn-error.log*
 lerna-debug.log*
+
+# ==============================================
 # LARAVEL SPECIFIC
+# ==============================================
 bootstrap/compiled.php
 app/storage/
 public/storage
@@ -70,18 +87,27 @@ storage/*.key
 .env
 .env.*
 !.env.example
+
+# ==============================================
 # ENVIRONMENT & CONFIGURATION
+# ==============================================
 Homestead.yaml
 Homestead.json
 /.vagrant
 /.idea
 .phpintel
 .vscode/
+
+# ==============================================
 # GIT SPECIFIC
+# ==============================================
 .git-rewrite/
 .git-rewrite
 .git-blame-ignore-revs
+
+# ==============================================
 # SYSTEM FILES
+# ==============================================
 .DS_Store
 .DS_Store?
 ._*
@@ -90,7 +116,10 @@ Homestead.json
 ehthumbs.db
 Thumbs.db
 *~
+
+# ==============================================
 # BACKUP FILES
+# ==============================================
 *.old
 *.old1
 *.old2
@@ -101,42 +130,71 @@ Thumbs.db
 *.bak
 *.bakcup
 *.new
+
+# ==============================================
 # DEVELOPMENT TOOLS
+# ==============================================
 .windsurf/
 .cursor/
 .phpstorm.meta.php
+
+# ==============================================
 # DOCUMENTATION CACHE
+# ==============================================
 docs/phpstan/
+docs/cache/
+docs/legacy/
+docs/legacy/**
+
+# ==============================================
 # LANGUAGE FILES
+# ==============================================
 lang/lang/
 resources/lang/
+
+# ==============================================
 # OLD DIRECTORIES (LEGACY CLEANUP)
+# ==============================================
 resources/views/Components_old/
 database/Migrations_old/
 database/Seeders_old/
 database/Factories_old/
 database_old/
+
+# ==============================================
 # MODULE SPECIFIC - ACTIVITY
+# ==============================================
 # File di configurazione locale
 config/local.php
 config/development.php
+
 # Cache activity log
 storage/activity/
 storage/logs/
+
 # File di test activity
 activity_test_data.json
 test_activity_logs.sql
+
+# ==============================================
 # END OF ACTIVITY .GITIGNORE
+# ==============================================
+
 # File specifici del progetto
 *.fila2
 laravel
 public_html
 tests/coverage
+lang/lang/
+_docs/
+_docs/
 tests/coverage/
 tests/coverage.xml/
 activity_coverage.xml
+
 # -----------------------------------------------------------------------------
 # Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+# -----------------------------------------------------------------------------
 *~HEAD
 *~BASE
 *~LOCAL
@@ -144,8 +202,13 @@ activity_coverage.xml
 *.orig
 *.rej
 *~head
+tests/coverage/
+tests/coverage.xml/
+activity_coverage.xml
+*~head
 agentdb.rvf
 tests/AuditCoverage
+audit-coverage/
 # AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
 
 # Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
@@ -187,4 +250,8 @@ tests/activity_coverage.xml
 # module-root-hygiene (story module-root-hygiene)
 /.github/skills/
 docs/graphify
+<<<<<<< .merge_file_ZEzpmk
 resources/lang
+=======
+resources/lang
+>>>>>>> .merge_file_XmA9Rg

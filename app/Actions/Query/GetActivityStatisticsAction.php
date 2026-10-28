@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Activity\Actions\Query;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Modules\Activity\Models\Activity;
@@ -40,10 +41,12 @@ class GetActivityStatisticsAction
      */
     private function computeStatistics(?UserContract $user): array
     {
-        /** @var Builder<Activity> $query */
         $query = Activity::newQuery();
 
         if ($user) {
+            if (! $user instanceof Model) {
+                throw new \InvalidArgumentException('User must be an Eloquent model');
+            }
             $query->where('causer_id', $user->getKey())
                 ->where('causer_type', $user::class);
         }

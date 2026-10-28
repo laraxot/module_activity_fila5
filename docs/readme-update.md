@@ -72,4 +72,8 @@ php artisan test --filter=Snapshot
 # Con coverage
 php artisan test Modules/Activity --coverage
 ```=======
+<<<<<<< .merge_file_lxkAK1
 ```
+=======
+```
+>>>>>>> .merge_file_DHAbHL

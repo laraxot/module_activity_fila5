@@ -20,19 +20,20 @@ class LogUserLogoutAction
     use QueueableAction;
 
     public function __construct(
-        public UserContract $user
+        public ?UserContract $user = null
     ) {}
 
-    public function execute(): Activity
+    public function execute(?UserContract $user = null): Activity
     {
-        if (! $this->user instanceof Model) {
+        $user = $user ?? $this->user;
+        if (! $user instanceof Model) {
             throw new InvalidArgumentException('User must implement UserContract and extend Model');
         }
 
         $action = new LogActivityAction(
             type: 'logout',
-            user: $this->user,
-            subject: $this->user,
+            user: $user,
+            subject: $user,
             description: 'User logged out'
         );
 

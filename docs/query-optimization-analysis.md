@@ -161,6 +161,7 @@ public static function getTableQuery(): Builder
         ->latest();
 }
 ```
+<<<<<<< .merge_file_bVTUXR
 
 ### 5. Snapshot Generation (HIGH IMPACT)
 
@@ -323,9 +324,174 @@ DB::listen(function ($query) {
 ```
 
 This optimization plan will significantly improve the Activity module's performance while maintaining all existing functionality.---
+=======
+
+### 5. Snapshot Generation (HIGH IMPACT)
+
+**File**: `Modules/Activity/app/Models/Snapshot.php`
+**Problem**: Heavy aggregation queries without optimization
+
+```php
+// Current expensive aggregation
+public function generateSnapshot($aggregateId)
+{
+    $events = StoredEvent::where('aggregate_uuid', $aggregateId)
+        ->orderBy('created_at')
+        ->get(); // Loads all events for aggregate
+
+    // Heavy processing in PHP instead of database
+    $state = [];
+    foreach ($events as $event) {
+        $state = $this->applyEvent($state, $event);
+    }
+}
+```
+
+**Optimization**:
+```php
+// Use database aggregation where possible
+public function generateSnapshot($aggregateId)
+{
+    // Get latest snapshot first
+    $latestSnapshot = Snapshot::where('aggregate_uuid', $aggregateId)
+        ->latest('created_at')
+        ->first();
+
+    $fromDate = $latestSnapshot ? $latestSnapshot->created_at : null;
+
+    // Only process events since last snapshot
+    $query = StoredEvent::where('aggregate_uuid', $aggregateId)
+        ->orderBy('created_at');
+
+    if ($fromDate) {
+        $query->where('created_at', '>', $fromDate);
+    }
+
+    // Use chunked processing
+    $state = $latestSnapshot ? $latestSnapshot->state : [];
+
+    $query->chunk(500, function ($events) use (&$state) {
+        foreach ($events as $event) {
+            $state = $this->applyEvent($state, $event);
+        }
+    });
+}
+```
+
+## Activity Module Specific Optimizations
+
+### Database Schema Improvements
+```sql
+-- Activity log partitioning for large datasets
+ALTER TABLE activity_log PARTITION BY RANGE (YEAR(created_at)) (
+    PARTITION p2023 VALUES LESS THAN (2024),
+    PARTITION p2024 VALUES LESS THAN (2025),
+    PARTITION p2025 VALUES LESS THAN (2026),
+    PARTITION pmax VALUES LESS THAN MAXVALUE
+);
+
+-- Stored events optimization
+CREATE INDEX idx_stored_events_aggregate_created ON stored_events(aggregate_uuid, created_at);
+CREATE INDEX idx_stored_events_event_class ON stored_events(event_class);
+
+-- Snapshots optimization
+CREATE INDEX idx_snapshots_aggregate_created ON snapshots(aggregate_uuid, created_at DESC);
+```
+
+### Caching Strategy
+```php
+// Activity statistics caching
+class ActivityStatsService
+{
+    public function getTodayStats(): array
+    {
+        return Cache::remember('activity_today_stats', 300, function () {
+            return [
+                'total_activities' => Activity::whereDate('created_at', today())->count(),
+                'unique_users' => Activity::whereDate('created_at', today())
+                    ->distinct('causer_id')
+                    ->count('causer_id'),
+                'top_actions' => Activity::whereDate('created_at', today())
+                    ->groupBy('description')
+                    ->selectRaw('description, COUNT(*) as count')
+                    ->orderByDesc('count')
+                    ->limit(5)
+                    ->pluck('count', 'description')
+                    ->toArray(),
+            ];
+        });
+    }
+}
+```
+
+### Background Processing
+```php
+// Queue heavy activity processing
+class ProcessBatchActivitiesJob implements ShouldQueue
+{
+    public function handle(array $activities): void
+    {
+        // Process activities in background to avoid blocking requests
+        $chunks = array_chunk($activities, 100);
+
+        foreach ($chunks as $chunk) {
+            Activity::insert($chunk);
+        }
+    }
+}
+
+// Usage in controllers/listeners
+dispatch(new ProcessBatchActivitiesJob($activitiesData));
+```
+
+## Performance Impact Assessment
+
+### Current Performance Issues:
+- **Activity listing**: 50-100 additional queries per page load
+- **Batch processing**: Linear degradation with batch size
+- **Search operations**: Full table scans on large datasets
+- **Event replay**: Memory exhaustion on large event streams
+
+### Expected Improvements:
+- **Activity listing**: 95% reduction in queries (50-100 queries → 2-3 queries)
+- **Batch processing**: 90% faster with bulk inserts
+- **Search operations**: 80% faster with proper indexing
+- **Event replay**: Memory usage reduced from GB to MB scale
+
+### Implementation Priority:
+1. **Immediate** (1-2 days): Fix eager loading in ActivityResource
+2. **High** (1 week): Implement batch processing optimizations
+3. **Medium** (2 weeks): Add database indexes and caching
+4. **Long-term** (1 month): Implement table partitioning
+
+## Monitoring and Metrics
+
+### Key Performance Indicators:
+- Average query time for activity listing
+- Number of queries per activity page load
+- Memory usage during batch operations
+- Event replay processing time
+
+### Monitoring Setup:
+```php
+// Add to AppServiceProvider
+DB::listen(function ($query) {
+    if ($query->time > 1000) { // Queries over 1 second
+        Log::warning('Slow query detected', [
+            'sql' => $query->sql,
+            'bindings' => $query->bindings,
+            'time' => $query->time
+        ]);
+    }
+});
+```
+
+This optimization plan will significantly improve the Activity module's performance while maintaining all existing functionality.
+
+---
+>>>>>>> .merge_file_s7DCdy
 module: theme
 topic: query-optimization-analysis
 canonical: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
----
 
 See canonical documentation: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md

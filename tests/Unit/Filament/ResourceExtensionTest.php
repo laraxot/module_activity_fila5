@@ -93,8 +93,12 @@ test('activity resource has correct model configuration', function () {
 });
 
 test('activity resource form schema returns array', function () {
+<<<<<<< .merge_file_2tSmm5
     $formInstance = app(ActivityForm::class);
     $form = $formInstance->getFormSchema();
+=======
+    $form = (new ActivityResource)->getFormSchema();
+>>>>>>> .merge_file_NKu2AC
 
     Assert::assertNotEmpty($form);
 
@@ -112,8 +116,12 @@ test('activity resource form schema returns array', function () {
 });
 
 test('snapshot resource form schema returns array', function () {
+<<<<<<< .merge_file_2tSmm5
     $formInstance = app(SnapshotForm::class);
     $form = $formInstance->getFormSchema();
+=======
+    $form = (new SnapshotResource)->getFormSchema();
+>>>>>>> .merge_file_NKu2AC
 
     Assert::assertNotEmpty($form);
 
@@ -129,8 +137,12 @@ test('snapshot resource form schema returns array', function () {
 });
 
 test('stored event resource form schema returns array', function () {
+<<<<<<< .merge_file_2tSmm5
     $formInstance = app(StoredEventForm::class);
     $form = $formInstance->getFormSchema();
+=======
+    $form = (new StoredEventResource)->getFormSchema();
+>>>>>>> .merge_file_NKu2AC
 
     Assert::assertNotEmpty($form);
 

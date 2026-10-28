@@ -39,4 +39,4 @@ Core module for the FixCity Platform.
 
 ---
 
-**Modulo** `Activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+See canonical documentation: ../../../../Themes/docs/shared-components/README-Modules.md

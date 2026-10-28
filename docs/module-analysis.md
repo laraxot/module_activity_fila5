@@ -325,5 +325,10 @@ activity()->withProperties([
 ---
 
 **Versione**: v2.5.0-beta  
+<<<<<<< .merge_file_sYGvet
 **Stato**: Production Ready with Compliance Enhancement=======
 - Machine learning capabilities
+=======
+**Stato**: Production Ready with Compliance Enhancement
+- Machine learning capabilities
+>>>>>>> .merge_file_olEibI
