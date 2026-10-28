@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: logging_optimization
@@ -11,6 +12,9 @@ qmd: "logging optimization activity"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md# Activity Module - Logging Optimization
+=======
+# Activity Module - Logging Optimization
+>>>>>>> 83de853d (.)
 
 ## Current Issues
 
