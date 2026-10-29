@@ -27,9 +27,23 @@ return [
     'actions' => [
         'refresh' => [
             'label' => 'Aggiorna',
+            'icon' => 'refresh',
+            'tooltip' => 'refresh',
         ],
         'download' => [
             'label' => 'Scarica il file',
+            'icon' => 'download',
+            'tooltip' => 'download',
+        ],
+        'profile' => [
+            'label' => 'profile',
+            'icon' => 'profile',
+            'tooltip' => 'profile',
+        ],
+        'logout' => [
+            'label' => 'logout',
+            'icon' => 'logout',
+            'tooltip' => 'logout',
         ],
     ],
     'messages' => [
