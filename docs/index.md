@@ -261,6 +261,7 @@ sono elencati nello Storico.
 - [stories/7.2.phpstan-test-harness-contracts.story.md](stories/7.2.phpstan-test-harness-contracts.story.md)
 - [stories/9.1.fix-connection-property-removed.story.md](stories/9.1.fix-connection-property-removed.story.md)
 - [stories/docs-index-audit.story.md](stories/docs-index-audit.story.md) — questo task (audit indice docs).
+- [stories/blade-i18n-no-hardcoded-text.story.md](stories/blade-i18n-no-hardcoded-text.story.md) — niente testi fissi nelle Blade: chiavi `activity::` in it, en, de, es.
 
 ## Task e backlog dettagliato
 

@@ -6,6 +6,7 @@ namespace Modules\Activity\Filament\Resources\SnapshotResource\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class SnapshotsTable extends XotBaseResourceTable
@@ -16,7 +17,7 @@ class SnapshotsTable extends XotBaseResourceTable
     public function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id')->searchable()->sortable(),
+            'id' => IDColumn::make('id')->searchable()->sortable(),
             'aggregate_uuid' => TextColumn::make('aggregate_uuid')->searchable()->limit(30),
             'aggregate_version' => TextColumn::make('aggregate_version')->searchable()->sortable(),
             'state' => TextColumn::make('state')->limit(50),
