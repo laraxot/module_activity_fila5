@@ -48,3 +48,11 @@ Testi in PHP: non cercati in questa campagna sul modulo, quindi non toccati.
 ## Riferimenti
 
 Metodo e regola completa: [story del tema Two](../../../../Themes/Two/docs/stories/blade-i18n-no-hardcoded-text.story.md); protocollo a cinque elementi: [regola 008](../../../../../docs/wiki/rules/008-translation-5-level-protocol.md). Il dettaglio per file e' nel repo privato di audit.
+
+### Passata 2026-10-30 (sessione 97f16a39, i18n-small-modules: Activity)
+
+Scanner `Modules/Activity`: prima 9 occorrenze in 4 file (8 text, 1 attr), dopo 9 in 4 file (invariato).
+
+- Nessuna modifica. `check-blade-keys` su `Modules/Activity`: 22 usi, 0 mancanti; compilazione 9 file OK.
+- Residui (9): `admin/dashboard/item` con dati di esempio (5, nessuna vista o classe lo richiama), stub `index` e `layouts/master` (3), `placeholder=__('activity::log_viewer.placeholders.search')` (1, e' gia' una chiave).
+- Non verificato: nessuna pagina guardata.
