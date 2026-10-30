@@ -37,7 +37,7 @@ Fatti verificati sul codice il 2026-10-14. Dove una cosa non e' stata provata e'
 | Rotte | `routes/web.php`, `routes/api.php` | nessuna rotta attiva: contengono solo commenti |
 | Config | `config/config.php` | chiavi `name`, `description`, `icon`, `navigation`, `routes`, `providers`, unite come `activity`; la config Spatie e' in `laravel/config/activitylog.php` (`activity_model` = `Modules\Activity\Models\Activity`, tabella `activity_log`) e `laravel/config/event-sourcing.php` |
 | Database | `database/migrations` | `activity_log` e' definita da `2026_06_10_141000_create_activity_table.php` (intestazione: "UNICA migrazione", contratto in [wiki/concepts/activity-log-single-migration-contract.md](./wiki/concepts/activity-log-single-migration-contract.md)); `stored_events`, `snapshots`, `test_models` hanno una migrazione ciascuna |
-| Test | `tests/Feature`, `tests/Unit`, `tests/Security` | 100 file `*Test.php` in stile Pest e 34 fixture; `TestCase` estende `XotBaseTestCase` e usa lo SQLite condiviso `fixcity_data.sqlite` senza `RefreshDatabase` |
+| Test | `tests/Feature`, `tests/Unit`, `tests/Security` | 100 file `*Test.php` in stile Pest e 34 fixture; `TestCase` estende `XotBaseTestCase`, usa transazioni e risolve lo SQLite condiviso (fallback `database/test_data.sqlite`) senza `RefreshDatabase`. Il file non è versionato e deve essere predisposto in modo disposable prima dei test. |
 | Traduzioni | `lang/` | 18 cartelle di lingua piu' `en.json` e `it.json`; `lang/it` ha 24 file |
 
 ## Quick start
