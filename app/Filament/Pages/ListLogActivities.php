@@ -25,6 +25,8 @@ use Modules\Activity\Models\Activity;
 use Modules\Xot\Filament\Resources\Pages\XotBasePage;
 use Stringable;
 
+use function Safe\json_encode;
+
 /**
  * Classe base per visualizzare lo storico delle attività di un record.
  *
@@ -64,7 +66,7 @@ abstract class ListLogActivities extends XotBasePage
         // Convert to string (__() returns string|array|null)
         if (is_array($breadcrumb)) {
             return implode(' ', array_map(
-                static fn (mixed $value): string => self::stringifyTranslationValue($value),
+                fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v),
                 $breadcrumb,
             ));
         }
@@ -91,7 +93,7 @@ abstract class ListLogActivities extends XotBasePage
         // __() returns string|array|null
         if (is_array($title)) {
             return implode(' ', array_map(
-                static fn (mixed $value): string => self::stringifyTranslationValue($value),
+                fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v),
                 $title,
             ));
         }
@@ -238,7 +240,7 @@ abstract class ListLogActivities extends XotBasePage
         $title = __('activity::activities.events.restore_failed');
         $titleString = is_array($title)
             ? implode(' ', array_map(
-                static fn (mixed $value): string => self::stringifyTranslationValue($value),
+                fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v),
                 $title,
             ))
             : (is_string($title) ? $title : '');

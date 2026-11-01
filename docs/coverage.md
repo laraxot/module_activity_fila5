@@ -1,3 +1,11 @@
+---
+title: "Activity Module Test Coverage"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "activity module test coverage activity"
+---
 # Activity Module Test Coverage
 
 ## Coverage Results
