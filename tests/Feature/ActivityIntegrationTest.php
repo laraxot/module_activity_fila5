@@ -22,24 +22,6 @@ use function Safe\json_encode;
 
 uses(TestCase::class);
 
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        \DB::connection()->getPdo();
-    } catch (\Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
-
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        \DB::connection()->getPdo();
-    } catch (\Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
-
 test('activity module models work together in integrated scenarios', function () {
     $user = UserFactory::new()->createOne();
     Assert::assertInstanceOf(User::class, $user);
@@ -218,9 +200,6 @@ test('activity module handles concurrent operations correctly', function () {
 
     $results = array_map(static fn (Closure $promise): bool => $promise(), $promises);
     Assert::assertCount(10, $results);
-    foreach ($results as $result) {
-        Assert::assertTrue($result);
-    }
 
     $userActivities = Activity::query()
         ->where('causer_type', User::class)

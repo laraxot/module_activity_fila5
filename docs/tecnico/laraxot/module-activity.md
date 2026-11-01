@@ -2,6 +2,12 @@
 module: theme
 topic: module-activity
 canonical: ../../../../../Themes/docs/shared-components/module-activity.md
+title: "module activity"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, activity, tecnico]
+qmd: "module activity activity"
 ---
 
 ## Overview
@@ -130,40 +136,4 @@ class ActivityTest extends TestCase
 3. **Manutenzione**:
    - Pulizia periodica dei log
    - Backup dei dati di attività
-# Modulo Activity
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-module: theme
-topic: module-activity
-canonical: ../../../../../Themes/docs/shared-components/module-activity.md
-
-See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
+   - Monitoraggio delle performance

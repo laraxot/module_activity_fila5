@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -34,7 +33,11 @@ return new class extends XotBaseMigration
                 $table->string('subject_type')->nullable()->change();
             }
             if ($this->hasColumn('causer_id')) {
-                $table->string('causer_id', 36)->nullable()->change()->index();
+                $table->string('causer_id', 36)->nullable()->change();
+
+                if (! $this->hasIndex('causer_id')) {
+                    $table->index('causer_id');
+                }
             }
             if ($this->hasColumn('causer_type')) {
                 $table->string('causer_type')->nullable()->change();

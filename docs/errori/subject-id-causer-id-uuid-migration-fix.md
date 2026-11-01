@@ -1,3 +1,11 @@
+---
+title: "Fix: subject_id e causer_id devono supportare UUID"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, errori]
+qmd: "fix: subject_id e causer_id devono supportare uuid activity"
+---
 # Fix: subject_id e causer_id devono supportare UUID
 
 ## Problema
@@ -47,5 +55,5 @@ APP_ENV=testing DB_DATABASE=<nome progetto>_data_test DB_DATABASE_USER=<nome pro
 
 ## Riferimenti
 
-- [migration-spatie-integration.md](./migration-spatie-integration.md)
-- [errori-migrazione-activity-table-lezioni-1.md](./legacy/errori-migrazione-activity-table-lezioni-1.md)
+- [migration-spatie-integration.md](../migration-spatie-integration.md)
+- [errori-migrazione-activity-table-lezioni-1.md](../errori-migrazione-activity-table-lezioni-apprese.md)

@@ -13,6 +13,7 @@ related:
   - phpstan-pest-discipline.md
   - ../overviews/completion-status.md
   - ../../../Xot/docs/wiki/overviews/platform-completion-roadmap.md
+status: draft
 ---
 
 # Testing in Activity
