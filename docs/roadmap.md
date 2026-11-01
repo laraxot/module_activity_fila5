@@ -1,4 +1,111 @@
-# Activity Module - Complete Roadmap
+---
+title: "ACTIVITY MODULE - ROADMAP 2025"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - roadmap 2025 activity"
+---
+# 🎯 ACTIVITY MODULE - ROADMAP 2025
+
+**Modulo**: Activity ([Description])  
+**Status**: 0% COMPLETATO  
+**Priority**: MEDIUM  
+**PHPStan**: 🚧 Level 0 (N/A errori)  
+**Filament**: 🚧 4.x Compatibile  
+
+---
+
+## 🎯 MODULE OVERVIEW
+
+Il modulo **Activity** [descrizione del modulo].
+
+### 🏗️ Architettura Modulo
+```
+Activity Module
+├── 🏛️ Core Features
+│   ├── [Feature 1]
+│   ├── [Feature 2]
+│   └── [Feature 3]
+│
+├── 🔧 Services
+│   ├── [Service 1]
+│   ├── [Service 2]
+│   └── [Service 3]
+│
+└── 🛠️ Utilities
+    ├── [Utility 1]
+    ├── [Utility 2]
+    └── [Utility 3]
+```
+
+---
+
+## ✅ COMPLETED FEATURES
+
+### 🏛️ Core Features
+- [ ] **Feature 1**: [Description]
+- [ ] **Feature 2**: [Description]
+- [ ] **Feature 3**: [Description]
+
+### 🔧 Services
+- [ ] **Service 1**: [Description]
+- [ ] **Service 2**: [Description]
+- [ ] **Service 3**: [Description]
+
+### 🛠️ Technical Excellence
+- [ ] **PHPStan level 10**: 0 errori
+- [ ] **Filament 4.x**: Compatibilità completa
+- [ ] **Type Safety**: Type hints completi
+- [ ] **Error Handling**: Gestione errori robusta
+- [ ] **Testing Setup**: Configurazione test
+
+---
+
+## 🚧 IN PROGRESS FEATURES
+
+### 🚀 [Feature Name] (Priority: HIGH)
+**Status**: 0% COMPLETATO  
+**Timeline**: Q1 2025
+
+#### 📋 Tasks
+- [ ] **Task 1** (Priority: HIGH)
+  - [ ] Subtask 1
+  - [ ] Subtask 2
+  - [ ] Subtask 3
+
+#### 🎯 Success Criteria
+- [ ] Criterion 1
+- [ ] Criterion 2
+- [ ] Criterion 3
+
+---
+
+## 📅 PLANNED FEATURES
+
+### 🚀 [Feature Name] (Priority: MEDIUM)
+**Timeline**: Q2 2025
+
+#### 📋 Features
+- [ ] **Feature 1** (Priority: MEDIUM)
+  - [ ] Subtask 1
+  - [ ] Subtask 2
+  - [ ] Subtask 3
+
+#### 🎯 Success Criteria
+- [ ] Criterion 1
+- [ ] Criterion 2
+- [ ] Criterion 3
+
+---
+title: "ACTIVITY MODULE - ROADMAP 2025"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - roadmap 2025 activity"
+---
+# 🎯 ACTIVITY MODULE - ROADMAP 2025
 
 ## Module Overview
 **Purpose**: Activity tracking and logging functionality
@@ -211,5 +318,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Mod
 - [roadmap/tasks/realtime-monitoring-dashboard.md](roadmap/tasks/realtime-monitoring-dashboard.md)
 - [roadmap/vision.md](roadmap/vision.md)
 - [stabilization-roadmap.md](stabilization-roadmap.md)
-
-

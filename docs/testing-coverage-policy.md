@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Testing Coverage Policy"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "activity module - testing coverage policy activity"
+---
 # Activity Module - Testing Coverage Policy
 
 ## Obiettivo
@@ -15,8 +23,8 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 ### 2. .env.testing
 
 - `.env.testing` è uguale a `.env` tranne per i nomi database
-- I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)
-- Le variabili `DB_CONNECTION`, `DB_DATABASE` **NON** devono essere sovrascritte in phpunit.xml (.)
+- I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
+- Le variabili `DB_CONNECTION`, `DB_DATABASE` **NON** devono essere sovrascritte in phpunit.xml
 - Laravel carica `.env.testing` quando `APP_ENV=testing`
 
 ### 3. DatabaseTransactions
@@ -24,7 +32,7 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 - Il TestCase usa `DatabaseTransactions` per rollback automatico tra test
 - `$connectionsToTransact = ['mysql', 'activity', 'user']` per coprire tutte le connessioni
 - **CRITICO**: La connessione `activity` DEVE essere inclusa. Senza di essa, ActivityLoggerTest getRecent fallisce per inquinamento dati.
-- Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`)
+- Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`) oppure una volta a mano con `php artisan migrate --env=testing` (vedi commento in `Modules/Xot/tests/TestCase.php`)
 
 ### 4. Connessioni Database
 
@@ -32,14 +40,14 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 - **activity**: modelli Activity, Snapshot, StoredEvent (creata da TenantServiceProvider a runtime)
 - **user**: modelli User
 
-**Regola**: database.php NON deve contenere 'activity'. I modelli Activity DEVONO avere `$connection = 'activity'`. Vedi [fix01](prompts/fix01.txt).
+**Regola**: database.php NON deve contenere 'activity'. I modelli Activity DEVONO avere `$connection = 'activity'`. Vedi [fix01](prompts/fix01.md).
 
 **Setup minimo .env.testing:**
 ```env
-DB_DATABASE=<nome progetto>_data_test
-DB_DATABASE_USER=<nome progetto>_data_test
+DB_DATABASE=techplanner_data_test
+DB_DATABASE_USER=techplanner_data_test
 ```
-NON aggiungere DB_DATABASE_ACTIVITY: TenantServiceProvider usa il fallback dal default (stesso DB). Vedi [fix03](prompts/fix03.txt).
+NON aggiungere DB_DATABASE_ACTIVITY: TenantServiceProvider usa il fallback dal default (stesso DB). Vedi [fix03](prompts/fix03.md).
 
 **Migrazioni pre-test (regola corrente):**
 ```bash
