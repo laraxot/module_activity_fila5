@@ -5,12 +5,9 @@ declare(strict_types=1);
 namespace Modules\Activity\Actions\Query;
 
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< .merge_file_JsyXij
-=======
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Collection;
->>>>>>> .merge_file_INBvN0
 use Illuminate\Support\Facades\Cache;
+use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
@@ -49,7 +46,7 @@ class GetActivityStatisticsAction
 
         if ($user) {
             if (! $user instanceof Model) {
-                throw new \InvalidArgumentException('User must be an Eloquent model');
+                throw new InvalidArgumentException('User must be an Eloquent model');
             }
             $query->where('causer_id', $user->getKey())
                 ->where('causer_type', $user::class);
