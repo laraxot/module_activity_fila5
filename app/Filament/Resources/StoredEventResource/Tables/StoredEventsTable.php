@@ -6,10 +6,7 @@ namespace Modules\Activity\Filament\Resources\StoredEventResource\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
-<<<<<<< .merge_file_VDTBKa
-=======
 use Filament\Tables\Columns\ViewColumn;
->>>>>>> .merge_file_Wy6tdP
 use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
@@ -26,11 +23,8 @@ class StoredEventsTable extends XotBaseResourceTable
         return [
             'id' => IDColumn::make('id')->searchable()->sortable(),
             'event_class' => TextColumn::make('event_class')->searchable(),
-<<<<<<< .merge_file_VDTBKa
             'properties' => TextColumn::make('properties')->limit(50),
-=======
             'event_properties' => ViewColumn::make('event_properties')->view($eventPropertiesView),
->>>>>>> .merge_file_Wy6tdP
             'created_at' => TextColumn::make('created_at')->dateTime(),
             'updated_at' => TextColumn::make('updated_at')->dateTime(),
         ];
