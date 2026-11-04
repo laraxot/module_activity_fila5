@@ -17,9 +17,6 @@ class StoredEventsTable extends XotBaseResourceTable
      */
     public function getTableColumns(): array
     {
-        /** @phpstan-var view-string */
-        $eventPropertiesView = 'activity::filament.tables.columns.event-properties';
-
         return [
             'id' => IDColumn::make('id')->searchable()->sortable(),
             'event_class' => TextColumn::make('event_class')->searchable(),

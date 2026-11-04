@@ -28,10 +28,6 @@ class SnapshotsTable extends XotBaseResourceTable
             'updated_at' => TextColumn::make('updated_at')->dateTime(),
         ];
     }
-
-    /**
-     * @return array<BaseFilter>
-     */
     /**
      * @return array<BaseFilter>
      */
@@ -50,4 +46,5 @@ class SnapshotsTable extends XotBaseResourceTable
                 ->getOptionLabelUsing(fn (string $value): string => $value),
         ];
     }
+=======
 }
