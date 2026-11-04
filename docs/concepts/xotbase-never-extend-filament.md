@@ -1,5 +1,5 @@
 ---
-title: "Activity — mai Filament\*, sempre XotBase*"
+title: "Activity — mai Filament*, sempre XotBase*"
 type: concept
 module: Activity
 tags: [activity, filament, xotbase, architecture]
@@ -10,6 +10,7 @@ related:
   - ../../../../../docs/wiki/rules/xotbase-critical-rules.md
   - ../../../../../docs/wiki/rules/xot-base-filament-widgets.md
   - ../../../../../docs/wiki/memories/xotbase-never-extend-filament.md
+status: draft
 ---
 
 # Mai `Filament\*` — sempre `Modules\Xot\Filament\...\XotBase*`

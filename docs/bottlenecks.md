@@ -1,3 +1,11 @@
+---
+title: "Colli di Bottiglia e Soluzioni - Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity]
+qmd: "colli di bottiglia e soluzioni - modulo activity activity"
+---
 # Colli di Bottiglia e Soluzioni - Modulo Activity
 
 ## Panoramica
@@ -341,8 +349,8 @@ class ListActivities extends XotBasePage
 * [bottlenecks.md](../../dental/docs/bottlenecks.md)
 * [bottlenecks.md](../../User/docs/bottlenecks.md)
 * [bottlenecks.md](../../User/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../ui/docs/bottlenecks.md)
-* [bottlenecks.md](../../ui/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../UI/docs/bottlenecks.md)
+* [bottlenecks.md](../../UI/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../Lang/docs/bottlenecks.md)
 * [bottlenecks.md](../../Lang/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Job/docs/performance/bottlenecks.md)

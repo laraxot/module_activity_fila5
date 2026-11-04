@@ -1,3 +1,11 @@
+---
+title: "Snapshot Testing Patterns - Best Practices"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, testing]
+qmd: "snapshot testing patterns - best practices activity"
+---
 # Snapshot Testing Patterns - Best Practices
 
 ## Overview

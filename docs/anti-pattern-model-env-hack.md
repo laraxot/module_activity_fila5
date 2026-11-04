@@ -76,7 +76,7 @@ class TestCase extends XotBaseTestCase
 <phpunit>
     <php>
         <env name="DB_CONNECTION" value="mysql"/>
-        <env name="DB_DATABASE" value="<nome progetto>_test"/>
+        <env name="DB_DATABASE" value="test_db"/>
     </php>
 </phpunit>
 ```

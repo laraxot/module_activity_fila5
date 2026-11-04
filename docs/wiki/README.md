@@ -1,16 +1,47 @@
 ---
-title: "Activity: wiki del modulo (second brain)"
-type: readme
-status: active
+title: Readme
 module: Activity
-created: 2026-10-14
-updated: 2026-10-14
-tags: [activity, wiki, second-brain]
-qmd: "activity wiki second brain concetti regole memorie indice log struttura"
-related:
-  - ./INDEX.md
-  - ../README.md
+type: index
+status: draft
+updated: 2026-10-22
+tags: [docs, activity, wiki]
+qmd: "llm wiki (module) activity"
 ---
+
+# LLM Wiki (module)
+
+This folder is the module's LLM wiki (docs/wiki). Use it to store synthesized, curated docs optimized for LLM ingestion.
+
+Structure:
+- raw/: original source docs
+- wiki/: distilled summaries and canonical pages for LLM
+- archived/: historical/obsolete docs
+
+## Perché esiste
+
+Core module for the FixCity Platform.
+
+## Superpoteri
+
+- Modular component with XotBase patterns
+- Professional-grade implementation
+- Integrated with FixCity Platform
+
+## Documentazione
+
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+
+---
+
+**Modulo** `Activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+
+---
+
+<!-- merged from README.md -->
 
 # Wiki del modulo Activity
 

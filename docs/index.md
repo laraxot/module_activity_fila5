@@ -2,7 +2,7 @@
 title: "Indice documentazione — Modulo Activity"
 type: index
 status: draft
-updated: 2026-10-08
+updated: 2026-10-23
 tags: [docs, activity]
 qmd: "indice documentazione   modulo activity activity"
 ---
@@ -13,24 +13,27 @@ Indice organizzato per argomento. Copre tutti i file `.md` sotto `Modules/Activi
 cresciuta molto oltre le stime precedenti, vedi `docs/task-consolidare-documentazione.md`
 e `docs/docs-health.md`).
 
-Nessun file e' stato rinominato o cancellato per produrre questo indice. Dove esistono
-duplicati palesi (stesso contenuto, varianti di maiuscole/minuscole o underscore/trattino,
-numerazioni progressive `-1`/`-2`), il file piu' completo e' collegato qui come
-riferimento primario; tutte le varianti restano elencate in fondo, sezione
-["Storico / da consolidare"](#storico--da-consolidare).
+## Key Features
+- **Activity Logging**: Automatic logging of user and system activities
+- **Audit Trails**: Complete history of changes and actions
+- **Event Tracking**: Real-time monitoring of system events
+- **Reporting**: Activity reports and analytics
+- **Filtering**: Advanced filtering and search capabilities
 
-## Come leggere questo modulo
+## Architecture
+The module follows the Laraxot architecture principles:
+- Extends Xot base classes
+- Uses Filament for admin interface
+- Implements proper service providers
+- Follows DRY/KISS principles
 
-1. [README.md](README.md) — panoramica del modulo, quick start.
-2. [purpose.md](purpose.md) e [scopo.md](scopo.md) — perche' il modulo esiste, confini.
-3. [philosophy.md](philosophy.md) — principi di design (audit trail, event sourcing).
-4. [docs-health.md](docs-health.md) — stato di salute della documentazione e regole canoniche.
-5. [rules-index.md](rules-index.md) — indice delle regole operative del modulo.
-6. [wiki/index.md](wiki/index.md) — "second brain" del modulo (concetti, regole, memorie, troubleshooting).
+## Core Components
 
-## Architettura, dominio e Actions
+### Models
+- `Activity` - Main activity model
+- `ActivityLog` - Detailed activity logging
 
-- [architecture.md](architecture.md) — architettura generale del modulo.
+- [architecture.md](ARCHITECTURE.md) — architettura generale del modulo.
 - [architecture/structure.md](architecture/structure.md) — organizzazione interna dettagliata.
 - [structure.md](structure.md) — nota: contenuto quasi identico a `architecture/structure.md` (stesso titolo "Modulo Activity", 414 vs 413 righe); vedi Storico.
 - [architecture-rules.md](architecture-rules.md) — puntatore alle regole architetturali generali.
@@ -56,24 +59,16 @@ riferimento primario; tutte le varianti restano elencate in fondo, sezione
 - [_integration/filament.md](_integration/filament.md) — nota minima con link esterno di confronto pacchetti activity log.
 - [domain-logic.md](domain-logic.md), [data-models.md](data-models.md), [validation.md](validation.md), [integration.md](integration.md), [workflows.md](workflows.md), [troubleshooting.md](troubleshooting.md) — placeholder vuoti (solo titolo, nessun contenuto); non cancellati, da popolare o rimuovere in un task dedicato.
 
-## Database, connessioni e migrazioni
+### Services
+- `ActivityService` - Core activity management logic
+- `ActivityLogger` - Activity logging service
 
-- [database-connections.md](database-connections.md) — regola sulle connessioni DB del modulo.
-- [basemodel-connection-why-activity-not-null.md](basemodel-connection-why-activity-not-null.md) — perche' `$connection = 'activity'` e non null.
-- [database-schema.md](database-schema.md) — schema del database (DATABASE-SCHEMA.md e' duplicato per maiuscole, vedi Storico).
-- [schema.md](schema.md) — schema modulo (documento distinto, piu' esteso).
-- [database/migrations.md](database/migrations.md) — guida alle migrazioni del modulo.
-- [migrations.md](migrations.md) — "Activity — Migrazioni" (MIGRATIONS.md duplicato per maiuscole, vedi Storico).
-- [migration-policy.md](migration-policy.md) — politica di gestione delle migrazioni.
-- [critical_migration_constraints.md](critical_migration_constraints.md) — vincolo critico: mai `migrate:refresh/fresh/rollback --force` (CRITICAL_MIGRATION_CONSTRAINTS.md duplicato, vedi Storico).
-- [rules-testing-no-migrate-fresh.md](rules-testing-no-migrate-fresh.md) — regola test: no `migrate:fresh`.
-- [nestedset-migration-best-practices.md](nestedset-migration-best-practices.md) — best practice migrazioni NestedSet.
-- [migration-spatie-integration.md](migration-spatie-integration.md) — integrazione migrazioni con Spatie Activity Log.
-- [errori/activity-factory-uuid-consistency.md](errori/activity-factory-uuid-consistency.md) — fix: `ActivityFactory` e coerenza UUID.
-- [errori/subject-id-causer-id-uuid-migration-fix.md](errori/subject-id-causer-id-uuid-migration-fix.md) — fix: `subject_id`/`causer_id` e supporto UUID.
-- [errori-migrazione-activity-table-lezioni.md](errori-migrazione-activity-table-lezioni.md) — lezioni apprese dagli errori di migrazione (versione piu' estesa, 355 righe; varianti in Storico).
+## Implementation Guide
 
-## Filament / UI
+### Basic Usage
+```php
+// Log an activity
+activity()->log('User logged in');
 
 - [filament.md](filament.md) — nota minima (2 righe).
 - [filament-resources.md](filament-resources.md) — risorse Filament nel modulo (versione piu' estesa, 339 righe; `filament_resources.md` duplicato in Storico).
@@ -91,8 +86,8 @@ riferimento primario; tutte le varianti restano elencate in fondo, sezione
 - [filament/errors/label-usage-error.md](filament/errors/label-usage-error.md) — mai usare `->label()` nei componenti Filament.
 - [filament/errors/static-instance-method-incompatibility.md](filament/errors/static-instance-method-incompatibility.md) — incompatibilita' metodi statici/istanza in Filament.
 - [bugfix-filament-facade-namespace.md](bugfix-filament-facade-namespace.md) — bugfix namespace facade Filament.
-- [bugfix-getTablePage-mixed-return.md](bugfix-getTablePage-mixed-return.md) — bugfix `getTablePage()` ritorna `mixed` (PHPStan).
-- [bugfix-getUrl-signature-mismatch.md](bugfix-getUrl-signature-mismatch.md) — bugfix signature `getUrl()` + drift enum/colonne.
+- [bugfix-getTablePage-mixed-return.md](bugfix-gettablepage-mixed-return.md) — bugfix `getTablePage()` ritorna `mixed` (PHPStan).
+- [bugfix-getUrl-signature-mismatch.md](bugfix-geturl-signature-mismatch.md) — bugfix signature `getUrl()` + drift enum/colonne.
 - [filament/filament-v4-icon-size-fix.md](filament/filament-v4-icon-size-fix.md) — fix dimensione icone Filament v4 (versione piu' estesa 138 righe; varianti in Storico).
 - [filament/filament-v4-upgrade-documentation.md](filament/filament-v4-upgrade-documentation.md) — upgrade Filament v4 (varianti in Storico).
 - [filament/archive/filament-v4-icon-size-fix.md](filament/archive/filament-v4-icon-size-fix.md), [filament/archive/filament-v4-upgrade.md](filament/archive/filament-v4-upgrade.md) — copie archiviate degli stessi documenti (vedi Storico).
@@ -193,7 +188,7 @@ sono elencati nello Storico.
 - [metodi-duplicati-analisi.md](metodi-duplicati-analisi.md) — "SUPER MUCCA EDITION", 1098 righe, versione piu' estesa dell'analisi in italiano (varianti in Storico).
 - [duplicate_methods.md](duplicate_methods.md), [duplicate_methods_report.md](duplicate_methods_report.md) — report correlati su metodi con nome duplicato nei moduli/temi.
 - [wiki/concepts/duplicate-method-bodies.md](wiki/concepts/duplicate-method-bodies.md), [wiki/concepts/method-name-homonyms.md](wiki/concepts/method-name-homonyms.md) — censimento corpi/metodi omonimi (wiki, piu' recenti).
-- [redundancy-audit.md](redundancy-audit.md) — audit ridondanza 2026-05-21 (`redundancy-audit.md` e' lo stesso contenuto con nome datato, vedi Storico).
+- [redundancy-audit.md](redundancy-audit.md) — audit ridondanza 2026-05-21 (`redundancy-audit-activity.md` e' lo stesso contenuto con nome datato, vedi Storico).
 - [copilot-redundancy-audit.md](copilot-redundancy-audit.md) — audit ridondanza (variante `-2026-05-25` identica, vedi Storico).
 - [consolidation_analysis.md](consolidation_analysis.md) — analisi di consolidamento (CONSOLIDATION_ANALYSIS.md duplicato maiuscolo, vedi Storico).
 - [dry-kiss-analysis.md](dry-kiss-analysis.md) — analisi DRY & KISS (varianti `-latest`/`-.md` identiche, vedi Storico).
@@ -266,6 +261,7 @@ sono elencati nello Storico.
 - [stories/7.2.phpstan-test-harness-contracts.story.md](stories/7.2.phpstan-test-harness-contracts.story.md)
 - [stories/9.1.fix-connection-property-removed.story.md](stories/9.1.fix-connection-property-removed.story.md)
 - [stories/docs-index-audit.story.md](stories/docs-index-audit.story.md) — questo task (audit indice docs).
+- [stories/blade-i18n-no-hardcoded-text.story.md](stories/blade-i18n-no-hardcoded-text.story.md) — niente testi fissi nelle Blade: chiavi `activity::` in it, en, de, es.
 
 ## Task e backlog dettagliato
 
@@ -396,14 +392,14 @@ variante e' collegata come riferimento primario nelle sezioni sopra.
 `quick-start.md`/`QUICK-START.md` · `security.md`/`SECURITY.md` · `sprint_planning.md`/`SPRINT_PLANNING.md` ·
 `tech_spec.md`/`TECH_SPEC.md` · `user_research.md`/`USER_RESEARCH.md` · `readme-update.md`/`readme_update.md` ·
 `redundancy_analysis.md`/`REDUNDANCY_ANALYSIS.md` (entrambi stub vuoti) ·
-`filament/filament-v4-icon-size-fix.md` (+ `appunti-continuous-integration-tools.md`, `FILAMENT_V4_ICON_SIZE_FIX.md`, `filament_v4_icon_size_fix.md`) ·
-`filament/filament-v4-upgrade.md` (+ `appunti-continuous-integration-tools.md`, `FILAMENT_V4_UPGRADE.md`, `filament_v4_upgrade.md`) ·
+`filament/filament-v4-icon-size-fix.md` (+ `filament-v4-icon-size-fix-attribute.md`, ex `-2.md`, `FILAMENT_V4_ICON_SIZE_FIX.md`, `filament_v4_icon_size_fix.md`) ·
+`filament/filament-v4-upgrade.md` (+ `filament-v4-upgrade-documentation.md`, ex `-2.md`, `FILAMENT_V4_UPGRADE.md`, `filament_v4_upgrade.md`) ·
 `filament/archive/filament-v4-icon-size-fix.md` (+ maiuscolo/underscore) ·
 `filament/archive/filament-v4-upgrade.md` (+ maiuscolo/underscore) ·
 `guides/event-sourcing.md`/`guides/event_sourcing.md` (stub) ·
 `guides/archive/event-sourcing.md`/`guides/archive/event_sourcing.md` ·
 `llm-wiki/agents.md`/`llm-wiki/AGENTS.md` ·
-`performance/activity-log-optimization.md` (+ `appunti-continuous-integration-tools.md`, `ACTIVITY_LOG_OPTIMIZATION.md`, `activity_log_optimization.md`) ·
+`performance/activity-log-optimization.md` (+ `activity-log-optimization-module.md`, ex `-2.md`, `ACTIVITY_LOG_OPTIMIZATION.md`, `activity_log_optimization.md`) ·
 `performance/archive/activity-log-optimization.md` (+ maiuscolo/underscore/`-renamed.md`) ·
 `roadmap/00-index.md`/`roadmap/00-INDEX.md` · `wiki/AGENTS.md`/`wiki/agents.md` ·
 `wiki/PROJECT-ROADMAP.md`/`wiki/project-roadmap.md` · `wiki/SCHEMA.md`/`wiki/schema.md` ·
@@ -459,7 +455,11 @@ find Modules/Activity/docs/use_cases Modules/Activity/docs/roadmap -regextype po
   -regex '.*/[0-9]{2}-[a-z-]+\.md'
 ```
 
-### Puntatori a documentazione condivisa (Themes) — stub con frontmatter `canonical:`
+### Configuration
+The module can be configured through the `config/activity.php` file:
+- Log retention policies
+- Activity types to track
+- Database connection settings
 
 63 file sotto `docs/` sono stub minimi (6-7 righe) con frontmatter `module: theme` +
 `canonical: ../../../Themes/docs/shared-components/...` (pattern architetturale
@@ -483,7 +483,13 @@ intenzionale di "on-demand", non un incidente di duplicazione): `ai-methodologie
 `use_cases/prediction_market/` e `use_cases/shop/` (incluso `use_cases/shop/archive/`).
 Non richiedono consolidamento: sono puntatori voluti, non copie accidentali.
 
-### Cartelle di import "grezzo" — quasi tutte vuote o segnaposto
+## Related Modules
+- [User Module](../User/docs/README.md) - User authentication and management
+- [Notify Module](../Notify/docs/index.md) - Notification system
+- [Xot Module](../Xot/docs/index.md) - Core base classes
+- [User Module](../user/docs/readme.md) - User authentication and management
+- [Notify Module](../notify/docs/index.md) - Notification system
+- [Xot Module](../xot/docs/index.md) - Core base classes
 
 Quattro copie parallele dello stesso lotto di file di test/placeholder, quasi tutte a
 0-3 righe (`archived-note.md`, `documentation*.md`, `2024-03-27.md`, `test*.md`,
@@ -504,7 +510,7 @@ Questi 4 gruppi restano come testimonianza storica di un import automatico mal r
 
 `domain-logic.md`, `data-models.md`, `validation.md`, `integration.md`, `workflows.md`,
 `troubleshooting.md`, `2024-03-27.md`, `archived-note.md`, `documentation.md`,
-`documentation.md`, `documentation-archive-1.md` e i loro equivalenti nelle
+`documentation-archive-1.md` e i loro equivalenti nelle
 cartelle di import grezzo sopra citate (49 file a 0 righe in tutto il modulo).
 
 ## Numeri di questo audit

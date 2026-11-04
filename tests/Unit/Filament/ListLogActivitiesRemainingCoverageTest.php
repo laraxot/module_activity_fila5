@@ -19,8 +19,11 @@ use Modules\Activity\Tests\Fixtures\ListLogActivitiesMountablePage;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesNestedFormPage;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesNonSchemaFormPage;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesPageHarness;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionProperty;
+
+uses(TestCase::class);
 
 test('ListLogActivitiesAction url closure genera log-activity', function (): void {
     $action = ListLogActivitiesAction::make();
@@ -75,7 +78,7 @@ test('ListLogActivities getFieldLabel con valore non stringa in map', function (
 test('ListLogActivities createFieldLabelMap nested e schema invalido', function (): void {
     $nested = new ListLogActivitiesNestedFormPage;
     $map = $nested->exposeCreateFieldLabelMap();
-    Assert::assertInstanceOf(Collection::class, $map);
+    Assert::assertFalse($map->isEmpty());
 
     $bad = new ListLogActivitiesNonSchemaFormPage;
     expect(fn (): Collection => $bad->exposeCreateFieldLabelMap())

@@ -100,6 +100,7 @@ public function withCustomProperties(array $attributes): static
 - `/docs/guides/` - Implementation guides
 - `/docs/phpstan/` - PHPStan specific docs
 - `/docs/archivedd/` - Historical records
+- `/docs/archived/` - Historical records
 
 ## 🎓 Documentation Structure
 

@@ -2,10 +2,11 @@
 title: Activity pdf reports
 module: Activity
 type: note
-status: draft
 updated: 2026-10-08
 tags: [docs, activity, wiki]
 qmd: "activity log pdf reports activity"
+status: superseded
+superseded_by: ../../activity-pdf-reports.md
 ---
 
 # Activity Log PDF Reports

@@ -13,6 +13,8 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
 
 use function Safe\class_uses;
 
+uses(TestCase::class);
+
 /**
  * Verifica il contratto pubblico del model Snapshot per event sourcing.
  */
@@ -39,9 +41,7 @@ final class SnapshotBusinessLogicTest extends TestCase
 
     public function test_extends_spatie_eloquent_snapshot(): void
     {
-        $snapshot = new Snapshot;
-
-        Assert::assertInstanceOf(SpatieSnapshot::class, $snapshot);
+        Assert::assertTrue((new \ReflectionClass(Snapshot::class))->isSubclassOf(SpatieSnapshot::class));
     }
 
     public function test_uses_xot_factory_trait_for_test_data(): void

@@ -6,7 +6,6 @@ namespace Modules\Activity\Tests\Unit\Filament;
 
 use Exception;
 use Illuminate\Pagination\LengthAwarePaginator;
-use Illuminate\Support\Collection;
 use LogicException;
 use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Models\Activity;
@@ -19,8 +18,11 @@ use Modules\Activity\Tests\Fixtures\ListLogActivitiesRestorableResource;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesStdClassResourceHarness;
 use Modules\Activity\Tests\Fixtures\RestoreActivityActionFails;
 use Modules\Activity\Tests\Fixtures\RestoreActivityActionNoOp;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpKernel\Exception\HttpException;
+
+uses(TestCase::class);
 
 function activitySubjectForPage(string $id = 'page-subj'): ActivitySubjectHarness
 {
@@ -151,8 +153,7 @@ test('ListLogActivities resolveActivity getOldProperties e field label map', fun
         ->toThrow(Exception::class, 'Invalid activities relation');
 
     Assert::assertSame('campo', $page->getFieldLabel('campo'));
-    $map = $page->exposeCreateFieldLabelMap();
-    Assert::assertInstanceOf(Collection::class, $map);
+    Assert::assertTrue($page->exposeCreateFieldLabelMap()->isNotEmpty());
 });
 
 test('ListLogActivities canRestore senza record o resource invalida', function (): void {

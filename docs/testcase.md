@@ -41,7 +41,15 @@ XDEBUG_MODE=off ./vendor/bin/pest Modules/Activity/tests/Unit/Models/BaseModelTe
 
 Limiti verificati il 2026-10-20:
 
-- Le connessioni `activity` e `user` puntano a MySQL (`laravel/.env.sqlite`, vedi il commento in `laravel/phpunit.xml`) e le tabelle di test non ci sono: i test che scrivono falliscono con `SQLSTATE[42S02]`. Non servono migrazioni nel `setUp()`: vedi [testing-coverage-policy.md](./testing-coverage-policy.md) e [rules-testing-no-migrate-fresh.md](./rules-testing-no-migrate-fresh.md).
+- Il TestCase forza le connessioni SQLite verso il file condiviso risolto da
+  `XotBaseTestCase::sharedSqlitePath()`. In questo checkout non esiste un file SQLite
+  in `laravel/database`, quindi il resolver ricade su `database/test_data.sqlite`,
+  ignorato da Git e non materializzato. `.env.testing` dichiara invece MySQL: i due
+  contratti sono incoerenti. Il comando `xot:build-test-sqlite` può costruire lo
+  schema, ma modifica il target e non va eseguito senza verificare che sia usa-e-getta.
+  Non aggiungere migrazioni al `setUp()` e non usare `migrate:fresh`: vedi
+  [testing-coverage-policy.md](./testing-coverage-policy.md) e
+  [rules-testing-no-migrate-fresh.md](./rules-testing-no-migrate-fresh.md).
 - Lanciando `pest <file>` il `tests/Pest.php` del modulo non viene caricato, quindi gli helper di `PestHelpers.php` risultano non definiti nei test che li usano. PHPStan li vede perche' analizza tutto `Modules/`.
 
 ## Storia
