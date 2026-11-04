@@ -11,4 +11,8 @@ use Spatie\LaravelData\Data;
 class ActivityConfigData extends Data
 {
     use MakesFromTenantConfig;
+
+    public bool $enabled = true;
+
+    public int $delete_records_older_than_days = 365;
 }
