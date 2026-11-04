@@ -46,5 +46,4 @@ class SnapshotsTable extends XotBaseResourceTable
                 ->getOptionLabelUsing(fn (string $value): string => $value),
         ];
     }
-=======
 }
