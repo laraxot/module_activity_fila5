@@ -30,7 +30,7 @@ status: draft
 - Nota 2026-10-23: `../00-INDEX.md`, `../INDEX.md` e `INDEX.md` della wiki sono stati rimossi il 2026-10-22 (commit `7e2a1509`); restano citati qui come registro.
 - Link non risolti sui file toccati e verifiche: [story](../stories/docs-ingressi-activity.story.md).
 
-## [2026-06-13] phpstan | Gate chef: 7 file Actions → Assert
+## [2026-06-13] phpstan | Gate chef — 7 file Actions → Assert
 
 - Convertiti tutti i test `tests/Unit/Actions/*` da `expect()` a `Assert::assert*()` per eliminare `method.internalClass` (82 errori piattaforma → 0).
 - Aggiunti [overviews/completion-status.md](overviews/completion-status.md) e aggiornato [PROJECT-ROADMAP.md](project-roadmap.md) scope Activity.
@@ -40,7 +40,7 @@ status: draft
 ## [2026-06-10] testcase | Brainstorm Activity + nWidart BaseTestCase
 
 - Confermato: Activity `TestCase` già estende `XotBaseTestCase`.
-- `Nwidart\Modules\Tests\BaseTestCase` esiste su GitHub (Orchestra Testbench) ma non è autoloadato in app: non usare come parent.
+- `Nwidart\Modules\Tests\BaseTestCase` esiste su GitHub (Orchestra Testbench) ma non è autoloadato in app — non usare come parent.
 - Gap: solo Geo ancora su Laravel `TestCase` diretto.
 - Chat: [docs/chat/testcase-brainstorm-activity-nwidart.md](../../../../../docs/chat/testcase-brainstorm-activity-nwidart.md)
 
@@ -56,13 +56,13 @@ status: draft
 - Aggiunto `concepts/phpstan-pest-discipline.md`.
 - Regola: `phpstan.neon` solo utente; test Activity restano Pest; usare bridge/helper/assertion pubbliche dentro closure Pest per `method.internalClass`.
 
-## [2026-06-10] schema | activity_log: una migrazione, XotBaseMigration
+## [2026-06-10] schema | activity_log — una migrazione, XotBaseMigration
 
 - Consolidati add/fix/update in `2026_06_10_140000_create_activity_table.php`
 - Duplicate in `_bak/`; vietato `extends Migration`
 - Doc: [concepts/activity-log-single-migration-contract.md](concepts/activity-log-single-migration-contract.md)
 
-## [2026-06-05] docs | HackerNoon harness: tips 001-022 in wiki locale
+## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt) _(target mancante, verificato 2026-10-14)_
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
@@ -81,7 +81,7 @@ discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/329"
 
 
-## [2026-06-13] phpstan | Gate chef: 7 file Actions → Assert
+## [2026-06-13] phpstan | Gate chef — 7 file Actions → Assert
 
 - Convertiti tutti i test `tests/Unit/Actions/*` da `expect()` a `Assert::assert*()` per eliminare `method.internalClass` (82 errori piattaforma → 0).
 - Aggiunti [overviews/completion-status.md](overviews/completion-status.md) e aggiornato [PROJECT-ROADMAP.md](project-roadmap.md) scope Activity.
@@ -91,7 +91,7 @@ discussions:
 ## [2026-06-10] testcase | Brainstorm Activity + nWidart BaseTestCase
 
 - Confermato: Activity `TestCase` già estende `XotBaseTestCase`.
-- `Nwidart\Modules\Tests\BaseTestCase` esiste su GitHub (Orchestra Testbench) ma non è autoloadato in app: non usare come parent.
+- `Nwidart\Modules\Tests\BaseTestCase` esiste su GitHub (Orchestra Testbench) ma non è autoloadato in app — non usare come parent.
 - Gap: solo Geo ancora su Laravel `TestCase` diretto.
 - Chat: [docs/chat/testcase-brainstorm-activity-nwidart.md](../../../../../docs/chat/testcase-brainstorm-activity-nwidart.md)
 
@@ -107,13 +107,13 @@ discussions:
 - Aggiunto `concepts/phpstan-pest-discipline.md`.
 - Regola: `phpstan.neon` solo utente; test Activity restano Pest; usare bridge/helper/assertion pubbliche dentro closure Pest per `method.internalClass`.
 
-## [2026-06-10] schema | activity_log: una migrazione, XotBaseMigration
+## [2026-06-10] schema | activity_log — una migrazione, XotBaseMigration
 
 - Consolidati add/fix/update in `2026_06_10_140000_create_activity_table.php`
 - Duplicate in `_bak/`; vietato `extends Migration`
 - Doc: [concepts/activity-log-single-migration-contract.md](concepts/activity-log-single-migration-contract.md)
 
-## [2026-06-05] docs | HackerNoon harness: tips 001-022 in wiki locale
+## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt) _(target mancante, verificato 2026-10-14)_
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
@@ -123,7 +123,7 @@ title: "Activity Log"
 module: "Activity"
 ---
 
-# Activity Log: Activity
+# Activity Log — Activity
 
 > **Purpose:** Append-only chronological activity record tracking ingests, queries, and lint passes.
 
@@ -137,10 +137,10 @@ module: "Activity"
 
 **Operations:**
 
-- `INGEST`: Added raw document to wiki
-- `QUERY`: Answered question from wiki
-- `LINT`: Maintained wiki quality
-- `UPDATE`: Modified existing wiki page
+- `INGEST` — Added raw document to wiki
+- `QUERY` — Answered question from wiki
+- `LINT` — Maintained wiki quality
+- `UPDATE` — Modified existing wiki page
 
 ---
 
@@ -151,10 +151,10 @@ module: "Activity"
 
 - 2026-06-10: activity_log consolidato in 2026_06_10_140000_create_activity_table.php; duplicate in _bak/
 
-- 2026-06-10: activity_log: consolidate add/fix/update in 141000_create_activity_table; anti-pattern in _bak/
+- 2026-06-10: activity_log — consolidate add/fix/update in 141000_create_activity_table; anti-pattern in _bak/
 
 
-## 2026-09-20: Pagina Log nel pannello Activity (`/activity/admin/log-viewer`)
+## 2026-09-20 — Pagina Log nel pannello Activity (`/activity/admin/log-viewer`)
 
 - Nuova pagina `LogViewer` (voce Log, gruppo Monitoraggio) per consultare i file di `storage/logs` dal pannello, dove non c'è accesso SSH/FTP: elenco ricorsivo (anche `surveys/<id>/`) mostrato come albero di cartelle, lettura dalla coda del file, ricerca e filtro per livello, download in streaming da una pagina Folio (`/api/log-download`, nessun Controller). Solo super-admin o permesso `log.viewAny`, sola lettura.
 - Percorsi validati da `ResolveLogFilePathAction` (solo `.log` dentro `storage/logs`, link simbolici risolti). 68 test, PHPStan pulito; non ancora verificata in produzione né nel browser.

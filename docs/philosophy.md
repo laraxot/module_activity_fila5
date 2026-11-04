@@ -1018,7 +1018,7 @@ composer test Modules/Activity  # Coverage: 91%
 
 Activity è il cuore della trasparenza del sistema. Non è glamorous. Non è visibile all'utente finale. Ma è **non-negotiable**.
 
-Quando un avvocato chiede: "Chi ha modificato la cartella di questo paziente il 7 agosto a 14:23?": Activity risponde. Immediatamente. Incontrovertibilmente.
+Quando un avvocato chiede: "Chi ha modificato la cartella di questo paziente il 7 agosto a 14:23?" — Activity risponde. Immediatamente. Incontrovertibilmente.
 
 Quella è la ragione per cui esiste.
 
@@ -1026,4 +1026,4 @@ Quella è la ragione per cui esiste.
 
 ---
 
-*Documentazione filosofica: Modulo Activity · FixCity Platform · Laravel 13 · Filament 5*
+*Documentazione filosofica — Modulo Activity · FixCity Platform · Laravel 13 · Filament 5*

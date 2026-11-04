@@ -1,5 +1,5 @@
 ---
-title: "no app/Support: Activity QueueableAction"
+title: "no app/Support — Activity QueueableAction"
 type: concept
 tags: [activity, actions, queueable-action, support]
 created: 2026-07-12
@@ -11,13 +11,13 @@ related:
 status: draft
 ---
 
-# Activity: `app/Support/` eliminato
+# Activity — `app/Support/` eliminato
 
 | Legacy | Destinazione |
 |--------|--------------|
 | `RedactModelAttributes` | `RedactModelAttributesAction` |
 | `ActivityLogSchema` | `Actions/Schema/IsActivityLogSchemaWritableAction` |
-| `ActivityLogger` (coordinator) | `Adapters/ActivityLogger`: delega alle Action |
+| `ActivityLogger` (coordinator) | `Adapters/ActivityLogger` — delega alle Action |
 
 Wave 2026-10-22: rimosso `app/Support/ActivityLogSchema.php`; test solo sotto `tests/Unit/Actions/`.
 

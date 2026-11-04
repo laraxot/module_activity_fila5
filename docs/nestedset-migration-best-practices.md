@@ -153,7 +153,7 @@ $table->index('sort_order');
 
 - [Documentazione principale](/docs/migration/nestedset-best-practices.md)
 - [Activity Module Architecture](/docs/architecture/activity-module.md)
-# NestedSet Migration Best Practices: DOCUMENTO LEGACY
+# NestedSet Migration Best Practices — DOCUMENTO LEGACY
 
 > **ATTENZIONE**: Questo documento è **legacy**. Il progetto ha completato la migrazione
 > da `kalnoy/nestedset` a `staudenmeir/laravel-adjacency-list` (marzo 2026).
@@ -164,7 +164,7 @@ $table->index('sort_order');
 
 Per le best practices attuali sulle strutture ad albero, consultare:
 
-- **[Adjacency List Migration: Filosofia Completa](../../Xot/docs/adjacency-list-migration.md)**
+- **[Adjacency List Migration — Filosofia Completa](../../Xot/docs/adjacency-list-migration.md)**
 - **[Adjacency List Best Practices](../../Xot/docs/best-practices/adjacency-list-best-practices.md)**
 - **[BaseTreeModel Documentation](../../Xot/docs/models/base-tree-model.md)**
 

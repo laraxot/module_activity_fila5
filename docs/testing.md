@@ -8,7 +8,7 @@ status: draft
 qmd: "activity module   testing activity"
 ---
 
-# Activity Module: Testing
+# Activity Module — Testing
 
 ## Test Activity Logging
 

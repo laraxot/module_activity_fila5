@@ -180,7 +180,7 @@ Migliorare la pagina `ListLogActivities` seguendo i principi DRY + KISS e la fil
 <td class="fi-ta-cell px-4 py-3 align-top break-all" width="40%">
     <div class="min-h-[1.5rem]">
         @if($oldValue === '' || $oldValue === null)
-            <span class="text-gray-400 italic">-</span>
+            <span class="text-gray-400 italic">—</span>
         @elseif(is_array($oldValue))
             <details class="text-xs">
                 <summary class="cursor-pointer text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200">

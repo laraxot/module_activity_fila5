@@ -18,7 +18,7 @@ qmd: "architecture rules (puntatore) activity"
 3.  **XotBase**: Always extend `XotBase` classes, never Filament classes directly.
 4.  **Translations**: Use `LangServiceProvider` for automatic label resolution.
 ---
-title: architecture rules: puntatore
+title: architecture rules — puntatore
 type: reference
 updated: 2026-05-21
 ---

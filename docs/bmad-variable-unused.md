@@ -1,18 +1,30 @@
 ---
+<<<<<<< .merge_file_9qQ8eC
+title: "Activity — PHPStan variable.unused BMAD"
+=======
 title: "Activity: PHPStan variable.unused BMAD"
+>>>>>>> .merge_file_s46qmz
 type: note
 status: draft
 updated: 2026-10-20
 tags: [docs, activity]
 qmd: "activity   phpstan variable.unused bmad activity"
 ---
+<<<<<<< .merge_file_9qQ8eC
+# Activity — PHPStan variable.unused BMAD
+=======
 # Activity: PHPStan variable.unused BMAD
+>>>>>>> .merge_file_s46qmz
 
 **Module purpose:** Activity log / event tracking (listeners, actions, subscribers); production = logs/actions, tests = feature + unit coverage.
 
 **Why variables dead:** Empty test bodies (instantiate only, no assertions) after merge of test skeletons; variables like `$action`, `$listener`, `$model`, `$policy` assigned but never read.
 
+<<<<<<< .merge_file_9qQ8eC
+**Fix applied:** Removed dead assignment in test bodies, kept minimal `new Class;` where chain/instantiation is the test intent; did NOT drop assertions that were missing (out of scope — only variable cleanup per instruction).
+=======
 **Fix applied:** Removed dead assignment in test bodies, kept minimal `new Class;` where chain/instantiation is the test intent; did NOT drop assertions that were missing (out of scope: only variable cleanup per instruction).
+>>>>>>> .merge_file_s46qmz
 
 **Files edited (random order):**
 1. `tests/Unit/Actions/RestoreActivityActionTest.php`

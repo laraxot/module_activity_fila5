@@ -1,5 +1,5 @@
 ---
-title: "Project Structure: Module Activity"
+title: "Project Structure — Module Activity"
 type: documentation
 created: 2026-05-11
 updated: 2026-05-11
@@ -8,7 +8,7 @@ status: draft
 qmd: "project structure   module **activity** activity"
 ---
 
-# Project Structure: Module **Activity**
+# Project Structure — Module **Activity**
 
 ## Directory Structure
 
@@ -34,7 +34,7 @@ qmd: "project structure   module **activity** activity"
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
-├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE: Pattern on-demand
+├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE — Pattern on-demand
 ├── QMD-SETUP.md                  # Configurazione QMD
 ├── PERFORMANCE-OPTIMIZATION.md    # Metriche e best practice
 ├── ARCHITECTURE.md               # (opzionale) Architettura modulo
@@ -49,7 +49,7 @@ qmd: "project structure   module **activity** activity"
 |  | Storico attività (ingest/query/lint) |
 |  | Regole + trigger map locale |
 |  | Concetti specifici del modulo |
-|  | **Leggi prima**: pattern da seguire |
+|  | **Leggi prima** — pattern da seguire |
 
 ## Convenzioni
 

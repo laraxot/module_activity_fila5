@@ -23,7 +23,7 @@ Persistent memories and decision records for Activity module development.
 ## Memories (Rules, Checklist, Decisions)
 
 ### Testing Architecture
-- [testcase-hierarchy-decision-2026-06-10](./testcase-hierarchy-decision-2026-06-10.md): **ACTIVE**
+- [testcase-hierarchy-decision-2026-06-10](./testcase-hierarchy-decision-2026-06-10.md) — **ACTIVE**
   - Activity TestCase -> `Modules\Xot\Tests\XotBaseTestCase` -> Laravel TestCase
   - `Nwidart\Modules\Tests\BaseTestCase` is not available in the installed package
   - Rules for platform vs module logic separation
@@ -43,10 +43,10 @@ qmd search "test isolation connections" --intent="prevent test crosstalk"
 ## Related Documentation
 
 ### Concepts (Detailed Explanations)
-- [testcase-hierarchy-architecture](../concepts/testcase-hierarchy-architecture.md): Detailed concept page
+- [testcase-hierarchy-architecture](../concepts/testcase-hierarchy-architecture.md) — Detailed concept page
 
 ### Brainstorm Artifacts (Full Thinking)
-- [BRAINSTORM-TestCase-Architecture-2026-06-10.md](../../BRAINSTORM-TestCase-Architecture-laravel-modules.md): Complete brainstorm with 28 ideas, 7 insights
+- [BRAINSTORM-TestCase-Architecture-2026-06-10.md](../../BRAINSTORM-TestCase-Architecture-laravel-modules.md) — Complete brainstorm with 28 ideas, 7 insights
 
 ### Implementation Guides (TBD)
 - Central TESTING.md in Modules/Xot/docs/

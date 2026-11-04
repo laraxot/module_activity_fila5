@@ -22,12 +22,12 @@ qmd: "activity module documentation index activity"
 Strategic, foundational, and consolidated documentation at module level:
 
 **Core Documentation** (Key files)
-  - [ARCHITECTURE.md](architecture.md): System architecture and design patterns
-  - [API.md](api.md): API reference and endpoints
-  - [DATABASE-SCHEMA.md](database-schema.md): Database schema definitions
-  - [QUICK-START.md](quick-start.md): Quick start guide
-  - [PATTERNS.md](patterns.md): Design patterns and implementation guides
-  - [TESTING.md](testing.md): Testing strategy and guidelines
+  - [ARCHITECTURE.md](architecture.md) — System architecture and design patterns
+  - [API.md](api.md) — API reference and endpoints
+  - [DATABASE-SCHEMA.md](database-schema.md) — Database schema definitions
+  - [QUICK-START.md](quick-start.md) — Quick start guide
+  - [PATTERNS.md](patterns.md) — Design patterns and implementation guides
+  - [TESTING.md](testing.md) — Testing strategy and guidelines
 
 **Planning & Strategy** (Key documents)
   - [README.md](README.md)
@@ -42,11 +42,11 @@ Strategic, foundational, and consolidated documentation at module level:
 
 Real-world implementation scenarios and workflow documentation:
 
-- **Activity Tracking**: User activity logging and monitoring
-- **Event Management**: Event lifecycle and state management
-- **Analytics**: Tracking, reporting, and data analysis
-- **Integrations**: Third-party system integrations
-- **Performance**: Optimization and bottleneck analysis
+- **Activity Tracking** — User activity logging and monitoring
+- **Event Management** — Event lifecycle and state management
+- **Analytics** — Tracking, reporting, and data analysis
+- **Integrations** — Third-party system integrations
+- **Performance** — Optimization and bottleneck analysis
 - and 112+ more use case specifications
 
 ### Wiki (56 files)
@@ -210,21 +210,21 @@ Testing strategies and guidelines:
 
 ### Other Categories
 
-**Architecture** (3 files): System design documentation  
-**Tecnico** (2 files): Technical specifications  
-**Guides** (2 files): User and developer guides  
-**Use-Cases** (1 file): Use case documentation  
-**UI/UX** (1 file): Interface design documentation  
-**Troubleshooting** (1 file): General troubleshooting  
-**Tests** (1 file): Test documentation  
-**Quality Analysis** (1 file): Code quality metrics  
-**Outputs** (1 file): Generated reports  
-**Development** (1 file): Development workflow  
-**Database** (1 file): Database documentation  
-**Concepts** (1 file): Conceptual guides  
-**Charts** (1 file): Data visualization  
-**Actions** (1 file): Action implementation  
-**Integration** (1 file): Integration patterns  
+**Architecture** (3 files) — System design documentation  
+**Tecnico** (2 files) — Technical specifications  
+**Guides** (2 files) — User and developer guides  
+**Use-Cases** (1 file) — Use case documentation  
+**UI/UX** (1 file) — Interface design documentation  
+**Troubleshooting** (1 file) — General troubleshooting  
+**Tests** (1 file) — Test documentation  
+**Quality Analysis** (1 file) — Code quality metrics  
+**Outputs** (1 file) — Generated reports  
+**Development** (1 file) — Development workflow  
+**Database** (1 file) — Database documentation  
+**Concepts** (1 file) — Conceptual guides  
+**Charts** (1 file) — Data visualization  
+**Actions** (1 file) — Action implementation  
+**Integration** (1 file) — Integration patterns  
 
 ---
 
@@ -275,7 +275,7 @@ Testing strategies and guidelines:
 2. **Test Files**: Multiple test*.md files in root suggest work-in-progress documentation (consider archiving)
 3. **Deduplication**: Similar files in root-md-files/, archived/, and main locations should be consolidated
 4. **Wiki Structure**: Well-organized wiki with concepts and troubleshooting but could expand how-to guides
-5. **Use Cases**: 117 use case files are a valuable asset: ensure they remain indexed and discoverable
+5. **Use Cases**: 117 use case files are a valuable asset — ensure they remain indexed and discoverable
 
 ## Recommendations
 

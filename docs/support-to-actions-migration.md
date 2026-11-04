@@ -30,8 +30,8 @@ The project architecture forbids a Service/Support layer. Business logic must li
   - Called via `app(IsActivityLogSchemaWritableAction::class)->execute()`.
 
 ### Updated
-- `tests/Unit/Actions/IsActivityLogSchemaWritableActionTest.php`: namespace updated.
-- `Modules/User/app/Filament/Widgets/Auth/RegisterWidget.php`: `use` statement updated to `Modules\Activity\Actions\Schema\IsActivityLogSchemaWritableAction`.
+- `tests/Unit/Actions/IsActivityLogSchemaWritableActionTest.php` — namespace updated.
+- `Modules/User/app/Filament/Widgets/Auth/RegisterWidget.php` — `use` statement updated to `Modules\Activity\Actions\Schema\IsActivityLogSchemaWritableAction`.
 
 ## Verification
 

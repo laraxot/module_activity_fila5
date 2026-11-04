@@ -1,6 +1,6 @@
 ---
 title: pest bootstrap extend con phpstan-ignore inline
-description: Eccezione Activity: pest()->extend(TestCase) al posto di require_once PestStubs.php.
+description: Eccezione Activity — pest()->extend(TestCase) al posto di require_once PestStubs.php.
 document_type: concept
 module: Activity
 status: active
@@ -21,7 +21,7 @@ updated: 2026-10-23
 qmd: "pest bootstrap   `pest()->extend()` con ignore inline (activity) activity"
 ---
 
-# Pest bootstrap: `pest()->extend()` con ignore inline (Activity)
+# Pest bootstrap — `pest()->extend()` con ignore inline (Activity)
 
 ## Perché
 
@@ -38,8 +38,8 @@ La doc Pest 5 raccomanda [`pest()->extend(TestCase::class)`](https://pestphp.com
 pest()->extend(\Modules\Activity\Tests\TestCase::class)->in('Unit/Bootstrap');
 ```
 
-- **Non** modificare `laravel/phpstan.neon`: ignore **solo inline** su `tests/Pest.php`.
-- **Non** bindare `XotBaseTestCase` abstract: sempre il `TestCase` concreto del modulo.
+- **Non** modificare `laravel/phpstan.neon` — ignore **solo inline** su `tests/Pest.php`.
+- **Non** bindare `XotBaseTestCase` abstract — sempre il `TestCase` concreto del modulo.
 - Scope pilota `Unit/Bootstrap`: evita conflitto con i file legacy che dichiarano ancora `uses(TestCase::class)`.
 
 ## Caricamento Pest.php modulo (nwidart)
@@ -58,7 +58,7 @@ Senza `--test-directory=Modules/Activity/tests`, Pest carica solo `laravel/tests
 
 ## Test di verifica
 
-- `tests/Unit/Bootstrap/PestExtendBootstrapTest.php`: meta-contratto file + binding TestCase + factory
+- `tests/Unit/Bootstrap/PestExtendBootstrapTest.php` — meta-contratto file + binding TestCase + factory
 
 ## Quando non replicare
 

@@ -10,7 +10,7 @@ status: superseded
 superseded_by: pandoc-guide.md
 ---
 
-# Pandoc Documentation Generation: Activity Module
+# Pandoc Documentation Generation — Activity Module
 
 This guide explains how to generate distributable documentation for the Activity module using Pandoc.
 
