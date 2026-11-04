@@ -8,6 +8,7 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\SelectFilter;
+use Modules\Activity\Models\Snapshot;
 use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
@@ -34,13 +35,12 @@ class SnapshotsTable extends XotBaseResourceTable
     public function getTableFilters(): array
     {
         return [
-            'aggregate_type' => SelectFilter::make('aggregate_type')
-                ->options([
-                    'user' => 'User',
-                    'profile' => 'Profile',
-                    'role' => 'Role',
-                ])
-                ->multiple(),
+            'aggregate_uuid' => SelectFilter::make('aggregate_uuid')
+                ->options(fn (): array => Snapshot::query()
+                    ->distinct()
+                    ->orderBy('aggregate_uuid')
+                    ->pluck('aggregate_uuid', 'aggregate_uuid')
+                    ->all()),
         ];
     }
 }

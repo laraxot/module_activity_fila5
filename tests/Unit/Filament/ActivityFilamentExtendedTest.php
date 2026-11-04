@@ -83,7 +83,7 @@ test('SnapshotForm e SnapshotInfolist espongono schema', function (): void {
 test('StoredEventsTable StoredEventForm StoredEventInfolist espongono schema', function (): void {
     $tabella = new StoredEventsTable;
     Assert::assertSame(
-        ['id', 'event_class', 'properties', 'created_at', 'updated_at'],
+        ['id', 'event_class', 'event_properties', 'created_at', 'updated_at'],
         array_keys($tabella->getTableColumns()),
     );
 
