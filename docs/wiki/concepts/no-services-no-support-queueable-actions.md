@@ -1,5 +1,5 @@
 ---
-title: "No Services / No Support — QueueableAction only"
+title: "No Services / No Support: QueueableAction only"
 type: concept
 module: Activity
 tags: [activity, services, support, actions, queueable-action, migration]
@@ -13,7 +13,7 @@ related:
 status: active
 ---
 
-# Activity — Services/Support vietati: solo Actions
+# Activity: Services/Support vietati: solo Actions
 
 ## Regola
 

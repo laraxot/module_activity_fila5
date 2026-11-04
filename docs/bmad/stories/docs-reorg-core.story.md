@@ -7,7 +7,7 @@ status: draft
 updated: 2026-10-09
 ---
 
-# Story — riorganizzazione docs core: Activity
+# Story: riorganizzazione docs core: Activity
 
 - **ID:** `2026-10-09-docs-reorg-core-activity`
 - **Status:** done

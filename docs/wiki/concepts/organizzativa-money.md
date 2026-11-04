@@ -1,5 +1,5 @@
 ---
-title: "organizzativa-money — puntatore"
+title: "organizzativa-money: puntatore"
 type: reference
 updated: 2026-05-21
 related:

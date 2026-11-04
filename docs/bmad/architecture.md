@@ -9,7 +9,7 @@ qmd: "activity   architettura bmad activity"
 ---
 
 ---
-title: "Activity — architettura BMAD"
+title: "Activity: architettura BMAD"
 type: concept
 tags: [architecture, activity, audit, log, event-sourcing, spatie]
 created: 2026-09-28
@@ -25,11 +25,11 @@ issues: []
 discussions: []
 ---
 
-# Activity — architettura BMAD
+# Activity: architettura BMAD
 
 > **SUMMARY**: mappa reale del modulo `Modules/Activity` (alias `activity`): due
-> sottosistemi distinti — audit delle azioni utente su Spatie Activity + event
-> sourcing, e un visualizzatore dei log di file Laravel — con tre Resource
+> sottosistemi distinti: audit delle azioni utente su Spatie Activity + event
+> sourcing, e un visualizzatore dei log di file Laravel: con tre Resource
 > Filament, 29 Action e 7 DTO.
 
 ## Identita del modulo
@@ -45,8 +45,8 @@ rotte abilitate con middleware `web, auth`, navigation `sort: 20`.
 | `Activity` | `Spatie\Activitylog\Models\Activity` (`SpatieActivity`) | una riga di audit per azione su modello; `properties` castata a `SchemalessAttributes` |
 | `StoredEvent` | `Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent` | evento persistito per replay; `meta_data` schemaless |
 | `Snapshot` | `Spatie\EventSourcing\Snapshots\EloquentSnapshot` | snapshot Eloquent per proiezioni |
-| `BaseModel` | — | base interna del modulo |
-| `TestModel` | — | appoggio ai test (tabella `test_models`, migrazione 2026_03_05) |
+| `BaseModel` |: | base interna del modulo |
+| `TestModel` |: | appoggio ai test (tabella `test_models`, migrazione 2026_03_05) |
 
 Tutti i modelli di dominio usano `Modules\Xot\Models\Traits\HasXotFactory` e una
 factory in `database/factories/` (`ActivityFactory`, `SnapshotFactory`,
@@ -55,30 +55,30 @@ e il **contratto pubblico** del modulo.
 
 ## Contratti e adattatori
 
-- `app/Contracts/ActivityRecorderContract.php` — `record(class-string, int|string, create|update|delete|restore, array $changes)` e `getLog(string, int|string): array`. Il docblock impone: *"Modules should dispatch ActivityRecorded events instead of calling this directly"*.
-- `app/Contracts/ActivityRecorderInterface.php` — interfaccia gemella non vincolata al tipaggio stretto.
-- `app/Adapters/ActivityRecorder.php` e `app/Adapters/ActivityLogger.php` — implementazioni concrete.
+- `app/Contracts/ActivityRecorderContract.php`: `record(class-string, int|string, create|update|delete|restore, array $changes)` e `getLog(string, int|string): array`. Il docblock impone: *"Modules should dispatch ActivityRecorded events instead of calling this directly"*.
+- `app/Contracts/ActivityRecorderInterface.php`: interfaccia gemella non vincolata al tipaggio stretto.
+- `app/Adapters/ActivityRecorder.php` e `app/Adapters/ActivityLogger.php`: implementazioni concrete.
 
-## Action — tre famiglie distinte
+## Action: tre famiglie distinte
 
-**Query (`app/Actions/Query`, 6)** — letture per il pannello: `GetActivitiesByTypeAction`,
+**Query (`app/Actions/Query`, 6)**: letture per il pannello: `GetActivitiesByTypeAction`,
 `GetActivityStatisticsAction`, `GetModelActivitiesAction`, `GetRecentActivitiesAction`,
 `GetSubjectActivityLogAction`, `GetUserActivitiesAction`.
 
-**Log (`app/Actions/Log`, 10)** — il visualizzatore dei log di file:
+**Log (`app/Actions/Log`, 10)**: il visualizzatore dei log di file:
 `ResolveLogDirectoryAction`, `ResolveLogFilePathAction`, `ListLogFilesAction`,
 `BuildLogFileTreeAction`, `ReadLogTailAction`, `DownloadLogFileAction`,
 `FilterLogEntriesAction`, `ParseLogEntriesAction`, `BuildLogViewerStateAction`,
 `AuthorizeLogAccessAction`.
 
-**Schema (`app/Actions/Schema`, 2)** — `CheckActivityLogWritableAction` e
+**Schema (`app/Actions/Schema`, 2)**: `CheckActivityLogWritableAction` e
 `IsActivityLogSchemaWritableAction`: verificano se la tabella di audit e la
 struttura del log sono scrivibili prima di tentare l'operazione.
 
 ## DTO (`app/Datas`, 7)
 
 `FilteredLogEntriesData`, `LogEntryData`, `LogFileData`, `LogTailData`,
-`LogTreeData`, `LogViewerStateData`, `ResolvedLogFileData` — coprono l'intero
+`LogTreeData`, `LogViewerStateData`, `ResolvedLogFileData`: coprono l'intero
 flusso del log viewer: risoluzione percorso -> lista -> albero -> tail ->
 parsing -> filtro -> stato UI.
 
@@ -108,9 +108,9 @@ E il modulo piu testato del monorepo in rapporto alle sue dimensioni.
 
 ## Da leggere
 
-- [module-boundary.md](./architecture/module-boundary.md) — confini del modulo.
-- [module-map.md](./architecture/module-map.md) — mappa file -> responsabilita, una riga per file.
-- [brainstorming.md](./brainstorming.md) — decisioni prese e problemi aperti.# Architettura del modulo Activity
+- [module-boundary.md](./architecture/module-boundary.md): confini del modulo.
+- [module-map.md](./architecture/module-map.md): mappa file -> responsabilita, una riga per file.
+- [brainstorming.md](./brainstorming.md): decisioni prese e problemi aperti.# Architettura del modulo Activity
 
 ## Overview
 

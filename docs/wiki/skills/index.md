@@ -8,14 +8,14 @@ status: draft
 qmd: "skills   activity module wiki activity"
 ---
 
-# Skills — Activity Module Wiki
+# Skills: Activity Module Wiki
 
 > Skill on-demand rilevanti per il modulo Activity.
 
 ## Available Skills
 
-- [filament-page-creation](../../../../Xot/docs/wiki/skills/filament-page-creation.md) — skill condivisa Xot per creare page Filament coerenti con XotBase
-- [phpstan-pest-remediation](../../../../../../docs/wiki/skills/phpstan-pest-remediation.md) — remediation PHPStan su test Pest senza conversione a PHPUnit
+- [filament-page-creation](../../../../Xot/docs/wiki/skills/filament-page-creation.md): skill condivisa Xot per creare page Filament coerenti con XotBase
+- [phpstan-pest-remediation](../../../../../../docs/wiki/skills/phpstan-pest-remediation.md): remediation PHPStan su test Pest senza conversione a PHPUnit
 
 ## Usage
 

@@ -10,7 +10,7 @@ superseded_by: ../../coverage-full.md
 ---
 
 
-> Conflict cleanup note — 2026-04-28
+> Conflict cleanup note: 2026-04-28
 >
 > - Error found: unresolved Git conflict markers around the coverage section between `Notify/*` and `Tenant/*`.
 > - Resolution applied: kept the additional `Quaeris/*` and `healthcare_app/*` coverage rows because they extend the report, then removed the raw merge markers (`<<<<<<<`, `=======`, `>>>>>>>`).

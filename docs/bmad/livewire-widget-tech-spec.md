@@ -1,5 +1,5 @@
 ---
-title: "Tech spec — Activity"
+title: "Tech spec: Activity"
 type: tech-spec
 module: Activity
 related:

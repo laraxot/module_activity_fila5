@@ -8,7 +8,7 @@ status: draft
 qmd: "activity module   quick start activity"
 ---
 
-# Activity Module — Quick Start
+# Activity Module: Quick Start
 
 ## Log Activity
 

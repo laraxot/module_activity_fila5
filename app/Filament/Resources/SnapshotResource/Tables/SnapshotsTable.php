@@ -36,11 +36,15 @@ class SnapshotsTable extends XotBaseResourceTable
     {
         return [
             'aggregate_uuid' => SelectFilter::make('aggregate_uuid')
-                ->options(fn (): array => Snapshot::query()
+                ->searchable()
+                ->getSearchResultsUsing(fn (string $search): array => Snapshot::query()
+                    ->where('aggregate_uuid', 'like', "%{$search}%")
                     ->distinct()
                     ->orderBy('aggregate_uuid')
+                    ->limit(50)
                     ->pluck('aggregate_uuid', 'aggregate_uuid')
-                    ->all()),
+                    ->all())
+                ->getOptionLabelUsing(fn (string $value): string => $value),
         ];
     }
 }

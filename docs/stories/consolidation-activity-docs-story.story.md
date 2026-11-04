@@ -36,14 +36,14 @@ Result: Difficult to navigate, maintain, and locate canonical documentation.
 ### Phase 1: File Categorization & Movement
 
 #### Moved to wiki/ subdirectories (28 files)
-- **wiki/testing/** — Coverage, testing policy, phpstan coverage (11 files)
-- **wiki/analysis/** — Optimization and analysis documents (2 files)
-- **wiki/features/** — Activity-specific feature docs (2 files)
-- **wiki/concepts/** — Patterns, anti-patterns, architectural (8 files)
-- **wiki/howto/** — Agent disciplines and how-to guides (3 files)
+- **wiki/testing/**: Coverage, testing policy, phpstan coverage (11 files)
+- **wiki/analysis/**: Optimization and analysis documents (2 files)
+- **wiki/features/**: Activity-specific feature docs (2 files)
+- **wiki/concepts/**: Patterns, anti-patterns, architectural (8 files)
+- **wiki/howto/**: Agent disciplines and how-to guides (3 files)
 
 #### Moved to bmad/ subdirectories (1 file)
-- **bmad/architecture/** — Architecture rules and decisions
+- **bmad/architecture/**: Architecture rules and decisions
 
 #### Consolidated & Deduplicated (4 files)
 - **event-sourcing patterns**: 5 variants → 1 canonical file
@@ -52,18 +52,18 @@ Result: Difficult to navigate, maintain, and locate canonical documentation.
 - **README updates**: 5 old variants → archived
 
 #### Archived for Reference (8 files)
-- `archive/duplicates/` — event-sourcing pattern variants
-- `archive/old-updates/` — old README update files
-- `archive/unclear/` — small/unclear files (ai-methodologies.md)
+- `archive/duplicates/`: event-sourcing pattern variants
+- `archive/old-updates/`: old README update files
+- `archive/unclear/`: small/unclear files (ai-methodologies.md)
 
 ### Canonical Files (docs root)
 
 5 canonical files remain in `docs/`:
-- ✓ `README.md` (644 lines) — Module overview
-- ✓ `API.md` (30 lines) — Public API documentation
-- ✓ `ARCHITECTURE.md` (269 lines) — Architecture overview
-- ✓ `00-INDEX.md` (69 lines) — Index
-- ✓ `purpose.md` (98 lines) — Module purpose statement
+- ✓ `README.md` (644 lines): Module overview
+- ✓ `API.md` (30 lines): Public API documentation
+- ✓ `ARCHITECTURE.md` (269 lines): Architecture overview
+- ✓ `00-INDEX.md` (69 lines): Index
+- ✓ `purpose.md` (98 lines): Module purpose statement
 
 ### New Structure
 
@@ -96,15 +96,15 @@ Activity/docs/
 ## Files Changed
 
 ### Created
-- `docs/TODO.md` — Consolidation tracking and next steps
-- `docs/stories/consolidation-activity-docs-story.story.md` — This story
-- `docs/wiki/testing/` — New directory (11 files)
-- `docs/wiki/analysis/` — New directory (2 files)
-- `docs/wiki/features/` — New directory (2 files)
-- `docs/wiki/concepts/event-sourcing-patterns.md` — Consolidated
-- `docs/wiki/concepts/anti-patterns.md` — Consolidated
-- `docs/wiki/howto/` — New directory (3 files)
-- `docs/bmad/architecture/architecture-rules.md` — Moved
+- `docs/TODO.md`: Consolidation tracking and next steps
+- `docs/stories/consolidation-activity-docs-story.story.md`: This story
+- `docs/wiki/testing/`: New directory (11 files)
+- `docs/wiki/analysis/`: New directory (2 files)
+- `docs/wiki/features/`: New directory (2 files)
+- `docs/wiki/concepts/event-sourcing-patterns.md`: Consolidated
+- `docs/wiki/concepts/anti-patterns.md`: Consolidated
+- `docs/wiki/howto/`: New directory (3 files)
+- `docs/bmad/architecture/architecture-rules.md`: Moved
 
 ### Modified
 - None (lazy approach: move, don't modify)
@@ -142,17 +142,17 @@ Activity/docs/
 ## Next Steps (Phase 2)
 
 1. **Review consolidated canonical files**
-   - [ ] README.md — does it reflect new structure?
-   - [ ] API.md — complete coverage?
-   - [ ] ARCHITECTURE.md — current?
+   - [ ] README.md: does it reflect new structure?
+   - [ ] API.md: complete coverage?
+   - [ ] ARCHITECTURE.md: current?
 
-2. **Consider promoting wiki files** — if any should be back at root
+2. **Consider promoting wiki files**: if any should be back at root
 
-3. **Archive cleanup** — periodic review for safe deletion
+3. **Archive cleanup**: periodic review for safe deletion
 
-4. **Update 00-INDEX.md** — verify it still indexes correctly with new structure
+4. **Update 00-INDEX.md**: verify it still indexes correctly with new structure
 
-5. **Cross-reference in wiki/index.md** — link to testing/, analysis/, concepts/ directories
+5. **Cross-reference in wiki/index.md**: link to testing/, analysis/, concepts/ directories
 
 ## Notes
 

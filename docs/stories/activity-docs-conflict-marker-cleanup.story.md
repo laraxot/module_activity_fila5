@@ -1,4 +1,4 @@
-# Story: Activity — pulizia marker di conflitto residui in docs/
+# Story: Activity: pulizia marker di conflitto residui in docs/
 
 ## Status
 Done (risoluzione meccanica) + follow-up esplicito aperto per la
@@ -19,7 +19,7 @@ continuato a corrompere il modulo nel frattempo.
 88 file con marker committati. A differenza di Media, la maggior parte NON
 ha una struttura piatta: verificato con un validatore di sequenza marker
 (`< = > < = > ...` atteso) che la maggioranza dei file ha sequenze
-non valide — marker annidati/impilati su piu' generazioni (fino a 3-4
+non valide: marker annidati/impilati su piu' generazioni (fino a 3-4
 `<<<<<<< ` consecutivi nello stesso punto, es. `docs/lang-link.md`,
 `docs/README.md`, `docs/filament-errors.md`), risultato di piu' merge non
 risolti sovrapposti nel tempo.
@@ -32,13 +32,13 @@ rischio concreto di perdere contenuto in modo silenzioso scegliendo il lato
 sbagliato o tagliando a meta' un blocco. Applicata invece una rimozione
 meccanica delle sole righe marker, mantenendo **tutto** il contenuto di
 **tutti** i lati e **tutte** le generazioni (nessuna riga di contenuto
-rimossa o scelta) — 1143 righe marker rimosse, 0 righe di contenuto perse.
+rimossa o scelta): 1143 righe marker rimosse, 0 righe di contenuto perse.
 
 Prima di applicarla su tutto il modulo, verificato che nessuno degli 88 file
 usasse marker di conflitto come citazione documentale intenzionale (pattern
 trovato invece in Lang, vedi story Lang): cercata prosa con
 "conflitto/conflict/marker" immediatamente prima di un fence di codice in
-tutti gli 88 file originali — nessun risultato, quindi tutti i marker erano
+tutti gli 88 file originali: nessun risultato, quindi tutti i marker erano
 conflitti reali del daemon, non citazioni.
 
 ## Follow-up esplicito (non fatto qui)
@@ -52,7 +52,7 @@ sessione per non rischiare scelte affrettate su file cosi' centrali. Da
 trattare come story dedicata.
 
 `docs/root-files-hygiene.md` verificato coerente (dedup code-workspace del
-2026-09-22 gia' presente, commit 96e7575a) — nessuna modifica necessaria.
+2026-09-22 gia' presente, commit 96e7575a): nessuna modifica necessaria.
 
 ## Verifica
 ```bash

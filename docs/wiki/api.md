@@ -8,7 +8,7 @@ status: draft
 qmd: "activity module   api activity"
 ---
 
-# Activity Module — API
+# Activity Module: API
 
 ## LogActivityAction
 

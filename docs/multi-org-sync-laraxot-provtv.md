@@ -44,7 +44,7 @@ Se `GH008` / LFS missing su un org e l’altro ha già accettato il tip →
 Dettaglio (SSoT): [../UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md](../UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md).
 Niente reset/squash/force per aggirare LFS.
 
-### Push Activity 2026-07-22 — divergenza (non LFS)
+### Push Activity 2026-07-22: divergenza (non LFS)
 
 `laraxot` e `provtv` divergevano (commit paralleli omonimi, SHA diversi).  
 Fix: deepen/unshallow se serve → merge forward-only → tip `25ac1e70` su **entrambi** (`0 0`).  

@@ -1,5 +1,5 @@
 ---
-title: "Activity Module — Doctrine"
+title: "Activity Module: Doctrine"
 type: doctrine
 tags: [activity, audit, event-sourcing, module-doctrine]
 created: 2026-09-05

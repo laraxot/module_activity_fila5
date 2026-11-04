@@ -1,12 +1,12 @@
 ---
-title: "Activity — scopo del modulo e come raggiungerlo meglio"
+title: "Activity: scopo del modulo e come raggiungerlo meglio"
 type: alias
 status: superseded
 canonical: "bmad/purpose.md"
 qmd: "purpose alias superseded"
 ---
 
-# Activity — scopo del modulo e come raggiungerlo meglio
+# Activity: scopo del modulo e come raggiungerlo meglio
 
 Documento identico al canonico: [purpose.md](../bmad/purpose.md).
 

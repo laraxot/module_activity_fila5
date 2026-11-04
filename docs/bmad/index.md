@@ -1,5 +1,5 @@
 ---
-title: Activity — indice BMAD
+title: Activity: indice BMAD
 type: index
 tags: [docs, bmad, activity]
 qmd: "Activity indice BMAD documentazione"
@@ -7,7 +7,7 @@ status: draft
 updated: 2026-10-21
 ---
 
-# Activity — indice BMAD
+# Activity: indice BMAD
 
 ## Canonico
 
