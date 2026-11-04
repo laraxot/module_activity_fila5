@@ -159,7 +159,7 @@ describe('ListActivities page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListActivities;
-        $table = $page->table(Table::make($page));
+        $table = ActivityResource::table(Table::make($page));
         $columns = $table->getColumns();
 
         Assert::assertArrayHasKey('id', $columns);
@@ -185,11 +185,9 @@ describe('SnapshotResource', function (): void {
         $instance = app(SnapshotForm::class);
         $schema = $instance->getFormSchema();
 
-        Assert::assertArrayHasKey('model_type', $schema);
-        Assert::assertArrayHasKey('model_id', $schema);
+        Assert::assertArrayHasKey('aggregate_uuid', $schema);
+        Assert::assertArrayHasKey('aggregate_version', $schema);
         Assert::assertArrayHasKey('state', $schema);
-        Assert::assertArrayHasKey('created_by_type', $schema);
-        Assert::assertArrayHasKey('created_by_id', $schema);
     });
 });
 
@@ -209,7 +207,7 @@ describe('ListSnapshots page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListSnapshots;
-        $table = $page->table(Table::make($page));
+        $table = SnapshotResource::table(Table::make($page));
         $columns = $table->getColumns();
 
         Assert::assertArrayHasKey('id', $columns);
@@ -222,7 +220,7 @@ describe('ListSnapshots page', function (): void {
 
     test('has table filters', function (): void {
         $page = new ListSnapshots;
-        $table = $page->table(Table::make($page));
+        $table = SnapshotResource::table(Table::make($page));
         $filters = $table->getFilters();
 
         Assert::assertNotEmpty($filters);
@@ -230,7 +228,7 @@ describe('ListSnapshots page', function (): void {
 
     test('has table actions', function (): void {
         $page = new ListSnapshots;
-        $table = $page->table(Table::make($page));
+        $table = SnapshotResource::table(Table::make($page));
         $actions = $table->getRecordActions();
 
         Assert::assertArrayHasKey('view', $actions);
@@ -240,7 +238,7 @@ describe('ListSnapshots page', function (): void {
 
     test('has bulk actions', function (): void {
         $page = new ListSnapshots;
-        $table = $page->table(Table::make($page));
+        $table = SnapshotResource::table(Table::make($page));
         $bulkActions = $table->getFlatBulkActions();
 
         Assert::assertNotEmpty($bulkActions);
@@ -285,7 +283,7 @@ describe('ListStoredEvents page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListStoredEvents;
-        $table = $page->table(Table::make($page));
+        $table = StoredEventResource::table(Table::make($page));
         $columns = $table->getColumns();
 
         Assert::assertArrayHasKey('id', $columns);

@@ -28,7 +28,7 @@ Come cittadino o operatore comunale, voglio vedere la cronologia completa di una
 - **Nav links**: `default`, `hover`, `focus-visible`, `active`, `disabled`
 
 ## Reference
-Homepage DECORO URBANO — dashboard dati aperti, filtri categoria, KPI temporali.
+Homepage DECORO URBANO: dashboard dati aperti, filtri categoria, KPI temporali.
 
 ## Acceptance Criteria
 - APCA contrast ≥75 body, ≥45 large-bold

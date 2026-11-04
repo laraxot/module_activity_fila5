@@ -8,7 +8,7 @@ status: draft
 tags: [docs, activity]
 ---
 
-# Cosa migliorare — modulo Activity
+# Cosa migliorare: modulo Activity
 
 Ogni affermazione qui sotto viene da un comando eseguito il 1 settembre 2026, dopo il
 ripristino di `vendor/` a 330 pacchetti. Le misure precedenti a quella data giravano su
@@ -20,9 +20,9 @@ un autoloader dimezzato e non valgono.
 |---|---:|
 | Errori PHPStan (modulo isolato) | 0 |
 | Rilievi PHPMD su `app/` | 2 |
-| PHPInsights — Code | 94.1 % |
-| PHPInsights — Architecture | 92.9 % |
-| PHPInsights — Style | 86.4 % |
+| PHPInsights: Code | 94.1 % |
+| PHPInsights: Architecture | 92.9 % |
+| PHPInsights: Style | 86.4 % |
 | File PHP | 294 |
 | Casi di test | 464 |
 | Casi di test per file | 1.58 |

@@ -9,7 +9,7 @@ status: superseded
 superseded_by: ../coverage.md
 ---
 
-# Activity — quality gate status (2026-09-22)
+# Activity: quality gate status (2026-09-22)
 
 Eseguito dopo la pulizia dei marker di conflitto in `docs/*.md` (commit
 `5fe111e1`, `e6eb12dd`, `7836580e`, `d79c39d5`). Modifiche di questa sessione
@@ -25,7 +25,7 @@ conferma, come da procedura standing order.
 ## PHPMD (`tools/phpmd.sh Modules/Activity`)
 
 Exit code 0. Findings solo su `tests/` (parametri inutilizzati nei mock
-Filament, import mancanti, variabile lunga, flag booleano) — nessuno
+Filament, import mancanti, variabile lunga, flag booleano): nessuno
 introdotto da questa sessione (solo file `docs/` toccati).
 
 Il parser (pdepend, via phpmd.phar) muore con `UnexpectedTokenException`

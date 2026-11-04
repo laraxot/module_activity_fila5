@@ -8,7 +8,7 @@ status: draft
 qmd: "activity module   database schema activity"
 ---
 
-# Activity Module — Database Schema
+# Activity Module: Database Schema
 
 ## activities Table
 

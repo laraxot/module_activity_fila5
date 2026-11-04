@@ -1,5 +1,5 @@
 ---
-title: "Activity — BMAD Quick Reference"
+title: "Activity: BMAD Quick Reference"
 description: "Comandi rapidi BMAD per il modulo Activity"
 module: "Activity"
 alias: "activity"
@@ -12,7 +12,7 @@ tags: [docs, activity, bmad]
 qmd: "activity   bmad quick reference activity"
 ---
 
-# Activity — BMAD Quick Reference
+# Activity: BMAD Quick Reference
 
 ## Comandi Rapidi
 

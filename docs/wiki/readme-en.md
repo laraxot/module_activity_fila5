@@ -8,7 +8,7 @@ tags: [docs, activity, wiki]
 qmd: "activity   english presentation activity"
 ---
 
-# 📋 Activity — English presentation
+# 📋 Activity: English presentation
 
 [![Domain-Audit](https://img.shields.io/badge/Domain-Activity%20Log-455A64.svg)](#)
 [![Laravel 13](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
@@ -49,7 +49,7 @@ Traceability on sensitive system entities.
 
 Accountability is **non-negotiable** in digital government.
 
-Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5**: see [STORY-133](../../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
 
 ---
 

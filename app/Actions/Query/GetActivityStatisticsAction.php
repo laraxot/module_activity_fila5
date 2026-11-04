@@ -6,8 +6,8 @@ namespace Modules\Activity\Actions\Query;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
+use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
@@ -25,15 +25,16 @@ class GetActivityStatisticsAction
     public function execute(?UserContract $user = null): array
     {
         $userKey = $user?->getKey();
-        $cacheKeySuffix = is_scalar($userKey) ? (string) $userKey : 'global';
+        $cacheKeySuffix = match (true) {
+            is_int($userKey) => (string) $userKey,
+            is_string($userKey) && $userKey !== '' => $userKey,
+            default => 'global',
+        };
         $cacheKey = 'activity.statistics.'.$cacheKeySuffix;
 
-        /** @var array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int} $stats */
-        $stats = Cache::remember($cacheKey, now()->addMinutes(5), function () use ($user): array {
+        return Cache::remember($cacheKey, now()->addMinutes(5), function () use ($user): array {
             return $this->computeStatistics($user);
         });
-
-        return $stats;
     }
 
     /**
@@ -45,7 +46,7 @@ class GetActivityStatisticsAction
 
         if ($user) {
             if (! $user instanceof Model) {
-                throw new \InvalidArgumentException('User must be an Eloquent model');
+                throw new InvalidArgumentException('User must be an Eloquent model');
             }
             $query->where('causer_id', $user->getKey())
                 ->where('causer_type', $user::class);
@@ -73,24 +74,26 @@ class GetActivityStatisticsAction
      */
     private function countByType(Builder $query): array
     {
-        /** @var Builder<Activity> $clonedQuery */
-        $clonedQuery = $query->clone();
-
-        /** @var Collection<int, object{event: string, count: int}> $results */
-        $results = $clonedQuery
+        $results = $query->clone()
             ->selectRaw('event, COUNT(*) as count')
             ->groupBy('event')
             ->get();
 
-        /** @var array<string, int> $byType */
-        $byType = $results->mapWithKeys(function (object $item): array {
-            // PHPStan L10: isset() per magic attributes invece di property_exists()
-            if (! isset($item->event, $item->count)) {
-                return [];
+        $byType = [];
+        foreach ($results as $activity) {
+            $event = $activity->getAttribute('event');
+            $count = $activity->getAttribute('count');
+
+            if (! is_string($event) || $event === '') {
+                continue;
             }
 
-            return [(string) $item->event => (int) $item->count];
-        })->toArray();
+            if (! is_int($count) && ! (is_string($count) && ctype_digit($count))) {
+                continue;
+            }
+
+            $byType[$event] = (int) $count;
+        }
 
         return $byType;
     }

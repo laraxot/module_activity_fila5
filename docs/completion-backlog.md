@@ -1,12 +1,12 @@
 ---
-title: "Activity — completion backlog"
+title: "Activity: completion backlog"
 type: note
 status: draft
 updated: 2026-10-26
 tags: [docs, activity]
 qmd: "activity   completion backlog activity"
 ---
-# Activity — completion backlog
+# Activity: completion backlog
 
 Status: partial and evidence-driven. This file is the canonical owner-local list for future work.
 

@@ -1,5 +1,5 @@
 ---
-title: "Quality Report — Activity"
+title: "Quality Report: Activity"
 type: report
 tags: [quality, phpstan, pest, coverage]
 module: Activity
@@ -10,7 +10,7 @@ status: superseded
 superseded_by: quality-report.md
 ---
 
-# Quality Report — Activity
+# Quality Report: Activity
 
 Aggiornato: 2026-08-24. Rigenera con: `bashscripts/tools/quality-report.sh Activity`
 
