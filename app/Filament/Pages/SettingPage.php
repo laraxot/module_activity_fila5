@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Pages;
 
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Toggle;
 use Modules\Xot\Filament\Pages\BaseSettingPage;
 
 /**
@@ -13,11 +15,27 @@ use Modules\Xot\Filament\Pages\BaseSettingPage;
  */
 class SettingPage extends BaseSettingPage
 {
+    public static function getConfigName(): string
+    {
+        return 'activitylog';
+    }
+
     /**
+<<<<<<< HEAD
      * @return array<string, object>
      */
     protected function getFormSchema(): array
     {
         return parent::getFormSchema();
+=======
+     * @return array<string, TextInput|Toggle>
+     */
+    protected function getFormSchema(): array
+    {
+        return [
+            'enabled' => Toggle::make('enabled')->default(true),
+            'delete_records_older_than_days' => TextInput::make('delete_records_older_than_days')->numeric()->integer()->minValue(1)->required(),
+        ];
+>>>>>>> a7591e914f055e10146f5302f7bddf6973530851
     }
 }
