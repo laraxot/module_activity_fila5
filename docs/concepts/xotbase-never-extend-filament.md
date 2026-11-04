@@ -1,9 +1,5 @@
 ---
-<<<<<<< .merge_file_Lxp4IZ
-title: "Activity — mai Filament*, sempre XotBase*"
-=======
 title: "Activity: mai Filament*, sempre XotBase*"
->>>>>>> .merge_file_AOezi1
 type: concept
 module: Activity
 tags: [activity, filament, xotbase, architecture]

@@ -20,7 +20,7 @@ qmd: "on-demand pattern   module **activity** activity"
 Questo Module segue il **pattern on-demand** per rules, skills, commands e memories:
 
 - ✅ **Vivono solo nel wiki** — ../../docs/wiki/
-- ✅ **Caricati on-demand** — via trigger map o 
+- ✅ **Caricati on-demand** — via trigger map o
 - ❌ **NON pre-caricati** — mai embeddare nei bootstrap files
 - ❌ **Nessuna duplicazione** — wiki = sorgente di verità unica
 

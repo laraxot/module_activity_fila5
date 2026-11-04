@@ -1,9 +1,5 @@
 ---
-<<<<<<< .merge_file_4ooVzj
-title: "Activity Module — BMAD Stories & Remaining Work"
-=======
 title: "Activity Module: BMAD Stories & Remaining Work"
->>>>>>> .merge_file_QsJd2v
 type: concept
 sources: ["../../AGENTS.md", "laravel/Modules/Activity/docs/"]
 confidence: medium
@@ -17,11 +13,7 @@ status: draft
 qmd: "activity module   bmad stories & remaining work activity"
 ---
 
-<<<<<<< .merge_file_4ooVzj
-# Activity Module — BMAD Stories & Remaining Work
-=======
 # Activity Module: BMAD Stories & Remaining Work
->>>>>>> .merge_file_QsJd2v
 
 ## Module Overview
 The Activity module manages user activities, events, and interactions within the FixCity platform. It provides a foundation for event-driven architecture and activity tracking.
@@ -34,20 +26,6 @@ The Activity module manages user activities, events, and interactions within the
 ## Remaining Work (BMAD Brainstorming)
 
 ### Critical / High Priority
-<<<<<<< .merge_file_4ooVzj
-1. **PHPStan Zero Verification** — Confirm all activity contracts pass level 10
-2. **Event Processing** — Verify event handling and queueing mechanisms
-4. **QueueableAction Audit** — Confirm all activity actions use QueueableAction pattern
-
-### Medium Priority
-5. **Module Documentation** — Document activity models, actions, and event patterns
-6. **Test Coverage** — Add unit and integration tests for activity processing
-7. **Error Handling** — Verify graceful handling of failed event processing
-
-### Low Priority / Polish
-8. **Performance Optimization** — Review activity processing time and resource usage
-9. **Configuration Documentation** — Document activity-related configuration options
-=======
 1. **PHPStan Zero Verification**: Confirm all activity contracts pass level 10
 2. **Event Processing**: Verify event handling and queueing mechanisms
 4. **QueueableAction Audit**: Confirm all activity actions use QueueableAction pattern
@@ -60,7 +38,6 @@ The Activity module manages user activities, events, and interactions within the
 ### Low Priority / Polish
 8. **Performance Optimization**: Review activity processing time and resource usage
 9. **Configuration Documentation**: Document activity-related configuration options
->>>>>>> .merge_file_QsJd2v
 
 ## Verification Status
 - PHPStan: ✅ Level 10, 0 errors (verified 2026-10-26)

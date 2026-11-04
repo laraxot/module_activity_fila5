@@ -21,7 +21,7 @@ class SettingPage extends BaseSettingPage
     }
 
     /**
-     * @return array<string, TextInput|Toggle>
+     * @return array<string, object>
      */
     protected function getFormSchema(): array
     {
