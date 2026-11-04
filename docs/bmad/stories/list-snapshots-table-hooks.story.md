@@ -22,7 +22,7 @@ Le tabelle sono delegate alle classi `*Table.php` tramite il contratto Xot.
 
 | Agente | File | Stato |
 |---|---|---|
-| `/root/activity_table_fix` | SnapshotResource Pages/Table, StoredEventResource Pages/Table | in progress |
+| `/root/activity_table_fix` | SnapshotResource Pages/Table, StoredEventResource Pages/Table | done — PHPStan e Pest mirati verdi |
 
 ## Acceptance criteria
 
