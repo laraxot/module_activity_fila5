@@ -1,10 +1,11 @@
 ---
 title: SettingPage di Activity, pagina impostazioni senza campi
-status: done
+qmd: "Activity SettingPage configurazione tenant BaseSettingPage Filament"
+status: in-progress
 module: Activity (owner)
 created: 2026-11-04
 related:
-  - ../../../Xot/docs/stories/setting-page-tutti-i-moduli.story.md
+  - ../../../Xot/docs/bmad/stories/setting-page-tutti-i-moduli.story.md
 ---
 
 # SettingPage di Activity
@@ -12,7 +13,7 @@ related:
 ## Fase BMAD
 
 Build. Decisione dell'utente (2026-11-04): la pagina Impostazioni va in tutti i moduli. Storia
-di decisione in Xot: `Modules/Xot/docs/stories/setting-page-tutti-i-moduli.story.md`.
+di decisione in Xot: `Modules/Xot/docs/bmad/stories/setting-page-tutti-i-moduli.story.md`.
 
 ## Intento
 
