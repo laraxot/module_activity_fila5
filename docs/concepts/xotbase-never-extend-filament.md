@@ -1,5 +1,5 @@
 ---
-title: "Activity — mai Filament\*, sempre XotBase*"
+title: "Activity — mai Filament*, sempre XotBase*"
 type: concept
 module: Activity
 tags: [activity, filament, xotbase, architecture]

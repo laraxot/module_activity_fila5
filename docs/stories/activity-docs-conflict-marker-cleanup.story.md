@@ -62,3 +62,36 @@ grep -rl '^<<<<<<< \|^=======$\|^>>>>>>> ' docs/ --include='*.md'
 ```
 
 Commit: `6db1c9e3`.
+
+## 2026-11-03: marker committati nel codice, non solo nei docs
+
+Durante il rebase del mono dopo il pull dei sottomoduli (quadro generale in
+[resolve-conflict-markers-xot.story.md](../../../Xot/docs/stories/resolve-conflict-markers-xot.story.md))
+PHPStan si fermava con `Syntax error, unexpected T_SL on line 8` su
+`app/Actions/Query/GetActivityStatisticsAction.php`. Il file non era in conflitto nel rebase:
+i marker sono committati nell'HEAD di Activity, nel merge `200def5c9` (Marco Xot,
+2026-11-01) tra `18997544c` e `f339962b9`, e sono arrivati nel mono con lo snapshot locale.
+
+Il blocco aveva la meta' vecchia vuota e la meta' nuova con due import, `Model` e `Collection`.
+
+| Import | Scelta | Motivo |
+|---|---|---|
+| `Illuminate\Database\Eloquent\Model` | Tenuto | Il corpo usa `$user instanceof Model`. Senza l'import `Model` diventa `Modules\Activity\Actions\Query\Model`, una classe che non esiste: `instanceof` da' sempre false senza errori, e ogni chiamata con un utente lancia `InvalidArgumentException`. |
+| `Illuminate\Support\Collection` | Tolto | Serviva al vecchio `countByType()` con `mapWithKeys`. Il merge ha tenuto la versione con `foreach` e `getAttribute()`, che non lo usa. Pint lo rimuoverebbe comunque. |
+
+Verifica:
+
+- `php -l`, `pint --test` e PHPStan sul file: nessun errore.
+- Il test `GetActivityStatisticsAction con e senza user e event null` in
+  `tests/Unit/Actions/CoverageHundredActionsTest.php` chiama `execute($user)` con un `User` vero,
+  quindi protegge gia' l'import di `Model`. Non e' stato aggiunto un test nuovo.
+- Pest non e' verde: quel test e `Adapter ActivityLogger getStatistics delega al container`
+  falliscono prima di arrivare al codice, con `SQLiteDatabaseDoesNotExistException`. In
+  `laravel/database/` manca il file SQLite condiviso dei test, che e' in `.gitignore` e si
+  ricostruisce con `php artisan xot:build-test-sqlite`. Il comando esegue le migration di tutti i
+  moduli e non e' stato lanciato senza il via dell'utente.
+
+Aperto: il fix va committato anche nel repo di Activity, altrimenti il prossimo pull riporta i marker.
+Lock preso con `bashscripts/lock/lock.sh` (task `activity-rebase-markers-20261103`) e rilasciato.
+
+Nota 2026-11-03 (seconda passata): in `GetActivityStatisticsAction` importato `InvalidArgumentException` al posto del nome qualificato (PHPMD `MissingImport`). PHPStan intero progetto `[OK]`, Pint passa.

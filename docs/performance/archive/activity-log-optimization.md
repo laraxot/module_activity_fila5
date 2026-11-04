@@ -1,12 +1,14 @@
 ---
 title: "Activity Log Optimization - Activity Module"
 type: note
-status: draft
+status: archived
 updated: 2026-10-23
 tags: [docs, activity, performance]
 qmd: "activity log optimization - activity module activity"
 ---
 # Activity Log Optimization - Activity Module
+
+> Copia archiviata. Documentazione mantenuta: [activity-log-optimization.md](../activity-log-optimization.md).
 
 ## 🚨 Critical Issues Identified
 
