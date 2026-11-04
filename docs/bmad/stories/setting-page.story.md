@@ -1,10 +1,12 @@
 ---
 title: SettingPage di Activity, pagina impostazioni senza campi
 qmd: "Activity SettingPage configurazione tenant BaseSettingPage Filament"
-status: in-progress
+status: superseded
+superseded_by: ./setting-page-campi-reali.story.md
 module: Activity (owner)
 created: 2026-11-04
 related:
+  - ./setting-page-campi-reali.story.md
   - ../../../Xot/docs/bmad/stories/setting-page-tutti-i-moduli.story.md
 ---
 
