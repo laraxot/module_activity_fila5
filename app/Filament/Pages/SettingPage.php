@@ -26,7 +26,7 @@ class SettingPage extends BaseSettingPage
     protected function getFormSchema(): array
     {
         return [
-            'enabled' => Toggle::make('enabled')->default(true),
+            ...parent::getFormSchema(),
             'delete_records_older_than_days' => TextInput::make('delete_records_older_than_days')->numeric()->integer()->minValue(1)->required(),
         ];
     }
