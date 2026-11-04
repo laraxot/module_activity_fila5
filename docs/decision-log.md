@@ -7,7 +7,7 @@ updated: 2026-10-20
 tags: [docs, activity]
 qmd: "decision log   activity activity"
 ---
-# Decision Log: Activity
+# Decision Log — Activity
 
 ## Decisions
 
