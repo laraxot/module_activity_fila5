@@ -1,5 +1,5 @@
 ---
-title: "spatie/laravel-activitylog — owner modulo Activity"
+title: "spatie/laravel-activitylog: owner modulo Activity"
 type: concept
 tags: [activity, spatie, activitylog, composer, module-dependency, audit]
 created: 2026-06-06
@@ -17,7 +17,7 @@ related:
 status: draft
 ---
 
-# spatie/laravel-activitylog — owner Activity
+# spatie/laravel-activitylog: owner Activity
 
 ## Regola
 
@@ -29,7 +29,7 @@ status: draft
 
 - Modulo dedicato ad audit trail, event sourcing, log utente
 - Modelli `Activity`, `StoredEvent`, `Snapshot` estendono/consumano Spatie Activity Log
-- Il dominio **è** il pacchetto — non appartiene alla shell Laravel
+- Il dominio **è** il pacchetto: non appartiene alla shell Laravel
 
 ## Require canonico
 
@@ -53,7 +53,7 @@ ls laravel/vendor/spatie/laravel-activitylog
 ## Anti-pattern
 
 - Duplicare il require nel root `laravel/composer.json`
-- Importare `Modules\Activity\` da moduli che dovrebbero restare disaccoppiati (User non dipende da Comment — stessa filosofia)
+- Importare `Modules\Activity\` da moduli che dovrebbero restare disaccoppiati (User non dipende da Comment: stessa filosofia)
 
 ## GitHub (tracciamento)
 

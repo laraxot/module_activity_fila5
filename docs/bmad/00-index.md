@@ -1,6 +1,11 @@
 ---
 title: 00 index
 module: Activity
+type: index
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, bmad]
+qmd: "**indice documentazione modulo activity** activity"
 ---
 
 # 📚 **Indice Documentazione Modulo Activity**
@@ -58,7 +63,7 @@ module: Activity
 ## 🔗 **Moduli Correlati**
 - [Xot](../../../Xot/docs/README.md) - Core framework.
 - [Tenant](../../../Tenant/docs/README.md) - Isolamento dati per tenant.
-- [User](../../../User/docs/readme.md) - Autenticazione e causer activity.
+- [User](../../../User/docs/README.md) - Autenticazione e causer activity.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

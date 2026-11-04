@@ -1,5 +1,5 @@
 ---
-title: "Architecture — Activity"
+title: "Architecture: Activity"
 type: architecture
 module: Activity
 related:

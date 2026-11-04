@@ -1,5 +1,5 @@
 ---
-title: "context-overflow-prevention — puntatore"
+title: "context-overflow-prevention: puntatore"
 type: reference
 updated: 2026-05-21
 related:

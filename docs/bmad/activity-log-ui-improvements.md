@@ -2,10 +2,11 @@
 title: Activity log ui improvements
 module: Activity
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, activity, bmad]
 qmd: "activity log ui/ux improvements - implementation summary activity"
+status: superseded
+superseded_by: ../activity-log-ui-improvements.md
 ---
 
 # Activity Log UI/UX Improvements - Implementation Summary
@@ -58,7 +59,7 @@ The Activity Log view was missing critical information and had poor visual hiera
 
 **Features Added**:
 - **Field type icons** with tooltips (text, number, boolean, array, date)
-- **Better null handling** - shows "—" instead of empty
+- **Better null handling** - shows "-" instead of empty
 - **Enhanced JSON display** - collapsible details with formatted output
 - **Boolean badges** - green for true, red for false
 - **Row highlighting** - yellow background for changed fields

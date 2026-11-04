@@ -4,11 +4,12 @@ type: reference
 tags: [activity, api]
 created: 2026-07-28
 updated: 2026-07-28
-status: draft
 qmd: "activity module   api activity"
+status: superseded
+superseded_by: ../wiki/api.md
 ---
 
-# Activity Module — API
+# Activity Module: API
 
 ## LogActivityAction
 
