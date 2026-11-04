@@ -21,13 +21,6 @@ class SettingPage extends BaseSettingPage
     }
 
     /**
-<<<<<<< HEAD
-     * @return array<string, object>
-     */
-    protected function getFormSchema(): array
-    {
-        return parent::getFormSchema();
-=======
      * @return array<string, TextInput|Toggle>
      */
     protected function getFormSchema(): array
@@ -36,6 +29,5 @@ class SettingPage extends BaseSettingPage
             'enabled' => Toggle::make('enabled')->default(true),
             'delete_records_older_than_days' => TextInput::make('delete_records_older_than_days')->numeric()->integer()->minValue(1)->required(),
         ];
->>>>>>> a7591e914f055e10146f5302f7bddf6973530851
     }
 }
