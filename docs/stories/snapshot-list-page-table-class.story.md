@@ -1,6 +1,6 @@
 ---
 title: ListSnapshots, tabella nella Table class e non nella List page
-status: in-progress
+status: done
 module: Activity (owner)
 created: 2026-11-04
 related:
@@ -38,3 +38,15 @@ metodi di tabella. Esempio: `Activity/.../ActivityResource/Tables/ActivitiesTabl
 
 - Guardie gia' in Xot: `tests/Unit/ListPageHasTableClassTest.php`.
 - Pest della suite, PHPStan livello 10 sui file toccati, Pint.
+
+## Esteso 2026-11-04: StoredEvents
+
+Stessa violazione in `StoredEventResource/Pages/ListStoredEvents.php` (override `final` di
+`getTableColumns()`). Colonne spostate in `StoredEventsTable`, con `event_properties` come
+`ViewColumn` (vista `activity::filament.tables.columns.event-properties`, attributo reale del
+modello). La colonna `properties` della Table non corrispondeva a nessun attributo: rimossa.
+
+## Esito
+
+- `ListPageHasTableClassTest` (Xot): verde.
+- `EveryModuleHasSettingPageTest` + test di convenzione: 76 passati.
