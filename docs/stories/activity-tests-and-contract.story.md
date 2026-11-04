@@ -33,7 +33,7 @@ Ordine permanente dell'utente (2026-10-20): "migliora qualità codice , fa tutto
 
 ## Stato misurato
 
-## Diagnosi aggiornata — 2026-10-30
+## Diagnosi aggiornata: 2026-10-30
 
 La failure `laravel/database/test_data.sqlite` assente è riproducibile staticamente e
 non nasce dal dominio Activity:

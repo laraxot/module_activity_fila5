@@ -1,5 +1,5 @@
 ---
-title: "Lacune di completamento — Activity"
+title: "Lacune di completamento: Activity"
 type: audit
 status: open
 created: 2026-10-28
@@ -10,7 +10,7 @@ related:
   - "../../Xot/docs/project-completion-readiness.md"
 ---
 
-# Lacune di completamento — Activity
+# Lacune di completamento: Activity
 
 ## Esito
 
@@ -66,13 +66,13 @@ Lettura read-only delle 39 story locali (`*.story.md`): 33 hanno uno stato diver
 
 ### Esempi prioritari da riconciliare
 
-- `blocked-external` — [`quality-gates-phpstan-swarm-gate-activity.story.md`](bmad/stories/quality-gates-phpstan-swarm-gate-activity.story.md)
-- `in-progress` — [`7.1.phpstan-activity-contracts.story.md`](stories/7.1.phpstan-activity-contracts.story.md)
-- `ready-for-dev` — [`18-1-merge-conflicts-phpstan-fixes.story.md`](stories/18-1-merge-conflicts-phpstan-fixes.story.md)
-- `ready-for-dev` — [`3.10.activity-pest-extend-bootstrap.story.md`](stories/3.10.activity-pest-extend-bootstrap.story.md)
-- `ready-for-dev` — [`4.1.phpstan-activity-generics-fix.story.md`](stories/4.1.phpstan-activity-generics-fix.story.md)
-- `ready-for-dev` — [`activity-tests-and-contract.story.md`](stories/activity-tests-and-contract.story.md)
-- `ready-for-dev` — [`module-bmad-audit.story.md`](bmad/stories/module-bmad-audit.story.md)
-- `review` — [`7.2.phpstan-test-harness-contracts.story.md`](stories/7.2.phpstan-test-harness-contracts.story.md)
+- `blocked-external`: [`quality-gates-phpstan-swarm-gate-activity.story.md`](bmad/stories/quality-gates-phpstan-swarm-gate-activity.story.md)
+- `in-progress`: [`7.1.phpstan-activity-contracts.story.md`](stories/7.1.phpstan-activity-contracts.story.md)
+- `ready-for-dev`: [`18-1-merge-conflicts-phpstan-fixes.story.md`](stories/18-1-merge-conflicts-phpstan-fixes.story.md)
+- `ready-for-dev`: [`3.10.activity-pest-extend-bootstrap.story.md`](stories/3.10.activity-pest-extend-bootstrap.story.md)
+- `ready-for-dev`: [`4.1.phpstan-activity-generics-fix.story.md`](stories/4.1.phpstan-activity-generics-fix.story.md)
+- `ready-for-dev`: [`activity-tests-and-contract.story.md`](stories/activity-tests-and-contract.story.md)
+- `ready-for-dev`: [`module-bmad-audit.story.md`](bmad/stories/module-bmad-audit.story.md)
+- `review`: [`7.2.phpstan-test-harness-contracts.story.md`](stories/7.2.phpstan-test-harness-contracts.story.md)
 
 Prima di lavorare su questi elementi, verificare lo stato canonico nello sprint status, claim/lock e dipendenze. Una story senza `status` non va considerata automaticamente completata.

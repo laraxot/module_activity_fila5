@@ -1,5 +1,5 @@
 ---
-title: "Activity — mappa file -> responsabilita"
+title: "Activity: mappa file -> responsabilita"
 type: concept
 tags: [architecture, activity, mappa, file-responsabilita]
 created: 2026-09-28
@@ -14,7 +14,7 @@ discussions: []
 status: draft
 ---
 
-# Activity — mappa file -> responsabilita
+# Activity: mappa file -> responsabilita
 
 > **SUMMARY**: una riga per file (o gruppo omogeneo) con la responsabilita
 > unica. Se un file non sta qui, e probabile che sia da spostare o da dichiarare
@@ -48,7 +48,7 @@ status: draft
 | `app/Adapters/ActivityRecorder.php` | Implementazione concreta del recorder |
 | `app/Adapters/ActivityLogger.php` | Implementazione concreta del logger |
 
-## Action — query
+## Action: query
 
 | File | Responsabilita |
 |---|---|
@@ -59,7 +59,7 @@ status: draft
 | `app/Actions/Query/GetSubjectActivityLogAction.php` | Log per soggetto |
 | `app/Actions/Query/GetUserActivitiesAction.php` | Attivita di un utente |
 
-## Action — log viewer
+## Action: log viewer
 
 | File | Responsabilita |
 |---|---|
@@ -74,7 +74,7 @@ status: draft
 | `app/Actions/Log/BuildLogViewerStateAction.php` | Stato completo della vista |
 | `app/Actions/Log/AuthorizeLogAccessAction.php` | Controllo di accesso al log |
 
-## Action — schema
+## Action: schema
 
 | File | Responsabilita |
 |---|---|

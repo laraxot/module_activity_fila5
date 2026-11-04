@@ -8,7 +8,7 @@ status: draft
 qmd: "activity module   api activity"
 ---
 
-# Activity Module — API
+# Activity Module: API
 
 ## LogActivityAction
 
@@ -37,7 +37,7 @@ $activity->properties;    // JSON metadata
 
 > Nota 2026-10-14 (docs-audit): La firma 'execute(array $data): Activity' non esiste: LogActivityAction prende type, user, subject, properties, description nel costruttore e ha execute(): Activity (app/Actions/LogActivityAction.php). Vedi README.md. Contenuto non riscritto, verificare prima di usarlo.
 
-# Activity Module — API
+# Activity Module: API
 
 ## LogActivityAction
 

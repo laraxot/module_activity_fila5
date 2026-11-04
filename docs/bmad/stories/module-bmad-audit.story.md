@@ -1,6 +1,6 @@
 ---
 id: Activity/module-bmad-audit-20260928
-title: "Activity — baseline BMAD e analisi completa"
+title: "Activity: baseline BMAD e analisi completa"
 status: ready-for-dev
 module: Activity
 epic: module-governance
@@ -15,7 +15,7 @@ updated: 2026-10-07
 tags: [docs, activity, bmad]
 qmd: "story   activity: baseline bmad activity"
 ---
-# Story — Activity: baseline BMAD
+# Story: Activity: baseline BMAD
 
 Come manutentore del modulo Activity, voglio una baseline BMAD verificabile, così da poter pianificare lavoro senza confondere ipotesi, WIP e comportamento osservato.
 

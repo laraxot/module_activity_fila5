@@ -1,12 +1,12 @@
 ---
-title: "Activity vs Platform.AuditLog — Mappatura e Gap Analysis"
+title: "Activity vs Platform.AuditLog: Mappatura e Gap Analysis"
 type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity vs platform.auditlog   mappatura e gap analysis activity"
 ---
-# Activity vs Platform.AuditLog — Mappatura e Gap Analysis
+# Activity vs Platform.AuditLog: Mappatura e Gap Analysis
 
 > Ultimo aggiornamento: 2026-07-23
 
@@ -16,13 +16,13 @@ qmd: "activity vs platform.auditlog   mappatura e gap analysis activity"
 |---------|-------------------|---------------------|
 | **Modulo SRC** | `Modules/Platform` (parziale: `AuditLog`) | `Modules/Activity` |
 | **Ruolo** | Audit logging delle azioni utente | Tracciamento attività event-sourced con snapshot |
-| **Stato mapping** | VICINO — Activity è più ricco, copre AuditLog ~90% | |
+| **Stato mapping** | VICINO: Activity è più ricco, copre AuditLog ~90% | |
 
 ---
 
 ## Cosa fa Platform.AuditLog (SRC)
 
-- **Modello `AuditLog`** — tabella `audit_logs`
+- **Modello `AuditLog`**: tabella `audit_logs`
 - Campi: `user_id`, `action` (string), `auditable_type` (morph), `auditable_id` (morph), `old_values` (json), `new_values` (json), `ip_address`, `user_agent`
 - **Filament Resource**: `AuditLogResource` (read-only: List + View)
 - Logga modifiche a modelli, login/logout, azioni utente
@@ -32,8 +32,8 @@ qmd: "activity vs platform.auditlog   mappatura e gap analysis activity"
 
 - **Modelli**: `Activity`, `Snapshot`, `StoredEvent`, `TestModel`
 - **Filament Resources**: `ActivityResource`, `SnapshotResource`, `StoredEventResource`
-- **Pattern event sourcing** — `StoredEvent` tiene la cronologia eventi, `Snapshot` cattura stato aggregato a un punto nel tempo
-- **Activity restore** — possibilità di ripristinare stato da eventi + snapshot
+- **Pattern event sourcing**: `StoredEvent` tiene la cronologia eventi, `Snapshot` cattura stato aggregato a un punto nel tempo
+- **Activity restore**: possibilità di ripristinare stato da eventi + snapshot
 - Più ricco e complesso del semplice audit log
 
 ---
@@ -53,8 +53,8 @@ qmd: "activity vs platform.auditlog   mappatura e gap analysis activity"
 
 ## Note
 
-- **Activity è già superiore** a AuditLog — non serve creare nulla
-- Il gap vero è che Platform ha anche `PlatformSetting` (settings key-value) — quello va mappato su Tenant/Xot
+- **Activity è già superiore** a AuditLog: non serve creare nulla
+- Il gap vero è che Platform ha anche `PlatformSetting` (settings key-value): quello va mappato su Tenant/Xot
 - Activity è già usato in produzione su base_workorder_fila5
 - Nessuna azione necessaria su Activity
 

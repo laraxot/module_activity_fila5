@@ -38,10 +38,10 @@ Problemi trasversali (valgono per tutto il progetto): vedi `project-completion-s
 | Stato | Story |
 |---|---|
 | in-progress | [Activity: contratti PHPStan azioni e test](docs/stories/7.1.phpstan-activity-contracts.story.md) |
-| review | [PHPStan Modules — remediation BMAD 2026-09-28](docs/bmad/stories/quality-gates-phpstan-fix.story.md) |
+| review | [PHPStan Modules: remediation BMAD 2026-09-28](docs/bmad/stories/quality-gates-phpstan-fix.story.md) |
 | review | [Activity: contratti PHPStan dei test harness](docs/stories/7.2.phpstan-test-harness-contracts.story.md) |
-| review | [STORY — Pagina Log nel pannello Activity: consultare i file di storage/logs senza SSH/FTP](docs/stories/activity-admin-log-viewer-page.story.md) |
-| ready-for-dev | [Activity — baseline BMAD e analisi completa](docs/bmad/stories/module-bmad-audit.story.md) |
+| review | [STORY: Pagina Log nel pannello Activity: consultare i file di storage/logs senza SSH/FTP](docs/stories/activity-admin-log-viewer-page.story.md) |
+| ready-for-dev | [Activity: baseline BMAD e analisi completa](docs/bmad/stories/module-bmad-audit.story.md) |
 | ready-for-dev | [Risolvi merge conflicts Activity tests + PHPStan L10 fixes](docs/stories/18-1-merge-conflicts-phpstan-fixes.story.md) |
 | ready-for-dev | [Activity: pest()->extend(TestCase) al posto di require_once PestStubs](docs/stories/3.10.activity-pest-extend-bootstrap.story.md) |
 | ready-for-dev | [Fix PHPStan L10 generics.notGeneric errors in Activity module](docs/stories/4.1.phpstan-activity-generics-fix.story.md) |
@@ -54,7 +54,7 @@ Problemi trasversali (valgono per tutto il progetto): vedi `project-completion-s
 | backlog | ['Cleanup policy: soft-delete + archive scheduling'](docs/stories/6.4.cleanup-policy-archive-scheduling.story.md) |
 | draft | [Riorganizzazione docs core Activity](docs/bmad/stories/docs-reorg-core.story.md) |
 | draft | [Activity module connection property safety](docs/stories/01.08.connection-property-safety.story.md) |
-| blocked-external | [PHPStan quality gate swarm — Activity (2026-09-23)](docs/bmad/stories/quality-gates-phpstan-swarm-gate-activity.story.md) |
+| blocked-external | [PHPStan quality gate swarm: Activity (2026-09-23)](docs/bmad/stories/quality-gates-phpstan-swarm-gate-activity.story.md) |
 | pending | [Fix PHPStan Activity module - 71 errors](docs/stories/3.2.phpstan-activity-71-errors.story.md) |
 | senza-status | [01.activity-generics-fix.story.md](docs/stories/01.activity-generics-fix.story.md) |
 | senza-status | [5.1.fix-phpstan-redactmodel-coverage.story.md](docs/stories/5.1.fix-phpstan-redactmodel-coverage.story.md) |

@@ -1,5 +1,5 @@
 ---
-title: "Package ownership — event sourcing e activity log"
+title: "Package ownership: event sourcing e activity log"
 type: concept
 module: Activity
 tags: [activity, composer, spatie, event-sourcing, activitylog, nwidart]
@@ -19,7 +19,7 @@ related:
 status: draft
 ---
 
-# Package ownership — Activity
+# Package ownership: Activity
 
 ## Scopo modulo
 
@@ -32,7 +32,7 @@ Activity è il layer **audit + storia eventi**: chi ha fatto cosa, append-only, 
 | `spatie/laravel-activitylog` | Activity log su modelli, causer/subject |
 | `spatie/laravel-event-sourcing` | Stored events, snapshot, projector/reactor |
 
-Entrambi in `Modules/Activity/composer.json` — **mai** nel root `laravel/composer.json`.
+Entrambi in `Modules/Activity/composer.json`: **mai** nel root `laravel/composer.json`.
 
 ## Perché non Xot?
 
@@ -52,7 +52,7 @@ rm -rf laravel/Modules/Activity/vendor
 cd laravel && composer update -W spatie/laravel-event-sourcing spatie/laravel-activitylog
 ```
 
-**Vendor canonico:** `laravel/vendor/` — `Modules/Activity/vendor/` non va committato né usato per PHPStan/Artisan.
+**Vendor canonico:** `laravel/vendor/`: `Modules/Activity/vendor/` non va committato né usato per PHPStan/Artisan.
 
 ## Pin versione
 

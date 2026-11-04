@@ -20,7 +20,7 @@ status: stale
 
 > Nota 2026-10-14 (docs-audit): Copia identica di wiki/INDEX.md (varianti di sola maiuscola); l'indice della wiki e' INDEX.md. Contenuto non riscritto, verificare prima di usarlo.
 
-# Wiki Index — Activity
+# Wiki Index: Activity
 ## AI / second brain
 
 - [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
@@ -35,17 +35,17 @@ status: stale
 
 ## Completamento
 
-- [overviews/completion-status.md](./overviews/completion-status.md) — stato modulo post gate chef
-- [PROJECT-ROADMAP.md](./project-roadmap.md) — milestone Activity
+- [overviews/completion-status.md](./overviews/completion-status.md): stato modulo post gate chef
+- [PROJECT-ROADMAP.md](./project-roadmap.md): milestone Activity
 - [platform-completion-roadmap (Xot)](../../Xot/docs/wiki/overviews/platform-completion-roadmap.md)
 
 ## Concepts
 
-- [testcase-hierarchy-architecture](./concepts/testcase-hierarchy-architecture.md) — Activity TestCase -> XotBaseTestCase -> Laravel; nWidart Tests namespace non e' autoloadato nel package installato
-- [activity-domain-focus](./concepts/activity-domain-focus.md) — posizionamento del dominio Activity
-- [xotbase-resource-zen-pattern](./concepts/xotbase-resource-zen-pattern.md) — pattern corretto per resource XotBase senza override `form()`/`table()`
-- [schemas-tables-pattern](./concepts/schemas-tables-pattern.md) — separazione Schemas/Tables e auto-discovery di XotBase
-- [phpstan-pest-discipline](./concepts/phpstan-pest-discipline.md) — PHPStan su Activity mantenendo test Pest e `phpstan.neon` immutabile
+- [testcase-hierarchy-architecture](./concepts/testcase-hierarchy-architecture.md): Activity TestCase -> XotBaseTestCase -> Laravel; nWidart Tests namespace non e' autoloadato nel package installato
+- [activity-domain-focus](./concepts/activity-domain-focus.md): posizionamento del dominio Activity
+- [xotbase-resource-zen-pattern](./concepts/xotbase-resource-zen-pattern.md): pattern corretto per resource XotBase senza override `form()`/`table()`
+- [schemas-tables-pattern](./concepts/schemas-tables-pattern.md): separazione Schemas/Tables e auto-discovery di XotBase
+- [phpstan-pest-discipline](./concepts/phpstan-pest-discipline.md): PHPStan su Activity mantenendo test Pest e `phpstan.neon` immutabile
 
 ## Entities
 
@@ -53,12 +53,12 @@ _No entities tracked yet._
 
 ## Sources
 
-- [activity-core-sources](./sources/activity-core-sources.md) — sorgenti core del modulo per ingest e retrieval
+- [activity-core-sources](./sources/activity-core-sources.md): sorgenti core del modulo per ingest e retrieval
 
 ## On-Demand References
 
-- [rules-index](./rules/index.md) — entrypoint locale per regole ricorrenti del modulo
-- [skills-index](./skills/index.md) — skill on-demand, incluse skill condivise Xot
+- [rules-index](./rules/index.md): entrypoint locale per regole ricorrenti del modulo
+- [skills-index](./skills/index.md): skill on-demand, incluse skill condivise Xot
 
 ## Comparisons
 
@@ -74,8 +74,8 @@ _No comparisons synthesized yet._
 
 ## Shared Second Brain Discipline
 
-- [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) — local docs/wiki operating contract aligned with root LLM Wiki discipline.
+- [second-brain-local-discipline](./concepts/second-brain-local-discipline.md): local docs/wiki operating contract aligned with root LLM Wiki discipline.
 
 ## Composer / nwidart
 
-- [composer-root-minimal-nwidart](concepts/composer-root-minimal-nwidart.md) — root skeleton nwidart (modello fixcity)
+- [composer-root-minimal-nwidart](concepts/composer-root-minimal-nwidart.md): root skeleton nwidart (modello fixcity)

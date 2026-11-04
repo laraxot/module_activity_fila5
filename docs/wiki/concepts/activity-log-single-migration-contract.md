@@ -1,5 +1,5 @@
 ---
-title: "activity_log — una migrazione per modello"
+title: "activity_log: una migrazione per modello"
 type: concept
 tags: [activity, migration, spatie, activitylog, xotbasemigration]
 created: 2026-06-10
@@ -8,7 +8,7 @@ qmd: activity_log single migration xotbasemigration add fix update forbidden
 status: draft
 ---
 
-# activity_log — una migrazione per modello
+# activity_log: una migrazione per modello
 
 ## Religione
 
@@ -56,7 +56,7 @@ File errati in `database/migrations/_bak/README.md`.
 
 ## Runtime
 
-`ActivityLogSchema::isWritable()` — verifica `attribute_changes` prima di loggare (FO/registrazione).
+`ActivityLogSchema::isWritable()`: verifica `attribute_changes` prima di loggare (FO/registrazione).
 
 ## Collegamenti
 

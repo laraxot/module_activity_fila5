@@ -1,5 +1,5 @@
 ---
-title: activity_log — colonna attribute_changes (Spatie v4+)
+title: activity_log: colonna attribute_changes (Spatie v4+)
 type: concept
 tags: [activity, spatie, migration, register]
 qmd:
@@ -10,7 +10,7 @@ status: draft
 updated: 2026-10-07
 ---
 
-# activity_log — attribute_changes
+# activity_log: attribute_changes
 
 ## Perché
 
@@ -18,7 +18,7 @@ Spatie `laravel-activitylog` v4+ scrive `attribute_changes` (anche `[]`) su INSE
 
 ## Schema owner (unica migrazione)
 
-`2026_06_10_140000_create_activity_table.php` — vedi [activity-log-single-migration-contract.md](activity-log-single-migration-contract.md).
+`2026_06_10_140000_create_activity_table.php`: vedi [activity-log-single-migration-contract.md](activity-log-single-migration-contract.md).
 
 ```bash
 cd laravel && php artisan migrate
@@ -26,7 +26,7 @@ cd laravel && php artisan migrate
 
 ## Runtime
 
-`app(IsActivityLogSchemaWritableAction::class)->execute()` (`Actions/Schema/`) — connection da `config('activitylog.database_connection')`.
+`app(IsActivityLogSchemaWritableAction::class)->execute()` (`Actions/Schema/`): connection da `config('activitylog.database_connection')`.
 
 ## Collegamenti
 

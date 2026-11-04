@@ -1,5 +1,5 @@
 ---
-title: "Project context — Activity"
+title: "Project context: Activity"
 type: constitution
 module: Activity
 track: quick-flow
@@ -14,7 +14,7 @@ related:
   - ./filament-blueprint.md
 ---
 
-# Costituzione — Activity
+# Costituzione: Activity
 
 Offrire storia operativa affidabile per ogni mutazione di dominio rilevante.
 
