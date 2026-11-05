@@ -27,7 +27,7 @@ Questa nota descrive `tests/TestCase.php` cosi' com'e' nel codice. Il perche' de
 
 ## Helper per i test
 
-- `tests/PestHelpers.php`: `activityCreateUser()`, `activityCreateActivity()` e `mockeryExpect()`, con prefisso `activity` per non collidere con gli helper degli altri moduli. `tests/Pest.php` contiene solo il `require_once` di questo file.
+- `tests/Helpers.php`: `activityCreateUser()`, `activityCreateActivity()` e `mockeryExpect()`, con prefisso `activity` per non collidere con gli helper degli altri moduli. Pest carica `Helpers.php` da solo quando si lancia con `--test-directory=Modules/Activity/tests`. Il file si chiamava `PestHelpers.php`, nome che Pest non carica: `mockeryExpect()` risultava indefinita e 18 test fallivano (misura del 2026-11-05).
 - `tests/Feature/TestActivityModel.php`: modello concreto per provare `BaseModel`. Sta in `Tests\Feature` e non in `Models`, quindi `GetFactoryAction` non puo' ricavarne il modulo e generargli una factory: i test verificano che esponga `factory()`, non che ne risolva una. Usa `HasFactory` (richiesto dai test sui trait) con `HasXotFactory::factory insteadof HasFactory`; una regola `insteadof` su un metodo che il trait non ha (per esempio `newFactory`) e' un fatal error di PHP che PHPStan non segnala.
 - Factory nei test: `ActivityFactory::new()->createOne([...])` e `UserFactory::new()->createOne()`, come nei test gia' tipizzati del modulo.
 
@@ -35,7 +35,7 @@ Questa nota descrive `tests/TestCase.php` cosi' com'e' nel codice. Il perche' de
 
 ```bash
 cd laravel
-XDEBUG_MODE=off ./vendor/bin/pest Modules/Activity/tests/Unit/Models/BaseModelTest.php --no-coverage
+XDEBUG_MODE=off ./vendor/bin/pest --test-directory=Modules/Activity/tests Modules/Activity/tests/Unit/Models/BaseModelTest.php --no-coverage
 ./vendor/bin/phpstan analyse Modules/Activity --memory-limit=2G --no-progress
 ```
 
@@ -50,7 +50,7 @@ Limiti verificati il 2026-10-20:
   Non aggiungere migrazioni al `setUp()` e non usare `migrate:fresh`: vedi
   [testing-coverage-policy.md](./testing-coverage-policy.md) e
   [rules-testing-no-migrate-fresh.md](./rules-testing-no-migrate-fresh.md).
-- Lanciando `pest <file>` il `tests/Pest.php` del modulo non viene caricato, quindi gli helper di `PestHelpers.php` risultano non definiti nei test che li usano. PHPStan li vede perche' analizza tutto `Modules/`.
+- Lanciando `pest <file>` senza `--test-directory=Modules/Activity/tests` ne' `tests/Pest.php` ne' `tests/Helpers.php` del modulo vengono caricati, quindi gli helper risultano non definiti nei test che li usano. PHPStan li vede perche' analizza tutto `Modules/`.
 
 ## Storia
 
