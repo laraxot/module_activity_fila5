@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\Activity\Database\Factories\ActivityFactory;
+use Modules\Activity\Traits\ActivityScopes;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Spatie\Activitylog\Models\Activity as SpatieActivity;
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
@@ -108,6 +109,8 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  */
 class Activity extends SpatieActivity
 {
+    use ActivityScopes;
+
     /** > */
     use HasXotFactory;
 
@@ -142,28 +145,6 @@ class Activity extends SpatieActivity
             'properties' => SchemalessAttributes::class,
             'attribute_changes' => 'collection',
         ];
-    }
-
-    /**
-     * Scope activities by batch UUID.
-     *
-     * @param  Builder<static>  $query
-     * @return Builder<static>
-     */
-    public function scopeForBatch(Builder $query, string $batchUuid): Builder
-    {
-        return $query->where('batch_uuid', $batchUuid);
-    }
-
-    /**
-     * Scope activities that belong to any batch.
-     *
-     * @param  Builder<static>  $query
-     * @return Builder<static>
-     */
-    public function scopeHasBatch(Builder $query): Builder
-    {
-        return $query->whereNotNull('batch_uuid');
     }
 
     // NOTE
