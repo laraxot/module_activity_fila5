@@ -1,13 +1,13 @@
 ---
-module: theme
-topic: best-practice
-canonical: ../../../../../Themes/docs/shared-components/.gitkeep
 title: "best practice"
-type: note
-status: stub
-updated: 2026-10-07
-tags: [docs, activity, use_cases]
-qmd: "best practice activity"
+type: alias
+status: superseded
+canonical: "use_cases/bank/best-practice.md"
+qmd: "best-practice alias superseded"
 ---
 
-See canonical documentation: ../../../../../Themes/docs/shared-components/.gitkeep
+# best practice
+
+Documento identico al canonico: [best-practice.md](../bank/best-practice.md).
+
+Canonico: `laravel/Modules/Activity/docs/use_cases/bank/best-practice.md`. Qui non ci sono istruzioni: seguire il file collegato.
