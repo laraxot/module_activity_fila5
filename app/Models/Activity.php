@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\Activity\Database\Factories\ActivityFactory;
+use Modules\Activity\Traits\ActivityScopes;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Spatie\Activitylog\Models\Activity as SpatieActivity;
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
@@ -46,9 +47,9 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static Builder<static>|Activity forSubject(Model $subject)
  * @method static Builder<static>|Activity hasBatch()
  * @method static Builder<static>|Activity inLog(...$logNames)
- * @method static Builder<static>|Activity newModelQuery()
- * @method static Builder<static>|Activity newQuery()
- * @method static Builder<static>|Activity query()
+ * @method static Builder<static> newModelQuery()
+ * @method static Builder<static> newQuery()
+ * @method static Builder<static> query()
  * @method static Builder<static>|Activity whereBatchUuid($value)
  * @method static Builder<static>|Activity whereCauserId($value)
  * @method static Builder<static>|Activity whereCauserType($value)
@@ -75,14 +76,14 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static Builder<static>|Activity whereYear(string $column, string $operator, mixed $value = null)
  * @method static Builder<static>|Activity latest(string $column = 'created_at')
  * @method static Builder<static>|Activity limit(int $value)
- * @method static Builder<static>|Activity with(array<string, mixed>|string $relations)
+ * @method static Builder<static>|Activity with(array<int, string>|string $relations)
  * @method static int sum(string $column)
- * @method static Collection<int, static> get(array<string>|string $columns = ['*'])
- * @method static static|null first(array<string>|string $columns = ['*'])
- * @method static static find(mixed $id, array<string>|string $columns = ['*'])
+ * @method static Collection<int, static>|Builder<static>|Activity get(array<int, string>|string $columns = ['*'])
+ * @method static static|null first(array<int, string>|string $columns = ['*'])
+ * @method static static find(mixed $id, array<int, string>|string $columns = ['*'])
  * @method static static|null firstWhere(string $column, mixed $operator = null, mixed $value = null)
  * @method static Builder<static>|Activity orderBy(string $column, string $direction = 'asc')
- * @method static Builder<static>|Activity groupBy(array<string>|string $groups)
+ * @method static Builder<static>|Activity groupBy(array<int, string>|string $groups)
  * @method static Builder<static>|Activity having(string $column, string $operator, mixed $value)
  * @method static Builder<static>|Activity orWhere(string $column, mixed $operator = null, mixed $value = null)
  * @method static Builder<static>|Activity whereIn(string $column, array<int, mixed> $values)
@@ -108,6 +109,9 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  */
 class Activity extends SpatieActivity
 {
+    use ActivityScopes;
+
+    /** > */
     use HasXotFactory;
 
     /** @var string */
@@ -141,28 +145,6 @@ class Activity extends SpatieActivity
             'properties' => SchemalessAttributes::class,
             'attribute_changes' => 'collection',
         ];
-    }
-
-    /**
-     * Scope activities by batch UUID.
-     *
-     * @param  Builder<static>  $query
-     * @return Builder<static>
-     */
-    public function scopeForBatch(Builder $query, string $batchUuid): Builder
-    {
-        return $query->where('batch_uuid', $batchUuid);
-    }
-
-    /**
-     * Scope activities that belong to any batch.
-     *
-     * @param  Builder<static>  $query
-     * @return Builder<static>
-     */
-    public function scopeHasBatch(Builder $query): Builder
-    {
-        return $query->whereNotNull('batch_uuid');
     }
 
     // NOTE

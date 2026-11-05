@@ -71,5 +71,4 @@ php artisan test --filter=Snapshot
 
 # Con coverage
 php artisan test Modules/Activity --coverage
-```=======
 ```

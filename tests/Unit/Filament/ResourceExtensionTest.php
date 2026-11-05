@@ -28,10 +28,11 @@ test('activity resource does not implement unnecessary methods', function () {
 
     // Different installs / Filament versions may generate these methods.
     // We keep this as a smoke test instead of enforcing strict absence.
-    Assert::assertIsBool($reflection->hasMethod('getPages'));
-    Assert::assertIsBool($reflection->hasMethod('getRelations'));
-    Assert::assertIsBool($reflection->hasMethod('form'));
-    Assert::assertIsBool($reflection->hasMethod('table'));
+    foreach (['getPages', 'getRelations', 'form', 'table'] as $methodName) {
+        if ($reflection->hasMethod($methodName)) {
+            Assert::assertTrue($reflection->getMethod($methodName)->isPublic());
+        }
+    }
 });
 
 test('activity resource implements required getFormSchema method', function () {

@@ -50,14 +50,14 @@ mantenendo solo `$name` e `$parameters` effettivamente usati nel corpo.
 a PHPStan per fidarsi del narrowing lungo tutta la catena di assegnazione.
 
 **Fix:** aggiunta `Webmozart\Assert\Assert::subclassOf(...)` sia in
-`usingResource()` sia in `getResource()` prima del return — stesso pattern già
+`usingResource()` sia in `getResource()` prima del return: stesso pattern già
 in uso in `Modules\Xot\Filament\Resources\XotBaseResource::getModel()`.
 
 ### 3. (Modulo Geo, correlato) `AddressItemEnum::getColumnDefinitions()` referenziava case commentate
 
 Non in questo modulo, ma stessa causa radice architetturale: un enum con
 alcune `case` disabilitate via commento ma ancora referenziate in un metodo
-che le consuma (`self::CASE_DISABILITATA->value`) — errore `classConstant.notFound`,
+che le consuma (`self::CASE_DISABILITATA->value`): errore `classConstant.notFound`,
 avrebbe fatto fallire qualsiasi migrazione che chiamasse `EnumTrait::columns()`.
 Documentato qui perché è un pattern di bug ricorrente nell'architettura
 XotBase-Enum: se si commenta una `case`, va rimossa anche ovunque referenziata,

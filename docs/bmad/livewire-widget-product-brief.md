@@ -1,5 +1,5 @@
 ---
-title: "Product brief — Activity"
+title: "Product brief: Activity"
 type: product-brief
 module: Activity
 related:
