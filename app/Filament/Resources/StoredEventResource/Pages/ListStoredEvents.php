@@ -11,6 +11,11 @@ use Modules\Activity\Filament\Resources\StoredEventResource;
 use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
+/**
+ * Colonne e azioni stanno in `StoredEventsTable`: la List page non le dichiara.
+ *
+ * @see StoredEventResource
+ */
 class ListStoredEvents extends XotBaseListRecords
 {
     protected static string $resource = StoredEventResource::class;
@@ -20,7 +25,10 @@ class ListStoredEvents extends XotBaseListRecords
      */
     public function getTableColumns(): array
     {
+<<<<<<< .merge_file_MeY8IT
         /** @phpstan-var view-string */
+=======
+>>>>>>> .merge_file_UaHTGH
         $eventPropertiesView = 'activity::filament.tables.columns.event-properties';
 
         return [

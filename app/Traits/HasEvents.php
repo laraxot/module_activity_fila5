@@ -4,10 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Traits;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
 
+<<<<<<< .merge_file_FnwhSm
+=======
+/**
+ * @phpstan-require-extends Model
+ */
+>>>>>>> .merge_file_ae8gwP
 trait HasEvents
 {
     /**

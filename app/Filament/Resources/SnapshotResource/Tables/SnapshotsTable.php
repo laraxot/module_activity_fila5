@@ -6,6 +6,12 @@ namespace Modules\Activity\Filament\Resources\SnapshotResource\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< .merge_file_2jmq1N
+=======
+use Filament\Tables\Filters\BaseFilter;
+use Filament\Tables\Filters\SelectFilter;
+use Modules\Activity\Models\Snapshot;
+>>>>>>> .merge_file_hyXelX
 use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
@@ -17,12 +23,44 @@ class SnapshotsTable extends XotBaseResourceTable
     public function getTableColumns(): array
     {
         return [
+<<<<<<< .merge_file_2jmq1N
             'id' => IDColumn::make('id')->searchable()->sortable(),
             'aggregate_uuid' => TextColumn::make('aggregate_uuid')->searchable()->limit(30),
             'aggregate_version' => TextColumn::make('aggregate_version')->searchable()->sortable(),
             'state' => TextColumn::make('state')->limit(50),
             'created_at' => TextColumn::make('created_at')->dateTime(),
             'updated_at' => TextColumn::make('updated_at')->dateTime(),
+=======
+            'aggregate_uuid' => TextColumn::make('aggregate_uuid')->searchable()->sortable()->copyable(),
+            'aggregate_version' => TextColumn::make('aggregate_version')->numeric()->sortable(),
+            'state' => TextColumn::make('state')
+                ->state(static fn (Snapshot $record): string => json_encode($record->state, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES))
+                ->limit(100)
+                ->wrap()
+                ->toggleable(isToggledHiddenByDefault: true),
+            'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
+            'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->toggleable(isToggledHiddenByDefault: true),
+            'id' => IDColumn::make('id')->searchable()->sortable()->toggleable(isToggledHiddenByDefault: true),
+        ];
+    }
+
+    /**
+     * @return array<string, BaseFilter>
+     */
+    public function getTableFilters(): array
+    {
+        return [
+            'aggregate_uuid' => SelectFilter::make('aggregate_uuid')
+                ->searchable()
+                ->getSearchResultsUsing(fn (string $search): array => (new Snapshot)->newQuery()
+                    ->where('aggregate_uuid', 'like', "%{$search}%")
+                    ->distinct()
+                    ->orderBy('aggregate_uuid')
+                    ->limit(50)
+                    ->pluck('aggregate_uuid', 'aggregate_uuid')
+                    ->all())
+                ->getOptionLabelUsing(fn (string $value): string => $value),
+>>>>>>> .merge_file_hyXelX
         ];
     }
 }

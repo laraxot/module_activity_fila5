@@ -1,5 +1,5 @@
 ---
-title: "Activity — BMAD Method Integration"
+title: "Activity: BMAD Method Integration"
 description: "BMAD workflow documentation per il modulo Activity"
 module: "Activity"
 alias: "activity"
@@ -23,7 +23,15 @@ tags: [docs, activity, bmad]
 qmd: "activity   bmad method integration activity"
 ---
 
-# Activity — BMAD Method Integration
+# Activity: BMAD Method Integration
+
+## Kit BMAD owner (canonico)
+
+- [BMAD Planning](../bmad-planning.md)
+- [BMAD Brainstorming](../bmad-brainstorming.md)
+- [Filament blueprint](./filament-blueprint.md)
+- [Project context](./project-context.md)
+- [Decision log](./decision-log.md)
 
 ## Kit BMAD owner (canonico)
 

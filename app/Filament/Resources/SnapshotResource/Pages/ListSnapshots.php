@@ -20,6 +20,8 @@ use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 /**
+ * Colonne, filtri e azioni stanno in `SnapshotsTable`: la List page non li dichiara.
+ *
  * @see SnapshotResource
  */
 class ListSnapshots extends XotBaseListRecords

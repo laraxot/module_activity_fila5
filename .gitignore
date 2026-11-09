@@ -23,9 +23,13 @@ tests/.claude-audit
 # ==============================================
 # Modulo Activity Laraxot - Template standardizzato
 # Ultimo aggiornamento: 2025-01-31
+<<<<<<< .merge_file_rEubAJ
 # ==============================================
 
 # ==============================================
+=======
+
+>>>>>>> .merge_file_ZygYjt
 # DEPENDENCIES & PACKAGES
 # ==============================================
 /vendor/
@@ -39,7 +43,10 @@ composer.lock
 yarn-error.log
 npm-debug.log
 
+<<<<<<< .merge_file_rEubAJ
 # ==============================================
+=======
+>>>>>>> .merge_file_ZygYjt
 # BUILD & COMPILED FILES
 # ==============================================
 /build
@@ -49,7 +56,10 @@ dist/
 docs/cache/
 cache/
 
+<<<<<<< .merge_file_rEubAJ
 # ==============================================
+=======
+>>>>>>> .merge_file_ZygYjt
 # CACHE & TEMPORARY FILES
 # ==============================================
 *.cache
@@ -65,7 +75,10 @@ v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
 
+<<<<<<< .merge_file_rEubAJ
 # ==============================================
+=======
+>>>>>>> .merge_file_ZygYjt
 # LOG FILES
 # ==============================================
 *.log
@@ -74,7 +87,10 @@ npm-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+<<<<<<< .merge_file_rEubAJ
 # ==============================================
+=======
+>>>>>>> .merge_file_ZygYjt
 # LARAVEL SPECIFIC
 # ==============================================
 bootstrap/compiled.php
@@ -88,7 +104,10 @@ storage/*.key
 .env.*
 !.env.example
 
+<<<<<<< .merge_file_rEubAJ
 # ==============================================
+=======
+>>>>>>> .merge_file_ZygYjt
 # ENVIRONMENT & CONFIGURATION
 # ==============================================
 Homestead.yaml
@@ -98,14 +117,20 @@ Homestead.json
 .phpintel
 .vscode/
 
+<<<<<<< .merge_file_rEubAJ
 # ==============================================
+=======
+>>>>>>> .merge_file_ZygYjt
 # GIT SPECIFIC
 # ==============================================
 .git-rewrite/
 .git-rewrite
 .git-blame-ignore-revs
 
+<<<<<<< .merge_file_rEubAJ
 # ==============================================
+=======
+>>>>>>> .merge_file_ZygYjt
 # SYSTEM FILES
 # ==============================================
 .DS_Store
@@ -117,7 +142,10 @@ ehthumbs.db
 Thumbs.db
 *~
 
+<<<<<<< .merge_file_rEubAJ
 # ==============================================
+=======
+>>>>>>> .merge_file_ZygYjt
 # BACKUP FILES
 # ==============================================
 *.old
@@ -131,28 +159,43 @@ Thumbs.db
 *.bakcup
 *.new
 
+<<<<<<< .merge_file_rEubAJ
 # ==============================================
+=======
+>>>>>>> .merge_file_ZygYjt
 # DEVELOPMENT TOOLS
 # ==============================================
 .windsurf/
 .cursor/
 .phpstorm.meta.php
 
+<<<<<<< .merge_file_rEubAJ
 # ==============================================
+=======
+>>>>>>> .merge_file_ZygYjt
 # DOCUMENTATION CACHE
 # ==============================================
 docs/phpstan/
+<<<<<<< .merge_file_rEubAJ
 docs/cache/
 docs/legacy/
 docs/legacy/**
 
 # ==============================================
+=======
+docs/legacy/
+docs/legacy/**
+
+>>>>>>> .merge_file_ZygYjt
 # LANGUAGE FILES
 # ==============================================
 lang/lang/
 resources/lang/
 
+<<<<<<< .merge_file_rEubAJ
 # ==============================================
+=======
+>>>>>>> .merge_file_ZygYjt
 # OLD DIRECTORIES (LEGACY CLEANUP)
 # ==============================================
 resources/views/Components_old/
@@ -161,7 +204,10 @@ database/Seeders_old/
 database/Factories_old/
 database_old/
 
+<<<<<<< .merge_file_rEubAJ
 # ==============================================
+=======
+>>>>>>> .merge_file_ZygYjt
 # MODULE SPECIFIC - ACTIVITY
 # ==============================================
 # File di configurazione locale
@@ -176,17 +222,24 @@ storage/logs/
 activity_test_data.json
 test_activity_logs.sql
 
+<<<<<<< .merge_file_rEubAJ
 # ==============================================
 # END OF ACTIVITY .GITIGNORE
 # ==============================================
+=======
+# END OF ACTIVITY .GITIGNORE
+>>>>>>> .merge_file_ZygYjt
 
 # File specifici del progetto
 *.fila2
 laravel
 public_html
 tests/coverage
+<<<<<<< .merge_file_rEubAJ
 lang/lang/
 _docs/
+=======
+>>>>>>> .merge_file_ZygYjt
 _docs/
 tests/coverage/
 tests/coverage.xml/
@@ -251,3 +304,7 @@ tests/activity_coverage.xml
 /.github/skills/
 docs/graphify
 resources/lang
+<<<<<<< .merge_file_rEubAJ
+=======
+Activity
+>>>>>>> .merge_file_ZygYjt

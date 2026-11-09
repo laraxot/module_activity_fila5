@@ -5,12 +5,17 @@ declare(strict_types=1);
 namespace Modules\Activity\Actions\Query;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< .merge_file_FglH1P
 <<<<<<< .merge_file_JsyXij
 =======
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 >>>>>>> .merge_file_INBvN0
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> .merge_file_rKgBB5
 use Illuminate\Support\Facades\Cache;
+use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
@@ -35,9 +40,17 @@ class GetActivityStatisticsAction
         };
         $cacheKey = 'activity.statistics.'.$cacheKeySuffix;
 
+<<<<<<< .merge_file_FglH1P
         return Cache::remember($cacheKey, now()->addMinutes(5), function () use ($user): array {
             return $this->computeStatistics($user);
         });
+=======
+        $statistics = Cache::remember($cacheKey, now()->addMinutes(5), function () use ($user): array {
+            return $this->computeStatistics($user);
+        });
+
+        return is_array($statistics) ? $this->normalizeStatistics($statistics) : $this->computeStatistics($user);
+>>>>>>> .merge_file_rKgBB5
     }
 
     /**
@@ -45,11 +58,19 @@ class GetActivityStatisticsAction
      */
     private function computeStatistics(?UserContract $user): array
     {
+<<<<<<< .merge_file_FglH1P
         $query = Activity::newQuery();
 
         if ($user) {
             if (! $user instanceof Model) {
                 throw new \InvalidArgumentException('User must be an Eloquent model');
+=======
+        $query = Activity::typedQuery();
+
+        if ($user) {
+            if (! $user instanceof Model) {
+                throw new InvalidArgumentException('User must be an Eloquent model');
+>>>>>>> .merge_file_rKgBB5
             }
             $query->where('causer_id', $user->getKey())
                 ->where('causer_type', $user::class);
@@ -77,11 +98,25 @@ class GetActivityStatisticsAction
      */
     private function countByType(Builder $query): array
     {
+<<<<<<< .merge_file_FglH1P
         $results = $query->clone()
+=======
+        $results = Activity::typedGet($query->clone()
+>>>>>>> .merge_file_rKgBB5
             ->selectRaw('event, COUNT(*) as count')
             ->groupBy('event')
-            ->get();
+        );
 
+        $byType = [];
+        foreach ($results as $activity) {
+            $event = $activity->getAttribute('event');
+            $count = $activity->getAttribute('count');
+
+            if (! is_string($event) || $event === '') {
+                continue;
+            }
+
+<<<<<<< .merge_file_FglH1P
         $byType = [];
         foreach ($results as $activity) {
             $event = $activity->getAttribute('event');
@@ -95,9 +130,42 @@ class GetActivityStatisticsAction
                 continue;
             }
 
+=======
+            if (! is_int($count) && ! (is_string($count) && ctype_digit($count))) {
+                continue;
+            }
+
+>>>>>>> .merge_file_rKgBB5
             $byType[$event] = (int) $count;
         }
 
         return $byType;
+    }
+
+    /**
+     * @param array<mixed, mixed> $statistics
+     * @return array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int}
+     */
+    private function normalizeStatistics(array $statistics): array
+    {
+        $byType = [];
+        foreach (is_array($statistics['by_type'] ?? null) ? $statistics['by_type'] : [] as $type => $count) {
+            if (is_string($type) && (is_int($count) || is_numeric($count))) {
+                $byType[$type] = (int) $count;
+            }
+        }
+
+        return [
+            'total' => $this->normalizeInteger($statistics['total'] ?? null),
+            'by_type' => $byType,
+            'today' => $this->normalizeInteger($statistics['today'] ?? null),
+            'this_week' => $this->normalizeInteger($statistics['this_week'] ?? null),
+            'this_month' => $this->normalizeInteger($statistics['this_month'] ?? null),
+        ];
+    }
+
+    private function normalizeInteger(mixed $value): int
+    {
+        return is_int($value) ? $value : (is_string($value) && is_numeric($value) ? (int) $value : 0);
     }
 }

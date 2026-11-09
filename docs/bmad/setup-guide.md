@@ -1,5 +1,5 @@
 ---
-title: "Activity — BMAD Setup Guide"
+title: "Activity: BMAD Setup Guide"
 description: "Setup e configurazione BMAD per il modulo Activity"
 module: "Activity"
 alias: "activity"
@@ -12,7 +12,7 @@ tags: [docs, activity, bmad]
 qmd: "activity   bmad setup guide activity"
 ---
 
-# Activity — BMAD Setup Guide
+# Activity: BMAD Setup Guide
 
 ## Scopo
 
@@ -34,7 +34,7 @@ In questo modulo, BMAD serve a:
 - PHPStan Level 10: nessun ignoreErrors
 - Traduzioni dai file: mai hardcoded
 
-## Bad Practices (Pratiche Sbagliate — Mai Fare)
+## Bad Practices (Pratiche Sbagliate: Mai Fare)
 
 - Mai estendere Filament direttamente
 - Mai silenziare PHPStan
@@ -47,7 +47,7 @@ In questo modulo, BMAD serve a:
 | Termine | Sembra Significare | In Realtà Significa |
 |---|---|---|
 | **Action** | Funzione generica | Classe con `execute()` che estende `QueueableAction` |
-| **Service** | Servizio generico | **Vietato** in Xot — usare `Actions` |
+| **Service** | Servizio generico | **Vietato** in Xot: usare `Actions` |
 | **Module/Modulo** | Pacchetto generico | Modulo con `module.json`, `XotBaseServiceProvider` |
 | **Resource** | Risorsa generica | `XotBaseResource` con `form()`, `table()` |
 
