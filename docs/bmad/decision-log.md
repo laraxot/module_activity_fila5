@@ -21,17 +21,10 @@ qmd: "decision log - modulo activity activity"
 
 ## Registro delle decisioni
 
-<<<<<<< .merge_file_0rZgm3
-### 2026-10-20 — Gate PHPStan Modules — rieseguito OK
-
-- **Verifica:** `cd laravel && php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Activity` (audit random) → exit 0; allineato a [decision-log.md](../decision-log.md) (wave test 2026-10-20).
-- **Docs:** `md-filenames.py check` su `docs/` → 0 date/suffissi; legacy maiuscole in radice (73 file) — inventory only.
-=======
 ### 2026-10-20: Gate PHPStan Modules: rieseguito OK
 
 - **Verifica:** `cd laravel && php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Activity` (audit random) → exit 0; allineato a [decision-log.md](../decision-log.md) (wave test 2026-10-20).
 - **Docs:** `md-filenames.py check` su `docs/` → 0 date/suffissi; legacy maiuscole in radice (73 file): inventory only.
->>>>>>> .merge_file_iofPjz
 - **Track:** [phpstan-fixes.md](../phpstan-fixes.md), [00-INDEX.md](../00-index.md), [phpstan-test-wave-activity.story.md](../stories/phpstan-test-wave-activity.story.md).
 
 ### 2026-09-29

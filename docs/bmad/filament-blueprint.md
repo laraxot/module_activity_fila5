@@ -1,9 +1,5 @@
 ---
-<<<<<<< .merge_file_Ou6NX2
-title: "Filament Blueprint — Activity"
-=======
 title: "Filament Blueprint: Activity"
->>>>>>> .merge_file_P1DhUy
 type: filament-blueprint
 status: active
 module: Activity
@@ -23,11 +19,7 @@ i confini di dominio.
 
 ## Regole non negoziabili
 
-<<<<<<< .merge_file_Ou6NX2
-1. Estendere solo `XotBaseResource` / `XotBaseWidget` / basi Xot — mai classi Filament dirette.
-=======
 1. Estendere solo `XotBaseResource` / `XotBaseWidget` / basi Xot: mai classi Filament dirette.
->>>>>>> .merge_file_P1DhUy
 2. Nessun `->label()` hardcoded: chiavi in `lang/<locale>/` del modulo.
 3. Business logic nelle Actions del modulo, non nei form hooks grassi.
 4. FO: widget montati esplicitamente; non abusare `discoverWidgets` per chrome.

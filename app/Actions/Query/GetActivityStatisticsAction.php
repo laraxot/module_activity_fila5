@@ -5,15 +5,7 @@ declare(strict_types=1);
 namespace Modules\Activity\Actions\Query;
 
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< .merge_file_FglH1P
-<<<<<<< .merge_file_JsyXij
-=======
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Collection;
->>>>>>> .merge_file_INBvN0
-=======
-use Illuminate\Database\Eloquent\Model;
->>>>>>> .merge_file_rKgBB5
 use Illuminate\Support\Facades\Cache;
 use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
@@ -40,17 +32,11 @@ class GetActivityStatisticsAction
         };
         $cacheKey = 'activity.statistics.'.$cacheKeySuffix;
 
-<<<<<<< .merge_file_FglH1P
-        return Cache::remember($cacheKey, now()->addMinutes(5), function () use ($user): array {
-            return $this->computeStatistics($user);
-        });
-=======
         $statistics = Cache::remember($cacheKey, now()->addMinutes(5), function () use ($user): array {
             return $this->computeStatistics($user);
         });
 
         return is_array($statistics) ? $this->normalizeStatistics($statistics) : $this->computeStatistics($user);
->>>>>>> .merge_file_rKgBB5
     }
 
     /**
@@ -58,19 +44,11 @@ class GetActivityStatisticsAction
      */
     private function computeStatistics(?UserContract $user): array
     {
-<<<<<<< .merge_file_FglH1P
-        $query = Activity::newQuery();
-
-        if ($user) {
-            if (! $user instanceof Model) {
-                throw new \InvalidArgumentException('User must be an Eloquent model');
-=======
         $query = Activity::typedQuery();
 
         if ($user) {
             if (! $user instanceof Model) {
                 throw new InvalidArgumentException('User must be an Eloquent model');
->>>>>>> .merge_file_rKgBB5
             }
             $query->where('causer_id', $user->getKey())
                 ->where('causer_type', $user::class);
@@ -98,11 +76,7 @@ class GetActivityStatisticsAction
      */
     private function countByType(Builder $query): array
     {
-<<<<<<< .merge_file_FglH1P
-        $results = $query->clone()
-=======
         $results = Activity::typedGet($query->clone()
->>>>>>> .merge_file_rKgBB5
             ->selectRaw('event, COUNT(*) as count')
             ->groupBy('event')
         );
@@ -116,26 +90,10 @@ class GetActivityStatisticsAction
                 continue;
             }
 
-<<<<<<< .merge_file_FglH1P
-        $byType = [];
-        foreach ($results as $activity) {
-            $event = $activity->getAttribute('event');
-            $count = $activity->getAttribute('count');
-
-            if (! is_string($event) || $event === '') {
-                continue;
-            }
-
             if (! is_int($count) && ! (is_string($count) && ctype_digit($count))) {
                 continue;
             }
 
-=======
-            if (! is_int($count) && ! (is_string($count) && ctype_digit($count))) {
-                continue;
-            }
-
->>>>>>> .merge_file_rKgBB5
             $byType[$event] = (int) $count;
         }
 

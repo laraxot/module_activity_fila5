@@ -1,9 +1,5 @@
 ---
-<<<<<<< .merge_file_x5PdRh
-title: "BMAD Brainstorming — Activity"
-=======
 title: "BMAD Brainstorming: Activity"
->>>>>>> .merge_file_8xUQqx
 type: bmad-brainstorming
 status: synthesized
 module: Activity
@@ -51,11 +47,7 @@ Come distinguere audit generico Activity dal ledger civico TicketActivity senza 
 | Eliminate | Duplicazioni di verita (second store, Livewire legacy, Controllers) | H | H |
 | Reverse | Progettare dai failure mode privacy/authz prima delle feature | H | H |
 
-<<<<<<< .merge_file_x5PdRh
-## Reverse brainstorming — come romperlo
-=======
 ## Reverse brainstorming: come romperlo
->>>>>>> .merge_file_8xUQqx
 
 - Copiare planning Ticket in questo owner (gia successo: stub da correggere).
 - Mettere business rules nel tema o Controllers.
@@ -72,8 +64,4 @@ Come distinguere audit generico Activity dal ledger civico TicketActivity senza 
 
 ## Prossimo step BMAD
 
-<<<<<<< .merge_file_x5PdRh
-Vedi [bmad-planning.md](./bmad-planning.md) — eseguire la Wave 1 e aggiornare il decision-log owner.
-=======
 Vedi [bmad-planning.md](./bmad-planning.md): eseguire la Wave 1 e aggiornare il decision-log owner.
->>>>>>> .merge_file_8xUQqx

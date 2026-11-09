@@ -9,12 +9,9 @@ use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
 
-<<<<<<< .merge_file_FnwhSm
-=======
 /**
  * @phpstan-require-extends Model
  */
->>>>>>> .merge_file_ae8gwP
 trait HasEvents
 {
     /**

@@ -1,9 +1,5 @@
 ---
-<<<<<<< .merge_file_2fibcs
-title: "BMAD Planning — Activity"
-=======
 title: "BMAD Planning: Activity"
->>>>>>> .merge_file_RRjG9F
 type: bmad-planning
 status: active
 module: Activity

@@ -1,10 +1,6 @@
 ---
 type: decision-log
-<<<<<<< .merge_file_7OCdr8
-title: "Decision Log — Activity"
-=======
 title: "Decision Log: Activity"
->>>>>>> .merge_file_A0WTa9
 links: {github_issue: "#XXX", discussion: "#XXX"}
 status: draft
 updated: 2026-10-20
@@ -22,11 +18,7 @@ qmd: "decision log   activity activity"
 - **Because:** `git diff <orig-head> <onto>` e' vuoto, quindi l'albero corretto e' `7083148f`, che contiene tutto; il commit `36463864` e' l'auto-commit di un conflitto. Dettaglio: [story](./stories/phpstan-zero-errors-activity.story.md).
 - **Open:** concludere o abortire il rebase (utente); unificare i due `ActivityLogger`; scegliere una sola forma (costruttore o `execute($model)`) per le Action `LogModel*`/`LogUser*`.
 
-<<<<<<< .merge_file_7OCdr8
-### 2026-10-20: PHPStan `variable.unused` nei test — scopo prima del fix
-=======
 ### 2026-10-20: PHPStan `variable.unused` nei test: scopo prima del fix
->>>>>>> .merge_file_A0WTa9
 
 - **Choose:** ripulire assegnazioni morte nei test (skeleton post-merge) senza inventare asserzioni o schema DB; documentare famiglia e file in [bmad-variable-unused.md](./bmad-variable-unused.md).
 - **Over:** `@phpstan-ignore`, stub vuoti extra, escludere test dal neon.

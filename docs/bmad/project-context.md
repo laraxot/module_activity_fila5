@@ -1,9 +1,5 @@
 ---
-<<<<<<< .merge_file_35p1G2
-title: "Project context — Activity"
-=======
 title: "Project context: Activity"
->>>>>>> .merge_file_7Zce2c
 type: constitution
 module: Activity
 track: quick-flow
@@ -18,11 +14,7 @@ related:
   - ./filament-blueprint.md
 ---
 
-<<<<<<< .merge_file_35p1G2
-# Costituzione — Activity
-=======
 # Costituzione: Activity
->>>>>>> .merge_file_7Zce2c
 
 Offrire storia operativa affidabile per ogni mutazione di dominio rilevante.
 

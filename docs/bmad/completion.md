@@ -1,20 +1,12 @@
 ---
-<<<<<<< .merge_file_bkaCg7
-title: "BMAD completion pack — Activity"
-=======
 title: "BMAD completion pack: Activity"
->>>>>>> .merge_file_b1FRlW
 type: note
 status: draft
 updated: 2026-10-26
 tags: [docs, activity, bmad]
 qmd: "bmad completion pack   activity activity"
 ---
-<<<<<<< .merge_file_bkaCg7
-# BMAD completion pack — Activity
-=======
 # BMAD completion pack: Activity
->>>>>>> .merge_file_b1FRlW
 
 This is the owner-local BMAD entry point. Cross-owner contracts are in plans/fixcity-completion-architecture.md; the backlog is in docs/completion-backlog.md.
 

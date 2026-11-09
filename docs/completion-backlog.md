@@ -1,20 +1,12 @@
 ---
-<<<<<<< .merge_file_sg3Hc3
-title: "Activity — completion backlog"
-=======
 title: "Activity: completion backlog"
->>>>>>> .merge_file_ak6FuC
 type: note
 status: draft
 updated: 2026-10-26
 tags: [docs, activity]
 qmd: "activity   completion backlog activity"
 ---
-<<<<<<< .merge_file_sg3Hc3
-# Activity — completion backlog
-=======
 # Activity: completion backlog
->>>>>>> .merge_file_ak6FuC
 
 Status: partial and evidence-driven. This file is the canonical owner-local list for future work.
 

@@ -220,10 +220,7 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 - Riferimento globale: [Pre-Edit Docs-First Rule](../../../../docs/rules/pre-edit-docs-first-rule.md)
 - Memory: [Pre-Edit Docs-First Memory](../../../../docs/memory/pre-edit-docs-first-memory.md)
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
-<<<<<<< .merge_file_oHO3Fe
-=======
 
 ## Cosa manca per completare
 
 [completion-status.md](./completion-status.md): indicatori misurati, problemi noti e story aperte (2026-10-28).
->>>>>>> .merge_file_RE4R1X

@@ -25,10 +25,6 @@ class ListStoredEvents extends XotBaseListRecords
      */
     public function getTableColumns(): array
     {
-<<<<<<< .merge_file_MeY8IT
-        /** @phpstan-var view-string */
-=======
->>>>>>> .merge_file_UaHTGH
         $eventPropertiesView = 'activity::filament.tables.columns.event-properties';
 
         return [
