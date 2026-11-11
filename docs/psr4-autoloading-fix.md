@@ -322,7 +322,7 @@ Analisi: tutti i file indicati erano gia' stati convertiti a factory functions +
 I warning erano da classmap composer stantio. Fix: `composer dump-autoload`.
 
 Lezione chiave: i warning PSR-4 su classi che non esistono piu' nei file indicano classmap
-obsoleto — non richiedono modifiche al codice, solo `composer dump-autoload`.
+obsoleto: non richiedono modifiche al codice, solo `composer dump-autoload`.
 
 ---
 

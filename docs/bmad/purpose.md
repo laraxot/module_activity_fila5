@@ -1,26 +1,26 @@
 ---
-title: "Activity — scopo del modulo e come raggiungerlo meglio"
+title: "Activity: scopo del modulo e come raggiungerlo meglio"
 type: concept
 created: 2026-09-02
 tags: [activity, purpose, audit, event-sourcing, snapshot, tracciabilita]
 qmd: "activity scopo modulo audit log event sourcing snapshot stored event tracciabilita chi ha cambiato"
 updated: 2026-09-02
 issues:
-  # DA CREARE — `gh` non autenticato: mai numeri inventati.
+  # DA CREARE: `gh` non autenticato: mai numeri inventati.
   # gh issue create --repo provtv/module_activity_fila5 --title "<argomento del file>"
   - "https://github.com/provtv/module_activity_fila5/issues/"
 discussions:
-  # DA CREARE — vedi sopra.
+  # DA CREARE: vedi sopra.
   - "https://github.com/provtv/module_activity_fila5/discussions/"
 status: superseded
 superseded_by: ../purpose.md
 ---
 
-# Activity — perche' esiste
+# Activity: perche' esiste
 
 ## Lo scopo in una frase
 
-**Activity risponde alla domanda "chi ha cambiato cosa, quando e com'era prima" — che
+**Activity risponde alla domanda "chi ha cambiato cosa, quando e com'era prima": che
 in una pubblica amministrazione non e' curiosita', e' un obbligo.**
 
 ## L'evidenza
@@ -42,8 +42,8 @@ grande di conseguenze.
 - L'**event sourcing** e' il dato: lo stato *e'* la somma degli eventi, e lo snapshot e'
   solo un'ottimizzazione. Perdere gli eventi significa perdere tutto.
 
-Trattarli allo stesso modo — per esempio applicando una politica di cancellazione
-uniforme — e' l'errore da evitare. **Uno si puo' potare, l'altro no.**
+Trattarli allo stesso modo: per esempio applicando una politica di cancellazione
+uniforme: e' l'errore da evitare. **Uno si puo' potare, l'altro no.**
 
 ## Come raggiungerlo **meglio**
 
@@ -52,7 +52,7 @@ uniforme — e' l'errore da evitare. **Uno si puo' potare, l'altro no.**
 Oggi la scelta e' implicita nel codice. Chi entra non sa se una scheda e' event-sourced
 o solo loggata, e la risposta cambia cosa e' lecito fare.
 
-**Azione:** una tabella in `docs/` — entita' → meccanismo → motivo. Una pagina, ma
+**Azione:** una tabella in `docs/`: entita' → meccanismo → motivo. Una pagina, ma
 decide se un `delete` e' recuperabile.
 
 ### 2. Il log va potato con una regola dichiarata; gli eventi mai
@@ -70,7 +70,7 @@ regola dei dati sacri: nessun comando distruttivo deciso dall'agente.
 schema. Un responsabile deve poter leggere "il valutatore e' passato da Rossi a
 Bianchi".
 
-**Azione:** una resa leggibile per le entita' che contano davvero — schede,
+**Azione:** una resa leggibile per le entita' che contano davvero: schede,
 valutazioni, importi. Non per tutte: per quelle che finiscono in un contraddittorio.
 
 ### 4. Il nome `Activity` collide con `Activity` di Incentivi
@@ -87,7 +87,7 @@ nient'altro. In un `use` distratto la collisione e' silenziosa.
 Come Xot e Notify: serve un `index.md` a una schermata e un solo canonico per
 argomento.
 
-## Confini — cosa **non** appartiene ad Activity
+## Confini: cosa **non** appartiene ad Activity
 
 - Il **significato** di cio' che e' cambiato: modulo di dominio.
 - **Chi** e' l'autore come identita': User. Qui si registra il riferimento.
@@ -95,5 +95,5 @@ argomento.
 
 ## Collegamenti
 
-- `laravel/Modules/Incentivi/docs/purpose.md` — la collisione di nome
+- `laravel/Modules/Incentivi/docs/purpose.md`: la collisione di nome
 - `docs/wiki/memories/data-sacred-no-destructive-db.md`

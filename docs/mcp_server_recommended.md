@@ -10,4 +10,4 @@ tags: [docs, activity]
 qmd: "mcp server recommended activity"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/MCP-SERVER-RECOMMENDED.md
+See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules

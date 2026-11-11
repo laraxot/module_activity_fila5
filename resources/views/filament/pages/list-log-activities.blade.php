@@ -1,7 +1,3 @@
-<?php
-
-declare(strict_types=1);
-?>
 @php
     use \Illuminate\Support\Js;
 @endphp
@@ -79,7 +75,7 @@ declare(strict_types=1);
 
                         @if ($activityItem->batch_uuid)
                             <x-filament::badge color="warning" icon="heroicon-o-queue-list" size="sm">
-                                Batch: {{ Str::limit($activityItem->batch_uuid, 8, '...') }}
+                                {{ __('activity::list_log_activities.fields.batch.label') }}: {{ Str::limit($activityItem->batch_uuid, 8, '...') }}
                             </x-filament::badge>
                         @endif
                     </div>

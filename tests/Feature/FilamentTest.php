@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
-
 use Filament\Actions\Action;
 use Filament\Tables\Table;
 use Modules\Activity\Events\ActivityEvent;
@@ -26,10 +25,9 @@ use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 use PHPUnit\Framework\Assert;
-
 use function Safe\class_uses;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 describe('ActivityEvent', function (): void {
     test('can be instantiated', function (): void {
@@ -88,10 +86,10 @@ describe('CanPaginate trait', function (): void {
         Assert::assertTrue($trait->hasProperty('recordsPerPage'));
     });
 
-    test('trait has defaultPerPageOption property', function (): void {
+    test('trait has defaultRecordsPerPageSelectOption property', function (): void {
         $trait = new \ReflectionClass(CanPaginate::class);
 
-        Assert::assertTrue($trait->hasProperty('defaultPerPageOption'));
+        Assert::assertTrue($trait->hasProperty('defaultRecordsPerPageSelectOption'));
     });
 
     test('trait has getRecordsPerPageSelectOptions method', function (): void {
@@ -161,9 +159,9 @@ describe('ListActivities page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListActivities;
-        $columns = $page->table(Table::make($page))->getColumns();
+        $table = $page->table(Table::make($page));
+        $columns = $table->getColumns();
 
-        Assert::assertNotEmpty($columns);
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('description', $columns);
         Assert::assertArrayHasKey('subject_type', $columns);
@@ -211,9 +209,9 @@ describe('ListSnapshots page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListSnapshots;
-        $columns = $page->table(Table::make($page))->getColumns();
+        $table = $page->table(Table::make($page));
+        $columns = $table->getColumns();
 
-        Assert::assertNotEmpty($columns);
         Assert::assertArrayHasKey('id', $columns);
         Assert::assertArrayHasKey('aggregate_uuid', $columns);
         Assert::assertArrayHasKey('aggregate_version', $columns);
@@ -224,21 +222,26 @@ describe('ListSnapshots page', function (): void {
 
     test('has table filters', function (): void {
         $page = new ListSnapshots;
-        $filters = $page->table(Table::make($page))->getFilters();
+        $table = $page->table(Table::make($page));
+        $filters = $table->getFilters();
 
         Assert::assertNotEmpty($filters);
     });
 
     test('has table actions', function (): void {
         $page = new ListSnapshots;
-        $actions = $page->table(Table::make($page))->getRecordActions();
+        $table = $page->table(Table::make($page));
+        $actions = $table->getRecordActions();
 
-        Assert::assertNotEmpty($actions);
+        Assert::assertArrayHasKey('view', $actions);
+        Assert::assertArrayHasKey('edit', $actions);
+        Assert::assertArrayHasKey('delete', $actions);
     });
 
     test('has bulk actions', function (): void {
         $page = new ListSnapshots;
-        $bulkActions = $page->table(Table::make($page))->getToolbarActions();
+        $table = $page->table(Table::make($page));
+        $bulkActions = $table->getFlatBulkActions();
 
         Assert::assertNotEmpty($bulkActions);
     });
@@ -282,8 +285,11 @@ describe('ListStoredEvents page', function (): void {
 
     test('has table columns', function (): void {
         $page = new ListStoredEvents;
-        $columns = $page->table(Table::make($page))->getColumns();
+        $table = $page->table(Table::make($page));
+        $columns = $table->getColumns();
 
-        Assert::assertNotEmpty($columns);
+        Assert::assertArrayHasKey('id', $columns);
+        Assert::assertArrayHasKey('event_class', $columns);
+        Assert::assertArrayHasKey('event_properties', $columns);
     });
 });

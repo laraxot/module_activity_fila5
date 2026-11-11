@@ -47,7 +47,7 @@ This keeps DRY/KISS without hiding module database boundaries.
 ## Verified Facts
 
 - Official Laravel Modules v13 test docs show Pest usage through `uses(Tests\TestCase::class)` and `vendor/bin/pest`.
-- Upstream `tests/BaseTestCase.php` (GitHub v13.0.0) extends Orchestra Testbench — dev-only, not in consumer autoload.
+- Upstream `tests/BaseTestCase.php` (GitHub v13.0.0) extends Orchestra Testbench: dev-only, not in consumer autoload.
 - Local vendor package has no autoloaded `Nwidart\Modules\Tests\BaseTestCase` class.
 - The upstream test stubs use the application `Tests\TestCase`, not a package-provided test base.
 

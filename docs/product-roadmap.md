@@ -139,4 +139,12 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 
 ---
 
-*Last Updated: March 12, 2026*=======
+## Related Documents
+
+- [PRD](prd.md)
+- [Product Strategy](product-strategy.md)
+- [Sprint Planning Meeting](sprint-planning-meeting.md)
+
+---
+
+*Last Updated: March 12, 2026*

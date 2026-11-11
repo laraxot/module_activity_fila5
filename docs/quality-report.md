@@ -1,5 +1,5 @@
 ---
-title: "Quality Report — Activity"
+title: "Quality Report: Activity"
 type: report
 tags: [quality, phpstan, pest, coverage]
 module: Activity
@@ -9,7 +9,7 @@ qmd: "Activity quality report phpstan pest coverage test ratio"
 status: draft
 ---
 
-# Quality Report — Activity
+# Quality Report: Activity
 
 Aggiornato: 2026-08-24. Rigenera con: `bashscripts/tools/quality-report.sh Activity`
 

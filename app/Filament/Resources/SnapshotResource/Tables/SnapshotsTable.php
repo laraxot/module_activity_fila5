@@ -6,7 +6,10 @@ namespace Modules\Activity\Filament\Resources\SnapshotResource\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\BaseFilter;
+use Filament\Tables\Filters\SelectFilter;
 use Modules\Activity\Models\Snapshot;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 use function Safe\json_encode;
@@ -33,7 +36,26 @@ class SnapshotsTable extends XotBaseResourceTable
                 ->toggleable(isToggledHiddenByDefault: true),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->toggleable(isToggledHiddenByDefault: true),
-            'id' => TextColumn::make('id')->searchable()->sortable()->toggleable(isToggledHiddenByDefault: true),
+            'id' => IDColumn::make('id')->searchable()->sortable()->toggleable(isToggledHiddenByDefault: true),
+        ];
+    }
+
+    /**
+     * @return array<string, BaseFilter>
+     */
+    public function getTableFilters(): array
+    {
+        return [
+            'aggregate_uuid' => SelectFilter::make('aggregate_uuid')
+                ->searchable()
+                ->getSearchResultsUsing(fn (string $search): array => (new Snapshot)->newQuery()
+                    ->where('aggregate_uuid', 'like', "%{$search}%")
+                    ->distinct()
+                    ->orderBy('aggregate_uuid')
+                    ->limit(50)
+                    ->pluck('aggregate_uuid', 'aggregate_uuid')
+                    ->all())
+                ->getOptionLabelUsing(fn (string $value): string => $value),
         ];
     }
 }

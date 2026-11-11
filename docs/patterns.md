@@ -8,7 +8,7 @@ status: draft
 qmd: "activity module   patterns activity"
 ---
 
-# Activity Module — Patterns
+# Activity Module: Patterns
 
 ## Audit Trail Pattern
 

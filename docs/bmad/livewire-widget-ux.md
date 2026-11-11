@@ -1,5 +1,5 @@
 ---
-title: "UX — Activity"
+title: "UX: Activity"
 type: ux-design
 module: Activity
 related:

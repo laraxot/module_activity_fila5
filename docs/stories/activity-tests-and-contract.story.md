@@ -1,16 +1,21 @@
 ---
 title: "Activity: test che non girano o non provano e contratto del modulo"
 type: story
-status: ready-for-dev
+status: blocked
 priority: P2
 created: 2026-10-20
-updated: 2026-10-20
+updated: 2026-10-30
 module: Activity
 epic: ../../../Xot/docs/bmad/epic-code-quality-ratchet.md
 depends_on:
   - ../../../Xot/docs/stories/test-database-guard.story.md
   - ./phpstan-test-wave-activity.story.md
 tags: [bmad, activity, tests, pest, test-database, sqlite, skip, tautologies, filament-blueprint, w2]
+qmd: "Activity Pest test_data.sqlite SQLite condiviso XotBaseTestCase dati sacri blocker"
+issues:
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/328"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/329"
 ---
 
 # Activity: test che non girano o non provano e contratto del modulo
@@ -27,6 +32,65 @@ Ordine permanente dell'utente (2026-10-20): "migliora qualità codice , fa tutto
 - I test con scrittura hanno bisogno di quelle tre tabelle nel DB di test: senza, falliscono per colpa dell'ambiente, non del codice.
 
 ## Stato misurato
+
+## Diagnosi aggiornata — 2026-10-30
+
+La failure `laravel/database/test_data.sqlite` assente è riproducibile staticamente e
+non nasce dal dominio Activity:
+
+1. `Modules\Activity\Tests\TestCase::setUp()` invoca
+   `prepareSharedSqliteForTesting()` **prima** di `parent::setUp()`.
+2. `XotBaseTestCase::sharedSqlitePath()` cerca `config('xot.testing.sqlite_file')`,
+   poi un unico `laravel/database/*.sqlite`, e infine ricade su
+   `database_path('test_data.sqlite')`.
+3. `laravel/config/xot.php` non definisce `xot.testing.sqlite_file`; la chiave
+   `config/testing.php:database.connections.sqlite_file` è un’altra struttura e non
+   viene letta da quel resolver.
+4. `laravel/database` contiene solo `.gitignore` per `*.sqlite*`; il target di
+   fallback non esiste nel checkout.
+5. Il TestCase quindi punta le connessioni SQLite a un artefatto locale ignorato da
+   Git, ma nessun bootstrap sicuro ne costruisce lo schema prima dell’avvio dei test.
+
+Il comando esistente `php artisan xot:build-test-sqlite` è il meccanismo previsto per
+costruire lo schema, ma il suo sorgente dimostra che:
+
+- crea il file se manca e applica le migration dei moduli;
+- `--fresh` esegue `unlink()` sul target esistente;
+- anche senza `--fresh` modifica il database SQLite indicato.
+
+Per rispetto dei dati sacri non è stato eseguito: manca una verifica esplicita che il
+target sia disposable e non esiste nel repository un database Activity di test già
+pronto. Non è quindi corretto risolvere la failure creando automaticamente un file o
+aggiungendo una migration al `setUp()`.
+
+### Esito della diagnosi
+
+- **Causa primaria:** contratto incoerente: Activity forza SQLite condiviso, mentre
+  `.env.testing` dichiara MySQL (`techplanner_data_test`) e `APP_ENV=local`.
+- **Causa secondaria:** resolver Xot con fallback implicito a un file ignorato e non
+  materializzato.
+- **Codice Activity:** nessuna correzione sicura da applicare senza decidere il banco
+  di test e il suo ciclo di vita.
+- **Blocker:** owner dell’ambiente deve scegliere un database `_test` MySQL oppure
+  autorizzare un target SQLite disposable e il comando non-fresh di build.
+
+### Verifiche eseguite
+
+- letti `Activity/tests/TestCase.php`, `Xot/tests/XotBaseTestCase.php`,
+  `Xot/tests/CreatesApplication.php`, `.env.testing`, `config/testing.php` e
+  `config/xot.php`;
+- verificata l’assenza di `laravel/database/test_data.sqlite` e di qualunque SQLite
+  nella directory `laravel/database`;
+- verificato il sorgente di `xot:build-test-sqlite` senza invocarlo;
+- nessun `migrate`, `migrate:fresh`, `reset`, Pest o connessione al database eseguita;
+- nessun file applicativo modificato e nessun commit creato.
+
+### Prossima azione autorizzabile
+
+Dopo la scelta dell’owner, eseguire una sola lane isolata e tracciata: o test Activity
+su connessioni MySQL con suffisso `_test`, oppure build SQLite su un percorso esplicito
+usa-e-getta, senza `--fresh` alla prima costruzione. Solo dopo rilanciare Pest e
+distinguere failure d’ambiente da failure del dominio.
 
 Misura del 2026-10-20 tra le 13:35 e le 14:05 UTC. Cifre volatili. Il DB non e' stato interrogato in questa sessione.
 
