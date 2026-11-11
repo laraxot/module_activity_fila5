@@ -6,7 +6,7 @@ namespace Modules\Activity\Tests\Unit;
 
 use Carbon\Carbon;
 use PHPUnit\Framework\Assert;
-use Tests\TestCase;
+use Modules\Activity\Tests\TestCase;
 use RuntimeException;
 
 use function Safe\json_decode;
