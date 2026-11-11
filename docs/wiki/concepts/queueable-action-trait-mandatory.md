@@ -17,7 +17,7 @@ related:
 status: draft
 ---
 
-# QueueableAction trait — Activity
+# QueueableAction trait: Activity
 
 ## Audit modulo
 
@@ -25,7 +25,7 @@ status: draft
 bash bashscripts/tools/audit-queueable-action-trait.sh
 ```
 
-Stato 2026-07-12: **OK** — ogni file in `app/Actions/` ha il trait.
+Stato 2026-07-12: **OK**: ogni file in `app/Actions/` ha il trait.
 
 ## Fuori da `app/Actions/` (corretto)
 

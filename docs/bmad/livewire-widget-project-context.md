@@ -1,5 +1,5 @@
 ---
-title: "Project context — Activity"
+title: "Project context: Activity"
 type: constitution
 module: Activity
 related:

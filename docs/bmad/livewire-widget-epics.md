@@ -1,5 +1,5 @@
 ---
-title: "Epics — Activity"
+title: "Epics: Activity"
 type: epics
 module: Activity
 related:

@@ -27,7 +27,7 @@ should return int but returns mixed.
 `getPage()` **non** è definito dal trait `CanPaginate` stesso: viene risolto
 da `Livewire\Features\SupportPagination\HandlesPagination::getPage($pageName = 'page')`,
 che non ha alcun tipo di ritorno dichiarato (nè nativo nè PHPDoc) e internamente
-legge da `public $paginators = [];` (proprietà non tipizzata) — quindi PHPStan
+legge da `public $paginators = [];` (proprietà non tipizzata): quindi PHPStan
 inferisce `mixed`.
 
 Il codice originale:
@@ -75,5 +75,5 @@ metodo esterno non tipizzato.
 
 ## Riferimenti
 
-- Issue: https://github.com/laraxot/module_activity_fila5/issues/15 (STORY-303: PHPStan zero-error Activity tests — riaperta/verificata per questo secondo errore)
+- Issue: https://github.com/laraxot/module_activity_fila5/issues/15 (STORY-303: PHPStan zero-error Activity tests: riaperta/verificata per questo secondo errore)
 - Regola correlata: `docs/wiki/rules/module-git-sync-after-fix.md` (root del progetto)

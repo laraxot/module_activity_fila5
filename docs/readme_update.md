@@ -72,3 +72,4 @@ php artisan test --filter=Snapshot
 php artisan test Modules/Activity --coverage
 ```
 
+See canonical documentation: ../../../Themes/docs/shared-components/README.md.update

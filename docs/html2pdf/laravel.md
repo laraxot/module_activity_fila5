@@ -1,5 +1,5 @@
 ---
-title: "html2pdf laravel — puntatore"
+title: "html2pdf laravel: puntatore"
 type: reference
 updated: 2026-05-21
 related:
@@ -9,7 +9,7 @@ tags: [docs, activity, html2pdf]
 qmd: "html2pdf   laravel activity"
 ---
 
-# Html2Pdf — laravel
+# Html2Pdf: laravel
 
 Stub **DRY**. Documentazione canonica nel modulo **Media** (issue [#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
 

@@ -1,5 +1,5 @@
 ---
-title: "BMAD Planning — Activity"
+title: "BMAD Planning: Activity"
 type: bmad-planning
 status: active
 module: Activity

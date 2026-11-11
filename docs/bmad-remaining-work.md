@@ -1,5 +1,5 @@
 ---
-title: "Activity Module — BMAD Stories & Remaining Work"
+title: "Activity Module: BMAD Stories & Remaining Work"
 type: concept
 sources: ["../../AGENTS.md", "laravel/Modules/Activity/docs/"]
 confidence: medium
@@ -13,7 +13,7 @@ status: draft
 qmd: "activity module   bmad stories & remaining work activity"
 ---
 
-# Activity Module — BMAD Stories & Remaining Work
+# Activity Module: BMAD Stories & Remaining Work
 
 ## Module Overview
 The Activity module manages user activities, events, and interactions within the FixCity platform. It provides a foundation for event-driven architecture and activity tracking.
@@ -26,18 +26,18 @@ The Activity module manages user activities, events, and interactions within the
 ## Remaining Work (BMAD Brainstorming)
 
 ### Critical / High Priority
-1. **PHPStan Zero Verification** — Confirm all activity contracts pass level 10
-2. **Event Processing** — Verify event handling and queueing mechanisms
-4. **QueueableAction Audit** — Confirm all activity actions use QueueableAction pattern
+1. **PHPStan Zero Verification**: Confirm all activity contracts pass level 10
+2. **Event Processing**: Verify event handling and queueing mechanisms
+4. **QueueableAction Audit**: Confirm all activity actions use QueueableAction pattern
 
 ### Medium Priority
-5. **Module Documentation** — Document activity models, actions, and event patterns
-6. **Test Coverage** — Add unit and integration tests for activity processing
-7. **Error Handling** — Verify graceful handling of failed event processing
+5. **Module Documentation**: Document activity models, actions, and event patterns
+6. **Test Coverage**: Add unit and integration tests for activity processing
+7. **Error Handling**: Verify graceful handling of failed event processing
 
 ### Low Priority / Polish
-8. **Performance Optimization** — Review activity processing time and resource usage
-9. **Configuration Documentation** — Document activity-related configuration options
+8. **Performance Optimization**: Review activity processing time and resource usage
+9. **Configuration Documentation**: Document activity-related configuration options
 
 ## Verification Status
 - PHPStan: ✅ Level 10, 0 errors (verified 2026-10-26)

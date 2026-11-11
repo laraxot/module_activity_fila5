@@ -1,6 +1,6 @@
 ---
 id: quality-gates-phpstan-swarm-2026-09-23
-title: PHPStan quality gate swarm — Activity (2026-09-23)
+title: PHPStan quality gate swarm: Activity (2026-09-23)
 type: module-fix
 status: blocked-external
 scope: Activity
@@ -12,12 +12,12 @@ related:
   - ./conflict-markers-cleanup.story.md
   - ./continuazione-domani.md
 references:
-  - sprint-status: "Activity/nested-conflict-markers-86-files (2026-09-22) — ultimo stato verificato: PHPStan Modules/Activity 0 errori"
+  - sprint-status: "Activity/nested-conflict-markers-86-files (2026-09-22): ultimo stato verificato: PHPStan Modules/Activity 0 errori"
 tags: [docs, activity, bmad]
 qmd: "activity   phpstan quality gate swarm (2026-09-23) activity"
 ---
 
-# Activity — PHPStan quality gate swarm (2026-09-23)
+# Activity: PHPStan quality gate swarm (2026-09-23)
 
 ## Contesto
 
@@ -56,7 +56,7 @@ non un report PHPStan normale:
 
 - Tentativo 1: `PHP Fatal error: Cannot make non static method
   Modules\Xot\Filament\Resources\XotBaseResource::getFormSchemaOld() static
-  in class Modules\Incentivi\Filament\Resources\ActivityResource` —
+  in class Modules\Incentivi\Filament\Resources\ActivityResource` -
   `Modules/Incentivi/app/Filament/Resources/ActivityResource.php:28`.
 - Tentativi 2-4: `Application bootstrap failed... Error: syntax error,
   unexpected token "<<", expecting end of file`, sollevato dentro
@@ -84,7 +84,7 @@ Modules/Incentivi/app/Filament/Resources/PhaseResource/Pages/ManagePhaseSettleme
 
 Tutti i file rotti sono in **`Modules/Incentivi`** (nota: contiene una
 propria classe `Filament\Resources\ActivityResource`, senza relazione col
-modulo Activity — coincidenza di nome), confermato anche da
+modulo Activity: coincidenza di nome), confermato anche da
 `git -C Modules/Incentivi status --short` (9 file modificati, non
 committati, al momento del quarto tentativo) e dal fatto che il git status
 iniziale dello swarm (fornito nel prompt) elencava già decine di file
@@ -113,10 +113,10 @@ non modificabile per vincolo di scope.
    Modules/Activity → 0 errori**. Nessuna modifica al codice `app/` di
    Activity è avvenuta tra quel commit e questa sessione (working tree
    pulito, nessun nuovo commit sul codice), quindi non c'è motivo di
-   ritenere che lo stato sia regredito — ma va **riverificato con un run
+   ritenere che lo stato sia regredito: ma va **riverificato con un run
    reale** appena `Modules/Incentivi` torna in uno stato bootstrappabile.
 2. **3x `@phpstan-ignore-next-line`** in
-   `app/Filament/Pages/ListLogActivities.php` (righe 70, 95, 290) — tutti
+   `app/Filament/Pages/ListLogActivities.php` (righe 70, 95, 290): tutti
    con identifier esplicito (`cast.string`, `argument.type`), non generici,
    e già motivati inline (`__()` di Laravel ritorna `string|array|null`).
    Non tolti: sono sopprimazioni scoped correttamente, non "segnalazioni
@@ -124,7 +124,7 @@ non modificabile per vincolo di scope.
    helper tipizzato condiviso resta un miglioramento facoltativo, già
    annotato in `continuazione-domani.md` punto 3, non duplicato qui.
 3. **`@phpstan-ignore trait.unused`** su `app/Traits/HasEvents.php` e
-   `app/Traits/HasSnapshots.php` — trait morti/placeholder, zero usi
+   `app/Traits/HasSnapshots.php`: trait morti/placeholder, zero usi
    verificati nel modulo. Decisione di design (cablarli su un model o
    rimuoverli) già segnalata in `continuazione-domani.md` punto 2, non
    presa qui: non è una segnalazione PHPStan da "sistemare" ma una scelta
@@ -135,7 +135,7 @@ non modificabile per vincolo di scope.
 
 ```
 cd laravel/Modules/Activity && git status --short --branch
-## dev...laraxot/dev   (0 righe — pulito)
+## dev...laraxot/dev   (0 righe: pulito)
 
 cd laravel && ./vendor/bin/phpstan analyse Modules/Activity --no-progress --memory-limit=-1
 # 4/4 tentativi: Application bootstrap failed (causa: Modules/Incentivi, fuori scope)
@@ -145,7 +145,7 @@ Nessuna riga di codice Activity toccata → nessun rischio di regressione
 introdotto da questa sessione. La verifica del gate PHPStan resta un
 **follow-up bloccato** dall'esterno, non un lavoro rimandato per pigrizia.
 
-## Second brain — pattern non ovvio
+## Second brain: pattern non ovvio
 
 `larastan/bootstrap.php` boota l'intera app Laravel e
 `XotBasePanelProvider::panel()->discoverResources()` fa autoload di **tutti**

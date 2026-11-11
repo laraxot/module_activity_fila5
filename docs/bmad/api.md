@@ -9,7 +9,7 @@ status: superseded
 superseded_by: ../wiki/api.md
 ---
 
-# Activity Module — API
+# Activity Module: API
 
 ## LogActivityAction
 
