@@ -1,5 +1,13 @@
 ---
+<<<<<<< .merge_file_06od3q
 title: "Gitmodules sync session — note modulo/tema"
+=======
+<<<<<<< .merge_file_DHvBc7
+title: "Gitmodules sync session — note modulo/tema"
+=======
+title: "Gitmodules sync session: note modulo/tema"
+>>>>>>> .merge_file_pNJYhR
+>>>>>>> .merge_file_nVFa1V
 type: how-to
 tags: [git, gitmodules, sync, quality-gates, merge-conflict]
 created: 2026-07-21
@@ -11,6 +19,13 @@ discussions: []
 related:
   - "../../../../../../docs/stories/STORY-003-gitmodules-sync-conflict-sweep.md"
   - "../../../../../../docs/chat/gitmodules-sync.md"
+<<<<<<< .merge_file_06od3q
+=======
+<<<<<<< .merge_file_DHvBc7
+=======
+status: draft
+>>>>>>> .merge_file_pNJYhR
+>>>>>>> .merge_file_nVFa1V
 ---
 
 # Gitmodules sync session
@@ -19,7 +34,15 @@ Sessione orchestrata dal prompt `bashscripts/tools/prompts/02-gitmodules-sync.md
 
 ## Cosa fare su questo owner
 
+<<<<<<< .merge_file_06od3q
 1. `git remote -v` — sync **tutte** le organizzazioni (`fetch` + `pull --ff-only` + `push`, mai `--force`).
+=======
+<<<<<<< .merge_file_DHvBc7
+1. `git remote -v` — sync **tutte** le organizzazioni (`fetch` + `pull --ff-only` + `push`, mai `--force`).
+=======
+1. `git remote -v`: sync **tutte** le organizzazioni (`fetch` + `pull --ff-only` + `push`, mai `--force`).
+>>>>>>> .merge_file_pNJYhR
+>>>>>>> .merge_file_nVFa1V
 2. Quality gates da `laravel/`: phpstan → phpmd → phpinsights (`--composer=composer.lock`).
 3. Marker Git: risoluzione manuale forward-only (no `git restore`).
 

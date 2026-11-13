@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_LFgWpn
+=======
+<<<<<<< .merge_file_kyYOJM
+=======
+---
+title: "Current State - Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, roadmap]
+qmd: "current state - activity activity"
+---
+>>>>>>> .merge_file_Jf9VPo
+>>>>>>> .merge_file_Cdn7pR
 # Current State - Activity
 
 ## Baseline

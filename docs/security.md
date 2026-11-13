@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_29WAoF
+=======
+<<<<<<< .merge_file_5coTRo
+=======
+---
+title: "Security Documentation"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "security documentation activity"
+---
+>>>>>>> .merge_file_rP8tIo
+>>>>>>> .merge_file_ma9oXo
 # Security Documentation
 
 ## Security Overview
@@ -135,5 +149,13 @@ Route::middleware(['auth:sanctum'])->group(function () {
 ## Related Files
 
 - [`phpstan.md`](#phpstan) - PHPStan security configuration
+<<<<<<< .merge_file_29WAoF
 - [`CODE_QUALITY_ANALYSIS.md`](CODE_QUALITY_ANALYSIS.md) - Code quality standards
+=======
+<<<<<<< .merge_file_5coTRo
+- [`CODE_QUALITY_ANALYSIS.md`](CODE_QUALITY_ANALYSIS.md) - Code quality standards
+=======
+- [`CODE_QUALITY_ANALYSIS.md`](code_quality_analysis.md) - Code quality standards
+>>>>>>> .merge_file_rP8tIo
+>>>>>>> .merge_file_ma9oXo
 - [`TESTING.md`](#testing) - Testing procedures

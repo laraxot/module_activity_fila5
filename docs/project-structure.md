@@ -4,6 +4,14 @@ type: documentation
 created: 2026-05-11
 updated: 2026-05-11
 tags: [structure, architecture, module]
+<<<<<<< .merge_file_ewUDQW
+=======
+<<<<<<< .merge_file_UjVeZk
+=======
+status: draft
+qmd: "project structure   module **activity** activity"
+>>>>>>> .merge_file_loJgEA
+>>>>>>> .merge_file_Qus0xZ
 ---
 
 # Project Structure — Module **Activity**
@@ -95,10 +103,23 @@ graph TD
 ## Riferimenti Globali
 
 - [Project Wiki Root](../../docs/wiki/)
+<<<<<<< .merge_file_ewUDQW
+=======
+<<<<<<< .merge_file_UjVeZk
+>>>>>>> .merge_file_Qus0xZ
 - [Global Rules](../../docs/wiki/rules/)
 - [Global Skills](../../docs/wiki/skills/)
 - [Global Commands](../../docs/wiki/commands/)
 - [Global Memories](../../docs/wiki/memories/)
+<<<<<<< .merge_file_ewUDQW
+=======
+=======
+- [Global Rules](wiki/rules)
+- [Global Skills](wiki/skills)
+- [Global Commands](wiki/commands)
+- [Global Memories](wiki/memories)
+>>>>>>> .merge_file_loJgEA
+>>>>>>> .merge_file_Qus0xZ
 
 ## Setup Initiale (per nuovi moduli)
 

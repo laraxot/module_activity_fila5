@@ -52,6 +52,15 @@ If the project maintainer has any additional requirements, you will find them li
 
 - **Send coherent history** - Make sure each individual commit in your pull request is meaningful. If you had to make multiple intermediate commits while developing, please [squash them](https://www.git-scm.com/book/en/v2/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages) before submitting.
 
+<<<<<<< .merge_file_llAXqF
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+**Happy coding**!
+=======
+>>>>>>> .merge_file_nFyb7P
 # Contributing
 
 Contributions are **welcome** and will be fully **credited**.
@@ -107,4 +116,8 @@ If the project maintainer has any additional requirements, you will find them li
 
 - **Send coherent history** - Make sure each individual commit in your pull request is meaningful. If you had to make multiple intermediate commits while developing, please [squash them](https://www.git-scm.com/book/en/v2/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages) before submitting.
 
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
 **Happy coding**!

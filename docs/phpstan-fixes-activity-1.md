@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_S3yQcW
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_w5lkIL
 # Correzioni PHPStan - Modulo Activity
 
 ## 🚨 Errori PHPStan Risolti
@@ -41,6 +45,31 @@ $activities = \Modules\Activity\Database\Factories\ActivityFactory::new()
 - **Translation files**: Chiavi duplicate rimosse
 - **PHPStan Level 9**: Compliance ripristinata
 
+<<<<<<< .merge_file_S3yQcW
 *Ultimo aggiornamento: gennaio 2025*=======
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+=======
+*Ultimo aggiornamento: gennaio 2025*
+=======
+---
+module: theme
+topic: phpstan-fixes-activity-1
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+---
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+>>>>>>> d4098eb (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+>>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+>>>>>>> 2d6a374 (.)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_w5lkIL

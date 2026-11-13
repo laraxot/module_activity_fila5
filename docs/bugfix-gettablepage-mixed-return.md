@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_W4gMwU
+=======
+<<<<<<< .merge_file_AyYeX3
+=======
+---
+title: "Bugfix: `getTablePage()` returns `mixed` instead of `int` (PHPStan)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "bugfix: `gettablepage()` returns `mixed` instead of `int` (phpstan) activity"
+---
+>>>>>>> .merge_file_TLZyv6
+>>>>>>> .merge_file_aT9CxP
 # Bugfix: `getTablePage()` returns `mixed` instead of `int` (PHPStan)
 
 ## 🐛 Errore
@@ -19,7 +33,15 @@ should return int but returns mixed.
 `getPage()` **non** è definito dal trait `CanPaginate` stesso: viene risolto
 da `Livewire\Features\SupportPagination\HandlesPagination::getPage($pageName = 'page')`,
 che non ha alcun tipo di ritorno dichiarato (nè nativo nè PHPDoc) e internamente
+<<<<<<< .merge_file_W4gMwU
 legge da `public $paginators = [];` (proprietà non tipizzata) — quindi PHPStan
+=======
+<<<<<<< .merge_file_AyYeX3
+legge da `public $paginators = [];` (proprietà non tipizzata) — quindi PHPStan
+=======
+legge da `public $paginators = [];` (proprietà non tipizzata): quindi PHPStan
+>>>>>>> .merge_file_TLZyv6
+>>>>>>> .merge_file_aT9CxP
 inferisce `mixed`.
 
 Il codice originale:
@@ -67,5 +89,13 @@ metodo esterno non tipizzato.
 
 ## Riferimenti
 
+<<<<<<< .merge_file_W4gMwU
 - Issue: https://github.com/laraxot/module_activity_fila5/issues/15 (STORY-303: PHPStan zero-error Activity tests — riaperta/verificata per questo secondo errore)
+=======
+<<<<<<< .merge_file_AyYeX3
+- Issue: https://github.com/laraxot/module_activity_fila5/issues/15 (STORY-303: PHPStan zero-error Activity tests — riaperta/verificata per questo secondo errore)
+=======
+- Issue: https://github.com/laraxot/module_activity_fila5/issues/15 (STORY-303: PHPStan zero-error Activity tests: riaperta/verificata per questo secondo errore)
+>>>>>>> .merge_file_TLZyv6
+>>>>>>> .merge_file_aT9CxP
 - Regola correlata: `docs/wiki/rules/module-git-sync-after-fix.md` (root del progetto)

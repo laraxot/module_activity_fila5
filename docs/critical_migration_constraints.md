@@ -1,3 +1,18 @@
+<<<<<<< .merge_file_q1zbXc
+=======
+<<<<<<< .merge_file_pSWY8M
+=======
+---
+title: "CRITICAL: MAI FARE migrate:refresh/fresh/rollback O --force"
+type: note
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "critical: mai fare migrate:refresh/fresh/rollback o --force activity"
+status: superseded
+superseded_by: critical-migration-constraints.md
+---
+>>>>>>> .merge_file_rKK9FT
+>>>>>>> .merge_file_hzqu5j
 # ⚠️ CRITICAL: MAI FARE migrate:refresh/fresh/rollback O --force 🔴🔴
 
 ## I Dati Sono SACRI

@@ -1,4 +1,20 @@
+<<<<<<< .merge_file_KMsrw7
 # Activity — Framework Integration Notes
+=======
+<<<<<<< .merge_file_fFShir
+# Activity — Framework Integration Notes
+=======
+---
+title: "Activity: Framework Integration Notes"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity   framework integration notes activity"
+---
+# Activity: Framework Integration Notes
+>>>>>>> .merge_file_WI3Zw4
+>>>>>>> .merge_file_Idh7Yh
 
 Integration guidelines for caveman, graphify, bmad-method, headroom, ponytail.
 
@@ -14,7 +30,15 @@ Surgical editing patterns:
 ## Architecture (graphify)
 
 Dependency analysis:
+<<<<<<< .merge_file_KMsrw7
 - Module dependencies: [TBD — graphify analysis]
+=======
+<<<<<<< .merge_file_fFShir
+- Module dependencies: [TBD — graphify analysis]
+=======
+- Module dependencies: [TBD: graphify analysis]
+>>>>>>> .merge_file_WI3Zw4
+>>>>>>> .merge_file_Idh7Yh
 - Circular deps: [TBD]
 - Cross-theme usage: [TBD]
 

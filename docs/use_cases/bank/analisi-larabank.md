@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_dNTepW
+=======
+<<<<<<< .merge_file_T1wPyZ
+=======
+---
+title: "Analisi di Larabank-Aggregates (Spatie)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "analisi di larabank-aggregates (spatie) activity"
+---
+>>>>>>> .merge_file_8ot8u4
+>>>>>>> .merge_file_T62DEj
 # Analisi di Larabank-Aggregates (Spatie)
 
 ## Regole Implementate

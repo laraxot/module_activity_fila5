@@ -15,9 +15,22 @@ related:
   - "../../git-multi-org-sync-handoff.md"
   - "../../second-brain.md"
   - "../../../../UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md"
+<<<<<<< .merge_file_r7fQvN
 ---
 
 # Git push dual-remote — modulo Activity
+=======
+<<<<<<< .merge_file_2hItjN
+---
+
+# Git push dual-remote — modulo Activity
+=======
+status: draft
+---
+
+# Git push dual-remote: modulo Activity
+>>>>>>> .merge_file_oYf0ps
+>>>>>>> .merge_file_Ej9cYK
 
 ## Perché
 
@@ -37,7 +50,15 @@ Tip finale: **`25ac1e70`** (`merge: allinea provtv/dev in Activity (dual-remote,
 1. Clone **shallow** → conteggi ahead/behind falsi (es. “ahead 1177”) e rischio `did not receive expected object`.
 2. `laraxot/dev` e `provtv/dev` **divergenti** (commit paralleli con stesso messaggio, SHA diversi) → `non-fast-forward`.
 3. Push FF su un solo remote lasciava l’altro dietro.
+<<<<<<< .merge_file_r7fQvN
 4. Race multi-agente: i tip cambiano in corsa — sempre re-fetch prima di agire.
+=======
+<<<<<<< .merge_file_2hItjN
+4. Race multi-agente: i tip cambiano in corsa — sempre re-fetch prima di agire.
+=======
+4. Race multi-agente: i tip cambiano in corsa: sempre re-fetch prima di agire.
+>>>>>>> .merge_file_oYf0ps
+>>>>>>> .merge_file_Ej9cYK
 
 ### Fix (ordine)
 
@@ -53,7 +74,15 @@ git fetch provtv --deepen=2000
 git fetch laraxot && git status -sb
 # vs laraxot: 0 0
 
+<<<<<<< .merge_file_r7fQvN
 # 3) Integra l’altro org (forward-only — NO rebase cieco, NO force)
+=======
+<<<<<<< .merge_file_2hItjN
+# 3) Integra l’altro org (forward-only — NO rebase cieco, NO force)
+=======
+# 3) Integra l’altro org (forward-only: NO rebase cieco, NO force)
+>>>>>>> .merge_file_oYf0ps
+>>>>>>> .merge_file_Ej9cYK
 git merge provtv/dev -m "merge: allinea provtv/dev in Activity (dual-remote, forward-only)"
 # conflitti: risolvere a mano; tip↔tip aveva solo fix quality-gate minori
 

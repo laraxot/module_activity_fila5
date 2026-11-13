@@ -22,13 +22,38 @@ Core module for the FixCity Platform.
 - Integrated with FixCity Platform
 
 ## Documentazione
+<<<<<<< .merge_file_M5uNc2
+=======
 
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
 | 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+>>>>>>> .merge_file_6Jw3kz
+
+<<<<<<< .merge_file_9YV6aT
+---
+=======
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+<<<<<<< .merge_file_M5uNc2
+| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
 
 ---
+=======
+| 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](..) |
+
+### Phase 4: Advanced Analytics (Q4 2026)
+- [ ] Machine learning insights
+- [ ] Anomaly detection
+- [ ] <nome progetto>ive analytics
+- [ ] Custom dashboard widgets
+- [ ] API for external analytics tools
+>>>>>>> .merge_file_Fn57I8
+>>>>>>> .merge_file_6Jw3kz
 
 **Modulo** `Activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

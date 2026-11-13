@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_YT0zgT
+=======
+<<<<<<< .merge_file_YbJ8Pr
+=======
+---
+title: "Introduzione: Lo Shop Event Sourced Definitivo"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "introduzione: lo shop event sourced definitivo activity"
+---
+>>>>>>> .merge_file_da4Pt7
+>>>>>>> .merge_file_NWLtUw
 # Introduzione: Lo Shop Event Sourced Definitivo
 
 ## Visione e Filosofia

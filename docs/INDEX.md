@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_lp0jGO
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> .merge_file_pedbeA
 # Activity Module Documentation Index
 
 **Stats**: 698 files | 20 categories | Last update: 2026-07-28
@@ -68,10 +73,25 @@ Architectural patterns and system design documentation
 
 ---
 
+<<<<<<< .merge_file_lp0jGO
 **Complete inventory**: See [INDEX_GENERATED.md](INDEX_GENERATED.md) for full detailed categorization across all 698 files in 20 categories.# Documentation Index
+=======
+**Complete inventory**: See [INDEX_GENERATED.md](INDEX_GENERATED.md) for full detailed categorization across all 698 files in 20 categories.
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+# Documentation Index
+>>>>>>> .merge_file_pedbeA
 
 Modulo: Activity
 
 ## File disponibili
 
 <!-- auto-generato: elencare i file .md presenti -->
+<<<<<<< .merge_file_lp0jGO
+=======
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> .merge_file_pedbeA

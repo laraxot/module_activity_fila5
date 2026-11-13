@@ -83,6 +83,10 @@ stili in linea con un asset CSS (regola «no inline CSS»); se no, lo scostament
 - [ ] Eseguire PHPMD e PHPInsights in un ambiente che li ha (`phpmd.phar` e PHPInsights)
 - [ ] Decidere cosa fare di `/xot/admin/logs` (spostare, duplicare o rimuovere)
 
+<<<<<<< .merge_file_JvLBwp
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_FwVDzK
 ## Update 2026-09-21
 
 PHPStan livello max su `Modules/Activity` segnalava 27 errori reali, tutti nei test della pagina Log introdotta da
@@ -127,6 +131,11 @@ File toccati (solo test, nessun codice applicativo):
 `tests/Unit/Actions/Log/ListLogFilesActionTest.php`, `tests/Unit/Actions/Log/ParseAndFilterLogEntriesActionTest.php`,
 `tests/Unit/Actions/Log/ResolveLogFilePathActionTest.php`.
 
+<<<<<<< .merge_file_JvLBwp
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_FwVDzK
 ## GitHub (tracciamento)
 
 Il tracciamento sta nel repo Quaeris (il bisogno nasce lì) e nella root. L'implementazione è in `module_activity_fila5`.

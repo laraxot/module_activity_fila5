@@ -1,14 +1,35 @@
 ---
+<<<<<<< .merge_file_7NqttX
 title: "Quality Report — Activity"
+=======
+<<<<<<< .merge_file_lf6ioX
+title: "Quality Report — Activity"
+=======
+title: "Quality Report: Activity"
+>>>>>>> .merge_file_TO2Szz
+>>>>>>> .merge_file_mXdfwy
 type: report
 tags: [quality, phpstan, pest, coverage]
 module: Activity
 created: 2026-08-24
 updated: 2026-08-24
 qmd: "Activity quality report phpstan pest coverage test ratio"
+<<<<<<< .merge_file_7NqttX
 ---
 
 # Quality Report — Activity
+=======
+<<<<<<< .merge_file_lf6ioX
+---
+
+# Quality Report — Activity
+=======
+status: draft
+---
+
+# Quality Report: Activity
+>>>>>>> .merge_file_TO2Szz
+>>>>>>> .merge_file_mXdfwy
 
 Aggiornato: 2026-08-24. Rigenera con: `bashscripts/tools/quality-report.sh Activity`
 

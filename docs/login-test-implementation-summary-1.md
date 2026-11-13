@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_SvBmcz
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_pLOABk
 # Login Test Implementation Summary - <nome progetto> Project
 
 ## 🎊 Mission Accomplished: Complete Login Testing Suite
@@ -208,4 +212,17 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 **Maintainability**: 📈 **EXCELLENT**
 
 *Last Updated: Gennaio 2025*
+<<<<<<< .merge_file_SvBmcz
 *Project: Laraxot <nome progetto>*
+=======
+*Project: Laraxot <nome progetto>*
+=======
+---
+module: theme
+topic: login-test-implementation-summary-1
+canonical: ../../../Themes/docs/shared-components/login-test-implementation-summary-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/login-test-implementation-summary-1.md
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_pLOABk

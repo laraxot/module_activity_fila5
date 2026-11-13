@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_dWaRIz
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_w8WKC0
 # Lezioni Apprese: Errori Migrazione Activity Table
 
 ## Caso Studio: Errore Critico nella Modifica Migrazione Activity
@@ -169,6 +173,31 @@ Questa lezione è ora memorizzata permanentemente per:
 - [Activity Logging](./activity_logging_system.md)
 
 *Ultimo aggiornamento: Gennaio 2025*
+<<<<<<< .merge_file_dWaRIz
 *Lezione appresa: Context-aware migrations con supporto UUID*=======
 See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
+=======
+*Lezione appresa: Context-aware migrations con supporto UUID*
+=======
+---
+module: theme
+topic: errori-migrazione-activity-table-lezioni-1
+canonical: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
+---
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
+>>>>>>> d4098eb (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
+>>>>>>> 26b6dbd (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
+>>>>>>> 2d6a374 (.)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_w8WKC0

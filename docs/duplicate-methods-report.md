@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_PWkGMz
+=======
+<<<<<<< .merge_file_fakTis
+=======
+---
+title: "Report: Metodi con nome duplicato nei moduli e nei temi"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "report: metodi con nome duplicato nei moduli e nei temi activity"
+---
+>>>>>>> .merge_file_F4bS0U
+>>>>>>> .merge_file_VlKAtK
 # Report: Metodi con nome duplicato nei moduli e nei temi
 
 ## Introduzione

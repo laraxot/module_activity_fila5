@@ -68,7 +68,15 @@ class TestCase extends XotBaseTestCase
 <phpunit>
     <php>
         <env name="DB_CONNECTION" value="mysql"/>
+<<<<<<< .merge_file_f8ZHu3
         <env name="DB_DATABASE" value="<nome progetto>_test"/>
+=======
+<<<<<<< .merge_file_cucHYC
+        <env name="DB_DATABASE" value="<nome progetto>_test"/>
+=======
+        <env name="DB_DATABASE" value="test_db"/>
+>>>>>>> .merge_file_JEOCTd
+>>>>>>> .merge_file_sMOrzz
     </php>
 </phpunit>
 ```

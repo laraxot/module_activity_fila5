@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_SXV3Zb
+=======
+<<<<<<< .merge_file_Vyuypw
+=======
+---
+title: "Flusso Utente Shop Event Sourced"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "flusso utente shop event sourced activity"
+---
+>>>>>>> .merge_file_O29auB
+>>>>>>> .merge_file_rE4AXF
 # Flusso Utente Shop Event Sourced
 
 ## 1. Navigazione e Scoperta Prodotti

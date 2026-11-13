@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_x85uwr
+=======
+<<<<<<< .merge_file_3QB3UX
+=======
+---
+title: "Milestones - Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, roadmap]
+qmd: "milestones - activity activity"
+---
+>>>>>>> .merge_file_nZcets
+>>>>>>> .merge_file_7Mv65X
 # Milestones - Activity
 
 ## M1 Documentation Baseline

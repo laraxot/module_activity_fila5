@@ -8,6 +8,22 @@
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)](https://www.php-fig.org/psr/psr-12/)
 [![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
 ]()
+<<<<<<< .merge_file_PGwflY
+
+> **Core module for the FixCity Platform.**
+
+## Perché esiste
+
+Core module for the FixCity Platform.
+
+## Superpoteri
+
+- Modular component with XotBase patterns
+- Professional-grade implementation
+- Integrated with FixCity Platform
+
+## Documentazione
+=======
 
 > **Core module for the FixCity Platform.**
 
@@ -28,7 +44,26 @@ Core module for the FixCity Platform.
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
 | 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+>>>>>>> .merge_file_1E8YEs
 
+<<<<<<< .merge_file_f76Pgq
 ---
+=======
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+
+<<<<<<< .merge_file_PGwflY
+---
+=======
+### 3. Event Sourcing con Eventsauce
+- Simile ai projectors, ma con una libreria dedicata (Eventsauce)
+- Gestione avanzata di aggregate, snapshot, replay
+- Maggiore automazione e coerenza
+- Ideale per sistemi complessi e ad alta tracciabilità
+>>>>>>> .merge_file_Oi6FBP
+>>>>>>> .merge_file_1E8YEs
 
 **Modulo** `Activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

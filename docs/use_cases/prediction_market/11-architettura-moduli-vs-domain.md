@@ -74,14 +74,42 @@ app/Domain/<nome progetto>ionMarket/
 - [CQRS e DDD](https://martinfowler.com/bliki/CQRS.html)
 - [Best practice modularità](https://laravelmodules.com/docs/12/basic-usage/creating-a-module)
 - [Esempi di modularizzazione](https://github.com/nWidart/laravel-modules)
+<<<<<<< .merge_file_k6Kzlk
 - [Indice prediction_market](./README.md)=======
 - [Indice prediction_market](./readme.md)
+=======
+<<<<<<< HEAD
+- [Indice prediction_market](./README.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Indice prediction_market](./readme.md)
+=======
+- [Indice prediction_market](./README.md)
+>>>>>>> 77d3d692 (.)
+=======
+- [Indice prediction_market](./readme.md)
+>>>>>>> 4fb998e0 (.)
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> .merge_file_DnyiWt
 - [Architettura prediction_market](./02_architettura.md)
 - [Best practice prediction_market](./04_best_practice.md)
 - [API prediction_market](./06_api.md)
 - [Testing prediction_market](./07_test.md)
+<<<<<<< .merge_file_k6Kzlk
+=======
+<<<<<<< .merge_file_srhn3S
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_DnyiWt
 - [Indice <nome progetto>ion_market](./readme.md)
 - [Architettura <nome progetto>ion_market](./02_architettura.md)
 - [Best practice <nome progetto>ion_market](./04_best_practice.md)
 - [API <nome progetto>ion_market](./06_api.md)
 - [Testing <nome progetto>ion_market](./07_test.md)
+<<<<<<< .merge_file_k6Kzlk
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> .merge_file_koiRsA
+>>>>>>> .merge_file_DnyiWt

@@ -1,9 +1,27 @@
 ---
+<<<<<<< .merge_file_hM0b6e
 title: "Decision log — Activity"
+=======
+<<<<<<< .merge_file_mf7k00
+title: "Decision log — Activity"
+=======
+title: "Decision log: Activity"
+>>>>>>> .merge_file_A03bkl
+>>>>>>> .merge_file_AODDEa
 type: decision-log
 module: Activity
 related:
   - ./livewire-inventory.md
+<<<<<<< .merge_file_hM0b6e
+=======
+<<<<<<< .merge_file_mf7k00
+=======
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, bmad]
+qmd: "decision log activity activity"
+>>>>>>> .merge_file_A03bkl
+>>>>>>> .merge_file_AODDEa
 ---
 
 # Decision log Activity

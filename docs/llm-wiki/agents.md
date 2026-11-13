@@ -1,3 +1,21 @@
+<<<<<<< .merge_file_ZVEntp
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+---
+title: "agents"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, llm-wiki]
+qmd: "agents activity"
+---
+>>>>>>> .merge_file_ZZHbGc
 title: "Agent instructions"
 type: reference
 tags: [agents, coding-agent, llm-wiki]
@@ -10,6 +28,15 @@ related:
   - ./coding-agent-manifests.md
 ---
 
+<<<<<<< .merge_file_NsxX3K
+<<<<<<< HEAD
+>>>>>>> 0a02158a (.)
+=======
+>>>>>>> 35d8cf69 (Initial commit)
+>>>>>>> laraxot/dev
+# Activity Module LLM Wiki Agent Instructions
+=======
+>>>>>>> .merge_file_NbpiRD
 
 > **Module/Theme:** Activity
 > **Scope:** Activity-specific knowledge only
@@ -65,5 +92,16 @@ related:
 
 ### Rule 3: Link Heavily
 - Every page MUST have 3+ incoming links
+<<<<<<< .merge_file_NsxX3K
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 - Every page MUST have 3+ outgoing links=======
+>>>>>>> .merge_file_NbpiRD
 - Every page MUST have 3+ outgoing links
+=======
+- Every page MUST have 3+ outgoing links
+>>>>>>> 0a02158a (.)
+=======
+- Every page MUST have 3+ outgoing links
+>>>>>>> 35d8cf69 (Initial commit)

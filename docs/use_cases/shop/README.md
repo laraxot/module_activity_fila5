@@ -8,6 +8,20 @@
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)](https://www.php-fig.org/psr/psr-12/)
 [![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
 ]()
+<<<<<<< .merge_file_yYQWb6
+
+> **Core module for the FixCity Platform.**
+
+## Perché esiste
+
+Core module for the FixCity Platform.
+
+## Superpoteri
+
+- Modular component with XotBase patterns
+- Professional-grade implementation
+- Integrated with FixCity Platform
+=======
 
 > **Core module for the FixCity Platform.**
 
@@ -23,11 +37,36 @@ Core module for the FixCity Platform.
 
 ## Documentazione
 
+<<<<<<< .merge_file_BA6pKm
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
 | 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+=======
+## Best Practice
+- Eventi immutabili e atomici
+- Aggregate root come unico punto di logica di dominio
+- Proiezioni solo per lettura, aggiornate da projectors
+- Separazione tra comandi (write) e query (read)
+- Reactors per effetti collaterali (notifiche, email)
+- DTO per passaggio dati tra livelli
+- Test end-to-end tramite replay eventi
+>>>>>>> .merge_file_ORXcpc
+
+## Documentazione
+
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+<<<<<<< .merge_file_yYQWb6
+| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+=======
+| 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](../..) |
+>>>>>>> .merge_file_lVYvUq
+>>>>>>> .merge_file_ORXcpc
 
 ---
 

@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_JCRteC
+=======
+<<<<<<< .merge_file_oDKGVV
+=======
+---
+title: "Glossario Shop Event Sourced"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "glossario shop event sourced activity"
+---
+>>>>>>> .merge_file_htjjW2
+>>>>>>> .merge_file_lCE9vk
 # Glossario Shop Event Sourced
 
 - **Event Sourcing**: pattern in cui ogni cambiamento di stato è registrato come evento immutabile. Esempio: `OrderCreated`.

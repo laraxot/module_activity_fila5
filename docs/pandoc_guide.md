@@ -2,6 +2,18 @@
 title: Pandoc Documentation Generation Guide
 module: Activity
 description: How to convert Activity module documentation to multiple formats using Pandoc
+<<<<<<< .merge_file_SkIiUC
+=======
+<<<<<<< .merge_file_zkDeYx
+=======
+type: note
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "pandoc documentation generation   activity module activity"
+status: superseded
+superseded_by: pandoc-guide.md
+>>>>>>> .merge_file_QAfLFU
+>>>>>>> .merge_file_TJ1DhZ
 ---
 
 # Pandoc Documentation Generation — Activity Module
