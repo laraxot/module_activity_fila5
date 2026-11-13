@@ -16,9 +16,13 @@ uses(\Modules\Activity\Tests\TestCase::class);
 
 describe('Snapshot Policy', function (): void {
     test('policy extends user base policy', function (): void {
+<<<<<<< .merge_file_2BB1Tx
         $policy = new SnapshotPolicy();
 
         Assert::assertInstanceOf(UserBasePolicy::class, $policy);
+=======
+        Assert::assertTrue((new \ReflectionClass(SnapshotPolicy::class))->isSubclassOf(UserBasePolicy::class));
+>>>>>>> .merge_file_P888Q7
     });
 
     test('policy has expected public methods', function (): void {

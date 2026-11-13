@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_TSnxHx
 <<<<<<< HEAD
 # Activity Module - Query Optimization Analysis
 
@@ -319,6 +320,16 @@ This optimization plan will significantly improve the Activity module's performa
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+---
+title: "Activity Module - Query Optimization Analysis"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "activity module - query optimization analysis activity"
+---
+>>>>>>> .merge_file_2bTiZe
 # Activity Module - Query Optimization Analysis
 
 ## Overview
@@ -550,9 +561,20 @@ CREATE INDEX idx_snapshots_aggregate_created ON snapshots(aggregate_uuid, create
 ### Caching Strategy
 ```php
 // Activity statistics caching
+<<<<<<< .merge_file_TSnxHx
 class ActivityStatsService
 {
     public function getTodayStats(): array
+=======
+class GetTodayActivityStatsAction
+{
+    use QueueableAction;
+
+    /**
+     * @return array<string, int|array<string, int>>
+     */
+    public function execute(): array
+>>>>>>> .merge_file_2bTiZe
     {
         return Cache::remember('activity_today_stats', 300, function () {
             return [
@@ -636,6 +658,7 @@ DB::listen(function ($query) {
 ```
 
 This optimization plan will significantly improve the Activity module's performance while maintaining all existing functionality.
+<<<<<<< .merge_file_TSnxHx
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
@@ -651,3 +674,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/QUERY_OPTIMI
 =======
 >>>>>>> 35d8cf69 (Initial commit)
 >>>>>>> laraxot/dev
+=======
+
+---
+>>>>>>> .merge_file_2bTiZe

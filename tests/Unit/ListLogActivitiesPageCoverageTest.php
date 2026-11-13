@@ -11,7 +11,7 @@ use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('List Log Activities Page Coverage', function (): void {
     test('get breadcrumb returns string', function (): void {
@@ -21,7 +21,11 @@ describe('List Log Activities Page Coverage', function (): void {
     });
 
     test('get breadcrumb uses static breadcrumb when set', function (): void {
+<<<<<<< .merge_file_Gisxmu
         $page = new class() extends ListLogActivities
+=======
+        $page = new class extends ListLogActivities
+>>>>>>> .merge_file_m6CipQ
         {
             protected static ?string $breadcrumb = 'Custom Breadcrumb';
 
@@ -40,7 +44,11 @@ describe('List Log Activities Page Coverage', function (): void {
     });
 
     test('can restore activity returns false when resource lacks can restore method', function (): void {
+<<<<<<< .merge_file_Gisxmu
         $page = new class() extends ListLogActivities
+=======
+        $page = new class extends ListLogActivities
+>>>>>>> .merge_file_m6CipQ
         {
             public static function getResource(): string
             {
@@ -67,7 +75,11 @@ describe('List Log Activities Page Coverage', function (): void {
     });
 
     test('send restore success notification returns notification', function (): void {
+<<<<<<< .merge_file_Gisxmu
         $page = new class() extends ListLogActivities
+=======
+        $page = new class extends ListLogActivities
+>>>>>>> .merge_file_m6CipQ
         {
             /** @return class-string */
             public static function getResource(): string
@@ -82,12 +94,15 @@ describe('List Log Activities Page Coverage', function (): void {
         };
 
         $notification = $page->exposeRestoreSuccess();
-
-        Assert::assertInstanceOf(Notification::class, $notification);
+        Assert::assertNotEmpty($notification->getTitle());
     });
 
     test('send restore failure notification without message returns notification', function (): void {
+<<<<<<< .merge_file_Gisxmu
         $page = new class() extends ListLogActivities
+=======
+        $page = new class extends ListLogActivities
+>>>>>>> .merge_file_m6CipQ
         {
             /** @return class-string */
             public static function getResource(): string
@@ -102,12 +117,15 @@ describe('List Log Activities Page Coverage', function (): void {
         };
 
         $notification = $page->exposeRestoreFailure();
-
-        Assert::assertInstanceOf(Notification::class, $notification);
+        Assert::assertNotEmpty($notification->getTitle());
     });
 
     test('send restore failure notification with message includes body', function (): void {
+<<<<<<< .merge_file_Gisxmu
         $page = new class() extends ListLogActivities
+=======
+        $page = new class extends ListLogActivities
+>>>>>>> .merge_file_m6CipQ
         {
             /** @return class-string */
             public static function getResource(): string
@@ -122,8 +140,7 @@ describe('List Log Activities Page Coverage', function (): void {
         };
 
         $notification = $page->exposeRestoreFailure('test message');
-
-        Assert::assertInstanceOf(Notification::class, $notification);
+        Assert::assertSame('test message', $notification->getBody());
     });
 
     test('can restore activity with record executes resource check', function (): void {

@@ -1,3 +1,11 @@
+---
+title: "Use Case <nome progetto>ion Market – Event Sourcing e Console Commands"
+type: index
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, use_cases]
+qmd: "use case <nome progetto>ion market   event sourcing e console commands activity"
+---
 # Use Case <nome progetto>ion Market – Event Sourcing e Console Commands
 
 [![Module](https://img.shields.io/badge/Module-Use Case <nome progetto>ion Market – Event Sourcing e Console Commands-8B0000.svg)]()
@@ -26,8 +34,13 @@ Core module for the FixCity Platform.
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
+<<<<<<< .merge_file_FB4MNw
 | 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+=======
+| 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](../..) |
+>>>>>>> .merge_file_fZxG1K
 
 ---
 

@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Roadmap"
+type: index
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, roadmap]
+qmd: "activity module - roadmap activity"
+---
 # Activity Module - Roadmap
 
 [![Module](https://img.shields.io/badge/Module-Activity Module - Roadmap-8B0000.svg)]()
@@ -29,6 +37,21 @@ Core module for the FixCity Platform.
 | 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
 
+<<<<<<< .merge_file_9YV6aT
 ---
+=======
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](..) |
+
+### Phase 4: Advanced Analytics (Q4 2026)
+- [ ] Machine learning insights
+- [ ] Anomaly detection
+- [ ] <nome progetto>ive analytics
+- [ ] Custom dashboard widgets
+- [ ] API for external analytics tools
+>>>>>>> .merge_file_Fn57I8
 
 **Modulo** `Activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

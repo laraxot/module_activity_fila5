@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_2EloWs
+=======
+---
+title: "Activity Log Optimization - Activity Module"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, performance]
+qmd: "activity log optimization - activity module activity"
+---
+>>>>>>> .merge_file_MK3VGw
 # Activity Log Optimization - Activity Module
 
 ## 🚨 Critical Issues Identified
@@ -214,7 +225,7 @@ CREATE INDEX idx_activity_log_causer_type ON activity_log(causer_type);
 ## 📚 Related Documentation
 
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./QUERY_OPTIMIZATION_ANALYSIS.md)
-- [bottlenecks.md](./bottlenecks.md)
+- [bottlenecks.md](../bottlenecks.md)
 - [event-sourcing.md](./event-sourcing.md)
 
 ## 🎯 Implementation Checklist

@@ -1,5 +1,14 @@
+---
+title: "Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "modulo activity activity"
+---
 # Modulo Activity
 
+<<<<<<< .merge_file_OCdAlK
 <<<<<<< HEAD
 <<<<<<< HEAD
 Data: [DATE] 19:09:55
@@ -7,6 +16,9 @@ Data: [DATE] 19:09:55
 =======
 >>>>>>> 35d8cf69 (Initial commit)
 Data: 2025-04-23 19:09:55
+=======
+Data: [DATE] 19:09:55Data: 2025-04-23 19:09:55
+>>>>>>> .merge_file_GiOIip
 Data: [DATE] 19:09:55
 
 ## Informazioni generali
@@ -289,7 +301,7 @@ workbench/routes
 ## Collegamenti
 
 - [Torna a README](./README.md)
-- [Torna a README](./readme.md)
+- [Torna a README](./README.md)
 - [Vai a Roadmap](./roadmap.md)
 - [Vai a Bottlenecks](./bottlenecks.md)
 

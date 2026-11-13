@@ -1,11 +1,19 @@
+<<<<<<< .merge_file_FEAyr2
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_pKwAiA
 ---
 title: "Activity Module Testing"
 type: guide
 tags: [activity, testing, pest]
 created: 2026-07-28
 updated: 2026-07-28
+<<<<<<< .merge_file_FEAyr2
+=======
+status: draft
+qmd: "activity module   testing activity"
+>>>>>>> .merge_file_pKwAiA
 ---
 
 # Activity Module — Testing
@@ -35,11 +43,15 @@ test('logs causer on user action', function () {
     $activity = Activity::latest()->first();
     expect($activity->causer_id)->toBe($admin->id);
 });
+<<<<<<< .merge_file_FEAyr2
 ```
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
 # Testing Documentation
+=======
+```# Testing Documentation
+>>>>>>> .merge_file_pKwAiA
 
 ## Overview
 
@@ -307,7 +319,7 @@ protected function createApplication()
 
 - [Testing Setup Guide](../../../docs/testing-setup.md)
 - [Testing Best Practices](../../../docs/testing-best-practices.md)
-- [Troubleshooting Guide](../../../docs/troubleshooting.md)
+- [Troubleshooting Guide](../../../../docs/troubleshooting.md)
 
 ## Testing Examples
 

@@ -1,3 +1,11 @@
+---
+title: "Lezioni Apprese: Errori Migrazione Activity Table"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "lezioni apprese: errori migrazione activity table activity"
+---
 # Lezioni Apprese: Errori Migrazione Activity Table
 
 ## Caso Studio: Errore Critico nella Modifica Migrazione Activity
@@ -15,10 +23,14 @@ Per modificare una tabella esistente:
 
 ### 1. Single Source of Truth
 **Principio**: Una tabella = Una migrazione
+<<<<<<< .merge_file_QlR0HD
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Motivazione**: 
 =======
+=======
+**Motivazione**: =======
+>>>>>>> .merge_file_f7ACFx
 **Motivazione**:
 >>>>>>> 0a02158a (.)
 =======
@@ -45,6 +57,7 @@ Per modificare una tabella esistente:
 ## 🎯 **LEZIONE CRITICA: Polimorfismo con ID Misti**
 
 ### **Problema Identificato**
+<<<<<<< .merge_file_QlR0HD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Nel sistema SaluteOra abbiamo modelli con tipi di ID diversi:
@@ -52,6 +65,9 @@ Nel sistema SaluteOra abbiamo modelli con tipi di ID diversi:
 Nel sistema  abbiamo modelli con tipi di ID diversi:
 >>>>>>> 0a02158a (.)
 =======
+=======
+Nel sistema SaluteOra abbiamo modelli con tipi di ID diversi:=======
+>>>>>>> .merge_file_f7ACFx
 Nel sistema  abbiamo modelli con tipi di ID diversi:
 >>>>>>> 35d8cf69 (Initial commit)
 - **User**: UUID (string 36 caratteri)
@@ -75,6 +91,7 @@ causer_type = "Modules\User\Models\User"
 
 // Caso 2: Admin con integer
 causer_id = "123" (integer convertito in string)
+<<<<<<< .merge_file_QlR0HD
 <<<<<<< HEAD
 <<<<<<< HEAD
 causer_type = "Modules\SaluteOra\Models\Admin"
@@ -82,6 +99,9 @@ causer_type = "Modules\SaluteOra\Models\Admin"
 causer_type = "Modules\<nome modulo>\Models\Admin"
 >>>>>>> 0a02158a (.)
 =======
+=======
+causer_type = "Modules\SaluteOra\Models\Admin"=======
+>>>>>>> .merge_file_f7ACFx
 causer_type = "Modules\<nome modulo>\Models\Admin"
 >>>>>>> 35d8cf69 (Initial commit)
 ```
@@ -180,12 +200,15 @@ Questa lezione è ora memorizzata permanentemente per:
 ## 🔗 **Collegamenti Documentazione**
 
 ### Documentazione Aggiornata
+<<<<<<< .merge_file_QlR0HD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
 - [Regole Migrazioni Laraxot](../../xot/docs/migration_rules.md)
+=======
+>>>>>>> .merge_file_f7ACFx
 - [Polimorfismo UUID](../../xot/docs/polymorphic_uuid_support.md)
 - [Principi Architetturali](../../../../docs/architectural_principles.md)
 

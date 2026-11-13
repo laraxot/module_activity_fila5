@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Mwe2PQ
 <<<<<<< HEAD
 # Filament v4 Upgrade Documentation
 
@@ -54,6 +55,19 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 <<<<<<< HEAD
 # Filament v4 Upgrade Documentation
+=======
+---
+title: "Filament v4 Upgrade Documentation"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, filament]
+qmd: "filament v4 upgrade documentation activity"
+---
+# Filament v4 Upgrade Documentation
+
+> **Storico** — migrazione verso Filament v4 (2025). **Stack attuale del progetto: Filament v5.** Vedi [filament-version.md](../filament-version.md) e [filament-version-policy.md](../../../../../docs/wiki/memories/filament-version-policy.md).
+>>>>>>> .merge_file_BjyKjK
 
 ## Overview
 This document outlines the key changes and upgrades implemented for Filament v4 in the Activity module.
@@ -67,7 +81,7 @@ This document outlines the key changes and upgrades implemented for Filament v4 
 
 ```php
 // v4 Approach (Current)
-public static function getFormSchema(): array
+public function getFormSchema(): array
 {
     return [
         'log_name' => TextInput::make('log_name')->required()->maxLength(255),
@@ -104,6 +118,7 @@ public static function getFormSchema(): array
 
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
+<<<<<<< .merge_file_Mwe2PQ
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
@@ -119,3 +134,5 @@ See canonical documentation: ../../../../Themes/docs/shared-components/FILAMENT_
 =======
 >>>>>>> 35d8cf69 (Initial commit)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_BjyKjK

@@ -1,3 +1,11 @@
+---
+title: "Testing Rules Summary"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "testing rules summary activity"
+---
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test
@@ -107,8 +115,12 @@ I file di documentazione vanno nelle cartelle `docs/` dentro ogni modulo/tema.
 ### Regola TestCase Base (Laraxot)
 - Ogni `Modules/*/tests/TestCase.php` deve estendere `Modules\\Xot\\Tests\\XotBaseTestCase`.
 - Non estendere direttamente `Illuminate\\Foundation\\Testing\\TestCase` nei moduli.
+<<<<<<< .merge_file_qzkDMu
 - Motivazione: DRY + KISS + bootstrap uniforme (container, translator, helper comuni).
 =======
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+- Motivazione: DRY + KISS + bootstrap uniforme (container, translator, helper comuni).
+>>>>>>> .merge_file_RIGl6Z

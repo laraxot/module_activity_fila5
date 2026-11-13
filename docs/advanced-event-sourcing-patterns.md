@@ -1,3 +1,11 @@
+---
+title: "Advanced Event Sourcing Patterns for Healthcare Applications"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "advanced event sourcing patterns for healthcare applications activity"
+---
 # Advanced Event Sourcing Patterns for Healthcare Applications
 
 ## Table of Contents
@@ -11,10 +19,14 @@
 
 ## Introduction
 
+<<<<<<< .merge_file_CzoBjr
 <<<<<<< HEAD
 <<<<<<< HEAD
 Event Sourcing is particularly valuable in healthcare applications like `saluteora` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
 =======
+=======
+Event Sourcing is particularly valuable in healthcare applications like `saluteora` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.=======
+>>>>>>> .merge_file_qtXEz5
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
 >>>>>>> 0a02158a (.)
@@ -86,12 +98,16 @@ class PrescriptionAggregate extends AggregateRoot
 {
     private array $medications = [];
     private bool $isApproved = false;
+<<<<<<< .merge_file_CzoBjr
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_qtXEz5
     
     public function prescribe(
         string $patientId, 
         string $medicationId, 
+<<<<<<< .merge_file_CzoBjr
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
@@ -122,6 +138,11 @@ class PrescriptionAggregate extends AggregateRoot
 
 >>>>>>> 0a02158a (.)
 =======
+=======
+    public function prescribe(
+        string $patientId,
+        string $medicationId,
+>>>>>>> .merge_file_qtXEz5
 
 >>>>>>> 35d8cf69 (Initial commit)
     protected function applyMedicationPrescribed(MedicationPrescribed $event): void
@@ -161,6 +182,7 @@ class ScheduleAppointmentHandler
             $command->scheduledTime,
             $command->duration
         );
+<<<<<<< .merge_file_CzoBjr
 <<<<<<< HEAD
 <<<<<<< HEAD
         
@@ -173,6 +195,9 @@ class ScheduleAppointmentHandler
 >>>>>>> 0a02158a (.)
 =======
 
+=======
+        
+>>>>>>> .merge_file_qtXEz5
         $this->appointments->save($appointment);
 
 >>>>>>> 35d8cf69 (Initial commit)
@@ -195,13 +220,17 @@ class PatientAggregate extends AggregateRoot
 {
     private int $version = 0;
     private array $events = [];
+<<<<<<< .merge_file_CzoBjr
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_qtXEz5
     
     public static function reconstituteFromEvents(UuidInterface $uuid, array $events): self
     {
         $aggregate = new static($uuid);
         
+<<<<<<< .merge_file_CzoBjr
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
@@ -228,10 +257,16 @@ class PatientAggregate extends AggregateRoot
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+    public static function reconstituteFromEvents(UuidInterface $uuid, array $events): self
+    {
+        $aggregate = new static($uuid);
+>>>>>>> .merge_file_qtXEz5
 
         return $aggregate;
     }
 
+<<<<<<< .merge_file_CzoBjr
 <<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
@@ -277,6 +312,8 @@ class PatientRegistrationTest extends TestCase
 
 >>>>>>> 0a02158a (.)
 =======
+=======
+>>>>>>> .merge_file_qtXEz5
 
 >>>>>>> 35d8cf69 (Initial commit)
         $this->given()
@@ -312,18 +349,25 @@ class PatientRegistrationTest extends TestCase
 
 ## Conclusion
 
+<<<<<<< .merge_file_CzoBjr
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_qtXEz5
 Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `saluteora` can build a system that not only meets current requirements but can also evolve with future needs.
 
 ## References
 - [Event Sourcing in Laravel by Brent Roose](https://event-sourcing-laravel.com/)
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/project_docs/laravel-event-sourcing/v7/)
+<<<<<<< .merge_file_CzoBjr
 - [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
 Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `<nome progetto>` can build a system that not only meets current requirements but can also evolve with future needs.
+=======
+- [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `<nome progetto>` can build a system that not only meets current requirements but can also evolve with future needs.
+>>>>>>> .merge_file_qtXEz5
 Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `<nome progetto>` can build a system that not only meets current requirements but can also evolve with future needs.
 
 ## References
@@ -333,8 +377,11 @@ Event Sourcing provides a robust foundation for healthcare applications by ensur
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/project_docs/laravel-event-sourcing/v7/)
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/docs/laravel-event-sourcing/v7/)
 - [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)
+<<<<<<< .merge_file_CzoBjr
 
 <<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> .merge_file_qtXEz5

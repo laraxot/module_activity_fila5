@@ -1,8 +1,12 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_h6MrLL
 
 use Modules\Activity\Support\ActivityLogSchema;
+=======
+use Modules\Activity\Actions\Schema\IsActivityLogSchemaWritableAction;
+>>>>>>> .merge_file_m06Afi
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

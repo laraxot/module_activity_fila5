@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_2UWizJ
 <<<<<<< HEAD
 # Activity
 
@@ -45,55 +46,65 @@ Core module for the FixCity Platform.
 [![Event Sourcing](https://img.shields.io/badge/Event-Sourcing%20Ready-orange.svg)](https://martinfowler.com/eaaDev/EventSourcing.html)
 [![Audit Trail](https://img.shields.io/badge/Audit-Trail%20Ready-yellow.svg)](https://en.wikipedia.org/wiki/Audit_trail)
 [![Quality Score](https://img.shields.io/badge/Quality%20Score-85%25-brightgreen.svg)](https://github.com/laraxot/activity-module)
+=======
+---
+title: "Activity: documentazione del modulo (docs)"
+type: readme
+status: active
+module: Activity
+created: 2026-10-14
+updated: 2026-10-14
+tags: [activity, activitylog, event-sourcing, docs]
+qmd: "activity modulo docs readme identita ownership actions log viewer event sourcing quick start limiti"
+related:
+  - ./00-index.md
+  - ./stories/docs-ingressi-activity.story.md
+---
+>>>>>>> .merge_file_YsBaIo
 
-## Stato del Modulo
+# Activity: docs del modulo
 
-> **🚀 Modulo Activity**: Sistema completo per audit trail, event sourcing e logging avanzato con dashboard Filament e analytics in tempo reale.
+Fatti verificati sul codice il 2026-10-14. Dove una cosa non e' stata provata e' scritto "non verificato".
 
-## Riferimenti (classi principali)
+## Identita' e ownership
 
-- ActivityServiceProvider
-- ListLogActivities
-- ListLogActivitiesAction
+- Modulo `laravel/Modules/Activity`, repository git separato, pacchetto `laraxot/module_activity_fila5`, alias `activity`. Richiede i moduli `Xot` e `User` (`module.json`).
+- Provider: `Modules\Activity\Providers\ActivityServiceProvider` e `Providers\Filament\AdminPanelProvider`.
+- Pacchetti: `spatie/laravel-activitylog` (5.1.1 in `laravel/composer.lock`) e `spatie/laravel-event-sourcing` (7.15.1).
+- Proprietario di questa cartella: il modulo Activity. Le story BMAD stanno in [stories/](./stories/). Indice operativo: [00-INDEX.md](./00-index.md).
 
-## 📋 **Panoramica**
+## Cosa contiene davvero
 
-Il modulo **Activity** è il sistema di monitoraggio e audit dell'applicazione, fornendo:
+| Area | Dove | Fatto |
+|---|---|---|
+| Registrare un'attivita' | `app/Actions/LogActivityAction.php` | costruttore `(type, user, subject, properties, description)`, poi `execute(): Activity`; scrive su `Models\Activity` |
+| Altre Action | `app/Actions` (29 file) | `LogModelCreated/Updated/DeletedAction`, `LogUserLogin/LogoutAction`, `RecordSubjectActivityAction`, `RestoreActivityAction`, `RedactModelAttributesAction`, `ActivityMaintenanceAction` (`execute(int $days = 90)`), 6 Action di lettura in `Query/`, 2 in `Schema/` |
+| Modelli | `app/Models` | `Activity` (estende il modello Spatie, connessione `activity`, tabella `activity_log`), `StoredEvent` (`stored_events`), `Snapshot`, `TestModel` |
+| Event sourcing | `app/Traits/HasEvents.php`, `HasSnapshots.php` | `HasEvents` espone le relazioni `storedEvents()` e `snapshots()`; nessun altro modulo li usa (cerca in `Modules/*/app`: 0 risultati) |
+| Pannello Filament | `app/Filament` | `ActivityResource`, `SnapshotResource`, `StoredEventResource`; pagine `Dashboard`, `LogViewer`, `ListLogActivities` (astratta) con la Action `ListLogActivitiesAction`. Non esiste nessuna cartella `Widgets` |
+| Visualizzatore log | `app/Filament/Pages/LogViewer.php`, `app/Actions/Log` (10 file) | legge `storage/logs` dal pannello; accesso solo a `super-admin` o al permesso `log.viewAny` (`AuthorizeLogAccessAction`); il download e' la pagina Folio `resources/views/pages/api/log-download.blade.php` su `/api/log-download` (403 senza permesso). Dettagli: [wiki/concepts/log-viewer-page-no-ssh.md](./wiki/concepts/log-viewer-page-no-ssh.md) |
+| Listener | `app/Listeners`, `Providers/EventServiceProvider.php` | mappati `Login` e `Logout`; `LogoutListener` scrive un `Activity` (`log_name` auth, `event` logout); `LoginListener::handle()` e' vuoto |
+| Rotte | `routes/web.php`, `routes/api.php` | nessuna rotta attiva: contengono solo commenti |
+| Config | `config/config.php` | chiavi `name`, `description`, `icon`, `navigation`, `routes`, `providers`, unite come `activity`; la config Spatie e' in `laravel/config/activitylog.php` (`activity_model` = `Modules\Activity\Models\Activity`, tabella `activity_log`) e `laravel/config/event-sourcing.php` |
+| Database | `database/migrations` | `activity_log` e' definita da `2026_06_10_141000_create_activity_table.php` (intestazione: "UNICA migrazione", contratto in [wiki/concepts/activity-log-single-migration-contract.md](./wiki/concepts/activity-log-single-migration-contract.md)); `stored_events`, `snapshots`, `test_models` hanno una migrazione ciascuna |
+| Test | `tests/Feature`, `tests/Unit`, `tests/Security` | 100 file `*Test.php` in stile Pest e 34 fixture; `TestCase` estende `XotBaseTestCase`, usa transazioni e risolve lo SQLite condiviso (fallback `database/test_data.sqlite`) senza `RefreshDatabase`. Il file non è versionato e deve essere predisposto in modo disposable prima dei test. |
+| Traduzioni | `lang/` | 18 cartelle di lingua piu' `en.json` e `it.json`; `lang/it` ha 24 file |
 
-- 📊 **Audit Trail Completo** - Tracciamento di tutte le attività utente
-- 🎯 **Event Sourcing** - Sistema eventi per ricostruzione stato
-- 📈 **Analytics Dashboard** - Dashboard Filament per analisi attività
-- 🔍 **Advanced Filtering** - Filtri avanzati per ricerca attività
-- 📱 **Real-time Monitoring** - Monitoraggio in tempo reale
-- 🔐 **Security Compliance** - Conformità GDPR e sicurezza
+## Quick start
 
-## ⚡ **Funzionalità Core**
+Registrare un'attivita' dal codice (uso reale in `Modules/Fixcity/app/Actions/ChangeTicketPriorityAction.php`):
 
-### 📊 **Activity Logging**
 ```php
-// Logging automatico attività
-use Spatie\Activitylog\Traits\LogsActivity;
+use Modules\Activity\Actions\LogActivityAction;
 
-class User extends Model
-{
-    use LogsActivity;
-
-    protected static $logAttributes = ['name', 'email', 'status'];
-    protected static $logName = 'user_activity';
-
-    // Logging automatico su modifiche
-    protected static $logOnlyDirty = true;
-    protected static $submitEmptyLogs = false;
-}
-
-// Logging manuale
-activity()
-    ->performedOn($user)
-    ->causedBy(auth()->user())
-    ->withProperties(['reason' => 'profile_update'])
-    ->log('User profile updated');
+(new LogActivityAction(
+    'priority_changed',
+    subject: $ticket,
+    properties: ['from' => $previous, 'to' => $priority],
+))->execute();
 ```
 
+<<<<<<< .merge_file_2UWizJ
 ### 🎯 **Event Sourcing**
 ```php
 // Eventi di dominio
@@ -142,31 +153,12 @@ class ActivityStatsWidget extends XotBaseWidget
     }
 }
 ```
+=======
+Controllare la qualita' del modulo (eseguito il 2026-10-14 con `laravel/phpstan.neon`: uscita 0, nessun errore):
+>>>>>>> .merge_file_YsBaIo
 
-## 🎯 **Stato Qualità - Gennaio 2025**
-
-### ✅ **PHPStan Level 9 Compliance**
-- **File Core Certificati**: 6/6 file core raggiungono Level 9
-- **Type Safety**: 100% sui servizi principali
-- **Runtime Safety**: 100% con error handling robusto
-- **Template Types**: Risolti tutti i problemi Collection generics
-
-### ✅ **Translation Standards Compliance**
-- **Helper Text**: 100% corretti (vuoti quando uguali alla chiave)
-- **Localizzazione**: 100% valori tradotti appropriatamente
-- **Sintassi**: 100% sintassi moderna `[]` e `declare(strict_types=1)`
-- **Struttura**: 100% struttura espansa completa
-
-### 📊 **Metriche Performance**
-- **Logging Performance**: < 10ms per attività
-- **Query Performance**: Ottimizzate con indici appropriati
-- **Storage Efficiency**: Compressione automatica log vecchi
-- **Real-time Updates**: < 100ms per aggiornamenti dashboard
-
-## 🚀 **Quick Start**
-
-### 📦 **Installazione**
 ```bash
+<<<<<<< .merge_file_2UWizJ
 # Abilitare il modulo
 php artisan module:enable Activity
 
@@ -651,12 +643,24 @@ Activity/
 - [Indice Moduli](../README.md)
 
 ## TODO
+=======
+cd laravel
+./vendor/bin/phpstan analyse Modules/Activity --memory-limit=3G
+```
+>>>>>>> .merge_file_YsBaIo
 
-- [ ] Completare descrizione funzionalità
-- [ ] Documentare modelli principali
-- [ ] Documentare risorse Filament
-- [ ] Aggiungere esempi codice
+I test Pest non sono stati rieseguiti in questa sessione: non verificato che passino.
 
+<<<<<<< .merge_file_2UWizJ
 ## AI Workflows
 - [AI Methodologies](./ai-methodologies.md)
 >>>>>>> laraxot/dev
+=======
+## Limiti noti
+
+- Con `user` nullo `LogActivityAction` imposta `causer_id` a `Auth::id()` ma lascia `causer_type` nullo (codice di `execute()`): l'attivita' risulta senza causer risolvibile come relazione.
+- `LoginListener` non registra nulla: gli accessi non finiscono nel log, solo le uscite.
+- In `database/migrations` restano altre quattro migrazioni `create_activity_table` (`2023_03_31_103350`, `2023_03_31_103351`, `2024_01_01_000001`, `2024_01_01_000002`) oltre a quella del 2026-06-10. Se siano innocue non e' verificato.
+- La connessione `activity` e' dichiarata nei modelli (`$connection = 'activity'`) ma non e' definita in `laravel/config/database.php`: dove venga creata non e' verificato.
+- Documenti che non descrivono il codice: [ARCHITECTURE.md](./ARCHITECTURE.md) (Repositories, Services, Projections inesistenti), [API.md](./api.md) (firma `execute(array $data)` inesistente), [readme.md](./readme.md) (`ActivityStatsWidget`, `EventStore`, monitoraggio in tempo reale inesistenti). Sono marcati `stale`.
+>>>>>>> .merge_file_YsBaIo

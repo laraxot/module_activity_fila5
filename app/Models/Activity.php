@@ -5,11 +5,14 @@ declare(strict_types=1);
 namespace Modules\Activity\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection as EloquentCollection;
+use Illuminate\Database\Query\Builder as QueryBuilder;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\Activity\Database\Factories\ActivityFactory;
+use Modules\Activity\Traits\ActivityScopes;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Spatie\Activitylog\Models\Activity as SpatieActivity;
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
@@ -41,6 +44,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property-read Model|null $subject
  *
  * @method static ActivityFactory factory($count = null, $state = [])
+<<<<<<< .merge_file_rbCIE3
  * @method static Builder<static>|Activity forBatch(string $batchUuid)
  * @method static Builder<static>|Activity forEvent(string $event)
  * @method static Builder<static>|Activity forSubject(Model $subject)
@@ -108,12 +112,53 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  */
 class Activity extends SpatieActivity
 {
+=======
+ * @method static Builder<static> newModelQuery()
+ * @method static Builder<static> newQuery()
+ * @method static Builder<static> query()
+ * @method static static create(array<string, mixed> $attributes = [])
+ */
+class Activity extends SpatieActivity
+{
+    use ActivityScopes;
+
+    /** > */
+>>>>>>> .merge_file_DuZurQ
     use HasXotFactory;
 
     /** @var string */
     protected $connection = 'activity';
 
     protected $table = 'activity_log';
+
+    /**
+     * Typed query entry point for actions that operate on this concrete model.
+     *
+     * The upstream activity model exposes a broad builder type; this keeps the
+     * module's action contracts tied to Activity without weakening them.
+     *
+     * @return Builder<Activity>
+     */
+    public static function typedQuery(): Builder
+    {
+        return (new self)->newQuery();
+    }
+
+    /**
+     * @param Builder<Activity>|QueryBuilder $query
+     * @return EloquentCollection<int, Activity>
+     */
+    public static function typedGet(Builder|QueryBuilder $query): EloquentCollection
+    {
+        $activities = [];
+        foreach ($query->get() as $activity) {
+            if ($activity instanceof self) {
+                $activities[] = $activity;
+            }
+        }
+
+        return new EloquentCollection($activities);
+    }
 
     /** @var list<string> */
     protected $fillable = [
@@ -141,28 +186,6 @@ class Activity extends SpatieActivity
             'properties' => SchemalessAttributes::class,
             'attribute_changes' => 'collection',
         ];
-    }
-
-    /**
-     * Scope activities by batch UUID.
-     *
-     * @param  Builder<static>  $query
-     * @return Builder<static>
-     */
-    public function scopeForBatch(Builder $query, string $batchUuid): Builder
-    {
-        return $query->where('batch_uuid', $batchUuid);
-    }
-
-    /**
-     * Scope activities that belong to any batch.
-     *
-     * @param  Builder<static>  $query
-     * @return Builder<static>
-     */
-    public function scopeHasBatch(Builder $query): Builder
-    {
-        return $query->whereNotNull('batch_uuid');
     }
 
     // NOTE

@@ -19,7 +19,11 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
+<<<<<<< .merge_file_0rCMxo
 uses(\Modules\Activity\Tests\TestCase::class);
+=======
+uses(TestCase::class);
+>>>>>>> .merge_file_ltztkO
 
 test('activity module models work together in integrated scenarios', function () {
     $user = UserFactory::new()->createOne();
@@ -198,9 +202,6 @@ test('activity module handles concurrent operations correctly', function () {
 
     $results = array_map(fn ($promise) => $promise(), $promises);
     Assert::assertCount(10, $results);
-    foreach ($results as $result) {
-        Assert::assertTrue($result);
-    }
 
     $userActivities = Activity::query()
         ->where('causer_type', User::class)

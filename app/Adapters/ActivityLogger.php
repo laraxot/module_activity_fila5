@@ -21,7 +21,11 @@ use Modules\Activity\Actions\Query\GetModelActivitiesAction;
 use Modules\Activity\Actions\Query\GetRecentActivitiesAction;
 use Modules\Activity\Actions\Query\GetUserActivitiesAction;
 use Modules\Activity\Models\Activity;
+<<<<<<< .merge_file_PhlRdX
 use Modules\User\Models\User;
+=======
+use Modules\Xot\Contracts\UserContract;
+>>>>>>> .merge_file_oNAe2Y
 
 /**
  * Coordinator — delegates to single-purpose QueueableActions (not an Action: multi-method API).
@@ -60,17 +64,29 @@ class ActivityLogger
 
     public function created(Model $model, ?User $user = null): Activity
     {
+<<<<<<< .merge_file_PhlRdX
         return (new LogModelCreatedAction($model, $user))->execute();
+=======
+        return (new LogModelCreatedAction($model, $user instanceof Model ? $user : null))->execute();
+>>>>>>> .merge_file_oNAe2Y
     }
 
     public function updated(Model $model, ?User $user = null): Activity
     {
+<<<<<<< .merge_file_PhlRdX
         return (new LogModelUpdatedAction($model, $user))->execute();
+=======
+        return (new LogModelUpdatedAction($model, $user instanceof Model ? $user : null))->execute();
+>>>>>>> .merge_file_oNAe2Y
     }
 
     public function deleted(Model $model, ?User $user = null): Activity
     {
+<<<<<<< .merge_file_PhlRdX
         return (new LogModelDeletedAction($model, $user))->execute();
+=======
+        return (new LogModelDeletedAction($model, $user instanceof Model ? $user : null))->execute();
+>>>>>>> .merge_file_oNAe2Y
     }
 
     public function login(User $user): Activity

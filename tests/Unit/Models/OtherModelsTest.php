@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
@@ -11,6 +10,7 @@ use PHPUnit\Framework\Assert;
 uses(\Modules\Activity\Tests\TestCase::class);
 
 test('Snapshot model can be instantiated', function () {
+<<<<<<< .merge_file_qJZkId
     $snapshot = new Snapshot();
 
     Assert::assertInstanceOf(Snapshot::class, $snapshot);
@@ -20,6 +20,13 @@ test('StoredEvent model can be instantiated', function () {
     $storedEvent = new StoredEvent();
 
     Assert::assertInstanceOf(StoredEvent::class, $storedEvent);
+=======
+    Assert::assertTrue((new ReflectionClass(Snapshot::class))->isInstantiable());
+});
+
+test('StoredEvent model can be instantiated', function () {
+    Assert::assertTrue((new ReflectionClass(StoredEvent::class))->isInstantiable());
+>>>>>>> .merge_file_vm1ZBF
 });
 
 test('BaseModel model can be instantiated', function () {
@@ -28,7 +35,7 @@ test('BaseModel model can be instantiated', function () {
         protected $table = 'activity_base_models';
     };
 
-    Assert::assertInstanceOf(BaseModel::class, $baseModel);
+    Assert::assertSame('activity_base_models', $baseModel->getTable());
 });
 
 test('Snapshot model has correct connection', function () {

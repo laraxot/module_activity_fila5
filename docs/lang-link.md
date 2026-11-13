@@ -1,15 +1,26 @@
+---
+title: "Collegamento alle Traduzioni del Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity]
+qmd: "collegamento alle traduzioni del modulo activity activity"
+---
 # Collegamento alle Traduzioni del Modulo Activity
 
+<<<<<<< .merge_file_WHOzhx
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
+=======
+>>>>>>> .merge_file_8HpIEq
 
 Consulta la documentazione delle traduzioni qui:
-- [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
-- [Struttura delle Traduzioni](../../lang/docs/structure.md)
+- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).
 
@@ -91,6 +102,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
 # Collegamento alle Traduzioni del Modulo Activity
 
+<<<<<<< .merge_file_WHOzhx
 <<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
@@ -117,6 +129,8 @@ Consulta la documentazione delle traduzioni qui:
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> .merge_file_8HpIEq
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../../Lang/project_docs/).
 
 > Aggiorna entrambi i riferimenti se aggiungi nuove chiavi di traduzione o modifichi la struttura.

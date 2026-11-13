@@ -7,14 +7,21 @@ use Modules\Activity\Models\Policies\ActivityPolicy;
 use Modules\Activity\Models\Policies\SnapshotPolicy;
 use Modules\Activity\Models\Policies\StoredEventPolicy;
 use Modules\Activity\Tests\TestCase;
+use Modules\User\Models\Policies\UserBasePolicy;
 use PHPUnit\Framework\Assert;
 
 uses(\Modules\Activity\Tests\TestCase::class);
 
 test('ActivityPolicy can be instantiated', function () {
+<<<<<<< .merge_file_5PNKnv
     $policy = new ActivityPolicy();
 
     Assert::assertInstanceOf(ActivityPolicy::class, $policy);
+=======
+    $reflection = new ReflectionClass(ActivityPolicy::class);
+    Assert::assertTrue($reflection->isInstantiable());
+    Assert::assertTrue($reflection->isSubclassOf(UserBasePolicy::class));
+>>>>>>> .merge_file_Qhk9Ui
 });
 
 test('ActivityBasePolicy is an abstract class', function () {
@@ -24,6 +31,7 @@ test('ActivityBasePolicy is an abstract class', function () {
 });
 
 test('SnapshotPolicy can be instantiated', function () {
+<<<<<<< .merge_file_5PNKnv
     $policy = new SnapshotPolicy();
 
     Assert::assertInstanceOf(SnapshotPolicy::class, $policy);
@@ -33,6 +41,17 @@ test('StoredEventPolicy can be instantiated', function () {
     $policy = new StoredEventPolicy();
 
     Assert::assertInstanceOf(StoredEventPolicy::class, $policy);
+=======
+    $reflection = new ReflectionClass(SnapshotPolicy::class);
+    Assert::assertTrue($reflection->isInstantiable());
+    Assert::assertTrue($reflection->isSubclassOf(UserBasePolicy::class));
+});
+
+test('StoredEventPolicy can be instantiated', function () {
+    $reflection = new ReflectionClass(StoredEventPolicy::class);
+    Assert::assertTrue($reflection->isInstantiable());
+    Assert::assertTrue($reflection->isSubclassOf(UserBasePolicy::class));
+>>>>>>> .merge_file_Qhk9Ui
 });
 
 test('ActivityPolicy method signatures', function () {

@@ -15,9 +15,13 @@ use PHPUnit\Framework\Assert;
 uses(\Modules\Activity\Tests\TestCase::class);
 
 test('policy extends user base policy', function (): void {
+<<<<<<< .merge_file_t4pr9z
     $policy = new StoredEventPolicy();
 
     Assert::assertInstanceOf(UserBasePolicy::class, $policy);
+=======
+    Assert::assertTrue((new \ReflectionClass(StoredEventPolicy::class))->isSubclassOf(UserBasePolicy::class));
+>>>>>>> .merge_file_0A4YXj
 });
 
 test('user with permission can view', function (): void {

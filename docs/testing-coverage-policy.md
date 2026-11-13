@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Testing Coverage Policy"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "activity module - testing coverage policy activity"
+---
 # Activity Module - Testing Coverage Policy
 
 ## Obiettivo
@@ -15,6 +23,7 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 ### 2. .env.testing
 
 - `.env.testing` è uguale a `.env` tranne per i nomi database
+<<<<<<< .merge_file_00x9rz
 <<<<<<< HEAD
 <<<<<<< HEAD
 - I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)
@@ -24,6 +33,9 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 =======
 - I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+- I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
+>>>>>>> .merge_file_P5CyQf
 - Le variabili `DB_CONNECTION`, `DB_DATABASE` **NON** devono essere sovrascritte in phpunit.xml
 - Laravel carica `.env.testing` quando `APP_ENV=testing`
 
@@ -32,6 +44,7 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 - Il TestCase usa `DatabaseTransactions` per rollback automatico tra test
 - `$connectionsToTransact = ['mysql', 'activity', 'user']` per coprire tutte le connessioni
 - **CRITICO**: La connessione `activity` DEVE essere inclusa. Senza di essa, ActivityLoggerTest getRecent fallisce per inquinamento dati.
+<<<<<<< .merge_file_00x9rz
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`)
@@ -41,6 +54,9 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 =======
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite una volta: `php artisan migrate --env=testing`
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+- Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`) oppure una volta a mano con `php artisan migrate --env=testing` (vedi commento in `Modules/Xot/tests/TestCase.php`)
+>>>>>>> .merge_file_P5CyQf
 
 ### 4. Connessioni Database
 
@@ -48,16 +64,21 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 - **activity**: modelli Activity, Snapshot, StoredEvent (creata da TenantServiceProvider a runtime)
 - **user**: modelli User
 
-**Regola**: database.php NON deve contenere 'activity'. I modelli Activity DEVONO avere `$connection = 'activity'`. Vedi [fix01](prompts/fix01.txt).
+**Regola**: database.php NON deve contenere 'activity'. I modelli Activity DEVONO avere `$connection = 'activity'`. Vedi [fix01](prompts/fix01.md).
 
 **Setup minimo .env.testing:**
 ```env
+<<<<<<< .merge_file_00x9rz
 <<<<<<< HEAD
 <<<<<<< HEAD
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE_USER=<nome progetto>_data_test
+=======
+DB_DATABASE=techplanner_data_test
+DB_DATABASE_USER=techplanner_data_test
+>>>>>>> .merge_file_P5CyQf
 ```
-NON aggiungere DB_DATABASE_ACTIVITY: TenantServiceProvider usa il fallback dal default (stesso DB). Vedi [fix03](prompts/fix03.txt).
+NON aggiungere DB_DATABASE_ACTIVITY: TenantServiceProvider usa il fallback dal default (stesso DB). Vedi [fix03](prompts/fix03.md).
 
 **Migrazioni pre-test (regola corrente):**
 ```bash
