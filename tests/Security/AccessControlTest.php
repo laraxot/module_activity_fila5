@@ -13,6 +13,10 @@ namespace Modules\Activity\Tests\Security;
 
 use Modules\Activity\Models\Policies\ActivityPolicy;
 use Modules\Activity\Tests\TestCase;
+<<<<<<< .merge_file_isMmtv
+use Modules\User\Database\Factories\UserFactory;
+=======
+>>>>>>> .merge_file_iMhAAA
 use PHPUnit\Framework\Assert;
 
 uses(\Modules\Activity\Tests\TestCase::class);

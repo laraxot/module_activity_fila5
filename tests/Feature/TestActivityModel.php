@@ -9,11 +9,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Support\Carbon;
 use Modules\Activity\Models\BaseModel;
 use Modules\Xot\Models\Traits\HasXotFactory;
+<<<<<<< .merge_file_oR2ztd
+=======
 <<<<<<< .merge_file_2XtIQo
 =======
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Factories\Factory;
 >>>>>>> .merge_file_OA1j6N
+>>>>>>> .merge_file_CMj9Ok
 
 /**
  * Classe concreta di test per BaseModel.

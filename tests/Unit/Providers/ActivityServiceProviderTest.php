@@ -4,12 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Providers;
 
+<<<<<<< .merge_file_ISCjJE
+=======
 use function Safe\json_encode;
+>>>>>>> .merge_file_z4eaw1
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('activity service provider exposes expected metadata', function (): void {
     $provider = new ActivityServiceProvider(app());

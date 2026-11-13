@@ -8,10 +8,14 @@ use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_aFD3Xl
+
+=======
 <<<<<<< .merge_file_e19I9v
 
 uses(\Modules\Activity\Tests\TestCase::class);
 =======
+>>>>>>> .merge_file_0AVARw
 uses(TestCase::class);
 >>>>>>> .merge_file_AaXnvd
 
