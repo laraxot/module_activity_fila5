@@ -1,11 +1,3 @@
----
-title: "Aggiornamento README Activity - Sezione Testing"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "aggiornamento readme activity - sezione testing activity"
----
 # Aggiornamento README Activity - Sezione Testing
 
 ## Sezione da Aggiungere
@@ -72,4 +64,3 @@ php artisan test --filter=Snapshot
 php artisan test Modules/Activity --coverage
 ```
 
-See canonical documentation: ../../../Themes/docs/shared-components/README.md.update

@@ -1,12 +1,4 @@
----
-title: "Activity: Framework Integration Notes"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "activity   framework integration notes activity"
----
-# Activity: Framework Integration Notes
+# Activity — Framework Integration Notes
 
 Integration guidelines for caveman, graphify, bmad-method, headroom, ponytail.
 
@@ -22,7 +14,7 @@ Surgical editing patterns:
 ## Architecture (graphify)
 
 Dependency analysis:
-- Module dependencies: [TBD: graphify analysis]
+- Module dependencies: [TBD — graphify analysis]
 - Circular deps: [TBD]
 - Cross-theme usage: [TBD]
 

@@ -1,11 +1,3 @@
----
-title: "Migration: Support → Actions"
-type: note
-status: done
-updated: 2026-10-22
-tags: [docs, activity]
-qmd: "migration: support → actions activity"
----
 # Migration: Support → Actions
 
 **Module:** Activity  

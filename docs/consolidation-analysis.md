@@ -1,14 +1,10 @@
 ---
-title: Root .md Consolidation Analysis: Activity Module
+title: Root .md Consolidation Analysis — Activity Module
 date: 2026-08-18
 status: analysis
-type: note
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "consolidation analysis   activity module activity"
 ---
 
-# Consolidation Analysis: Activity Module
+# Consolidation Analysis — Activity Module
 
 **Module:** Activity  
 **Scope:** Root .md files owned by Activity, relocation plan  
@@ -32,7 +28,7 @@ qmd: "consolidation analysis   activity module activity"
 - **Isolation:** Activity owns its migration policy; policy should live in Activity module.
 
 **When to move:**
-- **NOW**: No delays. This is a safety-critical document.
+- **NOW** — No delays. This is a safety-critical document.
 
 ## Post-Move Structure
 
@@ -45,7 +41,7 @@ laravel/Modules/Activity/
 ├── app/
 ├── config/
 ├── database/
-│   ├── migrations/ (sacred: no refresh)
+│   ├── migrations/ (sacred — no refresh)
 │   ├── factories/
 │   └── seeders/
 └── tests/
@@ -60,8 +56,8 @@ laravel/Modules/Activity/
 
 ## Related Modules
 
-- **Progressioni**: depends on Activity; same constraint applies to Progressioni migrations.
-- **Tenant**: shared tenancy; migration policy affects all modules.
+- **Progressioni** — depends on Activity; same constraint applies to Progressioni migrations.
+- **Tenant** — shared tenancy; migration policy affects all modules.
 
 ## Action Items
 

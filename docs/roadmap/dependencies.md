@@ -1,11 +1,3 @@
----
-title: "Dipendenze e confini Modulo Activity"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, roadmap]
-qmd: "dipendenze e confini modulo activity activity"
----
 # Dipendenze e confini Modulo Activity
 
 ## Dipendenze in ingresso

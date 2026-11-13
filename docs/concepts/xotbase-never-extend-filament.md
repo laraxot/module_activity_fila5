@@ -1,5 +1,5 @@
 ---
-title: "Activity: mai Filament*, sempre XotBase*"
+title: "Activity — mai Filament\*, sempre XotBase*"
 type: concept
 module: Activity
 tags: [activity, filament, xotbase, architecture]
@@ -7,15 +7,14 @@ created: 2026-07-16
 updated: 2026-07-16
 qmd: "Activity filament never extend Filament class XotBase mirror path"
 related:
-  - ../../../../../docs/wiki/rules/xotbase-critical-rules.md
-  - ../../../../../docs/wiki/rules/xot-base-filament-widgets.md
-  - ../../../../../docs/wiki/memories/xotbase-never-extend-filament.md
-status: draft
+  - ../../../../docs/wiki/rules/xotbase-critical-rules.md
+  - ../../../../docs/wiki/rules/xot-base-filament-widgets.md
+  - ../../../../docs/wiki/memories/xotbase-never-extend-filament.md
 ---
 
 # Mai `Filament\*` — sempre `Modules\Xot\Filament\...\XotBase*`
 
-Bridge on-demand. Contenuto canonico: [docs/wiki/rules/xotbase-critical-rules.md](../../../../../docs/wiki/rules/xotbase-critical-rules.md).
+Bridge on-demand. Contenuto canonico: [docs/wiki/rules/xotbase-critical-rules.md](../../../../docs/wiki/rules/xotbase-critical-rules.md).
 
 ## Zen (riassunto)
 

@@ -1,20 +1,9 @@
----
-title: "**Indice Documentazione Modulo Activity**"
-type: index
-updated: 2026-10-08
-tags: [docs, activity]
-qmd: "**indice documentazione modulo activity** activity"
-status: stale
----
-
-> Nota 2026-10-14 (docs-audit): Copia con contenuto raddoppiato di 00-INDEX.md (varianti di sola maiuscola) con link a file inesistenti; l'indice canonico e' 00-INDEX.md. Contenuto non riscritto, verificare prima di usarlo.
-
 # 📚 **Indice Documentazione Modulo Activity**
 **Status**: ✅ PHPStan Level 10 Compliant
 **Module Version**: 2.3.0
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./README.md) - Panoramica completa e Quick Start.
+1. [README.md](./readme.md) - Panoramica completa e Quick Start.
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
 3. [philosophy.md](./philosophy.md) - I principi dell'Audit Trail e dell'Event Sourcing.
 
@@ -55,7 +44,7 @@ status: stale
 **Module Version**: 2.3.0
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./README.md) - Panoramica completa e Quick Start.
+1. [README.md](./readme.md) - Panoramica completa e Quick Start.
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
 3. [philosophy.md](./philosophy.md) - I principi dell'Audit Trail e dell'Event Sourcing.
 
@@ -97,7 +86,7 @@ status: stale
 | FILAMENT_RESOURCE_GUIDELINES.md | Resource guidelines |
 
 ## 📦 **Pacchetti Composer**
-- [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
+- [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)=======
 app(LogActivityAction::class)->execute(
     type: 'user.login',
     user: $user,
@@ -219,8 +208,5 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 - Prima di modificare codice: ragionare, studiare i docs del modulo/tema, aggiornare docs/rules/memory/skills.
 - Riferimento globale: [Pre-Edit Docs-First Rule](../../../../docs/rules/pre-edit-docs-first-rule.md)
 - Memory: [Pre-Edit Docs-First Memory](../../../../docs/memory/pre-edit-docs-first-memory.md)
+- Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)=======
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
-
-## Cosa manca per completare
-
-[completion-status.md](./completion-status.md): indicatori misurati, problemi noti e story aperte (2026-10-28).

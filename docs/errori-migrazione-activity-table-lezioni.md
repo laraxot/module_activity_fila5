@@ -1,11 +1,3 @@
----
-title: "Lezioni Apprese: Errori Migrazione Activity Table"
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity]
-qmd: "lezioni apprese: errori migrazione activity table activity"
----
 # Lezioni Apprese: Errori Migrazione Activity Table
 
 ## Caso Studio: Errore Critico nella Modifica Migrazione Activity
@@ -175,13 +167,6 @@ Questa lezione è ora memorizzata permanentemente per:
 - [ Models](../../<nome modulo>/docs/model_architecture.md)
 - [Activity Logging](./activity_logging_system.md)
 
-- [Regole Migrazioni Laraxot](../../Xot/docs/migration_rules.md)
-- [Polimorfismo UUID](../../Xot/docs/polymorphic_uuid_support.md)
-- [Principi Architetturali](../../../docs/architectural_principles.md)
-
-### Moduli Correlati
-- [User Module UUID](../../User/docs/uuid_implementation.md)
-- [ Models](../../<nome modulo>/docs/model_architecture.md)
 - [Activity Logging](./activity_logging_system.md)
 
 *Ultimo aggiornamento: Gennaio 2025*

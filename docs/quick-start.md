@@ -4,11 +4,9 @@ type: guide
 tags: [activity, audit, logging]
 created: 2026-07-28
 updated: 2026-07-28
-status: draft
-qmd: "activity module   quick start activity"
 ---
 
-# Activity Module: Quick Start
+# Activity Module — Quick Start
 
 ## Log Activity
 

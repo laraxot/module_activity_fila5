@@ -1,11 +1,3 @@
----
-title: "Metriche Modulo Activity"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, roadmap]
-qmd: "metriche modulo activity activity"
----
 # Metriche Modulo Activity
 
 | Metrica | Obiettivo | Verifica |

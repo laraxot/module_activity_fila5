@@ -1,11 +1,3 @@
----
-title: "Activity Module - Product Roadmap# Activity - Product Roadmap"
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity]
-qmd: "activity module - product roadmap# activity - product roadmap activity"
----
 # Activity Module - Product Roadmap# Activity - Product Roadmap
 
 **Module:** Activity  
@@ -139,12 +131,4 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 
 ---
 
-## Related Documents
-
-- [PRD](prd.md)
-- [Product Strategy](product-strategy.md)
-- [Sprint Planning Meeting](sprint-planning-meeting.md)
-
----
-
-*Last Updated: March 12, 2026*
+*Last Updated: March 12, 2026*=======

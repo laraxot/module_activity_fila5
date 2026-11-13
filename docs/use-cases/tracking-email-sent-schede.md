@@ -1,11 +1,3 @@
----
-title: "Use Case: Tracking Email Sent - Schede Valutazione"
-type: note
-status: draft
-updated: 2026-10-23
-tags: [docs, activity, use-cases]
-qmd: "use case: tracking email sent - schede valutazione activity"
----
 # Use Case: Tracking Email Sent - Schede Valutazione
 
 ## 📋 Overview
@@ -369,11 +361,12 @@ public function it_logs_activity_when_sending_email(): void
 - [Activity - README](../../README.md)
 - [Ptv - Analisi Filosofica](../../../ptv/docs/activity-log-email-tracking-philosophical-analysis.md)
 - [Ptv - Implementation Guide](../../../ptv/docs/activity-log-email-tracking-implementation.md)
-- [Activity - README](../../README.md)
+- [Activity - README](../../readme.md)
 - [Activity - LogActivityAction](../../app/Actions/LogActivityAction.php)
 
 ---
 
+**=======
 **Ultimo Aggiornamento:** 2025-01-22
 **Versione:** 1.0
 **Autore:** System Integration Documentation

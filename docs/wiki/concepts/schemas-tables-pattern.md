@@ -1,11 +1,3 @@
----
-title: "Schemas & Tables Pattern"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, wiki]
-qmd: "schemas & tables pattern activity"
----
 # Schemas & Tables Pattern
 
 ## 1. Overview
@@ -34,7 +26,7 @@ For a given resource (e.g., `ActivityResource`), the structure is:
 
 ```php
 // Example in ActivityResource.php
-public static function getFormSchema(): array
+public function getFormSchema(): array
 {
     return []; // Logic moved to ActivityForm.php
 }

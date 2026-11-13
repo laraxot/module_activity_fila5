@@ -1,17 +1,9 @@
----
-title: "Collegamento alle Traduzioni del Modulo Activity"
-type: note
-status: draft
-updated: 2026-10-23
-tags: [docs, activity]
-qmd: "collegamento alle traduzioni del modulo activity activity"
----
 # Collegamento alle Traduzioni del Modulo Activity
 
 
 Consulta la documentazione delle traduzioni qui:
-- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
-- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
+- [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).
 

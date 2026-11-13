@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "quality status 2025 11"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Activity Module - Quality Status (November 2025)
@@ -103,7 +102,7 @@ public function withCustomProperties(array $attributes): static
 - `/docs/analysis/` - Quality analysis files
 - `/docs/guides/` - Implementation guides
 - `/docs/phpstan/` - PHPStan specific docs
-- `/docs/archived/` - Historical records
+- `/docs/archivedd/` - Historical records
 
 ## 🎓 Documentation Structure
 
@@ -164,6 +163,15 @@ public function withCustomProperties(array $attributes): static
 **Maintenance Focus**: Keep PHPStan at level max, fix minor PHPMD warnings, maintain documentation quality.
 
 ---
+
+title: "quality status 2025 11"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "quality status 2025 11"
+issues: []
+discussions: []
 *Last Updated: November 15, 2025*
 *PHPStan Version: Latest*
 *PHPMD Version: Latest*

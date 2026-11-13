@@ -1,11 +1,3 @@
----
-title: "Current State - Activity"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, roadmap]
-qmd: "current state - activity activity"
----
 # Current State - Activity
 
 ## Baseline

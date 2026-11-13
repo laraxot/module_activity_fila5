@@ -1,11 +1,3 @@
----
-title: "Roadmap Modulo Activity"
-type: note
-status: draft
-updated: 2026-10-23
-tags: [docs, activity, development]
-qmd: "roadmap modulo activity activity"
----
 # Roadmap Modulo Activity
 
 ## Stato Attuale
@@ -72,7 +64,7 @@ qmd: "roadmap modulo activity activity"
 - [Torna a README](./README.md)
 - [Torna a README](./readme.md)
 - [Vai a Struttura](./structure.md)
-- [Vai a Bottlenecks](../bottlenecks.md)
+- [Vai a Bottlenecks](./bottlenecks.md)
 
 - [ ] Compressione base
 - [ ] Pulizia manuale
@@ -197,7 +189,7 @@ qmd: "roadmap modulo activity activity"
 5. [ ] Documentazione base
 ## Collegamenti tra versioni di roadmap.md
 * [roadmap.md](bashscripts/docs/roadmap.md)
-* [roadmap.md](../roadmap.md)
+* [roadmap.md](docs/roadmap.md)
 * [roadmap.md](laravel/modules/gdpr/docs/roadmap.md)
 * [roadmap.md](laravel/modules/notify/docs/roadmap.md)
 * [roadmap.md](laravel/modules/xot/docs/roadmap.md)

@@ -1,12 +1,3 @@
----
-title: "Activity Module - Product Strategy"
-type: note
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "activity module - product strategy activity"
-status: superseded
-superseded_by: wiki/product/_da-riconciliare/product-strategy.md
----
 # Activity Module - Product Strategy
 
 **Module:** Activity  

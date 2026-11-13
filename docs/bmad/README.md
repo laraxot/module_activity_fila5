@@ -1,5 +1,5 @@
 ---
-title: "Activity: BMAD Method Integration"
+title: "Activity — BMAD Method Integration"
 description: "BMAD workflow documentation per il modulo Activity"
 module: "Activity"
 alias: "activity"
@@ -17,21 +17,9 @@ extended_by: 40
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
 bmad_track: "core-foundation"
-type: index
-updated: 2026-10-07
-tags: [docs, activity, bmad]
-qmd: "activity   bmad method integration activity"
 ---
 
-# Activity: BMAD Method Integration
-
-## Kit BMAD owner (canonico)
-
-- [BMAD Planning](../bmad-planning.md)
-- [BMAD Brainstorming](../bmad-brainstorming.md)
-- [Filament blueprint](./filament-blueprint.md)
-- [Project context](./project-context.md)
-- [Decision log](./decision-log.md)
+# Activity — BMAD Method Integration
 
 ## Scopo BMAD per Activity
 
@@ -98,8 +86,8 @@ bmad-quick-spec "Specifica per retention log Y giorni"
 ## Configurazione
 
 ```bash
-# Verifica che Activity sia abilitato (module:status non esiste: usare module:list)
-php artisan module:list | grep Activity
+# Verifica che Activity sia abilitato
+php artisan module:status Activity
 
 # Esegui migration
 php artisan migrate --path=modules/Activity/database/migrations

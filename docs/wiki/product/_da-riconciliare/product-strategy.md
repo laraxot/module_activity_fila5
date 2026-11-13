@@ -4,8 +4,6 @@ type: product
 tags: [product]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
-qmd: "activity module - product strategy activity"
 ---
 
 # Activity Module - Product Strategy

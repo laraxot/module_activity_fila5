@@ -4,13 +4,12 @@ type: concept
 sources: []
 confidence: high
 created: 2026-05-06
-updated: 2026-07-16
+updated: 2026-07-16=======
+updated: 2026-05-06
 tags: [filament, xotbase, zen-pattern, resource]
 related:
   - ../../Xot/docs/wiki/concepts/xotbase-resourceform-zen-pattern.md
   - ../../Xot/docs/wiki/concepts/xotbase-resource-table-zen-pattern.md
-status: draft
-qmd: "xotbaseresource zen pattern activity"
 ---
 
 # XotBaseResource Zen Pattern

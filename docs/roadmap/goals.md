@@ -1,11 +1,3 @@
----
-title: "Goals - Activity"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, roadmap]
-qmd: "goals - activity activity"
----
 # Goals - Activity
 
 ## Short Term

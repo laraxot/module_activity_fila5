@@ -1,21 +1,12 @@
----
-title: "Filament v4 Upgrade Documentation"
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity, filament]
-qmd: "filament v4 upgrade documentation activity"
----
 # Filament v4 Upgrade Documentation
 
-> **Storico** — migrazione verso Filament v4 (2025). **Stack attuale del progetto: Filament v5.** Vedi [filament-version.md](../filament-version.md) e [filament-version-policy.md](../../../../../docs/wiki/memories/filament-version-policy.md).
-
 ## Overview
-This document outlines the key changes and upgrades implemented for Filament v4 in the Activity module (archival).
+This document outlines the key changes and upgrades implemented for Filament v4 in the Activity module.
 
 ## Key Changes Made
 
 ### 1. Schema-based Resource Definitions
+- **Updated**: `ActivityResource` now uses `getFormSchema()` method
 - **New Pattern**: Returns array of `Filament\Schemas\Components\Component`
 - **Migration**: Moved from v3 `form(Form $form)` to v4 schema approach
 
@@ -57,4 +48,10 @@ public function getFormSchema(): array
 ## References
 
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
-- [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
+- [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)---
+module: theme
+topic: filament-v4-upgrade
+canonical: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md

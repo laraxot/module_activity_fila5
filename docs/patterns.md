@@ -4,11 +4,9 @@ type: guide
 tags: [activity, patterns]
 created: 2026-07-28
 updated: 2026-07-28
-status: draft
-qmd: "activity module   patterns activity"
 ---
 
-# Activity Module: Patterns
+# Activity Module — Patterns
 
 ## Audit Trail Pattern
 

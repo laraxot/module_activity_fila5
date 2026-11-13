@@ -1,13 +1,9 @@
 ---
-title: "UX: Activity"
+title: "UX — Activity"
 type: ux-design
 module: Activity
 related:
   - ./livewire-inventory.md
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, bmad]
-qmd: "ux activity activity"
 ---
 
 # UX Activity

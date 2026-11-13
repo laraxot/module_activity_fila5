@@ -1,11 +1,3 @@
----
-title: "Roadmap Index - Activity"
-type: index
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, roadmap]
-qmd: "roadmap index - activity activity"
----
 # Roadmap Index - Activity
 
 ## Scope

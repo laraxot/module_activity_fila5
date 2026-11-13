@@ -1,11 +1,3 @@
----
-title: "Activity Activity Log"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, llm-wiki]
-qmd: "activity activity log activity"
----
 # Activity Activity Log
 
 > **Module**: Activity

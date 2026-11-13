@@ -1,18 +1,13 @@
 ---
-title: "Activity: BMAD Quick Reference"
+title: "Activity — BMAD Quick Reference"
 description: "Comandi rapidi BMAD per il modulo Activity"
 module: "Activity"
 alias: "activity"
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, bmad]
-qmd: "activity   bmad quick reference activity"
 ---
 
-# Activity: BMAD Quick Reference
+# Activity — BMAD Quick Reference
 
 ## Comandi Rapidi
 

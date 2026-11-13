@@ -1,11 +1,3 @@
----
-title: "Filament Actions nel Modulo Activity"
-type: note
-status: draft
-updated: 2026-10-23
-tags: [docs, activity]
-qmd: "filament actions nel modulo activity activity"
----
 # Filament Actions nel Modulo Activity
 
 ## Panoramica
@@ -352,7 +344,7 @@ class ListMyModelActivities extends ListLogActivities
 
 ### Documentazione Interna
 - [README Activity Module](../README.md)
-- [README Activity Module](../README.md)
+- [README Activity Module](../readme.md)
 - [ListLogActivitiesAction Details](./actions/list-log-activities-action.md)
 - [ListLogActivities Page](./pages/list-log-activities.md)
 
@@ -373,6 +365,7 @@ class ListMyModelActivities extends ListLogActivities
 
 ---
 
+**=======
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Pattern**: DRY + KISS per Actions riutilizzabili
 **Conformità**: ✅ PHPStan livello 9+, ✅ Pint, ✅ Test Suite

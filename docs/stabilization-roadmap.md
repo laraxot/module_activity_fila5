@@ -1,11 +1,3 @@
----
-title: "Stabilization Roadmap - Activity Module"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "stabilization roadmap - activity module activity"
----
 # Stabilization Roadmap - Activity Module
 
 ## Context & Philosophy

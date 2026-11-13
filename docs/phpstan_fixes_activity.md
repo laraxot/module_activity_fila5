@@ -1,11 +1,3 @@
----
-title: "Correzioni PHPStan - Modulo Activity"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "correzioni phpstan - modulo activity activity"
----
 # Correzioni PHPStan - Modulo Activity
 
 ## 🚨 Errori PHPStan Risolti

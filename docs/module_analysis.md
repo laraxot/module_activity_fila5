@@ -1,11 +1,3 @@
----
-title: "Modulo Activity - Logging e Event Sourcing"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "modulo activity - logging e event sourcing activity"
----
 # Modulo Activity - Logging e Event Sourcing
 
 ## Scopo Principale

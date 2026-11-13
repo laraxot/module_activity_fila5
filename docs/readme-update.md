@@ -1,11 +1,3 @@
----
-title: "Aggiornamento README Activity - Sezione Testing"
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity]
-qmd: "aggiornamento readme activity - sezione testing activity"
----
 # Aggiornamento README Activity - Sezione Testing
 
 ## Sezione da Aggiungere
@@ -44,7 +36,7 @@ test('snapshot test', function () {
 - [No RefreshDatabase Policy](./testing/no-refresh-database-policy.md)
 - [Snapshot Testing Patterns](./testing/snapshot-testing-patterns.md)
 - [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)=======
-- [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)
+- [Xot Testing Strategy](../../xot/docs/testing-strategy.md)
 
 #### Test Coverage
 
@@ -71,4 +63,5 @@ php artisan test --filter=Snapshot
 
 # Con coverage
 php artisan test Modules/Activity --coverage
+```=======
 ```

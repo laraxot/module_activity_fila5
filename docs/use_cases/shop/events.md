@@ -1,11 +1,3 @@
----
-title: "Eventi del Carrello della Spesa"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, use_cases]
-qmd: "eventi del carrello della spesa activity"
----
 # Eventi del Carrello della Spesa
 
 ## Introduzione

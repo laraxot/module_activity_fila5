@@ -1,11 +1,3 @@
----
-title: "Testing <nome progetto>ion Market"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, use_cases]
-qmd: "testing <nome progetto>ion market activity"
----
 # Testing <nome progetto>ion Market
 
 ## Unit Test

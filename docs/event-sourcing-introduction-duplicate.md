@@ -1,11 +1,3 @@
----
-title: "Event Sourcing in `<nome progetto>`"
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity]
-qmd: "event sourcing in `<nome progetto>` activity"
----
 # Event Sourcing in `<nome progetto>`
 
 ## Introduction to Event Sourcing

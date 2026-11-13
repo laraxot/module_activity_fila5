@@ -1,11 +1,3 @@
----
-title: "Activity Module - Optimization Analysis"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "activity module - optimization analysis activity"
----
 # 📊 Activity Module - Optimization Analysis
 
 ## 🎯 Current Status
