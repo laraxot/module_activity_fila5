@@ -28,17 +28,17 @@ test('ActivityServiceProvider registers migrations', function (): void {
     $provider = new ActivityServiceProvider(app());
     $provider->boot();
 
-    Assert::assertInstanceOf(ActivityServiceProvider::class, $provider);
 });
 
 test('EventServiceProvider can be instantiated', function (): void {
     $provider = new EventServiceProvider(app());
-    Assert::assertInstanceOf(EventServiceProvider::class, $provider);
+    $listen = (new \ReflectionClass($provider))->getDefaultProperties()['listen'] ?? [];
+    Assert::assertIsArray($listen);
 });
 
 test('RouteServiceProvider can be instantiated', function (): void {
     $provider = new RouteServiceProvider(app());
-    Assert::assertInstanceOf(RouteServiceProvider::class, $provider);
+    Assert::assertSame('Activity', $provider->name);
 });
 
 test('RouteServiceProvider has correct properties', function (): void {

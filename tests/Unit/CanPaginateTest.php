@@ -13,6 +13,7 @@ uses(TestCase::class);
 
 describe('Can Paginate', function (): void {
     test('trait exists', function (): void {
+        /** @var \Modules\Activity\Tests\TestCase $this */
         Assert::assertTrue(trait_exists(CanPaginate::class));
     });
 

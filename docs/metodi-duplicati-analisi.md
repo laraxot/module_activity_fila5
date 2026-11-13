@@ -3,9 +3,14 @@ module: Activity
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+title: "Metodi Duplicati: Analisi Activity"
+type: note
+status: stub
+updated: 2026-10-08
+qmd: "metodi duplicati   analisi activity activity"
 ---
 
-# Metodi Duplicati — Analisi Activity
+# Metodi Duplicati: Analisi Activity
 
 Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modulo **Activity**, estratti dal report globale generato da `/tmp/metodi_duplicati_domain_report.md`.
 
@@ -17,7 +22,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Models/Policies/ActivityBasePolicy.php`
 
-[Riflessione: Presente in 13 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 13 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
@@ -29,7 +34,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/database/factories/BaseActivityFactory.php`
 
-[Riflessione: Presente in 5 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 5 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
@@ -41,7 +46,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Actions/ActivityLogger.php`
 
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 
 ---
 
@@ -53,7 +58,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Actions/ActivityLogger.php`
 
-[Riflessione: Presente in 4 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 4 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
@@ -65,7 +70,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Providers/ActivityServiceProvider.php`
 
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 
 ---
 
@@ -77,7 +82,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Actions/ActivityLogger.php`
 
-[Riflessione: Presente in 3 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 3 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
@@ -89,7 +94,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Actions/ActivityLogger.php`
 
-[Riflessione: Presente in 3 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 3 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
@@ -102,7 +107,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Activity/database/factories/SnapshotFactory.php`
 - `./laravel/Modules/Activity/database/factories/StoredEventFactory.php`
 
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 
 ---
 
@@ -115,7 +120,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Activity/database/factories/SnapshotFactory.php`
 - `./laravel/Modules/Activity/database/factories/StoredEventFactory.php`
 
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 
 ---
 
@@ -127,7 +132,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Filament/Pages/ListLogActivities.php`
 
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 
 ---
 
@@ -139,7 +144,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/database/seeders/ActivityMassSeeder.php`
 
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 
 ---
 
@@ -151,7 +156,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Actions/ActivityLogger.php`
 
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 
 ---
 
@@ -163,7 +168,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Actions/ActivityLogger.php`
 
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 
 ---
 
@@ -192,7 +197,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - **Setting:** 1 metodi in comune
 
 ---
-_Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_# 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
+_Report generato automaticamente: fonte: `/tmp/metodi_duplicati_domain_report.md`_# 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨
 **Data**: 15 Ottobre 2025

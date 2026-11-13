@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -12,7 +13,6 @@ test('Snapshot model can be instantiated', function () {
     $reflection = new ReflectionClass(Snapshot::class);
     $snapshot = $reflection->newInstanceWithoutConstructor();
 
-    Assert::assertIsObject($snapshot);
     // Verifichiamo che estenda il modello corretto da Spatie
     Assert::assertInstanceOf(EloquentSnapshot::class, $snapshot);
 });

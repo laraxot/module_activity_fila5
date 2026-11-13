@@ -1,3 +1,11 @@
+---
+title: "analisi e ottimizzazioni - modulo activity"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "analisi e ottimizzazioni - modulo activity activity"
+---
 # 📊 analisi e ottimizzazioni - modulo activity
 
 ## 🎯 panoramica analisi

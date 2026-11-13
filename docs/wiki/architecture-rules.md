@@ -1,6 +1,11 @@
 ---
 title: Architecture rules
 module: Activity
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, wiki]
+qmd: "architecture rules (puntatore) activity"
 ---
 
 -   [Super Cow Methodology](../../Xot/docs/super_cow_methodology.md)
@@ -20,4 +25,4 @@ updated: 2026-05-21
 
 # Architecture rules (puntatore)
 
-Regole globali: [../../../../docs/wiki/rules/00-TRIGGER_MAP.md](../../../../docs/wiki/rules/00-TRIGGER_MAP.md).
+Regole globali: [../../../../docs/wiki/rules/00-TRIGGER_MAP.md](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md).

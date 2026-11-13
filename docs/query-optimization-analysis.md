@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Query Optimization Analysis"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "activity module - query optimization analysis activity"
+---
 # Activity Module - Query Optimization Analysis
 
 ## Overview
@@ -229,9 +237,14 @@ CREATE INDEX idx_snapshots_aggregate_created ON snapshots(aggregate_uuid, create
 ### Caching Strategy
 ```php
 // Activity statistics caching
-class ActivityStatsService
+class GetTodayActivityStatsAction
 {
-    public function getTodayStats(): array
+    use QueueableAction;
+
+    /**
+     * @return array<string, int|array<string, int>>
+     */
+    public function execute(): array
     {
         return Cache::remember('activity_today_stats', 300, function () {
             return [
@@ -314,10 +327,6 @@ DB::listen(function ($query) {
 });
 ```
 
-This optimization plan will significantly improve the Activity module's performance while maintaining all existing functionality.---
-module: theme
-topic: query-optimization-analysis
-canonical: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
----
+This optimization plan will significantly improve the Activity module's performance while maintaining all existing functionality.
 
-See canonical documentation: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
+---

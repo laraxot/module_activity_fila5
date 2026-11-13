@@ -1,3 +1,11 @@
+---
+title: "Activity"
+type: index
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, outputs]
+qmd: "activity activity"
+---
 # Activity
 
 [![Module](https://img.shields.io/badge/Module-Activity-8B0000.svg)]()
@@ -26,9 +34,9 @@ Core module for the FixCity Platform.
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+| 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](..) |
 
 ---
 
-**Modulo** `Activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+See canonical documentation: ../../../../Themes/docs/shared-components/README-Modules.md

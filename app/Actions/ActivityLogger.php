@@ -24,6 +24,8 @@ class ActivityLogger
     use QueueableAction;
 
     /**
+     * Log activity.
+     *
      * @param  array<string, mixed>|null  $properties
      */
     public function log(
@@ -72,9 +74,7 @@ class ActivityLogger
      */
     public function created(Model $model, ?UserContract $user = null): Activity
     {
-        $action = new LogModelCreatedAction($model, $user instanceof Model ? $user : null);
-
-        return $action->execute();
+        return (new LogModelCreatedAction($model, $user instanceof Model ? $user : null))->execute();
     }
 
     /**
@@ -82,9 +82,7 @@ class ActivityLogger
      */
     public function updated(Model $model, ?UserContract $user = null): Activity
     {
-        $action = new LogModelUpdatedAction($model, $user instanceof Model ? $user : null);
-
-        return $action->execute();
+        return (new LogModelUpdatedAction($model, $user instanceof Model ? $user : null))->execute();
     }
 
     /**
@@ -92,9 +90,7 @@ class ActivityLogger
      */
     public function deleted(Model $model, ?UserContract $user = null): Activity
     {
-        $action = new LogModelDeletedAction($model, $user instanceof Model ? $user : null);
-
-        return $action->execute();
+        return (new LogModelDeletedAction($model, $user instanceof Model ? $user : null))->execute();
     }
 
     /**
@@ -102,9 +98,7 @@ class ActivityLogger
      */
     public function login(UserContract $user): Activity
     {
-        $action = new LogUserLoginAction($user);
-
-        return $action->execute();
+        return (new LogUserLoginAction($user))->execute();
     }
 
     /**
@@ -112,12 +106,12 @@ class ActivityLogger
      */
     public function logout(UserContract $user): Activity
     {
-        $action = new LogUserLogoutAction($user);
-
-        return $action->execute();
+        return (new LogUserLogoutAction($user))->execute();
     }
 
     /**
+     * Log custom event.
+     *
      * @param  array<string, mixed>|null  $properties
      */
     public function custom(
@@ -146,13 +140,15 @@ class ActivityLogger
             $userKeyValues[] = $userKey;
         }
 
-        return Activity::query()
+        $query = Activity::typedQuery()
             ->with('subject')
             ->whereIn('causer_id', $userKeyValues)
             ->where('causer_type', $user::class)
             ->latest()
             ->limit($limit)
-            ->get();
+            ;
+
+        return Activity::typedGet($query);
     }
 
     /**
@@ -162,13 +158,15 @@ class ActivityLogger
      */
     public function getModelActivities(Model $model, int $limit = 50): Collection
     {
-        return Activity::query()
+        $query = Activity::typedQuery()
             ->with('causer')
             ->where('subject_type', $model::class)
             ->where('subject_id', $model->getKey())
             ->latest()
             ->limit($limit)
-            ->get();
+            ;
+
+        return Activity::typedGet($query);
     }
 
     /**
@@ -185,12 +183,14 @@ class ActivityLogger
             throw new InvalidArgumentException('Limit must be positive');
         }
 
-        return Activity::query()
+        $query = Activity::typedQuery()
             ->with(['causer', 'subject'])
             ->where('event', $type)
             ->latest()
             ->limit($limit)
-            ->get();
+            ;
+
+        return Activity::typedGet($query);
     }
 
     /**
@@ -204,11 +204,13 @@ class ActivityLogger
             throw new InvalidArgumentException('Limit must be positive');
         }
 
-        return Activity::query()
+        $query = Activity::typedQuery()
             ->with(['causer', 'subject'])
             ->latest()
             ->limit($limit)
-            ->get();
+            ;
+
+        return Activity::typedGet($query);
     }
 
     /**
@@ -220,7 +222,7 @@ class ActivityLogger
             throw new InvalidArgumentException('Days must be positive');
         }
 
-        $deletedCount = Activity::where('created_at', '<', now()->subDays($days))
+        $deletedCount = Activity::typedQuery()->where('created_at', '<', now()->subDays($days))
             ->delete();
 
         $deleted = is_int($deletedCount) ? $deletedCount : 0;
@@ -240,7 +242,7 @@ class ActivityLogger
      */
     public function getStatistics(?UserContract $user = null): array
     {
-        $query = Activity::query();
+        $query = Activity::typedQuery();
 
         if ($user) {
             $query->where('causer_id', $user->getKey())
@@ -261,7 +263,7 @@ class ActivityLogger
 
                 // Explicitly map and cast to ensure types
                 /** @var array<string, int> $byType */
-                $byType = $results->mapWithKeys(function (object $item): array {
+                $byType = $results->mapWithKeys(function (object $item, int $_key): array {
                     // PHPStan L10: isset() per magic attributes invece di property_exists()
                     if (! isset($item->event, $item->count)) {
                         return [];

@@ -1,6 +1,11 @@
 ---
 title: Architecture rules
 module: Activity
+type: note
+status: draft
+updated: 2026-10-21
+tags: [docs, activity, bmad]
+qmd: "architecture rules (puntatore) activity"
 ---
 
 -   [Super Cow Methodology](../../Xot/docs/super_cow_methodology.md)
@@ -13,11 +18,11 @@ module: Activity
 3.  **XotBase**: Always extend `XotBase` classes, never Filament classes directly.
 4.  **Translations**: Use `LangServiceProvider` for automatic label resolution.
 ---
-title: architecture rules — puntatore
+title: architecture rules: puntatore
 type: reference
 updated: 2026-05-21
 ---
 
 # Architecture rules (puntatore)
 
-Regole globali: [../../../../docs/wiki/rules/00-TRIGGER_MAP.md](../../../../docs/wiki/rules/00-TRIGGER_MAP.md).
+Regole globali: [../../../../docs/wiki/rules/00-TRIGGER_MAP.md](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md).

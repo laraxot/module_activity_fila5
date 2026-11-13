@@ -12,6 +12,7 @@ issues:
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/316"
   - "https://github.com/laraxot/module_xot_fila5/discussions/34"
+status: draft
 ---
 
 # Activity Module - Memories Index
@@ -45,16 +46,16 @@ qmd search "test isolation connections" --intent="prevent test crosstalk"
 - [testcase-hierarchy-architecture](../concepts/testcase-hierarchy-architecture.md) — Detailed concept page
 
 ### Brainstorm Artifacts (Full Thinking)
-- [BRAINSTORM-TestCase-Architecture-2026-06-10.md](../../BRAINSTORM-TestCase-Architecture-2026-06-10.md) — Complete brainstorm with 28 ideas, 7 insights
+- [BRAINSTORM-TestCase-Architecture-2026-06-10.md](../../BRAINSTORM-TestCase-Architecture-laravel-modules.md) — Complete brainstorm with 28 ideas, 7 insights
 
 ### Implementation Guides (TBD)
 - Central TESTING.md in Modules/Xot/docs/
 - Per-module TESTING.md files
 
 ## See Also
-- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+- [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
 - [Root Wiki Index](../)
-- [Root Concepts (Architecture Decisions)](../../../../../docs/wiki/concepts/)
+- [Root Concepts (Architecture Decisions)](../../../../../../docs/wiki/concepts)
 
 ---
 **Updated:** 2026-06-10  

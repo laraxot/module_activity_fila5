@@ -1,3 +1,11 @@
+---
+title: "Advanced Event Sourcing Patterns for Healthcare Applications"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "advanced event sourcing patterns for healthcare applications activity"
+---
 # Advanced Event Sourcing Patterns for Healthcare Applications
 
 ## Table of Contents
@@ -38,7 +46,6 @@ sequenceDiagram
     participant A as API
     participant AR as PatientAggregate
     participant ES as Event Store
-    =======
 
     C->>A: Register Patient
     A->>AR: handle(RegisterPatientCommand)
@@ -46,7 +53,6 @@ sequenceDiagram
     AR->>ES: store(ContactInfoUpdated)
     ES-->>A: Events stored
     A-->>C: Patient ID
-    =======
 
     Note right of ES: Projectors update read models asynchronously
 ```
@@ -91,7 +97,6 @@ class ScheduleAppointmentHandler
         private EventBus $eventBus,
         private AppointmentRepository $appointments
     ) {}
-    =======
 
     public function handle(ScheduleAppointmentCommand $command): void
     {
@@ -103,9 +108,6 @@ class ScheduleAppointmentHandler
             $command->duration
         );
         
-        $this->appointments->save($appointment);
-        =======
-
         $this->appointments->save($appointment);
 
         $this->eventBus->publish(new AppointmentScheduled(

@@ -1,4 +1,12 @@
-# Activity — Migrazioni
+---
+title: "Activity: Migrazioni"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity   migrazioni activity"
+---
+# Activity: Migrazioni
 
 Bridge minimale alla **fonte canonica**:
 

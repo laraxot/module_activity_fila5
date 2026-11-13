@@ -1,6 +1,11 @@
 ---
 title: Readme en
 module: Activity
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, wiki]
+qmd: "activity   english presentation activity"
 ---
 
 # 📋 Activity — English presentation
@@ -44,7 +49,7 @@ Traceability on sensitive system entities.
 
 Accountability is **non-negotiable** in digital government.
 
-Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
 
 ---
 

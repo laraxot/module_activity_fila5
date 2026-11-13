@@ -13,8 +13,7 @@ uses(TestCase::class);
 
 describe('List Log Activities Action', function (): void {
     test('_extends_xot_base_action', function (): void {
-        $action = new ListLogActivitiesAction('test');
-        Assert::assertInstanceOf(XotBaseAction::class, $action);
+        Assert::assertSame(XotBaseAction::class, get_parent_class(ListLogActivitiesAction::class));
     });
 
     test('_has_correct_default_name', function (): void {

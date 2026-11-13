@@ -1,3 +1,11 @@
+---
+title: "agents"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, llm-wiki]
+qmd: "agents activity"
+---
 title: "Agent instructions"
 type: reference
 tags: [agents, coding-agent, llm-wiki]

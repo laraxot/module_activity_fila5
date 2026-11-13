@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Unit\Filament;
 
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesTranslationHarness;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('ListLogActivities toTranslationString normalizza stringhe e array', function (): void {
     $page = new ListLogActivitiesTranslationHarness;
