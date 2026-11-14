@@ -1,11 +1,4 @@
-<<<<<<< .merge_file_1TKENY
-=======
-<<<<<<< .merge_file_KkQIkI
-<<<<<<< HEAD
 # Architecture Documentation
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
 title: "Activity Module Architecture"
 type: architecture
@@ -13,8 +6,6 @@ tags: [module, architecture, audit]
 created: 2026-07-28
 updated: 2026-07-28
 ---
->>>>>>> laraxot/dev
-=======
 ---
 title: "Activity: architettura (diagramma non allineato al codice)"
 type: reference
@@ -27,7 +18,6 @@ qmd: "activity architettura diagramma repositories services projections stale"
 
 > Nota 2026-10-14 (docs-audit): il diagramma elenca Repositories, Services, Commands e Projections che non esistono in `app/` (cartelle reali: Actions, Adapters, Console, Contracts, Datas, Enums, Events, Exceptions, Filament, Http, Listeners, Models, Providers, Traits, View; `Support` assente, riverificato 2026-10-23). Il modulo non ha un layer Services (regola no-services). Fonte corretta: [README.md](./README.md) e [wiki/concepts/queueable-action-execute-entrypoint.md](./wiki/concepts/queueable-action-execute-entrypoint.md). Contenuto non riscritto, verificare prima di usarlo.
 
->>>>>>> .merge_file_Ibhc1b
 # Architecture Documentation
 ## Activity Module Architecture
 
@@ -72,7 +62,6 @@ Activity Module Architecture
 
 ## Quality Gates
 ✅ PHPStan L10: Executed (2026-07-28)# Architecture Documentation
->>>>>>> .merge_file_9OIRU7
 
 ## Activity Module Architecture
 
@@ -115,13 +104,8 @@ Activity Module Architecture
 
 ### Data Flow
 
-<<<<<<< HEAD
-=======
 ## Quality Gates
 ✅ PHPStan L10: Executed (2026-07-28)
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 # Architecture Documentation
 
 ## Activity Module Architecture
@@ -165,7 +149,6 @@ Activity Module Architecture
 
 ### Data Flow
 
->>>>>>> laraxot/dev
 1. **Event Creation**: User actions trigger domain events
 2. **Event Storage**: Events persisted to `stored_events` table
 3. **Snapshot Creation**: Aggregates create snapshots for performance
@@ -279,31 +262,18 @@ class ActivityPolicy
 
 ### Related Documentation
 
-<<<<<<< .merge_file_1TKENY
 - [Security](SECURITY.md)
 - [Quality](QUALITY.md)
 - [Performance](PERFORMANCE.md)
 - [Testing](TESTING.md)=======
 - [Testing](TESTING.md)
-=======
-<<<<<<< .merge_file_KkQIkI
 - [Security](SECURITY.md)
 - [Quality](QUALITY.md)
 - [Performance](PERFORMANCE.md)
-<<<<<<< HEAD
 - [Testing](TESTING.md)
-=======
-<<<<<<< HEAD
 - [Testing](TESTING.md)
->>>>>>> 0a02158a (.)
-=======
 - [Testing](TESTING.md)
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
-=======
 - [Security](security.md)
 - [Quality](roadmap/quality.md)
 - [Performance](PERFORMANCE.md) _(target mancante, verificato 2026-10-14)_
 - [Testing](testing.md)
->>>>>>> .merge_file_9OIRU7
->>>>>>> .merge_file_Ibhc1b

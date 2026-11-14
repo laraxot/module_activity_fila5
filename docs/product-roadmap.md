@@ -1,11 +1,4 @@
-<<<<<<< .merge_file_SYCoVh
-=======
-<<<<<<< .merge_file_1k5EFm
-<<<<<<< HEAD
 # Activity Module - Product Roadmap
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Activity Module - Product Roadmap
 
 **Module:** Activity  
@@ -140,11 +133,7 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 ---
 
 *Last Updated: March 12, 2026*
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 # Activity - Product Roadmap
->>>>>>> laraxot/dev
 
 **Module:** Activity  
 **Version:** 1.0.0  
@@ -194,7 +183,6 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 | W29-32 | Privacy & GDPR | - Data subject access<br>- Right to erasure workflows<br>- Consent tracking<br>- Privacy reports |
 | W33-36 | Security Monitoring | - Suspicious activity detection<br>- Failed login tracking<br>- Access pattern analysis |
 
-<<<<<<< HEAD
 ### Q4 2026 - Scale & Intelligence
 
 | Week | Milestone | Deliverables |
@@ -277,7 +265,6 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 | **Alert Accuracy** | N/A | 95% | 97% | 99% |
 
 ---
-=======
 ---
 title: "Activity Module - Product Roadmap# Activity - Product Roadmap"
 type: note
@@ -286,7 +273,6 @@ updated: 2026-10-08
 tags: [docs, activity]
 qmd: "activity module - product roadmap# activity - product roadmap activity"
 ---
->>>>>>> .merge_file_izdcr0
 # Activity Module - Product Roadmap# Activity - Product Roadmap
 
 **Module:** Activity  
@@ -420,28 +406,15 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 
 ---
 
-<<<<<<< .merge_file_SYCoVh
 *Last Updated: March 12, 2026*=======
-=======
 ## Related Documents
->>>>>>> .merge_file_xDZpdN
 
 *Last Updated: March 12, 2026*
-=======
 - [PRD](prd.md)
 - [Product Strategy](product-strategy.md)
 - [Sprint Planning Meeting](sprint-planning-meeting.md)
-<<<<<<< .merge_file_1k5EFm
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
-=======
 
 ---
 
 *Last Updated: March 12, 2026*
->>>>>>> .merge_file_xDZpdN
->>>>>>> .merge_file_izdcr0

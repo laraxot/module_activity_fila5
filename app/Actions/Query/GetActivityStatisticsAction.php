@@ -5,11 +5,7 @@ declare(strict_types=1);
 namespace Modules\Activity\Actions\Query;
 
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< .merge_file_pCJ4um
-use Illuminate\Support\Collection;
-=======
 use Illuminate\Database\Eloquent\Model;
->>>>>>> .merge_file_GBPfqo
 use Illuminate\Support\Facades\Cache;
 use InvalidArgumentException;
 use Modules\Activity\Models\Activity;
@@ -32,20 +28,11 @@ class GetActivityStatisticsAction
         $cacheKeySuffix = is_scalar($userKey) ? (string) $userKey : 'global';
         $cacheKey = 'activity.statistics.'.$cacheKeySuffix;
 
-<<<<<<< .merge_file_pCJ4um
-        /** @var array{total: int, by_type: array<string, int>, today: int, this_week: int, this_month: int} $stats */
-        $stats = Cache::remember($cacheKey, now()->addMinutes(5), function () use ($user): array {
-            return $this->computeStatistics($user);
-        });
-
-        return $stats;
-=======
         $statistics = Cache::remember($cacheKey, now()->addMinutes(5), function () use ($user): array {
             return $this->computeStatistics($user);
         });
 
         return is_array($statistics) ? $this->normalizeStatistics($statistics) : $this->computeStatistics($user);
->>>>>>> .merge_file_GBPfqo
     }
 
     /**
@@ -53,12 +40,7 @@ class GetActivityStatisticsAction
      */
     private function computeStatistics(?UserContract $user): array
     {
-<<<<<<< .merge_file_pCJ4um
-        /** @var Builder<Activity> $query */
-        $query = Activity::newQuery();
-=======
         $query = Activity::typedQuery();
->>>>>>> .merge_file_GBPfqo
 
         if ($user) {
             if (! $user instanceof Model) {
@@ -90,15 +72,7 @@ class GetActivityStatisticsAction
      */
     private function countByType(Builder $query): array
     {
-<<<<<<< .merge_file_pCJ4um
-        /** @var Builder<Activity> $clonedQuery */
-        $clonedQuery = $query->clone();
-
-        /** @var Collection<int, object{event: string, count: int}> $results */
-        $results = $clonedQuery
-=======
         $results = Activity::typedGet($query->clone()
->>>>>>> .merge_file_GBPfqo
             ->selectRaw('event, COUNT(*) as count')
             ->groupBy('event')
         );

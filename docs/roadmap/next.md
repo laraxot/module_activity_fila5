@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_MLfxKk
-=======
-<<<<<<< .merge_file_1Ml8b4
-=======
 ---
 title: "Next (Module Activity)"
 type: note
@@ -10,8 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, roadmap]
 qmd: "next (module activity) activity"
 ---
->>>>>>> .merge_file_m033QH
->>>>>>> .merge_file_bk39bF
 # Next (Module Activity)
 
 ## Features

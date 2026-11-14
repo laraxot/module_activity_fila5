@@ -30,13 +30,8 @@ describe('ActivityLogger', function (): void {
     });
 
     test('logs created event', function (): void {
-<<<<<<< .merge_file_SStaU1
-        $user = createActionsTestUser();
-        $logger = new ActivityLogger();
-=======
         $user = createUser();
         $logger = new ActivityLogger;
->>>>>>> .merge_file_tMwRYu
         $model = activityCreateUser();
 
         $activity = $logger->created($model, $user);
@@ -46,13 +41,8 @@ describe('ActivityLogger', function (): void {
     });
 
     test('logs updated event', function (): void {
-<<<<<<< .merge_file_SStaU1
-        $user = createActionsTestUser();
-        $logger = new ActivityLogger();
-=======
         $user = createUser();
         $logger = new ActivityLogger;
->>>>>>> .merge_file_tMwRYu
         $model = activityCreateUser();
 
         $activity = $logger->updated($model, $user);
@@ -62,13 +52,8 @@ describe('ActivityLogger', function (): void {
     });
 
     test('logs deleted event', function (): void {
-<<<<<<< .merge_file_SStaU1
-        $user = createActionsTestUser();
-        $logger = new ActivityLogger();
-=======
         $user = createUser();
         $logger = new ActivityLogger;
->>>>>>> .merge_file_tMwRYu
         $model = activityCreateUser();
 
         $activity = $logger->deleted($model, $user);

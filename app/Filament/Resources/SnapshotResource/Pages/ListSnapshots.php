@@ -16,8 +16,6 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListSnapshots extends XotBaseListRecords
 {
     protected static string $resource = SnapshotResource::class;
-<<<<<<< .merge_file_cOenTN
-=======
 
     /**
      * Get the list table columns.
@@ -73,5 +71,4 @@ class ListSnapshots extends XotBaseListRecords
             DeleteBulkAction::make(),
         ];
     }
->>>>>>> .merge_file_uPfQnM
 }

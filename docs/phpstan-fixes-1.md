@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_E6D0zp
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_5uYcrA
 # Correzioni PHPStan per il Modulo Activity
 
 ## Panoramica
@@ -79,31 +75,17 @@ Il modulo Activity dimostra un'eccellente qualità del codice, raggiungendo il l
 * [phpstan_fixes.md](laravel/Modules/Xot/docs/phpstan_fixes.md)
 * [phpstan_fixes.md](laravel/Modules/User/docs/phpstan_fixes.md)
 * [phpstan_fixes.md](laravel/Modules/User/docs/fixes/phpstan_fixes.md)
-<<<<<<< .merge_file_E6D0zp
 * [phpstan_fixes.md](laravel/Modules/Activity/docs/phpstan_fixes.md)=======
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
-=======
 * [phpstan_fixes.md](laravel/Modules/Activity/docs/phpstan_fixes.md)
-=======
 ---
 module: theme
 topic: phpstan-fixes-1
 canonical: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
-=======
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
->>>>>>> d4098eb (.)
-=======
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
->>>>>>> 26b6dbd (.)
-=======
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1.md
->>>>>>> 2d6a374 (.)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_5uYcrA

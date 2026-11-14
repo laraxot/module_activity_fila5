@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_pe3caF
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_BnqkAp
 # Architecture Documentation
 
 ## Activity Module Architecture
@@ -161,11 +157,8 @@ class ActivityPolicy
 - [Security](SECURITY.md)
 - [Quality](QUALITY.md)
 - [Performance](PERFORMANCE.md)
-<<<<<<< .merge_file_pe3caF
 - [Testing](TESTING.md)
-=======
 - [Testing](TESTING.md)
-=======
 ---
 title: "Activity Module Architecture"
 type: architecture
@@ -195,5 +188,3 @@ Provides audit trail and activity logging via Spatie Laravel Activity Log. Track
 
 ## Quality Gates
 ✅ PHPStan L10: Executed (2026-07-28)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_BnqkAp

@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_PqzhUU
-=======
-<<<<<<< .merge_file_TSnxHx
-<<<<<<< HEAD
 # Activity Module - Query Optimization Analysis
 
 ## Overview
@@ -319,10 +315,6 @@ DB::listen(function ($query) {
 ```
 
 This optimization plan will significantly improve the Activity module's performance while maintaining all existing functionality.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ---
 title: "Activity Module - Query Optimization Analysis"
 type: note
@@ -331,8 +323,6 @@ updated: 2026-10-08
 tags: [docs, activity]
 qmd: "activity module - query optimization analysis activity"
 ---
->>>>>>> .merge_file_2bTiZe
->>>>>>> .merge_file_cV6yS8
 # Activity Module - Query Optimization Analysis
 
 ## Overview
@@ -564,16 +554,12 @@ CREATE INDEX idx_snapshots_aggregate_created ON snapshots(aggregate_uuid, create
 ### Caching Strategy
 ```php
 // Activity statistics caching
-<<<<<<< .merge_file_PqzhUU
 class ActivityStatsService
 {
     public function getTodayStats(): array
-=======
-<<<<<<< .merge_file_TSnxHx
 class ActivityStatsService
 {
     public function getTodayStats(): array
-=======
 class GetTodayActivityStatsAction
 {
     use QueueableAction;
@@ -582,8 +568,6 @@ class GetTodayActivityStatsAction
      * @return array<string, int|array<string, int>>
      */
     public function execute(): array
->>>>>>> .merge_file_2bTiZe
->>>>>>> .merge_file_cV6yS8
     {
         return Cache::remember('activity_today_stats', 300, function () {
             return [
@@ -666,32 +650,15 @@ DB::listen(function ($query) {
 });
 ```
 
-<<<<<<< .merge_file_PqzhUU
 This optimization plan will significantly improve the Activity module's performance while maintaining all existing functionality.---
-=======
 This optimization plan will significantly improve the Activity module's performance while maintaining all existing functionality.
-<<<<<<< .merge_file_TSnxHx
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 ---
->>>>>>> .merge_file_cV6yS8
 module: theme
 topic: query-optimization-analysis
 canonical: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
 ---
 
-<<<<<<< .merge_file_PqzhUU
 See canonical documentation: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
-=======
 See canonical documentation: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
-=======
 
 ---
->>>>>>> .merge_file_2bTiZe
->>>>>>> .merge_file_cV6yS8

@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_1AQ5Ku
-=======
-<<<<<<< .merge_file_iHtlya
-=======
 ---
 title: "ACTIVITY MODULE - ROADMAP 2025"
 type: note
@@ -10,8 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - roadmap 2025 activity"
 ---
->>>>>>> .merge_file_Zja2lL
->>>>>>> .merge_file_TMirGw
 # 🎯 ACTIVITY MODULE - ROADMAP 2025
 
 **Modulo**: Activity ([Description])  
@@ -43,8 +37,6 @@ Activity Module
     ├── [Utility 1]
     ├── [Utility 2]
     └── [Utility 3]
-<<<<<<< .merge_file_iHtlya
-=======
 ```
 
 ---
@@ -151,8 +143,6 @@ Activity Module
 
 ---
 
-<<<<<<< .merge_file_1AQ5Ku
-=======
 ## Module Overview
 **Purpose**: Activity tracking and logging functionality
 **Status**: Activity tracking infrastructure
@@ -181,7 +171,6 @@ Activity Module
 - Activity API for external integrations
 
 ## Module Structure
->>>>>>> .merge_file_Zja2lL
 ```
 
 ---
@@ -288,7 +277,6 @@ Activity Module
 
 ---
 
->>>>>>> .merge_file_TMirGw
 ## 🛠️ IMPLEMENTATION PLAN
 
 ### 🎯 Q1 2025 (January - March)
@@ -342,10 +330,6 @@ Activity Module
 
 ---
 
-<<<<<<< .merge_file_1AQ5Ku
-=======
-<<<<<<< .merge_file_iHtlya
->>>>>>> .merge_file_TMirGw
 ## 🏆 SUCCESS CRITERIA
 
 ### ✅ Q1 2025 Goals
@@ -370,9 +354,6 @@ Activity Module
 ---
 
 *Questa roadmap è specifica per il modulo Activity e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
-<<<<<<< .merge_file_1AQ5Ku
-=======
-=======
 **Last Updated**: 2026-01-15
 **Maintainer**: Team Laraxot
 **Status**: Active Development
@@ -406,5 +387,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Mod
 - [roadmap/tasks/realtime-monitoring-dashboard.md](roadmap/tasks/realtime-monitoring-dashboard.md)
 - [roadmap/vision.md](roadmap/vision.md)
 - [stabilization-roadmap.md](stabilization-roadmap.md)
->>>>>>> .merge_file_Zja2lL
->>>>>>> .merge_file_TMirGw

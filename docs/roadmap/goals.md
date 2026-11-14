@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_WOjmzx
-=======
-<<<<<<< .merge_file_YhUTY4
-=======
 ---
 title: "Goals - Activity"
 type: note
@@ -10,8 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, roadmap]
 qmd: "goals - activity activity"
 ---
->>>>>>> .merge_file_ys7wsu
->>>>>>> .merge_file_Ry0nZ9
 # Goals - Activity
 
 ## Short Term

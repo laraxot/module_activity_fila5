@@ -27,7 +27,6 @@ return [
     'actions' => [
         'refresh' => [
             'label' => 'Aggiorna',
-<<<<<<< .merge_file_OAdpS1
             'icon' => 'refresh',
             'tooltip' => 'refresh',
         ],
@@ -37,7 +36,7 @@ return [
             'tooltip' => 'download',
         ],
         'logout' => [
-            'tooltip' => 'logout',
+            'tooltip' => '',
             'icon' => 'logout',
             'label' => 'logout',
         ],
@@ -45,15 +44,6 @@ return [
             'label' => 'profile',
             'icon' => 'profile',
             'tooltip' => 'profile',
-=======
-        ],
-        'download' => [
-            'label' => 'Scarica il file',
-        ],
-        'logout' => [
-            'tooltip' => '',
-            'icon' => 'logout',
->>>>>>> .merge_file_3yt8Hs
         ],
     ],
     'messages' => [

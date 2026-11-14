@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_yebwoo
-=======
-<<<<<<< .merge_file_9a77V8
-=======
 ---
 title: "Migration: Support → Actions"
 type: note
@@ -10,8 +6,6 @@ updated: 2026-10-22
 tags: [docs, activity]
 qmd: "migration: support → actions activity"
 ---
->>>>>>> .merge_file_yt0e1H
->>>>>>> .merge_file_aS64zk
 # Migration: Support → Actions
 
 **Module:** Activity  

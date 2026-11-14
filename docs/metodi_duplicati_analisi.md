@@ -3,9 +3,6 @@ module: Activity
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
-<<<<<<< .merge_file_att6B1
-=======
-<<<<<<< .merge_file_FY2aU2
 ---
 
 # Metodi Duplicati — Analisi Activity
@@ -91,17 +88,13 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 **File in Activity:**
 
 - `./laravel/Modules/Activity/app/Actions/ActivityLogger.php`
-=======
 title: "Metodi Duplicati — Analisi Activity"
 type: note
 status: stub
 updated: 2026-10-07
 qmd: "metodi duplicati   analisi activity activity"
->>>>>>> .merge_file_tFvH8M
 ---
->>>>>>> .merge_file_7bwvH3
 
-<<<<<<< .merge_file_att6B1
 # Metodi Duplicati — Analisi Activity
 
 Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modulo **Activity**, estratti dal report globale generato da `/tmp/metodi_duplicati_domain_report.md`.
@@ -190,13 +183,10 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 ---
 
-=======
 [Riflessione: Presente in 3 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
-<<<<<<< .merge_file_FY2aU2
->>>>>>> .merge_file_tFvH8M
 ## Metodo: `withVersion` (2 occorrenze)
 
 **Moduli coinvolti:** Activity
@@ -297,9 +287,4 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 ---
 _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
-<<<<<<< .merge_file_att6B1
-=======
-=======
 See canonical documentation: ../../../Themes/docs/shared-components/METODI_DUPLICATI_ANALISI.md
->>>>>>> .merge_file_7bwvH3
->>>>>>> .merge_file_tFvH8M

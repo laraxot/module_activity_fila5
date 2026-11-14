@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_SUqkgX
-=======
-<<<<<<< .merge_file_Z7eARm
-=======
 ---
 title: "Architettura di uno Shop Event Sourced"
 type: note
@@ -10,8 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "architettura di uno shop event sourced activity"
 ---
->>>>>>> .merge_file_c5eWJd
->>>>>>> .merge_file_NDxKYO
 # Architettura di uno Shop Event Sourced
 
 ## 1. Modularità e Bounded Context

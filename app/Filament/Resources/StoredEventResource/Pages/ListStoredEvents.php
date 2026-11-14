@@ -16,8 +16,6 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListStoredEvents extends XotBaseListRecords
 {
     protected static string $resource = StoredEventResource::class;
-<<<<<<< .merge_file_y7493k
-=======
 
     /**
      * @return array<Tables\Columns\Column>
@@ -32,5 +30,4 @@ class ListStoredEvents extends XotBaseListRecords
             'event_properties' => ViewColumn::make('event_properties')->view($eventPropertiesView),
         ];
     }
->>>>>>> .merge_file_d6t5aZ
 }

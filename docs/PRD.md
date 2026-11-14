@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_2r6ne6
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_ehXeLH
 ---
 title: "Product Requirements Document (PRD) - Activity Module"
 module: "Activity"
@@ -30,10 +26,7 @@ Activity tracking and audit logging module for Laraxot platform.
 - PHPStan Level 10 compliance
 - Pest test coverage >90%
 - Integration with Xot base models
-<<<<<<< .merge_file_2r6ne6
-=======
 
-=======
 # PRD - Activity Module
 
 ## 1. Executive Summary
@@ -80,5 +73,3 @@ Il modulo $(basename $(dirname $(dirname "$prd"))) segue la **Metodologia "Super
 - **No RefreshDatabase**: Utilizzo di `DatabaseTransactions`.
 - **Obiettivo**: 100% di coverage. Se un test fallisce, va sistemato o eliminato se il sito è funzionale.
 - **Obiettivo**: 100% di coverage. Se un test fallisce, va sistemato o eliminato se il sito è funzionale.
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ehXeLH

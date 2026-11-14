@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_thdVGX
-=======
-<<<<<<< .merge_file_5jewXC
-<<<<<<< HEAD
 # Best Practices – Activity
 
 ## Principi DRY/KISS
@@ -20,10 +16,6 @@
 ## Documentazione
 - Aggiorna `docs/INDEX.md` con nuovi modelli e relazioni.
 - Collega a `Projects` e `Tasks` per contesto operativo.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ---
 title: "Best Practices – Activity"
 type: note
@@ -32,8 +24,6 @@ updated: 2026-10-08
 tags: [docs, activity]
 qmd: "best practices   activity activity"
 ---
->>>>>>> .merge_file_HM2FiY
->>>>>>> .merge_file_FEGdtD
 # Best Practices – Activity
 
 ## Principi DRY/KISS
@@ -50,32 +40,15 @@ qmd: "best practices   activity activity"
 - Copri casi limite come transizioni di stato non valide.
 
 ## Documentazione
-<<<<<<< .merge_file_thdVGX
 - Aggiorna `docs/INDEX.md` con nuovi modelli e relazioni.
 - Collega a `Projects` e `Tasks` per contesto operativo.---
-=======
 - Aggiorna `docs/00-index.md` con nuovi modelli e relazioni.
 - Collega a `Projects` e `Tasks` per contesto operativo.
-<<<<<<< .merge_file_5jewXC
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 ---
->>>>>>> .merge_file_FEGdtD
 module: theme
 topic: best-practices
 canonical: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
 ---
 
-<<<<<<< .merge_file_thdVGX
 See canonical documentation: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
-=======
 See canonical documentation: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_HM2FiY
->>>>>>> .merge_file_FEGdtD

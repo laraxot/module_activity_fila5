@@ -2,15 +2,9 @@
 
 Status: done
 
-<<<<<<< .merge_file_8TQ9xf
 ## GitHub (tracciamento) — OBBLIGATORIO
-=======
-<<<<<<< .merge_file_yMc3AB
 ## GitHub (tracciamento) — OBBLIGATORIO
-=======
 ## GitHub (tracciamento): OBBLIGATORIO
->>>>>>> .merge_file_fTnRpS
->>>>>>> .merge_file_H8j4v9
 
 | Tipo | Repo | # | URL |
 |------|------|---|-----|
@@ -41,10 +35,7 @@ e quindi per costruzione non la vede.
 
 ## Tasks / Subtasks
 
-<<<<<<< .merge_file_8TQ9xf
 - [x] Task 1 — Misurare il difetto (AC: 1, 2)
-=======
-<<<<<<< .merge_file_yMc3AB
 - [x] Task 1 — Misurare il difetto (AC: 1, 2)
   - [x] Eseguire il preflight di `03-quality-gates.md` (step 1c) e leggerne l'esito
   - [x] Estendere lo stesso controllo agli 11.201 `.php` tracciati
@@ -61,9 +52,7 @@ e quindi per costruzione non la vede.
 - [x] Task 5 — Lasciare la guardia (AC: 5)
   - [x] Step 1d (`QG_SCAN_ALL=1`) nel prompt, portato a 3.24.0
 - [x] Task 6 — Tracciamento (AC: tutti)
-=======
 - [x] Task 1: Misurare il difetto (AC: 1, 2)
->>>>>>> .merge_file_H8j4v9
   - [x] Eseguire il preflight di `03-quality-gates.md` (step 1c) e leggerne l'esito
   - [x] Estendere lo stesso controllo agli 11.201 `.php` tracciati
   - [x] Classificare i 27 file che non aprono con `<?php`: 23 template HTML legittimi, 4 no
@@ -78,12 +67,8 @@ e quindi per costruzione non la vede.
   - [x] Contenuto superstite confluito nella story Rating che gia' copre quel filtro
 - [x] Task 5 — Lasciare la guardia (AC: 5)
   - [x] Step 1d (`QG_SCAN_ALL=1`) nel prompt, portato a 3.24.0
-<<<<<<< .merge_file_8TQ9xf
 - [x] Task 6 — Tracciamento (AC: tutti)
-=======
 - [x] Task 6: Tracciamento (AC: tutti)
->>>>>>> .merge_file_fTnRpS
->>>>>>> .merge_file_H8j4v9
   - [x] Issue #19 e Discussion #21 su `provtv/module_activity_fila5`
   - [x] `docs/sprint-status.yaml` aggiornato
   - [x] `docs/chat/quality-gates-preflight-file-corrotti.md` per gli altri agenti
@@ -116,15 +101,9 @@ ignorato, ma cinque strumenti che dicono verde su un file svuotato del suo conte
 
 ### Due corruzioni sovrapposte, non una
 
-<<<<<<< .merge_file_8TQ9xf
 1. **La pipe.** L'inverso e' deterministico — togliere il byte in posizione pari — e la
-=======
-<<<<<<< .merge_file_yMc3AB
 1. **La pipe.** L'inverso e' deterministico — togliere il byte in posizione pari — e la
-=======
 1. **La pipe.** L'inverso e' deterministico: togliere il byte in posizione pari: e la
->>>>>>> .merge_file_fTnRpS
->>>>>>> .merge_file_H8j4v9
    verifica non e' «sembra giusto»: i due `en/` cosi' ricostruiti sono **byte-identici**
    alla copia pulita di `base_fixcity_fila5`. Non e' una ricostruzione plausibile, e' la
    stessa.
@@ -144,15 +123,9 @@ dove c'erano gli accenti: e' piu' piccolo perche' e' mutilato, non perche' e' pi
 | clone | file corrotti | accenti |
 |---|---:|---|
 | `base_ptvx_fila5` | 4 | persi |
-<<<<<<< .merge_file_8TQ9xf
 | `base_quaeris_fila5` | 4 | persi (11 `U+FFFD`) — **ancora rotto** |
-=======
-<<<<<<< .merge_file_yMc3AB
 | `base_quaeris_fila5` | 4 | persi (11 `U+FFFD`) — **ancora rotto** |
-=======
 | `base_quaeris_fila5` | 4 | persi (11 `U+FFFD`): **ancora rotto** |
->>>>>>> .merge_file_fTnRpS
->>>>>>> .merge_file_H8j4v9
 | `base_fixcity_fila5` | 0 | righe `tooltip` cancellate |
 | `base_techplanner_fila5` | 0 | altra versione |
 | `base_laravelpizza` | 0 | **integro** |
@@ -174,15 +147,9 @@ Pest che rileggerebbe gli stessi byte.
 
 ### References
 
-<<<<<<< .merge_file_8TQ9xf
 - [Source: bashscripts/docs/prompts/03-quality-gates.md#preflight] — step 1c e nuovo 1d
-=======
-<<<<<<< .merge_file_yMc3AB
 - [Source: bashscripts/docs/prompts/03-quality-gates.md#preflight] — step 1c e nuovo 1d
-=======
 - [Source: bashscripts/docs/prompts/03-quality-gates.md#preflight]: step 1c e nuovo 1d
->>>>>>> .merge_file_fTnRpS
->>>>>>> .merge_file_H8j4v9
 - [Source: laravel/Modules/Rating/docs/stories/ratings-column-section-filter.story.md#Il-predecessore]
 - [Source: docs/chat/quality-gates-preflight-file-corrotti.md]
 - [Source: docs/wiki/rules/bmad-story-github-links-mandatory.md]
@@ -191,7 +158,6 @@ Pest che rileggerebbe gli stessi byte.
 
 ### Agent Model Used
 
-<<<<<<< .merge_file_8TQ9xf
 claude-opus-5[1m] — sessione `c21fdd4e`
 
 ### Debug Log References
@@ -199,8 +165,6 @@ claude-opus-5[1m] — sessione `c21fdd4e`
 - `laravel/build/phpstan-c21fdd4e.txt` — 4 errori, tutti in `Modules/Rating/tests/`
 - `laravel/build/pest-c21fdd4e.txt` — 35 rossi / 3 rischiosi / 64 verdi, tutti preesistenti
 - `laravel/build/pint-c21fdd4e.txt` — 1 rosso, WIP di un'altra sessione
-=======
-<<<<<<< .merge_file_yMc3AB
 claude-opus-5[1m] — sessione `c21fdd4e`
 
 ### Debug Log References
@@ -208,7 +172,6 @@ claude-opus-5[1m] — sessione `c21fdd4e`
 - `laravel/build/phpstan-c21fdd4e.txt` — 4 errori, tutti in `Modules/Rating/tests/`
 - `laravel/build/pest-c21fdd4e.txt` — 35 rossi / 3 rischiosi / 64 verdi, tutti preesistenti
 - `laravel/build/pint-c21fdd4e.txt` — 1 rosso, WIP di un'altra sessione
-=======
 claude-opus-5[1m]: sessione `c21fdd4e`
 
 ### Debug Log References
@@ -216,8 +179,6 @@ claude-opus-5[1m]: sessione `c21fdd4e`
 - `laravel/build/phpstan-c21fdd4e.txt`: 4 errori, tutti in `Modules/Rating/tests/`
 - `laravel/build/pest-c21fdd4e.txt`: 35 rossi / 3 rischiosi / 64 verdi, tutti preesistenti
 - `laravel/build/pint-c21fdd4e.txt`: 1 rosso, WIP di un'altra sessione
->>>>>>> .merge_file_fTnRpS
->>>>>>> .merge_file_H8j4v9
 
 ### Completion Notes List
 
@@ -232,10 +193,6 @@ claude-opus-5[1m]: sessione `c21fdd4e`
 
 ### File List
 
-<<<<<<< .merge_file_8TQ9xf
-=======
-<<<<<<< .merge_file_yMc3AB
->>>>>>> .merge_file_H8j4v9
 - `laravel/Modules/Activity/resources/lang/en/activity-resource.php` — riparato
 - `laravel/Modules/Activity/resources/lang/en/snapshot-resource.php` — riparato
 - `laravel/Modules/Activity/resources/lang/it/activity-resource.php` — riparato
@@ -245,9 +202,6 @@ claude-opus-5[1m]: sessione `c21fdd4e`
 - `laravel/Modules/Rating/tests/Unit/BaseRatingModelTest.php` — rimosso il test su `linkedTo()` inesistente
 - `laravel/Modules/IndennitaResponsabilita/app/Models/Rating.php` — `@property int|null $parent_id`
 - `bashscripts/docs/prompts/03-quality-gates.md` — 3.24.0
-<<<<<<< .merge_file_8TQ9xf
-=======
-=======
 - `laravel/Modules/Activity/resources/lang/en/activity-resource.php`: riparato
 - `laravel/Modules/Activity/resources/lang/en/snapshot-resource.php`: riparato
 - `laravel/Modules/Activity/resources/lang/it/activity-resource.php`: riparato
@@ -257,6 +211,4 @@ claude-opus-5[1m]: sessione `c21fdd4e`
 - `laravel/Modules/Rating/tests/Unit/BaseRatingModelTest.php`: rimosso il test su `linkedTo()` inesistente
 - `laravel/Modules/IndennitaResponsabilita/app/Models/Rating.php`: `@property int|null $parent_id`
 - `bashscripts/docs/prompts/03-quality-gates.md`: 3.24.0
->>>>>>> .merge_file_fTnRpS
->>>>>>> .merge_file_H8j4v9
 - `docs/sprint-status.yaml`, `docs/chat/quality-gates-preflight-file-corrotti.md`

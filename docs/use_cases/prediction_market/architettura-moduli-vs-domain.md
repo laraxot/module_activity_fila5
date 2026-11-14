@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_YGD2QY
-=======
-<<<<<<< .merge_file_PU3Oz5
-=======
 ---
 title: "Architettura a Moduli vs Domain per <nome progetto>ion Market"
 type: note
@@ -10,8 +6,6 @@ updated: 2026-10-23
 tags: [docs, activity, use_cases]
 qmd: "architettura a moduli vs domain per <nome progetto>ion market activity"
 ---
->>>>>>> .merge_file_7DTsRp
->>>>>>> .merge_file_SCNCAn
 # Architettura a Moduli vs Domain per <nome progetto>ion Market
 
 ## Introduzione
@@ -92,20 +86,11 @@ app/Domain/<nome progetto>ionMarket/
 - [Architettura prediction_market](./02_architettura.md)
 - [Best practice prediction_market](./04_best_practice.md)
 - [API prediction_market](./06_api.md)
-<<<<<<< .merge_file_YGD2QY
-=======
-<<<<<<< .merge_file_PU3Oz5
->>>>>>> .merge_file_SCNCAn
 - [Testing prediction_market](./07_test.md)
 - [Indice <nome progetto>ion_market](./readme.md)
 - [Architettura <nome progetto>ion_market](./02_architettura.md)
 - [Best practice <nome progetto>ion_market](./04_best_practice.md)
 - [API <nome progetto>ion_market](./06_api.md)
-<<<<<<< .merge_file_YGD2QY
 - [Testing <nome progetto>ion_market](./07_test.md)
-=======
 - [Testing <nome progetto>ion_market](./07_test.md)
-=======
 - [Testing prediction_market](./07_test.md)
->>>>>>> .merge_file_7DTsRp
->>>>>>> .merge_file_SCNCAn

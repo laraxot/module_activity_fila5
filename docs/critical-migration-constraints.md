@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_Un8pXC
-=======
-<<<<<<< .merge_file_Ifme2v
-=======
 ---
 title: "CRITICAL: MAI FARE migrate:refresh/fresh/rollback O --force"
 type: note
@@ -10,8 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "critical: mai fare migrate:refresh/fresh/rollback o --force activity"
 ---
->>>>>>> .merge_file_okpgtw
->>>>>>> .merge_file_rcFsHi
 # ⚠️ CRITICAL: MAI FARE migrate:refresh/fresh/rollback O --force 🔴🔴
 
 ## I Dati Sono SACRI

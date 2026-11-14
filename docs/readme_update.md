@@ -1,6 +1,3 @@
-<<<<<<< .merge_file_NyfenN
-=======
-<<<<<<< .merge_file_9qefgr
 # Aggiornamento README Activity - Sezione Testing
 
 ## Sezione da Aggiungere
@@ -67,7 +64,6 @@ php artisan test --filter=Snapshot
 php artisan test Modules/Activity --coverage
 ```
 
-=======
 ---
 title: "Aggiornamento README Activity - Sezione Testing"
 type: note
@@ -76,7 +72,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "aggiornamento readme activity - sezione testing activity"
 ---
->>>>>>> .merge_file_NsBCzg
 # Aggiornamento README Activity - Sezione Testing
 
 ## Sezione da Aggiungere
@@ -143,8 +138,4 @@ php artisan test --filter=Snapshot
 php artisan test Modules/Activity --coverage
 ```
 
-<<<<<<< .merge_file_NyfenN
-=======
 See canonical documentation: ../../../Themes/docs/shared-components/README.md.update
->>>>>>> .merge_file_cISHnP
->>>>>>> .merge_file_NsBCzg

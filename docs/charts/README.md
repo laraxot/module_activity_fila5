@@ -8,8 +8,6 @@
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)](https://www.php-fig.org/psr/psr-12/)
 [![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
 ]()
-<<<<<<< .merge_file_aB3nkd
-=======
 
 > **Core module for the FixCity Platform.**
 
@@ -28,11 +26,8 @@ Core module for the FixCity Platform.
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
-<<<<<<< .merge_file_F2nYmL
-=======
 | 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](..) |
->>>>>>> .merge_file_uKvRAW
 
 > **Core module for the FixCity Platform.**
 
@@ -51,7 +46,6 @@ Core module for the FixCity Platform.
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
->>>>>>> .merge_file_WVGEUW
 | 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
 

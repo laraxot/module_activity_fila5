@@ -8,16 +8,7 @@ use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_aFD3Xl
-
-=======
-<<<<<<< .merge_file_e19I9v
-
-uses(\Modules\Activity\Tests\TestCase::class);
-=======
->>>>>>> .merge_file_0AVARw
 uses(TestCase::class);
->>>>>>> .merge_file_AaXnvd
 
 test('logout listener is registered for logout event', function () {
     $reflection = new ReflectionClass(EventServiceProvider::class);
@@ -30,13 +21,7 @@ test('logout listener is registered for logout event', function () {
 });
 
 test('logout listener can be instantiated', function () {
-<<<<<<< .merge_file_e19I9v
-    $listener = new LogoutListener();
-
-    Assert::assertInstanceOf(LogoutListener::class, $listener);
-=======
     Assert::assertTrue((new ReflectionClass(LogoutListener::class))->isInstantiable());
->>>>>>> .merge_file_AaXnvd
 });
 
 test('logout listener has handle method', function () {

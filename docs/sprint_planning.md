@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_vdNtuS
-=======
-<<<<<<< .merge_file_xthYkA
-=======
 ---
 title: "Activity Module - Sprint Planning"
 type: note
@@ -10,8 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - sprint planning activity"
 ---
->>>>>>> .merge_file_VmoEkA
->>>>>>> .merge_file_uCF3UT
 # Activity Module - Sprint Planning
 
 **Module:** Activity  

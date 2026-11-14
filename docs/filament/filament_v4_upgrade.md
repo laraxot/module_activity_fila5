@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_d4Joov
-=======
-<<<<<<< .merge_file_e3G4Km
-=======
 ---
 title: "Filament v4 Upgrade Documentation"
 type: note
@@ -10,8 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, filament]
 qmd: "filament v4 upgrade documentation activity"
 ---
->>>>>>> .merge_file_t4dkV6
->>>>>>> .merge_file_TMYUJy
 # Filament v4 Upgrade Documentation
 
 ## Overview

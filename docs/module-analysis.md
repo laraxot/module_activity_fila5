@@ -1,11 +1,4 @@
-<<<<<<< .merge_file_iKfgz4
-=======
-<<<<<<< .merge_file_xeFwmb
-<<<<<<< HEAD
 # Modulo Activity - Logging e Event Sourcing
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Modulo Activity - Logging e Event Sourcing
 
 ## Scopo Principale
@@ -326,12 +319,7 @@ activity()->withProperties([
 
 **Versione**: v2.5.0-beta  
 **Stato**: Production Ready with Compliance Enhancement
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 # Activity Module - Comprehensive Analysis
->>>>>>> laraxot/dev
-=======
 ---
 title: "Modulo Activity - Logging e Event Sourcing# Activity Module - Comprehensive Analysis"
 type: note
@@ -340,9 +328,7 @@ updated: 2026-10-08
 tags: [docs, activity]
 qmd: "modulo activity - logging e event sourcing# activity module - comprehensive analysis activity"
 ---
->>>>>>> .merge_file_xSmBET
 # Modulo Activity - Logging e Event Sourcing# Activity Module - Comprehensive Analysis
->>>>>>> .merge_file_hrWKJG
 
 ## Scopo Principale
 
@@ -404,10 +390,6 @@ Activity Module Stack:
     └── ReportGenerator
 ```
 
-<<<<<<< .merge_file_xeFwmb
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_hrWKJG
 ### Data Flow
 ```
 User Action → Event → ActivityLogger → Database → Dashboard → Analytics
@@ -665,12 +647,8 @@ activity()->withProperties([
 ---
 
 **Versione**: v2.5.0-beta  
-<<<<<<< .merge_file_iKfgz4
 **Stato**: Production Ready with Compliance Enhancement=======
-=======
 **Stato**: Production Ready with Compliance Enhancement
-<<<<<<< .merge_file_xeFwmb
-=======
 ## Future Enhancements
 - Real-time monitoring
 - Advanced analytics
@@ -680,14 +658,6 @@ activity()->withProperties([
 - Performance optimization
 - Advanced search features
 - Integration with external systems
-<<<<<<< HEAD
 - Machine learning capabilities
->>>>>>> 0a02158a (.)
-=======
 - Machine learning capabilities
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_xSmBET
 - Machine learning capabilities
->>>>>>> .merge_file_hrWKJG

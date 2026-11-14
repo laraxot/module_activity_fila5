@@ -10,23 +10,11 @@ use PHPUnit\Framework\Assert;
 uses(\Modules\Activity\Tests\TestCase::class);
 
 test('Snapshot model can be instantiated', function () {
-<<<<<<< .merge_file_qJZkId
-    $snapshot = new Snapshot();
-
-    Assert::assertInstanceOf(Snapshot::class, $snapshot);
-});
-
-test('StoredEvent model can be instantiated', function () {
-    $storedEvent = new StoredEvent();
-
-    Assert::assertInstanceOf(StoredEvent::class, $storedEvent);
-=======
     Assert::assertTrue((new ReflectionClass(Snapshot::class))->isInstantiable());
 });
 
 test('StoredEvent model can be instantiated', function () {
     Assert::assertTrue((new ReflectionClass(StoredEvent::class))->isInstantiable());
->>>>>>> .merge_file_vm1ZBF
 });
 
 test('BaseModel model can be instantiated', function () {

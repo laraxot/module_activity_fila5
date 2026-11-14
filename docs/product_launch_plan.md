@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_QyAcGK
-=======
-<<<<<<< .merge_file_dvArvi
-=======
 ---
 title: "Activity Module - Product Launch Plan"
 type: note
@@ -10,8 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - product launch plan activity"
 ---
->>>>>>> .merge_file_ik5FTS
->>>>>>> .merge_file_00e8iN
 # Activity Module - Product Launch Plan
 
 **Module:** Activity  

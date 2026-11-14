@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_bxZVar
-=======
-<<<<<<< .merge_file_uSYV2h
-=======
 ---
 title: "DRY & KISS Analysis - Modulo Activity"
 type: note
@@ -10,8 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "dry & kiss analysis - modulo activity activity"
 ---
->>>>>>> .merge_file_BGpbG5
->>>>>>> .merge_file_pO7ml8
 # DRY & KISS Analysis - Modulo Activity
 
 **Data:** 15 Ottobre 2025
@@ -25,8 +19,6 @@ qmd: "dry & kiss analysis - modulo activity activity"
 abstract class BaseModel extends XotBaseModel
 {
     protected $connection = 'activity';
-<<<<<<< .merge_file_uSYV2h
-=======
 
     protected function casts(): array {
         return array_merge(parent::casts(), [
@@ -46,14 +38,11 @@ abstract class BaseModel extends XotBaseModel
 
 ---
 [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
-<<<<<<< .merge_file_bxZVar
-=======
 ---
 module: theme
 topic: dry-kiss-analysis
 canonical: ../../../Themes/docs/shared-components/dry-kiss-analysis--Modules.md
 ---
->>>>>>> .merge_file_BGpbG5
 
     protected function casts(): array {
         return array_merge(parent::casts(), [
@@ -73,5 +62,4 @@ canonical: ../../../Themes/docs/shared-components/dry-kiss-analysis--Modules.md
 
 ---
 [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
->>>>>>> .merge_file_pO7ml8
 [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)

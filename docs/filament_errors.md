@@ -1,7 +1,3 @@
-<<<<<<< .merge_file_axHC4B
-=======
-<<<<<<< .merge_file_Woqfx6
-=======
 ---
 title: "Errori Comuni Filament nel Modulo Activity"
 type: note
@@ -10,8 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "errori comuni filament nel modulo activity activity"
 ---
->>>>>>> .merge_file_7WYLpb
->>>>>>> .merge_file_qE5ckl
 # Errori Comuni Filament nel Modulo Activity
 
 ## Errori di Metodi Statici
