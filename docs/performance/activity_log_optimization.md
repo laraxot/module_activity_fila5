@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_FtBjw4
 <<<<<<< .merge_file_lEBmea
 =======
 <<<<<<< .merge_file_2EloWs
 =======
 >>>>>>> .merge_file_e4DpxF
+=======
+>>>>>>> .merge_file_ehLfhd
 ---
 title: "Activity Log Optimization - Activity Module"
 type: note
@@ -11,10 +14,13 @@ updated: 2026-10-23
 tags: [docs, activity, performance]
 qmd: "activity log optimization - activity module activity"
 ---
+<<<<<<< .merge_file_FtBjw4
 <<<<<<< .merge_file_lEBmea
 =======
 >>>>>>> .merge_file_MK3VGw
 >>>>>>> .merge_file_e4DpxF
+=======
+>>>>>>> .merge_file_ehLfhd
 # Activity Log Optimization - Activity Module
 
 ## 🚨 Critical Issues Identified
@@ -231,7 +237,7 @@ CREATE INDEX idx_activity_log_causer_type ON activity_log(causer_type);
 ## 📚 Related Documentation
 
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./QUERY_OPTIMIZATION_ANALYSIS.md)
-- [bottlenecks.md](../bottlenecks.md)
+- [bottlenecks.md](./bottlenecks.md)
 - [event-sourcing.md](./event-sourcing.md)
 
 ## 🎯 Implementation Checklist

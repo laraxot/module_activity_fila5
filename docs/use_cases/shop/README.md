@@ -1,11 +1,3 @@
----
-title: "Use Case Shop – Event Sourcing e Console Commands"
-type: index
-status: draft
-updated: 2026-10-23
-tags: [docs, activity, use_cases]
-qmd: "use case shop   event sourcing e console commands activity"
----
 # Use Case Shop – Event Sourcing e Console Commands
 
 ## Introduzione
@@ -79,7 +71,6 @@ php artisan activity:shop:checkout cart_12345_xxx
 - [README Prediction Market](../prediction_market/README.md)
 - [README Bank](../bank/README.md)
 
-<<<<<<< .merge_file_BA6pKm
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
@@ -89,7 +80,7 @@ php artisan activity:shop:checkout cart_12345_xxx
 =======
 | 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
-=======
+
 ## Best Practice
 - Eventi immutabili e atomici
 - Aggregate root come unico punto di logica di dominio
@@ -99,40 +90,21 @@ php artisan activity:shop:checkout cart_12345_xxx
 - DTO per passaggio dati tra livelli
 - Test end-to-end tramite replay eventi
 
-## Checklist di Implementazione
-- [ ] Definire eventi e aggregate principali
-- [ ] Implementare proiezioni e projectors
-- [ ] Scrivere test per ogni comando/evento/proiezione
-- [ ] Documentare i flussi principali e i comandi
-- [ ] Prevedere rollback e replay
-
-## FAQ
-- Come aggiungere un nuovo comando?
-- Come testare un aggregate?
-- Come gestire rollback e replay eventi?
-- Come integrare nuovi metodi di pagamento?
-- Come estendere le proiezioni?
-
-## Collegamenti correlati
-- [Console Commands Shop](./console_commands.md)
-- [Best Practice Shop](./04-best-practice.md)
-- [Architettura Shop](./architettura.md)
-- [Eventi Shop](./events.md)
-- [Implementazione Shop](./implementation.md)
-- [Test Shop](./09-test.md)
-- [Glossario Shop](./10-glossario.md)
-- [Confronto Approcci](./07-confronto-approcci.md)
-- [Build from Scratch](./build-from-scratch.md)
-- [README Prediction Market](../prediction_market/README.md)
-- [README Bank](../bank/README.md)
+## Documentazione
 
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+
 | 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](../..) |
+<<<<<<< .merge_file_TwdRvY
 >>>>>>> .merge_file_lVYvUq
 >>>>>>> .merge_file_1WwYhl
+=======
+>>>>>>> .merge_file_fZJZEC
 
 ---
 **Questa documentazione è neutra e riutilizzabile, senza riferimenti a progetti specifici, e segue le regole di neutralità e modularità.**

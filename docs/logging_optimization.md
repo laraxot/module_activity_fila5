@@ -2,21 +2,27 @@
 module: theme
 topic: logging_optimization
 canonical: ../../../Themes/docs/shared-components/logging-optimization.md
+<<<<<<< .merge_file_DwA8TB
 <<<<<<< .merge_file_fvLX2m
 =======
 <<<<<<< .merge_file_dvDjqU
 =======
 >>>>>>> .merge_file_Zk05TQ
+=======
+>>>>>>> .merge_file_P2sqkt
 title: "logging optimization"
 type: note
 status: stub
 updated: 2026-10-07
 tags: [docs, activity]
 qmd: "logging optimization activity"
+<<<<<<< .merge_file_DwA8TB
 <<<<<<< .merge_file_fvLX2m
 =======
 >>>>>>> .merge_file_Axpb0A
 >>>>>>> .merge_file_Zk05TQ
+=======
+>>>>>>> .merge_file_P2sqkt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md

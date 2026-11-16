@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_cxuvRq
 <<<<<<< .merge_file_EoGXgE
 =======
 <<<<<<< .merge_file_WHhoRi
 =======
 >>>>>>> .merge_file_MUFY7e
+=======
+>>>>>>> .merge_file_dVLjAA
 ---
 title: "Architettura di un <nome progetto>ion Market"
 type: note
@@ -11,10 +14,13 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "architettura di un <nome progetto>ion market activity"
 ---
+<<<<<<< .merge_file_cxuvRq
 <<<<<<< .merge_file_EoGXgE
 =======
 >>>>>>> .merge_file_OsgatV
 >>>>>>> .merge_file_MUFY7e
+=======
+>>>>>>> .merge_file_dVLjAA
 # Architettura di un <nome progetto>ion Market
 
 ## Pattern Principali

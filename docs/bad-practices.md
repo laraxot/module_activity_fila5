@@ -1,9 +1,12 @@
+<<<<<<< .merge_file_AbglRt
 <<<<<<< .merge_file_TV2Sui
 =======
 <<<<<<< .merge_file_Pg20Ex
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_Rosn5Z
+=======
+>>>>>>> .merge_file_u2Edk1
 ---
 title: "Bad Practices – Activity"
 type: note
@@ -12,9 +15,12 @@ updated: 2026-10-08
 tags: [docs, activity]
 qmd: "bad practices   activity activity"
 ---
+<<<<<<< .merge_file_AbglRt
 <<<<<<< .merge_file_TV2Sui
 =======
 >>>>>>> .merge_file_n0ExR7
+=======
+>>>>>>> .merge_file_u2Edk1
 # Bad Practices – Activity
 
 ## ❌ Log delle attività senza livello di severità
@@ -24,12 +30,16 @@ Crea noise utile solo se si usa un filtro `level`.
 Aggiungi indici su `user_id`, `log_name`, `created_at`.
 
 ## ❌ Dati duplicati nei "properties" JSON
+Normalizza campi ricorrenti in tabelle distinte per query efficienti.---
 Normalizza campi ricorrenti in tabelle distinte per query efficienti.
+<<<<<<< .merge_file_AbglRt
 <<<<<<< .merge_file_Pg20Ex
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> .merge_file_Rosn5Z
+=======
+>>>>>>> .merge_file_u2Edk1
 # Bad Practices – Activity
 
 ## ❌ Log delle attività senza livello di severità
@@ -40,11 +50,14 @@ Aggiungi indici su `user_id`, `log_name`, `created_at`.
 
 ## ❌ Dati duplicati nei "properties" JSON
 Normalizza campi ricorrenti in tabelle distinte per query efficienti.
+<<<<<<< .merge_file_AbglRt
 <<<<<<< .merge_file_TV2Sui
 =======
 =======
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> .merge_file_u2Edk1
 ---
 module: theme
 topic: bad-practices
@@ -52,6 +65,7 @@ canonical: ../../../Themes/docs/shared-components/BAD_PRACTICES.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/BAD_PRACTICES.md
+<<<<<<< .merge_file_AbglRt
 <<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
@@ -60,3 +74,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/BAD_PRACTICE
 =======
 >>>>>>> .merge_file_n0ExR7
 >>>>>>> .merge_file_Rosn5Z
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/BAD_PRACTICES.md
+>>>>>>> .merge_file_u2Edk1

@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_ugezZH
 <<<<<<< .merge_file_Nrhs0p
 =======
 <<<<<<< .merge_file_cvkeGi
 =======
 >>>>>>> .merge_file_KrvWTc
+=======
+>>>>>>> .merge_file_jg3l8U
 ---
 title: "Roadmap Index - Activity"
 type: index
@@ -11,10 +14,13 @@ updated: 2026-10-07
 tags: [docs, activity, roadmap]
 qmd: "roadmap index - activity activity"
 ---
+<<<<<<< .merge_file_ugezZH
 <<<<<<< .merge_file_Nrhs0p
 =======
 >>>>>>> .merge_file_Mjfzar
 >>>>>>> .merge_file_KrvWTc
+=======
+>>>>>>> .merge_file_jg3l8U
 # Roadmap Index - Activity
 
 ## Scope

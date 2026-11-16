@@ -1,11 +1,3 @@
----
-title: "Anti-Pattern: Environment-Specific Logic in Models"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "anti-pattern: environment-specific logic in models activity"
----
 # Anti-Pattern: Environment-Specific Logic in Models
 
 ## Il Problema
@@ -76,15 +68,21 @@ class TestCase extends XotBaseTestCase
 <phpunit>
     <php>
         <env name="DB_CONNECTION" value="mysql"/>
+<<<<<<< .merge_file_MflkGT
 <<<<<<< .merge_file_K5S0xY
         <env name="DB_DATABASE" value="test_db"/>
 =======
 <<<<<<< .merge_file_cucHYC
-        <env name="DB_DATABASE" value="<nome progetto>_test"/>
 =======
+>>>>>>> .merge_file_onf05x
+        <env name="DB_DATABASE" value="<nome progetto>_test"/>
+
         <env name="DB_DATABASE" value="test_db"/>
+<<<<<<< .merge_file_MflkGT
 >>>>>>> .merge_file_JEOCTd
 >>>>>>> .merge_file_piv7Ia
+=======
+>>>>>>> .merge_file_onf05x
     </php>
 </phpunit>
 ```

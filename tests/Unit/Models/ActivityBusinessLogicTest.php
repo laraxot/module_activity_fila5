@@ -9,11 +9,7 @@ use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_RlPtiH
-uses(TestCase::class);
-=======
 uses(\Modules\Activity\Tests\TestCase::class);
->>>>>>> .merge_file_awZ9XQ
 
 /**
  * Verifica il contratto pubblico del model Activity (connessione, mass assignment, query scopes).

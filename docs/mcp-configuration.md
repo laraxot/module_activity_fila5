@@ -1,11 +1,3 @@
----
-title: "MCP Server Configuration - Activity Module"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "mcp server configuration - activity module activity"
----
 # MCP Server Configuration - Activity Module
 
 

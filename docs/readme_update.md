@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_9BzBqX
 <<<<<<< .merge_file_1HiTf5
 ---
 title: "Aggiornamento README Activity - Sezione Testing"
@@ -10,6 +11,8 @@ qmd: "aggiornamento readme activity - sezione testing activity"
 =======
 <<<<<<< .merge_file_9qefgr
 >>>>>>> .merge_file_HU78cK
+=======
+>>>>>>> .merge_file_SVKNxv
 # Aggiornamento README Activity - Sezione Testing
 
 ## Sezione da Aggiungere
@@ -76,10 +79,13 @@ php artisan test --filter=Snapshot
 php artisan test Modules/Activity --coverage
 ```
 
+<<<<<<< .merge_file_9BzBqX
 <<<<<<< .merge_file_1HiTf5
 See canonical documentation: ../../../Themes/docs/shared-components/README.md.update
 =======
 =======
+=======
+>>>>>>> .merge_file_SVKNxv
 ---
 title: "Aggiornamento README Activity - Sezione Testing"
 type: note
@@ -155,5 +161,8 @@ php artisan test Modules/Activity --coverage
 ```
 
 See canonical documentation: ../../../Themes/docs/shared-components/README.md.update
+<<<<<<< .merge_file_9BzBqX
 >>>>>>> .merge_file_cISHnP
 >>>>>>> .merge_file_HU78cK
+=======
+>>>>>>> .merge_file_SVKNxv

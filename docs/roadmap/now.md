@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_Ly7vDG
 <<<<<<< .merge_file_xBNy5E
 =======
 <<<<<<< .merge_file_6helsA
 =======
 >>>>>>> .merge_file_iwpZBu
+=======
+>>>>>>> .merge_file_YnLTBU
 ---
 title: "Now (Module Activity)"
 type: note
@@ -11,10 +14,13 @@ updated: 2026-10-07
 tags: [docs, activity, roadmap]
 qmd: "now (module activity) activity"
 ---
+<<<<<<< .merge_file_Ly7vDG
 <<<<<<< .merge_file_xBNy5E
 =======
 >>>>>>> .merge_file_1FbcRU
 >>>>>>> .merge_file_iwpZBu
+=======
+>>>>>>> .merge_file_YnLTBU
 # Now (Module Activity)
 
 ## Stabilization

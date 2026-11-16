@@ -1,9 +1,14 @@
+<<<<<<< .merge_file_FntlKV
 <<<<<<< .merge_file_p9R4LR
 =======
 <<<<<<< .merge_file_ZTsTQv
 # Activity vs Platform.AuditLog — Mappatura e Gap Analysis
 =======
 >>>>>>> .merge_file_FJvDVP
+=======
+# Activity vs Platform.AuditLog — Mappatura e Gap Analysis
+
+>>>>>>> .merge_file_SBhVCM
 ---
 title: "Activity vs Platform.AuditLog: Mappatura e Gap Analysis"
 type: note
@@ -13,10 +18,13 @@ tags: [docs, activity]
 qmd: "activity vs platform.auditlog   mappatura e gap analysis activity"
 ---
 # Activity vs Platform.AuditLog: Mappatura e Gap Analysis
+<<<<<<< .merge_file_FntlKV
 <<<<<<< .merge_file_p9R4LR
 =======
 >>>>>>> .merge_file_2b6Wsl
 >>>>>>> .merge_file_FJvDVP
+=======
+>>>>>>> .merge_file_SBhVCM
 
 > Ultimo aggiornamento: 2026-07-23
 
@@ -26,29 +34,41 @@ qmd: "activity vs platform.auditlog   mappatura e gap analysis activity"
 |---------|-------------------|---------------------|
 | **Modulo SRC** | `Modules/Platform` (parziale: `AuditLog`) | `Modules/Activity` |
 | **Ruolo** | Audit logging delle azioni utente | Tracciamento attività event-sourced con snapshot |
+<<<<<<< .merge_file_FntlKV
 <<<<<<< .merge_file_p9R4LR
 | **Stato mapping** | VICINO: Activity è più ricco, copre AuditLog ~90% | |
 =======
 <<<<<<< .merge_file_ZTsTQv
-| **Stato mapping** | VICINO — Activity è più ricco, copre AuditLog ~90% | |
 =======
+>>>>>>> .merge_file_SBhVCM
+| **Stato mapping** | VICINO — Activity è più ricco, copre AuditLog ~90% | |
+
 | **Stato mapping** | VICINO: Activity è più ricco, copre AuditLog ~90% | |
+<<<<<<< .merge_file_FntlKV
 >>>>>>> .merge_file_2b6Wsl
 >>>>>>> .merge_file_FJvDVP
+=======
+>>>>>>> .merge_file_SBhVCM
 
 ---
 
 ## Cosa fa Platform.AuditLog (SRC)
 
+<<<<<<< .merge_file_FntlKV
 <<<<<<< .merge_file_p9R4LR
 - **Modello `AuditLog`**: tabella `audit_logs`
 =======
 <<<<<<< .merge_file_ZTsTQv
-- **Modello `AuditLog`** — tabella `audit_logs`
 =======
+>>>>>>> .merge_file_SBhVCM
+- **Modello `AuditLog`** — tabella `audit_logs`
+
 - **Modello `AuditLog`**: tabella `audit_logs`
+<<<<<<< .merge_file_FntlKV
 >>>>>>> .merge_file_2b6Wsl
 >>>>>>> .merge_file_FJvDVP
+=======
+>>>>>>> .merge_file_SBhVCM
 - Campi: `user_id`, `action` (string), `auditable_type` (morph), `auditable_id` (morph), `old_values` (json), `new_values` (json), `ip_address`, `user_agent`
 - **Filament Resource**: `AuditLogResource` (read-only: List + View)
 - Logga modifiche a modelli, login/logout, azioni utente
@@ -58,18 +78,24 @@ qmd: "activity vs platform.auditlog   mappatura e gap analysis activity"
 
 - **Modelli**: `Activity`, `Snapshot`, `StoredEvent`, `TestModel`
 - **Filament Resources**: `ActivityResource`, `SnapshotResource`, `StoredEventResource`
+<<<<<<< .merge_file_FntlKV
 <<<<<<< .merge_file_p9R4LR
 - **Pattern event sourcing**: `StoredEvent` tiene la cronologia eventi, `Snapshot` cattura stato aggregato a un punto nel tempo
 - **Activity restore**: possibilità di ripristinare stato da eventi + snapshot
 =======
 <<<<<<< .merge_file_ZTsTQv
+=======
+>>>>>>> .merge_file_SBhVCM
 - **Pattern event sourcing** — `StoredEvent` tiene la cronologia eventi, `Snapshot` cattura stato aggregato a un punto nel tempo
 - **Activity restore** — possibilità di ripristinare stato da eventi + snapshot
-=======
+
 - **Pattern event sourcing**: `StoredEvent` tiene la cronologia eventi, `Snapshot` cattura stato aggregato a un punto nel tempo
 - **Activity restore**: possibilità di ripristinare stato da eventi + snapshot
+<<<<<<< .merge_file_FntlKV
 >>>>>>> .merge_file_2b6Wsl
 >>>>>>> .merge_file_FJvDVP
+=======
+>>>>>>> .merge_file_SBhVCM
 - Più ricco e complesso del semplice audit log
 
 ---
@@ -89,18 +115,24 @@ qmd: "activity vs platform.auditlog   mappatura e gap analysis activity"
 
 ## Note
 
+<<<<<<< .merge_file_FntlKV
 <<<<<<< .merge_file_p9R4LR
 - **Activity è già superiore** a AuditLog: non serve creare nulla
 - Il gap vero è che Platform ha anche `PlatformSetting` (settings key-value): quello va mappato su Tenant/Xot
 =======
 <<<<<<< .merge_file_ZTsTQv
+=======
+>>>>>>> .merge_file_SBhVCM
 - **Activity è già superiore** a AuditLog — non serve creare nulla
 - Il gap vero è che Platform ha anche `PlatformSetting` (settings key-value) — quello va mappato su Tenant/Xot
-=======
+
 - **Activity è già superiore** a AuditLog: non serve creare nulla
 - Il gap vero è che Platform ha anche `PlatformSetting` (settings key-value): quello va mappato su Tenant/Xot
+<<<<<<< .merge_file_FntlKV
 >>>>>>> .merge_file_2b6Wsl
 >>>>>>> .merge_file_FJvDVP
+=======
+>>>>>>> .merge_file_SBhVCM
 - Activity è già usato in produzione su base_workorder_fila5
 - Nessuna azione necessaria su Activity
 

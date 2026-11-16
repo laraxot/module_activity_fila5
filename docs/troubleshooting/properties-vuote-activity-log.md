@@ -1,11 +1,3 @@
----
-title: "Troubleshooting: Properties Vuote in Activity Log"
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity, troubleshooting]
-qmd: "troubleshooting: properties vuote in activity log activity"
----
 # Troubleshooting: Properties Vuote in Activity Log
 
 ## Problema
@@ -352,25 +344,16 @@ $record->update(['stabi' => 999]);
 - [Activity Module - README](../README.md)
 - [BaseScheda Configuration](../../Ptv/docs/models/base-scheda-activity-log.md)
 - [IndennitaResponsabilita Integration](../../IndennitaResponsabilita/docs/activity-log-integration.md)
-- [Activity Module - README](../README.md)
+- [Activity Module - README](../readme.md)
 - [BaseScheda Configuration](../../ptv/docs/models/base-scheda-activity-log.md)
 - [IndennitaResponsabilita Integration](../../indennitaresponsabilita/docs/activity-log-integration.md)
 
 ---
 
-<<<<<<< .merge_file_OtkPJg
-<<<<<<< HEAD
-<<<<<<< HEAD
 **
-=======
+
 **Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> 0a02158a (.)
-=======
-**Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> 35d8cf69 (Initial commit)
-=======
+
 **=======
-**Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> .merge_file_jgsj15
 **Severità**: Media (funziona ma properties vuote)
 **Soluzione**: Aggiungere `->logAll()` o `->logOnly()` in getActivitylogOptions()

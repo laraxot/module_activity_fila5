@@ -1,11 +1,11 @@
+<<<<<<< .merge_file_hvGtjr
 <<<<<<< .merge_file_HjEoaJ
 =======
 <<<<<<< .merge_file_aNQkyv
 <<<<<<< HEAD
-# Activity Module - Product Launch Plan
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
+>>>>>>> .merge_file_BCxtIz
+# Activity Module - Product Launch Plan
 # Activity Module - Product Launch Plan
 
 **Module:** Activity  
@@ -105,11 +105,7 @@
 ---
 
 *Last Updated: March 12, 2026*
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 # Activity - Product Launch Plan
->>>>>>> laraxot/dev
 
 **Module:** Activity  
 **Version:** 1.0.0  
@@ -207,14 +203,15 @@
 
 ---
 
-<<<<<<< HEAD
 *Last Updated: March 12, 2026*
-=======
 - lancio di superfici non ancora supportate dal backend
 - documentazione non aderente al codice reale
 - dipendenze inter-modulo sottostimate
+<<<<<<< .merge_file_hvGtjr
 =======
 >>>>>>> .merge_file_EKUG9T
+=======
+>>>>>>> .merge_file_BCxtIz
 ---
 title: "Activity Module - Product Launch Plan# Activity - Product Launch Plan"
 type: note
@@ -318,23 +315,23 @@ qmd: "activity module - product launch plan# activity - product launch plan acti
 | **Admin Adoption** | 80% of admins |
 | **Query Performance** | <200ms p95 |
 | **Critical Bugs** | 0 |
->>>>>>> .merge_file_Q9plBU
 
 ---
 
+<<<<<<< .merge_file_hvGtjr
 <<<<<<< .merge_file_HjEoaJ
 *Last Updated: March 12, 2026*
 =======
 <<<<<<< .merge_file_aNQkyv
+=======
+*Last Updated: March 12, 2026*=======
+>>>>>>> .merge_file_BCxtIz
 - [PRD](prd.md)
 - [User Research](user-research.md)
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
-=======
 *Last Updated: March 12, 2026*
+<<<<<<< .merge_file_hvGtjr
 >>>>>>> .merge_file_Q9plBU
 >>>>>>> .merge_file_EKUG9T
+=======
+>>>>>>> .merge_file_BCxtIz

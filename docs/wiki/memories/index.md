@@ -12,6 +12,7 @@ issues:
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/316"
   - "https://github.com/laraxot/module_xot_fila5/discussions/34"
+<<<<<<< .merge_file_mzoSUK
 <<<<<<< .merge_file_JzKLSY
 status: draft
 =======
@@ -20,6 +21,9 @@ status: draft
 status: draft
 >>>>>>> .merge_file_tI86Jx
 >>>>>>> .merge_file_AUyzJK
+=======
+status: draft
+>>>>>>> .merge_file_ygG0JM
 ---
 
 # Activity Module - Memories Index
@@ -53,36 +57,47 @@ qmd search "test isolation connections" --intent="prevent test crosstalk"
 - [testcase-hierarchy-architecture](../concepts/testcase-hierarchy-architecture.md) — Detailed concept page
 
 ### Brainstorm Artifacts (Full Thinking)
+<<<<<<< .merge_file_mzoSUK
 <<<<<<< .merge_file_JzKLSY
 - [BRAINSTORM-TestCase-Architecture-2026-06-10.md](../../BRAINSTORM-TestCase-Architecture-laravel-modules.md) — Complete brainstorm with 28 ideas, 7 insights
 =======
 <<<<<<< .merge_file_xZJdK2
-- [BRAINSTORM-TestCase-Architecture-2026-06-10.md](../../BRAINSTORM-TestCase-Architecture-2026-06-10.md) — Complete brainstorm with 28 ideas, 7 insights
 =======
+>>>>>>> .merge_file_ygG0JM
+- [BRAINSTORM-TestCase-Architecture-2026-06-10.md](../../BRAINSTORM-TestCase-Architecture-2026-06-10.md) — Complete brainstorm with 28 ideas, 7 insights
+
 - [BRAINSTORM-TestCase-Architecture-2026-06-10.md](../../BRAINSTORM-TestCase-Architecture-laravel-modules.md) — Complete brainstorm with 28 ideas, 7 insights
+<<<<<<< .merge_file_mzoSUK
 >>>>>>> .merge_file_tI86Jx
 >>>>>>> .merge_file_AUyzJK
+=======
+>>>>>>> .merge_file_ygG0JM
 
 ### Implementation Guides (TBD)
 - Central TESTING.md in Modules/Xot/docs/
 - Per-module TESTING.md files
 
 ## See Also
+<<<<<<< .merge_file_mzoSUK
 <<<<<<< .merge_file_JzKLSY
 - [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
 - [Root Wiki Index](../)
 - [Root Concepts (Architecture Decisions)](../../../../../../docs/wiki/concepts)
 =======
 <<<<<<< .merge_file_xZJdK2
+=======
+>>>>>>> .merge_file_ygG0JM
 - [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
 - [Root Wiki Index](../)
 - [Root Concepts (Architecture Decisions)](../../../../../docs/wiki/concepts/)
-=======
+
 - [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
-- [Root Wiki Index](../)
 - [Root Concepts (Architecture Decisions)](../../../../../../docs/wiki/concepts)
+<<<<<<< .merge_file_mzoSUK
 >>>>>>> .merge_file_tI86Jx
 >>>>>>> .merge_file_AUyzJK
+=======
+>>>>>>> .merge_file_ygG0JM
 
 ---
 **Updated:** 2026-06-10  

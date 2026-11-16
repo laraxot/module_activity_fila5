@@ -1,11 +1,3 @@
----
-title: "Errori Comuni Filament nel Modulo Activity"
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity]
-qmd: "errori comuni filament nel modulo activity activity"
----
 # Errori Comuni Filament nel Modulo Activity
 
 ## Errori di Metodi Statici
@@ -170,17 +162,9 @@ class ListSnapshots extends ListRecords
 - [ ] Testare il funzionamento delle liste dopo le modifiche
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
-<<<<<<< .merge_file_vksbQL
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [ ] Eseguire PHPStan per verificare altri possibili errori 
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 - [ ] Eseguire PHPStan per verificare altri possibili errori
-=======
 - [ ] Eseguire PHPStan per verificare altri possibili errori - [ ] Eseguire PHPStan per verificare altri possibili errori
->>>>>>> .merge_file_ti4jOK
 # Errori Comuni Filament nel Modulo Activity
 
 ## Errori di Metodi Statici
@@ -346,7 +330,3 @@ class ListSnapshots extends ListRecords
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
 - [ ] Eseguire PHPStan per verificare altri possibili errori
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)

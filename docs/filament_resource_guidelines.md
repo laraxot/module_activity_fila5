@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_yhJqGs
 <<<<<<< .merge_file_jECEkO
 ---
 title: "Activity Module Filament Resource Guidelines"
@@ -12,6 +13,8 @@ qmd: "activity module filament resource guidelines activity"
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules
 =======
 <<<<<<< .merge_file_MaQ8F5
+=======
+>>>>>>> .merge_file_Q5l0CJ
 # Activity Module Filament Resource Guidelines
 
 ## Extension Patterns
@@ -120,7 +123,7 @@ All resources must be tested to ensure:
 - [XotBaseResource Documentation](../../Xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../Xot/project_docs/filament-best-practices.md)
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
-=======
+
 ---
 title: "Activity Module Filament Resource Guidelines"
 type: note
@@ -129,8 +132,10 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module filament resource guidelines activity"
 ---
-# Activity Module Filament Resource Guidelines
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules
+<<<<<<< .merge_file_yhJqGs
 >>>>>>> .merge_file_sLPcHC
 >>>>>>> .merge_file_mYoUwk
+=======
+>>>>>>> .merge_file_Q5l0CJ

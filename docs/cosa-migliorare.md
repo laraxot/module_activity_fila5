@@ -4,6 +4,7 @@ type: report
 module: Activity
 updated: 2026-09-01
 qmd: "cosa migliorare activity phpstan phpmd phpinsights coverage debito priorita"
+<<<<<<< .merge_file_FvWqy9
 <<<<<<< .merge_file_srC0LM
 status: draft
 tags: [docs, activity]
@@ -12,17 +13,21 @@ tags: [docs, activity]
 # Cosa migliorare: modulo Activity
 =======
 <<<<<<< .merge_file_0GfPF2
+=======
+>>>>>>> .merge_file_vifpDc
 ---
 
 # Cosa migliorare — modulo Activity
-=======
+
 status: draft
 tags: [docs, activity]
----
 
 # Cosa migliorare: modulo Activity
+<<<<<<< .merge_file_FvWqy9
 >>>>>>> .merge_file_zvwwRn
 >>>>>>> .merge_file_PocIOg
+=======
+>>>>>>> .merge_file_vifpDc
 
 Ogni affermazione qui sotto viene da un comando eseguito il 1 settembre 2026, dopo il
 ripristino di `vendor/` a 330 pacchetti. Le misure precedenti a quella data giravano su
@@ -34,21 +39,27 @@ un autoloader dimezzato e non valgono.
 |---|---:|
 | Errori PHPStan (modulo isolato) | 0 |
 | Rilievi PHPMD su `app/` | 2 |
+<<<<<<< .merge_file_FvWqy9
 <<<<<<< .merge_file_srC0LM
 | PHPInsights: Code | 94.1 % |
 | PHPInsights: Architecture | 92.9 % |
 | PHPInsights: Style | 86.4 % |
 =======
 <<<<<<< .merge_file_0GfPF2
+=======
+>>>>>>> .merge_file_vifpDc
 | PHPInsights — Code | 94.1 % |
 | PHPInsights — Architecture | 92.9 % |
 | PHPInsights — Style | 86.4 % |
-=======
+
 | PHPInsights: Code | 94.1 % |
 | PHPInsights: Architecture | 92.9 % |
 | PHPInsights: Style | 86.4 % |
+<<<<<<< .merge_file_FvWqy9
 >>>>>>> .merge_file_zvwwRn
 >>>>>>> .merge_file_PocIOg
+=======
+>>>>>>> .merge_file_vifpDc
 | File PHP | 294 |
 | Casi di test | 464 |
 | Casi di test per file | 1.58 |
@@ -80,13 +91,19 @@ Prima di fidarsi di qualunque numero: il tree deve essere fermo e `vendor/` comp
 php -r 'echo count(require "vendor/composer/autoload_classmap.php");'   # ~25358, non 13041
 ```
 
+<<<<<<< .merge_file_FvWqy9
 <<<<<<< .merge_file_srC0LM
 Quadro comparativo di tutte le unità: [`docs/quality-audit.md`](quality-audit.md).
 =======
 <<<<<<< .merge_file_0GfPF2
-Quadro comparativo di tutte le unità: [`docs/quality-audit.md`](../../../../docs/quality-audit.md).
 =======
+>>>>>>> .merge_file_vifpDc
+Quadro comparativo di tutte le unità: [`docs/quality-audit.md`](../../../../docs/quality-audit.md).
+
 Quadro comparativo di tutte le unità: [`docs/quality-audit.md`](quality-audit.md).
+<<<<<<< .merge_file_FvWqy9
 >>>>>>> .merge_file_zvwwRn
 >>>>>>> .merge_file_PocIOg
+=======
+>>>>>>> .merge_file_vifpDc
 

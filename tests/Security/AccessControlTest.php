@@ -22,13 +22,8 @@ use PHPUnit\Framework\Assert;
 uses(\Modules\Activity\Tests\TestCase::class);
 
 it('denies activity viewAny to users without permission', function (): void {
-<<<<<<< .merge_file_oueMO4
-    $user = UserFactory::new()->createOne();
-    $policy = new ActivityPolicy;
-=======
     $user = activityCreateUser();
     $policy = new ActivityPolicy();
->>>>>>> .merge_file_2MIKX7
 
     Assert::assertFalse($policy->viewAny($user));
 });
@@ -42,13 +37,8 @@ it('allows activity viewAny to users with the correct permission', function (): 
 });
 
 it('denies activity view to users without permission', function (): void {
-<<<<<<< .merge_file_oueMO4
-    $user = UserFactory::new()->createOne();
-    $policy = new ActivityPolicy;
-=======
     $user = activityCreateUser();
     $policy = new ActivityPolicy();
->>>>>>> .merge_file_2MIKX7
 
     Assert::assertFalse($policy->view($user));
 });

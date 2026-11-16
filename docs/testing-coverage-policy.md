@@ -1,11 +1,3 @@
----
-title: "Activity Module - Testing Coverage Policy"
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity]
-qmd: "activity module - testing coverage policy activity"
----
 # Activity Module - Testing Coverage Policy
 
 ## Obiettivo
@@ -23,6 +15,7 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 ### 2. .env.testing
 
 - `.env.testing` è uguale a `.env` tranne per i nomi database
+<<<<<<< .merge_file_w3deSG
 <<<<<<< .merge_file_HAAthY
 =======
 <<<<<<< .merge_file_00x9rz
@@ -31,14 +24,13 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 - I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)
 =======
 >>>>>>> .merge_file_WZCMiE
-- I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
->>>>>>> 0a02158a (.)
 =======
+- I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)=======
+- I database di test hanno suffisso `_test` (es. `<nome progetto>_data_test`)
+>>>>>>> .merge_file_KS0YHy
 - I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
->>>>>>> 35d8cf69 (Initial commit)
-=======
 - I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
->>>>>>> .merge_file_P5CyQf
+- I database di test hanno suffisso `_test` (es. `techplanner_data_test`)
 - Le variabili `DB_CONNECTION`, `DB_DATABASE` **NON** devono essere sovrascritte in phpunit.xml
 - Laravel carica `.env.testing` quando `APP_ENV=testing`
 
@@ -47,23 +39,26 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 - Il TestCase usa `DatabaseTransactions` per rollback automatico tra test
 - `$connectionsToTransact = ['mysql', 'activity', 'user']` per coprire tutte le connessioni
 - **CRITICO**: La connessione `activity` DEVE essere inclusa. Senza di essa, ActivityLoggerTest getRecent fallisce per inquinamento dati.
+<<<<<<< .merge_file_w3deSG
 <<<<<<< .merge_file_HAAthY
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`) oppure una volta a mano con `php artisan migrate --env=testing` (vedi commento in `Modules/Xot/tests/TestCase.php`)
 =======
 <<<<<<< .merge_file_00x9rz
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+- Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`)=======
+- Nessuna migrazione nel setUp: le migrazioni vanno eseguite una volta: `php artisan migrate --env=testing`
+>>>>>>> .merge_file_KS0YHy
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`)
-=======
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite una volta: `php artisan migrate --env=testing`
->>>>>>> 0a02158a (.)
-=======
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite una volta: `php artisan migrate --env=testing`
->>>>>>> 35d8cf69 (Initial commit)
-=======
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite nel base testcase (`Modules/Xot/tests/XotBaseTestCase::createApplication()`) oppure una volta a mano con `php artisan migrate --env=testing` (vedi commento in `Modules/Xot/tests/TestCase.php`)
+<<<<<<< .merge_file_w3deSG
 >>>>>>> .merge_file_P5CyQf
 >>>>>>> .merge_file_WZCMiE
+=======
+>>>>>>> .merge_file_KS0YHy
 
 ### 4. Connessioni Database
 
@@ -71,10 +66,11 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 - **activity**: modelli Activity, Snapshot, StoredEvent (creata da TenantServiceProvider a runtime)
 - **user**: modelli User
 
-**Regola**: database.php NON deve contenere 'activity'. I modelli Activity DEVONO avere `$connection = 'activity'`. Vedi [fix01](prompts/fix01.md).
+**Regola**: database.php NON deve contenere 'activity'. I modelli Activity DEVONO avere `$connection = 'activity'`. Vedi [fix01](prompts/fix01.txt).
 
 **Setup minimo .env.testing:**
 ```env
+<<<<<<< .merge_file_w3deSG
 <<<<<<< .merge_file_HAAthY
 DB_DATABASE=techplanner_data_test
 DB_DATABASE_USER=techplanner_data_test
@@ -82,15 +78,21 @@ DB_DATABASE_USER=techplanner_data_test
 <<<<<<< .merge_file_00x9rz
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_KS0YHy
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE_USER=<nome progetto>_data_test
-=======
+DB_DATABASE=<nome progetto>_data_test
+DB_DATABASE_USER=<nome progetto>_data_test
 DB_DATABASE=techplanner_data_test
 DB_DATABASE_USER=techplanner_data_test
+<<<<<<< .merge_file_w3deSG
 >>>>>>> .merge_file_P5CyQf
 >>>>>>> .merge_file_WZCMiE
+=======
+>>>>>>> .merge_file_KS0YHy
 ```
-NON aggiungere DB_DATABASE_ACTIVITY: TenantServiceProvider usa il fallback dal default (stesso DB). Vedi [fix03](prompts/fix03.md).
+NON aggiungere DB_DATABASE_ACTIVITY: TenantServiceProvider usa il fallback dal default (stesso DB). Vedi [fix03](prompts/fix03.txt).
 
 **Migrazioni pre-test (regola corrente):**
 ```bash
@@ -108,12 +110,14 @@ php artisan migrate --env=testing --path=Modules/Activity/database/migrations
   - `Modules/Activity/app`
   - `Modules/Xot/app`
   - `Modules/User/app`
+<<<<<<< .merge_file_w3deSG
 <<<<<<< .merge_file_HAAthY
 =======
+=======
+DB_DATABASE=techplanner_data_test
+DB_DATABASE_USER=techplanner_data_test
+>>>>>>> .merge_file_KS0YHy
 
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 DB_DATABASE=techplanner_data_test
 DB_DATABASE_USER=techplanner_data_test
 ```
@@ -145,6 +149,7 @@ tests/
 └── TestCase.php       # Base con DatabaseTransactions
 ```
 
+<<<<<<< .merge_file_w3deSG
 ## Checklist Pre-Commit
 
 - [ ] Nessun RefreshDatabase
@@ -162,6 +167,8 @@ tests/
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> .merge_file_KS0YHy
 ## Workflow Coverage
 
 ### Comandi
@@ -176,15 +183,13 @@ cd laravel && php artisan test Modules/Activity/tests --coverage --min=100
 # Singolo file
 php artisan test Modules/Activity/tests/Unit/Actions/LogActivityActionTest.php --compact
 ```
+NON aggiungere DB_DATABASE_ACTIVITY: TenantServiceProvider usa il fallback dal default (stesso DB). Vedi [fix03](prompts/fix03.txt).
 
-### Struttura Test
-
-```
-tests/
-├── Feature/          # Test integrazione, Filament, business logic
-├── Unit/              # Test unitari Actions, Models, Listeners
-├── Pest.php           # Estensioni, helper, expectations
-└── TestCase.php       # Base con DatabaseTransactions
+**Migrazioni pre-test:**
+```bash
+php artisan migrate --env=testing --force
+php artisan migrate --database=activity --env=testing --force
+php artisan config:clear
 ```
 
 ## Checklist Pre-Commit
@@ -205,15 +210,19 @@ tests/
 - [testing-errors-fixes](testing-errors-fixes.md) - Errori risolti e correzioni
 - [testing-rules](testing-rules.md)
 - [testing-strategy-implementation](testing-strategy-implementation.md)
+<<<<<<< .merge_file_w3deSG
 <<<<<<< .merge_file_HAAthY
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
-- [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
 =======
+>>>>>>> .merge_file_KS0YHy
 - [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
+- [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
+<<<<<<< .merge_file_w3deSG
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> .merge_file_WZCMiE
+=======
+>>>>>>> .merge_file_KS0YHy
 - [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)
->>>>>>> 35d8cf69 (Initial commit)

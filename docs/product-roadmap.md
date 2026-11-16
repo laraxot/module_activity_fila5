@@ -1,11 +1,11 @@
+<<<<<<< .merge_file_3narH7
 <<<<<<< .merge_file_EAMwrz
 =======
 <<<<<<< .merge_file_1k5EFm
 <<<<<<< HEAD
-# Activity Module - Product Roadmap
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
+>>>>>>> .merge_file_3janQU
+# Activity Module - Product Roadmap
 # Activity Module - Product Roadmap
 
 **Module:** Activity  
@@ -140,11 +140,7 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 ---
 
 *Last Updated: March 12, 2026*
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 # Activity - Product Roadmap
->>>>>>> laraxot/dev
 
 **Module:** Activity  
 **Version:** 1.0.0  
@@ -194,7 +190,6 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 | W29-32 | Privacy & GDPR | - Data subject access<br>- Right to erasure workflows<br>- Consent tracking<br>- Privacy reports |
 | W33-36 | Security Monitoring | - Suspicious activity detection<br>- Failed login tracking<br>- Access pattern analysis |
 
-<<<<<<< HEAD
 ### Q4 2026 - Scale & Intelligence
 
 | Week | Milestone | Deliverables |
@@ -277,8 +272,11 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 | **Alert Accuracy** | N/A | 95% | 97% | 99% |
 
 ---
+<<<<<<< .merge_file_3narH7
 =======
 >>>>>>> .merge_file_WaSMr4
+=======
+>>>>>>> .merge_file_3janQU
 ---
 title: "Activity Module - Product Roadmap# Activity - Product Roadmap"
 type: note
@@ -420,7 +418,9 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 
 ---
 
+*Last Updated: March 12, 2026*=======
 ## Related Documents
+<<<<<<< .merge_file_3narH7
 <<<<<<< .merge_file_EAMwrz
 
 - [PRD](prd.md)
@@ -428,14 +428,15 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 - [Sprint Planning Meeting](sprint-planning-meeting.md)
 =======
 >>>>>>> .merge_file_xDZpdN
+=======
+>>>>>>> .merge_file_3janQU
 
 *Last Updated: March 12, 2026*
-=======
 - [PRD](prd.md)
 - [Product Strategy](product-strategy.md)
 - [Sprint Planning Meeting](sprint-planning-meeting.md)
-<<<<<<< .merge_file_1k5EFm
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
+<<<<<<< .merge_file_3narH7
 <<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
@@ -443,11 +444,16 @@ To provide a **comprehensive activity tracking and audit trail system** that ena
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_WaSMr4
+=======
+>>>>>>> .merge_file_3janQU
 
 ---
 
 *Last Updated: March 12, 2026*
+<<<<<<< .merge_file_3narH7
 <<<<<<< .merge_file_EAMwrz
 =======
 >>>>>>> .merge_file_xDZpdN
 >>>>>>> .merge_file_WaSMr4
+=======
+>>>>>>> .merge_file_3janQU

@@ -27,37 +27,6 @@ return [
     'actions' => [
         'refresh' => [
             'label' => 'Aggiorna',
-<<<<<<< .merge_file_OJCaeM
-=======
-<<<<<<< .merge_file_OAdpS1
-            'icon' => 'refresh',
-            'tooltip' => 'refresh',
->>>>>>> .merge_file_PlAMCj
-        ],
-        'download' => [
-            'label' => 'Scarica il file',
-        ],
-        'logout' => [
-            'tooltip' => '',
-            'icon' => 'logout',
-<<<<<<< .merge_file_OJCaeM
-=======
-            'label' => 'logout',
-        ],
-        'profile' => [
-            'label' => 'profile',
-            'icon' => 'profile',
-            'tooltip' => 'profile',
-=======
-        ],
-        'download' => [
-            'label' => 'Scarica il file',
-        ],
-        'logout' => [
-            'tooltip' => '',
-            'icon' => 'logout',
->>>>>>> .merge_file_3yt8Hs
->>>>>>> .merge_file_PlAMCj
         ],
     ],
     'messages' => [

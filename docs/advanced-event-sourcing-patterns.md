@@ -1,11 +1,3 @@
----
-title: "Advanced Event Sourcing Patterns for Healthcare Applications"
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity]
-qmd: "advanced event sourcing patterns for healthcare applications activity"
----
 # Advanced Event Sourcing Patterns for Healthcare Applications
 
 ## Table of Contents
@@ -19,21 +11,12 @@ qmd: "advanced event sourcing patterns for healthcare applications activity"
 
 ## Introduction
 
-<<<<<<< .merge_file_CzoBjr
-<<<<<<< HEAD
-<<<<<<< HEAD
 Event Sourcing is particularly valuable in healthcare applications like `saluteora` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
-=======
-=======
 Event Sourcing is particularly valuable in healthcare applications like `saluteora` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.=======
->>>>>>> .merge_file_qtXEz5
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
->>>>>>> 0a02158a (.)
-=======
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
 Event Sourcing is particularly valuable in healthcare applications like `<nome progetto>` where data integrity, audit trails, and historical tracking are crucial. This document expands on the basic concepts with advanced patterns and practical implementations.
->>>>>>> 35d8cf69 (Initial commit)
 
 ## Core Concepts
 
@@ -58,6 +41,7 @@ sequenceDiagram
     participant A as API
     participant AR as PatientAggregate
     participant ES as Event Store
+<<<<<<< .merge_file_QPARJi
 <<<<<<< .merge_file_R8LHP3
 =======
 <<<<<<< HEAD
@@ -65,29 +49,35 @@ sequenceDiagram
     
 =======
 >>>>>>> .merge_file_aWZkAn
-
->>>>>>> 0a02158a (.)
 =======
+    =======
+    
+>>>>>>> .merge_file_KOVsx4
 
->>>>>>> 35d8cf69 (Initial commit)
+
     C->>A: Register Patient
     A->>AR: handle(RegisterPatientCommand)
     AR->>ES: store(PatientRegistered)
     AR->>ES: store(ContactInfoUpdated)
     ES-->>A: Events stored
     A-->>C: Patient ID
+<<<<<<< .merge_file_QPARJi
 <<<<<<< .merge_file_R8LHP3
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
-    
 =======
+    =======
+>>>>>>> .merge_file_KOVsx4
+    
 
+<<<<<<< .merge_file_QPARJi
 >>>>>>> 0a02158a (.)
 =======
 >>>>>>> .merge_file_aWZkAn
+=======
+>>>>>>> .merge_file_KOVsx4
 
->>>>>>> 35d8cf69 (Initial commit)
     Note right of ES: Projectors update read models asynchronously
 ```
 
@@ -104,27 +94,14 @@ class PrescriptionAggregate extends AggregateRoot
 {
     private array $medications = [];
     private bool $isApproved = false;
-<<<<<<< .merge_file_CzoBjr
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_qtXEz5
     
     public function prescribe(
         string $patientId, 
         string $medicationId, 
-<<<<<<< .merge_file_CzoBjr
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 
     public function prescribe(
         string $patientId,
         string $medicationId,
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
         string $dosage,
         string $doctorId
     ): void {
@@ -137,20 +114,12 @@ class PrescriptionAggregate extends AggregateRoot
             prescribedAt: now()
         ));
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
 
->>>>>>> 0a02158a (.)
-=======
-=======
     public function prescribe(
         string $patientId,
         string $medicationId,
->>>>>>> .merge_file_qtXEz5
 
->>>>>>> 35d8cf69 (Initial commit)
     protected function applyMedicationPrescribed(MedicationPrescribed $event): void
     {
         $this->medications[$event->medicationId] = [
@@ -170,6 +139,7 @@ class ScheduleAppointmentHandler
         private EventBus $eventBus,
         private AppointmentRepository $appointments
     ) {}
+<<<<<<< .merge_file_QPARJi
 <<<<<<< .merge_file_R8LHP3
 =======
 <<<<<<< HEAD
@@ -177,11 +147,12 @@ class ScheduleAppointmentHandler
     
 =======
 >>>>>>> .merge_file_aWZkAn
-
->>>>>>> 0a02158a (.)
 =======
+    =======
+    
+>>>>>>> .merge_file_KOVsx4
 
->>>>>>> 35d8cf69 (Initial commit)
+
     public function handle(ScheduleAppointmentCommand $command): void
     {
         $appointment = Appointment::schedule(
@@ -191,28 +162,22 @@ class ScheduleAppointmentHandler
             $command->scheduledTime,
             $command->duration
         );
-<<<<<<< .merge_file_CzoBjr
-<<<<<<< HEAD
-<<<<<<< HEAD
         
         $this->appointments->save($appointment);
 <<<<<<< .merge_file_R8LHP3
 =======
         
-=======
 
         $this->appointments->save($appointment);
 >>>>>>> .merge_file_aWZkAn
 
->>>>>>> 0a02158a (.)
-=======
 
-=======
         
->>>>>>> .merge_file_qtXEz5
+        $this->appointments->save($appointment);
+        =======
+
         $this->appointments->save($appointment);
 
->>>>>>> 35d8cf69 (Initial commit)
         $this->eventBus->publish(new AppointmentScheduled(
             $appointment->id,
             $appointment->patientId,
@@ -232,57 +197,32 @@ class PatientAggregate extends AggregateRoot
 {
     private int $version = 0;
     private array $events = [];
-<<<<<<< .merge_file_CzoBjr
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_qtXEz5
     
     public static function reconstituteFromEvents(UuidInterface $uuid, array $events): self
     {
         $aggregate = new static($uuid);
         
-<<<<<<< .merge_file_CzoBjr
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 
     public static function reconstituteFromEvents(UuidInterface $uuid, array $events): self
     {
         $aggregate = new static($uuid);
 
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
         // Apply all events
         foreach ($events as $event) {
             $aggregate->apply($event);
             $aggregate->version++;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
         
         return $aggregate;
     }
     
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
-=======
     public static function reconstituteFromEvents(UuidInterface $uuid, array $events): self
     {
         $aggregate = new static($uuid);
->>>>>>> .merge_file_qtXEz5
 
         return $aggregate;
     }
 
-<<<<<<< .merge_file_CzoBjr
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
     public function snapshot(): PatientSnapshot
     {
         return new PatientSnapshot([
@@ -317,17 +257,9 @@ class PatientRegistrationTest extends TestCase
     public function it_registers_a_new_patient()
     {
         $patientId = PatientId::generate();
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
 
->>>>>>> 0a02158a (.)
-=======
-=======
->>>>>>> .merge_file_qtXEz5
 
->>>>>>> 35d8cf69 (Initial commit)
         $this->given()
             ->when(new RegisterPatient($patientId, 'John', 'Doe', 'john@example.com'))
             ->then([
@@ -361,25 +293,14 @@ class PatientRegistrationTest extends TestCase
 
 ## Conclusion
 
-<<<<<<< .merge_file_CzoBjr
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_qtXEz5
 Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `saluteora` can build a system that not only meets current requirements but can also evolve with future needs.
 
 ## References
 - [Event Sourcing in Laravel by Brent Roose](https://event-sourcing-laravel.com/)
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/project_docs/laravel-event-sourcing/v7/)
-<<<<<<< .merge_file_CzoBjr
 - [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `<nome progetto>` can build a system that not only meets current requirements but can also evolve with future needs.
-=======
 - [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `<nome progetto>` can build a system that not only meets current requirements but can also evolve with future needs.
->>>>>>> .merge_file_qtXEz5
 Event Sourcing provides a robust foundation for healthcare applications by ensuring data integrity, auditability, and flexibility. By implementing these advanced patterns, `<nome progetto>` can build a system that not only meets current requirements but can also evolve with future needs.
 
 ## References
@@ -389,11 +310,4 @@ Event Sourcing provides a robust foundation for healthcare applications by ensur
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/project_docs/laravel-event-sourcing/v7/)
 - [Spatie Laravel Event Sourcing Documentation](https://spatie.be/docs/laravel-event-sourcing/v7/)
 - [Domain-Driven Design by Eric Evans](https://domainlanguage.com/ddd/)
-<<<<<<< .merge_file_CzoBjr
 
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
-=======
->>>>>>> .merge_file_qtXEz5

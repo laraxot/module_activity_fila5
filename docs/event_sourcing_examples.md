@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_gkqfbS
 <<<<<<< .merge_file_Hrlf7D
 =======
 <<<<<<< .merge_file_eNusNd
 =======
 >>>>>>> .merge_file_YEY9ZM
+=======
+>>>>>>> .merge_file_x43mb2
 ---
 title: "Practical Event Sourcing Examples for Healthcare"
 type: note
@@ -11,10 +14,13 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "practical event sourcing examples for healthcare activity"
 ---
+<<<<<<< .merge_file_gkqfbS
 <<<<<<< .merge_file_Hrlf7D
 =======
 >>>>>>> .merge_file_tQi2Na
 >>>>>>> .merge_file_YEY9ZM
+=======
+>>>>>>> .merge_file_x43mb2
 # Practical Event Sourcing Examples for Healthcare
 
 ## Table of Contents

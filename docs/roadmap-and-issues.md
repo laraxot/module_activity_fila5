@@ -1,11 +1,3 @@
----
-title: "Activity Module - Roadmap & Optimization"
-type: note
-status: draft
-updated: 2026-10-23
-tags: [docs, activity]
-qmd: "activity module - roadmap & optimization activity"
----
 # Activity Module - Roadmap & Optimization
 
 **Modulo**: Activity (Audit Trail & Activity Logging)
@@ -58,18 +50,24 @@ qmd: "activity module - roadmap & optimization activity"
 ## 🔗 Collegamenti
 
 - [← Activity Module README](../README.md)
+<<<<<<< .merge_file_UIlXFJ
 <<<<<<< .merge_file_qIme48
 - [← Activity Module README](../README.md)
 - [← Root Documentation](../../../../docs/index.md)
 =======
 <<<<<<< .merge_file_82TL3g
+=======
+>>>>>>> .merge_file_881S0E
 - [← Activity Module README](../readme.md)
 - [← Root Documentation](../../../docs/index.md)
-=======
+
 - [← Activity Module README](../README.md)
 - [← Root Documentation](../../../../docs/index.md)
+<<<<<<< .merge_file_UIlXFJ
 >>>>>>> .merge_file_FpN415
 >>>>>>> .merge_file_8paOPh
+=======
+>>>>>>> .merge_file_881S0E
 
 ---
 

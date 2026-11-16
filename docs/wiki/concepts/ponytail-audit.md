@@ -1,12 +1,4 @@
----
-title: "Ponytail audit: Activity"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, wiki]
-qmd: "ponytail audit   activity activity"
----
-# Ponytail audit: Activity
+# Ponytail audit — Activity
 
 **Delta modulo only here.** Ranked list, gate e remediation globale negli hub progetto.
 

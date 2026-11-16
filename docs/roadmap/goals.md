@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_5EiBTu
 <<<<<<< .merge_file_3lmjTF
 =======
 <<<<<<< .merge_file_YhUTY4
 =======
 >>>>>>> .merge_file_SO2crn
+=======
+>>>>>>> .merge_file_fIzNx1
 ---
 title: "Goals - Activity"
 type: note
@@ -11,10 +14,13 @@ updated: 2026-10-07
 tags: [docs, activity, roadmap]
 qmd: "goals - activity activity"
 ---
+<<<<<<< .merge_file_5EiBTu
 <<<<<<< .merge_file_3lmjTF
 =======
 >>>>>>> .merge_file_ys7wsu
 >>>>>>> .merge_file_SO2crn
+=======
+>>>>>>> .merge_file_fIzNx1
 # Goals - Activity
 
 ## Short Term

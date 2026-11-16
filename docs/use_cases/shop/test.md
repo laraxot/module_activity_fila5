@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_L6PX7c
 <<<<<<< .merge_file_wwrHUn
 =======
 <<<<<<< .merge_file_W2ewlf
 =======
 >>>>>>> .merge_file_WlAVxH
+=======
+>>>>>>> .merge_file_MqJtgk
 ---
 title: "Testing di uno Shop Event Sourced"
 type: note
@@ -11,10 +14,13 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "testing di uno shop event sourced activity"
 ---
+<<<<<<< .merge_file_L6PX7c
 <<<<<<< .merge_file_wwrHUn
 =======
 >>>>>>> .merge_file_qnElVr
 >>>>>>> .merge_file_WlAVxH
+=======
+>>>>>>> .merge_file_MqJtgk
 # Testing di uno Shop Event Sourced
 
 ## 1. Unit Test

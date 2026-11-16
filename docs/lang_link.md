@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_ZO68GX
 <<<<<<< .merge_file_WttT2T
 =======
 <<<<<<< .merge_file_bNyOKf
 =======
 >>>>>>> .merge_file_Zhg2Ti
+=======
+>>>>>>> .merge_file_dVRdI9
 ---
 title: "Collegamento alle Traduzioni del Modulo Activity"
 type: note
@@ -11,10 +14,13 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "collegamento alle traduzioni del modulo activity activity"
 ---
+<<<<<<< .merge_file_ZO68GX
 <<<<<<< .merge_file_WttT2T
 =======
 >>>>>>> .merge_file_ya9q9r
 >>>>>>> .merge_file_Zhg2Ti
+=======
+>>>>>>> .merge_file_dVRdI9
 # Collegamento alle Traduzioni del Modulo Activity
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).

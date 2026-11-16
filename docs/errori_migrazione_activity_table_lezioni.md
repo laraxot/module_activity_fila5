@@ -1,11 +1,3 @@
----
-title: "Lezioni Apprese: Errori Migrazione Activity Table"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "lezioni apprese: errori migrazione activity table activity"
----
 # Lezioni Apprese: Errori Migrazione Activity Table
 
 ## Caso Studio: Errore Critico nella Modifica Migrazione Activity

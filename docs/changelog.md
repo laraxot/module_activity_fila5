@@ -3,6 +3,7 @@ title: "Rimando a changelog.md"
 description: "Documento unificato: il contenuto canonico vive in changelog.md."
 status: merged
 tags: [merge, duplicato, case-only]
+<<<<<<< .merge_file_uWYDOc
 <<<<<<< .merge_file_dH2iP5
 type: note
 updated: 2026-10-07
@@ -15,6 +16,11 @@ updated: 2026-10-07
 qmd: "documento unificato activity"
 >>>>>>> .merge_file_1E0VRv
 >>>>>>> .merge_file_OEOCel
+=======
+type: note
+updated: 2026-10-07
+qmd: "documento unificato activity"
+>>>>>>> .merge_file_euoBUZ
 ---
 
 # Documento unificato

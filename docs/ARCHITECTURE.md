@@ -1,11 +1,11 @@
+<<<<<<< .merge_file_d9iEDS
 <<<<<<< .merge_file_KRCnD5
 =======
 <<<<<<< .merge_file_KkQIkI
 <<<<<<< HEAD
-# Architecture Documentation
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
+>>>>>>> .merge_file_jTmkQm
+# Architecture Documentation
 ---
 title: "Activity Module Architecture"
 type: architecture
@@ -13,9 +13,12 @@ tags: [module, architecture, audit]
 created: 2026-07-28
 updated: 2026-07-28
 ---
+<<<<<<< .merge_file_d9iEDS
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_nHwt06
+=======
+>>>>>>> .merge_file_jTmkQm
 ---
 title: "Activity: architettura (diagramma non allineato al codice)"
 type: reference
@@ -72,7 +75,6 @@ Activity Module Architecture
 
 ## Quality Gates
 ✅ PHPStan L10: Executed (2026-07-28)# Architecture Documentation
->>>>>>> .merge_file_9OIRU7
 
 ## Activity Module Architecture
 
@@ -115,13 +117,8 @@ Activity Module Architecture
 
 ### Data Flow
 
-<<<<<<< HEAD
-=======
 ## Quality Gates
 ✅ PHPStan L10: Executed (2026-07-28)
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 # Architecture Documentation
 
 ## Activity Module Architecture
@@ -165,7 +162,6 @@ Activity Module Architecture
 
 ### Data Flow
 
->>>>>>> laraxot/dev
 1. **Event Creation**: User actions trigger domain events
 2. **Event Storage**: Events persisted to `stored_events` table
 3. **Snapshot Creation**: Aggregates create snapshots for performance
@@ -279,29 +275,38 @@ class ActivityPolicy
 
 ### Related Documentation
 
+<<<<<<< .merge_file_d9iEDS
 <<<<<<< .merge_file_KRCnD5
 =======
 <<<<<<< .merge_file_KkQIkI
+=======
+>>>>>>> .merge_file_jTmkQm
 - [Security](SECURITY.md)
 - [Quality](QUALITY.md)
 - [Performance](PERFORMANCE.md)
-<<<<<<< HEAD
+- [Testing](TESTING.md)=======
 - [Testing](TESTING.md)
-=======
-<<<<<<< HEAD
+- [Security](SECURITY.md)
+- [Quality](QUALITY.md)
+- [Performance](PERFORMANCE.md)
 - [Testing](TESTING.md)
->>>>>>> 0a02158a (.)
-=======
 - [Testing](TESTING.md)
+- [Testing](TESTING.md)
+<<<<<<< .merge_file_d9iEDS
 >>>>>>> 35d8cf69 (Initial commit)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_nHwt06
+=======
+>>>>>>> .merge_file_jTmkQm
 - [Security](security.md)
 - [Quality](roadmap/quality.md)
 - [Performance](PERFORMANCE.md) _(target mancante, verificato 2026-10-14)_
 - [Testing](testing.md)
+<<<<<<< .merge_file_d9iEDS
 <<<<<<< .merge_file_KRCnD5
 =======
 >>>>>>> .merge_file_9OIRU7
 >>>>>>> .merge_file_nHwt06
+=======
+>>>>>>> .merge_file_jTmkQm

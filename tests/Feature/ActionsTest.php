@@ -22,13 +22,8 @@ function createUser(): User
 describe('ActivityLogger', function (): void {
 
     test('logs simple activity', function (): void {
-<<<<<<< .merge_file_ZDc0WI
-        $user = createUser();
-        $logger = new ActivityLogger;
-=======
         $user = createActionsTestUser();
         $logger = new ActivityLogger();
->>>>>>> .merge_file_TzF77g
         $activity = $logger->log('test_event', $user);
 
         Assert::assertSame('test_event', $activity->event);
@@ -36,112 +31,11 @@ describe('ActivityLogger', function (): void {
     });
 
     test('logs created event', function (): void {
-<<<<<<< .merge_file_ZDc0WI
-=======
-<<<<<<< .merge_file_SStaU1
-        $user = createActionsTestUser();
-        $logger = new ActivityLogger();
-=======
->>>>>>> .merge_file_TzF77g
         $user = createUser();
         $logger = new ActivityLogger;
->>>>>>> .merge_file_tMwRYu
         $model = activityCreateUser();
 
         $activity = $logger->created($model, $user);
-
-        Assert::assertSame('created', $activity->event);
-        Assert::assertSame($model->id, $activity->subject_id);
-    });
-
-    test('logs updated event', function (): void {
-<<<<<<< .merge_file_ZDc0WI
-=======
-<<<<<<< .merge_file_SStaU1
-        $user = createActionsTestUser();
-        $logger = new ActivityLogger();
-=======
->>>>>>> .merge_file_TzF77g
-        $user = createUser();
-        $logger = new ActivityLogger;
->>>>>>> .merge_file_tMwRYu
-        $model = activityCreateUser();
-
-        $activity = $logger->updated($model, $user);
-
-        Assert::assertSame('updated', $activity->event);
-        Assert::assertSame($model->id, $activity->subject_id);
-    });
-
-    test('logs deleted event', function (): void {
-<<<<<<< .merge_file_ZDc0WI
-=======
-<<<<<<< .merge_file_SStaU1
-        $user = createActionsTestUser();
-        $logger = new ActivityLogger();
-=======
->>>>>>> .merge_file_TzF77g
-        $user = createUser();
-        $logger = new ActivityLogger;
->>>>>>> .merge_file_tMwRYu
-        $model = activityCreateUser();
-
-        $activity = $logger->deleted($model, $user);
-
-        Assert::assertSame('deleted', $activity->event);
-        Assert::assertSame($model->id, $activity->subject_id);
-    });
-
-    test('logs login event', function (): void {
-<<<<<<< .merge_file_ZDc0WI
-        $user = createUser();
-        $logger = new ActivityLogger;
-=======
-        $user = createActionsTestUser();
-        $logger = new ActivityLogger();
->>>>>>> .merge_file_TzF77g
-        $activity = $logger->login($user);
-
-        Assert::assertSame('login', $activity->event);
-        Assert::assertStringContainsString((string) 'User logged in', (string) $activity->description);
-    });
-
-    test('logs logout event', function (): void {
-<<<<<<< .merge_file_ZDc0WI
-        $user = createUser();
-        $logger = new ActivityLogger;
-=======
-        $user = createActionsTestUser();
-        $logger = new ActivityLogger();
->>>>>>> .merge_file_TzF77g
-        $activity = $logger->logout($user);
-
-        Assert::assertSame('logout', $activity->event);
-        Assert::assertStringContainsString((string) 'User logged out', (string) $activity->description);
-    });
-});
-
-describe('LogActivityAction', function (): void {
-
-    test('creates activity with user', function (): void {
-        $user = createUser();
-        $action = new LogActivityAction(
-            type: 'test_type',
-            user: $user,
-            description: 'Test description'
-        );
-        $activity = $action->execute();
-
-        Assert::assertSame('test_type', $activity->log_name);
-        Assert::assertSame($user->id, $activity->causer_id);
-    });
-});
-
-describe('LogModelCreatedAction', function (): void {
-    test('logs model creation', function (): void {
-        $model = (new UserFactory)->createOne();
-        $action = new LogModelCreatedAction;
-        $activity = $action->execute($model);
 
         Assert::assertSame('created', $activity->event);
         Assert::assertSame($model->id, $activity->subject_id);

@@ -8,6 +8,7 @@ tags: [migrato-da-txt, activity]
 converted_from: fix.txt
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_npZzSE
 <<<<<<< .merge_file_SwcJyI
 status: draft
 qmd: "fix activity"
@@ -18,6 +19,10 @@ status: draft
 qmd: "fix activity"
 >>>>>>> .merge_file_CE0LXN
 >>>>>>> .merge_file_bguIwJ
+=======
+status: draft
+qmd: "fix activity"
+>>>>>>> .merge_file_C9ghpm
 ---
 
 in laravel/Modules/Activity/tests/TestCase.php  ci sono collisioni git, ma entrambe fan schifo , non dobbiamo usare migrated , perche' sempre facciamo la migrazione senza force completa ovvero php artisan migrate , senza specificare modulo, la vogliamo completa, tanto i test devono usare la configurazione .env.testing che deve essere la copia carbone di .env tranne che i nomi dei database son concatenati a _test , tutto questo lo trovi gia' nelle cartelle docs, nelle tue rules, nelle tue memories , se non trovi aggiorna, non dobbiamo neppure fare

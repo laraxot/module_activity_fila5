@@ -1,23 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_UWlIIq
-
-use Illuminate\Support\Facades\File;
-use Modules\Activity\Actions\Log\BuildLogViewerStateAction;
-<<<<<<< .merge_file_LGCPB8
-use Modules\Activity\Enums\LogLevelEnum;
-use Modules\Activity\Tests\TestCase;
-=======
-use Modules\Activity\Datas\LogViewerStateData;
-use Tests\TestCase;
-=======
-use Illuminate\Support\Facades\File;
-use Modules\Activity\Actions\Log\BuildLogViewerStateAction;
-use Modules\Activity\Enums\LogLevelEnum;
-use Modules\Activity\Tests\TestCase;
->>>>>>> .merge_file_VhNgN1
->>>>>>> .merge_file_AQcgEX
 
 uses(TestCase::class);
 
@@ -51,20 +34,12 @@ it('lists the files and builds the tree even when no file is chosen', function (
     expect($state->tail)->toBeNull();
     expect($state->entries)->toBe([]);
     expect($state->error)->toBeNull();
-<<<<<<< .merge_file_UWlIIq
-    expect($state->levels)->toContain('ERROR');
-=======
     expect($state->levels)->toBe(LogLevelEnum::cases());
->>>>>>> .merge_file_VhNgN1
     expect($state->windows)->toContain(256);
 });
 
 it('reads the chosen file and returns its entries newest first with the tail metadata', function (): void {
-<<<<<<< .merge_file_UWlIIq
-    $state = (new BuildLogViewerStateAction())->execute('laravel.log');
-=======
     $state = (new BuildLogViewerStateAction)->execute('laravel.log');
->>>>>>> .merge_file_VhNgN1
 
     expect($state->error)->toBeNull();
     expect($state->total)->toBe(2);
@@ -76,11 +51,7 @@ it('reads the chosen file and returns its entries newest first with the tail met
 });
 
 it('applies the level filter and the text search', function (): void {
-<<<<<<< .merge_file_UWlIIq
-    $action = new BuildLogViewerStateAction();
-=======
     $action = new BuildLogViewerStateAction;
->>>>>>> .merge_file_VhNgN1
 
     expect($action->execute('laravel.log', 'INFO')->total)->toBe(1);
     expect($action->execute('laravel.log', '', 'smtp')->total)->toBe(1);
@@ -88,22 +59,14 @@ it('applies the level filter and the text search', function (): void {
 });
 
 it('ignores an invalid level and an invalid window instead of failing', function (): void {
-<<<<<<< .merge_file_UWlIIq
-    $state = (new BuildLogViewerStateAction())->execute('laravel.log', 'INVENTATO', '', 'abc');
-=======
     $state = (new BuildLogViewerStateAction)->execute('laravel.log', 'INVENTATO', '', 'abc');
->>>>>>> .merge_file_VhNgN1
 
     expect($state->error)->toBeNull();
     expect($state->total)->toBe(2);
 });
 
 it('returns a generic error and no entries for paths that try to leave the log directory', function (): void {
-<<<<<<< .merge_file_UWlIIq
-    $action = new BuildLogViewerStateAction();
-=======
     $action = new BuildLogViewerStateAction;
->>>>>>> .merge_file_VhNgN1
 
     foreach (['../framework/testing/segreto-stato.log', '../../.env', '/etc/passwd', 'laravel.log/../../../.env', 'non-esiste.log'] as $malicious) {
         $state = $action->execute($malicious);

@@ -10,9 +10,12 @@ issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/328"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/329"
+<<<<<<< .merge_file_xCnnR5
 status: draft
 <<<<<<< .merge_file_SiqewF
 =======
+=======
+>>>>>>> .merge_file_TWR7kl
 ---
 
 ---
@@ -68,15 +71,9 @@ status: draft
 
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt) _(target mancante, verificato 2026-10-14)_
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
-<<<<<<< HEAD
-=======
 
 ---
 title: "Activity Log"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 4fb998e0 (.)
 type: log
 module: Activity
 tags: [activity, phpstan, pest, qmd]
@@ -161,8 +158,8 @@ discussions:
 ## [2026-06-13] phpstan | Gate chef — 7 file Actions → Assert
 
 - Convertiti tutti i test `tests/Unit/Actions/*` da `expect()` a `Assert::assert*()` per eliminare `method.internalClass` (82 errori piattaforma → 0).
-- Aggiunti [overviews/completion-status.md](overviews/completion-status.md) e aggiornato [PROJECT-ROADMAP.md](project-roadmap.md) scope Activity.
-- Hub: [Xot platform-completion-roadmap](../../Xot/docs/wiki/overviews/platform-completion-roadmap.md) _(target mancante, verificato 2026-10-14)_.
+- Aggiunti [overviews/completion-status.md](overviews/completion-status.md) e aggiornato [PROJECT-ROADMAP.md](PROJECT-ROADMAP.md) scope Activity.
+- Hub: [Xot platform-completion-roadmap](../../Xot/docs/wiki/overviews/platform-completion-roadmap.md).
 - GitHub: [Activity#18](https://github.com/laraxot/module_activity_fila5/issues/18) / base [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372).
 
 ## [2026-06-10] testcase | Brainstorm Activity + nWidart BaseTestCase
@@ -170,7 +167,7 @@ discussions:
 - Confermato: Activity `TestCase` già estende `XotBaseTestCase`.
 - `Nwidart\Modules\Tests\BaseTestCase` esiste su GitHub (Orchestra Testbench) ma non è autoloadato in app — non usare come parent.
 - Gap: solo Geo ancora su Laravel `TestCase` diretto.
-- Chat: [docs/chat/testcase-brainstorm-activity-nwidart.md](../../../../../docs/chat/testcase-brainstorm-activity-nwidart.md)
+- Chat: [docs/chat/2026-06-10-testcase-brainstorm-activity-nwidart.md](../../../../docs/chat/2026-06-10-testcase-brainstorm-activity-nwidart.md)
 
 ## [2026-06-10] phpstan | Activity clean with Pest tests preserved
 
@@ -192,16 +189,11 @@ discussions:
 
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
-- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt) _(target mancante, verificato 2026-10-14)_
+- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
 
 ---
 title: "Activity Log"
-<<<<<<< HEAD
-=======
->>>>>>> 77d3d692 (.)
-=======
->>>>>>> 4fb998e0 (.)
 module: "Activity"
 ---
 
@@ -234,10 +226,6 @@ module: "Activity"
 - 2026-06-10: activity_log consolidato in 2026_06_10_140000_create_activity_table.php; duplicate in _bak/
 
 - 2026-06-10: activity_log — consolidate add/fix/update in 141000_create_activity_table; anti-pattern in _bak/
-<<<<<<< .merge_file_DCzJGY
->>>>>>> 35d8cf69 (Initial commit)
-=======
->>>>>>> .merge_file_yJbfCX
 
 
 ## 2026-09-20 — Pagina Log nel pannello Activity (`/activity/admin/log-viewer`)
@@ -247,15 +235,21 @@ module: "Activity"
 - La risorsa `/xot/admin/logs` (modulo Xot) non è stata toccata: spostarla o rimuoverla resta una decisione del team.
 - Secondo audit alle linee guida: story anche in Activity, registro `sprint-status.yaml` aggiornato; scostamenti aperti (CSS in linea, TestCase, PHPMD/PHPInsights, chiavi lang) elencati nel concept.
 - Classi base di Xot: usata `XotBasePage` per `LogViewer`; per Action, Data ed eccezione non c'è una base applicabile (vedi il concept). Unico scostamento: i test usano `Tests\TestCase` della root e non il `TestCase` del modulo (manca `database/test_data.sqlite`).
+<<<<<<< .merge_file_xCnnR5
 <<<<<<< .merge_file_SiqewF
 - Dettagli: [concepts/log-viewer-page-no-ssh.md](concepts/log-viewer-page-no-ssh.md); la story di origine (`quaeris-admin-log-viewer-no-ssh`) sta nel repo di un altro progetto e non esiste qui.
 =======
 <<<<<<< .merge_file_DCzJGY
-- Dettagli: [concepts/log-viewer-page-no-ssh.md](concepts/log-viewer-page-no-ssh.md), story [quaeris-admin-log-viewer-no-ssh](../../../Quaeris/docs/stories/quaeris-admin-log-viewer-no-ssh.md).
 =======
+>>>>>>> .merge_file_TWR7kl
+- Dettagli: [concepts/log-viewer-page-no-ssh.md](concepts/log-viewer-page-no-ssh.md), story [quaeris-admin-log-viewer-no-ssh](../../../Quaeris/docs/stories/quaeris-admin-log-viewer-no-ssh.md).
+- Dettagli: [concepts/log-viewer-page-no-ssh.md](concepts/log-viewer-page-no-ssh.md), story [quaeris-admin-log-viewer-no-ssh](../../../Quaeris/docs/stories/quaeris-admin-log-viewer-no-ssh.md).
 - Dettagli: [concepts/log-viewer-page-no-ssh.md](concepts/log-viewer-page-no-ssh.md); la story di origine (`quaeris-admin-log-viewer-no-ssh`) sta nel repo di un altro progetto e non esiste qui.
+<<<<<<< .merge_file_xCnnR5
 >>>>>>> .merge_file_yJbfCX
 >>>>>>> .merge_file_BGeM2D
+=======
+>>>>>>> .merge_file_TWR7kl
 
 ---
 
@@ -263,12 +257,18 @@ module: "Activity"
 - `app/Filament/Pages/Concerns/CanPaginate.php`: added `@template TModel of Model` to `paginateQuery()` so callers passing `Builder<Activity>` satisfy the `Builder<Model>` parameter (template covariance).
 - `tests/Fixtures/CanPaginateHarness.php` + `tests/fixtures/CanPaginateHarness.php`: aligned `exposePaginateQuery()` PHPDoc to `Builder<Model>` (removed own `@template` that shadowed the trait's).
 - `app/Filament/Pages/ListLogActivities.php`: added `@var LengthAwarePaginator<int, Activity>` after the instanceof check to satisfy return-type covariance.
+<<<<<<< .merge_file_xCnnR5
 <<<<<<< .merge_file_SiqewF
 - Cleared 6 `argument.type` / `return.type` errors.
 =======
 <<<<<<< .merge_file_DCzJGY
-- Cleared 6 `argument.type` / `return.type` errors.
 =======
+>>>>>>> .merge_file_TWR7kl
 - Cleared 6 `argument.type` / `return.type` errors.
+- Cleared 6 `argument.type` / `return.type` errors.
+<<<<<<< .merge_file_xCnnR5
 >>>>>>> .merge_file_yJbfCX
 >>>>>>> .merge_file_BGeM2D
+=======
+- Cleared 6 `argument.type` / `return.type` errors.
+>>>>>>> .merge_file_TWR7kl

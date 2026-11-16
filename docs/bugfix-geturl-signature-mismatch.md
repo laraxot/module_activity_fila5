@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_cOE9ia
 <<<<<<< .merge_file_zjHJB4
 =======
 <<<<<<< .merge_file_cXtYPe
 =======
 >>>>>>> .merge_file_KTY6tU
+=======
+>>>>>>> .merge_file_4veebS
 ---
 title: "Bugfix: PHPStan `getUrl()` signature mismatch + enum/getColumnDefinitions drift"
 type: note
@@ -11,10 +14,13 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "bugfix: phpstan `geturl()` signature mismatch + enum/getcolumndefinitions drift activity"
 ---
+<<<<<<< .merge_file_cOE9ia
 <<<<<<< .merge_file_zjHJB4
 =======
 >>>>>>> .merge_file_y3tgx8
 >>>>>>> .merge_file_KTY6tU
+=======
+>>>>>>> .merge_file_4veebS
 # Bugfix: PHPStan `getUrl()` signature mismatch + enum/getColumnDefinitions drift
 
 ## 🐛 Errori
@@ -59,30 +65,42 @@ mantenendo solo `$name` e `$parameters` effettivamente usati nel corpo.
 a PHPStan per fidarsi del narrowing lungo tutta la catena di assegnazione.
 
 **Fix:** aggiunta `Webmozart\Assert\Assert::subclassOf(...)` sia in
+<<<<<<< .merge_file_cOE9ia
 <<<<<<< .merge_file_zjHJB4
 `usingResource()` sia in `getResource()` prima del return: stesso pattern già
 =======
 <<<<<<< .merge_file_cXtYPe
-`usingResource()` sia in `getResource()` prima del return — stesso pattern già
 =======
+>>>>>>> .merge_file_4veebS
+`usingResource()` sia in `getResource()` prima del return — stesso pattern già
+
 `usingResource()` sia in `getResource()` prima del return: stesso pattern già
+<<<<<<< .merge_file_cOE9ia
 >>>>>>> .merge_file_y3tgx8
 >>>>>>> .merge_file_KTY6tU
+=======
+>>>>>>> .merge_file_4veebS
 in uso in `Modules\Xot\Filament\Resources\XotBaseResource::getModel()`.
 
 ### 3. (Modulo Geo, correlato) `AddressItemEnum::getColumnDefinitions()` referenziava case commentate
 
 Non in questo modulo, ma stessa causa radice architetturale: un enum con
 alcune `case` disabilitate via commento ma ancora referenziate in un metodo
+<<<<<<< .merge_file_cOE9ia
 <<<<<<< .merge_file_zjHJB4
 che le consuma (`self::CASE_DISABILITATA->value`): errore `classConstant.notFound`,
 =======
 <<<<<<< .merge_file_cXtYPe
-che le consuma (`self::CASE_DISABILITATA->value`) — errore `classConstant.notFound`,
 =======
+>>>>>>> .merge_file_4veebS
+che le consuma (`self::CASE_DISABILITATA->value`) — errore `classConstant.notFound`,
+
 che le consuma (`self::CASE_DISABILITATA->value`): errore `classConstant.notFound`,
+<<<<<<< .merge_file_cOE9ia
 >>>>>>> .merge_file_y3tgx8
 >>>>>>> .merge_file_KTY6tU
+=======
+>>>>>>> .merge_file_4veebS
 avrebbe fatto fallire qualsiasi migrazione che chiamasse `EnumTrait::columns()`.
 Documentato qui perché è un pattern di bug ricorrente nell'architettura
 XotBase-Enum: se si commenta una `case`, va rimossa anche ovunque referenziata,

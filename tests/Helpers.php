@@ -38,24 +38,6 @@ function activityCreateActivity(array $attributes = []): Activity
     return $activity;
 }
 
-<<<<<<< .merge_file_l0QMAg
-/**
- * Mockery 1.6 returns a CompositeExpectation from shouldReceive()/allows(), which forwards
- * once()/with()/andReturn() via __call and so is opaque to PHPStan. The composite holds no
- * public accessor, so its single Expectation is read once here to keep chained calls typed.
- */
-function mockeryExpect(object $expectation): Expectation
-{
-    if ($expectation instanceof CompositeExpectation) {
-        $expectations = (fn (): array => $this->_expectations)->call($expectation);
-        assert(count($expectations) === 1, 'mockeryExpect() supports a single expected method');
-        $expectation = reset($expectations);
-    }
-
-    assert($expectation instanceof Expectation);
-
-    return $expectation;
-=======
 // Anche in Modules/User/tests/Helpers.php: tests/Pest.php li carica entrambi.
 if (! function_exists('mockeryExpect')) {
     /**
@@ -75,5 +57,4 @@ if (! function_exists('mockeryExpect')) {
 
         return $expectation;
     }
->>>>>>> .merge_file_a7lYsF
 }

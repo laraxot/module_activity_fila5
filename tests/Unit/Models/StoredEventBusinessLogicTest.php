@@ -10,94 +10,36 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 use PHPUnit\Framework\Assert;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder;
 
-<<<<<<< .merge_file_fG6w91
-use function Safe\class_uses;
-
 uses(TestCase::class);
 
-=======
-<<<<<<< .merge_file_PIJF3v
-uses(\Modules\Activity\Tests\TestCase::class);
+test('stored event uses the activity connection and table', function (): void {
+    $storedEvent = new StoredEvent;
 
-describe('StoredEvent Business Logic', function (): void {
-    test('stored event has correct connection configured', function (): void {
-        $storedEvent = new StoredEvent();
+    Assert::assertSame('activity', $storedEvent->getConnectionName());
+    Assert::assertSame('stored_events', $storedEvent->getTable());
+});
 
-        Assert::assertSame('activity', $storedEvent->getConnectionName());
-    });
+test('stored event exposes the event sourcing fillable attributes', function (): void {
+    $expected = [
+        'id',
+        'aggregate_uuid',
+        'aggregate_version',
+        'event_version',
+        'event_class',
+        'event_properties',
+        'meta_data',
+        'created_at',
+        'updated_by',
+        'created_by',
+    ];
 
-    test('stored event has correct table configured', function (): void {
-        $storedEvent = new StoredEvent();
+    Assert::assertSame($expected, (new StoredEvent)->getFillable());
+});
 
-        Assert::assertSame('stored_events', $storedEvent->getTable());
-    });
+test('stored event uses the Xot factory trait', function (): void {
+    Assert::assertArrayHasKey(HasXotFactory::class, class_uses(StoredEvent::class));
+});
 
-    test('stored event has expected fillable fields for event sourcing', function (): void {
-        $storedEvent = new StoredEvent();
-        $expectedFillable = [
-=======
-use function Safe\class_uses;
-
-uses(TestCase::class);
-
->>>>>>> .merge_file_5ZLH2w
-/**
- * Verifica il contratto pubblico del model StoredEvent (persistenza eventi).
- */
-final class StoredEventBusinessLogicTest extends TestCase
-{
-    public function test_uses_dedicated_activity_database_connection(): void
-    {
-        Assert::assertSame('activity', (new StoredEvent)->getConnectionName());
-    }
-
-    public function test_uses_stored_events_table(): void
-    {
-        Assert::assertSame('stored_events', (new StoredEvent)->getTable());
-    }
-
-    public function test_exposes_expected_fillable_attributes_for_event_payload(): void
-    {
-        $expected = [
-<<<<<<< .merge_file_fG6w91
-=======
->>>>>>> .merge_file_jBDpVF
->>>>>>> .merge_file_5ZLH2w
-            'id',
-            'aggregate_uuid',
-            'aggregate_version',
-            'event_version',
-            'event_class',
-            'event_properties',
-            'meta_data',
-            'created_at',
-            'updated_by',
-            'created_by',
-        ];
-
-        Assert::assertSame($expected, (new StoredEvent)->getFillable());
-    }
-<<<<<<< .merge_file_fG6w91
-
-    public function test_extends_spatie_eloquent_stored_event(): void {}
-
-    public function test_uses_xot_factory_trait_for_test_data(): void
-    {
-        Assert::assertArrayHasKey(HasXotFactory::class, class_uses(StoredEvent::class));
-    }
-
-=======
-
-    public function test_extends_spatie_eloquent_stored_event(): void {}
-
-    public function test_uses_xot_factory_trait_for_test_data(): void
-    {
-        Assert::assertArrayHasKey(HasXotFactory::class, class_uses(StoredEvent::class));
-    }
-
->>>>>>> .merge_file_5ZLH2w
-    public function test_exposes_event_sourcing_query_builder_entry_point(): void
-    {
-        Assert::assertInstanceOf(EloquentStoredEventQueryBuilder::class, StoredEvent::query());
-    }
-}
+test('stored event exposes the event sourcing query builder', function (): void {
+    Assert::assertInstanceOf(EloquentStoredEventQueryBuilder::class, StoredEvent::query());
+});

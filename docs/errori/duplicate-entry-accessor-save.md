@@ -1,11 +1,3 @@
----
-title: "Errore: Duplicate Entry Durante Activity Log"
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity, errori]
-qmd: "errore: duplicate entry durante activity log activity"
----
 # Errore: Duplicate Entry Durante Activity Log
 
 ## Problema
@@ -460,7 +452,7 @@ class SchedaObserver
 - [Activity Module - README](../README.md)
 - [BaseScheda Activity Log](../../Ptv/docs/models/base-scheda-activity-log.md)
 - [SchedaTrait Refactoring Plan](../../Sigma/docs/refactoring/scheda-trait-accessors.md)
-- [Activity Module - README](../README.md)
+- [Activity Module - README](../readme.md)
 - [BaseScheda Activity Log](../../ptv/docs/models/base-scheda-activity-log.md)
 - [SchedaTrait Refactoring Plan](../../sigma/docs/refactoring/scheda-trait-accessors.md)
 
@@ -470,20 +462,11 @@ class SchedaObserver
 
 ---
 
-<<<<<<< .merge_file_jGqVfh
-<<<<<<< HEAD
-<<<<<<< HEAD
 **
-=======
+
 **Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> 0a02158a (.)
-=======
-**Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> 35d8cf69 (Initial commit)
-=======
+
 **=======
-**Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> .merge_file_E4Lk8v
 **Severità**: CRITICA (blocca edit in produzione)
 **Workaround**: Disabilitare temporaneamente LogsActivity trait
 **Fix Definitivo**: Refactoring accessor in SchedaTrait

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_9Gu28r
 <<<<<<< .merge_file_CfO58m
 ---
 title: "Event Sourcing in `<nome progetto>`"
@@ -10,6 +11,8 @@ qmd: "event sourcing in `<nome progetto>` activity"
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_RjHnkD
+=======
+>>>>>>> .merge_file_NjYV5L
 # Event Sourcing in `<nome progetto>`
 
 ## Introduction to Event Sourcing
@@ -167,7 +170,6 @@ public function store(Request $request)
 
 This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `<nome progetto>`, ensuring full traceability and compliance with healthcare standards.
 This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `<nome progetto>`, ensuring full traceability and compliance with healthcare standards.
-=======
 ---
 title: "Event Sourcing in `<nome progetto>`"
 type: note
@@ -178,19 +180,9 @@ qmd: "event sourcing in `<nome progetto>` activity"
 ---
 # Event Sourcing in `<nome progetto>`
 
-<<<<<<< .merge_file_Aan9cn
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
-=======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
->>>>>>> d4098eb (.)
-=======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
->>>>>>> 26b6dbd (.)
-=======
-=======
 ## Introduction to Event Sourcing
 Event Sourcing is an architectural pattern where application state is derived from a sequence of events. Instead of storing the current state in a database, the application stores all events that led to the current state. This approach is particularly beneficial in a healthcare context like `<nome progetto>` for tracking patient activities, medical records, and system interactions with full auditability.
 # Event Sourcing in `<nome progetto>`
@@ -347,7 +339,4 @@ public function store(Request $request)
 This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `<nome progetto>`, ensuring full traceability and compliance with healthcare standards.
 This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `<nome progetto>`, ensuring full traceability and compliance with healthcare standards.=======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
->>>>>>> .merge_file_AWUzBU
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
->>>>>>> 2d6a374 (.)
->>>>>>> laraxot/dev

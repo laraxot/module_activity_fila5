@@ -1,11 +1,3 @@
----
-title: "Use Case: Tracking Email Sent - Schede Valutazione"
-type: note
-status: draft
-updated: 2026-10-23
-tags: [docs, activity, use-cases]
-qmd: "use case: tracking email sent - schede valutazione activity"
----
 # Use Case: Tracking Email Sent - Schede Valutazione
 
 ## 📋 Overview
@@ -369,27 +361,30 @@ public function it_logs_activity_when_sending_email(): void
 - [Activity - README](../../README.md)
 - [Ptv - Analisi Filosofica](../../../ptv/docs/activity-log-email-tracking-philosophical-analysis.md)
 - [Ptv - Implementation Guide](../../../ptv/docs/activity-log-email-tracking-implementation.md)
-- [Activity - README](../../README.md)
+- [Activity - README](../../readme.md)
 - [Activity - LogActivityAction](../../app/Actions/LogActivityAction.php)
 
 ---
 
+<<<<<<< .merge_file_gdfFQs
 <<<<<<< .merge_file_qtCFZZ
 =======
 <<<<<<< .merge_file_5LQsOd
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+**=======
+>>>>>>> .merge_file_EwLp0j
 **
-=======
 **Ultimo Aggiornamento:** 2025-01-22
->>>>>>> 0a02158a (.)
-=======
 **Ultimo Aggiornamento:** 2025-01-22
+<<<<<<< .merge_file_gdfFQs
 >>>>>>> 35d8cf69 (Initial commit)
 =======
 >>>>>>> .merge_file_RkcnCi
+=======
+>>>>>>> .merge_file_EwLp0j
 **Ultimo Aggiornamento:** 2025-01-22
->>>>>>> .merge_file_Jzpd2i
 **Versione:** 1.0
 **Autore:** System Integration Documentation
 **Stato:** ✅ Production Ready

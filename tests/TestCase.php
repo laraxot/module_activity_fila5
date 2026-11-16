@@ -82,8 +82,6 @@ abstract class TestCase extends XotBaseTestCase
 
         return $this->page;
     }
-<<<<<<< .merge_file_gYngo2
-=======
 
     /**
      * Builds a fresh ListLogActivities page instance exposing the
@@ -113,5 +111,4 @@ abstract class TestCase extends XotBaseTestCase
             }
         };
     }
->>>>>>> .merge_file_tl5ibJ
 }

@@ -1,13 +1,9 @@
-<<<<<<< .merge_file_yLU0Gf
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_5BPwi2
 ---
 module: Activity
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+<<<<<<< .merge_file_2Cht6s
 <<<<<<< .merge_file_Zyw1v8
 title: "Metodi Duplicati: Analisi Activity"
 type: note
@@ -19,10 +15,14 @@ qmd: "metodi duplicati   analisi activity activity"
 # Metodi Duplicati: Analisi Activity
 =======
 <<<<<<< .merge_file_yLU0Gf
+=======
+>>>>>>> .merge_file_ZUErPj
 ---
 
 # Metodi Duplicati — Analisi Activity
-=======
+---
+
+# Metodi Duplicati — Analisi Activity
 title: "Metodi Duplicati: Analisi Activity"
 type: note
 status: stub
@@ -31,8 +31,11 @@ qmd: "metodi duplicati   analisi activity activity"
 ---
 
 # Metodi Duplicati: Analisi Activity
+<<<<<<< .merge_file_2Cht6s
 >>>>>>> .merge_file_5BPwi2
 >>>>>>> .merge_file_iopGFv
+=======
+>>>>>>> .merge_file_ZUErPj
 
 Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modulo **Activity**, estratti dal report globale generato da `/tmp/metodi_duplicati_domain_report.md`.
 
@@ -44,15 +47,21 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Models/Policies/ActivityBasePolicy.php`
 
+<<<<<<< .merge_file_2Cht6s
 <<<<<<< .merge_file_Zyw1v8
 [Riflessione: Presente in 13 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 =======
 <<<<<<< .merge_file_yLU0Gf
-[Riflessione: Presente in 13 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 =======
+>>>>>>> .merge_file_ZUErPj
+[Riflessione: Presente in 13 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 13 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 [Riflessione: Presente in 13 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+<<<<<<< .merge_file_2Cht6s
 >>>>>>> .merge_file_5BPwi2
 >>>>>>> .merge_file_iopGFv
+=======
+>>>>>>> .merge_file_ZUErPj
 
 ---
 
@@ -64,15 +73,21 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/database/factories/BaseActivityFactory.php`
 
+<<<<<<< .merge_file_2Cht6s
 <<<<<<< .merge_file_Zyw1v8
 [Riflessione: Presente in 5 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 =======
 <<<<<<< .merge_file_yLU0Gf
-[Riflessione: Presente in 5 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 =======
+>>>>>>> .merge_file_ZUErPj
+[Riflessione: Presente in 5 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 5 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 [Riflessione: Presente in 5 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+<<<<<<< .merge_file_2Cht6s
 >>>>>>> .merge_file_5BPwi2
 >>>>>>> .merge_file_iopGFv
+=======
+>>>>>>> .merge_file_ZUErPj
 
 ---
 
@@ -84,15 +99,21 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Actions/ActivityLogger.php`
 
+<<<<<<< .merge_file_2Cht6s
 <<<<<<< .merge_file_Zyw1v8
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 =======
 <<<<<<< .merge_file_yLU0Gf
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 =======
+>>>>>>> .merge_file_ZUErPj
+[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+<<<<<<< .merge_file_2Cht6s
 >>>>>>> .merge_file_5BPwi2
 >>>>>>> .merge_file_iopGFv
+=======
+>>>>>>> .merge_file_ZUErPj
 
 ---
 
@@ -104,15 +125,21 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Actions/ActivityLogger.php`
 
+<<<<<<< .merge_file_2Cht6s
 <<<<<<< .merge_file_Zyw1v8
 [Riflessione: Presente in 4 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 =======
 <<<<<<< .merge_file_yLU0Gf
-[Riflessione: Presente in 4 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 =======
+>>>>>>> .merge_file_ZUErPj
+[Riflessione: Presente in 4 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 4 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 [Riflessione: Presente in 4 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+<<<<<<< .merge_file_2Cht6s
 >>>>>>> .merge_file_5BPwi2
 >>>>>>> .merge_file_iopGFv
+=======
+>>>>>>> .merge_file_ZUErPj
 
 ---
 
@@ -124,15 +151,21 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Providers/ActivityServiceProvider.php`
 
+<<<<<<< .merge_file_2Cht6s
 <<<<<<< .merge_file_Zyw1v8
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 =======
 <<<<<<< .merge_file_yLU0Gf
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 =======
+>>>>>>> .merge_file_ZUErPj
+[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+<<<<<<< .merge_file_2Cht6s
 >>>>>>> .merge_file_5BPwi2
 >>>>>>> .merge_file_iopGFv
+=======
+>>>>>>> .merge_file_ZUErPj
 
 ---
 
@@ -144,15 +177,21 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Actions/ActivityLogger.php`
 
+<<<<<<< .merge_file_2Cht6s
 <<<<<<< .merge_file_Zyw1v8
 [Riflessione: Presente in 3 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 =======
 <<<<<<< .merge_file_yLU0Gf
-[Riflessione: Presente in 3 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 =======
+>>>>>>> .merge_file_ZUErPj
+[Riflessione: Presente in 3 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 3 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 [Riflessione: Presente in 3 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+<<<<<<< .merge_file_2Cht6s
 >>>>>>> .merge_file_5BPwi2
 >>>>>>> .merge_file_iopGFv
+=======
+>>>>>>> .merge_file_ZUErPj
 
 ---
 
@@ -164,15 +203,21 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Actions/ActivityLogger.php`
 
+<<<<<<< .merge_file_2Cht6s
 <<<<<<< .merge_file_Zyw1v8
 [Riflessione: Presente in 3 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 =======
 <<<<<<< .merge_file_yLU0Gf
-[Riflessione: Presente in 3 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 =======
+>>>>>>> .merge_file_ZUErPj
+[Riflessione: Presente in 3 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+[Riflessione: Presente in 3 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 [Riflessione: Presente in 3 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+<<<<<<< .merge_file_2Cht6s
 >>>>>>> .merge_file_5BPwi2
 >>>>>>> .merge_file_iopGFv
+=======
+>>>>>>> .merge_file_ZUErPj
 
 ---
 
@@ -185,15 +230,21 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Activity/database/factories/SnapshotFactory.php`
 - `./laravel/Modules/Activity/database/factories/StoredEventFactory.php`
 
+<<<<<<< .merge_file_2Cht6s
 <<<<<<< .merge_file_Zyw1v8
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 =======
 <<<<<<< .merge_file_yLU0Gf
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
 =======
+>>>>>>> .merge_file_ZUErPj
+[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
+<<<<<<< .merge_file_2Cht6s
 >>>>>>> .merge_file_5BPwi2
 >>>>>>> .merge_file_iopGFv
+=======
+>>>>>>> .merge_file_ZUErPj
 
 ---
 
@@ -206,15 +257,21 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Activity/database/factories/SnapshotFactory.php`
 - `./laravel/Modules/Activity/database/factories/StoredEventFactory.php`
 
+<<<<<<< .merge_file_2Cht6s
 <<<<<<< .merge_file_Zyw1v8
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 =======
 <<<<<<< .merge_file_yLU0Gf
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
 =======
+>>>>>>> .merge_file_ZUErPj
+[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
+<<<<<<< .merge_file_2Cht6s
 >>>>>>> .merge_file_5BPwi2
 >>>>>>> .merge_file_iopGFv
+=======
+>>>>>>> .merge_file_ZUErPj
 
 ---
 
@@ -226,15 +283,21 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Filament/Pages/ListLogActivities.php`
 
+<<<<<<< .merge_file_2Cht6s
 <<<<<<< .merge_file_Zyw1v8
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
 =======
 <<<<<<< .merge_file_yLU0Gf
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
 =======
+>>>>>>> .merge_file_ZUErPj
+[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
+<<<<<<< .merge_file_2Cht6s
 >>>>>>> .merge_file_5BPwi2
 >>>>>>> .merge_file_iopGFv
+=======
+>>>>>>> .merge_file_ZUErPj
 
 ---
 
@@ -246,15 +309,21 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/database/seeders/ActivityMassSeeder.php`
 
+<<<<<<< .merge_file_2Cht6s
 <<<<<<< .merge_file_Zyw1v8
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 =======
 <<<<<<< .merge_file_yLU0Gf
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 =======
+>>>>>>> .merge_file_ZUErPj
+[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+<<<<<<< .merge_file_2Cht6s
 >>>>>>> .merge_file_5BPwi2
 >>>>>>> .merge_file_iopGFv
+=======
+>>>>>>> .merge_file_ZUErPj
 
 ---
 
@@ -266,15 +335,21 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Actions/ActivityLogger.php`
 
+<<<<<<< .merge_file_2Cht6s
 <<<<<<< .merge_file_Zyw1v8
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 =======
 <<<<<<< .merge_file_yLU0Gf
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 =======
+>>>>>>> .merge_file_ZUErPj
+[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+<<<<<<< .merge_file_2Cht6s
 >>>>>>> .merge_file_5BPwi2
 >>>>>>> .merge_file_iopGFv
+=======
+>>>>>>> .merge_file_ZUErPj
 
 ---
 
@@ -286,15 +361,21 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Activity/app/Actions/ActivityLogger.php`
 
+<<<<<<< .merge_file_2Cht6s
 <<<<<<< .merge_file_Zyw1v8
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 =======
 <<<<<<< .merge_file_yLU0Gf
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 =======
+>>>>>>> .merge_file_ZUErPj
+[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+<<<<<<< .merge_file_2Cht6s
 >>>>>>> .merge_file_5BPwi2
 >>>>>>> .merge_file_iopGFv
+=======
+>>>>>>> .merge_file_ZUErPj
 
 ---
 
@@ -323,19 +404,22 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - **Setting:** 1 metodi in comune
 
 ---
+<<<<<<< .merge_file_2Cht6s
 <<<<<<< .merge_file_Zyw1v8
 _Report generato automaticamente: fonte: `/tmp/metodi_duplicati_domain_report.md`_# 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 =======
 <<<<<<< .merge_file_yLU0Gf
+=======
+_Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_# 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
+>>>>>>> .merge_file_ZUErPj
 _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
-=======
 _Report generato automaticamente: fonte: `/tmp/metodi_duplicati_domain_report.md`_# 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
+<<<<<<< .merge_file_2Cht6s
 >>>>>>> .merge_file_5BPwi2
 >>>>>>> .merge_file_iopGFv
+=======
+>>>>>>> .merge_file_ZUErPj
 
 **Powered by**: Super Mucca AI 🐄✨
 **Data**: 15 Ottobre 2025
@@ -1433,9 +1517,5 @@ public function getTableFilters(): array
 3. Kick-off Fase 1
 4. Implementazione ColumnBuilder
 
-<<<<<<< HEAD
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
->>>>>>> 0a02158a (.)
-=======
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
->>>>>>> 35d8cf69 (Initial commit)

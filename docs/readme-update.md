@@ -1,11 +1,3 @@
----
-title: "Aggiornamento README Activity - Sezione Testing"
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity]
-qmd: "aggiornamento readme activity - sezione testing activity"
----
 # Aggiornamento README Activity - Sezione Testing
 
 ## Sezione da Aggiungere
@@ -43,29 +35,27 @@ test('snapshot test', function () {
 **Documentazione**:
 - [No RefreshDatabase Policy](./testing/no-refresh-database-policy.md)
 - [Snapshot Testing Patterns](./testing/snapshot-testing-patterns.md)
+<<<<<<< .merge_file_kA03uA
 <<<<<<< .merge_file_r07ZuL
 - [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)=======
 - [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)
 =======
 <<<<<<< .merge_file_oiRPTa
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_MFcZNH
 - [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)
-=======
 - [Xot Testing Strategy](../../xot/docs/testing-strategy.md)
->>>>>>> 0a02158a (.)
-=======
 - [Xot Testing Strategy](../../xot/docs/testing-strategy.md)
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> laraxot/dev
-=======
 - [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)=======
+- [Xot Testing Strategy](../../xot/docs/testing-strategy.md)
 - [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)
+<<<<<<< .merge_file_kA03uA
 >>>>>>> .merge_file_LZtWEu
 >>>>>>> .merge_file_DtbSpW
+=======
+>>>>>>> .merge_file_MFcZNH
 
 #### Test Coverage
 
@@ -92,6 +82,7 @@ php artisan test --filter=Snapshot
 
 # Con coverage
 php artisan test Modules/Activity --coverage
+<<<<<<< .merge_file_kA03uA
 <<<<<<< .merge_file_r07ZuL
 =======
 <<<<<<< HEAD
@@ -99,13 +90,11 @@ php artisan test Modules/Activity --coverage
 ```
 =======
 >>>>>>> .merge_file_DtbSpW
+=======
+```=======
+```
+>>>>>>> .merge_file_MFcZNH
 ```
 
->>>>>>> 0a02158a (.)
-=======
 ```
-<<<<<<< .merge_file_oiRPTa
 
->>>>>>> 35d8cf69 (Initial commit)
-=======
->>>>>>> .merge_file_LZtWEu

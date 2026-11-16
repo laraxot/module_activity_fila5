@@ -1,11 +1,3 @@
----
-title: "Errore: Method ::route does not exist"
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity, errori]
-qmd: "errore: method ::route does not exist activity"
----
 # Errore: Method ::route does not exist
 
 ## Descrizione dell'Errore
@@ -321,7 +313,7 @@ foreach (glob('Modules/*/app/Filament/Resources/*/Pages/*.php') as $file) {
 - [Activity Module - README](../README.md)
 - [XotBase Architecture](../../Xot/docs/xotbase-architecture-complete.md)
 - [Differenza Standalone vs Resource Pages](../../Xot/docs/filament/pages-types.md)
-- [Activity Module - README](../README.md)
+- [Activity Module - README](../readme.md)
 - [XotBase Architecture](../../xot/docs/xotbase-architecture-complete.md)
 - [Differenza Standalone vs Resource Pages](../../xot/docs/filament/pages-types.md)
 
@@ -331,20 +323,11 @@ foreach (glob('Modules/*/app/Filament/Resources/*/Pages/*.php') as $file) {
 
 ---
 
-<<<<<<< .merge_file_ZSQvWA
-<<<<<<< HEAD
-<<<<<<< HEAD
 **
-=======
+
 **Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> 0a02158a (.)
-=======
-**Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> 35d8cf69 (Initial commit)
-=======
+
 **=======
-**Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> .merge_file_QNhYex
 **Versione Filament**: 4.x
 **Severità**: Alta (blocca registrazione Resource Pages)
 **Causa**: Confusione tra Standalone Page e Resource Page

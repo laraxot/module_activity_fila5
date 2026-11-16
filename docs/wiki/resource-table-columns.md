@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_Fp44Td
 <<<<<<< .merge_file_E4kgbO
 =======
 <<<<<<< .merge_file_kwjSHb
 =======
 >>>>>>> .merge_file_Gerla1
+=======
+>>>>>>> .merge_file_7NFRm0
 ---
 title: "Resource table columns"
 type: note
@@ -11,10 +14,13 @@ updated: 2026-10-07
 tags: [docs, activity, wiki]
 qmd: "resource table columns activity"
 ---
+<<<<<<< .merge_file_Fp44Td
 <<<<<<< .merge_file_E4kgbO
 =======
 >>>>>>> .merge_file_hyx0wM
 >>>>>>> .merge_file_Gerla1
+=======
+>>>>>>> .merge_file_7NFRm0
 # Resource table columns
 
 ## BMAD story and evidence

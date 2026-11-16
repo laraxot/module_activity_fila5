@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_2gQVlF
 <<<<<<< .merge_file_hCMX4w
 =======
 <<<<<<< .merge_file_SPKzb4
 =======
 >>>>>>> .merge_file_JDJaJO
+=======
+>>>>>>> .merge_file_Ab97o8
 ---
 title: "Confronto Approfondito: laravel-shop-main vs laravel-shop-command-bus"
 type: note
@@ -11,10 +14,13 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "confronto approfondito: laravel-shop-main vs laravel-shop-command-bus activity"
 ---
+<<<<<<< .merge_file_2gQVlF
 <<<<<<< .merge_file_hCMX4w
 =======
 >>>>>>> .merge_file_A864ZE
 >>>>>>> .merge_file_JDJaJO
+=======
+>>>>>>> .merge_file_Ab97o8
 # Confronto Approfondito: laravel-shop-main vs laravel-shop-command-bus
 
 ## 1. Architettura

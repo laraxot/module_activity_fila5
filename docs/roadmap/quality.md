@@ -1,11 +1,3 @@
----
-title: "Checklist qualità - Activity Module"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, roadmap]
-qmd: "checklist qualità - activity module activity"
----
 # Checklist qualità - Activity Module
 
 - [x] PHPStan Level 10

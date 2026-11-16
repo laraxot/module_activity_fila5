@@ -2,12 +2,6 @@
 module: theme
 topic: module-activity
 canonical: ../../../../../Themes/docs/shared-components/module-activity.md
-title: "module activity"
-type: note
-status: stub
-updated: 2026-10-08
-tags: [docs, activity, tecnico]
-qmd: "module activity activity"
 ---
 
 ## Overview
@@ -137,12 +131,15 @@ class ActivityTest extends TestCase
    - Pulizia periodica dei log
    - Backup dei dati di attività
    - Monitoraggio delle performance
+<<<<<<< .merge_file_fn0ySX
 <<<<<<< .merge_file_1zQrgJ
 =======
 <<<<<<< .merge_file_Nzy9mv
 <<<<<<< HEAD
 
 =======
+=======
+>>>>>>> .merge_file_Ecqevn
 # Modulo Activity
 
 ## Overview
@@ -296,16 +293,12 @@ topic: module-activity
 canonical: ../../../../../Themes/docs/shared-components/module-activity.md
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
-=======
-See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
->>>>>>> 77d3d692 (.)
-=======
-See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
+<<<<<<< .merge_file_fn0ySX
 >>>>>>> 4fb998e0 (.)
 >>>>>>> 35d8cf69 (Initial commit)
 =======
 >>>>>>> .merge_file_e6hdK7
 >>>>>>> .merge_file_27l6jF
+=======
+>>>>>>> .merge_file_Ecqevn

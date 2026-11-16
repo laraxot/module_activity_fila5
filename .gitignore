@@ -10,14 +10,7 @@ _docs
 docs/archive
 docs/archived
 docs/legacy
-<<<<<<< .merge_file_bN4u7n
 docs/archive/
-=======
-<<<<<<< .merge_file_MJw3PR
-=======
-docs/archive/
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 docs/workbench
 .kilocode
 .kiro
@@ -29,14 +22,7 @@ tests/.claude-audit
 # LARAXOT MODULE ACTIVITY - .GITIGNORE
 # Modulo Activity Laraxot - Template standardizzato
 # Ultimo aggiornamento: 2025-01-31
-<<<<<<< .merge_file_bN4u7n
 
-=======
-<<<<<<< .merge_file_MJw3PR
-=======
-
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 # DEPENDENCIES & PACKAGES
 /vendor/
 /vendor
@@ -48,14 +34,7 @@ yarn.lock
 composer.lock
 yarn-error.log
 npm-debug.log
-<<<<<<< .merge_file_bN4u7n
 
-=======
-<<<<<<< .merge_file_MJw3PR
-=======
-
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 # BUILD & COMPILED FILES
 /build
 /build/
@@ -63,14 +42,7 @@ build/
 dist/
 docs/cache/
 cache/
-<<<<<<< .merge_file_bN4u7n
 
-=======
-<<<<<<< .merge_file_MJw3PR
-=======
-
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 # CACHE & TEMPORARY FILES
 *.cache
 *.lock
@@ -84,28 +56,14 @@ cache/
 v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
-<<<<<<< .merge_file_bN4u7n
 
-=======
-<<<<<<< .merge_file_MJw3PR
-=======
-
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 # LOG FILES
 *.log
 error_log
 npm-debug.log*
 yarn-error.log*
 lerna-debug.log*
-<<<<<<< .merge_file_bN4u7n
 
-=======
-<<<<<<< .merge_file_MJw3PR
-=======
-
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 # LARAVEL SPECIFIC
 bootstrap/compiled.php
 app/storage/
@@ -117,14 +75,7 @@ storage/*.key
 .env
 .env.*
 !.env.example
-<<<<<<< .merge_file_bN4u7n
 
-=======
-<<<<<<< .merge_file_MJw3PR
-=======
-
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 # ENVIRONMENT & CONFIGURATION
 Homestead.yaml
 Homestead.json
@@ -132,26 +83,12 @@ Homestead.json
 /.idea
 .phpintel
 .vscode/
-<<<<<<< .merge_file_bN4u7n
 
-=======
-<<<<<<< .merge_file_MJw3PR
-=======
-
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 # GIT SPECIFIC
 .git-rewrite/
 .git-rewrite
 .git-blame-ignore-revs
-<<<<<<< .merge_file_bN4u7n
 
-=======
-<<<<<<< .merge_file_MJw3PR
-=======
-
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 # SYSTEM FILES
 .DS_Store
 .DS_Store?
@@ -161,14 +98,7 @@ Homestead.json
 ehthumbs.db
 Thumbs.db
 *~
-<<<<<<< .merge_file_bN4u7n
 
-=======
-<<<<<<< .merge_file_MJw3PR
-=======
-
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 # BACKUP FILES
 *.old
 *.old1
@@ -180,35 +110,11 @@ Thumbs.db
 *.bak
 *.bakcup
 *.new
-<<<<<<< .merge_file_bN4u7n
 
-=======
-<<<<<<< .merge_file_MJw3PR
-=======
-
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 # DEVELOPMENT TOOLS
 .windsurf/
 .cursor/
 .phpstorm.meta.php
-<<<<<<< .merge_file_bN4u7n
-
-=======
-<<<<<<< .merge_file_MJw3PR
->>>>>>> .merge_file_QCRKWX
-# DOCUMENTATION CACHE
-docs/phpstan/
-docs/legacy/
-docs/legacy/**
-
-# LANGUAGE FILES
-lang/lang/
-resources/lang/
-<<<<<<< .merge_file_bN4u7n
-
-=======
-=======
 
 # DOCUMENTATION CACHE
 docs/phpstan/
@@ -219,22 +125,13 @@ docs/legacy/**
 lang/lang/
 resources/lang/
 
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 # OLD DIRECTORIES (LEGACY CLEANUP)
 resources/views/Components_old/
 database/Migrations_old/
 database/Seeders_old/
 database/Factories_old/
 database_old/
-<<<<<<< .merge_file_bN4u7n
 
-=======
-<<<<<<< .merge_file_MJw3PR
-=======
-
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 # MODULE SPECIFIC - ACTIVITY
 # File di configurazione locale
 config/local.php
@@ -247,32 +144,16 @@ storage/logs/
 # File di test activity
 activity_test_data.json
 test_activity_logs.sql
-<<<<<<< .merge_file_bN4u7n
 
 # END OF ACTIVITY .GITIGNORE
 
-=======
-<<<<<<< .merge_file_MJw3PR
 # END OF ACTIVITY .GITIGNORE
-=======
-
-# END OF ACTIVITY .GITIGNORE
-
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 # File specifici del progetto
 *.fila2
 laravel
 public_html
 tests/coverage
-<<<<<<< .merge_file_bN4u7n
 _docs/
-=======
-<<<<<<< .merge_file_MJw3PR
-=======
-_docs/
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 tests/coverage/
 tests/coverage.xml/
 activity_coverage.xml
@@ -288,14 +169,7 @@ activity_coverage.xml
 *~head
 agentdb.rvf
 tests/AuditCoverage
-<<<<<<< .merge_file_bN4u7n
 audit-coverage/
-=======
-<<<<<<< .merge_file_MJw3PR
-=======
-audit-coverage/
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 # AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
 
 # Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
@@ -305,15 +179,8 @@ tests/AuditCoverage/
 # Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
 phpinsights.php
 rector.php
-<<<<<<< .merge_file_bN4u7n
 # graphify-out: generated AST/knowledge graph — never commit (no git-lfs; rebuild with graphify update)
-=======
-<<<<<<< .merge_file_MJw3PR
 graphify-out
-=======
-# graphify-out: generated AST/knowledge graph — never commit (no git-lfs; rebuild with graphify update)
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
 graphify-out/
 .agents
 tools
@@ -341,18 +208,4 @@ workbench/
 .cursor~*
 .windsurf~*
 tests/activity_coverage.xml
-<<<<<<< .merge_file_bN4u7n
-=======
-<<<<<<< .merge_file_MJw3PR
-=======
->>>>>>> .merge_file_QCRKWX
-
-# module-root-hygiene (story module-root-hygiene)
-/.github/skills/
-docs/graphify
-resources/lang
-Activity
-<<<<<<< .merge_file_bN4u7n
-=======
->>>>>>> .merge_file_VsHgto
->>>>>>> .merge_file_QCRKWX
+Activity/

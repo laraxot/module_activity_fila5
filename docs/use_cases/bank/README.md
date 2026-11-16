@@ -1,11 +1,3 @@
----
-title: "Bank Use Case: Approcci Event Sourcing e Tradizionale"
-type: index
-status: draft
-updated: 2026-10-23
-tags: [docs, activity, use_cases]
-qmd: "bank use case: approcci event sourcing e tradizionale activity"
----
 # Bank Use Case: Approcci Event Sourcing e Tradizionale
 
 ## Introduzione
@@ -61,16 +53,21 @@ L'obiettivo è fornire una panoramica neutra e riutilizzabile dei pattern, dei v
 | 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](../..) |
 
+<<<<<<< .merge_file_9TOC8j
 <<<<<<< .merge_file_3gMS3I
 =======
 <<<<<<< .merge_file_f76Pgq
 ---
 =======
+=======
+>>>>>>> .merge_file_xfUA4u
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](../..) |
+| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+
+---
 
 >>>>>>> .merge_file_W2vD0k
 ### 3. Event Sourcing con Eventsauce
@@ -78,6 +75,7 @@ L'obiettivo è fornire una panoramica neutra e riutilizzabile dei pattern, dei v
 - Gestione avanzata di aggregate, snapshot, replay
 - Maggiore automazione e coerenza
 - Ideale per sistemi complessi e ad alta tracciabilità
+<<<<<<< .merge_file_9TOC8j
 <<<<<<< .merge_file_3gMS3I
 
 ## Vantaggi e Limiti
@@ -91,6 +89,8 @@ L'obiettivo è fornire una panoramica neutra e riutilizzabile dei pattern, dei v
 =======
 >>>>>>> .merge_file_Oi6FBP
 >>>>>>> .merge_file_W2vD0k
+=======
+>>>>>>> .merge_file_xfUA4u
 
 ## Prossimi passi
 Consulta i file flow.md, domain_model.md, examples.md e tips.md per dettagli su flussi, modelli, esempi e best practice.

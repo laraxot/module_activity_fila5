@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_xIEzw4
 <<<<<<< .merge_file_DUZZwD
 =======
 <<<<<<< .merge_file_e9Nyk8
 =======
 >>>>>>> .merge_file_xmJqXy
+=======
+>>>>>>> .merge_file_C6kBWP
 ---
 title: "Advanced Event Sourcing Patterns for Healthcare Applications"
 type: note
@@ -11,10 +14,13 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "advanced event sourcing patterns for healthcare applications activity"
 ---
+<<<<<<< .merge_file_xIEzw4
 <<<<<<< .merge_file_DUZZwD
 =======
 >>>>>>> .merge_file_wPOdFu
 >>>>>>> .merge_file_xmJqXy
+=======
+>>>>>>> .merge_file_C6kBWP
 # Advanced Event Sourcing Patterns for Healthcare Applications
 
 ## Table of Contents

@@ -1,11 +1,3 @@
----
-title: "Use Case <nome progetto>ion Market – Event Sourcing e Console Commands"
-type: index
-status: draft
-updated: 2026-10-23
-tags: [docs, activity, use_cases]
-qmd: "use case <nome progetto>ion market   event sourcing e console commands activity"
----
 # Use Case <nome progetto>ion Market – Event Sourcing e Console Commands
 
 ## Introduzione
@@ -39,18 +31,24 @@ Il modulo <nome progetto>ion Market implementa un sistema completo di mercati pr
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
+<<<<<<< .merge_file_ZgM5Et
 <<<<<<< .merge_file_cMzOlz
 | 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](../..) |
 =======
 <<<<<<< .merge_file_FB4MNw
+=======
+>>>>>>> .merge_file_e6QNvv
 | 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
-=======
+
 | 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](../..) |
+<<<<<<< .merge_file_ZgM5Et
 >>>>>>> .merge_file_fZxG1K
 >>>>>>> .merge_file_VXBABn
+=======
+>>>>>>> .merge_file_e6QNvv
 
 ---
 **Questa documentazione è neutra e riutilizzabile, senza riferimenti a progetti specifici, e segue le regole di neutralità e modularità.**

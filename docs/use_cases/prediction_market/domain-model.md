@@ -1,11 +1,3 @@
----
-title: "Modello di Dominio - <nome progetto>ion Market"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, use_cases]
-qmd: "modello di dominio - <nome progetto>ion market activity"
----
 # Modello di Dominio - <nome progetto>ion Market
 
 ## Aggregate

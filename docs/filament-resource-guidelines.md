@@ -1,11 +1,3 @@
----
-title: "Activity Module Filament Resource Guidelines"
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity]
-qmd: "activity module filament resource guidelines activity"
----
 # Activity Module Filament Resource Guidelines
 
 ## Extension Patterns
@@ -23,8 +15,6 @@ class ActivityResource extends XotBaseResource
     protected static ?string $model = Activity::class;
 
     public function getFormSchema(): array
-<<<<<<< .merge_file_JlXr9V
-=======
     {
         return [
             // Form schema components only
@@ -137,7 +127,6 @@ class ActivityResource extends XotBaseResource
     protected static ?string $model = Activity::class;
 
     public function getFormSchema(): array
->>>>>>> .merge_file_zwXXOg
     {
         return [
             // Form schema components only
@@ -184,15 +173,9 @@ public static function table(Table $table): Table { ... }
 - Implements unnecessary getPages() and getRelations() methods ✗
 - These methods return standard/default values and should be removed
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 #### ❌ StoredEventResource - NEEDS REFACTORING  
-=======
 #### ❌ StoredEventResource - NEEDS REFACTORING
->>>>>>> 0a02158a (.)
-=======
 #### ❌ StoredEventResource - NEEDS REFACTORING
->>>>>>> 35d8cf69 (Initial commit)
 - Extends XotBaseResource ✓
 - Implements unnecessary getPages() and getRelations() methods ✗
 - These methods return standard/default values and should be removed
@@ -236,15 +219,11 @@ All resources must be tested to ensure:
 
 - [XotBaseResource Documentation](../../Xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../Xot/project_docs/filament-best-practices.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
 - [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../xot/project_docs/filament-best-practices.md)
+- [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
 # Activity Module Filament Resource Guidelines
 
@@ -360,13 +339,17 @@ All resources must be tested to ensure:
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
 - [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../xot/project_docs/filament-best-practices.md)
+<<<<<<< .merge_file_mNKC5U
 <<<<<<< .merge_file_ep7DIq
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
 =======
 <<<<<<< HEAD
-- [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
->>>>>>> 0a02158a (.)
 =======
+>>>>>>> .merge_file_nVdr3C
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
+- [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
+<<<<<<< .merge_file_mNKC5U
 >>>>>>> 35d8cf69 (Initial commit)
 >>>>>>> .merge_file_JPWEQo
+=======
+>>>>>>> .merge_file_nVdr3C

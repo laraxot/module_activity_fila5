@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_AfMl1T
 <<<<<<< .merge_file_InX7EJ
 =======
 <<<<<<< .merge_file_CPAcU9
 =======
 >>>>>>> .merge_file_Jq58E7
+=======
+>>>>>>> .merge_file_QYClFB
 ---
 title: "Activity Module - User Research"
 type: note
@@ -11,10 +14,13 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - user research activity"
 ---
+<<<<<<< .merge_file_AfMl1T
 <<<<<<< .merge_file_InX7EJ
 =======
 >>>>>>> .merge_file_anjiN9
 >>>>>>> .merge_file_Jq58E7
+=======
+>>>>>>> .merge_file_QYClFB
 # Activity Module - User Research
 
 **Module:** Activity  

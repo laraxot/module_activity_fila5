@@ -1,13 +1,3 @@
----
-title: Readme
-module: Activity
-type: index
-status: draft
-updated: 2026-10-22
-tags: [docs, activity, wiki]
-qmd: "llm wiki (module) activity"
----
-
 # LLM Wiki (module)
 
 This folder is the module's LLM wiki (docs/wiki). Use it to store synthesized, curated docs optimized for LLM ingestion.
@@ -38,11 +28,14 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+<<<<<<< .merge_file_frnQ9e
 <<<<<<< .merge_file_4ofamS
 =======
 <<<<<<< .merge_file_w7vaS1
 =======
 >>>>>>> .merge_file_vaWuJg
+=======
+>>>>>>> .merge_file_6btYfI
 
 ---
 
@@ -81,7 +74,10 @@ qmd search "Activity <argomento>" --limit 5
 ```
 
 I documenti sorgente grezzi stanno in `../raw/` (immutabile). Prima di creare una pagina nuova controllare [INDEX.md](./INDEX.md) e le pagine di `concepts/` per non duplicarla.
+<<<<<<< .merge_file_frnQ9e
 <<<<<<< .merge_file_4ofamS
 =======
 >>>>>>> .merge_file_2ycT6I
 >>>>>>> .merge_file_vaWuJg
+=======
+>>>>>>> .merge_file_6btYfI

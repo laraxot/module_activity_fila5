@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_ONpBo1
 <<<<<<< .merge_file_f7tF42
 =======
 <<<<<<< HEAD
@@ -6,6 +7,8 @@
 =======
 >>>>>>> 35d8cf69 (Initial commit)
 >>>>>>> .merge_file_bDAEHp
+=======
+>>>>>>> .merge_file_FdSZ9f
 ---
 title: "Activity Module LLM Wiki Agent Instructions======="
 type: note
@@ -26,19 +29,9 @@ related:
   - ./coding-agent-manifests.md
 ---
 
-<<<<<<< .merge_file_fLtwnA
-<<<<<<< HEAD
 # Activity Module LLM Wiki Agent Instructions
-=======
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
-=======
 # Activity Module LLM Wiki Agent Instructions=======
->>>>>>> .merge_file_uMuNkL
 # Activity {{TYPE^}} LLM Wiki Agent Instructions
->>>>>>> laraxot/dev
 
 > **Module/Theme:** Activity
 > **Scope:** Activity-specific knowledge only
@@ -177,16 +170,7 @@ Related:
 
 - [Project Wiki Integration](../../docs/wiki/README.md)
 - [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
-<<<<<<< .merge_file_fLtwnA
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 - [Module Documentation](../README.md)=======
->>>>>>> .merge_file_uMuNkL
 - [Module Documentation](../README.md)
-=======
 - [Module Documentation](../README.md)
->>>>>>> 0a02158a (.)
-=======
 - [Module Documentation](../README.md)
->>>>>>> 35d8cf69 (Initial commit)

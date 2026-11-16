@@ -8,6 +8,7 @@ tags: [migrato-da-txt, activity]
 converted_from: fix02.txt
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_OP4Ae6
 <<<<<<< .merge_file_6P7XiR
 status: draft
 qmd: "fix: rimuovere 'activity' da database.php activity"
@@ -18,6 +19,10 @@ status: draft
 qmd: "fix: rimuovere 'activity' da database.php activity"
 >>>>>>> .merge_file_DMQHDu
 >>>>>>> .merge_file_wSLg3u
+=======
+status: draft
+qmd: "fix: rimuovere 'activity' da database.php activity"
+>>>>>>> .merge_file_W1p5Wo
 ---
 
 # Fix: Rimuovere 'activity' da database.php

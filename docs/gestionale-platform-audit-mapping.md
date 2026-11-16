@@ -12,6 +12,7 @@ discussions:
 related:
   - "./00-index.md"
   - "../../../../docs/gestionale-commesse-comparison/module-mapping.md"
+<<<<<<< .merge_file_8WIj8f
 <<<<<<< .merge_file_x9F8Ec
 status: draft
 =======
@@ -20,6 +21,9 @@ status: draft
 status: draft
 >>>>>>> .merge_file_jVIIfE
 >>>>>>> .merge_file_pkII7L
+=======
+status: draft
+>>>>>>> .merge_file_b8f18c
 ---
 
 # Platform AuditLog (SRC) vs Activity

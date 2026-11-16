@@ -1,15 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_wWeEqF
 namespace Modules\Activity\Tests\Unit\Listeners;
-=======
-<<<<<<< .merge_file_FqmI1T
-
-=======
-namespace Modules\Activity\Tests\Unit\Listeners;
->>>>>>> .merge_file_j7MpLz
->>>>>>> .merge_file_6KKcL9
 use Illuminate\Auth\Events\Login;
 use Modules\Activity\Providers\EventServiceProvider;
 use Modules\Activity\Listeners\LoginListener;

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_x2X4lz
 <<<<<<< .merge_file_T3VURf
 ---
 title: "Filament v4 Upgrade Documentation"
@@ -11,6 +12,10 @@ qmd: "filament v4 upgrade documentation activity"
 <<<<<<< .merge_file_Mwe2PQ
 <<<<<<< HEAD
 >>>>>>> .merge_file_M7KYM3
+=======
+# Filament v4 Upgrade Documentation
+
+>>>>>>> .merge_file_ESopXw
 # Filament v4 Upgrade Documentation
 
 > **Storico** — migrazione verso Filament v4 (2025). **Stack attuale del progetto: Filament v5.** Vedi [filament-version.md](../filament-version.md) e [filament-version-policy.md](../../../../../docs/wiki/memories/filament-version-policy.md).
@@ -63,13 +68,15 @@ public function getFormSchema(): array
 
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
+<<<<<<< .merge_file_x2X4lz
 <<<<<<< .merge_file_T3VURf
 =======
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
-# Filament v4 Upgrade Documentation
 =======
+>>>>>>> .merge_file_ESopXw
+# Filament v4 Upgrade Documentation
 ---
 title: "Filament v4 Upgrade Documentation"
 type: note
@@ -81,7 +88,6 @@ qmd: "filament v4 upgrade documentation activity"
 # Filament v4 Upgrade Documentation
 
 > **Storico** — migrazione verso Filament v4 (2025). **Stack attuale del progetto: Filament v5.** Vedi [filament-version.md](../filament-version.md) e [filament-version-policy.md](../../../../../docs/wiki/memories/filament-version-policy.md).
->>>>>>> .merge_file_BjyKjK
 
 ## Overview
 This document outlines the key changes and upgrades implemented for Filament v4 in the Activity module.
@@ -131,11 +137,8 @@ public function getFormSchema(): array
 ## References
 
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
+- [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)---
 - [Filament v4 Schema Documentation](https://filamentphp.com/docs/4.x/forms/fields)
-<<<<<<< .merge_file_Mwe2PQ
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 ---
 module: theme
 topic: filament-v4-upgrade
@@ -143,6 +146,7 @@ canonical: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
+<<<<<<< .merge_file_x2X4lz
 <<<<<<< HEAD
 >>>>>>> 0a02158a (.)
 =======
@@ -151,3 +155,6 @@ See canonical documentation: ../../../../Themes/docs/shared-components/FILAMENT_
 =======
 >>>>>>> .merge_file_BjyKjK
 >>>>>>> .merge_file_M7KYM3
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/FILAMENT_V4_UPGRADE.md
+>>>>>>> .merge_file_ESopXw

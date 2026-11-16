@@ -43,11 +43,7 @@ $result = $this->requirePage()->getBreadcrumb();
     });
 
     test('get breadcrumb uses static breadcrumb when set', function (): void {
-<<<<<<< .merge_file_Gisxmu
-        $page = new class() extends ListLogActivities
-=======
         $page = new class extends ListLogActivities
->>>>>>> .merge_file_m6CipQ
         {
             protected static ?string $breadcrumb = 'Custom Breadcrumb';
 
@@ -66,11 +62,7 @@ Assert::assertFalse(class_exists('NonExistentClass\That\Does\Not\Exist'));
     });
 
     test('can restore activity returns false when resource lacks can restore method', function (): void {
-<<<<<<< .merge_file_Gisxmu
-        $page = new class() extends ListLogActivities
-=======
         $page = new class extends ListLogActivities
->>>>>>> .merge_file_m6CipQ
         {
             public static function getResource(): string
             {
@@ -97,11 +89,7 @@ try {
     });
 
     test('send restore success notification returns notification', function (): void {
-<<<<<<< .merge_file_Gisxmu
-        $page = new class() extends ListLogActivities
-=======
         $page = new class extends ListLogActivities
->>>>>>> .merge_file_m6CipQ
         {
             /** @return class-string */
             public static function getResource(): string
@@ -120,11 +108,7 @@ try {
     });
 
     test('send restore failure notification without message returns notification', function (): void {
-<<<<<<< .merge_file_Gisxmu
-        $page = new class() extends ListLogActivities
-=======
         $page = new class extends ListLogActivities
->>>>>>> .merge_file_m6CipQ
         {
             /** @return class-string */
             public static function getResource(): string
@@ -143,11 +127,7 @@ try {
     });
 
     test('send restore failure notification with message includes body', function (): void {
-<<<<<<< .merge_file_Gisxmu
-        $page = new class() extends ListLogActivities
-=======
         $page = new class extends ListLogActivities
->>>>>>> .merge_file_m6CipQ
         {
             /** @return class-string */
             public static function getResource(): string

@@ -1,11 +1,3 @@
----
-title: "Errore: Attempt to read property 'attributeRawValues' on null durante firstOrCreate"
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity, errori]
-qmd: "errore: attempt to read property 'attributerawvalues' on null durante firstorcreate activity"
----
 # Errore: Attempt to read property "attributeRawValues" on null durante firstOrCreate
 
 ## Problema
@@ -262,19 +254,11 @@ IndennitaResponsabilita::withoutEvents(function (): void {
 
 ---
 
-<<<<<<< .merge_file_OuyhmA
-<<<<<<< HEAD
-<<<<<<< HEAD
 **
-=======
+
 **Ultimo aggiornamento**: 19 Novembre 2025  
->>>>>>> 0a02158a (.)
-=======
-**Ultimo aggiornamento**: 19 Novembre 2025  
->>>>>>> 35d8cf69 (Initial commit)
-=======
+
 **=======
-**Ultimo aggiornamento**: 19 Novembre 2025  
->>>>>>> .merge_file_rbpZHb
 **Severità**: Alta (blocca operazioni batch)  
 **Soluzione**: Usare `withoutEvents()` durante `firstOrCreate()`
+

@@ -1,11 +1,3 @@
----
-title: "Activity Module - Roadmap"
-type: index
-status: draft
-updated: 2026-10-23
-tags: [docs, activity, roadmap]
-qmd: "activity module - roadmap activity"
----
 # Activity Module - Roadmap
 
 ## 🎯 Module Purpose
@@ -49,14 +41,22 @@ The Activity module provides comprehensive audit trail and event sourcing capabi
 | 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](..) |
 
+<<<<<<< .merge_file_CKBbX2
 <<<<<<< .merge_file_kYPv4i
 =======
 <<<<<<< .merge_file_9YV6aT
 ---
 =======
+=======
+>>>>>>> .merge_file_p5o4mQ
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+
+---
+
 | 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](..) |
 
@@ -67,6 +67,7 @@ The Activity module provides comprehensive audit trail and event sourcing capabi
 - [ ] <nome progetto>ive analytics
 - [ ] Custom dashboard widgets
 - [ ] API for external analytics tools
+<<<<<<< .merge_file_CKBbX2
 <<<<<<< .merge_file_kYPv4i
 
 ## 🎯 Key Objectives
@@ -104,6 +105,8 @@ The Activity module provides comprehensive audit trail and event sourcing capabi
 =======
 >>>>>>> .merge_file_Fn57I8
 >>>>>>> .merge_file_eY5eET
+=======
+>>>>>>> .merge_file_p5o4mQ
 
 - This module is critical for compliance and security
 - All activities must be immutable once logged
