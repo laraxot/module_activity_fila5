@@ -4,16 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests;
 
+use Filament\Notifications\Notification;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\ServiceProvider;
-use Filament\Notifications\Notification;
 use Mockery\CompositeExpectation;
 use Mockery\Expectation;
-use Modules\Activity\Filament\Resources\ActivityResource;
+use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Filament\Pages\ListLogActivities;
+use Modules\Activity\Filament\Resources\ActivityResource;
+use Modules\Activity\Models\Activity;
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Providers\EventServiceProvider;
+use Modules\User\Contracts\UserContract;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
@@ -100,6 +104,39 @@ abstract class TestCase extends XotBaseTestCase
         return $expectation;
     }
 
+    /**
+     * Crea un utente di test via factory.
+     *
+     * Sta qui e non in tests/Helpers.php per lo stesso motivo di mockeryExpect():
+     * Pest carica `Pest.php`/`Helpers.php` solo dal `--test-directory` della run,
+     * quindi in una run scoped sul modulo le funzioni globali dichiarate li' non
+     * esistono. Specchio di `activityCreateUser()` in tests/Helpers.php.
+     *
+     * @param  array<string, mixed>  $attributes
+     */
+    public static function activityCreateUser(array $attributes = []): User
+    {
+        $user = UserFactory::new()->createOne($attributes);
+        assert($user instanceof UserContract);
+
+        return $user;
+    }
+
+    /**
+     * Crea un'attivita' di test via factory.
+     *
+     * Specchio di `activityCreateActivity()` in tests/Helpers.php.
+     *
+     * @param  array<string, mixed>  $attributes
+     */
+    public static function activityCreateActivity(array $attributes = []): Activity
+    {
+        $activity = ActivityFactory::new()->createOne($attributes);
+        assert($activity instanceof Activity);
+
+        return $activity;
+    }
+
     public function requirePage(): ListLogActivities
     {
         if ($this->page === null) {
@@ -119,7 +156,7 @@ abstract class TestCase extends XotBaseTestCase
      */
     public static function makeListLogActivitiesPage(): ListLogActivities
     {
-        return new class() extends ListLogActivities
+        return new class extends ListLogActivities
         {
             public static function getResource(): string
             {

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Providers;
 
+use Laravel\Folio\Folio;
 use Modules\Activity\Actions\Config\ApplyActivityConfigAction;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Override;
@@ -25,12 +26,12 @@ class ActivityServiceProvider extends XotBaseServiceProvider
     /**
      * Directory del modulo.
      */
-    protected string $moduleDir = __DIR__;
+    protected string $module_dir = __DIR__;
 
     /**
      * Namespace del modulo.
      */
-    protected string $moduleNs = __NAMESPACE__;
+    protected string $module_ns = __NAMESPACE__;
 
     /**
      * Boot del service provider.
@@ -47,6 +48,18 @@ class ActivityServiceProvider extends XotBaseServiceProvider
 
         // Registra i componenti Blade personalizzati
         $this->registerBladeComponents();
+
+        // Monda le pagine Folio del modulo (es. pages/api/log-download.blade.php ->
+        // GET /api/log-download). La registrazione e' rimandata a container
+        // avviato: Folio crea una rotta catch-all fallback e la prima registrata
+        // vince, quindi il mount non deve precedere le fallback dei pannelli
+        // Filament (stesso pattern di FolioVoltServiceProvider del modulo Cms).
+        $this->app->booted(function (): void {
+            $pagesPath = $this->module_dir.'/../../resources/views/pages';
+            if (is_dir($pagesPath)) {
+                Folio::path($pagesPath)->middleware(['*' => ['web']]);
+            }
+        });
 
         // Le impostazioni salvate dal tenant (SettingPage) arrivano al pacchetto activitylog.
         app(ApplyActivityConfigAction::class)->execute();
