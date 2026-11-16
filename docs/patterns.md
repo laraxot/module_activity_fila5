@@ -4,30 +4,11 @@ type: guide
 tags: [activity, patterns]
 created: 2026-07-28
 updated: 2026-07-28
-<<<<<<< .merge_file_8sM2zv
-<<<<<<< .merge_file_Taf2Jf
 status: draft
 qmd: "activity module   patterns activity"
 ---
 
 # Activity Module: Patterns
-=======
-<<<<<<< .merge_file_voahSV
-=======
->>>>>>> .merge_file_L95rbC
----
-
-# Activity Module — Patterns
-
-status: draft
-qmd: "activity module   patterns activity"
-
-# Activity Module: Patterns
-<<<<<<< .merge_file_8sM2zv
->>>>>>> .merge_file_JHIpM5
->>>>>>> .merge_file_uiSuV0
-=======
->>>>>>> .merge_file_L95rbC
 
 ## Audit Trail Pattern
 

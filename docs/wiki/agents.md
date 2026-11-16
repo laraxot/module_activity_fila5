@@ -1,14 +1,3 @@
-<<<<<<< .merge_file_ONpBo1
-<<<<<<< .merge_file_f7tF42
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> .merge_file_bDAEHp
-=======
->>>>>>> .merge_file_FdSZ9f
 ---
 title: "Activity Module LLM Wiki Agent Instructions======="
 type: note

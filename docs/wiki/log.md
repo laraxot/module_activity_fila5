@@ -10,12 +10,7 @@ issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/328"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/329"
-<<<<<<< .merge_file_xCnnR5
 status: draft
-<<<<<<< .merge_file_SiqewF
-=======
-=======
->>>>>>> .merge_file_TWR7kl
 ---
 
 ---
@@ -84,7 +79,6 @@ issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/328"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/329"
->>>>>>> .merge_file_BGeM2D
 ---
 
 ---
@@ -235,21 +229,7 @@ module: "Activity"
 - La risorsa `/xot/admin/logs` (modulo Xot) non è stata toccata: spostarla o rimuoverla resta una decisione del team.
 - Secondo audit alle linee guida: story anche in Activity, registro `sprint-status.yaml` aggiornato; scostamenti aperti (CSS in linea, TestCase, PHPMD/PHPInsights, chiavi lang) elencati nel concept.
 - Classi base di Xot: usata `XotBasePage` per `LogViewer`; per Action, Data ed eccezione non c'è una base applicabile (vedi il concept). Unico scostamento: i test usano `Tests\TestCase` della root e non il `TestCase` del modulo (manca `database/test_data.sqlite`).
-<<<<<<< .merge_file_xCnnR5
-<<<<<<< .merge_file_SiqewF
 - Dettagli: [concepts/log-viewer-page-no-ssh.md](concepts/log-viewer-page-no-ssh.md); la story di origine (`quaeris-admin-log-viewer-no-ssh`) sta nel repo di un altro progetto e non esiste qui.
-=======
-<<<<<<< .merge_file_DCzJGY
-=======
->>>>>>> .merge_file_TWR7kl
-- Dettagli: [concepts/log-viewer-page-no-ssh.md](concepts/log-viewer-page-no-ssh.md), story [quaeris-admin-log-viewer-no-ssh](../../../Quaeris/docs/stories/quaeris-admin-log-viewer-no-ssh.md).
-- Dettagli: [concepts/log-viewer-page-no-ssh.md](concepts/log-viewer-page-no-ssh.md), story [quaeris-admin-log-viewer-no-ssh](../../../Quaeris/docs/stories/quaeris-admin-log-viewer-no-ssh.md).
-- Dettagli: [concepts/log-viewer-page-no-ssh.md](concepts/log-viewer-page-no-ssh.md); la story di origine (`quaeris-admin-log-viewer-no-ssh`) sta nel repo di un altro progetto e non esiste qui.
-<<<<<<< .merge_file_xCnnR5
->>>>>>> .merge_file_yJbfCX
->>>>>>> .merge_file_BGeM2D
-=======
->>>>>>> .merge_file_TWR7kl
 
 ---
 
@@ -257,18 +237,4 @@ module: "Activity"
 - `app/Filament/Pages/Concerns/CanPaginate.php`: added `@template TModel of Model` to `paginateQuery()` so callers passing `Builder<Activity>` satisfy the `Builder<Model>` parameter (template covariance).
 - `tests/Fixtures/CanPaginateHarness.php` + `tests/fixtures/CanPaginateHarness.php`: aligned `exposePaginateQuery()` PHPDoc to `Builder<Model>` (removed own `@template` that shadowed the trait's).
 - `app/Filament/Pages/ListLogActivities.php`: added `@var LengthAwarePaginator<int, Activity>` after the instanceof check to satisfy return-type covariance.
-<<<<<<< .merge_file_xCnnR5
-<<<<<<< .merge_file_SiqewF
 - Cleared 6 `argument.type` / `return.type` errors.
-=======
-<<<<<<< .merge_file_DCzJGY
-=======
->>>>>>> .merge_file_TWR7kl
-- Cleared 6 `argument.type` / `return.type` errors.
-- Cleared 6 `argument.type` / `return.type` errors.
-<<<<<<< .merge_file_xCnnR5
->>>>>>> .merge_file_yJbfCX
->>>>>>> .merge_file_BGeM2D
-=======
-- Cleared 6 `argument.type` / `return.type` errors.
->>>>>>> .merge_file_TWR7kl

@@ -24,7 +24,9 @@ test('ActivityBasePolicy is an abstract class', function () {
     Assert::assertTrue($reflection->isAbstract());
 });
 
-test('SnapshotPolicy can be instantiated', function () {
+test('SnapshotPolicy can be instantiated', function (): void {
+    $reflection = new ReflectionClass(SnapshotPolicy::class);
+    expect($reflection->isInstantiable())->toBeTrue();
 });
 
 test('ActivityPolicy method signatures', function () {

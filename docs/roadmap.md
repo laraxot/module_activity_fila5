@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_5lAkr7
-<<<<<<< .merge_file_y5Anf8
-=======
-<<<<<<< .merge_file_iHtlya
-=======
->>>>>>> .merge_file_OKVpmp
-=======
->>>>>>> .merge_file_Imr7vJ
 ---
 title: "ACTIVITY MODULE - ROADMAP 2025"
 type: note
@@ -14,13 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - roadmap 2025 activity"
 ---
-<<<<<<< .merge_file_5lAkr7
-<<<<<<< .merge_file_y5Anf8
-=======
->>>>>>> .merge_file_Zja2lL
->>>>>>> .merge_file_OKVpmp
-=======
->>>>>>> .merge_file_Imr7vJ
 # 🎯 ACTIVITY MODULE - ROADMAP 2025
 
 **Modulo**: Activity ([Description])  
@@ -425,30 +410,6 @@ Activity/
 - [ ] Compliance features
 - [ ] 85%+ test coverage
 - [ ] Performance optimization
-<<<<<<< .merge_file_y5Anf8
-=======
-- [ ] Production preparation
-
----
-
-## 🏆 SUCCESS CRITERIA
-
-### ✅ Q1 2025 Goals
-- [ ] Core features implemented
-- [ ] Basic testing complete
-- [ ] Documentation started
-- [ ] Integration working
-
-### 🎯 2025 Year-End Goals
-- [ ] All planned features implemented
-- [ ] Test coverage > 80%
-- [ ] Performance optimized
-- [ ] Documentation complete
-- [ ] Production ready
-- [ ] User satisfaction > 4.5/5
-
----
->>>>>>> .merge_file_OKVpmp
 
 ## Next Steps
 1. Begin Phase 1 with activity enhancement
@@ -458,14 +419,6 @@ Activity/
 
 ---
 
-<<<<<<< .merge_file_y5Anf8
-=======
-*Questa roadmap è specifica per il modulo Activity e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
-<<<<<<< .merge_file_5lAkr7
-=======
->>>>>>> .merge_file_OKVpmp
-=======
->>>>>>> .merge_file_Imr7vJ
 **Last Updated**: 2026-01-15
 **Maintainer**: Team Laraxot
 **Status**: Active Development
@@ -498,12 +451,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Mod
 - [roadmap/tasks/gdpr-compliance-enhancement.md](roadmap/tasks/gdpr-compliance-enhancement.md)
 - [roadmap/tasks/realtime-monitoring-dashboard.md](roadmap/tasks/realtime-monitoring-dashboard.md)
 - [roadmap/vision.md](roadmap/vision.md)
-<<<<<<< .merge_file_y5Anf8
 - [stabilization-roadmap.md](stabilization-roadmap.md)
 =======
-- [stabilization-roadmap.md](stabilization-roadmap.md)
-<<<<<<< .merge_file_5lAkr7
->>>>>>> .merge_file_Zja2lL
->>>>>>> .merge_file_OKVpmp
-=======
->>>>>>> .merge_file_Imr7vJ

@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_KV8tY4
-<<<<<<< .merge_file_MhdRPo
-=======
-<<<<<<< .merge_file_czjU0I
-=======
->>>>>>> .merge_file_IPXpNv
-=======
->>>>>>> .merge_file_fnVcgR
 ---
 title: "Best Practices – Activity"
 type: note
@@ -15,13 +7,6 @@ qmd: "best practices   activity activity"
 status: superseded
 superseded_by: wiki/rules/best-practices.md
 ---
-<<<<<<< .merge_file_KV8tY4
-<<<<<<< .merge_file_MhdRPo
-=======
->>>>>>> .merge_file_9YnEPI
->>>>>>> .merge_file_IPXpNv
-=======
->>>>>>> .merge_file_fnVcgR
 # Best Practices – Activity
 
 ## Principi DRY/KISS

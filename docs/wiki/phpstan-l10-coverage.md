@@ -99,3 +99,11 @@ These errors are **pre-existing** and unrelated to the UserContract namespace fi
 ### Key Learning
 
 The issue stemmed from namespace aliasing inconsistency. Some files used `UserContract` directly (relying on the import), while the Adapter tried to use `XotUserContract` without importing the alias. Standardizing to the imported `UserContract` resolved all 24 type-related errors in the Action/Adapter layer.
+
+## Session: 2026-11-16 — Modules/Activity → 0
+
+- Inventario: 151 file_errors (quasi tutti test).
+- Esito: `phpstan analyse Modules/Activity` → **[OK] No errors**.
+- Story: [phpstan-modules-zero](../bmad/stories/phpstan-modules-zero.story.md).
+- Focus: bootstrap Pest (`TestCase`/`Assert`), assert morph keys senza cast,
+  closure Pest non vuote/non ridondanti; nessuna baseline.

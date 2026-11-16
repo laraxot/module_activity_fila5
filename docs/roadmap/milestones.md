@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_YTj7S8
-<<<<<<< .merge_file_WTGTn3
-=======
-<<<<<<< .merge_file_3QB3UX
-=======
->>>>>>> .merge_file_I197wA
-=======
->>>>>>> .merge_file_SmN0vl
 ---
 title: "Milestones - Activity"
 type: note
@@ -14,13 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, roadmap]
 qmd: "milestones - activity activity"
 ---
-<<<<<<< .merge_file_YTj7S8
-<<<<<<< .merge_file_WTGTn3
-=======
->>>>>>> .merge_file_nZcets
->>>>>>> .merge_file_I197wA
-=======
->>>>>>> .merge_file_SmN0vl
 # Milestones - Activity
 
 ## M1 Documentation Baseline

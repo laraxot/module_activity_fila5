@@ -50,24 +50,8 @@
 ## 🔗 Collegamenti
 
 - [← Activity Module README](../README.md)
-<<<<<<< .merge_file_UIlXFJ
-<<<<<<< .merge_file_qIme48
 - [← Activity Module README](../README.md)
 - [← Root Documentation](../../../../docs/index.md)
-=======
-<<<<<<< .merge_file_82TL3g
-=======
->>>>>>> .merge_file_881S0E
-- [← Activity Module README](../readme.md)
-- [← Root Documentation](../../../docs/index.md)
-
-- [← Activity Module README](../README.md)
-- [← Root Documentation](../../../../docs/index.md)
-<<<<<<< .merge_file_UIlXFJ
->>>>>>> .merge_file_FpN415
->>>>>>> .merge_file_8paOPh
-=======
->>>>>>> .merge_file_881S0E
 
 ---
 

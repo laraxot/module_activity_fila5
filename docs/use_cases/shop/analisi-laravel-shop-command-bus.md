@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_G0vTDV
-<<<<<<< .merge_file_Qp2zfW
-=======
-<<<<<<< .merge_file_N94JBp
-=======
->>>>>>> .merge_file_s8RkmO
-=======
->>>>>>> .merge_file_OEW2xV
 ---
 title: "Analisi Approfondita: laravel-shop-command-bus"
 type: note
@@ -14,13 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "analisi approfondita: laravel-shop-command-bus activity"
 ---
-<<<<<<< .merge_file_G0vTDV
-<<<<<<< .merge_file_Qp2zfW
-=======
->>>>>>> .merge_file_AYds7h
->>>>>>> .merge_file_s8RkmO
-=======
->>>>>>> .merge_file_OEW2xV
 # Analisi Approfondita: laravel-shop-command-bus
 
 ## 1. Struttura delle Cartelle e Naming

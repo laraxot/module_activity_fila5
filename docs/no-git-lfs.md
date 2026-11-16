@@ -4,21 +4,8 @@ type: guideline
 module: Activity
 updated: 2026-09-01
 qmd: "git lfs vietato gitattributes prototipo binari blob normali activity puntatori immagini"
-<<<<<<< .merge_file_m1wu7n
-<<<<<<< .merge_file_9cCB25
 status: draft
 tags: [docs, activity]
-=======
-<<<<<<< .merge_file_TQsxLl
-=======
-status: draft
-tags: [docs, activity]
->>>>>>> .merge_file_Eu5HWW
->>>>>>> .merge_file_m1ApCk
-=======
-status: draft
-tags: [docs, activity]
->>>>>>> .merge_file_FPPjFc
 ---
 
 # Git LFS non si usa in questo progetto
@@ -28,21 +15,7 @@ eccezione.
 
 ## La regola
 
-<<<<<<< .merge_file_m1wu7n
-<<<<<<< .merge_file_9cCB25
 I binari: immagini, font, PDF, archivi: si versionano come **blob git normali**.
-=======
-<<<<<<< .merge_file_TQsxLl
-=======
->>>>>>> .merge_file_FPPjFc
-I binari — immagini, font, PDF, archivi — si versionano come **blob git normali**.
-
-I binari: immagini, font, PDF, archivi: si versionano come **blob git normali**.
-<<<<<<< .merge_file_m1wu7n
->>>>>>> .merge_file_Eu5HWW
->>>>>>> .merge_file_m1ApCk
-=======
->>>>>>> .merge_file_FPPjFc
 
 Vietato:
 
@@ -88,21 +61,7 @@ bash bashscripts/templates/sync-gitattributes-modules.sh
 *.js linguist-vendored
 CHANGELOG.md export-ignore
 
-<<<<<<< .merge_file_m1wu7n
-<<<<<<< .merge_file_9cCB25
 # Binari come blob git normali: NIENTE git-lfs.
-=======
-<<<<<<< .merge_file_TQsxLl
-=======
->>>>>>> .merge_file_FPPjFc
-# Binari come blob git normali — NIENTE git-lfs.
-
-# Binari come blob git normali: NIENTE git-lfs.
-<<<<<<< .merge_file_m1wu7n
->>>>>>> .merge_file_Eu5HWW
->>>>>>> .merge_file_m1ApCk
-=======
->>>>>>> .merge_file_FPPjFc
 # `binary` disattiva diff e normalizzazione di fine riga.
 # `!filter` annulla un eventuale filter.lfs ereditato dalla configurazione di sistema:
 # e' questa la protezione vera, perche' filter.lfs.* puo' restare installato sulla
@@ -134,21 +93,7 @@ CHANGELOG.md export-ignore
 LFS di intervenire. `!filter` annulla per path qualunque `filter.lfs` ereditato.
 
 Serve davvero: su questa macchina `filter.lfs.*` e' installato a livello **system**
-<<<<<<< .merge_file_m1wu7n
-<<<<<<< .merge_file_9cCB25
 (`git config --system`) e serve ad altri progetti: `base_predict_fila5` ha 38 file
-=======
-<<<<<<< .merge_file_TQsxLl
-=======
->>>>>>> .merge_file_FPPjFc
-(`git config --system`) e serve ad altri progetti — `base_predict_fila5` ha 38 file
-
-(`git config --system`) e serve ad altri progetti: `base_predict_fila5` ha 38 file
-<<<<<<< .merge_file_m1wu7n
->>>>>>> .merge_file_Eu5HWW
->>>>>>> .merge_file_m1ApCk
-=======
->>>>>>> .merge_file_FPPjFc
 legittimamente in LFS. Non si disinstalla il pacchetto. Cio' che tiene questo monorepo
 fuori da LFS non e' l'assenza del filtro, e' il `!filter` del prototipo.
 
@@ -230,19 +175,5 @@ problema.
 
 ## Canone
 
-<<<<<<< .merge_file_m1wu7n
-<<<<<<< .merge_file_9cCB25
 `bashscripts/ai/wiki/rules/no-git-lfs.md`: regola completa, storico degli incidenti e
-=======
-<<<<<<< .merge_file_TQsxLl
-=======
->>>>>>> .merge_file_FPPjFc
-`bashscripts/ai/wiki/rules/no-git-lfs.md` — regola completa, storico degli incidenti e
-
-`bashscripts/ai/wiki/rules/no-git-lfs.md`: regola completa, storico degli incidenti e
-<<<<<<< .merge_file_m1wu7n
->>>>>>> .merge_file_Eu5HWW
->>>>>>> .merge_file_m1ApCk
-=======
->>>>>>> .merge_file_FPPjFc
 procedura per gli oggetti mancanti in push.

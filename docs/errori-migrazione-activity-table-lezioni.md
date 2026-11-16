@@ -174,35 +174,13 @@ Questa lezione è ora memorizzata permanentemente per:
 - [ Models](../../<nome modulo>/docs/model_architecture.md)
 - [Activity Logging](./activity_logging_system.md)
 
-<<<<<<< .merge_file_445Kgf
-<<<<<<< .merge_file_RL9Jek
 =======
-<<<<<<< HEAD
->>>>>>> 0a02158a (.)
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> .merge_file_LquJFI
-=======
->>>>>>> .merge_file_dGwKMD
 - [Regole Migrazioni Laraxot](../../Xot/docs/migration_rules.md)
 - [Polimorfismo UUID](../../Xot/docs/polymorphic_uuid_support.md)
 - [Principi Architetturali](../../../docs/architectural_principles.md)
 
 ### Moduli Correlati
 - [User Module UUID](../../User/docs/uuid_implementation.md)
-<<<<<<< .merge_file_445Kgf
-<<<<<<< .merge_file_RL9Jek
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [SaluteOra Models](../../SaluteOra/docs/model_architecture.md)
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> .merge_file_LquJFI
-=======
-- [SaluteOra Models](../../SaluteOra/docs/model_architecture.md)
->>>>>>> .merge_file_dGwKMD
 - [ Models](../../<nome modulo>/docs/model_architecture.md)
 - [Activity Logging](./activity_logging_system.md)
 

@@ -5,68 +5,22 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [on-demand, pattern, wiki, qmd]
 related:
-<<<<<<< .merge_file_RaWfln
-<<<<<<< .merge_file_d9yB0r
-=======
-<<<<<<< .merge_file_vY4JAi
-  - ../../docs/wiki/rules/on-demand-pattern.md
-  - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
-=======
->>>>>>> .merge_file_MxrxcT
-=======
-  - ../../docs/wiki/rules/on-demand-pattern.md
-  - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
-
->>>>>>> .merge_file_bujFDi
   - ../../../../docs/wiki/rules/on-demand-pattern.md
   - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
 status: draft
 qmd: "on-demand pattern   module **activity** activity"
-<<<<<<< .merge_file_RaWfln
-<<<<<<< .merge_file_d9yB0r
-=======
->>>>>>> .merge_file_espFVC
->>>>>>> .merge_file_MxrxcT
-=======
->>>>>>> .merge_file_bujFDi
 ---
 
 # On-Demand Pattern — Module **Activity**
 
-<<<<<<< .merge_file_RaWfln
-<<<<<<< .merge_file_d9yB0r
 **Fonte canonica**: [../../docs/wiki/rules/on-demand-pattern.md](../../../../docs/wiki/rules/on-demand-pattern.md)
-=======
-<<<<<<< .merge_file_vY4JAi
-=======
->>>>>>> .merge_file_bujFDi
-**Fonte canonica**: [../../docs/wiki/rules/on-demand-pattern.md](../../docs/wiki/rules/on-demand-pattern.md)
-
-**Fonte canonica**: [../../docs/wiki/rules/on-demand-pattern.md](../../../../docs/wiki/rules/on-demand-pattern.md)
-<<<<<<< .merge_file_RaWfln
->>>>>>> .merge_file_espFVC
->>>>>>> .merge_file_MxrxcT
-=======
->>>>>>> .merge_file_bujFDi
 
 ## Principio
 
 Questo Module segue il **pattern on-demand** per rules, skills, commands e memories:
 
 - ✅ **Vivono solo nel wiki** — ../../docs/wiki/
-<<<<<<< .merge_file_RaWfln
-<<<<<<< .merge_file_d9yB0r
 - ✅ **Caricati on-demand** — via trigger map o
-=======
-<<<<<<< .merge_file_vY4JAi
-- ✅ **Caricati on-demand** — via trigger map o 
-=======
-- ✅ **Caricati on-demand** — via trigger map o
->>>>>>> .merge_file_espFVC
->>>>>>> .merge_file_MxrxcT
-=======
-- ✅ **Caricati on-demand** — via trigger map o
->>>>>>> .merge_file_bujFDi
 - ❌ **NON pre-caricati** — mai embeddare nei bootstrap files
 - ❌ **Nessuna duplicazione** — wiki = sorgente di verità unica
 
@@ -134,27 +88,9 @@ qmd search "<topic>"
 
 ## Riferimenti
 
-<<<<<<< .merge_file_RaWfln
-<<<<<<< .merge_file_d9yB0r
 - [Global On-Demand Pattern](../../../../docs/wiki/rules/on-demand-pattern.md)
 - [LLM Wiki Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
 - [Trigger Map](../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
-=======
-<<<<<<< .merge_file_vY4JAi
-=======
->>>>>>> .merge_file_bujFDi
-- [Global On-Demand Pattern](../../docs/wiki/rules/on-demand-pattern.md)
-- [LLM Wiki Operational Discipline](../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
-- [Trigger Map](../../docs/wiki/rules/00-TRIGGER_MAP.md)
-
-- [Global On-Demand Pattern](../../../../docs/wiki/rules/on-demand-pattern.md)
-- [LLM Wiki Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
-- [Trigger Map](../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
-<<<<<<< .merge_file_RaWfln
->>>>>>> .merge_file_espFVC
->>>>>>> .merge_file_MxrxcT
-=======
->>>>>>> .merge_file_bujFDi
 - [Module Wiki Index](./wiki/index.md)
 
 ---

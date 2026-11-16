@@ -4,24 +4,9 @@ type: integration
 tags: [integrations]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_onLMwf
-<<<<<<< .merge_file_EOqgVI
 qmd: "upgrade laravel 13 - activity activity"
 status: superseded
 superseded_by: ../../laravel-13-upgrade.md
-=======
-<<<<<<< .merge_file_Zl9CVS
-=======
-qmd: "upgrade laravel 13 - activity activity"
-status: superseded
-superseded_by: ../../laravel-13-upgrade.md
->>>>>>> .merge_file_Z2jfHN
->>>>>>> .merge_file_vnyx9e
-=======
-qmd: "upgrade laravel 13 - activity activity"
-status: superseded
-superseded_by: ../../laravel-13-upgrade.md
->>>>>>> .merge_file_MC5VL4
 ---
 
 # Upgrade Laravel 13 - Activity 🐄✨

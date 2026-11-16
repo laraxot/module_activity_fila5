@@ -10,18 +10,7 @@ issues:
   - "https://github.com/laraxot/base_ptv_fila5/issues/328"
 discussions:
   - "https://github.com/laraxot/base_ptv_fila5/discussions/329"
-<<<<<<< .merge_file_njWy0e
-<<<<<<< .merge_file_ozVfdg
 status: draft
-=======
-<<<<<<< .merge_file_Ve4zen
-=======
-status: draft
->>>>>>> .merge_file_bEn7Ze
->>>>>>> .merge_file_IDIKMc
-=======
-status: draft
->>>>>>> .merge_file_Vh4xvS
 ---
 
 # Activity Module - concepts Index
@@ -41,21 +30,7 @@ qmd search "Activity concepts" --limit 5
 - [testcase-hierarchy-architecture](testcase-hierarchy-architecture.md) — Activity TestCase estende XotBaseTestCase; nessun Nwidart BaseTestCase nella v13 installata.
 
 ## See Also
-<<<<<<< .merge_file_njWy0e
-<<<<<<< .merge_file_ozVfdg
 - [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
-=======
-<<<<<<< .merge_file_Ve4zen
-=======
->>>>>>> .merge_file_Vh4xvS
-- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
-
-- [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
-<<<<<<< .merge_file_njWy0e
->>>>>>> .merge_file_bEn7Ze
->>>>>>> .merge_file_IDIKMc
-=======
->>>>>>> .merge_file_Vh4xvS
 - [Root Wiki](../../../docs/wiki/)
 
 ---

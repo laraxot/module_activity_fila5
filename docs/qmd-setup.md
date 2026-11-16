@@ -5,25 +5,9 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [qmd, search, docs, performance]
 related:
-<<<<<<< .merge_file_AxHrpT
-<<<<<<< .merge_file_A1wHfw
   - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
 status: draft
 qmd: "qmd setup per module **activity** activity"
-=======
-<<<<<<< .merge_file_wluq2o
-=======
->>>>>>> .merge_file_KxJ9xm
-  - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
-
-  - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
-status: draft
-qmd: "qmd setup per module **activity** activity"
-<<<<<<< .merge_file_AxHrpT
->>>>>>> .merge_file_3mFRnw
->>>>>>> .merge_file_JaaKp1
-=======
->>>>>>> .merge_file_KxJ9xm
 ---
 
 # QMD Setup per Module **Activity**
@@ -105,21 +89,7 @@ graph TD
 ## Riferimenti
 
 - [Global QMD Config](../qmd.md) (root docs)
-<<<<<<< .merge_file_AxHrpT
-<<<<<<< .merge_file_A1wHfw
 - [Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
-=======
-<<<<<<< .merge_file_wluq2o
-=======
->>>>>>> .merge_file_KxJ9xm
-- [Operational Discipline](../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
-
-- [Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
-<<<<<<< .merge_file_AxHrpT
->>>>>>> .merge_file_3mFRnw
->>>>>>> .merge_file_JaaKp1
-=======
->>>>>>> .merge_file_KxJ9xm
 - [On-Demand Pattern](./ON-DEMAND-PATTERN.md)
 
 ---

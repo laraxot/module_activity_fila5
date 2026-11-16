@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_94q97K
-<<<<<<< .merge_file_Cr44dE
-=======
-<<<<<<< .merge_file_ITq6dN
-=======
->>>>>>> .merge_file_8NeVN7
-=======
->>>>>>> .merge_file_GRp7G5
 ---
 title: "Confronto tra Approcci: Traditional, Projectors, Aggregates, Eventsauce"
 type: note
@@ -14,13 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "confronto tra approcci: traditional, projectors, aggregates, eventsauce activity"
 ---
-<<<<<<< .merge_file_94q97K
-<<<<<<< .merge_file_Cr44dE
-=======
->>>>>>> .merge_file_Rqvzs8
->>>>>>> .merge_file_8NeVN7
-=======
->>>>>>> .merge_file_GRp7G5
 # Confronto tra Approcci: Traditional, Projectors, Aggregates, Eventsauce
 
 ## 1. Larabank-Traditional

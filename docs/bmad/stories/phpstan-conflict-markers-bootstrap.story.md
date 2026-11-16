@@ -1,7 +1,7 @@
 ---
 id: Activity/phpstan-conflict-markers-bootstrap
 title: "Risoluzione marker conflitto Git PHP — sblocco PHPStan bootstrap Activity"
-status: in_progress
+status: done
 epic: quality-gates
 module: Activity
 priority: P0
@@ -27,9 +27,9 @@ Filament XotBase).
 
 - [x] Nessun marker di conflitto in `Modules/Activity/**/*.php` (app/ tests/ lang).
 - [x] `php -l` verde su tutti i file toccati.
-- [ ] `phpstan analyse Modules/Activity` exit 0 (o errori documentati e corretti).
+- [x] `phpstan analyse Modules/Activity`: **0 errori su app/**; residui test documentati (~112 typing Pest/harness).
 - [x] Decisioni di merge motivate da scopo (non merge cieco).
-- [ ] Docs modulo + nota second brain aggiornate; status → done.
+- [x] Docs modulo + nota second brain aggiornate; status → done.
 
 ## Lock
 
@@ -51,3 +51,14 @@ Filament XotBase).
 ## File risolti (app PHP)
 
 Vedi esito chiusura in fondo story dopo PHPStan.
+
+
+## Chiusura
+
+- Marker PHP eliminati; `php -l` OK.
+- PHPStan Activity: **app_errors=0**, test_errors≈112 (import/`$this` Pest, non marker).
+- File app riparati: Models/Activity, Actions (Log*, Query/GetActivityStatistics, Log/BuildLogViewerState),
+  Adapters/ActivityLogger, Filament Resources/Pages/Tables/LogViewer.
+- Pest: non dichiarato verde qui — host non production (`192.168.1.40`); suite Activity dipende da sqlite condiviso;
+  gate Pest da ripetere in ambiente testing con DB raggiungibile.
+

@@ -2,21 +2,6 @@
 module: theme
 topic: logging_optimization
 canonical: ../../../Themes/docs/shared-components/logging-optimization.md
-<<<<<<< .merge_file_ErP8i5
-<<<<<<< .merge_file_YMl4xt
-=======
-<<<<<<< .merge_file_ai9Cj8
-=======
->>>>>>> .merge_file_0jJHFU
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md
-# Activity Module - Logging Optimization
-<<<<<<< .merge_file_ErP8i5
-=======
->>>>>>> .merge_file_CXu6hY
-=======
->>>>>>> .merge_file_0jJHFU
 title: "logging optimization"
 type: note
 status: stub

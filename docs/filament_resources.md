@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_DaUNyM
-<<<<<<< .merge_file_UmQfCj
-=======
-<<<<<<< .merge_file_rn5ILG
-=======
->>>>>>> .merge_file_VXOoU7
-=======
->>>>>>> .merge_file_RYFIlm
 ---
 title: "Filament Resources nel Modulo Activity"
 type: note
@@ -14,13 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "filament resources nel modulo activity activity"
 ---
-<<<<<<< .merge_file_DaUNyM
-<<<<<<< .merge_file_UmQfCj
-=======
->>>>>>> .merge_file_gSHSYu
->>>>>>> .merge_file_VXOoU7
-=======
->>>>>>> .merge_file_RYFIlm
 # Filament Resources nel Modulo Activity
 
 ## Struttura delle Risorse

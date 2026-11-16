@@ -6,25 +6,10 @@ tags:
   - conventions
   - llm-instructions
 created: 2026-04-15
-<<<<<<< .merge_file_LW50aS
-<<<<<<< .merge_file_7AQvE2
-=======
-<<<<<<< .merge_file_LQUJEJ
-=======
->>>>>>> .merge_file_0ckSjc
-=======
->>>>>>> .merge_file_lggafx
 type: note
 status: draft
 updated: 2026-10-07
 qmd: "wiki schema - activity activity"
-<<<<<<< .merge_file_LW50aS
-<<<<<<< .merge_file_7AQvE2
-=======
->>>>>>> .merge_file_YAjKRL
->>>>>>> .merge_file_0ckSjc
-=======
->>>>>>> .merge_file_lggafx
 ---
 
 # Wiki Schema - Activity

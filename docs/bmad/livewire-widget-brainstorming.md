@@ -1,42 +1,13 @@
 ---
-<<<<<<< .merge_file_FRvl5h
-<<<<<<< .merge_file_vnFKq3
 title: "Brainstorming: Activity"
-=======
-<<<<<<< .merge_file_508WoA
-=======
->>>>>>> .merge_file_yvNzVZ
-title: "Brainstorming — Activity"
-
-title: "Brainstorming: Activity"
-<<<<<<< .merge_file_FRvl5h
->>>>>>> .merge_file_cyR6GE
->>>>>>> .merge_file_QClqfB
-=======
->>>>>>> .merge_file_yvNzVZ
 type: brainstorming
 module: Activity
 related:
   - ./livewire-inventory.md
-<<<<<<< .merge_file_FRvl5h
-<<<<<<< .merge_file_vnFKq3
-=======
-<<<<<<< .merge_file_508WoA
-=======
->>>>>>> .merge_file_QClqfB
-=======
->>>>>>> .merge_file_yvNzVZ
 status: draft
 updated: 2026-10-07
 tags: [docs, activity, bmad]
 qmd: "brainstorming activity activity"
-<<<<<<< .merge_file_FRvl5h
-<<<<<<< .merge_file_vnFKq3
-=======
->>>>>>> .merge_file_cyR6GE
->>>>>>> .merge_file_QClqfB
-=======
->>>>>>> .merge_file_yvNzVZ
 ---
 
 # Brainstorming Activity

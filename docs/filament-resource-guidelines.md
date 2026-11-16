@@ -241,11 +241,7 @@ class ActivityResource extends XotBaseResource
 {
     protected static ?string $model = Activity::class;
 
-<<<<<<< .merge_file_ep7DIq
     public static function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> .merge_file_JPWEQo
     {
         return [
             // Form schema components only
@@ -339,17 +335,4 @@ All resources must be tested to ensure:
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
 - [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../xot/project_docs/filament-best-practices.md)
-<<<<<<< .merge_file_mNKC5U
-<<<<<<< .merge_file_ep7DIq
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_nVdr3C
-- [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
-- [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
-<<<<<<< .merge_file_mNKC5U
->>>>>>> 35d8cf69 (Initial commit)
->>>>>>> .merge_file_JPWEQo
-=======
->>>>>>> .merge_file_nVdr3C

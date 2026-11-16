@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_hYxgaX
-<<<<<<< .merge_file_G0Oxag
-=======
-<<<<<<< .merge_file_if2pgC
-=======
->>>>>>> .merge_file_yn9huF
-=======
->>>>>>> .merge_file_THiVRE
 ---
 title: "Glossario <nome progetto>ion Market"
 type: note
@@ -14,13 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "glossario <nome progetto>ion market activity"
 ---
-<<<<<<< .merge_file_hYxgaX
-<<<<<<< .merge_file_G0Oxag
-=======
->>>>>>> .merge_file_ecfRGc
->>>>>>> .merge_file_yn9huF
-=======
->>>>>>> .merge_file_THiVRE
 # Glossario <nome progetto>ion Market
 
 - **<nome progetto>ion Market**: Mercato di previsione, piattaforma per scommettere su eventi futuri.

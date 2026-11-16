@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+use Modules\Activity\Actions\Log\BuildLogFileTreeAction;
+use Modules\Activity\Datas\LogFileData;
+use Modules\Activity\Datas\LogTreeData;
+use Modules\Activity\Tests\TestCase;
+
 uses(TestCase::class);
 
 function treeLogFile(string $path, int $modifiedAt = 1_000): LogFileData

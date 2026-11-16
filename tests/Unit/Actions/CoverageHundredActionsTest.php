@@ -25,6 +25,12 @@ use Modules\Activity\Adapters\ActivityLogger as ActivityLoggerAdapter;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\Fixtures\ActivitySubjectHarness;
 use Modules\Activity\Tests\Fixtures\LogActivityActionTestModel;
+use Modules\Activity\Tests\TestCase;
+use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
+
 beforeEach(function (): void {
     config(['cache.default' => 'array']);
 });
@@ -147,6 +153,10 @@ test('ActivityMaintenanceAction cleanOld e ActivityLogger Action percorsi comple
     $model->exists = true;
     $model->syncOriginal();
 
+    $logger = new ActivityLoggerAction;
+
+    $logged = $logger->log('evt_log', activityUnitUser('evt-user'), $model, ['p' => 1], 'D');
+    Assert::assertSame('evt_log', $logged->event);
 
     Assert::assertSame('created', $logger->created($model, $user)->event);
     Assert::assertSame('updated', $logger->updated($model, $user)->event);

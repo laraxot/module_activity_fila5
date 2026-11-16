@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_dyBtJN
-<<<<<<< .merge_file_tSQ051
-=======
-<<<<<<< .merge_file_mkpwDB
-=======
->>>>>>> .merge_file_hXTiOG
-=======
->>>>>>> .merge_file_MmkEnu
 ---
 title: "Testing Bank (Event Sourcing)"
 type: note
@@ -14,13 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "testing bank (event sourcing) activity"
 ---
-<<<<<<< .merge_file_dyBtJN
-<<<<<<< .merge_file_tSQ051
-=======
->>>>>>> .merge_file_zWET9Z
->>>>>>> .merge_file_hXTiOG
-=======
->>>>>>> .merge_file_MmkEnu
 # Testing Bank (Event Sourcing)
 
 ## Unit Test

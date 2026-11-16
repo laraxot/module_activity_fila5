@@ -4,21 +4,8 @@ type: guide
 tags: [activity, testing, pest]
 created: 2026-07-28
 updated: 2026-07-28
-<<<<<<< .merge_file_Tsu9Gz
-<<<<<<< .merge_file_3c4vJO
 status: draft
 qmd: "activity module   testing activity"
-=======
-<<<<<<< .merge_file_FEAyr2
-=======
-status: draft
-qmd: "activity module   testing activity"
->>>>>>> .merge_file_pKwAiA
->>>>>>> .merge_file_5k1kRZ
-=======
-status: draft
-qmd: "activity module   testing activity"
->>>>>>> .merge_file_xSr0fG
 ---
 
 # Activity Module — Testing

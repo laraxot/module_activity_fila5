@@ -2,27 +2,12 @@
 module: theme
 topic: boost_skill_fix_summary
 canonical: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
-<<<<<<< .merge_file_AgqAWV
-<<<<<<< .merge_file_Pj6N7r
-=======
-<<<<<<< .merge_file_7n1Xvv
-=======
->>>>>>> .merge_file_qm1Vul
-=======
->>>>>>> .merge_file_gyGoU2
 title: "Boost Skill Fix Summary - Activity Module"
 type: note
 status: stub
 updated: 2026-10-07
 tags: [docs, activity]
 qmd: "boost skill fix summary - activity module activity"
-<<<<<<< .merge_file_AgqAWV
-<<<<<<< .merge_file_Pj6N7r
-=======
->>>>>>> .merge_file_8zWR0a
->>>>>>> .merge_file_qm1Vul
-=======
->>>>>>> .merge_file_gyGoU2
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md

@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_5C1SYH
-<<<<<<< .merge_file_Pm0MmP
-=======
-<<<<<<< .merge_file_oDKGVV
-=======
->>>>>>> .merge_file_9hwv2m
-=======
->>>>>>> .merge_file_CpNIaT
 ---
 title: "Glossario Shop Event Sourced"
 type: note
@@ -14,13 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "glossario shop event sourced activity"
 ---
-<<<<<<< .merge_file_5C1SYH
-<<<<<<< .merge_file_Pm0MmP
-=======
->>>>>>> .merge_file_htjjW2
->>>>>>> .merge_file_9hwv2m
-=======
->>>>>>> .merge_file_CpNIaT
 # Glossario Shop Event Sourced
 
 - **Event Sourcing**: pattern in cui ogni cambiamento di stato è registrato come evento immutabile. Esempio: `OrderCreated`.

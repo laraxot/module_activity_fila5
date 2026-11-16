@@ -74,37 +74,9 @@ php artisan activity:shop:checkout cart_12345_xxx
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
-<<<<<<< .merge_file_CNNeU2
 | 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](../..) |
 =======
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
-
-## Best Practice
-- Eventi immutabili e atomici
-- Aggregate root come unico punto di logica di dominio
-- Proiezioni solo per lettura, aggiornate da projectors
-- Separazione tra comandi (write) e query (read)
-- Reactors per effetti collaterali (notifiche, email)
-- DTO per passaggio dati tra livelli
-- Test end-to-end tramite replay eventi
-
-## Documentazione
-
-| Lingua | Link |
-|--------|------|
-| 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
-
-| 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](../..) |
-<<<<<<< .merge_file_TwdRvY
->>>>>>> .merge_file_lVYvUq
->>>>>>> .merge_file_1WwYhl
-=======
->>>>>>> .merge_file_fZJZEC
 
 ---
 **Questa documentazione è neutra e riutilizzabile, senza riferimenti a progetti specifici, e segue le regole di neutralità e modularità.**

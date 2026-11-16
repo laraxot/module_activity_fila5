@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_egSLmo
-<<<<<<< .merge_file_p4Impl
-=======
-<<<<<<< .merge_file_dvArvi
-=======
->>>>>>> .merge_file_tZ45Qf
-=======
->>>>>>> .merge_file_7odGMP
 ---
 title: "Activity Module - Product Launch Plan"
 type: note
@@ -14,13 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - product launch plan activity"
 ---
-<<<<<<< .merge_file_egSLmo
-<<<<<<< .merge_file_p4Impl
-=======
->>>>>>> .merge_file_ik5FTS
->>>>>>> .merge_file_tZ45Qf
-=======
->>>>>>> .merge_file_7odGMP
 # Activity Module - Product Launch Plan
 
 **Module:** Activity  

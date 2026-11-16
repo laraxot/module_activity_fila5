@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_mkjevw
-<<<<<<< .merge_file_sVQUQE
-=======
-<<<<<<< .merge_file_Ifme2v
-=======
->>>>>>> .merge_file_fsebwl
-=======
->>>>>>> .merge_file_LRXtXg
 ---
 title: "CRITICAL: MAI FARE migrate:refresh/fresh/rollback O --force"
 type: note
@@ -14,13 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "critical: mai fare migrate:refresh/fresh/rollback o --force activity"
 ---
-<<<<<<< .merge_file_mkjevw
-<<<<<<< .merge_file_sVQUQE
-=======
->>>>>>> .merge_file_okpgtw
->>>>>>> .merge_file_fsebwl
-=======
->>>>>>> .merge_file_LRXtXg
 # ⚠️ CRITICAL: MAI FARE migrate:refresh/fresh/rollback O --force 🔴🔴
 
 ## I Dati Sono SACRI

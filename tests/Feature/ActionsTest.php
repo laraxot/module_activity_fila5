@@ -22,8 +22,8 @@ function createUser(): User
 describe('ActivityLogger', function (): void {
 
     test('logs simple activity', function (): void {
-        $user = createActionsTestUser();
-        $logger = new ActivityLogger();
+        $user = createUser();
+        $logger = new ActivityLogger;
         $activity = $logger->log('test_event', $user);
 
         Assert::assertSame('test_event', $activity->event);

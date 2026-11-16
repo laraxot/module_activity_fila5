@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_oJvEgJ
-<<<<<<< .merge_file_WRuVfv
-=======
-<<<<<<< .merge_file_2pjU6L
-=======
->>>>>>> .merge_file_GR1n3U
-=======
->>>>>>> .merge_file_eB6sBh
 ---
 title: "Activity Module - Product Strategy"
 type: note
@@ -15,13 +7,6 @@ qmd: "activity module - product strategy activity"
 status: superseded
 superseded_by: wiki/product/_da-riconciliare/product-strategy.md
 ---
-<<<<<<< .merge_file_oJvEgJ
-<<<<<<< .merge_file_WRuVfv
-=======
->>>>>>> .merge_file_XVzRTW
->>>>>>> .merge_file_GR1n3U
-=======
->>>>>>> .merge_file_eB6sBh
 # Activity Module - Product Strategy
 
 **Module:** Activity  

@@ -1,26 +1,10 @@
 ---
-<<<<<<< .merge_file_3n1vvZ
-<<<<<<< .merge_file_IxUwZe
 title: "Activity: BMAD Quick Reference"
-=======
-<<<<<<< .merge_file_CHG86D
-=======
->>>>>>> .merge_file_SKRuU4
-title: "Activity — BMAD Quick Reference"
-
-title: "Activity: BMAD Quick Reference"
-<<<<<<< .merge_file_3n1vvZ
->>>>>>> .merge_file_8t1ByP
->>>>>>> .merge_file_3RWqsw
-=======
->>>>>>> .merge_file_SKRuU4
 description: "Comandi rapidi BMAD per il modulo Activity"
 module: "Activity"
 alias: "activity"
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
-<<<<<<< .merge_file_3n1vvZ
-<<<<<<< .merge_file_IxUwZe
 type: note
 status: draft
 updated: 2026-10-07
@@ -29,26 +13,6 @@ qmd: "activity   bmad quick reference activity"
 ---
 
 # Activity: BMAD Quick Reference
-=======
-<<<<<<< .merge_file_CHG86D
-=======
->>>>>>> .merge_file_SKRuU4
----
-
-# Activity — BMAD Quick Reference
-
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, bmad]
-qmd: "activity   bmad quick reference activity"
-
-# Activity: BMAD Quick Reference
-<<<<<<< .merge_file_3n1vvZ
->>>>>>> .merge_file_8t1ByP
->>>>>>> .merge_file_3RWqsw
-=======
->>>>>>> .merge_file_SKRuU4
 
 ## Comandi Rapidi
 

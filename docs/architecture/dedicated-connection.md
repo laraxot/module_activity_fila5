@@ -55,23 +55,6 @@ Il **doppio fallback** `env('DB_DATABASE_ACTIVITY', env('DB_DATABASE'))` è la c
 ## .env.testing — NESSUNA variabile ACTIVITY
 
 ```bash
-<<<<<<< .merge_file_0adWDP
-<<<<<<< .merge_file_EDj7IC
-=======
-<<<<<<< .merge_file_zAIF5k
-=======
->>>>>>> .merge_file_Xf2Mu3
-# ✅ CORRETTO — .env.testing
-DB_DATABASE=<nome progetto>_data_test
-
-DB_DATABASE=techplanner_data_test
-<<<<<<< .merge_file_0adWDP
->>>>>>> 35d8cf69 (Initial commit)
-=======
->>>>>>> .merge_file_I849Tj
-=======
-
->>>>>>> .merge_file_Xf2Mu3
 # ✅ CORRETTO: .env.testing
 DB_DATABASE=<nome progetto>_data_test=======
 DB_DATABASE=techplanner_data_test

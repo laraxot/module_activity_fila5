@@ -1,13 +1,5 @@
 ---
-<<<<<<< .merge_file_mt0SuO
-<<<<<<< .merge_file_Zz5ndq
 title: Root .md Consolidation Analysis: Activity Module
-=======
-<<<<<<< .merge_file_QXCVS7
-=======
->>>>>>> .merge_file_1Pohza
-title: Root .md Consolidation Analysis — Activity Module
->>>>>>> .merge_file_82zeWa
 date: 2026-08-18
 type: note
 updated: 2026-10-07
@@ -17,24 +9,7 @@ status: superseded
 superseded_by: consolidation-analysis.md
 ---
 
-<<<<<<< .merge_file_Zz5ndq
 # Consolidation Analysis: Activity Module
-=======
-# Consolidation Analysis — Activity Module
-
-title: Root .md Consolidation Analysis: Activity Module
-date: 2026-08-18
-status: analysis
----
-
-# Consolidation Analysis — Activity Module
-
-# Consolidation Analysis: Activity Module
-<<<<<<< .merge_file_mt0SuO
->>>>>>> .merge_file_Y381wO
->>>>>>> .merge_file_82zeWa
-=======
->>>>>>> .merge_file_1Pohza
 
 **Module:** Activity  
 **Scope:** Root .md files owned by Activity, relocation plan  
@@ -58,21 +33,7 @@ status: analysis
 - **Isolation:** Activity owns its migration policy; policy should live in Activity module.
 
 **When to move:**
-<<<<<<< .merge_file_mt0SuO
-<<<<<<< .merge_file_Zz5ndq
 - **NOW**: No delays. This is a safety-critical document.
-=======
-<<<<<<< .merge_file_QXCVS7
-=======
->>>>>>> .merge_file_1Pohza
-- **NOW** — No delays. This is a safety-critical document.
-
-- **NOW**: No delays. This is a safety-critical document.
-<<<<<<< .merge_file_mt0SuO
->>>>>>> .merge_file_Y381wO
->>>>>>> .merge_file_82zeWa
-=======
->>>>>>> .merge_file_1Pohza
 
 ## Post-Move Structure
 
@@ -85,21 +46,7 @@ laravel/Modules/Activity/
 ├── app/
 ├── config/
 ├── database/
-<<<<<<< .merge_file_mt0SuO
-<<<<<<< .merge_file_Zz5ndq
 │   ├── migrations/ (sacred: no refresh)
-=======
-<<<<<<< .merge_file_QXCVS7
-=======
->>>>>>> .merge_file_1Pohza
-│   ├── migrations/ (sacred — no refresh)
-
-│   ├── migrations/ (sacred: no refresh)
-<<<<<<< .merge_file_mt0SuO
->>>>>>> .merge_file_Y381wO
->>>>>>> .merge_file_82zeWa
-=======
->>>>>>> .merge_file_1Pohza
 │   ├── factories/
 │   └── seeders/
 └── tests/
@@ -114,24 +61,8 @@ laravel/Modules/Activity/
 
 ## Related Modules
 
-<<<<<<< .merge_file_mt0SuO
-<<<<<<< .merge_file_Zz5ndq
 - **Progressioni**: depends on Activity; same constraint applies to Progressioni migrations.
 - **Tenant**: shared tenancy; migration policy affects all modules.
-=======
-<<<<<<< .merge_file_QXCVS7
-=======
->>>>>>> .merge_file_1Pohza
-- **Progressioni** — depends on Activity; same constraint applies to Progressioni migrations.
-- **Tenant** — shared tenancy; migration policy affects all modules.
-
-- **Progressioni**: depends on Activity; same constraint applies to Progressioni migrations.
-- **Tenant**: shared tenancy; migration policy affects all modules.
-<<<<<<< .merge_file_mt0SuO
->>>>>>> .merge_file_Y381wO
->>>>>>> .merge_file_82zeWa
-=======
->>>>>>> .merge_file_1Pohza
 
 ## Action Items
 

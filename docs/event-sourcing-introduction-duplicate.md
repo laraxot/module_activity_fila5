@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_9Gu28r
-<<<<<<< .merge_file_CfO58m
 ---
 title: "Event Sourcing in `<nome progetto>`"
 type: note
@@ -8,11 +6,6 @@ updated: 2026-10-08
 tags: [docs, activity]
 qmd: "event sourcing in `<nome progetto>` activity"
 ---
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_RjHnkD
-=======
->>>>>>> .merge_file_NjYV5L
 # Event Sourcing in `<nome progetto>`
 
 ## Introduction to Event Sourcing

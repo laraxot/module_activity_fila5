@@ -1,27 +1,3 @@
-<<<<<<< .merge_file_48oiBc
-<<<<<<< .merge_file_cPKfIG
-=======
-<<<<<<< .merge_file_WiSs5m
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_EHGjv6
-=======
->>>>>>> .merge_file_rcI5DX
----
-title: "Event Sourcing in `saluteora`"
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity]
-qmd: "event sourcing in `saluteora` activity"
----
-<<<<<<< .merge_file_48oiBc
-<<<<<<< .merge_file_cPKfIG
-=======
->>>>>>> .merge_file_A4pPHf
->>>>>>> .merge_file_EHGjv6
-=======
->>>>>>> .merge_file_rcI5DX
 # Event Sourcing in `saluteora`
 
 ## Introduction to Event Sourcing
@@ -174,8 +150,6 @@ This introduction to event sourcing sets the foundation for implementing a robus
 module: theme
 topic: event-sourcing-introduction
 canonical: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
-<<<<<<< .merge_file_48oiBc
-<<<<<<< .merge_file_cPKfIG
 
 # Event Sourcing in `<nome progetto>`
 
@@ -296,13 +270,6 @@ public function store(Request $request)
 - [Larabank Examples](https://github.com/spatie/larabank-traditional)
 
 This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `saluteora`, ensuring full traceability and compliance with healthcare standards.
-=======
->>>>>>> .merge_file_A4pPHf
-=======
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
->>>>>>> .merge_file_rcI5DX
 
 ## Application in `saluteora`
 In a healthcare system like `saluteora`, event sourcing can be applied to:
@@ -576,8 +543,4 @@ canonical: ../../../Themes/docs/shared-components/event-sourcing-introduction-du
 
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
 This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `saluteora`, ensuring full traceability and compliance with healthcare standards.
-<<<<<<< .merge_file_48oiBc
->>>>>>> .merge_file_A4pPHf
->>>>>>> .merge_file_EHGjv6
 =======
->>>>>>> .merge_file_rcI5DX

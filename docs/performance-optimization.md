@@ -5,25 +5,9 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [performance, optimization, tokens, context]
 related:
-<<<<<<< .merge_file_DJPiFz
-<<<<<<< .merge_file_HHBDW3
   - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
 status: draft
 qmd: "performance optimization   module **activity** activity"
-=======
-<<<<<<< .merge_file_tl6tGG
-=======
->>>>>>> .merge_file_AdvnPc
-  - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
-
-  - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
-status: draft
-qmd: "performance optimization   module **activity** activity"
-<<<<<<< .merge_file_DJPiFz
->>>>>>> .merge_file_EV5MLb
->>>>>>> .merge_file_DmsavQ
-=======
->>>>>>> .merge_file_AdvnPc
 ---
 
 # Performance Optimization — Module **Activity**

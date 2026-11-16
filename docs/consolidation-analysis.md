@@ -1,13 +1,5 @@
 ---
-<<<<<<< .merge_file_d3QwJP
-<<<<<<< .merge_file_XHRRiH
 title: Root .md Consolidation Analysis: Activity Module
-=======
-<<<<<<< .merge_file_n0v1WX
-=======
->>>>>>> .merge_file_vfPuVb
-title: Root .md Consolidation Analysis — Activity Module
->>>>>>> .merge_file_HpjwyN
 date: 2026-08-18
 status: analysis
 type: note
@@ -16,24 +8,7 @@ tags: [docs, activity]
 qmd: "consolidation analysis   activity module activity"
 ---
 
-<<<<<<< .merge_file_XHRRiH
 # Consolidation Analysis: Activity Module
-=======
-# Consolidation Analysis — Activity Module
-
-title: Root .md Consolidation Analysis: Activity Module
-date: 2026-08-18
-status: analysis
----
-
-# Consolidation Analysis — Activity Module
-
-# Consolidation Analysis: Activity Module
-<<<<<<< .merge_file_d3QwJP
->>>>>>> .merge_file_3Q3QA3
->>>>>>> .merge_file_HpjwyN
-=======
->>>>>>> .merge_file_vfPuVb
 
 **Module:** Activity  
 **Scope:** Root .md files owned by Activity, relocation plan  
@@ -57,21 +32,7 @@ status: analysis
 - **Isolation:** Activity owns its migration policy; policy should live in Activity module.
 
 **When to move:**
-<<<<<<< .merge_file_d3QwJP
-<<<<<<< .merge_file_XHRRiH
 - **NOW**: No delays. This is a safety-critical document.
-=======
-<<<<<<< .merge_file_n0v1WX
-=======
->>>>>>> .merge_file_vfPuVb
-- **NOW** — No delays. This is a safety-critical document.
-
-- **NOW**: No delays. This is a safety-critical document.
-<<<<<<< .merge_file_d3QwJP
->>>>>>> .merge_file_3Q3QA3
->>>>>>> .merge_file_HpjwyN
-=======
->>>>>>> .merge_file_vfPuVb
 
 ## Post-Move Structure
 
@@ -84,21 +45,7 @@ laravel/Modules/Activity/
 ├── app/
 ├── config/
 ├── database/
-<<<<<<< .merge_file_d3QwJP
-<<<<<<< .merge_file_XHRRiH
 │   ├── migrations/ (sacred: no refresh)
-=======
-<<<<<<< .merge_file_n0v1WX
-=======
->>>>>>> .merge_file_vfPuVb
-│   ├── migrations/ (sacred — no refresh)
-
-│   ├── migrations/ (sacred: no refresh)
-<<<<<<< .merge_file_d3QwJP
->>>>>>> .merge_file_3Q3QA3
->>>>>>> .merge_file_HpjwyN
-=======
->>>>>>> .merge_file_vfPuVb
 │   ├── factories/
 │   └── seeders/
 └── tests/
@@ -113,24 +60,8 @@ laravel/Modules/Activity/
 
 ## Related Modules
 
-<<<<<<< .merge_file_d3QwJP
-<<<<<<< .merge_file_XHRRiH
 - **Progressioni**: depends on Activity; same constraint applies to Progressioni migrations.
 - **Tenant**: shared tenancy; migration policy affects all modules.
-=======
-<<<<<<< .merge_file_n0v1WX
-=======
->>>>>>> .merge_file_vfPuVb
-- **Progressioni** — depends on Activity; same constraint applies to Progressioni migrations.
-- **Tenant** — shared tenancy; migration policy affects all modules.
-
-- **Progressioni**: depends on Activity; same constraint applies to Progressioni migrations.
-- **Tenant**: shared tenancy; migration policy affects all modules.
-<<<<<<< .merge_file_d3QwJP
->>>>>>> .merge_file_3Q3QA3
->>>>>>> .merge_file_HpjwyN
-=======
->>>>>>> .merge_file_vfPuVb
 
 ## Action Items
 

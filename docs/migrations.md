@@ -1,14 +1,3 @@
-<<<<<<< .merge_file_VLknsq
-<<<<<<< .merge_file_0kvu7z
-=======
-<<<<<<< .merge_file_GruKZz
-# Activity — Migrazioni
-=======
->>>>>>> .merge_file_AgiWiQ
-=======
-# Activity — Migrazioni
-
->>>>>>> .merge_file_ZlKZgQ
 ---
 title: "Activity: Migrazioni"
 type: note
@@ -18,13 +7,6 @@ tags: [docs, activity]
 qmd: "activity   migrazioni activity"
 ---
 # Activity: Migrazioni
-<<<<<<< .merge_file_VLknsq
-<<<<<<< .merge_file_0kvu7z
-=======
->>>>>>> .merge_file_cknjYZ
->>>>>>> .merge_file_AgiWiQ
-=======
->>>>>>> .merge_file_ZlKZgQ
 
 Bridge minimale alla **fonte canonica**:
 

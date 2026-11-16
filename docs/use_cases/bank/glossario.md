@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_ByS75V
-<<<<<<< .merge_file_wgngkS
-=======
-<<<<<<< .merge_file_n7wqfK
-=======
->>>>>>> .merge_file_HkkQ2y
-=======
->>>>>>> .merge_file_pCAv1F
 ---
 title: "Glossario Bank (Event Sourcing)"
 type: note
@@ -14,13 +6,6 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "glossario bank (event sourcing) activity"
 ---
-<<<<<<< .merge_file_ByS75V
-<<<<<<< .merge_file_wgngkS
-=======
->>>>>>> .merge_file_ykW8WQ
->>>>>>> .merge_file_HkkQ2y
-=======
->>>>>>> .merge_file_pCAv1F
 # Glossario Bank (Event Sourcing)
 
 - **Event Sourcing**: Pattern di persistenza basato su eventi immutabili.

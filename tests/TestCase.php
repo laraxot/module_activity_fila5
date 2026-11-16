@@ -7,6 +7,8 @@ namespace Modules\Activity\Tests;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\ServiceProvider;
+use Filament\Notifications\Notification;
+use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Providers\EventServiceProvider;

@@ -4,33 +4,11 @@ type: report
 module: Activity
 updated: 2026-09-01
 qmd: "audit qualita activity phpstan phpmd phpinsights pest coverage soppressioni collisioni case"
-<<<<<<< .merge_file_1wWFye
-<<<<<<< .merge_file_pPG33o
 status: draft
 tags: [docs, activity]
 ---
 
 # Audit di qualita: modulo Activity
-=======
-<<<<<<< .merge_file_bS3PKV
-=======
->>>>>>> .merge_file_TGUpr5
----
-
-# Audit di qualita — modulo Activity
----
-
-# Audit di qualita — modulo Activity
-status: draft
-tags: [docs, activity]
----
-
-# Audit di qualita: modulo Activity
-<<<<<<< .merge_file_1wWFye
->>>>>>> .merge_file_qxa9Fw
->>>>>>> .merge_file_QQ50ex
-=======
->>>>>>> .merge_file_TGUpr5
 
 Misurato il 1 settembre 2026 a tree fermo. Ogni numero viene da un comando
 eseguito, non da una stima; i comandi sono in fondo, cosi la misura si puo
@@ -47,32 +25,10 @@ rifare e contestare.
 | Casi di test per file PHP | 1.53 |
 | `@phpstan-ignore` nel codice | 1 |
 | Rilievi PHPMD su `app/` | 2 |
-<<<<<<< .merge_file_1wWFye
-<<<<<<< .merge_file_pPG33o
-=======
-<<<<<<< .merge_file_bS3PKV
-=======
->>>>>>> .merge_file_TGUpr5
-| PHPInsights — Code | 94.1 % |
-| PHPInsights — Complexity | 100.0 % |
-| PHPInsights — Architecture | 92.9 % |
-| PHPInsights — Style | 86.4 % |
-<<<<<<< .merge_file_1wWFye
-=======
->>>>>>> .merge_file_QQ50ex
-=======
->>>>>>> .merge_file_TGUpr5
 | PHPInsights: Code | 94.1 % |
 | PHPInsights: Complexity | 100.0 % |
 | PHPInsights: Architecture | 92.9 % |
 | PHPInsights: Style | 86.4 % |
-<<<<<<< .merge_file_1wWFye
-<<<<<<< .merge_file_pPG33o
-=======
->>>>>>> .merge_file_qxa9Fw
->>>>>>> .merge_file_QQ50ex
-=======
->>>>>>> .merge_file_TGUpr5
 | File `.md` sotto `docs/` | 708 |
 | `TODO`/`FIXME`/`HACK` | 0 |
 | Test con casi che non girano (senza suffisso `Test.php`) | 0 |

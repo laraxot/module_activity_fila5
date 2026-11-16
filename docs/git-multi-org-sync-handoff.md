@@ -9,21 +9,8 @@ issues:
   - "https://github.com/provtv/module_activity_fila5/issues/15"
 discussions:
   - "https://github.com/provtv/base_ptv_fila5/discussions/204"
-<<<<<<< .merge_file_WAPzCX
-<<<<<<< .merge_file_3HI9Nc
 status: draft
 qmd: "handoff   multi-org sync (story-003) activity"
-=======
-<<<<<<< .merge_file_FzepQg
-=======
-status: draft
-qmd: "handoff   multi-org sync (story-003) activity"
->>>>>>> .merge_file_jpziwA
->>>>>>> .merge_file_kAs4OG
-=======
-status: draft
-qmd: "handoff   multi-org sync (story-003) activity"
->>>>>>> .merge_file_QTIlDc
 ---
 
 # Handoff — multi-org sync (STORY-003)
@@ -65,18 +52,4 @@ Playbook: [wiki/troubleshooting/git-push-dual-remote.md](./wiki/troubleshooting/
 ### Caso User 2026-07-23 (unrelated)
 
 `merge-base` vuoto vs un org → STOP. User: laraxot `3ea7273a` OK; provtv unrelated.
-<<<<<<< .merge_file_WAPzCX
-<<<<<<< .merge_file_3HI9Nc
 [../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
-=======
-<<<<<<< .merge_file_FzepQg
-=======
->>>>>>> .merge_file_QTIlDc
-[../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
-
-[../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
-<<<<<<< .merge_file_WAPzCX
->>>>>>> .merge_file_jpziwA
->>>>>>> .merge_file_kAs4OG
-=======
->>>>>>> .merge_file_QTIlDc

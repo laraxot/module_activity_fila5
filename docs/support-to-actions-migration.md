@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_pC9Rr6
-<<<<<<< .merge_file_WJYGxE
-=======
-<<<<<<< .merge_file_9a77V8
-=======
->>>>>>> .merge_file_U8kJvw
-=======
->>>>>>> .merge_file_r7piv8
 ---
 title: "Migration: Support → Actions"
 type: note
@@ -14,13 +6,6 @@ updated: 2026-10-22
 tags: [docs, activity]
 qmd: "migration: support → actions activity"
 ---
-<<<<<<< .merge_file_pC9Rr6
-<<<<<<< .merge_file_WJYGxE
-=======
->>>>>>> .merge_file_yt0e1H
->>>>>>> .merge_file_U8kJvw
-=======
->>>>>>> .merge_file_r7piv8
 # Migration: Support → Actions
 
 **Module:** Activity  

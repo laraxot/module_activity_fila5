@@ -9,7 +9,9 @@ use PHPUnit\Framework\Assert;
 
 uses(\Modules\Activity\Tests\TestCase::class);
 
-test('Snapshot model can be instantiated', function () {
+test('Snapshot model can be instantiated', function (): void {
+    $snapshot = new Snapshot;
+    Assert::assertSame('snapshots', $snapshot->getTable());
 });
 
 test('BaseModel model can be instantiated', function () {

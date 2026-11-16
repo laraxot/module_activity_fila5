@@ -10,6 +10,8 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 use PHPUnit\Framework\Assert;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder;
 
+use function Safe\class_uses;
+
 uses(TestCase::class);
 
 test('stored event uses the activity connection and table', function (): void {

@@ -1,47 +1,15 @@
 ---
-<<<<<<< .merge_file_tRC4Hq
-<<<<<<< .merge_file_2vqoqY
 title: "Quality Report: Activity"
-=======
-<<<<<<< .merge_file_lf6ioX
-=======
->>>>>>> .merge_file_sEWldr
-title: "Quality Report — Activity"
-
-title: "Quality Report: Activity"
-<<<<<<< .merge_file_tRC4Hq
->>>>>>> .merge_file_TO2Szz
->>>>>>> .merge_file_DVjnFq
-=======
->>>>>>> .merge_file_sEWldr
 type: report
 tags: [quality, phpstan, pest, coverage]
 module: Activity
 created: 2026-08-24
 updated: 2026-08-24
 qmd: "Activity quality report phpstan pest coverage test ratio"
-<<<<<<< .merge_file_tRC4Hq
-<<<<<<< .merge_file_2vqoqY
 status: draft
 ---
 
 # Quality Report: Activity
-=======
-<<<<<<< .merge_file_lf6ioX
-=======
->>>>>>> .merge_file_sEWldr
----
-
-# Quality Report — Activity
-
-status: draft
-
-# Quality Report: Activity
-<<<<<<< .merge_file_tRC4Hq
->>>>>>> .merge_file_TO2Szz
->>>>>>> .merge_file_DVjnFq
-=======
->>>>>>> .merge_file_sEWldr
 
 Aggiornato: 2026-08-24. Rigenera con: `bashscripts/tools/quality-report.sh Activity`
 

@@ -4,30 +4,7 @@ type: concept
 sources: []
 confidence: high
 created: 2026-05-06
-<<<<<<< .merge_file_JhlAkI
-<<<<<<< .merge_file_09T6YR
 updated: 2026-07-16
-=======
-<<<<<<< .merge_file_5i0pEV
-<<<<<<< HEAD
-<<<<<<< HEAD
-updated: 2026-07-16
-=======
-updated: 2026-05-06
->>>>>>> 0a02158a (.)
-=======
-=======
-updated: 2026-07-16=======
->>>>>>> .merge_file_rJBDiW
-updated: 2026-05-06
-
-updated: 2026-07-16
-<<<<<<< .merge_file_JhlAkI
->>>>>>> .merge_file_N587kH
->>>>>>> .merge_file_eht5cE
-=======
-
->>>>>>> .merge_file_rJBDiW
 tags: [filament, xotbase, zen-pattern, resource]
 related:
   - ../../Xot/docs/wiki/concepts/xotbase-resourceform-zen-pattern.md
