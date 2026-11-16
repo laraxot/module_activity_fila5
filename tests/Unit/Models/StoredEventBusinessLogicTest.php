@@ -14,10 +14,10 @@ use function Safe\class_uses;
 
 uses(TestCase::class);
 
-test('stored event uses the activity connection and table', function (): void {
+test('stored event uses the default connection in testing and the stored_events table', function (): void {
     $storedEvent = new StoredEvent;
 
-    Assert::assertSame('activity', $storedEvent->getConnectionName());
+    Assert::assertSame(config('database.default'), $storedEvent->getConnectionName());
     Assert::assertSame('stored_events', $storedEvent->getTable());
 });
 

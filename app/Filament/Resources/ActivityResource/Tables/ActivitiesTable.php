@@ -36,7 +36,6 @@ class ActivitiesTable extends XotBaseResourceTable
             'subject_id' => TextColumn::make('subject_id')->searchable()->toggleable(isToggledHiddenByDefault: true),
             'causer_type' => TextColumn::make('causer_type')->searchable()->toggleable(isToggledHiddenByDefault: true),
             'causer_id' => TextColumn::make('causer_id')->searchable()->toggleable(isToggledHiddenByDefault: true),
-            'batch_uuid' => TextColumn::make('batch_uuid')->limit(30)->copyable()->toggleable(isToggledHiddenByDefault: true),
             'properties' => TextColumn::make('properties')
                 ->state(static fn (Activity $record): string => json_encode(
                     $record->properties,
@@ -45,6 +44,7 @@ class ActivitiesTable extends XotBaseResourceTable
                 ->limit(100)
                 ->wrap()
                 ->toggleable(isToggledHiddenByDefault: true),
+            'batch_uuid' => TextColumn::make('batch_uuid')->limit(30)->copyable()->toggleable(isToggledHiddenByDefault: true),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable(),
         ];

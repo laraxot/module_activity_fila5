@@ -7,14 +7,14 @@ use Modules\Activity\Models\StoredEvent;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('Snapshot model can be instantiated', function (): void {
     $snapshot = new Snapshot;
     Assert::assertSame('snapshots', $snapshot->getTable());
 });
 
-test('BaseModel model can be instantiated', function () {
+test('BaseModel model can be instantiated', function (): void {
     $baseModel = new class() extends BaseModel
     {
         protected $table = 'activity_base_models';
@@ -23,19 +23,19 @@ test('BaseModel model can be instantiated', function () {
     Assert::assertSame('activity_base_models', $baseModel->getTable());
 });
 
-test('Snapshot model has correct connection', function () {
+test('Snapshot model has correct connection', function (): void {
     $snapshot = new Snapshot();
 
     Assert::assertIsString($snapshot->getConnectionName());
 });
 
-test('StoredEvent model has correct connection', function () {
+test('StoredEvent model has correct connection', function (): void {
     $storedEvent = new StoredEvent();
 
     Assert::assertIsString($storedEvent->getConnectionName());
 });
 
-test('BaseModel model has correct connection', function () {
+test('BaseModel model has correct connection', function (): void {
     $baseModel = new class() extends BaseModel
     {
         protected $table = 'activity_base_models';

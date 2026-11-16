@@ -46,7 +46,9 @@ class ActivityLogger
             $userId = $user->getAttribute('id');
         }
         if ($userId === null) {
-            $userId = Auth::id();
+            $authId = Auth::id();
+            // Auth::id() e' int|string|null; un mock o un driver buggato puo' restituire altro.
+            $userId = is_int($authId) || is_string($authId) ? $authId : null;
         }
 
         /** @var Activity $activity */

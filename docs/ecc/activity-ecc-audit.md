@@ -1,4 +1,36 @@
 ---
+id: Activity/ecc-audit
+title: "ECC — audit di qualità del modulo Activity"
+status: in-progress
+module: Activity
+qmd: "Activity ECC audit verification security testing"
+references:
+  - ../bmad/audit.md
+  - 00-index.md
+---
+
+# ECC — audit Activity
+
+## Checklist
+
+- [x] PHPStan level massimo senza baseline o ignoreErrors.
+- [ ] Pest completato con database testing raggiungibile.
+- [x] PHP lint sui sei test corretti.
+- [ ] Policy e tenant boundary verificati con test runtime.
+- [ ] Redazione dei dati sensibili verificata nei log.
+- [ ] Documentazione ridondante classificata e consolidata.
+- [ ] QMD e graphify aggiornati dopo la chiusura.
+
+## Criterio di chiusura
+
+Lo stato passa a done solo con output Pest osservabile, finding aperti
+tracciati in story BMAD e aggiornamento degli indici.
+
+
+
+---
+
+---
 qmd: ECC audit modulo Activity verification security testing workflow
 title: ECC audit operativo modulo Activity
 status: baseline-review

@@ -30,6 +30,24 @@ PHPStan/Pest proporzionati.
 | Marker di conflitto | 0 |
 | Label/tooltip letterali Filament | 0 |
 
+
+## Analisi Funzionale e Scopo di Dominio
+
+### Perché Esiste (Scopo Fondamentale)
+Audit trail, event sourcing e tracciamento immutabile di tutte le mutazioni sui modelli e accessi utente.
+
+### Valore di Business e Utilità
+Garantisce la trasparenza amministrativa e la compliance GDPR tracciando creazioni, modifiche, cancellazioni (soft/hard) e login/logout.
+
+### Architettura e Pattern Laraxot
+Integrazione con spatie/laravel-activitylog, snapshot periodici, stored events. Le azioni di log sono incapsulate in Spatie QueueableAction (LogModelCreatedAction, LogModelUpdatedAction, ecc.).
+
+### Standard di Qualità e Conformità
+- **PHPStan**: Confermato a Level Max con 0 errori.
+- **Filament**: Conformità Filament 5 con estensione delle classi XotBase*.
+- **Naming**: Convenzione kebab-case rigorosa per tutti i documenti e classi PSR-4.
+- **Trans**: Traduzioni dinamiche via Lang, nessun testo hardcoded.
+
 ## Audit per dimensione
 
 ### Architettura e confini

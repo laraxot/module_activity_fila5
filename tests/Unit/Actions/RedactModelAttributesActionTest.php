@@ -36,9 +36,10 @@ describe('coverage senza database activity_log', function (): void {
         Assert::assertStringContainsString('not null', strtolower($hasBatchSql));
     });
 
-    test('modelli event-sourcing usano connection activity', function (): void {
+    test('modelli event-sourcing usano la connessione di default in testing', function (): void {
         Assert::assertSame('activity', (new Activity)->getConnectionName());
-        Assert::assertSame('activity', (new Snapshot)->getConnectionName());
-        Assert::assertSame('activity', (new StoredEvent)->getConnectionName());
+        // Snapshot/StoredEvent forzano `database.default` quando APP_ENV=testing.
+        Assert::assertSame(config('database.default'), (new Snapshot)->getConnectionName());
+        Assert::assertSame(config('database.default'), (new StoredEvent)->getConnectionName());
     });
 });

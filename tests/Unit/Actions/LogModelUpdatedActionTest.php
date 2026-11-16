@@ -29,9 +29,11 @@ test('LogModelUpdatedAction execute persiste updated con subject e causer', func
 
     Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame('updated', $activity->event);
+    Assert::assertSame($model::class, $activity->subject_type);
+
     $subjectKey = $model->getKey();
-    Assert::assertTrue(is_scalar($subjectKey));
-    Assert::assertTrue(is_scalar($activity->subject_id));
-    Assert::assertSame((string) $subjectKey, (string) $activity->subject_id);
-    Assert::assertSame((string) $user->id, (string) $activity->causer_id);
+    Assert::assertIsString($subjectKey);
+    Assert::assertIsString($activity->subject_id);
+    Assert::assertSame($subjectKey, $activity->subject_id);
+    Assert::assertSame($user->id, $activity->causer_id);
 });

@@ -9,6 +9,7 @@ use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\Activity\Tests\TestCase;
+use Modules\Xot\Filament\Resources\Pages\XotBasePage;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -33,7 +34,9 @@ test('list log activities page is abstract', function (): void {
 test('list log activities extends xot base page', function (): void {
     $page = makeListLogActivitiesPage();
 
-    Assert::assertSame(ListLogActivities::class, $page::class);
+    // La factory restituisce una classe anonima: si verifica l'ereditarieta', non il nome esatto.
+    Assert::assertInstanceOf(XotBasePage::class, $page);
+    Assert::assertInstanceOf(ListLogActivities::class, $page);
 });
 
 test('list log activities uses can paginate trait', function (): void {
