@@ -12,7 +12,7 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 function createUser(): User
 {
@@ -22,8 +22,13 @@ function createUser(): User
 describe('ActivityLogger', function (): void {
 
     test('logs simple activity', function (): void {
+<<<<<<< .merge_file_ZDc0WI
         $user = createUser();
         $logger = new ActivityLogger;
+=======
+        $user = createActionsTestUser();
+        $logger = new ActivityLogger();
+>>>>>>> .merge_file_TzF77g
         $activity = $logger->log('test_event', $user);
 
         Assert::assertSame('test_event', $activity->event);
@@ -31,8 +36,16 @@ describe('ActivityLogger', function (): void {
     });
 
     test('logs created event', function (): void {
+<<<<<<< .merge_file_ZDc0WI
+=======
+<<<<<<< .merge_file_SStaU1
+        $user = createActionsTestUser();
+        $logger = new ActivityLogger();
+=======
+>>>>>>> .merge_file_TzF77g
         $user = createUser();
         $logger = new ActivityLogger;
+>>>>>>> .merge_file_tMwRYu
         $model = activityCreateUser();
 
         $activity = $logger->created($model, $user);
@@ -42,8 +55,16 @@ describe('ActivityLogger', function (): void {
     });
 
     test('logs updated event', function (): void {
+<<<<<<< .merge_file_ZDc0WI
+=======
+<<<<<<< .merge_file_SStaU1
+        $user = createActionsTestUser();
+        $logger = new ActivityLogger();
+=======
+>>>>>>> .merge_file_TzF77g
         $user = createUser();
         $logger = new ActivityLogger;
+>>>>>>> .merge_file_tMwRYu
         $model = activityCreateUser();
 
         $activity = $logger->updated($model, $user);
@@ -53,8 +74,16 @@ describe('ActivityLogger', function (): void {
     });
 
     test('logs deleted event', function (): void {
+<<<<<<< .merge_file_ZDc0WI
+=======
+<<<<<<< .merge_file_SStaU1
+        $user = createActionsTestUser();
+        $logger = new ActivityLogger();
+=======
+>>>>>>> .merge_file_TzF77g
         $user = createUser();
         $logger = new ActivityLogger;
+>>>>>>> .merge_file_tMwRYu
         $model = activityCreateUser();
 
         $activity = $logger->deleted($model, $user);
@@ -64,8 +93,13 @@ describe('ActivityLogger', function (): void {
     });
 
     test('logs login event', function (): void {
+<<<<<<< .merge_file_ZDc0WI
         $user = createUser();
         $logger = new ActivityLogger;
+=======
+        $user = createActionsTestUser();
+        $logger = new ActivityLogger();
+>>>>>>> .merge_file_TzF77g
         $activity = $logger->login($user);
 
         Assert::assertSame('login', $activity->event);
@@ -73,8 +107,13 @@ describe('ActivityLogger', function (): void {
     });
 
     test('logs logout event', function (): void {
+<<<<<<< .merge_file_ZDc0WI
         $user = createUser();
         $logger = new ActivityLogger;
+=======
+        $user = createActionsTestUser();
+        $logger = new ActivityLogger();
+>>>>>>> .merge_file_TzF77g
         $activity = $logger->logout($user);
 
         Assert::assertSame('logout', $activity->event);

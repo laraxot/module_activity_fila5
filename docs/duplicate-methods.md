@@ -1,3 +1,9 @@
+<<<<<<< .merge_file_wP5Acq
+=======
+<<<<<<< .merge_file_ExttAJ
+# Metodi duplicati — Activity
+=======
+>>>>>>> .merge_file_z3iG51
 ---
 title: "Metodi duplicati: Activity"
 type: note
@@ -7,6 +13,10 @@ tags: [docs, activity]
 qmd: "metodi duplicati   activity activity"
 ---
 # Metodi duplicati: Activity
+<<<<<<< .merge_file_wP5Acq
+=======
+>>>>>>> .merge_file_Sv4AVY
+>>>>>>> .merge_file_z3iG51
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.
 

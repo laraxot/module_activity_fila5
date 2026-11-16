@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_yHB36J
+=======
+<<<<<<< .merge_file_UXHA5t
+=======
+>>>>>>> .merge_file_pXKpyb
 ---
 title: "Testing <nome progetto>ion Market"
 type: note
@@ -6,6 +11,10 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "testing <nome progetto>ion market activity"
 ---
+<<<<<<< .merge_file_yHB36J
+=======
+>>>>>>> .merge_file_xKD2Yw
+>>>>>>> .merge_file_pXKpyb
 # Testing <nome progetto>ion Market
 
 ## Unit Test

@@ -4,10 +4,21 @@ type: reference
 tags: [activity, api]
 created: 2026-07-28
 updated: 2026-07-28
+<<<<<<< .merge_file_juQiyi
 status: draft
 qmd: "activity module   api activity"
 ---
 
+=======
+<<<<<<< .merge_file_bGzAe8
+---
+
+=======
+status: draft
+qmd: "activity module   api activity"
+---
+
+>>>>>>> .merge_file_b9WDl1
 # Activity Module: API
 
 ## LogActivityAction
@@ -66,6 +77,10 @@ $activity->properties;    // JSON metadata
 
 > Nota 2026-10-14 (docs-audit): La firma 'execute(array $data): Activity' non esiste: LogActivityAction prende type, user, subject, properties, description nel costruttore e ha execute(): Activity (app/Actions/LogActivityAction.php). Vedi README.md. Contenuto non riscritto, verificare prima di usarlo.
 
+<<<<<<< .merge_file_juQiyi
+=======
+>>>>>>> .merge_file_iUN7VP
+>>>>>>> .merge_file_b9WDl1
 # Activity Module — API
 
 ## LogActivityAction

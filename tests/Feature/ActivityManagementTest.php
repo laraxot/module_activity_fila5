@@ -11,6 +11,7 @@ use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
 uses(\Modules\Activity\Tests\TestCase::class);
+<<<<<<< .merge_file_H136Y7
 
 beforeEach(function () {
     // Skip if database not available
@@ -20,6 +21,8 @@ beforeEach(function () {
         $this->markTestSkipped('Database not available: '.$e->getMessage());
     }
 });
+=======
+>>>>>>> .merge_file_d85D72
 
 test('user can create activity', function () {
     $user = UserFactory::new()->createOne();

@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_WTGTn3
+=======
+<<<<<<< .merge_file_3QB3UX
+=======
+>>>>>>> .merge_file_I197wA
 ---
 title: "Milestones - Activity"
 type: note
@@ -6,6 +11,10 @@ updated: 2026-10-07
 tags: [docs, activity, roadmap]
 qmd: "milestones - activity activity"
 ---
+<<<<<<< .merge_file_WTGTn3
+=======
+>>>>>>> .merge_file_nZcets
+>>>>>>> .merge_file_I197wA
 # Milestones - Activity
 
 ## M1 Documentation Baseline

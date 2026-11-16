@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_1wl0JI
+=======
+<<<<<<< .merge_file_QxJk8y
+=======
+>>>>>>> .merge_file_6BsKR5
 ---
 title: "PRD - Activity Module"
 type: note
@@ -6,6 +11,10 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "prd - activity module activity"
 ---
+<<<<<<< .merge_file_1wl0JI
+=======
+>>>>>>> .merge_file_jKP3fB
+>>>>>>> .merge_file_6BsKR5
 # PRD - Activity Module
 
 ## 1. Executive Summary
@@ -51,6 +60,11 @@ System observability and audit trails are fragmented and lack a unified, type-sa
 - 100% PHPStan Level 10 compliance.
 - Test coverage > 80% for logging logic.
 - API documentation completed.
+<<<<<<< .merge_file_1wl0JI
+=======
+<<<<<<< .merge_file_QxJk8y
+=======
+>>>>>>> .merge_file_6BsKR5
 ## 4. Technical Specifications
 
 ### Agnostic Design
@@ -85,4 +99,9 @@ System observability and audit trails are fragmented and lack a unified, type-sa
 ## 6. Non-Functional Requirements
 - **Performance:** Logging must be asynchronous to avoid blocking main requests.
 - **Observability:** Must expose metrics for logging rate and failure rate.
+<<<<<<< .merge_file_1wl0JI
 - **Security:** Logs must be immutable and access-controlled.
+=======
+- **Security:** Logs must be immutable and access-controlled.
+>>>>>>> .merge_file_jKP3fB
+>>>>>>> .merge_file_6BsKR5

@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_9732E1
+=======
+<<<<<<< .merge_file_L6zZW5
+=======
+>>>>>>> .merge_file_sB36fS
 ---
 title: "Correzioni PHPStan - Modulo Activity"
 type: note
@@ -6,6 +11,10 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "correzioni phpstan - modulo activity activity"
 ---
+<<<<<<< .merge_file_9732E1
+=======
+>>>>>>> .merge_file_tPku19
+>>>>>>> .merge_file_sB36fS
 # Correzioni PHPStan - Modulo Activity
 
 ## 🚨 Errori PHPStan Risolti

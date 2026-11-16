@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_aeBax8
+=======
+<<<<<<< .merge_file_GCYapS
+=======
+>>>>>>> .merge_file_keAE6F
 ---
 title: "Flusso Utente <nome progetto>ion Market"
 type: note
@@ -6,6 +11,10 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "flusso utente <nome progetto>ion market activity"
 ---
+<<<<<<< .merge_file_aeBax8
+=======
+>>>>>>> .merge_file_HVwpFz
+>>>>>>> .merge_file_keAE6F
 # Flusso Utente <nome progetto>ion Market
 
 1. **Creazione Mercato**: un utente crea un mercato (es. “Vincerà il candidato X?”).

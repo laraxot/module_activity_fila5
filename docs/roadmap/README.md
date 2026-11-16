@@ -49,12 +49,25 @@ The Activity module provides comprehensive audit trail and event sourcing capabi
 | 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](..) |
 
+<<<<<<< .merge_file_kYPv4i
+=======
+<<<<<<< .merge_file_9YV6aT
+---
+=======
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](..) |
+
+>>>>>>> .merge_file_eY5eET
 ### Phase 4: Advanced Analytics (Q4 2026)
 - [ ] Machine learning insights
 - [ ] Anomaly detection
 - [ ] <nome progetto>ive analytics
 - [ ] Custom dashboard widgets
 - [ ] API for external analytics tools
+<<<<<<< .merge_file_kYPv4i
 
 ## 🎯 Key Objectives
 
@@ -88,6 +101,9 @@ The Activity module provides comprehensive audit trail and event sourcing capabi
 - **Notify Module**: Alert notifications for critical activities
 
 ## 📝 Notes
+=======
+>>>>>>> .merge_file_Fn57I8
+>>>>>>> .merge_file_eY5eET
 
 - This module is critical for compliance and security
 - All activities must be immutable once logged

@@ -4,8 +4,16 @@ type: user_stories
 tags: [user stories, epics, activity]
 created: 2026-08-04
 updated: 2026-08-04
+<<<<<<< .merge_file_msLYBj
 status: draft
 qmd: "activity epics and user stories activity"
+=======
+<<<<<<< .merge_file_kk0Qv7
+=======
+status: draft
+qmd: "activity epics and user stories activity"
+>>>>>>> .merge_file_X4FkBv
+>>>>>>> .merge_file_5omaXh
 ---
 # Activity Epics and User Stories
 

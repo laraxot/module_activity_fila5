@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_OQydMb
+=======
+<<<<<<< .merge_file_T1wPyZ
+=======
+>>>>>>> .merge_file_LEpWuY
 ---
 title: "Analisi di Larabank-Aggregates (Spatie)"
 type: note
@@ -6,6 +11,10 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "analisi di larabank-aggregates (spatie) activity"
 ---
+<<<<<<< .merge_file_OQydMb
+=======
+>>>>>>> .merge_file_8ot8u4
+>>>>>>> .merge_file_LEpWuY
 # Analisi di Larabank-Aggregates (Spatie)
 
 ## Regole Implementate

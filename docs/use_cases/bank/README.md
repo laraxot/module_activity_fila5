@@ -61,11 +61,24 @@ L'obiettivo è fornire una panoramica neutra e riutilizzabile dei pattern, dei v
 | 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](../..) |
 
+<<<<<<< .merge_file_3gMS3I
+=======
+<<<<<<< .merge_file_f76Pgq
+---
+=======
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](../..) |
+
+>>>>>>> .merge_file_W2vD0k
 ### 3. Event Sourcing con Eventsauce
 - Simile ai projectors, ma con una libreria dedicata (Eventsauce)
 - Gestione avanzata di aggregate, snapshot, replay
 - Maggiore automazione e coerenza
 - Ideale per sistemi complessi e ad alta tracciabilità
+<<<<<<< .merge_file_3gMS3I
 
 ## Vantaggi e Limiti
 - **Tradizionale**: semplice, ma poco auditabile
@@ -75,6 +88,9 @@ L'obiettivo è fornire una panoramica neutra e riutilizzabile dei pattern, dei v
 ## Quando scegliere quale approccio?
 - **Tradizionale**: sistemi semplici, pochi requisiti di audit
 - **Projectors/Eventsauce**: sistemi critici, necessità di audit, rollback, proiezioni avanzate
+=======
+>>>>>>> .merge_file_Oi6FBP
+>>>>>>> .merge_file_W2vD0k
 
 ## Prossimi passi
 Consulta i file flow.md, domain_model.md, examples.md e tips.md per dettagli su flussi, modelli, esempi e best practice.

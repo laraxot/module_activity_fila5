@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_y5Anf8
+=======
+<<<<<<< .merge_file_iHtlya
+=======
+>>>>>>> .merge_file_OKVpmp
 ---
 title: "ACTIVITY MODULE - ROADMAP 2025"
 type: note
@@ -6,6 +11,10 @@ updated: 2026-10-07
 tags: [docs, activity]
 qmd: "activity module - roadmap 2025 activity"
 ---
+<<<<<<< .merge_file_y5Anf8
+=======
+>>>>>>> .merge_file_Zja2lL
+>>>>>>> .merge_file_OKVpmp
 # 🎯 ACTIVITY MODULE - ROADMAP 2025
 
 **Modulo**: Activity ([Description])  
@@ -37,6 +46,107 @@ Activity Module
     ├── [Utility 1]
     ├── [Utility 2]
     └── [Utility 3]
+<<<<<<< .merge_file_iHtlya
+=======
+```
+
+---
+
+## ✅ COMPLETED FEATURES
+
+### 🏛️ Core Features
+- [ ] **Feature 1**: [Description]
+- [ ] **Feature 2**: [Description]
+- [ ] **Feature 3**: [Description]
+
+### 🔧 Services
+- [ ] **Service 1**: [Description]
+- [ ] **Service 2**: [Description]
+- [ ] **Service 3**: [Description]
+
+### 🛠️ Technical Excellence
+- [ ] **PHPStan level 10**: 0 errori
+- [ ] **Filament 4.x**: Compatibilità completa
+- [ ] **Type Safety**: Type hints completi
+- [ ] **Error Handling**: Gestione errori robusta
+- [ ] **Testing Setup**: Configurazione test
+
+---
+
+## 🚧 IN PROGRESS FEATURES
+
+### 🚀 [Feature Name] (Priority: HIGH)
+**Status**: 0% COMPLETATO  
+**Timeline**: Q1 2025
+
+#### 📋 Tasks
+- [ ] **Task 1** (Priority: HIGH)
+  - [ ] Subtask 1
+  - [ ] Subtask 2
+  - [ ] Subtask 3
+
+#### 🎯 Success Criteria
+- [ ] Criterion 1
+- [ ] Criterion 2
+- [ ] Criterion 3
+
+---
+
+## 📅 PLANNED FEATURES
+
+### 🚀 [Feature Name] (Priority: MEDIUM)
+**Timeline**: Q2 2025
+
+#### 📋 Features
+- [ ] **Feature 1** (Priority: MEDIUM)
+  - [ ] Subtask 1
+  - [ ] Subtask 2
+  - [ ] Subtask 3
+
+#### 🎯 Success Criteria
+- [ ] Criterion 1
+- [ ] Criterion 2
+- [ ] Criterion 3
+
+---
+title: "ACTIVITY MODULE - ROADMAP 2025"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - roadmap 2025 activity"
+---
+# 🎯 ACTIVITY MODULE - ROADMAP 2025
+
+## Module Overview
+**Purpose**: Activity tracking and logging functionality
+**Status**: Activity tracking infrastructure
+**Dependencies**: Xot (core framework), User (activity subjects), all other modules (activity sources)
+
+## Current State Analysis
+
+### ✅ Completed Components
+- Basic activity tracking system
+- Activity logging capabilities
+- Integration with Laravel's activity log system
+- PHPStan Level 10 compliance
+
+### 🔄 In Progress Components
+- [ ] Advanced activity filtering and search
+- [ ] Activity analytics features
+
+### ❌ Missing/Incomplete Components
+- Complete activity categorization system
+- Advanced activity monitoring dashboard
+- Activity notification system
+- Activity audit trail with compliance features
+- Activity data export and reporting
+- Activity retention and archival policies
+- Activity comparison and trend analysis
+- Activity API for external integrations
+
+## Module Structure
+>>>>>>> .merge_file_Zja2lL
 ```
 
 ---
@@ -276,6 +386,31 @@ Activity/
 - [ ] Compliance features
 - [ ] 85%+ test coverage
 - [ ] Performance optimization
+<<<<<<< .merge_file_y5Anf8
+=======
+- [ ] Production preparation
+
+---
+
+<<<<<<< .merge_file_iHtlya
+## 🏆 SUCCESS CRITERIA
+
+### ✅ Q1 2025 Goals
+- [ ] Core features implemented
+- [ ] Basic testing complete
+- [ ] Documentation started
+- [ ] Integration working
+
+### 🎯 2025 Year-End Goals
+- [ ] All planned features implemented
+- [ ] Test coverage > 80%
+- [ ] Performance optimized
+- [ ] Documentation complete
+- [ ] Production ready
+- [ ] User satisfaction > 4.5/5
+
+---
+>>>>>>> .merge_file_OKVpmp
 
 ## Next Steps
 1. Begin Phase 1 with activity enhancement
@@ -285,6 +420,11 @@ Activity/
 
 ---
 
+<<<<<<< .merge_file_y5Anf8
+=======
+*Questa roadmap è specifica per il modulo Activity e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+=======
+>>>>>>> .merge_file_OKVpmp
 **Last Updated**: 2026-01-15
 **Maintainer**: Team Laraxot
 **Status**: Active Development
@@ -317,4 +457,9 @@ See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Mod
 - [roadmap/tasks/gdpr-compliance-enhancement.md](roadmap/tasks/gdpr-compliance-enhancement.md)
 - [roadmap/tasks/realtime-monitoring-dashboard.md](roadmap/tasks/realtime-monitoring-dashboard.md)
 - [roadmap/vision.md](roadmap/vision.md)
+<<<<<<< .merge_file_y5Anf8
 - [stabilization-roadmap.md](stabilization-roadmap.md)
+=======
+- [stabilization-roadmap.md](stabilization-roadmap.md)
+>>>>>>> .merge_file_Zja2lL
+>>>>>>> .merge_file_OKVpmp

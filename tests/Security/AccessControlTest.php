@@ -19,11 +19,16 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 it('denies activity viewAny to users without permission', function (): void {
+<<<<<<< .merge_file_oueMO4
     $user = UserFactory::new()->createOne();
     $policy = new ActivityPolicy;
+=======
+    $user = activityCreateUser();
+    $policy = new ActivityPolicy();
+>>>>>>> .merge_file_2MIKX7
 
     Assert::assertFalse($policy->viewAny($user));
 });
@@ -31,14 +36,19 @@ it('denies activity viewAny to users without permission', function (): void {
 it('allows activity viewAny to users with the correct permission', function (): void {
     $user = UserFactory::new()->createOne();
     $user->givePermissionTo('activity.viewAny');
-    $policy = new ActivityPolicy;
+    $policy = new ActivityPolicy();
 
     Assert::assertTrue($policy->viewAny($user));
 });
 
 it('denies activity view to users without permission', function (): void {
+<<<<<<< .merge_file_oueMO4
     $user = UserFactory::new()->createOne();
     $policy = new ActivityPolicy;
+=======
+    $user = activityCreateUser();
+    $policy = new ActivityPolicy();
+>>>>>>> .merge_file_2MIKX7
 
     Assert::assertFalse($policy->view($user));
 });
@@ -46,7 +56,7 @@ it('denies activity view to users without permission', function (): void {
 it('super-admin bypasses activity policy checks via before()', function (): void {
     $superAdmin = UserFactory::new()->createOne();
     $superAdmin->assignRole('super-admin');
-    $policy = new ActivityPolicy;
+    $policy = new ActivityPolicy();
 
     Assert::assertTrue($policy->viewAny($superAdmin));
     Assert::assertTrue($policy->view($superAdmin));

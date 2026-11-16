@@ -6,6 +6,18 @@ namespace Modules\Activity\Tests\Unit;
 
 use Filament\Tables\Enums\PaginationMode;
 use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
+<<<<<<< .merge_file_j6LsGN
+use Modules\Activity\Tests\TestCase;
+=======
+<<<<<<< .merge_file_NTgyjl
+>>>>>>> .merge_file_g8iVkV
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
+
+test('CanPaginate gestisce session e default senza database', function (): void {
+    $harness = new CanPaginateHarness();
+=======
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -13,6 +25,7 @@ uses(TestCase::class);
 
 test('CanPaginate gestisce session e default senza database', function (): void {
     $harness = new CanPaginateHarness;
+>>>>>>> .merge_file_PG3xVu
     $harness->recordsPerPage = 25;
 
     $harness->updatedRecordsPerPage();
@@ -26,7 +39,11 @@ test('CanPaginate gestisce session e default senza database', function (): void 
 });
 
 test('CanPaginate default option fallback senza database', function (): void {
+<<<<<<< .merge_file_NTgyjl
+    $harness = new CanPaginateHarness();
+=======
     $harness = new CanPaginateHarness;
+>>>>>>> .merge_file_PG3xVu
     $harness->setDefaultPerPage(25);
 
     Assert::assertSame(25, $harness->getDefaultRecordsPerPageSelectOption());
@@ -38,14 +55,22 @@ test('CanPaginate default option fallback senza database', function (): void {
 });
 
 test('CanPaginate recordsPerPage null usa default option', function (): void {
+<<<<<<< .merge_file_NTgyjl
+    $harness = new CanPaginateHarness();
+=======
     $harness = new CanPaginateHarness;
+>>>>>>> .merge_file_PG3xVu
     $harness->setDefaultPerPage(50);
 
     Assert::assertSame(50, $harness->getRecordsPerPage());
 });
 
 test('CanPaginate espone pagination mode default', function (): void {
+<<<<<<< .merge_file_NTgyjl
+    $harness = new CanPaginateHarness();
+=======
     $harness = new CanPaginateHarness;
+>>>>>>> .merge_file_PG3xVu
 
     Assert::assertSame(PaginationMode::Default, $harness->getPaginationMode());
 });

@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_uHRhQJ
+=======
+<<<<<<< .merge_file_odrjZU
+=======
+>>>>>>> .merge_file_wKCJMA
 ---
 title: "Approfondimento: Larabank-Eventsauce"
 type: note
@@ -6,6 +11,10 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "approfondimento: larabank-eventsauce activity"
 ---
+<<<<<<< .merge_file_uHRhQJ
+=======
+>>>>>>> .merge_file_dMONLs
+>>>>>>> .merge_file_wKCJMA
 # Approfondimento: Larabank-Eventsauce
 
 ## Cos'è Eventsauce

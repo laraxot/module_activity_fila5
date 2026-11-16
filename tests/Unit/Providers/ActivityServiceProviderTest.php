@@ -3,6 +3,11 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Providers;
+<<<<<<< .merge_file_U8jqyn
+=======
+
+use function Safe\json_encode;
+>>>>>>> .merge_file_FcMNce
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;

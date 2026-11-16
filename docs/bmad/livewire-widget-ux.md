@@ -1,13 +1,30 @@
 ---
+<<<<<<< .merge_file_3MPuAS
 title: "UX: Activity"
+=======
+<<<<<<< .merge_file_gBGfC8
+title: "UX — Activity"
+=======
+title: "UX: Activity"
+>>>>>>> .merge_file_FhjvqN
+>>>>>>> .merge_file_oOySen
 type: ux-design
 module: Activity
 related:
   - ./livewire-inventory.md
+<<<<<<< .merge_file_3MPuAS
+=======
+<<<<<<< .merge_file_gBGfC8
+=======
+>>>>>>> .merge_file_oOySen
 status: draft
 updated: 2026-10-07
 tags: [docs, activity, bmad]
 qmd: "ux activity activity"
+<<<<<<< .merge_file_3MPuAS
+=======
+>>>>>>> .merge_file_FhjvqN
+>>>>>>> .merge_file_oOySen
 ---
 
 # UX Activity

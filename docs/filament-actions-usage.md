@@ -373,6 +373,21 @@ class ListMyModelActivities extends ListLogActivities
 
 ---
 
+<<<<<<< .merge_file_Iex8Gz
+=======
+<<<<<<< .merge_file_03hLsT
+<<<<<<< HEAD
+<<<<<<< HEAD
+**
+=======
 **Ultimo aggiornamento**: 27 Ottobre 2025
+>>>>>>> 0a02158a (.)
+=======
+**Ultimo aggiornamento**: 27 Ottobre 2025
+>>>>>>> 35d8cf69 (Initial commit)
+=======
+>>>>>>> .merge_file_WfhE0B
+**Ultimo aggiornamento**: 27 Ottobre 2025
+>>>>>>> .merge_file_Cg7s4T
 **Pattern**: DRY + KISS per Actions riutilizzabili
 **Conformità**: ✅ PHPStan livello 9+, ✅ Pint, ✅ Test Suite

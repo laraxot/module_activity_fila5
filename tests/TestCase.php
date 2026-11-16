@@ -82,4 +82,36 @@ abstract class TestCase extends XotBaseTestCase
 
         return $this->page;
     }
+<<<<<<< .merge_file_gYngo2
+=======
+
+    /**
+     * Builds a fresh ListLogActivities page instance exposing the
+     * restore-notification helpers for coverage tests.
+     *
+     * Static so it can be called directly from within Pest test closures
+     * (including nested describe()/test() closures) without relying on
+     * $this, which PHPStan/Larastan cannot type-infer in that context.
+     */
+    public static function makeListLogActivitiesPage(): ListLogActivities
+    {
+        return new class() extends ListLogActivities
+        {
+            public static function getResource(): string
+            {
+                return ActivityResource::class;
+            }
+
+            public function exposeRestoreSuccess(): Notification
+            {
+                return $this->sendRestoreSuccessNotification();
+            }
+
+            public function exposeRestoreFailure(?string $message = null): Notification
+            {
+                return $this->sendRestoreFailureNotification($message);
+            }
+        };
+    }
+>>>>>>> .merge_file_tl5ibJ
 }

@@ -7,6 +7,7 @@ namespace Modules\Activity\Filament\Pages;
 use Exception;
 use Filament\Notifications\Notification;
 use Filament\Pages\Concerns\InteractsWithFormActions;
+use function Safe\json_encode;
 use Filament\Resources\Pages\Concerns\InteractsWithRecord;
 use Filament\Schemas\Schema;
 use Filament\Tables\Enums\PaginationMode;
@@ -65,10 +66,15 @@ abstract class ListLogActivities extends XotBasePage
 
         // Convert to string (__() returns string|array|null)
         if (is_array($breadcrumb)) {
+<<<<<<< .merge_file_6CLVVW
+            /** @phpstan-ignore-next-line cast.string */
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $breadcrumb));
+=======
             return implode(' ', array_map(
                 fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v),
                 $breadcrumb,
             ));
+>>>>>>> .merge_file_PbhoZO
         }
 
         if (is_string($breadcrumb)) {
@@ -92,10 +98,15 @@ abstract class ListLogActivities extends XotBasePage
 
         // __() returns string|array|null
         if (is_array($title)) {
+<<<<<<< .merge_file_6CLVVW
+            /** @phpstan-ignore-next-line argument.type */
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $title));
+=======
             return implode(' ', array_map(
                 fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v),
                 $title,
             ));
+>>>>>>> .merge_file_PbhoZO
         }
 
         if (is_string($title)) {
@@ -141,6 +152,7 @@ abstract class ListLogActivities extends XotBasePage
             throw new InvalidArgumentException('paginateQuery() with PaginationMode::Default must return LengthAwarePaginator');
         }
 
+        /** @var LengthAwarePaginator<int, Activity> $paginated */
         return $paginated;
     }
 
@@ -239,10 +251,15 @@ abstract class ListLogActivities extends XotBasePage
     {
         $title = __('activity::activities.events.restore_failed');
         $titleString = is_array($title)
+<<<<<<< .merge_file_6CLVVW
+            /** @phpstan-ignore-next-line cast.string */
+            ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title))
+=======
             ? implode(' ', array_map(
                 fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v),
                 $title,
             ))
+>>>>>>> .merge_file_PbhoZO
             : (is_string($title) ? $title : '');
 
         $notification = Notification::make()

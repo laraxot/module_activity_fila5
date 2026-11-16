@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_27gZ8o
+=======
+<<<<<<< .merge_file_TlI8OG
+=======
+>>>>>>> .merge_file_Yc8OX8
 ---
 title: "Introduzione al Use Case Bank (Event Sourcing)"
 type: note
@@ -6,6 +11,10 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "introduzione al use case bank (event sourcing) activity"
 ---
+<<<<<<< .merge_file_27gZ8o
+=======
+>>>>>>> .merge_file_Hh9JZT
+>>>>>>> .merge_file_Yc8OX8
 # Introduzione al Use Case Bank (Event Sourcing)
 
 Questo use case documenta la realizzazione di un sistema bancario ispirato a [larabank-aggregates](https://github.com/spatie/larabank-aggregates) di Spatie, che utilizza i pattern di event sourcing, aggregate root e proiettori per la gestione di conti correnti, transazioni e regole di business bancarie.

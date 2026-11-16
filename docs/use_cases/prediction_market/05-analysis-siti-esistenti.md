@@ -2,6 +2,11 @@
 module: theme
 topic: 05-analysis-siti-esistenti
 canonical: ../../../../../Themes/docs/shared-components/05-analisi-siti-esistenti.md
+<<<<<<< .merge_file_s50BBU
+=======
+<<<<<<< .merge_file_IxsZpk
+=======
+>>>>>>> .merge_file_wW2JE7
 title: "05 analysis siti esistenti"
 type: note
 updated: 2026-10-07
@@ -9,6 +14,10 @@ tags: [docs, activity, use_cases]
 qmd: "05 analysis siti esistenti activity"
 status: superseded
 superseded_by: analysis-siti-esistenti.md
+<<<<<<< .merge_file_s50BBU
+=======
+>>>>>>> .merge_file_DMpNvt
+>>>>>>> .merge_file_wW2JE7
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/05-analisi-siti-esistenti.md

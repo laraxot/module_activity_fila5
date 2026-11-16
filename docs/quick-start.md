@@ -4,11 +4,25 @@ type: guide
 tags: [activity, audit, logging]
 created: 2026-07-28
 updated: 2026-07-28
+<<<<<<< .merge_file_ZVkcMB
 status: draft
 qmd: "activity module   quick start activity"
 ---
 
 # Activity Module: Quick Start
+=======
+<<<<<<< .merge_file_0B60oG
+---
+
+# Activity Module — Quick Start
+=======
+status: draft
+qmd: "activity module   quick start activity"
+---
+
+# Activity Module: Quick Start
+>>>>>>> .merge_file_tYRiGL
+>>>>>>> .merge_file_uIk3Jl
 
 ## Log Activity
 

@@ -19,6 +19,7 @@ class StoredEventResource extends XotBaseResource
 {
     protected static ?string $model = StoredEvent::class;
 
+<<<<<<< .merge_file_PQkU7f
     #[Override]
     public function getFormSchemaOld(): array
     {
@@ -47,4 +48,7 @@ class StoredEventResource extends XotBaseResource
             'edit' => EditStoredEvent::route('/{record}/edit'),
         ];
     }
+=======
+    
+>>>>>>> .merge_file_e62xRX
 }

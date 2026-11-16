@@ -1,6 +1,19 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_6MPvsD
+
+use Illuminate\Support\Facades\File;
+use Mockery\MockInterface;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Modules\Xot\Contracts\UserContract;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
+use Symfony\Component\HttpKernel\Exception\HttpException;
+<<<<<<< .merge_file_gUZHJT
+use Modules\Activity\Tests\TestCase;
+=======
+use Tests\TestCase;
+=======
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\File;
 use Mockery\MockInterface;
@@ -8,6 +21,8 @@ use Modules\Xot\Contracts\UserContract;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Modules\Activity\Tests\TestCase;
+>>>>>>> .merge_file_YQXLRK
+>>>>>>> .merge_file_Y6I95N
 
 uses(TestCase::class);
 

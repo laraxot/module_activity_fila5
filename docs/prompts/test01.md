@@ -8,8 +8,16 @@ tags: [migrato-da-txt, activity]
 converted_from: test01.txt
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_R7Lz6N
 status: draft
 qmd: "test01 activity"
+=======
+<<<<<<< .merge_file_yphzKD
+=======
+status: draft
+qmd: "test01 activity"
+>>>>>>> .merge_file_iikmGX
+>>>>>>> .merge_file_nEVOlN
 ---
 
 FAILED  Modules\Activity\tests\Feature\ActivityEventSourcingTest > activity with batch scope returns…

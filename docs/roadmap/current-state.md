@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_2wsmsQ
+=======
+<<<<<<< .merge_file_kyYOJM
+=======
+>>>>>>> .merge_file_7Cyo3j
 ---
 title: "Current State - Activity"
 type: note
@@ -6,6 +11,10 @@ updated: 2026-10-07
 tags: [docs, activity, roadmap]
 qmd: "current state - activity activity"
 ---
+<<<<<<< .merge_file_2wsmsQ
+=======
+>>>>>>> .merge_file_Jf9VPo
+>>>>>>> .merge_file_7Cyo3j
 # Current State - Activity
 
 ## Baseline

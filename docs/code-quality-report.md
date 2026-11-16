@@ -1,3 +1,9 @@
+<<<<<<< .merge_file_r1fydS
+=======
+<<<<<<< .merge_file_MZP0ib
+# Code quality — modulo Activity
+=======
+>>>>>>> .merge_file_5lTwHI
 ---
 title: "Code quality: modulo Activity"
 type: note
@@ -7,13 +13,25 @@ tags: [docs, activity]
 qmd: "code quality   modulo activity activity"
 ---
 # Code quality: modulo Activity
+<<<<<<< .merge_file_r1fydS
+=======
+>>>>>>> .merge_file_LzVw86
+>>>>>>> .merge_file_5lTwHI
 
 Report locale (2026-07-17). Metodo: `phpstan analyse` livello max, `phpmd` (ruleset codesize+unusedcode), grep mirati (TODO/FIXME/@deprecated, dd()/dump(), facade in app/Actions, extends Filament diretto), rapporto file test/app.
 
 ## Numeri
 
 - File in `app/`: 65
+<<<<<<< .merge_file_r1fydS
 - File di test: 83: rapporto test/app: 127%
+=======
+<<<<<<< .merge_file_MZP0ib
+- File di test: 83 — rapporto test/app: 127%
+=======
+- File di test: 83: rapporto test/app: 127%
+>>>>>>> .merge_file_LzVw86
+>>>>>>> .merge_file_5lTwHI
 - File con TODO/FIXME/@deprecated: 73
 - PHPStan: 0 errori (livello max, sweep repo-wide 2026-07-16/17)
 - Violazioni PHPMD (codesize+unusedcode): 9
@@ -62,11 +80,27 @@ Report locale (2026-07-17). Metodo: `phpstan analyse` livello max, `phpmd` (rule
 
 
 
+<<<<<<< .merge_file_r1fydS
 ## Come migliorare: modifiche effettive da fare
 
 ### 1. Rimuovere le Facade da `app/Actions/`
 
 Regola del progetto (skill `queueable-action-trait`): nelle Action **niente Facade**, le dipendenze si iniettano nel costruttore: il container le risolve automaticamente quando l'Action viene chiamata con `app(XxxAction::class)->execute(...)`.
+=======
+<<<<<<< .merge_file_MZP0ib
+## Come migliorare — modifiche effettive da fare
+
+### 1. Rimuovere le Facade da `app/Actions/`
+
+Regola del progetto (skill `queueable-action-trait`): nelle Action **niente Facade**, le dipendenze si iniettano nel costruttore — il container le risolve automaticamente quando l'Action viene chiamata con `app(XxxAction::class)->execute(...)`.
+=======
+## Come migliorare: modifiche effettive da fare
+
+### 1. Rimuovere le Facade da `app/Actions/`
+
+Regola del progetto (skill `queueable-action-trait`): nelle Action **niente Facade**, le dipendenze si iniettano nel costruttore: il container le risolve automaticamente quando l'Action viene chiamata con `app(XxxAction::class)->execute(...)`.
+>>>>>>> .merge_file_LzVw86
+>>>>>>> .merge_file_5lTwHI
 
 Facade usate in questo modulo e relativa dipendenza da iniettare al loro posto:
 
@@ -77,7 +111,15 @@ Facade usate in questo modulo e relativa dipendenza da iniettare al loro posto:
 | `Log::` | `Psr\Log\LoggerInterface` |
 | `Schema::` | `Illuminate\Database\ConnectionInterface (poi ->getSchemaBuilder())` |
 
+<<<<<<< .merge_file_r1fydS
 **Esempio concreto**: `Modules/Activity/app/Actions/ActivityMaintenanceAction.php`:
+=======
+<<<<<<< .merge_file_MZP0ib
+**Esempio concreto** — `Modules/Activity/app/Actions/ActivityMaintenanceAction.php`:
+=======
+**Esempio concreto**: `Modules/Activity/app/Actions/ActivityMaintenanceAction.php`:
+>>>>>>> .merge_file_LzVw86
+>>>>>>> .merge_file_5lTwHI
 
 ```php
 // PRIMA
@@ -113,7 +155,15 @@ class XxxAction
 }
 ```
 
+<<<<<<< .merge_file_r1fydS
 Vantaggio pratico: l'Action diventa testabile senza `Http::fake()` globale: nei test Pest si passa un mock/fake del client via `app()->instance(HttpFactory::class, $fakeClient)` o via binding nel service provider di test.
+=======
+<<<<<<< .merge_file_MZP0ib
+Vantaggio pratico: l'Action diventa testabile senza `Http::fake()` globale — nei test Pest si passa un mock/fake del client via `app()->instance(HttpFactory::class, $fakeClient)` o via binding nel service provider di test.
+=======
+Vantaggio pratico: l'Action diventa testabile senza `Http::fake()` globale: nei test Pest si passa un mock/fake del client via `app()->instance(HttpFactory::class, $fakeClient)` o via binding nel service provider di test.
+>>>>>>> .merge_file_LzVw86
+>>>>>>> .merge_file_5lTwHI
 
 File da convertire in questo modulo (elenco sopra in "Numeri"), uno alla volta, con `php -l` + PHPStan L max sul singolo file dopo ogni modifica.
 
