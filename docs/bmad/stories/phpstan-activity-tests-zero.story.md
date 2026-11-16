@@ -55,3 +55,20 @@ se possibile; aggiornare docs bmad modulo + diario Xot swarm.
 ## Lock
 
 `bashscripts/lock/lock.sh laravel/Modules/Activity`
+
+
+## Aggiornamento gate Modules (2026-11-16)
+
+Supersede: residui dell’output utente `phpstan analyse Modules` (7 errori test Activity).
+Link da: `docs/sprint-status.yaml` → `Activity/phpstan-modules-residual-7-tests`.
+Istruzione utente (verbatim): paste dei 7 errori su LogModel*/Listeners/OtherModels/ActivityPolicyTest.
+
+| Errore | Fix nel working tree |
+|---|---|
+| `assign.unused` / `variable.unused` LogModelCreated | execute + assert event/subject (niente `$action` morto) |
+| `cast.string` LogModelDeleted/Updated | `assertIsString` + confronto, niente `(string)` su mixed |
+| `pest.test.emptyClosure` LoginListener / Snapshot / SnapshotPolicy | assertion PHPUnit |
+| regressione fixture `$incrementing` `@var list<string>` | `@var bool` + `$keyType = 'string'` |
+
+Verifica: `phpstan analyse` sui 6 file → **[OK] No errors**.  
+Pest Activity: hang bootstrap su MySQL `10.100.200.53` (conn `user`) — skip documentato; host `192.168.1.40`.
