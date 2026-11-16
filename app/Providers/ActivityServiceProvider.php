@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Providers;
 
-use Laravel\Folio\Folio;
 use Modules\Activity\Actions\Config\ApplyActivityConfigAction;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Override;
@@ -13,6 +12,10 @@ use Override;
  * Service Provider per il modulo Activity.
  *
  * Gestisce la registrazione e il boot del modulo per il tracciamento delle attività utente.
+ *
+ * NON monta Folio: `Modules\Cms\Providers\FolioVoltServiceProvider` registra già
+ * `resources/views/pages` (e `pages/api` → `/api`) per ogni modulo abilitato.
+ * Un `Folio::path()` qui è ridondante, anti-DRY e rischia l'ordine delle catch-all.
  *
  * @phpstan-type ModuleConfig array{name: string, alias: string, description: string, keywords: array<int, string>, priority: int, providers: array<int, class-string>}
  */
@@ -49,25 +52,9 @@ class ActivityServiceProvider extends XotBaseServiceProvider
         // Registra i componenti Blade personalizzati
         $this->registerBladeComponents();
 
-        // Monda le pagine Folio del modulo (es. pages/api/log-download.blade.php ->
-        // GET /api/log-download). La registrazione e' rimandata a container
-        // avviato: Folio crea una rotta catch-all fallback e la prima registrata
-        // vince, quindi il mount non deve precedere le fallback dei pannelli
-        // Filament (stesso pattern di FolioVoltServiceProvider del modulo Cms).
-        $this->app->booted(function (): void {
-            $pagesPath = $this->module_dir.'/../../resources/views/pages';
-            if (is_dir($pagesPath)) {
-                Folio::path($pagesPath)->middleware(['*' => ['web']]);
-            }
-        });
-
         // Le impostazioni salvate dal tenant (SettingPage) arrivano al pacchetto activitylog.
         app(ApplyActivityConfigAction::class)->execute();
     }
-
-    /**
-     * Registra i servizi del provider.
-     */
 
     /**
      * Registra le configurazioni del modulo.

@@ -52,13 +52,10 @@ Cause e fix:
   `ActivityResource::table()`/`SnapshotResource::table()`/`StoredEventResource::table()`;
   azioni asserite via `Table::getFlatActions()` (Filament 5 indicizza per nome, non per chiave array);
   schema `SnapshotForm` allineato alle chiavi reali (`aggregate_uuid`, `aggregate_version`, `state`).
-- **Confine Folio**: questo checkout non contiene il modulo `Cms` e non deve
-  introdurlo. `FolioServiceProvider` applicativo non viene usato per montare
-  automaticamente le pagine dei moduli; nei progetti che includono il modulo
-  comune CMS il punto corretto è `Cms/app/Providers/FolioVoltServiceProvider`.
-  Activity non registra quindi `Folio::path()` nel proprio provider: la pagina
-  Folio di download resta una dipendenza del runtime CMS e va verificata solo
-  in un progetto che possiede quel modulo.
+- **Confine Folio**: owner unico = `Cms\FolioVoltServiceProvider` (mai
+  `App\Providers\FolioServiceProvider`, mai `Folio::path` in Activity).
+  Download: `pages/api/log-download` → `/api/log-download` via Cms.
+  SSoT: [folio-volt-sole-owner.md](../../../Cms/docs/bmad/folio-volt-sole-owner.md).
 
 File toccati: `tests/TestCase.php`, `tests/Feature/{ActionsTest,BaseModelBusinessLogicTest,
 BaseModelBusinessLogicPestTest,CodeQualityTest,FilamentTest}.php`,

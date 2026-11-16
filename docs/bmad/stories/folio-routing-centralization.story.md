@@ -16,15 +16,16 @@ necessario replicare lo stesso blocco in ogni modulo con pagine `resources/views
 
 ## Decisione
 
-`App\Providers\FolioServiceProvider` è l'unico owner del montaggio Folio:
+Owner del montaggio Folio in questo progetto:
+`Modules\Cms\Providers\FolioVoltServiceProvider`.
 
-- mantiene il path applicativo solo quando la directory esiste;
-- monta le directory `resources/views/pages` di tutti i moduli abilitati;
-- applica `web` alle pagine dei moduli;
-- il provider è esplicitamente registrato in `bootstrap/providers.php`.
+- monta tema + `resources/views/pages` di ogni modulo abilitato (`uri($locale)`);
+- monta `pages/api` con `uri('/api')` + middleware `web`
+  → `log-download.blade.php` = GET `/api/log-download`;
+- mount in `booted()` (non prima delle fallback Filament).
 
-Il provider `ActivityServiceProvider` resta proprietario della configurazione e
-del comportamento Activity, non dell'infrastruttura di routing globale.
+`ActivityServiceProvider` = config/comportamento Activity, **non** router.
+Niente `Folio::path()` lì (rimozione applicata; istruzione utente: aggiungere Folio nel provider «è sbagliato»).
 
 ## Verifica
 
@@ -36,6 +37,6 @@ del comportamento Activity, non dell'infrastruttura di routing globale.
 ## Acceptance criteria
 
 - [x] Nessuna registrazione `Folio::path()` nel provider Activity.
-- [x] Provider Folio globale registrato dall'applicazione.
+- [x] Owner unico: `Cms\FolioVoltServiceProvider` (nessun `App\Providers\FolioServiceProvider`).
 - [x] Pagina Activity visibile nell'inventario Folio.
 - [ ] Pest feature verde in ambiente di test stabile.
