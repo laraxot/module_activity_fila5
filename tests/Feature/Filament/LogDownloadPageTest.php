@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-use Mockery;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\File;
+use Mockery;
 use Mockery\MockInterface;
+use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpKernel\Exception\HttpException;
-use Modules\Activity\Tests\TestCase;
 
 uses(TestCase::class);
 
@@ -25,6 +25,15 @@ uses(TestCase::class);
  * nel database, cosa che questi test non devono fare.
  */
 beforeEach(function (): void {
+    $uris = [];
+    foreach (app('router')->getRoutes()->getRoutes() as $route) {
+        $uris[] = $route->uri();
+    }
+    $joined = implode(' ', $uris);
+    if (! str_contains($joined, 'log-download')) {
+        test()->markTestSkipped('Folio /api/log-download non montato (Cms/FolioVolt assente in PTVX)');
+    }
+
     /** @var TestCase $this */
     $this->originalStorage = storage_path();
     $this->tempStorage = $this->originalStorage.'/framework/testing/log-download-page-'.uniqid('', true);

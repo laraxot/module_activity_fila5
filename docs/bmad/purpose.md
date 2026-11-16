@@ -5,7 +5,7 @@ status: active
 created: 2026-09-02
 tags: [activity, purpose, audit, event-sourcing, snapshot, tracciabilita]
 qmd: "activity scopo modulo audit log event sourcing snapshot stored event tracciabilita chi ha cambiato"
-updated: 2026-09-02
+updated: 2026-11-16
 issues:
   # DA CREARE — `gh` non autenticato: mai numeri inventati.
   # gh issue create --repo provtv/module_activity_fila5 --title "<argomento del file>"
@@ -96,3 +96,17 @@ argomento.
 
 - `laravel/Modules/Incentivi/docs/purpose.md` — la collisione di nome
 - `docs/wiki/memories/data-sacred-no-destructive-db.md`
+- [Audit profondo](./audits/activity-audit.md) · [Epics](./epics.md) · [Architettura](./architecture.md)
+
+## Stato del codice rispetto allo scopo (verificato 2026-11-16)
+
+Lo scopo ("chi ha cambiato cosa, quando, com'era prima") implica tre invarianti. Il codice ne soddisfa solo in parte:
+
+| Invariante | Stato | Evidenza |
+|---|---|---|
+| Registra davvero cio' che dichiara | **parziale** — il logout si registra, `LoginListener` e' vuoto | `app/Listeners/LoginListener.php:12` |
+| Il registro non si riscrive | **no** — Edit/Delete da UI sul registro e sull'event store | `EditActivity.php:18` |
+| Nessun segreto nel registro | **latente** — redazione scritta ma non collegata | `RedactModelAttributesAction.php:19` |
+
+Il resto (policy per permesso, log viewer protetto, restore limitato al record) regge: vedi i
+"non-finding" nell'[audit](./audits/activity-audit.md#verificato-e-non-è-un-finding).

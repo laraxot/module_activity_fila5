@@ -1,43 +1,38 @@
 ---
-title: "Centralizzare il routing Folio dei moduli"
-status: review
+title: "Activity non monta Folio (PTVX senza Cms)"
+status: done
 module: Activity
 epic: architecture
-qmd: "BMAD Folio routing Activity provider CMS FolioVoltServiceProvider confine modulo"
+qmd: "BMAD Folio Activity no mount Cms assente PTVX confine modulo"
+related:
+  - ../../../../../../docs/wiki/memories/filament5-layout-contract-shared-modules.md
+  - ../../../../User/docs/wiki/concepts/folio-pages-owner-pattern.md
 ---
 
-# Story: centralizzare il routing Folio dei moduli
+# Activity non monta Folio
 
-## Problema
+## Perché `Folio::path` in ActivityServiceProvider è sbagliato
 
-`ActivityServiceProvider` registrava direttamente una directory Folio. Questo
-faceva dipendere il router globale dal provider di un singolo modulo e rendeva
-necessario replicare lo stesso blocco in ogni modulo con pagine `resources/views/pages`.
+Anche senza Cms in PTVX, un modulo di dominio **non** è il router Folio.
 
-## Decisione
+| Ruolo | Owner |
+|-------|--------|
+| File `resources/views/pages/**` | modulo dominio (Activity) |
+| `Folio::path` nei progetti FO con Cms | `Cms/FolioVoltServiceProvider` |
+| `Folio::path` in PTVX | **non** Activity; App Folio non è un sostituto di Cms per le pagine moduli |
 
-In questo checkout il modulo `Cms` non è presente e non va introdotto. Di
-conseguenza `ActivityServiceProvider` non deve montare Folio e
-`App\Providers\FolioServiceProvider` non va usato come sostituto: il provider
-applicativo monta soltanto `resources/views/pages`, non le pagine dei moduli.
+Motivi:
 
-Nei progetti che includono il modulo comune CMS, il solo owner delle pagine
-Folio dei moduli e dei temi è `Cms/app/Providers/FolioVoltServiceProvider`.
-Activity resta proprietario della configurazione e del comportamento Activity,
-non dell'infrastruttura di routing.
+1. Confine ECC — Activity = activitylog/LogViewer; routing FO cross-cutting.
+2. DRY — altrimenti ogni modulo copia un mount incompleto.
+3. Race fallback Folio vs Filament (PTVX è panel-heavy).
+4. Portfolio — Activity è modulo *condiviso*: non deve assumere Cms né inventare un mini-FolioVolt.
 
-## Verifica
+In PTVX Cms non c’è e non deve stare: si **impara** il pattern dai sibling FO, non si importa il modulo.
 
-- `php -l` sui provider: verde;
-- `Cms` assente dall'inventario dei moduli;
-- `bootstrap/providers.php` non registra `App\Providers\FolioServiceProvider`;
-- `Folio::path()` assente da `ActivityServiceProvider`;
-- `phpstan analyse Modules`: gate da rieseguire dopo il rilascio del lock;
-- Pest feature `LogDownloadPageTest`: da eseguire solo in ambiente di test raggiungibile.
+## Decisione PTVX
 
-## Acceptance criteria
-
-- [ ] Nessuna registrazione `Folio::path()` nel provider Activity (file ancora sotto lock concorrente).
-- [x] Nessun provider Folio applicativo aggiunto o registrato.
-- [x] Il routing Folio resta responsabilità del CMS nei progetti che lo includono.
-- [ ] Pest feature verde in ambiente di test stabile.
+- [x] Nessun `Folio::path` / `use Laravel\Folio\Folio` in `ActivityServiceProvider`.
+- [x] Nessun `Modules/Cms` introdotto.
+- [x] `App\Providers\FolioServiceProvider` non registrato e **non scomodato**: nei sibling FO basta FolioVolt; qui non è un surrogato.
+- [x] Pest `ActivityServiceProviderNoFolioMountTest`.
