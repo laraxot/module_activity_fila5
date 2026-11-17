@@ -25,6 +25,16 @@ uses(TestCase::class);
  * nel database, cosa che questi test non devono fare.
  */
 beforeEach(function (): void {
+    // Skip se Folio non ha montato /api/log-download (ambiente senza Cms/FolioVolt).
+    $uris = [];
+    foreach (app('router')->getRoutes()->getRoutes() as $route) {
+        $uris[] = $route->uri();
+    }
+    $joined = implode(' ', $uris);
+    if (! str_contains($joined, 'log-download')) {
+        test()->markTestSkipped('Folio /api/log-download non montato (Cms/FolioVolt assente in PTVX)');
+    }
+
     /** @var TestCase $this */
     $this->originalStorage = storage_path();
     $this->tempStorage = $this->originalStorage.'/framework/testing/log-download-page-'.uniqid('', true);
