@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_B4y1J3
-=======
 ---
 title: "Filament v4 Icon Size Attribute Fix"
 type: note
@@ -9,7 +7,6 @@ qmd: "filament v4 icon size attribute fix activity"
 status: superseded
 superseded_by: filament-v4-icon-size-fix-attribute.md
 ---
->>>>>>> .merge_file_tDDIUu
 # Filament v4 Icon Size Attribute Fix
 
 ## Issue Description
@@ -46,7 +43,7 @@ In Filament v4, the `size` attribute for icons changed from accepting string val
    - Removed `:size="24"` from icon component
    - Size controlled via CSS classes `h-36`
 
-3. **Modules/Quaeris/resources/views/filament/widgets/overlook-stats.blade.php**
+3. **Modules/<nome progetto>/resources/views/filament/widgets/overlook-stats.blade.php**
    - Removed `:size="24"` from two icon instances
    - Size controlled via CSS classes `size-4` and `h-36`
 

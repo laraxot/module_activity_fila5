@@ -1,11 +1,10 @@
 ---
 title: "Ottimizzazioni DRY + KISS - Modulo Activity"
+qmd: "activity ottimizzazioni dry kiss md"
 type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "ottimizzazioni dry + kiss - modulo activity activity"
+tags: [documentation]
 ---
+
 # Ottimizzazioni DRY + KISS - Modulo Activity
 
 ## Panoramica del Modulo
@@ -188,7 +187,7 @@ class Activity extends SpatieActivity {}
 #### D. Ottimizzazione Form Schema (KISS)
 ```php
 // PRIMA: Metodo getFormSchema con array hardcoded
-public function getFormSchema(): array
+public static function getFormSchema(): array
 {
     return [
         'log_name' => TextInput::make('log_name')->required(),
@@ -371,11 +370,11 @@ protected function registerConfig(): void
 - **Maintainability**: +60% codice più semplice
 
 ## Collegamenti
-- [Modulo UI](../UI/docs/ottimizzazioni-dry-kiss.md)
+- [Modulo UI](ottimizzazioni-dry-kiss.md)
 
 ---
 
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS Activity Module*
 - [Template Standardizzato](../../../docs/template-modulo-standardizzato.md)
 - [Ottimizzazioni Master](../../../docs/ottimizzazioni-modulari-master.md)
-- [Modulo UI](../ui/docs/ottimizzazioni-dry-kiss.md)
+- [Modulo UI](ottimizzazioni-dry-kiss.md)

@@ -1,36 +1,63 @@
 ---
-id: Activity/module-bmad-audit-20260928
-title: "Activity: baseline BMAD e analisi completa"
-status: ready-for-dev
+title: "Module BMAD audit — Activity"
+status: review
+updated: 2026-11-16
 module: Activity
-epic: module-governance
-priority: P1
-created: 2026-09-28
-references:
-  - ../architecture/module-boundary.md
-  - ../brainstorming/module-opportunities.md
-  - ../epics/module-roadmap.md
-type: story
-updated: 2026-10-07
-tags: [docs, activity, bmad]
-qmd: "story   activity: baseline bmad activity"
+bmad: true
+qmd: "story BMAD audit modulo Activity inventario gate"
 ---
-# Story: Activity: baseline BMAD
 
-Come manutentore del modulo Activity, voglio una baseline BMAD verificabile, così da poter pianificare lavoro senza confondere ipotesi, WIP e comportamento osservato.
+# Story: audit BMAD del modulo Activity
 
-## Acceptance criteria
+## Acceptance
 
-- [ ] Confermare API pubblica e confini con riferimenti a codice reale.
-- [ ] Inventariare i flussi critici e collegarli a test Pest.
-- [ ] Misurare PHPStan/Pest nel contesto stabile del modulo.
-- [ ] Registrare dipendenze, rischi e decisioni nel modulo.
-- [ ] Aggiornare lo stato reale in `docs/sprint-status.yaml`.
+- [x] Inventario source-first (2026-11-16).
+- [x] Audit + piano in `docs/bmad/`.
+- [x] Pack ECC in `docs/ecc/`.
+- [x] Pest modulo eseguito in ambiente testing stabile.
+- [ ] Finding P0/P1 chiusi con regressione.
 
-## Task
+## Riferimenti
 
-- [ ] Revisione architettura.
-- [ ] Brainstorming con stakeholder.
-- [ ] Decomposizione epic in story più piccole.
-- [ ] Quality gate e second-brain write-back.
+- [audit](../audit.md)
+- [piano](../piano-miglioramento.md)
+- [ECC](../../ecc/activity-ecc-audit.md)
 
+## Esito
+
+Baseline audit aggiornata. PHPStan tree `Modules` a 0. Pest e chiusura P0/P1 aperti.
+
+## Pest Feature fixes 2026-11-16
+
+`Modules/Activity/tests/Feature`: 16 failed / 165 passed → **0 failed / 181 passed / 9 skipped**
+(`PEST_OUT=/tmp/pest-activity-feature-fix.log bash bashscripts/tools/pest-scratch-db.sh Modules/Activity/tests/Feature`,
+Duration ~660s). PHPStan `Modules/Activity` resta a 0 errori.
+
+Cause e fix:
+
+- **Helper globali non caricati** (`activityCreateUser`): Pest carica `Pest.php`/`Helpers.php`
+  solo dal `--test-directory` della run. Stesso pattern del fix Unit: `TestCase::activityCreateUser()`
+  e `TestCase::activityCreateActivity()` static in `tests/TestCase.php`; aggiornati
+  `tests/Feature/ActionsTest.php` e `tests/Security/AccessControlTest.php`.
+- **Trait factory**: `BaseModelBusinessLogic{,Pest}Test` asserivano `HasFactory`, ma la
+  convenzione Laraxot e' `HasXotFactory` (ereditato da `XotBaseModel`, come in
+  `Modules/Xot/tests/Feature/XotBaseModelBusinessLogicTest.php`). Allineate le asserzioni.
+- **Docs dedup**: `CodeQualityTest` cercava `docs/README.md`/`docs/readme.md`, consolidati
+  in `docs/bmad/readme.md` (commit 73c5b7dc). Test allineato al nuovo path.
+- **Tooltip action**: `ListLogActivitiesAction` non usa piu' `->tooltip()` hardcoded
+  (regola no-filament-labels, auto-traduzione LangServiceProvider). Test allineato:
+  `getTooltip()` e' `null` di proposito.
+- **Pagine Lista Filament**: `XotBaseListRecords` non usa piu' `HasXotTable`; la tabella si
+  costruisce da `XotBaseResource::table()` → `*Table` class. `FilamentTest` ora chiama
+  `ActivityResource::table()`/`SnapshotResource::table()`/`StoredEventResource::table()`;
+  azioni asserite via `Table::getFlatActions()` (Filament 5 indicizza per nome, non per chiave array);
+  schema `SnapshotForm` allineato alle chiavi reali (`aggregate_uuid`, `aggregate_version`, `state`).
+- **Confine Folio**: owner unico = `Cms\FolioVoltServiceProvider` (mai
+  `App\Providers\FolioServiceProvider`, mai `Folio::path` in Activity).
+  Download: `pages/api/log-download` → `/api/log-download` via Cms.
+  SSoT: [folio-volt-sole-owner.md](../../../Cms/docs/bmad/folio-volt-sole-owner.md).
+
+File toccati: `tests/TestCase.php`, `tests/Feature/{ActionsTest,BaseModelBusinessLogicTest,
+BaseModelBusinessLogicPestTest,CodeQualityTest,FilamentTest}.php`,
+`tests/Feature/Filament/Actions/ListLogActivitiesActionTest.php`,
+`tests/Security/AccessControlTest.php`, `app/Providers/ActivityServiceProvider.php`.

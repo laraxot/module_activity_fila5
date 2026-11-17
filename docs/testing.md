@@ -1,19 +1,11 @@
-<<<<<<< .merge_file_FEAyr2
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_pKwAiA
 ---
 title: "Activity Module Testing"
 type: guide
 tags: [activity, testing, pest]
 created: 2026-07-28
 updated: 2026-07-28
-<<<<<<< .merge_file_FEAyr2
-=======
 status: draft
 qmd: "activity module   testing activity"
->>>>>>> .merge_file_pKwAiA
 ---
 
 # Activity Module — Testing
@@ -43,15 +35,9 @@ test('logs causer on user action', function () {
     $activity = Activity::latest()->first();
     expect($activity->causer_id)->toBe($admin->id);
 });
-<<<<<<< .merge_file_FEAyr2
 ```
-=======
-=======
->>>>>>> 35d8cf69 (Initial commit)
 # Testing Documentation
-=======
 ```# Testing Documentation
->>>>>>> .merge_file_pKwAiA
 
 ## Overview
 
@@ -124,7 +110,7 @@ Configure Activity-specific settings:
 protected function setUp(): void
 {
     parent::setUp();
-    
+
     // Configure Activity module
     config(['activity.default_log_level' => 'info']);
     config(['activity.cache_enabled' => false]);
@@ -145,7 +131,7 @@ test('activity can be created', function () {
         'user_agent' => 'Test Agent',
         'data' => ['key' => 'value'],
     ]);
-    
+
     expect($activity)->toBeInstanceOf(\Modules\Activity\Models\Activity::class);
     expect($activity->type)->toBe('user_action');
 });
@@ -156,7 +142,7 @@ test('activity can be created', function () {
 ```php
 test('activity configuration is loaded', function () {
     $activityConfig = config('activity');
-    
+
     expect($activityConfig['default_log_level'])->toBe('info');
     expect($activityConfig['cache_enabled'])->toBe(false);
 });
@@ -167,7 +153,7 @@ test('activity configuration is loaded', function () {
 ```php
 test('activity service provider is registered', function () {
     $app = app();
-    
+
     expect($app->bound(\Modules\Activity\Providers\ActivityServiceProvider::class))->toBeTrue();
 });
 ```
@@ -212,7 +198,7 @@ test('activity service provider is registered', function () {
 protected function setUp(): void
 {
     parent::setUp();
-    
+
     config(['activity.default_log_level' => 'info']);
     config(['activity.cache_enabled' => false]);
 }
@@ -228,12 +214,12 @@ protected function setUp(): void
 protected function createApplication()
 {
     $app = parent::createApplication();
-    
+
     $app['config']->set([
-'database.connections.activity.database' => 'Quaeris_data_test',
+'database.connections.activity.database' => '<nome progetto>_data_test',
         'database.connections.activity.database' => 'healthcare_app_data_test',
     ]);
-    
+
     return $app;
 }
 ```
@@ -311,7 +297,7 @@ protected function createApplication()
 
 ### External Resources
 
-- [Laravel 13.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+- [Laravel 12.x Testing Documentation](https://laravel.com/docs/12.x/testing)
 - [Pest Installation Guide](https://pestphp.com/docs/installation)
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 
@@ -319,7 +305,7 @@ protected function createApplication()
 
 - [Testing Setup Guide](../../../docs/testing-setup.md)
 - [Testing Best Practices](../../../docs/testing-best-practices.md)
-- [Troubleshooting Guide](../../../../docs/troubleshooting.md)
+- [Troubleshooting Guide](../../../docs/troubleshooting.md)
 
 ## Testing Examples
 
@@ -337,7 +323,7 @@ test('activity can be created', function () {
         'level' => 'info',
         'created_at' => now(),
     ]);
-    
+
     expect($activity)->toBeInstanceOf(\Modules\Activity\Models\Activity::class);
     expect($activity->type)->toBe('user_action');
     expect($activity->description)->toBe('Test activity');
@@ -354,7 +340,7 @@ test('activity can be created', function () {
 ```php
 test('activity service can log activity', function () {
     $service = new \Modules\Activity\Services\ActivityService();
-    
+
     $activity = $service->logActivity([
         'type' => 'user_action',
         'description' => 'Test activity',
@@ -363,7 +349,7 @@ test('activity service can log activity', function () {
         'user_agent' => 'Test Agent',
         'data' => ['key' => 'value'],
     ]);
-    
+
     expect($activity)->toBeInstanceOf(\Modules\Activity\Models\Activity::class);
     expect($activity->type)->toBe('user_action');
 });
@@ -381,7 +367,7 @@ test('activity api can log activity', function () {
         'user_agent' => 'Test Agent',
         'data' => ['key' => 'value'],
     ];
-    
+
     $response = $this->post('/api/activity/log', $activityData);
     $response->assertStatus(201);
     $response->assertJson([
@@ -437,9 +423,5 @@ Remember: Good tests are the foundation of reliable software development.
 ---
 
 *Last updated: January 2025*
-<<<<<<< HEAD
 *
->>>>>>> 0a02158a (.)
-=======
 *
->>>>>>> 35d8cf69 (Initial commit)

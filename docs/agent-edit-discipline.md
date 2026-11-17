@@ -1,15 +1,13 @@
 ---
-title: agent edit discipline: puntatore
+qmd: "activity agent edit discipline md"
+title: agent edit discipline — puntatore
 type: reference
 updated: 2026-05-21
-status: draft
-tags: [docs, activity]
-qmd: "disciplina edit e qualità (puntatore) activity"
 ---
 
 # Disciplina edit e qualità (puntatore)
 
-Stub **DRY**: policy nella wiki di progetto; discussioni GitHub issue [#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124) e [#138](https://github.com/provtv/base_ptv_fila5_mono/issues/138).
+Stub **DRY**: policy nella wiki di progetto; discussioni GitHub issue [#124](https://github.com/provtv/base_ptv_fila5/issues/124) e [#138](https://github.com/provtv/base_ptv_fila5/issues/138).
 
 ## Link operativi
 

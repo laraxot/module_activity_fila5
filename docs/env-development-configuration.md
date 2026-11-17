@@ -1,17 +1,16 @@
 ---
 title: "Configurazione .env.development - Ambiente di Sviluppo"
+qmd: "activity env development configuration md"
 type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "configurazione .env.development - ambiente di sviluppo activity"
+tags: [documentation]
 ---
+
 # Configurazione .env.development - Ambiente di Sviluppo
 
 ## Panoramica
 
-Il file `.env.development` è la configurazione di sviluppo standard per l'ambiente locale di Quaeris Fila5 Mono. Questa configurazione è ottimizzata per lo sviluppo rapido e zero-setup, differenziandosi significativamente dalla configurazione di produzione.
-Il file `.env.development` è la configurazione di sviluppo standard per l'ambiente locale di healthcare_app Fila5 Mono. Questa configurazione è ottimizzata per lo sviluppo rapido e zero-setup, differenziandosi significativamente dalla configurazione di produzione.
+Il file `.env.development` è la configurazione di sviluppo standard per l'ambiente locale di <nome progetto> fila5. Questa configurazione è ottimizzata per lo sviluppo rapido e zero-setup, differenziandosi significativamente dalla configurazione di produzione.
+Il file `.env.development` è la configurazione di sviluppo standard per l'ambiente locale di healthcare_app fila5. Questa configurazione è ottimizzata per lo sviluppo rapido e zero-setup, differenziandosi significativamente dalla configurazione di produzione.
 
 ## Differenze Chiave con .env.example
 
@@ -103,8 +102,8 @@ MAIL_FROM_NAME="${APP_NAME}"
 - **Log Mailer**: Output mail in log per debugging
 - **Array Cache**: Performance ottimizzata per sviluppo rapido
 
-### 3. Compatibilità con Laravel 13.x
-- Configurazione conforme alle best practices Laravel 13.x
+### 3. Compatibilità con Laravel 12.x
+- Configurazione conforme alle best practices Laravel 12.x
 - Variabili d'ambiente ottimizzate per ambiente di sviluppo
 - Supporto completo per tutte le funzionalità di Laravel
 
@@ -213,16 +212,16 @@ DEBUGBAR_ENABLED=true
 LOG_LEVEL=debug
 ```
 
-## Compatibilità con Laravel 13.x
+## Compatibilità con Laravel 12.x
 
 ### ✅ Compatibile
-- Tutte le funzionalità Laravel 13.x
+- Tutte le funzionalità Laravel 12.x
 - Configurazione database SQLite standard
 - Supporto completo per Redis
 - Compatibilità con Filament 5.x
 
 ### 🔄 Configurazioni Automatiche
-- Laravel 13.x riconosce automaticamente SQLite
+- Laravel 12.x riconosce automaticamente SQLite
 - Configurazione Redis ottimizzata
 - Supporto per tutte le funzionalità di sviluppo
 
@@ -238,10 +237,10 @@ DB_DATABASE=$PROJECT_ROOT/database/database.sqlite
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=Quaeris_data
+DB_DATABASE=<nome progetto>_data
 DB_DATABASE=healthcare_app_data
 DB_USERNAME=marco
-DB_PASSWORD=[segreto locale, non nel repo]
+DB_PASSWORD=marco
 ```
 
 ### 2. Cache e Queue
@@ -272,5 +271,5 @@ SESSION_DOMAIN=null
 
 ## Conclusione
 
-Il file `.env.development` rappresenta la configurazione ottimale per lo sviluppo rapido e efficiente di Quaeris Fila5 Mono. La sua struttura differenzia significativamente dalla produzione per favorire setup zero-setup, performance ottimizzate e debugging più semplice. Questa configurazione è essenziale per mantenere un ambiente di sviluppo fluido e produttivo.
-Il file `.env.development` rappresenta la configurazione ottimale per lo sviluppo rapido e efficiente di healthcare_app Fila5 Mono. La sua struttura differenzia significativamente dalla produzione per favorire setup zero-setup, performance ottimizzate e debugging più semplice. Questa configurazione è essenziale per mantenere un ambiente di sviluppo fluido e produttivo.
+Il file `.env.development` rappresenta la configurazione ottimale per lo sviluppo rapido e efficiente di <nome progetto> fila5. La sua struttura differenzia significativamente dalla produzione per favorire setup zero-setup, performance ottimizzate e debugging più semplice. Questa configurazione è essenziale per mantenere un ambiente di sviluppo fluido e produttivo.
+Il file `.env.development` rappresenta la configurazione ottimale per lo sviluppo rapido e efficiente di healthcare_app fila5. La sua struttura differenzia significativamente dalla produzione per favorire setup zero-setup, performance ottimizzate e debugging più semplice. Questa configurazione è essenziale per mantenere un ambiente di sviluppo fluido e produttivo.
