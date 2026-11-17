@@ -11,10 +11,6 @@ use Modules\Activity\Filament\Pages\LogViewer;
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
-<<<<<<< .merge_file_9DOTYj
-use Modules\Activity\Tests\TestCase;
-=======
->>>>>>> .merge_file_Bg6IW5
 use Throwable;
 
 uses(TestCase::class);
