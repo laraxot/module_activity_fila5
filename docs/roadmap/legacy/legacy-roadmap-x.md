@@ -1,3 +1,10 @@
+---
+title: "🎯 ACTIVITY MODULE - ROADMAP 2025"
+qmd: "activity roadmap legacy legacy roadmap x md"
+type: note
+tags: [documentation]
+---
+
 # 🎯 ACTIVITY MODULE - ROADMAP 2025
 
 **Modulo**: Activity ([Description])  

@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Roadmap & Optimization"
+qmd: "activity roadmap legacy legacy roadmap and issues md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Roadmap & Optimization
 
 **Modulo**: Activity (Audit Trail & Activity Logging)
