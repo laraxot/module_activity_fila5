@@ -99,7 +99,11 @@ contenere segreti e deve registrare davvero gli eventi che dichiara di registrar
 - `app/Actions/LogModelUpdatedAction.php:43-44` — `'old' => $model->getOriginal()`, `'new' => $model->getAttributes()`.
 - `app/Actions/LogModelCreatedAction.php:42` — `getAttributes()` completo.
 - `app/Actions/RedactModelAttributesAction.php:19-24` toglie `password`, `remember_token`, `two_factor_*` ma **nessun file di produzione la chiama** (`rg RedactModelAttributesAction` → solo definizione e test).
+<<<<<<< .merge_file_nw88bu
 - Mitigazione reale: il percorso `Adapters\ActivityLogger` / `LogModel*Action` non ha caller fuori da Activity (`rg` su tutti i moduli, escluso `tests`/`docs`): gli altri moduli usano il helper `activity()` di Spatie. Il rischio è quindi **latente**: scatta appena qualcuno adotta l'API del modulo.
+=======
+- Mitigazione reale: il percorso `Adapters\ActivityLogger` / `LogModel*Action` non ha caller fuori da Activity (`rg` su tutti i moduli, escluso `tests`/`docs`): gli altri moduli usano il helper `activity()` di Spatie (es. `Ptv/app/Actions/Scheda/LogEmailSentAction.php:45`). Il rischio è quindi **latente**: scatta appena qualcuno adotta l'API del modulo.
+>>>>>>> .merge_file_Q2WOSF
 
 **Fix:** chiamare `RedactModelAttributesAction` dentro `LogModelCreated/Updated/DeletedAction`; allargare la lista (token API, `*_secret`, codice fiscale se non necessario); test con modello `User`.
 
@@ -141,7 +145,11 @@ contenere segreti e deve registrare davvero gli eventi che dichiara di registrar
 | Gate | Esito |
 |---|---|
 | PHPStan `Modules/Activity` (`php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Activity --no-progress`) | **0 errori** (`[OK] No errors`, 2026-11-16) |
+<<<<<<< .merge_file_nw88bu
 | Pest `Modules/Activity/tests` (via `bashscripts/tools/pest-scratch-db.sh`, DB scratch, host 127.0.0.1) | @@PEST_Activity@@ |
+=======
+| Pest `Modules/Activity/tests` (via `bashscripts/tools/pest-scratch-db.sh`, DB scratch, host 127.0.0.1) | **parziale**: suite completa non terminata (timeout 900 s, load ≈ 50; 16 pass e 40 ⨯ allo stop, non riproducibili in isolamento: `BaseModelBusinessLogicTest` 21 pass, `ActivityManagementTest` 4 pass); causa dei ⨯ non determinata |
+>>>>>>> .merge_file_Q2WOSF
 
 Pest non è stato lanciato con il DB di test condiviso (`10.100.200.53`): è stato usato lo script
 di scratch DB del repo, che crea e distrugge database usa-e-getta con sola struttura. Nessun
