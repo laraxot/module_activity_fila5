@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Modules\Activity\Actions\Log\BuildLogFileTreeAction;
 use Modules\Activity\Datas\LogFileData;
 use Modules\Activity\Datas\LogTreeData;

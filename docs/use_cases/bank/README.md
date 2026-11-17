@@ -1,11 +1,3 @@
----
-title: "Bank Use Case: Approcci Event Sourcing e Tradizionale"
-type: index
-status: draft
-updated: 2026-10-23
-tags: [docs, activity, use_cases]
-qmd: "bank use case: approcci event sourcing e tradizionale activity"
----
 # Bank Use Case: Approcci Event Sourcing e Tradizionale
 
 ## Introduzione

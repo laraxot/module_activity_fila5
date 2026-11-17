@@ -1,11 +1,3 @@
----
-title: "Activity Module - Roadmap"
-type: index
-status: draft
-updated: 2026-10-23
-tags: [docs, activity, roadmap]
-qmd: "activity module - roadmap activity"
----
 # Activity Module - Roadmap
 
 ## 🎯 Module Purpose

@@ -1,11 +1,3 @@
----
-title: "Anti-Pattern: Environment-Specific Logic in Models"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "anti-pattern: environment-specific logic in models activity"
----
 # Anti-Pattern: Environment-Specific Logic in Models
 
 ## Il Problema

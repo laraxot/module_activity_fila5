@@ -1,12 +1,3 @@
----
-title: "Roadmap Index - Activity"
-type: index
-updated: 2026-10-07
-tags: [docs, activity, roadmap]
-qmd: "roadmap index - activity activity"
-status: superseded
-superseded_by: index.md
----
 # Roadmap Index - Activity
 
 ## Scope

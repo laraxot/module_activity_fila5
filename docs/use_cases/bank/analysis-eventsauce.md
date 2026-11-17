@@ -1,11 +1,3 @@
----
-title: "Analisi di Larabank Eventsauce"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, use_cases]
-qmd: "analisi di larabank eventsauce activity"
----
 # Analisi di Larabank Eventsauce
 
 ## Panoramica

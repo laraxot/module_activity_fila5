@@ -1,11 +1,3 @@
----
-title: "Filament 5.x Nested Resources Guide"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "filament 5.x nested resources guide activity"
----
 # Filament 5.x Nested Resources Guide
 
 ## Overview

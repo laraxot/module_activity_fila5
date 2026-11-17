@@ -3,11 +3,13 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Providers;
+
+use function Safe\json_encode;
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Activity\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('activity service provider exposes expected metadata', function (): void {
     $provider = new ActivityServiceProvider(app());

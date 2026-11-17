@@ -1,11 +1,3 @@
----
-title: "Modello di Dominio - Use Case Bancario"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity, use_cases]
-qmd: "modello di dominio - use case bancario activity"
----
 # Modello di Dominio - Use Case Bancario
 
 ## Aggregate

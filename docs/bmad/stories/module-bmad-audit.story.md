@@ -1,36 +1,38 @@
 ---
-id: Activity/module-bmad-audit-20260928
-title: "Activity: baseline BMAD e analisi completa"
-status: ready-for-dev
-module: Activity
-epic: module-governance
-priority: P1
-created: 2026-09-28
-references:
-  - ../architecture/module-boundary.md
-  - ../brainstorming/module-opportunities.md
-  - ../epics/module-roadmap.md
+title: "Module BMAD audit — Activity"
 type: story
-updated: 2026-10-07
-tags: [docs, activity, bmad]
-qmd: "story   activity: baseline bmad activity"
+status: review
+updated: 2026-11-16
+module: Activity
+bmad: true
+qmd: "story BMAD audit modulo Activity inventario gate pest phpstan finding P1"
+related:
+  - ../audits/activity-audit.md
+  - ../epics.md
+  - ../piano-miglioramento.md
 ---
-# Story: Activity: baseline BMAD
 
-Come manutentore del modulo Activity, voglio una baseline BMAD verificabile, così da poter pianificare lavoro senza confondere ipotesi, WIP e comportamento osservato.
+# Story: audit BMAD profondo del modulo Activity
 
-## Acceptance criteria
+## Contesto
 
-- [ ] Confermare API pubblica e confini con riferimenti a codice reale.
-- [ ] Inventariare i flussi critici e collegarli a test Pest.
-- [ ] Misurare PHPStan/Pest nel contesto stabile del modulo.
-- [ ] Registrare dipendenze, rischi e decisioni nel modulo.
-- [ ] Aggiornare lo stato reale in `docs/sprint-status.yaml`.
+Audit source-first del modulo che deve garantire "chi ha cambiato cosa, quando e com'era prima" ([purpose](../purpose.md)).
+
+## Acceptance
+
+- [x] Inventario misurato e finding con `path:line` ([audit profondo](../audits/activity-audit.md)).
+- [x] Sintesi + gate ([audit](../audit.md)), checklist ([ECC](../../ecc/activity-ecc-audit.md)).
+- [x] Epics reali al posto del template ([epics](../epics.md)); decision-log aggiornato.
+- [x] PHPStan `Modules/Activity`: 0 errori (2026-11-16).
+- [ ] Pest modulo: parziale — 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout a 900 s (carico macchina).
+- [ ] E1–E4 chiuse con test di regressione.
 
 ## Task
 
-- [ ] Revisione architettura.
-- [ ] Brainstorming con stakeholder.
-- [ ] Decomposizione epic in story più piccole.
-- [ ] Quality gate e second-brain write-back.
+1. Lock dei file di `docs/` del modulo (`bashscripts/lock/`), unlock a fine lavoro.
+2. Audit codice → docs; nessun PHP toccato.
+3. Pack ECC e indici aggiornati; `qmd update`.
 
+## Esito
+
+Baseline audit consegnata: 0 P0, 5 P1, P2 elencati. Chiusura dei P1 demandata alle story figlie di [epics.md](../epics.md).
