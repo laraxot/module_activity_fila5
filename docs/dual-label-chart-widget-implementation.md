@@ -25,7 +25,7 @@ Questo documento fornisce un'analisi approfondita della qualità del codice del 
 }'
 ```
 
-**Impatto**: 
+**Impatto**:
 - ❌ Ridondanza di codice
 - ❌ Difficoltà di testing
 - ❌ Problemi di manutenibilità
@@ -40,11 +40,11 @@ protected function createFormatter(): string
 function(v, ctx) {
     var avg = Number(v) || 0;
     var voters = ctx.dataset.voteCounts ? ctx.dataset.voteCounts[ctx.dataIndex] || 0 : 0;
-    
+
     if (isNaN(avg) || avg === null) {
         return '';
     }
-    
+
     return avg.toFixed(1) + '/10\n' + voters + ' voti';
 }
 JS;
@@ -111,7 +111,7 @@ protected function createLabelConfig($type, $config): array
         'formatter' => $this->getFormatter($type),
         'display' => $this->createDisplayFunction(),
     ];
-    
+
     return array_merge($baseConfig, $config);
 }
 
@@ -154,10 +154,10 @@ protected function getData(): array
 {
     /** @var array<int, float> $avgRatings */
     $avgRatings = [7.2, 8.1, 6.8, 7.5, 8.9, 7.7, 8.2, 9.1, 8.5, 7.9, 8.3, 9.0];
-    
+
     /** @var array<int, int> $voteCounts */
     $voteCounts = [45, 52, 38, 41, 63, 55, 58, 71, 67, 59, 62, 68];
-    
+
     return [
         'datasets' => [
             [
@@ -182,11 +182,11 @@ protected function getData(): array
 'formatter' => 'function(v, ctx) {
     var avg = Number(v) || 0;
     var voters = ctx.dataset.voteCounts ? ctx.dataset.voteCounts[ctx.dataIndex] || 0 : 0;
-    
+
     if (isNaN(avg) || avg === null) {
         return '';
     }
-    
+
     return avg.toFixed(1) + '/10\n' + voters + ' voti';
 }'
 ```
@@ -207,11 +207,11 @@ protected function formatChartData($value, $context): string
 {
     $avg = $this->parseValue($value);
     $voters = $this->getVoterCount($context);
-    
+
     if ($this->isInvalidValue($avg)) {
         return '';
     }
-    
+
     return $this->formatDisplayValue($avg, $voters);
 }
 ```
@@ -307,7 +307,7 @@ protected function getData(): array
 {
     $avgRatings = [7.2, 8.1, 6.8, 7.5, 8.9, 7.7, 8.2, 9.1, 8.5, 7.9, 8.3, 9.0];
     $voteCounts = [45, 52, 38, 41, 63, 55, 58, 71, 67, 59, 62, 68];
-    
+
     return [
         'datasets' => [
             [
@@ -332,15 +332,15 @@ protected function getData(): array
     try {
         $avgRatings = $this->validateAndNormalizeData($this->getRawData());
         $voteCounts = $this->validateAndNormalizeData($this->getVoteCounts());
-        
+
         if (empty($avgRatings) || empty($voteCounts)) {
             throw new \InvalidArgumentException('Data cannot be empty');
         }
-        
+
         if (count($avgRatings) !== count($voteCounts)) {
             throw new \InvalidArgumentException('Data arrays must have the same length');
         }
-        
+
         return [
             'datasets' => [
                 [
@@ -376,38 +376,38 @@ class SimpleChartWidgetTest extends TestCase
 class SimpleChartWidgetTest extends TestCase
 {
     private SimpleChartWidget $widget;
-    
+
     protected function setUp(): void
     {
         parent::setUp();
         $this->widget = new SimpleChartWidget();
     }
-    
+
     /** @test */
     public function it_can_generate_valid_chart_data()
     {
         $data = $this->widget->getData();
-        
+
         $this->assertArrayHasKey('datasets', $data);
         $this->assertArrayHasKey('labels', $data);
         $this->assertCount(1, $data['datasets']);
     }
-    
+
     /** @test */
     public function it_validates_data_arrays_length()
     {
         $this->expectException(\InvalidArgumentException::class);
-        
+
         $this->widget->setInvalidData();
         $this->widget->getData();
     }
-    
+
     /** @test */
     public function it_formats_chart_data_correctly()
     {
         $data = $this->widget->getData();
         $dataset = $data['datasets'][0];
-        
+
         $this->assertArrayHasKey('voteCounts', $dataset);
         $this->assertCount(12, $dataset['voteCounts']);
     }
@@ -426,29 +426,29 @@ class ChartFormatter
     {
         $avg = $this->parseValue($value);
         $voters = $this->getVoterCount($context);
-        
+
         if ($this->isInvalidValue($avg)) {
             return '';
         }
-        
+
         return $this->formatDisplayValue($avg, $voters);
     }
-    
+
     private function parseValue($value): float
     {
         return is_numeric($value) ? (float) $value : 0.0;
     }
-    
+
     private function getVoterCount($context): int
     {
         return $context->dataset->voteCounts[$context->dataIndex] ?? 0;
     }
-    
+
     private function isInvalidValue($value): bool
     {
         return !is_numeric($value) || $value < 0 || $value > 10;
     }
-    
+
     private function formatDisplayValue(float $avg, int $voters): string
     {
         return sprintf('%.1f/10\n%d voti', $avg, $voters);
@@ -475,7 +475,7 @@ class ChartLabelFactory
             ],
         ]);
     }
-    
+
     public function createMonthLabelConfig(): array
     {
         return $this->createLabelConfig('month', [
@@ -491,7 +491,7 @@ class ChartLabelFactory
             ],
         ]);
     }
-    
+
     private function createLabelConfig(string $type, array $overrides): array
     {
         $baseConfig = [
@@ -500,7 +500,7 @@ class ChartLabelFactory
             'formatter' => $this->getFormatter($type),
             'display' => $this->createDisplayFunction(),
         ];
-        
+
         return array_merge($baseConfig, $overrides);
     }
 }
@@ -517,15 +517,15 @@ class SimpleChartWidget extends XotBaseChartWidget
         try {
             $avgRatings = $this->validateAndNormalizeData($this->getRawData());
             $voteCounts = $this->validateAndNormalizeData($this->getVoteCounts());
-            
+
             if (empty($avgRatings) || empty($voteCounts)) {
                 throw new \InvalidArgumentException('Data cannot be empty');
             }
-            
+
             if (count($avgRatings) !== count($voteCounts)) {
                 throw new \InvalidArgumentException('Data arrays must have the same length');
             }
-            
+
             return [
                 'datasets' => [
                     [
@@ -544,7 +544,7 @@ class SimpleChartWidget extends XotBaseChartWidget
             return $this->getEmptyDataset();
         }
     }
-    
+
     protected function getOptions(): array
     {
         return [
@@ -553,7 +553,7 @@ class SimpleChartWidget extends XotBaseChartWidget
             'scales' => $this->getScaleConfig(),
         ];
     }
-    
+
     protected function getPluginConfig(): array
     {
         return [
@@ -561,7 +561,7 @@ class SimpleChartWidget extends XotBaseChartWidget
             'datalabels' => $this->getDatalabelsConfig(),
         ];
     }
-    
+
     protected function getDatalabelsConfig(): array
     {
         return [
@@ -573,7 +573,7 @@ class SimpleChartWidget extends XotBaseChartWidget
             ],
         ];
     }
-    
+
     protected function getAverageLabelConfig(): array
     {
         return [
@@ -595,7 +595,7 @@ class SimpleChartWidget extends XotBaseChartWidget
             'display' => $this->createDisplayFunction(),
         ];
     }
-    
+
     protected function getMonthLabelConfig(): array
     {
         return [
@@ -630,21 +630,21 @@ class SimpleChartWidget extends XotBaseChartWidget
     ) {
         parent::__construct();
     }
-    
+
     protected function getData(): array
     {
         try {
             $avgRatings = $this->validateAndNormalizeData($this->getRawData());
             $voteCounts = $this->validateAndNormalizeData($this->getVoteCounts());
-            
+
             if (empty($avgRatings) || empty($voteCounts)) {
                 throw new \InvalidArgumentException('Data cannot be empty');
             }
-            
+
             if (count($avgRatings) !== count($voteCounts)) {
                 throw new \InvalidArgumentException('Data arrays must have the same length');
             }
-            
+
             return [
                 'datasets' => [
                     [
@@ -663,7 +663,7 @@ class SimpleChartWidget extends XotBaseChartWidget
             return $this->getEmptyDataset();
         }
     }
-    
+
     protected function getOptions(): array
     {
         return [
@@ -672,7 +672,7 @@ class SimpleChartWidget extends XotBaseChartWidget
             'scales' => $this->getScaleConfig(),
         ];
     }
-    
+
     protected function getPluginConfig(): array
     {
         return [
@@ -680,7 +680,7 @@ class SimpleChartWidget extends XotBaseChartWidget
             'datalabels' => $this->getDatalabelsConfig(),
         ];
     }
-    
+
     protected function getDatalabelsConfig(): array
     {
         return [
@@ -704,7 +704,7 @@ protected function getData(): array
 {
     $avgRatings = [7.2, 8.1, 6.8, 7.5, 8.9, 7.7, 8.2, 9.1, 8.5, 7.9, 8.3, 9.0];
     $voteCounts = [45, 52, 38, 41, 63, 55, 58, 71, 67, 59, 62, 68];
-    
+
     return [
         'datasets' => [
             [
@@ -736,15 +736,15 @@ protected function getData(): array
     try {
         $avgRatings = $this->validateAndNormalizeData($this->getRawData());
         $voteCounts = $this->validateAndNormalizeData($this->getVoteCounts());
-        
+
         if (empty($avgRatings) || empty($voteCounts)) {
             throw new \InvalidArgumentException('Data cannot be empty');
         }
-        
+
         if (count($avgRatings) !== count($voteCounts)) {
             throw new \InvalidArgumentException('Data arrays must have the same length');
         }
-        
+
         return [
             'datasets' => [
                 [
@@ -770,14 +770,14 @@ protected function getData(): array
 ### PHPStan Level 10 Compliance
 ```bash
 # ✅ Zero errori dopo refactoring
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
+./vendor/bin/phpstan analyse Modules/<nome progetto>/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
 ./vendor/bin/phpstan analyse Modules/healthcare_app/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
 ```
 
 ### Testing Coverage
 ```bash
 # ✅ 100% coverage per metodi principali
-./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
+./vendor/bin/phpunit --coverage-html=coverage Modules/<nome progetto>/tests/Unit/SimpleChartWidgetTest.php
 ./vendor/bin/phpunit --coverage-html=coverage Modules/healthcare_app/tests/Unit/SimpleChartWidgetTest.php
 ```
 

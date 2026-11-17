@@ -209,3 +209,8 @@ workbench/
 .windsurf~*
 tests/activity_coverage.xml
 Activity/
+
+# Laraxot — directory agenti/IDE e tool locali alla root del modulo (module-theme-root-hygiene)
+.qwen/
+.php-cs-fixer.php
+.php-cs-fixer.dist.php

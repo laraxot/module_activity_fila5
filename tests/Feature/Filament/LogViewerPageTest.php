@@ -169,7 +169,9 @@ it('download header action streams via DownloadLogFileAction not Folio URL', fun
 
 it('renders the tree branch: closed folders hide their files, the selected file is highlighted', function (): void {
     $tree = (new LogViewer)->getLogState()->tree;
-    $render = fn (array $expanded, string $selected): string => view('activity::filament.pages.partials.log-tree-node', [
+    /** @var view-string $treeNodeView */
+    $treeNodeView = 'activity::filament.pages.partials.log-tree-node';
+    $render = fn (array $expanded, string $selected): string => view($treeNodeView, [
         'node' => $tree,
         'expanded' => $expanded,
         'selected' => $selected,
@@ -191,7 +193,9 @@ it('escapes file names in the tree and passes paths with quotes to wire:click sa
     File::put($this->tempStorage.'/logs/it\'s.log', 'x');
 
     $tree = (new LogViewer)->getLogState()->tree;
-    $html = view('activity::filament.pages.partials.log-tree-node', [
+    /** @var view-string $treeNodeView */
+    $treeNodeView = 'activity::filament.pages.partials.log-tree-node';
+    $html = view($treeNodeView, [
         'node' => $tree,
         'expanded' => [],
         'selected' => '',

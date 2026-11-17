@@ -71,7 +71,7 @@ tags: [documentation]
 - [Torna a README](./README.md)
 - [Torna a README](./readme.md)
 - [Vai a Struttura](./structure.md)
-- [Vai a Bottlenecks](./bottlenecks.md)
+- [Vai a Bottlenecks](../bottlenecks.md)
 
 - [ ] Compressione base
 - [ ] Pulizia manuale

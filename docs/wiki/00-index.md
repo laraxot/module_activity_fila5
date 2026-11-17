@@ -27,14 +27,14 @@ updated: 2026-07-23
 - 🔧 **[Actions Calling Actions](./actions-calling-actions-pattern.md)** - Pattern per la composizione delle azioni di logging.
 
 ## 📊 **Filament & UI**
-- 📈 **[Filament Resources](./filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
-- 📉 **[Analytics Widgets](./dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
-- 🧭 **[Nested Resources](./filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
+- 📈 **[Filament Resources](../filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
+- 📉 **[Analytics Widgets](../dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
+- 🧭 **[Nested Resources](../filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
 
 ## 🧪 **Qualità e Testing**
 - ✅ **[PHPStan Compliance](./phpstan-analysis.md)** - Report sulla stabilità Level 10.
-- 🔬 **[Testing Strategy](./testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
-- 🧹 **[PHPMD Fixes](./phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
+- 🔬 **[Testing Strategy](../testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
+- 🧹 **[PHPMD Fixes](../phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
 - 🧪 **PSR-4 Test Helpers** - Preferire Pest e classi anonime nei test; evitare classi helper top-level non allineate al filepath.
 
 ## 📋 **Documenti Prodotto & Sviluppo**
@@ -76,14 +76,14 @@ updated: 2026-07-23
 - 🔧 **[Actions Calling Actions](./actions-calling-actions-pattern.md)** - Pattern per la composizione delle azioni di logging.
 
 ## 📊 **Filament & UI**
-- 📈 **[Filament Resources](./filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
-- 📉 **[Analytics Widgets](./dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
-- 🧭 **[Nested Resources](./filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
+- 📈 **[Filament Resources](../filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
+- 📉 **[Analytics Widgets](../dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
+- 🧭 **[Nested Resources](../filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
 
 ## 🧪 **Qualità e Testing**
 - ✅ **[PHPStan Compliance](./phpstan-analysis.md)** - Report sulla stabilità Level 10.
-- 🔬 **[Testing Strategy](./testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
-- 🧹 **[PHPMD Fixes](./phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
+- 🔬 **[Testing Strategy](../testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
+- 🧹 **[PHPMD Fixes](../phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
 - 🧪 **PSR-4 Test Helpers** - Preferire Pest e classi anonime nei test; evitare classi helper top-level non allineate al filepath.
 
 ## 📋 **Documenti Prodotto & Sviluppo**
@@ -118,14 +118,14 @@ updated: 2026-07-23
 - 🔧 **[Actions Calling Actions](./actions-calling-actions-pattern.md)** - Pattern per la composizione delle azioni di logging.
 
 ## 📊 **Filament & UI**
-- 📈 **[Filament Resources](./filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
-- 📉 **[Analytics Widgets](./dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
-- 🧭 **[Nested Resources](./filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
+- 📈 **[Filament Resources](../filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
+- 📉 **[Analytics Widgets](../dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
+- 🧭 **[Nested Resources](../filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
 
 ## 🧪 **Qualità e Testing**
 - ✅ **[PHPStan Compliance](./phpstan-analysis.md)** - Report sulla stabilità Level 10.
-- 🔬 **[Testing Strategy](./testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
-- 🧹 **[PHPMD Fixes](./phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
+- 🔬 **[Testing Strategy](../testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
+- 🧹 **[PHPMD Fixes](../phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
 - 🧪 **PSR-4 Test Helpers** - Preferire Pest e classi anonime nei test; evitare classi helper top-level non allineate al filepath.
 
 ## 📋 **Documenti Prodotto & Sviluppo**
@@ -315,7 +315,7 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 
 ## Dependency Intelligence
 
-- [Dependency intelligence](dependency-intelligence.md)
+- [Dependency intelligence](../dependency-intelligence.md)
 
 ## Regola Operativa Obbligatoria
 
