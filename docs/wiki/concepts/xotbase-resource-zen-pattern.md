@@ -9,8 +9,6 @@ tags: [filament, xotbase, zen-pattern, resource]
 related:
   - ../../Xot/docs/wiki/concepts/xotbase-resourceform-zen-pattern.md
   - ../../Xot/docs/wiki/concepts/xotbase-resource-table-zen-pattern.md
-status: draft
-qmd: "xotbaseresource zen pattern activity"
 ---
 
 # XotBaseResource Zen Pattern
@@ -84,6 +82,9 @@ XotBaseResource::table()
 - [ ] `Schemas/<Model>Form.php` exists with `static getFormSchema(): array`
 - [ ] `Tables/<Model>Table.php` exists with `static getTableColumns(): array`
 - [ ] No `->label()` calls (LangServiceProvider owns labels)
+- [ ] Test e fixture non estendono classi `Filament\*` direttamente
+- [ ] Safe functions preserved (`use function Safe\...`)
+
 - [ ] Test e fixture non estendono classi `Filament\*` direttamente- [ ] Safe functions preserved (`use function Safe\...`)
 
 ## References

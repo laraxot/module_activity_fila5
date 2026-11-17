@@ -1,11 +1,3 @@
----
-title: "SimpleChartWidget - Analisi Qualità del Codice e Best Practices"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "simplechartwidget - analisi qualità del codice e best practices activity"
----
 # SimpleChartWidget - Analisi Qualità del Codice e Best Practices
 
 ## Panoramica

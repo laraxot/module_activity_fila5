@@ -1,27 +1,26 @@
 <?php
 
 declare(strict_types=1);
+
 use Filament\Facades\Filament;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\File;
+use Mockery;
 use Mockery\MockInterface;
 use Modules\Activity\Filament\Pages\LogViewer;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
-use Tests\TestCase;
+use Modules\Activity\Tests\TestCase;
+use Throwable;
 
 uses(TestCase::class);
 
 /*
- * Usa Tests\TestCase (root) e non Modules\Activity\Tests\TestCase: la pagina Log non tocca il database e la
- * seconda richiede un file sqlite condiviso non presente in ogni ambiente (stesso motivo di
- * Modules/Xot/tests/Feature/Filament/Widgets/EnvWidgetTest.php).
- *
- * Gli utenti sono mock (nessuna riga nel database). storage_path() viene puntato a una cartella temporanea
- * con useStoragePath(), cosi' i test non leggono ne' scrivono mai il vero storage/logs; il percorso
- * originale e' ripristinato sempre in afterEach.
+ * Usa Modules\Activity\Tests\TestCase (gerarchia XotBase). Gli utenti sono mock (nessuna riga DB).
+ * storage_path() punta a una cartella temporanea con useStoragePath(); ripristino in afterEach.
  */
 beforeEach(function (): void {
+    /** @var TestCase $this */
     $this->originalStorage = storage_path();
     $this->tempStorage = $this->originalStorage.'/framework/testing/log-viewer-page-'.uniqid('', true);
     File::makeDirectory($this->tempStorage.'/logs/reports/252', 0777, true);

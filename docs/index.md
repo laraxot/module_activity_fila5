@@ -1,17 +1,15 @@
 ---
 title: "Indice documentazione — Modulo Activity"
 type: index
-status: draft
-updated: 2026-10-23
+status: active
+updated: 2026-11-16
 tags: [docs, activity]
-qmd: "indice documentazione   modulo activity activity"
+qmd: "indice documentazione modulo activity architecture naming debt kebab-case"
 ---
 # Indice documentazione — Modulo Activity
 
-Indice organizzato per argomento. Copre tutti i file `.md` sotto `Modules/Activity/docs/`
-(890 file al 2026-10-14, 755 al 2026-09-03, non 362 come indicato nel task originale — la cartella e'
-cresciuta molto oltre le stime precedenti, vedi `docs/task-consolidare-documentazione.md`
-e `docs/docs-health.md`).
+Indice per argomento sotto `Modules/Activity/docs/`. Vedi [docs-health.md](docs-health.md).
+Nomi: kebab-case, senza date nel filename ([55-md-conventions](../../../../bashscripts/docs/prompts/55-md-conventions.md)).
 
 ## Key Features
 - **Activity Logging**: Automatic logging of user and system activities
@@ -33,7 +31,7 @@ The module follows the Laraxot architecture principles:
 - `Activity` - Main activity model
 - `ActivityLog` - Detailed activity logging
 
-- [architecture.md](ARCHITECTURE.md) — architettura generale del modulo.
+- [architecture.md](architecture.md) — architettura generale del modulo.
 - [architecture/structure.md](architecture/structure.md) — organizzazione interna dettagliata.
 - [structure.md](structure.md) — nota: contenuto quasi identico a `architecture/structure.md` (stesso titolo "Modulo Activity", 414 vs 413 righe); vedi Storico.
 - [architecture-rules.md](architecture-rules.md) — puntatore alle regole architetturali generali.
@@ -491,6 +489,14 @@ Non richiedono consolidamento: sono puntatori voluti, non copie accidentali.
 - [Notify Module](../notify/docs/index.md) - Notification system
 - [Xot Module](../xot/docs/index.md) - Core base classes
 
+## Related Modules
+- [User Module](../User/docs/README.md) - User authentication and management
+- [Notify Module](../Notify/docs/index.md) - Notification system
+- [Xot Module](../Xot/docs/index.md) - Core base classes
+- [User Module](../user/docs/readme.md) - User authentication and management
+- [Notify Module](../notify/docs/index.md) - Notification system
+- [Xot Module](../xot/docs/index.md) - Core base classes
+
 Quattro copie parallele dello stesso lotto di file di test/placeholder, quasi tutte a
 0-3 righe (`archived-note.md`, `documentation*.md`, `2024-03-27.md`, `test*.md`,
 `import-placeholder*.md`, `filament*.md`, `changelog*.md`): presenti sia direttamente
@@ -520,3 +526,21 @@ cartelle di import grezzo sopra citate (49 file a 0 righe in tutto il modulo).
 - File completamente vuoti (0 righe): 49.
 - File stub con puntatore `canonical:` verso `Themes/docs/shared-components/`: 73 (di cui 6 template `_templates/`, 4 ibridi con contenuto reale aggiuntivo, 63 stub puri).
 - File indicizzati esplicitamente per argomento in questo documento: la quasi totalita' dei restanti file con contenuto reale; le eccezioni (import grezzo/placeholder vuoti) sono referenziate per gruppo con comando `find` riproducibile, non singolarmente.
+## Debito naming (date nel filename — flag, non cancellare)
+
+Storici con data nel nome: restano `superseded`/archivio finche' i riferimenti non
+sono migrati. Canonici nuovi: senza data. Misura:
+
+```bash
+python3 -I bashscripts/tools/docs/md-filenames.py check --paths laravel/Modules/Activity/docs
+```
+
+Esempi ancora presenti: `documentation-2024-03-27.md`, `quality-status-2025-11.md`,
+`stories/2026-10-06-phpstan-cleanup-activity.story.md`,
+`bmad/stories/*-20260928*.story.md`, `wiki/troubleshooting/git-merge-conflict-inventory-2026-04-28.md`,
+`raw/root-import/*2024*`. Procedura: [docs-clean.md](../../../../bashscripts/docs/prompts/docs-clean.md).
+
+## Troubleshooting
+
+- Performance log grandi, entry mancanti, config: vedi wiki troubleshooting del modulo.
+- File vuoti/import grezzo: referenziati per gruppo sopra, non cancellare a tappeto.

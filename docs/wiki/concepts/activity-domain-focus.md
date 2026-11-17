@@ -6,9 +6,6 @@ created: "2026-04-29T00:00:00Z"
 updated: "2026-04-29T07:22:00Z"
 related:
   - "[[Activity Core Sources]]"
-status: draft
-tags: [docs, activity, wiki]
-qmd: "activity domain focus activity"
 ---
 
 # Activity Domain Focus

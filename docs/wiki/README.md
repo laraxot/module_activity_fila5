@@ -1,13 +1,3 @@
----
-title: Readme
-module: Activity
-type: index
-status: draft
-updated: 2026-10-22
-tags: [docs, activity, wiki]
-qmd: "llm wiki (module) activity"
----
-
 # LLM Wiki (module)
 
 This folder is the module's LLM wiki (docs/wiki). Use it to store synthesized, curated docs optimized for LLM ingestion.
