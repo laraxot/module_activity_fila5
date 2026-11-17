@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki 00 index md"
 title: 00 index
 module: Activity
 ---
@@ -146,7 +147,7 @@ updated: 2026-07-23
 ### Filament
 | File | Scopo |
 |------|-------|
-| FILAMENT_RESOURCE_GUIDELINES.md | Resource guidelines |
+| filament-resource-guidelines.md | Resource guidelines |
 
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)

@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki concepts organizzativa money md"
 title: "organizzativa-money — puntatore"
 type: reference
 updated: 2026-05-21

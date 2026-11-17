@@ -1,3 +1,10 @@
+---
+title: "Modello di Dominio - Use Case Bancario"
+qmd: "activity use cases bank domain model md"
+type: note
+tags: [documentation]
+---
+
 # Modello di Dominio - Use Case Bancario
 
 ## Aggregate

@@ -1,3 +1,10 @@
+---
+title: "Git Conflict Inventory"
+qmd: "activity wiki troubleshooting git merge conflict inventory md"
+type: note
+tags: [documentation]
+---
+
 # Git Conflict Inventory
 
 - Date: 2026-04-28

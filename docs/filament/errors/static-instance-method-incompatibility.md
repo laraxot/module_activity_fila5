@@ -1,3 +1,10 @@
+---
+title: "Incompatibilità tra metodi statici e di istanza in Filament"
+qmd: "activity filament errors static instance method incompatibility md"
+type: note
+tags: [documentation]
+---
+
 # Incompatibilità tra metodi statici e di istanza in Filament
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo Activity.

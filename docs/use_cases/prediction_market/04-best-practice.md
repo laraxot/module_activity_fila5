@@ -1,3 +1,10 @@
+---
+title: "Best Practice <nome progetto>ion Market"
+qmd: "activity use cases prediction market 04 best practice md"
+type: note
+tags: [documentation]
+---
+
 # Best Practice <nome progetto>ion Market
 
 ## Sicurezza

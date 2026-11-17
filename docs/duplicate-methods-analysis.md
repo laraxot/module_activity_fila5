@@ -1,3 +1,10 @@
+---
+title: "Analisi Metodi Duplicati - Modulo Activity"
+qmd: "activity duplicate methods analysis md"
+type: note
+tags: [documentation]
+---
+
 # Analisi Metodi Duplicati - Modulo Activity
 
 **Totale Gruppi di Duplicati**:

@@ -1,3 +1,10 @@
+---
+title: "Metriche Modulo Activity"
+qmd: "activity roadmap metrics md"
+type: note
+tags: [documentation]
+---
+
 # Metriche Modulo Activity
 
 | Metrica | Obiettivo | Verifica |

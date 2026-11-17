@@ -1,3 +1,10 @@
+---
+title: "Introduzione al Use Case Bank (Event Sourcing)"
+qmd: "activity use cases bank 01 introduzione md"
+type: note
+tags: [documentation]
+---
+
 # Introduzione al Use Case Bank (Event Sourcing)
 
 Questo use case documenta la realizzazione di un sistema bancario ispirato a [larabank-aggregates](https://github.com/spatie/larabank-aggregates) di Spatie, che utilizza i pattern di event sourcing, aggregate root e proiettori per la gestione di conti correnti, transazioni e regole di business bancarie.

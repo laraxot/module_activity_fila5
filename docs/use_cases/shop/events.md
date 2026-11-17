@@ -1,3 +1,10 @@
+---
+title: "Eventi del Carrello della Spesa"
+qmd: "activity use cases shop events md"
+type: note
+tags: [documentation]
+---
+
 # Eventi del Carrello della Spesa
 
 ## Introduzione

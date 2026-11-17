@@ -1,3 +1,10 @@
+---
+title: "Cyclomatic Complexity Report - Module: Activity"
+qmd: "activity cyclomatic complexity report md"
+type: note
+tags: [documentation]
+---
+
 # Cyclomatic Complexity Report - Module: Activity
 
 **Analyzer:** Super Mucca 🐮

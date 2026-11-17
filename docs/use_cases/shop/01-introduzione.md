@@ -1,3 +1,10 @@
+---
+title: "Introduzione: Lo Shop Event Sourced Definitivo"
+qmd: "activity use cases shop 01 introduzione md"
+type: note
+tags: [documentation]
+---
+
 # Introduzione: Lo Shop Event Sourced Definitivo
 
 ## Visione e Filosofia

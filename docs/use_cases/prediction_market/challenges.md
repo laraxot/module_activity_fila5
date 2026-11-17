@@ -1,3 +1,10 @@
+---
+title: "Sfide e Soluzioni per il <nome progetto>ion Market"
+qmd: "activity use cases prediction market challenges md"
+type: note
+tags: [documentation]
+---
+
 # Sfide e Soluzioni per il <nome progetto>ion Market
 
 L'implementazione di un <nome progetto>ion market con Event Sourcing presenta diverse sfide. Di seguito sono elencate le principali, insieme alle soluzioni proposte.

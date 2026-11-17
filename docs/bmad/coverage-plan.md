@@ -1,4 +1,5 @@
 ---
+qmd: "activity bmad coverage plan md"
 title: Coverage plan
 module: Activity
 ---

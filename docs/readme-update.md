@@ -1,3 +1,10 @@
+---
+title: "Aggiornamento README Activity - Sezione Testing"
+qmd: "activity readme update md"
+type: note
+tags: [documentation]
+---
+
 # Aggiornamento README Activity - Sezione Testing
 
 ## Sezione da Aggiungere

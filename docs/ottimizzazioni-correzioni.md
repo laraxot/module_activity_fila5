@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Ottimizzazioni e Correzioni"
+qmd: "activity ottimizzazioni correzioni md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Ottimizzazioni e Correzioni
 
 ## Panoramica

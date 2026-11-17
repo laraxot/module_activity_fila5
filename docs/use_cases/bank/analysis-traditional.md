@@ -1,3 +1,10 @@
+---
+title: "Analisi di Larabank Traditional"
+qmd: "activity use cases bank analysis traditional md"
+type: note
+tags: [documentation]
+---
+
 # Analisi di Larabank Traditional
 
 ## Panoramica

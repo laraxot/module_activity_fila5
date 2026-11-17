@@ -1,3 +1,10 @@
+---
+title: "Filament 5.x Nested Resources Guide"
+qmd: "activity filament 5 nested resources md"
+type: note
+tags: [documentation]
+---
+
 # Filament 5.x Nested Resources Guide
 
 ## Overview

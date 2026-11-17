@@ -1,3 +1,10 @@
+---
+title: "Errore: Method ::route does not exist"
+qmd: "activity errori route method does not exist md"
+type: note
+tags: [documentation]
+---
+
 # Errore: Method ::route does not exist
 
 ## Descrizione dell'Errore

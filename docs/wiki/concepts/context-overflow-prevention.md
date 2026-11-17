@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki concepts context overflow prevention md"
 title: "context-overflow-prevention — puntatore"
 type: reference
 updated: 2026-05-21

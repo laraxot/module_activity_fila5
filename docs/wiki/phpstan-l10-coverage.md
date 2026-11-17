@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki phpstan l10 coverage md"
 title: Phpstan l10 coverage
 module: Activity
 ---

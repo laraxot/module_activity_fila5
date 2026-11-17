@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki concepts context mode activity discipline md"
 title: "Activity Module — Context-Mode Discipline"
 type: "rule"
 tags: [activity, context-mode, xotbase-zen]

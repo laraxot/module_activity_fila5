@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki analysis analysis religion zen md"
 title: Analysis religion zen
 module: Activity
 ---

@@ -1,3 +1,10 @@
+---
+title: "Bugfix: Filament Facade Namespace Error"
+qmd: "activity bugfix filament facade namespace md"
+type: note
+tags: [documentation]
+---
+
 # Bugfix: Filament Facade Namespace Error
 
 ## 🐛 Errore

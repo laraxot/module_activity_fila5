@@ -1,3 +1,10 @@
+---
+title: "Ponytail audit — Activity (over-engineering)"
+qmd: "activity ponytail audit over engineering md"
+type: note
+tags: [documentation]
+---
+
 # Ponytail audit — Activity (over-engineering)
 
 **Ultimo run:** 2026-06-30  

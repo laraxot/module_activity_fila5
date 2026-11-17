@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki howto agent confidence protocol md"
 title: "Massima confidenza agente"
 type: reference
 status: approved

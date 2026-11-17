@@ -1,3 +1,10 @@
+---
+title: "Testing Rules Summary"
+qmd: "activity testing rules md"
+type: note
+tags: [documentation]
+---
+
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test

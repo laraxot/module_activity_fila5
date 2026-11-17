@@ -1,3 +1,10 @@
+---
+title: "Snapshot Testing Patterns - Best Practices"
+qmd: "activity testing snapshot testing patterns md"
+type: note
+tags: [documentation]
+---
+
 # Snapshot Testing Patterns - Best Practices
 
 ## Overview

@@ -1,3 +1,10 @@
+---
+title: "Testing di uno Shop Event Sourced"
+qmd: "activity use cases shop 09 test md"
+type: note
+tags: [documentation]
+---
+
 # Testing di uno Shop Event Sourced
 
 ## 1. Unit Test

@@ -1,3 +1,10 @@
+---
+title: "Modulo Activity"
+qmd: "activity structure md"
+type: note
+tags: [documentation]
+---
+
 # Modulo Activity
 
 Data: [DATE] 19:09:55

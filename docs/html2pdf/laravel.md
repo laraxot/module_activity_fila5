@@ -1,4 +1,5 @@
 ---
+qmd: "activity html2pdf laravel md"
 title: "html2pdf laravel — puntatore"
 type: reference
 updated: 2026-05-21

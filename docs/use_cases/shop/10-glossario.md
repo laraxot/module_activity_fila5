@@ -1,3 +1,10 @@
+---
+title: "Glossario Shop Event Sourced"
+qmd: "activity use cases shop 10 glossario md"
+type: note
+tags: [documentation]
+---
+
 # Glossario Shop Event Sourced
 
 - **Event Sourcing**: pattern in cui ogni cambiamento di stato è registrato come evento immutabile. Esempio: `OrderCreated`.

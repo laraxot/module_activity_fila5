@@ -1,3 +1,10 @@
+---
+title: "StoredEvent Business Logic Test Fix"
+qmd: "activity stored event test fix md"
+type: note
+tags: [documentation]
+---
+
 # StoredEvent Business Logic Test Fix
 
 ## Problema Identificato

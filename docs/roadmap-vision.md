@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Complete Roadmap 2026"
+qmd: "activity roadmap vision md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Complete Roadmap 2026
 
 **Status**: Event Sourcing & Audit Foundation

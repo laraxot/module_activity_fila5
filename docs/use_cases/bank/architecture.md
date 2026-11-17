@@ -1,3 +1,10 @@
+---
+title: "Architettura di Larabank con Event Sourcing"
+qmd: "activity use cases bank architecture md"
+type: note
+tags: [documentation]
+---
+
 # Architettura di Larabank con Event Sourcing
 
 ## Introduzione

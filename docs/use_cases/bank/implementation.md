@@ -1,3 +1,10 @@
+---
+title: "Implementazione di un Sistema Bancario con Event Sourcing"
+qmd: "activity use cases bank implementation md"
+type: note
+tags: [documentation]
+---
+
 # Implementazione di un Sistema Bancario con Event Sourcing
 
 ## Introduzione

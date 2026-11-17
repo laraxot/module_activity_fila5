@@ -1,3 +1,10 @@
+---
+title: "Event Sourcing in `saluteora`"
+qmd: "activity event sourcing introduction md"
+type: note
+tags: [documentation]
+---
+
 # Event Sourcing in `saluteora`
 
 ## Introduction to Event Sourcing

@@ -1,3 +1,10 @@
+---
+title: "Casi d'Uso del <nome progetto>ion Market"
+qmd: "activity use cases prediction market use cases md"
+type: note
+tags: [documentation]
+---
+
 # Casi d'Uso del <nome progetto>ion Market
 
 ## 1. Previsioni Economiche

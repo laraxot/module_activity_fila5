@@ -1,3 +1,10 @@
+---
+title: "Confronto tra le Implementazioni di Larabank"
+qmd: "activity use cases bank comparison md"
+type: note
+tags: [documentation]
+---
+
 # Confronto tra le Implementazioni di Larabank
 
 ## Introduzione

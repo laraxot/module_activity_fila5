@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Quality Status (November 2025)"
+qmd: "activity quality status md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Quality Status (November 2025)
 
 ## 🎯 Overview

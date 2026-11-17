@@ -1,3 +1,10 @@
+---
+title: "Event Sourcing con Laravel: Analisi del Repository di cnastasi"
+qmd: "activity use cases shop event sourcing cnastasi md"
+type: note
+tags: [documentation]
+---
+
 # Event Sourcing con Laravel: Analisi del Repository di cnastasi
 
 ## Introduzione

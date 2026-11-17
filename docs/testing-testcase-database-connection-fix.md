@@ -1,3 +1,10 @@
+---
+title: "Fix: Activity TestCase - Database Connection Configuration"
+qmd: "activity testing testcase database connection fix md"
+type: note
+tags: [documentation]
+---
+
 # Fix: Activity TestCase - Database Connection Configuration
 
 **Problema**: Test Activity falliscono con "Database connection [activity] not configured"

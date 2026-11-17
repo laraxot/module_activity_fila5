@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Analisi Coverage e Errori"
+qmd: "activity coverage analysis md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Analisi Coverage e Errori
 
 ## Stato Attuale Coverage

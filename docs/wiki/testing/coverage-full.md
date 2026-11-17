@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki testing coverage full md"
 title: Coverage full
 module: Activity
 ---

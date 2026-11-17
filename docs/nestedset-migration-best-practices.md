@@ -1,3 +1,10 @@
+---
+title: "NestedSet Migration Best Practices - Activity Module"
+qmd: "activity nestedset migration best practices md"
+type: note
+tags: [documentation]
+---
+
 # NestedSet Migration Best Practices - Activity Module
 
 ## Overview

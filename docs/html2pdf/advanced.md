@@ -1,4 +1,5 @@
 ---
+qmd: "activity html2pdf advanced md"
 title: "html2pdf advanced — puntatore"
 type: reference
 updated: 2026-05-21

@@ -1,4 +1,5 @@
 ---
+qmd: "activity guides event sourcing md"
 module: theme
 topic: event_sourcing
 topic: event_sourcing

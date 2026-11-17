@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki concepts activity domain focus md"
 title: "Activity Domain Focus"
 module: "Activity"
 type: concept

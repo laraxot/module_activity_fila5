@@ -1,4 +1,5 @@
 ---
+qmd: "activity bmad todo md"
 title: Todo
 module: Activity
 ---
@@ -6,7 +7,7 @@ module: Activity
 # Activity Module Documentation Consolidation TODO
 
 **Status**: Phase 1 Complete (2026-10-06)  
-**Owner**: BMAD Story consolidation-activity-docs-2026-10-06
+**Owner**: BMAD Story consolidation-activity-docs
 
 ## Summary
 
@@ -111,4 +112,4 @@ Activity/docs/
 
 ---
 
-**Tracked in**: laravel/Modules/Activity/docs/stories/consolidation-activity-docs-2026-10-06.md
+**Tracked in**: laravel/Modules/Activity/docs/stories/consolidation-activity-docs.md

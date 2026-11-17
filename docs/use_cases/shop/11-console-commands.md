@@ -1,3 +1,10 @@
+---
+title: "Console Commands per Shop Event Sourced"
+qmd: "activity use cases shop 11 console commands md"
+type: note
+tags: [documentation]
+---
+
 # Console Commands per Shop Event Sourced
 
 ## Introduzione

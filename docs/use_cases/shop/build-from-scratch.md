@@ -1,3 +1,10 @@
+---
+title: "Creazione di un Carrello della Spesa da Zero con Event Sourcing"
+qmd: "activity use cases shop build from scratch md"
+type: note
+tags: [documentation]
+---
+
 # Creazione di un Carrello della Spesa da Zero con Event Sourcing
 
 ## Introduzione

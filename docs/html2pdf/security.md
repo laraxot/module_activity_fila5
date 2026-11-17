@@ -1,4 +1,5 @@
 ---
+qmd: "activity html2pdf security md"
 title: "html2pdf security — puntatore"
 type: reference
 updated: 2026-05-21

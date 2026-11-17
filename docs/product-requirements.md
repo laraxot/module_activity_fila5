@@ -1,3 +1,10 @@
+---
+title: "Product Requirements Document (PRD)"
+qmd: "activity product requirements md"
+type: note
+tags: [documentation]
+---
+
 # Product Requirements Document (PRD)
 
 ## Metadata

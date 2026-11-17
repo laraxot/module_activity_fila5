@@ -1,3 +1,10 @@
+---
+title: "PSR-4 Autoloading Compliance Fix"
+qmd: "activity psr4 autoloading fix md"
+type: note
+tags: [documentation]
+---
+
 # PSR-4 Autoloading Compliance Fix
 
 ## Data: 21 Gennaio 2025

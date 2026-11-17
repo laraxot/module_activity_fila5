@@ -1,3 +1,10 @@
+---
+title: "Filament Actions nel Modulo Activity"
+qmd: "activity filament actions usage md"
+type: note
+tags: [documentation]
+---
+
 # Filament Actions nel Modulo Activity
 
 ## Panoramica

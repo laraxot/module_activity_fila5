@@ -1,3 +1,10 @@
+---
+title: "SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX"
+qmd: "activity simplechartwidget problems analysis md"
+type: note
+tags: [documentation]
+---
+
 # SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX
 
 ## Panoramica

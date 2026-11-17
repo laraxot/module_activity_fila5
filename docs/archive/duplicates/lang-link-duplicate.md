@@ -1,3 +1,10 @@
+---
+title: "Collegamento alle Traduzioni del Modulo Activity"
+qmd: "activity archive duplicates lang link duplicate md"
+type: note
+tags: [documentation]
+---
+
 # Collegamento alle Traduzioni del Modulo Activity
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).

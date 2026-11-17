@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki analysis analisi ottimizzazioni md"
 title: Analisi ottimizzazioni
 module: Activity
 ---

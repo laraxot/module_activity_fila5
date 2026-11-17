@@ -1,3 +1,10 @@
+---
+title: "Activity Module — Database Connection: Pattern Corretto"
+qmd: "activity architecture dedicated connection md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module — Database Connection: Pattern Corretto
 
 ## Regola definitiva

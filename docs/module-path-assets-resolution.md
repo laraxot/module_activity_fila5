@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Path Assets Resolution"
+qmd: "activity module path assets resolution md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Path Assets Resolution
 
 **Data Creazione**: 2026-01-02

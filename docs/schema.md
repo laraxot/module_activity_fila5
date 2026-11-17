@@ -1,4 +1,5 @@
 ---
+qmd: "activity schema md"
 title: "Module Schema"
 module: "Activity"
 created: "2026-04-15T08:28:40Z"
