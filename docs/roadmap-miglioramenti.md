@@ -34,13 +34,13 @@ strato racconta una sessione diversa che non ha letto lo strato sotto:
 - `roadmap.md`, `roadmap-.md`, `roadmap-2025.md`, `roadmap-and-issues.md`,
   `roadmap-archive.md`, `roadmap-vision.md`: sei roadmap per un modulo,
   nessuna delle quali probabilmente letta prima di scriverne una nuova
-- `README.md`, `readme.md`, `README.md.update`, `readme.md.update`,
+- `README.md`, `README.md`, `README.md.update`, `README.md.update`,
   `readme_update.md`, `readme-update.md`: sei README, contando le
   differenze di case e underscore come se fossero contenuto
 - `test02.md`, `test03.md`, `test04.md`, `test2222.md`, `test444.md`: file
   di prova mai ripuliti, ancora versionati
 - 13 coppie di file duplicati per sola differenza di maiuscole/minuscole
-  solo al primo livello di `docs/` (`00-index.md` / `00-INDEX.md` /
+  solo al primo livello di `docs/` (`00-index.md` / `00-index.md` /
   `00-index-documentation.md` è un trio, non una coppia)
 
 Questo non è un problema estetico. È un debito di fiducia: se il second

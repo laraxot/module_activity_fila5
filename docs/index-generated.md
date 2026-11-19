@@ -22,18 +22,18 @@ qmd: "activity module documentation index activity"
 Strategic, foundational, and consolidated documentation at module level:
 
 **Core Documentation** (Key files)
-  - [ARCHITECTURE.md](ARCHITECTURE.md): System architecture and design patterns
-  - [API.md](API.md): API reference and endpoints
-  - [DATABASE-SCHEMA.md](DATABASE-SCHEMA.md): Database schema definitions
-  - [QUICK-START.md](QUICK-START.md): Quick start guide
-  - [PATTERNS.md](PATTERNS.md): Design patterns and implementation guides
-  - [TESTING.md](TESTING.md): Testing strategy and guidelines
+  - [architecture.md](architecture.md): System architecture and design patterns
+  - [API.md](api.md): API reference and endpoints
+  - [database-schema.md](database-schema.md): Database schema definitions
+  - [quick-start.md](quick-start.md): Quick start guide
+  - [PATTERNS.md](patterns.md): Design patterns and implementation guides
+  - [testing.md](testing.md): Testing strategy and guidelines
 
 **Planning & Strategy** (Key documents)
   - [README.md](README.md)
-  - [PRODUCT_STRATEGY.md](PRODUCT_STRATEGY.md)
-  - [ROADMAP.md](roadmap.md)
-  - [SPRINT_PLANNING.md](SPRINT_PLANNING.md)
+  - [product_strategy.md](product_strategy.md)
+  - [roadmap.md](roadmap.md)
+  - [sprint_planning.md](sprint_planning.md)
 
 **Additional Root Files**
   - and 278+ more documentation files (configuration, guides, analysis, audits, quality reports)
@@ -234,13 +234,13 @@ Testing strategies and guidelines:
 
 | Date | File | Category |
 |------|------|----------|
-| 2026-07-28 | [PATTERNS.md](PATTERNS.md) | root |
-| 2026-07-28 | [TESTING.md](TESTING.md) | root |
-| 2026-07-28 | [DATABASE-SCHEMA.md](DATABASE-SCHEMA.md) | root |
-| 2026-07-28 | [API.md](API.md) | root |
-| 2026-07-28 | [QUICK-START.md](QUICK-START.md) | root |
-| 2026-07-28 | [ARCHITECTURE.md](ARCHITECTURE.md) | root |
-| 2026-07-28 | [archive/INDEX.md](archive/INDEX.md) | archive |
+| 2026-07-28 | [PATTERNS.md](patterns.md) | root |
+| 2026-07-28 | [testing.md](testing.md) | root |
+| 2026-07-28 | [database-schema.md](database-schema.md) | root |
+| 2026-07-28 | [API.md](api.md) | root |
+| 2026-07-28 | [quick-start.md](quick-start.md) | root |
+| 2026-07-28 | [architecture.md](architecture.md) | root |
+| 2026-07-28 | [archive/index.md](archive/index.md) | archive |
 | 2026-07-28 | [wiki/troubleshooting/git-push-dual-remote.md](wiki/troubleshooting/git-push-dual-remote.md) | wiki |
 | 2026-07-28 | [wiki/concepts/xotbase-resource-zen-pattern.md](wiki/concepts/xotbase-resource-zen-pattern.md) | wiki |
 | 2026-07-28 | [wiki/concepts/phpstan-pest-discipline.md](wiki/concepts/phpstan-pest-discipline.md) | wiki |

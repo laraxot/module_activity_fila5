@@ -97,7 +97,7 @@ activity()->log('User logged in');
 
 - [activity-pdf-reports.md](activity-pdf-reports.md) — report PDF del log attivita'.
 - [html2pdf/index.md](html2pdf/index.md) — indice pacchetto html2pdf.
-- [html2pdf/usage.md](html2pdf/usage.md), [html2pdf/advanced.md](html2pdf/advanced.md), [html2pdf/laravel.md](html2pdf/laravel.md), [html2pdf/security.md](html2pdf/security.md), [html2pdf/styling.md](html2pdf/styling.md) — guide specifiche html2pdf.
+- [html2pdf/usage.md](html2pdf/usage.md), [html2pdf/advanced.md](html2pdf/advanced.md), [html2pdf/laravel.md](html2pdf/laravel.md), [html2pdf/SECURITY.md](html2pdf/security.md), [html2pdf/styling.md](html2pdf/styling.md) — guide specifiche html2pdf.
 - [charts/README.md](charts/README.md) — integrazione widget Filament per i grafici.
 - [dual-label-chart-widget-implementation.md](dual-label-chart-widget-implementation.md) — analisi qualita' `SimpleChartWidget` a doppia etichetta.
 - [simplechartwidget-problems-analysis.md](simplechartwidget-problems-analysis.md) — analisi problemi/miglioramenti UI/UX `SimpleChartWidget`.
@@ -232,13 +232,13 @@ sono elencati nello Storico.
 - [stabilization-roadmap.md](stabilization-roadmap.md) — roadmap di stabilizzazione.
 - [prd.md](prd.md) — PRD del modulo.
 - [product-requirements.md](product-requirements.md) — product requirements document esteso.
-- [product-roadmap.md](product-roadmap.md) — product roadmap (PRODUCT_ROADMAP.md/product_roadmap.md duplicati, vedi Storico).
+- [product-roadmap.md](product-roadmap.md) — product roadmap (product_roadmap.md/product_roadmap.md duplicati, vedi Storico).
 - [product-strategy.md](product-strategy.md) — product strategy (varianti maiuscole/underscore in Storico).
 - [product-launch-plan.md](product-launch-plan.md) — piano di lancio (varianti in Storico).
 - [launch-plan.md](launch-plan.md) — piano di lancio sintetico (documento distinto, molto piu' corto).
 - [tech_spec.md](tech_spec.md) — technical specification (TECH_SPEC.md duplicato maiuscolo, vedi Storico).
 - [sprint-planning-meeting.md](sprint-planning-meeting.md) — verbale sprint planning.
-- [sprint_planning.md](sprint_planning.md) — sprint planning esteso (SPRINT_PLANNING.md duplicato, `sprint-planning.md` e' una versione molto piu' corta dello stesso argomento, vedi Storico).
+- [sprint_planning.md](sprint_planning.md) — sprint planning esteso (sprint_planning.md duplicato, `sprint-planning.md` e' una versione molto piu' corta dello stesso argomento, vedi Storico).
 - [user-research.md](user-research.md) / [user_research.md](user_research.md) — user research (versione estesa in underscore, 101 righe; vedi Storico).
 - [release-marketing-standard.md](release-marketing-standard.md) — standard release/README marketing.
 - [readme-en.md](readme-en.md) — presentazione in inglese del modulo.
@@ -277,7 +277,7 @@ troubleshooting, integrazioni, fonti). Punti di rilievo:
 
 - [wiki/README.md](wiki/README.md) — introduzione al wiki di modulo.
 - [wiki/overview.md](wiki/overview.md), [wiki/overviews/completion-status.md](wiki/overviews/completion-status.md) — panoramica e stato di completamento.
-- [wiki/concepts/index.md](wiki/concepts/index.md) — indice dei concetti (INDEX.md duplicato maiuscolo, vedi Storico).
+- [wiki/concepts/index.md](wiki/concepts/index.md) — indice dei concetti (index.md duplicato maiuscolo, vedi Storico).
 - [wiki/concepts/xotbase-resource-zen-pattern.md](wiki/concepts/xotbase-resource-zen-pattern.md), [wiki/concepts/queueable-action-execute-entrypoint.md](wiki/concepts/queueable-action-execute-entrypoint.md), [wiki/concepts/queueable-action-trait-mandatory.md](wiki/concepts/queueable-action-trait-mandatory.md) — pattern architetturali chiave.
 - [wiki/concepts/activity-domain-focus.md](wiki/concepts/activity-domain-focus.md), [wiki/concepts/activity-migration-ownership.md](wiki/concepts/activity-migration-ownership.md), [wiki/concepts/activity-log-attribute-changes-column.md](wiki/concepts/activity-log-attribute-changes-column.md), [wiki/concepts/activity-log-single-migration-contract.md](wiki/concepts/activity-log-single-migration-contract.md) — regole di dominio specifiche Activity.
 - [wiki/concepts/spatie-activitylog-module-dependency.md](wiki/concepts/spatie-activitylog-module-dependency.md), [wiki/concepts/package-ownership-event-sourcing.md](wiki/concepts/package-ownership-event-sourcing.md) — ownership pacchetti.
@@ -287,17 +287,17 @@ troubleshooting, integrazioni, fonti). Punti di rilievo:
 - [wiki/concepts/second-brain-local-discipline.md](wiki/concepts/second-brain-local-discipline.md), [wiki/concepts/context-mode-activity-discipline.md](wiki/concepts/context-mode-activity-discipline.md), [wiki/concepts/context-overflow-prevention.md](wiki/concepts/context-overflow-prevention.md) — disciplina agente e contesto.
 - [wiki/concepts/claude-audit-static.md](wiki/concepts/claude-audit-static.md), [wiki/concepts/ponytail-audit.md](wiki/concepts/ponytail-audit.md) — audit statici.
 - [wiki/concepts/composer-root-minimal-nwidart.md](wiki/concepts/composer-root-minimal-nwidart.md), [wiki/concepts/organizzativa-money.md](wiki/concepts/organizzativa-money.md), [wiki/concepts/jpgraph-guide.md](wiki/concepts/jpgraph-guide.md) (variante di `jpgraph-guide.md` in root), [wiki/concepts/duplicate-method-bodies.md](wiki/concepts/duplicate-method-bodies.md), [wiki/concepts/method-name-homonyms.md](wiki/concepts/method-name-homonyms.md), [wiki/concepts/phpstan-compliance.md](wiki/concepts/phpstan-compliance.md), [wiki/concepts/phpstan-module-config-zero.md](wiki/concepts/phpstan-module-config-zero.md), [wiki/concepts/phpstan-pest-discipline.md](wiki/concepts/phpstan-pest-discipline.md), [wiki/concepts/pest-bootstrap-extend-ignore.md](wiki/concepts/pest-bootstrap-extend-ignore.md), [wiki/concepts/testing.md](wiki/concepts/testing.md) — vari concetti puntuali.
-- [wiki/rules/index.md](wiki/rules/index.md) (INDEX.md duplicato, Storico), [wiki/rules/best-practices.md](wiki/rules/best-practices.md), [wiki/rules/queueable-action-execute-entrypoint.md](wiki/rules/queueable-action-execute-entrypoint.md).
-- [wiki/skills/index.md](wiki/skills/index.md), [wiki/commands/index.md](wiki/commands/index.md), [wiki/memories/index.md](wiki/memories/index.md) — indici delle rispettive sotto-sezioni (ognuno con gemello INDEX.md maiuscolo, vedi Storico).
+- [wiki/rules/index.md](wiki/rules/index.md) (index.md duplicato, Storico), [wiki/rules/best-practices.md](wiki/rules/best-practices.md), [wiki/rules/queueable-action-execute-entrypoint.md](wiki/rules/queueable-action-execute-entrypoint.md).
+- [wiki/skills/index.md](wiki/skills/index.md), [wiki/commands/index.md](wiki/commands/index.md), [wiki/memories/index.md](wiki/memories/index.md) — indici delle rispettive sotto-sezioni (ognuno con gemello index.md maiuscolo, vedi Storico).
 - [wiki/sources/activity-core-sources.md](wiki/sources/activity-core-sources.md) — fonti primarie del modulo.
 - [wiki/how-to/gitmodules-sync-session.md](wiki/how-to/gitmodules-sync-session.md), [wiki/troubleshooting/git-merge-conflict-inventory.md](wiki/troubleshooting/git-merge-conflict-inventory.md), [wiki/troubleshooting/git-push-dual-remote.md](wiki/troubleshooting/git-push-dual-remote.md), [wiki/integrations/integration.md](wiki/integrations/integration.md), [wiki/integrations/laravel-13-upgrade.md](wiki/integrations/laravel-13-upgrade.md).
-- [wiki/schema.md](wiki/schema.md), [wiki/log.md](wiki/log.md), [wiki/agents.md](wiki/agents.md), [wiki/bmad-method.md](wiki/bmad-method.md) (stub puntatore), [wiki/project-roadmap.md](wiki/project-roadmap.md).
+- [wiki/schema.md](wiki/schema.md), [wiki/log.md](wiki/log.md), [wiki/AGENTS.md](wiki/agents.md), [wiki/bmad-method.md](wiki/bmad-method.md) (stub puntatore), [wiki/project-roadmap.md](wiki/project-roadmap.md).
 - [wiki/product/_da-riconciliare/product-strategy.md](wiki/product/_da-riconciliare/product-strategy.md) — gia' esplicitamente marcato "da riconciliare" dal path stesso.
 - [wiki/_templates/concept.md](wiki/_templates/concept.md), [wiki/_templates/entity.md](wiki/_templates/entity.md), [wiki/_templates/source.md](wiki/_templates/source.md) — template per nuove pagine wiki, non contenuto.
 
 `llm-wiki/` e' uno scaffold parallelo, in gran parte vuoto: [llm-wiki/index.md](llm-wiki/index.md)
 dichiara esplicitamente "no concept/entity/source pages created yet". Contenuto reale
-solo in [llm-wiki/agents.md](llm-wiki/agents.md) e [llm-wiki/log.md](llm-wiki/log.md)
+solo in [llm-wiki/AGENTS.md](llm-wiki/agents.md) e [llm-wiki/log.md](llm-wiki/log.md)
 (`llm-wiki/AGENTS.md` duplicato maiuscolo, vedi Storico). I template
 `llm-wiki/_templates/*.md` sono stub identici a quelli di `wiki/_templates/`.
 
@@ -324,14 +324,14 @@ solo in [llm-wiki/agents.md](llm-wiki/agents.md) e [llm-wiki/log.md](llm-wiki/lo
 
 ## Sicurezza
 
-- [security.md](security.md) — documentazione di sicurezza (SECURITY.md duplicato maiuscolo, vedi Storico).
+- [SECURITY.md](security.md) — documentazione di sicurezza (SECURITY.md duplicato maiuscolo, vedi Storico).
 
 ## Ambiente, tooling, MCP e QMD
 
 - [env-development-configuration.md](env-development-configuration.md) — configurazione ambiente di sviluppo.
 - [mcp-configuration.md](mcp-configuration.md) — configurazione server MCP.
 - [mcp-server-recommended.md](mcp-server-recommended.md) — MCP consigliati per il modulo (MCP-SERVER-RECOMMENDED.md duplicato maiuscolo; `mcp_server_recommended.md`/`mcp-server-recommended.md` sono invece stub puntatori a Themes, vedi Storico — attenzione: 4 file quasi omonimi con due ruoli diversi).
-- [qmd-setup.md](qmd-setup.md) — setup QMD per il modulo (QMD-SETUP.md duplicato maiuscolo, vedi Storico).
+- [qmd-setup.md](qmd-setup.md) — setup QMD per il modulo (qmd-setup.md duplicato maiuscolo, vedi Storico).
 - [boost-skill-fix-summary.md](boost-skill-fix-summary.md) — fix skill Boost (`boost_skill_fix_summary.md` e' invece uno stub puntatore Themes, vedi Storico).
 - [laravel-13-upgrade.md](laravel-13-upgrade.md) — upgrade Laravel 13 (contenuto simile a `wiki/integrations/laravel-13-upgrade.md`, non identico).
 
@@ -357,14 +357,14 @@ solo in [llm-wiki/agents.md](llm-wiki/agents.md) e [llm-wiki/log.md](llm-wiki/lo
 - [models-analysis.md](models-analysis.md), [models-factory-seeder-analysis.md](models-factory-seeder-analysis.md) — analisi equivalenti in inglese, scope solo Activity.
 - [folio-volt-best-practices.md](folio-volt-best-practices.md) — best practice Folio + Volt.
 - [frameworks.md](frameworks.md) — note di integrazione framework (FRAMEWORKS.md duplicato maiuscolo, vedi Storico).
-- [project-structure.md](project-structure.md) — struttura di progetto (PROJECT-STRUCTURE.md duplicato, vedi Storico).
-- [quick-start.md](quick-start.md) — quick start (QUICK-START.md duplicato, vedi Storico).
-- [on-demand-pattern.md](on-demand-pattern.md) — pattern on-demand del modulo (ON-DEMAND-PATTERN.md duplicato, vedi Storico).
-- [performance-optimization.md](performance-optimization.md) — performance optimization (PERFORMANCE-OPTIMIZATION.md duplicato, vedi Storico).
+- [project-structure.md](project-structure.md) — struttura di progetto (project-structure.md duplicato, vedi Storico).
+- [quick-start.md](quick-start.md) — quick start (quick-start.md duplicato, vedi Storico).
+- [on-demand-pattern.md](on-demand-pattern.md) — pattern on-demand del modulo (on-demand-pattern.md duplicato, vedi Storico).
+- [performance-optimization.md](performance-optimization.md) — performance optimization (performance-optimization.md duplicato, vedi Storico).
 - [performance/activity-log-optimization.md](performance/activity-log-optimization.md) — ottimizzazione log attivita' (versione piu' estesa 567 righe; 3 varianti + 3 copie in `performance/archive/` in Storico).
 - [pandoc_guide.md](pandoc_guide.md) — generazione documentazione con Pandoc (PANDOC_GUIDE.md duplicato maiuscolo, vedi Storico).
 - [tecnico/laraxot/module-activity.md](tecnico/laraxot/module-activity.md) — overview tecnica modulo (contiene anche un puntatore Themes in testa; `tecnico/laraxot/archive/module-activity.md` e' una versione archiviata piu' corta, vedi Storico).
-- [changelog.md](changelog.md) — changelog del modulo (CHANGELOG.md e' un "documento unificato" diverso, non lo stesso changelog: verificarne il ruolo prima di consolidare).
+- [CHANGELOG.md](changelog.md) — changelog del modulo (CHANGELOG.md e' un "documento unificato" diverso, non lo stesso changelog: verificarne il ruolo prima di consolidare).
 
 ## Storico / da consolidare
 
@@ -375,37 +375,37 @@ variante e' collegata come riferimento primario nelle sezioni sopra.
 
 ### Varianti di sola maiuscola/minuscola o underscore/trattino (stesso contenuto)
 
-`api.md`/`API.md` · `architecture.md`/`ARCHITECTURE.md` · `bad_practices.md`/`BAD_PRACTICES.md` ·
-`best_practices.md`/`BEST_PRACTICES.md` · `business_logic_analysis.md`/`BUSINESS_LOGIC_ANALYSIS.md` ·
+`api.md`/`API.md` · `architecture.md`/`architecture.md` · `bad_practices.md`/`bad_practices.md` ·
+`best_practices.md`/`best_practices.md` · `business_logic_analysis.md`/`business_logic_analysis.md` ·
 `code_quality_analysis.md`/`CODE_QUALITY_ANALYSIS.md` · `consolidation_analysis.md`/`CONSOLIDATION_ANALYSIS.md` ·
-`critical_migration_constraints.md`/`CRITICAL_MIGRATION_CONSTRAINTS.md` · `database-schema.md`/`DATABASE-SCHEMA.md` ·
-`frameworks.md`/`FRAMEWORKS.md` · `index.md`/`INDEX.md` · `migrations.md`/`MIGRATIONS.md` ·
-`metodi_duplicati_analisi.md`/`METODI_DUPLICATI_ANALISI.md` · `on-demand-pattern.md`/`ON-DEMAND-PATTERN.md` ·
-`pandoc_guide.md`/`PANDOC_GUIDE.md` · `patterns.md`/`PATTERNS.md` · `performance-optimization.md`/`PERFORMANCE-OPTIMIZATION.md` ·
+`critical_migration_constraints.md`/`CRITICAL_MIGRATION_CONSTRAINTS.md` · `database-schema.md`/`database-schema.md` ·
+`frameworks.md`/`FRAMEWORKS.md` · `index.md`/`index.md` · `migrations.md`/`MIGRATIONS.md` ·
+`metodi_duplicati_analisi.md`/`metodi_duplicati_analisi.md` · `on-demand-pattern.md`/`on-demand-pattern.md` ·
+`pandoc_guide.md`/`PANDOC_GUIDE.md` · `patterns.md`/`PATTERNS.md` · `performance-optimization.md`/`performance-optimization.md` ·
 `phpmd-analysis.md`/`PHPMD-ANALYSIS.md` (+ stub `phpmd_analysis.md`/`PHPMD_ANALYSIS.md`) ·
-`product_launch_plan.md`/`PRODUCT_LAUNCH_PLAN.md` · `product_roadmap.md`/`PRODUCT_ROADMAP.md` ·
-`product_strategy.md`/`PRODUCT_STRATEGY.md` · `project-structure.md`/`PROJECT-STRUCTURE.md` ·
-`qmd-setup.md`/`QMD-SETUP.md` · `quality_report.md`/`QUALITY_REPORT.md` ·
+`product_launch_plan.md`/`product_launch_plan.md` · `product_roadmap.md`/`product_roadmap.md` ·
+`product_strategy.md`/`product_strategy.md` · `project-structure.md`/`project-structure.md` ·
+`qmd-setup.md`/`qmd-setup.md` · `quality_report.md`/`QUALITY_REPORT.md` ·
 `query_optimization_analysis.md`/`QUERY_OPTIMIZATION_ANALYSIS.md` (+ stub quasi vuoto `query-optimization-analysis.md`) ·
-`quick-start.md`/`QUICK-START.md` · `security.md`/`SECURITY.md` · `sprint_planning.md`/`SPRINT_PLANNING.md` ·
-`tech_spec.md`/`TECH_SPEC.md` · `user_research.md`/`USER_RESEARCH.md` · `readme-update.md`/`readme_update.md` ·
-`redundancy_analysis.md`/`REDUNDANCY_ANALYSIS.md` (entrambi stub vuoti) ·
+`quick-start.md`/`quick-start.md` · `SECURITY.md`/`SECURITY.md` · `sprint_planning.md`/`sprint_planning.md` ·
+`tech_spec.md`/`TECH_SPEC.md` · `user_research.md`/`user_research.md` · `readme-update.md`/`readme_update.md` ·
+`redundancy_analysis.md`/`redundancy_analysis.md` (entrambi stub vuoti) ·
 `filament/filament-v4-icon-size-fix.md` (+ `filament-v4-icon-size-fix-attribute.md`, ex `-2.md`, `FILAMENT_V4_ICON_SIZE_FIX.md`, `filament_v4_icon_size_fix.md`) ·
 `filament/filament-v4-upgrade.md` (+ `filament-v4-upgrade-documentation.md`, ex `-2.md`, `FILAMENT_V4_UPGRADE.md`, `filament_v4_upgrade.md`) ·
 `filament/archive/filament-v4-icon-size-fix.md` (+ maiuscolo/underscore) ·
 `filament/archive/filament-v4-upgrade.md` (+ maiuscolo/underscore) ·
 `guides/event-sourcing.md`/`guides/event_sourcing.md` (stub) ·
 `guides/archive/event-sourcing.md`/`guides/archive/event_sourcing.md` ·
-`llm-wiki/agents.md`/`llm-wiki/AGENTS.md` ·
+`llm-wiki/AGENTS.md`/`llm-wiki/AGENTS.md` ·
 `performance/activity-log-optimization.md` (+ `activity-log-optimization-module.md`, ex `-2.md`, `ACTIVITY_LOG_OPTIMIZATION.md`, `activity_log_optimization.md`) ·
 `performance/archive/activity-log-optimization.md` (+ maiuscolo/underscore/`-renamed.md`) ·
-`roadmap/00-index.md`/`roadmap/00-INDEX.md` · `wiki/AGENTS.md`/`wiki/agents.md` ·
-`wiki/PROJECT-ROADMAP.md`/`wiki/project-roadmap.md` · `wiki/SCHEMA.md`/`wiki/schema.md` ·
-`wiki/commands/INDEX.md`/`wiki/commands/index.md` · `wiki/concepts/INDEX.md`/`wiki/concepts/index.md` ·
-`wiki/memories/INDEX.md`/`wiki/memories/index.md` · `wiki/rules/INDEX.md`/`wiki/rules/index.md` ·
-`wiki/skills/INDEX.md`/`wiki/skills/index.md` · `tecnico/laraxot/archive/module-activity.md`/`module_activity.md` ·
+`roadmap/00-index.md`/`roadmap/00-index.md` · `wiki/AGENTS.md`/`wiki/AGENTS.md` ·
+`wiki/PROJECT-ROADMAP.md`/`wiki/project-roadmap.md` · `wiki/schema.md`/`wiki/schema.md` ·
+`wiki/commands/index.md`/`wiki/commands/index.md` · `wiki/concepts/index.md`/`wiki/concepts/index.md` ·
+`wiki/memories/index.md`/`wiki/memories/index.md` · `wiki/rules/index.md`/`wiki/rules/index.md` ·
+`wiki/skills/index.md`/`wiki/skills/index.md` · `tecnico/laraxot/archive/module-activity.md`/`module_activity.md` ·
 `use_cases/shop/archive/console-commands.md`/`console_commands.md` (entrambi stub vuoti) ·
-`00-index.md`/`00-INDEX.md` (+ `00-index-documentation.md` quasi vuoto).
+`00-index.md`/`00-index.md` (+ `00-index-documentation.md` quasi vuoto).
 
 **Nota**: `bad-practices.md`, `best-practices.md`, `code-quality.md`, `mcp_server_recommended.md`/`mcp-server-recommended.md`,
 `boost_skill_fix_summary.md`, `phpmd_analysis.md`/`PHPMD_ANALYSIS.md` non sono duplicati del contenuto reale:
@@ -475,7 +475,7 @@ intenzionale di "on-demand", non un incidente di duplicazione): `ai-methodologie
 `phpmd.md`, `phpmd.md`, `phpmd_analysis.md`, `PHPMD_ANALYSIS.md`, `phpmds.md`,
 `phpstan.md`, `phpstan_fixes.md`, `quality-status-nov.md`, `query-optimization.md`,
 `query-optimization-analysis.md`, `raw/README.md`, `redundancy_analysis.md`,
-`REDUNDANCY_ANALYSIS.md`, `simplechartwidget-quality-analysis.md`,
+`redundancy_analysis.md`, `simplechartwidget-quality-analysis.md`,
 `tecnico/laraxot/module_activity.md`, `wiki/bmad-method.md`, e le varianti "best-practice"/
 "analysis"/"flusso-utente"/"console-commands" dentro `use_cases/bank/`,
 `use_cases/prediction_market/` e `use_cases/shop/` (incluso `use_cases/shop/archive/`).
@@ -485,7 +485,7 @@ Non richiedono consolidamento: sono puntatori voluti, non copie accidentali.
 - [User Module](../User/docs/README.md) - User authentication and management
 - [Notify Module](../Notify/docs/index.md) - Notification system
 - [Xot Module](../Xot/docs/index.md) - Core base classes
-- [User Module](../user/docs/readme.md) - User authentication and management
+- [User Module](../user/docs/README.md) - User authentication and management
 - [Notify Module](../notify/docs/index.md) - Notification system
 - [Xot Module](../xot/docs/index.md) - Core base classes
 
@@ -493,7 +493,7 @@ Non richiedono consolidamento: sono puntatori voluti, non copie accidentali.
 - [User Module](../User/docs/README.md) - User authentication and management
 - [Notify Module](../Notify/docs/index.md) - Notification system
 - [Xot Module](../Xot/docs/index.md) - Core base classes
-- [User Module](../user/docs/readme.md) - User authentication and management
+- [User Module](../user/docs/README.md) - User authentication and management
 - [Notify Module](../notify/docs/index.md) - Notification system
 - [Xot Module](../xot/docs/index.md) - Core base classes
 
