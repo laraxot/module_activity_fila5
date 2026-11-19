@@ -26,6 +26,10 @@ class StoredEventsTable extends XotBaseResourceTable
      */
     public function getTableColumns(): array
     {
+<<<<<<< HEAD
+=======
+        /** @var view-string $eventPropertiesView */
+>>>>>>> laraxot/dev
         $eventPropertiesView = 'activity::filament.tables.columns.event-properties';
 
         return [

@@ -4,6 +4,11 @@ type: decision-log
 status: active
 updated: 2026-11-16
 module: Activity
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_GWOIZ3
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_aCvR3Z
 =======
 qmd: "decision log Activity ADR registro append-only redazione login listener migrazioni"
@@ -11,6 +16,10 @@ related:
   - ./audits/activity-audit.md
   - ./epics.md
 >>>>>>> .merge_file_calM3U
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_J2gqtl
+>>>>>>> laraxot/dev
 ---
 
 # Decision log — Activity

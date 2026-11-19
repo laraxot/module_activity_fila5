@@ -39,8 +39,13 @@ test('snapshot test', function () {
 ```
 
 **Documentazione**:
+<<<<<<< HEAD
 - [No RefreshDatabase Policy](./testing/no-refresh-database-policy.md)
 - [Snapshot Testing Patterns](./testing/snapshot-testing-patterns.md)
+=======
+- [No RefreshDatabase Policy](../testing/no-refresh-database-policy.md)
+- [Snapshot Testing Patterns](../testing/snapshot-testing-patterns.md)
+>>>>>>> laraxot/dev
 - [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)
 
 #### Test Coverage

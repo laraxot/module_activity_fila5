@@ -9,6 +9,7 @@ tags: [documentation]
 
 ## 🎯 Module Purpose
 
+<<<<<<< HEAD
 The Activity module provides comprehensive audit trail and event sourcing capabilities for the healthcare_app Fila5 Mono application. It ensures complete traceability of all user actions and system events for compliance, debugging, and analytics purposes.
 The Activity module provides comprehensive audit trail and event sourcing capabilities for the Quaeris Fila5 Mono application. It ensures complete traceability of all user actions and system events for compliance, debugging, and analytics purposes.
 The Activity module provides comprehensive audit trail and event sourcing capabilities for the healthcare_app Fila5 Mono application. It ensures complete traceability of all user actions and system events for compliance, debugging, and analytics purposes.
@@ -17,6 +18,16 @@ The Activity module provides comprehensive audit trail and event sourcing capabi
 
 **Maturity**: Production Ready  
 **PHPStan Level**: 10 ✅  
+=======
+The Activity module provides comprehensive audit trail and event sourcing capabilities for the healthcare_app fila5 application. It ensures complete traceability of all user actions and system events for compliance, debugging, and analytics purposes.
+The Activity module provides comprehensive audit trail and event sourcing capabilities for the <nome progetto> fila5 application. It ensures complete traceability of all user actions and system events for compliance, debugging, and analytics purposes.
+The Activity module provides comprehensive audit trail and event sourcing capabilities for the healthcare_app fila5 application. It ensures complete traceability of all user actions and system events for compliance, debugging, and analytics purposes.
+
+## 📋 Current Status
+
+**Maturity**: Production Ready
+**PHPStan Level**: 10 ✅
+>>>>>>> laraxot/dev
 **Test Coverage**: 85%+
 
 ## 🗓️ Development Roadmap
@@ -91,4 +102,8 @@ The Activity module provides comprehensive audit trail and event sourcing capabi
 - This module is critical for compliance and security
 - All activities must be immutable once logged
 - Consider privacy implications when logging user data
+<<<<<<< HEAD
 - Implement proper data retention policies
+=======
+- Implement proper data retention policies
+>>>>>>> laraxot/dev

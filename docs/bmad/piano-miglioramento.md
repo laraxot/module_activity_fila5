@@ -4,6 +4,12 @@ type: plan
 status: review
 updated: 2026-11-16
 module: Activity
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_gGN2hE
+qmd: "piano miglioramento Activity P0 P1 P2 BMAD"
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_PMyQ7V
 qmd: "piano miglioramento Activity P0 P1 P2 BMAD"
 =======
@@ -13,11 +19,22 @@ related:
   - ./epics.md
   - ./decision-log.md
 >>>>>>> .merge_file_FH9rqi
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_kZgv5b
+>>>>>>> laraxot/dev
 ---
 
 # Piano di miglioramento — Activity
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_PMyQ7V
+=======
+<<<<<<< .merge_file_gGN2hE
+=======
+<<<<<<< .merge_file_PMyQ7V
+>>>>>>> .merge_file_kZgv5b
+>>>>>>> laraxot/dev
 Derivato dall'[audit](./audits/activity-audit.md).
 
 ## P0
@@ -52,6 +69,11 @@ Derivato dall'[audit](./audits/activity-audit.md).
 - [ ] PHPStan `Modules/Activity` = 0
 - [ ] Pest osservabile o skip motivato
 - [ ] ECC `00-index` aggiornato con esiti
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_gGN2hE
+=======
+>>>>>>> laraxot/dev
 =======
 Derivato dall'[audit profondo](./audits/activity-audit.md). Nessun P0 emerso dal codice; i P1 riguardano l'integrità del registro.
 Epic e AC: [epics.md](./epics.md).
@@ -85,3 +107,7 @@ Epic e AC: [epics.md](./epics.md).
 - [ ] PHPStan `Modules/Activity` = 0
 - [ ] ECC `00-index` aggiornato
 >>>>>>> .merge_file_FH9rqi
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_kZgv5b
+>>>>>>> laraxot/dev

@@ -24,16 +24,28 @@ Strategic, foundational, and consolidated documentation at module level:
 **Core Documentation** (Key files)
   - [ARCHITECTURE.md](ARCHITECTURE.md): System architecture and design patterns
   - [API.md](API.md): API reference and endpoints
+<<<<<<< HEAD
   - [DATABASE-SCHEMA.md](DATABASE-SCHEMA.md): Database schema definitions
   - [QUICK-START.md](QUICK-START.md): Quick start guide
   - [PATTERNS.md](PATTERNS.md): Design patterns and implementation guides
+=======
+  - [DATABASE-SCHEMA.md](database-schema.md): Database schema definitions
+  - [QUICK-START.md](quick-start.md): Quick start guide
+  - [PATTERNS.md](patterns.md): Design patterns and implementation guides
+>>>>>>> laraxot/dev
   - [TESTING.md](TESTING.md): Testing strategy and guidelines
 
 **Planning & Strategy** (Key documents)
   - [README.md](README.md)
+<<<<<<< HEAD
   - [PRODUCT_STRATEGY.md](PRODUCT_STRATEGY.md)
   - [ROADMAP.md](roadmap.md)
   - [SPRINT_PLANNING.md](SPRINT_PLANNING.md)
+=======
+  - [PRODUCT_STRATEGY.md](product_strategy.md)
+  - [ROADMAP.md](roadmap.md)
+  - [SPRINT_PLANNING.md](sprint_planning.md)
+>>>>>>> laraxot/dev
 
 **Additional Root Files**
   - and 278+ more documentation files (configuration, guides, analysis, audits, quality reports)
@@ -234,11 +246,19 @@ Testing strategies and guidelines:
 
 | Date | File | Category |
 |------|------|----------|
+<<<<<<< HEAD
 | 2026-07-28 | [PATTERNS.md](PATTERNS.md) | root |
 | 2026-07-28 | [TESTING.md](TESTING.md) | root |
 | 2026-07-28 | [DATABASE-SCHEMA.md](DATABASE-SCHEMA.md) | root |
 | 2026-07-28 | [API.md](API.md) | root |
 | 2026-07-28 | [QUICK-START.md](QUICK-START.md) | root |
+=======
+| 2026-07-28 | [PATTERNS.md](patterns.md) | root |
+| 2026-07-28 | [TESTING.md](TESTING.md) | root |
+| 2026-07-28 | [DATABASE-SCHEMA.md](database-schema.md) | root |
+| 2026-07-28 | [API.md](API.md) | root |
+| 2026-07-28 | [QUICK-START.md](quick-start.md) | root |
+>>>>>>> laraxot/dev
 | 2026-07-28 | [ARCHITECTURE.md](ARCHITECTURE.md) | root |
 | 2026-07-28 | [archive/INDEX.md](archive/INDEX.md) | archive |
 | 2026-07-28 | [wiki/troubleshooting/git-push-dual-remote.md](wiki/troubleshooting/git-push-dual-remote.md) | wiki |

@@ -1,5 +1,12 @@
 ---
+<<<<<<< HEAD
 <<<<<<< .merge_file_PneHZi
+=======
+<<<<<<< .merge_file_57Nizb
+=======
+<<<<<<< .merge_file_PneHZi
+>>>>>>> .merge_file_eqghq3
+>>>>>>> laraxot/dev
 title: "Centralizzare il routing Folio dei moduli"
 status: review
 module: Activity
@@ -17,7 +24,14 @@ necessario replicare lo stesso blocco in ogni modulo con pagine `resources/views
 
 ## Decisione
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_CjUZpp
+=======
+<<<<<<< .merge_file_57Nizb
+=======
+<<<<<<< .merge_file_CjUZpp
+>>>>>>> .merge_file_eqghq3
+>>>>>>> laraxot/dev
 Owner del montaggio Folio in questo progetto:
 `Modules\Cms\Providers\FolioVoltServiceProvider`.
 
@@ -28,6 +42,11 @@ Owner del montaggio Folio in questo progetto:
 
 `ActivityServiceProvider` = config/comportamento Activity, **non** router.
 Niente `Folio::path()` lì (rimozione applicata; istruzione utente: aggiungere Folio nel provider «è sbagliato»).
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_57Nizb
+=======
+>>>>>>> laraxot/dev
 =======
 In questo checkout il modulo `Cms` non è presente e non va introdotto. Di
 conseguenza `ActivityServiceProvider` non deve montare Folio e
@@ -39,6 +58,10 @@ Folio dei moduli e dei temi è `Cms/app/Providers/FolioVoltServiceProvider`.
 Activity resta proprietario della configurazione e del comportamento Activity,
 non dell'infrastruttura di routing.
 >>>>>>> .merge_file_h4qSJP
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_eqghq3
+>>>>>>> laraxot/dev
 
 ## Verifica
 
@@ -51,6 +74,15 @@ non dell'infrastruttura di routing.
 
 ## Acceptance criteria
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_57Nizb
+- [x] Nessuna registrazione `Folio::path()` nel provider Activity.
+- [x] Owner unico: `Cms\FolioVoltServiceProvider` (nessun `App\Providers\FolioServiceProvider`).
+- [x] Pagina Activity visibile nell'inventario Folio.
+- [ ] Pest feature verde in ambiente di test stabile.
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_CjUZpp
 - [x] Nessuna registrazione `Folio::path()` nel provider Activity.
 - [x] Owner unico: `Cms\FolioVoltServiceProvider` (nessun `App\Providers\FolioServiceProvider`).
@@ -100,3 +132,7 @@ In PTVX Cms non c’è e non deve stare: si **impara** il pattern dai sibling FO
 - [x] `App\Providers\FolioServiceProvider` non registrato e **non scomodato**: nei sibling FO basta FolioVolt; qui non è un surrogato.
 - [x] Pest `ActivityServiceProviderNoFolioMountTest`.
 >>>>>>> .merge_file_F4jVWc
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_eqghq3
+>>>>>>> laraxot/dev

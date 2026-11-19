@@ -181,7 +181,11 @@ Pattern avanzato per testare widget Filament Livewire con form, validazione, not
 
 ### **Project Documentation**
 - [LoginTest.php](../laravel/Modules/Cms/tests/Feature/Auth/LoginTest.php) - Main test file
+<<<<<<< HEAD
 - [Implementation Guide](../laravel/modules/cms/docs/tests/login-test-implementation.md) - Complete documentation
+=======
+- [Implementation Guide](login-test-implementation.md) - Complete documentation
+>>>>>>> laraxot/dev
 - [LoginWidget](../laravel/Modules/User/app/Filament/Widgets/LoginWidget.php) - Widget under test
 - [Login Page](../laravel/Themes/One/resources/views/pages/auth/login.blade.php) - UI page
 

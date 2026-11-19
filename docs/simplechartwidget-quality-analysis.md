@@ -24,7 +24,11 @@ Questo documento fornisce un'analisi approfondita della qualità del codice del 
 }'
 ```
 
+<<<<<<< HEAD
 **Impatto**: 
+=======
+**Impatto**:
+>>>>>>> laraxot/dev
 - ❌ Ridondanza di codice
 - ❌ Difficoltà di testing
 - ❌ Problemi di manutenibilità
@@ -37,11 +41,19 @@ protected function createFormatter(): string
     return <<<'JS'
 function(v, ctx) {
     var voters = ctx.dataset.voteCounts ? ctx.dataset.voteCounts[ctx.dataIndex] || 0 : 0;
+<<<<<<< HEAD
     
     if (isNaN(avg) || avg === null) {
         return '';
     }
     
+=======
+
+    if (isNaN(avg) || avg === null) {
+        return '';
+    }
+
+>>>>>>> laraxot/dev
     return avg.toFixed(1) + '/10\n' + voters + ' voti';
 JS;
 
@@ -89,7 +101,11 @@ protected function createLabelConfig($type, $config): array
         'font' => $this->getLabelFont($type),
         'formatter' => $this->getFormatter($type),
     ];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/dev
     return array_merge($baseConfig, $config);
 
 protected function getLabelColor($type): string
@@ -117,10 +133,17 @@ protected function getData(): array
 // FIX: Type safety completo
     /** @var array<int, float> $avgRatings */
     $avgRatings = [7.2, 8.1, 6.8, 7.5, 8.9, 7.7, 8.2, 9.1, 8.5, 7.9, 8.3, 9.0];
+<<<<<<< HEAD
     
     /** @var array<int, int> $voteCounts */
     $voteCounts = [45, 52, 38, 41, 63, 55, 58, 71, 67, 59, 62, 68];
     
+=======
+
+    /** @var array<int, int> $voteCounts */
+    $voteCounts = [45, 52, 38, 41, 63, 55, 58, 71, 67, 59, 62, 68];
+
+>>>>>>> laraxot/dev
                 'data' => $avgRatings,
                 'voteCounts' => $voteCounts,
         'labels' => $this->getMonthLabels(),
@@ -129,8 +152,13 @@ protected function getData(): array
 
 #### **Pattern 1: Funzioni JavaScript Complesse**
 // PROBLEMA: Funzioni JavaScript troppo complesse
+<<<<<<< HEAD
     
     
+=======
+
+
+>>>>>>> laraxot/dev
 
 // FIX: Funzioni semplici e testabili
     return this.formatChartData(v, ctx);
@@ -138,9 +166,15 @@ protected function getData(): array
 protected function formatChartData($value, $context): string
     $avg = $this->parseValue($value);
     $voters = $this->getVoterCount($context);
+<<<<<<< HEAD
     
     if ($this->isInvalidValue($avg)) {
     
+=======
+
+    if ($this->isInvalidValue($avg)) {
+
+>>>>>>> laraxot/dev
     return $this->formatDisplayValue($avg, $voters);
 
 #### **Pattern 2: Configurazione Complessa**
@@ -190,13 +224,18 @@ protected function getDatalabelsConfig(): array
 
 #### **Best Practice 1: Error Handling Inadeguato**
 // PROBLEMA: Nessun controllo errori
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/dev
 
 **Soluzione**:
 // FIX: Error handling completo
     try {
         $avgRatings = $this->validateAndNormalizeData($this->getRawData());
         $voteCounts = $this->validateAndNormalizeData($this->getVoteCounts());
+<<<<<<< HEAD
         
         if (empty($avgRatings) || empty($voteCounts)) {
             throw new \InvalidArgumentException('Data cannot be empty');
@@ -204,6 +243,15 @@ protected function getDatalabelsConfig(): array
         if (count($avgRatings) !== count($voteCounts)) {
             throw new \InvalidArgumentException('Data arrays must have the same length');
         
+=======
+
+        if (empty($avgRatings) || empty($voteCounts)) {
+            throw new \InvalidArgumentException('Data cannot be empty');
+
+        if (count($avgRatings) !== count($voteCounts)) {
+            throw new \InvalidArgumentException('Data arrays must have the same length');
+
+>>>>>>> laraxot/dev
     } catch (\Exception $e) {
         \Log::error('Error generating chart data: ' . $e->getMessage());
         return $this->getEmptyDataset();
@@ -215,6 +263,7 @@ class SimpleChartWidgetTest extends TestCase
 
 // FIX: Testing completo
     private SimpleChartWidget $widget;
+<<<<<<< HEAD
     
     protected function setUp(): void
         parent::setUp();
@@ -237,6 +286,30 @@ class SimpleChartWidgetTest extends TestCase
     public function it_formats_chart_data_correctly()
         $dataset = $data['datasets'][0];
         
+=======
+
+    protected function setUp(): void
+        parent::setUp();
+        $this->widget = new SimpleChartWidget();
+
+    /** @test */
+    public function it_can_generate_valid_chart_data()
+        $data = $this->widget->getData();
+
+        $this->assertArrayHasKey('datasets', $data);
+        $this->assertArrayHasKey('labels', $data);
+        $this->assertCount(1, $data['datasets']);
+
+    public function it_validates_data_arrays_length()
+        $this->expectException(\InvalidArgumentException::class);
+
+        $this->widget->setInvalidData();
+        $this->widget->getData();
+
+    public function it_formats_chart_data_correctly()
+        $dataset = $data['datasets'][0];
+
+>>>>>>> laraxot/dev
         $this->assertArrayHasKey('voteCounts', $dataset);
         $this->assertCount(12, $dataset['voteCounts']);
 
@@ -247,6 +320,7 @@ class SimpleChartWidgetTest extends TestCase
 #### **ChartFormatter Service**
 class ChartFormatter
     public function formatChartData($value, $context): string
+<<<<<<< HEAD
         
         
     
@@ -259,6 +333,20 @@ class ChartFormatter
     private function isInvalidValue($value): bool
         return !is_numeric($value) || $value < 0 || $value > 10;
     
+=======
+
+
+
+    private function parseValue($value): float
+        return is_numeric($value) ? (float) $value : 0.0;
+
+    private function getVoterCount($context): int
+        return $context->dataset->voteCounts[$context->dataIndex] ?? 0;
+
+    private function isInvalidValue($value): bool
+        return !is_numeric($value) || $value < 0 || $value > 10;
+
+>>>>>>> laraxot/dev
     private function formatDisplayValue(float $avg, int $voters): string
         return sprintf('%.1f/10\n%d voti', $avg, $voters);
 
@@ -267,18 +355,28 @@ class ChartLabelFactory
     public function createAverageLabelConfig(): array
         return $this->createLabelConfig('average', [
         ]);
+<<<<<<< HEAD
     
     public function createMonthLabelConfig(): array
         return $this->createLabelConfig('month', [
     
     private function createLabelConfig(string $type, array $overrides): array
         
+=======
+
+    public function createMonthLabelConfig(): array
+        return $this->createLabelConfig('month', [
+
+    private function createLabelConfig(string $type, array $overrides): array
+
+>>>>>>> laraxot/dev
         return array_merge($baseConfig, $overrides);
 
 ### 2. Refactoring Incrementale
 
 #### **Versione 1: Separazione Logica**
 class SimpleChartWidget extends XotBaseChartWidget
+<<<<<<< HEAD
             
             
             
@@ -288,6 +386,17 @@ class SimpleChartWidget extends XotBaseChartWidget
     
     protected function getAverageLabelConfig(): array
     
+=======
+
+
+
+
+
+
+
+    protected function getAverageLabelConfig(): array
+
+>>>>>>> laraxot/dev
     protected function getMonthLabelConfig(): array
 
 #### **Versione 2: Utilizzo di Servizi**
@@ -296,6 +405,7 @@ class SimpleChartWidget extends XotBaseChartWidget
         private readonly ChartLabelFactory $chartLabelFactory
     ) {
         parent::__construct();
+<<<<<<< HEAD
     
             
             
@@ -303,6 +413,15 @@ class SimpleChartWidget extends XotBaseChartWidget
     
     
     
+=======
+
+
+
+
+
+
+
+>>>>>>> laraxot/dev
                 'average' => $this->chartLabelFactory->createAverageLabelConfig(),
                 'month' => $this->chartLabelFactory->createMonthLabelConfig(),
 
@@ -310,26 +429,44 @@ class SimpleChartWidget extends XotBaseChartWidget
 
 ### Prima del Refactoring
 // ❌ Codice complesso e difficile da manutenere
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/dev
 
 ### Dopo del Refactoring
 // ✅ Codice pulito, manutenibile e testabile
 
+<<<<<<< HEAD
         
         
         
+=======
+
+
+
+>>>>>>> laraxot/dev
 
 ## Metriche di Qualità
 
 ### PHPStan Level 10 Compliance
 ```bash
 # ✅ Zero errori dopo refactoring
+<<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
+=======
+./vendor/bin/phpstan analyse Modules/<nome progetto>/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
+>>>>>>> laraxot/dev
 ./vendor/bin/phpstan analyse Modules/healthcare_app/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
 
 ### Testing Coverage
 # ✅ 100% coverage per metodi principali
+<<<<<<< HEAD
 ./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
+=======
+./vendor/bin/phpunit --coverage-html=coverage Modules/<nome progetto>/tests/Unit/SimpleChartWidgetTest.php
+>>>>>>> laraxot/dev
 ./vendor/bin/phpunit --coverage-html=coverage Modules/healthcare_app/tests/Unit/SimpleChartWidgetTest.php
 
 ### Performance Metrics

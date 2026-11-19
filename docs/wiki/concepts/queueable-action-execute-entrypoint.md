@@ -86,7 +86,11 @@ app(ActivityLogger::class)->recordSubject(...);
 ## Riferimenti progetto
 
 - [QUEUEABLE-ACTION-RULE](../../../../docs/QUEUEABLE-ACTION-RULE.md) — regola moduli
+<<<<<<< HEAD
 - [Xot queueable-actions](../../../Xot/docs/queueable-actions.md) — pattern DI + queue
+=======
+- [Xot queueable-actions](../../queueable-actions.md) — pattern DI + queue
+>>>>>>> laraxot/dev
 - [no-services-rule](../../../../../../docs/wiki/rules/no-services-rule.md) — vietati Services
 
 ## Backlink

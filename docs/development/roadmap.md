@@ -71,7 +71,11 @@ tags: [documentation]
 - [Torna a README](./README.md)
 - [Torna a README](./readme.md)
 - [Vai a Struttura](./structure.md)
+<<<<<<< HEAD
 - [Vai a Bottlenecks](./bottlenecks.md)
+=======
+- [Vai a Bottlenecks](../bottlenecks.md)
+>>>>>>> laraxot/dev
 
 - [ ] Compressione base
 - [ ] Pulizia manuale

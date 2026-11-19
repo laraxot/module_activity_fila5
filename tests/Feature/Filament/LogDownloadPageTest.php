@@ -25,6 +25,10 @@ uses(TestCase::class);
  * nel database, cosa che questi test non devono fare.
  */
 beforeEach(function (): void {
+<<<<<<< HEAD
+=======
+    // Skip se Folio non ha montato /api/log-download (ambiente senza Cms/FolioVolt).
+>>>>>>> laraxot/dev
     $uris = [];
     foreach (app('router')->getRoutes()->getRoutes() as $route) {
         $uris[] = $route->uri();

@@ -4,6 +4,11 @@ type: epics
 status: review
 updated: 2026-11-16
 module: Activity
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_sAMQVc
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_HsLE76
 =======
 qmd: "epics Activity audit trail append-only redazione PII login listener test ripristino"
@@ -13,6 +18,10 @@ related:
   - ./epics/module-roadmap.md
   - ./stories/module-bmad-audit.story.md
 >>>>>>> .merge_file_qS0a43
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_RgpRQ7
+>>>>>>> laraxot/dev
 ---
 
 # Epics — Activity

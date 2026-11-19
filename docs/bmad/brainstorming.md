@@ -5,8 +5,16 @@ module: Activity
 ---
 
 ---
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_7CXgoL
+=======
+<<<<<<< .merge_file_mWIXFq
+=======
+=======
+>>>>>>> .merge_file_7CXgoL
+>>>>>>> .merge_file_77JgDS
+>>>>>>> laraxot/dev
 title: "Activity — brainstorming BMAD"
 type: concept
 tags: [brainstorming, activity, decisioni, debito-tecnico, event-sourcing]
