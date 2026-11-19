@@ -9,12 +9,6 @@ related:
 
 # Html2Pdf — usage
 
-<<<<<<< HEAD
 Stub **DRY**. Documentazione canonica nel modulo **Media** (issue [#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
 
 → [usage.md](../../../Media/docs/html2pdf/usage.md)
-=======
-Stub **DRY**. Documentazione canonica nel modulo **Media** (issue [#124](https://github.com/provtv/base_ptv_fila5/issues/124)).
-
-→ [usage.md](../../../Media/docs/html2pdf/usage.md)
->>>>>>> laraxot/dev

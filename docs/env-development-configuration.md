@@ -9,13 +9,8 @@ tags: [documentation]
 
 ## Panoramica
 
-<<<<<<< HEAD
 Il file `.env.development` è la configurazione di sviluppo standard per l'ambiente locale di Quaeris Fila5 Mono. Questa configurazione è ottimizzata per lo sviluppo rapido e zero-setup, differenziandosi significativamente dalla configurazione di produzione.
 Il file `.env.development` è la configurazione di sviluppo standard per l'ambiente locale di healthcare_app Fila5 Mono. Questa configurazione è ottimizzata per lo sviluppo rapido e zero-setup, differenziandosi significativamente dalla configurazione di produzione.
-=======
-Il file `.env.development` è la configurazione di sviluppo standard per l'ambiente locale di <nome progetto> fila5. Questa configurazione è ottimizzata per lo sviluppo rapido e zero-setup, differenziandosi significativamente dalla configurazione di produzione.
-Il file `.env.development` è la configurazione di sviluppo standard per l'ambiente locale di healthcare_app fila5. Questa configurazione è ottimizzata per lo sviluppo rapido e zero-setup, differenziandosi significativamente dalla configurazione di produzione.
->>>>>>> laraxot/dev
 
 ## Differenze Chiave con .env.example
 
@@ -242,11 +237,7 @@ DB_DATABASE=$PROJECT_ROOT/database/database.sqlite
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-<<<<<<< HEAD
 DB_DATABASE=Quaeris_data
-=======
-DB_DATABASE=<nome progetto>_data
->>>>>>> laraxot/dev
 DB_DATABASE=healthcare_app_data
 DB_USERNAME=marco
 DB_PASSWORD=marco
@@ -280,10 +271,5 @@ SESSION_DOMAIN=null
 
 ## Conclusione
 
-<<<<<<< HEAD
 Il file `.env.development` rappresenta la configurazione ottimale per lo sviluppo rapido e efficiente di Quaeris Fila5 Mono. La sua struttura differenzia significativamente dalla produzione per favorire setup zero-setup, performance ottimizzate e debugging più semplice. Questa configurazione è essenziale per mantenere un ambiente di sviluppo fluido e produttivo.
 Il file `.env.development` rappresenta la configurazione ottimale per lo sviluppo rapido e efficiente di healthcare_app Fila5 Mono. La sua struttura differenzia significativamente dalla produzione per favorire setup zero-setup, performance ottimizzate e debugging più semplice. Questa configurazione è essenziale per mantenere un ambiente di sviluppo fluido e produttivo.
-=======
-Il file `.env.development` rappresenta la configurazione ottimale per lo sviluppo rapido e efficiente di <nome progetto> fila5. La sua struttura differenzia significativamente dalla produzione per favorire setup zero-setup, performance ottimizzate e debugging più semplice. Questa configurazione è essenziale per mantenere un ambiente di sviluppo fluido e produttivo.
-Il file `.env.development` rappresenta la configurazione ottimale per lo sviluppo rapido e efficiente di healthcare_app fila5. La sua struttura differenzia significativamente dalla produzione per favorire setup zero-setup, performance ottimizzate e debugging più semplice. Questa configurazione è essenziale per mantenere un ambiente di sviluppo fluido e produttivo.
->>>>>>> laraxot/dev

@@ -268,11 +268,7 @@ class ActivityPolicy
 ### Related Documentation
 
 - [Security](SECURITY.md)
-<<<<<<< HEAD
 - [Quality](QUALITY.md)
-=======
-- [Quality](../roadmap/quality.md)
->>>>>>> laraxot/dev
 - [Performance](PERFORMANCE.md)
 - [Testing](TESTING.md)
 - [Testing](TESTING.md)

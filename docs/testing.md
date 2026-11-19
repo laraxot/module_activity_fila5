@@ -110,11 +110,7 @@ Configure Activity-specific settings:
 protected function setUp(): void
 {
     parent::setUp();
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     // Configure Activity module
     config(['activity.default_log_level' => 'info']);
     config(['activity.cache_enabled' => false]);
@@ -135,11 +131,7 @@ test('activity can be created', function () {
         'user_agent' => 'Test Agent',
         'data' => ['key' => 'value'],
     ]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     expect($activity)->toBeInstanceOf(\Modules\Activity\Models\Activity::class);
     expect($activity->type)->toBe('user_action');
 });
@@ -150,11 +142,7 @@ test('activity can be created', function () {
 ```php
 test('activity configuration is loaded', function () {
     $activityConfig = config('activity');
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     expect($activityConfig['default_log_level'])->toBe('info');
     expect($activityConfig['cache_enabled'])->toBe(false);
 });
@@ -165,11 +153,7 @@ test('activity configuration is loaded', function () {
 ```php
 test('activity service provider is registered', function () {
     $app = app();
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     expect($app->bound(\Modules\Activity\Providers\ActivityServiceProvider::class))->toBeTrue();
 });
 ```
@@ -214,11 +198,7 @@ test('activity service provider is registered', function () {
 protected function setUp(): void
 {
     parent::setUp();
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     config(['activity.default_log_level' => 'info']);
     config(['activity.cache_enabled' => false]);
 }
@@ -234,21 +214,12 @@ protected function setUp(): void
 protected function createApplication()
 {
     $app = parent::createApplication();
-<<<<<<< HEAD
     
     $app['config']->set([
 'database.connections.activity.database' => 'Quaeris_data_test',
         'database.connections.activity.database' => 'healthcare_app_data_test',
     ]);
     
-=======
-
-    $app['config']->set([
-'database.connections.activity.database' => '<nome progetto>_data_test',
-        'database.connections.activity.database' => 'healthcare_app_data_test',
-    ]);
-
->>>>>>> laraxot/dev
     return $app;
 }
 ```
@@ -352,11 +323,7 @@ test('activity can be created', function () {
         'level' => 'info',
         'created_at' => now(),
     ]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     expect($activity)->toBeInstanceOf(\Modules\Activity\Models\Activity::class);
     expect($activity->type)->toBe('user_action');
     expect($activity->description)->toBe('Test activity');
@@ -373,11 +340,7 @@ test('activity can be created', function () {
 ```php
 test('activity service can log activity', function () {
     $service = new \Modules\Activity\Services\ActivityService();
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     $activity = $service->logActivity([
         'type' => 'user_action',
         'description' => 'Test activity',
@@ -386,11 +349,7 @@ test('activity service can log activity', function () {
         'user_agent' => 'Test Agent',
         'data' => ['key' => 'value'],
     ]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     expect($activity)->toBeInstanceOf(\Modules\Activity\Models\Activity::class);
     expect($activity->type)->toBe('user_action');
 });
@@ -408,11 +367,7 @@ test('activity api can log activity', function () {
         'user_agent' => 'Test Agent',
         'data' => ['key' => 'value'],
     ];
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     $response = $this->post('/api/activity/log', $activityData);
     $response->assertStatus(201);
     $response->assertJson([

@@ -1,20 +1,4 @@
 ---
-<<<<<<< .merge_file_aqapEl
-title: Architecture
-module: Activity
----
-
----
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_4jCkbW
-=======
-<<<<<<< .merge_file_3NO9jB
-=======
-=======
->>>>>>> .merge_file_4jCkbW
->>>>>>> .merge_file_4V4Gfj
->>>>>>> laraxot/dev
 title: "Activity — architettura BMAD"
 type: concept
 tags: [architecture, activity, audit, log, event-sourcing, spatie]
@@ -36,18 +20,7 @@ discussions: []
 > **SUMMARY**: mappa reale del modulo `Modules/Activity` (alias `activity`): due
 > sottosistemi distinti — audit delle azioni utente su Spatie Activity + event
 > sourcing, e un visualizzatore dei log di file Laravel — con tre Resource
-<<<<<<< HEAD
-<<<<<<< .merge_file_aqapEl
-=======
-<<<<<<< .merge_file_3NO9jB
-=======
-<<<<<<< .merge_file_aqapEl
->>>>>>> .merge_file_4V4Gfj
->>>>>>> laraxot/dev
-> Filament, 29 Action e 7 DTO.
-=======
-> Filament, 30 Action e 7 DTO (misura 2026-11-16).
->>>>>>> .merge_file_4jCkbW
+> Filament, 30 Action e 8 DTO (misura 2026-11-19; 7 DTO del log viewer + `ActivityConfigData`).
 
 ## Identita del modulo
 
@@ -92,10 +65,10 @@ e il **contratto pubblico** del modulo.
 `IsActivityLogSchemaWritableAction`: verificano se la tabella di audit e la
 struttura del log sono scrivibili prima di tentare l'operazione.
 
-## DTO (`app/Datas`, 7)
+## DTO (`app/Datas`, 8)
 
-`FilteredLogEntriesData`, `LogEntryData`, `LogFileData`, `LogTailData`,
-`LogTreeData`, `LogViewerStateData`, `ResolvedLogFileData` — coprono l'intero
+`ActivityConfigData` (configurazione del modulo) e `FilteredLogEntriesData`, `LogEntryData`, `LogFileData`, `LogTailData`,
+`LogTreeData`, `LogViewerStateData`, `ResolvedLogFileData` — questi ultimi sette coprono l'intero
 flusso del log viewer: risoluzione percorso -> lista -> albero -> tail ->
 parsing -> filtro -> stato UI.
 
@@ -127,39 +100,7 @@ Alto numero ma qualita da verificare: 8 file senza casi, 19 punti di skip, 0 `Li
 
 - [module-boundary.md](./architecture/module-boundary.md) — confini del modulo.
 - [module-map.md](./architecture/module-map.md) — mappa file -> responsabilita, una riga per file.
-<<<<<<< HEAD
-<<<<<<< .merge_file_aqapEl
-=======
-<<<<<<< .merge_file_3NO9jB
-=======
-<<<<<<< .merge_file_aqapEl
->>>>>>> .merge_file_4V4Gfj
->>>>>>> laraxot/dev
-- [brainstorming.md](./brainstorming.md) — decisioni prese e problemi aperti.# Architettura del modulo Activity
-
-## Overview
-
-[DA COMPLETARE]
-
-## Componenti principali
-
-### Actions
-Azioni eseguibili (Queueable Actions) per la logica di business.
-
-### Resources
-Risorse Filament per il pannello di amministrazione.
-<<<<<<< HEAD
-=======
 - [brainstorming.md](./brainstorming.md) — decisioni prese e problemi aperti.
->>>>>>> .merge_file_4jCkbW
-=======
-<<<<<<< .merge_file_3NO9jB
-=======
-=======
-- [brainstorming.md](./brainstorming.md) — decisioni prese e problemi aperti.
->>>>>>> .merge_file_4jCkbW
->>>>>>> .merge_file_4V4Gfj
->>>>>>> laraxot/dev
 
 ## Flussi di dati (verificati sul codice, 2026-11-16)
 
@@ -184,22 +125,6 @@ Policy per permesso (`activity.*`, `snapshot.*`, `stored_event.*`) su `UserBaseP
 
 ## Pattern utilizzati
 
-<<<<<<< .merge_file_aqapEl
-- Action invece di Service
-- Filament Widget invece di Livewire
-- Array una chiave per riga
-- Schema-driven Forms (XotBaseSchemaWidget)
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_3NO9jB
-=======
->>>>>>> laraxot/dev
-=======
 - Action Queueable invece di Service (0 Services).
 - Resource con `Schemas/` e `Tables/` separati, base `XotBase*`.
 - Array una chiave per riga.
->>>>>>> .merge_file_4jCkbW
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_4V4Gfj
->>>>>>> laraxot/dev

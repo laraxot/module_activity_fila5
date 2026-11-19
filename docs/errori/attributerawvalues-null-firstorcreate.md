@@ -257,11 +257,7 @@ IndennitaResponsabilita::withoutEvents(function (): void {
 - [BaseScheda Activity Log Configuration](../../ptv/docs/models/base-scheda-activity-log.md)
 - [Activity Log Troubleshooting](../troubleshooting/properties-vuote-activity-log.md)
 - [PopulateByYearAction](../../Ptv/app/Actions/PopulateByYearAction.php)
-<<<<<<< HEAD
 - [Business Logic Sigma](../../Sigma/docs/business-logic.md)
-=======
-- [Business Logic Sigma](../business-logic.md)
->>>>>>> laraxot/dev
 
 ---
 

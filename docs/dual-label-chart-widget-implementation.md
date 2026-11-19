@@ -25,11 +25,7 @@ Questo documento fornisce un'analisi approfondita della qualità del codice del 
 }'
 ```
 
-<<<<<<< HEAD
 **Impatto**: 
-=======
-**Impatto**:
->>>>>>> laraxot/dev
 - ❌ Ridondanza di codice
 - ❌ Difficoltà di testing
 - ❌ Problemi di manutenibilità
@@ -44,19 +40,11 @@ protected function createFormatter(): string
 function(v, ctx) {
     var avg = Number(v) || 0;
     var voters = ctx.dataset.voteCounts ? ctx.dataset.voteCounts[ctx.dataIndex] || 0 : 0;
-<<<<<<< HEAD
     
     if (isNaN(avg) || avg === null) {
         return '';
     }
     
-=======
-
-    if (isNaN(avg) || avg === null) {
-        return '';
-    }
-
->>>>>>> laraxot/dev
     return avg.toFixed(1) + '/10\n' + voters + ' voti';
 }
 JS;
@@ -123,11 +111,7 @@ protected function createLabelConfig($type, $config): array
         'formatter' => $this->getFormatter($type),
         'display' => $this->createDisplayFunction(),
     ];
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     return array_merge($baseConfig, $config);
 }
 
@@ -170,17 +154,10 @@ protected function getData(): array
 {
     /** @var array<int, float> $avgRatings */
     $avgRatings = [7.2, 8.1, 6.8, 7.5, 8.9, 7.7, 8.2, 9.1, 8.5, 7.9, 8.3, 9.0];
-<<<<<<< HEAD
     
     /** @var array<int, int> $voteCounts */
     $voteCounts = [45, 52, 38, 41, 63, 55, 58, 71, 67, 59, 62, 68];
     
-=======
-
-    /** @var array<int, int> $voteCounts */
-    $voteCounts = [45, 52, 38, 41, 63, 55, 58, 71, 67, 59, 62, 68];
-
->>>>>>> laraxot/dev
     return [
         'datasets' => [
             [
@@ -205,19 +182,11 @@ protected function getData(): array
 'formatter' => 'function(v, ctx) {
     var avg = Number(v) || 0;
     var voters = ctx.dataset.voteCounts ? ctx.dataset.voteCounts[ctx.dataIndex] || 0 : 0;
-<<<<<<< HEAD
     
     if (isNaN(avg) || avg === null) {
         return '';
     }
     
-=======
-
-    if (isNaN(avg) || avg === null) {
-        return '';
-    }
-
->>>>>>> laraxot/dev
     return avg.toFixed(1) + '/10\n' + voters + ' voti';
 }'
 ```
@@ -238,19 +207,11 @@ protected function formatChartData($value, $context): string
 {
     $avg = $this->parseValue($value);
     $voters = $this->getVoterCount($context);
-<<<<<<< HEAD
     
     if ($this->isInvalidValue($avg)) {
         return '';
     }
     
-=======
-
-    if ($this->isInvalidValue($avg)) {
-        return '';
-    }
-
->>>>>>> laraxot/dev
     return $this->formatDisplayValue($avg, $voters);
 }
 ```
@@ -346,11 +307,7 @@ protected function getData(): array
 {
     $avgRatings = [7.2, 8.1, 6.8, 7.5, 8.9, 7.7, 8.2, 9.1, 8.5, 7.9, 8.3, 9.0];
     $voteCounts = [45, 52, 38, 41, 63, 55, 58, 71, 67, 59, 62, 68];
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     return [
         'datasets' => [
             [
@@ -375,7 +332,6 @@ protected function getData(): array
     try {
         $avgRatings = $this->validateAndNormalizeData($this->getRawData());
         $voteCounts = $this->validateAndNormalizeData($this->getVoteCounts());
-<<<<<<< HEAD
         
         if (empty($avgRatings) || empty($voteCounts)) {
             throw new \InvalidArgumentException('Data cannot be empty');
@@ -385,17 +341,6 @@ protected function getData(): array
             throw new \InvalidArgumentException('Data arrays must have the same length');
         }
         
-=======
-
-        if (empty($avgRatings) || empty($voteCounts)) {
-            throw new \InvalidArgumentException('Data cannot be empty');
-        }
-
-        if (count($avgRatings) !== count($voteCounts)) {
-            throw new \InvalidArgumentException('Data arrays must have the same length');
-        }
-
->>>>>>> laraxot/dev
         return [
             'datasets' => [
                 [
@@ -431,66 +376,38 @@ class SimpleChartWidgetTest extends TestCase
 class SimpleChartWidgetTest extends TestCase
 {
     private SimpleChartWidget $widget;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     protected function setUp(): void
     {
         parent::setUp();
         $this->widget = new SimpleChartWidget();
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     /** @test */
     public function it_can_generate_valid_chart_data()
     {
         $data = $this->widget->getData();
-<<<<<<< HEAD
         
-=======
-
->>>>>>> laraxot/dev
         $this->assertArrayHasKey('datasets', $data);
         $this->assertArrayHasKey('labels', $data);
         $this->assertCount(1, $data['datasets']);
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     /** @test */
     public function it_validates_data_arrays_length()
     {
         $this->expectException(\InvalidArgumentException::class);
-<<<<<<< HEAD
         
         $this->widget->setInvalidData();
         $this->widget->getData();
     }
     
-=======
-
-        $this->widget->setInvalidData();
-        $this->widget->getData();
-    }
-
->>>>>>> laraxot/dev
     /** @test */
     public function it_formats_chart_data_correctly()
     {
         $data = $this->widget->getData();
         $dataset = $data['datasets'][0];
-<<<<<<< HEAD
         
-=======
-
->>>>>>> laraxot/dev
         $this->assertArrayHasKey('voteCounts', $dataset);
         $this->assertCount(12, $dataset['voteCounts']);
     }
@@ -509,7 +426,6 @@ class ChartFormatter
     {
         $avg = $this->parseValue($value);
         $voters = $this->getVoterCount($context);
-<<<<<<< HEAD
         
         if ($this->isInvalidValue($avg)) {
             return '';
@@ -518,43 +434,21 @@ class ChartFormatter
         return $this->formatDisplayValue($avg, $voters);
     }
     
-=======
-
-        if ($this->isInvalidValue($avg)) {
-            return '';
-        }
-
-        return $this->formatDisplayValue($avg, $voters);
-    }
-
->>>>>>> laraxot/dev
     private function parseValue($value): float
     {
         return is_numeric($value) ? (float) $value : 0.0;
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     private function getVoterCount($context): int
     {
         return $context->dataset->voteCounts[$context->dataIndex] ?? 0;
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     private function isInvalidValue($value): bool
     {
         return !is_numeric($value) || $value < 0 || $value > 10;
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     private function formatDisplayValue(float $avg, int $voters): string
     {
         return sprintf('%.1f/10\n%d voti', $avg, $voters);
@@ -581,11 +475,7 @@ class ChartLabelFactory
             ],
         ]);
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     public function createMonthLabelConfig(): array
     {
         return $this->createLabelConfig('month', [
@@ -601,11 +491,7 @@ class ChartLabelFactory
             ],
         ]);
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     private function createLabelConfig(string $type, array $overrides): array
     {
         $baseConfig = [
@@ -614,11 +500,7 @@ class ChartLabelFactory
             'formatter' => $this->getFormatter($type),
             'display' => $this->createDisplayFunction(),
         ];
-<<<<<<< HEAD
         
-=======
-
->>>>>>> laraxot/dev
         return array_merge($baseConfig, $overrides);
     }
 }
@@ -635,7 +517,6 @@ class SimpleChartWidget extends XotBaseChartWidget
         try {
             $avgRatings = $this->validateAndNormalizeData($this->getRawData());
             $voteCounts = $this->validateAndNormalizeData($this->getVoteCounts());
-<<<<<<< HEAD
             
             if (empty($avgRatings) || empty($voteCounts)) {
                 throw new \InvalidArgumentException('Data cannot be empty');
@@ -645,17 +526,6 @@ class SimpleChartWidget extends XotBaseChartWidget
                 throw new \InvalidArgumentException('Data arrays must have the same length');
             }
             
-=======
-
-            if (empty($avgRatings) || empty($voteCounts)) {
-                throw new \InvalidArgumentException('Data cannot be empty');
-            }
-
-            if (count($avgRatings) !== count($voteCounts)) {
-                throw new \InvalidArgumentException('Data arrays must have the same length');
-            }
-
->>>>>>> laraxot/dev
             return [
                 'datasets' => [
                     [
@@ -674,11 +544,7 @@ class SimpleChartWidget extends XotBaseChartWidget
             return $this->getEmptyDataset();
         }
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     protected function getOptions(): array
     {
         return [
@@ -687,11 +553,7 @@ class SimpleChartWidget extends XotBaseChartWidget
             'scales' => $this->getScaleConfig(),
         ];
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     protected function getPluginConfig(): array
     {
         return [
@@ -699,11 +561,7 @@ class SimpleChartWidget extends XotBaseChartWidget
             'datalabels' => $this->getDatalabelsConfig(),
         ];
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     protected function getDatalabelsConfig(): array
     {
         return [
@@ -715,11 +573,7 @@ class SimpleChartWidget extends XotBaseChartWidget
             ],
         ];
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     protected function getAverageLabelConfig(): array
     {
         return [
@@ -741,11 +595,7 @@ class SimpleChartWidget extends XotBaseChartWidget
             'display' => $this->createDisplayFunction(),
         ];
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     protected function getMonthLabelConfig(): array
     {
         return [
@@ -780,17 +630,12 @@ class SimpleChartWidget extends XotBaseChartWidget
     ) {
         parent::__construct();
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     protected function getData(): array
     {
         try {
             $avgRatings = $this->validateAndNormalizeData($this->getRawData());
             $voteCounts = $this->validateAndNormalizeData($this->getVoteCounts());
-<<<<<<< HEAD
             
             if (empty($avgRatings) || empty($voteCounts)) {
                 throw new \InvalidArgumentException('Data cannot be empty');
@@ -800,17 +645,6 @@ class SimpleChartWidget extends XotBaseChartWidget
                 throw new \InvalidArgumentException('Data arrays must have the same length');
             }
             
-=======
-
-            if (empty($avgRatings) || empty($voteCounts)) {
-                throw new \InvalidArgumentException('Data cannot be empty');
-            }
-
-            if (count($avgRatings) !== count($voteCounts)) {
-                throw new \InvalidArgumentException('Data arrays must have the same length');
-            }
-
->>>>>>> laraxot/dev
             return [
                 'datasets' => [
                     [
@@ -829,11 +663,7 @@ class SimpleChartWidget extends XotBaseChartWidget
             return $this->getEmptyDataset();
         }
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     protected function getOptions(): array
     {
         return [
@@ -842,11 +672,7 @@ class SimpleChartWidget extends XotBaseChartWidget
             'scales' => $this->getScaleConfig(),
         ];
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     protected function getPluginConfig(): array
     {
         return [
@@ -854,11 +680,7 @@ class SimpleChartWidget extends XotBaseChartWidget
             'datalabels' => $this->getDatalabelsConfig(),
         ];
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     protected function getDatalabelsConfig(): array
     {
         return [
@@ -882,11 +704,7 @@ protected function getData(): array
 {
     $avgRatings = [7.2, 8.1, 6.8, 7.5, 8.9, 7.7, 8.2, 9.1, 8.5, 7.9, 8.3, 9.0];
     $voteCounts = [45, 52, 38, 41, 63, 55, 58, 71, 67, 59, 62, 68];
-<<<<<<< HEAD
     
-=======
-
->>>>>>> laraxot/dev
     return [
         'datasets' => [
             [
@@ -918,7 +736,6 @@ protected function getData(): array
     try {
         $avgRatings = $this->validateAndNormalizeData($this->getRawData());
         $voteCounts = $this->validateAndNormalizeData($this->getVoteCounts());
-<<<<<<< HEAD
         
         if (empty($avgRatings) || empty($voteCounts)) {
             throw new \InvalidArgumentException('Data cannot be empty');
@@ -928,17 +745,6 @@ protected function getData(): array
             throw new \InvalidArgumentException('Data arrays must have the same length');
         }
         
-=======
-
-        if (empty($avgRatings) || empty($voteCounts)) {
-            throw new \InvalidArgumentException('Data cannot be empty');
-        }
-
-        if (count($avgRatings) !== count($voteCounts)) {
-            throw new \InvalidArgumentException('Data arrays must have the same length');
-        }
-
->>>>>>> laraxot/dev
         return [
             'datasets' => [
                 [
@@ -964,22 +770,14 @@ protected function getData(): array
 ### PHPStan Level 10 Compliance
 ```bash
 # ✅ Zero errori dopo refactoring
-<<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
-=======
-./vendor/bin/phpstan analyse Modules/<nome progetto>/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
->>>>>>> laraxot/dev
 ./vendor/bin/phpstan analyse Modules/healthcare_app/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
 ```
 
 ### Testing Coverage
 ```bash
 # ✅ 100% coverage per metodi principali
-<<<<<<< HEAD
 ./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
-=======
-./vendor/bin/phpunit --coverage-html=coverage Modules/<nome progetto>/tests/Unit/SimpleChartWidgetTest.php
->>>>>>> laraxot/dev
 ./vendor/bin/phpunit --coverage-html=coverage Modules/healthcare_app/tests/Unit/SimpleChartWidgetTest.php
 ```
 
@@ -1005,8 +803,4 @@ Il refactoring ha migliorato la qualità del codice da:
 - **Mancanza di testing** → **Coverage completo**
 - **Violazioni di principi** → **Conformità con best practices**
 
-<<<<<<< HEAD
 Questo approccio DRY+KISS permette di mantenere un codice di alta qualità, facile da testare e manutenere nel tempo.
-=======
-Questo approccio DRY+KISS permette di mantenere un codice di alta qualità, facile da testare e manutenere nel tempo.
->>>>>>> laraxot/dev

@@ -33,11 +33,7 @@ related:
 ## Completamento
 
 - [overviews/completion-status.md](./overviews/completion-status.md) — stato modulo post gate chef
-<<<<<<< HEAD
 - [PROJECT-ROADMAP.md](./PROJECT-ROADMAP.md) — milestone Activity
-=======
-- [PROJECT-ROADMAP.md](project-roadmap.md) — milestone Activity
->>>>>>> laraxot/dev
 - [platform-completion-roadmap (Xot)](../../Xot/docs/wiki/overviews/platform-completion-roadmap.md)
 
 ## Concepts

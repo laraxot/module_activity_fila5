@@ -9,12 +9,6 @@ related:
 
 # Html2Pdf — styling
 
-<<<<<<< HEAD
 Stub **DRY**. Documentazione canonica nel modulo **Media** (issue [#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
 
 → [styling.md](../../../Media/docs/html2pdf/styling.md)
-=======
-Stub **DRY**. Documentazione canonica nel modulo **Media** (issue [#124](https://github.com/provtv/base_ptv_fila5/issues/124)).
-
-→ [styling.md](../../../Media/docs/html2pdf/styling.md)
->>>>>>> laraxot/dev

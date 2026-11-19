@@ -15,11 +15,7 @@ use Override;
  *
  * NON monta Folio: `Modules\Cms\Providers\FolioVoltServiceProvider` registra già
  * `resources/views/pages` (e `pages/api` → `/api`) per ogni modulo abilitato.
-<<<<<<< HEAD
  * Un `Folio::path()` qui è ridondante, anti-DRY e rischia l'ordine delle catch-all.
-=======
- * Montare qui le pagine con Folio è ridondante, anti-DRY e rischia l'ordine delle catch-all.
->>>>>>> laraxot/dev
  *
  * @phpstan-type ModuleConfig array{name: string, alias: string, description: string, keywords: array<int, string>, priority: int, providers: array<int, class-string>}
  */

@@ -370,19 +370,11 @@ protected function registerConfig(): void
 - **Maintainability**: +60% codice più semplice
 
 ## Collegamenti
-<<<<<<< HEAD
 - [Modulo UI](../UI/docs/ottimizzazioni-dry-kiss.md)
-=======
-- [Modulo UI](ottimizzazioni-dry-kiss.md)
->>>>>>> laraxot/dev
 
 ---
 
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS Activity Module*
 - [Template Standardizzato](../../../docs/template-modulo-standardizzato.md)
 - [Ottimizzazioni Master](../../../docs/ottimizzazioni-modulari-master.md)
-<<<<<<< HEAD
 - [Modulo UI](../ui/docs/ottimizzazioni-dry-kiss.md)
-=======
-- [Modulo UI](ottimizzazioni-dry-kiss.md)
->>>>>>> laraxot/dev

@@ -125,11 +125,7 @@ class ActivityEvent
 Tracciabilità azioni su entità sensibili del sistema.
 ```
 Activity <── User      (login/logout events, user actions)
-<<<<<<< HEAD
 Activity <── Quaeris   (survey CRUD, dashboard actions)
-=======
-Activity <── <nome progetto>   (survey CRUD, dashboard actions)
->>>>>>> laraxot/dev
 Activity <── Cms       (page/content modifications)
 Activity <── Media     (file upload/delete tracking)
 Activity <── Tenant    (multi-tenant audit isolation)
@@ -644,8 +640,4 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
 
 ---
 
-<<<<<<< HEAD
 **Modulo** `activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-=======
-**Modulo** `activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
->>>>>>> laraxot/dev
