@@ -41,21 +41,11 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/activi
 ## Gate
 
 - PHPStan `Modules/Activity`: **0 errori** (2026-11-16).
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_p7moHM
-- Pest: @@PEST_Activity_SHORT@@
-=======
->>>>>>> laraxot/dev
 <<<<<<< .merge_file_UTPxpk
 - Pest: @@PEST_Activity_SHORT@@
 =======
 - Pest: **parziale** — 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout a 900 s (macchina con load ≈ 50; i 40 ⨯ visti non si riproducono in isolamento).
 >>>>>>> .merge_file_fsLhWx
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_rBtIyK
->>>>>>> laraxot/dev
 - Security/runtime: le story figlie dei P1 sono in [epics.md](./epics.md).
 
 ## Riferimenti

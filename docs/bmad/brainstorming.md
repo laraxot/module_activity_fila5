@@ -1,20 +1,4 @@
 ---
-<<<<<<< .merge_file_MCdyeU
-title: Brainstorming
-module: Activity
----
-
----
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_7CXgoL
-=======
-<<<<<<< .merge_file_mWIXFq
-=======
-=======
->>>>>>> .merge_file_7CXgoL
->>>>>>> .merge_file_77JgDS
->>>>>>> laraxot/dev
 title: "Activity — brainstorming BMAD"
 type: concept
 tags: [brainstorming, activity, decisioni, debito-tecnico, event-sourcing]
@@ -25,7 +9,6 @@ related:
   - ./brainstorming/module-opportunities.md
   - ./architecture/module-map.md
   - ../architecture.md
-  - ./architecture/module-map.md
   - ./epics/module-roadmap.md
 issues: []
 discussions: []
