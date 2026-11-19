@@ -4,13 +4,10 @@ type: decision-log
 status: active
 updated: 2026-11-16
 module: Activity
-<<<<<<< .merge_file_aCvR3Z
-=======
 qmd: "decision log Activity ADR registro append-only redazione login listener migrazioni"
 related:
   - ./audits/activity-audit.md
   - ./epics.md
->>>>>>> .merge_file_calM3U
 ---
 
 # Decision log — Activity
@@ -27,30 +24,5 @@ Append-only, più recente in alto. Le voci d'esempio del template precedente (Wi
 
 ## Regole di lettura
 
-<<<<<<< .merge_file_aCvR3Z
-### 2026-09-29
-**Decisione:** [Esempio: Utilizzare Filament Widget invece di Livewire per i componenti di UI]
-**Stato:** APPROVATA
-**Impatto:** Alto
-**Alternatives considerate:** 
-- Mantenere Livewire
-- Utilizzare componenti Blade tradizionali
-**Conseguenze:** 
-- Migliore integrazione con Filament
-- Riduzione della complessità del codice
-- Necessità di migrare componenti esistenti
-
-### 2026-09-30
-**Decisione:** [Esempio: Adottare la convenzione "una chiave per riga" per gli array PHP]
-**Stato:** APPROVATA
-**Impatto:** Medio
-**Alternatives considerate:** 
-- Array inline
-- Array multi-linea senza convenzione fissa
-**Conseguenze:** 
-- Migliore leggibilità e gestione dei conflitti in git
-- Necessità di refactor esistente
-=======
 - Una decisione `PROPOSTA` diventa `APPROVATA` solo con story BMAD e Pest verde.
 - Nuove decisioni: aggiungere una riga in alto; non riscrivere quelle passate, superarle con un riferimento.
->>>>>>> .merge_file_calM3U
