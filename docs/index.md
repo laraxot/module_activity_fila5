@@ -425,7 +425,7 @@ sotto). Coesistono per coincidenza di nome con le varianti che invece hanno cont
 `metodi-duplicati-analisi.md` (+ maiuscolo/underscore) · `modelli-factory-seeder-analisi.md` (+ `-1.md`, underscore) ·
 `phpstan-analysis-november.md`/`phpstan-analysis-november-2025.md` · `phpstan-fixes.md` (+ `-1.md`, stub underscore) ·
 `phpstan-fixes-activity.md` (+ `-1.md`, underscore) · `quality-status.md` (+ `-.md`, `-2025-11.md`; `-nov.md` e' stub) ·
-`roadmap-2025.md`/`roadmap-.md` (+ `roadmap-archive-1.md`, quasi identico con 2 righe di differenza) ·
+`roadmap-2025.md`/`roadmap-.md` (+ `roadmap-archive.md`, quasi identico con 2 righe di differenza) ·
 `event-sourcing-examples-duplicate.md`/`event_sourcing_examples.md` (+ stub `event-sourcing-examples.md`) ·
 `event-sourcing-introduction-duplicate.md`/`event_sourcing_introduction.md` (+ stub `event-sourcing-introduction.md`) ·
 `test-archive-1.md`/`test-archive-2.md` (entrambi vuoti).
@@ -516,7 +516,7 @@ Questi 4 gruppi restano come testimonianza storica di un import automatico mal r
 
 `domain-logic.md`, `data-models.md`, `validation.md`, `integration.md`, `workflows.md`,
 `troubleshooting.md`, `2024-03-27.md`, `archived-note.md`, `documentation.md`,
-`documentation-archive-1.md` e i loro equivalenti nelle
+`documentation-archive.md` e i loro equivalenti nelle
 cartelle di import grezzo sopra citate (49 file a 0 righe in tutto il modulo).
 
 ## Numeri di questo audit
@@ -535,7 +535,7 @@ sono migrati. Canonici nuovi: senza data. Misura:
 python3 -I bashscripts/tools/docs/md-filenames.py check --paths laravel/Modules/Activity/docs
 ```
 
-Esempi ancora presenti: `documentation-2024-03-27.md`, `quality-status-2025-11.md`,
+Esempi ancora presenti: `documentation-2024-03-27.md`, `quality-status.md`,
 `stories/phpstan-cleanup-activity.story.md`,
 `bmad/stories/*-20260928*.story.md`, `wiki/troubleshooting/git-merge-conflict-inventory-april.md`,
 `raw/root-import/*2024*`. Procedura: [docs-clean.md](../../../../bashscripts/docs/prompts/docs-clean.md).
