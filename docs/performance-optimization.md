@@ -20,12 +20,21 @@ qmd: "performance optimization   module **activity** activity"
 **Dopo**: Carico solo what's needed (~2K startup)
 
 ```diff
+<<<<<<< .merge_file_qjiLK3
 - 150+ rules embeddate in agents.md
 
 - 150+ rules embeddate in AGENTS.md
 + 0 rules embeddate — tutte on-demand
 
 - 150+ rules embeddate in agents.md+ 0 rules embeddate — tutte on-demand
+=======
+- 150+ rules embeddate in AGENTS.md
+
+- 150+ rules embeddate in AGENTS.md
++ 0 rules embeddate — tutte on-demand
+
+- 150+ rules embeddate in AGENTS.md+ 0 rules embeddate — tutte on-demand
+>>>>>>> .merge_file_RNq2wS
 ```
 
 ### 2. Cache Esterna al Repo
@@ -120,8 +129,8 @@ context-mode ctx-stats
 ## Riferimenti
 
 - [Global Performance Guide](../../docs/wiki/concepts/performance-optimization.md)
-- [On-Demand Pattern](./ON-DEMAND-PATTERN.md)
-- [QMD Setup](./QMD-SETUP.md)
+- [On-Demand Pattern](./on-demand-pattern.md)
+- [QMD Setup](./qmd-setup.md)
 
 ---
 *Status: Ottimizzato | Token risparmiati: ~48K per session*
