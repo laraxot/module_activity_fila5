@@ -1,3 +1,10 @@
+---
+title: "MCP Server Configuration - Activity Module"
+qmd: "activity mcp configuration md"
+type: note
+tags: [documentation]
+---
+
 # MCP Server Configuration - Activity Module
 
 

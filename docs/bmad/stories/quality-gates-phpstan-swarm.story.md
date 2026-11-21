@@ -9,8 +9,8 @@ updated: 2026-09-29
 epic: quality-gates-phpstan-fleet-2026-09-29
 assignee: ai-agent
 related:
-  - ./quality-gates-phpstan-swarm-2026-09-23.story.md
-  - ./conflict-markers-cleanup-2026-09-22.story.md
+  - ./quality-gates-phpstan-swarm.story.md
+  - ./phpstan-conflict-markers-bootstrap.story.md
 references:
   - sprint-status: "Activity — swarm phpstan Activity+Progressioni+Sigma, 2026-09-29"
 ---

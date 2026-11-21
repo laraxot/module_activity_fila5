@@ -1,3 +1,10 @@
+---
+title: "Carrello della Spesa con Event Sourcing"
+qmd: "activity use cases shop index md"
+type: note
+tags: [documentation]
+---
+
 # Carrello della Spesa con Event Sourcing
 
 ## Introduzione

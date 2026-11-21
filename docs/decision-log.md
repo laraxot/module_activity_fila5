@@ -1,4 +1,5 @@
 ---
+qmd: "activity decision log md"
 type: decision-log
 title: "Decision Log — Activity"
 links: {github_issue: #XXX, discussion: #XXX}

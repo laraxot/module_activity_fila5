@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki sources activity core sources md"
 title: "Activity Core Sources"
 module: "Activity"
 type: source

@@ -1,3 +1,10 @@
+---
+title: "Modello di Dominio - <nome progetto>ion Market"
+qmd: "activity use cases prediction market domain model md"
+type: note
+tags: [documentation]
+---
+
 # Modello di Dominio - <nome progetto>ion Market
 
 ## Aggregate

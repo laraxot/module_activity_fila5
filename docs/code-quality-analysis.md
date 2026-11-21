@@ -1,3 +1,10 @@
+---
+title: "Code Quality Analysis - Activity Module"
+qmd: "activity code quality analysis md"
+type: note
+tags: [documentation]
+---
+
 # Code Quality Analysis - Activity Module
 
 ## 🚨 Critical Issues Identified

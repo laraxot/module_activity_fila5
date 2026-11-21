@@ -1,3 +1,10 @@
+---
+title: "Fasi di sviluppo - Activity Module"
+qmd: "activity roadmap phases md"
+type: note
+tags: [documentation]
+---
+
 # Fasi di sviluppo - Activity Module
 
 ## Fase 1: Qualità e Pulizia (In Corso)

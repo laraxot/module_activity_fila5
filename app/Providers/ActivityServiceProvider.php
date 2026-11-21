@@ -52,6 +52,11 @@ class ActivityServiceProvider extends XotBaseServiceProvider
         // Registra i componenti Blade personalizzati
         $this->registerBladeComponents();
 
+        // ANTI-PATTERN: non registrare qui il mount Folio delle pagine del modulo.
+        // Activity possiede i FILE pages/*; il mount Folio e' cross-cutting (Cms/FolioVolt
+        // nei sibling FO). In PTVX Cms e' assente: non inventare un mini-FolioVolt nel dominio.
+        // Vedi docs/bmad/stories/folio-routing-centralization.story.md
+
         // Le impostazioni salvate dal tenant (SettingPage) arrivano al pacchetto activitylog.
         app(ApplyActivityConfigAction::class)->execute();
     }

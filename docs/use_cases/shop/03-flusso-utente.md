@@ -1,3 +1,10 @@
+---
+title: "Flusso Utente Shop Event Sourced"
+qmd: "activity use cases shop 03 flusso utente md"
+type: note
+tags: [documentation]
+---
+
 # Flusso Utente Shop Event Sourced
 
 ## 1. Navigazione e Scoperta Prodotti

@@ -1,3 +1,10 @@
+---
+title: "Flusso degli Eventi - <nome progetto>ion Market"
+qmd: "activity use cases prediction market flow md"
+type: note
+tags: [documentation]
+---
+
 # Flusso degli Eventi - <nome progetto>ion Market
 
 ## 1. Creazione Mercato

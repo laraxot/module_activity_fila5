@@ -1,3 +1,10 @@
+---
+title: "phpinsights errors"
+qmd: "activity phpinsights errors md"
+type: note
+tags: [documentation]
+---
+
 
 
 

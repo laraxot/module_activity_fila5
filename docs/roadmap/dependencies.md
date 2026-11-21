@@ -1,3 +1,10 @@
+---
+title: "Dipendenze e confini Modulo Activity"
+qmd: "activity roadmap dependencies md"
+type: note
+tags: [documentation]
+---
+
 # Dipendenze e confini Modulo Activity
 
 ## Dipendenze in ingresso

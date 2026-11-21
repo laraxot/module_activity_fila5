@@ -9,6 +9,8 @@ qmd: "Activity indice BMAD documentazione"
 
 ## Canonico
 
+- [Indice del pack audit (00-index)](./00-index.md)
+- [Audit profondo](./audits/activity-audit.md)
 - [README BMAD](./README.md)
 - [Architettura](./architecture/)
 - [Brainstorming](./brainstorming/)

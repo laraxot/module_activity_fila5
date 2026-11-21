@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki features activity pdf reports md"
 title: Activity pdf reports
 module: Activity
 ---

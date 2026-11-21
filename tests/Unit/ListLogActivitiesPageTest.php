@@ -34,9 +34,10 @@ test('list log activities page is abstract', function (): void {
 test('list log activities extends xot base page', function (): void {
     $page = makeListLogActivitiesPage();
 
-    // La factory restituisce una classe anonima: si verifica l'ereditarieta', non il nome esatto.
-    Assert::assertInstanceOf(XotBasePage::class, $page);
-    Assert::assertInstanceOf(ListLogActivities::class, $page);
+    // La factory restituisce una classe anonima: si verifica l'ereditarieta' a runtime, non il nome esatto.
+    $reflection = new \ReflectionObject($page);
+    Assert::assertTrue($reflection->isSubclassOf(ListLogActivities::class));
+    Assert::assertTrue($reflection->isSubclassOf(XotBasePage::class));
 });
 
 test('list log activities uses can paginate trait', function (): void {

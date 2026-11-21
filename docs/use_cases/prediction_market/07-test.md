@@ -1,3 +1,10 @@
+---
+title: "Testing <nome progetto>ion Market"
+qmd: "activity use cases prediction market 07 test md"
+type: note
+tags: [documentation]
+---
+
 # Testing <nome progetto>ion Market
 
 ## Unit Test

@@ -1,3 +1,10 @@
+---
+title: "Linee Guida API Bank (Event Sourcing)"
+qmd: "activity use cases bank 06 api md"
+type: note
+tags: [documentation]
+---
+
 # Linee Guida API Bank (Event Sourcing)
 
 ## Endpoints Principali

@@ -1,3 +1,10 @@
+---
+title: "Activity Model: Testing Connection Hack"
+qmd: "activity testing testing connection hack md"
+type: note
+tags: [documentation]
+---
+
 # Activity Model: Testing Connection Hack
 
 ## Cosa (STORICO – HACK RIMOSSO)

@@ -1,3 +1,10 @@
+---
+title: "Activity Module Filament Resource Guidelines"
+qmd: "activity filament resource guidelines md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module Filament Resource Guidelines
 
 ## Extension Patterns

@@ -1,3 +1,10 @@
+---
+title: "Analisi di Larabank-Aggregates (Spatie)"
+qmd: "activity use cases bank 05 analisi larabank md"
+type: note
+tags: [documentation]
+---
+
 # Analisi di Larabank-Aggregates (Spatie)
 
 ## Regole Implementate

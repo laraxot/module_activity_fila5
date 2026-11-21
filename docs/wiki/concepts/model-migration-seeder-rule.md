@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki concepts model migration seeder rule md"
 name: model-migration-seeder-rule
 description: Implementation of 1 model = 1 migration + 1 seeder rule for Activity module
 metadata:

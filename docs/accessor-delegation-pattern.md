@@ -1,3 +1,10 @@
+---
+title: "Accessor Delegation Pattern (SACRO)"
+qmd: "activity accessor delegation pattern md"
+type: note
+tags: [documentation]
+---
+
 # Accessor Delegation Pattern (SACRO)
 
 Questo documento descrive il pattern di delegazione per gli accessor Eloquent con auto-persistenza, parte degli standard architetturali del modulo.

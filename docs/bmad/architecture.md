@@ -1,14 +1,17 @@
 ---
+<<<<<<< .merge_file_aqapEl
 title: Architecture
 module: Activity
 ---
 
 ---
+=======
+>>>>>>> .merge_file_4jCkbW
 title: "Activity — architettura BMAD"
 type: concept
 tags: [architecture, activity, audit, log, event-sourcing, spatie]
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-11-16
 qmd: "Activity architettura moduli Spatie activity event sourcing log viewer contratti modelli"
 related:
   - ./architecture/module-boundary.md
@@ -25,7 +28,11 @@ discussions: []
 > **SUMMARY**: mappa reale del modulo `Modules/Activity` (alias `activity`): due
 > sottosistemi distinti — audit delle azioni utente su Spatie Activity + event
 > sourcing, e un visualizzatore dei log di file Laravel — con tre Resource
+<<<<<<< .merge_file_aqapEl
 > Filament, 29 Action e 7 DTO.
+=======
+> Filament, 30 Action e 7 DTO (misura 2026-11-16).
+>>>>>>> .merge_file_4jCkbW
 
 ## Identita del modulo
 
@@ -89,22 +96,23 @@ Tre Resource, ciascuna con schema e table separati in sottodirectory proprie:
 `EventServiceProvider`, `RouteServiceProvider`, e
 `Filament/AdminPanelProvider` (registrato solo in `module.json`).
 
-## Migrazioni (16 file in `database/migrations`)
+## Migrazioni (9 attive + 7 in `_bak/` = 16 file in `database/migrations`)
 
 Attenzione: la tabella `activity` e creata da **cinque** migrazioni distinte
-(`2023_03_31_103350`, `2023_03_31_103351`, `2024_01_01_000001`, `2024_01_01_000002`,
-`2026_02_13_171410` e `2026_06_10_141000`), piu `stored_events`, `snapshots`,
+(`2023_03_31_103350`, `2023_03_31_103351`, `2024_01_01_000001`, `2024_01_01_000002`
+e `2026_06_10_141000`, piu `2026_02_13_171410_fix_causer_id_to_uuid`), piu `stored_events`, `snapshots`,
 `test_models`. Esiste una directory `_bak/`. Questa sovrapposizione e un punto
 noto (vedi [brainstorming](./brainstorming.md)).
 
-## Test (`tests/`, 145 file PHP)
+## Test (`tests/`, 152 file PHP, 100 `*Test.php`, 486 casi Pest)
 
-E il modulo piu testato del monorepo in rapporto alle sue dimensioni.
+Alto numero ma qualita da verificare: 8 file senza casi, 19 punti di skip, 0 `Livewire::test` ([audit](./audits/activity-audit.md#p1-4--test-svuotati-e-saltati)).
 
 ## Da leggere
 
 - [module-boundary.md](./architecture/module-boundary.md) — confini del modulo.
 - [module-map.md](./architecture/module-map.md) — mappa file -> responsabilita, una riga per file.
+<<<<<<< .merge_file_aqapEl
 - [brainstorming.md](./brainstorming.md) — decisioni prese e problemi aperti.# Architettura del modulo Activity
 
 ## Overview
@@ -118,23 +126,40 @@ Azioni eseguibili (Queueable Actions) per la logica di business.
 
 ### Resources
 Risorse Filament per il pannello di amministrazione.
+=======
+- [brainstorming.md](./brainstorming.md) — decisioni prese e problemi aperti.
+>>>>>>> .merge_file_4jCkbW
 
-### Widget
-Widget Filament per dashboard e pannelli.
+## Flussi di dati (verificati sul codice, 2026-11-16)
 
-### Models
-Modelli Eloquent per l'interazione con il database.
+1. **Audit (percorso reale):** le Action degli altri moduli chiamano il helper `activity()` di Spatie
+   (es. `Ptv/app/Actions/Scheda/LogEmailSentAction.php:45`, `User/app/Actions/Activity/LogRegistrationAction.php:21`);
+   solo 2 file fuori da Activity usano il trait `LogsActivity`. Risultato: riga in `activity_log`
+   (connessione `activity`) con `properties`/`attribute_changes`.
+   Nessun modulo chiama `Adapters\ActivityLogger` o `LogModel*Action` (`rg` fuori da `tests`/`docs`).
+2. **Login/logout:** `EventServiceProvider` collega `Login` → `LoginListener` (**vuoto**, `handle()` senza corpo)
+   e `Logout` → `LogoutListener` (registra guard, IP, user agent). Il login e' tracciato dal modulo User.
+3. **Event sourcing:** `StoredEvent` e `Snapshot` (Spatie Event Sourcing) con Resource di sola gestione.
+4. **Log viewer:** `LogViewer::canAccess` → `AuthorizeLogAccessAction` (`super-admin` o `log.viewAny`) →
+   catena `Resolve*` → `ListLogFiles` → `BuildLogFileTree` → `ReadLogTail` → `Parse`/`Filter` → stato UI.
+5. **Restore da attivita':** `ListLogActivities::restoreActivity` → gate `canRestore` della Resource →
+   `RestoreActivityAction` (`update($oldProperties)` sul record corrente).
 
-### Contracts
-Interfacce per l'iniezione di dipendenze.
+## Autorizzazione
 
-## Flussi di dati
-
-[DA COMPLETARE]
+Policy per permesso (`activity.*`, `snapshot.*`, `stored_event.*`) su `UserBasePolicy`. `ActivityBasePolicy`
+(bypass `super-admin`/`activity::admin`) e' presente ma senza sottoclassi: vedi
+[audit P2](./audits/activity-audit.md#p2--debito).
 
 ## Pattern utilizzati
 
+<<<<<<< .merge_file_aqapEl
 - Action invece di Service
 - Filament Widget invece di Livewire
 - Array una chiave per riga
 - Schema-driven Forms (XotBaseSchemaWidget)
+=======
+- Action Queueable invece di Service (0 Services).
+- Resource con `Schemas/` e `Tables/` separati, base `XotBase*`.
+- Array una chiave per riga.
+>>>>>>> .merge_file_4jCkbW

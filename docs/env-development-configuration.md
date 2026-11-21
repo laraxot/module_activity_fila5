@@ -1,3 +1,10 @@
+---
+title: "Configurazione .env.development - Ambiente di Sviluppo"
+qmd: "activity env development configuration md"
+type: note
+tags: [documentation]
+---
+
 # Configurazione .env.development - Ambiente di Sviluppo
 
 ## Panoramica

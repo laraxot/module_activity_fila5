@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki coverage status md"
 title: Coverage status
 module: Activity
 ---

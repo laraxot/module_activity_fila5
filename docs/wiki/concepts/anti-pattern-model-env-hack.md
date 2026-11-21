@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki concepts anti pattern model env hack md"
 title: Anti pattern model env hack
 module: Activity
 ---

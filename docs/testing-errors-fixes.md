@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Errori di Test e Correzioni"
+qmd: "activity testing errors fixes md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Errori di Test e Correzioni
 
 ## Obiettivo

@@ -1,4 +1,5 @@
 ---
+qmd: "activity bmad readme md"
 title: Readme
 module: Activity
 ---

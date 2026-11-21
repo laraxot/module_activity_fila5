@@ -4,51 +4,75 @@ type: ecc-audit
 status: review
 updated: 2026-11-16
 module: Activity
-qmd: "ECC audit Activity verification security testing laravel"
+qmd: "ECC audit Activity checklist security-review clean-code verification-loop inventario misurato finding"
+related:
+  - ./00-index.md
+  - ../bmad/audits/activity-audit.md
+  - ../bmad/audit.md
 ---
 
 # ECC audit operativo — Activity
 
 ## Contratto PTVX
 
-ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
-PHPStan + Pest, aggiornamento docs/QMD.
+ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla causa,
+PHPStan + Pest, aggiornamento docs/QMD. Dettaglio dei finding: [audit profondo](../bmad/audits/activity-audit.md).
 
-## Checklist
+## Checklist (stato misurato 2026-11-16)
 
-- [ ] `clean-code`: DRY/KISS, Actions su Services, niente wrapper inutili
-- [ ] `security-review`: policy, mass assignment, export, log, privacy, tenant
-- [ ] `laravel-verification`: route, config, migration additive, container
-- [ ] `verification-loop`: PHPStan level max + Pest mirato
-- [ ] `tdd-workflow`: regressione sui finding P0
-- [ ] `documentation-sync`: story + indici + qmd
-- [ ] `context-engineering`: QMD/graphify prima; registrare il perché dopo
+| Skill ECC | Stato | Evidenza |
+|---|---|---|
+| `clean-code` | **parziale** | 0 Services, 0 label hardcoded; duplicati: 2× `ActivityRecorderContract`, 2× `ActivityLogger`, `ActivityBasePolicy` orfana |
+| `security-review` | **aperto** | P1-2 registro mutabile da UI; P1-3 segreti non redatti (latente); P1-1 login non loggato |
+| `laravel-verification` | **parziale** | migration: 5 `create_activity_table` + `fix_*` vs contratto "unica"; `_bak/` con `dropColumn`; `TestModel` in prod |
+<<<<<<< .merge_file_gJeDym
+| `verification-loop` | **PHPStan ok / Pest vedi sotto** | PHPStan 0; Pest: @@PEST_Activity_SHORT@@ |
+=======
+| `verification-loop` | **PHPStan ok / Pest vedi sotto** | PHPStan 0; Pest: parziale (25 pass in 2 probe; suite completa in timeout a 900 s) |
+>>>>>>> .merge_file_x65jpY
+| `tdd-workflow` | **aperto** | 8 test file vuoti, 19 skip, 0 `Livewire::test` |
+| `documentation-sync` | **parziale** | pack BMAD aggiornato; 331/782 `.md` senza frontmatter; 8 `.md` alla root del modulo |
+| `context-engineering` | ok | QMD/graphify prima, decision-log dopo |
 
-## Input misurato (2026-11-16)
+## Inventario misurato
 
 | Voce | N |
 |---|---:|
 | app PHP | 92 |
-| test | 152 |
-| resources | 3 |
-| actions | 30 |
-| services | 0 |
-| policies (files approx) | 8 |
+| test PHP / `*Test.php` / casi Pest | 152 / 100 / 486 |
+| Models / Policy / Resource | 5 / 4 / 3 |
+| Pagine standalone / pagine Resource / Widget | 5 / 10 / 0 |
+| Actions / Services | 30 / 0 |
+| Migration (top-level / `_bak`) | 9 / 7 |
+| Lang IT | 19 |
+| `return true` in Policy (solo `before()`) | 2 |
+| `@phpstan-ignore` | 1 |
+| Marker conflitto | 0 |
 
 ## Gate osservati
 
-- PHPStan `Modules` (2026-11-16): 0 errori
-- Pest: pending (ambiente testing)
+- PHPStan `Modules/Activity` (`--no-progress`): **0 errori**.
+<<<<<<< .merge_file_gJeDym
+- Pest `Modules/Activity/tests` su scratch DB (`bashscripts/tools/pest-scratch-db.sh`): @@PEST_Activity@@
+=======
+- Pest `Modules/Activity/tests` su scratch DB (`bashscripts/tools/pest-scratch-db.sh`): **parziale** — suite completa non terminata (timeout 900 s, macchina con load ≈ 50; 16 pass e 40 ⨯ al momento dello stop, **non riproducibili in isolamento**: `BaseModelBusinessLogicTest` 21 pass); probe `ActivityManagementTest` 4 pass. Causa dei ⨯ del run completo non determinata.
+>>>>>>> .merge_file_x65jpY
 
-## Anti-pattern vietati
+## Anti-pattern vietati (verificati assenti)
 
-- baseline/`@phpstan-ignore` senza motivazione
-- test svuotati per silenziare errori
-- migrate:fresh / RefreshDatabase / --force
-- docs con date nel nome file
-- comportamento o screenshot inventati
+`migrate:fresh`, `RefreshDatabase`, `--force`: 0 usi. Baseline PHPStan: assente. `@phpstan-ignore` senza motivo: **1** (`Traits/HasSnapshots.php:7`).
+Test svuotati per silenziare: **8 file** (vedi P1-4).
 
 ## Riferimenti
 
 - [00-index](./00-index.md)
 - [BMAD audit](../bmad/audit.md)
+<<<<<<< .merge_file_gJeDym
+=======
+
+## Confine Folio (ECC)
+
+Activity **non** chiama `Folio::path`. File `pages/` sì, mount no.
+Owner mount: `Cms/FolioVolt` (FO); PTVX senza Cms → niente surrogato in Activity/App.
+Story: [folio-routing-centralization](../bmad/stories/folio-routing-centralization.story.md).
+>>>>>>> .merge_file_x65jpY

@@ -1,3 +1,10 @@
+---
+title: "Dependencies (Module Activity)"
+qmd: "activity dependencies md"
+type: note
+tags: [documentation]
+---
+
 # Dependencies (Module Activity)
 
 Canonical dependency map:

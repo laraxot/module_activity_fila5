@@ -1,3 +1,10 @@
+---
+title: "🏗️ Architettura del Modulo <nome progetto>ion Market"
+qmd: "activity use cases prediction market architecture md"
+type: note
+tags: [documentation]
+---
+
 # 🏗️ Architettura del Modulo <nome progetto>ion Market
 
 ## 🌟 Panoramica dell'Architettura

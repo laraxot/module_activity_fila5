@@ -1,3 +1,10 @@
+---
+title: "Modulo Activity"
+qmd: "activity architecture structure md"
+type: note
+tags: [documentation]
+---
+
 # Modulo Activity
 
 Data: 2025-04-23 19:09:55

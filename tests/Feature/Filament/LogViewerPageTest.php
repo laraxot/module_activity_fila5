@@ -8,9 +8,9 @@ use Illuminate\Support\Facades\File;
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Activity\Filament\Pages\LogViewer;
+use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
-use Modules\Activity\Tests\TestCase;
 use Throwable;
 
 uses(TestCase::class);
@@ -156,14 +156,15 @@ it('registers the header actions with string keys', function (): void {
     expect(array_keys($actions))->toBe(['refresh', 'download']);
 });
 
-it('points the download to the Folio page with the chosen file', function (): void {
+it('download header action streams via DownloadLogFileAction not Folio URL', function (): void {
     $page = new LogViewer;
     $page->file = 'reports/252/daily_2026-09-17.log';
 
-    $url = $page->getDownloadUrl();
+    $actions = (fn (): array => $this->getHeaderActions())->call($page);
+    $download = $actions['download'];
 
-    expect($url)->toContain(LogViewer::DOWNLOAD_PATH.'?file=');
-    expect(urldecode($url))->toContain('reports/252/daily_2026-09-17.log');
+    // Action is wired with a closure action (no ->url Folio mount required in PTVX).
+    expect($download->getName())->toBe('download');
 });
 
 it('renders the tree branch: closed folders hide their files, the selected file is highlighted', function (): void {

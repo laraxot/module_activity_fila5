@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Testing Coverage Policy"
+qmd: "activity testing coverage policy md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Testing Coverage Policy
 
 ## Obiettivo

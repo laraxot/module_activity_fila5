@@ -1,3 +1,10 @@
+---
+title: "Linee Guida API per uno Shop Event Sourced"
+qmd: "activity use cases shop 08 api md"
+type: note
+tags: [documentation]
+---
+
 # Linee Guida API per uno Shop Event Sourced
 
 ## 1. Endpoints Principali

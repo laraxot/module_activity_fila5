@@ -1,4 +1,5 @@
 ---
+qmd: "activity bmad advanced event sourcing patterns md"
 title: Advanced event sourcing patterns
 module: Activity
 ---

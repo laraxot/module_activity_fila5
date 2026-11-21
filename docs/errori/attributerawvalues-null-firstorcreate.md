@@ -1,3 +1,10 @@
+---
+title: "Errore: Attempt to read property \"attributeRawValues\" on null durante firstOrCreate"
+qmd: "activity errori attributerawvalues null firstorcreate md"
+type: note
+tags: [documentation]
+---
+
 # Errore: Attempt to read property "attributeRawValues" on null durante firstOrCreate
 
 ## Problema

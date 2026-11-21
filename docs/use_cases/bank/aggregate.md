@@ -1,3 +1,10 @@
+---
+title: "Aggregate in Larabank"
+qmd: "activity use cases bank aggregate md"
+type: note
+tags: [documentation]
+---
+
 # Aggregate in Larabank
 
 ## Introduzione

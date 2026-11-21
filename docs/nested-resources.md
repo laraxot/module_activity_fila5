@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Nested Resource Implementation Guide"
+qmd: "activity nested resources md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Nested Resource Implementation Guide
 
 ## Overview

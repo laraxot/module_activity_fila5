@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Query Optimization Analysis"
+qmd: "activity query optimization analysis md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Query Optimization Analysis
 
 ## Overview

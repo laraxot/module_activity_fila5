@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki architecture rules md"
 title: Architecture rules
 module: Activity
 ---

@@ -1,3 +1,10 @@
+---
+title: "Factory Coverage Report - Activity Module"
+qmd: "activity factory coverage report md"
+type: note
+tags: [documentation]
+---
+
 # Factory Coverage Report - Activity Module
 
 ## 📊 Status Report

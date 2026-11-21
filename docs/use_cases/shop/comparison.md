@@ -1,3 +1,10 @@
+---
+title: "Confronto tra Implementazioni del Carrello della Spesa"
+qmd: "activity use cases shop comparison md"
+type: note
+tags: [documentation]
+---
+
 # Confronto tra Implementazioni del Carrello della Spesa
 
 ## Introduzione

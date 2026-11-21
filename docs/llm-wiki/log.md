@@ -1,3 +1,10 @@
+---
+title: "Activity Activity Log"
+qmd: "activity llm wiki log md"
+type: note
+tags: [documentation]
+---
+
 # Activity Activity Log
 
 > **Module**: Activity

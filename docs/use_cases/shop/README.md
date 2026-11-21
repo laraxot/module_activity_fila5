@@ -1,3 +1,10 @@
+---
+title: "Use Case Shop – Event Sourcing e Console Commands"
+qmd: "activity use cases shop readme md"
+type: note
+tags: [documentation]
+---
+
 # Use Case Shop – Event Sourcing e Console Commands
 
 ## Introduzione

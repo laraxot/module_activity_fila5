@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Status Attuale"
+qmd: "activity current status md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Status Attuale
 
 ## ⚠️ STATO: Parzialmente Disabilitato

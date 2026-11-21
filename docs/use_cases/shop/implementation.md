@@ -1,3 +1,10 @@
+---
+title: "Implementazione di un Carrello della Spesa"
+qmd: "activity use cases shop implementation md"
+type: note
+tags: [documentation]
+---
+
 # Implementazione di un Carrello della Spesa
 
 ## Introduzione

@@ -1,3 +1,10 @@
+---
+title: "Approfondimento: Larabank-Eventsauce"
+qmd: "activity use cases bank 10 approfondimento eventsauce md"
+type: note
+tags: [documentation]
+---
+
 # Approfondimento: Larabank-Eventsauce
 
 ## Cos'è Eventsauce

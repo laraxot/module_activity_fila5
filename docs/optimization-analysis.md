@@ -1,3 +1,10 @@
+---
+title: "Analisi di Ottimizzazione - Modulo Activity"
+qmd: "activity optimization analysis md"
+type: note
+tags: [documentation]
+---
+
 # Analisi di Ottimizzazione - Modulo Activity
 
 ## 🎯 Principi Applicati: DRY + KISS + SOLID + ROBUST + Laraxot

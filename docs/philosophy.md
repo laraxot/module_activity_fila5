@@ -1,3 +1,10 @@
+---
+title: "Activity Module: Philosophy, Purpose, and Design Principles"
+qmd: "activity philosophy md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module: Philosophy, Purpose, and Design Principles
 
 

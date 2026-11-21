@@ -1,6 +1,10 @@
 ---
+qmd: "activity bmad architecture md"
 title: ARCHITECTURE
 module: Activity
+status: deprecated
+superseded_by: "./architecture.md"
+updated: 2026-11-17
 ---
 
 # Architecture Documentation
@@ -272,3 +276,5 @@ class ActivityPolicy
 - [Testing](TESTING.md)
 - [Testing](TESTING.md)
 - [Testing](TESTING.md)
+
+> Deprecated alias. Canonico: [./architecture.md](./architecture.md).

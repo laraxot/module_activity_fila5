@@ -1,3 +1,10 @@
+---
+title: "Filosofia e Scelte di Design del Carrello della Spesa"
+qmd: "activity use cases shop philosophy md"
+type: note
+tags: [documentation]
+---
+
 # Filosofia e Scelte di Design del Carrello della Spesa
 
 ## Introduzione

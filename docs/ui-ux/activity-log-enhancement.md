@@ -1,3 +1,10 @@
+---
+title: "Activity Log UI/UX Enhancement"
+qmd: "activity ui ux activity log enhancement md"
+type: note
+tags: [documentation]
+---
+
 # Activity Log UI/UX Enhancement
 
 ## Overview

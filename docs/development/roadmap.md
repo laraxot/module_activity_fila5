@@ -1,3 +1,10 @@
+---
+title: "Roadmap Modulo Activity"
+qmd: "activity development roadmap md"
+type: note
+tags: [documentation]
+---
+
 # Roadmap Modulo Activity
 
 ## Stato Attuale

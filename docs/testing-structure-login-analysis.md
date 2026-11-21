@@ -1,3 +1,10 @@
+---
+title: "Struttura Corretta dei Test di Login - Analisi Completa"
+qmd: "activity testing structure login analysis md"
+type: note
+tags: [documentation]
+---
+
 # Struttura Corretta dei Test di Login - Analisi Completa
 # Struttura Corretta dei Test di Login - Analisi Completa <nome progetto>
 

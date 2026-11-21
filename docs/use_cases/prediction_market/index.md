@@ -1,3 +1,10 @@
+---
+title: "<nome progetto>ion Market Use Case"
+qmd: "activity use cases prediction market index md"
+type: note
+tags: [documentation]
+---
+
 # <nome progetto>ion Market Use Case
 
 ## Introduzione

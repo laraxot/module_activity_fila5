@@ -1,3 +1,10 @@
+---
+title: "Architettura di un <nome progetto>ion Market"
+qmd: "activity use cases prediction market 02 architettura md"
+type: note
+tags: [documentation]
+---
+
 # Architettura di un <nome progetto>ion Market
 
 ## Pattern Principali

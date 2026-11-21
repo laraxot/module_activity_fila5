@@ -1,3 +1,10 @@
+---
+title: "Troubleshooting: Properties Vuote in Activity Log"
+qmd: "activity troubleshooting properties vuote activity log md"
+type: note
+tags: [documentation]
+---
+
 # Troubleshooting: Properties Vuote in Activity Log
 
 ## Problema

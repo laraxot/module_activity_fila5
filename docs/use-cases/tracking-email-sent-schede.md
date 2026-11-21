@@ -1,3 +1,10 @@
+---
+title: "Use Case: Tracking Email Sent - Schede Valutazione"
+qmd: "activity use cases tracking email sent schede md"
+type: note
+tags: [documentation]
+---
+
 # Use Case: Tracking Email Sent - Schede Valutazione
 
 ## 📋 Overview

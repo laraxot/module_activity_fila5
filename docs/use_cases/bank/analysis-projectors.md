@@ -1,3 +1,10 @@
+---
+title: "Analisi di Larabank Projectors"
+qmd: "activity use cases bank analysis projectors md"
+type: note
+tags: [documentation]
+---
+
 # Analisi di Larabank Projectors
 
 ## Panoramica

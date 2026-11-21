@@ -1,3 +1,10 @@
+---
+title: "Anti-Pattern: Redundant Property Override in Extended Models"
+qmd: "activity anti pattern redundant property override md"
+type: note
+tags: [documentation]
+---
+
 # Anti-Pattern: Redundant Property Override in Extended Models
 
 ## Il Problema

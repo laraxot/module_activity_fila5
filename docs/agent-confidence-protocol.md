@@ -1,4 +1,5 @@
 ---
+qmd: "activity agent confidence protocol md"
 title: "Massima confidenza agente"
 type: reference
 status: approved

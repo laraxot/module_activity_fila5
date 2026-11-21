@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki factory coverage report md"
 title: Factory coverage report
 module: Activity
 ---

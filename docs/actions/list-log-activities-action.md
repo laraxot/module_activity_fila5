@@ -1,3 +1,10 @@
+---
+title: "ListLogActivitiesAction - Documentazione Completa"
+qmd: "activity actions list log activities action md"
+type: note
+tags: [documentation]
+---
+
 # ListLogActivitiesAction - Documentazione Completa
 
 ## Panoramica

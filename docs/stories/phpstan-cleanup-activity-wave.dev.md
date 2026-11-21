@@ -2,11 +2,13 @@
 title: "[DEV] PHPStan cleanup — Activity"
 type: dev
 module: Activity
-story: "./2026-10-06-phpstan-cleanup-activity.story.md"
+story: "./phpstan-cleanup-activity-wave.story.md"
 status: done
 created: 2026-10-06
 updated: 2026-10-06
 tags: [phpstan, cleanup, bmad, activity]
+superseded_by: "./phpstan-cleanup-activity.dev.md"
+updated: 2026-11-17
 ---
 
 # [DEV] PHPStan cleanup — Activity
@@ -54,3 +56,5 @@ Esito: 0 errori sui 9 moduli del gruppo (anche con run completo `./vendor/bin/ph
 - `@var` inline su valore `mixed` restituito da reflection non e' una soluzione: `Assert::string($result)` verifica davvero il tipo.
 - Un test che estrae una variabile e non la usa spesso ha un'asserzione mancante: qui `customer_info`.
 - Segnalazioni NON mie nel working tree (pre-esistenti, non toccate): `tests/Feature/Filament/LogViewerPageTest.php` ha perso due asserzioni `toBeInstanceOf(Action::class)`.
+
+> Deprecated alias. Canonico: [./phpstan-cleanup-activity.dev.md](./phpstan-cleanup-activity.dev.md).

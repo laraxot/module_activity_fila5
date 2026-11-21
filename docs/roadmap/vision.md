@@ -1,3 +1,10 @@
+---
+title: "Visione - Activity Module"
+qmd: "activity roadmap vision md"
+type: note
+tags: [documentation]
+---
+
 # Visione - Activity Module
 
 Evolvere il sistema di audit trail e logging verso:

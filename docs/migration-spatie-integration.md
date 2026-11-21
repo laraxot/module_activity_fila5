@@ -1,3 +1,10 @@
+---
+title: "Migration Spatie Activity Log Integration"
+qmd: "activity migration spatie integration md"
+type: note
+tags: [documentation]
+---
+
 # Migration Spatie Activity Log Integration
 
 ## Gestione Tabella activity_log

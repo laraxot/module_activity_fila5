@@ -1,4 +1,5 @@
 ---
+qmd: "activity release marketing standard md"
 title: "Release e README marketing — Activity"
 type: reference
 status: approved

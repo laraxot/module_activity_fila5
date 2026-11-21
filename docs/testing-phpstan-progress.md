@@ -1,3 +1,10 @@
+---
+title: "Activity Module - PHPStan Testing Progress"
+qmd: "activity testing phpstan progress md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - PHPStan Testing Progress
 
 **Date**: 2025-12-15

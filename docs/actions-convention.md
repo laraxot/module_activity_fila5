@@ -1,3 +1,10 @@
+---
+title: "Actions Convention"
+qmd: "activity actions convention md"
+type: note
+tags: [documentation]
+---
+
 # Actions Convention
 
 All classes under `app/Actions/` MUST use the **Spatie QueueableAction** trait

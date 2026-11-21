@@ -1,3 +1,10 @@
+---
+title: "Console Commands per <nome progetto>ion Market"
+qmd: "activity use cases prediction market 12 console commands md"
+type: note
+tags: [documentation]
+---
+
 # Console Commands per <nome progetto>ion Market
 
 ## Introduzione

@@ -7,6 +7,8 @@ priority: medium
 created: 2026-10-06
 updated: 2026-10-06
 tags: [phpstan, cleanup, bmad, activity]
+superseded_by: "./phpstan-cleanup-activity.story.md"
+updated: 2026-11-17
 ---
 
 # [STORY] PHPStan cleanup — Activity
@@ -47,4 +49,6 @@ La pagina resta sottile: passa la scelta dell'utente a `BuildLogViewerStateActio
 - Issue: TODO (gh non installato su questa macchina)
 - Discussion: TODO
 
-Dev story: [2026-10-06-phpstan-cleanup-activity.dev.md](./2026-10-06-phpstan-cleanup-activity.dev.md)
+Dev story: [2026-10-06-phpstan-cleanup-activity.dev.md](./phpstan-cleanup-activity-wave.dev.md)
+
+> Deprecated alias. Canonico: [./phpstan-cleanup-activity.story.md](./phpstan-cleanup-activity.story.md).

@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki concepts xotbase resource zen pattern md"
 title: "XotBaseResource Zen Pattern"
 type: concept
 sources: []

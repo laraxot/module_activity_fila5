@@ -1,3 +1,10 @@
+---
+title: "Colli di Bottiglia e Soluzioni - Modulo Activity"
+qmd: "activity bottlenecks md"
+type: note
+tags: [documentation]
+---
+
 # Colli di Bottiglia e Soluzioni - Modulo Activity
 
 ## Panoramica

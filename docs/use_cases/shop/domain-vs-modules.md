@@ -1,3 +1,10 @@
+---
+title: "Confronto tra Struttura a Domain e Struttura a Moduli"
+qmd: "activity use cases shop domain vs modules md"
+type: note
+tags: [documentation]
+---
+
 # Confronto tra Struttura a Domain e Struttura a Moduli
 
 ## Introduzione

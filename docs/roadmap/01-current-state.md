@@ -1,3 +1,10 @@
+---
+title: "Current State - Activity"
+qmd: "activity roadmap 01 current state md"
+type: note
+tags: [documentation]
+---
+
 # Current State - Activity
 
 ## Baseline

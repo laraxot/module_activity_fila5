@@ -1,10 +1,11 @@
 ---
 title: "Indice documentazione — Activity"
 type: index
-status: active
-updated: 2026-11-16
+status: deprecated
+updated: 2026-11-17
 module: Activity
-qmd: "indice docs modulo Activity BMAD ECC purpose"
+qmd: "indice docs modulo Activity BMAD ECC purpose alias"
+superseded_by: "./index.md"
 ---
 
 # Indice — Activity
@@ -14,3 +15,5 @@ qmd: "indice docs modulo Activity BMAD ECC purpose"
 - [ECC](./ecc/00-index.md)
 - [Audit](./bmad/audit.md)
 - [Piano di miglioramento](./bmad/piano-miglioramento.md)
+
+> Deprecated alias. Canonico: [./index.md](./index.md).

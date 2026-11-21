@@ -1,3 +1,10 @@
+---
+title: "Analisi di Larabank Aggregates"
+qmd: "activity use cases bank analysis aggregates md"
+type: note
+tags: [documentation]
+---
+
 # Analisi di Larabank Aggregates
 
 ## Panoramica

@@ -1,3 +1,10 @@
+---
+title: "Non utilizzare `->label()` nei componenti Filament"
+qmd: "activity filament errors label usage error md"
+type: note
+tags: [documentation]
+---
+
 # Non utilizzare `->label()` nei componenti Filament
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo Activity.

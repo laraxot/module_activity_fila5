@@ -1,3 +1,10 @@
+---
+title: "SimpleChartWidget - Analisi Qualità del Codice e Best Practices"
+qmd: "activity dual label chart widget implementation md"
+type: note
+tags: [documentation]
+---
+
 # SimpleChartWidget - Analisi Qualità del Codice e Best Practices
 
 ## Panoramica

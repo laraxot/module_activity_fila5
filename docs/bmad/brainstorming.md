@@ -1,14 +1,17 @@
 ---
+<<<<<<< .merge_file_MCdyeU
 title: Brainstorming
 module: Activity
 ---
 
 ---
+=======
+>>>>>>> .merge_file_7CXgoL
 title: "Activity — brainstorming BMAD"
 type: concept
 tags: [brainstorming, activity, decisioni, debito-tecnico, event-sourcing]
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-11-16
 qmd: "Activity brainstorming decisioni aperte event sourcing audit log debito migrazioni"
 related:
   - ./brainstorming/module-opportunities.md
@@ -117,25 +120,33 @@ da `Activity` per nome. Il costo di migrazione supera il beneficio.
 
 ### S3 — Unificare le cinque migrazioni in un `migrate:fresh`
 Scartato e **vietato**: `migrate:fresh` e `--force` sono banditi dallo standing
-order (dati sacri, host `10.100.200.15`).# Brainstorming - Modulo Activity
+order (dati sacri, host `10.100.200.15`).
 
-## Idee iniziali
+## Opzioni sui finding dell'audit (2026-11-16)
 
-- [IDEA 1]
-- [IDEA 2]
-- [IDEA 3]
+Da [audit profondo](./audits/activity-audit.md). Ogni opzione ha un costo; la scelta va a [decision-log](./decision-log.md).
 
-## Problemi da risolvere
+### O1 — `LoginListener`: implementare o rimuovere (D-3)
 
-- [PROBLEMA 1]
-- [PROBLEMA 2]
+- **Implementare** `handle(Login $event)` → `LogUserLoginAction`: simmetria con `LogoutListener`, ma doppio log con `Modules\User\Listeners\LoginListener` (`RecordAuthenticationLogAction`).
+- **Rimuovere** listener + 7 test skip: meno codice, un solo posto per il login (User). Preferita se User resta la fonte.
+- Domanda aperta: chi consuma il login log, Activity o User?
 
-## Soluzioni proposte
+### O2 — Registro append-only
 
-- [SOLUZIONE 1]
-- [SOLUZIONE 2]
+- **Resource read-only** (niente Create/Edit/Delete) + retention via `ActivityMaintenanceAction` con permesso dedicato. Semplice, in linea con lo scopo.
+- Scartato: lasciare i permessi `activity.update/delete` "a chi sa": non e' un controllo, e' una convenzione.
+
+### O3 — Redazione segreti
+
+- Chiamare `RedactModelAttributesAction` dentro le Action di logging (un solo punto, DRY).
+- Alternativa: `$hidden` del modello come lista di verita'. Piu' coerente con Eloquent ma richiede che ogni modello lo dichiari.
+
+### O4 — API di logging programmatico (Adapters + `LogModel*Action`)
+
+- Nessun caller di produzione: o si adotta (e allora O3 e' bloccante) o si cancella. YAGNI favorisce la cancellazione se nessuna story la richiede.
 
 ## Domande aperte
 
-- [DOMANDA 1]
-- [DOMANDA 2]
+- `activity::admin` deve bypassare le policy come da ADR Xot? Oggi le policy estendono `UserBasePolicy`, senza `before()`.
+- Le migrazioni gia' applicate sui DB reali: quali ambienti hanno eseguito i 5 `create_activity_table`? (verificare la tabella `migrations` prima di qualunque consolidamento).

@@ -1,3 +1,10 @@
+---
+title: "📋 Activity — English presentation"
+qmd: "activity readme en md"
+type: note
+tags: [documentation]
+---
+
 # 📋 Activity — English presentation
 
 [![Domain-Audit](https://img.shields.io/badge/Domain-Activity%20Log-455A64.svg)](#)

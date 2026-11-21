@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki readme en md"
 title: Readme en
 module: Activity
 ---

@@ -1,3 +1,10 @@
+---
+title: "Stabilization Roadmap - Activity Module"
+qmd: "activity stabilization roadmap md"
+type: note
+tags: [documentation]
+---
+
 # Stabilization Roadmap - Activity Module
 
 ## Context & Philosophy

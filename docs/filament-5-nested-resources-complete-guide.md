@@ -1,3 +1,10 @@
+---
+title: "🎯 Filament 5.x Nested Resources - Guida Completa 2024"
+qmd: "activity filament 5 nested resources complete guide md"
+type: note
+tags: [documentation]
+---
+
 # 🎯 Filament 5.x Nested Resources - Guida Completa 2024
 
 ## 📋 **Introduzione a Nested Resources**
