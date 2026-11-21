@@ -1,3 +1,10 @@
+---
+title: "Metodi duplicati — Activity"
+qmd: "activity duplicate methods md"
+type: note
+tags: [documentation]
+---
+
 # Metodi duplicati — Activity
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.

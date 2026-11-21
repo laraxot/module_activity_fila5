@@ -1,3 +1,10 @@
+---
+title: "coverage full"
+qmd: "activity coverage full md"
+type: note
+tags: [documentation]
+---
+
 
 > Conflict cleanup note — 2026-04-28
 >

@@ -1,3 +1,10 @@
+---
+title: "Goals - Activity"
+qmd: "activity roadmap 02 goals md"
+type: note
+tags: [documentation]
+---
+
 # Goals - Activity
 
 ## Short Term

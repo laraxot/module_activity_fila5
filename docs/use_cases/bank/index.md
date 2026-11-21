@@ -1,3 +1,10 @@
+---
+title: "Larabank: Caso d'Uso Bancario con Event Sourcing"
+qmd: "activity use cases bank index md"
+type: note
+tags: [documentation]
+---
+
 # Larabank: Caso d'Uso Bancario con Event Sourcing
 
 ## Introduzione

@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki concepts method name homonyms md"
 title: "censimento omonimi metodi — modulo Activity"
 type: analysis
 module: Activity

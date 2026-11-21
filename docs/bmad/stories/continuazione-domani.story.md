@@ -1,4 +1,5 @@
 ---
+qmd: "activity bmad stories continuazione domani story md"
 status: backlog
 ---
 

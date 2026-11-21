@@ -1,3 +1,10 @@
+---
+title: "Report: Metodi con nome duplicato nei moduli e nei temi"
+qmd: "activity duplicate methods report md"
+type: note
+tags: [documentation]
+---
+
 # Report: Metodi con nome duplicato nei moduli e nei temi
 
 ## Introduzione

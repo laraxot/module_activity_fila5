@@ -1,3 +1,10 @@
+---
+title: "Best Practices per un <nome progetto>ion Market"
+qmd: "activity use cases prediction market best practices md"
+type: note
+tags: [documentation]
+---
+
 # Best Practices per un <nome progetto>ion Market
 
 Questa sezione raccoglie le migliori pratiche per progettare e gestire un <nome progetto>ion market nel modulo `Activity`, basandosi su analisi di piattaforme reali e sull'approccio Event Sourcing.

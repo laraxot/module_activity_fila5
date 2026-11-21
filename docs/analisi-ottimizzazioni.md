@@ -1,3 +1,10 @@
+---
+title: "📊 analisi e ottimizzazioni - modulo activity"
+qmd: "activity analisi ottimizzazioni md"
+type: note
+tags: [documentation]
+---
+
 # 📊 analisi e ottimizzazioni - modulo activity
 
 ## 🎯 panoramica analisi

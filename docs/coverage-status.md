@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Errori e Coverage"
+qmd: "activity coverage status md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Errori e Coverage
 
 ## Stato Test

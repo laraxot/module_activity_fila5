@@ -1,3 +1,10 @@
+---
+title: "Risoluzione Conflitti Git - Modulo Activity"
+qmd: "activity git conflicts resolution summary md"
+type: note
+tags: [documentation]
+---
+
 # Risoluzione Conflitti Git - Modulo Activity
 
 ## Data Risoluzione

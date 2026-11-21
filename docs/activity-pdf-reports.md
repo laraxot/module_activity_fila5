@@ -1,3 +1,10 @@
+---
+title: "Activity Log PDF Reports"
+qmd: "activity activity pdf reports md"
+type: note
+tags: [documentation]
+---
+
 # Activity Log PDF Reports
 
 ## 📋 Overview

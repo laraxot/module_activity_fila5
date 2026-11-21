@@ -1,3 +1,10 @@
+---
+title: "copilot redundancy audit"
+qmd: "activity copilot redundancy audit md"
+type: note
+tags: [documentation]
+---
+
 Copilot Redundancy Audit — 2026-05-25
 
 Sintesi

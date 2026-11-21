@@ -1,3 +1,10 @@
+---
+title: "CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH"
+qmd: "activity rules testing no migrate fresh md"
+type: note
+tags: [documentation]
+---
+
 # CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH
 
 ## Rule

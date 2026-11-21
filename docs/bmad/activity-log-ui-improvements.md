@@ -1,4 +1,5 @@
 ---
+qmd: "activity bmad activity log ui improvements md"
 title: Activity log ui improvements
 module: Activity
 ---

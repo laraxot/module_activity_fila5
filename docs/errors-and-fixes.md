@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Errori Rilevati e Soluzioni"
+qmd: "activity errors and fixes md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Errori Rilevati e Soluzioni
 
 ## Stato Test Attuale

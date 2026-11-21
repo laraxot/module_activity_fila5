@@ -1,3 +1,10 @@
+---
+title: "Architettura Bank (Event Sourcing)"
+qmd: "activity use cases bank 02 architettura md"
+type: note
+tags: [documentation]
+---
+
 # Architettura Bank (Event Sourcing)
 
 ## Pattern Principali

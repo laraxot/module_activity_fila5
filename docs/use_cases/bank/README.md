@@ -1,3 +1,10 @@
+---
+title: "Bank Use Case: Approcci Event Sourcing e Tradizionale"
+qmd: "activity use cases bank readme md"
+type: note
+tags: [documentation]
+---
+
 # Bank Use Case: Approcci Event Sourcing e Tradizionale
 
 ## Introduzione

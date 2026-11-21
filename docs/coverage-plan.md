@@ -1,3 +1,10 @@
+---
+title: "Activity Coverage Plan"
+qmd: "activity coverage plan md"
+type: note
+tags: [documentation]
+---
+
 # Activity Coverage Plan
 
 Owner: multi-agent execution thread

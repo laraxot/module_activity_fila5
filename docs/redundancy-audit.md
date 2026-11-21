@@ -1,4 +1,5 @@
 ---
+qmd: "activity redundancy audit md"
 title: "Activity redundancy audit 2026-05-21"
 type: audit
 module: Activity

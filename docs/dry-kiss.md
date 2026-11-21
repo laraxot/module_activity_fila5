@@ -1,3 +1,10 @@
+---
+title: "DRY & KISS Analysis - Modulo Activity"
+qmd: "activity dry kiss md"
+type: note
+tags: [documentation]
+---
+
 # DRY & KISS Analysis - Modulo Activity
 
 **Data:** 15 Ottobre 2025  

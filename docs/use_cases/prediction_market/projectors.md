@@ -1,3 +1,10 @@
+---
+title: "Proiettori per <nome progetto>ion Market"
+qmd: "activity use cases prediction market projectors md"
+type: note
+tags: [documentation]
+---
+
 # Proiettori per <nome progetto>ion Market
 
 I proiettori sono utilizzati per creare viste di lettura basate sugli eventi del <nome progetto>ion market. Queste viste possono essere utilizzate per report, dashboard o per fornire dati in tempo reale agli utenti.

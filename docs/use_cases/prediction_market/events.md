@@ -1,3 +1,10 @@
+---
+title: "Eventi del <nome progetto>ion Market"
+qmd: "activity use cases prediction market events md"
+type: note
+tags: [documentation]
+---
+
 # Eventi del <nome progetto>ion Market
 
 Gli eventi sono il cuore del sistema di Event Sourcing per un <nome progetto>ion market. Di seguito sono elencati gli eventi principali che dovrebbero essere implementati nel modulo `Activity`.

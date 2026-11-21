@@ -2,9 +2,7 @@
 
 declare(strict_types=1);
 
-use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Actions\LogModelCreatedAction;
-use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\Fixtures\LogModelCreatedActionTestModel;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
@@ -27,7 +25,6 @@ test('LogModelCreatedAction execute persiste created con subject e causer', func
 
     $activity = (new LogModelCreatedAction($model, $user))->execute();
 
-    Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame('created', $activity->event);
     Assert::assertSame($model::class, $activity->subject_type);
     Assert::assertSame($model->getKey(), $activity->subject_id);

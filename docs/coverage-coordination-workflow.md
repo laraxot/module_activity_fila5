@@ -1,3 +1,10 @@
+---
+title: "Activity Coverage Coordination Workflow"
+qmd: "activity coverage coordination workflow md"
+type: note
+tags: [documentation]
+---
+
 # Activity Coverage Coordination Workflow
 
 ## Scopo

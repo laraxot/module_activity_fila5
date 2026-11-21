@@ -1,4 +1,5 @@
 ---
+qmd: "activity code redundancy audit md"
 title: "Code redundancy audit — Activity"
 type: source
 status: draft

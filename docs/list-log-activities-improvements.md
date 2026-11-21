@@ -1,3 +1,10 @@
+---
+title: "ListLogActivities UI/UX Improvements - 2025-12-04"
+qmd: "activity list log activities improvements md"
+type: note
+tags: [documentation]
+---
+
 # ListLogActivities UI/UX Improvements - 2025-12-04
 
 ## Data Intervento: 2025-12-04

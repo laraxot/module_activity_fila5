@@ -1,4 +1,5 @@
 ---
+qmd: "activity tecnico laraxot module activity md"
 module: theme
 topic: module-activity
 canonical: ../../../../../Themes/docs/shared-components/module-activity.md

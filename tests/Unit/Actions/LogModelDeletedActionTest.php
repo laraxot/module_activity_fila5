@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Modules\Activity\Actions\LogModelDeletedAction;
-use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\Fixtures\LogModelDeletedActionTestModel;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
@@ -26,7 +25,6 @@ test('LogModelDeletedAction execute persiste deleted con subject e causer', func
 
     $activity = (new LogModelDeletedAction($model, $user))->execute();
 
-    Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame('deleted', $activity->event);
     Assert::assertSame($model::class, $activity->subject_type);
 

@@ -1,3 +1,10 @@
+---
+title: "BaseModel Activity: Perché $connection = 'activity' e NON null"
+qmd: "activity basemodel connection why activity not null md"
+type: note
+tags: [documentation]
+---
+
 # BaseModel Activity: Perché $connection = 'activity' e NON null
 
 ## Risposta diretta

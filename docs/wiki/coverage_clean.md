@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki coverage clean md"
 title: 'Coverage clean'
 module: Activity
 type: reference

@@ -1,3 +1,10 @@
+---
+title: "Product Launch Plan: Activity Module"
+qmd: "activity launch plan md"
+type: note
+tags: [documentation]
+---
+
 # Product Launch Plan: Activity Module
 
 ## 🚀 Launch Overview

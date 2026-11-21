@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki api md"
 title: "Activity Module API"
 type: reference
 tags: [activity, api]

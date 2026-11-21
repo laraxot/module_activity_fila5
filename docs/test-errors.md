@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Errori Test e Configurazione"
+qmd: "activity test errors md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Errori Test e Configurazione
 
 ## Sommario

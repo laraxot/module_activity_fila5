@@ -1,4 +1,5 @@
 ---
+qmd: "activity html2pdf styling md"
 title: "html2pdf styling — puntatore"
 type: reference
 updated: 2026-05-21

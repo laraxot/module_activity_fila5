@@ -1,3 +1,10 @@
+---
+title: "coverage clean"
+qmd: "activity coverage clean md"
+type: note
+tags: [documentation]
+---
+
   Activity/app/Actions/ActivityLogger ................................... 0.0%  
   Activity/app/Actions/LogActivityAction ................................ 0.0%  
   Activity/app/Actions/LogModelCreatedAction ............................ 0.0%  

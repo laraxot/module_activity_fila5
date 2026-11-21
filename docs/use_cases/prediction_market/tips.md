@@ -1,3 +1,10 @@
+---
+title: "Consigli e Best Practice - <nome progetto>ion Market"
+qmd: "activity use cases prediction market tips md"
+type: note
+tags: [documentation]
+---
+
 # Consigli e Best Practice - <nome progetto>ion Market
 
 ## Refactoring e Miglioramenti

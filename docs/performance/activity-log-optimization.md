@@ -1,3 +1,10 @@
+---
+title: "Activity Log Optimization - Activity Module"
+qmd: "activity performance activity log optimization md"
+type: note
+tags: [documentation]
+---
+
 # Activity Log Optimization - Activity Module
 
 ## 🚨 Critical Issues Identified

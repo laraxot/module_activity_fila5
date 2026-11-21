@@ -1,3 +1,10 @@
+---
+title: "Regola: Connessioni Database - Modulo Activity"
+qmd: "activity database connections md"
+type: note
+tags: [documentation]
+---
+
 # Regola: Connessioni Database - Modulo Activity
 
 ## Principio

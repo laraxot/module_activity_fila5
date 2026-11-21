@@ -1,3 +1,10 @@
+---
+title: "Advanced Event Sourcing Patterns for Healthcare Applications"
+qmd: "activity advanced event sourcings md"
+type: note
+tags: [documentation]
+---
+
 # Advanced Event Sourcing Patterns for Healthcare Applications
 
 ## Table of Contents

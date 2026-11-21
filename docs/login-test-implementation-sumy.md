@@ -1,3 +1,10 @@
+---
+title: "Login Test Implementation Summary - <main module> Project"
+qmd: "activity login test implementation sumy md"
+type: note
+tags: [documentation]
+---
+
 # Login Test Implementation Summary - <main module> Project
 
 ## 🎊 Mission Accomplished: Complete Login Testing Suite

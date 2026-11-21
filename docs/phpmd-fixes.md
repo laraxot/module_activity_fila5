@@ -1,3 +1,10 @@
+---
+title: "PHPMD Fixes - Activity Module"
+qmd: "activity phpmd fixes md"
+type: note
+tags: [documentation]
+---
+
 # PHPMD Fixes - Activity Module
 
 ## ✅ COMPLETED FIXES

@@ -1,3 +1,10 @@
+---
+title: "Fix: subject_id e causer_id devono supportare UUID"
+qmd: "activity errori subject id causer id uuid migration fix md"
+type: note
+tags: [documentation]
+---
+
 # Fix: subject_id e causer_id devono supportare UUID
 
 ## Problema

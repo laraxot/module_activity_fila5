@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki patterns anti patterns md"
 title: Anti patterns
 module: Activity
 ---

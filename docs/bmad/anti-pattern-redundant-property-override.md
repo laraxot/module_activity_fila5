@@ -1,4 +1,5 @@
 ---
+qmd: "activity bmad anti pattern redundant property override md"
 title: Anti pattern redundant property override
 module: Activity
 ---

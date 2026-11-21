@@ -1,3 +1,10 @@
+---
+title: "Activity - Filosofia Completa: Logica, Religione, Politica, Zen"
+qmd: "activity philosophy complete md"
+type: note
+tags: [documentation]
+---
+
 # Activity - Filosofia Completa: Logica, Religione, Politica, Zen
 
 **Data Creazione**: 2025-12-23

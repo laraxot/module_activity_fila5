@@ -1,3 +1,10 @@
+---
+title: "Testing Bank (Event Sourcing)"
+qmd: "activity use cases bank 07 test md"
+type: note
+tags: [documentation]
+---
+
 # Testing Bank (Event Sourcing)
 
 ## Unit Test

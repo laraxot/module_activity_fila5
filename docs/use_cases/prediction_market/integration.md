@@ -1,3 +1,10 @@
+---
+title: "Integrazione con Laravel e Event Sourcing"
+qmd: "activity use cases prediction market integration md"
+type: note
+tags: [documentation]
+---
+
 # Integrazione con Laravel e Event Sourcing
 
 ## 1. Configurazione Iniziale

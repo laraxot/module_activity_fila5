@@ -1,3 +1,10 @@
+---
+title: "Flussi Principali - Use Case Bancario"
+qmd: "activity use cases bank flow md"
+type: note
+tags: [documentation]
+---
+
 # Flussi Principali - Use Case Bancario
 
 ## 1. Apertura Conto

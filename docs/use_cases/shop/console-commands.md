@@ -1,3 +1,10 @@
+---
+title: "Guida Completa ai Console Commands per il Modulo Shop"
+qmd: "activity use cases shop console commands md"
+type: note
+tags: [documentation]
+---
+
 # Guida Completa ai Console Commands per il Modulo Shop
 
 ## Indice

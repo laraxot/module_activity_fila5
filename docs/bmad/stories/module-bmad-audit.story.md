@@ -27,7 +27,7 @@ Audit source-first del modulo che deve garantire "chi ha cambiato cosa, quando e
 - [ ] Pest modulo: parziale — 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout a 900 s (carico macchina).
 - [ ] E1–E4 chiuse con test di regressione.
 
-## Task
+## Riferimenti
 
 1. Lock dei file di `docs/` del modulo (`bashscripts/lock/`), unlock a fine lavoro.
 2. Audit codice → docs; nessun PHP toccato.

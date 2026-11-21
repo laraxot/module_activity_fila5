@@ -1,3 +1,10 @@
+---
+title: "Best Practice, Zen e Pattern per uno Shop Event Sourced"
+qmd: "activity use cases shop 04 best practice md"
+type: note
+tags: [documentation]
+---
+
 # Best Practice, Zen e Pattern per uno Shop Event Sourced
 
 ## 1. Eventi Immutabili e Atomici

@@ -1,3 +1,10 @@
+---
+title: "Implementazione del <nome progetto>ion Market"
+qmd: "activity use cases prediction market implementation md"
+type: note
+tags: [documentation]
+---
+
 # Implementazione del <nome progetto>ion Market
 
 Questa guida fornisce i passaggi per implementare un <nome progetto>ion market nel modulo `Activity` utilizzando l'Event Sourcing.

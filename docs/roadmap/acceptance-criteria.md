@@ -1,3 +1,10 @@
+---
+title: "Criteri di accettazione Modulo Activity"
+qmd: "activity roadmap acceptance criteria md"
+type: note
+tags: [documentation]
+---
+
 # Criteri di accettazione Modulo Activity
 
 Criteri verificabili per le fasi della roadmap Activity (audit trail e observability).

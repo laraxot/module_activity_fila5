@@ -1,3 +1,10 @@
+---
+title: "Filament Resources nel Modulo Activity"
+qmd: "activity filament resources md"
+type: note
+tags: [documentation]
+---
+
 # Filament Resources nel Modulo Activity
 
 ## Struttura delle Risorse

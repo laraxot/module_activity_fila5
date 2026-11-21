@@ -1,3 +1,10 @@
+---
+title: "Upgrade Laravel 13 - Activity 🐄✨"
+qmd: "activity laravel 13 upgrade md"
+type: note
+tags: [documentation]
+---
+
 # Upgrade Laravel 13 - Activity 🐄✨
 
 ## 🎯 Visione Architetturale

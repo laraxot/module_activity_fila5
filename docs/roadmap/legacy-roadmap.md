@@ -1,3 +1,10 @@
+---
+title: "Roadmap Activity"
+qmd: "activity roadmap legacy roadmap md"
+type: note
+tags: [documentation]
+---
+
 # Roadmap Activity
 
 Roadmap operativo del module **Activity**, suddiviso in file tematici.

@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki concepts event sourcing patterns md"
 title: Event sourcing patterns
 module: Activity
 ---

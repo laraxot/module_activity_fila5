@@ -1,4 +1,5 @@
 ---
+qmd: "activity bmad architecture architecture rules md"
 title: Architecture rules
 module: Activity
 ---

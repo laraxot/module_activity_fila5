@@ -1,4 +1,5 @@
 ---
+qmd: "activity contracts naming md"
 title: "Contracts Naming & Placement"
 type: concept
 created: 2026-07-12

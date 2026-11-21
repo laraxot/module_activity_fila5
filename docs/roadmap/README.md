@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Roadmap"
+qmd: "activity roadmap readme md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Roadmap
 
 ## 🎯 Module Purpose

@@ -1,3 +1,10 @@
+---
+title: "Analisi Qualità - Modulo Activity"
+qmd: "activity quality analysis activity module quality report md"
+type: note
+tags: [documentation]
+---
+
 # Analisi Qualità - Modulo Activity
 
 **Data Analisi**: 2025-01-22  

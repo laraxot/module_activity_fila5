@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Business Logic Analysis"
+qmd: "activity business logic analysis md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Business Logic Analysis
 
 ## Overview

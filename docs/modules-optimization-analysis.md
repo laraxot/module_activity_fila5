@@ -1,3 +1,10 @@
+---
+title: "📊 Activity Module - Optimization Analysis"
+qmd: "activity modules optimization analysis md"
+type: note
+tags: [documentation]
+---
+
 # 📊 Activity Module - Optimization Analysis
 
 ## 🎯 Current Status

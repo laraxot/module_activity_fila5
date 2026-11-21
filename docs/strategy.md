@@ -1,3 +1,10 @@
+---
+title: "Product Strategy: Activity Module"
+qmd: "activity strategy md"
+type: note
+tags: [documentation]
+---
+
 # Product Strategy: Activity Module
 
 ## 🌍 Market Context

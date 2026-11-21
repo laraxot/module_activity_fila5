@@ -1,4 +1,5 @@
 ---
+qmd: "activity wiki accessor delegation pattern md"
 title: Accessor delegation pattern
 module: Activity
 ---

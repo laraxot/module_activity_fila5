@@ -1,4 +1,5 @@
 ---
+qmd: "activity bmad analisi ottimizzazioni md"
 title: Analisi ottimizzazioni
 module: Activity
 ---

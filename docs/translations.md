@@ -1,3 +1,10 @@
+---
+title: "Traduzioni del Modulo Activity"
+qmd: "activity translations md"
+type: note
+tags: [documentation]
+---
+
 # Traduzioni del Modulo Activity
 
 ## Collegamenti

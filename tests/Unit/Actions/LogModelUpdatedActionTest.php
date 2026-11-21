@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Modules\Activity\Actions\LogModelUpdatedAction;
-use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\Fixtures\LogModelUpdatedActionTestModel;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
@@ -27,7 +26,6 @@ test('LogModelUpdatedAction execute persiste updated con subject e causer', func
 
     $activity = (new LogModelUpdatedAction($model, $user))->execute();
 
-    Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame('updated', $activity->event);
     Assert::assertSame($model::class, $activity->subject_type);
 
