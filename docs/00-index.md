@@ -7,7 +7,7 @@ qmd: "**indice documentazione modulo activity** activity"
 status: stale
 ---
 
-> Nota 2026-10-14 (docs-audit): Copia con contenuto raddoppiato di 00-INDEX.md (varianti di sola maiuscola) con link a file inesistenti; l'indice canonico e' 00-INDEX.md. Contenuto non riscritto, verificare prima di usarlo.
+> Nota 2026-10-14 (docs-audit): Copia con contenuto raddoppiato di 00-index.md (varianti di sola maiuscola) con link a file inesistenti; l'indice canonico e' 00-index.md. Contenuto non riscritto, verificare prima di usarlo.
 
 app(LogActivityAction::class)->execute(
     type: 'user.login',
@@ -26,9 +26,9 @@ app(LogActivityAction::class)->execute(
 - `spatie/laravel-event-sourcing` - Event sourcing, CQRS
 
 ## 🔗 **Moduli Correlati**
-- [Xot](../../xot/docs/readme.md) - Core framework.
-- [Tenant](../../tenant/docs/readme.md) - Isolamento dati per tenant.
-- [User](../../user/docs/readme.md) - Autenticazione e causer activity.
+- [Xot](../../Xot/docs/README.md) - Core framework.
+- [Tenant](../../Tenant/docs/README.md) - Isolamento dati per tenant.
+- [User](../../User/docs/readme.md) - Autenticazione e causer activity.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

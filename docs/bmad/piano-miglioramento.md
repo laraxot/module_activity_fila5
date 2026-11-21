@@ -29,6 +29,9 @@ Epic e AC: [epics.md](./epics.md).
 2. Deduplicare contratti/logger; rimuovere `Adapters/*` senza caller.
 3. `TestModel` + migration fuori dalla produzione; `_bak/` fuori dall'albero.
 4. Igiene: 8 `.md` e 4 `*.code-workspace` fuori dalla root; frontmatter su 331 `.md`.
+5. Dal piano precedente, ancora aperti: test negativi su pannello, mass assignment ed export;
+   rimuovere viste legacy (`admin_test`) se morte; profiling N+1; zero label hardcoded e
+   traduzioni Lang allineate alle Resource `XotBase*`; cercare con `rg` dipendenze inverse verso moduli peer.
 
 ## Sequenza e gate
 
@@ -44,3 +47,4 @@ Epic e AC: [epics.md](./epics.md).
 - [ ] Nessun segreto in `properties` (Pest su `User`)
 - [ ] PHPStan `Modules/Activity` = 0
 - [ ] ECC `00-index` aggiornato
+- [ ] Pest osservabile o skip motivato

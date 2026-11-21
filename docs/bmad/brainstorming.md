@@ -9,7 +9,6 @@ related:
   - ./brainstorming/module-opportunities.md
   - ./architecture/module-map.md
   - ../architecture.md
-  - ./architecture/module-map.md
   - ./epics/module-roadmap.md
 issues: []
 discussions: []

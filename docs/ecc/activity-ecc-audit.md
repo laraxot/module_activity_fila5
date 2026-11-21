@@ -63,5 +63,5 @@ Test svuotati per silenziare: **8 file** (vedi P1-4).
 ## Confine Folio (ECC)
 
 Activity **non** chiama `Folio::path`. File `pages/` sì, mount no.
-Owner mount: `Cms/FolioVolt` (FO); PTVX senza Cms → niente surrogato in Activity/App.
+Owner mount: `Cms/FolioVolt` (FO); progetti senza Cms → niente surrogato in Activity/App.
 Story: [folio-routing-centralization](../bmad/stories/folio-routing-centralization.story.md).

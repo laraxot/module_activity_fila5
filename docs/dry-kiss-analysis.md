@@ -37,7 +37,7 @@ abstract class BaseModel extends XotBaseModel
 - 🔄 ServiceProvider: Auto-detect nome
 
 ---
-[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS.md)
 ---
 module: theme
 topic: dry-kiss-analysis
@@ -61,7 +61,7 @@ canonical: ../../../Themes/docs/shared-components/dry-kiss-analysis--Modules.md
 - 🔄 ServiceProvider: Auto-detect nome
 
 ---
-[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS.md)
 ---
 module: theme
 topic: dry-kiss-analysis

@@ -20,7 +20,7 @@ discussions: []
 > **SUMMARY**: mappa reale del modulo `Modules/Activity` (alias `activity`): due
 > sottosistemi distinti — audit delle azioni utente su Spatie Activity + event
 > sourcing, e un visualizzatore dei log di file Laravel — con tre Resource
-> Filament, 30 Action e 7 DTO (misura 2026-11-16).
+> Filament, 30 Action e 8 DTO (misura 2026-11-19; 7 DTO del log viewer + `ActivityConfigData`).
 
 ## Identita del modulo
 
@@ -65,10 +65,10 @@ e il **contratto pubblico** del modulo.
 `IsActivityLogSchemaWritableAction`: verificano se la tabella di audit e la
 struttura del log sono scrivibili prima di tentare l'operazione.
 
-## DTO (`app/Datas`, 7)
+## DTO (`app/Datas`, 8)
 
-`FilteredLogEntriesData`, `LogEntryData`, `LogFileData`, `LogTailData`,
-`LogTreeData`, `LogViewerStateData`, `ResolvedLogFileData` — coprono l'intero
+`ActivityConfigData` (configurazione del modulo) e `FilteredLogEntriesData`, `LogEntryData`, `LogFileData`, `LogTailData`,
+`LogTreeData`, `LogViewerStateData`, `ResolvedLogFileData` — questi ultimi sette coprono l'intero
 flusso del log viewer: risoluzione percorso -> lista -> albero -> tail ->
 parsing -> filtro -> stato UI.
 
