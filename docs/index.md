@@ -199,7 +199,7 @@ sono elencati nello Storico.
 - [quality-analysis/activity-module-quality-report.md](quality-analysis/activity-module-quality-report.md) — report qualita' modulo.
 - [quality-audit.md](quality-audit.md) — audit di qualita'.
 - [quality_report.md](quality_report.md) — quality report (QUALITY_REPORT.md duplicato maiuscolo, vedi Storico).
-- [quality-status.md](quality-status.md) — stato qualita' novembre 2025 (`quality-status-.md` identico, `quality-status-activity-module-november.md` quasi identico, `quality-status-nov.md` e' stub puntatore vuoto; vedi Storico).
+- [quality-status.md](quality-status.md) — stato qualita' novembre 2025 (`quality-status.md` identico, `quality-status-activity-module-november.md` quasi identico, `quality-status-nov.md` e' stub puntatore vuoto; vedi Storico).
 - [psr4-autoloading-fix.md](psr4-autoloading-fix.md) — fix compliance PSR-4.
 - [case-variant-collisions.md](case-variant-collisions.md) — collisioni di nome file per sola differenza di maiuscole nel codice PHP del modulo (documento gemello di questo problema, ma sui sorgenti, non sui docs).
 - [ponytail-audit-over-engineering.md](ponytail-audit-over-engineering.md) e [wiki/concepts/ponytail-audit.md](wiki/concepts/ponytail-audit.md) — audit over-engineering.
@@ -425,7 +425,7 @@ sotto). Coesistono per coincidenza di nome con le varianti che invece hanno cont
 `metodi-duplicati-analisi.md` (+ maiuscolo/underscore) · `modelli-factory-seeder-analisi.md` (+ `-1.md`, underscore) ·
 `phpstan-analysis-november.md`/`phpstan-analysis-november-2025.md` · `phpstan-fixes.md` (+ `-1.md`, stub underscore) ·
 `phpstan-fixes-activity.md` (+ `-1.md`, underscore) · `quality-status.md` (+ `-.md`, `-2025-11.md`; `-nov.md` e' stub) ·
-`roadmap-2025.md`/`roadmap-.md` (+ `roadmap-archive-1.md`, quasi identico con 2 righe di differenza) ·
+`roadmap.md`/`roadmap.md` (+ `roadmap-archive-1.md`, quasi identico con 2 righe di differenza) ·
 `event-sourcing-examples-duplicate.md`/`event_sourcing_examples.md` (+ stub `event-sourcing-examples.md`) ·
 `event-sourcing-introduction-duplicate.md`/`event_sourcing_introduction.md` (+ stub `event-sourcing-introduction.md`) ·
 `test-archive-1.md`/`test-archive-2.md` (entrambi vuoti).
@@ -482,23 +482,23 @@ intenzionale di "on-demand", non un incidente di duplicazione): `ai-methodologie
 Non richiedono consolidamento: sono puntatori voluti, non copie accidentali.
 
 ## Related Modules
-- [User Module](../User/docs/README.md) - User authentication and management
-- [Notify Module](../Notify/docs/index.md) - Notification system
-- [Xot Module](../Xot/docs/index.md) - Core base classes
-- [User Module](../user/docs/readme.md) - User authentication and management
-- [Notify Module](../notify/docs/index.md) - Notification system
-- [Xot Module](../xot/docs/index.md) - Core base classes
+- [User Module](../../User/docs/README.md) - User authentication and management
+- [Notify Module](../../Notify/docs/index.md) - Notification system
+- [Xot Module](../../Xot/docs/README.md) - Core base classes
+- [User Module](../../User/docs/readme.md) - User authentication and management
+- [Notify Module](../../Notify/docs/index.md) - Notification system
+- [Xot Module](../../Xot/docs/README.md) - Core base classes
 
 ## Related Modules
-- [User Module](../User/docs/README.md) - User authentication and management
-- [Notify Module](../Notify/docs/index.md) - Notification system
-- [Xot Module](../Xot/docs/index.md) - Core base classes
-- [User Module](../user/docs/readme.md) - User authentication and management
-- [Notify Module](../notify/docs/index.md) - Notification system
-- [Xot Module](../xot/docs/index.md) - Core base classes
+- [User Module](../../User/docs/README.md) - User authentication and management
+- [Notify Module](../../Notify/docs/index.md) - Notification system
+- [Xot Module](../../Xot/docs/README.md) - Core base classes
+- [User Module](../../User/docs/readme.md) - User authentication and management
+- [Notify Module](../../Notify/docs/index.md) - Notification system
+- [Xot Module](../../Xot/docs/README.md) - Core base classes
 
 Quattro copie parallele dello stesso lotto di file di test/placeholder, quasi tutte a
-0-3 righe (`archived-note.md`, `documentation*.md`, `2024-03-27.md`, `test*.md`,
+0-3 righe (`archived-note.md`, `documentation*.md`, `test*.md`,
 `import-placeholder*.md`, `filament*.md`, `changelog*.md`): presenti sia direttamente
 in `docs/` (es. `test02.md`, `test-archive-1.md`, `archived-note.md`), sia in
 `docs/root-md-files/`, `docs/root-txt-files/` e `docs/raw/root-import/`. Non collegati
@@ -515,7 +515,7 @@ Questi 4 gruppi restano come testimonianza storica di un import automatico mal r
 ### File placeholder vuoti (solo titolo H1, zero contenuto)
 
 `domain-logic.md`, `data-models.md`, `validation.md`, `integration.md`, `workflows.md`,
-`troubleshooting.md`, `2024-03-27.md`, `archived-note.md`, `documentation.md`,
+`troubleshooting.md`, `archived-note.md`, `documentation.md`,
 `documentation-archive-1.md` e i loro equivalenti nelle
 cartelle di import grezzo sopra citate (49 file a 0 righe in tutto il modulo).
 
@@ -526,21 +526,54 @@ cartelle di import grezzo sopra citate (49 file a 0 righe in tutto il modulo).
 - File completamente vuoti (0 righe): 49.
 - File stub con puntatore `canonical:` verso `Themes/docs/shared-components/`: 73 (di cui 6 template `_templates/`, 4 ibridi con contenuto reale aggiuntivo, 63 stub puri).
 - File indicizzati esplicitamente per argomento in questo documento: la quasi totalita' dei restanti file con contenuto reale; le eccezioni (import grezzo/placeholder vuoti) sono referenziate per gruppo con comando `find` riproducibile, non singolarmente.
-## Debito naming (date nel filename — flag, non cancellare)
+## Naming dei file (nessuna data nel nome)
 
-Storici con data nel nome: restano `superseded`/archivio finche' i riferimenti non
-sono migrati. Canonici nuovi: senza data. Misura:
+Audit qualita' #64: tutti i `.md` con data/timestamp nel nome sono stati rinominati
+(la data e' ora nel frontmatter `created:`) oppure uniti al file canonico omonimo;
+i placeholder vuoti datati di `raw/root-import/` sono stati rimossi.
+Dettagli: [stories/audit-qualita.story.md](stories/audit-qualita.story.md). Verifica:
 
 ```bash
 python3 -I bashscripts/tools/docs/md-filenames.py check --paths laravel/Modules/Activity/docs
 ```
 
-Esempi ancora presenti: `documentation-2024-03-27.md`, `quality-status-2025-11.md`,
-`stories/phpstan-cleanup-activity.story.md`,
-`bmad/stories/*-20260928*.story.md`, `wiki/troubleshooting/git-merge-conflict-inventory-april.md`,
-`raw/root-import/*2024*`. Procedura: [docs-clean.md](../../../../bashscripts/docs/prompts/docs-clean.md).
-
 ## Troubleshooting
 
 - Performance log grandi, entry mancanti, config: vedi wiki troubleshooting del modulo.
 - File vuoti/import grezzo: referenziati per gruppo sopra, non cancellare a tappeto.
+
+## Mappa delle cartelle
+
+Elenco generato dall'audit qualita' (issue #64): ogni cartella di `docs/` con il numero di file `.md`.
+Le cartelle di import grezzo (`raw/`, `root-*-files/`), immagini e log sono escluse.
+
+| Cartella | File .md |
+|---|---|
+| [`actions/`](actions/) | 1 |
+| [`architecture/`](architecture/) | 3 |
+| [`archive/`](archive/) | 34 |
+| [`bmad/`](bmad/index.md) | 56 |
+| [`charts/`](charts/README.md) | 1 |
+| [`concepts/`](concepts/) | 1 |
+| [`database/`](database/) | 1 |
+| [`development/`](development/) | 1 |
+| [`ecc/`](ecc/) | 2 |
+| [`epics/`](epics/) | 1 |
+| [`errori/`](errori/) | 7 |
+| [`filament/`](filament/) | 10 |
+| [`guides/`](guides/) | 4 |
+| [`investigation/`](investigation/) | 2 |
+| [`llm-wiki/`](llm-wiki/index.md) | 6 |
+| [`performance/`](performance/) | 4 |
+| [`prompts/`](prompts/) | 6 |
+| [`quality-analysis/`](quality-analysis/) | 1 |
+| [`roadmap/`](roadmap/index.md) | 32 |
+| [`stories/`](stories/) | 9 |
+| [`tasks/`](tasks/) | 36 |
+| [`tecnico/`](tecnico/) | 4 |
+| [`testing/`](testing/) | 4 |
+| [`troubleshooting/`](troubleshooting/) | 1 |
+| [`ui-ux/`](ui-ux/) | 1 |
+| [`use-cases/`](use-cases/) | 1 |
+| [`use_cases/`](use_cases/) | 116 |
+| [`wiki/`](wiki/index.md) | 105 |

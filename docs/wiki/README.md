@@ -59,7 +59,7 @@ Pagine brevi e riusabili (concetti, regole, memorie) che completano le story. Mi
 | `testing/` | 11 | nessuno |
 | `rules/` | 4 | [rules/INDEX.md](./rules/INDEX.md) |
 | `memories/` | 4 | [memories/INDEX.md](./memories/INDEX.md) |
-| `skills/` | 2 | [skills/INDEX.md](./skills/INDEX.md) |
+| `skills/` | 2 | [skills/INDEX.md](skills/index.md) |
 | `howto/`, `_templates/` | 3 ciascuna | nessuno |
 | `troubleshooting/`, `integrations/`, `features/`, `commands/`, `analysis/` | 2 ciascuna | nessuno |
 | `sources/`, `product/`, `patterns/`, `overviews/`, `how-to/` | 1 ciascuna | nessuno |

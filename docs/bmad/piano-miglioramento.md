@@ -4,27 +4,15 @@ type: plan
 status: review
 updated: 2026-11-16
 module: Activity
-<<<<<<< .merge_file_gGN2hE
-qmd: "piano miglioramento Activity P0 P1 P2 BMAD"
-=======
-<<<<<<< .merge_file_PMyQ7V
-qmd: "piano miglioramento Activity P0 P1 P2 BMAD"
-=======
 qmd: "piano miglioramento Activity P1 P2 audit trail append-only redazione test sequenza criteri completamento"
 related:
   - ./audits/activity-audit.md
   - ./epics.md
   - ./decision-log.md
->>>>>>> .merge_file_FH9rqi
->>>>>>> .merge_file_kZgv5b
 ---
 
 # Piano di miglioramento — Activity
 
-<<<<<<< .merge_file_gGN2hE
-=======
-<<<<<<< .merge_file_PMyQ7V
->>>>>>> .merge_file_kZgv5b
 Derivato dall'[audit](./audits/activity-audit.md).
 
 ## P0
@@ -59,9 +47,6 @@ Derivato dall'[audit](./audits/activity-audit.md).
 - [ ] PHPStan `Modules/Activity` = 0
 - [ ] Pest osservabile o skip motivato
 - [ ] ECC `00-index` aggiornato con esiti
-<<<<<<< .merge_file_gGN2hE
-=======
-=======
 Derivato dall'[audit profondo](./audits/activity-audit.md). Nessun P0 emerso dal codice; i P1 riguardano l'integrità del registro.
 Epic e AC: [epics.md](./epics.md).
 
@@ -93,5 +78,3 @@ Epic e AC: [epics.md](./epics.md).
 - [ ] Nessun segreto in `properties` (Pest su `User`)
 - [ ] PHPStan `Modules/Activity` = 0
 - [ ] ECC `00-index` aggiornato
->>>>>>> .merge_file_FH9rqi
->>>>>>> .merge_file_kZgv5b

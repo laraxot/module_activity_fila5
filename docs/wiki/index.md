@@ -55,7 +55,7 @@ _No entities tracked yet._
 ## On-Demand References
 
 - [rules-index](./rules/INDEX.md) — entrypoint locale per regole ricorrenti del modulo
-- [skills-index](./skills/INDEX.md) — skill on-demand, incluse skill condivise Xot
+- [skills-index](skills/index.md) — skill on-demand, incluse skill condivise Xot
 
 ## Comparisons
 
