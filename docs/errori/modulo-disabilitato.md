@@ -1,11 +1,10 @@
 ---
 title: "Errore: Modulo Activity Disabilitato"
+qmd: "activity errori modulo disabilitato md"
 type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity, errori]
-qmd: "errore: modulo activity disabilitato activity"
+tags: [documentation]
 ---
+
 # Errore: Modulo Activity Disabilitato
 
 ## Descrizione del Problema
@@ -336,8 +335,11 @@ Se `module:enable Activity` non funziona:
 
 ---
 
-**=======
+**
+
 **Ultimo aggiornamento**: 27 Ottobre 2025
+
+**=======
 **Caso Reale**: personale2022.prov.tv.local
 **Soluzione Verificata**: ✅ Testata e funzionante
 **Severità**: Critica (blocca completamente feature Activity Log)

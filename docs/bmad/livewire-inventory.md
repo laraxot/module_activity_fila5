@@ -1,5 +1,5 @@
 ---
-title: "Inventario Http/Livewire → Filament widget: Activity"
+title: "Inventario Http/Livewire → Filament widget — Activity"
 type: inventory
 module: Activity
 status: approved
@@ -10,17 +10,14 @@ related:
   - ./livewire-widget-epics.md
   - ./livewire-widget-prd.md
   - ../../Xot/docs/bmad/livewire-widget-project-context.md
-  - ../../../Cms/docs/bmad/livewire-inventory.md
-updated: 2026-10-15
-tags: [docs, activity, bmad]
-qmd: "inventario: livewire http → filament   modulo activity activity"
+  - ../../Cms/docs/bmad/livewire-inventory.md
 ---
 
-# Inventario: Livewire HTTP → Filament: modulo Activity
+# Inventario: Livewire HTTP → Filament — modulo Activity
 
 **Solo documentazione. Nessun PHP toccato in questo audit.**
 
-Questo file è la SSoT del modulo Activity per la campagna di conversione Livewire → Filament widget. Formato e metodo sono ripresi da [Modules/Cms/docs/bmad/livewire-inventory.md](../../../Cms/docs/bmad/livewire-inventory.md), con la differenza che qui non esiste nemmeno una classe da classificare: il risultato verificato è **zero componenti Livewire**.
+Questo file è la SSoT del modulo Activity per la campagna di conversione Livewire → Filament widget. Formato e metodo sono ripresi da [Modules/Cms/docs/bmad/livewire-inventory.md](../../Cms/docs/bmad/livewire-inventory.md), con la differenza che qui non esiste nemmeno una classe da classificare: il risultato verificato è **zero componenti Livewire**.
 
 ## Metodo (codice, non assunzione)
 
@@ -40,7 +37,7 @@ Il primo comando (`extends Component|Livewire` su tutti i `.php` del modulo, ven
 
 | Posizione | Esito |
 |---|---|
-| `Modules/Activity/app/Http/Livewire/` | La directory esiste ma contiene solo `_components.json` (contenuto: `[]`, cioè zero alias registrati) e `.gitkeep`: nessun `.php` |
+| `Modules/Activity/app/Http/Livewire/` | La directory esiste ma contiene solo `_components.json` (contenuto: `[]`, cioè zero alias registrati) e `.gitkeep` — nessun `.php` |
 | `Modules/Activity/app/Livewire/` | Non esiste |
 | `find -iname '*livewire*'` | Unici hit: i file di questa campagna in `docs/bmad/` e la directory vuota `app/Http/Livewire`. Nessuna classe, nessuna vista `livewire/` |
 
@@ -55,9 +52,9 @@ Il modulo può comunque *montare* componenti altrui senza possederne. Verificato
 | `@livewire(...)` | `grep -rn "@livewire" Modules/Activity --include="*.blade.php"` | **0 hit** |
 | `<livewire:... />` | `grep -rn "<livewire:" Modules/Activity --include="*.blade.php"` | **0 hit** |
 | Pagina Folio/Volt | `ls Modules/Activity/resources/views/pages` + lettura del file | Esiste `pages/api/log-download.blade.php` (36 righe): pagina Folio con `render()` closure che streama un file di log via `DownloadLogFileAction` (riga 31). Non è un componente Volt, non monta Livewire: è una risposta binaria |
-| Render hook / widget in provider Filament | `find Modules/Activity/app/Filament -iname '*widget*'` | **0 hit**: sotto `app/Filament/` esistono solo `Actions, Forms, Pages, Resources`: nessuna directory `Widgets` |
+| Render hook / widget in provider Filament | `find Modules/Activity/app/Filament -iname '*widget*'` | **0 hit**: sotto `app/Filament/` esistono solo `Actions, Forms, Pages, Resources` — nessuna directory `Widgets` |
 
-Conclusione verificata: Activity non monta nessun componente Livewire, proprio o altrui. Il suo contributo HTTP è una pagina Folio di download log: forma "endpoint", non frammento di chrome.
+Conclusione verificata: Activity non monta nessun componente Livewire, proprio o altrui. Il suo contributo HTTP è una pagina Folio di download log — forma "endpoint", non frammento di chrome.
 
 ## Widget Filament esistenti nel modulo Activity: nessuno
 
@@ -67,7 +64,7 @@ Conclusione verificata: Activity non monta nessun componente Livewire, proprio o
 
 | Classe | Alias/hook | Gemello widget | Cluster | Nota |
 |---|---|---|---|---|
-|: |: |: |: | Tabella vuota: zero classi da classificare |
+| — | — | — | — | Tabella vuota: zero classi da classificare |
 
 **Cluster A: zero candidati.** Non esistono componenti Livewire in Activity, quindi nessuno può essere montato nel chrome di un panel Filament.
 

@@ -2,7 +2,7 @@
 module: Activity
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
-canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+canonical: ../../../Themes/One/docs/shared-components/metodi_duplicati_analisi.md
 title: "Metodi Duplicati: Analisi Activity"
 type: note
 status: stub
@@ -1295,4 +1295,5 @@ public function getTableFilters(): array
 3. Kick-off Fase 1
 4. Implementazione ColumnBuilder
 
+**Domande?** Chiedi alla Super Mucca! 🐄⚡
 **Domande?** Chiedi alla Super Mucca! 🐄⚡

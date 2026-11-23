@@ -1,11 +1,10 @@
 ---
 title: "PHPMD Analysis & Fixes - Activity Module"
+qmd: "activity phpmd analysis md"
 type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "phpmd analysis & fixes - activity module activity"
+tags: [documentation]
 ---
+
 # PHPMD Analysis & Fixes - Activity Module
 
 ## 📊 Current Status
@@ -150,7 +149,7 @@ return $alternative;
 
 1. `docs/CODE_QUALITY_ANALYSIS.md` - Add PHPMD fixes section
 2. `docs/README.md` - Update quality metrics
-3. `docs/ARCHITECTURE.md` - Document coupling reduction strategies
+3. `docs/architecture.md` - Document coupling reduction strategies
 
 ### Quality Gates:
 
@@ -321,7 +320,7 @@ return $alternative;
 
 1. `docs/CODE_QUALITY_ANALYSIS.md` - Add PHPMD fixes section
 2. `docs/README.md` - Update quality metrics
-3. `docs/ARCHITECTURE.md` - Document coupling reduction strategies
+3. `docs/architecture.md` - Document coupling reduction strategies
 
 ### Quality Gates:
 
@@ -492,7 +491,7 @@ return $alternative;
 
 1. `docs/CODE_QUALITY_ANALYSIS.md` - Add PHPMD fixes section
 2. `docs/README.md` - Update quality metrics
-3. `docs/ARCHITECTURE.md` - Document coupling reduction strategies
+3. `docs/architecture.md` - Document coupling reduction strategies
 
 ### Quality Gates:
 

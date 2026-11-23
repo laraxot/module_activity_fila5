@@ -86,10 +86,8 @@ return [
             'label' => 'Ripristina',
             'tooltip' => 'Ripristina stato precedente',
         ],
-        'delete' => [
-            'label' => 'Elimina',
-            'icon' => 'delete',
-            'tooltip' => 'Elimina questa attività',
+        'logout' => [
+            'tooltip' => 'logout',
         ],
     ],
     'messages' => [

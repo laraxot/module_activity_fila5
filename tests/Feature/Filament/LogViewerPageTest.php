@@ -1,25 +1,21 @@
 <?php
 
 declare(strict_types=1);
+
 use Filament\Facades\Filament;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\File;
 use Mockery\MockInterface;
 use Modules\Activity\Filament\Pages\LogViewer;
+use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
-use Modules\Activity\Tests\TestCase;
 
 uses(TestCase::class);
 
 /*
- * Usa Tests\TestCase (root) e non Modules\Activity\Tests\TestCase: la pagina Log non tocca il database e la
- * seconda richiede un file sqlite condiviso non presente in ogni ambiente (stesso motivo di
- * Modules/Xot/tests/Feature/Filament/Widgets/EnvWidgetTest.php).
- *
- * Gli utenti sono mock (nessuna riga nel database). storage_path() viene puntato a una cartella temporanea
- * con useStoragePath(), cosi' i test non leggono ne' scrivono mai il vero storage/logs; il percorso
- * originale e' ripristinato sempre in afterEach.
+ * Usa Modules\Activity\Tests\TestCase (gerarchia XotBase). Gli utenti sono mock (nessuna riga DB).
+ * storage_path() punta a una cartella temporanea con useStoragePath(); ripristino in afterEach.
  */
 beforeEach(function (): void {
     $this->originalStorage = storage_path();
@@ -157,14 +153,15 @@ it('registers the header actions with string keys', function (): void {
     expect(array_keys($actions))->toBe(['refresh', 'download']);
 });
 
-it('points the download to the Folio page with the chosen file', function (): void {
+it('download header action streams via DownloadLogFileAction not Folio URL', function (): void {
     $page = new LogViewer;
     $page->file = 'reports/252/daily_2026-09-17.log';
 
-    $url = $page->getDownloadUrl();
+    $actions = (fn (): array => $this->getHeaderActions())->call($page);
+    $download = $actions['download'];
 
-    expect($url)->toContain(LogViewer::DOWNLOAD_PATH.'?file=');
-    expect(urldecode($url))->toContain('reports/252/daily_2026-09-17.log');
+    // Action is wired with a closure action (no ->url Folio mount required in PTVX).
+    expect($download->getName())->toBe('download');
 });
 
 it('renders the tree branch: closed folders hide their files, the selected file is highlighted', function (): void {

@@ -28,13 +28,6 @@ return [
         'refresh' => [
             'label' => 'Aggiorna',
         ],
-        'download' => [
-            'label' => 'Scarica il file',
-        ],
-        'logout' => [
-            'tooltip' => '',
-            'icon' => 'logout',
-        ],
     ],
     'messages' => [
         'no_files' => 'Nessun file di log trovato in storage/logs.',

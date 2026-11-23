@@ -13,7 +13,6 @@ uses(TestCase::class);
 
 describe('Activity Policy', function (): void {
     test('user with permission can view', function (): void {
-        /** @var TestCase $this */
         // Create a mock user with permission
         $user = $this->createUnitMock(User::class);
         $user->method('hasPermissionTo')->willReturn(true);

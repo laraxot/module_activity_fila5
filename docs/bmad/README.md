@@ -1,5 +1,5 @@
 ---
-title: "Activity: BMAD Method Integration"
+title: "Activity — BMAD Method Integration"
 description: "BMAD workflow documentation per il modulo Activity"
 module: "Activity"
 alias: "activity"
@@ -17,16 +17,12 @@ extended_by: 40
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
 bmad_track: "core-foundation"
-type: index
+---
+
+# Activity — BMAD Method Integration
 updated: 2026-10-07
 tags: [docs, activity, bmad]
 qmd: "activity   bmad method integration activity"
----
-
-# Activity: BMAD Method Integration
-
-## Kit BMAD owner (canonico)
-
 - [BMAD Planning](../bmad-planning.md)
 - [BMAD Brainstorming](../bmad-brainstorming.md)
 - [Filament blueprint](./filament-blueprint.md)
