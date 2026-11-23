@@ -351,7 +351,7 @@ $record->update(['stabi' => 999]);
 - [Activity Module - README](../README.md)
 - [BaseScheda Configuration](../../Ptv/docs/models/base-scheda-activity-log.md)
 - [IndennitaResponsabilita Integration](../../IndennitaResponsabilita/docs/activity-log-integration.md)
-- [Activity Module - README](../README.md)
+- [Activity Module - README](../readme.md)
 - [BaseScheda Configuration](../../ptv/docs/models/base-scheda-activity-log.md)
 - [IndennitaResponsabilita Integration](../../indennitaresponsabilita/docs/activity-log-integration.md)
 

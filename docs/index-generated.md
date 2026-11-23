@@ -234,13 +234,6 @@ Testing strategies and guidelines:
 
 | Date | File | Category |
 |------|------|----------|
-| 2026-07-28 | [PATTERNS.md](patterns.md) | root |
-| 2026-07-28 | [testing.md](testing.md) | root |
-| 2026-07-28 | [database-schema.md](database-schema.md) | root |
-| 2026-07-28 | [API.md](api.md) | root |
-| 2026-07-28 | [quick-start.md](quick-start.md) | root |
-| 2026-07-28 | [architecture.md](architecture.md) | root |
-| 2026-07-28 | [archive/index.md](archive/index.md) | archive |
 | 2026-07-28 | [wiki/troubleshooting/git-push-dual-remote.md](wiki/troubleshooting/git-push-dual-remote.md) | wiki |
 | 2026-07-28 | [wiki/concepts/xotbase-resource-zen-pattern.md](wiki/concepts/xotbase-resource-zen-pattern.md) | wiki |
 | 2026-07-28 | [wiki/concepts/phpstan-pest-discipline.md](wiki/concepts/phpstan-pest-discipline.md) | wiki |

@@ -12,6 +12,9 @@ status: draft
 updated: 2026-10-07
 tags: [docs, activity, bmad]
 qmd: "activity   bmad setup guide activity"
+---
+
+# Activity: BMAD Setup Guide
 
 ## Scopo
 

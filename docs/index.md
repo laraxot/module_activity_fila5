@@ -396,7 +396,7 @@ variante e' collegata come riferimento primario nelle sezioni sopra.
 `filament/archive/filament-v4-upgrade.md` (+ maiuscolo/underscore) ·
 `guides/event-sourcing.md`/`guides/event_sourcing.md` (stub) ·
 `guides/archive/event-sourcing.md`/`guides/archive/event_sourcing.md` ·
-`llm-wiki/AGENTS.md`/`llm-wiki/AGENTS.md` ·
+`llm-wiki/agents.md`/`llm-wiki/AGENTS.md` ·
 `performance/activity-log-optimization.md` (+ `activity-log-optimization-module.md`, ex `-2.md`, `ACTIVITY_LOG_OPTIMIZATION.md`, `activity_log_optimization.md`) ·
 `performance/archive/activity-log-optimization.md` (+ maiuscolo/underscore/`-renamed.md`) ·
 `roadmap/00-index.md`/`roadmap/00-index.md` · `wiki/AGENTS.md`/`wiki/AGENTS.md` ·
@@ -485,6 +485,14 @@ Non richiedono consolidamento: sono puntatori voluti, non copie accidentali.
 - [User Module](../User/docs/README.md) - User authentication and management
 - [Notify Module](../Notify/docs/index.md) - Notification system
 - [Xot Module](../Xot/docs/index.md) - Core base classes
+- [User Module](../user/docs/readme.md) - User authentication and management
+- [Notify Module](../notify/docs/index.md) - Notification system
+- [Xot Module](../xot/docs/index.md) - Core base classes
+
+## Related Modules
+- [User Module](../User/docs/README.md) - User authentication and management
+- [Notify Module](../Notify/docs/index.md) - Notification system
+- [Xot Module](../Xot/docs/index.md) - Core base classes
 - [User Module](../user/docs/README.md) - User authentication and management
 - [Notify Module](../notify/docs/index.md) - Notification system
 - [Xot Module](../xot/docs/index.md) - Core base classes
@@ -535,7 +543,7 @@ sono migrati. Canonici nuovi: senza data. Misura:
 python3 -I bashscripts/tools/docs/md-filenames.py check --paths laravel/Modules/Activity/docs
 ```
 
-Esempi ancora presenti: `documentation-2024-03-27.md`, `quality-status.md`,
+Esempi ancora presenti: `documentation-2024-03-27.md`, `quality-status-2025-11.md`,
 `stories/phpstan-cleanup-activity.story.md`,
 `bmad/stories/*-20260928*.story.md`, `wiki/troubleshooting/git-merge-conflict-inventory-april.md`,
 `raw/root-import/*2024*`. Procedura: [docs-clean.md](../../../../bashscripts/docs/prompts/docs-clean.md).

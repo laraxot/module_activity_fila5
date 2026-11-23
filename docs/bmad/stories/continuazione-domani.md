@@ -15,6 +15,9 @@ related:
 updated: 2026-10-07
 tags: [docs, activity, bmad]
 qmd: "activity   continuazione domani activity"
+---
+
+# Activity: Continuazione Domani
 
 ## Stato verificato ora (sessione 2026-09-22)
 

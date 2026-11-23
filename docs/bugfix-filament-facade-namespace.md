@@ -226,7 +226,7 @@ Usare sempre file esistenti del progetto come riferimento per i namespace.
 
 - [ListLogActivitiesAction.php](../app/Filament/Actions/ListLogActivitiesAction.php) - File fixato
 - [XotBasePage.php](../../Xot/app/Filament/Pages/XotBasePage.php) - Reference corretta
-- [Activity Module README](./README.md)
+- [Activity Module README](./readme.md)
 
 ### Regole e Best Practices
 

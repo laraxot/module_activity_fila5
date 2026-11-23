@@ -5,11 +5,13 @@ declare(strict_types=1);
 use Filament\Facades\Filament;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\File;
+use Mockery;
 use Mockery\MockInterface;
 use Modules\Activity\Filament\Pages\LogViewer;
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
+use Throwable;
 
 uses(TestCase::class);
 
@@ -18,6 +20,7 @@ uses(TestCase::class);
  * storage_path() punta a una cartella temporanea con useStoragePath(); ripristino in afterEach.
  */
 beforeEach(function (): void {
+    /** @var TestCase $this */
     $this->originalStorage = storage_path();
     $this->tempStorage = $this->originalStorage.'/framework/testing/log-viewer-page-'.uniqid('', true);
     File::makeDirectory($this->tempStorage.'/logs/reports/252', 0777, true);

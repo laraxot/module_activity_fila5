@@ -35,7 +35,7 @@ Consulta la documentazione delle traduzioni qui:
 
 - [Torna a README](./README.md)
 
-- [Torna a README](./README.md)
+- [Torna a README](./readme.md)
 - [Vai a Struttura](./structure.md)
 
 - [Torna a README](./README.md)- [Vai a Struttura](./structure.md)

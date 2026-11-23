@@ -351,7 +351,7 @@ class ListMyModelActivities extends ListLogActivities
 
 ### Documentazione Interna
 - [README Activity Module](../README.md)
-- [README Activity Module](../README.md)
+- [README Activity Module](../readme.md)
 - [ListLogActivitiesAction Details](./actions/list-log-activities-action.md)
 - [ListLogActivities Page](./pages/list-log-activities.md)
 
