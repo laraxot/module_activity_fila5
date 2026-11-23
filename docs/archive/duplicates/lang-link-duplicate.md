@@ -1,9 +1,16 @@
+---
+title: "Collegamento alle Traduzioni del Modulo Activity"
+qmd: "activity archive duplicates lang link duplicate md"
+type: note
+tags: [documentation]
+---
+
 # Collegamento alle Traduzioni del Modulo Activity
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
 
 Consulta la documentazione delle traduzioni qui:
-- [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
+- [Introduzione alle Traduzioni](../../use_cases/prediction_market/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
 
@@ -13,7 +20,7 @@ Consulta la documentazione delle traduzioni qui:
 
 - [Torna a README](./readme.md)
 - [Vai a Struttura](./structure.md)
-- [Vai a Traduzioni](./translations.md)
+- [Vai a Traduzioni](../../translations.md)
 
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../../Lang/docs/).
 

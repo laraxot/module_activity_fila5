@@ -24,10 +24,10 @@ status: draft
 
 ## [2026-10-14] docs | Ingressi di `docs/` riallineati al codice
 
-- Riscritti con fatti verificati su `app/`, `routes/`, `config/`, `database/migrations`, `tests/`: [README.md](../README.md), `../00-INDEX.md` (indice canonico: stato delle cartelle e famiglie della radice con conteggi), `../INDEX.md` (solo inventario numerico), [README.md](./README.md) di questa wiki. Corretti i link di `INDEX.md` della wiki e tolti da `../index.md` i 40 link a `tasks/` e `roadmap/tasks/` (file rimossi nel commit `7e00cedf` del 2026-10-08).
-- Marcati `stale` senza cambiare il contenuto: `../ARCHITECTURE.md` (Repositories, Services e Projections inesistenti), `../API.md` (firma `execute(array $data)` inesistente), `../readme.md` (`ActivityStatsWidget` e `EventStore` inesistenti) e le copie di indice `../00-index.md`, `../00-index-documentation.md`, `00-INDEX.md`, `00-index.md`, `00-index-documentation.md`, `index.md`.
+- Riscritti con fatti verificati su `app/`, `routes/`, `config/`, `database/migrations`, `tests/`: [README.md](../README.md), `../00-index.md` (indice canonico: stato delle cartelle e famiglie della radice con conteggi), `../index.md` (solo inventario numerico), [README.md](./README.md) di questa wiki. Corretti i link di `index.md` della wiki e tolti da `../index.md` i 40 link a `tasks/` e `roadmap/tasks/` (file rimossi nel commit `7e00cedf` del 2026-10-08).
+- Marcati `stale` senza cambiare il contenuto: `../architecture.md` (Repositories, Services e Projections inesistenti), `../API.md` (firma `execute(array $data)` inesistente), `../README.md` (`ActivityStatsWidget` e `EventStore` inesistenti) e le copie di indice `../00-index.md`, `../00-index-documentation.md`, `00-index.md`, `00-index.md`, `00-index-documentation.md`, `index.md`.
 - Nel codice: `LoginListener::handle()` e' vuoto, nessuna rotta attiva, PHPStan su `Modules/Activity` esce con 0. Quattro migrazioni `create_activity_table` restano accanto a quella "unica" del 2026-06-10 (la voce del 2026-06-10 qui sotto cita `140000`, il file e' `141000`).
-- Nota 2026-10-23: `../00-INDEX.md`, `../INDEX.md` e `INDEX.md` della wiki sono stati rimossi il 2026-10-22 (commit `7e2a1509`); restano citati qui come registro.
+- Nota 2026-10-23: `../00-index.md`, `../index.md` e `index.md` della wiki sono stati rimossi il 2026-10-22 (commit `7e2a1509`); restano citati qui come registro.
 - Link non risolti sui file toccati e verifiche: [story](../stories/docs-ingressi-activity.story.md).
 
 ## [2026-06-13] phpstan | Gate chef — 7 file Actions → Assert
@@ -92,10 +92,17 @@ discussions:
 
 ## [2026-10-14] docs | Ingressi di `docs/` riallineati al codice
 
+<<<<<<< .merge_file_b5K0X6
 - Riscritti con fatti verificati su `app/`, `routes/`, `config/`, `database/migrations`, `tests/`: [README.md](../README.md), `../00-INDEX.md` (indice canonico: stato delle cartelle e famiglie della radice con conteggi), `../INDEX.md` (solo inventario numerico), [README.md](./README.md) di questa wiki. Corretti i link di `INDEX.md` della wiki e tolti da `../index.md` i 40 link a `tasks/` e `roadmap/tasks/` (file rimossi nel commit `7e00cedf` del 2026-10-08).
 - Marcati `stale` senza cambiare il contenuto: `../ARCHITECTURE.md` (Repositories, Services e Projections inesistenti), `../API.md` (firma `execute(array $data)` inesistente), `../readme.md` (`ActivityStatsWidget` e `EventStore` inesistenti) e le copie di indice `../00-index.md`, `../00-index-documentation.md`, `00-INDEX.md`, `00-index.md`, `00-index-documentation.md`, `index.md`.
 - Nel codice: `LoginListener::handle()` e' vuoto, nessuna rotta attiva, PHPStan su `Modules/Activity` esce con 0. Quattro migrazioni `create_activity_table` restano accanto a quella "unica" del 2026-06-10 (la voce del 2026-06-10 qui sotto cita `140000`, il file e' `141000`).
 - Nota 2026-10-23: `../00-INDEX.md`, `../INDEX.md` e `INDEX.md` della wiki sono stati rimossi il 2026-10-22 (commit `7e2a1509`); restano citati qui come registro.
+=======
+- Riscritti con fatti verificati su `app/`, `routes/`, `config/`, `database/migrations`, `tests/`: [README.md](../README.md), `../00-index.md` (indice canonico: stato delle cartelle e famiglie della radice con conteggi), `../index.md` (solo inventario numerico), [README.md](./README.md) di questa wiki. Corretti i link di `index.md` della wiki e tolti da `../index.md` i 40 link a `tasks/` e `roadmap/tasks/` (file rimossi nel commit `7e00cedf` del 2026-10-08).
+- Marcati `stale` senza cambiare il contenuto: `../architecture.md` (Repositories, Services e Projections inesistenti), `../API.md` (firma `execute(array $data)` inesistente), `../README.md` (`ActivityStatsWidget` e `EventStore` inesistenti) e le copie di indice `../00-index.md`, `../00-index-documentation.md`, `00-index.md`, `00-index.md`, `00-index-documentation.md`, `index.md`.
+- Nel codice: `LoginListener::handle()` e' vuoto, nessuna rotta attiva, PHPStan su `Modules/Activity` esce con 0. Quattro migrazioni `create_activity_table` restano accanto a quella "unica" del 2026-06-10 (la voce del 2026-06-10 qui sotto cita `140000`, il file e' `141000`).
+- Nota 2026-10-23: `../00-index.md`, `../index.md` e `index.md` della wiki sono stati rimossi il 2026-10-22 (commit `7e2a1509`); restano citati qui come registro.
+>>>>>>> .merge_file_QpohZz
 - Link non risolti sui file toccati e verifiche: [story](../stories/docs-ingressi-activity.story.md).
 
 ## [2026-06-13] phpstan | Gate chef — 7 file Actions → Assert
@@ -152,7 +159,11 @@ discussions:
 ## [2026-06-13] phpstan | Gate chef — 7 file Actions → Assert
 
 - Convertiti tutti i test `tests/Unit/Actions/*` da `expect()` a `Assert::assert*()` per eliminare `method.internalClass` (82 errori piattaforma → 0).
+<<<<<<< .merge_file_b5K0X6
 - Aggiunti [overviews/completion-status.md](overviews/completion-status.md) e aggiornato [PROJECT-ROADMAP.md](PROJECT-ROADMAP.md) scope Activity.
+=======
+- Aggiunti [overviews/completion-status.md](overviews/completion-status.md) e aggiornato [PROJECT-ROADMAP.md](project-roadmap.md) scope Activity.
+>>>>>>> .merge_file_QpohZz
 - Hub: [Xot platform-completion-roadmap](../../Xot/docs/wiki/overviews/platform-completion-roadmap.md).
 - GitHub: [Activity#18](https://github.com/laraxot/module_activity_fila5/issues/18) / base [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372).
 
@@ -212,7 +223,7 @@ module: "Activity"
 
 ---
 
-[2026-05-12 08:19:00 UTC] [UPDATE] Aggiornati `index.md`, `rules/INDEX.md` e `skills/INDEX.md` per esporre davvero pattern XotBase, sorgenti core e skill condivise caricabili on-demand.
+[2026-05-12 08:19:00 UTC] [UPDATE] Aggiornati `index.md`, `rules/index.md` e `skills/index.md` per esporre davvero pattern XotBase, sorgenti core e skill condivise caricabili on-demand.
 
 **Last Activity:** 2026-05-12 08:19:00 UTC  
 **Total Operations:** 1

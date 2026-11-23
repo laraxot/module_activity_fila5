@@ -476,9 +476,13 @@ docker-compose restart app
 ## Collegamenti
 
 ### Documentazione Correlata
-- [Activity Module - README](../readme.md)
+- [Activity Module - README](../README.md)
 - [XotBaseServiceProvider Architecture](../../xot/docs/service-provider-architecture.md)
+<<<<<<< .merge_file_XHvElx
 - [Xot Module - README](../../xot/docs/readme.md)
+=======
+- [Xot Module - README](../../xot/docs/README.md)
+>>>>>>> .merge_file_dB5j4C
 
 ### Altri Moduli con Activity Log
 - [IndennitaResponsabilita - Activity Log Integration](../../indennitaresponsabilita/docs/activity-log-integration.md)

@@ -1,6 +1,0 @@
-LOCKED at 2026-11-04T10:05:18+01:00
-Task: activity-tests-fix
-Agent: opencode
-Session: unknown
-PID: 319895
-PID note: subshell di lock.sh, gia' terminato — NON usarlo per giudicare il lock stale, guarda 'LOCKED at'

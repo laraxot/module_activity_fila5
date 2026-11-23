@@ -92,4 +92,8 @@ app(ActivityLogger::class)->recordSubject(...);
 ## Backlink
 
 - [wiki index Activity](../index.md)
+<<<<<<< .merge_file_Xzd2cj
 - [ARCHITECTURE.md](../../ARCHITECTURE.md) — overview (in aggiornamento verso Actions-only)
+=======
+- [architecture.md](../../architecture.md) — overview (in aggiornamento verso Actions-only)
+>>>>>>> .merge_file_J0sgFV

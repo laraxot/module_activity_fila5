@@ -2,7 +2,7 @@
 module: Activity
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
-canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+canonical: ../../../Themes/One/docs/shared-components/metodi_duplicati_analisi.md
 title: "Metodi Duplicati — Analisi Activity"
 type: note
 status: stub
@@ -16,4 +16,8 @@ qmd: "metodi duplicati   analisi activity activity"
 
 ---
 
+<<<<<<< .merge_file_LnWLWI
 See canonical documentation: ../../../Themes/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/metodi_duplicati_analisi.md
+>>>>>>> .merge_file_tjbu4C

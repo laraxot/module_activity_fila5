@@ -1,11 +1,10 @@
 ---
 title: "Activity Module - Roadmap & Optimization"
+qmd: "activity roadmap legacy legacy roadmap and issues md"
 type: note
-status: draft
-updated: 2026-10-15
-tags: [docs, activity, roadmap]
-qmd: "activity module - roadmap & optimization activity"
+tags: [documentation]
 ---
+
 # Activity Module - Roadmap & Optimization
 
 **Modulo**: Activity (Audit Trail & Activity Logging)
@@ -57,8 +56,8 @@ qmd: "activity module - roadmap & optimization activity"
 
 ## 🔗 Collegamenti
 
-- [← Activity Module README](../README.md)
-- [← Root Documentation](../../index.md)
+- [← Activity Module README](../readme.md)
+- [← Root Documentation](../../../../docs/index.md)
 
 ---
 

@@ -7,4 +7,8 @@ tags: [docs, activity]
 qmd: "best practices   activity activity"
 ---
 =======
+<<<<<<< .merge_file_ehqObM
 See canonical documentation: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/best_practices.md
+>>>>>>> .merge_file_OW1mxz
