@@ -1,13 +1,7 @@
-# Activity behavioral contract index
+# Behavioral Contract — indice
 
-This is the machine-readable inventory of behavioral contracts owned by the **Activity** module.
+Un contract per operazione di business. La classe lo cita nel docblock con `@contract`; ogni invariante è un group Pest con lo stesso ID (`vendor/bin/pest --group=CANCEL-INV-1`).
 
-A contract describes an existing public operation or boundary. It names the owner, input, output, stable invariants, side effects and their order, errors, and non-goals. Every invariant gets a stable ID and a Pest group when a test exists; missing coverage is recorded as debt instead of being implied away.
-
-## Contracts
-
-- No behavioral contracts have been audited yet; do not infer that the module has no contracts.
-
-## Authoring
-
-Use [Xot contract authoring standard](../../Xot/docs/contracts/contract-authoring-standard.md) and the shared template. Legacy behavior is documented as-is and is not a model for new code.
+| Operazione | Contract | Classe | Invarianti |
+|---|---|---|---|
+| <!-- operazione --> | [<!-- nome -->.md](<!-- nome -->.md) | <!-- FQCN o modello --> | <!-- <MODULE>-INV-1..N --> |
