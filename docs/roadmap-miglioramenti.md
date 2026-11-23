@@ -34,7 +34,11 @@ strato racconta una sessione diversa che non ha letto lo strato sotto:
 - `roadmap.md`, `roadmap-.md`, `roadmap-2025.md`, `roadmap-and-issues.md`,
   `roadmap-archive.md`, `roadmap-vision.md`: sei roadmap per un modulo,
   nessuna delle quali probabilmente letta prima di scriverne una nuova
+<<<<<<< .merge_file_wt4cmp
+- `README.md`, `readme.md`, `README.md.update`, `readme.md.update`,
+=======
 - `README.md`, `README.md`, `README.md.update`, `README.md.update`,
+>>>>>>> .merge_file_gYET1w
   `readme_update.md`, `readme-update.md`: sei README, contando le
   differenze di case e underscore come se fossero contenuto
 - `test02.md`, `test03.md`, `test04.md`, `test2222.md`, `test444.md`: file

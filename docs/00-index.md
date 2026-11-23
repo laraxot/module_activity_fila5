@@ -7,11 +7,19 @@ qmd: "**indice documentazione modulo activity** activity"
 status: stale
 ---
 
+<<<<<<< .merge_file_DuOAov
 <<<<<<< .merge_file_Pp14Vv
 > Nota 2026-10-14 (docs-audit): Copia con contenuto raddoppiato di 00-INDEX.md (varianti di sola maiuscola) con link a file inesistenti; l'indice canonico e' 00-INDEX.md. Contenuto non riscritto, verificare prima di usarlo.
 =======
 > Nota 2026-10-14 (docs-audit): Copia con contenuto raddoppiato di 00-index.md (varianti di sola maiuscola) con link a file inesistenti; l'indice canonico e' 00-index.md. Contenuto non riscritto, verificare prima di usarlo.
 >>>>>>> .merge_file_dBATyg
+=======
+<<<<<<< .merge_file_RacKWp
+> Nota 2026-10-14 (docs-audit): Copia con contenuto raddoppiato di 00-INDEX.md (varianti di sola maiuscola) con link a file inesistenti; l'indice canonico e' 00-INDEX.md. Contenuto non riscritto, verificare prima di usarlo.
+=======
+> Nota 2026-10-14 (docs-audit): Copia con contenuto raddoppiato di 00-index.md (varianti di sola maiuscola) con link a file inesistenti; l'indice canonico e' 00-index.md. Contenuto non riscritto, verificare prima di usarlo.
+>>>>>>> .merge_file_N9FS1n
+>>>>>>> .merge_file_tUAVzF
 
 app(LogActivityAction::class)->execute(
     type: 'user.login',

@@ -72,4 +72,8 @@ Cartelle previste dal modello ma senza alcun `.md`: `decisions/`, `entities/`, `
 qmd search "Activity <argomento>" --limit 5
 ```
 
+<<<<<<< .merge_file_4UknVn
+I documenti sorgente grezzi stanno in `../raw/` (immutabile). Prima di creare una pagina nuova controllare [INDEX.md](./INDEX.md) e le pagine di `concepts/` per non duplicarla.
+=======
 I documenti sorgente grezzi stanno in `../raw/` (immutabile). Prima di creare una pagina nuova controllare [index.md](./index.md) e le pagine di `concepts/` per non duplicarla.
+>>>>>>> .merge_file_uZqr9D

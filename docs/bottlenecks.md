@@ -339,7 +339,11 @@ class ListActivities extends XotBasePage
 ## Collegamenti tra versioni di bottlenecks.md
 * [bottlenecks.md](../../../../bashscripts/docs/bottlenecks.md)
 * [bottlenecks.md](../../chart/docs/bottlenecks.md)
+<<<<<<< .merge_file_XJ7jXO
 <<<<<<< .merge_file_ifzFao
+=======
+<<<<<<< .merge_file_gogZPT
+>>>>>>> .merge_file_K0QCzE
 * [bottlenecks.md](../../chart/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../gdpr/docs/bottlenecks.md)
 * [bottlenecks.md](../../gdpr/docs/performance/bottlenecks.md)
@@ -347,12 +351,20 @@ class ListActivities extends XotBasePage
 * [bottlenecks.md](../../Chart/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Gdpr/docs/bottlenecks.md)
 * [bottlenecks.md](../../Gdpr/docs/performance/bottlenecks.md)
+<<<<<<< .merge_file_XJ7jXO
 >>>>>>> .merge_file_INLEDF
+=======
+>>>>>>> .merge_file_Zge9TR
+>>>>>>> .merge_file_K0QCzE
 * [bottlenecks.md](../../xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../xot/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../xot/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../dental/docs/bottlenecks.md)
+<<<<<<< .merge_file_XJ7jXO
 <<<<<<< .merge_file_ifzFao
+=======
+<<<<<<< .merge_file_gogZPT
+>>>>>>> .merge_file_K0QCzE
 * [bottlenecks.md](../../user/docs/bottlenecks.md)
 * [bottlenecks.md](../../user/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../ui/docs/bottlenecks.md)
@@ -372,7 +384,11 @@ class ListActivities extends XotBasePage
 * [bottlenecks.md](../../Job/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Media/docs/bottlenecks.md)
 * [bottlenecks.md](../../Media/docs/performance/bottlenecks.md)
+<<<<<<< .merge_file_XJ7jXO
 >>>>>>> .merge_file_INLEDF
+=======
+>>>>>>> .merge_file_Zge9TR
+>>>>>>> .merge_file_K0QCzE
 * [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../cms/docs/bottlenecks.md)
 * [bottlenecks.md](../../Chart/docs/bottlenecks.md)

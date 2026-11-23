@@ -14,13 +14,21 @@ Consulta la documentazione delle traduzioni qui:
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 
+<<<<<<< .merge_file_z0HMri
 <<<<<<< .merge_file_9ZWhks
+=======
+<<<<<<< .merge_file_WQc02i
+>>>>>>> .merge_file_y3j02c
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
 =======
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
+<<<<<<< .merge_file_z0HMri
 >>>>>>> .merge_file_KK2gB5
+=======
+>>>>>>> .merge_file_PjtC18
+>>>>>>> .merge_file_y3j02c
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
@@ -30,13 +38,21 @@ Consulta la documentazione delle traduzioni qui:
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 
+<<<<<<< .merge_file_z0HMri
 <<<<<<< .merge_file_9ZWhks
+=======
+<<<<<<< .merge_file_WQc02i
+>>>>>>> .merge_file_y3j02c
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
 =======
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
+<<<<<<< .merge_file_z0HMri
 >>>>>>> .merge_file_KK2gB5
+=======
+>>>>>>> .merge_file_PjtC18
+>>>>>>> .merge_file_y3j02c
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
 
 ## Collegamento Bidirezionale
@@ -45,11 +61,19 @@ Consulta la documentazione delle traduzioni qui:
 
 - [Torna a README](./README.md)
 
+<<<<<<< .merge_file_z0HMri
 <<<<<<< .merge_file_9ZWhks
 - [Torna a README](./readme.md)
 =======
 - [Torna a README](./README.md)
 >>>>>>> .merge_file_KK2gB5
+=======
+<<<<<<< .merge_file_WQc02i
+- [Torna a README](./readme.md)
+=======
+- [Torna a README](./README.md)
+>>>>>>> .merge_file_PjtC18
+>>>>>>> .merge_file_y3j02c
 - [Vai a Struttura](./structure.md)
 
 - [Torna a README](./README.md)- [Vai a Struttura](./structure.md)

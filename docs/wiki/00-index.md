@@ -17,11 +17,19 @@ updated: 2026-07-23
 **Module Version**: 2.3.0
 
 ## 🎯 **Lettura Essenziale**
+<<<<<<< .merge_file_vUOiVC
 <<<<<<< .merge_file_JZgsHC
 1. [README.md](./readme.md) - Panoramica completa e Quick Start.
 =======
 1. [README.md](./README.md) - Panoramica completa e Quick Start.
 >>>>>>> .merge_file_4HYl13
+=======
+<<<<<<< .merge_file_7m8B0S
+1. [README.md](./readme.md) - Panoramica completa e Quick Start.
+=======
+1. [README.md](./README.md) - Panoramica completa e Quick Start.
+>>>>>>> .merge_file_Uq3mM4
+>>>>>>> .merge_file_LG7KkH
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
 3. [philosophy.md](./philosophy.md) - I principi dell'Audit Trail e dell'Event Sourcing.
 
@@ -170,7 +178,11 @@ updated: 2026-07-23
 - `spatie/laravel-event-sourcing` - Event sourcing, CQRS
 
 ## 🔗 **Moduli Correlati**
+<<<<<<< .merge_file_vUOiVC
 <<<<<<< .merge_file_JZgsHC
+=======
+<<<<<<< .merge_file_7m8B0S
+>>>>>>> .merge_file_LG7KkH
 - [Xot](../../xot/docs/readme.md) - Core framework.
 - [Tenant](../../tenant/docs/readme.md) - Isolamento dati per tenant.
 - [User](../../user/docs/readme.md) - Autenticazione e causer activity.
@@ -178,7 +190,11 @@ updated: 2026-07-23
 - [Xot](../../xot/docs/README.md) - Core framework.
 - [Tenant](../../tenant/docs/README.md) - Isolamento dati per tenant.
 - [User](../../user/docs/README.md) - Autenticazione e causer activity.
+<<<<<<< .merge_file_vUOiVC
 >>>>>>> .merge_file_4HYl13
+=======
+>>>>>>> .merge_file_Uq3mM4
+>>>>>>> .merge_file_LG7KkH
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
@@ -223,7 +239,11 @@ app(LogActivityAction::class)->execute(
 - `spatie/laravel-event-sourcing` - Event sourcing, CQRS
 
 ## 🔗 **Moduli Correlati**
+<<<<<<< .merge_file_vUOiVC
 <<<<<<< .merge_file_JZgsHC
+=======
+<<<<<<< .merge_file_7m8B0S
+>>>>>>> .merge_file_LG7KkH
 - [Xot](../../xot/docs/readme.md) - Core framework.
 - [Tenant](../../tenant/docs/readme.md) - Isolamento dati per tenant.
 - [User](../../user/docs/readme.md) - Autenticazione e causer activity.
@@ -231,7 +251,11 @@ app(LogActivityAction::class)->execute(
 - [Xot](../../xot/docs/README.md) - Core framework.
 - [Tenant](../../tenant/docs/README.md) - Isolamento dati per tenant.
 - [User](../../user/docs/README.md) - Autenticazione e causer activity.
+<<<<<<< .merge_file_vUOiVC
 >>>>>>> .merge_file_4HYl13
+=======
+>>>>>>> .merge_file_Uq3mM4
+>>>>>>> .merge_file_LG7KkH
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

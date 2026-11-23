@@ -7,8 +7,16 @@ tags: [docs, activity]
 qmd: "best practices   activity activity"
 ---
 =======
+<<<<<<< .merge_file_T3R1Nk
 <<<<<<< .merge_file_ehqObM
 See canonical documentation: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/best_practices.md
 >>>>>>> .merge_file_OW1mxz
+=======
+<<<<<<< .merge_file_FyLtR6
+See canonical documentation: ../../../Themes/docs/shared-components/BEST_PRACTICES.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/best_practices.md
+>>>>>>> .merge_file_2YVN0m
+>>>>>>> .merge_file_VC3QKg

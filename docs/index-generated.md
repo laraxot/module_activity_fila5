@@ -22,7 +22,15 @@ qmd: "activity module documentation index activity"
 Strategic, foundational, and consolidated documentation at module level:
 
 **Core Documentation** (Key files)
+<<<<<<< .merge_file_sdnfIx
 <<<<<<< .merge_file_Wnhfza
+=======
+<<<<<<< .merge_file_fZXdkE
+<<<<<<< .merge_file_jmajDc
+=======
+<<<<<<< .merge_file_PIKVk1
+>>>>>>> .merge_file_TR4EzP
+>>>>>>> .merge_file_kex0D2
   - [ARCHITECTURE.md](ARCHITECTURE.md): System architecture and design patterns
   - [API.md](API.md): API reference and endpoints
   - [DATABASE-SCHEMA.md](DATABASE-SCHEMA.md): Database schema definitions
@@ -48,7 +56,15 @@ Strategic, foundational, and consolidated documentation at module level:
   - [product_strategy.md](product_strategy.md)
   - [roadmap.md](roadmap.md)
   - [sprint_planning.md](sprint_planning.md)
+<<<<<<< .merge_file_sdnfIx
 >>>>>>> .merge_file_Cn0NRK
+=======
+<<<<<<< .merge_file_fZXdkE
+>>>>>>> .merge_file_YJNhGN
+=======
+>>>>>>> .merge_file_gPCxZs
+>>>>>>> .merge_file_TR4EzP
+>>>>>>> .merge_file_kex0D2
 
 **Additional Root Files**
   - and 278+ more documentation files (configuration, guides, analysis, audits, quality reports)
@@ -249,7 +265,15 @@ Testing strategies and guidelines:
 
 | Date | File | Category |
 |------|------|----------|
+<<<<<<< .merge_file_sdnfIx
 <<<<<<< .merge_file_Wnhfza
+=======
+<<<<<<< .merge_file_fZXdkE
+<<<<<<< .merge_file_jmajDc
+=======
+<<<<<<< .merge_file_PIKVk1
+>>>>>>> .merge_file_TR4EzP
+>>>>>>> .merge_file_kex0D2
 | 2026-07-28 | [PATTERNS.md](PATTERNS.md) | root |
 | 2026-07-28 | [TESTING.md](TESTING.md) | root |
 | 2026-07-28 | [DATABASE-SCHEMA.md](DATABASE-SCHEMA.md) | root |
@@ -265,7 +289,15 @@ Testing strategies and guidelines:
 | 2026-07-28 | [quick-start.md](quick-start.md) | root |
 | 2026-07-28 | [architecture.md](architecture.md) | root |
 | 2026-07-28 | [archive/index.md](archive/index.md) | archive |
+<<<<<<< .merge_file_sdnfIx
 >>>>>>> .merge_file_Cn0NRK
+=======
+<<<<<<< .merge_file_fZXdkE
+>>>>>>> .merge_file_YJNhGN
+=======
+>>>>>>> .merge_file_gPCxZs
+>>>>>>> .merge_file_TR4EzP
+>>>>>>> .merge_file_kex0D2
 | 2026-07-28 | [wiki/troubleshooting/git-push-dual-remote.md](wiki/troubleshooting/git-push-dual-remote.md) | wiki |
 | 2026-07-28 | [wiki/concepts/xotbase-resource-zen-pattern.md](wiki/concepts/xotbase-resource-zen-pattern.md) | wiki |
 | 2026-07-28 | [wiki/concepts/phpstan-pest-discipline.md](wiki/concepts/phpstan-pest-discipline.md) | wiki |
