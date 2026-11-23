@@ -1,7 +1,20 @@
-# Behavioral Contract — indice
+---
+title: "INDEX — Activity"
+type: index
+status: active
+created: 2026-11-23
+updated: 2026-11-23
+decision-makers: []
+---
 
-Un contract per operazione di business. La classe lo cita nel docblock con `@contract`; ogni invariante è un group Pest con lo stesso ID (`vendor/bin/pest --group=CANCEL-INV-1`).
+<!-- File: docs/contracts/INDEX.md · formato MADR breve. -->
+
+# <!-- Titolo: indice operativo Activity -->
+
+Indice dei contratti comportamentali del modulo Activity: ogni operazione pubblica con effetti collaterali o invarianti di dominio.
 
 | Operazione | Contract | Classe | Invarianti |
 |---|---|---|---|
-| <!-- operazione --> | [<!-- nome -->.md](<!-- nome -->.md) | <!-- FQCN o modello --> | <!-- <MODULE>-INV-1..N --> |
+| *(nessuno)* | — | — | Nessun contratto audito per questo modulo |
+
+(End of file - total 20 lines)
