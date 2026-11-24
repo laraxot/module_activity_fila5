@@ -10,5 +10,8 @@ An ADR records a difficult-to-reverse or surprising choice with a real trade-off
 
 ## Authoring
 
+<<<<<<< .merge_file_RjTPvp
 Policy trasversale obbligatoria: [dati sacri e test isolati](../../Xot/docs/adr/0013-data-sacred-testing.md).
+=======
+>>>>>>> .merge_file_rllum7
 Use the shared template and rules in [Xot ADR standards](../../Xot/docs/adr/README.md). Do not create an ADR for a local implementation detail or an unverified hypothesis.
