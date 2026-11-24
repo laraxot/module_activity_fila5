@@ -1,6 +1,7 @@
 ---
 status: accepted
 module: Activity
+qmd: "activity audit is append oriented laudit"
 ---
 
 # L'audit delle attività è append-oriented

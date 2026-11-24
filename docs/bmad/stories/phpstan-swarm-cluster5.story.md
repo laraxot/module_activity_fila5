@@ -10,6 +10,7 @@ references:
   - laravel/Modules/Xot/docs/bmad/stories/phpstan-modules-swarm-random-20261006.story.md
   - bashscripts/ai/wiki/memories/multiagent-phpstan-scan-resource-contention.md
   - bashscripts/ai/wiki/memories/phpstan-swarm-single-slot-sequencing.md
+qmd: "phpstan swarm cluster5 story cluster activity"
 ---
 
 # PHPStan swarm cluster 5 — Activity

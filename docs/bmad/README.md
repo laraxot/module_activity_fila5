@@ -17,6 +17,7 @@ extended_by: 40
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
 bmad_track: "core-foundation"
+qmd: "activity bmad method integration"
 ---
 
 # Activity — BMAD Method Integration

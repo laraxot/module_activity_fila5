@@ -5,6 +5,7 @@ module: "Activity"
 alias: "activity"
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
+qmd: "setup guide activity bmad"
 ---
 
 # Activity — BMAD Setup Guide
