@@ -9,6 +9,12 @@ use Illuminate\Database\Eloquent\Model;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+/**
+ * RestoreActivityAction.
+ *
+ * @see docs/contracts/restore-activity-action.md
+ * @contract docs/contracts/restore-activity-action.md
+ */
 class RestoreActivityAction
 {
     use QueueableAction;

@@ -1,48 +1,39 @@
 ---
-title: "Architecture Decision Records"
+title: "ADR del modulo Activity"
 type: index
-tags: [adr, decisioni]
+module: Activity
+status: active
 created: 2026-11-18
-updated: 2026-11-18
+updated: 2026-11-24
+qmd: "Activity adr architecture decision records madr formato"
 ---
 
-# Architecture Decision Records
+# ADR del modulo Activity
 
-## Metodo Harness
+Un ADR registra una scelta difficile da invertire, sorprendente o frutto di un trade-off reale, e il suo perche'.
+Non e' un diario ne' una spiegazione retroattiva: se la decisione non e' dimostrabile dal codice o da una story/doc del repo, non si scrive.
+Il nome del file e' l'argomento in kebab-case, senza date (la data sta nella frontmatter).
 
-Scrivere un ADR solo per una scelta difficile da invertire, sorprendente o fondata su un trade-off reale. Un ADR deve rendere leggibili contesto, driver, alternative, decisione, conseguenze e una conferma ripetibile; non è un diario né una spiegazione retroattiva inventata.
+## Formato (MADR breve)
 
-Le decisioni vanno verificate contro codice e test correnti. Una modifica sostanziale crea un nuovo ADR e collega il precedente come superseded/deprecated.
+Frontmatter: `title`, `type: decision`, `status` (`proposed` | `accepted` | `superseded` | `deprecated`), `created`, `updated`, `decision-makers`, `module`, `qmd`.
 
-Il **perche'** delle scelte di questo pacchetto: una decisione per file, con le alternative scartate.
-Il nome del file e' l'argomento, senza date ne' numeri (la data sta nella frontmatter).
-
-## Formato
+Sezioni obbligatorie, in quest'ordine:
 
 ```markdown
----
-title: "ADR — <decisione in una riga>"
-type: decision
-status: accepted | superseded | deprecated
-created: AAAA-MM-GG
-updated: AAAA-MM-GG
-issues: []
----
-
-# ADR: <decisione>
-
 ## Contesto
-Fatti e vincoli che hanno reso necessaria la scelta (misure, norme, policy, incidenti).
-
-## Decisione
-Cosa si fa, in concreto, e dove sta nel codice.
-
+## Driver della decisione
 ## Alternative scartate
-Ogni alternativa seria, con il motivo per cui non e' stata scelta.
-
+## Decisione
 ## Conseguenze
-Pro, contro, debito che resta, cosa misurare. Chi cambia la decisione scrive un nuovo ADR e segna questo `superseded`.
+## Conferma
 ```
 
-## Decisioni
+Template condiviso: `laravel/Modules/Xot/docs/adr/0000-template.md`. Guard: `Modules/Xot/tests/Unit/Docs/PackagesHaveContractsAndAdrTest.php`.
+Chi cambia una decisione scrive un nuovo ADR e segna il precedente `superseded by <file>`.
 
+## ADR presenti
+
+- [activity-audit-is-append-oriented](activity-audit-is-append-oriented.md)
+
+Elenco con stato: [INDEX.md](INDEX.md).
