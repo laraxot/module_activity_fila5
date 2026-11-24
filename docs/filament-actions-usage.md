@@ -362,7 +362,7 @@ class ListMyModelActivities extends ListLogActivities
 
 ### Moduli Correlati
 - [IndennitaResponsabilita - Activity Log Integration](../../indennitaresponsabilita/docs/activity-log-integration.md)
-- [Xot - Filament Base Components](../../xot/docs/filament/readme.md)
+- [Xot - Filament Base Components](../../xot/docs/filament/README.md)
 - [Translation Best Practices](../../Xot/docs/translation-best-practices.md)
 - [Service Provider Architecture](../../Xot/docs/service-provider-architecture.md)
 

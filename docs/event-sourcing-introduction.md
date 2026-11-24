@@ -550,4 +550,3 @@ canonical: ../../../Themes/docs/shared-components/event-sourcing-introduction-du
 
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
 This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `saluteora`, ensuring full traceability and compliance with healthcare standards.
-=======

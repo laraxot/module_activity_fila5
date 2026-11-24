@@ -1,7 +1,7 @@
 ---
 module: theme
 topic: REDUNDANCY_ANALYSIS
-canonical: ../../../Themes/docs/shared-components/REDUNDANCY_ANALYSIS.md
+canonical: ../../../Themes/docs/shared-components/redundancy_analysis.md
 title: "redundancy analysis"
 type: note
 updated: 2026-10-07
@@ -11,4 +11,4 @@ status: superseded
 superseded_by: redundancy-analysis.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/REDUNDANCY_ANALYSIS.md
+See canonical documentation: ../../../Themes/docs/shared-components/redundancy_analysis.md

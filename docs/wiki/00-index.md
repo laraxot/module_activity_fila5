@@ -42,14 +42,14 @@ updated: 2026-07-23
 ### Product
 | File | Scopo |
 |------|-------|
-| PRODUCT_ROADMAP.md | Roadmap |
-| PRODUCT_STRATEGY.md | Strategy |
-| PRODUCT_LAUNCH_PLAN.md | Launch Plan |
+| product_roadmap.md | Roadmap |
+| product_strategy.md | Strategy |
+| product_launch_plan.md | Launch Plan |
 
 ### Development
 | File | Scopo |
 |------|-------|
-| BUSINESS_LOGIC_ANALYSIS.md | Business logic |
+| business_logic_analysis.md | Business logic |
 | CODE_QUALITY_ANALYSIS.md | Code quality |
 | QUERY_OPTIMIZATION_ANALYSIS.md | Query optimization |
 
@@ -66,7 +66,7 @@ updated: 2026-07-23
 **Module Version**: 2.3.0
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./readme.md) - Panoramica completa e Quick Start.
+1. [README.md](./README.md) - Panoramica completa e Quick Start.
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
 3. [philosophy.md](./philosophy.md) - I principi dell'Audit Trail e dell'Event Sourcing.
 
@@ -91,14 +91,14 @@ updated: 2026-07-23
 ### Product
 | File | Scopo |
 |------|-------|
-| PRODUCT_ROADMAP.md | Roadmap |
-| PRODUCT_STRATEGY.md | Strategy |
-| PRODUCT_LAUNCH_PLAN.md | Launch Plan |
+| product_roadmap.md | Roadmap |
+| product_strategy.md | Strategy |
+| product_launch_plan.md | Launch Plan |
 
 ### Development
 | File | Scopo |
 |------|-------|
-| BUSINESS_LOGIC_ANALYSIS.md | Business logic |
+| business_logic_analysis.md | Business logic |
 | CODE_QUALITY_ANALYSIS.md | Code quality |
 | QUERY_OPTIMIZATION_ANALYSIS.md | Query optimization |
 
@@ -108,7 +108,7 @@ updated: 2026-07-23
 **Module Version**: 2.3.0
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./readme.md) - Panoramica completa e Quick Start.
+1. [README.md](./README.md) - Panoramica completa e Quick Start.
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
 3. [philosophy.md](./philosophy.md) - I principi dell'Audit Trail e dell'Event Sourcing.
 
@@ -133,14 +133,14 @@ updated: 2026-07-23
 ### Product
 | File | Scopo |
 |------|-------|
-| PRODUCT_ROADMAP.md | Roadmap |
-| PRODUCT_STRATEGY.md | Strategy |
-| PRODUCT_LAUNCH_PLAN.md | Launch Plan |
+| product_roadmap.md | Roadmap |
+| product_strategy.md | Strategy |
+| product_launch_plan.md | Launch Plan |
 
 ### Development
 | File | Scopo |
 |------|-------|
-| BUSINESS_LOGIC_ANALYSIS.md | Business logic |
+| business_logic_analysis.md | Business logic |
 | CODE_QUALITY_ANALYSIS.md | Code quality |
 | QUERY_OPTIMIZATION_ANALYSIS.md | Query optimization |
 
@@ -166,9 +166,9 @@ updated: 2026-07-23
 - `spatie/laravel-event-sourcing` - Event sourcing, CQRS
 
 ## 🔗 **Moduli Correlati**
-- [Xot](../../xot/docs/readme.md) - Core framework.
-- [Tenant](../../tenant/docs/readme.md) - Isolamento dati per tenant.
-- [User](../../user/docs/readme.md) - Autenticazione e causer activity.
+- [Xot](../../xot/docs/README.md) - Core framework.
+- [Tenant](../../tenant/docs/README.md) - Isolamento dati per tenant.
+- [User](../../user/docs/README.md) - Autenticazione e causer activity.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
@@ -213,9 +213,9 @@ app(LogActivityAction::class)->execute(
 - `spatie/laravel-event-sourcing` - Event sourcing, CQRS
 
 ## 🔗 **Moduli Correlati**
-- [Xot](../../xot/docs/readme.md) - Core framework.
-- [Tenant](../../tenant/docs/readme.md) - Isolamento dati per tenant.
-- [User](../../user/docs/readme.md) - Autenticazione e causer activity.
+- [Xot](../../xot/docs/README.md) - Core framework.
+- [Tenant](../../tenant/docs/README.md) - Isolamento dati per tenant.
+- [User](../../user/docs/README.md) - Autenticazione e causer activity.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

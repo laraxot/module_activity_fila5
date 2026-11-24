@@ -1,27 +1,10 @@
 ---
 title: "Module BMAD audit — Activity"
-<<<<<<< .merge_file_CXpkMA
-=======
 type: story
->>>>>>> .merge_file_2xsmlL
 status: review
 updated: 2026-11-16
 module: Activity
 bmad: true
-<<<<<<< .merge_file_CXpkMA
-qmd: "story BMAD audit modulo Activity inventario gate"
----
-
-# Story: audit BMAD del modulo Activity
-
-## Acceptance
-
-- [x] Inventario source-first (2026-11-16).
-- [x] Audit + piano in `docs/bmad/`.
-- [x] Pack ECC in `docs/ecc/`.
-- [x] Pest modulo eseguito in ambiente testing stabile.
-- [ ] Finding P0/P1 chiusi con regressione.
-=======
 qmd: "story BMAD audit modulo Activity inventario gate pest phpstan finding P1"
 related:
   - ../audits/activity-audit.md
@@ -41,20 +24,26 @@ Audit source-first del modulo che deve garantire "chi ha cambiato cosa, quando e
 - [x] Sintesi + gate ([audit](../audit.md)), checklist ([ECC](../../ecc/activity-ecc-audit.md)).
 - [x] Epics reali al posto del template ([epics](../epics.md)); decision-log aggiornato.
 - [x] PHPStan `Modules/Activity`: 0 errori (2026-11-16).
-- [ ] Pest modulo: parziale — 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout a 900 s (carico macchina).
+- [x] Pest `Modules/Activity/tests/Feature` completato su scratch DB: 0 failed / 181 passed / 9 skipped (vedi sotto).
+- [ ] Pest suite completa del modulo: parziale — 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout a 900 s (carico macchina).
 - [ ] E1–E4 chiuse con test di regressione.
->>>>>>> .merge_file_2xsmlL
 
 ## Riferimenti
 
-<<<<<<< .merge_file_CXpkMA
+1. Lock dei file di `docs/` del modulo (`bashscripts/lock/`), unlock a fine lavoro.
+2. Audit codice → docs; nessun PHP toccato dall'audit (i fix Pest qui sotto sono un intervento separato).
+3. Pack ECC e indici aggiornati; `qmd update`.
+
+## Riferimenti
+
 - [audit](../audit.md)
 - [piano](../piano-miglioramento.md)
 - [ECC](../../ecc/activity-ecc-audit.md)
 
 ## Esito
 
-Baseline audit aggiornata. PHPStan tree `Modules` a 0. Pest e chiusura P0/P1 aperti.
+Baseline audit consegnata: 0 P0, 5 P1, P2 elencati. Chiusura dei P1 demandata alle story figlie di [epics.md](../epics.md).
+PHPStan `Modules/Activity` a 0.
 
 ## Pest Feature fixes 2026-11-16
 
@@ -90,12 +79,3 @@ File toccati: `tests/TestCase.php`, `tests/Feature/{ActionsTest,BaseModelBusines
 BaseModelBusinessLogicPestTest,CodeQualityTest,FilamentTest}.php`,
 `tests/Feature/Filament/Actions/ListLogActivitiesActionTest.php`,
 `tests/Security/AccessControlTest.php`, `app/Providers/ActivityServiceProvider.php`.
-=======
-1. Lock dei file di `docs/` del modulo (`bashscripts/lock/`), unlock a fine lavoro.
-2. Audit codice → docs; nessun PHP toccato.
-3. Pack ECC e indici aggiornati; `qmd update`.
-
-## Esito
-
-Baseline audit consegnata: 0 P0, 5 P1, P2 elencati. Chiusura dei P1 demandata alle story figlie di [epics.md](../epics.md).
->>>>>>> .merge_file_2xsmlL

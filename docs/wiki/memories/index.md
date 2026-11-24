@@ -49,8 +49,8 @@ qmd search "test isolation connections" --intent="prevent test crosstalk"
 - [BRAINSTORM-TestCase-Architecture-2026-06-10.md](../../BRAINSTORM-TestCase-Architecture-laravel-modules.md) — Complete brainstorm with 28 ideas, 7 insights
 
 ### Implementation Guides (TBD)
-- Central TESTING.md in Modules/Xot/docs/
-- Per-module TESTING.md files
+- Central testing.md in Modules/Xot/docs/
+- Per-module testing.md files
 
 ## See Also
 - [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)

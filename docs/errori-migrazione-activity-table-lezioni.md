@@ -181,7 +181,6 @@ Questa lezione è ora memorizzata permanentemente per:
 - [ Models](../../<nome modulo>/docs/model_architecture.md)
 - [Activity Logging](./activity_logging_system.md)
 
-=======
 - [Regole Migrazioni Laraxot](../../Xot/docs/migration_rules.md)
 - [Polimorfismo UUID](../../Xot/docs/polymorphic_uuid_support.md)
 - [Principi Architetturali](../../../docs/architectural_principles.md)

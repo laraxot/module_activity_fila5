@@ -5,9 +5,7 @@ type: note
 tags: [documentation]
 ---
 
-=======
 
 ---
 
 *Last Updated: March 12, 2026*
-=======
