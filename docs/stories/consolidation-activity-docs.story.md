@@ -1,6 +1,7 @@
 ---
 title: Consolidation activity docs 2026 10 06.story
 module: Activity
+qmd: "consolidation activity story 2026 06story"
 ---
 
 # Story: Activity Module Documentation Consolidation (Phase 1)
@@ -165,3 +166,11 @@ Activity/docs/
 
 **Author**: Marco Xot  
 **Co-Authored-By**: Claude Haiku 4.5 <noreply@anthropic.com>
+
+---
+
+## Contenuto unito da `consolidation-activity-docs.story.md`
+
+# consolidation activity docs
+
+Stub alias post-strip data/timestamp. Canonico: [./consolidation-activity-docs.story.md](./consolidation-activity-docs.story.md).

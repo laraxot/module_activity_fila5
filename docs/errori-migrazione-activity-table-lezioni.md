@@ -23,7 +23,7 @@ Per modificare una tabella esistente:
 ### 1. Single Source of Truth
 **Principio**: Una tabella = Una migrazione
 **Motivazione**: 
-**Motivazione**: =======
+**Motivazione**: 
 **Motivazione**:
 **Motivazione**:
 - Tutta l'evoluzione della tabella visibile in un punto
@@ -49,7 +49,7 @@ Per modificare una tabella esistente:
 ### **Problema Identificato**
 Nel sistema SaluteOra abbiamo modelli con tipi di ID diversi:
 Nel sistema  abbiamo modelli con tipi di ID diversi:
-Nel sistema SaluteOra abbiamo modelli con tipi di ID diversi:=======
+Nel sistema SaluteOra abbiamo modelli con tipi di ID diversi:
 Nel sistema  abbiamo modelli con tipi di ID diversi:
 - **User**: UUID (string 36 caratteri)
 - **Admin**: Integer auto-increment
@@ -74,7 +74,7 @@ causer_type = "Modules\User\Models\User"
 causer_id = "123" (integer convertito in string)
 causer_type = "Modules\SaluteOra\Models\Admin"
 causer_type = "Modules\<nome modulo>\Models\Admin"
-causer_type = "Modules\SaluteOra\Models\Admin"=======
+causer_type = "Modules\SaluteOra\Models\Admin"
 causer_type = "Modules\<nome modulo>\Models\Admin"
 ```
 

@@ -31,9 +31,9 @@ test('snapshot test', function () {
         'aggregate_version' => 1,
         'state' => json_encode(['data' => 'value']),
     ]);
-    
+
     // ... test logic ...
-    
+
     // ✅ Cleanup manuale
     $snapshot->delete();
 });
@@ -42,7 +42,7 @@ test('snapshot test', function () {
 **Documentazione**:
 - [No RefreshDatabase Policy](./testing/no-refresh-database-policy.md)
 - [Snapshot Testing Patterns](./testing/snapshot-testing-patterns.md)
-- [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)=======
+- [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)
 - [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)
 
 #### Test Coverage

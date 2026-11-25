@@ -105,7 +105,7 @@ Il modulo Activity **è utilizzato da** tutti i moduli business:
 
 - **TechPlanner**: Traccia modifiche clienti, appuntamenti, dispositivi
 
-- **<nome progetto>**: Traccia modifiche clienti, appuntamenti, dispositivi=======
+- **<nome progetto>**: Traccia modifiche clienti, appuntamenti, dispositivi
 - **User**: Traccia azioni utente, login, cambi ruoli
 - **Employee**: Traccia timbrature, modifiche dipendenti
 - **Notify**: Traccia invii notifiche
@@ -238,6 +238,7 @@ class ClientObserver
 - [Business Logic Analysis](./business-logic-analysis.md)
 - [Xot Module Foundation](../../Xot/docs/philosophy-complete.md)
 - [Business Logic Overview](./readme.md)
+- [Business Logic Overview](./README.md)
 - [Business Logic Analysis](./business-logic-analysis.md)
 - [Xot Module Foundation](../../xot/docs/philosophy-complete.md)
 

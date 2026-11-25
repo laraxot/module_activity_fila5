@@ -574,6 +574,6 @@ These examples demonstrate how event sourcing can be applied to various aspects 
 3. **Resilient**: The system can be rebuilt by replaying events
 4. **Understandable**: The business logic is expressed in terms of domain events
 
-Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.=======
+Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md

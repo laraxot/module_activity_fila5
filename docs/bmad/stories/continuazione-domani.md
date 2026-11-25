@@ -8,6 +8,7 @@ updated_at: '2026-09-22'
 status: in-progress
 related:
   - ./conflict-markers-cleanup-2026-09-22.story.md
+qmd: "continuazione domani bmad activity"
 ---
 
 # Activity — Continuazione Domani

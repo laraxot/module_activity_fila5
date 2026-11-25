@@ -1,5 +1,6 @@
 ---
 title: "PRD — Activity"
+title: "PRD: Activity"
 type: prd
 module: Activity
 related:

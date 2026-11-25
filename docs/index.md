@@ -507,6 +507,9 @@ Non richiedono consolidamento: sono puntatori voluti, non copie accidentali.
 
 Quattro copie parallele dello stesso lotto di file di test/placeholder, quasi tutte a
 0-3 righe (`archived-note.md`, `documentation*.md`, `2024-03-27.md`, `test*.md`,
+
+Quattro copie parallele dello stesso lotto di file di test/placeholder, quasi tutte a
+0-3 righe (`archived-note.md`, `documentation*.md`, `test*.md`,
 `import-placeholder*.md`, `filament*.md`, `changelog*.md`): presenti sia direttamente
 in `docs/` (es. `test02.md`, `test-archive-1.md`, `archived-note.md`), sia in
 `docs/root-md-files/`, `docs/root-txt-files/` e `docs/raw/root-import/`. Non collegati

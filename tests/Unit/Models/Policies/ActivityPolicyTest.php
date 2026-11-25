@@ -5,7 +5,6 @@ declare(strict_types=1);
 use Modules\Activity\Models\Policies\ActivityBasePolicy;
 use Modules\Activity\Models\Policies\ActivityPolicy;
 use Modules\Activity\Models\Policies\SnapshotPolicy;
-use Modules\Activity\Models\Policies\StoredEventPolicy;
 use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\Policies\UserBasePolicy;
 use PHPUnit\Framework\Assert;

@@ -24,3 +24,4 @@ Entry point del pack. Indice storico/legacy: [index.md](./index.md).
 | [stories/module-bmad-audit.story.md](./stories/module-bmad-audit.story.md) | story dell'audit |
 | [ECC](../ecc/00-index.md) | checklist e stato controlli |
 | [purpose.md (root docs)](../purpose.md) | scopo del modulo nella documentazione generale |
+| [purpose.md (root docs)](../purpose.md) | scopo del modulo nella documentazione generale |

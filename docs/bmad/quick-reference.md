@@ -1,5 +1,6 @@
 ---
 title: "Activity — BMAD Quick Reference"
+title: "Activity: BMAD Quick Reference"
 description: "Comandi rapidi BMAD per il modulo Activity"
 module: "Activity"
 alias: "activity"
@@ -8,6 +9,7 @@ bmad_version: "6.2.0"
 ---
 
 # Activity — BMAD Quick Reference
+type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, activity, bmad]
@@ -64,4 +66,5 @@ bmad-quick-spec "Specifica retention log"
 
 ---
 
+*Activity · BMAD Quick Reference · data 2026-05-27*
 *Activity · BMAD Quick Reference · data 2026-05-27*

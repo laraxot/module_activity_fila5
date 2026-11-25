@@ -1,5 +1,6 @@
 ---
 title: "Decision log — Activity"
+title: "Decision log: Activity"
 type: decision-log
 module: Activity
 related:

@@ -108,5 +108,5 @@ Transform raw activity data into actionable intelligence.
 
 ---
 
-*Last Updated: March 12, 2026*=======
+*Last Updated: March 12, 2026
 *Last Updated: March 12, 2026*

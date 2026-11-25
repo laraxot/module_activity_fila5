@@ -63,7 +63,7 @@ Il **doppio fallback** `env('DB_DATABASE_ACTIVITY', env('DB_DATABASE'))` è la c
 
 ```bash
 # ✅ CORRETTO: .env.testing
-DB_DATABASE=<nome progetto>_data_test=======
+DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE=techplanner_data_test
 DB_USERNAME=marco
 DB_PASSWORD=marco
@@ -75,7 +75,7 @@ Il fallback in `database.php` garantisce che la connessione `activity` usi autom
 
 `techplanner_data_test` senza configurazione aggiuntiva nei test.
 
-`<nome progetto>_data_test` senza configurazione aggiuntiva nei test.=======
+`<nome progetto>_data_test` senza configurazione aggiuntiva nei test.
 
 ---
 

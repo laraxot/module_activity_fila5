@@ -58,7 +58,7 @@ foreach ($adds as $add) {
     /** @var array<string, mixed> $addData */
     $addData = $add;
     $addData[$fieldName] = $year;
-    
+
     // Disabilita temporaneamente LogsActivity durante firstOrCreate per evitare
     // errore "Attempt to read property 'attributeRawValues' on null"
     // Il trait LogsActivity cerca di accedere a attributeRawValues che è null
@@ -261,11 +261,8 @@ IndennitaResponsabilita::withoutEvents(function (): void {
 
 ---
 
-**
-
 **Ultimo aggiornamento**: 19 Novembre 2025  
 
-**=======
 **Severità**: Alta (blocca operazioni batch)  
 **Soluzione**: Usare `withoutEvents()` durante `firstOrCreate()`
 

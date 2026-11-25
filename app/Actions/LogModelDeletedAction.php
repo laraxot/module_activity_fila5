@@ -14,6 +14,7 @@ use Spatie\QueueableAction\QueueableAction;
  * Logs when a model is deleted using Queueable Actions
  *
  * @see docs/contracts/log-model-deleted-action.md
+ *
  * @contract docs/contracts/log-model-deleted-action.md
  */
 class LogModelDeletedAction
@@ -42,7 +43,7 @@ class LogModelDeletedAction
             type: 'deleted',
             user: $user,
             subject: $model,
-            properties: ['attributes' => $model->getAttributes()],
+            properties: ['attributes' => app(RedactModelAttributesAction::class)->execute($model->getAttributes())], // senza password, token e segreti 2FA
             description: sprintf('%s deleted', class_basename($model))
         );
 

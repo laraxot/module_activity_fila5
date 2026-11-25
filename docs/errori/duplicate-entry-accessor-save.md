@@ -143,12 +143,12 @@ public function getValutatoreIdAttribute(?int $value): ?int
 
 /**
  * ⚠️ TEMPORANEAMENTE DISABILITATO
- *
+
  * Activity Log causa errori "Duplicate Entry" perché SchedaTrait
  * ha accessor che chiamano $this->save() al loro interno.
- *
+
  * Riabilitare SOLO dopo aver corretto tutti gli accessor in SchedaTrait.
- *
+
  * @see \Modules\Activity\docs\errori\duplicate-entry-accessor-save.md
  */
 // use LogsActivity;  // ← COMMENTATO
@@ -272,12 +272,12 @@ abstract class BaseScheda extends BaseModel
 
     /**
      * Activity Log disabilitato temporaneamente.
-     *
+
      * Causa: SchedaTrait ha accessor con $this->save() che causano
      *        errori "Duplicate Entry" durante serializzazione Activity Log.
-     *
+
      * TODO: Riabilitare dopo aver corretto SchedaTrait accessor.
-     *
+
      * @see \Modules\Activity\docs\errori\duplicate-entry-accessor-save.md
      */
 }
@@ -460,6 +460,7 @@ class SchedaObserver
 - [BaseScheda Activity Log](../../Ptv/docs/models/base-scheda-activity-log.md)
 - [SchedaTrait Refactoring Plan](../../Sigma/docs/refactoring/scheda-trait-accessors.md)
 - [Activity Module - README](../readme.md)
+- [Activity Module - README](../README.md)
 - [BaseScheda Activity Log](../../ptv/docs/models/base-scheda-activity-log.md)
 - [SchedaTrait Refactoring Plan](../../sigma/docs/refactoring/scheda-trait-accessors.md)
 
@@ -469,11 +470,8 @@ class SchedaObserver
 
 ---
 
-**
-
 **Ultimo aggiornamento**: 27 Ottobre 2025
 
-**=======
 **Severità**: CRITICA (blocca edit in produzione)
 **Workaround**: Disabilitare temporaneamente LogsActivity trait
 **Fix Definitivo**: Refactoring accessor in SchedaTrait

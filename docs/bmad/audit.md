@@ -42,6 +42,8 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/activi
 
 - PHPStan `Modules/Activity`: **0 errori** (2026-11-16).
 - Pest: **parziale** — 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout a 900 s (macchina con load ≈ 50; i 40 ⨯ visti non si riproducono in isolamento). Dopo i fix della [story](./stories/module-bmad-audit.story.md), `tests/Feature` da sola: **0 failed / 181 passed / 9 skipped** (~660 s). Dettaglio in [audit § Gate](./audits/activity-audit.md#gate).
+- Pest: **parziale** — 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout a 900 s (macchina con load ≈ 50; i 40 ⨯ visti non si riproducono in isolamento). Dopo i fix della [story](./stories/module-bmad-audit.story.md), `tests/Feature` da sola: **0 failed / 181 passed / 9 skipped** (~660 s). Dettaglio in [audit § Gate](./audits/activity-audit.md#gate).
+- Pest: **parziale** — 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout a 900 s (macchina con load ≈ 50; i 40 ⨯ visti non si riproducono in isolamento).
 - Security/runtime: le story figlie dei P1 sono in [epics.md](./epics.md).
 
 ## Riferimenti

@@ -1,5 +1,6 @@
 ---
 title: "Brainstorming — Activity"
+title: "Brainstorming: Activity"
 type: brainstorming
 module: Activity
 related:
