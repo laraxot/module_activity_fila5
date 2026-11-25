@@ -7,7 +7,7 @@ qmd: "digest ceiling 100 livewire-widget"
 
 # Topic livewire-widget
 
-Sintesi automatica di 9 documenti (chiave `livewire-widget`).
+Sintesi automatica di 10 documenti (chiave `livewire-widget`).
 
 ## Architecture Activity
 
@@ -86,3 +86,37 @@ _Fonte: `bmad/livewire-widget-ux.md`_
 # UX Activity
 
 Nessuna superficie chrome da migrare. Non cambiare layout panel. Verdetto: [livewire-inventory.md](./livewire-inventory.md).
+
+## Topic livewire-widget
+
+_Fonte: `wiki/topics/livewire-widget.md`_
+
+# Topic livewire-widget
+
+Sintesi automatica di 9 documenti (chiave `livewire-widget`).
+
+## Architecture Activity
+
+_Fonte: `bmad/livewire-widget-architecture.md`_
+
+# Architecture Activity
+
+Nessun flusso HTTP → widget: zero classi `Http\Livewire`, zero `Filament/Widgets` nel modulo. Verdetto verificato: [livewire-inventory.md](./livewire-inventory.md).
+
+## Brainstorming Activity
+
+_Fonte: `bmad/livewire-widget-brainstorming.md`_
+
+# Brainstorming Activity
+
+Scartato: inventare HTTP o widget “per completezza”. Tenuto: inventory come gate. Verdetto zero candidati: [livewire-inventory.md](./livewire-inventory.md).
+
+## Decision log Activity
+
+_Fonte: `bmad/livewire-widget-decision-log.md`_
+
+# Decision log Activity
+
+## [2026-09-21] Nessun candidato conversione
+
+Docs only. Inventario chiuso. Http/Livewire solo `.gitkeep` + `_components.json` vuoto. Audit log ≠ widget KPI. Zero conversione. Canone: [livewire-inventory.md](./livewire-inventory.md).
