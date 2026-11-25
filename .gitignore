@@ -202,12 +202,15 @@ graphify-out
 Activity/
 tests/coverage-*.*
 tests/graphify-out/
-<<<<<<< HEAD
-=======
 # coverage: il file XML da ~5 MB gonfiava la storia (la riga `tests/coverage.xml/` sopra vale solo per cartelle)
 tests/coverage.xml
->>>>>>> laraxot/dev
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
+
+# fila5-guard: mai nel repo di un modulo/tema
+/laravel/
+/tests/coverage/
+/tests/coverage.xml/
+/tests/*coverage*.xml
