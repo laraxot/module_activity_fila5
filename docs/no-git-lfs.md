@@ -139,5 +139,5 @@ problema.
 
 ## Canone
 
-`bashscripts/ai/wiki/rules/no-git-lfs.md`: regola completa, storico degli incidenti e
+`bashscripts/ai/wiki/rules/git-workflow.md`: regola completa, storico degli incidenti e
 procedura per gli oggetti mancanti in push.

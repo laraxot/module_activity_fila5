@@ -13,14 +13,7 @@ related:
   - ./phpstan-conflict-markers-bootstrap.story.md
 references:
   - sprint-status: "Activity — swarm phpstan Activity+Progressioni+Sigma, 2026-09-29"
-<<<<<<< HEAD
 qmd: "quality gates phpstan swarm story gate"
-=======
-<<<<<<< .merge_file_ufFv9z
-qmd: "quality gates phpstan swarm story gate"
-=======
->>>>>>> .merge_file_C0D00p
->>>>>>> laraxot/dev
 ---
 
 # Activity — PHPStan quality gate swarm (2026-09-29)
@@ -142,7 +135,7 @@ Solo un rimando/aggiornamento di contesto:
    una classe omonima `Modules\Activity\Tests\Fixtures\CanPaginateHarness`
    con docblock divergenti (`list` vs `array` su `exposeOptions()`). Pattern
    già coperto da
-   `bashscripts/ai/wiki/memories/psr4-test-filename-pascalcase.md` (STORY-485/
+   `bashscripts/ai/wiki/memories/testing-pest-database.md#psr4-test-filename-pascalcase` (STORY-485/
    488): cartelle duplicate case-insensitive rompono PSR-4. **Non risolto in
    questa sessione**: è dentro `tests/`, fuori dal mio scope dichiarato
    (`app/`, `database/`, `routes/`, `config/`) e la cartella è oggetto della

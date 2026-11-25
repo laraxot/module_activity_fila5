@@ -108,9 +108,5 @@ Transform raw activity data into actionable intelligence.
 
 ---
 
-<<<<<<< HEAD
 *Last Updated: March 12, 2026
-=======
-*Last Updated: March 12, 2026*=======
->>>>>>> laraxot/dev
 *Last Updated: March 12, 2026*

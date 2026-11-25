@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_kQIEST
->>>>>>> laraxot/dev
 ---
 title: "Lezioni Apprese: Errori Migrazione Activity Table"
 type: note
 qmd: "errori migrazione activity table lezioni 1"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_B7vzNF
->>>>>>> laraxot/dev
 # Lezioni Apprese: Errori Migrazione Activity Table
 
 ## Caso Studio: Errore Critico nella Modifica Migrazione Activity
@@ -172,11 +163,7 @@ Questa lezione è ora memorizzata permanentemente per:
 ## 🔗 **Collegamenti Documentazione**
 
 ### Documentazione Aggiornata
-<<<<<<< HEAD
 - [Regole Migrazioni Laraxot](../../Xot/docs/migration_rules.md)
-=======
-- [Regole Migrazioni Laraxot](../../Xot/docs/migration-rules-2.md)
->>>>>>> laraxot/dev
 - [Polimorfismo UUID](../../Xot/docs/polymorphic_uuid_support.md)
 - [Principi Architetturali](../../../docs/architectural_principles.md)
 

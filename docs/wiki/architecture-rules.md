@@ -6,11 +6,7 @@ module: Activity
 
 -   [Super Cow Methodology](../../Xot/docs/super_cow_methodology.md)
 -   [PHP Quality Guide](../../Xot/docs/php_quality_guide.md)
-<<<<<<< HEAD
 -   [Filament Extension Rules](../../Xot/docs/filament_extension_rules.md)
-=======
--   [Filament Extension Rules](../../Xot/docs/filament-extension-rules-2.md)
->>>>>>> laraxot/dev
 
 **Key Principles:**
 1.  **DRY & KISS**: Don't repeat yourself, keep it simple.

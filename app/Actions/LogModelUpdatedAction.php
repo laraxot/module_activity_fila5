@@ -43,18 +43,11 @@ class LogModelUpdatedAction
             type: 'updated',
             user: $user,
             subject: $model,
-<<<<<<< HEAD
-            properties: [
-                'old' => $model->getOriginal(),
-                'new' => $model->getAttributes(),
-                'changes' => $model->getChanges(),
-=======
             // password, remember_token e segreti 2FA non entrano mai nel log (RedactModelAttributesAction)
             properties: [
                 'old' => app(RedactModelAttributesAction::class)->execute($model->getOriginal()),
                 'new' => app(RedactModelAttributesAction::class)->execute($model->getAttributes()),
                 'changes' => app(RedactModelAttributesAction::class)->execute($model->getChanges()),
->>>>>>> laraxot/dev
             ],
             description: sprintf('%s updated', class_basename($model))
         );

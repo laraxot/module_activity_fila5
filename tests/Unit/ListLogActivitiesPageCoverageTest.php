@@ -14,10 +14,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-<<<<<<< HEAD
-=======
     /** @var TestCase $this */
->>>>>>> laraxot/dev
     $this->page = new class extends ListLogActivities
     {
         public static function getResource(): string
@@ -39,10 +36,7 @@ beforeEach(function (): void {
 
 describe('List Log Activities Page Coverage', function (): void {
     test('get breadcrumb returns string', function (): void {
-<<<<<<< HEAD
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
         $result = $this->requirePage()->getBreadcrumb();
 
         Assert::assertNotEmpty($result);
@@ -80,20 +74,14 @@ describe('List Log Activities Page Coverage', function (): void {
     });
 
     test('get pagination mode returns default', function (): void {
-<<<<<<< HEAD
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
         $mode = $this->requirePage()->getPaginationMode();
 
         Assert::assertSame(PaginationMode::Default, $mode);
     });
 
     test('get field label returns name when not in map', function (): void {
-<<<<<<< HEAD
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
         try {
             $label = $this->requirePage()->getFieldLabel('nonexistent_field');
             Assert::assertSame('nonexistent_field', $label);
@@ -160,10 +148,7 @@ describe('List Log Activities Page Coverage', function (): void {
     });
 
     test('can restore activity with record executes resource check', function (): void {
-<<<<<<< HEAD
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
         $result = $this->requirePage()->canRestoreActivity();
         Assert::assertFalse($result);
     });

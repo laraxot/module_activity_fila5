@@ -320,46 +320,8 @@ foreach (glob('Modules/*/app/Filament/Resources/*/Pages/*.php') as $file) {
 - [Activity Module - README](../README.md)
 - [XotBase Architecture](../../Xot/docs/xotbase-architecture-complete.md)
 - [Differenza Standalone vs Resource Pages](../../Xot/docs/filament/pages-types.md)
-<<<<<<< HEAD
 - [Activity Module - README](../readme.md)
 - [Activity Module - README](../README.md)
-=======
-<<<<<<< .merge_file_KsI3XL
-<<<<<<< .merge_file_VDQMAh
-<<<<<<< .merge_file_1AvsnU
-<<<<<<< .merge_file_YVxOec
-- [Activity Module - README](../readme.md)
-=======
-=======
->>>>>>> .merge_file_AhzkJ0
-=======
->>>>>>> .merge_file_yc7WTr
-=======
->>>>>>> .merge_file_NMHCPt
-<<<<<<< HEAD
-- [Activity Module - README](../README.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Activity Module - README](../readme.md)
-=======
-- [Activity Module - README](../README.md)
->>>>>>> laraxot/dev
-=======
-- [Activity Module - README](../README.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_KsI3XL
-<<<<<<< .merge_file_VDQMAh
-<<<<<<< .merge_file_1AvsnU
->>>>>>> .merge_file_MVC1zQ
-=======
->>>>>>> .merge_file_AhzkJ0
-=======
->>>>>>> .merge_file_yc7WTr
-=======
->>>>>>> .merge_file_NMHCPt
->>>>>>> laraxot/dev
 - [XotBase Architecture](../../xot/docs/xotbase-architecture-complete.md)
 - [Differenza Standalone vs Resource Pages](../../xot/docs/filament/pages-types.md)
 
@@ -369,16 +331,8 @@ foreach (glob('Modules/*/app/Filament/Resources/*/Pages/*.php') as $file) {
 
 ---
 
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 27 Ottobre 2025
 
-=======
-**
-
-**Ultimo aggiornamento**: 27 Ottobre 2025
-
-**=======
->>>>>>> laraxot/dev
 **Versione Filament**: 4.x
 **Severità**: Alta (blocca registrazione Resource Pages)
 **Causa**: Confusione tra Standalone Page e Resource Page

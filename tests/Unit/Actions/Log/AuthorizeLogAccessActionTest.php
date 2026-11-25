@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 use Illuminate\Contracts\Auth\Authenticatable;
 use Mockery\MockInterface;
 use Modules\Activity\Actions\Log\AuthorizeLogAccessAction;
@@ -39,21 +35,6 @@ afterEach(function (): void {
 
 it('allows super-admins', function (): void {
     expect((new AuthorizeLogAccessAction)->execute(mockLogUser(true)))->toBeTrue();
-<<<<<<< HEAD
-});
-
-it('allows users with the log.viewAny permission', function (): void {
-    expect((new AuthorizeLogAccessAction)->execute(mockLogUser(false, true)))->toBeTrue();
-});
-
-it('denies users without the role and without the permission', function (): void {
-    expect((new AuthorizeLogAccessAction)->execute(mockLogUser(false, false)))->toBeFalse();
-});
-
-it('denies access, without crashing, when the permission does not exist yet', function (): void {
-    expect((new AuthorizeLogAccessAction)->execute(mockLogUser(false, new PermissionDoesNotExist)))->toBeFalse();
-});
-=======
 })->group('ACTIVITY-LOGACCESS-INV-1');
 
 it('allows users with the log.viewAny permission', function (): void {
@@ -67,7 +48,6 @@ it('denies users without the role and without the permission', function (): void
 it('denies access, without crashing, when the permission does not exist yet', function (): void {
     expect((new AuthorizeLogAccessAction)->execute(mockLogUser(false, new PermissionDoesNotExist)))->toBeFalse();
 })->group('ACTIVITY-LOGACCESS-INV-3');
->>>>>>> laraxot/dev
 
 it('denies guests and users that do not implement the project user contract', function (): void {
     expect((new AuthorizeLogAccessAction)->execute(null))->toBeFalse();
@@ -75,8 +55,4 @@ it('denies guests and users that do not implement the project user contract', fu
     /** @var MockInterface&Authenticatable $genericUser */
     $genericUser = Mockery::mock(Authenticatable::class);
     expect((new AuthorizeLogAccessAction)->execute($genericUser))->toBeFalse();
-<<<<<<< HEAD
-});
-=======
 })->group('ACTIVITY-LOGACCESS-INV-2');
->>>>>>> laraxot/dev

@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Agent instructions"
 type: reference
 status: draft
@@ -7,21 +6,6 @@ tags: [agents, coding-agent, llm-wiki, docs, activity]
 created: 2026-07-01
 updated: 2026-10-08
 qmd: "istruzioni agenti LLM wiki modulo activity"
-=======
-title: "Activity Module LLM Wiki Agent Instructions======="
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity, wiki]
-qmd: "activity module llm wiki agent instructions======= activity"
----
-title: "Agent instructions"
-type: reference
-tags: [agents, coding-agent, llm-wiki]
-created: 2026-07-01
-updated: 2026-07-01
-qmd: "istruzioni agenti LLM wiki modulo"
->>>>>>> laraxot/dev
 issues: []
 discussions: []
 related:
@@ -29,11 +13,6 @@ related:
 ---
 
 # Activity Module LLM Wiki Agent Instructions
-<<<<<<< HEAD
-=======
-# Activity Module LLM Wiki Agent Instructions=======
-# Activity {{TYPE^}} LLM Wiki Agent Instructions
->>>>>>> laraxot/dev
 
 > **Module/Theme:** Activity
 > **Scope:** Activity-specific knowledge only
@@ -171,24 +150,5 @@ Related:
 ## Related Documentation
 
 - [Project Wiki Integration](../../docs/wiki/README.md)
-<<<<<<< HEAD
 - [Project Wiki Agent Instructions](agents.md)
-=======
-<<<<<<< HEAD
-- [Project Wiki Agent Instructions](agents.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Project Wiki Agent Instructions](../../../Lang/docs/wiki/agents-3.md)
-=======
-- [Project Wiki Agent Instructions](agents.md)
->>>>>>> laraxot/dev
-=======
-- [Project Wiki Agent Instructions](agents.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-- [Module Documentation](../README.md)=======
-- [Module Documentation](../README.md)
-- [Module Documentation](../README.md)
->>>>>>> laraxot/dev
 - [Module Documentation](../README.md)

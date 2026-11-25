@@ -13,30 +13,7 @@ related:
 
 # Piano di miglioramento — Activity
 
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< .merge_file_qDzsZv
-<<<<<<< .merge_file_gTHCQy
-<<<<<<< .merge_file_kwSGsE
-<<<<<<< .merge_file_47XSL6
-=======
-=======
->>>>>>> .merge_file_20MglA
-=======
->>>>>>> .merge_file_pI8BYD
-=======
->>>>>>> .merge_file_XBNzLn
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_XpISid
->>>>>>> laraxot/dev
 Derivato dall'[audit](./audits/activity-audit.md).
 
 ## P0
@@ -71,28 +48,6 @@ Derivato dall'[audit](./audits/activity-audit.md).
 - [ ] PHPStan `Modules/Activity` = 0
 - [ ] Pest osservabile o skip motivato
 - [ ] ECC `00-index` aggiornato con esiti
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_wpB7pV
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_qDzsZv
-<<<<<<< .merge_file_gTHCQy
-<<<<<<< .merge_file_kwSGsE
->>>>>>> .merge_file_JzReRT
-=======
->>>>>>> .merge_file_20MglA
-=======
->>>>>>> .merge_file_pI8BYD
-=======
->>>>>>> .merge_file_XBNzLn
->>>>>>> laraxot/dev
 Derivato dall'[audit profondo](./audits/activity-audit.md). Nessun P0 emerso dal codice; i P1 riguardano l'integrità del registro.
 Epic e AC: [epics.md](./epics.md).
 
@@ -127,53 +82,6 @@ Epic e AC: [epics.md](./epics.md).
 - [ ] Nessun segreto in `properties` (Pest su `User`)
 - [ ] PHPStan `Modules/Activity` = 0
 - [ ] ECC `00-index` aggiornato
-<<<<<<< HEAD
 - [ ] Pest osservabile o skip motivato
 - [ ] Pest osservabile o skip motivato
 - [ ] Pest osservabile o skip motivato
-=======
-<<<<<<< .merge_file_qDzsZv
-<<<<<<< .merge_file_gTHCQy
-<<<<<<< .merge_file_kwSGsE
-<<<<<<< .merge_file_47XSL6
-- [ ] Pest osservabile o skip motivato
-=======
-=======
->>>>>>> .merge_file_20MglA
-=======
->>>>>>> .merge_file_pI8BYD
-=======
->>>>>>> .merge_file_XBNzLn
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [ ] Pest osservabile o skip motivato
-=======
-=======
-=======
-<<<<<<< HEAD
-- [ ] Pest osservabile o skip motivato
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_XpISid
-=======
-- [ ] Pest osservabile o skip motivato
->>>>>>> .merge_file_wpB7pV
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_qDzsZv
-<<<<<<< .merge_file_gTHCQy
-<<<<<<< .merge_file_kwSGsE
->>>>>>> .merge_file_JzReRT
-=======
->>>>>>> .merge_file_20MglA
-=======
->>>>>>> .merge_file_pI8BYD
-=======
->>>>>>> .merge_file_XBNzLn
->>>>>>> laraxot/dev

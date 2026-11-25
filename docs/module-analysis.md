@@ -325,10 +325,6 @@ activity()->withProperties([
 ---
 
 **Versione**: v2.5.0-beta  
-<<<<<<< HEAD
 **Stato**: Production Ready with Compliance Enhancement
-=======
-**Stato**: Production Ready with Compliance Enhancement=======
->>>>>>> laraxot/dev
 **Stato**: Production Ready with Compliance Enhancement
 - Machine learning capabilities

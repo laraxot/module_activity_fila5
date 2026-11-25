@@ -4,14 +4,7 @@ type: user-manual
 status: active
 module: Activity
 updated: 2026-11-23
-<<<<<<< HEAD
 qmd: "user manual manuale utente activity"
-=======
-<<<<<<< .merge_file_jPpdz4
-qmd: "user manual manuale utente activity"
-=======
->>>>>>> .merge_file_b8yApp
->>>>>>> laraxot/dev
 ---
 
 # Manuale utente Activity

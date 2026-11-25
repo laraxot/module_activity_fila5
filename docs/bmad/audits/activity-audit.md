@@ -99,55 +99,7 @@ contenere segreti e deve registrare davvero gli eventi che dichiara di registrar
 - `app/Actions/LogModelUpdatedAction.php:43-44` — `'old' => $model->getOriginal()`, `'new' => $model->getAttributes()`.
 - `app/Actions/LogModelCreatedAction.php:42` — `getAttributes()` completo.
 - `app/Actions/RedactModelAttributesAction.php:19-24` toglie `password`, `remember_token`, `two_factor_*` ma **nessun file di produzione la chiama** (`rg RedactModelAttributesAction` → solo definizione e test).
-<<<<<<< HEAD
 - Mitigazione reale: il percorso `Adapters\ActivityLogger` / `LogModel*Action` non ha caller fuori da Activity (`rg` su tutti i moduli, escluso `tests`/`docs`): gli altri moduli usano il helper `activity()` di Spatie (es. `User/app/Actions/Activity/LogRegistrationAction.php:21`). Il rischio è quindi **latente**: scatta appena qualcuno adotta l'API del modulo.
-=======
-<<<<<<< .merge_file_A0p2RL
-<<<<<<< .merge_file_5MGVXY
-<<<<<<< .merge_file_BeGqO3
-<<<<<<< .merge_file_EeHy79
-- Mitigazione reale: il percorso `Adapters\ActivityLogger` / `LogModel*Action` non ha caller fuori da Activity (`rg` su tutti i moduli, escluso `tests`/`docs`): gli altri moduli usano il helper `activity()` di Spatie (es. `User/app/Actions/Activity/LogRegistrationAction.php:21`). Il rischio è quindi **latente**: scatta appena qualcuno adotta l'API del modulo.
-=======
-=======
->>>>>>> .merge_file_6GVmJy
-=======
->>>>>>> .merge_file_BbtTVJ
-=======
->>>>>>> .merge_file_dvtsnR
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Mitigazione reale: il percorso `Adapters\ActivityLogger` / `LogModel*Action` non ha caller fuori da Activity (`rg` su tutti i moduli, escluso `tests`/`docs`): gli altri moduli usano il helper `activity()` di Spatie (es. `User/app/Actions/Activity/LogRegistrationAction.php:21`). Il rischio è quindi **latente**: scatta appena qualcuno adotta l'API del modulo.
-=======
-=======
-=======
-<<<<<<< HEAD
-- Mitigazione reale: il percorso `Adapters\ActivityLogger` / `LogModel*Action` non ha caller fuori da Activity (`rg` su tutti i moduli, escluso `tests`/`docs`): gli altri moduli usano il helper `activity()` di Spatie (es. `User/app/Actions/Activity/LogRegistrationAction.php:21`). Il rischio è quindi **latente**: scatta appena qualcuno adotta l'API del modulo.
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_dOEWD9
-- Mitigazione reale: il percorso `Adapters\ActivityLogger` / `LogModel*Action` non ha caller fuori da Activity (`rg` su tutti i moduli, escluso `tests`/`docs`): gli altri moduli usano il helper `activity()` di Spatie (es. `Ptv/app/Actions/Scheda/LogEmailSentAction.php:45`). Il rischio è quindi **latente**: scatta appena qualcuno adotta l'API del modulo.
-=======
-- Mitigazione reale: il percorso `Adapters\ActivityLogger` / `LogModel*Action` non ha caller fuori da Activity (`rg` su tutti i moduli, escluso `tests`/`docs`): gli altri moduli usano il helper `activity()` di Spatie (es. `User/app/Actions/Activity/LogRegistrationAction.php:21`). Il rischio è quindi **latente**: scatta appena qualcuno adotta l'API del modulo.
->>>>>>> .merge_file_VQiM7M
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_A0p2RL
-<<<<<<< .merge_file_5MGVXY
-<<<<<<< .merge_file_BeGqO3
->>>>>>> .merge_file_fKMiRS
-=======
->>>>>>> .merge_file_6GVmJy
-=======
->>>>>>> .merge_file_BbtTVJ
-=======
->>>>>>> .merge_file_dvtsnR
->>>>>>> laraxot/dev
 
 **Fix:** chiamare `RedactModelAttributesAction` dentro `LogModelCreated/Updated/DeletedAction`; allargare la lista (token API, `*_secret`, codice fiscale se non necessario); test con modello `User`.
 
@@ -173,11 +125,7 @@ contenere segreti e deve registrare davvero gli eventi che dichiara di registrar
 - **Duplicati.** `app/Contracts/ActivityRecorderContract.php` e `app/Models/Contracts/ActivityRecorderContract.php` (stesso nome, due namespace); `app/Adapters/ActivityLogger.php` (134 righe) vs `app/Actions/ActivityLogger.php` (287 righe); l'intero set `Adapters/*` + `LogModel*Action` + `LogUser*Action` non ha caller di produzione.
 - **`TestModel` in produzione.** `app/Models/TestModel.php` + `database/migrations/2026_03_05_000001_create_test_models_table.php` creano `test_models` nel DB reale.
 - **Migrazioni.** 5 file `*_create_activity_table.php` + `2026_02_13_171410_fix_causer_id_to_uuid.php` nonostante il contratto in `2026_06_10_141000_create_activity_table.php:9-13` ("UNICA migrazione"); `database/migrations/_bak/` contiene 7 file, uno con `dropColumn('attribute_changes')` (`_bak/2026_07_01_000000_update_activity_log_schema.php:36`). Mai cancellare migrazioni già applicate: verificare la tabella `migrations` prima di consolidare.
-<<<<<<< HEAD
 - **Igiene.** `documentation.md`, `filament.md`, `test.md`, `test02.md`, `test03.md`, `test04.md`, `test2222.md`, `test444.md` e 4 `*.code-workspace` alla root del modulo; `docs/` con 331/782 file senza frontmatter e 17 nomi non conformi.
-=======
-- **Igiene.** `../../documentation-3.md`, `../../filament-3.md`, `test.md`, `test02.md`, `test03.md`, `test04.md`, `test2222.md`, `test444.md` e 4 `*.code-workspace` alla root del modulo; `docs/` con 331/782 file senza frontmatter e 17 nomi non conformi.
->>>>>>> laraxot/dev
 - **`@phpstan-ignore trait.unused`** senza motivazione (`Traits/HasSnapshots.php:7`).
 
 ## Verificato e non è un finding
@@ -194,54 +142,7 @@ contenere segreti e deve registrare davvero gli eventi che dichiara di registrar
 |---|---|
 | PHPStan `Modules/Activity` (`php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Activity --no-progress`) | **0 errori** (`[OK] No errors`, 2026-11-16) |
 | Pest `Modules/Activity/tests` (via `bashscripts/tools/pest-scratch-db.sh`, DB scratch, host 127.0.0.1) | **parziale**: suite completa non terminata (timeout 900 s, load ≈ 50; 16 pass e 40 ⨯ allo stop, non riproducibili in isolamento: `BaseModelBusinessLogicTest` 21 pass, `ActivityManagementTest` 4 pass); causa dei ⨯ non determinata |
-<<<<<<< HEAD
 | Pest `Modules/Activity/tests/Feature` (stesso script, run separata dopo i fix della [story](../stories/module-bmad-audit.story.md)) | **0 failed / 181 passed / 9 skipped** (~660 s) |
-=======
-<<<<<<< .merge_file_A0p2RL
-<<<<<<< .merge_file_5MGVXY
-<<<<<<< .merge_file_BeGqO3
-<<<<<<< .merge_file_EeHy79
-| Pest `Modules/Activity/tests/Feature` (stesso script, run separata dopo i fix della [story](../stories/module-bmad-audit.story.md)) | **0 failed / 181 passed / 9 skipped** (~660 s) |
-=======
-=======
->>>>>>> .merge_file_6GVmJy
-=======
->>>>>>> .merge_file_BbtTVJ
-=======
->>>>>>> .merge_file_dvtsnR
-<<<<<<< HEAD
-<<<<<<< HEAD
-| Pest `Modules/Activity/tests/Feature` (stesso script, run separata dopo i fix della [story](../stories/module-bmad-audit.story.md)) | **0 failed / 181 passed / 9 skipped** (~660 s) |
-=======
-=======
-=======
-<<<<<<< HEAD
-| Pest `Modules/Activity/tests/Feature` (stesso script, run separata dopo i fix della [story](../stories/module-bmad-audit.story.md)) | **0 failed / 181 passed / 9 skipped** (~660 s) |
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_dOEWD9
-=======
-| Pest `Modules/Activity/tests/Feature` (stesso script, run separata dopo i fix della [story](../stories/module-bmad-audit.story.md)) | **0 failed / 181 passed / 9 skipped** (~660 s) |
->>>>>>> .merge_file_VQiM7M
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_A0p2RL
-<<<<<<< .merge_file_5MGVXY
-<<<<<<< .merge_file_BeGqO3
->>>>>>> .merge_file_fKMiRS
-=======
->>>>>>> .merge_file_6GVmJy
-=======
->>>>>>> .merge_file_BbtTVJ
-=======
->>>>>>> .merge_file_dvtsnR
->>>>>>> laraxot/dev
 
 Pest non è stato lanciato con il DB di test condiviso (`10.100.200.53`): è stato usato lo script
 di scratch DB del repo, che crea e distrugge database usa-e-getta con sola struttura. Nessun

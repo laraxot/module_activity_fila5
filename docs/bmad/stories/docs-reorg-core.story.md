@@ -27,7 +27,6 @@ Legacy: [`docs/archive`](../../archive/), [`docs/archived`](../../archived/), [`
 ## Esito
 
 I contenuti duplicati (`00-index`, README e documenti varianti) non sono stati cancellati né risolti automaticamente: la loro destinazione semantica non è determinabile senza una decisione specifica.
-<<<<<<< HEAD
 
 ## Wave 2026-11-24e — date-debt (Activity slice)
 
@@ -37,5 +36,3 @@ Vedi SSoT: [docs-md-filename-date-debt.story.md](../../../Xot/docs/bmad/stories/
 - `phpstan-analysis-november` / inventory-april / `ARCHITECTURE` → historical+stub
 - `bmad/readme.md` + `wiki/readme.md` rimossi (contenuto in `README.md`)
 - **ACTIVE ISO/month docs Activity = 0**
-=======
->>>>>>> laraxot/dev

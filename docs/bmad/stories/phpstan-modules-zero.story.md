@@ -10,7 +10,7 @@ references:
   - ../stories/phpstan-conflict-markers-bootstrap.story.md
   - ../../wiki/phpstan-l10-coverage.md
   - ../../../../../../docs/sprint-status.yaml
-  - ../../../../../../bashscripts/ai/wiki/memories/php-array-one-key-per-line.md
+  - ../../../../../../bashscripts/ai/wiki/memories/standing-orders.md#php-array-one-key-per-line
 ---
 
 # Story — PHPStan Modules/Activity → 0

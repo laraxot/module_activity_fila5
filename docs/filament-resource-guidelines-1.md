@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_xg13Ea
->>>>>>> laraxot/dev
 ---
 title: "Activity Module Filament Resource Guidelines"
 type: guide
 qmd: "filament resource guidelines 1 activity"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_Acc6bK
->>>>>>> laraxot/dev
 # Activity Module Filament Resource Guidelines
 
 ## Extension Patterns
@@ -118,11 +109,7 @@ All resources must be tested to ensure:
 ### Related Documentation
 
 - [XotBaseResource Documentation](../../Xot/docs/filament/resources/xot-base-resource.md)
-<<<<<<< HEAD
 - [Filament Best Practices](../../Xot/docs/filament-best-practices.md)
-=======
-- [Filament Best Practices](../../Xot/docs/consolidated/filament-best-practices-2.md)
->>>>>>> laraxot/dev
 - [Laraxot Extension Patterns](../../Xot/docs/base-classes.md)
 ---
 module: theme

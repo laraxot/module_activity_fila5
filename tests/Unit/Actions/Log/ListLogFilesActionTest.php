@@ -1,8 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 use Illuminate\Support\Facades\File;
 use Modules\Activity\Actions\Log\ListLogFilesAction;
 use Modules\Activity\Datas\LogFileData;
@@ -105,4 +103,3 @@ it('does not list a symlink that points outside the log directory', function ():
 it('returns an empty list when the log directory does not exist', function (): void {
     expect((new ListLogFilesAction)->execute($this->root.'/non-esiste'))->toBe([]);
 });
->>>>>>> laraxot/dev

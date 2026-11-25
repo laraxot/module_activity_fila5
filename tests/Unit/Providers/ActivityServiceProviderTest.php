@@ -4,11 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Providers;
 
-<<<<<<< HEAD
 use function Safe\json_encode;
 
-=======
->>>>>>> laraxot/dev
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;

@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
-<<<<<<< HEAD
-=======
 
 use Filament\Tables\Enums\PaginationMode;
 use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
@@ -51,4 +49,3 @@ test('CanPaginate espone pagination mode default', function (): void {
 
     Assert::assertSame(PaginationMode::Default, $harness->getPaginationMode());
 });
->>>>>>> laraxot/dev

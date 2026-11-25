@@ -14,7 +14,7 @@ Elenco dei file trovati contenenti marker di merge (<<<<<<<, >>>>>>>, .merge_fil
 - memory/MEMORY.md
 - _bmad/bmm/4-implementation/bmad-create-story/stories/1-1-segnalazione-ui-ux-improvement.md
 - laravel/Themes/Sixteen/public/manifest.json
-- docs/wiki/concepts/no-docs-archive-rule.md
+- bashscripts/ai/wiki/concepts/modules-structure-rules.md#no-docs-archive-rule
 - docs/wiki/index.md
 - docs/wiki/log.md
 - laravel/Themes/Sixteen/docs/wiki/index.md
@@ -26,11 +26,7 @@ Elenco dei file trovati contenenti marker di merge (<<<<<<<, >>>>>>>, .merge_fil
 - laravel/Modules/Geo/resources/js/components/coordinate-picker-styles.js
 - laravel/Modules/Geo/docs/wiki/index.md
 - laravel/Modules/Geo/docs/wiki/log.md
-<<<<<<< HEAD
 - laravel/Modules/Geo/docs/wiki/AGENTS.md
-=======
-- laravel/Modules/Geo/docs/wiki/agents-2.md
->>>>>>> laraxot/dev
 - laravel/Modules/Fixcity/docs/wiki/index.md
 - laravel/Modules/Fixcity/docs/wiki/log.md
 - laravel/Modules/Fixcity/docs/wiki/README.md
@@ -48,11 +44,7 @@ Elenco dei file trovati contenenti marker di merge (<<<<<<<, >>>>>>>, .merge_fil
 - laravel/Modules/Xot/docs/moduleocumentation-standard.md
 - laravel/Modules/Xot/docs/filament-installation-and-charts.md
 - laravel/Modules/Xot/docs/property-exists-elimination-report.md
-<<<<<<< HEAD
 - laravel/Modules/Xot/docs/base-model.md
-=======
-- laravel/Modules/Notify/docs/base-model-2.md
->>>>>>> laraxot/dev
 - laravel/Modules/Xot/docs/comprehensive-chart-pdf-guide.md
 - laravel/Modules/Xot/docs/models/dry-kiss-analysis.md
 - laravel/Modules/Fixcity/resources/views/filament/widgets/ticket-create-wizard.blade.php

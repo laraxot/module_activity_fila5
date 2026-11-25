@@ -23,11 +23,7 @@ Per modificare una tabella esistente:
 ### 1. Single Source of Truth
 **Principio**: Una tabella = Una migrazione
 **Motivazione**: 
-<<<<<<< HEAD
 **Motivazione**: 
-=======
-**Motivazione**: =======
->>>>>>> laraxot/dev
 **Motivazione**:
 **Motivazione**:
 - Tutta l'evoluzione della tabella visibile in un punto
@@ -53,11 +49,7 @@ Per modificare una tabella esistente:
 ### **Problema Identificato**
 Nel sistema SaluteOra abbiamo modelli con tipi di ID diversi:
 Nel sistema  abbiamo modelli con tipi di ID diversi:
-<<<<<<< HEAD
 Nel sistema SaluteOra abbiamo modelli con tipi di ID diversi:
-=======
-Nel sistema SaluteOra abbiamo modelli con tipi di ID diversi:=======
->>>>>>> laraxot/dev
 Nel sistema  abbiamo modelli con tipi di ID diversi:
 - **User**: UUID (string 36 caratteri)
 - **Admin**: Integer auto-increment
@@ -82,11 +74,7 @@ causer_type = "Modules\User\Models\User"
 causer_id = "123" (integer convertito in string)
 causer_type = "Modules\SaluteOra\Models\Admin"
 causer_type = "Modules\<nome modulo>\Models\Admin"
-<<<<<<< HEAD
 causer_type = "Modules\SaluteOra\Models\Admin"
-=======
-causer_type = "Modules\SaluteOra\Models\Admin"=======
->>>>>>> laraxot/dev
 causer_type = "Modules\<nome modulo>\Models\Admin"
 ```
 
@@ -184,11 +172,7 @@ Questa lezione è ora memorizzata permanentemente per:
 ## 🔗 **Collegamenti Documentazione**
 
 ### Documentazione Aggiornata
-<<<<<<< HEAD
 - [Regole Migrazioni Laraxot](../../xot/docs/migration_rules.md)
-=======
-- [Regole Migrazioni Laraxot](../../xot/docs/migration-rules-2.md)
->>>>>>> laraxot/dev
 - [Polimorfismo UUID](../../xot/docs/polymorphic_uuid_support.md)
 - [Principi Architetturali](../../../../docs/architectural_principles.md)
 
@@ -197,11 +181,7 @@ Questa lezione è ora memorizzata permanentemente per:
 - [ Models](../../<nome modulo>/docs/model_architecture.md)
 - [Activity Logging](./activity_logging_system.md)
 
-<<<<<<< HEAD
 - [Regole Migrazioni Laraxot](../../Xot/docs/migration_rules.md)
-=======
-- [Regole Migrazioni Laraxot](../../Xot/docs/migration-rules-2.md)
->>>>>>> laraxot/dev
 - [Polimorfismo UUID](../../Xot/docs/polymorphic_uuid_support.md)
 - [Principi Architetturali](../../../docs/architectural_principles.md)
 
@@ -370,11 +350,7 @@ Questa lezione è ora memorizzata permanentemente per:
 ## 🔗 **Collegamenti Documentazione**
 
 ### Documentazione Aggiornata
-<<<<<<< HEAD
 - [Regole Migrazioni Laraxot](../../xot/docs/migration_rules.md)
-=======
-- [Regole Migrazioni Laraxot](../../xot/docs/migration-rules-2.md)
->>>>>>> laraxot/dev
 - [Polimorfismo UUID](../../xot/docs/polymorphic_uuid_support.md)
 - [Principi Architetturali](../../../../docs/architectural_principles.md)
 
@@ -383,11 +359,7 @@ Questa lezione è ora memorizzata permanentemente per:
 - [<nome progetto> Models](../../<nome progetto>/docs/model_architecture.md)
 - [Activity Logging](./activity_logging_system.md)
 
-<<<<<<< HEAD
 - [Regole Migrazioni Laraxot](../../Xot/docs/migration_rules.md)
-=======
-- [Regole Migrazioni Laraxot](../../Xot/docs/migration-rules-2.md)
->>>>>>> laraxot/dev
 - [Polimorfismo UUID](../../Xot/docs/polymorphic_uuid_support.md)
 - [Principi Architetturali](../../../docs/architectural_principles.md)
 

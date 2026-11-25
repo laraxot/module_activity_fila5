@@ -19,9 +19,9 @@ app(LogActivityAction::class)->execute(
 ```
 
 ## 📦 Pacchetti Composer
-- [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
+- [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/migrations-composer-modules.md#composer-packages-reference)
 ## 📦 Pacchetti Composer
-- [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
+- [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/migrations-composer-modules.md#composer-packages-reference)
 - `spatie/laravel-activitylog` - Audit trail
 - `spatie/laravel-event-sourcing` - Event sourcing, CQRS
 

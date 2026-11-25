@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Filament;
-<<<<<<< HEAD
-=======
 
 use Exception;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -166,4 +164,3 @@ test('ListLogActivities canRestore senza record o resource invalida', function (
     $stdPage->setRecordForTest(activitySubjectForPage('std'));
     Assert::assertFalse($stdPage->canRestoreActivity());
 });
->>>>>>> laraxot/dev

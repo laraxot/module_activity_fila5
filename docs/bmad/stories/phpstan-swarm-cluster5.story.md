@@ -8,16 +8,9 @@ acceptance_criteria:
   - php -l verde sui file a rischio
 references:
   - laravel/Modules/Xot/docs/bmad/stories/phpstan-modules-swarm-random-20261006.story.md
-  - bashscripts/ai/wiki/memories/multiagent-phpstan-scan-resource-contention.md
-  - bashscripts/ai/wiki/memories/phpstan-swarm-single-slot-sequencing.md
-<<<<<<< HEAD
+  - bashscripts/ai/wiki/memories/multi-agent-coordination.md#multiagent-phpstan-scan-resource-contention
+  - bashscripts/ai/wiki/memories/multi-agent-coordination.md#phpstan-swarm-single-slot-sequencing
 qmd: "phpstan swarm cluster5 story cluster activity"
-=======
-<<<<<<< .merge_file_Q3kkUM
-qmd: "phpstan swarm cluster5 story cluster activity"
-=======
->>>>>>> .merge_file_HVQeuE
->>>>>>> laraxot/dev
 ---
 
 # PHPStan swarm cluster 5 — Activity
@@ -41,7 +34,7 @@ successiva: `git log` mostra solo docs. Nessuna regressione attesa.
   responsabilita verso lo swarm): 3 morti senza output dopo 13-25 min,
   1 lasciato vivo in background (`/tmp/phpstan-activity3.txt`, PID 73217)
   per il prossimo agente. Dettagli nel diario della memoria
-  `phpstan-swarm-single-slot-sequencing.md`.
+  `multi-agent-coordination.md#phpstan-swarm-single-slot-sequencing`.
 
 ## Review scopo-driven (statica, senza edit)
 - `Actions/Query/GetActivityStatisticsAction.php`: tipizzazione completa
@@ -60,21 +53,6 @@ errori phpstan).
 ## Residuo
 Rilanciare `phpstan analyse Modules/Activity` in finestra quieta e
 chiudere il gate; output atteso 0 errori.
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_Q3kkUM
-<<<<<<< .merge_file_vDN5Pj
-<<<<<<< .merge_file_YthsRe
-<<<<<<< .merge_file_BzciNM
-=======
-=======
->>>>>>> .merge_file_Yvb5x3
-=======
->>>>>>> .merge_file_qoBiTo
-=======
->>>>>>> .merge_file_HVQeuE
->>>>>>> laraxot/dev
 
 ---
 
@@ -83,16 +61,3 @@ chiudere il gate; output atteso 0 errori.
 # phpstan swarm cluster5
 
 Stub alias post-strip data/timestamp. Canonico: [./phpstan-swarm-cluster5.story.md](./phpstan-swarm-cluster5.story.md).
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_Q3kkUM
-<<<<<<< .merge_file_vDN5Pj
-<<<<<<< .merge_file_YthsRe
->>>>>>> .merge_file_OgmJvA
-=======
->>>>>>> .merge_file_Yvb5x3
-=======
->>>>>>> .merge_file_qoBiTo
-=======
->>>>>>> .merge_file_HVQeuE
->>>>>>> laraxot/dev

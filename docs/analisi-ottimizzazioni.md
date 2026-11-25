@@ -37,13 +37,8 @@ il modulo **activity** è un sistema avanzato di audit trail e event sourcing ch
 **problema critico**: duplicazione massiva file documentazione
 ```
 event-sourcing.md / event_sourcing.md
-<<<<<<< HEAD
 advanced-event-sourcing-patterns.md / advanced_event_sourcing_patterns.md
 filament-errors.md / filament_errors.md
-=======
-advanced-event-sourcing-patterns.md / advanced-event-sourcing-patterns-3.md
-filament-errors.md / filament-errors-3.md
->>>>>>> laraxot/dev
 phpstan-fixes.md / phpstan_fixes.md
 ```
 
@@ -157,11 +152,7 @@ docs/
 ├── api/                        # documentazione api
 │   ├── activity-logging.md     # logging attività
 │   ├── event-sourcing.md       # event sourcing
-<<<<<<< HEAD
 │   └── filament-integration.md # integrazione filament
-=======
-│   └── filament-integration-3.md # integrazione filament
->>>>>>> laraxot/dev
 ├── examples/                   # esempi pratici
 │   ├── bank-scenario.md        # scenario bancario
 │   ├── ecommerce-scenario.md   # scenario e-commerce
@@ -262,15 +253,7 @@ php artisan test
 
 ---
 
-<<<<<<< HEAD
 **ultimo aggiornamento**: 20 agosto 2025
 
-=======
-**
-
-**ultimo aggiornamento**: 20 agosto 2025
-
-**=======
->>>>>>> laraxot/dev
 **analista**: claude code
 **stato**: pronto per implementazione

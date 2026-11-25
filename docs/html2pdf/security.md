@@ -4,11 +4,7 @@ title: "html2pdf security — puntatore"
 type: reference
 updated: 2026-05-21
 related:
-<<<<<<< HEAD
   - "../../../Media/docs/html2pdf/SECURITY.md"
-=======
-  - "../../../Geo/docs/root-md-files/security-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Html2Pdf — security

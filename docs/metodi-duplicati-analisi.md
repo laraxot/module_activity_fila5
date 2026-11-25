@@ -2,11 +2,7 @@
 module: Activity
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
-<<<<<<< HEAD
 canonical: ../../../Themes/One/docs/shared-components/metodi_duplicati_analisi.md
-=======
-canonical: metodi-duplicati-analisi-3.md
->>>>>>> laraxot/dev
 title: "Metodi Duplicati: Analisi Activity"
 type: note
 status: stub

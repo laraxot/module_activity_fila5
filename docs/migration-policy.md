@@ -7,7 +7,7 @@ tags: [documentation]
 
 # Migration Policy
 
-Regola canonica di progetto: [`docs/wiki/concepts/no-legacy-folders-code.md`](../../../../docs/wiki/concepts/no-legacy-folders-code.md)
+Regola canonica di progetto: [`bashscripts/ai/wiki/concepts/modules-structure-rules.md#no-legacy-folders-code`](../../../../bashscripts/ai/wiki/concepts/modules-structure-rules.md#no-legacy-folders-code)
 — vietate cartelle `Legacy/`, `Old/`, `Deprecated/`, `Archive/`, e in generale
 qualunque albero parallelo per "codice vecchio" (anche `_bak/`, anche se il
 guard automatico controlla solo i nomi espliciti `legacy|deprecated|archive|old`).

@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Filament;
-<<<<<<< HEAD
-=======
 
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
@@ -114,4 +112,3 @@ test('ListLogActivities resolveActivity Invalid record non-Model', function (): 
     expect(fn (): Activity => $page->exposeResolveActivity(1))
         ->toThrow(\Exception::class, 'Invalid record');
 });
->>>>>>> laraxot/dev

@@ -47,5 +47,5 @@ protected function getSomeValue(): float
 
 ---
 **Riferimenti**:
-- [Documento Canonico AI Agents](../../../../.agents/docs/accessor-auto-persistence.md)
+- [Documento Canonico AI Agents](../../../../bashscripts/ai/wiki/concepts/architecture-philosophy.md#accessor-auto-persistence)
 - [00-index.md](00-index.md)

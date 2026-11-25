@@ -24,14 +24,7 @@ github:
   repository: https://github.com/laraxot/module_activity_fila5
   issues: https://github.com/laraxot/module_quaeris_fila5/issues/49
   discussions: https://github.com/laraxot/base_quaeris_fila5/discussions/205
-<<<<<<< HEAD
 qmd: "activity admin log viewer page story"
-=======
-<<<<<<< .merge_file_X4SHqF
-qmd: "activity admin log viewer page story"
-=======
->>>>>>> .merge_file_tf55eY
->>>>>>> laraxot/dev
 ---
 
 # STORY — Pagina Log nel pannello Activity

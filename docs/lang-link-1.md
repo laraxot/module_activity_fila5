@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_Dk4Z8D
->>>>>>> laraxot/dev
 ---
 title: "Collegamento alle Traduzioni del Modulo Activity"
 type: note
 qmd: "lang link 1 collegamento alle traduzioni"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_pKHPeD
->>>>>>> laraxot/dev
 # Collegamento alle Traduzioni del Modulo Activity
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).

@@ -33,11 +33,7 @@ $activity->properties;    // JSON metadata
 
 ---
 
-<<<<<<< HEAD
 <!-- merged from API.md -->
-=======
-<!-- merged from api-2.md -->
->>>>>>> laraxot/dev
 
 > Nota 2026-10-14 (docs-audit): La firma 'execute(array $data): Activity' non esiste: LogActivityAction prende type, user, subject, properties, description nel costruttore e ha execute(): Activity (app/Actions/LogActivityAction.php). Vedi README.md. Contenuto non riscritto, verificare prima di usarlo.
 
@@ -66,11 +62,7 @@ $activity->properties;    // JSON metadata
 
 ---
 
-<<<<<<< HEAD
 <!-- merged from API.md -->
-=======
-<!-- merged from api-2.md -->
->>>>>>> laraxot/dev
 
 > Nota 2026-10-14 (docs-audit): La firma 'execute(array $data): Activity' non esiste: LogActivityAction prende type, user, subject, properties, description nel costruttore e ha execute(): Activity (app/Actions/LogActivityAction.php). Vedi README.md. Contenuto non riscritto, verificare prima di usarlo.
 

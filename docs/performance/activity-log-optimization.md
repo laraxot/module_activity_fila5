@@ -222,11 +222,7 @@ CREATE INDEX idx_activity_log_causer_type ON activity_log(causer_type);
 
 ## 📚 Related Documentation
 
-<<<<<<< HEAD
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./QUERY_OPTIMIZATION_ANALYSIS.md)
-=======
-- [query-optimization-analysis-3.md](./query-optimization-analysis-3.md)
->>>>>>> laraxot/dev
 - [bottlenecks.md](../bottlenecks.md)
 - [event-sourcing.md](./event-sourcing.md)
 
@@ -509,13 +505,8 @@ CREATE INDEX idx_activity_log_causer_type ON activity_log(causer_type);
 
 ## 📚 Related Documentation
 
-<<<<<<< HEAD
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./QUERY_OPTIMIZATION_ANALYSIS.md)
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./query_optimization_analysis.md)
-=======
-- [query-optimization-analysis-3.md](./query-optimization-analysis-3.md)
-- [query-optimization-analysis-3.md](../query-optimization-analysis-3.md)
->>>>>>> laraxot/dev
 - [bottlenecks.md](./bottlenecks.md)
 - [event-sourcing.md](./event-sourcing.md)
 

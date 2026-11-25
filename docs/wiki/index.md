@@ -11,7 +11,7 @@ issues:
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
-  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+  - ../../../../../bashscripts/ai/wiki/concepts/agents-harness-tooling.md#hackernoon-ai-coding-tips-fixcity-map
   - ../../../../docs/wiki/bmad/architecture.md
   - ../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
   - ../../docs/wiki/concepts/ai-harness-module-discipline.md
@@ -20,7 +20,7 @@ related:
 # Wiki Index — Activity
 ## AI / second brain
 
-- [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../../bashscripts/ai/wiki/concepts/agents-harness-tooling.md#hackernoon-ai-coding-tips-fixcity-map)
 - [bmad/architecture](../../../../docs/wiki/bmad/architecture.md)
 - [frontmatter + GitHub](../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
 - [ai-harness-module-discipline](../../docs/wiki/concepts/ai-harness-module-discipline.md)
@@ -33,46 +33,8 @@ related:
 ## Completamento
 
 - [overviews/completion-status.md](./overviews/completion-status.md) — stato modulo post gate chef
-<<<<<<< HEAD
 - [PROJECT-ROADMAP.md](./PROJECT-ROADMAP.md) — milestone Activity
 - [PROJECT-ROADMAP.md](./project-roadmap.md) — milestone Activity
-=======
-<<<<<<< .merge_file_alDsDb
-<<<<<<< .merge_file_ywWXUV
-<<<<<<< .merge_file_TVBeIz
-<<<<<<< .merge_file_imDhTN
-- [PROJECT-ROADMAP.md](./PROJECT-ROADMAP.md) — milestone Activity
-=======
-=======
->>>>>>> .merge_file_6AHns7
-=======
->>>>>>> .merge_file_NrCIqo
-=======
->>>>>>> .merge_file_Z8kmnP
-<<<<<<< HEAD
-- [PROJECT-ROADMAP.md](./project-roadmap.md) — milestone Activity
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [PROJECT-ROADMAP.md](./PROJECT-ROADMAP.md) — milestone Activity
-=======
-- [PROJECT-ROADMAP.md](./project-roadmap.md) — milestone Activity
->>>>>>> laraxot/dev
-=======
-- [PROJECT-ROADMAP.md](./project-roadmap.md) — milestone Activity
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_alDsDb
-<<<<<<< .merge_file_ywWXUV
-<<<<<<< .merge_file_TVBeIz
->>>>>>> .merge_file_ZJD6yu
-=======
->>>>>>> .merge_file_6AHns7
-=======
->>>>>>> .merge_file_NrCIqo
-=======
->>>>>>> .merge_file_Z8kmnP
->>>>>>> laraxot/dev
 - [platform-completion-roadmap (Xot)](../../Xot/docs/wiki/overviews/platform-completion-roadmap.md)
 
 ## Concepts
@@ -93,58 +55,10 @@ _No entities tracked yet._
 
 ## On-Demand References
 
-<<<<<<< HEAD
 - [rules-index](./rules/INDEX.md) — entrypoint locale per regole ricorrenti del modulo
 - [skills-index](./skills/INDEX.md) — skill on-demand, incluse skill condivise Xot
 - [rules-index](./rules/index.md) — entrypoint locale per regole ricorrenti del modulo
 - [skills-index](./skills/index.md) — skill on-demand, incluse skill condivise Xot
-=======
-<<<<<<< .merge_file_alDsDb
-<<<<<<< .merge_file_ywWXUV
-<<<<<<< .merge_file_TVBeIz
-<<<<<<< .merge_file_imDhTN
-- [rules-index](./rules/INDEX.md) — entrypoint locale per regole ricorrenti del modulo
-- [skills-index](skills/index-3.md) — skill on-demand, incluse skill condivise Xot
-=======
-=======
->>>>>>> .merge_file_6AHns7
-=======
->>>>>>> .merge_file_NrCIqo
-=======
->>>>>>> .merge_file_Z8kmnP
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [rules-index](./rules/index.md) — entrypoint locale per regole ricorrenti del modulo
-- [skills-index](./skills/index.md) — skill on-demand, incluse skill condivise Xot
-=======
-<<<<<<< HEAD
-- [rules-index](./rules/INDEX.md) — entrypoint locale per regole ricorrenti del modulo
-- [skills-index](skills/index-3.md) — skill on-demand, incluse skill condivise Xot
-=======
-- [rules-index](./rules/index.md) — entrypoint locale per regole ricorrenti del modulo
-- [skills-index](./skills/index.md) — skill on-demand, incluse skill condivise Xot
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_ct4Tfr
-- [rules-index](./rules/INDEX.md) — entrypoint locale per regole ricorrenti del modulo
-- [skills-index](skills/index.md) — skill on-demand, incluse skill condivise Xot
-=======
-- [rules-index](./rules/index.md) — entrypoint locale per regole ricorrenti del modulo
-- [skills-index](./skills/index.md) — skill on-demand, incluse skill condivise Xot
->>>>>>> .merge_file_wuMCaK
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_alDsDb
-<<<<<<< .merge_file_ywWXUV
-<<<<<<< .merge_file_TVBeIz
->>>>>>> .merge_file_ZJD6yu
-=======
->>>>>>> .merge_file_6AHns7
-=======
->>>>>>> .merge_file_NrCIqo
-=======
->>>>>>> .merge_file_Z8kmnP
->>>>>>> laraxot/dev
 
 ## Comparisons
 

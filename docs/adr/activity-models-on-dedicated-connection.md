@@ -12,14 +12,7 @@ related:
   - ../../../Tenant/app/Providers/TenantServiceProvider.php
   - ../../tests/Unit/BaseModelTest.php
   - ../basemodel-connection-why-activity-not-null.md
-<<<<<<< HEAD
 qmd: "activity models on dedicated connection modelli"
-=======
-<<<<<<< .merge_file_AMeIHS
-qmd: "activity models on dedicated connection modelli"
-=======
->>>>>>> .merge_file_SZModO
->>>>>>> laraxot/dev
 ---
 
 # ADR: i modelli di Activity usano la connessione `activity`

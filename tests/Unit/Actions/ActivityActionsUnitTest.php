@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Actions;
-<<<<<<< HEAD
-=======
 
 use Illuminate\Database\Eloquent\Model;
 use InvalidArgumentException;
@@ -71,4 +69,3 @@ test('LogUserLoginAction e LogUserLogoutAction accettano User', function (): voi
     $logout = new LogUserLogoutAction(user: $user);
     Assert::assertSame($user, $logout->user);
 });
->>>>>>> laraxot/dev

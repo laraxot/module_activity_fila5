@@ -67,11 +67,7 @@ docs/
 │   ├── papers/
 │   ├── code-examples/
 │   └── decisions/
-<<<<<<< HEAD
 └── schema.md      # Rules for this module
-=======
-└── schema-3.md      # Rules for this module
->>>>>>> laraxot/dev
 ```
 
 ## Tools
@@ -93,4 +89,4 @@ docs/
 ---
 
 **Tags:** #knowledge-management #llm #architecture #karpathy #documentation
-**Related:** [[docs/wiki/overview.md]], [[docs/llm-wiki-architecture.md]]
+**Related:** [[docs/wiki/overview.md]], [[bashscripts/ai/wiki/concepts/second-brain-llm-wiki.md#llm-wiki-architecture]]

@@ -10,11 +10,7 @@ use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 /**
-<<<<<<< HEAD
- * RestoreActivityAction.
-=======
- * Riporta un record ai valori precedenti registrati in un'attivita' (properties.old).
->>>>>>> laraxot/dev
+ * RestoreActivityAction: riporta un record ai valori precedenti registrati in un'attivita' (properties.old).
  *
  * @see docs/contracts/restore-activity-action.md
  *
