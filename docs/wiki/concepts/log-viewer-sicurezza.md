@@ -12,7 +12,14 @@ related:
   - ../../stories/phpstan-log-tests-false-positives.story.md
 issues:
   - "https://github.com/laraxot/base_quaeris_fila5/issues/227"
+<<<<<<< HEAD
 qmd: "log viewer sicurezza lettura pannello come"
+=======
+<<<<<<< .merge_file_X5CEen
+qmd: "log viewer sicurezza lettura pannello come"
+=======
+>>>>>>> .merge_file_BNMQEZ
+>>>>>>> laraxot/dev
 ---
 
 # Lettura dei log dal pannello

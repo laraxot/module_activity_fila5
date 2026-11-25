@@ -25,7 +25,11 @@ test('LogActivityAction execute rifiuta user non User', function (): void {
 
     expect(fn (): Activity => $action->execute())
         ->toThrow(InvalidArgumentException::class, 'User must implement UserContract');
+<<<<<<< HEAD
 });
+=======
+})->group('ACTIVITY-LOG-INV-2');
+>>>>>>> laraxot/dev
 
 test('LogActivityAction execute accetta user null senza persistenza', function (): void {
     $action = new LogActivityAction(type: 'anonymous_event');

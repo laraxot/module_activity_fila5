@@ -491,7 +491,14 @@ return $alternative;
 
 1. `docs/CODE_QUALITY_ANALYSIS.md` - Add PHPMD fixes section
 2. `docs/README.md` - Update quality metrics
+<<<<<<< HEAD
 3. `docs/ARCHITECTURE.md` - Document coupling reduction strategies
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+3. `architecture-3.md` - Document coupling reduction strategies
+>>>>>>> laraxot/dev
 
 ### Quality Gates:
 
@@ -662,6 +669,33 @@ return $alternative;
 
 1. `docs/CODE_QUALITY_ANALYSIS.md` - Add PHPMD fixes section
 2. `docs/README.md` - Update quality metrics
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_wgnrpe
+<<<<<<< .merge_file_hglo3I
+<<<<<<< .merge_file_gFJnHi
+<<<<<<< .merge_file_pBbzXn
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_CU7qLF
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_bbpmwK
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_tmZ3AJ
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_6CNT57
+>>>>>>> laraxot/dev
 3. `docs/architecture.md` - Document coupling reduction strategies
 
 ### Quality Gates:

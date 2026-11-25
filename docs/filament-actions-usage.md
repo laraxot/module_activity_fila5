@@ -351,20 +351,66 @@ class ListMyModelActivities extends ListLogActivities
 
 ### Documentazione Interna
 - [README Activity Module](../README.md)
+<<<<<<< HEAD
 - [README Activity Module](../readme.md)
 - [README Activity Module](../README.md)
+=======
+<<<<<<< .merge_file_vsGtv7
+<<<<<<< .merge_file_4aMKkC
+<<<<<<< .merge_file_kZjL3I
+<<<<<<< .merge_file_0WDeVA
+- [README Activity Module](../readme.md)
+=======
+=======
+>>>>>>> .merge_file_VbG5Ii
+=======
+>>>>>>> .merge_file_DrfX8V
+=======
+>>>>>>> .merge_file_WAoMxT
+<<<<<<< HEAD
+- [README Activity Module](../README.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [README Activity Module](../readme.md)
+=======
+- [README Activity Module](../README.md)
+>>>>>>> laraxot/dev
+=======
+- [README Activity Module](../README.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_vsGtv7
+<<<<<<< .merge_file_4aMKkC
+<<<<<<< .merge_file_kZjL3I
+>>>>>>> .merge_file_Eg9rXM
+=======
+>>>>>>> .merge_file_VbG5Ii
+=======
+>>>>>>> .merge_file_DrfX8V
+=======
+>>>>>>> .merge_file_WAoMxT
+>>>>>>> laraxot/dev
 - [ListLogActivitiesAction Details](./actions/list-log-activities-action.md)
 - [ListLogActivities Page](./pages/list-log-activities.md)
 
 ### Regole e Convenzioni
 - [Filament Custom Actions Rules](../../../.cursor/rules/filament-custom-actions.mdc)
+<<<<<<< HEAD
 - [Translation Best Practices](../../xot/docs/translation-best-practices.md)
+=======
+- [Translation Best Practices](../../User/docs/translation-best-practices-2.md)
+>>>>>>> laraxot/dev
 - [Service Provider Architecture](../../xot/docs/service-provider-architecture.md)
 
 ### Moduli Correlati
 - [IndennitaResponsabilita - Activity Log Integration](../../indennitaresponsabilita/docs/activity-log-integration.md)
 - [Xot - Filament Base Components](../../xot/docs/filament/README.md)
+<<<<<<< HEAD
 - [Translation Best Practices](../../Xot/docs/translation-best-practices.md)
+=======
+- [Translation Best Practices](../../User/docs/translation-best-practices-2.md)
+>>>>>>> laraxot/dev
 - [Service Provider Architecture](../../Xot/docs/service-provider-architecture.md)
 
 ### Moduli Correlati

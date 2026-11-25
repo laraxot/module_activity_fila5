@@ -1,27 +1,78 @@
 ---
 title: "Contratto — RestoreActivityAction"
 type: contract
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_z0V3rx
+<<<<<<< .merge_file_xmUdeY
+<<<<<<< .merge_file_UOZjvR
+<<<<<<< .merge_file_NaSsdx
+>>>>>>> laraxot/dev
 owner: Activity
 status: accepted
 updated: 2026-11-24
 action: "Modules\\Activity\\Actions\\RestoreActivityAction"
 qmd: "contract RestoreActivityAction activity ripristino record valori precedenti update fillable pagina log ACT-RESTORE"
+<<<<<<< HEAD
 tags: [contract, action, activity-log, restore]
 created: 2026-11-24
+=======
+=======
+=======
+>>>>>>> .merge_file_QTyR6m
+=======
+>>>>>>> .merge_file_50YVaE
+=======
+>>>>>>> .merge_file_uWFQRq
+action: "Modules\Activity\Actions\RestoreActivityAction"
+tags: [contract, action, activity-log, restore]
+created: 2026-11-24
+updated: 2026-11-24
+>>>>>>> laraxot/dev
 related:
   - ../../app/Actions/RestoreActivityAction.php
   - ../../app/Filament/Pages/ListLogActivities.php
   - ../../tests/Unit/Actions/RestoreActivityActionExecuteTest.php
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_z0V3rx
+<<<<<<< .merge_file_xmUdeY
+<<<<<<< .merge_file_UOZjvR
+>>>>>>> .merge_file_3JQ7Hc
+=======
+>>>>>>> .merge_file_QTyR6m
+=======
+>>>>>>> .merge_file_50YVaE
+=======
+>>>>>>> .merge_file_uWFQRq
+>>>>>>> laraxot/dev
 ---
 
 # RestoreActivityAction
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_z0V3rx
+<<<<<<< .merge_file_xmUdeY
+<<<<<<< .merge_file_UOZjvR
+<<<<<<< .merge_file_NaSsdx
+>>>>>>> laraxot/dev
 Ripristina un record con i valori precedenti di un'attività (`old` di un evento `updated`). Chiamata da `ListLogActivities` (riga 193).
 
 ## Input
 
 - `Model $record`: record da aggiornare.
 - `array<string, mixed> $oldProperties`: valori da riportare; non vuoto.
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> .merge_file_QTyR6m
+=======
+>>>>>>> .merge_file_50YVaE
+=======
+>>>>>>> .merge_file_uWFQRq
+>>>>>>> laraxot/dev
 Riporta un record ai valori che aveva prima di una modifica, presi dalle `properties.old` di un'attività registrata.
 Chiamante: la pagina `app/Filament/Pages/ListLogActivities.php` (azione «ripristina» sulla cronologia di un record).
 Sorgente: `app/Actions/RestoreActivityAction.php`.
@@ -32,6 +83,19 @@ Test: `cd laravel && vendor/bin/pest Modules/Activity/tests/Unit/Actions/Restore
 
 - `Model $record`: il record da ripristinare.
 - `array<string, mixed> $oldProperties`: i valori precedenti, così come stanno nell'attività.
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_z0V3rx
+<<<<<<< .merge_file_xmUdeY
+<<<<<<< .merge_file_UOZjvR
+>>>>>>> .merge_file_3JQ7Hc
+=======
+>>>>>>> .merge_file_QTyR6m
+=======
+>>>>>>> .merge_file_50YVaE
+=======
+>>>>>>> .merge_file_uWFQRq
+>>>>>>> laraxot/dev
 
 ## Output
 
@@ -39,6 +103,13 @@ Test: `cd laravel && vendor/bin/pest Modules/Activity/tests/Unit/Actions/Restore
 
 ## Invarianti
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_z0V3rx
+<<<<<<< .merge_file_xmUdeY
+<<<<<<< .merge_file_UOZjvR
+<<<<<<< .merge_file_NaSsdx
+>>>>>>> laraxot/dev
 | ID | Regola | Test |
 |---|---|---|
 | `ACT-RESTORE-INV-1` | `$oldProperties` vuoto lancia `InvalidArgumentException('Old properties cannot be empty')` prima di toccare il record (fuori dal `try`). | `RestoreActivityActionTest.php`, `RestoreActivityActionExecuteTest.php` (percorsi, non verificati nel dettaglio) |
@@ -60,6 +131,16 @@ Test: `cd laravel && vendor/bin/pest Modules/Activity/tests/Unit/Actions/Restore
 - Non verifica che `$oldProperties` appartenga al record né che le chiavi siano attese (per esempio `id`, `created_at`).
 - Non controlla l'autorizzazione: è responsabilità della pagina.
 
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> .merge_file_QTyR6m
+=======
+>>>>>>> .merge_file_50YVaE
+=======
+>>>>>>> .merge_file_uWFQRq
+>>>>>>> laraxot/dev
 | ID | Regola | Group Pest |
 |---|---|---|
 | ACTIVITY-RESTORE-INV-1 | Il record riceve un solo `update()` con esattamente i valori passati. | `ACTIVITY-RESTORE-INV-1` |
@@ -82,3 +163,16 @@ Test: `cd laravel && vendor/bin/pest Modules/Activity/tests/Unit/Actions/Restore
   `properties` (password, token) verrebbero riscritti. La pulizia è del chiamante.
 - Non apre transazioni né controlla i permessi (lo fa la pagina).
 - Non ripristina record cancellati (`restore()` di SoftDeletes): aggiorna solo record esistenti.
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_z0V3rx
+<<<<<<< .merge_file_xmUdeY
+<<<<<<< .merge_file_UOZjvR
+>>>>>>> .merge_file_3JQ7Hc
+=======
+>>>>>>> .merge_file_QTyR6m
+=======
+>>>>>>> .merge_file_50YVaE
+=======
+>>>>>>> .merge_file_uWFQRq
+>>>>>>> laraxot/dev

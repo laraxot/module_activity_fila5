@@ -1,8 +1,17 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_UyShxy
+>>>>>>> laraxot/dev
 ---
 title: "Manuale d'uso per attori"
 type: note
 qmd: "manuale uso attori duso"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_rTeh2E
+>>>>>>> laraxot/dev
 # Manuale d'uso per attori
 
 ## Scopo

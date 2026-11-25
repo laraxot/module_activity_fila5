@@ -1,8 +1,17 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_9BYP0p
+>>>>>>> laraxot/dev
 ---
 title: "Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot"
 type: analysis
 qmd: "modelli factory seeder analisi 1 moduli"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_O7cI6W
+>>>>>>> laraxot/dev
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
 
 ## Modulo Activity

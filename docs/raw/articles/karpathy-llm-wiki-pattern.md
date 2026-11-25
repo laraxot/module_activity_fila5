@@ -67,7 +67,11 @@ docs/
 │   ├── papers/
 │   ├── code-examples/
 │   └── decisions/
+<<<<<<< HEAD
 └── schema.md      # Rules for this module
+=======
+└── schema-3.md      # Rules for this module
+>>>>>>> laraxot/dev
 ```
 
 ## Tools

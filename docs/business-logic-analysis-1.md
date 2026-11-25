@@ -1,8 +1,17 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_TM36xH
+>>>>>>> laraxot/dev
 ---
 title: "Activity Module - Business Logic Analysis"
 type: analysis
 qmd: "business logic analysis 1 activity"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_RF6Rci
+>>>>>>> laraxot/dev
 # Activity Module - Business Logic Analysis
 
 ## Overview

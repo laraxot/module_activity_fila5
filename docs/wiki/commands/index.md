@@ -18,8 +18,40 @@ qmd search "Activity commands" --limit 5
 ```
 
 ## See Also
+<<<<<<< HEAD
 - [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
 - [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+=======
+<<<<<<< .merge_file_1X6PCu
+<<<<<<< .merge_file_JxZem3
+<<<<<<< .merge_file_SJJDLJ
+<<<<<<< .merge_file_2QW4UQ
+- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+=======
+=======
+>>>>>>> .merge_file_qYOcFh
+=======
+>>>>>>> .merge_file_vjCwPU
+=======
+>>>>>>> .merge_file_xWQIrc
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_1X6PCu
+<<<<<<< .merge_file_JxZem3
+<<<<<<< .merge_file_SJJDLJ
+>>>>>>> .merge_file_pRV3Oj
+=======
+>>>>>>> .merge_file_qYOcFh
+=======
+>>>>>>> .merge_file_vjCwPU
+=======
+>>>>>>> .merge_file_xWQIrc
+>>>>>>> laraxot/dev
 - [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
 - [Root Wiki](../../../docs/wiki/)
 

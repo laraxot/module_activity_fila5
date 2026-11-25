@@ -1,8 +1,17 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_sUfhEb
+>>>>>>> laraxot/dev
 ---
 title: "Correzioni PHPStan per il Modulo Activity"
 type: note
 qmd: "phpstan fixes 1 correzioni activity"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_UuZOKb
+>>>>>>> laraxot/dev
 # Correzioni PHPStan per il Modulo Activity
 
 ## Panoramica
@@ -78,7 +87,11 @@ Il modulo Activity dimostra un'eccellente qualità del codice, raggiungendo il l
 
 ## Collegamenti tra versioni di phpstan_fixes.md
 * [phpstan_fixes.md](laravel/Modules/Xot/docs/phpstan_fixes.md)
+<<<<<<< HEAD
 * [phpstan_fixes.md](laravel/Modules/User/docs/phpstan_fixes.md)
+=======
+* [phpstan-fixes-5.md](laravel/Modules/User/docs/phpstan-fixes-5.md)
+>>>>>>> laraxot/dev
 * [phpstan_fixes.md](laravel/Modules/User/docs/fixes/phpstan_fixes.md)
 * [phpstan_fixes.md](laravel/Modules/Activity/docs/phpstan_fixes.md)
 ---

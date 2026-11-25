@@ -2,7 +2,11 @@
 qmd: "activity stories activity audit md"
 type: story
 title: "STORY-Activity: Audit Log Completo"
+<<<<<<< HEAD
 links: {github_issue: "#401", discussion: "#402"}
+=======
+links: {github_issue: #401, discussion: #402}
+>>>>>>> laraxot/dev
 ---
 # Story Activity Audit Log Completo
 

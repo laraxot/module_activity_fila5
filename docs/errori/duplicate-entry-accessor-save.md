@@ -143,12 +143,21 @@ public function getValutatoreIdAttribute(?int $value): ?int
 
 /**
  * ⚠️ TEMPORANEAMENTE DISABILITATO
+<<<<<<< HEAD
 
  * Activity Log causa errori "Duplicate Entry" perché SchedaTrait
  * ha accessor che chiamano $this->save() al loro interno.
 
  * Riabilitare SOLO dopo aver corretto tutti gli accessor in SchedaTrait.
 
+=======
+ *
+ * Activity Log causa errori "Duplicate Entry" perché SchedaTrait
+ * ha accessor che chiamano $this->save() al loro interno.
+ *
+ * Riabilitare SOLO dopo aver corretto tutti gli accessor in SchedaTrait.
+ *
+>>>>>>> laraxot/dev
  * @see \Modules\Activity\docs\errori\duplicate-entry-accessor-save.md
  */
 // use LogsActivity;  // ← COMMENTATO
@@ -272,12 +281,21 @@ abstract class BaseScheda extends BaseModel
 
     /**
      * Activity Log disabilitato temporaneamente.
+<<<<<<< HEAD
 
      * Causa: SchedaTrait ha accessor con $this->save() che causano
      *        errori "Duplicate Entry" durante serializzazione Activity Log.
 
      * TODO: Riabilitare dopo aver corretto SchedaTrait accessor.
 
+=======
+     *
+     * Causa: SchedaTrait ha accessor con $this->save() che causano
+     *        errori "Duplicate Entry" durante serializzazione Activity Log.
+     *
+     * TODO: Riabilitare dopo aver corretto SchedaTrait accessor.
+     *
+>>>>>>> laraxot/dev
      * @see \Modules\Activity\docs\errori\duplicate-entry-accessor-save.md
      */
 }
@@ -459,8 +477,46 @@ class SchedaObserver
 - [Activity Module - README](../README.md)
 - [BaseScheda Activity Log](../../Ptv/docs/models/base-scheda-activity-log.md)
 - [SchedaTrait Refactoring Plan](../../Sigma/docs/refactoring/scheda-trait-accessors.md)
+<<<<<<< HEAD
 - [Activity Module - README](../readme.md)
 - [Activity Module - README](../README.md)
+=======
+<<<<<<< .merge_file_uacmT9
+<<<<<<< .merge_file_6PFW8p
+<<<<<<< .merge_file_22tHlZ
+<<<<<<< .merge_file_pD0Qn3
+- [Activity Module - README](../readme.md)
+=======
+=======
+>>>>>>> .merge_file_klyAGY
+=======
+>>>>>>> .merge_file_DxWW4P
+=======
+>>>>>>> .merge_file_BvDMCP
+<<<<<<< HEAD
+- [Activity Module - README](../README.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Activity Module - README](../readme.md)
+=======
+- [Activity Module - README](../README.md)
+>>>>>>> laraxot/dev
+=======
+- [Activity Module - README](../README.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_uacmT9
+<<<<<<< .merge_file_6PFW8p
+<<<<<<< .merge_file_22tHlZ
+>>>>>>> .merge_file_HabDxj
+=======
+>>>>>>> .merge_file_klyAGY
+=======
+>>>>>>> .merge_file_DxWW4P
+=======
+>>>>>>> .merge_file_BvDMCP
+>>>>>>> laraxot/dev
 - [BaseScheda Activity Log](../../ptv/docs/models/base-scheda-activity-log.md)
 - [SchedaTrait Refactoring Plan](../../sigma/docs/refactoring/scheda-trait-accessors.md)
 
@@ -470,8 +526,16 @@ class SchedaObserver
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 27 Ottobre 2025
 
+=======
+**
+
+**Ultimo aggiornamento**: 27 Ottobre 2025
+
+**=======
+>>>>>>> laraxot/dev
 **Severità**: CRITICA (blocca edit in produzione)
 **Workaround**: Disabilitare temporaneamente LogsActivity trait
 **Fix Definitivo**: Refactoring accessor in SchedaTrait

@@ -1,8 +1,17 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_u9wTXf
+>>>>>>> laraxot/dev
 ---
 title: "Correzioni PHPStan - Modulo Activity"
 type: note
 qmd: "phpstan fixes activity 1 correzioni"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_qwWdBd
+>>>>>>> laraxot/dev
 # Correzioni PHPStan - Modulo Activity
 
 ## 🚨 Errori PHPStan Risolti

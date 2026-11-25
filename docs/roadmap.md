@@ -428,7 +428,11 @@ canonical: ../../../Themes/docs/shared-components/roadmap--Modules.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Modules.md
 - [phpstan-override-fix-roadmap.md](phpstan-override-fix-roadmap.md)
+<<<<<<< HEAD
 - [phpstan-roadmap.md](phpstan-roadmap.md) (✅ Completed)
+=======
+- [phpstan-roadmap-2.md](phpstan-roadmap-2.md) (✅ Completed)
+>>>>>>> laraxot/dev
 - [roadmap/00-index.md](roadmap/00-index.md)
 - [roadmap/00-overview.md](roadmap/00-overview.md)
 - [roadmap/01-current-state.md](roadmap/01-current-state.md)
@@ -452,7 +456,21 @@ See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Mod
 - [roadmap/tasks/realtime-monitoring-dashboard.md](roadmap/tasks/realtime-monitoring-dashboard.md)
 - [roadmap/vision.md](roadmap/vision.md)
 - [stabilization-roadmap.md](stabilization-roadmap.md)
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_wbJ6tY
+<<<<<<< .merge_file_osrEGM
+<<<<<<< .merge_file_270oJB
+<<<<<<< .merge_file_Kt0Px9
+=======
+=======
+>>>>>>> .merge_file_bhIsOE
+=======
+>>>>>>> .merge_file_PHOnLq
+=======
+>>>>>>> .merge_file_VXgdwQ
+>>>>>>> laraxot/dev
 
 ---
 
@@ -461,3 +479,16 @@ See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Mod
 # roadmap
 
 Stub alias post-strip data/timestamp. Canonico: [./roadmap.md](./roadmap.md).
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_wbJ6tY
+<<<<<<< .merge_file_osrEGM
+<<<<<<< .merge_file_270oJB
+>>>>>>> .merge_file_VEywoM
+=======
+>>>>>>> .merge_file_bhIsOE
+=======
+>>>>>>> .merge_file_PHOnLq
+=======
+>>>>>>> .merge_file_VXgdwQ
+>>>>>>> laraxot/dev

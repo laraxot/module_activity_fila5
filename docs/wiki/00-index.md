@@ -17,10 +17,50 @@ updated: 2026-07-23
 **Module Version**: 2.3.0
 
 ## 🎯 **Lettura Essenziale**
+<<<<<<< HEAD
 1. [README.md](./README.md) - Panoramica completa e Quick Start.
 1. [README.md](./README.md) - Panoramica completa e Quick Start.
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
 3. [philosophy.md](./philosophy.md) - I principi dell'Audit Trail e dell'Event Sourcing.
+=======
+<<<<<<< .merge_file_U2Tu38
+<<<<<<< .merge_file_fdlAhJ
+<<<<<<< .merge_file_w86F7l
+<<<<<<< .merge_file_6fykzz
+1. [README.md](./readme.md) - Panoramica completa e Quick Start.
+=======
+=======
+>>>>>>> .merge_file_yo4QQ7
+=======
+>>>>>>> .merge_file_Dq6JZT
+=======
+>>>>>>> .merge_file_CNydzH
+<<<<<<< HEAD
+1. [README.md](./README.md) - Panoramica completa e Quick Start.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+1. [README.md](./readme.md) - Panoramica completa e Quick Start.
+=======
+1. [README.md](./README.md) - Panoramica completa e Quick Start.
+>>>>>>> laraxot/dev
+=======
+1. [README.md](./README.md) - Panoramica completa e Quick Start.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_U2Tu38
+<<<<<<< .merge_file_fdlAhJ
+<<<<<<< .merge_file_w86F7l
+>>>>>>> .merge_file_BTAG4d
+=======
+>>>>>>> .merge_file_yo4QQ7
+=======
+>>>>>>> .merge_file_Dq6JZT
+=======
+>>>>>>> .merge_file_CNydzH
+2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
+3. [philosophy-3.md](../../../Lang/docs/philosophy-3.md) - I principi dell'Audit Trail e dell'Event Sourcing.
+>>>>>>> laraxot/dev
 
 ## 🏗️ **Architettura e Pattern**
 - 🧩 **[Core Structure](./structure.md)** - Organizzazione interna del modulo.
@@ -28,7 +68,11 @@ updated: 2026-07-23
 - 🔧 **[Actions Calling Actions](./actions-calling-actions-pattern.md)** - Pattern per la composizione delle azioni di logging.
 
 ## 📊 **Filament & UI**
+<<<<<<< HEAD
 - 📈 **[Filament Resources](./filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
+=======
+- 📈 **[Filament Resources](../filament-resources-3.md)** - Gestione Log e Analytics nell'Admin Panel.
+>>>>>>> laraxot/dev
 - 📉 **[Analytics Widgets](./dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
 - 🧭 **[Nested Resources](./filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
 
@@ -50,9 +94,15 @@ updated: 2026-07-23
 ### Development
 | File | Scopo |
 |------|-------|
+<<<<<<< HEAD
 | business_logic_analysis.md | Business logic |
 | CODE_QUALITY_ANALYSIS.md | Code quality |
 | QUERY_OPTIMIZATION_ANALYSIS.md | Query optimization |
+=======
+| business-logic-analysis-3.md | Business logic |
+| code-quality-analysis-3.md | Code quality |
+| query-optimization-analysis-3.md | Query optimization |
+>>>>>>> laraxot/dev
 
 # 📚 **Indice Documentazione Modulo Activity**
 ---
@@ -69,7 +119,11 @@ updated: 2026-07-23
 ## 🎯 **Lettura Essenziale**
 1. [README.md](./README.md) - Panoramica completa e Quick Start.
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
+<<<<<<< HEAD
 3. [philosophy.md](./philosophy.md) - I principi dell'Audit Trail e dell'Event Sourcing.
+=======
+3. [philosophy-3.md](../../../Lang/docs/philosophy-3.md) - I principi dell'Audit Trail e dell'Event Sourcing.
+>>>>>>> laraxot/dev
 
 ## 🏗️ **Architettura e Pattern**
 - 🧩 **[Core Structure](./structure.md)** - Organizzazione interna del modulo.
@@ -77,7 +131,11 @@ updated: 2026-07-23
 - 🔧 **[Actions Calling Actions](./actions-calling-actions-pattern.md)** - Pattern per la composizione delle azioni di logging.
 
 ## 📊 **Filament & UI**
+<<<<<<< HEAD
 - 📈 **[Filament Resources](./filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
+=======
+- 📈 **[Filament Resources](../filament-resources-3.md)** - Gestione Log e Analytics nell'Admin Panel.
+>>>>>>> laraxot/dev
 - 📉 **[Analytics Widgets](./dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
 - 🧭 **[Nested Resources](./filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
 
@@ -99,9 +157,15 @@ updated: 2026-07-23
 ### Development
 | File | Scopo |
 |------|-------|
+<<<<<<< HEAD
 | business_logic_analysis.md | Business logic |
 | CODE_QUALITY_ANALYSIS.md | Code quality |
 | QUERY_OPTIMIZATION_ANALYSIS.md | Query optimization |
+=======
+| business-logic-analysis-3.md | Business logic |
+| code-quality-analysis-3.md | Code quality |
+| query-optimization-analysis-3.md | Query optimization |
+>>>>>>> laraxot/dev
 
 # 📚 **Indice Documentazione Modulo Activity**
 
@@ -111,7 +175,11 @@ updated: 2026-07-23
 ## 🎯 **Lettura Essenziale**
 1. [README.md](./README.md) - Panoramica completa e Quick Start.
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
+<<<<<<< HEAD
 3. [philosophy.md](./philosophy.md) - I principi dell'Audit Trail e dell'Event Sourcing.
+=======
+3. [philosophy-3.md](../../../Lang/docs/philosophy-3.md) - I principi dell'Audit Trail e dell'Event Sourcing.
+>>>>>>> laraxot/dev
 
 ## 🏗️ **Architettura e Pattern**
 - 🧩 **[Core Structure](./structure.md)** - Organizzazione interna del modulo.
@@ -119,7 +187,11 @@ updated: 2026-07-23
 - 🔧 **[Actions Calling Actions](./actions-calling-actions-pattern.md)** - Pattern per la composizione delle azioni di logging.
 
 ## 📊 **Filament & UI**
+<<<<<<< HEAD
 - 📈 **[Filament Resources](./filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
+=======
+- 📈 **[Filament Resources](../filament-resources-3.md)** - Gestione Log e Analytics nell'Admin Panel.
+>>>>>>> laraxot/dev
 - 📉 **[Analytics Widgets](./dual-label-chart-widget-implementation.md)** - Implementazione dei grafici e delle statistiche.
 - 🧭 **[Nested Resources](./filament-5-nested-resources-complete-guide.md)** - Guida alle risorse nidificate in Filament v5.
 
@@ -141,14 +213,24 @@ updated: 2026-07-23
 ### Development
 | File | Scopo |
 |------|-------|
+<<<<<<< HEAD
 | business_logic_analysis.md | Business logic |
 | CODE_QUALITY_ANALYSIS.md | Code quality |
 | QUERY_OPTIMIZATION_ANALYSIS.md | Query optimization |
+=======
+| business-logic-analysis-3.md | Business logic |
+| code-quality-analysis-3.md | Code quality |
+| query-optimization-analysis-3.md | Query optimization |
+>>>>>>> laraxot/dev
 
 ### Filament
 | File | Scopo |
 |------|-------|
+<<<<<<< HEAD
 | filament-resource-guidelines.md | Resource guidelines |
+=======
+| filament-resource-guidelines-3.md | Resource guidelines |
+>>>>>>> laraxot/dev
 
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)

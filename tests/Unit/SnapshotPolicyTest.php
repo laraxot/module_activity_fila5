@@ -31,7 +31,11 @@ describe('Snapshot Policy', function (): void {
         $user = $this->createUnitMock(User::class);
         $user->method('hasPermissionTo')->willReturn(true);
 
+<<<<<<< HEAD
         $policy = new SnapshotPolicy;
+=======
+        $policy = new SnapshotPolicy();
+>>>>>>> laraxot/dev
         $result = $policy->view($user);
 
         Assert::assertTrue($result);
@@ -42,7 +46,11 @@ describe('Snapshot Policy', function (): void {
         $user = $this->createUnitMock(User::class);
         $user->method('hasPermissionTo')->willReturn(false);
 
+<<<<<<< HEAD
         $policy = new SnapshotPolicy;
+=======
+        $policy = new SnapshotPolicy();
+>>>>>>> laraxot/dev
         $result = $policy->view($user);
 
         Assert::assertFalse($result);

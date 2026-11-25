@@ -10,10 +10,53 @@ tags: [documentation]
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
 
 Consulta la documentazione delle traduzioni qui:
+<<<<<<< HEAD
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
+=======
+<<<<<<< .merge_file_d72UJD
+<<<<<<< .merge_file_uYQLAg
+<<<<<<< .merge_file_zbH8R2
+<<<<<<< .merge_file_DYjKXX
+- [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../lang/docs/structure.md)
+=======
+=======
+>>>>>>> .merge_file_cfPZgl
+=======
+>>>>>>> .merge_file_mcvQ2A
+=======
+>>>>>>> .merge_file_aHSe5z
+<<<<<<< HEAD
+- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../lang/docs/structure.md)
+=======
+- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
+>>>>>>> laraxot/dev
+=======
+- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_d72UJD
+<<<<<<< .merge_file_uYQLAg
+<<<<<<< .merge_file_zbH8R2
+>>>>>>> .merge_file_LG2ICN
+=======
+>>>>>>> .merge_file_cfPZgl
+=======
+>>>>>>> .merge_file_mcvQ2A
+=======
+>>>>>>> .merge_file_aHSe5z
+>>>>>>> laraxot/dev
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).
 
@@ -45,6 +88,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 ## Collegamenti tra versioni di lang-link.md
 * [lang-link.md](laravel/modules/chart/docs/lang-link.md)
 * [lang-link.md](laravel/modules/reporting/docs/lang-link.md)
+<<<<<<< HEAD
 * [lang-link.md](laravel/modules/gdpr/docs/lang-link.md)
 * [lang-link.md](laravel/modules/notify/docs/lang-link.md)
 * [lang-link.md](laravel/modules/xot/docs/lang-link.md)
@@ -57,6 +101,20 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/modules/activity/docs/lang-link.md)
 * [lang-link.md](laravel/modules/patient/docs/lang-link.md)
 * [lang-link.md](laravel/modules/cms/docs/lang-link.md)
+=======
+* [lang-link.md](laravel/Modules/Gdpr/docs/lang-link-2.md)
+* [lang-link.md](laravel/Modules/Notify/docs/lang-link-2.md)
+* [lang-link.md](laravel/modules/xot/docs/lang-link.md)
+* [lang-link.md](laravel/modules/dental/docs/lang-link.md)
+* [lang-link.md](laravel/Modules/User/docs/lang-link-4.md)
+* [lang-link.md](laravel/modules/ui/docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Job/docs/lang-link-2.md)
+* [lang-link.md](laravel/Modules/Media/docs/lang-link-2.md)
+* [lang-link.md](laravel/modules/tenant/docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Activity/docs/lang-link-2.md)
+* [lang-link.md](laravel/modules/patient/docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Cms/docs/lang-link-2.md)
+>>>>>>> laraxot/dev
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../../Lang/project_docs/).
 
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../../Lang/docs/).

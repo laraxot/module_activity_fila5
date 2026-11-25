@@ -1,8 +1,17 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_esFIkX
+>>>>>>> laraxot/dev
 ---
 title: "Login Test Implementation Summary - <nome progetto> Project"
 type: note
 qmd: "login test implementation summary 1 nome"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_BtyS9K
+>>>>>>> laraxot/dev
 # Login Test Implementation Summary - <nome progetto> Project
 
 ## 🎊 Mission Accomplished: Complete Login Testing Suite

@@ -9,7 +9,14 @@ updated: 2026-10-06
 tags: [phpstan, cleanup, bmad, activity]
 superseded_by: "./phpstan-cleanup-activity.story.md"
 updated: 2026-11-17
+<<<<<<< HEAD
 qmd: "phpstan cleanup activity wave story"
+=======
+<<<<<<< .merge_file_MKnPOu
+qmd: "phpstan cleanup activity wave story"
+=======
+>>>>>>> .merge_file_WasOH1
+>>>>>>> laraxot/dev
 ---
 
 # [STORY] PHPStan cleanup — Activity

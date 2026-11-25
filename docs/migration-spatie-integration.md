@@ -27,13 +27,21 @@ return new class extends XotBaseMigration
     {
         // La tabella è creata dal pacchetto Spatie
         // Questa migrazione aggiorna solo i tipi colonna per UUID
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> laraxot/dev
         $this->tableUpdate(function (Blueprint $table): void {
             // Conversione causer_id da bigint a string(36) per UUID
             if ($this->hasColumn('causer_id') && $this->getColumnType('causer_id') === 'bigint') {
                 $table->string('causer_id', 36)->nullable()->change();
             }
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> laraxot/dev
             // Conversione subject_id da bigint a string(36) per UUID
             if ($this->hasColumn('subject_id') && $this->getColumnType('subject_id') === 'bigint') {
                 $table->string('subject_id', 36)->nullable()->change();
@@ -133,5 +141,13 @@ Per activity_log, il nome corretto è `create_activity_log_table.php`, non `fix_
 - [Xot Migration Philosophy](../../Xot/docs/migration-philosophy.md)
 - [Root Migration Rules](../../../.windsurf/rules/migration-complete-rules.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2026-02-26*
 
+=======
+*
+
+*Ultimo aggiornamento: 2026-02-26*
+
+*=======
+>>>>>>> laraxot/dev

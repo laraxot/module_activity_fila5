@@ -68,7 +68,11 @@ public static function table(Table $table): Table { ... }
 - Implements unnecessary getPages() and getRelations() methods ✗
 - These methods return standard/default values and should be removed
 
+<<<<<<< HEAD
 #### ❌ StoredEventResource - NEEDS REFACTORING  
+=======
+#### ❌ StoredEventResource - NEEDS REFACTORING  =======
+>>>>>>> laraxot/dev
 #### ❌ StoredEventResource - NEEDS REFACTORING
 - Extends XotBaseResource ✓
 - Implements unnecessary getPages() and getRelations() methods ✗
@@ -112,10 +116,17 @@ All resources must be tested to ensure:
 ### Related Documentation
 
 - [XotBaseResource Documentation](../../Xot/project_docs/filament/resources/xot-base-resource.md)
+<<<<<<< HEAD
 - [Filament Best Practices](../../Xot/project_docs/filament-best-practices.md)
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)- [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
 - [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../xot/project_docs/filament-best-practices.md)
+=======
+- [Filament Best Practices](../../Xot/docs/consolidated/filament-best-practices-2.md)
+- [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)- [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
+- [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
+- [Filament Best Practices](../../Xot/docs/consolidated/filament-best-practices-2.md)
+>>>>>>> laraxot/dev
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
 # Activity Module Filament Resource Guidelines
 
@@ -225,11 +236,19 @@ All resources must be tested to ensure:
 ### Related Documentation
 
 - [XotBaseResource Documentation](../../Xot/project_docs/filament/resources/xot-base-resource.md)
+<<<<<<< HEAD
 - [Filament Best Practices](../../Xot/project_docs/filament-best-practices.md)
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
 - [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../xot/project_docs/filament-best-practices.md)
+=======
+- [Filament Best Practices](../../Xot/docs/consolidated/filament-best-practices-2.md)
+- [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
+- [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
+- [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
+- [Filament Best Practices](../../Xot/docs/consolidated/filament-best-practices-2.md)
+>>>>>>> laraxot/dev
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
 # Activity Module Filament Resource Guidelines
@@ -338,8 +357,15 @@ All resources must be tested to ensure:
 ### Related Documentation
 
 - [XotBaseResource Documentation](../../Xot/project_docs/filament/resources/xot-base-resource.md)
+<<<<<<< HEAD
 - [Filament Best Practices](../../Xot/project_docs/filament-best-practices.md)
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
 - [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../xot/project_docs/filament-best-practices.md)
+=======
+- [Filament Best Practices](../../Xot/docs/consolidated/filament-best-practices-2.md)
+- [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
+- [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
+- [Filament Best Practices](../../Xot/docs/consolidated/filament-best-practices-2.md)
+>>>>>>> laraxot/dev
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)

@@ -2,7 +2,15 @@
 qmd: "activity investigation investigation md"
 type: investigation
 title: "Investigation Audit Log Completamento Workflow"
+<<<<<<< HEAD
 links: {github_issue: "#XXX"}
+=======
+<<<<<<< .merge_file_KlIe05
+links: {github_issue: "#XXX"}
+=======
+links: {github_issue: #XXX}
+>>>>>>> .merge_file_2XMZdr
+>>>>>>> laraxot/dev
 ---
 # Investigation: Audit Log Completamento Workflow
 

@@ -181,7 +181,11 @@ class IndennitaResponsabilita extends BaseScheda
 {
     /**
      * Override configurazione Activity Log.
+<<<<<<< HEAD
 
+=======
+     *
+>>>>>>> laraxot/dev
      * Specifica esplicitamente i campi da tracciare per questo modello.
      */
     public function getActivitylogOptions(): LogOptions
@@ -351,14 +355,60 @@ $record->update(['stabi' => 999]);
 - [Activity Module - README](../README.md)
 - [BaseScheda Configuration](../../Ptv/docs/models/base-scheda-activity-log.md)
 - [IndennitaResponsabilita Integration](../../IndennitaResponsabilita/docs/activity-log-integration.md)
+<<<<<<< HEAD
 - [Activity Module - README](../readme.md)
 - [Activity Module - README](../README.md)
+=======
+<<<<<<< .merge_file_H7WilU
+<<<<<<< .merge_file_0SZMNp
+<<<<<<< .merge_file_vpwV41
+<<<<<<< .merge_file_kXnd7Y
+- [Activity Module - README](../readme.md)
+=======
+=======
+>>>>>>> .merge_file_ezk3mF
+=======
+>>>>>>> .merge_file_VualfE
+=======
+>>>>>>> .merge_file_LNwiEq
+<<<<<<< HEAD
+- [Activity Module - README](../README.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Activity Module - README](../readme.md)
+=======
+- [Activity Module - README](../README.md)
+>>>>>>> laraxot/dev
+=======
+- [Activity Module - README](../README.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_H7WilU
+<<<<<<< .merge_file_0SZMNp
+<<<<<<< .merge_file_vpwV41
+>>>>>>> .merge_file_Jizc34
+=======
+>>>>>>> .merge_file_ezk3mF
+=======
+>>>>>>> .merge_file_VualfE
+=======
+>>>>>>> .merge_file_LNwiEq
+>>>>>>> laraxot/dev
 - [BaseScheda Configuration](../../ptv/docs/models/base-scheda-activity-log.md)
 - [IndennitaResponsabilita Integration](../../indennitaresponsabilita/docs/activity-log-integration.md)
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 27 Ottobre 2025
 
+=======
+**
+
+**Ultimo aggiornamento**: 27 Ottobre 2025
+
+**=======
+>>>>>>> laraxot/dev
 **Severità**: Media (funziona ma properties vuote)
 **Soluzione**: Aggiungere `->logAll()` o `->logOnly()` in getActivitylogOptions()
