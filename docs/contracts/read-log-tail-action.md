@@ -14,7 +14,7 @@ Legge solo gli ultimi N byte di un file di log, senza caricarlo intero in memori
 
 ## Input
 
-- `string $absolutePath`: percorso assoluto già risolto da `ResolveLogFilePathAction`.
+- `string $absolutePath`: percorso assoluto già risolto da `GetLogFilePathAction`.
 - `int $maxBytes = 262144` (256 KiB): richiesta; il valore effettivo è limitato tra 1024 byte e 4 MiB.
 
 ## Output

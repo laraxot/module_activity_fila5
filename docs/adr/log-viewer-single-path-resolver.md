@@ -8,7 +8,7 @@ created: 2026-11-24
 updated: 2026-11-24
 related:
   - ../../app/Filament/Pages/LogViewer.php
-  - ../contracts/resolve-log-file-path-action.md
+  - ../contracts/get-log-file-path-action.md
   - ../contracts/authorize-log-access-action.md
   - ../contracts/download-log-file-action.md
 qmd: "log viewer single path resolver visualizzatore"
@@ -28,7 +28,7 @@ di memoria?
 
 ## Decisione
 
-- Ogni percorso passa da `ResolveLogFilePathAction`: solo `.log` (su input e file risolto), `realpath()` che risolve `..`
+- Ogni percorso passa da `GetLogFilePathAction`: solo `.log` (su input e file risolto), `realpath()` che risolve `..`
   e link simbolici, file obbligatoriamente dentro la cartella base. Lettura (`BuildLogViewerStateAction`) e download
   (`DownloadLogFileAction`) lo chiamano; la pagina tiene solo lo stato della scelta.
 - Una sola regola di accesso, `AuthorizeLogAccessAction` (`super-admin` o `log.viewAny`), usata da `canAccess()` e

@@ -17,7 +17,7 @@ use function Safe\realpath;
  *
  * @contract docs/contracts/resolve-log-directory-action.md
  */
-class ResolveLogDirectoryAction
+class GetLogDirectoryAction
 {
     use QueueableAction;
 

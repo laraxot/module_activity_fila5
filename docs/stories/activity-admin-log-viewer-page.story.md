@@ -41,7 +41,7 @@ Pagina **Log** del pannello Activity, `/activity/admin/log-viewer`, voce «Log»
   con il partial ricorsivo `partials/log-tree-node.blade.php`.
 - Download: pagina Folio [log-download.blade.php](../../resources/views/pages/api/log-download.blade.php) su `/api/log-download`
   (nessun Controller, regola «No Controllers»).
-- Action in `app/Actions/Log/`, ognuna con il solo `execute()`: `ResolveLogDirectoryAction`, `ResolveLogFilePathAction`,
+- Action in `app/Actions/Log/`, ognuna con il solo `execute()`: `GetLogDirectoryAction`, `GetLogFilePathAction`,
   `ListLogFilesAction`, `BuildLogFileTreeAction`, `ReadLogTailAction`, `ParseLogEntriesAction`, `FilterLogEntriesAction`,
   `BuildLogViewerStateAction`, `AuthorizeLogAccessAction`, `DownloadLogFileAction`.
 - Dati in `app/Datas/` (Spatie Data): `LogFileData`, `LogEntryData`, `LogTailData`, `FilteredLogEntriesData`,
@@ -126,7 +126,7 @@ File toccati (solo test, nessun codice applicativo):
 `tests/Unit/Actions/Log/AuthorizeLogAccessActionTest.php`, `tests/Unit/Actions/Log/BuildLogFileTreeActionTest.php`,
 `tests/Unit/Actions/Log/BuildLogViewerStateActionTest.php`, `tests/Unit/Actions/Log/DownloadLogFileActionTest.php`,
 `tests/Unit/Actions/Log/ListLogFilesActionTest.php`, `tests/Unit/Actions/Log/ParseAndFilterLogEntriesActionTest.php`,
-`tests/Unit/Actions/Log/ResolveLogFilePathActionTest.php`.
+`tests/Unit/Actions/Log/GetLogFilePathActionTest.php`.
 
 ## GitHub (tracciamento)
 

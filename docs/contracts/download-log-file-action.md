@@ -10,18 +10,18 @@ tags: [contract, action, log-viewer, download, filesystem]
 created: 2026-11-24
 related:
   - ../adr/log-viewer-single-path-resolver.md
-  - resolve-log-file-path-action.md
+  - get-log-file-path-action.md
   - ../../app/Actions/Log/DownloadLogFileAction.php
   - ../../tests/Unit/Actions/Log/DownloadLogFileActionTest.php
 ---
 
 # DownloadLogFileAction
 
-Risposta HTTP di download per un file di log scelto dall'utente. Il percorso passa da `ResolveLogFilePathAction`.
+Risposta HTTP di download per un file di log scelto dall'utente. Il percorso passa da `GetLogFilePathAction`.
 
 ## Input
 
-- `string $file`: percorso relativo a `storage/logs`, come da `ResolveLogFilePathAction`.
+- `string $file`: percorso relativo a `storage/logs`, come da `GetLogFilePathAction`.
 
 ## Output
 
@@ -41,7 +41,7 @@ Risposta HTTP di download per un file di log scelto dall'utente. Il percorso pas
 
 ## Errori
 
-- `InvalidLogFileException`, propagata da `ResolveLogFilePathAction`.
+- `InvalidLogFileException`, propagata da `GetLogFilePathAction`.
 
 ## Non fa
 
@@ -67,7 +67,7 @@ Test: `cd laravel && vendor/bin/pest Modules/Activity/tests/Unit/Actions/Log/Dow
 | ID | Regola | Group Pest |
 |---|---|---|
 | ACTIVITY-LOGDOWNLOAD-INV-1 | Il file completo arriva come `BinaryFileResponse` (letto a blocchi dal disco), `text/plain`, con nome senza barre. | `ACTIVITY-LOGDOWNLOAD-INV-1` |
-| ACTIVITY-LOGDOWNLOAD-INV-2 | Il percorso passa da `ResolveLogFilePathAction`: file fuori dalla cartella dei log, inesistenti, non `.log`, vuoti o assoluti sono rifiutati. | `ACTIVITY-LOGDOWNLOAD-INV-2` |
+| ACTIVITY-LOGDOWNLOAD-INV-2 | Il percorso passa da `GetLogFilePathAction`: file fuori dalla cartella dei log, inesistenti, non `.log`, vuoti o assoluti sono rifiutati. | `ACTIVITY-LOGDOWNLOAD-INV-2` |
 
 ## Effetti collaterali
 

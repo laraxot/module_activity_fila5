@@ -92,13 +92,13 @@ rivendica quella correzione: documenta perche' i 183 non erano difetti di Activi
        (`LogDownloadPageTest`, `LogViewerPageTest`): li' sono import di nomi globali, cioe'
        rumore. Negli altri file di Activity gli stessi import servono, perche' quei file
        hanno un `namespace`.
-6. [x] Corretto il commento in testa a `ResolveLogFilePathActionTest`: diceva di usare
+6. [x] Corretto il commento in testa a `GetLogFilePathActionTest`: diceva di usare
        `Tests\TestCase` (root), cartella sciolta nel commit `63f7bebfe`.
 7. [x] `pest --test-directory=Modules/Activity/tests` resta verde.
 
 ## Sicurezza — la lettura dei log dal pannello
 
-`ResolveLogFilePathAction` e' l'unico punto che trasforma input dell'utente in un percorso
+`GetLogFilePathAction` e' l'unico punto che trasforma input dell'utente in un percorso
 su disco. E' stato riletto riga per riga proprio perche' le segnalazioni ci passavano
 sopra. **Non e' stato modificato**: le garanzie ci sono gia' e i test le coprono.
 

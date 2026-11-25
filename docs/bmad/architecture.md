@@ -56,7 +56,7 @@ e il **contratto pubblico** del modulo.
 `GetSubjectActivityLogAction`, `GetUserActivitiesAction`.
 
 **Log (`app/Actions/Log`, 10)** — il visualizzatore dei log di file:
-`ResolveLogDirectoryAction`, `ResolveLogFilePathAction`, `ListLogFilesAction`,
+`GetLogDirectoryAction`, `GetLogFilePathAction`, `ListLogFilesAction`,
 `BuildLogFileTreeAction`, `ReadLogTailAction`, `DownloadLogFileAction`,
 `FilterLogEntriesAction`, `ParseLogEntriesAction`, `BuildLogViewerStateAction`,
 `AuthorizeLogAccessAction`.

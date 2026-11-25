@@ -107,7 +107,7 @@ contenere segreti e deve registrare davvero gli eventi che dichiara di registrar
 
 - 8 file `*Test.php` con zero casi (solo `use`): `Unit/Actions/ActivityActionsUnitTest.php` (14 righe), `Unit/Actions/QueryAndValidationTest.php`, `Unit/Actions/Log/ListLogFilesActionTest.php`, `Unit/CanPaginateUnitTest.php`, `Unit/Filament/ListLogActivitiesDeepCoverageTest.php`, `Unit/Filament/ListLogActivitiesRemainingCoverageTest.php`, `Unit/Listeners/LogoutListenerTest.php`, `Unit/Models/SnapshotBusinessLogicTest.php`.
 - Causa verificata: `git log` — `ActivityActionsUnitTest.php` passa da **104 righe (`7cf6bc58`) a 14 (`35dbbfe8`)**; il corpo è recuperabile da `7cf6bc58`.
-- 19 punti di skip: 7 in `LoginListenerTest.php:49-55`, 7 in `Feature/Actions/ListLogActivitiesActionTest.php:49-55`, 2 in `Feature/Filament/Actions/ListLogActivitiesActionTest.php:50-51`, 3 `markTestSkipped` condizionali (`Unit/Models/ActivityTest.php:17`, `Unit/Actions/Log/ResolveLogFilePathActionTest.php:79,91`).
+- 19 punti di skip: 7 in `LoginListenerTest.php:49-55`, 7 in `Feature/Actions/ListLogActivitiesActionTest.php:49-55`, 2 in `Feature/Filament/Actions/ListLogActivitiesActionTest.php:50-51`, 3 `markTestSkipped` condizionali (`Unit/Models/ActivityTest.php:17`, `Unit/Actions/Log/GetLogFilePathActionTest.php:79,91`).
 - Esito: i test svuotati risultano "verdi" senza verificare nulla.
 
 **Fix:** ripristinare i corpi da `7cf6bc58`, riallinearli al codice attuale; per gli skip dichiarati "non implementati" decidere se implementare (P1-1) o cancellare.

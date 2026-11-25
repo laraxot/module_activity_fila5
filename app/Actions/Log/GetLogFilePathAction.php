@@ -26,7 +26,7 @@ use function Safe\realpath;
  *
  * @contract docs/contracts/resolve-log-file-path-action.md
  */
-class ResolveLogFilePathAction
+class GetLogFilePathAction
 {
     use QueueableAction;
 
@@ -35,7 +35,7 @@ class ResolveLogFilePathAction
      */
     public function execute(string $relativePath, ?string $baseDirectory = null): ResolvedLogFileData
     {
-        $base = app(ResolveLogDirectoryAction::class)->execute($baseDirectory);
+        $base = app(GetLogDirectoryAction::class)->execute($baseDirectory);
 
         if ($relativePath === '' || str_contains($relativePath, "\0")) {
             throw InvalidLogFileException::invalidPath();

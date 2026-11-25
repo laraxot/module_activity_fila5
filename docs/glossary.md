@@ -29,7 +29,7 @@ Percorsi relativi a `laravel/Modules/Activity/`.
 | Visualizzatore di log | Pagina che legge i file `.log` dentro `storage/logs`. | `app/Filament/Pages/LogViewer.php` |
 | Accesso ai log | Consentito ai `super-admin` e a chi ha il permesso `log.viewAny`. | `app/Actions/Log/AuthorizeLogAccessAction.php` |
 | Livello di log | Gravita' di una riga di log: EMERGENCY, ALERT, CRITICAL, ERROR, WARNING, NOTICE, INFO, DEBUG. | `app/Enums/LogLevelEnum.php` |
-| Percorso di log risolto | Percorso reale e relativo di un file `.log`, garantito dentro la cartella dei log. | `app/Actions/Log/ResolveLogFilePathAction.php`, `app/Datas/ResolvedLogFileData.php` |
+| Percorso di log risolto | Percorso reale e relativo di un file `.log`, garantito dentro la cartella dei log. | `app/Actions/Log/GetLogFilePathAction.php`, `app/Datas/ResolvedLogFileData.php` |
 # Glossario di dominio Activity
 
 <!-- Le parole del dominio e dove stanno nel codice. Topology di AGENTS.md punta qui.

@@ -1864,13 +1864,13 @@ Quaeris/app/Actions/Contact/CreateContactFromArrayAction [90m..............[39
   Tenant/app/Actions/Config/GetTenantConfigNamesAction [90m..................[39m [31m0.0%[39m  
   Tenant/app/Actions/Config/GetTenantConfigPathAction [90m...................[39m [31m0.0%[39m  
   Tenant/app/Actions/Config/GetTenantFilePathAction [90m.....................[39m [31m0.0%[39m  
-  Tenant/app/Actions/Config/ResolveTenantConfigValueAction [90m..............[39m [31m0.0%[39m  
+  Tenant/app/Actions/Config/GetTenantConfigValueAction [90m..............[39m [31m0.0%[39m  
   Tenant/app/Actions/Config/SaveTenantConfigAction [90m......................[39m [31m0.0%[39m  
   Tenant/app/Actions/Domains/GetDomainsArrayAction [90m......................[39m [31m0.0%[39m  
   Tenant/app/Actions/GetTenantNameAction [90m................................[39m [31m0.0%[39m  
   Tenant/app/Actions/Markdown/GetLocalizedMarkdownPathAction [90m............[39m [31m0.0%[39m  
-  Tenant/app/Actions/Models/ResolveTenantModelClassAction [90m...............[39m [31m0.0%[39m  
-  Tenant/app/Actions/Models/ResolveTenantModelInstanceAction [90m............[39m [31m0.0%[39m  
+  Tenant/app/Actions/Models/GetTenantModelClassAction [90m...............[39m [31m0.0%[39m  
+  Tenant/app/Actions/Models/GetTenantModelInstanceAction [90m............[39m [31m0.0%[39m  
   Tenant/app/Actions/Modules/GetTenantModulesAction [90m.....................[39m [31m0.0%[39m  
   Tenant/app/Actions/Translations/TranslateTenantKeyAction [90m..............[39m [31m0.0%[39m  
   Tenant/app/Console/Commands/TestCommand [90m...............................[39m [31m0.0%[39m  

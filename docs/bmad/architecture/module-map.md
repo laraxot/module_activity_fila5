@@ -62,8 +62,8 @@ discussions: []
 
 | File | Responsabilita |
 |---|---|
-| `app/Actions/Log/ResolveLogDirectoryAction.php` | Individua la directory dei log |
-| `app/Actions/Log/ResolveLogFilePathAction.php` | Risolve il percorso di un file di log |
+| `app/Actions/Log/GetLogDirectoryAction.php` | Individua la directory dei log |
+| `app/Actions/Log/GetLogFilePathAction.php` | Risolve il percorso di un file di log |
 | `app/Actions/Log/ListLogFilesAction.php` | Elenco dei file di log |
 | `app/Actions/Log/BuildLogFileTreeAction.php` | Albero dei file per data |
 | `app/Actions/Log/ReadLogTailAction.php` | Ultime righe di un file |

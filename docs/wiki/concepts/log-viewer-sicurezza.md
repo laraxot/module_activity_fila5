@@ -28,8 +28,8 @@ E' **sola lettura**: nessuna Action scrive, rinomina o cancella un file.
 | `AuthorizeLogAccessAction` | **chi** puo' leggere |
 | `ListLogFilesAction` | elenca i `.log` sotto la cartella base, ricorsivo |
 | `BuildLogFileTreeAction` | ne costruisce l'albero per la colonna di sinistra |
-| `ResolveLogDirectoryAction` | percorso reale della cartella base (`storage/logs` salvo diversa indicazione) |
-| `ResolveLogFilePathAction` | **quale** file, e la sola traduzione da input utente a percorso su disco |
+| `GetLogDirectoryAction` | percorso reale della cartella base (`storage/logs` salvo diversa indicazione) |
+| `GetLogFilePathAction` | **quale** file, e la sola traduzione da input utente a percorso su disco |
 | `ReadLogTailAction` | legge la **coda** del file, mai il file intero |
 | `ParseLogEntriesAction` / `FilterLogEntriesAction` | righe → voci, filtro per livello e testo |
 | `BuildLogViewerStateAction` | mette insieme lo stato di un render |
@@ -55,7 +55,7 @@ rotta di login che in questo progetto potrebbe non esistere.
 
 ## Garanzia 2 — quale file
 
-`ResolveLogFilePathAction::execute()` e' l'unico punto che costruisce un percorso da input
+`GetLogFilePathAction::execute()` e' l'unico punto che costruisce un percorso da input
 dell'utente. Nell'ordine:
 
 1. percorso vuoto o con byte nullo (`\0`) → rifiutato;
@@ -68,7 +68,7 @@ dell'utente. Nell'ordine:
 5. estensione `.log` ricontrollata **sul percorso risolto** → un link simbolico chiamato
    `finto.log` che punta a `note.txt` non passa.
 
-Conseguenze, tutte coperte da `tests/Unit/Actions/Log/ResolveLogFilePathActionTest.php`:
+Conseguenze, tutte coperte da `tests/Unit/Actions/Log/GetLogFilePathActionTest.php`:
 
 - `../secret.log` e `reports/../../secret.log` → `InvalidLogFileException`;
 - un percorso assoluto (`/etc/passwd`, o il percorso reale di un file che esiste davvero

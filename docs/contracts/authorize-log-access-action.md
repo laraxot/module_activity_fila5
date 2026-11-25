@@ -45,7 +45,7 @@ Chi puo' consultare e scaricare i file di log. Regola unica usata da `LogViewer:
 
 ## Non fa
 
-- Non protegge il percorso dei file: lo fa [ResolveLogFilePathAction](resolve-log-file-path-action.md).
+- Non protegge il percorso dei file: lo fa [GetLogFilePathAction](get-log-file-path-action.md).
 - Non registra i tentativi negati.
 - Non crea il permesso mancante.
 Chi può consultare e scaricare i file di log dal pannello. Una sola regola per la pagina (`LogViewer::canAccess()`) e

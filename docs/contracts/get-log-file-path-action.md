@@ -1,20 +1,20 @@
 ---
-title: "Contratto — ResolveLogFilePathAction"
+title: "Contratto — GetLogFilePathAction"
 type: contract
 owner: Activity
 status: accepted
 updated: 2026-11-24
-action: "Modules\\Activity\\Actions\\Log\\ResolveLogFilePathAction"
-qmd: "contract ResolveLogFilePathAction activity log viewer path traversal ACT-LOGPATH-INV"
+action: "Modules\\Activity\\Actions\\Log\\GetLogFilePathAction"
+qmd: "contract GetLogFilePathAction activity log viewer path traversal ACT-LOGPATH-INV"
 tags: [contract, action, log-viewer, security, filesystem]
 created: 2026-11-24
 related:
   - ../adr/log-viewer-single-path-resolver.md
-  - ../../app/Actions/Log/ResolveLogFilePathAction.php
-  - ../../tests/Unit/Actions/Log/ResolveLogFilePathActionTest.php
+  - ../../app/Actions/Log/GetLogFilePathAction.php
+  - ../../tests/Unit/Actions/Log/GetLogFilePathActionTest.php
 ---
 
-# ResolveLogFilePathAction
+# GetLogFilePathAction
 
 Unico punto in cui l'input dell'utente del visualizzatore di log (`Filament/Pages/LogViewer.php`) diventa un percorso su disco; lettura (`BuildLogViewerStateAction`) e download (`DownloadLogFileAction`) passano da qui.
 
@@ -22,7 +22,7 @@ Unico punto in cui l'input dell'utente del visualizzatore di log (`Filament/Page
 ## Input
 
 - `string $relativePath`: percorso relativo scelto dall'utente.
-- `?string $baseDirectory`: cartella dei log; se `null` e' `storage/logs` (`ResolveLogDirectoryAction`).
+- `?string $baseDirectory`: cartella dei log; se `null` e' `storage/logs` (`GetLogDirectoryAction`).
 
 ## Output
 
@@ -31,7 +31,7 @@ Unico punto in cui l'input dell'utente del visualizzatore di log (`Filament/Page
 ## Invarianti
 
 - **ACT-LOGPATH-INV-1** — Percorso vuoto o con byte nullo e' rifiutato (`InvalidLogFileException::invalidPath`).
-  Verifica non marcata: `Modules/Activity/tests/Unit/Actions/Log/ResolveLogFilePathActionTest.php` («rejects files that are not .log, missing files, empty paths and null bytes»); nessun `->group('ACT-LOGPATH-INV-1')`.
+  Verifica non marcata: `Modules/Activity/tests/Unit/Actions/Log/GetLogFilePathActionTest.php` («rejects files that are not .log, missing files, empty paths and null bytes»); nessun `->group('ACT-LOGPATH-INV-1')`.
 - **ACT-LOGPATH-INV-2** — Sono ammessi solo file con estensione `.log`, controllata sull'input e sul file risolto.
   Stessa verifica non marcata (stesso test e «rejects a symlink named .log whose target is not a .log file»).
 - **ACT-LOGPATH-INV-3** — Il file risolto con `realpath()` deve stare dentro la cartella base: `..`, percorsi assoluti e link simbolici verso l'esterno sono rifiutati (`outsideLogDirectory` / `notFound`).
@@ -55,16 +55,16 @@ Unico punto in cui l'input dell'utente del visualizzatore di log (`Filament/Page
 L'unico punto del visualizzatore dei log che trasforma un input dell'utente (il file scelto) in un percorso su disco.
 Lettura (`BuildLogViewerStateAction`) e download (`DownloadLogFileAction`) passano tutti da qui. Perché uno solo:
 [ADR un solo risolutore di percorsi](../adr/log-viewer-single-path-resolver.md). Sorgente:
-`app/Actions/Log/ResolveLogFilePathAction.php`.
+`app/Actions/Log/GetLogFilePathAction.php`.
 
-Test: `cd laravel && vendor/bin/pest Modules/Activity/tests/Unit/Actions/Log/ResolveLogFilePathActionTest.php`.
+Test: `cd laravel && vendor/bin/pest Modules/Activity/tests/Unit/Actions/Log/GetLogFilePathActionTest.php`.
 
 ## Input
 
 | Parametro | Tipo | Note |
 |---|---|---|
 | `$relativePath` | `string` | percorso scelto nella pagina, relativo alla cartella dei log (`reports/rejected/daily.log`) |
-| `$baseDirectory` | `?string` | cartella base; `null` = `storage_path('logs')` (risolta da `ResolveLogDirectoryAction` con `realpath`) |
+| `$baseDirectory` | `?string` | cartella base; `null` = `storage_path('logs')` (risolta da `GetLogDirectoryAction` con `realpath`) |
 
 ## Output
 
