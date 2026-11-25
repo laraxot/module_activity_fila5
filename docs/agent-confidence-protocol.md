@@ -1,17 +1,14 @@
 ---
-qmd: "activity agent confidence protocol md"
-title: "Massima confidenza agente"
-type: reference
-status: approved
-tags: [agents, confidence, verification]
-created: "2026-05-26"
-updated: "2026-05-26"
-related:
-  - "../../../../docs/wiki/rules/agent-confidence-protocol.md"
+title: "agent-confidence-protocol.md (alias)"
+status: superseded
+superseded_by: "wiki/agent-confidence-protocol.md"
+type: alias
+updated: 2026-11-25
+qmd: "agent-confidence-protocol.md alias superseded consolidate"
 ---
 
-# Massima confidenza agente
+# Alias (superseded)
 
-Stub DRY. Regola canonica: [../../../../docs/wiki/rules/agent-confidence-protocol.md](../../../../docs/wiki/rules/agent-confidence-protocol.md).
+Canonico: [`wiki/agent-confidence-protocol.md`](wiki/agent-confidence-protocol.md).
 
-Checklist locale: issue GitHub, wiki owner, file letti a chunk, gate eseguiti, log aggiornato, limiti dichiarati.
+Questo path resta solo per link storici; non aggiungere contenuto qui.

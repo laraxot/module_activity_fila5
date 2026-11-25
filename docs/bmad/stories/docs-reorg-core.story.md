@@ -36,3 +36,11 @@ Vedi SSoT: [docs-md-filename-date-debt.story.md](../../../Xot/docs/bmad/stories/
 - `phpstan-analysis-november` / inventory-april / `ARCHITECTURE` → historical+stub
 - `bmad/readme.md` + `wiki/readme.md` rimossi (contenuto in `README.md`)
 - **ACTIVE ISO/month docs Activity = 0**
+
+## Diario exact-dup 2026-11-25 (Notify-UI-Activity lane)
+
+- Exact sha256 non-stub: **0** gruppi; hotspot storico `phpstan-fixes-activity-*` ridotto a un file (≠ `phpstan-fixes.md`, no merge cieco).
+- Stub body-identical (solo FM/qmd) questa wave: **26** → canoni `wiki/concepts/*`, `wiki/coverage*`, `wiki/features/activity-log-ui-improvements`.
+- Counts: total md **730→730**; non-stub **708→682**; stubs **22→48**.
+- `*-duplicate.md` near-name lasciati (hash diverso dal canone).
+- Lock: `bashscripts/lock/docs-consolidate-Notify-UI-Activity.lock`.
