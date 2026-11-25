@@ -11,7 +11,7 @@ qmd: "contract ActivityMaintenanceAction activity cleanup cancellazione vecchie 
 # ActivityMaintenanceAction
 
 Cancella le attivita' piu' vecchie di N giorni, a blocchi. Raggiunta da `Adapters/ActivityLogger::cleanOld()` (`app/Adapters/ActivityLogger.php:122`).
-Tensione da notare con l'[ADR append-oriented](../adr/activity-audit-is-append-oriented.md): questa e' l'unica operazione che rimuove righe di audit.
+Tensione da notare con l'[ADR append-oriented](../adr/0001-activity-audit-is-append-oriented.md): questa e' l'unica operazione che rimuove righe di audit.
 
 
 ## Input

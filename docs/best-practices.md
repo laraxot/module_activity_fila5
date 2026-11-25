@@ -40,7 +40,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/best_practic
 
 ## Componenti
 - Usa `LogActivityAction` per registrare eventi critici (modello `Activity`).
-- I modelli del modulo usano la connessione `activity`: vedi [ADR](adr/activity-models-on-dedicated-connection.md).
+- I modelli del modulo usano la connessione `activity`: vedi [ADR](adr/0002-activity-models-on-dedicated-connection.md).
 
 ## Test
 - Implementa test di integrazione per flussi di lavoro complessi.

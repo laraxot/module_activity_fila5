@@ -9,7 +9,7 @@ qmd: "contract LogActivityAction activity scrittura singola attivita causer subj
 tags: [contract, action, activity-log, audit]
 created: 2026-11-24
 related:
-  - ../adr/activity-models-on-dedicated-connection.md
+  - ../adr/0002-activity-models-on-dedicated-connection.md
   - ../../app/Actions/LogActivityAction.php
   - ../../tests/Unit/Actions/LogActivityActionConstructorTest.php
   - ../../tests/Unit/Actions/LogActivityActionExecuteValidationTest.php

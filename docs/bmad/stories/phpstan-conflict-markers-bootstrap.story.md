@@ -13,8 +13,25 @@ references:
   - ../../../../../../docs/sprint-status.yaml
   - ../../../../../../bashscripts/ai/wiki/memories/feedback-scan-committed-conflict-markers-first-on-bootstrap-crash.md
 ---
-
 # Story — Conflict markers Activity (PHP)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perché
 
@@ -62,3 +79,13 @@ Vedi esito chiusura in fondo story dopo PHPStan.
 - Pest: non dichiarato verde qui — host non production (`192.168.1.40`); suite Activity dipende da sqlite condiviso;
   gate Pest da ripetere in ambiente testing con DB raggiungibile.
 
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

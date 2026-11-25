@@ -4,8 +4,82 @@ qmd: "activity stories lang files pipe corruption story md"
 type: note
 tags: [documentation]
 ---
-
 # Story: file di lingua corrotti da una pipe prima di ogni carattere
+
+## Context and Problem Statement
+
+| gate | perche' passa |
+|---|---|
+| `php -l` | un file senza `<?php` e' PHP valido: e' testo da stampare |
+| PHPStan | nessun simbolo da analizzare, nessun errore da riportare |
+| Pint | niente codice da formattare |
+| preflight step 1c | guarda la dirty list, e questi file erano committati e puliti |
+
+E' il caso limite di «il difetto che non rompe niente non si vede»: non un test rosso
+ignorato, ma cinque strumenti che dicono verde su un file svuotato del suo contenuto.
+
+### Due corruzioni sovrapposte, non una
+
+1. **La pipe.** L'inverso e' deterministico: togliere il byte in posizione pari: e la
+   verifica non e' «sembra giusto»: i due `en/` cosi' ricostruiti sono **byte-identici**
+   alla copia pulita di `base_fixcity_fila5`. Non e' una ricostruzione plausibile, e' la
+   stessa.
+2. **Gli accenti.** Nei due `it/` le lettere accentate erano gia' `U+FFFD` **prima**
+   dell'inserimento della pipe, e due byte di sostituzione rompono anche l'allineamento
+   del pattern. Il testo italiano li' era perso, non recuperabile da una trasformazione.
+
+Quindi i quattro file sono stati ripresi da `base_laravelpizza`, l'unico clone con
+`attivita'` (x11) e `entita'` (x4) per esteso e con le righe `tooltip` ancora presenti.
+Scelto quello e **non** `base_fixcity_fila5` perche' fixcity ha perso proprio le righe
+dove c'erano gli accenti: e' piu' piccolo perche' e' mutilato, non perche' e' piu' snello.
+
+**Nessun testo italiano e' stato inventato.**
+
+### Il modulo e' condiviso: la corruzione ha viaggiato con lui
+
+| clone | file corrotti | accenti |
+|---|---:|---|
+| `base_ptvx_fila5` | 4 | persi |
+| `base_quaeris_fila5` | 4 | persi (11 `U+FFFD`): **ancora rotto** |
+| `base_fixcity_fila5` | 0 | righe `tooltip` cancellate |
+| `base_techplanner_fila5` | 0 | altra versione |
+| `base_laravelpizza` | 0 | **integro** |
+
+### Project Structure Notes
+
+Il file rimosso in Task 4 era un **documento Markdown con frontmatter YAML salvato `.php`
+dentro `Modules/Ptv/app/`**, committato dal 2026-08-27. Descriveva come proprio percorso
+un file che a quel percorso non e' mai stato codice: la classe vera e'
+`Modules\Rating\Filament\Tables\Filters\HasRatingValuesFilter`, ed e' da li' che
+`BaseSchedasTable` importa. Violava la regola docs (`docs/` non `app/`) e bloccava il
+preflight. Contenuto superstite spostato nella story Rating, non buttato.
+
+### Testing standards
+
+Nessun test nuovo: il difetto non e' esprimibile come test di dominio, e' una proprieta'
+del file sorgente. La guardia giusta e' quella messa nel preflight (step 1d), non un test
+Pest che rileggerebbe gli stessi byte.
+
+### References
+
+- [Source: bashscripts/docs/prompts/03-quality-gates.md#preflight]: step 1c e nuovo 1d
+- [Source: laravel/Modules/Rating/docs/stories/ratings-column-section-filter.story.md#Il-predecessore]
+- [Source: docs/chat/quality-gates-preflight-file-corrotti.md]
+- [Source: docs/wiki/rules/bmad-story-github-links-mandatory.md]
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Status: done
 
@@ -170,3 +244,13 @@ claude-opus-5[1m]: sessione `c21fdd4e`
 - `laravel/Modules/IndennitaResponsabilita/app/Models/Rating.php`: `@property int|null $parent_id`
 - `bashscripts/docs/prompts/03-quality-gates.md`: 3.24.0
 - `docs/sprint-status.yaml`, `docs/chat/quality-gates-preflight-file-corrotti.md`
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

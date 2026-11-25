@@ -9,7 +9,7 @@ qmd: "contract GetLogFilePathAction activity log viewer path traversal ACT-LOGPA
 tags: [contract, action, log-viewer, security, filesystem]
 created: 2026-11-24
 related:
-  - ../adr/log-viewer-single-path-resolver.md
+  - ../adr/0003-log-viewer-single-path-resolver.md
   - ../../app/Actions/Log/GetLogFilePathAction.php
   - ../../tests/Unit/Actions/Log/GetLogFilePathActionTest.php
 ---
@@ -54,7 +54,7 @@ Unico punto in cui l'input dell'utente del visualizzatore di log (`Filament/Page
 - Non limita la dimensione del file.
 L'unico punto del visualizzatore dei log che trasforma un input dell'utente (il file scelto) in un percorso su disco.
 Lettura (`BuildLogViewerStateAction`) e download (`DownloadLogFileAction`) passano tutti da qui. Perché uno solo:
-[ADR un solo risolutore di percorsi](../adr/log-viewer-single-path-resolver.md). Sorgente:
+[ADR un solo risolutore di percorsi](../adr/0003-log-viewer-single-path-resolver.md). Sorgente:
 `app/Actions/Log/GetLogFilePathAction.php`.
 
 Test: `cd laravel && vendor/bin/pest Modules/Activity/tests/Unit/Actions/Log/GetLogFilePathActionTest.php`.

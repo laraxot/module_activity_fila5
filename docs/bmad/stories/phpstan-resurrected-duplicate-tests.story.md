@@ -9,8 +9,25 @@ qmd: "phpstan activity test resuscitati sync one-empty logoutlistener snapshot d
 related:
   - ../../../../Xot/docs/bmad/stories/merge-conflict-markers-committed-bonifica.story.md
 ---
-
 # Test duplicati resuscitati dalla sync
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Causa
 
@@ -40,3 +57,13 @@ cancellazione voluta del root: confrontare con il blob a `SYNC_BASE`.
 - [x] PHPStan Modules completo (cache fredda): `{"errors":0,"file_errors":0}` alle 10:2x
 - [ ] Pest: skip documentato — `TestDatabaseGuard` rifiuta `10.100.200.53` anche via
       `bashscripts/tools/pest-scratch-db.sh` (nessun MariaDB locale in questo WSL)
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

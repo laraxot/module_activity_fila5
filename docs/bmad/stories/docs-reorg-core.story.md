@@ -4,8 +4,25 @@ type: story
 tags: [docs, bmad, activity, reorganization]
 qmd: "riorganizzazione docs core Activity"
 ---
-
 # Story — riorganizzazione docs core: Activity
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 - **ID:** `2026-10-09-docs-reorg-core-activity`
 - **Status:** done
@@ -44,3 +61,13 @@ Vedi SSoT: [docs-md-filename-date-debt.story.md](../../../Xot/docs/bmad/stories/
 - Counts: total md **730→730**; non-stub **708→682**; stubs **22→48**.
 - `*-duplicate.md` near-name lasciati (hash diverso dal canone).
 - Lock: `bashscripts/lock/docs-consolidate-Notify-UI-Activity.lock`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

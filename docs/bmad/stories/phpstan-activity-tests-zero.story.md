@@ -17,8 +17,25 @@ type: story
 tags: [activity, phpstan, pest, audit-log, bmad]
 qmd: "activity phpstan zero errors tests TestCase ActivityLogger log viewer download"
 ---
-
 # Story — PHPStan Activity tests a zero
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perché
 
@@ -72,3 +89,12 @@ Istruzione utente (verbatim): paste dei 7 errori su LogModel*/Listeners/OtherMod
 
 Verifica: `phpstan analyse` sui 6 file → **[OK] No errors**.  
 Pest Activity: hang bootstrap su MySQL `10.100.200.53` (conn `user`) — skip documentato; host `192.168.1.40`.
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

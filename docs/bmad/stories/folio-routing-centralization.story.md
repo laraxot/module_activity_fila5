@@ -8,8 +8,25 @@ related:
   - ../../../../../../bashscripts/ai/wiki/memories/filament-tables-forms-xotbase.md#filament5-layout-contract-shared-modules
   - ../../../../User/docs/wiki/concepts/folio-pages-owner-pattern.md
 ---
-
 # Story: centralizzare il routing Folio dei moduli
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Problema
 
@@ -71,3 +88,19 @@ applicata; istruzione utente: aggiungere Folio nel provider «è sbagliato»).
 - [x] Pagina Activity visibile nell'inventario Folio (progetti con Cms).
 - [x] Pest `ActivityServiceProviderNoFolioMountTest`.
 - [ ] Pest feature `LogDownloadPageTest` verde in ambiente di test stabile.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `php -l` sui provider: verde;
+- `bootstrap/providers.php` non registra `App\Providers\FolioServiceProvider`;
+- `Folio::path()` assente da `ActivityServiceProvider`
+  (guardia: `tests/Unit/Providers/ActivityServiceProviderNoFolioMountTest.php`);
+- con Cms presente: `php artisan folio:list --path=api/log-download` mostra GET `/api/log-download`;
+- `phpstan analyse Modules`: gate da rieseguire dopo il rilascio del lock;
+- Pest feature `tests/Feature/Filament/LogDownloadPageTest.php`: da eseguire solo in ambiente di test raggiungibile.

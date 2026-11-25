@@ -4,8 +4,25 @@ qmd: "activity stories activity mixed type reduction story md"
 type: note
 tags: [documentation]
 ---
-
 # Story: Riduzione uso di `mixed`: Activity
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 **Modulo**: Activity
 **Tipo**: type-safety (best-effort, no PHPStan regression)
@@ -103,3 +120,24 @@ in conflitto, nessuna sovrascrittura del lavoro altrui.
 - I restanti ~155 usi di `mixed` documentati come intenzionali in `docs/coverage.md`
   restano un audit trail, non un backlog da azzerare: la maggior parte e' legittimamente
   polimorfa o vincolata da firme vendor.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- PHPStan (`./vendor/bin/phpstan analyse Modules/Activity --no-progress`): 0 → 0 errori,
+  nessuna regressione introdotta.
+- PHPMD: crash noto su tutto il modulo (`No node to visit provided for
+  visitAnonymousClass`); rieseguito sui 4 file toccati: un solo finding informativo
+  pre-esistente (`UnusedFormalParameter $record`, gia' inutilizzato prima del rename di
+  tipo).
+- Pest: `./vendor/bin/pest Modules/Activity/tests -c Modules/Activity/phpunit.xml
+  --no-coverage` fallisce con bootstrap non trovato
+  (`Modules/Activity/vendor/autoload.php` non esiste: il monorepo ha un solo `vendor/`
+  in `laravel/`). Difetto pre-esistente di `phpunit.xml` del modulo (file non toccato in
+  questa sessione, `git status`/`git log` puliti su quel path), non imputabile a questo
+  diff. Suite non eseguibile con l'invocazione canonica.

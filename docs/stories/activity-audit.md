@@ -6,6 +6,24 @@ links: {github_issue: "#401", discussion: "#402"}
 ---
 # Story Activity Audit Log Completo
 
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 ## User Job + Success State
 Come cittadino o operatore comunale, voglio vedere la cronologia completa di una segnalazione (data creazione, presa in carico, inizio lavori, completamento, verifica) per avere trasparenza sullo stato di avanzamento e garantire accountability.
 
@@ -37,3 +55,13 @@ Homepage DECORO URBANO — dashboard dati aperti, filtri categoria, KPI temporal
 - Stati interattivi completi con `:focus-visible` + `:disabled`
 - Transizione/animazione con `prefers-reduced-motion` fallback
 - Nessuna glassmorphism, gradient orb, neon glow, default-card, 1px gray border, tracked-out eyebrow, tinted near-black
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

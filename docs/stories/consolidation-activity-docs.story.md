@@ -3,8 +3,25 @@ title: Consolidation activity docs 2026 10 06.story
 module: Activity
 qmd: "consolidation activity story 2026 06story"
 ---
-
 # Story: Activity Module Documentation Consolidation (Phase 1)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 **Phase**: BMAD  
 **Date**: 2026-10-06  
@@ -174,3 +191,18 @@ Activity/docs/
 # consolidation activity docs
 
 Stub alias post-strip data/timestamp. Canonico: [./consolidation-activity-docs.story.md](./consolidation-activity-docs.story.md).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+✓ All files accounted for (moved, archived, or kept)  
+✓ No files deleted (safety: archived instead)  
+✓ New wiki/ subdirectories created  
+✓ Duplicates consolidated  
+✓ TODO.md created for tracking next steps  
+✓ BMAD story documented

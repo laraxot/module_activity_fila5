@@ -11,8 +11,25 @@ superseded_by: "phpstan-cleanup-activity-dev.md"
 updated: 2026-11-17
 qmd: "phpstan cleanup activity wave dev"
 ---
-
 # [DEV] PHPStan cleanup — Activity
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Technical Plan
 
@@ -59,3 +76,19 @@ Esito: 0 errori sui 9 moduli del gruppo (anche con run completo `./vendor/bin/ph
 - Segnalazioni NON mie nel working tree (pre-esistenti, non toccate): `tests/Feature/Filament/LogViewerPageTest.php` ha perso due asserzioni `toBeInstanceOf(Action::class)`.
 
 > Deprecated alias. Canonico: [./phpstan-cleanup-activity.dev.md](phpstan-cleanup-activity-dev.md).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+```bash
+cd laravel && ./vendor/bin/phpstan analyse Modules/Tenant Modules/Activity Modules/Media Modules/AI Modules/UI Modules/Job Modules/Gdpr Modules/TechPlanner Modules/Seo --memory-limit=-1 --no-progress
+php -l <file toccati>
+
+```
+
+Esito: 0 errori sui 9 moduli del gruppo (anche con run completo `./vendor/bin/phpstan analyse` senza argomenti).

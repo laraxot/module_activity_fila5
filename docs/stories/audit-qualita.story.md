@@ -9,8 +9,25 @@ issues: ["laraxot/base_techplanner_fila5#64"]
 tags: [audit, qualita, docs, phpstan, pest]
 qmd: "audit qualita story activity"
 ---
-
 # Audit qualita' — modulo Activity
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Story BMAD dell'audit di qualita' coordinato nella issue
 [#64](https://github.com/laraxot/base_techplanner_fila5/issues/64).
@@ -56,3 +73,13 @@ Ambito: solo `Modules/Activity` (documentazione e `app/`).
 - [x] Nessun duplicato esatto in `docs/`
 - [x] Test Pest non peggiorati
 - [ ] Punti aperti sopra risolti
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -12,8 +12,25 @@ references:
   - bashscripts/ai/wiki/memories/multi-agent-coordination.md#phpstan-swarm-single-slot-sequencing
 qmd: "phpstan swarm cluster5 story cluster activity"
 ---
-
 # PHPStan swarm cluster 5 — Activity
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 Cluster 5 (Performance, Activity, IndennitaCondizioniLavoro), ordine random:
@@ -61,3 +78,13 @@ chiudere il gate; output atteso 0 errori.
 # phpstan swarm cluster5
 
 Stub alias post-strip data/timestamp. Canonico: [./phpstan-swarm-cluster5.story.md](./phpstan-swarm-cluster5.story.md).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

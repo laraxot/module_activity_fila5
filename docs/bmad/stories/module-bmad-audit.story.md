@@ -11,8 +11,25 @@ related:
   - ../epics.md
   - ../piano-miglioramento.md
 ---
-
 # Story: audit BMAD profondo del modulo Activity
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -79,3 +96,13 @@ File toccati: `tests/TestCase.php`, `tests/Feature/{ActionsTest,BaseModelBusines
 BaseModelBusinessLogicPestTest,CodeQualityTest,FilamentTest}.php`,
 `tests/Feature/Filament/Actions/ListLogActivitiesActionTest.php`,
 `tests/Security/AccessControlTest.php`, `app/Providers/ActivityServiceProvider.php`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

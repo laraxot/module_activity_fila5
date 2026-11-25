@@ -34,7 +34,7 @@ Chi cambia una decisione scrive un nuovo ADR e segna il precedente `superseded b
 
 ## ADR presenti
 
-- [activity-audit-is-append-oriented](activity-audit-is-append-oriented.md)
+- [activity-audit-is-append-oriented](0001-activity-audit-is-append-oriented.md)
 
 Elenco con stato: [INDEX.md](index.md).
 Il **perché** delle scelte di questo pacchetto: una decisione per file, con le alternative scartate. Oggi spiegano due
@@ -77,5 +77,5 @@ Pro, contro, debito che resta, cosa misurare. Chi cambia la decisione scrive un 
 
 ## Indice
 
-- [I modelli di Activity usano la connessione 'activity'](activity-models-on-dedicated-connection.md) — log separabile in un altro database e rollback dei test coerente; debito: Spatie scrive sulla default.
-- [Visualizzatore dei log: un solo risolutore di percorsi](log-viewer-single-path-resolver.md) — `realpath` e solo `.log` dentro `storage/logs`, una regola di accesso, download a blocchi.
+- [I modelli di Activity usano la connessione 'activity'](0002-activity-models-on-dedicated-connection.md) — log separabile in un altro database e rollback dei test coerente; debito: Spatie scrive sulla default.
+- [Visualizzatore dei log: un solo risolutore di percorsi](0003-log-viewer-single-path-resolver.md) — `realpath` e solo `.log` dentro `storage/logs`, una regola di accesso, download a blocchi.

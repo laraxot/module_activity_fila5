@@ -15,8 +15,25 @@ created: 2026-11-19
 updated: 2026-11-19
 qmd: "phpstan log tests false positives story"
 ---
-
 # 227.1 Activity — 183 segnalazioni PHPStan, zero difetti
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Il numero
 
@@ -114,3 +131,13 @@ Dettaglio in [concepts/log-viewer-sicurezza.md](../wiki/concepts/log-viewer-sicu
 - La configurazione PHPStan e' in mano a chi sta facendo l'audit in
   `docs/audits/phpstan-configurazione.md`: finche' `phpstan.neon` non e' committato, la
   misura "zero" vale sull'albero di lavoro, non su `origin/dev`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

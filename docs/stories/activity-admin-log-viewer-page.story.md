@@ -26,8 +26,25 @@ github:
   discussions: https://github.com/laraxot/base_quaeris_fila5/discussions/205
 qmd: "activity admin log viewer page story"
 ---
-
 # STORY — Pagina Log nel pannello Activity
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 > **Fonte del contesto:** [quaeris-admin-log-viewer-no-ssh.md](../../../Quaeris/docs/stories/quaeris-admin-log-viewer-no-ssh.md)
 > (modulo Quaeris). Il lavoro tocca due moduli, quindi la story esiste in entrambi con `related:` bidirezionali. Qui non si ripete
@@ -137,3 +154,13 @@ Il tracciamento sta nel repo Quaeris (il bisogno nasce lì) e nella root. L'impl
 | Issue (modulo Quaeris) | lavoro tracciabile | https://github.com/laraxot/module_quaeris_fila5/issues/49 |
 | Issue (root, mirror) | mirror | https://github.com/laraxot/base_quaeris_fila5/issues/204 |
 | Discussion (root) | scelte e domande per il team | https://github.com/laraxot/base_quaeris_fila5/discussions/205 |
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

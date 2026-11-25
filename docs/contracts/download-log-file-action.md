@@ -9,7 +9,7 @@ qmd: "contract DownloadLogFileAction activity log download file BinaryFileRespon
 tags: [contract, action, log-viewer, download, filesystem]
 created: 2026-11-24
 related:
-  - ../adr/log-viewer-single-path-resolver.md
+  - ../adr/0003-log-viewer-single-path-resolver.md
   - get-log-file-path-action.md
   - ../../app/Actions/Log/DownloadLogFileAction.php
   - ../../tests/Unit/Actions/Log/DownloadLogFileActionTest.php

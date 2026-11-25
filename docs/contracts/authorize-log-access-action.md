@@ -9,7 +9,7 @@ qmd: "contract AuthorizeLogAccessAction activity log viewer permesso log.viewAny
 tags: [contract, action, log-viewer, authorization]
 created: 2026-11-24
 related:
-  - ../adr/log-viewer-single-path-resolver.md
+  - ../adr/0003-log-viewer-single-path-resolver.md
   - ../../app/Actions/Log/AuthorizeLogAccessAction.php
   - ../../app/Filament/Pages/LogViewer.php
   - ../../tests/Unit/Actions/Log/AuthorizeLogAccessActionTest.php

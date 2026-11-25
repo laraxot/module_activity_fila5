@@ -10,8 +10,25 @@ references:
   - ../../../tests/Unit/SnapshotPolicyTest.php
 qmd: "Activity PHP conflict markers SnapshotPolicyTest merge resolution"
 ---
-
 # Story — Marker di conflitto PHP
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Acceptance criteria
 
@@ -33,3 +50,13 @@ produzione o fixture è stata modificata.
 `php -l` e Pint sono verdi. La scansione dei marker PHP restituisce zero risultati.
 Pest ha restituito exit 2 con quattro bootstrap failure e zero assertion per il
 `TestDatabaseGuard`; non è stato consentito alcun accesso al database remoto.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).
