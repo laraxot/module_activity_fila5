@@ -172,8 +172,8 @@ done
 ## References
 
 - Pandoc official: https://pandoc.org
-- Installation guide: docs/wiki/tools/pandoc-installation.md
-- Usage guide: docs/wiki/tools/pandoc-usage.md
+- Installation guide: docs/wiki/pandoc.md
+- Usage guide: docs/wiki/pandoc.md
 - Module docs home: Modules/Activity/docs/
 
 ## Contenuto fuso da `pandoc-guide.md`
