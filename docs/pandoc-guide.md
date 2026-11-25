@@ -175,3 +175,7 @@ done
 - Installation guide: docs/wiki/tools/pandoc-installation.md
 - Usage guide: docs/wiki/tools/pandoc-usage.md
 - Module docs home: Modules/Activity/docs/
+
+## Contenuto fuso da `pandoc-guide.md`
+
+# Pandoc Documentation Generation — Activity Module

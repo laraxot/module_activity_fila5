@@ -8,6 +8,7 @@ module: Activity
 tags: [adr, activity, audit]
 created: 2026-11-23
 updated: 2026-11-24
+qmd: "activity adr audit attività append-oriented contesto decisione driver alternative scartate conseguenze conferma verifica activity-audit-is-append-oriented"
 ---
 
 # L'audit delle attività è append-oriented

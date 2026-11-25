@@ -73,3 +73,9 @@ Se esegui `migrate --force` in produzione:
 ---
 
 **URLATO PER ESSERE LETTO PRIMA DI OGNI MIGRATION** 🔴🔴🔴
+
+## Contenuto fuso da `critical-migration-constraints.md`
+
+- [Forward-Only Philosophy](docs/claude/project-rules-summary.md)
+- [qwen-2.md](qwen-2.md) - Sezione 7: Database SACRO
+- [AGENTS.md](AGENTS.md) - Regola Critica

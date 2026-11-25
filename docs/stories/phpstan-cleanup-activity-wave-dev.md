@@ -7,7 +7,7 @@ status: done
 created: 2026-10-06
 updated: 2026-10-06
 tags: [phpstan, cleanup, bmad, activity]
-superseded_by: "./phpstan-cleanup-activity.dev.md"
+superseded_by: "phpstan-cleanup-activity-dev.md"
 updated: 2026-11-17
 qmd: "phpstan cleanup activity wave dev"
 ---
@@ -58,4 +58,4 @@ Esito: 0 errori sui 9 moduli del gruppo (anche con run completo `./vendor/bin/ph
 - Un test che estrae una variabile e non la usa spesso ha un'asserzione mancante: qui `customer_info`.
 - Segnalazioni NON mie nel working tree (pre-esistenti, non toccate): `tests/Feature/Filament/LogViewerPageTest.php` ha perso due asserzioni `toBeInstanceOf(Action::class)`.
 
-> Deprecated alias. Canonico: [./phpstan-cleanup-activity.dev.md](./phpstan-cleanup-activity.dev.md).
+> Deprecated alias. Canonico: [./phpstan-cleanup-activity.dev.md](phpstan-cleanup-activity-dev.md).

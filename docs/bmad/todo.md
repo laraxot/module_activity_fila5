@@ -66,7 +66,7 @@ Consolidated 41 orphaned `.md` files in `laravel/Modules/Activity/docs/` into st
 
 ✓ `README.md` — Module overview (644 lines)  
 ✓ `API.md` — Public API documentation (30 lines)  
-✓ `ARCHITECTURE.md` — Architecture overview (269 lines)  
+✓ `architecture.md` — Architecture overview (269 lines)  
 ✓ `00-INDEX.md` — Index (69 lines)  
 ✓ `purpose.md` — Module purpose (98 lines)
 

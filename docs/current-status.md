@@ -111,7 +111,7 @@ activity()
 ### Refactoring
 - [SchedaTrait Refactoring Plan](../../sigma/docs/refactoring/scheda-trait-accessor-save-issue.md) - Piano dettagliato fix definitivo
 - [BaseScheda Activity Log](../../Ptv/docs/models/base-scheda-activity-log.md) - Status disabilitato
-- [IndennitaResponsabilita Integration](../../IndennitaResponsabilita/docs/activity-log-integration.md)
+- [IndennitaResponsabilita Integration](../../IndennitaResponsabilita/docs/bmad/activity-log-integration.md)
 
 ### Refactoring
 - [SchedaTrait Refactoring Plan](../../Sigma/docs/refactoring/scheda-trait-accessor-save-issue.md) - Piano dettagliato fix definitivo

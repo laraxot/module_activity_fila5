@@ -36,7 +36,7 @@ Chi cambia una decisione scrive un nuovo ADR e segna il precedente `superseded b
 
 - [activity-audit-is-append-oriented](activity-audit-is-append-oriented.md)
 
-Elenco con stato: [INDEX.md](INDEX.md).
+Elenco con stato: [INDEX.md](index.md).
 Il **perché** delle scelte di questo pacchetto: una decisione per file, con le alternative scartate. Oggi spiegano due
 forme di Activity che sembrano eccessive: i modelli su una connessione dedicata (`activity`) invece della default, e il
 visualizzatore dei log che fa passare ogni percorso scelto dall'utente da un solo risolutore.

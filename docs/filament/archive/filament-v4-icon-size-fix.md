@@ -77,3 +77,11 @@ After applying these fixes:
 ## Related Documentation
 - [Filament v4 Upgrade Guide](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Filament v4 Icon Component](https://filamentphp.com/docs/4.x/support/icons)
+
+## Contenuto fuso da `filament-v4-icon-size-fix.md`
+
+3. **Modules/Quaeris/resources/views/filament/widgets/overlook-stats.blade.php**
+
+3. **Modules/<nome progetto>/resources/views/filament/widgets/overlook-stats.blade.php**
+   - Removed `:size="24"` from two icon instances
+   - Size controlled via CSS classes `size-4` and `h-36`

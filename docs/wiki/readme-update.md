@@ -75,3 +75,10 @@ php artisan test --filter=Snapshot
 # Con coverage
 php artisan test Modules/Activity --coverage
 ```
+
+## Contenuto fuso da `readme-update.md`
+
+**Documentazione**:
+- [No RefreshDatabase Policy](./testing/no-refresh-database-policy.md)
+- [Snapshot Testing Patterns](./testing/snapshot-testing-patterns.md)
+- [Xot Testing Strategy](../../Xot/docs/testing-strategy.md)

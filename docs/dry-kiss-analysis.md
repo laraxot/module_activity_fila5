@@ -80,3 +80,9 @@ See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-ana
 # dry kiss analysis
 
 Stub alias post-strip data/timestamp. Canonico: [./dry-kiss-analysis.md](./dry-kiss-analysis.md).
+
+## Contenuto fuso da `dry-kiss-analysis.md`
+
+See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-1.md

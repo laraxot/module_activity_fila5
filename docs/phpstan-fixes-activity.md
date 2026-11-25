@@ -1,17 +1,14 @@
 ---
 title: "Correzioni PHPStan - Modulo Activity"
 type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "correzioni phpstan - modulo activity activity"
+qmd: "phpstan fixes activity 1 correzioni"
 ---
 # Correzioni PHPStan - Modulo Activity
 
 ## 🚨 Errori PHPStan Risolti
 
 ### 1. StoredEventFactory.php - Type Safety
-**Errore**: `array_merge` con parametri mixed invece di array  
+**Errore**: `array_merge` con parametri mixed invece di array
 **Soluzione**: Cast esplicito per garantire type safety
 
 ```php
@@ -25,8 +22,8 @@ qmd: "correzioni phpstan - modulo activity activity"
 ),
 ```
 
-### 2. ActivityMassSeeder.php - Factory Method  
-**Errore**: `Activity::factory()` metodo non trovato  
+### 2. ActivityMassSeeder.php - Factory Method
+**Errore**: `Activity::factory()` metodo non trovato
 **Soluzione**: Utilizzo diretto della factory class
 
 ```php
@@ -39,7 +36,7 @@ $activities = \Modules\Activity\Database\Factories\ActivityFactory::new()
 ```
 
 ### 3. File Traduzione - Chiavi Duplicate
-**Errore**: Chiavi 'navigation' e 'fields' duplicate nei file DE e EN  
+**Errore**: Chiavi 'navigation' e 'fields' duplicate nei file DE e EN
 **Soluzione**: Rimozione sezioni duplicate alla fine dei file
 
 ## ✅ Risultati
@@ -50,3 +47,13 @@ $activities = \Modules\Activity\Database\Factories\ActivityFactory::new()
 - **PHPStan Level 9**: Compliance ripristinata
 
 *Ultimo aggiornamento: gennaio 2025*
+---
+module: theme
+topic: phpstan-fixes-activity-1
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-activity-1.md

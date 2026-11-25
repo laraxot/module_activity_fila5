@@ -34,3 +34,7 @@ XDEBUG_MODE=coverage php -d memory_limit=2G ./vendor/bin/pest Modules/Activity/t
 
 - PHPStan gira a level max su tutto `Modules/`: il valore sopra è quello del singolo modulo.
 - Il coverage completo per tutti i moduli è costoso (~2 min/modulo con Xdebug): da eseguire selettivamente o via CI.
+
+## Contenuto fuso da `quality-report.md`
+
+# Quality Report — Activity

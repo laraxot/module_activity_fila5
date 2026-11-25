@@ -258,3 +258,9 @@ class ActivityPolicy
 - [Quality](roadmap/quality.md)
 - [Performance](PERFORMANCE.md) _(target mancante, verificato 2026-10-14)_
 - [Testing](testing.md)
+
+## Contenuto fuso da `architecture.md`
+
+# Alias
+
+Contenuto consolidato in [./architecture.md](./architecture.md).

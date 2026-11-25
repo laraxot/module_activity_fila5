@@ -31,9 +31,9 @@ Strategic, foundational, and consolidated documentation at module level:
 
 **Planning & Strategy** (Key documents)
   - [README.md](README.md)
-  - [product_strategy.md](product_strategy.md)
-  - [roadmap.md](roadmap.md)
-  - [sprint_planning.md](sprint_planning.md)
+  - product_strategy.md
+  - [roadmap.md](development/roadmap.md)
+  - sprint_planning.md
 
 **Additional Root Files**
   - and 278+ more documentation files (configuration, guides, analysis, audits, quality reports)
@@ -292,3 +292,149 @@ Testing strategies and guidelines:
 *Generated: 2026-07-28 10:45:00*  
 *Total Files Analyzed: 698 files across 20 categories*  
 *Ready for discovery, navigation, and improvement planning*
+
+## Contenuto fuso da `index-generated.md`
+
+**Core Documentation** (Key files)
+  - [ARCHITECTURE.md](architecture.md) — System architecture and design patterns
+  - [API.md](API.md) — API reference and endpoints
+  - [DATABASE-SCHEMA.md](DATABASE-SCHEMA.md) — Database schema definitions
+  - [QUICK-START.md](QUICK-START.md) — Quick start guide
+  - [PATTERNS.md](PATTERNS.md) — Design patterns and implementation guides
+  - [TESTING.md](TESTING.md) — Testing strategy and guidelines
+  - [ARCHITECTURE.md](architecture.md): System architecture and design patterns
+  - [API.md](API.md): API reference and endpoints
+  - [DATABASE-SCHEMA.md](DATABASE-SCHEMA.md): Database schema definitions
+  - [QUICK-START.md](QUICK-START.md): Quick start guide
+  - [PATTERNS.md](PATTERNS.md): Design patterns and implementation guides
+  - [TESTING.md](TESTING.md): Testing strategy and guidelines
+
+**Planning & Strategy** (Key documents)
+  - [README.md](README.md)
+  - [PRODUCT_STRATEGY.md](PRODUCT_STRATEGY.md)
+  - [ROADMAP.md](ROADMAP.md)
+  - [ROADMAP.md](development/roadmap.md)
+  - [SPRINT_PLANNING.md](SPRINT_PLANNING.md)
+
+- **Activity Tracking** — User activity logging and monitoring
+- **Event Management** — Event lifecycle and state management
+- **Analytics** — Tracking, reporting, and data analysis
+- **Integrations** — Third-party system integrations
+- **Performance** — Optimization and bottleneck analysis
+- **Activity Tracking**: User activity logging and monitoring
+- **Event Management**: Event lifecycle and state management
+- **Analytics**: Tracking, reporting, and data analysis
+- **Integrations**: Third-party system integrations
+- **Performance**: Optimization and bottleneck analysis
+- and 112+ more use case specifications
+
+**Architecture** (3 files) — System design documentation  
+**Tecnico** (2 files) — Technical specifications  
+**Guides** (2 files) — User and developer guides  
+**Use-Cases** (1 file) — Use case documentation  
+**UI/UX** (1 file) — Interface design documentation  
+**Troubleshooting** (1 file) — General troubleshooting  
+**Tests** (1 file) — Test documentation  
+**Quality Analysis** (1 file) — Code quality metrics  
+**Outputs** (1 file) — Generated reports  
+**Development** (1 file) — Development workflow  
+**Database** (1 file) — Database documentation  
+**Concepts** (1 file) — Conceptual guides  
+**Charts** (1 file) — Data visualization  
+**Actions** (1 file) — Action implementation  
+**Integration** (1 file) — Integration patterns  
+**Architecture** (3 files): System design documentation  
+**Tecnico** (2 files): Technical specifications  
+**Guides** (2 files): User and developer guides  
+**Use-Cases** (1 file): Use case documentation  
+**UI/UX** (1 file): Interface design documentation  
+**Troubleshooting** (1 file): General troubleshooting  
+**Tests** (1 file): Test documentation  
+**Quality Analysis** (1 file): Code quality metrics  
+**Outputs** (1 file): Generated reports  
+**Development** (1 file): Development workflow  
+**Database** (1 file): Database documentation  
+**Concepts** (1 file): Conceptual guides  
+**Charts** (1 file): Data visualization  
+**Actions** (1 file): Action implementation  
+**Integration** (1 file): Integration patterns
+
+| Date | File | Category |
+|------|------|----------|
+| 2026-07-28 | [PATTERNS.md](PATTERNS.md) | root |
+| 2026-07-28 | [TESTING.md](TESTING.md) | root |
+| 2026-07-28 | [DATABASE-SCHEMA.md](DATABASE-SCHEMA.md) | root |
+| 2026-07-28 | [API.md](API.md) | root |
+| 2026-07-28 | [QUICK-START.md](QUICK-START.md) | root |
+| 2026-07-28 | [ARCHITECTURE.md](architecture.md) | root |
+| 2026-07-28 | [archive/INDEX.md](archive/INDEX.md) | archive |
+| 2026-07-28 | [wiki/troubleshooting/git-push-dual-remote.md](wiki/troubleshooting/git-push-dual-remote.md) | wiki |
+| 2026-07-28 | [wiki/concepts/xotbase-resource-zen-pattern.md](wiki/concepts/xotbase-resource-zen-pattern.md) | wiki |
+| 2026-07-28 | [wiki/concepts/phpstan-pest-discipline.md](wiki/concepts/phpstan-pest-discipline.md) | wiki |
+| 2026-07-28 | [testing-guidelines.md](testing-guidelines.md) | root |
+| 2026-07-28 | [test444.md](test444.md) | root |
+| 2026-07-28 | [test2222.md](test2222.md) | root |
+| 2026-07-28 | [test2024-12-04.md](test2024-12-04.md) | root |
+| 2026-07-28 | [test2024-12-04.md](raw/root-import/test2024-12-04.md) | root |
+| 2026-07-28 | [test04.md](test04.md) | root |
+| 2026-07-28 | [test03.md](test03.md) | root |
+| 2026-07-28 | [test02.md](test02.md) | root |
+| 2026-07-28 | [test.md](test.md) | root |
+| 2026-07-28 | [test-14-02-2024.md](test-14-02-2024.md) | root |
+| 2026-07-28 | [test-14-02-2024.md](raw/root-import/test-14-02-2024.md) | root |
+| 2026-07-28 | [raw/root-import/changelog-1.md](raw/root-import/changelog-1.md) | raw |
+
+1. **Large Repository**: 698 files indicate comprehensive documentation across multiple functional areas
+2. **Test Files**: Multiple test*.md files in root suggest work-in-progress documentation (consider archiving)
+3. **Deduplication**: Similar files in root-md-files/, archived/, and main locations should be consolidated
+4. **Wiki Structure**: Well-organized wiki with concepts and troubleshooting but could expand how-to guides
+5. **Use Cases**: 117 use case files are a valuable asset — ensure they remain indexed and discoverable
+5. **Use Cases**: 117 use case files are a valuable asset: ensure they remain indexed and discoverable
+
+## Contenuto fuso da `index-generated.md`
+
+**Core Documentation** (Key files)
+  - [architecture-3.md](architecture-uppercase-historical.md) — System architecture and design patterns
+  - [api-2.md](api-2.md) — API reference and endpoints
+  - [database-schema-2.md](database-schema-2.md) — Database schema definitions
+  - [QUICK-START.md](QUICK-START.md) — Quick start guide
+  - [patterns-2.md](patterns-2.md) — Design patterns and implementation guides
+  - [TESTING.md](TESTING.md) — Testing strategy and guidelines
+  - [architecture-3.md](architecture-uppercase-historical.md): System architecture and design patterns
+  - [api-2.md](api-2.md): API reference and endpoints
+  - [database-schema-2.md](database-schema-2.md): Database schema definitions
+  - [QUICK-START.md](QUICK-START.md): Quick start guide
+  - [patterns-2.md](patterns-2.md): Design patterns and implementation guides
+  - [TESTING.md](TESTING.md): Testing strategy and guidelines
+
+**Planning & Strategy** (Key documents)
+  - [README.md](README.md)
+  - product-strategy-2.md
+  - [ROADMAP.md](ROADMAP.md)
+  - [ROADMAP.md](development/roadmap.md)
+  - sprint-planning-2.md
+
+| Date | File | Category |
+|------|------|----------|
+| 2026-07-28 | [patterns-2.md](patterns-2.md) | root |
+| 2026-07-28 | [TESTING.md](TESTING.md) | root |
+| 2026-07-28 | [database-schema-2.md](database-schema-2.md) | root |
+| 2026-07-28 | [api-2.md](api-2.md) | root |
+| 2026-07-28 | [QUICK-START.md](QUICK-START.md) | root |
+| 2026-07-28 | [architecture-3.md](architecture-uppercase-historical.md) | root |
+| 2026-07-28 | [index-3.md](index.md) | archive |
+| 2026-07-28 | [wiki/troubleshooting/git-push-dual-remote.md](wiki/troubleshooting/git-push-dual-remote.md) | wiki |
+| 2026-07-28 | [wiki/concepts/xotbase-resource-zen-pattern.md](wiki/concepts/xotbase-resource-zen-pattern.md) | wiki |
+| 2026-07-28 | [wiki/concepts/phpstan-pest-discipline.md](wiki/concepts/phpstan-pest-discipline.md) | wiki |
+| 2026-07-28 | [testing-guidelines.md](testing-guidelines.md) | root |
+| 2026-07-28 | [test444.md](test444.md) | root |
+| 2026-07-28 | [test2222.md](test2222.md) | root |
+| 2026-07-28 | [test2024-12-04.md](test2024-12-04.md) | root |
+| 2026-07-28 | [test2024-12-04.md](raw/root-import/test2024-12-04.md) | root |
+| 2026-07-28 | [test04.md](test04.md) | root |
+| 2026-07-28 | [test03.md](test03.md) | root |
+| 2026-07-28 | [test02.md](test02.md) | root |
+| 2026-07-28 | [test.md](test.md) | root |
+| 2026-07-28 | [test-14-02-2024.md](test-14-02-2024.md) | root |
+| 2026-07-28 | [test-14-02-2024.md](raw/root-import/test-14-02-2024.md) | root |
+| 2026-07-28 | [raw/root-import/changelog-1.md](raw/root-import/changelog-1.md) | raw |

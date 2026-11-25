@@ -7,7 +7,7 @@ tags: [documentation]
 
 # Indice task - Modulo Activity
 
-Lista dei task del modulo con link ai file .md separati. Ogni task è un file nella cartella `tasks/`. Dettagli dalla [roadmap](../roadmap.md).
+Lista dei task del modulo con link ai file .md separati. Ogni task è un file nella cartella `tasks/`. Dettagli dalla [roadmap](../development/roadmap.md).
 
 ## Fase 1: Qualità e Pulizia
 
@@ -29,5 +29,5 @@ Lista dei task del modulo con link ai file .md separati. Ogni task è un file ne
 
 ## Collegamenti
 
-- [Roadmap Activity](../roadmap.md)
+- [Roadmap Activity](../development/roadmap.md)
 - [Scopo moduli progetto](../../../../../docs/moduli-scopo.md)

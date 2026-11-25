@@ -4,6 +4,7 @@ module: theme
 topic: event_sourcing
 topic: event_sourcing
 canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
+title: "event sourcing comprehensive guide"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.mdtopic: event-sourcing

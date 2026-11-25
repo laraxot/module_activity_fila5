@@ -329,3 +329,7 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
+
+## Contenuto fuso da `00-index.md`
+
+# Documentation Index

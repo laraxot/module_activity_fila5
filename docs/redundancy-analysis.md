@@ -11,3 +11,7 @@ qmd: "redundancy analysis activity"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/redundancy_analysis.md
+
+## Contenuto fuso da `redundancy-analysis.md`
+
+See canonical documentation: redundancy-analysis.md

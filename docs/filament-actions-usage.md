@@ -368,7 +368,7 @@ class ListMyModelActivities extends ListLogActivities
 - [Service Provider Architecture](../../Xot/docs/service-provider-architecture.md)
 
 ### Moduli Correlati
-- [IndennitaResponsabilita - Activity Log Integration](../../IndennitaResponsabilita/docs/activity-log-integration.md)
+- [IndennitaResponsabilita - Activity Log Integration](../../IndennitaResponsabilita/docs/bmad/activity-log-integration.md)
 - [Xot - Filament Base Components](../../Xot/docs/filament/README.md)
 
 ---

@@ -31,13 +31,13 @@ strato racconta una sessione diversa che non ha letto lo strato sotto:
 
 - 6 varianti di `phpstan-fixes*.md`, altre 6 di `phpstan-analysis*.md`
 - 4 varianti di `business-logic-analysis*.md` (compreso uno SCREAMING_CASE)
-- `roadmap.md`, `roadmap-.md`, `roadmap-2025.md`, `roadmap-and-issues.md`,
+- `development/roadmap.md`, `development/roadmap.md`, `roadmap-2025.md`, `roadmap-and-issues.md`,
   `roadmap-archive.md`, `roadmap-vision.md`: sei roadmap per un modulo,
   nessuna delle quali probabilmente letta prima di scriverne una nuova
 - `README.md`, `readme.md`, `README.md.update`, `readme.md.update`,
   nessuna delle quali probabilmente letta prima di scriverne una nuova
 - `README.md`, `README.md`, `README.md.update`, `README.md.update`,
-  `readme_update.md`, `readme-update.md`: sei README, contando le
+  `readme-update.md`, `readme-update.md`: sei README, contando le
   differenze di case e underscore come se fossero contenuto
 - `test02.md`, `test03.md`, `test04.md`, `test2222.md`, `test444.md`: file
   di prova mai ripuliti, ancora versionati

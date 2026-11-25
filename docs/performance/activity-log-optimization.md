@@ -574,3 +574,15 @@ CREATE INDEX idx_activity_log_causer_type ON activity_log(causer_type);
 4. **Long-term**: Advanced performance strategies
 
 This document provides the roadmap for resolving the performance issues in the Activity module while maintaining data integrity and functionality.
+
+## Contenuto fuso da `activity-log-optimization.md`
+
+- [query-optimization-analysis-3.md](./query-optimization-analysis-3.md)
+- [bottlenecks.md](./bottlenecks.md)
+- [event-sourcing.md](./event-sourcing.md)
+
+## Contenuto fuso da `activity-log-optimization.md`
+
+- [QUERY_OPTIMIZATION_ANALYSIS.md](./QUERY_OPTIMIZATION_ANALYSIS.md)
+- [bottlenecks.md](./bottlenecks.md)
+- [event-sourcing.md](./event-sourcing.md)

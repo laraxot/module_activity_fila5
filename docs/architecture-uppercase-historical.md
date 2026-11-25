@@ -1,3 +1,8 @@
+---
+title: "Architecture Documentation"
+qmd: "architecture activity system overview core components data flow quality gates architecture-uppercase-historical"
+---
+
 # Architecture Documentation
 ---
 title: "Activity Module Architecture"

@@ -233,7 +233,7 @@ php artisan activity:test-events
 - [Event Sourcing](event-sourcing.md) - Sistema event sourcing completo
 - [Activity Logging](structure.md) - Architettura logging attività
 - [Filament Integration](filament.md) - Integrazione dashboard Filament
-- [Advanced Patterns](advanced_event_sourcing_patterns.md) - Pattern avanzati
+- [Advanced Patterns](advanced-event-sourcing-patterns.md) - Pattern avanzati
 
 ### 📊 **Analytics & Monitoring**
 - [Activity Dashboard](filament-resources.md) - Dashboard analytics attività
@@ -648,3 +648,35 @@ Activity/
 
 ## AI Workflows
 - [AI Methodologies](./ai-methodologies.md)
+
+## Contenuto fuso da `README.md`
+
+### 🏗️ **Architettura**
+- [Event Sourcing](event-sourcing.md) - Sistema event sourcing completo
+- [Activity Logging](structure.md) - Architettura logging attività
+- [Filament Integration](../filament.md) - Integrazione dashboard Filament
+- [Advanced Patterns](advanced-event-sourcing-patterns.md) - Pattern avanzati
+
+### 📊 **Analytics & Monitoring**
+- [Activity Dashboard](filament-resources-3.md) - Dashboard analytics attività
+- [Event Analytics](event-sourcing-examples-2.md) - Analytics eventi
+- [Performance Monitoring](bottlenecks.md) - Monitoraggio performance
+- [Security Compliance](translations.md) - Conformità sicurezza
+
+### 🔧 **Development**
+- [PHPStan Fixes](phpstan/README.md) - Log completo correzioni PHPStan
+- [Event Sourcing Examples](event-sourcing-examples-2.md) - Esempi event sourcing
+- [Testing Structure](testing-structure-login-analysis.md) - Struttura testing
+
+#### 📈 **Dashboard Issues**
+```bash
+# Verificare widget Filament
+php artisan activity:test-dashboard
+```
+**Soluzione**: Consulta [Filament Integration](../filament.md)
+
+- [Architettura](./architecture.md)
+- [API Documentation](./api.md)
+- [Filament Resources](../filament-resources.md)
+- [Testing](./testing.md)
+- [Deployment](./deployment.md)

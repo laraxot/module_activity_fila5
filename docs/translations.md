@@ -206,7 +206,6 @@ Traduzioni specifiche per gli eventi archiviati:
 * [translations.md](laravel/Modules/Xot/docs/roadmap/lang/translations.md)
 * [translations.md](laravel/Modules/Xot/docs/translations.md)
 * [translations.md](laravel/Modules/Dental/docs/translations.md)
-* [translations.md](laravel/Modules/User/docs/translations.md)
 * [translations.md](laravel/Modules/UI/docs/translations.md)
 * [translations.md](laravel/Modules/Lang/docs/packages/translations.md)
 * [translations.md](laravel/Modules/Lang/docs/translations.md)

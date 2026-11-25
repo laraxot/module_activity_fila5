@@ -1,3 +1,8 @@
+---
+title: "Best Practices – Activity"
+qmd: "best practices activity principi dry kiss componenti test documentazione best-practices"
+---
+
 # Best Practices – Activity
 
 ## Principi DRY/KISS
@@ -43,3 +48,9 @@ See canonical documentation: ../../../Themes/docs/shared-components/best_practic
 
 ## Documentazione
 - Aggiorna `docs/00-index.md` con nuovi modelli e relazioni.
+
+## Contenuto fuso da `best-practices.md`
+
+## Documentazione
+- Aggiorna `docs/index.md` con nuovi modelli e relazioni.
+- Collega a `Projects` e `Tasks` per contesto operativo.

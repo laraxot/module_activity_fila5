@@ -86,3 +86,48 @@ System observability and audit trails are fragmented and lack a unified, type-sa
 - **Performance:** Logging must be asynchronous to avoid blocking main requests.
 - **Observability:** Must expose metrics for logging rate and failure rate.
 - **Security:** Logs must be immutable and access-controlled.
+
+## Contenuto fuso da `prd.md`
+
+# Product Requirements Document (PRD) - Activity Module
+
+**Module**: Activity
+**Version**: 1.0
+**Status**: Draft
+**Author**: Product Team
+
+## Executive Summary
+Activity tracking and audit logging module for Laraxot platform.
+
+## Functional Requirements
+- Audit trail for all user actions
+- Activity logging with Spatie Laravel Activity Log
+- Filament resource for activity browsing
+- Integration with all modules
+
+## Technical Specifications
+- PHPStan Level 10 compliance
+- Pest test coverage >90%
+- Integration with Xot base models
+
+## 7. Release Criteria
+- 100% PHPStan Level 10 compliance.
+- 100% Test coverage (Pest) for all business logic and models.
+- 100% Autonomous CI/CD Monitoring: The AI agent is responsible for fixing any workflow failure.
+- API documentation completed.
+
+## 8. Testing Strategy (Laraxot Standard)
+- **Framework**: Pest PHP.
+- **Isolation**: Use `DatabaseTransactions` with `protected array $connectionsToTransact = ['mysql', 'activity', 'user'];`.
+- **Database**: Must use `.env.testing` pointing to `_test` suffixed databases.
+- **No Refresh**: `RefreshDatabase` and `migrate:fresh` are strictly forbidden.
+- **Migrations**: Run `php artisan migrate --env=testing` once before the test suite.
+
+## Testing & Coverage
+
+Il modulo $(basename $(dirname $(dirname "$prd"))) segue la **Metodologia "Super Mucca" (Laraxot Zen)**:
+- **XotBaseTestCase**: Tutti i test estendono `Modules\Xot\Tests\XotBaseTestCase`.
+- **MySQL Only**: Test eseguiti contro MySQL (.env.testing).
+- **No RefreshDatabase**: Utilizzo di `DatabaseTransactions`.
+- **Obiettivo**: 100% di coverage. Se un test fallisce, va sistemato o eliminato se il sito è funzionale.
+- **Obiettivo**: 100% di coverage. Se un test fallisce, va sistemato o eliminato se il sito è funzionale.

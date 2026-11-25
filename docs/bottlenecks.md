@@ -327,13 +327,13 @@ class ListActivities extends XotBasePage
 
 - [README Activity](./README.md)
 - [README Activity](./README.md)
-- [Roadmap](./roadmap.md)
+- [Roadmap](development/roadmap.md)
 - [Struttura del Modulo](./structure.md)
 ## Collegamenti
 
 - [Torna a README](./README.md)
 - [Torna a README](./README.md)
-- [Vai a Roadmap](./roadmap.md)
+- [Vai a Roadmap](development/roadmap.md)
 - [Vai a Struttura](./structure.md)
 
 ## Collegamenti tra versioni di bottlenecks.md

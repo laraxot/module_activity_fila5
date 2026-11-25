@@ -3,6 +3,7 @@ qmd: "activity tecnico laraxot module activity md"
 module: theme
 topic: module-activity
 canonical: ../../../../../Themes/docs/shared-components/module-activity.md
+title: "module activity"
 ---
 
 ## Overview
@@ -132,3 +133,7 @@ class ActivityTest extends TestCase
    - Pulizia periodica dei log
    - Backup dei dati di attività
    - Monitoraggio delle performance
+
+## Contenuto fuso da `module-activity.md`
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md

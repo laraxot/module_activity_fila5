@@ -3,6 +3,7 @@ qmd: "activity business logic md"
 module: theme
 topic: business-logic
 canonical: ../../../Themes/docs/shared-components/business-logic-analysis.md
+title: "business logic"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/business-logic-analysis.md

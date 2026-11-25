@@ -304,3 +304,124 @@ By removing logging from ActivityLogger:
 
 **Key Takeaway**: The Activity table IS the audit trail. Logging successful database writes is redundant and wastes performance.
 **Key Takeaway**: The Activity table IS the audit trail. Logging successful database writes is redundant and wastes performance.
+
+## Contenuto fuso da `logging-optimization.md`
+
+See canonical documentation: ../../../Themes/docs/shared-components/logging-optimization.md
+# Activity Module - Logging Optimization
+
+// BEFORE (WRONG)
+public function log(string $action, array $data = []): Activity
+{
+    $activity = Activity::create([
+        'action' => $action,
+        'data' => $data,
+    ]);
+
+// AFTER (CORRECT)
+    try {
+
+} catch (Exception $e) {
+        Log::error('Activity logging failed', [
+            'error' => $e->getMessage(),
+        throw $e;
+
+public function cleanupOldActivities(): void
+    $count = Activity::where('created_at', '<', now()->subDays(90))->delete();
+
+public function cleanupOldActivities(): int
+        return $count;
+        Log::error('Activity cleanup failed', [
+
+// activities table schema
+Schema::create('activities', function (Blueprint $table) {
+    $table->id();
+    $table->foreignId('user_id')->nullable();
+    $table->string('action');
+    $table->json('data')->nullable();
+    $table->timestamp('created_at');
+    $table->index('user_id');
+    $table->index('action');
+    $table->index('created_at');
+});
+
+### Step 1: Remove Log::info() from ActivityLogger
+// File: app/Actions/ActivityLogger.php
+
+// Remove line 225
+// Log::info('Old activities cleaned', ['count' => $count]);
+
+### Step 2: Add Error Handling
+// Wrap database operations in try-catch
+    $activity = Activity::create([...]);
+    Log::error('Activity creation failed', [
+
+### Step 3: Update Return Types
+// Return count from cleanup
+    return Activity::where('created_at', '<', now()->subDays(90))->delete();
+
+// Callers can use the count
+$count = $activityLogger->cleanupOldActivities();
+
+// INSTEAD OF: Checking logs for activities
+grep "Activity logged" storage/logs/laravel.log
+
+// USE: Query the database
+Activity::where('action', 'ticket_created')->get();
+Activity::where('user_id', $userId)->latest()->limit(10)->get();
+
+### Use Laravel Telescope
+// Telescope automatically tracks all database queries
+// No need to log them separately
+
+// View activity in Telescope:
+// /telescope/queries
+// /telescope/requests
+
+// docs/activity-logging.md
+
+// BEFORE
+
+// AFTER
+
+### After Optimization
+- 0 log calls for successful operations
+- 0 log writes per hour (except errors)
+- **0 seconds of logging overhead per hour**
+- **100% reduction in overhead**
+
+// Create activity
+$activity = ActivityLogger::log('test_action');
+
+// Verify in database
+$this->assertDatabaseHas('activities', [
+    'id' => $activity->id,
+    'action' => 'test_action',
+
+// Verify NO log entry
+$logContent = file_get_contents(storage_path('logs/laravel.log'));
+$this->assertStringNotContainsString('Activity logged', $logContent);
+
+// Run cleanup
+$count = ActivityLogger::cleanupOldActivities();
+
+$this->assertStringNotContainsString('Old activities cleaned', $logContent);
+
+// Ensure these indexes exist
+Schema::table('activities', function (Blueprint $table) {
+    $table->index(['user_id', 'created_at']);
+    $table->index(['action', 'created_at']);
+
+// Get recent user activities
+Activity::where('user_id', $userId)
+    ->orderBy('created_at', 'desc')
+    ->limit(20)
+    ->get();
+
+// Get activity stats
+Activity::select('action')
+    ->selectRaw('COUNT(*) as count')
+    ->where('created_at', '>', now()->subDays(7))
+    ->groupBy('action')
+
+**Key Takeaway**: The Activity table IS the audit trail. Logging successful database writes is redundant and wastes performance.

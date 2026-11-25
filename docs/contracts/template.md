@@ -3,6 +3,7 @@ type: contract
 status: proposed
 action: <FQCN>
 qmd: "template operazione contratto comportamentale"
+title: "<operazione> — contratto comportamentale"
 ---
 
 # <operazione> — contratto comportamentale

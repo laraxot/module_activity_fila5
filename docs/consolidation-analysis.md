@@ -89,3 +89,34 @@ Details: see `docs/CRITICAL_MIGRATION_CONSTRAINTS.md`
 ## Reference
 
 **Global consolidation plan:** See `ROOT_MD_CONSOLIDATION_PLAN.md` (to be created in docs/).
+
+## Contenuto fuso da `consolidation-analysis.md`
+
+```
+laravel/Modules/Activity/
+├── docs/
+│   ├── consolidation-analysis-2.md (this file)
+│   ├── critical-migration-constraints-2.md ← rename for clarity
+│   └── ... (other Activity docs)
+├── app/
+├── config/
+├── database/
+│   ├── migrations/ (sacred: no refresh)
+│   ├── factories/
+│   └── seeders/
+└── tests/
+```
+
+1. **critical-mai-fare-migrate-refresh.md** (rename to **critical-migration-constraints-2.md**):
+   - Explicit list of forbidden commands
+   - Why: Activity holds user behavioral data; refresh loses audit trail
+   - Enforcement: Documented in Activity/docs and referenced in Activity README.md
+
+- [ ] Move `critical-mai-fare-migrate-refresh.md` from root to `laravel/Modules/Activity/docs/`
+- [ ] Rename to `critical-migration-constraints.md` for clarity
+- [ ] Add reference in `laravel/Modules/Activity/README.md` with ⚠️ badge
+- [ ] Cross-link from Progressioni/docs (note shared constraint)
+- [ ] Commit as atomic: "docs(activity): consolidate critical migration constraints from root"
+
+Details: see `critical-migration-constraints.md`
+```

@@ -5,6 +5,7 @@ module: "Activity"
 alias: "activity"
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
+qmd: "activity bmad setup guide scopo cosa qui business logic best practices pratiche giuste bad"
 ---
 
 # Activity — BMAD Setup Guide

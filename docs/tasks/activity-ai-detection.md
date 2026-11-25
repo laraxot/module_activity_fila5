@@ -29,5 +29,5 @@ Fase 1 e 2 completate.
 
 ## Collegamenti
 
-- [Roadmap Activity](../roadmap.md)
+- [Roadmap Activity](../development/roadmap.md)
 - [Indice task Activity](tasks-index.md)

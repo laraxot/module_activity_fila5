@@ -51,3 +51,7 @@ Indice dei contratti comportamentali del modulo Activity: ogni operazione pubbli
 | *(nessuno)* | — | — | Nessun contratto audito per questo modulo |
 
 (End of file - total 20 lines)
+
+## Contenuto fuso da `index.md`
+
+<!-- File: docs/contracts/INDEX.md · formato MADR breve. -->

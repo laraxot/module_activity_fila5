@@ -370,3 +370,65 @@ Questa lezione è ora memorizzata permanentemente per:
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Lezione appresa: Context-aware migrations con supporto UUID*
+
+## Contenuto fuso da `errori-migrazione-activity-table-lezioni.md`
+
+### **Problema Identificato**
+Nel sistema <nome progetto> abbiamo modelli con tipi di ID diversi:
+Nel sistema <nome progetto> abbiamo modelli con tipi di ID diversi:
+- **User**: UUID (string 36 caratteri)
+- **Admin**: Integer auto-increment
+- **Activity**: Deve supportare relazioni polimorfiche con ENTRAMBI
+
+// Caso 2: Admin con integer
+causer_id = "123" (integer convertito in string)
+causer_type = "Modules\<nome progetto>\Models\Admin"
+causer_type = "Modules\<nome progetto>\Models\Admin"
+```
+
+### Documentazione Aggiornata
+- [Regole Migrazioni Laraxot](../../Xot/docs/migration_rules.md)
+- [Polimorfismo UUID](../../Xot/docs/polymorphic_uuid_support.md)
+- [Principi Architetturali](../../../docs/architectural_principles.md)
+
+### Moduli Correlati
+- [User Module UUID](../../User/docs/uuid_implementation.md)
+- [<nome progetto> Models](../../<nome progetto>/docs/model_architecture.md)
+- [<nome progetto> Models](../../<nome progetto>/docs/model_architecture.md)
+- [Activity Logging](./activity_logging_system.md)
+
+*Ultimo aggiornamento: Gennaio 2025*
+*Lezione appresa: Context-aware migrations con supporto UUID*
+---
+module: theme
+topic: errori-migrazione-activity-table-lezioni-1
+canonical: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/errori-migrazione-activity-table-lezioni-1.md
+
+## Contenuto fuso da `errori-migrazione-activity-table-lezioni.md`
+
+### **Problema Identificato**
+Nel sistema SaluteOra abbiamo modelli con tipi di ID diversi:
+- **User**: UUID (string 36 caratteri)
+- **Admin**: Integer auto-increment
+- **Activity**: Deve supportare relazioni polimorfiche con ENTRAMBI
+
+// Caso 2: Admin con integer
+causer_id = "123" (integer convertito in string)
+causer_type = "Modules\SaluteOra\Models\Admin"
+```
+
+### Documentazione Aggiornata
+- [Regole Migrazioni Laraxot](../../Xot/docs/migration-rules-2.md)
+- [Polimorfismo UUID](../../Xot/docs/polymorphic_uuid_support.md)
+- [Principi Architetturali](../../../docs/architectural_principles.md)
+
+### Moduli Correlati
+- [User Module UUID](../../User/docs/uuid_implementation.md)
+- [SaluteOra Models](../../SaluteOra/docs/model_architecture.md)
+- [Activity Logging](./activity_logging_system.md)

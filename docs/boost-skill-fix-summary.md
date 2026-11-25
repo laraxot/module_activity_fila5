@@ -43,3 +43,7 @@ See `/docs/BOOST_SKILL_SOLUTION_PLAN.md` for complete solution details.
 - Activity reports
 - Module integration
 
+## Contenuto fuso da `boost-skill-fix-summary.md`
+
+See canonical documentation: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
+# Boost Skill Fix Summary - Activity Module

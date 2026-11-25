@@ -30,5 +30,5 @@ Nessuna.
 
 ## Collegamenti
 
-- [Roadmap Activity](../roadmap.md)
+- [Roadmap Activity](../development/roadmap.md)
 - [Indice task Activity](tasks-index.md)

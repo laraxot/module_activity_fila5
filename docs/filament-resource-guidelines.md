@@ -343,3 +343,24 @@ All resources must be tested to ensure:
 - [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../xot/project_docs/filament-best-practices.md)
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
+
+## Contenuto fuso da `filament-resource-guidelines.md`
+
+// ❌ WRONG - Don't implement form() or table() directly
+public static function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema { ... }
+public static function table(Table $table): Table { ... }
+```
+
+- [XotBaseResource Documentation](../../Xot/docs/filament/resources/xot-base-resource.md)
+- [Filament Best Practices](../../Xot/docs/filament-best-practices.md)
+- [Laraxot Extension Patterns](../../Xot/docs/base-classes.md)
+---
+module: theme
+topic: filament-resource-guidelines-1
+canonical: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-guidelines-1.md

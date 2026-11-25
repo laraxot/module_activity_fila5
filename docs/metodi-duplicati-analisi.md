@@ -1297,3 +1297,15 @@ public function getTableFilters(): array
 
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
+
+## Contenuto fuso da `metodi-duplicati-analisi.md`
+
+**Powered by**: Super Mucca AI 🐄✨  
+**Versione**: 2.0 ULTIMATE  
+**Confidenza**: 99.9% (Dati Reali dal Codice)
+
+See canonical documentation: metodi-duplicati-analisi.md
+
+## Contenuto fuso da `metodi-duplicati-analisi.md`
+
+See canonical documentation: ../../../Themes/docs/shared-components/metodi_duplicati_analisi.md

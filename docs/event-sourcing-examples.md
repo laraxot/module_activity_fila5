@@ -3,6 +3,7 @@ qmd: "activity event sourcing examples md"
 module: theme
 topic: event-sourcing-examples
 canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+title: "Practical Event Sourcing Examples for Healthcare"
 ---
 
 ## Table of Contents

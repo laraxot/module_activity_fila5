@@ -328,3 +328,10 @@ activity()->withProperties([
 **Stato**: Production Ready with Compliance Enhancement
 **Stato**: Production Ready with Compliance Enhancement
 - Machine learning capabilities
+
+## Contenuto fuso da `module-analysis.md`
+
+# Modulo Activity - Logging e Event Sourcing
+
+**Versione**: v2.5.0-beta  
+**Stato**: Production Ready with Compliance Enhancement
