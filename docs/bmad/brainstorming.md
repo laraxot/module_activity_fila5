@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_ZVEG62
 <<<<<<< .merge_file_MCdyeU
 title: Brainstorming
 module: Activity
@@ -7,6 +8,8 @@ module: Activity
 ---
 =======
 >>>>>>> .merge_file_7CXgoL
+=======
+>>>>>>> .merge_file_Md895c
 title: "Activity — brainstorming BMAD"
 type: concept
 tags: [brainstorming, activity, decisioni, debito-tecnico, event-sourcing]
@@ -17,7 +20,6 @@ related:
   - ./brainstorming/module-opportunities.md
   - ./architecture/module-map.md
   - ../architecture.md
-  - ./architecture/module-map.md
   - ./epics/module-roadmap.md
 issues: []
 discussions: []
@@ -121,6 +123,7 @@ da `Activity` per nome. Il costo di migrazione supera il beneficio.
 ### S3 — Unificare le cinque migrazioni in un `migrate:fresh`
 Scartato e **vietato**: `migrate:fresh` e `--force` sono banditi dallo standing
 order (dati sacri, host `10.100.200.15`).
+<<<<<<< .merge_file_ZVEG62
 
 ## Opzioni sui finding dell'audit (2026-11-16)
 
@@ -144,6 +147,31 @@ Da [audit profondo](./audits/activity-audit.md). Ogni opzione ha un costo; la sc
 
 ### O4 — API di logging programmatico (Adapters + `LogModel*Action`)
 
+=======
+
+## Opzioni sui finding dell'audit (2026-11-16)
+
+Da [audit profondo](./audits/activity-audit.md). Ogni opzione ha un costo; la scelta va a [decision-log](./decision-log.md).
+
+### O1 — `LoginListener`: implementare o rimuovere (D-3)
+
+- **Implementare** `handle(Login $event)` → `LogUserLoginAction`: simmetria con `LogoutListener`, ma doppio log con `Modules\User\Listeners\LoginListener` (`RecordAuthenticationLogAction`).
+- **Rimuovere** listener + 7 test skip: meno codice, un solo posto per il login (User). Preferita se User resta la fonte.
+- Domanda aperta: chi consuma il login log, Activity o User?
+
+### O2 — Registro append-only
+
+- **Resource read-only** (niente Create/Edit/Delete) + retention via `ActivityMaintenanceAction` con permesso dedicato. Semplice, in linea con lo scopo.
+- Scartato: lasciare i permessi `activity.update/delete` "a chi sa": non e' un controllo, e' una convenzione.
+
+### O3 — Redazione segreti
+
+- Chiamare `RedactModelAttributesAction` dentro le Action di logging (un solo punto, DRY).
+- Alternativa: `$hidden` del modello come lista di verita'. Piu' coerente con Eloquent ma richiede che ogni modello lo dichiari.
+
+### O4 — API di logging programmatico (Adapters + `LogModel*Action`)
+
+>>>>>>> .merge_file_Md895c
 - Nessun caller di produzione: o si adotta (e allora O3 e' bloccante) o si cancella. YAGNI favorisce la cancellazione se nessuna story la richiede.
 
 ## Domande aperte

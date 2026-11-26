@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_OZU06A
 <<<<<<< .merge_file_aqapEl
 title: Architecture
 module: Activity
@@ -7,6 +8,8 @@ module: Activity
 ---
 =======
 >>>>>>> .merge_file_4jCkbW
+=======
+>>>>>>> .merge_file_WI5FVZ
 title: "Activity — architettura BMAD"
 type: concept
 tags: [architecture, activity, audit, log, event-sourcing, spatie]
@@ -28,11 +31,15 @@ discussions: []
 > **SUMMARY**: mappa reale del modulo `Modules/Activity` (alias `activity`): due
 > sottosistemi distinti — audit delle azioni utente su Spatie Activity + event
 > sourcing, e un visualizzatore dei log di file Laravel — con tre Resource
+<<<<<<< .merge_file_OZU06A
 <<<<<<< .merge_file_aqapEl
 > Filament, 29 Action e 7 DTO.
 =======
 > Filament, 30 Action e 7 DTO (misura 2026-11-16).
 >>>>>>> .merge_file_4jCkbW
+=======
+> Filament, 30 Action e 8 DTO (misura 2026-11-19; 7 DTO del log viewer + `ActivityConfigData`).
+>>>>>>> .merge_file_WI5FVZ
 
 ## Identita del modulo
 
@@ -77,10 +84,10 @@ e il **contratto pubblico** del modulo.
 `IsActivityLogSchemaWritableAction`: verificano se la tabella di audit e la
 struttura del log sono scrivibili prima di tentare l'operazione.
 
-## DTO (`app/Datas`, 7)
+## DTO (`app/Datas`, 8)
 
-`FilteredLogEntriesData`, `LogEntryData`, `LogFileData`, `LogTailData`,
-`LogTreeData`, `LogViewerStateData`, `ResolvedLogFileData` — coprono l'intero
+`ActivityConfigData` (configurazione del modulo) e `FilteredLogEntriesData`, `LogEntryData`, `LogFileData`, `LogTailData`,
+`LogTreeData`, `LogViewerStateData`, `ResolvedLogFileData` — questi ultimi sette coprono l'intero
 flusso del log viewer: risoluzione percorso -> lista -> albero -> tail ->
 parsing -> filtro -> stato UI.
 
@@ -112,6 +119,7 @@ Alto numero ma qualita da verificare: 8 file senza casi, 19 punti di skip, 0 `Li
 
 - [module-boundary.md](./architecture/module-boundary.md) — confini del modulo.
 - [module-map.md](./architecture/module-map.md) — mappa file -> responsabilita, una riga per file.
+<<<<<<< .merge_file_OZU06A
 <<<<<<< .merge_file_aqapEl
 - [brainstorming.md](./brainstorming.md) — decisioni prese e problemi aperti.# Architettura del modulo Activity
 
@@ -129,6 +137,9 @@ Risorse Filament per il pannello di amministrazione.
 =======
 - [brainstorming.md](./brainstorming.md) — decisioni prese e problemi aperti.
 >>>>>>> .merge_file_4jCkbW
+=======
+- [brainstorming.md](./brainstorming.md) — decisioni prese e problemi aperti.
+>>>>>>> .merge_file_WI5FVZ
 
 ## Flussi di dati (verificati sul codice, 2026-11-16)
 
@@ -153,6 +164,7 @@ Policy per permesso (`activity.*`, `snapshot.*`, `stored_event.*`) su `UserBaseP
 
 ## Pattern utilizzati
 
+<<<<<<< .merge_file_OZU06A
 <<<<<<< .merge_file_aqapEl
 - Action invece di Service
 - Filament Widget invece di Livewire
@@ -163,3 +175,8 @@ Policy per permesso (`activity.*`, `snapshot.*`, `stored_event.*`) su `UserBaseP
 - Resource con `Schemas/` e `Tables/` separati, base `XotBase*`.
 - Array una chiave per riga.
 >>>>>>> .merge_file_4jCkbW
+=======
+- Action Queueable invece di Service (0 Services).
+- Resource con `Schemas/` e `Tables/` separati, base `XotBase*`.
+- Array una chiave per riga.
+>>>>>>> .merge_file_WI5FVZ

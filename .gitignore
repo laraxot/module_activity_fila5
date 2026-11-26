@@ -209,3 +209,7 @@ workbench/
 .windsurf~*
 tests/activity_coverage.xml
 Activity/
+
+# screenshot di comparazione visiva (artefatti locali)
+docs/project/visual-comparison/
+docs/visual-comparison/

@@ -4,13 +4,19 @@ type: decision-log
 status: active
 updated: 2026-11-16
 module: Activity
+<<<<<<< .merge_file_2WZB8C
 <<<<<<< .merge_file_aCvR3Z
 =======
+=======
+>>>>>>> .merge_file_NCjnMZ
 qmd: "decision log Activity ADR registro append-only redazione login listener migrazioni"
 related:
   - ./audits/activity-audit.md
   - ./epics.md
+<<<<<<< .merge_file_2WZB8C
 >>>>>>> .merge_file_calM3U
+=======
+>>>>>>> .merge_file_NCjnMZ
 ---
 
 # Decision log — Activity
@@ -27,6 +33,7 @@ Append-only, più recente in alto. Le voci d'esempio del template precedente (Wi
 
 ## Regole di lettura
 
+<<<<<<< .merge_file_2WZB8C
 <<<<<<< .merge_file_aCvR3Z
 ### 2026-09-29
 **Decisione:** [Esempio: Utilizzare Filament Widget invece di Livewire per i componenti di UI]
@@ -54,3 +61,7 @@ Append-only, più recente in alto. Le voci d'esempio del template precedente (Wi
 - Una decisione `PROPOSTA` diventa `APPROVATA` solo con story BMAD e Pest verde.
 - Nuove decisioni: aggiungere una riga in alto; non riscrivere quelle passate, superarle con un riferimento.
 >>>>>>> .merge_file_calM3U
+=======
+- Una decisione `PROPOSTA` diventa `APPROVATA` solo con story BMAD e Pest verde.
+- Nuove decisioni: aggiungere una riga in alto; non riscrivere quelle passate, superarle con un riferimento.
+>>>>>>> .merge_file_NCjnMZ

@@ -25,7 +25,10 @@ uses(TestCase::class);
  * nel database, cosa che questi test non devono fare.
  */
 beforeEach(function (): void {
+<<<<<<< .merge_file_imRf88
     // Skip se Folio non ha montato /api/log-download (ambiente senza Cms/FolioVolt).
+=======
+>>>>>>> .merge_file_uW1xGx
     $uris = [];
     foreach (app('router')->getRoutes()->getRoutes() as $route) {
         $uris[] = $route->uri();
