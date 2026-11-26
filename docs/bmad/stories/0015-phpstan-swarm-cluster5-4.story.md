@@ -72,19 +72,3 @@ Rilanciare `phpstan analyse Modules/Activity` in finestra quieta e
 chiudere il gate; output atteso 0 errori.
 
 ---
-
-## Contenuto unito da `0015-phpstan-swarm-cluster5-4.story.md`
-
-# phpstan swarm cluster5
-
-Stub alias post-strip data/timestamp. Canonico: [./phpstan-swarm-cluster5.story.md](0015-phpstan-swarm-cluster5-4.story.md).
-
-
-### Consequences
-
-- Buono, perché chiude il gap descritto nel Context
-- Cattivo, perché richiede write-back docs, lock e quality gate
-
-### Confirmation
-
-Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

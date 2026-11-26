@@ -9,9 +9,9 @@ qmd: "indice documentazione modulo activity architecture naming debt kebab-case"
 
 # Indice documentazione — Modulo Activity
 
-Indice per argomento di tutti i `.md` sotto `Modules/Activity/docs/`: 99 file al 2026-11-25 (erano 755 al 2026-09-03, poi la cartella e' stata ridotta al tetto di 100 `.md`). Nomi: kebab-case, senza date nel filename.
+Indice per argomento di tutti i `.md` sotto `Modules/Activity/docs/`: 94 file al 2026-11-25 (erano 755 al 2026-09-03, poi la cartella e' stata ridotta al tetto di 100 `.md`). Nomi: kebab-case, senza date nel filename.
 
-Nessun file e' stato rinominato o cancellato per produrre questo indice. Dove esistono duplicati palesi (stesso argomento con e senza prefisso numerico), la variante numerata e' quella canonica e quella senza prefisso e' elencata come legacy.
+Nessun file e' stato rinominato o cancellato per produrre questo indice. Dove esistono duplicati palesi (stesso argomento con e senza prefisso numerico), la variante numerata e' quella canonica e quella senza prefisso e' stata rimossa. I digest automatici di `wiki/topics/` (sintesi QMD di fonti non piu' presenti) sono stati eliminati: sono rigenerabili e la cronologia resta in git.
 
 ## Come leggere questo modulo
 
@@ -42,7 +42,6 @@ Nessun file e' stato rinominato o cancellato per produrre questo indice. Dove es
 - [wiki/index.md](wiki/index.md) — indice della wiki (catalogo fermo al 2026-06-10).
 - [wiki/log.md](wiki/log.md) — registro datato di cio' che e' cambiato nel modulo e nei docs.
 - [wiki/agents.md](wiki/agents.md) — istruzioni per gli agenti sulla wiki; [wiki/ai-methodologies.md](wiki/ai-methodologies.md) e [wiki/bmad-method.md](wiki/bmad-method.md) — stub puntatori.
-- [wiki/topics/00-index.md](wiki/topics/00-index.md) — sintesi tematiche di `wiki/topics/` (29 file, indice incluso).
 - [wiki/concepts/index.md](wiki/concepts/index.md), [wiki/concepts/log-viewer-sicurezza.md](wiki/concepts/log-viewer-sicurezza.md) — concetti; il secondo spiega la catena Action che porta un file di `storage/logs` nel pannello e cosa impedisce di leggere altri file.
 - [wiki/rules/index.md](wiki/rules/index.md), [wiki/skills/index.md](wiki/skills/index.md), [wiki/commands/index.md](wiki/commands/index.md) — indici delle sotto-sezioni.
 - [wiki/memories/index.md](wiki/memories/index.md), [wiki/memories/testcase-hierarchy-decision.md](wiki/memories/testcase-hierarchy-decision.md), [wiki/memories/phpstan-bootstrap-marker-blocker.md](wiki/memories/phpstan-bootstrap-marker-blocker.md) — memorie.
@@ -53,17 +52,17 @@ Nessun file e' stato rinominato o cancellato per produrre questo indice. Dove es
 ## BMAD, story e audit
 
 - [bmad/README.md](bmad/README.md), [bmad/index.md](bmad/index.md) — integrazione BMAD del modulo e suo indice.
-- Story in `bmad/stories/` (la variante numerata e' canonica, quella senza prefisso e' legacy):
-  - [0005-module-bmad-audit.story.md](bmad/stories/0005-module-bmad-audit.story.md) / [module-bmad-audit.story.md](bmad/stories/module-bmad-audit.story.md) — audit BMAD profondo del modulo.
+- Story in `bmad/stories/` (la variante numerata e' canonica; le varianti senza prefisso duplicate sono state rimosse):
+  - [0005-module-bmad-audit.story.md](bmad/stories/0005-module-bmad-audit.story.md) — audit BMAD profondo del modulo.
   - [0007-php-conflict-markers.story.md](bmad/stories/0007-php-conflict-markers.story.md) — risoluzione dei marker di conflitto PHP.
   - [0011-phpstan-resurrected-duplicate-tests.story.md](bmad/stories/0011-phpstan-resurrected-duplicate-tests.story.md) — test duplicati resuscitati dalla sync.
-  - [0015-phpstan-swarm-cluster5-4.story.md](bmad/stories/0015-phpstan-swarm-cluster5-4.story.md) / [phpstan-swarm-cluster5.story.md](bmad/stories/phpstan-swarm-cluster5.story.md) — PHPStan swarm cluster 5.
-  - [0019-quality-gates-phpstan-fix-4.story.md](bmad/stories/0019-quality-gates-phpstan-fix-4.story.md) / [quality-gates-phpstan-fix.story.md](bmad/stories/quality-gates-phpstan-fix.story.md) — remediation PHPStan della flotta di moduli.
+  - [0015-phpstan-swarm-cluster5-4.story.md](bmad/stories/0015-phpstan-swarm-cluster5-4.story.md) — PHPStan swarm cluster 5.
+  - [0019-quality-gates-phpstan-fix-4.story.md](bmad/stories/0019-quality-gates-phpstan-fix-4.story.md) — remediation PHPStan della flotta di moduli.
   - [quality-gates-phpstan-swarm.story.md](bmad/stories/quality-gates-phpstan-swarm.story.md) — PHPStan quality gate swarm.
   - [folio-routing-centralization.story.md](bmad/stories/folio-routing-centralization.story.md) — il routing Folio e' centralizzato, Activity non monta Folio.
   - [0000-template.story.md](bmad/stories/0000-template.story.md) — template.
 - Story in `stories/`:
-  - [0002-activity-admin-log-viewer-page.story.md](stories/0002-activity-admin-log-viewer-page.story.md) / [activity-admin-log-viewer-page.story.md](stories/activity-admin-log-viewer-page.story.md) — pagina Log nel pannello Activity.
+  - [0002-activity-admin-log-viewer-page.story.md](stories/0002-activity-admin-log-viewer-page.story.md) — pagina Log nel pannello Activity (la variante senza prefisso, con nomi di Action non piu' esistenti, e' stata rimossa).
   - [audit-qualita.story.md](stories/audit-qualita.story.md) — audit qualita' del modulo.
   - [phpstan-cleanup-activity-wave.story.md](stories/phpstan-cleanup-activity-wave.story.md) — PHPStan cleanup.
   - [0000-template.story.md](stories/0000-template.story.md) — template.

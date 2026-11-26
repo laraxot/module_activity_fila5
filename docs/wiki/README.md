@@ -35,7 +35,7 @@ Core module for the FixCity Platform.
 
 ---
 
-Pagine brevi e riusabili (concetti, regole, memorie) che completano le story. Misurato il 2026-11-25: 48 file `.md`, di cui 6 nella radice di `wiki/`.
+Pagine brevi e riusabili (concetti, regole, memorie) che completano le story. Misurato il 2026-11-25: 19 file `.md`, di cui 6 nella radice di `wiki/`.
 
 ## Da dove partire
 
@@ -47,7 +47,6 @@ Pagine brevi e riusabili (concetti, regole, memorie) che completano le story. Mi
 
 | Cartella | File | Indice |
 |---|---|---|
-| `topics/` | 29 | [topics/00-index.md](./topics/00-index.md) |
 | `concepts/` | 2 | [concepts/index.md](./concepts/index.md) |
 | `rules/` | 1 | [rules/index.md](./rules/index.md) |
 | `memories/` | 3 | [memories/index.md](./memories/index.md) |
@@ -64,7 +63,7 @@ Cartelle previste dal modello ma senza alcun `.md`: `decisions/`, `entities/`, `
 qmd search "Activity <argomento>" --limit 5
 ```
 
-Prima di creare una pagina nuova controllare [index.md](./index.md) e le pagine di `concepts/` e `topics/` per non duplicarla.
+Prima di creare una pagina nuova controllare [index.md](./index.md) e le pagine di `concepts/` per non duplicarla. (La cartella `topics/` con i digest automatici QMD e' stata rimossa: contenuti obsoleti, recuperabili da git.)
 
 ---
 

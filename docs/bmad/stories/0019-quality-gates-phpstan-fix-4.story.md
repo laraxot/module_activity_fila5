@@ -125,19 +125,3 @@ introspezionato in memoria, zero chiamanti in `Modules/`. Farle davvero droppare
 (`AbstractSchemaManager::dropIndex($index, $table)`) e' un cambio di schema: non fatto qui.
 
 ---
-
-## Contenuto unito da `0019-quality-gates-phpstan-fix-4.story.md`
-
-# quality gates phpstan fix
-
-Stub alias post-strip data/timestamp. Canonico: [./quality-gates-phpstan-fix.story.md](0019-quality-gates-phpstan-fix-4.story.md).
-
-
-### Consequences
-
-- Buono, perché chiude il gap descritto nel Context
-- Cattivo, perché richiede write-back docs, lock e quality gate
-
-### Confirmation
-
-Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).
