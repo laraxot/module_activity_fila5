@@ -158,12 +158,7 @@ Related:
 ## Related Documentation
 
 - [Project Wiki Integration](../../docs/wiki/README.md)
-<<<<<<< .merge_file_lGHPcG
 - [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
-=======
 - [Project Wiki Agent Instructions](agents.md)
->>>>>>> .merge_file_PRE5Gl
 - [Module Documentation](../README.md)=======
-- [Module Documentation](../README.md)
-- [Module Documentation](../README.md)
 - [Module Documentation](../README.md)

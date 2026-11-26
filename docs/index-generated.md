@@ -22,15 +22,6 @@ qmd: "activity module documentation index activity"
 Strategic, foundational, and consolidated documentation at module level:
 
 **Core Documentation** (Key files)
-<<<<<<< .merge_file_sdnfIx
-<<<<<<< .merge_file_Wnhfza
-=======
-<<<<<<< .merge_file_fZXdkE
-<<<<<<< .merge_file_jmajDc
-=======
-<<<<<<< .merge_file_PIKVk1
->>>>>>> .merge_file_TR4EzP
->>>>>>> .merge_file_kex0D2
   - [ARCHITECTURE.md](ARCHITECTURE.md): System architecture and design patterns
   - [API.md](API.md): API reference and endpoints
   - [DATABASE-SCHEMA.md](DATABASE-SCHEMA.md): Database schema definitions
@@ -43,12 +34,10 @@ Strategic, foundational, and consolidated documentation at module level:
   - [PRODUCT_STRATEGY.md](PRODUCT_STRATEGY.md)
   - [ROADMAP.md](roadmap.md)
   - [SPRINT_PLANNING.md](SPRINT_PLANNING.md)
-=======
   - [architecture.md](architecture.md): System architecture and design patterns
   - [API.md](api.md): API reference and endpoints
   - [database-schema.md](database-schema.md): Database schema definitions
   - [quick-start.md](quick-start.md): Quick start guide
-  - [PATTERNS.md](patterns.md): Design patterns and implementation guides
   - [testing.md](testing.md): Testing strategy and guidelines
 
 **Planning & Strategy** (Key documents)
@@ -56,15 +45,6 @@ Strategic, foundational, and consolidated documentation at module level:
   - [product_strategy.md](product_strategy.md)
   - [roadmap.md](roadmap.md)
   - [sprint_planning.md](sprint_planning.md)
-<<<<<<< .merge_file_sdnfIx
->>>>>>> .merge_file_Cn0NRK
-=======
-<<<<<<< .merge_file_fZXdkE
->>>>>>> .merge_file_YJNhGN
-=======
->>>>>>> .merge_file_gPCxZs
->>>>>>> .merge_file_TR4EzP
->>>>>>> .merge_file_kex0D2
 
 **Additional Root Files**
   - and 278+ more documentation files (configuration, guides, analysis, audits, quality reports)
@@ -265,15 +245,6 @@ Testing strategies and guidelines:
 
 | Date | File | Category |
 |------|------|----------|
-<<<<<<< .merge_file_sdnfIx
-<<<<<<< .merge_file_Wnhfza
-=======
-<<<<<<< .merge_file_fZXdkE
-<<<<<<< .merge_file_jmajDc
-=======
-<<<<<<< .merge_file_PIKVk1
->>>>>>> .merge_file_TR4EzP
->>>>>>> .merge_file_kex0D2
 | 2026-07-28 | [PATTERNS.md](PATTERNS.md) | root |
 | 2026-07-28 | [TESTING.md](TESTING.md) | root |
 | 2026-07-28 | [DATABASE-SCHEMA.md](DATABASE-SCHEMA.md) | root |
@@ -281,23 +252,11 @@ Testing strategies and guidelines:
 | 2026-07-28 | [QUICK-START.md](QUICK-START.md) | root |
 | 2026-07-28 | [ARCHITECTURE.md](ARCHITECTURE.md) | root |
 | 2026-07-28 | [archive/INDEX.md](archive/INDEX.md) | archive |
-=======
-| 2026-07-28 | [PATTERNS.md](patterns.md) | root |
 | 2026-07-28 | [testing.md](testing.md) | root |
 | 2026-07-28 | [database-schema.md](database-schema.md) | root |
-| 2026-07-28 | [API.md](api.md) | root |
 | 2026-07-28 | [quick-start.md](quick-start.md) | root |
 | 2026-07-28 | [architecture.md](architecture.md) | root |
 | 2026-07-28 | [archive/index.md](archive/index.md) | archive |
-<<<<<<< .merge_file_sdnfIx
->>>>>>> .merge_file_Cn0NRK
-=======
-<<<<<<< .merge_file_fZXdkE
->>>>>>> .merge_file_YJNhGN
-=======
->>>>>>> .merge_file_gPCxZs
->>>>>>> .merge_file_TR4EzP
->>>>>>> .merge_file_kex0D2
 | 2026-07-28 | [wiki/troubleshooting/git-push-dual-remote.md](wiki/troubleshooting/git-push-dual-remote.md) | wiki |
 | 2026-07-28 | [wiki/concepts/xotbase-resource-zen-pattern.md](wiki/concepts/xotbase-resource-zen-pattern.md) | wiki |
 | 2026-07-28 | [wiki/concepts/phpstan-pest-discipline.md](wiki/concepts/phpstan-pest-discipline.md) | wiki |

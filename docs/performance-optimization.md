@@ -20,34 +20,14 @@ qmd: "performance optimization   module **activity** activity"
 **Dopo**: Carico solo what's needed (~2K startup)
 
 ```diff
-<<<<<<< .merge_file_iUMV2T
-<<<<<<< .merge_file_qfu4MN
-- 150+ rules embeddate in agents.md
-=======
-<<<<<<< .merge_file_qjiLK3
 - 150+ rules embeddate in agents.md
 
 - 150+ rules embeddate in AGENTS.md
 + 0 rules embeddate — tutte on-demand
 
 - 150+ rules embeddate in agents.md+ 0 rules embeddate — tutte on-demand
->>>>>>> .merge_file_qt9vaD
-=======
-- 150+ rules embeddate in AGENTS.md
->>>>>>> .merge_file_IDDKai
 
-- 150+ rules embeddate in AGENTS.md
-+ 0 rules embeddate — tutte on-demand
-
-<<<<<<< .merge_file_qfu4MN
-- 150+ rules embeddate in agents.md+ 0 rules embeddate — tutte on-demand
-=======
 - 150+ rules embeddate in AGENTS.md+ 0 rules embeddate — tutte on-demand
-<<<<<<< .merge_file_iUMV2T
->>>>>>> .merge_file_IDDKai
-=======
->>>>>>> .merge_file_RNq2wS
->>>>>>> .merge_file_qt9vaD
 ```
 
 ### 2. Cache Esterna al Repo

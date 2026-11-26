@@ -331,27 +331,8 @@ solo in [llm-wiki/AGENTS.md](llm-wiki/agents.md) e [llm-wiki/log.md](llm-wiki/lo
 - [env-development-configuration.md](env-development-configuration.md) — configurazione ambiente di sviluppo.
 - [mcp-configuration.md](mcp-configuration.md) — configurazione server MCP.
 - [mcp-server-recommended.md](mcp-server-recommended.md) — MCP consigliati per il modulo (MCP-SERVER-RECOMMENDED.md duplicato maiuscolo; `mcp_server_recommended.md`/`mcp-server-recommended.md` sono invece stub puntatori a Themes, vedi Storico — attenzione: 4 file quasi omonimi con due ruoli diversi).
-<<<<<<< .merge_file_eSBvd3
-<<<<<<< .merge_file_Oibysl
 - [qmd-setup.md](qmd-setup.md) — setup QMD per il modulo (QMD-SETUP.md duplicato maiuscolo, vedi Storico).
-=======
 - [qmd-setup.md](qmd-setup.md) — setup QMD per il modulo (qmd-setup.md duplicato maiuscolo, vedi Storico).
->>>>>>> .merge_file_jCAPAn
-=======
-<<<<<<< .merge_file_yvZzum
-<<<<<<< .merge_file_KEsy59
-- [qmd-setup.md](qmd-setup.md) — setup QMD per il modulo (QMD-SETUP.md duplicato maiuscolo, vedi Storico).
-=======
-- [qmd-setup.md](qmd-setup.md) — setup QMD per il modulo (qmd-setup.md duplicato maiuscolo, vedi Storico).
->>>>>>> .merge_file_RvEx3p
-=======
-<<<<<<< .merge_file_at3wDQ
-- [qmd-setup.md](qmd-setup.md) — setup QMD per il modulo (QMD-SETUP.md duplicato maiuscolo, vedi Storico).
-=======
-- [qmd-setup.md](qmd-setup.md) — setup QMD per il modulo (qmd-setup.md duplicato maiuscolo, vedi Storico).
->>>>>>> .merge_file_mqn0Pt
->>>>>>> .merge_file_n9JHvr
->>>>>>> .merge_file_Nka5OF
 - [boost-skill-fix-summary.md](boost-skill-fix-summary.md) — fix skill Boost (`boost_skill_fix_summary.md` e' invece uno stub puntatore Themes, vedi Storico).
 - [laravel-13-upgrade.md](laravel-13-upgrade.md) — upgrade Laravel 13 (contenuto simile a `wiki/integrations/laravel-13-upgrade.md`, non identico).
 
@@ -407,26 +388,20 @@ variante e' collegata come riferimento primario nelle sezioni sopra.
 `product_strategy.md`/`product_strategy.md` · `project-structure.md`/`project-structure.md` ·
 `qmd-setup.md`/`qmd-setup.md` · `quality_report.md`/`QUALITY_REPORT.md` ·
 `query_optimization_analysis.md`/`QUERY_OPTIMIZATION_ANALYSIS.md` (+ stub quasi vuoto `query-optimization-analysis.md`) ·
-<<<<<<< .merge_file_KEsy59
 `quick-start.md`/`QUICK-START.md` · `security.md`/`SECURITY.md` · `sprint_planning.md`/`SPRINT_PLANNING.md` ·
 `tech_spec.md`/`TECH_SPEC.md` · `user_research.md`/`USER_RESEARCH.md` · `readme-update.md`/`readme_update.md` ·
 `redundancy_analysis.md`/`REDUNDANCY_ANALYSIS.md` (entrambi stub vuoti) ·
-=======
 `quick-start.md`/`quick-start.md` · `SECURITY.md`/`SECURITY.md` · `sprint_planning.md`/`sprint_planning.md` ·
 `tech_spec.md`/`TECH_SPEC.md` · `user_research.md`/`user_research.md` · `readme-update.md`/`readme_update.md` ·
 `redundancy_analysis.md`/`redundancy_analysis.md` (entrambi stub vuoti) ·
->>>>>>> .merge_file_RvEx3p
 `filament/filament-v4-icon-size-fix.md` (+ `filament-v4-icon-size-fix-attribute.md`, ex `-2.md`, `FILAMENT_V4_ICON_SIZE_FIX.md`, `filament_v4_icon_size_fix.md`) ·
 `filament/filament-v4-upgrade.md` (+ `filament-v4-upgrade-documentation.md`, ex `-2.md`, `FILAMENT_V4_UPGRADE.md`, `filament_v4_upgrade.md`) ·
 `filament/archive/filament-v4-icon-size-fix.md` (+ maiuscolo/underscore) ·
 `filament/archive/filament-v4-upgrade.md` (+ maiuscolo/underscore) ·
 `guides/event-sourcing.md`/`guides/event_sourcing.md` (stub) ·
 `guides/archive/event-sourcing.md`/`guides/archive/event_sourcing.md` ·
-<<<<<<< .merge_file_KEsy59
 `llm-wiki/agents.md`/`llm-wiki/AGENTS.md` ·
-=======
 `llm-wiki/AGENTS.md`/`llm-wiki/AGENTS.md` ·
->>>>>>> .merge_file_RvEx3p
 `performance/activity-log-optimization.md` (+ `activity-log-optimization-module.md`, ex `-2.md`, `ACTIVITY_LOG_OPTIMIZATION.md`, `activity_log_optimization.md`) ·
 `performance/archive/activity-log-optimization.md` (+ maiuscolo/underscore/`-renamed.md`) ·
 `roadmap/00-index.md`/`roadmap/00-index.md` · `wiki/AGENTS.md`/`wiki/AGENTS.md` ·
@@ -435,11 +410,8 @@ variante e' collegata come riferimento primario nelle sezioni sopra.
 `wiki/memories/index.md`/`wiki/memories/index.md` · `wiki/rules/index.md`/`wiki/rules/index.md` ·
 `wiki/skills/index.md`/`wiki/skills/index.md` · `tecnico/laraxot/archive/module-activity.md`/`module_activity.md` ·
 `use_cases/shop/archive/console-commands.md`/`console_commands.md` (entrambi stub vuoti) ·
-<<<<<<< .merge_file_KEsy59
 `00-index.md`/`00-INDEX.md` (+ `00-index-documentation.md` quasi vuoto).
-=======
 `00-index.md`/`00-index.md` (+ `00-index-documentation.md` quasi vuoto).
->>>>>>> .merge_file_RvEx3p
 
 **Nota**: `bad-practices.md`, `best-practices.md`, `code-quality.md`, `mcp_server_recommended.md`/`mcp-server-recommended.md`,
 `boost_skill_fix_summary.md`, `phpmd_analysis.md`/`PHPMD_ANALYSIS.md` non sono duplicati del contenuto reale:
@@ -519,29 +491,14 @@ Non richiedono consolidamento: sono puntatori voluti, non copie accidentali.
 - [User Module](../User/docs/README.md) - User authentication and management
 - [Notify Module](../Notify/docs/index.md) - Notification system
 - [Xot Module](../Xot/docs/index.md) - Core base classes
-<<<<<<< .merge_file_KEsy59
 - [User Module](../user/docs/readme.md) - User authentication and management
-=======
-- [User Module](../user/docs/README.md) - User authentication and management
->>>>>>> .merge_file_RvEx3p
-- [Notify Module](../notify/docs/index.md) - Notification system
-- [Xot Module](../xot/docs/index.md) - Core base classes
-
-## Related Modules
-- [User Module](../User/docs/README.md) - User authentication and management
-- [Notify Module](../Notify/docs/index.md) - Notification system
-- [Xot Module](../Xot/docs/index.md) - Core base classes
 - [User Module](../user/docs/README.md) - User authentication and management
 - [Notify Module](../notify/docs/index.md) - Notification system
 - [Xot Module](../xot/docs/index.md) - Core base classes
 
 ## Related Modules
-- [User Module](../User/docs/README.md) - User authentication and management
-- [Notify Module](../Notify/docs/index.md) - Notification system
-- [Xot Module](../Xot/docs/index.md) - Core base classes
-- [User Module](../user/docs/readme.md) - User authentication and management
-- [Notify Module](../notify/docs/index.md) - Notification system
-- [Xot Module](../xot/docs/index.md) - Core base classes
+
+## Related Modules
 
 Quattro copie parallele dello stesso lotto di file di test/placeholder, quasi tutte a
 0-3 righe (`archived-note.md`, `documentation*.md`, `2024-03-27.md`, `test*.md`,
@@ -581,11 +538,7 @@ sono migrati. Canonici nuovi: senza data. Misura:
 python3 -I bashscripts/tools/docs/md-filenames.py check --paths laravel/Modules/Activity/docs
 ```
 
-<<<<<<< .merge_file_at3wDQ
-Esempi ancora presenti: `documentation-2024-03-27.md`, `quality-status-2025-11.md`,
-=======
 Esempi ancora presenti: `documentation-2024-03-27.md`, `quality-status.md`,
->>>>>>> .merge_file_mqn0Pt
 `stories/phpstan-cleanup-activity.story.md`,
 `bmad/stories/*-20260928*.story.md`, `wiki/troubleshooting/git-merge-conflict-inventory-april.md`,
 `raw/root-import/*2024*`. Procedura: [docs-clean.md](../../../../bashscripts/docs/prompts/docs-clean.md).

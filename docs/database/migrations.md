@@ -35,18 +35,5 @@ Questo documento descrive le migrazioni del database per il modulo Activity. Ogn
 ## Collegamenti tra versioni di migrations.md
 * [migrations.md](../../../Gdpr/docs/migrations.md)
 * [migrations.md](../../../Notify/docs/migrations.md)
-<<<<<<< .merge_file_Ri1J4x
-<<<<<<< .merge_file_AP8CUg
-=======
-<<<<<<< .merge_file_8EH5f4
->>>>>>> .merge_file_DeSdoQ
 * [migrations.md](../../../gdpr/docs/migrations.md)
 * [migrations.md](../../../notify/docs/migrations.md)
-=======
-* [migrations.md](../../../Gdpr/docs/migrations.md)
-* [migrations.md](../../../Notify/docs/migrations.md)
-<<<<<<< .merge_file_Ri1J4x
->>>>>>> .merge_file_epvkzy
-=======
->>>>>>> .merge_file_UJ5r2F
->>>>>>> .merge_file_DeSdoQ

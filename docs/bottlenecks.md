@@ -137,8 +137,6 @@ Il caricamento di attività con relazioni complesse può causare il problema N+1
 - Aumento del carico sul database
 - Maggiore utilizzo di memoria
 
-### Soluzione Passo-Passo
-
 1. **Implementare Eager Loading Ottimizzato**
 
 ```php
@@ -246,8 +244,6 @@ I widget Filament che mostrano dati di attività possono causare rallentamenti n
 - Esperienza utente degradata
 - Timeout potenziali su richieste complesse
 
-### Soluzione Passo-Passo
-
 1. **Ottimizzare i Widget Filament**
 
 ```php
@@ -326,12 +322,10 @@ class ListActivities extends XotBasePage
 ## Collegamenti Bidirezionali
 
 - [README Activity](./README.md)
-- [README Activity](./README.md)
 - [Roadmap](./roadmap.md)
 - [Struttura del Modulo](./structure.md)
 ## Collegamenti
 
-- [Torna a README](./README.md)
 - [Torna a README](./README.md)
 - [Vai a Roadmap](./roadmap.md)
 - [Vai a Struttura](./structure.md)
@@ -339,32 +333,16 @@ class ListActivities extends XotBasePage
 ## Collegamenti tra versioni di bottlenecks.md
 * [bottlenecks.md](../../../../bashscripts/docs/bottlenecks.md)
 * [bottlenecks.md](../../chart/docs/bottlenecks.md)
-<<<<<<< .merge_file_XJ7jXO
-<<<<<<< .merge_file_ifzFao
-=======
-<<<<<<< .merge_file_gogZPT
->>>>>>> .merge_file_K0QCzE
 * [bottlenecks.md](../../chart/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../gdpr/docs/bottlenecks.md)
 * [bottlenecks.md](../../gdpr/docs/performance/bottlenecks.md)
-=======
 * [bottlenecks.md](../../Chart/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Gdpr/docs/bottlenecks.md)
 * [bottlenecks.md](../../Gdpr/docs/performance/bottlenecks.md)
-<<<<<<< .merge_file_XJ7jXO
->>>>>>> .merge_file_INLEDF
-=======
->>>>>>> .merge_file_Zge9TR
->>>>>>> .merge_file_K0QCzE
 * [bottlenecks.md](../../xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../xot/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../xot/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../dental/docs/bottlenecks.md)
-<<<<<<< .merge_file_XJ7jXO
-<<<<<<< .merge_file_ifzFao
-=======
-<<<<<<< .merge_file_gogZPT
->>>>>>> .merge_file_K0QCzE
 * [bottlenecks.md](../../user/docs/bottlenecks.md)
 * [bottlenecks.md](../../user/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../ui/docs/bottlenecks.md)
@@ -374,39 +352,21 @@ class ListActivities extends XotBasePage
 * [bottlenecks.md](../../job/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../media/docs/bottlenecks.md)
 * [bottlenecks.md](../../media/docs/performance/bottlenecks.md)
-=======
 * [bottlenecks.md](../../User/docs/bottlenecks.md)
 * [bottlenecks.md](../../User/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../ui/docs/bottlenecks.md)
-* [bottlenecks.md](../../ui/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../Lang/docs/bottlenecks.md)
 * [bottlenecks.md](../../Lang/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Job/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Media/docs/bottlenecks.md)
 * [bottlenecks.md](../../Media/docs/performance/bottlenecks.md)
-<<<<<<< .merge_file_XJ7jXO
->>>>>>> .merge_file_INLEDF
-=======
->>>>>>> .merge_file_Zge9TR
->>>>>>> .merge_file_K0QCzE
 * [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../cms/docs/bottlenecks.md)
 * [bottlenecks.md](../../Chart/docs/bottlenecks.md)
-* [bottlenecks.md](../../Chart/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Gdpr/docs/bottlenecks.md)
-* [bottlenecks.md](../../Gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../Xot/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Xot/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../Dental/docs/bottlenecks.md)
-* [bottlenecks.md](../../User/docs/bottlenecks.md)
-* [bottlenecks.md](../../User/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../UI/docs/bottlenecks.md)
 * [bottlenecks.md](../../UI/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../Lang/docs/bottlenecks.md)
-* [bottlenecks.md](../../Lang/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Job/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Media/docs/bottlenecks.md)
-* [bottlenecks.md](../../Media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
