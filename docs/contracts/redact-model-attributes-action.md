@@ -1,9 +1,10 @@
 ---
 title: "Contratto — RedactModelAttributesAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\RedactModelAttributesAction"
 qmd: "contract RedactModelAttributesAction activity redazione attributi sensibili password remember_token two_factor non applicata ACT-REDACT"
 ---
@@ -22,10 +23,10 @@ Rimuove dagli attributi di un modello le chiavi sensibili prima della persistenz
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-REDACT-INV-1` | Rimuove esattamente le quattro chiavi di primo livello, con confronto case-sensitive. | `RedactModelAttributesActionTest.php` («rimuove chiavi sensibili») |
-| `ACT-REDACT-INV-2` | Non modifica l'array in ingresso. | Test: nessuno |
+| ACT-REDACT-INV-1 | Rimuove esattamente le quattro chiavi di primo livello, con confronto case-sensitive. Limite noto: nessun test prova che il confronto sia case-sensitive. | ACT-REDACT-INV-1 |
+| ACT-REDACT-INV-2 | Non modifica l'array in ingresso. | — (non dimostrato) |
 
 ## Effetti collaterali
 

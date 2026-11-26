@@ -1,9 +1,10 @@
 ---
 title: "Contratto — FilterLogEntriesAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\Log\\FilterLogEntriesAction"
 qmd: "contract FilterLogEntriesAction activity log filtro livello ricerca testo voci piu recenti limite ACT-LOGFILTER"
 ---
@@ -25,13 +26,13 @@ Filtra le voci di un log per livello e testo e le restituisce dalla più recente
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-LOGFILTER-INV-1` | Il livello è confronto esatto con `entry->level` dopo il maiuscolo; senza livello non c'è filtro. | `ParseAndFilterLogEntriesActionTest.php` («filters by level») |
-| `ACT-LOGFILTER-INV-2` | Il testo è cercato nel corpo intero della voce, stack trace incluso, senza distinguere maiuscole. | `ParseAndFilterLogEntriesActionTest.php` («searches the whole entry body…») |
-| `ACT-LOGFILTER-INV-3` | Le voci sono restituite dalla più recente. | `ParseAndFilterLogEntriesActionTest.php` («returns the newest entries first…») |
-| `ACT-LOGFILTER-INV-4` | `total` conta tutte le voci corrispondenti; `entries` non supera il limite. | `ParseAndFilterLogEntriesActionTest.php` («…applies the limit while reporting the total») |
-| `ACT-LOGFILTER-INV-5` | Livello e testo si combinano in AND. | `ParseAndFilterLogEntriesActionTest.php` («combines level and search filters») |
+| ACT-LOGFILTER-INV-1 | Il livello è confronto esatto con `entry->level` dopo il maiuscolo; senza livello non c'è filtro. | ACT-LOGFILTER-INV-1 |
+| ACT-LOGFILTER-INV-2 | Il testo è cercato nel corpo intero della voce, stack trace incluso, senza distinguere maiuscole. | ACT-LOGFILTER-INV-2 |
+| ACT-LOGFILTER-INV-3 | Le voci sono restituite dalla più recente. | ACT-LOGFILTER-INV-3 |
+| ACT-LOGFILTER-INV-4 | `total` conta tutte le voci corrispondenti; `entries` non supera il limite. | ACT-LOGFILTER-INV-4 |
+| ACT-LOGFILTER-INV-5 | Livello e testo si combinano in AND. | ACT-LOGFILTER-INV-5 |
 
 ## Effetti collaterali
 

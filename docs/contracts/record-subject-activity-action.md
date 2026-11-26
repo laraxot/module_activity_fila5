@@ -1,9 +1,10 @@
 ---
 title: "Contratto — RecordSubjectActivityAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\RecordSubjectActivityAction"
 qmd: "contract RecordSubjectActivityAction activity registrazione evento soggetto classe id senza istanza modello ACT-RECSUBJ"
 ---
@@ -22,10 +23,10 @@ Registra un evento su un soggetto identificato da classe e id, senza bisogno di 
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-RECSUBJ-INV-1` | Crea una riga con `subject_type`, `subject_id`, `event`, `properties`, `log_name = 'default'`; la descrizione di default è `<Basename> <event>`. | `CoverageHundredActionsTest.php`, `QueryAndValidationTest.php`, `AdapterActivityRecorderTest.php` (percorsi, non verificati nel dettaglio) |
-| `ACT-RECSUBJ-INV-2` | Non valorizza `causer_type` né `causer_id`, anche se c'è un utente autenticato. | Test: nessuno |
+| ACT-RECSUBJ-INV-1 | Crea una riga con `subject_type`, `subject_id`, `event`, `properties`, `log_name = 'default'`; la descrizione di default è `<Basename> <event>`. | — (non dimostrato) |
+| ACT-RECSUBJ-INV-2 | Non valorizza `causer_type` né `causer_id`, anche se c'è un utente autenticato. | — (non dimostrato) |
 
 ## Effetti collaterali
 

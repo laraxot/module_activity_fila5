@@ -44,7 +44,7 @@ test('ActivityLogger throws exception for invalid user type', function () {
         Assert::fail('Expected InvalidArgumentException was not thrown');
     } catch (InvalidArgumentException $exception) {
     }
-});
+})->group('ACT-LOGGER-INV-1');
 
 test('ActivityLogger can log created event', function () {
     $user = UserFactory::new()->createOne();
@@ -55,7 +55,7 @@ test('ActivityLogger can log created event', function () {
     $result = $logger->created($subjectModel, $user);
 
     Assert::assertSame('created', $result->event);
-});
+})->group('ACT-LOGGER-INV-2');
 
 test('ActivityLogger can log updated event', function () {
     $user = UserFactory::new()->createOne();

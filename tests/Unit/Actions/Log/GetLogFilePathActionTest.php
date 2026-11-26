@@ -109,4 +109,4 @@ it('resolves the log directory to its real path and fails when it is missing', f
     expect($action->execute($this->base))->toBe(realpath($this->base));
     expect(fn () => $action->execute($this->root.'/non-esiste'))->toThrow(InvalidLogFileException::class);
     expect(fn () => $action->execute($this->base.'/laravel.log'))->toThrow(InvalidLogFileException::class);
-});
+})->group('ACT-LOGDIR-INV-1', 'ACT-LOGDIR-INV-2');

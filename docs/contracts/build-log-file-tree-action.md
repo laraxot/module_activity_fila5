@@ -1,9 +1,10 @@
 ---
 title: "Contratto — BuildLogFileTreeAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\Log\\BuildLogFileTreeAction"
 qmd: "contract BuildLogFileTreeAction activity log albero cartelle file ordinamento naturale ACT-LOGTREE"
 ---
@@ -22,13 +23,13 @@ Trasforma l'elenco piatto dei file di log in un albero di cartelle per la pagina
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-LOGTREE-INV-1` | Ogni file compare solo nel nodo della sua cartella: i file diretti in `files`, gli altri nel sottoalbero. | `BuildLogFileTreeActionTest.php` («builds a nested tree…») |
-| `ACT-LOGTREE-INV-2` | Le cartelle sono in ordine naturale senza distinguere maiuscole (`9` prima di `10`, `252` prima di `1000`). | `BuildLogFileTreeActionTest.php` («orders folders naturally…») |
-| `ACT-LOGTREE-INV-3` | I file di ogni cartella sono dal più recente al più vecchio (`modifiedAt` decrescente, poi nome). | `BuildLogFileTreeActionTest.php` («orders the files of each folder…») |
-| `ACT-LOGTREE-INV-4` | `count` di un nodo = numero di file della cartella, sottocartelle incluse. | `BuildLogFileTreeActionTest.php` («counts the files…») |
-| `ACT-LOGTREE-INV-5` | Il prefisso del percorso termina con `/`: la cartella `a` non cattura i file di `ab`. | `BuildLogFileTreeActionTest.php` («does not mix a folder…») |
+| ACT-LOGTREE-INV-1 | Ogni file compare solo nel nodo della sua cartella: i file diretti in `files`, gli altri nel sottoalbero. | ACT-LOGTREE-INV-1 |
+| ACT-LOGTREE-INV-2 | Le cartelle sono in ordine naturale senza distinguere maiuscole (`9` prima di `10`, `252` prima di `1000`). Limite noto: che il confronto ignori le maiuscole non è asserito da nessun test. | ACT-LOGTREE-INV-2 |
+| ACT-LOGTREE-INV-3 | I file di ogni cartella sono dal più recente al più vecchio (`modifiedAt` decrescente, poi nome). Limite noto: l'ordine per nome a parità di data non è asserito da nessun test. | ACT-LOGTREE-INV-3 |
+| ACT-LOGTREE-INV-4 | `count` di un nodo = numero di file della cartella, sottocartelle incluse. | ACT-LOGTREE-INV-4 |
+| ACT-LOGTREE-INV-5 | Il prefisso del percorso termina con `/`: la cartella `a` non cattura i file di `ab`. | ACT-LOGTREE-INV-5 |
 
 ## Effetti collaterali
 

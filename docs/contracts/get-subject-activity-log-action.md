@@ -1,9 +1,10 @@
 ---
 title: "Contratto — GetSubjectActivityLogAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\Query\\GetSubjectActivityLogAction"
 qmd: "contract GetSubjectActivityLogAction activity log soggetto classe e id array attivita ACT-QSUBJECT"
 ---
@@ -24,10 +25,10 @@ Restituisce il log di un soggetto identificato da classe e id, come array, senza
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-QSUBJECT-INV-1` | Filtro `subject_type = $modelClass` e `subject_id = $modelId`, ordine `created_at` decrescente, massimo `$limit` righe. | `CoverageHundredActionsTest.php`, `QueryAndValidationTest.php`, `AdapterActivityRecorderTest.php` (percorsi, non verificati riga per riga) |
-| `ACT-QSUBJECT-INV-2` | Il risultato è un array indicizzato da zero, non una Collection. | Test: nessuno dedicato |
+| ACT-QSUBJECT-INV-1 | Filtro `subject_type = $modelClass` e `subject_id = $modelId`, ordine `created_at` decrescente, massimo `$limit` righe. | — (non dimostrato) |
+| ACT-QSUBJECT-INV-2 | Il risultato è un array indicizzato da zero, non una Collection. | — (non dimostrato) |
 
 ## Effetti collaterali
 

@@ -56,7 +56,7 @@ it('ignores files that are not .log and dot files', function (): void {
     File::put($this->base.'/dump.log.gz', 'x');
 
     expect(listedLogFilePaths((new ListLogFilesAction)->execute($this->base)))->toBe(['laravel.log']);
-});
+})->group('ACT-LOGLIST-INV-1');
 
 it('returns size, name, directory and modification time for each file', function (): void {
     File::put($this->base.'/reports/252/daily_2026-09-17.log', 'hello');
@@ -87,7 +87,7 @@ it('limits the number of returned files', function (): void {
     }
 
     expect((new ListLogFilesAction)->execute($this->base, 2))->toHaveCount(2);
-});
+})->group('ACT-LOGLIST-INV-4');
 
 it('does not list a symlink that points outside the log directory', function (): void {
     File::put($this->base.'/laravel.log', 'a');
@@ -98,8 +98,8 @@ it('does not list a symlink that points outside the log directory', function ():
     }
 
     expect(listedLogFilePaths((new ListLogFilesAction)->execute($this->base)))->toBe(['laravel.log']);
-});
+})->group('ACT-LOGLIST-INV-2');
 
 it('returns an empty list when the log directory does not exist', function (): void {
     expect((new ListLogFilesAction)->execute($this->root.'/non-esiste'))->toBe([]);
-});
+})->group('ACT-LOGLIST-INV-3');

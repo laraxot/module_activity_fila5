@@ -4,7 +4,7 @@ type: index
 module: Activity
 status: active
 created: 2026-11-18
-updated: 2026-11-24
+updated: 2026-11-26
 qmd: "Activity adr architecture decision records madr formato"
 tags: [adr, decisioni, activity]
 ---
@@ -41,6 +41,7 @@ status: proposed | accepted | superseded | deprecated
 module: Activity
 created: AAAA-MM-GG
 updated: AAAA-MM-GG
+decision-makers: [team back office]
 issues: []
 ---
 
@@ -49,27 +50,43 @@ issues: []
 ## Contesto
 Fatti e vincoli che hanno reso necessaria la scelta (misure, norme, policy, incidenti).
 
-## Decisione
-Cosa si fa, in concreto, e dove sta nel codice.
+## Driver della decisione
+Le forze che pesano sulla scelta, in elenco; ogni voce verificabile nel codice o in un documento del repo.
 
 ## Alternative scartate
-Ogni alternativa seria, con il motivo per cui non e' stata scelta.
+Ogni alternativa seria, con il motivo per cui non è stata scelta.
+
+## Decisione
+Cosa si fa, in concreto, e dove sta nel codice.
 
 ## Conseguenze
 Pro, contro, debito che resta, cosa misurare. Chi cambia la decisione scrive un nuovo ADR e segna questo `superseded`.
 
-## Verifica
-Comandi o test che esistono e falliscono se la decisione viene violata; solo cio' che si puo' ripetere.
+## Conferma
+Test (percorso e, se c'è, `--group`), comando eseguibile da `laravel/` o regola di review che falliscono se la decisione viene violata. Se non esiste una conferma automatica: «Nessuna conferma automatica oggi; proposta: …». Se il codice contraddice la decisione, prima di Conferma c'è `## Stato attuale`.
 ```
 
-Un ADR "sostanziale" aggiunge `## Driver della decisione` e `## Conferma`.
+Ogni ADR ha i sei titoli sopra, in quest'ordine.
 
 Template condiviso: `laravel/Modules/Xot/docs/adr/0000-template.md` (copia locale: [0000-template.md](0000-template.md)). Guard: `Modules/Xot/tests/Unit/Docs/PackagesHaveContractsAndAdrTest.php`.
 
-## ADR presenti
+## Decisioni
 
-- [L'audit delle attivita' e' append-oriented](0001-activity-audit-is-append-oriented.md) — la cronologia non si riscrive per correggere una visualizzazione; le viste la interpretano.
-- [I modelli di Activity usano la connessione 'activity'](0002-activity-models-on-dedicated-connection.md) — log separabile in un altro database e rollback dei test coerente; debito: Spatie scrive sulla default.
-- [Visualizzatore dei log: un solo risolutore di percorsi](0003-log-viewer-single-path-resolver.md) — `realpath` e solo `.log` dentro `storage/logs`, una regola di accesso, download a blocchi.
+| ADR | Stato | Perché | Conferma |
+|---|---|---|---|
+| [0001-activity-audit-is-append-oriented](0001-activity-audit-is-append-oriented.md) | accepted | L'audit non si riscrive: le viste interpretano la cronologia, la retention per età è l'unica cancellazione. | Parziale: test di registrazione; che le righe non siano riscritte solo da review |
+| [0002-activity-models-on-dedicated-connection](0002-activity-models-on-dedicated-connection.md) | accepted | I modelli di Activity usano la connessione `activity`, mai quella di default. | Sì: `BaseModelTest.php`, `RedactModelAttributesActionTest.php` |
+| [0003-log-viewer-single-path-resolver](0003-log-viewer-single-path-resolver.md) | accepted | Visualizzatore dei log: un solo risolutore di percorsi, una regola di accesso, download a blocchi. | Sì: `--group=ACTIVITY-LOGFILE-INV-1` … `-5`, `ACTIVITY-LOGACCESS-INV-1` … `-3`, `ACTIVITY-LOGDOWNLOAD-INV-1`, `-2` |
 
 Elenco con stato: [index.md](index.md).
+
+## Stato di copertura
+
+ADR: 3. Con conferma automatica (test o comando eseguibile da `laravel/`): 2. ADR 0002 ha una sezione «Stato attuale» con due scarti tra decisione e codice/test; ADR 0001 dichiara in Conferma che `ActivityPolicy` non è coperta oltre `view`.
+
+## Backlog
+
+- Riconciliare `tests/Unit/Bootstrap/PestExtendBootstrapTest.php` (riga 23) con `RedactModelAttributesActionTest.php` (riga 39) sulla connessione di `Snapshot` e `StoredEvent` in testing (ADR 0002, «Stato attuale»).
+- Test che scandisce `Modules/Activity/app` per `update/upsert/save` su `activity_log` con allowlist delle eccezioni note (ADR 0001, Conferma).
+- Le copie senza numero (`activity-audit-is-append-oriented.md`, `activity-models-on-dedicated-connection.md`, `log-viewer-single-path-resolver.md`) risultano cancellate nell'albero di lavoro (`git status` del 2026-11-26) e non sono più in `docs/adr`; il numerato è l'unico ADR.
+- `0000-template.md` è il modello, non una decisione.

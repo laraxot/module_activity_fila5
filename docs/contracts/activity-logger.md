@@ -1,9 +1,10 @@
 ---
 title: "Contratto — ActivityLogger"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\ActivityLogger"
 qmd: "contract ActivityLogger activity scrittura log login logout modello custom cleanOld statistiche ACT-LOGGER"
 ---
@@ -27,14 +28,14 @@ Facciata di scrittura e lettura del log attività: registra eventi generici e de
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-LOGGER-INV-1` | In `log()`, un `$user` non null che non è `UserContract` lancia `InvalidArgumentException('User must implement UserContract')`. | `CoverageHundredActionsTest.php` (~riga 250) |
-| `ACT-LOGGER-INV-2` | `created()` produce un'attività con `event = 'created'`. | `CoverageHundredActionsTest.php` (~riga 177), `ActivityLoggerTest.php` |
-| `ACT-LOGGER-INV-3` | `cleanOld($days)` con `$days <= 0` lancia `InvalidArgumentException('Days must be positive')` prima di toccare il database. | Test: nessuno |
-| `ACT-LOGGER-INV-4` | `cleanOld()` cancella con una singola `DELETE` (non a blocchi) e restituisce il numero di righe. | `ActivityLoggerTest.php` (~riga 174) |
-| `ACT-LOGGER-INV-5` | `getStatistics()` calcola senza cache, a differenza di `GetActivityStatisticsAction`. | `ActivityLoggerTest.php` (~righe 179, 190) |
-| `ACT-LOGGER-INV-6` | `getUserActivities`, `getByType`, `getRecent` rifiutano `limit <= 0`; `getModelActivities` non lo fa. | Test: nessuno diretto |
+| ACT-LOGGER-INV-1 | In `log()`, un `$user` non null che non è `UserContract` lancia `InvalidArgumentException('User must implement UserContract')`. Limite noto: il test asserisce il tipo di eccezione, non il messaggio (asserito solo per l'Adapter, `CoverageHundredActionsTest.php` riga 250). | ACT-LOGGER-INV-1 |
+| ACT-LOGGER-INV-2 | `created()` produce un'attività con `event = 'created'`. | ACT-LOGGER-INV-2 |
+| ACT-LOGGER-INV-3 | `cleanOld($days)` con `$days <= 0` lancia `InvalidArgumentException('Days must be positive')` prima di toccare il database. | — (non dimostrato) |
+| ACT-LOGGER-INV-4 | `cleanOld()` cancella con una singola `DELETE` (non a blocchi) e restituisce il numero di righe. | — (non dimostrato) |
+| ACT-LOGGER-INV-5 | `getStatistics()` calcola senza cache, a differenza di `GetActivityStatisticsAction`. | — (non dimostrato) |
+| ACT-LOGGER-INV-6 | `getUserActivities`, `getByType`, `getRecent` rifiutano `limit <= 0`; `getModelActivities` non lo fa. | — (non dimostrato) |
 
 ## Effetti collaterali
 

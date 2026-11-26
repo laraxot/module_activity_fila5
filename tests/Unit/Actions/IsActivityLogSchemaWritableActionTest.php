@@ -12,4 +12,4 @@ it('returns false when activity log is disabled', function (): void {
     config(['activitylog.enabled' => false]);
 
     Assert::assertFalse(app(IsActivityLogSchemaWritableAction::class)->execute());
-});
+})->group('ACT-SCHEMA-IS-INV-1');

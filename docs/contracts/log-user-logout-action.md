@@ -1,9 +1,10 @@
 ---
 title: "Contratto — LogUserLogoutAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\LogUserLogoutAction"
 qmd: "contract LogUserLogoutAction activity evento logout utente causer subject ACT-LOGOUT"
 ---
@@ -22,10 +23,10 @@ Registra il logout di un utente. Il soggetto e il causer sono l'utente stesso.
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-LOGOUT-INV-1` | Se l'utente risolto non è un `Model` lancia `InvalidArgumentException('User must implement UserContract and extend Model')`. | `LogUserLogoutActionTest.php`, `ActivityActionsUnitTest.php` (percorsi, non verificati nel dettaglio) |
-| `ACT-LOGOUT-INV-2` | Il tipo è `logout`; `subject_type` è la classe dell'utente. | Test: nessuno diretto |
+| ACT-LOGOUT-INV-1 | Se l'utente risolto non è un `Model` lancia `InvalidArgumentException('User must implement UserContract and extend Model')`. | — (non dimostrato) |
+| ACT-LOGOUT-INV-2 | Il tipo è `logout`; `subject_type` è la classe dell'utente. | — (non dimostrato) |
 
 ## Effetti collaterali
 

@@ -1,9 +1,10 @@
 ---
 title: "Contratto — IsActivityLogSchemaWritableAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\Schema\\IsActivityLogSchemaWritableAction"
 qmd: "contract IsActivityLogSchemaWritableAction activity log schema scrivibile attribute_changes Spatie v4 registrazione utente ACT-SCHEMA-IS"
 ---
@@ -22,11 +23,11 @@ Verifica che la tabella `activity_log` esista e abbia la colonna `attribute_chan
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-SCHEMA-IS-INV-1` | Con `activitylog.enabled` falso restituisce `false` senza interrogare lo schema. | `IsActivityLogSchemaWritableActionTest.php` («returns false when activity log is disabled»); `Support/ActivityLogSchemaTest.php` |
-| `ACT-SCHEMA-IS-INV-2` | `true` solo se la tabella esiste e ha `attribute_changes` sulla connessione risolta. | Test: nessuno diretto |
-| `ACT-SCHEMA-IS-INV-3` | Connessione vuota o non stringa: `database.default`, o `mysql`. Tabella vuota: `activity_log`. | Test: nessuno |
+| ACT-SCHEMA-IS-INV-1 | Con `activitylog.enabled` falso restituisce `false` senza interrogare lo schema. Limite noto: il test asserisce `false`; che lo schema non sia interrogato non è asserito. | ACT-SCHEMA-IS-INV-1 |
+| ACT-SCHEMA-IS-INV-2 | `true` solo se la tabella esiste e ha `attribute_changes` sulla connessione risolta. | — (non dimostrato) |
+| ACT-SCHEMA-IS-INV-3 | Connessione vuota o non stringa: `database.default`, o `mysql`. Tabella vuota: `activity_log`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

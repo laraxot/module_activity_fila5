@@ -90,7 +90,7 @@ Cause e fix:
 - **Confine Folio**: owner unico = `Cms\FolioVoltServiceProvider` (mai
   `App\Providers\FolioServiceProvider`, mai `Folio::path` in Activity).
   Download: `pages/api/log-download` → `/api/log-download` via Cms.
-  SSoT: [folio-volt-sole-owner.md](../../../Cms/docs/bmad/folio-volt-sole-owner.md).
+  SSoT: [0003-folio-volt-sole-owner.md](../../../Cms/docs/bmad/0003-folio-volt-sole-owner.md).
 
 File toccati: `tests/TestCase.php`, `tests/Feature/{ActionsTest,BaseModelBusinessLogicTest,
 BaseModelBusinessLogicPestTest,CodeQualityTest,FilamentTest}.php`,

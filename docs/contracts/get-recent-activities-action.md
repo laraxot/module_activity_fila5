@@ -1,9 +1,10 @@
 ---
 title: "Contratto — GetRecentActivitiesAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\Query\\GetRecentActivitiesAction"
 qmd: "contract GetRecentActivitiesAction activity query attivita recenti ultime limite ACT-QRECENT"
 ---
@@ -22,10 +23,10 @@ Restituisce le ultime attività registrate, senza filtri.
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-QRECENT-INV-1` | `$limit <= 0` lancia `InvalidArgumentException('Limit must be positive')` prima della query. | Test: nessuno diretto (il messaggio compare solo in un mock di `AdapterActivityLoggerDelegationTest.php`) |
-| `ACT-QRECENT-INV-2` | Nessun filtro, ordine `created_at` decrescente, massimo `$limit` righe. | `QueryAndValidationTest.php` (richiama l'Action, non verificato) |
+| ACT-QRECENT-INV-1 | `$limit <= 0` lancia `InvalidArgumentException('Limit must be positive')` prima della query. | — (non dimostrato) |
+| ACT-QRECENT-INV-2 | Nessun filtro, ordine `created_at` decrescente, massimo `$limit` righe. | — (non dimostrato) |
 
 ## Effetti collaterali
 

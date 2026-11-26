@@ -1,9 +1,10 @@
 ---
 title: "Contratto — GetUserActivitiesAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\Query\\GetUserActivitiesAction"
 qmd: "contract GetUserActivitiesAction activity query attivita causate da utente causer_id causer_type ACT-QUSER"
 ---
@@ -23,11 +24,11 @@ Restituisce le attività causate da un utente.
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-QUSER-INV-1` | Un utente che non è un `Model` lancia `InvalidArgumentException('User must be an Eloquent model')`. | Test: nessuno che asserisca il messaggio |
-| `ACT-QUSER-INV-2` | `$limit <= 0` lancia `InvalidArgumentException('Limit must be positive')`. | Test: nessuno diretto |
-| `ACT-QUSER-INV-3` | Un'attività è dell'utente solo se `causer_id` e `causer_type` coincidono entrambi. Attività con solo `causer_id` (fallback su `Auth::id()`, vedi `log-activity-action.md`) sono escluse. | Test: nessuno |
+| ACT-QUSER-INV-1 | Un utente che non è un `Model` lancia `InvalidArgumentException('User must be an Eloquent model')`. | — (non dimostrato) |
+| ACT-QUSER-INV-2 | `$limit <= 0` lancia `InvalidArgumentException('Limit must be positive')`. | — (non dimostrato) |
+| ACT-QUSER-INV-3 | Un'attività è dell'utente solo se `causer_id` e `causer_type` coincidono entrambi. Attività con solo `causer_id` (fallback su `Auth::id()`, vedi `log-activity-action.md`) sono escluse. | — (non dimostrato) |
 
 ## Effetti collaterali
 

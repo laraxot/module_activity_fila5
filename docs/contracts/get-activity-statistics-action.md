@@ -1,9 +1,10 @@
 ---
 title: "Contratto — GetActivityStatisticsAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\Query\\GetActivityStatisticsAction"
 qmd: "contract GetActivityStatisticsAction activity statistiche totale per tipo oggi settimana mese cache cinque minuti ACT-QSTATS"
 ---
@@ -22,12 +23,12 @@ Statistiche del log attività (totale, per tipo, oggi, settimana, mese) per la d
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-QSTATS-INV-1` | Il risultato è in cache per 5 minuti sotto la chiave `activity.statistics.<id utente>` o `activity.statistics.global`. Utenti diversi non condividono la cache. | Test: nessuno su TTL o chiave; `CoverageHundredActionsTest.php` (~righe 189-193) copre solo il percorso |
-| `ACT-QSTATS-INV-2` | Un utente che non è un Eloquent `Model` lancia `InvalidArgumentException('User must be an Eloquent model')`, ma solo al calcolo: con cache calda non viene lanciata. | Test: nessuno |
-| `ACT-QSTATS-INV-3` | La forma del risultato è fissa; `by_type` ignora gli `event` vuoti. | `AdapterActivityLoggerDelegationTest.php` (verifica la chiave `total`) |
-| `ACT-QSTATS-INV-4` | Valori non numerici della cache sono normalizzati a `0`. | Test: nessuno |
+| ACT-QSTATS-INV-1 | Il risultato è in cache per 5 minuti sotto la chiave `activity.statistics.<id utente>` o `activity.statistics.global`. Utenti diversi non condividono la cache. | — (non dimostrato) |
+| ACT-QSTATS-INV-2 | Un utente che non è un Eloquent `Model` lancia `InvalidArgumentException('User must be an Eloquent model')`, ma solo al calcolo: con cache calda non viene lanciata. | — (non dimostrato) |
+| ACT-QSTATS-INV-3 | La forma del risultato è fissa; `by_type` ignora gli `event` vuoti. | — (non dimostrato) |
+| ACT-QSTATS-INV-4 | Valori non numerici della cache sono normalizzati a `0`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

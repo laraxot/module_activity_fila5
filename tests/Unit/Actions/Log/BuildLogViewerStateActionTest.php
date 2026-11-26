@@ -42,7 +42,7 @@ it('lists the files and builds the tree even when no file is chosen', function (
     expect($state->error)->toBeNull();
     expect($state->levels)->toBe(LogLevelEnum::cases());
     expect($state->windows)->toContain(256);
-});
+})->group('ACT-LOGSTATE-INV-1');
 
 it('reads the chosen file and returns its entries newest first with the tail metadata', function (): void {
     $state = (new BuildLogViewerStateAction)->execute('laravel.log');
@@ -54,7 +54,7 @@ it('reads the chosen file and returns its entries newest first with the tail met
     expect($state->tail?->truncated)->toBeFalse();
     expect($state->tail?->size)->toBeGreaterThan(0);
     expect($state->modifiedAt)->toBeInt()->toBeGreaterThan(0);
-});
+})->group('ACT-LOGSTATE-INV-5');
 
 it('applies the level filter and the text search', function (): void {
     $action = new BuildLogViewerStateAction;
@@ -69,7 +69,7 @@ it('ignores an invalid level and an invalid window instead of failing', function
 
     expect($state->error)->toBeNull();
     expect($state->total)->toBe(2);
-});
+})->group('ACT-LOGSTATE-INV-3', 'ACT-LOGSTATE-INV-4');
 
 it('returns a generic error and no entries for paths that try to leave the log directory', function (): void {
     $action = new BuildLogViewerStateAction;
@@ -85,4 +85,4 @@ it('returns a generic error and no entries for paths that try to leave the log d
         // L'elenco dei file resta disponibile: l'utente puo' scegliere un altro file.
         expect($state->files)->not->toBe([]);
     }
-});
+})->group('ACT-LOGSTATE-INV-2');

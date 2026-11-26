@@ -1,50 +1,51 @@
 ---
-title: "Contratto — LogActivityAction"
+title: "Contratto: LogActivityAction"
 type: contract
-action: "Modules\\Activity\\Actions\\LogActivityAction"
 module: Activity
-status: active
-tags: [contract, action, activity, append-only]
-created: 2026-11-26
+owner: Activity
+status: accepted
 updated: 2026-11-26
+action: "Modules\\Activity\\Actions\\LogActivityAction"
+qmd: "contract LogActivityAction activity activity_log causer subject properties type description"
+related:
+  - ../adr/0002-activity-models-on-dedicated-connection.md
+  - ../../app/Actions/LogActivityAction.php
+  - ../../tests/Unit/Actions/LogActivityActionConstructorTest.php
+  - ../../tests/Unit/Actions/LogActivityActionExecuteValidationTest.php
 ---
 
 # LogActivityAction
 
-Contratto di comportamento (regola: `Modules/Xot/docs/rules/action-behavioral-contract.md`).
-Sorgente: `app/Actions/LogActivityAction.php`. Punto di scrittura tipizzata del registro (append-only).
-ADR correlato: [activity-audit-is-append-oriented](../adr/activity-audit-is-append-oriented.md).
-Elencato in `index.md` ma il file mancava.
+Scrive una riga in `activity_log` (modello `Modules\Activity\Models\Activity`, connessione `activity`). E' il mattone di `LogModel*Action`, `LogUser*Action` e dell'adapter `ActivityLogger`. Si costruisce con `new`, non con `app()`.
 
 ## Input
 
-- Costruttore: `string $type` (non vuoto), `?Model $user`, `?Model $subject`, `?array $properties`, `?string $description`.
-- `$user`, se presente, deve implementare `UserContract`.
+- Costruttore: `string $type` (non vuoto), `?Model $user` (il causer, deve essere `UserContract`), `?Model $subject`, `?array $properties`, `?string $description`.
+- `execute()`: nessun argomento.
 
 ## Output
 
-- Una nuova riga `Activity` creata via `Activity::typedQuery()->create(...)`.
+- L'`Activity` creata.
 
 ## Invarianti
 
-| ID | Regola | Verifica |
+| ID | Regola | Group Pest |
 |---|---|---|
-| ACTIVITY-LOG-INV-1 | Solo INSERT: non aggiorna né cancella righe esistenti. | — (non dimostrato) |
-| ACTIVITY-LOG-INV-2 | `type` vuoto nel costruttore → `InvalidArgumentException` prima di qualsiasi scrittura. | — (non dimostrato) |
-| ACTIVITY-LOG-INV-3 | Se `$user` non è `UserContract` → `InvalidArgumentException`. | — (non dimostrato) |
-| ACTIVITY-LOG-INV-4 | `causer_id` viene da `$user->id` oppure, se assente, da `Auth::id()` (solo `int|string`). | — (non dimostrato) |
+| ACTIVITY-LOG-INV-1 | `$type` vuoto lancia `InvalidArgumentException('Type cannot be empty')` nel costruttore. | ACTIVITY-LOG-INV-1 |
+| ACTIVITY-LOG-INV-2 | Un `$user` non nullo che non e' `UserContract` lancia `InvalidArgumentException('User must implement UserContract')` in `execute()`. | ACTIVITY-LOG-INV-2 |
+| ACTIVITY-LOG-INV-3 | `causer_id` e' l'id dell'utente passato; senza utente e' `Auth::id()` solo se int o stringa. `causer_type` e' la classe dell'utente passato, altrimenti `null`. | — (non dimostrato) |
+| ACTIVITY-LOG-INV-4 | `description` di default `Activity: <type>`; `log_name` e `event` valgono il tipo. | — (non dimostrato) |
 
 ## Effetti collaterali
 
-- INSERT su tabella activity log (`log_name`/`event` = `$type`, subject morph opzionale, `properties`).
+- `INSERT` in `activity_log` tramite `Activity::typedQuery()->create()`. Nessuna transazione esplicita, nessun evento dispatchato dall'Action.
 
 ## Errori
 
-- `InvalidArgumentException` su type vuoto o user non conforme.
-- Errori DB risalgono.
+- `InvalidArgumentException` (INV-1, INV-2). Gli errori di database si propagano.
 
 ## Non fa
 
-- Non ripristina record (`RestoreActivityAction`).
-- Non redige attributi sensibili (`RedactModelAttributesAction`).
-- Non autorizza la lettura dei file di log.
+- Non redige le `properties` (lo fanno le Action `LogModel*`).
+- Non verifica che la classe del subject esista.
+- Incoerenze note: `causer_id` puo' valorizzarsi da `Auth::id()` con `causer_type = null` (INV-3), e l'attivita' non compare in `GetUserActivitiesAction`; `log_name` vale il tipo qui mentre `Actions\ActivityLogger::log()` e `RecordSubjectActivityAction` usano `default`.

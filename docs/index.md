@@ -30,12 +30,12 @@ Nessun file e' stato rinominato o cancellato per produrre questo indice. Dove es
 - [adr/0002-activity-models-on-dedicated-connection.md](adr/0002-activity-models-on-dedicated-connection.md) — i modelli usano la connessione `activity`.
 - [adr/0003-log-viewer-single-path-resolver.md](adr/0003-log-viewer-single-path-resolver.md) — un solo risolutore di percorsi per il visualizzatore dei log.
 - [adr/0000-template.md](adr/0000-template.md) — template.
-- Legacy, stessi tre ADR senza prefisso numerico (da consolidare): [adr/activity-audit-is-append-oriented.md](adr/activity-audit-is-append-oriented.md), [adr/activity-models-on-dedicated-connection.md](adr/activity-models-on-dedicated-connection.md), [adr/log-viewer-single-path-resolver.md](adr/log-viewer-single-path-resolver.md).
+- Le tre varianti senza prefisso numerico (`adr/activity-*.md`, `adr/log-viewer-single-path-resolver.md`) erano duplicate dei canonici numerati e sono state rimosse: i link puntano ai file `NNNN-`.
 
 ## Contratti
 
 - [contracts/README.md](contracts/README.md) — contratti del modulo Activity.
-- [contracts/index.md](contracts/index.md) — indice dei contratti: operazione, classe, invarianti.
+- [contracts/index.md](contracts/index.md) — indice dei contratti: operazione, classe, invarianti; [contracts/INDEX.md](contracts/INDEX.md) — inventario machine-readable; [contracts/_template.md](contracts/_template.md) — template.
 
 ## Wiki (second brain del modulo)
 

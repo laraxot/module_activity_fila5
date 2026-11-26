@@ -1,9 +1,10 @@
 ---
 title: "Contratto — GetModelActivitiesAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\Query\\GetModelActivitiesAction"
 qmd: "contract GetModelActivitiesAction activity query attivita di un modello soggetto subject_type subject_id ACT-QMODEL"
 ---
@@ -23,9 +24,9 @@ Restituisce le attività recenti il cui soggetto è un dato modello Eloquent.
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-QMODEL-INV-1` | Filtro esatto su `subject_type = FQCN del modello` e `subject_id = chiave`, ordine `created_at` decrescente, massimo `$limit` righe. | `CoverageHundredActionsTest.php` (percorso positivo, non verificato riga per riga) |
+| ACT-QMODEL-INV-1 | Filtro esatto su `subject_type = FQCN del modello` e `subject_id = chiave`, ordine `created_at` decrescente, massimo `$limit` righe. | — (non dimostrato) |
 
 ## Effetti collaterali
 

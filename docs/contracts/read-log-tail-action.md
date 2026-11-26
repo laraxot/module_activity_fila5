@@ -1,9 +1,10 @@
 ---
 title: "Contratto — ReadLogTailAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\Log\\ReadLogTailAction"
 qmd: "contract ReadLogTailAction activity log lettura coda file byte limite 4 MiB UTF-8 riga parziale ACT-LOGTAIL"
 ---
@@ -23,13 +24,13 @@ Legge solo gli ultimi N byte di un file di log, senza caricarlo intero in memori
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-LOGTAIL-INV-1` | Non si legge mai più di `min(max(maxBytes, 1024), 4 MiB)` byte, anche se richiesto di più. | `ReadLogTailActionTest.php` («never reads more than the hard limit…») |
-| `ACT-LOGTAIL-INV-2` | Se il file è più grande della finestra si legge la coda; se il blocco contiene un a capo, la prima riga parziale è scartata. | `ReadLogTailActionTest.php` («reads only the tail of a large file…») |
-| `ACT-LOGTAIL-INV-3` | File vuoto: `content=''`, `size=0`, `truncated=false`, nessuna lettura. | `ReadLogTailActionTest.php` («returns an empty result for an empty file») |
-| `ACT-LOGTAIL-INV-4` | I byte non UTF-8 sono ripuliti con `mb_scrub`. | `ReadLogTailActionTest.php` («cleans invalid UTF-8 bytes…») |
-| `ACT-LOGTAIL-INV-5` | File inesistente o non leggibile: `RuntimeException` con messaggio generico, prima di qualsiasi lettura. | `ReadLogTailActionTest.php` («throws a clear error when the file cannot be read») |
+| ACT-LOGTAIL-INV-1 | Non si legge mai più di `min(max(maxBytes, 1024), 4 MiB)` byte, anche se richiesto di più. | ACT-LOGTAIL-INV-1 |
+| ACT-LOGTAIL-INV-2 | Se il file è più grande della finestra si legge la coda; se il blocco contiene un a capo, la prima riga parziale è scartata. | ACT-LOGTAIL-INV-2 |
+| ACT-LOGTAIL-INV-3 | File vuoto: `content=''`, `size=0`, `truncated=false`, nessuna lettura. | ACT-LOGTAIL-INV-3 |
+| ACT-LOGTAIL-INV-4 | I byte non UTF-8 sono ripuliti con `mb_scrub`. | ACT-LOGTAIL-INV-4 |
+| ACT-LOGTAIL-INV-5 | File inesistente o non leggibile: `RuntimeException` con messaggio generico, prima di qualsiasi lettura. Limite noto: il test asserisce solo il tipo `RuntimeException`, non il messaggio. | ACT-LOGTAIL-INV-5 |
 
 ## Effetti collaterali
 

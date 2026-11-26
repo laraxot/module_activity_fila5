@@ -1,9 +1,10 @@
 ---
 title: "Contratto — CheckActivityLogWritableAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\Schema\\CheckActivityLogWritableAction"
 qmd: "contract CheckActivityLogWritableAction activity log tabella scrivibile colonna attribute_changes connessione schema ACT-SCHEMA-CHK"
 ---
@@ -22,11 +23,11 @@ Dice se la tabella del log attività esiste ed è nello schema atteso (colonna `
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-SCHEMA-CHK-INV-1` | Con `activitylog.enabled` falso restituisce `false` senza interrogare lo schema. | Test: nessuno (`CheckActivityLogWritableAction` non ha test dedicati) |
-| `ACT-SCHEMA-CHK-INV-2` | Restituisce `true` solo se la tabella esiste e ha la colonna `attribute_changes`, sulla connessione risolta. | Test: nessuno |
-| `ACT-SCHEMA-CHK-INV-3` | Connessione vuota o non stringa: si usa `database.default`, o `mysql`. Tabella vuota: `activity_log`. | Test: nessuno |
+| ACT-SCHEMA-CHK-INV-1 | Con `activitylog.enabled` falso restituisce `false` senza interrogare lo schema. | — (non dimostrato) |
+| ACT-SCHEMA-CHK-INV-2 | Restituisce `true` solo se la tabella esiste e ha la colonna `attribute_changes`, sulla connessione risolta. | — (non dimostrato) |
+| ACT-SCHEMA-CHK-INV-3 | Connessione vuota o non stringa: si usa `database.default`, o `mysql`. Tabella vuota: `activity_log`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

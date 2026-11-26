@@ -1,9 +1,10 @@
 ---
 title: "Contratto — ApplyActivityConfigAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\Config\\ApplyActivityConfigAction"
 qmd: "contract ApplyActivityConfigAction activity configurazione tenant config activitylog runtime boot ACT-CFG"
 ---
@@ -22,10 +23,10 @@ Copia nella configurazione runtime `activitylog.*` le impostazioni salvate dal t
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-CFG-INV-1` | Se il file del tenant è vuoto, `config()` non cambia. | Test: nessuno sul ramo vuoto (`ActivityConfigDataTest.php` chiama l'Action in tre punti) |
-| `ACT-CFG-INV-2` | Sono copiate solo le chiavi presenti nel file salvato, con i valori di `ActivityConfigData`. Le chiavi assenti restano quelle di prima (es. `ACTIVITY_LOGGER_ENABLED`). | `ActivityConfigDataTest.php` (chiamate a `execute()`, non verificate riga per riga) |
+| ACT-CFG-INV-1 | Se il file del tenant è vuoto, `config()` non cambia. | — (non dimostrato) |
+| ACT-CFG-INV-2 | Sono copiate solo le chiavi presenti nel file salvato, con i valori di `ActivityConfigData`. Le chiavi assenti restano quelle di prima (es. `ACTIVITY_LOGGER_ENABLED`). | — (non dimostrato) |
 
 ## Effetti collaterali
 

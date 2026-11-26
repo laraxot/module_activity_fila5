@@ -1,9 +1,10 @@
 ---
 title: "Contratto — LogModelDeletedAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\LogModelDeletedAction"
 qmd: "contract LogModelDeletedAction activity evento deleted modello attributi non redatti ACT-MDELETE"
 ---
@@ -22,11 +23,11 @@ Registra l'evento `deleted` di un modello Eloquent con i suoi attributi.
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-MDELETE-INV-1` | Senza modello lancia `InvalidArgumentException('A model is required')`. | Test: nessuno che asserisca il messaggio |
-| `ACT-MDELETE-INV-2` | Il tipo è `deleted`; l'utente è considerato solo se è un `Model`. | `ActivityActionsUnitTest.php`, `CoverageHundredActionsTest.php` (percorso, non verificato nel dettaglio) |
-| `ACT-MDELETE-INV-3` | Gli attributi sono salvati senza redazione. | Test: nessuno |
+| ACT-MDELETE-INV-1 | Senza modello lancia `InvalidArgumentException('A model is required')`. | — (non dimostrato) |
+| ACT-MDELETE-INV-2 | Il tipo è `deleted`; l'utente è considerato solo se è un `Model`. | — (non dimostrato) |
+| ACT-MDELETE-INV-3 | Gli attributi sono salvati senza redazione. | — (non dimostrato) |
 
 ## Effetti collaterali
 

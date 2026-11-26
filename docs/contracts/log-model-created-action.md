@@ -1,9 +1,10 @@
 ---
 title: "Contratto — LogModelCreatedAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\LogModelCreatedAction"
 qmd: "contract LogModelCreatedAction activity evento created modello attributi non redatti password ACT-MCREATE"
 ---
@@ -22,11 +23,11 @@ Registra l'evento `created` di un modello Eloquent con i suoi attributi.
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-MCREATE-INV-1` | Senza modello lancia `InvalidArgumentException('A model is required')`. | Test: nessuno che asserisca il messaggio |
-| `ACT-MCREATE-INV-2` | Il tipo è `created`; l'utente è considerato solo se è un `Model`. | `CoverageHundredActionsTest.php` (~riga 177, `event = 'created'`) |
-| `ACT-MCREATE-INV-3` | Gli attributi sono salvati così come sono in `getAttributes()`, senza redazione. | Test: nessuno |
+| ACT-MCREATE-INV-1 | Senza modello lancia `InvalidArgumentException('A model is required')`. | — (non dimostrato) |
+| ACT-MCREATE-INV-2 | Il tipo è `created`; l'utente è considerato solo se è un `Model`. | — (non dimostrato) |
+| ACT-MCREATE-INV-3 | Gli attributi sono salvati così come sono in `getAttributes()`, senza redazione. | — (non dimostrato) |
 
 ## Effetti collaterali
 

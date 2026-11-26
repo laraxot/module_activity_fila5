@@ -1,9 +1,10 @@
 ---
 title: "Contratto — LogUserLoginAction"
 type: contract
+module: Activity
 owner: Activity
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-26
 action: "Modules\\Activity\\Actions\\LogUserLoginAction"
 qmd: "contract LogUserLoginAction activity evento login utente causer subject ACT-LOGIN"
 ---
@@ -22,10 +23,10 @@ Registra il login di un utente. Il soggetto e il causer sono l'utente stesso.
 
 ## Invarianti
 
-| ID | Regola | Test |
+| ID | Regola | Group Pest |
 |---|---|---|
-| `ACT-LOGIN-INV-1` | Se l'utente risolto non è un `Model` lancia `InvalidArgumentException('User must implement UserContract and extend Model')`. | `ActivityActionsUnitTest.php`, `LogActionsTest.php` (percorsi, non verificati nel dettaglio) |
-| `ACT-LOGIN-INV-2` | Il tipo è `login`; `subject_type` è la classe dell'utente. | Test: nessuno diretto |
+| ACT-LOGIN-INV-1 | Se l'utente risolto non è un `Model` lancia `InvalidArgumentException('User must implement UserContract and extend Model')`. | — (non dimostrato) |
+| ACT-LOGIN-INV-2 | Il tipo è `login`; `subject_type` è la classe dell'utente. | — (non dimostrato) |
 
 ## Effetti collaterali
 
