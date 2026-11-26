@@ -9,6 +9,13 @@ use Illuminate\Database\Eloquent\Model;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+/**
+ * RestoreActivityAction: riporta un record ai valori precedenti registrati in un'attivita' (properties.old).
+ *
+ * @see docs/contracts/restore-activity-action.md
+ *
+ * @contract docs/contracts/restore-activity-action.md
+ */
 class RestoreActivityAction
 {
     use QueueableAction;

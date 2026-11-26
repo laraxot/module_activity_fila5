@@ -25,10 +25,7 @@ uses(TestCase::class);
  * nel database, cosa che questi test non devono fare.
  */
 beforeEach(function (): void {
-<<<<<<< .merge_file_imRf88
     // Skip se Folio non ha montato /api/log-download (ambiente senza Cms/FolioVolt).
-=======
->>>>>>> .merge_file_uW1xGx
     $uris = [];
     foreach (app('router')->getRoutes()->getRoutes() as $route) {
         $uris[] = $route->uri();
@@ -62,8 +59,12 @@ beforeEach(function (): void {
     $this->user = function (bool $isSuperAdmin, bool $hasPermission = false): UserContract&Authenticatable {
         /** @var MockInterface&UserContract&Authenticatable $user */
         $user = Mockery::mock(UserContract::class, Authenticatable::class);
-        $user->shouldReceive('hasRole')->with('super-admin')->andReturn($isSuperAdmin);
-        $user->shouldReceive('hasPermissionTo')->with('log.viewAny')->andReturn($hasPermission);
+        TestCase::mockeryExpect($user->shouldReceive('hasRole'))
+            ->with('super-admin')
+            ->andReturn($isSuperAdmin);
+        TestCase::mockeryExpect($user->shouldReceive('hasPermissionTo'))
+            ->with('log.viewAny')
+            ->andReturn($hasPermission);
 
         return $user;
     };

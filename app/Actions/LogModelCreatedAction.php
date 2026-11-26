@@ -12,6 +12,10 @@ use Spatie\QueueableAction\QueueableAction;
  * Log Model Created Action.
  *
  * Logs when a model is created using Queueable Actions
+ *
+ * @see docs/contracts/log-model-created-action.md
+ *
+ * @contract docs/contracts/log-model-created-action.md
  */
 class LogModelCreatedAction
 {
@@ -39,7 +43,7 @@ class LogModelCreatedAction
             type: 'created',
             user: $user,
             subject: $model,
-            properties: ['attributes' => $model->getAttributes()],
+            properties: ['attributes' => app(RedactModelAttributesAction::class)->execute($model->getAttributes())], // senza password, token e segreti 2FA
             description: sprintf('%s created', class_basename($model))
         );
 

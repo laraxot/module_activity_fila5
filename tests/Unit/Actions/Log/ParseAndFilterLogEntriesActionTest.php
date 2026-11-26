@@ -32,13 +32,13 @@ it('splits a Monolog file into entries and keeps stack traces attached to their 
     expect($entries[1]->body)->toContain('#0 /var/www/vendor/symfony/mailer/Transport.php')->toContain('#1 {main}');
     // Lo stack trace NON e' finito nella voce successiva.
     expect($entries[2]->body)->not->toContain('#0 /var/www');
-});
+})->group('ACT-LOGPARSE-INV-1');
 
 it('normalizes the level to uppercase', function (): void {
     $entries = (new ParseLogEntriesAction)->execute(SAMPLE_LOG);
 
     expect($entries[2]->level)->toBe('WARNING');
-});
+})->group('ACT-LOGPARSE-INV-5');
 
 it('keeps unrecognized leading lines as a raw entry without date or level', function (): void {
     $text = "parte finale di una voce tagliata\n[2026-09-20 10:00:00] local.INFO: ok\n";
@@ -50,7 +50,7 @@ it('keeps unrecognized leading lines as a raw entry without date or level', func
     expect($entries[0]->timestamp)->toBeNull();
     expect($entries[0]->message)->toBe('parte finale di una voce tagliata');
     expect($entries[1]->level)->toBe('INFO');
-});
+})->group('ACT-LOGPARSE-INV-2');
 
 it('returns no entries for empty or blank text and trims trailing blank lines', function (): void {
     expect((new ParseLogEntriesAction)->execute(''))->toBe([]);
@@ -58,7 +58,7 @@ it('returns no entries for empty or blank text and trims trailing blank lines', 
 
     $entries = (new ParseLogEntriesAction)->execute("[2026-09-20 10:00:00] local.INFO: ok\n\n\n");
     expect($entries[0]->body)->toBe('[2026-09-20 10:00:00] local.INFO: ok');
-});
+})->group('ACT-LOGPARSE-INV-3');
 
 it('understands Windows and old Mac line endings', function (): void {
     $entries = (new ParseLogEntriesAction)->execute("[2026-09-20 10:00:00] local.INFO: uno\r\nriga di contesto\r[2026-09-20 10:01:00] local.ERROR: due\r\n");
@@ -66,7 +66,7 @@ it('understands Windows and old Mac line endings', function (): void {
     expect($entries)->toHaveCount(2);
     expect($entries[0]->body)->toContain('riga di contesto');
     expect($entries[1]->level)->toBe('ERROR');
-});
+})->group('ACT-LOGPARSE-INV-4');
 
 it('filters by level', function (): void {
     $entries = (new ParseLogEntriesAction)->execute(SAMPLE_LOG);
@@ -75,7 +75,7 @@ it('filters by level', function (): void {
 
     expect($result->total)->toBe(1);
     expect($result->entries[0]->level)->toBe('ERROR');
-});
+})->group('ACT-LOGFILTER-INV-1');
 
 it('searches the whole entry body case-insensitively, including the stack trace', function (): void {
     $entries = (new ParseLogEntriesAction)->execute(SAMPLE_LOG);
@@ -83,14 +83,14 @@ it('searches the whole entry body case-insensitively, including the stack trace'
     expect((new FilterLogEntriesAction)->execute($entries, '', 'B@EXAMPLE')->total)->toBe(1);
     expect((new FilterLogEntriesAction)->execute($entries, '', 'transport.php')->total)->toBe(1);
     expect((new FilterLogEntriesAction)->execute($entries, '', 'inesistente')->total)->toBe(0);
-});
+})->group('ACT-LOGFILTER-INV-2');
 
 it('combines level and search filters', function (): void {
     $entries = (new ParseLogEntriesAction)->execute(SAMPLE_LOG);
 
     expect((new FilterLogEntriesAction)->execute($entries, 'INFO', 'a@example')->total)->toBe(1);
     expect((new FilterLogEntriesAction)->execute($entries, 'ERROR', 'a@example')->total)->toBe(0);
-});
+})->group('ACT-LOGFILTER-INV-5');
 
 it('returns the newest entries first and applies the limit while reporting the total', function (): void {
     $entries = (new ParseLogEntriesAction)->execute(SAMPLE_LOG);
@@ -101,4 +101,4 @@ it('returns the newest entries first and applies the limit while reporting the t
     expect($result->entries)->toHaveCount(2);
     expect($result->entries[0]->timestamp)->toBe('2026-09-20 10:06:00');
     expect($result->entries[1]->timestamp)->toBe('2026-09-20 10:05:00');
-});
+})->group('ACT-LOGFILTER-INV-3', 'ACT-LOGFILTER-INV-4');

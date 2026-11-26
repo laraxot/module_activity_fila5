@@ -1,8 +1,8 @@
 # 📊 Activity - Il SISTEMA di TRACKING più AVANZATO! 🔍
 
 <!-- Dynamic validation badges -->
-[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
-[![Filament 4.x](https://img.shields.io/badge/Filament-4.x-blue.svg)](https://filamentphp.com/)
+[![Laravel 13.x](https://img.shields.io/badge/Laravel-13.x-red.svg)](https://laravel.com/)
+[![Filament 5.x](https://img.shields.io/badge/Filament-5.x-blue.svg)](https://filamentphp.com/)
 [![PHPStan level 10](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg)](https://phpstan.org/)
 [![Translation Ready](https://img.shields.io/badge/Translation-IT%20%7C%20EN%20%7C%20DE-green.svg)](https://laravel.com/docs/localization)
 [![Event Sourcing](https://img.shields.io/badge/Event-Sourcing%20Ready-orange.svg)](https://martinfowler.com/eaaDev/EventSourcing.html)
@@ -107,14 +107,13 @@ class ActivityEvent
 # 📋 Activity
 
 [![Domain-Audit](https://img.shields.io/badge/Domain-Activity%20Log-455A64.svg)](#)
-[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
+[![Laravel 13](https://img.shields.io/badge/Laravel-13-red.svg)](https://laravel.com/)
 [![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
 [![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
 [![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
 [![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
 [![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
 
 > **Chi ha fatto cosa, quando.** Audit trail trasparente per operatori e compliance.
 
@@ -640,4 +639,4 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
 
 ---
 
-**Modulo** `activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+**Modulo** `activity` · **Laraxot** · PHPStan 10 · Filament 5

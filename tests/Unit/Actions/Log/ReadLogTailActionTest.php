@@ -25,7 +25,7 @@ it('returns an empty result for an empty file', function (): void {
     expect($tail->size)->toBe(0);
     expect($tail->bytesRead)->toBe(0);
     expect($tail->truncated)->toBeFalse();
-});
+})->group('ACT-LOGTAIL-INV-3');
 
 it('returns the whole content of a small file without truncating it', function (): void {
     File::put($this->dir.'/piccolo.log', "prima\nseconda\n");
@@ -53,7 +53,7 @@ it('reads only the tail of a large file and drops the partial first line', funct
     expect($tail->content)->toContain('riga-0200');
     expect($tail->content)->toStartWith('riga-');
     expect($tail->content)->not->toContain('riga-0001');
-});
+})->group('ACT-LOGTAIL-INV-2');
 
 it('never reads more than the hard limit even if asked for more', function (): void {
     File::put($this->dir.'/enorme.log', str_repeat(str_repeat('a', 99)."\n", 60000)); // ~6 MB
@@ -62,7 +62,7 @@ it('never reads more than the hard limit even if asked for more', function (): v
 
     expect($tail->bytesRead)->toBeLessThanOrEqual(ReadLogTailAction::MAX_BYTES);
     expect($tail->truncated)->toBeTrue();
-});
+})->group('ACT-LOGTAIL-INV-1');
 
 it('cleans invalid UTF-8 bytes so the page does not break', function (): void {
     File::put($this->dir.'/sporco.log', "ok \xC3\x28 fine\n");
@@ -72,9 +72,9 @@ it('cleans invalid UTF-8 bytes so the page does not break', function (): void {
     expect(mb_check_encoding($tail->content, 'UTF-8'))->toBeTrue();
     expect($tail->content)->toContain('ok');
     expect($tail->content)->toContain('fine');
-});
+})->group('ACT-LOGTAIL-INV-4');
 
 it('throws a clear error when the file cannot be read', function (): void {
     expect(fn () => (new ReadLogTailAction)->execute($this->dir.'/non-esiste.log'))
         ->toThrow(RuntimeException::class);
-});
+})->group('ACT-LOGTAIL-INV-5');

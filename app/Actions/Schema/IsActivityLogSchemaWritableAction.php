@@ -9,6 +9,10 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Verifica che activity_log sia scrivibile (Spatie v4+ richiede attribute_changes).
+ *
+ * @see docs/contracts/is-activity-log-schema-writable-action.md
+ *
+ * @contract docs/contracts/is-activity-log-schema-writable-action.md
  */
 final class IsActivityLogSchemaWritableAction
 {
