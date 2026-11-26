@@ -15,13 +15,8 @@ use Override;
  *
  * NON monta Folio: `Modules\Cms\Providers\FolioVoltServiceProvider` registra già
  * `resources/views/pages` (e `pages/api` → `/api`) per ogni modulo abilitato.
-<<<<<<< .merge_file_Y3gxO3
- * Un `Folio::path()` qui è ridondante, anti-DRY e rischia l'ordine delle catch-all.
-=======
  * Montare qui le pagine con Folio è ridondante, anti-DRY e rischia l'ordine delle catch-all.
->>>>>>> .merge_file_F8bRMC
- *
- * @phpstan-type ModuleConfig array{name: string, alias: string, description: string, keywords: array<int, string>, priority: int, providers: array<int, class-string>}
+ * Il test `ActivityServiceProviderNoFolioMountTest` fallisce se nel sorgente compare un mount Folio.
  *
  * @see docs/bmad/stories/folio-routing-centralization.story.md
  */
@@ -45,7 +40,8 @@ class ActivityServiceProvider extends XotBaseServiceProvider
     /**
      * Boot del service provider.
      *
-     * Configura il modulo Activity e registra le configurazioni specifiche.
+     * `parent::boot()` registra già traduzioni, config (via l'override `registerConfig()` qui sotto), viste,
+     * migrazioni, componenti Blade, comandi e asset pubblici: qui si aggiunge solo ciò che è specifico di Activity.
      *
      * @see docs/bmad/stories/folio-routing-centralization.story.md
      */
@@ -54,15 +50,9 @@ class ActivityServiceProvider extends XotBaseServiceProvider
     {
         parent::boot();
 
-        // Registro solo le configurazioni specifiche del modulo
-        $this->registerConfig();
-
-        // Registra i componenti Blade personalizzati
-        $this->registerBladeComponents();
-
         // ANTI-PATTERN: non registrare qui il mount Folio delle pagine del modulo.
-        // Activity possiede i FILE pages/*; il mount Folio e' cross-cutting (Cms/FolioVolt
-        // nei sibling FO). In PTVX Cms e' assente: non inventare un mini-FolioVolt nel dominio.
+        // Activity possiede i FILE pages/*; il mount Folio è cross-cutting (Cms/FolioVoltServiceProvider).
+        // Nei progetti senza Cms non va inventato un mini-FolioVolt nel dominio.
         // Vedi docs/bmad/stories/folio-routing-centralization.story.md
 
         // Le impostazioni salvate dal tenant (SettingPage) arrivano al pacchetto activitylog.
