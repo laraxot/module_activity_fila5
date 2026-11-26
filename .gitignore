@@ -178,18 +178,12 @@ v8-compile-cache-*
 /.windsurf
 /.windsurf/
 .windsurf~*
-tests/activity_coverage.xml
-Activity/
-
 # screenshot di comparazione visiva (artefatti locali)
-docs/project/visual-comparison/
-docs/visual-comparison/
 workbench
 workbench/
 yarn-error.log
 yarn-error.log*
 yarn.lock
 *:Zone.Identifier
-
 # Indice vettoriale locale (non versionare)
 ruvector.db
