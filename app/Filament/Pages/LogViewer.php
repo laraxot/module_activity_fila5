@@ -7,13 +7,13 @@ namespace Modules\Activity\Filament\Pages;
 use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Modules\Activity\Actions\Log\AuthorizeLogAccessAction;
-use Modules\Activity\Actions\Log\DownloadLogFileAction;
 use Modules\Activity\Actions\Log\BuildLogViewerStateAction;
+use Modules\Activity\Actions\Log\DownloadLogFileAction;
 use Modules\Activity\Actions\Log\ListLogFilesAction;
-use Modules\Activity\Actions\Log\ResolveLogFilePathAction;
+use Modules\Activity\Actions\Log\GetLogFilePathAction;
 use Modules\Activity\Datas\LogFileData;
-use Modules\Activity\Exceptions\InvalidLogFileException;
 use Modules\Activity\Datas\LogViewerStateData;
+use Modules\Activity\Exceptions\InvalidLogFileException;
 use Modules\Xot\Filament\Pages\XotBasePage;
 
 /**
@@ -27,14 +27,13 @@ use Modules\Xot\Filament\Pages\XotBasePage;
  * - accesso limitato ai super-admin o a chi ha il permesso `log.viewAny` ({@see AuthorizeLogAccessAction}).
  *
  * La logica sta nelle Action (`app/Actions/Log`): la pagina tiene solo lo stato della scelta dell'utente.
- * Tutti i percorsi passano da {@see ResolveLogFilePathAction}, che impedisce di uscire da storage/logs.
+ * Tutti i percorsi passano da {@see GetLogFilePathAction}, che impedisce di uscire da storage/logs.
  * Download: Action Filament + {@see DownloadLogFileAction} (BinaryFileResponse).
  * Nei progetti FO con Cms resta anche la pagina Folio `pages/api/log-download` (FolioVolt);
  * in PTVX Cms e' assente: non si monta Folio da Activity ne' da App FolioServiceProvider.
  */
 class LogViewer extends XotBasePage
 {
-
     protected string $view = 'activity::filament.pages.log-viewer';
 
     /** Percorso relativo a storage/logs del file scelto. */
@@ -76,7 +75,7 @@ class LogViewer extends XotBasePage
     /**
      * Sceglie il file da leggere (click su un file dell'albero).
      *
-     * Il valore viene comunque ricontrollato da {@see ResolveLogFilePathAction} a ogni lettura.
+     * Il valore viene comunque ricontrollato da {@see GetLogFilePathAction} a ogni lettura.
      */
     public function selectFile(string $path): void
     {

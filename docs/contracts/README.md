@@ -1,26 +1,20 @@
 ---
-title: "Contratti"
+title: "Contratti del modulo Activity"
 type: index
-tags: [contracts, actions, interfaces]
+module: Activity
+status: active
 created: 2026-11-18
-updated: 2026-11-18
+updated: 2026-11-25
+qmd: "activity contracts readme formato contratto di comportamento azioni invarianti marker contract docblock"
 ---
 
-# Contratti
+# Contratti del modulo Activity
 
-## Metodo Harness
+Un contratto descrive il comportamento promesso da una Action con effetti collaterali o invarianti di dominio: cosa riceve, cosa restituisce, cosa garantisce, cosa tocca, quando fallisce e cosa **non** fa. Regola e governance: `Modules/Xot/docs/rules/action-behavioral-contract.md`.
 
-Un contratto descrive una singola operazione pubblica con effetti collaterali, chiamate esterne o invarianti di dominio. Documenta il comportamento osservabile, inclusi errori e non-goals, senza trasformare ogni metodo interno in un contratto.
+## Formato
 
-Ogni invariante ha un ID stabile nel formato `ACTIVITY-INV-N`; il test Pest corrispondente usa lo stesso ID come group. La classe implementatrice deve contenere `@contract docs/contracts/<file>.md`; contratto, codice e test cambiano nello stesso commit.
-
-Cosa promette la superficie pubblica di questo pacchetto: le Action che scrivono dati, chiamano servizi esterni o hanno
-effetti collaterali, e le interfacce (`app/Contracts`). Regola: `Modules/Xot/docs/rules/action-behavioral-contract.md`.
-
-## Contratto di comportamento di un'Action
-
-Un file per Action, nome in kebab-case della classe (`create-ticket-action.md`), frontmatter `type: contract` e
-`action: <FQCN>`, e queste sei sezioni nell'ordine:
+Un file per Action, nome in kebab-case della classe (`log-activity-action.md`), frontmatter con `type: contract` e `action: "Modules\\Activity\\Actions\\..."`, e queste sei sezioni nell'ordine:
 
 ```markdown
 ## Input
@@ -31,8 +25,10 @@ Un file per Action, nome in kebab-case della classe (`create-ticket-action.md`),
 ## Non fa
 ```
 
-Il docblock dell'Action rimanda al file con la riga `Contratto di comportamento: docs/contracts/<file>.md`.
-Chi cambia il comportamento aggiorna il contratto nello stesso commit.
+Gli invarianti hanno ID `ACTIVITY-<AREA>-INV-<N>` e il test Pest che li verifica usa lo stesso ID come `->group('<ID>')`. Il docblock dell'Action rimanda al file con `@contract docs/contracts/<file>.md`; chi cambia il comportamento aggiorna contratto, codice e test nello stesso commit. Il test `Modules/Xot/tests/Unit/Docs/ActionContractsAreCompleteTest.php` controlla che ogni file `type: contract` abbia le sei sezioni, un'`action:` esistente e il `@contract` nel docblock di quella classe.
 
-## Contratti
+## Quali Action hanno un file
 
+Sei Action sono pubbliche e delicate (scrittura del registro, ripristino di un record, accesso ai file di log): hanno un file proprio, elencato in [index.md](./index.md). Le altre 24 Action del modulo hanno un contratto sintetico nella pagina [../actions.md](../actions.md), che e' il bersaglio dei loro tag `@see` e `@contract`. Se una di esse acquista effetti collaterali rilevanti (dati personali, servizi esterni), si estrae in un file qui e si aggiorna il docblock.
+
+Le decisioni dietro i contratti stanno in [../adr/](../adr/README.md).

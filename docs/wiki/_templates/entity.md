@@ -1,7 +1,9 @@
 ---
 module: theme
 topic: entity
-canonical: ../../../../../Themes/docs/shared-components/entity-Modules.md
+canonical: ../../../../AI/docs/wiki/_templates/entity.md
+qmd: "entity"
+title: "entity"
 ---
 
-See canonical documentation: ../../../../../Themes/docs/shared-components/entity-Modules.md
+See canonical documentation: ../../../../AI/docs/wiki/_templates/entity.md
