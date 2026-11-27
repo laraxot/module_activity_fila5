@@ -1,41 +1,15 @@
 ---
 title: "Contratti del modulo Activity"
 type: index
-<<<<<<< .merge_file_QoJtZ5
-tags: [contracts, actions, activity, audit, log-viewer]
-created: 2026-11-18
-updated: 2026-11-24
-=======
 module: Activity
 status: active
 created: 2026-11-18
 updated: 2026-11-26
 qmd: "activity contracts readme formato contratto di comportamento azioni invarianti marker contract docblock"
->>>>>>> .merge_file_pl5M3w
 ---
 
 # Contratti del modulo Activity
 
-<<<<<<< .merge_file_QoJtZ5
-Cosa promettono le Action di Activity che scrivono il log delle attività, riscrivono un record dal suo storico, o
-aprono file di `storage/logs` scelti dall'utente (sicurezza dei percorsi e degli accessi). Le Action di sola query
-(`Actions/Query`) e di parsing dei log non hanno effetti collaterali e restano fuori.
-
-Leggili prima di chiamare, modificare o imitare una di queste Action. Le invarianti con group si verificano con
-`cd laravel && vendor/bin/pest Modules/Activity/tests --group=<ID>`; `—` è debito dichiarato.
-
-Formato (sei sezioni, tabella invarianti con ID, `@contract` nel docblock):
-[action-behavioral-contract](../../../Xot/docs/rules/action-behavioral-contract.md).
-
-## Indice
-
-- [LogActivityAction](log-activity-action.md) — una riga di `activity_log` sulla connessione `activity`; non toglie dati sensibili dalle properties.
-- [RestoreActivityAction](restore-activity-action.md) — riporta un record ai valori `old` di un'attività con un solo `update()`.
-- [AuthorizeLogAccessAction](authorize-log-access-action.md) — log visibili solo a `super-admin` o a chi ha `log.viewAny`; permesso mancante = negato senza errore.
-- [ResolveLogFilePathAction](resolve-log-file-path-action.md) — unico passaggio da input dell'utente a percorso: solo `.log`, dentro `storage/logs`, link simbolici risolti.
-- [DownloadLogFileAction](download-log-file-action.md) — download del file intero come `BinaryFileResponse`, passando dal risolutore.
-- [LogModelUpdatedAction](log-model-updated-action.md) — log di modifica (e, per la stessa regola, di creazione e cancellazione) senza password, token né segreti 2FA.
-=======
 Un contratto descrive il comportamento promesso da una Action con effetti collaterali o invarianti di dominio: cosa riceve, cosa restituisce, cosa garantisce, cosa tocca, quando fallisce e cosa **non** fa. Regola e governance: `Modules/Xot/docs/rules/action-behavioral-contract.md`.
 
 ## Formato
@@ -155,4 +129,17 @@ Invarianti senza test con group (da scrivere o da annotare quando un test esiste
 - `ACT-RECSUBJ-INV-1` (record-subject-activity-action) — `CoverageHundredActionsTest.php`, `QueryAndValidationTest.php`, `AdapterActivityRecorderTest.php` (percorsi, non verificati nel dettaglio)
 - `ACT-RECSUBJ-INV-2` (record-subject-activity-action)
 - `ACT-REDACT-INV-2` (redact-model-attributes-action)
->>>>>>> .merge_file_pl5M3w
+
+## Harness minimo: ownership, evidenza e recupero (2026-11-27)
+
+I contratti di **module_activity_fila5** restano accanto alle Action, interfacce o superfici di questo package; root e Xot definiscono lo standard, non copiano le promesse. Un contratto comportamentale esplicita **Input, Output, Invarianti, Effetti collaterali, Errori, Non fa**; ogni ID di invariante punta a un group Pest effettivo oppure segnala `non dimostrata`. Se esiste la classe, il docblock deve rimandare al file con `@contract` e `@see`; per temi senza classi PHP non inventare Action/contratti.
+
+- [Standard Xot](https://github.com/laraxot/module_xot_fila5/blob/dev/docs/contracts/contract-authoring-standard.md) · [ownership root](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/adr/0001-harness-minimo-e-ownership.md) · [runbook ECC/Second Brain](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/harness/README.md).
+- **BMAD**: prima di cambiare una promessa, fissa nella story owner scope, esclusioni, evidenza e approvazioni richieste.
+- **ECC**: i marker di merge rendono invalido l'indice; citare una suite non significa averla eseguita. Distingui `pass`, `fail`, `non eseguito` e registra il debito in [rollout #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
+
+## Documenti del package da riconciliare nell'indice
+
+I seguenti file **esistono nel repository su `dev`** e non erano tutti collegati nel ramo d'indice più recente. Sono preservati come puntatori documentali; il loro stato di approvazione, la copertura e l'eventuale sostituzione con ADR numerati devono essere verificati nell'owner. Nessuna prova di esecuzione è implicita.
+
+- [ResolveLogFilePathAction](./resolve-log-file-path-action.md)
