@@ -8,6 +8,7 @@ use Mockery;
 use Mockery\MockInterface;
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
+use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
@@ -32,7 +33,7 @@ beforeEach(function (): void {
     }
     $joined = implode(' ', $uris);
     if (! str_contains($joined, 'log-download')) {
-        test()->markTestSkipped('Folio /api/log-download non montato (Cms/FolioVolt assente in PTVX)');
+        Assert::markTestSkipped('Folio /api/log-download non montato (Cms/FolioVolt assente in PTVX)');
     }
 
     /** @var TestCase $this */
@@ -71,6 +72,12 @@ beforeEach(function (): void {
 });
 
 afterEach(function (): void {
+    if (! isset($this->originalStorage, $this->tempStorage)) {
+        Mockery::close();
+
+        return;
+    }
+
     app()->useStoragePath($this->originalStorage);
     File::deleteDirectory($this->tempStorage);
     File::delete($this->originalStorage.'/framework/testing/segreto-pagina.log');
