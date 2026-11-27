@@ -236,10 +236,10 @@ php artisan activity:test-events
 - [Advanced Patterns](advanced_event_sourcing_patterns.md) - Pattern avanzati
 
 ### 📊 **Analytics & Monitoring**
-- [Activity Dashboard](../filament-resources.md) - Dashboard analytics attività
+- [Activity Dashboard](filament-resources.md) - Dashboard analytics attività
 - [Event Analytics](event-sourcing-examples.md) - Analytics eventi
-- [Performance Monitoring](../bottlenecks.md) - Monitoraggio performance
-- [Security Compliance](../translations.md) - Conformità sicurezza
+- [Performance Monitoring](bottlenecks.md) - Monitoraggio performance
+- [Security Compliance](translations.md) - Conformità sicurezza
 
 ### 🔧 **Development**
 - [PHPStan Fixes](phpstan/README.md) - Log completo correzioni PHPStan
@@ -378,7 +378,7 @@ php artisan activity:check-indexes
 # Pulire log vecchi
 php artisan activity:cleanup --older-than=90
 ```
-**Soluzione**: Consulta [Performance Monitoring](../bottlenecks.md)
+**Soluzione**: Consulta [Performance Monitoring](bottlenecks.md)
 
 #### 🔍 **Missing Activities**
 ```php
@@ -583,7 +583,7 @@ Elimina un'attività (soft delete).
 
 - [Architettura](./architecture.md)
 - [API Documentation](./api.md)
-- [Filament Resources](../filament-resources.md)
+- [Filament Resources](./filament-resources.md)
 - [Testing](./testing.md)
 - [Deployment](./deployment.md)
 

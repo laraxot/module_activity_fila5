@@ -209,8 +209,12 @@ workbench/
 .windsurf~*
 tests/activity_coverage.xml
 Activity/
+<<<<<<< .merge_file_cXcCxN
 
-# Laraxot — directory agenti/IDE e tool locali alla root del modulo (module-theme-root-hygiene)
-.qwen/
-.php-cs-fixer.php
-.php-cs-fixer.dist.php
+# screenshot di comparazione visiva (artefatti locali)
+docs/project/visual-comparison/
+docs/visual-comparison/
+=======
+tests/coverage-*.*
+docs/screenshots/
+>>>>>>> .merge_file_AGlBkD

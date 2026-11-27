@@ -60,7 +60,7 @@ tags: [documentation]
 ## 🔗 Collegamenti
 
 - [Activity Code Quality Analysis](./code_quality_analysis.md)
-- [Xot Quality Analysis](../current-status.md)
+- [Xot Quality Analysis](../../xot/docs/quality-analysis/current-status.md)
 
 ## 📝 Note
 

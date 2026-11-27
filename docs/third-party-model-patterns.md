@@ -267,7 +267,7 @@ public function test_event_storage(): void
 
 ### Laraxot Philosophy
 - [Third-Party Model Inheritance](../xot/docs/third-party-model-inheritance-philosophy.md)
-- [Event Sourcing Patterns](wiki/concepts/event-sourcing-patterns.md)
+- [Event Sourcing Patterns](../xot/docs/event-sourcing-patterns.md)
 
 ---
 

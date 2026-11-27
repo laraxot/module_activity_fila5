@@ -86,10 +86,10 @@ app(ActivityLogger::class)->recordSubject(...);
 ## Riferimenti progetto
 
 - [QUEUEABLE-ACTION-RULE](../../../../docs/QUEUEABLE-ACTION-RULE.md) — regola moduli
-- [Xot queueable-actions](../../queueable-actions.md) — pattern DI + queue
+- [Xot queueable-actions](../../../Xot/docs/queueable-actions.md) — pattern DI + queue
 - [no-services-rule](../../../../../../docs/wiki/rules/no-services-rule.md) — vietati Services
 
 ## Backlink
 
 - [wiki index Activity](../index.md)
-- [ARCHITECTURE.md](../../ARCHITECTURE.md) — overview (in aggiornamento verso Actions-only)
+- [architecture.md](../../architecture.md) — overview (in aggiornamento verso Actions-only)
