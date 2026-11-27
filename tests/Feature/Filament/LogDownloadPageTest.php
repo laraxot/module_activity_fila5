@@ -8,6 +8,7 @@ use Mockery;
 use Mockery\MockInterface;
 use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
+use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
@@ -25,13 +26,14 @@ uses(TestCase::class);
  * nel database, cosa che questi test non devono fare.
  */
 beforeEach(function (): void {
+    // Skip se Folio non ha montato /api/log-download (ambiente senza Cms/FolioVolt).
     $uris = [];
     foreach (app('router')->getRoutes()->getRoutes() as $route) {
         $uris[] = $route->uri();
     }
     $joined = implode(' ', $uris);
     if (! str_contains($joined, 'log-download')) {
-        test()->markTestSkipped('Folio /api/log-download non montato (Cms/FolioVolt assente in PTVX)');
+        Assert::markTestSkipped('Folio /api/log-download non montato (Cms/FolioVolt assente in PTVX)');
     }
 
     /** @var TestCase $this */
@@ -58,14 +60,24 @@ beforeEach(function (): void {
     $this->user = function (bool $isSuperAdmin, bool $hasPermission = false): UserContract&Authenticatable {
         /** @var MockInterface&UserContract&Authenticatable $user */
         $user = Mockery::mock(UserContract::class, Authenticatable::class);
-        $user->shouldReceive('hasRole')->with('super-admin')->andReturn($isSuperAdmin);
-        $user->shouldReceive('hasPermissionTo')->with('log.viewAny')->andReturn($hasPermission);
+        TestCase::mockeryExpect($user->shouldReceive('hasRole'))
+            ->with('super-admin')
+            ->andReturn($isSuperAdmin);
+        TestCase::mockeryExpect($user->shouldReceive('hasPermissionTo'))
+            ->with('log.viewAny')
+            ->andReturn($hasPermission);
 
         return $user;
     };
 });
 
 afterEach(function (): void {
+    if (! isset($this->originalStorage, $this->tempStorage)) {
+        Mockery::close();
+
+        return;
+    }
+
     app()->useStoragePath($this->originalStorage);
     File::deleteDirectory($this->tempStorage);
     File::delete($this->originalStorage.'/framework/testing/segreto-pagina.log');

@@ -43,7 +43,7 @@ it('builds a nested tree with the subfolders and the top-level files', function 
 
     expect(array_map(fn (LogTreeData $folder): string => $folder->path, $reports->folders))->toBe(['reports/252', 'reports/rejected']);
     expect($reports->folders[0]->files[0]->path)->toBe('reports/252/daily_2026-09-17.log');
-});
+})->group('ACT-LOGTREE-INV-1');
 
 it('orders folders naturally so 9 comes before 10 and 252 before 1000', function (): void {
     $tree = (new BuildLogFileTreeAction)->execute([
@@ -54,7 +54,7 @@ it('orders folders naturally so 9 comes before 10 and 252 before 1000', function
     ]);
 
     expect(array_map(fn (LogTreeData $folder): string => $folder->name, $tree->folders[0]->folders))->toBe(['9', '10', '252', '1000']);
-});
+})->group('ACT-LOGTREE-INV-2');
 
 it('orders the files of each folder from the most recent to the oldest', function (): void {
     $tree = (new BuildLogFileTreeAction)->execute([
@@ -64,7 +64,7 @@ it('orders the files of each folder from the most recent to the oldest', functio
     ]);
 
     expect(array_map(fn (LogFileData $file): string => $file->name, $tree->folders[0]->folders[0]->files))->toBe(['recente.log', 'medio.log', 'vecchio.log']);
-});
+})->group('ACT-LOGTREE-INV-3');
 
 it('counts the files of a folder including its subfolders', function (): void {
     $tree = (new BuildLogFileTreeAction)->execute([
@@ -78,7 +78,7 @@ it('counts the files of a folder including its subfolders', function (): void {
     expect($tree->folders[0]->count)->toBe(3);
     expect($tree->folders[0]->folders[0]->count)->toBe(2);
     expect($tree->folders[0]->folders[1]->count)->toBe(1);
-});
+})->group('ACT-LOGTREE-INV-4');
 
 it('does not mix a folder with another whose name starts the same way', function (): void {
     $tree = (new BuildLogFileTreeAction)->execute([
@@ -89,7 +89,7 @@ it('does not mix a folder with another whose name starts the same way', function
     expect($tree->folders[0]->folders)->toHaveCount(2);
     expect($tree->folders[0]->folders[0]->count)->toBe(1);
     expect($tree->folders[0]->folders[1]->count)->toBe(1);
-});
+})->group('ACT-LOGTREE-INV-5');
 
 it('returns an empty root for an empty list', function (): void {
     $tree = (new BuildLogFileTreeAction)->execute([]);

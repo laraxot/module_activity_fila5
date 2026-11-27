@@ -45,7 +45,14 @@ Motivi:
 Owner del montaggio Folio in questo progetto:
 =======
 **Progetti con il modulo Cms** — owner del montaggio Folio:
+<<<<<<< .merge_file_TfzBV2
 >>>>>>> .merge_file_ER34E5
+=======
+**Progetti con il modulo Cms** — owner del montaggio Folio:
+**Progetti con il modulo Cms** — owner del montaggio Folio:
+Owner del montaggio Folio in questo progetto:
+**Progetti con il modulo Cms** — owner del montaggio Folio:
+>>>>>>> .merge_file_UxCE1C
 `Modules\Cms\Providers\FolioVoltServiceProvider`.
 
 - monta tema + `resources/views/pages` di ogni modulo abilitato (`uri($locale)`);
@@ -53,7 +60,10 @@ Owner del montaggio Folio in questo progetto:
   → `log-download.blade.php` = GET `/api/log-download`;
 - mount in `booted()` (non prima delle fallback Filament).
 
+<<<<<<< .merge_file_TfzBV2
 <<<<<<< .merge_file_5Ed99A
+=======
+>>>>>>> .merge_file_UxCE1C
 `ActivityServiceProvider` = config/comportamento Activity, **non** router.
 Niente `Folio::path()` lì (rimozione applicata; istruzione utente: aggiungere Folio nel provider «è sbagliato»).
 In questo checkout il modulo `Cms` non è presente e non va introdotto. Di
@@ -65,7 +75,10 @@ Nei progetti che includono il modulo comune CMS, il solo owner delle pagine
 Folio dei moduli e dei temi è `Cms/app/Providers/FolioVoltServiceProvider`.
 Activity resta proprietario della configurazione e del comportamento Activity,
 non dell'infrastruttura di routing.
+<<<<<<< .merge_file_TfzBV2
 =======
+=======
+>>>>>>> .merge_file_UxCE1C
 **Progetti senza il modulo Cms** — Cms non va introdotto solo per questo, e
 `App\Providers\FolioServiceProvider` non va usato come surrogato: il provider
 applicativo monta soltanto `resources/views/pages`, non le pagine dei moduli. Il
@@ -88,7 +101,10 @@ applicata; istruzione utente: aggiungere Folio nel provider «è sbagliato»).
 
 ## Acceptance criteria
 
+<<<<<<< .merge_file_TfzBV2
 <<<<<<< .merge_file_5Ed99A
+=======
+>>>>>>> .merge_file_UxCE1C
 - [ ] Nessuna registrazione `Folio::path()` nel provider Activity (file ancora sotto lock concorrente).
 - [x] Nessun provider Folio applicativo aggiunto o registrato.
 - [x] Il routing Folio resta responsabilità del CMS nei progetti che lo includono.
@@ -130,7 +146,10 @@ In PTVX Cms non c’è e non deve stare: si **impara** il pattern dai sibling FO
 - [x] Nessun `Modules/Cms` introdotto.
 - [x] `App\Providers\FolioServiceProvider` non registrato e **non scomodato**: nei sibling FO basta FolioVolt; qui non è un surrogato.
 - [x] Pest `ActivityServiceProviderNoFolioMountTest`.
+<<<<<<< .merge_file_TfzBV2
 =======
+=======
+>>>>>>> .merge_file_UxCE1C
 - [x] Nessuna registrazione `Folio::path()` nel provider Activity.
 - [x] Owner unico con Cms: `Cms\FolioVoltServiceProvider` (nessun `App\Providers\FolioServiceProvider`).
 - [x] Senza Cms: nessun provider Folio applicativo aggiunto o registrato, nessun `Modules/Cms` introdotto.

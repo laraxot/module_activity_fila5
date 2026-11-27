@@ -2,65 +2,12 @@
 title: "Indice documentazione — Modulo Activity"
 type: index
 status: active
-updated: 2026-11-16
+updated: 2026-11-25
 tags: [docs, activity]
 qmd: "indice documentazione modulo activity architecture naming debt kebab-case"
 ---
-# Indice documentazione — Modulo Activity
 
-Indice per argomento sotto `Modules/Activity/docs/`. Vedi [docs-health.md](docs-health.md).
-Nomi: kebab-case, senza date nel filename ([55-md-conventions](../../../../bashscripts/docs/prompts/55-md-conventions.md)).
-
-## Key Features
-- **Activity Logging**: Automatic logging of user and system activities
-- **Audit Trails**: Complete history of changes and actions
-- **Event Tracking**: Real-time monitoring of system events
-- **Reporting**: Activity reports and analytics
-- **Filtering**: Advanced filtering and search capabilities
-
-## Architecture
-The module follows the Laraxot architecture principles:
-- Extends Xot base classes
-- Uses Filament for admin interface
-- Implements proper service providers
-- Follows DRY/KISS principles
-
-## Core Components
-
-### Models
-- `Activity` - Main activity model
-- `ActivityLog` - Detailed activity logging
-
-- [architecture.md](architecture.md) — architettura generale del modulo.
-- [architecture/structure.md](architecture/structure.md) — organizzazione interna dettagliata.
-- [structure.md](structure.md) — nota: contenuto quasi identico a `architecture/structure.md` (stesso titolo "Modulo Activity", 414 vs 413 righe); vedi Storico.
-- [architecture-rules.md](architecture-rules.md) — puntatore alle regole architetturali generali.
-- [architecture/dedicated-connection.md](architecture/dedicated-connection.md) — pattern corretto per la connessione DB dedicata.
-- [contracts-naming.md](contracts-naming.md) — naming e posizionamento dei Contracts.
-- [patterns.md](patterns.md) — pattern architetturali del modulo (PATTERNS.md e' un duplicato per sola maiuscola, vedi Storico).
-- [accessor-delegation-pattern.md](accessor-delegation-pattern.md) — pattern "sacro" di delega degli accessor.
-- [actions-convention.md](actions-convention.md) — convenzione Actions (Spatie QueueableAction).
-- [queueable-actions.md](queueable-actions.md) — dottrina Queueable Actions nel modulo.
-- [actions/list-log-activities-action.md](actions/list-log-activities-action.md) — documentazione completa di `ListLogActivitiesAction`.
-- [model-classification.md](model-classification.md) — classificazione dei modelli del modulo.
-- [model-factory-seeder-audit.md](model-factory-seeder-audit.md) — audit modelli/factory/seeder.
-- [third-party-model-patterns.md](third-party-model-patterns.md) — pattern per modelli di terze parti.
-- [business-logic-overview.md](business-logic-overview.md) — panoramica sintetica della business logic.
-- [business-logic-analysis.md](business-logic-analysis.md) — analisi estesa (392 righe, versione piu' completa; varianti in Storico).
-- [module.md](module.md) — "Modulo Activity - Logging e Event Sourcing" (vedi nota Storico su `module_analysis.md`).
-- [module-analysis.md](module-analysis.md) — analisi comprensiva del modulo (contenuto diverso da `module.md`/`module_analysis.md` nonostante il nome simile — collisione di naming, non duplicato di contenuto).
-- [module-root-hygiene.md](module-root-hygiene.md) — perche' la root del modulo resta pulita.
-- [module-path-assets-resolution.md](module-path-assets-resolution.md) — risoluzione path/assets del modulo.
-- [anti-pattern-model-env-hack.md](anti-pattern-model-env-hack.md) — anti-pattern: logica env-specifica nei model.
-- [anti-pattern-redundant-property-override.md](anti-pattern-redundant-property-override.md) — anti-pattern: override ridondante di proprieta'.
-- [concepts/xotbase-never-extend-filament.md](concepts/xotbase-never-extend-filament.md) — mai estendere `Filament\*` direttamente, sempre `XotBase*`.
-- [_integration/filament.md](_integration/filament.md) — nota minima con link esterno di confronto pacchetti activity log.
-- [domain-logic.md](domain-logic.md), [data-models.md](data-models.md), [validation.md](validation.md), [integration.md](integration.md), [workflows.md](workflows.md), [troubleshooting.md](troubleshooting.md) — placeholder vuoti (solo titolo, nessun contenuto); non cancellati, da popolare o rimuovere in un task dedicato.
-
-### Services
-- `ActivityService` - Core activity management logic
-- `ActivityLogger` - Activity logging service
-
+<<<<<<< .merge_file_zbIGId
 ## Implementation Guide
 
 ### Basic Usage
@@ -203,98 +150,70 @@ sono elencati nello Storico.
 - [psr4-autoloading-fix.md](psr4-autoloading-fix.md) — fix compliance PSR-4.
 - [case-variant-collisions.md](case-variant-collisions.md) — collisioni di nome file per sola differenza di maiuscole nel codice PHP del modulo (documento gemello di questo problema, ma sui sorgenti, non sui docs).
 - [ponytail-audit-over-engineering.md](ponytail-audit-over-engineering.md) e [wiki/concepts/ponytail-audit.md](wiki/concepts/ponytail-audit.md) — audit over-engineering.
+=======
+# Indice documentazione — Modulo Activity
+>>>>>>> .merge_file_illSMr
 
-## Errori noti e troubleshooting
+Indice per argomento di tutti i `.md` sotto `Modules/Activity/docs/`: 94 file al 2026-11-25 (erano 755 al 2026-09-03, poi la cartella e' stata ridotta al tetto di 100 `.md`). Nomi: kebab-case, senza date nel filename.
 
-- [errors-and-fixes.md](errors-and-fixes.md) — errori rilevati e soluzioni.
-- [errori/attributerawvalues-null-firstorcreate.md](errori/attributerawvalues-null-firstorcreate.md) — errore `attributeRawValues` null durante `firstOrCreate`.
-- [errori/duplicate-entry-accessor-save.md](errori/duplicate-entry-accessor-save.md) — errore duplicate entry durante l'activity log.
-- [errori/modulo-disabilitato.md](errori/modulo-disabilitato.md) — errore modulo Activity disabilitato.
-- [errori/no-hint-path-defined.md](errori/no-hint-path-defined.md) — errore "No hint path defined for [activity]".
-- [errori/route-method-does-not-exist.md](errori/route-method-does-not-exist.md) — errore `::route` non esiste.
-- [troubleshooting/properties-vuote-activity-log.md](troubleshooting/properties-vuote-activity-log.md) — troubleshooting properties vuote nel log.
-- [filament-errors.md](filament-errors.md) — vedi sezione Filament.
-- [codex-error-fix.md](codex-error-fix.md) — stub puntatore a documentazione condivisa Themes.
-- [wiki/troubleshooting/git-push-dual-remote.md](wiki/troubleshooting/git-push-dual-remote.md) — troubleshooting push su doppio remote.
+Nessun file e' stato rinominato o cancellato per produrre questo indice. Dove esistono duplicati palesi (stesso argomento con e senza prefisso numerico), la variante numerata e' quella canonica e quella senza prefisso e' stata rimossa. I digest automatici di `wiki/topics/` (sintesi QMD di fonti non piu' presenti) sono stati eliminati: sono rigenerabili e la cronologia resta in git.
 
-## Roadmap e prodotto
+## Come leggere questo modulo
 
-- [roadmap/README.md](roadmap/README.md) — roadmap del modulo (entry point principale).
-- [roadmap.md](roadmap.md) — "Roadmap Modulo Activity - Audit Trail & Intelligence" (documento distinto).
-- [roadmap-vision.md](roadmap-vision.md) — roadmap completa 2026 (527 righe).
-- [roadmap-miglioramenti.md](roadmap-miglioramenti.md), [cosa-migliorare.md](cosa-migliorare.md) — cosa migliorare (visione).
-- [roadmap-and-issues.md](roadmap-and-issues.md) — roadmap e ottimizzazioni.
-- [roadmap/index.md](roadmap/index.md) — indice della serie numerata `roadmap/01-current-state.md` … `roadmap/05-risks.md` (`roadmap/00-index.md` e' duplicato, vedi Storico). La serie numerata ha alias senza numero con contenuto identico (`roadmap/current-state.md`, `roadmap/goals.md`, `roadmap/workstreams.md`, `roadmap/milestones.md`, `roadmap/risks.md`, `roadmap/now.md`, `roadmap/next.md`, `roadmap/later.md`, `roadmap/overview.md`) — vedi Storico.
-- [roadmap/legacy-roadmap.md](roadmap/legacy-roadmap.md) — roadmap legacy, gia' marcata come tale.
-- [roadmap/acceptance-criteria.md](roadmap/acceptance-criteria.md), [roadmap/dependencies.md](roadmap/dependencies.md), [roadmap/metrics.md](roadmap/metrics.md), [roadmap/phases.md](roadmap/phases.md), [roadmap/quality.md](roadmap/quality.md), [roadmap/vision.md](roadmap/vision.md) — sezioni tematiche della roadmap.
-- `roadmap/tasks/` (enhanced-activity-filtering, gdpr-compliance-enhancement, realtime-monitoring-dashboard): i tre file non esistono piu' (rimossi nel commit `7e00cedf` del 2026-10-08, verificato 2026-10-14); recuperabili con `git show 7e00cedf^:docs/roadmap/tasks/<nome>.md`.
-- [development/roadmap.md](development/roadmap.md) — roadmap orientata allo sviluppo (documento distinto da `roadmap/README.md`).
-- [stabilization-roadmap.md](stabilization-roadmap.md) — roadmap di stabilizzazione.
-- [prd.md](prd.md) — PRD del modulo.
-- [product-requirements.md](product-requirements.md) — product requirements document esteso.
-- [product-roadmap.md](product-roadmap.md) — product roadmap (product_roadmap.md/product_roadmap.md duplicati, vedi Storico).
-- [product-strategy.md](product-strategy.md) — product strategy (varianti maiuscole/underscore in Storico).
-- [product-launch-plan.md](product-launch-plan.md) — piano di lancio (varianti in Storico).
-- [launch-plan.md](launch-plan.md) — piano di lancio sintetico (documento distinto, molto piu' corto).
-- [tech_spec.md](tech_spec.md) — technical specification (TECH_SPEC.md duplicato maiuscolo, vedi Storico).
-- [sprint-planning-meeting.md](sprint-planning-meeting.md) — verbale sprint planning.
-- [sprint_planning.md](sprint_planning.md) — sprint planning esteso (sprint_planning.md duplicato, `sprint-planning.md` e' una versione molto piu' corta dello stesso argomento, vedi Storico).
-- [user-research.md](user-research.md) / [user_research.md](user_research.md) — user research (versione estesa in underscore, 101 righe; vedi Storico).
-- [release-marketing-standard.md](release-marketing-standard.md) — standard release/README marketing.
-- [readme-en.md](readme-en.md) — presentazione in inglese del modulo.
-- [readme-update.md](readme-update.md) — aggiornamento README, sezione testing (readme_update.md duplicato, vedi Storico).
+1. [README.md](README.md) — panoramica del modulo, quick start.
+2. [wiki/index.md](wiki/index.md) — "second brain" del modulo (concetti, regole, memorie, troubleshooting); [wiki/README.md](wiki/README.md) ne descrive le cartelle.
+3. [adr/README.md](adr/README.md) — perche' il modulo ha le forme che ha (decisioni architetturali).
+4. [contracts/README.md](contracts/README.md) — contratti comportamentali delle operazioni.
+5. [roadmap/README.md](roadmap/README.md) — roadmap del modulo.
+6. [manuals/manuale-utente.md](manuals/manuale-utente.md) — manuale utente del pannello Activity.
+7. [CHANGELOG.md](CHANGELOG.md) — rimando al changelog del modulo.
 
-## BMAD — Epic e Story
+## Decisioni (ADR)
 
-- [epics/activity-epics-and-stories.md](epics/activity-epics-and-stories.md) — epic e user story del modulo.
-- [stories/01.08.connection-property-safety.story.md](stories/01.08.connection-property-safety.story.md)
-- [stories/16-3-restore-corrupted-var-docblocks.md](stories/16-3-restore-corrupted-var-docblocks.md)
-- [stories/3.7.gdpr-export.story.md](stories/3.7.gdpr-export.story.md)
-- [stories/3.10.activity-pest-extend-bootstrap.story.md](stories/3.10.activity-pest-extend-bootstrap.story.md)
-- [stories/4.1.immutable-activity-log.story.md](stories/4.1.immutable-activity-log.story.md)
-- [stories/4.2.activity-retention-archive.story.md](stories/4.2.activity-retention-archive.story.md)
-- [stories/4.6.dpo-signoff-evidence.story.md](stories/4.6.dpo-signoff-evidence.story.md)
-- [stories/6.4.cleanup-policy-archive-scheduling.story.md](stories/6.4.cleanup-policy-archive-scheduling.story.md)
-- [stories/7.1.phpstan-activity-contracts.story.md](stories/7.1.phpstan-activity-contracts.story.md)
-- [stories/7.2.phpstan-test-harness-contracts.story.md](stories/7.2.phpstan-test-harness-contracts.story.md)
-- [stories/9.1.fix-connection-property-removed.story.md](stories/9.1.fix-connection-property-removed.story.md)
-- [stories/docs-index-audit.story.md](stories/docs-index-audit.story.md) — questo task (audit indice docs).
-- [stories/blade-i18n-no-hardcoded-text.story.md](stories/blade-i18n-no-hardcoded-text.story.md) — niente testi fissi nelle Blade: chiavi `activity::` in it, en, de, es.
+- [adr/README.md](adr/README.md) — metodo e formato degli ADR del modulo; [adr/index.md](adr/index.md) — elenco con stato.
+- [adr/0001-activity-audit-is-append-oriented.md](adr/0001-activity-audit-is-append-oriented.md) — la cronologia di audit non si riscrive.
+- [adr/0002-activity-models-on-dedicated-connection.md](adr/0002-activity-models-on-dedicated-connection.md) — i modelli usano la connessione `activity`.
+- [adr/0003-log-viewer-single-path-resolver.md](adr/0003-log-viewer-single-path-resolver.md) — un solo risolutore di percorsi per il visualizzatore dei log.
+- [adr/0000-template.md](adr/0000-template.md) — template.
+- Le tre varianti senza prefisso numerico (`adr/activity-*.md`, `adr/log-viewer-single-path-resolver.md`) erano duplicate dei canonici numerati e sono state rimosse: i link puntano ai file `NNNN-`.
 
-## Task e backlog dettagliato
+## Contratti
 
-- `tasks/` (36 file: `tasks-index.md`, `001`..`005`, `activity-ai-detection`, `activity-filament-v5`, `cleanup-activity-docs`, `documentation/*`, `features/*`, `refactoring/*`, `testing/*`): la cartella non contiene piu' nessun `.md` (rimossa nel commit `7e00cedf` del 2026-10-08, verificato 2026-10-14; resta un solo file `.lock`). Ogni file e' recuperabile con `git show 7e00cedf^:docs/tasks/<percorso>`. I link a questi file sono stati tolti da questo elenco.
-- [task-consolidare-documentazione.md](task-consolidare-documentazione.md) — task gemello nella root di `docs/` (30% completo secondo il file stesso).
-- [task-migliorare-report-pdf.md](task-migliorare-report-pdf.md), [task-ridurre-phpstan-test.md](task-ridurre-phpstan-test.md) — altri task nella root di `docs/`.
-
-Le voci `tasks/` rimosse sopra avevano lo stesso template ma contenuto distinto; i tre file `task-*.md` della radice di `docs/` esistono ancora.
+- [contracts/README.md](contracts/README.md) — contratti del modulo Activity.
+- [contracts/index.md](contracts/index.md) — indice dei contratti: operazione, classe, invarianti; [contracts/INDEX.md](contracts/INDEX.md) — inventario machine-readable; [contracts/_template.md](contracts/_template.md) — template.
 
 ## Wiki (second brain del modulo)
 
-Il modulo mantiene un "second brain" strutturato sotto `wiki/`, con proprio indice
-tematico gia' mantenuto: [wiki/index.md](wiki/index.md) (concetti, regole, memorie,
-troubleshooting, integrazioni, fonti). Punti di rilievo:
-
-- [wiki/README.md](wiki/README.md) — introduzione al wiki di modulo.
-- [wiki/overview.md](wiki/overview.md), [wiki/overviews/completion-status.md](wiki/overviews/completion-status.md) — panoramica e stato di completamento.
-- [wiki/concepts/index.md](wiki/concepts/index.md) — indice dei concetti (index.md duplicato maiuscolo, vedi Storico).
-- [wiki/concepts/xotbase-resource-zen-pattern.md](wiki/concepts/xotbase-resource-zen-pattern.md), [wiki/concepts/queueable-action-execute-entrypoint.md](wiki/concepts/queueable-action-execute-entrypoint.md), [wiki/concepts/queueable-action-trait-mandatory.md](wiki/concepts/queueable-action-trait-mandatory.md) — pattern architetturali chiave.
-- [wiki/concepts/activity-domain-focus.md](wiki/concepts/activity-domain-focus.md), [wiki/concepts/activity-migration-ownership.md](wiki/concepts/activity-migration-ownership.md), [wiki/concepts/activity-log-attribute-changes-column.md](wiki/concepts/activity-log-attribute-changes-column.md), [wiki/concepts/activity-log-single-migration-contract.md](wiki/concepts/activity-log-single-migration-contract.md) — regole di dominio specifiche Activity.
-- [wiki/concepts/spatie-activitylog-module-dependency.md](wiki/concepts/spatie-activitylog-module-dependency.md), [wiki/concepts/package-ownership-event-sourcing.md](wiki/concepts/package-ownership-event-sourcing.md) — ownership pacchetti.
-- [wiki/concepts/testcase-hierarchy-architecture.md](wiki/concepts/testcase-hierarchy-architecture.md), [wiki/memories/testcase-hierarchy-decision.md](wiki/memories/testcase-hierarchy-decision.md) — decisione architetturale TestCase (variante datata `-2026-06-10` identica in Storico).
-- [wiki/concepts/no-app-support-queueable-actions.md](wiki/concepts/no-app-support-queueable-actions.md), [wiki/concepts/no-services-no-support-queueable-actions.md](wiki/concepts/no-services-no-support-queueable-actions.md) — divieto `Services`/`Support`, solo Actions.
-- [wiki/concepts/schemas-tables-pattern.md](wiki/concepts/schemas-tables-pattern.md), [wiki/concepts/model-migration-seeder-rule.md](wiki/concepts/model-migration-seeder-rule.md) — regola 1 modello = 1 migration + 1 seeder.
-- [wiki/concepts/second-brain-local-discipline.md](wiki/concepts/second-brain-local-discipline.md), [wiki/concepts/context-mode-activity-discipline.md](wiki/concepts/context-mode-activity-discipline.md), [wiki/concepts/context-overflow-prevention.md](wiki/concepts/context-overflow-prevention.md) — disciplina agente e contesto.
-- [wiki/concepts/claude-audit-static.md](wiki/concepts/claude-audit-static.md), [wiki/concepts/ponytail-audit.md](wiki/concepts/ponytail-audit.md) — audit statici.
-- [wiki/concepts/composer-root-minimal-nwidart.md](wiki/concepts/composer-root-minimal-nwidart.md), [wiki/concepts/organizzativa-money.md](wiki/concepts/organizzativa-money.md), [wiki/concepts/jpgraph-guide.md](wiki/concepts/jpgraph-guide.md) (variante di `jpgraph-guide.md` in root), [wiki/concepts/duplicate-method-bodies.md](wiki/concepts/duplicate-method-bodies.md), [wiki/concepts/method-name-homonyms.md](wiki/concepts/method-name-homonyms.md), [wiki/concepts/phpstan-compliance.md](wiki/concepts/phpstan-compliance.md), [wiki/concepts/phpstan-module-config-zero.md](wiki/concepts/phpstan-module-config-zero.md), [wiki/concepts/phpstan-pest-discipline.md](wiki/concepts/phpstan-pest-discipline.md), [wiki/concepts/pest-bootstrap-extend-ignore.md](wiki/concepts/pest-bootstrap-extend-ignore.md), [wiki/concepts/testing.md](wiki/concepts/testing.md) — vari concetti puntuali.
-- [wiki/rules/index.md](wiki/rules/index.md) (index.md duplicato, Storico), [wiki/rules/best-practices.md](wiki/rules/best-practices.md), [wiki/rules/queueable-action-execute-entrypoint.md](wiki/rules/queueable-action-execute-entrypoint.md).
-- [wiki/skills/index.md](wiki/skills/index.md), [wiki/commands/index.md](wiki/commands/index.md), [wiki/memories/index.md](wiki/memories/index.md) — indici delle rispettive sotto-sezioni (ognuno con gemello index.md maiuscolo, vedi Storico).
-- [wiki/sources/activity-core-sources.md](wiki/sources/activity-core-sources.md) — fonti primarie del modulo.
-- [wiki/how-to/gitmodules-sync-session.md](wiki/how-to/gitmodules-sync-session.md), [wiki/troubleshooting/git-merge-conflict-inventory.md](wiki/troubleshooting/git-merge-conflict-inventory.md), [wiki/troubleshooting/git-push-dual-remote.md](wiki/troubleshooting/git-push-dual-remote.md), [wiki/integrations/integration.md](wiki/integrations/integration.md), [wiki/integrations/laravel-13-upgrade.md](wiki/integrations/laravel-13-upgrade.md).
-- [wiki/schema.md](wiki/schema.md), [wiki/log.md](wiki/log.md), [wiki/AGENTS.md](wiki/agents.md), [wiki/bmad-method.md](wiki/bmad-method.md) (stub puntatore), [wiki/project-roadmap.md](wiki/project-roadmap.md).
-- [wiki/product/_da-riconciliare/product-strategy.md](wiki/product/_da-riconciliare/product-strategy.md) — gia' esplicitamente marcato "da riconciliare" dal path stesso.
+- [wiki/index.md](wiki/index.md) — indice della wiki (catalogo fermo al 2026-06-10).
+- [wiki/log.md](wiki/log.md) — registro datato di cio' che e' cambiato nel modulo e nei docs.
+- [wiki/agents.md](wiki/agents.md) — istruzioni per gli agenti sulla wiki; [wiki/ai-methodologies.md](wiki/ai-methodologies.md) e [wiki/bmad-method.md](wiki/bmad-method.md) — stub puntatori.
+- [wiki/concepts/index.md](wiki/concepts/index.md), [wiki/concepts/log-viewer-sicurezza.md](wiki/concepts/log-viewer-sicurezza.md) — concetti; il secondo spiega la catena Action che porta un file di `storage/logs` nel pannello e cosa impedisce di leggere altri file.
+- [wiki/rules/index.md](wiki/rules/index.md), [wiki/skills/index.md](wiki/skills/index.md), [wiki/commands/index.md](wiki/commands/index.md) — indici delle sotto-sezioni.
+- [wiki/memories/index.md](wiki/memories/index.md), [wiki/memories/testcase-hierarchy-decision.md](wiki/memories/testcase-hierarchy-decision.md), [wiki/memories/phpstan-bootstrap-marker-blocker.md](wiki/memories/phpstan-bootstrap-marker-blocker.md) — memorie.
+- [wiki/troubleshooting/git-merge-conflict-inventory.md](wiki/troubleshooting/git-merge-conflict-inventory.md), [wiki/troubleshooting/git-merge-conflict-inventory-april.md](wiki/troubleshooting/git-merge-conflict-inventory-april.md) — inventari dei conflitti di merge.
 - [wiki/_templates/concept.md](wiki/_templates/concept.md), [wiki/_templates/entity.md](wiki/_templates/entity.md), [wiki/_templates/source.md](wiki/_templates/source.md) — template per nuove pagine wiki, non contenuto.
+- [llm-wiki/index.md](llm-wiki/index.md), [llm-wiki/agents.md](llm-wiki/agents.md) — scaffold parallelo, in gran parte vuoto.
 
+## BMAD, story e audit
+
+- [bmad/README.md](bmad/README.md), [bmad/index.md](bmad/index.md) — integrazione BMAD del modulo e suo indice.
+- Story in `bmad/stories/` (la variante numerata e' canonica; le varianti senza prefisso duplicate sono state rimosse):
+  - [0005-module-bmad-audit.story.md](bmad/stories/0005-module-bmad-audit.story.md) — audit BMAD profondo del modulo.
+  - [0007-php-conflict-markers.story.md](bmad/stories/0007-php-conflict-markers.story.md) — risoluzione dei marker di conflitto PHP.
+  - [0011-phpstan-resurrected-duplicate-tests.story.md](bmad/stories/0011-phpstan-resurrected-duplicate-tests.story.md) — test duplicati resuscitati dalla sync.
+  - [0015-phpstan-swarm-cluster5-4.story.md](bmad/stories/0015-phpstan-swarm-cluster5-4.story.md) — PHPStan swarm cluster 5.
+  - [0019-quality-gates-phpstan-fix-4.story.md](bmad/stories/0019-quality-gates-phpstan-fix-4.story.md) — remediation PHPStan della flotta di moduli.
+  - [quality-gates-phpstan-swarm.story.md](bmad/stories/quality-gates-phpstan-swarm.story.md) — PHPStan quality gate swarm.
+  - [folio-routing-centralization.story.md](bmad/stories/folio-routing-centralization.story.md) — il routing Folio e' centralizzato, Activity non monta Folio.
+  - [0000-template.story.md](bmad/stories/0000-template.story.md) — template.
+- Story in `stories/`:
+  - [0002-activity-admin-log-viewer-page.story.md](stories/0002-activity-admin-log-viewer-page.story.md) — pagina Log nel pannello Activity (la variante senza prefisso, con nomi di Action non piu' esistenti, e' stata rimossa).
+  - [audit-qualita.story.md](stories/audit-qualita.story.md) — audit qualita' del modulo.
+  - [phpstan-cleanup-activity-wave.story.md](stories/phpstan-cleanup-activity-wave.story.md) — PHPStan cleanup.
+  - [0000-template.story.md](stories/0000-template.story.md) — template.
+- [ecc/00-index.md](ecc/00-index.md) — indice operativo ECC: stato dei controlli (PHPStan, Pest, security) con evidenze.
+
+<<<<<<< .merge_file_zbIGId
 `llm-wiki/` e' uno scaffold parallelo, in gran parte vuoto: [llm-wiki/index.md](llm-wiki/index.md)
 dichiara esplicitamente "no concept/entity/source pages created yet". Contenuto reale
 solo in [llm-wiki/AGENTS.md](llm-wiki/agents.md) e [llm-wiki/log.md](llm-wiki/log.md)
@@ -532,9 +451,13 @@ find Modules/Activity/docs/root-md-files Modules/Activity/docs/root-txt-files \
 
 Questi 4 gruppi restano come testimonianza storica di un import automatico mal riuscito
 (vedi anche `docs/no-ai-tool-scaffold-dirs.md` per la policy su cartelle-scaffold).
+=======
+## Roadmap e prodotto
+>>>>>>> .merge_file_illSMr
 
-### File placeholder vuoti (solo titolo H1, zero contenuto)
+- [roadmap/README.md](roadmap/README.md) — roadmap del modulo (entry point principale); [roadmap/index.md](roadmap/index.md) — indice della roadmap.
 
+<<<<<<< .merge_file_zbIGId
 `domain-logic.md`, `data-models.md`, `validation.md`, `integration.md`, `workflows.md`,
 <<<<<<< .merge_file_mp1pTI
 `troubleshooting.md`, `archived-note.md`, `documentation.md`,
@@ -544,9 +467,15 @@ Questi 4 gruppi restano come testimonianza storica di un import automatico mal r
 `documentation-archive.md` e i loro equivalenti nelle
 >>>>>>> .merge_file_e6wsvv
 cartelle di import grezzo sopra citate (49 file a 0 righe in tutto il modulo).
+=======
+## Casi d'uso Event Sourcing (approfondimenti didattici)
+>>>>>>> .merge_file_illSMr
 
-## Numeri di questo audit
+- [use_cases/bank/README.md](use_cases/bank/README.md) e [use_cases/bank/index.md](use_cases/bank/index.md) — Larabank: caso d'uso bancario con event sourcing.
+- [use_cases/prediction_market/README.md](use_cases/prediction_market/README.md) e [use_cases/prediction_market/index.md](use_cases/prediction_market/index.md) — prediction market con event sourcing.
+- [use_cases/shop/README.md](use_cases/shop/README.md) e [use_cases/shop/index.md](use_cases/shop/index.md) — carrello della spesa con event sourcing e console commands.
 
+<<<<<<< .merge_file_zbIGId
 - File `.md` totali sotto `docs/`: 755.
 - Cluster di duplicati quasi identici individuati (nome normalizzato + confronto righe): 92, per 227 file coinvolti.
 - File completamente vuoti (0 righe): 49.
@@ -558,11 +487,16 @@ Audit qualita' #64: tutti i `.md` con data/timestamp nel nome sono stati rinomin
 (la data e' ora nel frontmatter `created:`) oppure uniti al file canonico omonimo;
 i placeholder vuoti datati di `raw/root-import/` sono stati rimossi.
 Dettagli: [stories/audit-qualita.story.md](stories/audit-qualita.story.md). Verifica:
+=======
+## Report PDF e grafici
 
-```bash
-python3 -I bashscripts/tools/docs/md-filenames.py check --paths laravel/Modules/Activity/docs
-```
+- [charts/README.md](charts/README.md) — integrazione dei widget Filament per i grafici.
+- [html2pdf/index.md](html2pdf/index.md) — stub puntatore alla documentazione canonica nel modulo Media.
+>>>>>>> .merge_file_illSMr
 
+## Digest e output
+
+<<<<<<< .merge_file_zbIGId
 <<<<<<< .merge_file_mp1pTI
 =======
 Esempi ancora presenti: `documentation-2024-03-27.md`, `quality-status.md`,
@@ -611,3 +545,16 @@ Le cartelle di import grezzo (`raw/`, `root-*-files/`), immagini e log sono escl
 | [`use-cases/`](use-cases/) | 1 |
 | [`use_cases/`](use_cases/) | 116 |
 | [`wiki/`](wiki/index.md) | 105 |
+=======
+- [digests/overflow-history.md](digests/overflow-history.md) — sezioni condensate dei file oltre il tetto di 100 `.md` (una sezione per file, intitolata col percorso originale).
+- [digests/archive-archive.md](digests/archive-archive.md), [digests/archive-raw.md](digests/archive-raw.md), [digests/aliases-removed.md](digests/aliases-removed.md) — elenchi delle sorgenti fuse e degli alias rimossi.
+- [outputs/README.md](outputs/README.md) — cartella degli output generati.
+
+## Rimossi e recuperabili da git
+
+- `tasks/` (36 file: `tasks-index.md`, `001`..`005`, `activity-ai-detection`, `activity-filament-v5`, `cleanup-activity-docs`, `documentation/*`, `features/*`, `refactoring/*`, `testing/*`): rimossa nel commit `7e00cedf` del 2026-10-08. Ogni file e' recuperabile con `git show 7e00cedf^:docs/tasks/<percorso>`.
+- `roadmap/tasks/` (enhanced-activity-filtering, gdpr-compliance-enhancement, realtime-monitoring-dashboard): rimossa nello stesso commit `7e00cedf`; recuperabile con `git show 7e00cedf^:docs/roadmap/tasks/<nome>.md`.
+- `docs-archive-policy.md`: rimosso nel commit `a871d44e` del 2026-10-08.
+- `00-index.md` della radice di `docs/`: rimosso il 2026-10-22 (commit `7e2a1509`, insieme a `index.md` e a `wiki/index.md`, poi ricreati); l'indice di tutta la cartella docs e' questo file.
+- Le versioni precedenti di questo indice elencavano molti altri file (architettura, Filament, PHPStan, testing, event sourcing, migrazioni) che oggi non esistono piu' in `docs/`: la cronologia git e' l'unica fonte.
+>>>>>>> .merge_file_illSMr

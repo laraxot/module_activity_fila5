@@ -13,6 +13,7 @@ related:
   - ./phpstan-conflict-markers-bootstrap.story.md
 references:
   - sprint-status: "Activity — swarm phpstan Activity+Progressioni+Sigma, 2026-09-29"
+qmd: "quality gates phpstan swarm story gate"
 ---
 
 # Activity — PHPStan quality gate swarm (2026-09-29)
@@ -176,9 +177,12 @@ Non serve una nuova memoria: il pattern è già coperto da
 e da `pest4-bootstrap-composer.md`/`pest5-configuring-tests.md`.
 
 ---
+<<<<<<< .merge_file_pqWUPx
 
 ## Contenuto unito da `quality-gates-phpstan-swarm.story.md`
 
 # quality gates phpstan swarm
 
 Stub alias post-strip data/timestamp. Canonico: [./quality-gates-phpstan-swarm.story.md](./quality-gates-phpstan-swarm.story.md).
+=======
+>>>>>>> .merge_file_kxRpqP

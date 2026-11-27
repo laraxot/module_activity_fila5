@@ -13,6 +13,11 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * Logs when a model is updated using Queueable Actions
  *
+<<<<<<< .merge_file_PEBsHO
+=======
+ * @see docs/contracts/log-model-updated-action.md
+ *
+>>>>>>> .merge_file_tg2IZp
  * @contract docs/contracts/log-model-updated-action.md
  */
 class LogModelUpdatedAction

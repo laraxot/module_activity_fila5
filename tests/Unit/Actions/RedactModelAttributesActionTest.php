@@ -24,7 +24,7 @@ describe('coverage senza database activity_log', function (): void {
         ]);
 
         Assert::assertSame(['name' => 'Marco', 'email' => 'a@b.it'], $redacted);
-    });
+    })->group('ACT-REDACT-INV-1');
 
     test('Activity espone connection e scopes SQL', function (): void {
         $batchUuid = 'batch-123';

@@ -19,7 +19,14 @@ Collega le verifiche ECC al workflow PTVX (BMAD → lock → fix → PHPStan/Pes
 | Pest | parziale: 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout (900 s) | [audit § Gate](../bmad/audits/activity-audit.md#gate) |
 =======
 | Pest | parziale: 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout (900 s); `tests/Feature` 0 failed / 181 passed / 9 skipped dopo i fix | [audit § Gate](../bmad/audits/activity-audit.md#gate) |
+<<<<<<< .merge_file_0VO8xg
 >>>>>>> .merge_file_2xi4Zt
+=======
+| Pest | parziale: 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout (900 s); `tests/Feature` 0 failed / 181 passed / 9 skipped dopo i fix | [audit § Gate](../bmad/audits/activity-audit.md#gate) |
+| Pest | parziale: 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout (900 s); `tests/Feature` 0 failed / 181 passed / 9 skipped dopo i fix | [audit § Gate](../bmad/audits/activity-audit.md#gate) |
+| Pest | parziale: 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout (900 s) | [audit § Gate](../bmad/audits/activity-audit.md#gate) |
+| Pest | parziale: 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout (900 s); `tests/Feature` 0 failed / 181 passed / 9 skipped dopo i fix | [audit § Gate](../bmad/audits/activity-audit.md#gate) |
+>>>>>>> .merge_file_2uAlwl
 | Security review | **aperta** — 3 P1 (registro mutabile, segreti non redatti, login) | [finding](../bmad/audits/activity-audit.md#finding) |
 | Docs pack | aggiornato | [audit](../bmad/audit.md), [piano](../bmad/piano-miglioramento.md), [epics](../bmad/epics.md) |
 

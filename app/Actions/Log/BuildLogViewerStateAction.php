@@ -19,6 +19,10 @@ use function Safe\filemtime;
  *
  * Un file non valido o non leggibile non solleva eccezioni: lo stato ha `error` valorizzato con un messaggio
  * generico (quello dell'eccezione contiene il percorso richiesto e non va mostrato).
+ *
+ * @see docs/contracts/build-log-viewer-state-action.md
+ *
+ * @contract docs/contracts/build-log-viewer-state-action.md
  */
 class BuildLogViewerStateAction
 {
@@ -49,7 +53,7 @@ class BuildLogViewerStateAction
 
         if ($file !== '') {
             try {
-                $resolved = app(ResolveLogFilePathAction::class)->execute($file);
+                $resolved = app(GetLogFilePathAction::class)->execute($file);
                 $tail = app(ReadLogTailAction::class)->execute($resolved->absolutePath, $this->windowBytes($window));
                 $filtered = app(FilterLogEntriesAction::class)->execute(
                     app(ParseLogEntriesAction::class)->execute($tail->content),
