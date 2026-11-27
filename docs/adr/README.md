@@ -1,37 +1,16 @@
 ---
 title: "ADR del modulo Activity"
 type: index
-<<<<<<< .merge_file_5nTfCv
-tags: [adr, decisioni, activity]
-created: 2026-11-18
-updated: 2026-11-24
-=======
 module: Activity
 status: active
 created: 2026-11-18
 updated: 2026-11-26
 qmd: "Activity adr architecture decision records madr formato"
 tags: [adr, decisioni, activity]
->>>>>>> .merge_file_66Gf5a
 ---
 
 # ADR del modulo Activity
 
-<<<<<<< .merge_file_5nTfCv
-Il **perché** di due forme di Activity che sembrano eccessive: i modelli su una connessione dedicata (`activity`) invece
-della default, e il visualizzatore dei log che fa passare ogni percorso scelto dall'utente da un solo risolutore.
-
-Leggili prima di: cambiare `$connection` di un modello del modulo o la configurazione `activitylog`, aggiungere un modo di
-leggere o scaricare file da `storage/logs`, o toccare i permessi del visualizzatore.
-
-Formato (cinque sezioni, `type: decision`, nome file senza date né numeri) e regole:
-[action-behavioral-contract](../../../Xot/docs/rules/action-behavioral-contract.md).
-
-## Indice
-
-- [I modelli di Activity usano la connessione 'activity'](activity-models-on-dedicated-connection.md) — log separabile in un altro database e rollback dei test coerente; debito: Spatie scrive sulla default.
-- [Visualizzatore dei log: un solo risolutore di percorsi](log-viewer-single-path-resolver.md) — `realpath` e solo `.log` dentro `storage/logs`, una regola di accesso, download a blocchi.
-=======
 Un ADR registra una scelta difficile da invertire, sorprendente o frutto di un trade-off reale, e il suo perche'.
 Non e' un diario ne' una spiegazione retroattiva: se la decisione non e' dimostrabile dal codice o da una story/doc del repo, non si scrive.
 Il nome del file e' `NNNN-argomento.md` (kebab-case, prefisso numerico come negli ADR di Xot), senza date: la data sta nella frontmatter. Eccezioni al prefisso: `README.md`, `index.md`, `0000-template.md`.
@@ -111,4 +90,19 @@ ADR: 3. Con conferma automatica (test o comando eseguibile da `laravel/`): 2. AD
 - Test che scandisce `Modules/Activity/app` per `update/upsert/save` su `activity_log` con allowlist delle eccezioni note (ADR 0001, Conferma).
 - Le copie senza numero (`activity-audit-is-append-oriented.md`, `activity-models-on-dedicated-connection.md`, `log-viewer-single-path-resolver.md`) risultano cancellate nell'albero di lavoro (`git status` del 2026-11-26) e non sono più in `docs/adr`; il numerato è l'unico ADR.
 - `0000-template.md` è il modello, non una decisione.
->>>>>>> .merge_file_66Gf5a
+
+## Harness minimo: ownership, evidenza e recupero (2026-11-27)
+
+Questo indice appartiene a **module_activity_fila5**: ogni decisione su codice, dominio o tema va nell'ADR del package owner; il root registra soltanto i vincoli di composizione. Un ADR richiede una scelta reale con alternative e conseguenze, più una **Conferma** ripetibile (oppure la dichiarazione esplicita che manca). Non creare ADR fittizi per riempire un indice.
+
+- [Confine LaravelDay/harness Xot](https://github.com/laraxot/module_xot_fila5/blob/dev/docs/adr/0042-laravel-day-harness-adoption-boundary.md); [ownership root](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/adr/0001-harness-minimo-e-ownership.md).
+- **BMAD**: la story owner-local conserva `scope`, `must_not_change`, `evidence`, `approval_required` nei cambi rischiosi.
+- **ECC**: nessun marker di merge; distinguere la prova eseguita dal semplice riferimento a un test; se la conferma non è disponibile segnare `non eseguita`.
+- **Second Brain**: QMD/Graphify e `.harness/memory/{facts,lessons}.md` sono puntatori a evidenza datata, non copie degli ADR. [Runbook](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/harness/README.md) · [Rollout #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
+
+## Documenti del package da riconciliare nell'indice
+
+I seguenti file **esistono nel repository su `dev`** e non erano tutti collegati nel ramo d'indice più recente. Sono preservati come puntatori documentali; il loro stato di approvazione, la copertura e l'eventuale sostituzione con ADR numerati devono essere verificati nell'owner. Nessuna prova di esecuzione è implicita.
+
+- [I modelli di Activity usano la connessione 'activity'](./activity-models-on-dedicated-connection.md)
+- [Visualizzatore dei log: un solo risolutore di percorsi](./log-viewer-single-path-resolver.md)
