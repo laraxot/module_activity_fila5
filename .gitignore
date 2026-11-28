@@ -178,19 +178,14 @@ v8-compile-cache-*
 /.windsurf
 /.windsurf/
 .windsurf~*
-<<<<<<< .merge_file_pa2Qyk
 tests/activity_coverage.xml
 Activity/
-<<<<<<< .merge_file_cXcCxN
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
-=======
 tests/coverage-*.*
 docs/screenshots/
->>>>>>> .merge_file_AGlBkD
-=======
 # screenshot di comparazione visiva (artefatti locali)
 workbench
 workbench/
@@ -200,4 +195,3 @@ yarn.lock
 *:Zone.Identifier
 # Indice vettoriale locale (non versionare)
 ruvector.db
->>>>>>> .merge_file_7TwVko

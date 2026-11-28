@@ -7,7 +7,6 @@ tags: [docs, activity]
 qmd: "indice documentazione modulo activity architecture naming debt kebab-case"
 ---
 
-<<<<<<< .merge_file_zbIGId
 ## Implementation Guide
 
 ### Basic Usage
@@ -150,9 +149,7 @@ sono elencati nello Storico.
 - [psr4-autoloading-fix.md](psr4-autoloading-fix.md) — fix compliance PSR-4.
 - [case-variant-collisions.md](case-variant-collisions.md) — collisioni di nome file per sola differenza di maiuscole nel codice PHP del modulo (documento gemello di questo problema, ma sui sorgenti, non sui docs).
 - [ponytail-audit-over-engineering.md](ponytail-audit-over-engineering.md) e [wiki/concepts/ponytail-audit.md](wiki/concepts/ponytail-audit.md) — audit over-engineering.
-=======
 # Indice documentazione — Modulo Activity
->>>>>>> .merge_file_illSMr
 
 Indice per argomento di tutti i `.md` sotto `Modules/Activity/docs/`: 94 file al 2026-11-25 (erano 755 al 2026-09-03, poi la cartella e' stata ridotta al tetto di 100 `.md`). Nomi: kebab-case, senza date nel filename.
 
@@ -213,7 +210,6 @@ Nessun file e' stato rinominato o cancellato per produrre questo indice. Dove es
   - [0000-template.story.md](stories/0000-template.story.md) — template.
 - [ecc/00-index.md](ecc/00-index.md) — indice operativo ECC: stato dei controlli (PHPStan, Pest, security) con evidenze.
 
-<<<<<<< .merge_file_zbIGId
 `llm-wiki/` e' uno scaffold parallelo, in gran parte vuoto: [llm-wiki/index.md](llm-wiki/index.md)
 dichiara esplicitamente "no concept/entity/source pages created yet". Contenuto reale
 solo in [llm-wiki/AGENTS.md](llm-wiki/agents.md) e [llm-wiki/log.md](llm-wiki/log.md)
@@ -344,11 +340,8 @@ sotto). Coesistono per coincidenza di nome con le varianti che invece hanno cont
 `metodi-duplicati-analisi.md` (+ maiuscolo/underscore) · `modelli-factory-seeder-analisi.md` (+ `-1.md`, underscore) ·
 `phpstan-analysis-november.md`/`phpstan-analysis-november-2025.md` · `phpstan-fixes.md` (+ `-1.md`, stub underscore) ·
 `phpstan-fixes-activity.md` (+ `-1.md`, underscore) · `quality-status.md` (+ `-.md`, `-2025-11.md`; `-nov.md` e' stub) ·
-<<<<<<< .merge_file_mp1pTI
 `roadmap.md`/`roadmap.md` (+ `roadmap-archive-1.md`, quasi identico con 2 righe di differenza) ·
-=======
 `roadmap-2025.md`/`roadmap-.md` (+ `roadmap-archive.md`, quasi identico con 2 righe di differenza) ·
->>>>>>> .merge_file_e6wsvv
 `event-sourcing-examples-duplicate.md`/`event_sourcing_examples.md` (+ stub `event-sourcing-examples.md`) ·
 `event-sourcing-introduction-duplicate.md`/`event_sourcing_introduction.md` (+ stub `event-sourcing-introduction.md`) ·
 `test-archive-1.md`/`test-archive-2.md` (entrambi vuoti).
@@ -405,7 +398,6 @@ intenzionale di "on-demand", non un incidente di duplicazione): `ai-methodologie
 Non richiedono consolidamento: sono puntatori voluti, non copie accidentali.
 
 ## Related Modules
-<<<<<<< .merge_file_mp1pTI
 - [User Module](../../User/docs/README.md) - User authentication and management
 - [Notify Module](../../Notify/docs/index.md) - Notification system
 - [Xot Module](../../Xot/docs/README.md) - Core base classes
@@ -420,7 +412,6 @@ Non richiedono consolidamento: sono puntatori voluti, non copie accidentali.
 - [User Module](../../User/docs/readme.md) - User authentication and management
 - [Notify Module](../../Notify/docs/index.md) - Notification system
 - [Xot Module](../../Xot/docs/README.md) - Core base classes
-=======
 - [User Module](../User/docs/README.md) - User authentication and management
 - [Notify Module](../Notify/docs/index.md) - Notification system
 - [Xot Module](../Xot/docs/index.md) - Core base classes
@@ -435,7 +426,6 @@ Non richiedono consolidamento: sono puntatori voluti, non copie accidentali.
 - [User Module](../user/docs/README.md) - User authentication and management
 - [Notify Module](../notify/docs/index.md) - Notification system
 - [Xot Module](../xot/docs/index.md) - Core base classes
->>>>>>> .merge_file_e6wsvv
 
 Quattro copie parallele dello stesso lotto di file di test/placeholder, quasi tutte a
 0-3 righe (`archived-note.md`, `documentation*.md`, `test*.md`,
@@ -451,31 +441,22 @@ find Modules/Activity/docs/root-md-files Modules/Activity/docs/root-txt-files \
 
 Questi 4 gruppi restano come testimonianza storica di un import automatico mal riuscito
 (vedi anche `docs/no-ai-tool-scaffold-dirs.md` per la policy su cartelle-scaffold).
-=======
 ## Roadmap e prodotto
->>>>>>> .merge_file_illSMr
 
 - [roadmap/README.md](roadmap/README.md) — roadmap del modulo (entry point principale); [roadmap/index.md](roadmap/index.md) — indice della roadmap.
 
-<<<<<<< .merge_file_zbIGId
 `domain-logic.md`, `data-models.md`, `validation.md`, `integration.md`, `workflows.md`,
-<<<<<<< .merge_file_mp1pTI
 `troubleshooting.md`, `archived-note.md`, `documentation.md`,
 `documentation-archive-1.md` e i loro equivalenti nelle
-=======
 `troubleshooting.md`, `2024-03-27.md`, `archived-note.md`, `documentation.md`,
 `documentation-archive.md` e i loro equivalenti nelle
->>>>>>> .merge_file_e6wsvv
 cartelle di import grezzo sopra citate (49 file a 0 righe in tutto il modulo).
-=======
 ## Casi d'uso Event Sourcing (approfondimenti didattici)
->>>>>>> .merge_file_illSMr
 
 - [use_cases/bank/README.md](use_cases/bank/README.md) e [use_cases/bank/index.md](use_cases/bank/index.md) — Larabank: caso d'uso bancario con event sourcing.
 - [use_cases/prediction_market/README.md](use_cases/prediction_market/README.md) e [use_cases/prediction_market/index.md](use_cases/prediction_market/index.md) — prediction market con event sourcing.
 - [use_cases/shop/README.md](use_cases/shop/README.md) e [use_cases/shop/index.md](use_cases/shop/index.md) — carrello della spesa con event sourcing e console commands.
 
-<<<<<<< .merge_file_zbIGId
 - File `.md` totali sotto `docs/`: 755.
 - Cluster di duplicati quasi identici individuati (nome normalizzato + confronto righe): 92, per 227 file coinvolti.
 - File completamente vuoti (0 righe): 49.
@@ -487,24 +468,18 @@ Audit qualita' #64: tutti i `.md` con data/timestamp nel nome sono stati rinomin
 (la data e' ora nel frontmatter `created:`) oppure uniti al file canonico omonimo;
 i placeholder vuoti datati di `raw/root-import/` sono stati rimossi.
 Dettagli: [stories/audit-qualita.story.md](stories/audit-qualita.story.md). Verifica:
-=======
 ## Report PDF e grafici
 
 - [charts/README.md](charts/README.md) — integrazione dei widget Filament per i grafici.
 - [html2pdf/index.md](html2pdf/index.md) — stub puntatore alla documentazione canonica nel modulo Media.
->>>>>>> .merge_file_illSMr
 
 ## Digest e output
 
-<<<<<<< .merge_file_zbIGId
-<<<<<<< .merge_file_mp1pTI
-=======
 Esempi ancora presenti: `documentation-2024-03-27.md`, `quality-status.md`,
 `stories/phpstan-cleanup-activity.story.md`,
 `bmad/stories/*-20260928*.story.md`, `wiki/troubleshooting/git-merge-conflict-inventory-april.md`,
 `raw/root-import/*2024*`. Procedura: [docs-clean.md](../../../../bashscripts/docs/prompts/docs-clean.md).
 
->>>>>>> .merge_file_e6wsvv
 ## Troubleshooting
 
 - Performance log grandi, entry mancanti, config: vedi wiki troubleshooting del modulo.
@@ -545,7 +520,6 @@ Le cartelle di import grezzo (`raw/`, `root-*-files/`), immagini e log sono escl
 | [`use-cases/`](use-cases/) | 1 |
 | [`use_cases/`](use_cases/) | 116 |
 | [`wiki/`](wiki/index.md) | 105 |
-=======
 - [digests/overflow-history.md](digests/overflow-history.md) — sezioni condensate dei file oltre il tetto di 100 `.md` (una sezione per file, intitolata col percorso originale).
 - [digests/archive-archive.md](digests/archive-archive.md), [digests/archive-raw.md](digests/archive-raw.md), [digests/aliases-removed.md](digests/aliases-removed.md) — elenchi delle sorgenti fuse e degli alias rimossi.
 - [outputs/README.md](outputs/README.md) — cartella degli output generati.
@@ -557,4 +531,3 @@ Le cartelle di import grezzo (`raw/`, `root-*-files/`), immagini e log sono escl
 - `docs-archive-policy.md`: rimosso nel commit `a871d44e` del 2026-10-08.
 - `00-index.md` della radice di `docs/`: rimosso il 2026-10-22 (commit `7e2a1509`, insieme a `index.md` e a `wiki/index.md`, poi ricreati); l'indice di tutta la cartella docs e' questo file.
 - Le versioni precedenti di questo indice elencavano molti altri file (architettura, Filament, PHPStan, testing, event sourcing, migrazioni) che oggi non esistono piu' in `docs/`: la cronologia git e' l'unica fonte.
->>>>>>> .merge_file_illSMr

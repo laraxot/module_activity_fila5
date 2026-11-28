@@ -47,22 +47,6 @@ Pagine brevi e riusabili (concetti, regole, memorie) che completano le story. Mi
 
 | Cartella | File | Indice |
 |---|---|---|
-<<<<<<< .merge_file_sN9oRa
-| `concepts/` | 37 | [concepts/index.md](./concepts/index.md) |
-| `testing/` | 11 | nessuno |
-<<<<<<< .merge_file_7d0skJ
-| `rules/` | 4 | [rules/INDEX.md](./rules/INDEX.md) |
-| `memories/` | 4 | [memories/INDEX.md](./memories/INDEX.md) |
-| `skills/` | 2 | [skills/INDEX.md](skills/index.md) |
-=======
-| `rules/` | 4 | [rules/index.md](./rules/index.md) |
-| `memories/` | 4 | [memories/index.md](./memories/index.md) |
-| `skills/` | 2 | [skills/index.md](./skills/index.md) |
->>>>>>> .merge_file_dyXPoM
-| `howto/`, `_templates/` | 3 ciascuna | nessuno |
-| `troubleshooting/`, `integrations/`, `features/`, `commands/`, `analysis/` | 2 ciascuna | nessuno |
-| `sources/`, `product/`, `patterns/`, `overviews/`, `how-to/` | 1 ciascuna | nessuno |
-=======
 | `concepts/` | 2 | [concepts/index.md](./concepts/index.md) |
 | `rules/` | 1 | [rules/index.md](./rules/index.md) |
 | `memories/` | 3 | [memories/index.md](./memories/index.md) |
@@ -70,7 +54,6 @@ Pagine brevi e riusabili (concetti, regole, memorie) che completano le story. Mi
 | `commands/` | 1 | [commands/index.md](./commands/index.md) |
 | `_templates/` | 3 | nessuno |
 | `troubleshooting/` | 2 | nessuno |
->>>>>>> .merge_file_pZSNaR
 
 Cartelle previste dal modello ma senza alcun `.md`: `decisions/`, `entities/`, `glossary/`, `comparisons/`, `queries/`, `reference/`, `summaries/`, `lint/`, `index/`. Le decisioni del modulo stanno in [../adr/README.md](../adr/README.md).
 

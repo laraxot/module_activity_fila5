@@ -54,13 +54,8 @@ _No entities tracked yet._
 
 ## On-Demand References
 
-<<<<<<< .merge_file_ct4Tfr
-- [rules-index](./rules/INDEX.md) — entrypoint locale per regole ricorrenti del modulo
-- [skills-index](skills/index.md) — skill on-demand, incluse skill condivise Xot
-=======
 - [rules-index](./rules/index.md) — entrypoint locale per regole ricorrenti del modulo
 - [skills-index](./skills/index.md) — skill on-demand, incluse skill condivise Xot
->>>>>>> .merge_file_wuMCaK
 
 ## Comparisons
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 use Illuminate\Support\Facades\File;
-use Modules\Activity\Actions\Log\ResolveLogDirectoryAction;
+use Modules\Activity\Actions\Log\GetLogDirectoryAction;
 use Modules\Activity\Actions\Log\ResolveLogFilePathAction;
 use Modules\Activity\Exceptions\InvalidLogFileException;
 use Safe\Exceptions\FilesystemException;
@@ -103,7 +103,7 @@ it('fails clearly when the base directory does not exist', function (): void {
 })->group('ACTIVITY-LOGFILE-INV-5');
 
 it('resolves the log directory to its real path and fails when it is missing', function (): void {
-    $action = new ResolveLogDirectoryAction;
+    $action = new GetLogDirectoryAction;
 
     expect($action->execute($this->base))->toBe(realpath($this->base));
     expect(fn () => $action->execute($this->root.'/non-esiste'))->toThrow(InvalidLogFileException::class);

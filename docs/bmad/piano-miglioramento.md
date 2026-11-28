@@ -13,7 +13,6 @@ related:
 
 # Piano di miglioramento — Activity
 
-<<<<<<< .merge_file_XpISid
 Derivato dall'[audit](./audits/activity-audit.md).
 
 ## P0
@@ -48,8 +47,6 @@ Derivato dall'[audit](./audits/activity-audit.md).
 - [ ] PHPStan `Modules/Activity` = 0
 - [ ] Pest osservabile o skip motivato
 - [ ] ECC `00-index` aggiornato con esiti
-=======
->>>>>>> .merge_file_wpB7pV
 Derivato dall'[audit profondo](./audits/activity-audit.md). Nessun P0 emerso dal codice; i P1 riguardano l'integrità del registro.
 Epic e AC: [epics.md](./epics.md).
 
@@ -84,7 +81,4 @@ Epic e AC: [epics.md](./epics.md).
 - [ ] Nessun segreto in `properties` (Pest su `User`)
 - [ ] PHPStan `Modules/Activity` = 0
 - [ ] ECC `00-index` aggiornato
-<<<<<<< .merge_file_XpISid
-=======
 - [ ] Pest osservabile o skip motivato
->>>>>>> .merge_file_wpB7pV

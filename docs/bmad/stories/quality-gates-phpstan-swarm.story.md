@@ -177,12 +177,9 @@ Non serve una nuova memoria: il pattern è già coperto da
 e da `pest4-bootstrap-composer.md`/`pest5-configuring-tests.md`.
 
 ---
-<<<<<<< .merge_file_pqWUPx
 
 ## Contenuto unito da `quality-gates-phpstan-swarm.story.md`
 
 # quality gates phpstan swarm
 
 Stub alias post-strip data/timestamp. Canonico: [./quality-gates-phpstan-swarm.story.md](./quality-gates-phpstan-swarm.story.md).
-=======
->>>>>>> .merge_file_kxRpqP

@@ -1,12 +1,9 @@
 ---
-<<<<<<< .merge_file_RrO1bI
 title: Architecture
 module: Activity
 ---
 
 ---
-=======
->>>>>>> .merge_file_JUSBS4
 title: "Activity — architettura BMAD"
 type: concept
 tags: [architecture, activity, audit, log, event-sourcing, spatie]
@@ -28,12 +25,7 @@ discussions: []
 > **SUMMARY**: mappa reale del modulo `Modules/Activity` (alias `activity`): due
 > sottosistemi distinti — audit delle azioni utente su Spatie Activity + event
 > sourcing, e un visualizzatore dei log di file Laravel — con tre Resource
-<<<<<<< .merge_file_RrO1bI
-> Filament, 29 Action e 7 DTO.
-> Filament, 30 Action e 7 DTO (misura 2026-11-16).
-=======
 > Filament, 30 Action e 8 DTO (misura 2026-11-19; 7 DTO del log viewer + `ActivityConfigData`).
->>>>>>> .merge_file_JUSBS4
 
 ## Identita del modulo
 
@@ -113,7 +105,6 @@ Alto numero ma qualita da verificare: 8 file senza casi, 19 punti di skip, 0 `Li
 
 - [module-boundary.md](./architecture/module-boundary.md) — confini del modulo.
 - [module-map.md](./architecture/module-map.md) — mappa file -> responsabilita, una riga per file.
-<<<<<<< .merge_file_RrO1bI
 - [brainstorming.md](./brainstorming.md) — decisioni prese e problemi aperti.# Architettura del modulo Activity
 
 ## Overview
@@ -127,8 +118,6 @@ Azioni eseguibili (Queueable Actions) per la logica di business.
 
 ### Resources
 Risorse Filament per il pannello di amministrazione.
-=======
->>>>>>> .merge_file_JUSBS4
 - [brainstorming.md](./brainstorming.md) — decisioni prese e problemi aperti.
 
 ## Flussi di dati (verificati sul codice, 2026-11-16)
@@ -154,13 +143,10 @@ Policy per permesso (`activity.*`, `snapshot.*`, `stored_event.*`) su `UserBaseP
 
 ## Pattern utilizzati
 
-<<<<<<< .merge_file_RrO1bI
 - Action invece di Service
 - Filament Widget invece di Livewire
 - Array una chiave per riga
 - Schema-driven Forms (XotBaseSchemaWidget)
-=======
->>>>>>> .merge_file_JUSBS4
 - Action Queueable invece di Service (0 Services).
 - Resource con `Schemas/` e `Tables/` separati, base `XotBase*`.
 - Array una chiave per riga.

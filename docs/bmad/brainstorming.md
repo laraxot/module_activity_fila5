@@ -1,12 +1,9 @@
 ---
-<<<<<<< .merge_file_OnWwmx
 title: Brainstorming
 module: Activity
 ---
 
 ---
-=======
->>>>>>> .merge_file_t4sByR
 title: "Activity — brainstorming BMAD"
 type: concept
 tags: [brainstorming, activity, decisioni, debito-tecnico, event-sourcing]

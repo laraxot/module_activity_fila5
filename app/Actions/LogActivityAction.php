@@ -16,11 +16,8 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * Logs a single activity using Queueable Actions
  *
-<<<<<<< .merge_file_RFuQ9f
-=======
  * @see docs/contracts/log-activity-action.md
  *
->>>>>>> .merge_file_h9OuDz
  * @contract docs/contracts/log-activity-action.md
  */
 class LogActivityAction

@@ -31,13 +31,8 @@ strato racconta una sessione diversa che non ha letto lo strato sotto:
 
 - 6 varianti di `phpstan-fixes*.md`, altre 6 di `phpstan-analysis*.md`
 - 4 varianti di `business-logic-analysis*.md` (compreso uno SCREAMING_CASE)
-<<<<<<< .merge_file_sMVGP2
-- `roadmap.md`, `roadmap.md`, `roadmap.md`, `roadmap-and-issues.md`,
-  `roadmap-archive-1.md`, `roadmap-vision.md`: sei roadmap per un modulo,
-=======
 - `roadmap.md`, `roadmap-.md`, `roadmap-2025.md`, `roadmap-and-issues.md`,
   `roadmap-archive.md`, `roadmap-vision.md`: sei roadmap per un modulo,
->>>>>>> .merge_file_SFvhbL
   nessuna delle quali probabilmente letta prima di scriverne una nuova
 - `README.md`, `README.md`, `README.md.update`, `README.md.update`,
   `readme_update.md`, `readme-update.md`: sei README, contando le

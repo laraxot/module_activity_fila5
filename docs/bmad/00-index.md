@@ -23,7 +23,4 @@ Entry point del pack. Indice storico/legacy: [index.md](./index.md).
 | [piano-miglioramento.md](./piano-miglioramento.md) | piano P1/P2 |
 | [stories/module-bmad-audit.story.md](./stories/module-bmad-audit.story.md) | story dell'audit |
 | [ECC](../ecc/00-index.md) | checklist e stato controlli |
-<<<<<<< .merge_file_ECz6fH
-=======
 | [purpose.md (root docs)](../purpose.md) | scopo del modulo nella documentazione generale |
->>>>>>> .merge_file_tknTpt

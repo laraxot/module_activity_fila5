@@ -13,13 +13,9 @@ use Symfony\Component\HttpFoundation\BinaryFileResponse;
  *
  * Usa BinaryFileResponse, che legge il file a blocchi dal disco: niente file intero in memoria, a differenza
  * di un download Livewire (che lo legge tutto e lo codifica in base64). Il percorso passa da
-<<<<<<< .merge_file_eu9V5F
- * {@see ResolveLogFilePathAction}, quindi non si puo' uscire da storage/logs.
-=======
  * {@see GetLogFilePathAction}, quindi non si puo' uscire da storage/logs.
  *
  * @see docs/contracts/download-log-file-action.md
->>>>>>> .merge_file_fthZU9
  *
  * @contract docs/contracts/download-log-file-action.md
  */
